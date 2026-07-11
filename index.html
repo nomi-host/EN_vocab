@@ -25,9 +25,9 @@
   --muted:#8b8c95;
   --line:#ececef;
   --fill:#eef0f3;
-  --accent:#ff5a5f;      /* 팝 코럴 (임시) */
-  --accent-deep:#e83e46; /* 흰 배경 위 텍스트 강조 */
-  --accent-soft:#ffecec; /* 옅은 배경 */
+  --accent:#6b86ff;      /* 포인트 컬러 (페리윙클 블루) */
+  --accent-deep:#3f56e0; /* 흰 배경 위 텍스트 강조 (진한 톤) */
+  --accent-soft:#e9edff; /* 옅은 배경 */
   --on-accent:#ffffff;
   --good:#12b886;
   --radius:20px;
@@ -88,13 +88,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 잔디 */
 .grass{display:grid;grid-template-columns:repeat(17,1fr);gap:3px;}
 .grass i{aspect-ratio:1;border-radius:3px;background:var(--fill);}
-.grass i.g1{background:#ffc9cb;}.grass i.g2{background:#ff8f93;}.grass i.g3{background:var(--accent);}
+.grass i.g1{background:#ccd6ff;}.grass i.g2{background:#95a9ff;}.grass i.g3{background:var(--accent);}
 
 /* 사전 검색 */
 .search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:11px 14px;box-shadow:var(--shadow);}
 .search input{flex:1;border:none;outline:none;font-size:15px;background:none;color:var(--ink);}
 .search input::placeholder{color:var(--muted);}
-.search .mag{color:var(--muted);font-size:15px;}
+.search .mag{color:var(--muted);display:flex;align-items:center;}
+.icon{display:inline-block;vertical-align:middle;fill:currentColor;flex:none;}
 
 .chips{display:flex;gap:7px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none;}
 .chips::-webkit-scrollbar{display:none;}
@@ -124,11 +125,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .soon .mascot{width:88px;height:88px;font-size:11px;}
 
 /* 하단 탭바 (홈 중앙) */
-.tabbar{display:flex;align-items:flex-end;justify-content:space-around;background:var(--surface);border-top:1px solid var(--line);padding:8px 8px calc(env(safe-area-inset-bottom) + 8px);}
-.tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--muted);font-size:10px;font-weight:600;padding:2px 0;}
+.tabbar{display:flex;align-items:flex-end;justify-content:space-around;background:var(--surface);border-top:1px solid var(--line);padding:26px 8px calc(env(safe-area-inset-bottom) + 8px);position:relative;z-index:5;overflow:visible;}
+.tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--muted);font-size:10px;font-weight:600;padding:2px 0;overflow:visible;}
 .tab.on{color:var(--accent-deep);}
-.tab .ti{width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:17px;}
-.tab.home .ti{width:44px;height:44px;margin-top:-18px;border-radius:50%;background:var(--accent);color:#fff;box-shadow:0 6px 16px rgba(255,90,95,.4);font-size:20px;}
+.tab .ti{width:24px;height:24px;display:flex;align-items:center;justify-content:center;}
+.tab.home{position:relative;}
+.tab.home .ti{width:48px;height:48px;margin-top:-30px;margin-bottom:2px;border-radius:50%;background:var(--accent);color:#fff;box-shadow:0 8px 18px rgba(107,134,255,.45);}
 .tab.home.on{color:var(--accent-deep);}
 
 /* 바텀시트 (단어 상세) */
@@ -176,6 +178,29 @@ const APP_BUILD = "2026-07-11";
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
 
+/* Material Symbols (filled) 아이콘 — 공식 SVG 패스 인라인(Apache 2.0).
+   외부 폰트/네트워크 의존 없이 오프라인·아티팩트에서도 동일하게 렌더. */
+const ICONS = {
+  home: "M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z",
+  menu_book: "M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z",
+  school: "M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z",
+  forum: "M22 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h11c.55 0 1-.45 1-1z",
+  bookmark: "M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z",
+  search: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z",
+  close: "M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z",
+  chevron_left: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z",
+  check: "M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z",
+  volume_up: "M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z",
+  settings: "M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z",
+};
+function Icon({ name, size = 24 }) {
+  return (
+    <svg className="icon" width={size} height={size} viewBox="0 0 24 24" aria-hidden="true">
+      <path d={ICONS[name]} />
+    </svg>
+  );
+}
+
 const SEED = (typeof window !== "undefined" && window.SEED) ? window.SEED : [];
 const byWord = Object.fromEntries(SEED.map(w => [w.word, w]));
 
@@ -220,7 +245,7 @@ function Home({ onGoTab }) {
         <div key={s.n}
              className={"step" + (s.state === "active" ? " active" : "") + (s.state === "done" ? " done" : "")}
              onClick={() => onGoTab(s.tab)}>
-          <div className="step-ico">{s.state === "done" ? "✓" : s.n}</div>
+          <div className="step-ico">{s.state === "done" ? <Icon name="check" size={20} /> : s.n}</div>
           <div className="step-body">
             <div className="step-title">{s.title}</div>
             <div className="step-sub">{s.sub}</div>
@@ -268,18 +293,18 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
         <div className="sheet-grab" />
         <div className="sheet-head">
           {stack.length > 1
-            ? <button className="back" onClick={onPop}>‹</button>
+            ? <button className="back" onClick={onPop} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
             : <span style={{ width: 8 }} />}
           <span className="sp" />
           <button className="fav">즐겨찾기</button>
-          <button className="back" onClick={onClose} style={{ marginLeft: 4 }}>✕</button>
+          <button className="back" onClick={onClose} style={{ marginLeft: 4 }} aria-label="닫기"><Icon name="close" size={20} /></button>
         </div>
         <div className="sheet-body">
           <div>
             <div className="wd-top">
               <span className="wd-word">{w.word}</span>
               <span className="wd-ipa">{w.ipa}</span>
-              <button className="wd-play" onClick={() => speak(w.word)}>발음 듣기</button>
+              <button className="wd-play" onClick={() => speak(w.word)}><Icon name="volume_up" size={15} /> 발음 듣기</button>
             </div>
             <div className="wd-pos" style={{ marginTop: 6 }}>
               <span className="tag lv" style={{ marginRight: 6 }}>{w.cefr}</span>
@@ -326,7 +351,7 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
               <div className="wd-sec-t">어근 · 접사</div>
               <div className="wd-chips">
                 {w.roots.map(r => (
-                  <span key={r.affix} className="lchip affix">{r.affix}<span className="g" style={{ color: "#ffd0d2" }}>{r.gloss}</span></span>
+                  <span key={r.affix} className="lchip affix">{r.affix}<span className="g" style={{ color: "#c3ceff" }}>{r.gloss}</span></span>
                 ))}
               </div>
             </div>
@@ -369,7 +394,7 @@ function Dict({ onOpen }) {
   return (
     <div className="content">
       <div className="search">
-        <span className="mag">검색</span>
+        <span className="mag"><Icon name="search" size={20} /></span>
         <input value={q} onChange={e => setQ(e.target.value)} placeholder="단어를 검색하세요 (예: alert)" autoCapitalize="none" />
       </div>
 
@@ -425,11 +450,11 @@ function Soon({ title, desc }) {
 
 /* ---------- 앱 셸 ---------- */
 const TABS = [
-  { k: "learn", label: "학습", icon: "◪" },
-  { k: "dict", label: "사전", icon: "𝐀" },
-  { k: "home", label: "홈", icon: "●" },
-  { k: "talk", label: "회화", icon: "◗" },
-  { k: "box", label: "보관함", icon: "★" },
+  { k: "learn", label: "학습", icon: "school" },
+  { k: "dict", label: "사전", icon: "menu_book" },
+  { k: "home", label: "홈", icon: "home" },
+  { k: "talk", label: "회화", icon: "forum" },
+  { k: "box", label: "보관함", icon: "bookmark" },
 ];
 
 function App() {
@@ -454,7 +479,7 @@ function App() {
         <div className="brand">No<b>English</b></div>
         <div className="topbar-right">
           <span className="pill"><span className="dot" />연속 12일</span>
-          <button className="avatar-btn">설정</button>
+          <button className="avatar-btn" aria-label="설정"><Icon name="settings" size={19} /></button>
         </div>
       </div>
 
@@ -471,7 +496,7 @@ function App() {
           <button key={t.k}
                   className={"tab" + (t.k === "home" ? " home" : "") + (tab === t.k ? " on" : "")}
                   onClick={() => setTab(t.k)}>
-            <span className="ti">{t.icon}</span>
+            <span className="ti"><Icon name={t.icon} size={t.k === "home" ? 26 : 24} /></span>
             {t.label}
           </button>
         ))}
