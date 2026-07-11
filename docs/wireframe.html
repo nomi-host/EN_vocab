@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EN Vocab 와이어프레임 v1</title>
+<style>
+  :root{
+    --ink:#1c1c1e; --sub:#6e6e73; --line:#d2d2d7; --bg:#f5f5f7;
+    --box:#e8e8ed; --dark:#3a3a3c; --hi:#c7c7cc;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; background:var(--bg); color:var(--ink); padding:28px 20px 60px;}
+  h1{font-size:22px; margin-bottom:4px;}
+  .meta{color:var(--sub); font-size:13px; margin-bottom:28px;}
+  .grid{display:flex; flex-wrap:wrap; gap:28px;}
+  .cell{width:300px;}
+  .cell h2{font-size:14px; margin:0 0 8px 2px;}
+  .cell .note{font-size:12px; color:var(--sub); margin-top:8px; line-height:1.55;}
+  .phone{width:300px; height:600px; background:#fff; border:2px solid var(--ink); border-radius:28px; padding:14px 12px 10px; display:flex; flex-direction:column; overflow:hidden;}
+  .scroll{flex:1; overflow:hidden; display:flex; flex-direction:column; gap:8px;}
+  .bar{display:flex; align-items:center; gap:8px; font-size:12px; color:var(--sub); margin-bottom:6px;}
+  .bar b{color:var(--ink); font-size:14px;}
+  .sp{flex:1;}
+  .box{background:var(--box); border:1px dashed var(--hi); border-radius:10px; padding:10px; font-size:12px; color:var(--sub);}
+  .box b{color:var(--ink);}
+  .row{display:flex; gap:6px;}
+  .row>*{flex:1;}
+  .btn{background:var(--dark); color:#fff; border-radius:10px; text-align:center; padding:10px 6px; font-size:12px;}
+  .btn.ghost{background:#fff; color:var(--ink); border:1px solid var(--line);}
+  .chip{display:inline-block; background:#fff; border:1px solid var(--line); border-radius:999px; padding:3px 9px; font-size:11px; color:var(--ink); margin:2px 2px 0 0;}
+  .chip.dark{background:var(--dark); color:#fff; border-color:var(--dark);}
+  .tag{display:inline-block; background:var(--box); border-radius:5px; padding:2px 6px; font-size:10px; color:var(--sub); margin-right:4px;}
+  .tabbar{display:flex; border-top:1px solid var(--line); padding-top:8px; margin-top:8px;}
+  .tabbar div{flex:1; text-align:center; font-size:10px; color:var(--sub);}
+  .tabbar div.on{color:var(--ink); font-weight:700;}
+  .tabbar div::before{content:""; display:block; width:20px; height:20px; margin:0 auto 3px; background:var(--box); border-radius:6px;}
+  .tabbar div.on::before{background:var(--ink);}
+  .blank{display:inline-block; min-width:52px; height:20px; background:var(--dark); border-radius:5px; vertical-align:-4px;}
+  .blank.ok{background:none; border-bottom:2px solid var(--ink); color:var(--ink); font-weight:700; height:auto; min-width:0; padding:0 2px;}
+  .kbd{background:var(--box); border-radius:10px; padding:8px; text-align:center; font-size:11px; color:var(--sub); letter-spacing:3px; line-height:1.9;}
+  .bubbleL{align-self:flex-start; max-width:85%; background:var(--box); border-radius:12px 12px 12px 3px; padding:8px 10px; font-size:12px;}
+  .bubbleR{align-self:flex-end; max-width:85%; background:var(--dark); color:#fff; border-radius:12px 12px 3px 12px; padding:8px 10px; font-size:12px;}
+  .fb{border:1px solid var(--ink); border-radius:10px; padding:8px 10px; font-size:11px; background:#fff;}
+  .grass{display:grid; grid-template-columns:repeat(17,1fr); gap:2px;}
+  .grass i{display:block; aspect-ratio:1; background:var(--box); border-radius:2px;}
+  .grass i.g1{background:#b9b9c0;} .grass i.g2{background:#8e8e93;} .grass i.g3{background:#3a3a3c;}
+  .meter{height:10px; background:var(--box); border-radius:999px; overflow:hidden;}
+  .meter i{display:block; height:100%; width:72%; background:var(--dark); border-radius:999px;}
+  .sec{font-size:11px; font-weight:700; color:var(--ink); margin-top:2px;}
+  .list{display:flex; flex-direction:column; gap:6px;}
+  .li{display:flex; align-items:center; gap:8px; background:#fff; border:1px solid var(--line); border-radius:10px; padding:8px 10px; font-size:12px;}
+  .ava{width:34px; height:34px; border-radius:50%; background:var(--box); border:1px dashed var(--hi); flex:none; font-size:9px; color:var(--sub); display:flex; align-items:center; justify-content:center;}
+  .arrow{color:var(--sub); font-size:14px;}
+  .toggle{display:inline-flex; align-items:center; gap:4px; font-size:10px; color:var(--sub);}
+  .toggle::after{content:""; width:26px; height:15px; background:var(--dark); border-radius:999px;}
+  .toggle.off::after{background:var(--hi);}
+  .center{text-align:center;}
+  .big{font-size:20px; font-weight:800; color:var(--ink);}
+</style>
+</head>
+<body>
+
+<h1>EN Vocab — 와이어프레임 v1</h1>
+<div class="meta">2026-07-10 · 기획서(docs/PLAN.md)와 세트 · 하단 탭: 학습 / 퀴즈 / 회화 / 단어장 / 통계</div>
+
+<div class="grid">
+
+<!-- 1. 홈(학습 탭) -->
+<div class="cell">
+  <h2>1. 홈 (학습 탭)</h2>
+  <div class="phone">
+    <div class="bar"><b>EN VOCA</b><span class="sp"></span><span>연속 12일</span></div>
+    <div class="scroll">
+      <div class="box"><b>오늘의 학습</b><br>신규 20 · 복습 34 대기<br><br><span class="tag">A2 40%</span><span class="tag">B1 35%</span><span class="tag">비즈니스 25%</span></div>
+      <div class="row"><div class="btn">학습 시작</div><div class="btn ghost">이어서 (12/20)</div></div>
+      <div class="box"><b>흘려듣기</b> — 학습한 단어·예문 연속 재생<br>재생 / 배속 / 반복 설정</div>
+      <div class="box"><b>레벨 테스트</b><br>추정 어휘량 4,200개 · 상위 18% <span class="arrow">→</span></div>
+      <div class="box"><b>단어 직접 추가</b> — 검색 자동완성 + 수동 입력</div>
+      <div class="sec">잔디 (최근 17주)</div>
+      <div class="grass">
+        <i></i><i class="g1"></i><i class="g2"></i><i class="g3"></i><i class="g2"></i><i></i><i class="g1"></i><i class="g2"></i><i class="g3"></i><i class="g3"></i><i class="g1"></i><i></i><i class="g2"></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i class="g1"></i>
+        <i class="g1"></i><i class="g2"></i><i></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i class="g1"></i><i></i><i class="g2"></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i></i><i class="g1"></i><i class="g2"></i><i class="g3"></i><i class="g1"></i>
+        <i class="g2"></i><i class="g3"></i><i class="g1"></i><i></i><i class="g2"></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i class="g1"></i><i></i><i class="g2"></i><i class="g3"></i><i class="g1"></i><i class="g2"></i><i></i><i class="g1"></i><i class="g2"></i>
+      </div>
+    </div>
+    <div class="tabbar"><div class="on">학습</div><div>퀴즈</div><div>회화</div><div>단어장</div><div>통계</div></div>
+  </div>
+  <div class="note">JP 앱 홈 구조 복제. 카테고리는 CEFR(A1~C1)+주제별. 레벨 테스트 카드는 최신 추정치를 항상 노출해 동기부여.</div>
+</div>
+
+<!-- 2. 학습 카드 (입력 전) -->
+<div class="cell">
+  <h2>2. 학습 카드 — 입력 전 (레퍼런스 방식)</h2>
+  <div class="phone">
+    <div class="bar">&lt; <span class="sp"></span>진행 7/30<span class="sp"></span>설정</div>
+    <div class="scroll">
+      <div class="box"><span class="tag">B1</span><span class="tag">542일 전</span><br>
+        <span style="font-size:11px">장군이 임무를 수행하는 병사에게 하는 말</span><br><br>
+        <b style="font-size:15px">항상 위험 가능성을 경계할 필요가 있다.</b>
+      </div>
+      <div class="box" style="background:#fff;">
+        <b style="font-size:15px">You need to be <span class="blank"></span> <span class="blank" style="min-width:34px"></span> the possibility of danger at all times.</b>
+      </div>
+      <div class="row" style="font-size:11px; color:var(--sub); align-items:center;">
+        <div class="chip">길이 보기</div><span class="sp"></span><div class="chip dark">음성 모드</div>
+      </div>
+      <div class="sp"></div>
+      <div class="kbd">q w e r t y u i o p<br>a s d f g h j k l<br>z x c v b n m ⌫<br>스페이스 · 확인</div>
+    </div>
+  </div>
+  <div class="note">한국어 문장+상황을 보고 영어 예문의 빈칸을 타이핑 또는 음성으로 입력. 길이 보기 = 글자 수 힌트. iOS PWA에선 음성 모드가 녹음+Gemini 전사로 동작(기획서 3장 제약 1).</div>
+</div>
+
+<!-- 3. 학습 카드 (정답 후) -->
+<div class="cell">
+  <h2>3. 학습 카드 — 정답 후</h2>
+  <div class="phone">
+    <div class="bar">&lt; <span class="sp"></span>진행 8/30<span class="sp"></span><span class="chip">6분 뒤 복습</span></div>
+    <div class="scroll">
+      <div class="box">
+        <span style="font-size:11px">장군이 임무를 수행하는 병사에게 하는 말</span><br><br>
+        <b style="font-size:14px">항상 위험 가능성<u>을 경계할</u> 필요가 있다.</b>
+      </div>
+      <div class="box" style="background:#fff;">
+        <b style="font-size:14px">You need to be <span class="blank ok">alert to</span> the possibility of danger at all times.</b>
+        <div style="margin-top:6px"><span class="chip">하트(즐겨찾기)</span></div>
+      </div>
+      <div class="row">
+        <div class="btn ghost">다른 예문</div><div class="btn ghost">오답 노트</div>
+      </div>
+      <div class="row">
+        <div class="btn ghost">말해보기</div><div class="btn ghost">단어 정보</div><div class="btn ghost">AI 질문</div>
+      </div>
+      <div class="sp"></div>
+      <div class="row">
+        <div class="btn ghost">x0.8 듣기</div><div class="btn ghost">다시 듣기</div><div class="btn">다음 문제</div>
+      </div>
+    </div>
+  </div>
+  <div class="note">정답 부분 강조 + SRS 다음 복습 시점 표시. 말해보기 = 발음 따라하고 유사도 피드백. 단어 정보 = 화면 4로. AI 질문 = 이 문장에 대해 자유 질문(Gemini).</div>
+</div>
+
+<!-- 4. 단어 상세 -->
+<div class="cell">
+  <h2>4. 단어 상세 (타고타고 허브)</h2>
+  <div class="phone">
+    <div class="bar">&lt; 단어 정보<span class="sp"></span><span class="chip">즐겨찾기</span></div>
+    <div class="scroll">
+      <div class="box" style="background:#fff;">
+        <b style="font-size:20px">alert</b> <span style="font-size:11px">/əˈlɜːrt/</span> <span class="tag">B1</span> <span class="tag">발음 듣기</span><br>
+        <span style="font-size:11px">형용사: 경계하는, 기민한 · 동사: 알리다 · 명사: 경보</span>
+      </div>
+      <div class="sec">예문 (단어 탭하면 이동)</div>
+      <div class="box">You need to be alert to the <b>possibility</b> of <b>danger</b> at all times.<br><span class="chip">possibility</span><span class="chip">danger</span></div>
+      <div class="sec">유의어 / 반의어</div>
+      <div class="box"><span class="chip">watchful</span><span class="chip">vigilant</span><span class="chip">attentive</span> · <span class="chip">unaware</span><span class="chip">inattentive</span></div>
+      <div class="sec">같은 어원 (라틴어 erta)</div>
+      <div class="box"><span class="chip">alarm</span><span class="chip">alert</span></div>
+      <div class="sec">같은 단어, 다른 품사</div>
+      <div class="box"><span class="chip">alertness (명)</span><span class="chip">alertly (부)</span></div>
+      <div class="sec">어근 / 접사</div>
+      <div class="box"><span class="chip dark">a- (~쪽으로)</span> — 탭하면 어근 탐색으로</div>
+      <div class="box">외부사전: 네이버 · Longman · Cambridge · Etymonline</div>
+    </div>
+  </div>
+  <div class="note">모든 칩이 링크: 예문 속 단어, 유의어/반의어, 같은 어원 단어, 품사 파생어, 어근. 어디서든 꼬리 물고 학습 가능. 데이터: Free Dictionary+Datamuse+etymology-db+자체 어근 사전.</div>
+</div>
+
+<!-- 5. 어근 탐색 -->
+<div class="cell">
+  <h2>5. 어근/접사 탐색</h2>
+  <div class="phone">
+    <div class="bar">&lt; 어근 탐색</div>
+    <div class="scroll">
+      <div class="box" style="background:#fff;"><b style="font-size:18px">inter-</b><br><span style="font-size:11px">"사이, 서로" (라틴어) — 137개 단어에 사용</span></div>
+      <div class="list">
+        <div class="li"><b>interact</b><span class="sp"></span><span class="tag">B1</span><span class="arrow">→</span></div>
+        <div class="li"><b>international</b><span class="sp"></span><span class="tag">A2</span><span class="arrow">→</span></div>
+        <div class="li"><b>interview</b><span class="sp"></span><span class="tag">A2</span><span class="arrow">→</span></div>
+        <div class="li"><b>interrupt</b><span class="sp"></span><span class="tag">B1</span><span class="arrow">→</span></div>
+        <div class="li"><b>interfere</b><span class="sp"></span><span class="tag">B2</span><span class="arrow">→</span></div>
+        <div class="li"><b>intermediate</b><span class="sp"></span><span class="tag">B1</span><span class="arrow">→</span></div>
+      </div>
+      <div class="box">다른 어근 둘러보기<br><span class="chip">com-</span><span class="chip">pre-</span><span class="chip">sub-</span><span class="chip">-tion</span><span class="chip">-able</span><span class="chip">spect</span><span class="chip">port</span></div>
+    </div>
+  </div>
+  <div class="note">어근 상세 = 뜻 + 해당 어근 단어 목록(레벨 표시, 학습한 단어 우선 정렬). 목록에서 단어 상세로 재진입해 타고타고 반복.</div>
+</div>
+
+<!-- 6. 레벨 테스트 결과 -->
+<div class="cell">
+  <h2>6. 레벨 테스트 결과</h2>
+  <div class="phone">
+    <div class="bar">&lt; 레벨 테스트</div>
+    <div class="scroll">
+      <div class="box center" style="background:#fff; padding:18px 10px;">
+        <span style="font-size:11px">추정 어휘량</span><br>
+        <span class="big" style="font-size:30px">4,200</span><span style="font-size:12px"> 단어</span><br><br>
+        <span class="chip dark">CEFR B1</span> <span class="chip">상위 18%</span>
+      </div>
+      <div class="sec">표준 어휘 커버리지 (Oxford 5000 기준)</div>
+      <div class="box">
+        A1 <div class="meter"><i style="width:98%"></i></div>
+        A2 <div class="meter"><i style="width:91%"></i></div>
+        B1 <div class="meter"><i style="width:64%"></i></div>
+        B2 <div class="meter"><i style="width:31%"></i></div>
+        C1 <div class="meter"><i style="width:9%"></i></div>
+      </div>
+      <div class="box">학습 이력이 쌓이면 <b>추정치가 자동 업데이트</b>됩니다.<br>지난달 대비 +320 단어</div>
+      <div class="row"><div class="btn ghost">다시 측정</div><div class="btn">부족한 레벨 학습하기</div></div>
+    </div>
+  </div>
+  <div class="note">적응형 체크(가짜 단어 섞어 허수 방지) + SRS 정답률로 지속 보정. 상위%는 테스트 분포 기반 근사치로 동기부여 목적임을 명시.</div>
+</div>
+
+<!-- 7. 퀴즈 -->
+<div class="cell">
+  <h2>7. 퀴즈 탭 + 문장 퀴즈</h2>
+  <div class="phone">
+    <div class="bar"><b>퀴즈</b><span class="sp"></span>오늘 6/10</div>
+    <div class="scroll">
+      <div class="row">
+        <div class="box center"><b>단어 퀴즈</b><br><span style="font-size:10px">뜻 맞추기 · 스펠링</span></div>
+        <div class="box center"><b>문장 퀴즈</b><br><span style="font-size:10px">빈칸 · 딕테이션</span></div>
+      </div>
+      <div class="sec">문장 퀴즈 — 딕테이션 예시</div>
+      <div class="box" style="background:#fff;">
+        <span class="tag">듣기 재생</span><span class="tag">x0.8</span><br><br>
+        Could you <span class="blank"></span> <span class="blank"></span> on the project deadline?<br><br>
+        <span style="font-size:10px; color:var(--sub)">힌트: 진행 상황을 알려달라는 표현</span>
+      </div>
+      <div class="kbd">q w e r t y u i o p<br>a s d f g h j k l<br>z x c v b n m ⌫</div>
+      <div class="box">출제 방식(설정): <b>빈칸 채우기</b> · <b>딕테이션</b> 기본<br>어순 배열 · 한→영 순간작문(음성) 선택</div>
+    </div>
+    <div class="tabbar"><div>학습</div><div class="on">퀴즈</div><div>회화</div><div>단어장</div><div>통계</div></div>
+  </div>
+  <div class="note">내가 학습한 단어/문장에서만 출제. 하루 10문제 이상이면 잔디 반영(JP 앱 규칙). 오답은 오답 노트로 축적.</div>
+</div>
+
+<!-- 8. 작문 첨삭 -->
+<div class="cell">
+  <h2>8. 작문 첨삭 (회화 탭 내)</h2>
+  <div class="phone">
+    <div class="bar">&lt; 작문 — <b>공항 · 입국심사</b></div>
+    <div class="scroll">
+      <div class="box">카테고리: <span class="chip dark">공항</span><span class="chip">여행</span><span class="chip">직장</span><span class="chip">옷가게</span><span class="chip">병원</span><span class="chip">마트</span><span class="chip">이메일</span></div>
+      <div class="box" style="background:#fff;"><b>이 문장을 영어로 말해보세요</b><br><br><b style="font-size:14px">"저는 관광 목적으로 5일간 머물 예정입니다."</b></div>
+      <div class="bubbleR">I will stay five days for tour.</div>
+      <div class="fb">
+        <b>자연스러움 62%</b> <span class="meter" style="margin:4px 0"><i style="width:62%"></i></span>
+        교정: I'll be staying <b>for</b> five days <b>for sightseeing</b>.<br>
+        더 자연스러운 표현:<br>
+        · I'm here for sightseeing, staying five days.<br>
+        <span class="chip">문장 즐겨찾기</span><span class="chip">다시 써보기</span>
+      </div>
+      <div class="row"><div class="btn ghost">음성 입력</div><div class="btn">다음 문장</div></div>
+    </div>
+  </div>
+  <div class="note">한국어 단문 → 영작(타이핑/음성) → Gemini 첨삭: 자연스러움% + 교정 diff + idiomatic 대안. 좋은 표현은 즐겨찾기해 단어장(문장 탭)으로.</div>
+</div>
+
+<!-- 9. 페르소나 목록 -->
+<div class="cell">
+  <h2>9. 회화 — 페르소나 목록</h2>
+  <div class="phone">
+    <div class="bar"><b>회화</b><span class="sp"></span><span class="chip">작문</span><span class="chip dark">회화</span></div>
+    <div class="scroll">
+      <div class="list">
+        <div class="li"><span class="ava">아바타</span><div><b>Jake</b> — IT회사 동료 · 개발자<br><span class="tag">미국</span><span class="tag">픽코마 다님</span></div><span class="sp"></span><span class="arrow">→</span></div>
+        <div class="li"><span class="ava">아바타</span><div><b>Emma</b> — 3년 사귄 애인<br><span class="tag">영국</span></div><span class="sp"></span><span class="arrow">→</span></div>
+        <div class="li"><span class="ava">아바타</span><div><b>Liam</b> — 여행지에서 만난 사람<br><span class="tag">호주</span></div><span class="sp"></span><span class="arrow">→</span></div>
+        <div class="li"><span class="ava">아바타</span><div><b>Marcus</b> — 마트 점원<br><span class="tag">AAVE 억양</span></div><span class="sp"></span><span class="arrow">→</span></div>
+        <div class="li"><span class="ava">아바타</span><div><b>Karen</b> — 공항 지상직<br><span class="tag">불친절</span></div><span class="sp"></span><span class="arrow">→</span></div>
+        <div class="li"><span class="ava">아바타</span><div><b>Dr. Miller</b> — 의사<br><span class="tag">중년 남성</span><span class="tag">말 빠름</span></div><span class="sp"></span><span class="arrow">→</span></div>
+        <div class="li"><span class="ava">아바타</span><div><b>Chloe</b> — 카페 직원<br><span class="tag">20대</span><span class="tag">말 빠름</span></div><span class="sp"></span><span class="arrow">→</span></div>
+        <div class="li"><span class="ava">아바타</span><div><b>Sarah</b> — 영어 튜터<br><span class="tag">뉴욕 발음</span><span class="tag">친절</span></div><span class="sp"></span><span class="arrow">→</span></div>
+      </div>
+    </div>
+    <div class="tabbar"><div>학습</div><div>퀴즈</div><div class="on">회화</div><div>단어장</div><div>통계</div></div>
+  </div>
+  <div class="note">이름+속성 뱃지+2D 아바타(사용자 제작 이미지 슬롯). 탭하면 프로필+대화 시작하기. 목록 끝에 행인/10년지기 친구 등 계속. 페르소나는 데이터로 정의해 추가 쉬움.</div>
+</div>
+
+<!-- 10. 회화 대화 -->
+<div class="cell">
+  <h2>10. 회화 — 대화 화면</h2>
+  <div class="phone">
+    <div class="bar">&lt; <b>Karen</b> · 공항 지상직<span class="sp"></span><span class="toggle">대사</span> <span class="toggle off">번역</span></div>
+    <div class="scroll">
+      <div class="bubbleL">Next. Passport and boarding pass. Quickly, please.</div>
+      <div class="bubbleR">Here is. I have a question about my baggage.</div>
+      <div class="fb">
+        <b>피드백</b> — "Here is." 는 어색합니다. <b>"Here you go."</b> 가 자연스럽습니다.<br>
+        baggage 질문은 좋아요. allowance를 붙이면 더 명확: "a question about my baggage allowance"<br>
+        <div class="row" style="margin-top:6px"><div class="btn" style="padding:6px">OK — 계속</div><div class="btn ghost" style="padding:6px">문장 저장</div></div>
+      </div>
+      <div class="bubbleL" style="opacity:.4">(OK를 눌러야 다음 대사 진행)</div>
+      <div class="sp"></div>
+      <div class="row"><div class="btn">말하기 (누르고 말하기)</div><div class="btn ghost" style="flex:0 0 70px">키보드</div></div>
+    </div>
+  </div>
+  <div class="note">상대가 먼저 말함(TTS 재생+말풍선 동시). 대사/번역 토글로 리스닝 난이도 조절. 내 발화 → 즉시 피드백 카드 → OK를 눌러야 대화 진행. 모든 말풍선 길게 눌러 즐겨찾기.</div>
+</div>
+
+<!-- 11. 단어장 -->
+<div class="cell">
+  <h2>11. 단어장 (즐겨찾기 단어/문장)</h2>
+  <div class="phone">
+    <div class="bar"><b>단어장</b><span class="sp"></span><span class="chip">단어 42</span><span class="chip dark">문장 17</span></div>
+    <div class="scroll">
+      <div class="list">
+        <div class="li" style="display:block">
+          <b>Here you go.</b> — 여기요.<br>
+          <span class="tag">출처: Karen(공항)</span><span class="tag">듣기</span><br>
+          <span style="font-size:10px; color:var(--sub)">문법:</span> <span class="chip">관용 표현</span>
+        </div>
+        <div class="li" style="display:block">
+          <b>I'll be staying for five days for sightseeing.</b><br>
+          — 관광으로 5일 머물 예정입니다.<br>
+          <span class="tag">출처: 작문(공항)</span><span class="tag">듣기</span><br>
+          <span style="font-size:10px; color:var(--sub)">단어:</span> <span class="chip">sightseeing</span>
+          <span style="font-size:10px; color:var(--sub)">문법:</span> <span class="chip">미래진행 (will be -ing)</span>
+        </div>
+        <div class="li" style="display:block">
+          <b>You need to be alert to the possibility of danger.</b><br>
+          <span class="tag">출처: 학습 카드</span><br>
+          <span class="chip">alert</span><span class="chip">possibility</span> <span class="chip">be alert to (형+전치사)</span>
+        </div>
+      </div>
+    </div>
+    <div class="tabbar"><div>학습</div><div>퀴즈</div><div>회화</div><div class="on">단어장</div><div>통계</div></div>
+  </div>
+  <div class="note">단어 탭 → 단어 상세(화면 4)로 타고타고. 문장 탭 → 사용 단어 칩 + 문법 태그. 문법 태그를 탭하면 설명 + 같은 문법의 다른 저장 문장 목록. 문법 분석은 저장 시 1회 LLM 호출 후 캐시.</div>
+</div>
+
+<!-- 12. 통계 & 설정 -->
+<div class="cell">
+  <h2>12. 통계 & 설정</h2>
+  <div class="phone">
+    <div class="bar"><b>통계 & 설정</b></div>
+    <div class="scroll">
+      <div class="row">
+        <div class="box center"><span class="big">12</span><br><span style="font-size:10px">연속 일</span></div>
+        <div class="box center"><span class="big">486</span><br><span style="font-size:10px">학습 단어</span></div>
+        <div class="box center"><span class="big">4,200</span><br><span style="font-size:10px">추정 어휘량</span></div>
+      </div>
+      <div class="sec">어휘량 추이</div>
+      <div class="box" style="height:64px">(월별 추정 어휘량 라인 그래프)</div>
+      <div class="sec">잔디</div>
+      <div class="grass">
+        <i class="g1"></i><i class="g2"></i><i></i><i class="g3"></i><i class="g2"></i><i class="g1"></i><i></i><i class="g2"></i><i class="g3"></i><i class="g1"></i><i class="g2"></i><i></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i class="g1"></i><i class="g2"></i>
+        <i></i><i class="g1"></i><i class="g2"></i><i class="g1"></i><i class="g3"></i><i></i><i class="g2"></i><i class="g1"></i><i class="g2"></i><i class="g3"></i><i></i><i class="g1"></i><i class="g2"></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i></i>
+      </div>
+      <div class="box">설정: 하루 신규 단어 수 · 음성(성별/속도) · 퀴즈 출제 방식 · 대사/번역 기본값 · 데이터 백업/복원 · 오류 신고</div>
+      <div class="box center" style="font-size:10px">EN VOCA v0.1.0 · 2026-07-10</div>
+    </div>
+    <div class="tabbar"><div>학습</div><div>퀴즈</div><div>회화</div><div>단어장</div><div class="on">통계</div></div>
+  </div>
+  <div class="note">JP 앱 통계 탭 복제 + 어휘량 추이(레벨 테스트 연동) 추가. 버전 표기 규칙 동일(APP_VERSION/APP_BUILD).</div>
+</div>
+
+</div>
+</body>
+</html>
