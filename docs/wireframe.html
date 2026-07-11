@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EN Vocab 와이어프레임 v2</title>
+<title>EN Vocab 와이어프레임 v3</title>
 <style>
   :root{
     --ink:#1c1c1e; --sub:#6e6e73; --line:#d2d2d7; --bg:#f5f5f7;
@@ -63,8 +63,8 @@
 </head>
 <body>
 
-<h1>EN Vocab (가칭 NoEnglish) — 와이어프레임 v2</h1>
-<div class="meta">2026-07-11 · 기획서(docs/PLAN.md)와 세트 · 하단 탭 4개: 홈 / 훈련 / 회화 / 보관함 (통계&설정은 홈 프로필로 진입) · 캐릭터 자리는 회색 슬롯으로 표기(제작: 사용자)</div>
+<h1>EN Vocab (가칭 NoEnglish) — 와이어프레임 v3</h1>
+<div class="meta">2026-07-11 · 기획서(docs/PLAN.md)와 세트 · 하단 탭 5개(홈 중앙): 학습 / 사전 / 홈 / 회화 / 보관함 · 루틴: 단어카드-듣기-회화 (통계&설정은 홈 프로필로 진입) · 캐릭터 자리는 회색 슬롯으로 표기(제작: 사용자)</div>
 
 <div class="grid">
 
@@ -78,9 +78,14 @@
         <span class="ava" style="width:64px;height:64px;margin:0 auto;border-radius:16px">메인 캐릭터<br>(성장 3단계)</span><br>
         <span style="font-size:11px">팻말: "OH... ENGLISH?"</span>
       </div>
+      <div class="row">
+        <div class="box center"><b>B1</b><br><span style="font-size:9px">CEFR</span></div>
+        <div class="box center"><b>4,200</b><br><span style="font-size:9px">추정 어휘량</span></div>
+        <div class="box center"><b>상위 18%</b><br><span style="font-size:9px">백분위</span></div>
+      </div>
       <div class="sec">오늘의 루틴</div>
-      <div class="box"><b>1. 단어 20개</b> — 완료 ✓<br><span style="font-size:10px">신규 12 · 복습 8</span></div>
-      <div class="box" style="background:#fff;border:1px solid var(--ink)"><b>2. 퀴즈 10문제</b> — 6/10 진행 중<br><div class="btn" style="margin-top:6px;padding:7px">이어서 하기</div></div>
+      <div class="box"><b>1. 단어카드 20개</b> — 완료 ✓<br><span style="font-size:10px">신규 12 · 복습 8</span></div>
+      <div class="box" style="background:#fff;border:1px solid var(--ink)"><b>2. 듣기 10문장</b> — 6/10 진행 중<br><div class="btn" style="margin-top:6px;padding:7px">이어서 하기</div></div>
       <div class="box"><b>3. 회화 1세션</b> — 대기<br><span style="font-size:10px">오늘의 상대: Karen (공항)</span></div>
       <div class="sec">잔디 (최근 17주)</div>
       <div class="grass">
@@ -88,9 +93,9 @@
         <i class="g1"></i><i class="g2"></i><i></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i class="g1"></i><i></i><i class="g2"></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i></i><i class="g1"></i><i class="g2"></i><i class="g3"></i><i class="g1"></i>
       </div>
     </div>
-    <div class="tabbar"><div class="on">홈</div><div>훈련</div><div>회화</div><div>보관함</div></div>
+    <div class="tabbar"><div>학습</div><div>사전</div><div class="on">홈</div><div>회화</div><div>보관함</div></div>
   </div>
-  <div class="note">"오늘 뭘 할지"를 앱이 정해주는 루틴형 홈(듀오링고 패턴). 캐릭터+팻말이 성장 상태를 상시 노출. 통계&설정·레벨테스트·단어 추가는 프로필/훈련 탭으로 이동. 루틴 순서·분량은 설정에서 조정.</div>
+  <div class="note">루틴형 홈(단어카드-듣기-회화 3단계). 내 레벨(CEFR·어휘량·백분위)을 캐릭터 아래 상시 노출 — 탭하면 레벨 상세(화면 6). 통계&설정은 프로필, 단어 추가·목록은 사전 탭으로. 루틴 순서·분량은 설정에서 조정.</div>
 </div>
 
 <!-- 2. 학습 카드 (입력 전) -->
@@ -147,8 +152,9 @@
 
 <!-- 4. 단어 상세 -->
 <div class="cell">
-  <h2>4. 단어 상세 (타고타고 허브)</h2>
+  <h2>4. 단어 상세 — 팝업(시트) + 모달 스택</h2>
   <div class="phone">
+    <div style="width:36px;height:4px;background:var(--hi);border-radius:2px;margin:0 auto 6px"></div>
     <div class="bar">&lt; 단어 정보<span class="sp"></span><span class="chip">즐겨찾기</span></div>
     <div class="scroll">
       <div class="box" style="background:#fff;">
@@ -168,7 +174,7 @@
       <div class="box">외부사전: 네이버 · Longman · Cambridge · Etymonline</div>
     </div>
   </div>
-  <div class="note">모든 칩이 링크: 예문 속 단어, 유의어/반의어, 같은 어원 단어, 품사 파생어, 어근. 어디서든 꼬리 물고 학습 가능. 데이터: Free Dictionary+Datamuse+etymology-db+자체 어근 사전.</div>
+  <div class="note">JP 앱과 동일한 네비게이션: 첫 진입은 바텀시트 팝업, 팝업 안에서 칩(유의어·어원·예문 단어·어근)을 타고 들어가면 모달이 스택으로 쌓이고 뒤로가기로 한 장씩 복귀. 학습 카드·사전·보관함·회화 말풍선 어디서든 같은 패턴.</div>
 </div>
 
 <!-- 5. 어근 탐색 -->
@@ -220,11 +226,11 @@
 
 <!-- 7. 퀴즈 -->
 <div class="cell">
-  <h2>7. 훈련 탭 + 문장 퀴즈</h2>
+  <h2>7. 학습 탭 + 퀴즈(보조 훈련)</h2>
   <div class="phone">
-    <div class="bar"><b>훈련</b><span class="sp"></span>오늘 6/10</div>
+    <div class="bar"><b>학습</b><span class="sp"></span>오늘 6/10</div>
     <div class="scroll">
-      <div class="box" style="font-size:11px">단어 학습 · 퀴즈 · 흘려듣기 · 레벨 테스트 · 단어 직접 추가</div>
+      <div class="box" style="font-size:11px">단어카드 · <b>듣기 세션</b> · 퀴즈 · 흘려듣기 · 레벨 테스트</div>
       <div class="row">
         <div class="box center"><b>단어 퀴즈</b><br><span style="font-size:10px">뜻 맞추기 · 스펠링</span></div>
         <div class="box center"><b>문장 퀴즈</b><br><span style="font-size:10px">빈칸 · 딕테이션</span></div>
@@ -238,9 +244,9 @@
       <div class="kbd">q w e r t y u i o p<br>a s d f g h j k l<br>z x c v b n m ⌫</div>
       <div class="box">출제 방식(설정): <b>빈칸 채우기</b> · <b>딕테이션</b> 기본<br>어순 배열 · 한→영 순간작문(음성) 선택</div>
     </div>
-    <div class="tabbar"><div>홈</div><div class="on">훈련</div><div>회화</div><div>보관함</div></div>
+    <div class="tabbar"><div class="on">학습</div><div>사전</div><div>홈</div><div>회화</div><div>보관함</div></div>
   </div>
-  <div class="note">내가 학습한 단어/문장에서만 출제. 하루 10문제 이상이면 잔디 반영(JP 앱 규칙). 오답은 오답 노트로 축적.</div>
+  <div class="note">퀴즈는 루틴 외 보조 훈련(빈칸·어순 등). 듣기(딕테이션)는 루틴 정규 세션으로 분리 — 화면 17. 오답은 오답 노트로 축적.</div>
 </div>
 
 <!-- 8. 작문 첨삭 -->
@@ -265,26 +271,28 @@
   <div class="note">한국어 단문 → 영작(타이핑/음성) → Gemini 첨삭: 자연스러움% + 교정 diff + idiomatic 대안. 좋은 표현은 즐겨찾기해 단어장(문장 탭)으로.</div>
 </div>
 
-<!-- 9. 페르소나 목록 -->
+<!-- 9. 회화 탭 — 대화방 목록 -->
 <div class="cell">
-  <h2>9. 회화 — 페르소나 목록</h2>
+  <h2>9. 회화 탭 — 메신저형 대화방 목록</h2>
   <div class="phone">
-    <div class="bar"><b>회화</b><span class="sp"></span><span class="chip">작문</span><span class="chip dark">회화</span></div>
+    <div class="bar"><b>회화</b><span class="sp"></span><span class="chip">+ 페르소나 (1/1)</span></div>
     <div class="scroll">
       <div class="list">
-        <div class="li"><span class="ava">아바타</span><div><b>Jake</b> — IT회사 동료 · 개발자<br><span class="tag">미국</span><span class="tag">픽코마 다님</span></div><span class="sp"></span><span class="arrow">→</span></div>
-        <div class="li"><span class="ava">아바타</span><div><b>Emma</b> — 3년 사귄 애인<br><span class="tag">영국</span></div><span class="sp"></span><span class="arrow">→</span></div>
-        <div class="li"><span class="ava">아바타</span><div><b>Liam</b> — 여행지에서 만난 사람<br><span class="tag">호주</span></div><span class="sp"></span><span class="arrow">→</span></div>
-        <div class="li"><span class="ava">아바타</span><div><b>Marcus</b> — 마트 점원<br><span class="tag">AAVE 억양</span></div><span class="sp"></span><span class="arrow">→</span></div>
-        <div class="li"><span class="ava">아바타</span><div><b>Karen</b> — 공항 지상직<br><span class="tag">불친절</span></div><span class="sp"></span><span class="arrow">→</span></div>
-        <div class="li"><span class="ava">아바타</span><div><b>Dr. Miller</b> — 의사<br><span class="tag">중년 남성</span><span class="tag">말 빠름</span></div><span class="sp"></span><span class="arrow">→</span></div>
-        <div class="li"><span class="ava">아바타</span><div><b>Chloe</b> — 카페 직원<br><span class="tag">20대</span><span class="tag">말 빠름</span></div><span class="sp"></span><span class="arrow">→</span></div>
-        <div class="li"><span class="ava">아바타</span><div><b>Sarah</b> — 영어 튜터<br><span class="tag">뉴욕 발음</span><span class="tag">친절</span></div><span class="sp"></span><span class="arrow">→</span></div>
+        <div class="li" style="background:var(--box)"><span class="ava">고정</span><div><b>작문 연습</b><br><span style="font-size:10px; color:var(--sub)">카테고리 선택 → 문제·첨삭이 메시지로</span></div><span class="sp"></span><span class="arrow">→</span></div>
+        <div class="li" style="background:var(--box)"><span class="ava">고정</span><div><b>발음 클리닉</b><br><span style="font-size:10px; color:var(--sub)">수정문 따라 말하기 · 진단</span></div><span class="sp"></span><span class="arrow">→</span></div>
+      </div>
+      <div class="sec">대화방</div>
+      <div class="list">
+        <div class="li"><span class="ava">아바타</span><div><b>Karen</b> · 공항 지상직 <span class="tag">불친절</span><br><span style="font-size:10px; color:var(--sub)">"Next. Passport and boarding..."</span></div><span class="sp"></span><span class="chip dark" style="font-size:9px">이어서</span></div>
+        <div class="li"><span class="ava">아바타</span><div><b>Jake</b> · IT회사 동료 <span class="tag">미국</span><br><span style="font-size:10px; color:var(--sub)">"How was the deploy yesterday?"</span></div><span class="sp"></span><span class="arrow">→</span></div>
+        <div class="li"><span class="ava">아바타</span><div><b>Emma</b> · 3년 사귄 애인 <span class="tag">영국</span><br><span style="font-size:10px; color:var(--sub)">"Miss you. Call me tonight?"</span></div><span class="sp"></span><span class="arrow">→</span></div>
+        <div class="li"><span class="ava">아바타</span><div><b>Dr. Miller</b> · 의사 <span class="tag">말 빠름</span><br><span style="font-size:10px; color:var(--sub)">새 대화 시작</span></div><span class="sp"></span><span class="arrow">→</span></div>
+        <div class="li"><span class="ava">아바타</span><div><b>Mia</b> · 요가 강사 <span class="tag">내가 만든 페르소나</span><br><span style="font-size:10px; color:var(--sub)">"See you in class!"</span></div><span class="sp"></span><span class="arrow">→</span></div>
       </div>
     </div>
-    <div class="tabbar"><div>홈</div><div>훈련</div><div class="on">회화</div><div>보관함</div></div>
+    <div class="tabbar"><div>학습</div><div>사전</div><div>홈</div><div class="on">회화</div><div>보관함</div></div>
   </div>
-  <div class="note">이름+속성 뱃지+2D 아바타(사용자 제작 이미지 슬롯). 탭하면 프로필+대화 시작하기. 목록 끝에 행인/10년지기 친구 등 계속. 페르소나는 데이터로 정의해 추가 쉬움.</div>
+  <div class="note">메신저(카카오톡형) 구성: 페르소나 방마다 마지막 메시지 미리보기 + 이어하기. 방 입장 = 이전 대화가 이어져 관계 서사 유지, 새 대화는 방 메뉴에서. 작문·발음도 "고정 방"으로 같은 은유에 편입. 페르소나 추가(월 1명)는 우상단.</div>
 </div>
 
 <!-- 10. 회화 대화 -->
@@ -305,7 +313,7 @@
       <div class="row"><div class="btn">말하기 (누르고 말하기)</div><div class="btn ghost" style="flex:0 0 70px">키보드</div></div>
     </div>
   </div>
-  <div class="note">상대가 먼저 말함(TTS 재생+말풍선 동시). 대사/번역 토글로 리스닝 난이도 조절. 내 발화 → 즉시 피드백 카드 → OK를 눌러야 대화 진행. 모든 말풍선 길게 눌러 즐겨찾기.</div>
+  <div class="note">대화방 내부. 상대가 먼저 말함(TTS+말풍선 동시). 대사/번역 토글, 피드백 카드 → OK 게이트, SOS 버튼. 말풍선 길게 눌러 즐겨찾기, 말풍선 속 단어 탭 → 단어 상세 팝업(화면 4 패턴).</div>
 </div>
 
 <!-- 11. 단어장 -->
@@ -334,7 +342,7 @@
         </div>
       </div>
     </div>
-    <div class="tabbar"><div>홈</div><div>훈련</div><div>회화</div><div class="on">보관함</div></div>
+    <div class="tabbar"><div>학습</div><div>사전</div><div>홈</div><div>회화</div><div class="on">보관함</div></div>
   </div>
   <div class="note">단어 탭 → 단어 상세(화면 4)로 타고타고. 문장 탭 → 사용 단어 칩 + 문법 태그. 문법 태그를 탭하면 설명 + 같은 문법의 다른 저장 문장 목록. 문법 분석은 저장 시 1회 LLM 호출 후 캐시.</div>
 </div>
@@ -414,7 +422,7 @@
       </div>
       <div class="box">CEFR 승급 기록: A2 → <b>B1</b> (5월) — 승급 세리머니: 시골쥐→서울쥐 연출</div>
     </div>
-    <div class="tabbar"><div>홈</div><div>훈련</div><div>회화</div><div class="on">보관함</div></div>
+    <div class="tabbar"><div>학습</div><div>사전</div><div>홈</div><div>회화</div><div class="on">보관함</div></div>
   </div>
   <div class="note">저공수 동기부여 3종: 성장 스테이지(이미지 5컷 교체), 뱃지 조끼(조건+그리드), 승급 세리머니(화면 1장). 뱃지 아이콘·캐릭터 컷은 사용자 제작 슬롯. 위젯 배경도 성장 스테이지 에셋 재사용(네이티브 전환 시).</div>
 </div>
@@ -461,9 +469,52 @@
       <div class="box" style="font-size:10px">수정본(정문)만 재생됩니다. 내 오류 문장은 재생되지 않아요.</div>
       <div class="box">배속 <span class="chip">1.0</span> · 반복 <span class="chip">전체 1회</span> · 백그라운드 재생 지원</div>
     </div>
-    <div class="tabbar"><div>홈</div><div class="on">훈련</div><div>회화</div><div>보관함</div></div>
+    <div class="tabbar"><div class="on">학습</div><div>사전</div><div>홈</div><div>회화</div><div>보관함</div></div>
   </div>
   <div class="note">회화·작문에서 AI가 수정해준 문장을 간격 재노출(SRS 원리)하는 보조 복습. 기본 한→영 순서 = 인출 연습 구조. 수동 소비라 잔디에는 미반영(기획서 4.11 검증 참조).</div>
+</div>
+
+
+<!-- 17. 듣기 세션 -->
+<div class="cell">
+  <h2>17. 듣기 세션 — 딕테이션 (루틴 2단계)</h2>
+  <div class="phone">
+    <div class="bar">&lt; 듣기<span class="sp"></span>진행 6/10</div>
+    <div class="scroll">
+      <div class="box center" style="padding:14px"><b>문장을 듣고 그대로 입력하세요</b><br><br><span class="chip dark">재생</span><span class="chip">x0.8</span><span class="chip">자연 속도</span></div>
+      <div class="box" style="background:#fff;">
+        <b style="font-size:14px">Could <span class="blank ok">you</span> <span class="blank"></span> <span class="blank"></span> on the project deadline?</b><br>
+        <span style="font-size:10px; color:var(--sub)">단어 수만큼 빈칸 · 막히면 해당 단어만 부분 재생</span>
+      </div>
+      <div class="kbd">q w e r t y u i o p<br>a s d f g h j k l<br>z x c v b n m ⌫<br>스페이스 · 확인</div>
+      <div class="box" style="font-size:10px">채점 후: 정답·해석 표시, 놓친 단어는 오답 노트 + SRS 복습 가점. 또박또박/자연 속도(연음) 토글로 수능 듣기와 실제 회화 속도의 간극 훈련.</div>
+    </div>
+  </div>
+  <div class="note">말해보카식 듣기 훈련을 독립 세션으로 분리(루틴: 단어카드-듣기-회화). 출제 소스는 학습한 단어의 예문 우선, 즐겨찾기 문장·회화 수정문 순.</div>
+</div>
+
+<!-- 18. 사전 탭 -->
+<div class="cell">
+  <h2>18. 사전 탭 — 탐색 · 목록 · 단어 추가</h2>
+  <div class="phone">
+    <div class="bar"><b>사전</b></div>
+    <div class="scroll">
+      <div class="box" style="background:#fff;"><b>검색: serendip...</b><br><span style="font-size:10px; color:var(--sub)">자동완성: serendipity · serendipitous</span></div>
+      <div class="box">DB에 없는 단어인가요? <span class="chip dark">"serendip" 추가하기</span><br><span style="font-size:10px">오픈 사전 조회 → 없으면 뜻·예문 자동 생성 후 내 단어로</span></div>
+      <div class="row">
+        <div class="chip dark">전체</div><div class="chip">학습 중</div><div class="chip">완료</div><div class="chip">내 단어</div>
+      </div>
+      <div class="box" style="font-size:10px">필터: <span class="chip">A1-C1</span><span class="chip">주제</span><span class="chip">어근별</span></div>
+      <div class="list">
+        <div class="li"><b>alert</b> 경계하는<span class="sp"></span><span class="tag">B1</span><span class="tag">박스 4 · 3일 뒤</span></div>
+        <div class="li"><b>alertness</b> 경계심<span class="sp"></span><span class="tag">B2</span><span class="tag">미학습</span></div>
+        <div class="li"><b>algorithm</b> 알고리즘<span class="sp"></span><span class="tag">B2</span><span class="tag">박스 2 · 오늘</span></div>
+        <div class="li"><b>alien</b> 외국의; 외계인<span class="sp"></span><span class="tag">B1</span><span class="tag">완료</span></div>
+      </div>
+    </div>
+    <div class="tabbar"><div>학습</div><div class="on">사전</div><div>홈</div><div>회화</div><div>보관함</div></div>
+  </div>
+  <div class="note">"없는 단어 추가"의 진입점 + 전체/학습 중/완료/내 단어 목록을 한 탭에서 해결. 각 행에 SRS 상태(박스 단계·다음 복습일) 표시. 행 탭 → 단어 상세 팝업(화면 4) → 타고타고. 회화 말풍선·작문에서 단어 탭해도 같은 흐름.</div>
 </div>
 
 </div>
