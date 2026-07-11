@@ -125,12 +125,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .soon .mascot{width:88px;height:88px;font-size:11px;}
 
 /* 하단 탭바 (홈 중앙) */
-.tabbar{display:flex;align-items:flex-end;justify-content:space-around;background:var(--surface);border-top:1px solid var(--line);padding:26px 8px calc(env(safe-area-inset-bottom) + 8px);position:relative;z-index:5;overflow:visible;}
+.tabbar{display:flex;align-items:flex-end;justify-content:space-around;background:var(--surface);border-top:1px solid var(--line);padding:10px 8px calc(env(safe-area-inset-bottom) + 8px);position:relative;z-index:5;overflow:visible;}
 .tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--muted);font-size:10px;font-weight:600;padding:2px 0;overflow:visible;}
 .tab.on{color:var(--accent-deep);}
 .tab .ti{width:24px;height:24px;display:flex;align-items:center;justify-content:center;}
+/* 홈: 바 위로 튀어나오는 원형 FAB. 조상 overflow가 자르지 않도록 tabbar를 overflow:visible로 두고
+   음수 마진으로 바 상단선 위로 올린다. .scroll의 뒤 형제라 스크롤 콘텐츠 위에 항상 얹혀 안 잘린다. */
 .tab.home{position:relative;}
-.tab.home .ti{width:48px;height:48px;margin-top:-30px;margin-bottom:2px;border-radius:50%;background:var(--accent);color:#fff;box-shadow:0 8px 18px rgba(107,134,255,.45);}
+.tab.home .ti{width:54px;height:54px;margin-top:-30px;margin-bottom:2px;border-radius:50%;background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(107,134,255,.5);border:4px solid var(--surface);}
 .tab.home.on{color:var(--accent-deep);}
 
 /* 바텀시트 (단어 상세) */
