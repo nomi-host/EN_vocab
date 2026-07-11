@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EN Vocab 와이어프레임 v1</title>
+<title>EN Vocab 와이어프레임 v2</title>
 <style>
   :root{
     --ink:#1c1c1e; --sub:#6e6e73; --line:#d2d2d7; --bg:#f5f5f7;
@@ -61,32 +61,34 @@
 </head>
 <body>
 
-<h1>EN Vocab — 와이어프레임 v1</h1>
-<div class="meta">2026-07-10 · 기획서(docs/PLAN.md)와 세트 · 하단 탭: 학습 / 퀴즈 / 회화 / 단어장 / 통계</div>
+<h1>EN Vocab (가칭 NoEnglish) — 와이어프레임 v2</h1>
+<div class="meta">2026-07-11 · 기획서(docs/PLAN.md)와 세트 · 하단 탭 4개: 홈 / 훈련 / 회화 / 보관함 (통계&설정은 홈 프로필로 진입) · 캐릭터 자리는 회색 슬롯으로 표기(제작: 사용자)</div>
 
 <div class="grid">
 
-<!-- 1. 홈(학습 탭) -->
+<!-- 1. 홈(루틴 허브) -->
 <div class="cell">
-  <h2>1. 홈 (학습 탭)</h2>
+  <h2>1. 홈 — 오늘의 루틴 허브</h2>
   <div class="phone">
-    <div class="bar"><b>EN VOCA</b><span class="sp"></span><span>연속 12일</span></div>
+    <div class="bar"><b>NoEnglish</b><span class="sp"></span><span class="chip">연속 12일</span><span class="chip">프로필</span></div>
     <div class="scroll">
-      <div class="box"><b>오늘의 학습</b><br>신규 20 · 복습 34 대기<br><br><span class="tag">A2 40%</span><span class="tag">B1 35%</span><span class="tag">비즈니스 25%</span></div>
-      <div class="row"><div class="btn">학습 시작</div><div class="btn ghost">이어서 (12/20)</div></div>
-      <div class="box"><b>흘려듣기</b> — 학습한 단어·예문 연속 재생<br>재생 / 배속 / 반복 설정</div>
-      <div class="box"><b>레벨 테스트</b><br>추정 어휘량 4,200개 · 상위 18% <span class="arrow">→</span></div>
-      <div class="box"><b>단어 직접 추가</b> — 검색 자동완성 + 수동 입력</div>
+      <div class="box center" style="padding:14px">
+        <span class="ava" style="width:64px;height:64px;margin:0 auto;border-radius:16px">메인 캐릭터<br>(성장 3단계)</span><br>
+        <span style="font-size:11px">팻말: "OH... ENGLISH?"</span>
+      </div>
+      <div class="sec">오늘의 루틴</div>
+      <div class="box"><b>1. 단어 20개</b> — 완료 ✓<br><span style="font-size:10px">신규 12 · 복습 8</span></div>
+      <div class="box" style="background:#fff;border:1px solid var(--ink)"><b>2. 퀴즈 10문제</b> — 6/10 진행 중<br><div class="btn" style="margin-top:6px;padding:7px">이어서 하기</div></div>
+      <div class="box"><b>3. 회화 1세션</b> — 대기<br><span style="font-size:10px">오늘의 상대: Karen (공항)</span></div>
       <div class="sec">잔디 (최근 17주)</div>
       <div class="grass">
         <i></i><i class="g1"></i><i class="g2"></i><i class="g3"></i><i class="g2"></i><i></i><i class="g1"></i><i class="g2"></i><i class="g3"></i><i class="g3"></i><i class="g1"></i><i></i><i class="g2"></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i class="g1"></i>
         <i class="g1"></i><i class="g2"></i><i></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i class="g1"></i><i></i><i class="g2"></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i></i><i class="g1"></i><i class="g2"></i><i class="g3"></i><i class="g1"></i>
-        <i class="g2"></i><i class="g3"></i><i class="g1"></i><i></i><i class="g2"></i><i class="g1"></i><i class="g3"></i><i class="g2"></i><i class="g1"></i><i></i><i class="g2"></i><i class="g3"></i><i class="g1"></i><i class="g2"></i><i></i><i class="g1"></i><i class="g2"></i>
       </div>
     </div>
-    <div class="tabbar"><div class="on">학습</div><div>퀴즈</div><div>회화</div><div>단어장</div><div>통계</div></div>
+    <div class="tabbar"><div class="on">홈</div><div>훈련</div><div>회화</div><div>보관함</div></div>
   </div>
-  <div class="note">JP 앱 홈 구조 복제. 카테고리는 CEFR(A1~C1)+주제별. 레벨 테스트 카드는 최신 추정치를 항상 노출해 동기부여.</div>
+  <div class="note">"오늘 뭘 할지"를 앱이 정해주는 루틴형 홈(듀오링고 패턴). 캐릭터+팻말이 성장 상태를 상시 노출. 통계&설정·레벨테스트·단어 추가는 프로필/훈련 탭으로 이동. 루틴 순서·분량은 설정에서 조정.</div>
 </div>
 
 <!-- 2. 학습 카드 (입력 전) -->
@@ -216,10 +218,11 @@
 
 <!-- 7. 퀴즈 -->
 <div class="cell">
-  <h2>7. 퀴즈 탭 + 문장 퀴즈</h2>
+  <h2>7. 훈련 탭 + 문장 퀴즈</h2>
   <div class="phone">
-    <div class="bar"><b>퀴즈</b><span class="sp"></span>오늘 6/10</div>
+    <div class="bar"><b>훈련</b><span class="sp"></span>오늘 6/10</div>
     <div class="scroll">
+      <div class="box" style="font-size:11px">단어 학습 · 퀴즈 · 흘려듣기 · 레벨 테스트 · 단어 직접 추가</div>
       <div class="row">
         <div class="box center"><b>단어 퀴즈</b><br><span style="font-size:10px">뜻 맞추기 · 스펠링</span></div>
         <div class="box center"><b>문장 퀴즈</b><br><span style="font-size:10px">빈칸 · 딕테이션</span></div>
@@ -233,7 +236,7 @@
       <div class="kbd">q w e r t y u i o p<br>a s d f g h j k l<br>z x c v b n m ⌫</div>
       <div class="box">출제 방식(설정): <b>빈칸 채우기</b> · <b>딕테이션</b> 기본<br>어순 배열 · 한→영 순간작문(음성) 선택</div>
     </div>
-    <div class="tabbar"><div>학습</div><div class="on">퀴즈</div><div>회화</div><div>단어장</div><div>통계</div></div>
+    <div class="tabbar"><div>홈</div><div class="on">훈련</div><div>회화</div><div>보관함</div></div>
   </div>
   <div class="note">내가 학습한 단어/문장에서만 출제. 하루 10문제 이상이면 잔디 반영(JP 앱 규칙). 오답은 오답 노트로 축적.</div>
 </div>
@@ -277,7 +280,7 @@
         <div class="li"><span class="ava">아바타</span><div><b>Sarah</b> — 영어 튜터<br><span class="tag">뉴욕 발음</span><span class="tag">친절</span></div><span class="sp"></span><span class="arrow">→</span></div>
       </div>
     </div>
-    <div class="tabbar"><div>학습</div><div>퀴즈</div><div class="on">회화</div><div>단어장</div><div>통계</div></div>
+    <div class="tabbar"><div>홈</div><div>훈련</div><div class="on">회화</div><div>보관함</div></div>
   </div>
   <div class="note">이름+속성 뱃지+2D 아바타(사용자 제작 이미지 슬롯). 탭하면 프로필+대화 시작하기. 목록 끝에 행인/10년지기 친구 등 계속. 페르소나는 데이터로 정의해 추가 쉬움.</div>
 </div>
@@ -305,9 +308,9 @@
 
 <!-- 11. 단어장 -->
 <div class="cell">
-  <h2>11. 단어장 (즐겨찾기 단어/문장)</h2>
+  <h2>11. 보관함 — 단어장 (즐겨찾기 단어/문장)</h2>
   <div class="phone">
-    <div class="bar"><b>단어장</b><span class="sp"></span><span class="chip">단어 42</span><span class="chip dark">문장 17</span></div>
+    <div class="bar"><b>보관함</b><span class="sp"></span><span class="chip">뱃지</span><span class="chip">단어 42</span><span class="chip dark">문장 17</span></div>
     <div class="scroll">
       <div class="list">
         <div class="li" style="display:block">
@@ -329,14 +332,14 @@
         </div>
       </div>
     </div>
-    <div class="tabbar"><div>학습</div><div>퀴즈</div><div>회화</div><div class="on">단어장</div><div>통계</div></div>
+    <div class="tabbar"><div>홈</div><div>훈련</div><div>회화</div><div class="on">보관함</div></div>
   </div>
   <div class="note">단어 탭 → 단어 상세(화면 4)로 타고타고. 문장 탭 → 사용 단어 칩 + 문법 태그. 문법 태그를 탭하면 설명 + 같은 문법의 다른 저장 문장 목록. 문법 분석은 저장 시 1회 LLM 호출 후 캐시.</div>
 </div>
 
 <!-- 12. 통계 & 설정 -->
 <div class="cell">
-  <h2>12. 통계 & 설정</h2>
+  <h2>12. 통계 & 설정 (홈 프로필로 진입)</h2>
   <div class="phone">
     <div class="bar"><b>통계 & 설정</b></div>
     <div class="scroll">
@@ -355,9 +358,110 @@
       <div class="box">설정: 하루 신규 단어 수 · 음성(성별/속도) · 퀴즈 출제 방식 · 대사/번역 기본값 · 데이터 백업/복원 · 오류 신고</div>
       <div class="box center" style="font-size:10px">EN VOCA v0.1.0 · 2026-07-10</div>
     </div>
-    <div class="tabbar"><div>학습</div><div>퀴즈</div><div>회화</div><div>단어장</div><div class="on">통계</div></div>
+    
   </div>
-  <div class="note">JP 앱 통계 탭 복제 + 어휘량 추이(레벨 테스트 연동) 추가. 버전 표기 규칙 동일(APP_VERSION/APP_BUILD).</div>
+  <div class="note">JP 앱 통계 탭 복제 + 어휘량 추이 추가. 탭이 아니라 홈 우상단 프로필 아이콘으로 진입. 버전 표기 규칙 동일(APP_VERSION/APP_BUILD).</div>
+</div>
+
+<!-- 13. 발음 진단 -->
+<div class="cell">
+  <h2>13. 발음 진단 (회화 탭)</h2>
+  <div class="phone">
+    <div class="bar">&lt; 발음 진단</div>
+    <div class="scroll">
+      <div class="box">첨삭받은 문장을 따라 말해보세요 <span class="tag">모범 듣기</span><span class="tag">x0.8</span></div>
+      <div class="box" style="background:#fff;">
+        <b style="font-size:14px">I'll be <u>staying</u> for five days for <b style="border-bottom:3px solid var(--sub)">sightseeing</b>.</b><br>
+        <span style="font-size:10px; color:var(--sub)">밑줄 = 낮은 정확도 단어 (탭하면 모범 발음 + 음소 상세)</span>
+      </div>
+      <div class="row">
+        <div class="box center"><span class="big">82</span><br><span style="font-size:10px">정확도</span></div>
+        <div class="box center"><span class="big">74</span><br><span style="font-size:10px">강세·억양</span></div>
+        <div class="box center"><span class="big">78</span><br><span style="font-size:10px">유창성</span></div>
+      </div>
+      <div class="box">sightseeing: <b>/ˈsaɪt.siː.ɪŋ/</b> — 강세가 뒤로 밀렸어요. 첫음절을 세게.<br><span class="chip">모범 vs 내 발음 강세 그래프</span></div>
+      <div class="sp"></div>
+      <div class="row"><div class="btn">다시 말하기</div><div class="btn ghost">다음 문장</div></div>
+    </div>
+  </div>
+  <div class="note">엔진: Azure Pronunciation Assessment (음소·단어별 정확도 + 강세/억양/리듬 점수). 학습 카드의 "말해보기", 첨삭·회화의 수정문 따라 말하기가 모두 이 화면 재사용. 강세 그래프는 Web Audio 클라이언트 시각화.</div>
+</div>
+
+<!-- 14. 캐릭터 성장 & 뱃지 -->
+<div class="cell">
+  <h2>14. 캐릭터 성장 & 뱃지 조끼 (보관함)</h2>
+  <div class="phone">
+    <div class="bar">&lt; 내 성장<span class="sp"></span><span class="chip dark">뱃지</span><span class="chip">기록</span></div>
+    <div class="scroll">
+      <div class="box center">
+        <span class="ava" style="width:56px;height:56px;margin:0 auto;border-radius:14px">유령 3단계</span><br>
+        <b>팻말: OH... ENGLISH?</b><br>
+        <span style="font-size:10px">다음 단계까지 산출 어휘 240개</span>
+        <div class="meter" style="margin-top:6px"><i style="width:64%"></i></div>
+      </div>
+      <div class="sec">뱃지 조끼 (획득 7 / 24)</div>
+      <div class="row">
+        <div class="box center" style="background:#fff"><b>7일<br>연속</b></div>
+        <div class="box center" style="background:#fff"><b>첫 회화<br>완주</b></div>
+        <div class="box center" style="background:#fff"><b>어원<br>30개</b></div>
+      </div>
+      <div class="row">
+        <div class="box center" style="background:#fff"><b>SOS 없이<br>대화</b></div>
+        <div class="box center"><span style="font-size:10px">미획득<br>(실루엣)</span></div>
+        <div class="box center"><span style="font-size:10px">미획득<br>(실루엣)</span></div>
+      </div>
+      <div class="box">CEFR 승급 기록: A2 → <b>B1</b> (5월) — 승급 세리머니: 시골쥐→서울쥐 연출</div>
+    </div>
+    <div class="tabbar"><div>홈</div><div>훈련</div><div>회화</div><div class="on">보관함</div></div>
+  </div>
+  <div class="note">저공수 동기부여 3종: 성장 스테이지(이미지 5컷 교체), 뱃지 조끼(조건+그리드), 승급 세리머니(화면 1장). 뱃지 아이콘·캐릭터 컷은 사용자 제작 슬롯. 위젯 배경도 성장 스테이지 에셋 재사용(네이티브 전환 시).</div>
+</div>
+
+<!-- 15. 사용자 페르소나 추가 -->
+<div class="cell">
+  <h2>15. 사용자 페르소나 추가 (회화 탭)</h2>
+  <div class="phone">
+    <div class="bar">&lt; 페르소나 만들기<span class="sp"></span><span class="tag">이번 달 1/1</span></div>
+    <div class="scroll">
+      <div class="box">프로필 이미지 — 기본 캐릭터에서 선택<br>
+        <span class="chip dark">두더지</span><span class="chip">길고양이</span><span class="chip">나무늘보</span><span class="chip">시골쥐</span>
+      </div>
+      <div class="box">이름: <b>Mia</b></div>
+      <div class="box">관계/역할: <b>요가 학원 강사</b></div>
+      <div class="box">성격 (선택): <b>수다스러움 · 격려형</b></div>
+      <div class="box">억양(보이스): <span class="chip dark">미국</span><span class="chip">영국</span><span class="chip">호주</span> · 속도 <span class="chip">보통</span></div>
+      <div class="box">상황: <b>수업 전후 스몰토크</b></div>
+      <div class="sp"></div>
+      <div class="box" style="font-size:10px">월 1명 생성 가능. 교체하려면 기존 페르소나를 삭제해야 하며, 대화 기록은 즐겨찾기한 문장만 보관함에 남습니다.</div>
+      <div class="btn">만들기</div>
+    </div>
+  </div>
+  <div class="note">모든 입력은 정형 필드(선택지 중심) — 자유 텍스트를 시스템 프롬프트에 직접 넣지 않아 인젝션·품질 문제 방지. 슬롯 1개 제한으로 LLM 비용·페르소나 남발 통제.</div>
+</div>
+
+<!-- 16. 흘려듣기 — 내 대화 복습 -->
+<div class="cell">
+  <h2>16. 흘려듣기 — 내 대화 복습 (훈련 탭)</h2>
+  <div class="phone">
+    <div class="bar">&lt; 흘려듣기</div>
+    <div class="scroll">
+      <div class="box">소스 선택: <span class="chip">학습 단어·예문</span><span class="chip dark">내 대화 (수정본)</span><span class="chip">즐겨찾기 문장</span></div>
+      <div class="box">순서: <span class="chip dark">한국어 → 영어</span><span class="chip">영어 → 한국어</span><br><span style="font-size:10px">한→영: 한국어 듣고 속으로 영작 → 2.5초 후 정답 재생 (인출 연습)</span></div>
+      <div class="box center" style="background:#fff; padding:16px;">
+        <span style="font-size:11px">지금 재생 중 (Karen과의 대화, 7월 9일)</span><br><br>
+        <b>"여기요."</b><br>
+        <span style="color:var(--sub)">··· 2.5초 ···</span><br>
+        <b>"Here you go."</b>
+      </div>
+      <div class="row">
+        <div class="box center">이전</div><div class="box center"><b>일시정지</b></div><div class="box center">다음</div>
+      </div>
+      <div class="box" style="font-size:10px">수정본(정문)만 재생됩니다. 내 오류 문장은 재생되지 않아요.</div>
+      <div class="box">배속 <span class="chip">1.0</span> · 반복 <span class="chip">전체 1회</span> · 백그라운드 재생 지원</div>
+    </div>
+    <div class="tabbar"><div>홈</div><div class="on">훈련</div><div>회화</div><div>보관함</div></div>
+  </div>
+  <div class="note">회화·작문에서 AI가 수정해준 문장을 간격 재노출(SRS 원리)하는 보조 복습. 기본 한→영 순서 = 인출 연습 구조. 수동 소비라 잔디에는 미반영(기획서 4.11 검증 참조).</div>
 </div>
 
 </div>
