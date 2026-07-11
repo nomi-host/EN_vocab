@@ -1,6 +1,6 @@
 /* ============================================================================
    EN Vocab — 시드 데이터 (pipeline/merge_cefrj.js 자동 생성)
-   생성: 2026-07-11 · 표제어 1040개 (CEFR-J 전체 후보 1058개 중 작성 완료분)
+   생성: 2026-07-11 · 표제어 1058개 (CEFR-J 전체 후보 1058개 중 작성 완료분)
    ----------------------------------------------------------------------------
    표제어/CEFR/품사 = CEFR-J Wordlist(Tono Lab, TUFS — 연구·상업 무료, 출처 표시 조건)
    영영 정의(en)/유의어(syn) = WordNet 3.0(Princeton, 오프라인 추출)
@@ -22643,6 +22643,384 @@ window.SEED = [
    {
     "en": "She wants to travel the world.",
     "ko": "그녀는 세계를 여행하고 싶어해요."
+   }
+  ]
+ },
+ {
+  "word": "worry",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "걱정하다",
+  "en": "something or someone that causes anxiety",
+  "syn": [
+   "concern",
+   "headache",
+   "vexation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Don't worry about the exam.",
+    "ko": "시험에 대해 걱정하지 마세요."
+   }
+  ]
+ },
+ {
+  "word": "would",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A1",
+  "ko": "~할 것이다 (조동사)",
+  "en": "used to express what someone would do in a hypothetical situation, or a polite request",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Would you like some coffee?",
+    "ko": "커피 좀 드시겠어요?"
+   }
+  ]
+ },
+ {
+  "word": "write",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "쓰다",
+  "en": "produce a literary work",
+  "syn": [
+   "compose",
+   "pen",
+   "indite"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I write in my diary every day.",
+    "ko": "저는 매일 일기를 써요."
+   }
+  ]
+ },
+ {
+  "word": "writer",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "작가",
+  "en": "writes (books or stories or articles or the like) professionally (for pay)",
+  "syn": [
+   "author"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a famous writer.",
+    "ko": "그녀는 유명한 작가예요."
+   }
+  ]
+ },
+ {
+  "word": "wrong",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "틀린, 잘못된",
+  "en": "not correct",
+  "syn": [
+   "incorrect"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That answer is wrong.",
+    "ko": "그 답은 틀렸어요."
+   }
+  ]
+ },
+ {
+  "word": "yard",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "마당, 뜰",
+  "en": "a piece of ground next to a house",
+  "syn": [
+   "pace"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The kids are playing in the yard.",
+    "ko": "아이들이 마당에서 놀고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "year",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "년, 해",
+  "en": "a period of time containing 365 (or 366) days",
+  "syn": [
+   "twelvemonth",
+   "yr"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I have lived here for one year.",
+    "ko": "저는 여기서 1년 동안 살았어요."
+   }
+  ]
+ },
+ {
+  "word": "yellow",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "노란색, 노란",
+  "en": "yellow color or pigment",
+  "syn": [
+   "yellowness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She likes yellow flowers.",
+    "ko": "그녀는 노란 꽃을 좋아해요."
+   }
+  ]
+ },
+ {
+  "word": "yes",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A1",
+  "ko": "네, 예",
+  "en": "an affirmative",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Yes, I would love to come.",
+    "ko": "네, 꼭 가고 싶어요."
+   }
+  ]
+ },
+ {
+  "word": "yesterday",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A1",
+  "ko": "어제",
+  "en": "on the day preceding today",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I met her yesterday.",
+    "ko": "저는 어제 그녀를 만났어요."
+   }
+  ]
+ },
+ {
+  "word": "yet",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A1",
+  "ko": "아직",
+  "en": "up to the present time",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I haven't finished my homework yet.",
+    "ko": "저는 아직 숙제를 끝내지 못했어요."
+   }
+  ]
+ },
+ {
+  "word": "yogurt",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "요거트",
+  "en": "a custard-like food made from curdled milk",
+  "syn": [
+   "yoghurt",
+   "yoghourt"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I eat yogurt for breakfast.",
+    "ko": "저는 아침으로 요거트를 먹어요."
+   }
+  ]
+ },
+ {
+  "word": "you",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A1",
+  "ko": "당신, 너",
+  "en": "the person being addressed",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "How are you today?",
+    "ko": "오늘 어떻게 지내요?"
+   }
+  ]
+ },
+ {
+  "word": "young",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "어린, 젊은",
+  "en": "(used of living things especially persons) in an early period of life or development or growth",
+  "syn": [
+   "immature"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He looks very young.",
+    "ko": "그는 아주 젊어 보여요."
+   }
+  ]
+ },
+ {
+  "word": "your",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A1",
+  "ko": "당신의",
+  "en": "belonging to you",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Is this your bag?",
+    "ko": "이거 당신 가방이에요?"
+   }
+  ]
+ },
+ {
+  "word": "yours",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A1",
+  "ko": "당신의 것",
+  "en": "the one belonging to you",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This pen is yours.",
+    "ko": "이 펜은 당신 거예요."
+   }
+  ]
+ },
+ {
+  "word": "yourself",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A1",
+  "ko": "당신 자신",
+  "en": "you and nobody else",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Take care of yourself.",
+    "ko": "몸조심하세요."
+   }
+  ]
+ },
+ {
+  "word": "zoo",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "동물원",
+  "en": "the facility where wild animals are housed for exhibition",
+  "syn": [
+   "menagerie",
+   "zoological_garden"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We went to the zoo on Sunday.",
+    "ko": "우리는 일요일에 동물원에 갔어요."
    }
   ]
  }
