@@ -45,7 +45,7 @@ function enrich(hw) {
       // 영영 정의: 큐레이션 오버라이드(hw.en)가 있으면 우선(WordNet 첫 뜻이 다의어에서
       // 엉뚱한 의미를 고르는 경우 교정). 없으면 WordNet 첫 synset의 def.
       const en = (hw.en && hw.en.trim()) || (results.length ? results[0].def.trim() : "");
-      resolve({
+      const out = {
         word: hw.word,
         ipa: hw.ipa || "",
         pos: pos.length ? pos : (hw.pos || []),
@@ -58,7 +58,12 @@ function enrich(hw) {
         roots: hw.roots || [],
         ex: hw.ex || [],
         _wnHits: results.length,
-      });
+      };
+      // 다의어: senses가 큐레이션되어 있으면 그대로 통과.
+      // (확장 시 WordNet synset들이 의미 후보를 기계 제공 — 과분할이라 상위 빈도 의미로
+      //  병합·선별하는 규칙 + 한국어 뜻/맥락 큐는 오픈사전·LLM 갭필. PLAN.md 2.4 참조)
+      if (hw.senses && hw.senses.length) out.senses = hw.senses;
+      resolve(out);
     });
   });
 }

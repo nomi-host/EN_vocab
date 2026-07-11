@@ -1,6 +1,6 @@
 /* ============================================================================
    EN Vocab — 시드 데이터 (pipeline/build_seed.js 자동 생성)
-   생성: 2026-07-11 · 표제어 29개
+   생성: 2026-07-11 · 표제어 30개
    ----------------------------------------------------------------------------
    한국어 뜻/CEFR/예문/유의어망 = 큐레이션(pipeline/headwords.json)
    영영 정의(en)/품사(pos)     = WordNet(Princeton, 오프라인 추출)
@@ -472,6 +472,34 @@ window.SEED = [
         "en": "They deliver the package within two days.",
         "ko": "그들은 소포를 이틀 안에 배달한다."
       }
+    ],
+    "senses": [
+      {
+        "cue": "물건·음식을",
+        "ko": "배달하다, 전달하다",
+        "pos": "동사",
+        "lv": 5,
+        "en": "take goods, letters, or food to the person they are addressed to",
+        "ex": [
+          {
+            "en": "They deliver the package within two days.",
+            "ko": "그들은 소포를 이틀 안에 배달한다."
+          }
+        ]
+      },
+      {
+        "cue": "연설·강연을",
+        "ko": "(연설을) 하다",
+        "pos": "동사",
+        "lv": 9,
+        "en": "give a speech or talk in public",
+        "ex": [
+          {
+            "en": "She delivered a great speech at the conference.",
+            "ko": "그녀는 컨퍼런스에서 훌륭한 연설을 했다."
+          }
+        ]
+      }
     ]
   },
   {
@@ -851,7 +879,7 @@ window.SEED = [
     ],
     "cefr": "A2",
     "ko": "가능한",
-    "en": "capable of happening or existing",
+    "en": "something that can be done",
     "syn": [
       "feasible",
       "achievable"
@@ -997,6 +1025,122 @@ window.SEED = [
       {
         "en": "I booked the hotel on a friend's recommendation.",
         "ko": "친구 추천으로 그 호텔을 예약했다."
+      }
+    ]
+  },
+  {
+    "word": "save",
+    "ipa": "/seɪv/",
+    "pos": [
+      "noun",
+      "verb"
+    ],
+    "cefr": "A1",
+    "ko": "구하다; 아끼다; 저장하다; 모으다",
+    "en": "keep safe or rescue from harm; avoid wasting; store",
+    "syn": [
+      "rescue",
+      "preserve"
+    ],
+    "ant": [
+      "waste",
+      "spend"
+    ],
+    "forms": [
+      {
+        "word": "saving",
+        "pos": "noun"
+      },
+      {
+        "word": "safe",
+        "pos": "adj"
+      }
+    ],
+    "roots": [],
+    "ex": [
+      {
+        "en": "Firefighters saved a child from the burning house.",
+        "ko": "소방관들이 불타는 집에서 아이를 구했다."
+      }
+    ],
+    "senses": [
+      {
+        "cue": "위험으로부터",
+        "ko": "구하다",
+        "pos": "동사",
+        "lv": 4,
+        "en": "keep safe or rescue (someone or something) from harm or danger",
+        "ex": [
+          {
+            "en": "Firefighters saved a child from the burning house.",
+            "ko": "소방관들이 불타는 집에서 아이를 구했다."
+          }
+        ]
+      },
+      {
+        "cue": "나중에 쓰려고",
+        "ko": "남겨 두다, 아끼다",
+        "pos": "동사",
+        "lv": 6,
+        "en": "keep something so that you can use it later",
+        "ex": [
+          {
+            "en": "Save some pizza for your brother.",
+            "ko": "동생 몫으로 피자 좀 남겨 둬."
+          }
+        ]
+      },
+      {
+        "cue": "낭비하지 않고",
+        "ko": "아끼다, 절약하다",
+        "pos": "동사",
+        "lv": 6,
+        "en": "avoid wasting something such as time or money",
+        "ex": [
+          {
+            "en": "Taking the subway saves time and money.",
+            "ko": "지하철을 타면 시간과 돈이 절약된다."
+          }
+        ]
+      },
+      {
+        "cue": "컴퓨터에서 자료를",
+        "ko": "저장하다",
+        "pos": "동사",
+        "lv": 9,
+        "en": "make a computer keep the work that you have done on it",
+        "ex": [
+          {
+            "en": "Don't forget to save the file before closing.",
+            "ko": "닫기 전에 파일 저장하는 것 잊지 마."
+          }
+        ]
+      },
+      {
+        "cue": "돈을",
+        "ko": "모으다, 저축하다",
+        "pos": "동사",
+        "lv": 12,
+        "en": "keep money so that you can use it later, especially by adding to it over time",
+        "ex": [
+          {
+            "en": "I'm saving up for a trip to London.",
+            "ko": "런던 여행 가려고 돈을 모으고 있어."
+          }
+        ]
+      },
+      {
+        "cue": "비용·수고 등을",
+        "ko": "덜어주다, 절약하게 해 주다",
+        "pos": "동사",
+        "lv": 13,
+        "en": "make it unnecessary for someone to use money, time, or effort",
+        "ex": [
+          {
+            "en": "Online check-in saves you a lot of hassle.",
+            "ko": "온라인 체크인은 수고를 크게 덜어준다."
+          }
+        ]
       }
     ]
   },

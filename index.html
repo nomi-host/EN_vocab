@@ -197,6 +197,19 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .wd-ex .en em{font-style:normal;color:var(--accent-deep);}
 .wd-ex .ko{font-size:12px;color:var(--muted);margin-top:5px;}
 .wd-ex + .wd-ex{margin-top:8px;}
+
+/* 다의어: 의미(sense) 카드 리스트 */
+.sense{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:13px 15px;transition:border-color .12s;}
+.sense + .sense{margin-top:8px;}
+.sense.open{background:var(--surface);border:1.5px solid var(--accent);box-shadow:var(--shadow);}
+.s-head{display:flex;align-items:flex-start;gap:8px;}
+.s-cue{font-size:12px;color:var(--muted);}
+.s-ko{font-size:16px;font-weight:800;margin-top:1px;letter-spacing:-0.2px;}
+.s-meta{margin-left:auto;display:flex;gap:4px;flex:none;align-items:center;}
+.s-en{font-size:13px;color:var(--ink-2);font-style:italic;line-height:1.5;margin-top:9px;}
+.sense .wd-ex{margin-top:9px;background:var(--fill);}
+.s-add{display:block;width:100%;margin-top:10px;text-align:center;background:var(--accent-soft);color:var(--accent-deep);font-weight:700;font-size:13px;padding:9px;border-radius:11px;}
+
 .ext{display:flex;flex-wrap:wrap;gap:7px;}
 .ext a{font-size:12px;font-weight:600;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:6px 12px;text-decoration:none;}
 .empty-note{font-size:12px;color:var(--muted);}
@@ -370,6 +383,8 @@ function Home({ onGoTab }) {
 function WordSheet({ stack, onPush, onPop, onClose }) {
   const word = stack[stack.length - 1];
   const w = wordOf(word);
+  const [senseOpen, setSenseOpen] = useState(0); // 다의어: 첫 의미 펼침
+  useEffect(() => { setSenseOpen(0); }, [word]);
   const speak = useCallback((text) => {
     try {
       const u = new SpeechSynthesisUtterance(text);
@@ -410,20 +425,54 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
             </div>
             <div className="wd-pos" style={{ marginTop: 6 }}>
               <span className="tag lv" style={{ marginRight: 6 }}>{w.cefr}</span>
-              {w.ko}
+              {w.senses && w.senses.length ? <span className="tag">뜻 {w.senses.length}개</span> : w.ko}
             </div>
-            <div className="wd-en" style={{ marginTop: 4 }}>{w.en}</div>
+            {!(w.senses && w.senses.length) && <div className="wd-en" style={{ marginTop: 4 }}>{w.en}</div>}
           </div>
 
-          <div className="wd-ex-wrap">
-            <div className="wd-sec-t">예문</div>
-            {w.ex.map((e, i) => (
-              <div className="wd-ex" key={i} onClick={() => speak(e.en)}>
-                <div className="en">{e.en}</div>
-                <div className="ko">{e.ko}</div>
-              </div>
-            ))}
-          </div>
+          {w.senses && w.senses.length ? (
+            /* 다의어: 의미별 카드 — 뜻마다 별도 예문·별도 학습 단위 */
+            <div>
+              <div className="wd-sec-t">의미별로 학습해요 (탭해서 펼치기)</div>
+              {w.senses.map((s, i) => (
+                <div key={i} className={"sense" + (senseOpen === i ? " open" : "")}
+                     onClick={() => setSenseOpen(senseOpen === i ? -1 : i)}>
+                  <div className="s-head">
+                    <div>
+                      <div className="s-cue">{s.cue}</div>
+                      <div className="s-ko">{s.ko}</div>
+                    </div>
+                    <div className="s-meta">
+                      <span className="tag">{s.pos}</span>
+                      <span className="tag lv">레벨 {s.lv}</span>
+                    </div>
+                  </div>
+                  {senseOpen === i && (
+                    <React.Fragment>
+                      <div className="s-en">{s.en}</div>
+                      {(s.ex || []).map((e, j) => (
+                        <div className="wd-ex" key={j} onClick={ev => { ev.stopPropagation(); speak(e.en); }}>
+                          <div className="en">{e.en}</div>
+                          <div className="ko">{e.ko}</div>
+                        </div>
+                      ))}
+                      <button className="s-add" onClick={ev => ev.stopPropagation()}>+ 이 의미를 학습에 추가</button>
+                    </React.Fragment>
+                  )}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className="wd-ex-wrap">
+              <div className="wd-sec-t">예문</div>
+              {w.ex.map((e, i) => (
+                <div className="wd-ex" key={i} onClick={() => speak(e.en)}>
+                  <div className="en">{e.en}</div>
+                  <div className="ko">{e.ko}</div>
+                </div>
+              ))}
+            </div>
+          )}
 
           {(w.syn.length > 0 || w.ant.length > 0) && (
             <div>
@@ -481,14 +530,16 @@ const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1"];
 
 function WordRow({ w, onOpen }) {
   const st = LEARN_STATE[w.word];
+  const multi = w.senses && w.senses.length > 1;
   return (
     <div className="wrow" onClick={() => onOpen(w.word)}>
       <div>
         <div className="w">{w.word}</div>
-        <div className="k">{w.ko}</div>
+        <div className="k">{multi ? w.senses[0].ko + " 외 " + (w.senses.length - 1) + "개 뜻" : w.ko}</div>
       </div>
       <div className="meta">
         <span className="tag lv">{w.cefr}</span>
+        {multi && <span className="tag">뜻 {w.senses.length}</span>}
         {w.mine && <span className="tag">내 단어</span>}
         {st?.status === "done" && <span className="tag done">완료</span>}
         {st?.status === "learning" && <span className="tag learning">박스 {st.box} · {st.dueIn === 0 ? "오늘" : st.dueIn + "일 뒤"}</span>}
