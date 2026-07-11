@@ -11,7 +11,8 @@
    "ooze_out",
    "ooze"
   ],
-  "exp": "exude sweat through the pores"
+  "exp": "exude sweat through the pores",
+  "cefr": "C2"
  },
  {
   "word": "envisage",
@@ -24,7 +25,8 @@
    "conceive_of",
    "ideate"
   ],
-  "exp": "Can you conceive of him as the president?"
+  "exp": "Can you conceive of him as the president?",
+  "cefr": "C2"
  },
  {
   "word": "headmistress",
@@ -33,7 +35,8 @@
   ],
   "en": "a woman headmaster",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "mien",
@@ -46,7 +49,8 @@
    "comportment",
    "presence"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "timidity",
@@ -58,7 +62,8 @@
    "timidness",
    "timorousness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "unravel",
@@ -72,7 +77,8 @@
    "untangle",
    "unpick"
   ],
-  "exp": "unravel the thread"
+  "exp": "unravel the thread",
+  "cefr": "C2"
  },
  {
   "word": "concurrence",
@@ -83,7 +89,8 @@
   "syn": [
    "concurrency"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "unpromising",
@@ -92,7 +99,8 @@
   ],
   "en": "unlikely to bring about favorable results or enjoyment",
   "syn": [],
-  "exp": "faced an unpromising task"
+  "exp": "faced an unpromising task",
+  "cefr": "C2"
  },
  {
   "word": "teem",
@@ -104,7 +112,8 @@
    "pullulate",
    "swarm"
   ],
-  "exp": "The garden was swarming with bees"
+  "exp": "The garden was swarming with bees",
+  "cefr": "C2"
  },
  {
   "word": "marvel",
@@ -115,7 +124,8 @@
   "syn": [
    "wonder"
   ],
-  "exp": "the wonders of modern science"
+  "exp": "the wonders of modern science",
+  "cefr": "C2"
  },
  {
   "word": "outpatient",
@@ -124,7 +134,8 @@
   ],
   "en": "a patient who does not reside in the hospital where he is being treated",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "corpse",
@@ -138,7 +149,8 @@
    "clay",
    "remains"
   ],
-  "exp": "the cadaver was intended for dissection"
+  "exp": "the cadaver was intended for dissection",
+  "cefr": "C2"
  },
  {
   "word": "apprentice",
@@ -147,7 +159,8 @@
   ],
   "en": "be or work as an apprentice",
   "syn": [],
-  "exp": "She apprenticed with the great master"
+  "exp": "She apprenticed with the great master",
+  "cefr": "C2"
  },
  {
   "word": "constrained",
@@ -159,7 +172,8 @@
    "forced",
    "strained"
   ],
-  "exp": "not natural"
+  "exp": "not natural",
+  "cefr": "C2"
  },
  {
   "word": "quirk",
@@ -168,7 +182,8 @@
   ],
   "en": "twist or curve abruptly",
   "syn": [],
-  "exp": "She quirked her head in a peculiar way"
+  "exp": "She quirked her head in a peculiar way",
+  "cefr": "C2"
  },
  {
   "word": "indignant",
@@ -181,7 +196,8 @@
    "outraged",
    "umbrageous"
   ],
-  "exp": "incensed at the judges' unfairness"
+  "exp": "incensed at the judges' unfairness",
+  "cefr": "C2"
  },
  {
   "word": "indignantly",
@@ -190,7 +206,8 @@
   ],
   "en": "in an indignant manner",
   "syn": [],
-  "exp": "Miss Burney protested indignantly, her long thin nose turning pink with mortification at this irreverent piece of mimicry"
+  "exp": "Miss Burney protested indignantly, her long thin nose turning pink with mortification at this irreverent piece of mimicry",
+  "cefr": "C2"
  },
  {
   "word": "eccentricity",
@@ -199,7 +216,8 @@
   ],
   "en": "strange and unconventional behavior",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "locomotive",
@@ -212,7 +230,8 @@
    "locomotive_engine",
    "railway_locomotive"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "locomotion",
@@ -224,7 +243,8 @@
    "motive_power",
    "motivity"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "individualism",
@@ -236,7 +256,8 @@
    "individuality",
    "individuation"
   ],
-  "exp": "so absorbed by the movement that she lost all sense of individuality"
+  "exp": "so absorbed by the movement that she lost all sense of individuality",
+  "cefr": "C2"
  },
  {
   "word": "enthuse",
@@ -245,7 +266,8 @@
   ],
   "en": "cause to feel enthusiasm",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "belligerent",
@@ -256,7 +278,8 @@
   "syn": [
    "aggressive"
   ],
-  "exp": "aggressive acts against another country"
+  "exp": "aggressive acts against another country",
+  "cefr": "C2"
  },
  {
   "word": "belligerence",
@@ -267,7 +290,8 @@
   "syn": [
    "belligerency"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "stoicism",
@@ -279,7 +303,8 @@
    "stolidity",
    "stolidness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "deliberate",
@@ -293,7 +318,8 @@
    "moot",
    "turn_over"
   ],
-  "exp": "They considered the possibility of a strike"
+  "exp": "They considered the possibility of a strike",
+  "cefr": "C2"
  },
  {
   "word": "recluse",
@@ -307,7 +333,8 @@
    "solitudinarian",
    "troglodyte"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "reclusive",
@@ -319,7 +346,8 @@
    "recluse",
    "withdrawn"
   ],
-  "exp": "lived an unsocial reclusive life"
+  "exp": "lived an unsocial reclusive life",
+  "cefr": "C2"
  },
  {
   "word": "metalled",
@@ -328,7 +356,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "brief",
@@ -339,7 +368,8 @@
   "syn": [
    "legal_brief"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "oblique",
@@ -348,7 +378,8 @@
   ],
   "en": "slanting or inclined in direction or course or position--neither parallel nor perpendicular nor right-angled",
   "syn": [],
-  "exp": "the oblique rays of the winter sun"
+  "exp": "the oblique rays of the winter sun",
+  "cefr": "C2"
  },
  {
   "word": "facsimile",
@@ -359,7 +390,8 @@
   "syn": [
    "autotype"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "shamble",
@@ -371,7 +403,8 @@
    "shuffle",
    "scuffle"
   ],
-  "exp": "he shuffled out of the room"
+  "exp": "he shuffled out of the room",
+  "cefr": "C2"
  },
  {
   "word": "whir",
@@ -385,7 +418,8 @@
    "whirr",
    "birr"
   ],
-  "exp": "the car engine purred"
+  "exp": "the car engine purred",
+  "cefr": "C2"
  },
  {
   "word": "blight",
@@ -397,7 +431,8 @@
   "syn": [
    "plague"
   ],
-  "exp": "Too much rain may blight the garden with mold"
+  "exp": "Too much rain may blight the garden with mold",
+  "cefr": "C2"
  },
  {
   "word": "puritanical",
@@ -406,7 +441,8 @@
   ],
   "en": "of or relating to Puritans or Puritanism",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "brood",
@@ -416,7 +452,8 @@
   ],
   "en": "the young of an animal cared for at one time",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "disdainful",
@@ -429,7 +466,8 @@
    "insulting",
    "scornful"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "zoologist",
@@ -440,7 +478,8 @@
   "syn": [
    "animal_scientist"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "zoology",
@@ -451,7 +490,8 @@
   "syn": [
    "fauna"
   ],
-  "exp": "the fauna of China"
+  "exp": "the fauna of China",
+  "cefr": "C2"
  },
  {
   "word": "encumbrance",
@@ -465,7 +505,8 @@
    "incumbrance",
    "onus"
   ],
-  "exp": "the burden of responsibility"
+  "exp": "the burden of responsibility",
+  "cefr": "C2"
  },
  {
   "word": "encumber",
@@ -477,7 +518,8 @@
    "restrain",
    "cumber"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "hypothesis",
@@ -486,7 +528,8 @@
   ],
   "en": "a proposal intended to explain certain facts or observations",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "hypothesize",
@@ -500,7 +543,8 @@
    "theorise",
    "conjecture"
   ],
-  "exp": "Scientists supposed that large dinosaurs lived in swamps"
+  "exp": "Scientists supposed that large dinosaurs lived in swamps",
+  "cefr": "C2"
  },
  {
   "word": "hypothetical",
@@ -514,7 +558,8 @@
    "hypothetic",
    "supposed"
   ],
-  "exp": "theories about the extinction of dinosaurs are still highly conjectural"
+  "exp": "theories about the extinction of dinosaurs are still highly conjectural",
+  "cefr": "C2"
  },
  {
   "word": "parasitic",
@@ -525,7 +570,8 @@
   "syn": [
    "parasitical"
   ],
-  "exp": "parasitic infection"
+  "exp": "parasitic infection",
+  "cefr": "C2"
  },
  {
   "word": "plumage",
@@ -537,7 +583,8 @@
    "feather",
    "plume"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "utilitarian",
@@ -548,7 +595,8 @@
   "syn": [
    "useful"
   ],
-  "exp": "utilitarian steel tables"
+  "exp": "utilitarian steel tables",
+  "cefr": "C2"
  },
  {
   "word": "utilize",
@@ -562,7 +610,8 @@
    "apply",
    "employ"
   ],
-  "exp": "make work or employ for a particular purpose or for its inherent or natural purpose"
+  "exp": "make work or employ for a particular purpose or for its inherent or natural purpose",
+  "cefr": "C2"
  },
  {
   "word": "utility",
@@ -575,7 +624,8 @@
    "public_utility_company",
    "public-service_corporation"
   ],
-  "exp": "subject to government regulation"
+  "exp": "subject to government regulation",
+  "cefr": "C2"
  },
  {
   "word": "predilection",
@@ -587,7 +637,8 @@
    "preference",
    "orientation"
   ],
-  "exp": "a predilection for expensive cars"
+  "exp": "a predilection for expensive cars",
+  "cefr": "C2"
  },
  {
   "word": "commensurate",
@@ -596,7 +647,8 @@
   ],
   "en": "corresponding in size or degree or extent",
   "syn": [],
-  "exp": "pay should be commensurate with the time worked"
+  "exp": "pay should be commensurate with the time worked",
+  "cefr": "C2"
  },
  {
   "word": "commensurately",
@@ -605,7 +657,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "vindicate",
@@ -616,7 +669,8 @@
   "syn": [
    "justify"
   ],
-  "exp": "vindicate a claim"
+  "exp": "vindicate a claim",
+  "cefr": "C2"
  },
  {
   "word": "vindication",
@@ -627,7 +681,8 @@
   "syn": [
    "exoneration"
   ],
-  "exp": "friends provided a vindication of his position"
+  "exp": "friends provided a vindication of his position",
+  "cefr": "C2"
  },
  {
   "word": "parable",
@@ -640,7 +695,8 @@
    "allegory",
    "apologue"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "poise",
@@ -649,7 +705,8 @@
   ],
   "en": "be motionless, in suspension",
   "syn": [],
-  "exp": "The bird poised for a few moments before it attacked"
+  "exp": "The bird poised for a few moments before it attacked",
+  "cefr": "C2"
  },
  {
   "word": "minster",
@@ -658,7 +715,8 @@
   ],
   "en": "any of certain cathedrals and large churches",
   "syn": [],
-  "exp": "originally connected to a monastery"
+  "exp": "originally connected to a monastery",
+  "cefr": "C2"
  },
  {
   "word": "wrack",
@@ -670,7 +728,8 @@
    "bust_up",
    "wreck"
   ],
-  "exp": "The kid busted up the car"
+  "exp": "The kid busted up the car",
+  "cefr": "C2"
  },
  {
   "word": "ironic",
@@ -683,7 +742,8 @@
    "ironical",
    "wry"
   ],
-  "exp": "an ironic remark often conveys an intended meaning obliquely"
+  "exp": "an ironic remark often conveys an intended meaning obliquely",
+  "cefr": "C2"
  },
  {
   "word": "predecessor",
@@ -692,7 +752,8 @@
   ],
   "en": "one who precedes you in time (as in holding a position or office)",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "ally",
@@ -701,7 +762,8 @@
   ],
   "en": "become an ally or associate, as by a treaty or marriage",
   "syn": [],
-  "exp": "He allied himself with the Communists"
+  "exp": "He allied himself with the Communists",
+  "cefr": "C2"
  },
  {
   "word": "callous",
@@ -713,7 +775,8 @@
    "indurate",
    "pachydermatous"
   ],
-  "exp": "a callous indifference to suffering"
+  "exp": "a callous indifference to suffering",
+  "cefr": "C2"
  },
  {
   "word": "callously",
@@ -724,7 +787,8 @@
   "syn": [
    "unfeelingly"
   ],
-  "exp": "he callously exploited their feelings"
+  "exp": "he callously exploited their feelings",
+  "cefr": "C2"
  },
  {
   "word": "derelict",
@@ -734,7 +798,8 @@
   ],
   "en": "a person without a home, job, or property",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "materialism",
@@ -745,7 +810,8 @@
   "syn": [
    "philistinism"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "materialistic",
@@ -757,7 +823,8 @@
    "mercenary",
    "worldly-minded"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "ferocity",
@@ -771,7 +838,8 @@
    "fury",
    "vehemence"
   ],
-  "exp": "the storm's violence"
+  "exp": "the storm's violence",
+  "cefr": "C2"
  },
  {
   "word": "utter",
@@ -786,7 +854,8 @@
    "consummate(a)",
    "double-dyed(a)"
   ],
-  "exp": "used informally as (often pejorative) intensifiers"
+  "exp": "used informally as (often pejorative) intensifiers",
+  "cefr": "C2"
  },
  {
   "word": "evokingly",
@@ -795,7 +864,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "recitation",
@@ -804,7 +874,8 @@
   ],
   "en": "written matter that is recited from memory",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "equable",
@@ -813,7 +884,8 @@
   ],
   "en": "not varying",
   "syn": [],
-  "exp": "an equable climate"
+  "exp": "an equable climate",
+  "cefr": "C2"
  },
  {
   "word": "extant",
@@ -822,7 +894,8 @@
   ],
   "en": "still in existence",
   "syn": [],
-  "exp": "not extinct or destroyed or lost"
+  "exp": "not extinct or destroyed or lost",
+  "cefr": "C2"
  },
  {
   "word": "denounce",
@@ -831,7 +904,8 @@
   ],
   "en": "speak out against",
   "syn": [],
-  "exp": "He denounced the Nazis"
+  "exp": "He denounced the Nazis",
+  "cefr": "C2"
  },
  {
   "word": "denunciation",
@@ -842,7 +916,8 @@
   "syn": [
    "denouncement"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "echo",
@@ -854,7 +929,8 @@
   "syn": [
    "repeat"
   ],
-  "exp": "followers echoing the cries of their leaders"
+  "exp": "followers echoing the cries of their leaders",
+  "cefr": "C2"
  },
  {
   "word": "requisition",
@@ -863,7 +939,8 @@
   ],
   "en": "the act of requiring",
   "syn": [],
-  "exp": "an authoritative request or demand, especially by a military or public authority that takes something over (usually temporarily) for military or public use"
+  "exp": "an authoritative request or demand, especially by a military or public authority that takes something over (usually temporarily) for military or public use",
+  "cefr": "C2"
  },
  {
   "word": "substantiate",
@@ -877,7 +954,8 @@
    "sustain",
    "support"
   ],
-  "exp": "his story confirmed my doubts"
+  "exp": "his story confirmed my doubts",
+  "cefr": "C2"
  },
  {
   "word": "inscrutable",
@@ -891,7 +969,8 @@
    "deep",
    "mysterious"
   ],
-  "exp": "the new insurance policy is written without cryptic or mysterious terms"
+  "exp": "the new insurance policy is written without cryptic or mysterious terms",
+  "cefr": "C2"
  },
  {
   "word": "stratosphere",
@@ -900,7 +979,8 @@
   ],
   "en": "the atmospheric layer between the troposphere and the mesosphere",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "indulge",
@@ -909,7 +989,8 @@
   ],
   "en": "give free rein to",
   "syn": [],
-  "exp": "The writer indulged in metaphorical language"
+  "exp": "The writer indulged in metaphorical language",
+  "cefr": "C2"
  },
  {
   "word": "indulgence",
@@ -920,7 +1001,8 @@
   "syn": [
    "self-indulgence"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "indulgently",
@@ -929,7 +1011,8 @@
   ],
   "en": "in an indulgent manner",
   "syn": [],
-  "exp": "I was indulgently advised to give the kids what they wanted unless I wished my son to be socially ostracised"
+  "exp": "I was indulgently advised to give the kids what they wanted unless I wished my son to be socially ostracised",
+  "cefr": "C2"
  },
  {
   "word": "laudatory",
@@ -941,7 +1024,8 @@
    "praiseful",
    "praising"
   ],
-  "exp": "a laudatory remark"
+  "exp": "a laudatory remark",
+  "cefr": "C2"
  },
  {
   "word": "laud",
@@ -955,7 +1039,8 @@
    "glorify",
    "proclaim"
   ],
-  "exp": "extol the virtues of one's children"
+  "exp": "extol the virtues of one's children",
+  "cefr": "C2"
  },
  {
   "word": "glitz",
@@ -969,7 +1054,8 @@
    "gaudiness",
    "loudness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "glitzy",
@@ -978,7 +1064,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "automate",
@@ -990,7 +1077,8 @@
    "automatize",
    "automatise"
   ],
-  "exp": "automate the movement of the robot"
+  "exp": "automate the movement of the robot",
+  "cefr": "C2"
  },
  {
   "word": "apprehend",
@@ -1004,7 +1092,8 @@
    "comprehend",
    "savvy"
   ],
-  "exp": "Do you comprehend the meaning of this letter?"
+  "exp": "Do you comprehend the meaning of this letter?",
+  "cefr": "C2"
  },
  {
   "word": "athleticism",
@@ -1015,7 +1104,8 @@
   "syn": [
    "strenuosity"
   ],
-  "exp": "his music is characterized by a happy athleticism"
+  "exp": "his music is characterized by a happy athleticism",
+  "cefr": "C2"
  },
  {
   "word": "daunt",
@@ -1029,7 +1119,8 @@
    "pall",
    "frighten_off"
   ],
-  "exp": "dashed by the refusal"
+  "exp": "dashed by the refusal",
+  "cefr": "C2"
  },
  {
   "word": "daunting",
@@ -1040,7 +1131,8 @@
   "syn": [
    "intimidating"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "acreage",
@@ -1051,7 +1143,8 @@
   "syn": [
    "land_area"
   ],
-  "exp": "he wanted some acreage to build on"
+  "exp": "he wanted some acreage to build on",
+  "cefr": "C2"
  },
  {
   "word": "affectation",
@@ -1064,7 +1157,8 @@
    "pose",
    "affectedness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "imposition",
@@ -1075,7 +1169,8 @@
   "syn": [
    "infliction"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "circuit",
@@ -1087,7 +1182,8 @@
    "electrical_circuit",
    "electric_circuit"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "stipulate",
@@ -1100,7 +1196,8 @@
    "condition",
    "specify"
   ],
-  "exp": "make an express demand or provision in an agreement"
+  "exp": "make an express demand or provision in an agreement",
+  "cefr": "C2"
  },
  {
   "word": "stipulation",
@@ -1111,7 +1208,8 @@
   "syn": [
    "judicial_admission"
   ],
-  "exp": "must be in writing unless they are part of the court record"
+  "exp": "must be in writing unless they are part of the court record",
+  "cefr": "C2"
  },
  {
   "word": "allot",
@@ -1123,7 +1221,8 @@
    "assign",
    "portion"
   ],
-  "exp": "We were assigned new uniforms"
+  "exp": "We were assigned new uniforms",
+  "cefr": "C2"
  },
  {
   "word": "allotment",
@@ -1134,7 +1233,8 @@
   "syn": [
    "allocation"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "anticlimactically",
@@ -1143,7 +1243,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "forfeiture",
@@ -1154,7 +1255,8 @@
   "syn": [
    "forfeit"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "blitz",
@@ -1164,7 +1266,8 @@
   ],
   "en": "attack suddenly and without warning",
   "syn": [],
-  "exp": "Hitler blitzed Poland"
+  "exp": "Hitler blitzed Poland",
+  "cefr": "C2"
  },
  {
   "word": "primeval",
@@ -1178,7 +1281,8 @@
    "primaeval",
    "primordial"
   ],
-  "exp": "in an earliest or original stage or state"
+  "exp": "in an earliest or original stage or state",
+  "cefr": "C2"
  },
  {
   "word": "tenacity",
@@ -1192,7 +1296,8 @@
    "persistence",
    "persistency"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "tenacious",
@@ -1205,7 +1310,8 @@
    "recollective",
    "long"
   ],
-  "exp": "a retentive mind"
+  "exp": "a retentive mind",
+  "cefr": "C2"
  },
  {
   "word": "tenaciously",
@@ -1216,7 +1322,8 @@
   "syn": [
    "doggedly"
   ],
-  "exp": "he pursued her doggedly"
+  "exp": "he pursued her doggedly",
+  "cefr": "C2"
  },
  {
   "word": "exact",
@@ -1227,7 +1334,8 @@
   "syn": [
    "demand"
   ],
-  "exp": "The bank demanded payment of the loan"
+  "exp": "The bank demanded payment of the loan",
+  "cefr": "C2"
  },
  {
   "word": "genomic",
@@ -1236,7 +1344,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "genomically",
@@ -1245,7 +1354,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "capacious",
@@ -1254,7 +1364,8 @@
   ],
   "en": "large in capacity",
   "syn": [],
-  "exp": "she carried a capacious bag"
+  "exp": "she carried a capacious bag",
+  "cefr": "C2"
  },
  {
   "word": "utilization",
@@ -1268,7 +1379,8 @@
    "utilisation",
    "employment"
   ],
-  "exp": "he warned against the use of narcotic drugs"
+  "exp": "he warned against the use of narcotic drugs",
+  "cefr": "C2"
  },
  {
   "word": "unequivocal",
@@ -1280,7 +1392,8 @@
    "univocal",
    "unambiguous"
   ],
-  "exp": "having only one meaning or interpretation and leading to only one conclusion"
+  "exp": "having only one meaning or interpretation and leading to only one conclusion",
+  "cefr": "C2"
  },
  {
   "word": "unequivocally",
@@ -1291,7 +1404,8 @@
   "syn": [
    "unambiguously"
   ],
-  "exp": "she stated her intentions unequivocally"
+  "exp": "she stated her intentions unequivocally",
+  "cefr": "C2"
  },
  {
   "word": "spontaneity",
@@ -1302,7 +1416,8 @@
   "syn": [
    "spontaneousness"
   ],
-  "exp": "the spontaneity of his laughter"
+  "exp": "the spontaneity of his laughter",
+  "cefr": "C2"
  },
  {
   "word": "provocation",
@@ -1314,7 +1429,8 @@
    "aggravation",
    "irritation"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "portraiture",
@@ -1326,7 +1442,8 @@
    "portrayal",
    "portrait"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "tedium",
@@ -1338,7 +1455,8 @@
    "boredom",
    "ennui"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "succeed",
@@ -1352,7 +1470,8 @@
    "bring_home_the_bacon",
    "deliver_the_goods"
   ],
-  "exp": "We succeeded in getting tickets to the show"
+  "exp": "We succeeded in getting tickets to the show",
+  "cefr": "C2"
  },
  {
   "word": "circumnavigate",
@@ -1363,7 +1482,8 @@
   "syn": [
    "compass"
   ],
-  "exp": "We compassed the earth"
+  "exp": "We compassed the earth",
+  "cefr": "C2"
  },
  {
   "word": "circumnavigation",
@@ -1372,7 +1492,8 @@
   ],
   "en": "traveling around something (by ship or plane)",
   "syn": [],
-  "exp": "Magellan's circumnavigation of the earth proved that it is a globe"
+  "exp": "Magellan's circumnavigation of the earth proved that it is a globe",
+  "cefr": "C2"
  },
  {
   "word": "liaise",
@@ -1386,7 +1507,8 @@
    "intermediate",
    "arbitrate"
   ],
-  "exp": "He interceded in the family dispute"
+  "exp": "He interceded in the family dispute",
+  "cefr": "C2"
  },
  {
   "word": "contractual",
@@ -1395,7 +1517,8 @@
   ],
   "en": "relating to or part of a binding legal agreement",
   "syn": [],
-  "exp": "contractual obligations"
+  "exp": "contractual obligations",
+  "cefr": "C2"
  },
  {
   "word": "contractually",
@@ -1404,7 +1527,8 @@
   ],
   "en": "by virtue of a contract",
   "syn": [],
-  "exp": "they were contractually responsible"
+  "exp": "they were contractually responsible",
+  "cefr": "C2"
  },
  {
   "word": "repute",
@@ -1415,7 +1539,8 @@
   "syn": [
    "reputation"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "abject",
@@ -1429,7 +1554,8 @@
    "miserable",
    "scummy"
   ],
-  "exp": "a low stunt to pull"
+  "exp": "a low stunt to pull",
+  "cefr": "C2"
  },
  {
   "word": "sheaf",
@@ -1440,7 +1566,8 @@
   "syn": [
    "bundle"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "articulation",
@@ -1449,7 +1576,8 @@
   ],
   "en": "the aspect of pronunciation that involves bringing articulatory organs together so as to shape the sounds of speech",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "articulate",
@@ -1458,7 +1586,8 @@
   ],
   "en": "expressing yourself easily or characterized by clear expressive language",
   "syn": [],
-  "exp": "articulate speech"
+  "exp": "articulate speech",
+  "cefr": "C2"
  },
  {
   "word": "spurious",
@@ -1467,7 +1596,8 @@
   ],
   "en": "ostensibly valid, but not actually valid",
   "syn": [],
-  "exp": "a spurious argument"
+  "exp": "a spurious argument",
+  "cefr": "C2"
  },
  {
   "word": "spuriously",
@@ -1476,7 +1606,8 @@
   ],
   "en": "in a false and spurious manner",
   "syn": [],
-  "exp": "the lawyer argued spuriously that his client knew nothing of the burglary"
+  "exp": "the lawyer argued spuriously that his client knew nothing of the burglary",
+  "cefr": "C2"
  },
  {
   "word": "posture",
@@ -1487,7 +1618,8 @@
   "syn": [
    "pose"
   ],
-  "exp": "Don't pay any attention to him--he is always posing to impress his peers!"
+  "exp": "Don't pay any attention to him--he is always posing to impress his peers!",
+  "cefr": "C2"
  },
  {
   "word": "calorific",
@@ -1496,7 +1628,8 @@
   ],
   "en": "heat-generating",
   "syn": [],
-  "exp": "the calorific properties of fuels"
+  "exp": "the calorific properties of fuels",
+  "cefr": "C2"
  },
  {
   "word": "fabulate",
@@ -1505,7 +1638,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "fabulation",
@@ -1514,7 +1648,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "octogenarian",
@@ -1523,7 +1658,8 @@
   ],
   "en": "someone whose age is in the eighties",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "voracity",
@@ -1537,7 +1673,8 @@
    "ravenousness",
    "voraciousness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "brandish",
@@ -1549,7 +1686,8 @@
    "flourish",
    "wave"
   ],
-  "exp": "She waved her gun"
+  "exp": "She waved her gun",
+  "cefr": "C2"
  },
  {
   "word": "repose",
@@ -1563,7 +1701,8 @@
    "ease",
    "relaxation"
   ],
-  "exp": "took his repose by the swimming pool"
+  "exp": "took his repose by the swimming pool",
+  "cefr": "C2"
  },
  {
   "word": "unencumbered",
@@ -1572,7 +1711,8 @@
   ],
   "en": "free of encumbrance",
   "syn": [],
-  "exp": "inherited an unencumbered estate"
+  "exp": "inherited an unencumbered estate",
+  "cefr": "C2"
  },
  {
   "word": "buffoonery",
@@ -1586,7 +1726,8 @@
    "frivolity",
    "harlequinade"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "gauche",
@@ -1598,7 +1739,8 @@
    "graceless",
    "unpolished"
   ],
-  "exp": "too gauche to leave the room when the conversation became intimate"
+  "exp": "too gauche to leave the room when the conversation became intimate",
+  "cefr": "C2"
  },
  {
   "word": "domesticity",
@@ -1607,7 +1749,8 @@
   ],
   "en": "the quality of being domestic or domesticated",
   "syn": [],
-  "exp": "a royal family living in unpretentious domesticity"
+  "exp": "a royal family living in unpretentious domesticity",
+  "cefr": "C2"
  },
  {
   "word": "accrue",
@@ -1616,7 +1759,8 @@
   ],
   "en": "grow by addition",
   "syn": [],
-  "exp": "The interest accrues"
+  "exp": "The interest accrues",
+  "cefr": "C2"
  },
  {
   "word": "proliferation",
@@ -1625,7 +1769,8 @@
   ],
   "en": "growth by the rapid multiplication of parts",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "blandishment",
@@ -1637,7 +1782,8 @@
    "cajolery",
    "palaver"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "pluck",
@@ -1649,7 +1795,8 @@
    "gutsiness",
    "pluckiness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "anthropological",
@@ -1658,7 +1805,8 @@
   ],
   "en": "of or concerned with the science of anthropology",
   "syn": [],
-  "exp": "anthropological studies"
+  "exp": "anthropological studies",
+  "cefr": "C2"
  },
  {
   "word": "anthropologically",
@@ -1667,7 +1815,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "carbonize",
@@ -1680,7 +1829,8 @@
    "carburize",
    "carburise"
   ],
-  "exp": "carburize metal"
+  "exp": "carburize metal",
+  "cefr": "C2"
  },
  {
   "word": "monastic",
@@ -1694,7 +1844,8 @@
    "conventual",
    "monastical"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "graft",
@@ -1705,7 +1856,8 @@
   "syn": [
    "transplant"
   ],
-  "exp": "in some cases the patient can be both donor and recipient"
+  "exp": "in some cases the patient can be both donor and recipient",
+  "cefr": "C2"
  },
  {
   "word": "midwifery",
@@ -1718,7 +1870,8 @@
    "OB",
    "tocology"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "adornment",
@@ -1727,7 +1880,8 @@
   ],
   "en": "a decoration of color or interest that is added to relieve plainness",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "adorn",
@@ -1741,7 +1895,8 @@
    "ornament",
    "embellish"
   ],
-  "exp": "Decorate the room for the party"
+  "exp": "Decorate the room for the party",
+  "cefr": "C2"
  },
  {
   "word": "idle",
@@ -1752,7 +1907,8 @@
   "syn": [
    "tick_over"
   ],
-  "exp": "the engine is idling"
+  "exp": "the engine is idling",
+  "cefr": "C2"
  },
  {
   "word": "conjecture",
@@ -1767,7 +1923,8 @@
    "theorise",
    "hypothesize"
   ],
-  "exp": "Scientists supposed that large dinosaurs lived in swamps"
+  "exp": "Scientists supposed that large dinosaurs lived in swamps",
+  "cefr": "C2"
  },
  {
   "word": "malleable",
@@ -1778,7 +1935,8 @@
   "syn": [
    "ductile"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "malleability",
@@ -1789,7 +1947,8 @@
   "syn": [
    "plasticity"
   ],
-  "exp": "the property of something that can be worked or hammered or shaped without breaking"
+  "exp": "the property of something that can be worked or hammered or shaped without breaking",
+  "cefr": "C2"
  },
  {
   "word": "ore",
@@ -1798,7 +1957,8 @@
   ],
   "en": "a mineral that contains metal that is valuable enough to be mined",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "gale",
@@ -1807,7 +1967,8 @@
   ],
   "en": "a strong wind moving 45-90 knots",
   "syn": [],
-  "exp": "force 7 to 10 on Beaufort scale"
+  "exp": "force 7 to 10 on Beaufort scale",
+  "cefr": "C2"
  },
  {
   "word": "promenade",
@@ -1818,7 +1979,8 @@
   "syn": [
    "prom"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "testimonial",
@@ -1829,7 +1991,8 @@
   "syn": [
    "testimony"
   ],
-  "exp": "his effort was testimony to his devotion"
+  "exp": "his effort was testimony to his devotion",
+  "cefr": "C2"
  },
  {
   "word": "distill",
@@ -1842,7 +2005,8 @@
    "sublimate",
    "make_pure"
   ],
-  "exp": "purify the water"
+  "exp": "purify the water",
+  "cefr": "C2"
  },
  {
   "word": "distillation",
@@ -1853,7 +2017,8 @@
   "syn": [
    "distillment"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "informant",
@@ -1864,7 +2029,8 @@
   "syn": [
    "source"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "vis-a-vis",
@@ -1873,7 +2039,8 @@
   ],
   "en": "face-to-face with",
   "syn": [],
-  "exp": "literally `face to face'"
+  "exp": "literally `face to face'",
+  "cefr": "C2"
  },
  {
   "word": "overlay",
@@ -1884,7 +2051,8 @@
   "syn": [
    "cover"
   ],
-  "exp": "cover the meat with a lot of gravy"
+  "exp": "cover the meat with a lot of gravy",
+  "cefr": "C2"
  },
  {
   "word": "nostalgia",
@@ -1893,7 +2061,8 @@
   ],
   "en": "longing for something past",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "nostalgic",
@@ -1902,7 +2071,8 @@
   ],
   "en": "unhappy about being away and longing for familiar things or persons",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "nostalgically",
@@ -1911,7 +2081,8 @@
   ],
   "en": "in a nostalgic manner",
   "syn": [],
-  "exp": "they spent an hour together, talking nostalgically as they wandered slowly down the coast road"
+  "exp": "they spent an hour together, talking nostalgically as they wandered slowly down the coast road",
+  "cefr": "C2"
  },
  {
   "word": "grievance",
@@ -1923,7 +2094,8 @@
    "grudge",
    "score"
   ],
-  "exp": "holding a grudge"
+  "exp": "holding a grudge",
+  "cefr": "C2"
  },
  {
   "word": "deprivation",
@@ -1936,7 +2108,8 @@
    "want",
    "neediness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "residue",
@@ -1945,7 +2118,8 @@
   ],
   "en": "matter that remains after something has been removed",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "residual",
@@ -1956,7 +2130,8 @@
   "syn": [
    "residuary"
   ],
-  "exp": "residual quantity"
+  "exp": "residual quantity",
+  "cefr": "C2"
  },
  {
   "word": "physiological",
@@ -1965,7 +2140,8 @@
   ],
   "en": "of or relating to the biological study of physiology",
   "syn": [],
-  "exp": "physiological psychology"
+  "exp": "physiological psychology",
+  "cefr": "C2"
  },
  {
   "word": "physiologically",
@@ -1974,7 +2150,8 @@
   ],
   "en": "of or relating to physiological processes",
   "syn": [],
-  "exp": "with respect to physiology"
+  "exp": "with respect to physiology",
+  "cefr": "C2"
  },
  {
   "word": "familiarize",
@@ -1986,7 +2163,8 @@
    "familiarise",
    "acquaint"
   ],
-  "exp": "you should acquaint yourself with your new computer"
+  "exp": "you should acquaint yourself with your new computer",
+  "cefr": "C2"
  },
  {
   "word": "methodology",
@@ -1997,7 +2175,8 @@
   "syn": [
    "methodological_analysis"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "methodological",
@@ -2006,7 +2185,8 @@
   ],
   "en": "relating to the methodology of some discipline",
   "syn": [],
-  "exp": "methodological errors"
+  "exp": "methodological errors",
+  "cefr": "C2"
  },
  {
   "word": "methodologically",
@@ -2015,7 +2195,8 @@
   ],
   "en": "in a methodical manner",
   "syn": [],
-  "exp": "let us proceed methodologically"
+  "exp": "let us proceed methodologically",
+  "cefr": "C2"
  },
  {
   "word": "proportional",
@@ -2026,7 +2207,8 @@
   "syn": [
    "relative"
   ],
-  "exp": "usually followed by `to'"
+  "exp": "usually followed by `to'",
+  "cefr": "C2"
  },
  {
   "word": "proportionally",
@@ -2037,7 +2219,8 @@
   "syn": [
    "proportionately"
   ],
-  "exp": "your salary will rise proportionately to your workload"
+  "exp": "your salary will rise proportionately to your workload",
+  "cefr": "C2"
  },
  {
   "word": "habitation",
@@ -2046,7 +2229,8 @@
   ],
   "en": "the native habitat or home of an animal or plant",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "inartistic",
@@ -2057,7 +2241,8 @@
   "syn": [
    "unartistic"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "ornate",
@@ -2068,7 +2253,8 @@
   "syn": [
    "flowery"
   ],
-  "exp": "ornate rhetoric taught out of the rule of Plato-John Milton"
+  "exp": "ornate rhetoric taught out of the rule of Plato-John Milton",
+  "cefr": "C2"
  },
  {
   "word": "modernism",
@@ -2077,7 +2263,8 @@
   ],
   "en": "genre of art and literature that makes a self-conscious break with previous genres",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "presuppose",
@@ -2088,7 +2275,8 @@
   "syn": [
    "suppose"
   ],
-  "exp": "I presuppose that you have done your work"
+  "exp": "I presuppose that you have done your work",
+  "cefr": "C2"
  },
  {
   "word": "presupposition",
@@ -2097,7 +2285,8 @@
   ],
   "en": "the act of presupposing",
   "syn": [],
-  "exp": "a supposition made prior to having knowledge (as for the purpose of argument)"
+  "exp": "a supposition made prior to having knowledge (as for the purpose of argument)",
+  "cefr": "C2"
  },
  {
   "word": "centralized",
@@ -2108,7 +2297,8 @@
   "syn": [
    "centralised"
   ],
-  "exp": "centralized control of emergency relief efforts"
+  "exp": "centralized control of emergency relief efforts",
+  "cefr": "C2"
  },
  {
   "word": "contextual",
@@ -2117,7 +2307,8 @@
   ],
   "en": "relating to or determined by or in context",
   "syn": [],
-  "exp": "contextual information"
+  "exp": "contextual information",
+  "cefr": "C2"
  },
  {
   "word": "contextually",
@@ -2126,7 +2317,8 @@
   ],
   "en": "in a manner dependent on context",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "transmitter",
@@ -2137,7 +2329,8 @@
   "syn": [
    "sender"
   ],
-  "exp": "return to sender"
+  "exp": "return to sender",
+  "cefr": "C2"
  },
  {
   "word": "regulatory",
@@ -2148,7 +2341,8 @@
   "syn": [
    "regulative"
   ],
-  "exp": "a regulatory gene"
+  "exp": "a regulatory gene",
+  "cefr": "C2"
  },
  {
   "word": "archival",
@@ -2157,7 +2351,8 @@
   ],
   "en": "of or relating to or contained in or serving as an archive",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "diffuse",
@@ -2167,7 +2362,8 @@
   ],
   "en": "spread out",
   "syn": [],
-  "exp": "not concentrated in one place"
+  "exp": "not concentrated in one place",
+  "cefr": "C2"
  },
  {
   "word": "egalitarian",
@@ -2179,7 +2375,8 @@
   "syn": [
    "classless"
   ],
-  "exp": "a classless society"
+  "exp": "a classless society",
+  "cefr": "C2"
  },
  {
   "word": "hindsight",
@@ -2188,7 +2385,8 @@
   ],
   "en": "understanding the nature of an event after it has happened",
   "syn": [],
-  "exp": "hindsight is always better than foresight"
+  "exp": "hindsight is always better than foresight",
+  "cefr": "C2"
  },
  {
   "word": "materialize",
@@ -2200,7 +2398,8 @@
    "happen",
    "materialise"
   ],
-  "exp": "Her dream really materialized"
+  "exp": "Her dream really materialized",
+  "cefr": "C2"
  },
  {
   "word": "materialization",
@@ -2211,7 +2410,8 @@
   "syn": [
    "materialisation"
   ],
-  "exp": "the materialization of her dream"
+  "exp": "the materialization of her dream",
+  "cefr": "C2"
  },
  {
   "word": "disperse",
@@ -2225,7 +2425,8 @@
    "dot",
    "dust"
   ],
-  "exp": "He scattered gun powder under the wagon"
+  "exp": "He scattered gun powder under the wagon",
+  "cefr": "C2"
  },
  {
   "word": "dispersal",
@@ -2238,7 +2439,8 @@
    "dissemination",
    "diffusion"
   ],
-  "exp": "the dispersion of the troops"
+  "exp": "the dispersion of the troops",
+  "cefr": "C2"
  },
  {
   "word": "adverse",
@@ -2250,7 +2452,8 @@
    "inauspicious",
    "untoward"
   ],
-  "exp": "made a place for themselves under the most untoward conditions"
+  "exp": "made a place for themselves under the most untoward conditions",
+  "cefr": "C2"
  },
  {
   "word": "adversely",
@@ -2259,7 +2462,8 @@
   ],
   "en": "in an adverse manner",
   "syn": [],
-  "exp": "she was adversely affected by the new regulations"
+  "exp": "she was adversely affected by the new regulations",
+  "cefr": "C2"
  },
  {
   "word": "stabilize",
@@ -2270,7 +2474,8 @@
   "syn": [
    "stabilise"
   ],
-  "exp": "The drug stabilized her blood pressure"
+  "exp": "The drug stabilized her blood pressure",
+  "cefr": "C2"
  },
  {
   "word": "pervasive",
@@ -2283,7 +2488,8 @@
    "permeating",
    "permeative"
   ],
-  "exp": "armed with permeative irony...he punctures affectations"
+  "exp": "armed with permeative irony...he punctures affectations",
+  "cefr": "C2"
  },
  {
   "word": "pervasiveness",
@@ -2292,7 +2498,8 @@
   ],
   "en": "the quality of filling or spreading throughout",
   "syn": [],
-  "exp": "the pervasiveness of the odor of cabbage in tenement hallways"
+  "exp": "the pervasiveness of the odor of cabbage in tenement hallways",
+  "cefr": "C2"
  },
  {
   "word": "secure",
@@ -2303,7 +2510,8 @@
   "syn": [
    "procure"
   ],
-  "exp": "He procured extra cigarettes even though they were rationed"
+  "exp": "He procured extra cigarettes even though they were rationed",
+  "cefr": "C2"
  },
  {
   "word": "autonomous",
@@ -2316,7 +2524,8 @@
    "self-governing",
    "sovereign"
   ],
-  "exp": "an autonomous judiciary"
+  "exp": "an autonomous judiciary",
+  "cefr": "C2"
  },
  {
   "word": "autonomously",
@@ -2325,7 +2534,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "outmoded",
@@ -2339,7 +2549,8 @@
    "ex",
    "old-fashioned"
   ],
-  "exp": "a suit of rather antique appearance"
+  "exp": "a suit of rather antique appearance",
+  "cefr": "C2"
  },
  {
   "word": "phase",
@@ -2350,7 +2561,8 @@
   "syn": [
    "stage"
   ],
-  "exp": "we are in a transitional stage in which many former ideas must be revised or rejected"
+  "exp": "we are in a transitional stage in which many former ideas must be revised or rejected",
+  "cefr": "C2"
  },
  {
   "word": "plum",
@@ -2361,7 +2573,8 @@
   "syn": [
    "plumb"
   ],
-  "exp": "fell plumb in the middle of the puddle"
+  "exp": "fell plumb in the middle of the puddle",
+  "cefr": "C2"
  },
  {
   "word": "notorious",
@@ -2373,7 +2586,8 @@
    "ill-famed",
    "infamous"
   ],
-  "exp": "the tenderloin district was notorious for vice"
+  "exp": "the tenderloin district was notorious for vice",
+  "cefr": "C2"
  },
  {
   "word": "notoriously",
@@ -2382,7 +2596,8 @@
   ],
   "en": "to a notorious degree",
   "syn": [],
-  "exp": "European emigres, who notoriously used to repair to the British Museum to write seditious pamphlets"
+  "exp": "European emigres, who notoriously used to repair to the British Museum to write seditious pamphlets",
+  "cefr": "C2"
  },
  {
   "word": "notoriety",
@@ -2393,7 +2608,8 @@
   "syn": [
    "ill_fame"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "menial",
@@ -2405,7 +2621,8 @@
    "humble",
    "lowly"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "insular",
@@ -2414,7 +2631,8 @@
   ],
   "en": "relating to or characteristic of or situated on an island",
   "syn": [],
-  "exp": "insular territories"
+  "exp": "insular territories",
+  "cefr": "C2"
  },
  {
   "word": "antidote",
@@ -2425,7 +2643,8 @@
   "syn": [
    "counterpoison"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "postural",
@@ -2434,7 +2653,8 @@
   ],
   "en": "of or relating to or involving posture",
   "syn": [],
-  "exp": "postural exercises"
+  "exp": "postural exercises",
+  "cefr": "C2"
  },
  {
   "word": "posturing",
@@ -2443,7 +2663,8 @@
   ],
   "en": "adopting a vain conceited posture",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "revelatory",
@@ -2457,7 +2678,8 @@
    "significative",
    "suggestive"
   ],
-  "exp": "actions indicative of fear"
+  "exp": "actions indicative of fear",
+  "cefr": "C2"
  },
  {
   "word": "prostrate",
@@ -2469,7 +2691,8 @@
   "syn": [
    "flat"
   ],
-  "exp": "found himself lying flat on the floor"
+  "exp": "found himself lying flat on the floor",
+  "cefr": "C2"
  },
  {
   "word": "haphazard",
@@ -2480,7 +2703,8 @@
   "syn": [
    "hit-or-miss"
   ],
-  "exp": "a haphazard plan of action"
+  "exp": "a haphazard plan of action",
+  "cefr": "C2"
  },
  {
   "word": "haphazardly",
@@ -2494,7 +2718,8 @@
    "willy-nilly",
    "arbitrarily"
   ],
-  "exp": "the houses were randomly scattered"
+  "exp": "the houses were randomly scattered",
+  "cefr": "C2"
  },
  {
   "word": "deficient",
@@ -2506,7 +2731,8 @@
    "lacking(p)",
    "wanting(p)"
   ],
-  "exp": "deficient in common sense"
+  "exp": "deficient in common sense",
+  "cefr": "C2"
  },
  {
   "word": "deficiently",
@@ -2515,7 +2741,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "deficit",
@@ -2527,7 +2754,8 @@
    "shortage",
    "shortfall"
   ],
-  "exp": "new blood vessels bud out from the already dilated vascular bed to make up the nutritional deficit"
+  "exp": "new blood vessels bud out from the already dilated vascular bed to make up the nutritional deficit",
+  "cefr": "C2"
  },
  {
   "word": "delicatessen",
@@ -2538,7 +2766,8 @@
   "syn": [
    "delicatessen_food"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "muscle-bound",
@@ -2547,7 +2776,8 @@
   ],
   "en": "having stiff muscles as the result of excessive exercise",
   "syn": [],
-  "exp": "he arrived accompanied by two muscle-bound body guards"
+  "exp": "he arrived accompanied by two muscle-bound body guards",
+  "cefr": "C2"
  },
  {
   "word": "dive",
@@ -2558,7 +2788,8 @@
   "syn": [
    "honkytonk"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "maneuver",
@@ -2573,7 +2804,8 @@
    "manoeuvre",
    "direct"
   ],
-  "exp": "determine the direction of travelling"
+  "exp": "determine the direction of travelling",
+  "cefr": "C2"
  },
  {
   "word": "posit",
@@ -2586,7 +2818,8 @@
    "fix",
    "deposit"
   ],
-  "exp": "She posited her hand on his shoulder"
+  "exp": "She posited her hand on his shoulder",
+  "cefr": "C2"
  },
  {
   "word": "cocoon",
@@ -2595,7 +2828,8 @@
   ],
   "en": "retreat as if into a cocoon, as from an unfriendly environment",
   "syn": [],
-  "exp": "Families cocoon around the T.V. set most evenings"
+  "exp": "Families cocoon around the T.V. set most evenings",
+  "cefr": "C2"
  },
  {
   "word": "chrysalis",
@@ -2604,7 +2838,8 @@
   ],
   "en": "pupa of a moth or butterfly enclosed in a cocoon",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "ignominious",
@@ -2618,7 +2853,8 @@
    "inglorious",
    "opprobrious"
   ],
-  "exp": "Man...has written one of his blackest records as a destroyer on the oceanic islands- Rachel Carson"
+  "exp": "Man...has written one of his blackest records as a destroyer on the oceanic islands- Rachel Carson",
+  "cefr": "C2"
  },
  {
   "word": "ignominiously",
@@ -2632,7 +2868,8 @@
    "discreditably",
    "shamefully"
   ],
-  "exp": "his grades were disgracefully low"
+  "exp": "his grades were disgracefully low",
+  "cefr": "C2"
  },
  {
   "word": "euphoria",
@@ -2643,7 +2880,8 @@
   "syn": [
    "euphory"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "euphoric",
@@ -2652,7 +2890,8 @@
   ],
   "en": "exaggerated feeling of well-being or elation",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "euphorically",
@@ -2661,7 +2900,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "relegate",
@@ -2673,7 +2913,8 @@
    "pass_on",
    "submit"
   ],
-  "exp": "She likes to relegate difficult questions to her colleagues"
+  "exp": "She likes to relegate difficult questions to her colleagues",
+  "cefr": "C2"
  },
  {
   "word": "succumb",
@@ -2687,7 +2928,8 @@
    "knuckle_under",
    "buckle_under"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "treacherous",
@@ -2698,7 +2940,8 @@
   "syn": [
    "unreliable"
   ],
-  "exp": "treacherous winding roads"
+  "exp": "treacherous winding roads",
+  "cefr": "C2"
  },
  {
   "word": "treacherously",
@@ -2712,7 +2955,8 @@
    "treasonably",
    "false"
   ],
-  "exp": "his wife played him false"
+  "exp": "his wife played him false",
+  "cefr": "C2"
  },
  {
   "word": "treachery",
@@ -2724,7 +2968,8 @@
    "perfidy",
    "perfidiousness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "maggot",
@@ -2733,7 +2978,8 @@
   ],
   "en": "the larva of the housefly and blowfly commonly found in decaying organic matter",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "palate",
@@ -2744,7 +2990,8 @@
   "syn": [
    "roof_of_the_mouth"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "palatable",
@@ -2755,7 +3002,8 @@
   "syn": [
    "toothsome"
   ],
-  "exp": "a palatable solution to the problem"
+  "exp": "a palatable solution to the problem",
+  "cefr": "C2"
  },
  {
   "word": "hermit",
@@ -2766,7 +3014,8 @@
   "syn": [
    "anchorite"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "hermetic",
@@ -2775,7 +3024,8 @@
   ],
   "en": "completely sealed",
   "syn": [],
-  "exp": "completely airtight"
+  "exp": "completely airtight",
+  "cefr": "C2"
  },
  {
   "word": "irrelevancy",
@@ -2786,7 +3036,8 @@
   "syn": [
    "irrelevance"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "mariner",
@@ -2800,7 +3051,8 @@
    "Jack-tar",
    "Jack"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "rift",
@@ -2809,7 +3061,8 @@
   ],
   "en": "a gap between cloud masses",
   "syn": [],
-  "exp": "the sun shone through a rift in the clouds"
+  "exp": "the sun shone through a rift in the clouds",
+  "cefr": "C2"
  },
  {
   "word": "mere",
@@ -2820,7 +3073,8 @@
   "syn": [
    "mere(a)"
   ],
-  "exp": "a mere child"
+  "exp": "a mere child",
+  "cefr": "C2"
  },
  {
   "word": "helm",
@@ -2829,7 +3083,8 @@
   ],
   "en": "steering mechanism for a vessel",
   "syn": [],
-  "exp": "a mechanical device by which a vessel is steered"
+  "exp": "a mechanical device by which a vessel is steered",
+  "cefr": "C2"
  },
  {
   "word": "autopilot",
@@ -2840,7 +3095,8 @@
   "syn": [
    "automatic_pilot"
   ],
-  "exp": "she went about her chores on automatic pilot"
+  "exp": "she went about her chores on automatic pilot",
+  "cefr": "C2"
  },
  {
   "word": "eminence",
@@ -2853,7 +3109,8 @@
    "preeminence",
    "note"
   ],
-  "exp": "a scholar of great eminence"
+  "exp": "a scholar of great eminence",
+  "cefr": "C2"
  },
  {
   "word": "eminent",
@@ -2864,7 +3121,8 @@
   "syn": [
    "high"
   ],
-  "exp": "people in high places"
+  "exp": "people in high places",
+  "cefr": "C2"
  },
  {
   "word": "preeminent",
@@ -2875,7 +3133,8 @@
   "syn": [
    "leading(a)"
   ],
-  "exp": "the country's leading poet"
+  "exp": "the country's leading poet",
+  "cefr": "C2"
  },
  {
   "word": "mold",
@@ -2887,7 +3146,8 @@
    "model",
    "mould"
   ],
-  "exp": "model a head with clay"
+  "exp": "model a head with clay",
+  "cefr": "C2"
  },
  {
   "word": "unsuspected",
@@ -2896,7 +3156,8 @@
   ],
   "en": "not suspected or believed likely",
   "syn": [],
-  "exp": "remained unsuspected as the head of the spy ring"
+  "exp": "remained unsuspected as the head of the spy ring",
+  "cefr": "C2"
  },
  {
   "word": "abolish",
@@ -2907,7 +3168,8 @@
   "syn": [
    "get_rid_of"
   ],
-  "exp": "Slavery was abolished in the mid-19th century in America and in Russia"
+  "exp": "Slavery was abolished in the mid-19th century in America and in Russia",
+  "cefr": "C2"
  },
  {
   "word": "paralyze",
@@ -2918,7 +3180,8 @@
   "syn": [
    "paralyse"
   ],
-  "exp": "The bureaucracy paralyzes the entire operation"
+  "exp": "The bureaucracy paralyzes the entire operation",
+  "cefr": "C2"
  },
  {
   "word": "paralysis",
@@ -2929,7 +3192,8 @@
   "syn": [
    "palsy"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "paralyzingly",
@@ -2938,7 +3202,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "glory in",
@@ -2947,7 +3212,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "decentralize",
@@ -2959,7 +3225,8 @@
    "deconcentrate",
    "decentralise"
   ],
-  "exp": "After the revolution, food distribution was decentralized"
+  "exp": "After the revolution, food distribution was decentralized",
+  "cefr": "C2"
  },
  {
   "word": "preoccupation",
@@ -2968,7 +3235,8 @@
   ],
   "en": "an idea that preoccupies the mind and holds the attention",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "preoccupy",
@@ -2977,7 +3245,8 @@
   ],
   "en": "engage or engross the interest or attention of beforehand or occupy urgently or obsessively",
   "syn": [],
-  "exp": "His work preoccupies him"
+  "exp": "His work preoccupies him",
+  "cefr": "C2"
  },
  {
   "word": "prolong",
@@ -2990,7 +3259,8 @@
    "extend",
    "draw_out"
   ],
-  "exp": "cause to be or last longer"
+  "exp": "cause to be or last longer",
+  "cefr": "C2"
  },
  {
   "word": "audit",
@@ -3004,7 +3274,8 @@
    "scrutinise",
    "inspect"
   ],
-  "exp": "audit accounts and tax returns"
+  "exp": "audit accounts and tax returns",
+  "cefr": "C2"
  },
  {
   "word": "drudgery",
@@ -3017,7 +3288,8 @@
    "grind",
    "donkeywork"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "pressurize",
@@ -3029,7 +3301,8 @@
    "supercharge",
    "pressurise"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "pressurization",
@@ -3038,7 +3311,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "intermediary",
@@ -3052,7 +3326,8 @@
    "intermediator",
    "intercessor"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "hotelier",
@@ -3066,7 +3341,8 @@
    "hotelman",
    "hosteller"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "denote",
@@ -3075,7 +3351,8 @@
   ],
   "en": "be a sign or indication of",
   "syn": [],
-  "exp": "Her smile denoted that she agreed"
+  "exp": "Her smile denoted that she agreed",
+  "cefr": "C2"
  },
  {
   "word": "denotation",
@@ -3086,7 +3363,8 @@
   "syn": [
    "indication"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "profitability",
@@ -3099,7 +3377,8 @@
    "gainfulness",
    "lucrativeness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "jargon",
@@ -3113,7 +3392,8 @@
    "lingo",
    "argot"
   ],
-  "exp": "they don't speak our lingo"
+  "exp": "they don't speak our lingo",
+  "cefr": "C2"
  },
  {
   "word": "declination",
@@ -3124,7 +3404,8 @@
   "syn": [
    "decline"
   ],
-  "exp": "a gradual falling off from a better state"
+  "exp": "a gradual falling off from a better state",
+  "cefr": "C2"
  },
  {
   "word": "vocational",
@@ -3133,7 +3414,8 @@
   ],
   "en": "of or relating to a vocation or occupation",
   "syn": [],
-  "exp": "especially providing or undergoing training in special skills"
+  "exp": "especially providing or undergoing training in special skills",
+  "cefr": "C2"
  },
  {
   "word": "spatial",
@@ -3144,7 +3426,8 @@
   "syn": [
    "spacial"
   ],
-  "exp": "the first dimension to concentrate on is the spatial one"
+  "exp": "the first dimension to concentrate on is the spatial one",
+  "cefr": "C2"
  },
  {
   "word": "spatially",
@@ -3153,7 +3436,8 @@
   ],
   "en": "with regard to space",
   "syn": [],
-  "exp": "spatially limited"
+  "exp": "spatially limited",
+  "cefr": "C2"
  },
  {
   "word": "punctual",
@@ -3164,7 +3448,8 @@
   "syn": [
    "on_time"
   ],
-  "exp": "she expected guests to be punctual at meals"
+  "exp": "she expected guests to be punctual at meals",
+  "cefr": "C2"
  },
  {
   "word": "punctuality",
@@ -3175,7 +3460,8 @@
   "syn": [
    "promptness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "integration",
@@ -3187,7 +3473,8 @@
    "integrating",
    "desegregation"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "curriculum",
@@ -3201,7 +3488,8 @@
    "programme",
    "syllabus"
   ],
-  "exp": "he was admitted to a new program at the university"
+  "exp": "he was admitted to a new program at the university",
+  "cefr": "C2"
  },
  {
   "word": "extracurricular",
@@ -3211,7 +3499,8 @@
   ],
   "en": "outside the regular academic curriculum",
   "syn": [],
-  "exp": "sports and drama are popular extracurricular activities"
+  "exp": "sports and drama are popular extracurricular activities",
+  "cefr": "C2"
  },
  {
   "word": "encompass",
@@ -3224,7 +3513,8 @@
    "comprehend",
    "cover"
   ],
-  "exp": "include as part of something broader"
+  "exp": "include as part of something broader",
+  "cefr": "C2"
  },
  {
   "word": "all-encompassing",
@@ -3238,7 +3528,8 @@
    "all-inclusive",
    "blanket(a)"
   ],
-  "exp": "blanket sanctions against human-rights violators"
+  "exp": "blanket sanctions against human-rights violators",
+  "cefr": "C2"
  },
  {
   "word": "accountability",
@@ -3250,7 +3541,8 @@
    "answerability",
    "answerableness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "frolic",
@@ -3264,7 +3556,8 @@
    "skylark",
    "disport"
   ],
-  "exp": "The children frolicked in the garden"
+  "exp": "The children frolicked in the garden",
+  "cefr": "C2"
  },
  {
   "word": "minefield",
@@ -3273,7 +3566,8 @@
   ],
   "en": "a region in which explosives mines have been placed",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "side-step",
@@ -3282,7 +3576,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "abundant",
@@ -3291,7 +3586,8 @@
   ],
   "en": "present in great quantity",
   "syn": [],
-  "exp": "an abundant supply of water"
+  "exp": "an abundant supply of water",
+  "cefr": "C2"
  },
  {
   "word": "abundantly",
@@ -3304,7 +3600,8 @@
    "profusely",
    "extravagantly"
   ],
-  "exp": "they were abundantly supplied with food"
+  "exp": "they were abundantly supplied with food",
+  "cefr": "C2"
  },
  {
   "word": "abundance",
@@ -3316,7 +3613,8 @@
    "copiousness",
    "teemingness"
   ],
-  "exp": "an age of abundance"
+  "exp": "an age of abundance",
+  "cefr": "C2"
  },
  {
   "word": "anarchic",
@@ -3328,7 +3626,8 @@
    "anarchical",
    "lawless"
   ],
-  "exp": "the system is economically inefficient and politically anarchic"
+  "exp": "the system is economically inefficient and politically anarchic",
+  "cefr": "C2"
  },
  {
   "word": "crystallize",
@@ -3341,7 +3640,8 @@
    "crystalise",
    "crystalize"
   ],
-  "exp": "He tried to crystallize his thoughts"
+  "exp": "He tried to crystallize his thoughts",
+  "cefr": "C2"
  },
  {
   "word": "crystallization",
@@ -3353,7 +3653,8 @@
    "crystallisation",
    "crystallizing"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "prescriptive",
@@ -3364,7 +3665,8 @@
   "syn": [
    "normative"
   ],
-  "exp": "prescriptive grammar is concerned with norms of or rules for correct usage"
+  "exp": "prescriptive grammar is concerned with norms of or rules for correct usage",
+  "cefr": "C2"
  },
  {
   "word": "slab",
@@ -3373,7 +3675,8 @@
   ],
   "en": "block consisting of a thick piece of something",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "retrospect",
@@ -3382,7 +3685,8 @@
   ],
   "en": "contemplation of things past",
   "syn": [],
-  "exp": "in retrospect"
+  "exp": "in retrospect",
+  "cefr": "C2"
  },
  {
   "word": "retrospective",
@@ -3391,7 +3695,8 @@
   ],
   "en": "concerned with or related to the past",
   "syn": [],
-  "exp": "retrospective self-justification"
+  "exp": "retrospective self-justification",
+  "cefr": "C2"
  },
  {
   "word": "retrospection",
@@ -3400,7 +3705,8 @@
   ],
   "en": "reference to things past",
   "syn": [],
-  "exp": "the story begins with no introductory retrospections"
+  "exp": "the story begins with no introductory retrospections",
+  "cefr": "C2"
  },
  {
   "word": "wordage",
@@ -3409,7 +3715,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "brevity",
@@ -3418,7 +3725,8 @@
   ],
   "en": "the use of brief expressions",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "uncanny",
@@ -3431,7 +3739,8 @@
    "weird",
    "unearthly"
   ],
-  "exp": "the three weird sisters"
+  "exp": "the three weird sisters",
+  "cefr": "C2"
  },
  {
   "word": "tactic",
@@ -3444,7 +3753,8 @@
    "maneuver",
    "manoeuvre"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "tactical",
@@ -3453,7 +3763,8 @@
   ],
   "en": "of or pertaining to tactic or tactics",
   "syn": [],
-  "exp": "a tactical error"
+  "exp": "a tactical error",
+  "cefr": "C2"
  },
  {
   "word": "tactically",
@@ -3462,7 +3773,8 @@
   ],
   "en": "with regard to tactics",
   "syn": [],
-  "exp": "the tactically useful province is still firmly in the rebels' hands"
+  "exp": "the tactically useful province is still firmly in the rebels' hands",
+  "cefr": "C2"
  },
  {
   "word": "tactile",
@@ -3474,7 +3786,8 @@
    "haptic",
    "tactual"
   ],
-  "exp": "haptic data"
+  "exp": "haptic data",
+  "cefr": "C2"
  },
  {
   "word": "gambit",
@@ -3485,7 +3798,8 @@
   "syn": [
    "ploy"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "babble",
@@ -3494,7 +3808,8 @@
   ],
   "en": "utter meaningless sounds, like a baby, or utter in an incoherent way",
   "syn": [],
-  "exp": "The old man is only babbling--don't pay attention"
+  "exp": "The old man is only babbling--don't pay attention",
+  "cefr": "C2"
  },
  {
   "word": "bauble",
@@ -3503,7 +3818,8 @@
   ],
   "en": "a mock scepter carried by a court jester",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "correlate",
@@ -3515,7 +3831,8 @@
   "syn": [
    "correlative"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "correlation",
@@ -3526,7 +3843,8 @@
   "syn": [
    "correlativity"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "combustion",
@@ -3537,7 +3855,8 @@
   "syn": [
    "burning"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "painstaking",
@@ -3549,7 +3868,8 @@
    "conscientious",
    "scrupulous"
   ],
-  "exp": "conscientious application to the work at hand"
+  "exp": "conscientious application to the work at hand",
+  "cefr": "C2"
  },
  {
   "word": "painstakingly",
@@ -3560,7 +3880,8 @@
   "syn": [
    "fastidiously"
   ],
-  "exp": "it is almost a waste of time painstakingly to learn the routines of selling"
+  "exp": "it is almost a waste of time painstakingly to learn the routines of selling",
+  "cefr": "C2"
  },
  {
   "word": "contraption",
@@ -3574,7 +3895,8 @@
    "convenience",
    "gadget"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "mesh",
@@ -3587,7 +3909,8 @@
    "lock",
    "operate"
   ],
-  "exp": "engaged the gears"
+  "exp": "engaged the gears",
+  "cefr": "C2"
  },
  {
   "word": "enabler",
@@ -3596,7 +3919,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "fluctuate",
@@ -3605,7 +3929,8 @@
   ],
   "en": "cause to fluctuate or move in a wavelike pattern",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "fluctuation",
@@ -3614,7 +3939,8 @@
   ],
   "en": "a wave motion",
   "syn": [],
-  "exp": "the fluctuations of the sea"
+  "exp": "the fluctuations of the sea",
+  "cefr": "C2"
  },
  {
   "word": "lyricist",
@@ -3625,7 +3951,8 @@
   "syn": [
    "lyrist"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "lyrical",
@@ -3634,7 +3961,8 @@
   ],
   "en": "suitable for or suggestive of singing",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "lyrically",
@@ -3643,7 +3971,8 @@
   ],
   "en": "in a lyrical manner",
   "syn": [],
-  "exp": "she danced the part of the Black Swan very lyrically"
+  "exp": "she danced the part of the Black Swan very lyrically",
+  "cefr": "C2"
  },
  {
   "word": "bona fide",
@@ -3654,7 +3983,8 @@
   "syn": [
    "bona_fide"
   ],
-  "exp": "a bona fide offer"
+  "exp": "a bona fide offer",
+  "cefr": "C2"
  },
  {
   "word": "moribund",
@@ -3665,7 +3995,8 @@
   "syn": [
    "stagnant"
   ],
-  "exp": "without force or vitality"
+  "exp": "without force or vitality",
+  "cefr": "C2"
  },
  {
   "word": "perch",
@@ -3678,7 +4009,8 @@
    "roost",
    "rest"
   ],
-  "exp": "The birds perched high in the tree"
+  "exp": "The birds perched high in the tree",
+  "cefr": "C2"
  },
  {
   "word": "solicit",
@@ -3690,7 +4022,8 @@
    "beg",
    "tap"
   ],
-  "exp": "request urgently or persistently"
+  "exp": "request urgently or persistently",
+  "cefr": "C2"
  },
  {
   "word": "vocalist",
@@ -3703,7 +4036,8 @@
    "vocalizer",
    "vocaliser"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "philanthropy",
@@ -3714,7 +4048,8 @@
   "syn": [
    "philanthropic_gift"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "philanthropist",
@@ -3725,7 +4060,8 @@
   "syn": [
    "altruist"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "philanthropic",
@@ -3738,7 +4074,8 @@
    "benevolent",
    "eleemosynary"
   ],
-  "exp": "a benevolent contributor"
+  "exp": "a benevolent contributor",
+  "cefr": "C2"
  },
  {
   "word": "philanthropically",
@@ -3747,7 +4084,8 @@
   ],
   "en": "in a philanthropic manner",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "precocious",
@@ -3756,7 +4094,8 @@
   ],
   "en": "characterized by or characteristic of exceptionally early development or maturity (especially in mental aptitude)",
   "syn": [],
-  "exp": "a precocious child"
+  "exp": "a precocious child",
+  "cefr": "C2"
  },
  {
   "word": "precociously",
@@ -3765,7 +4104,8 @@
   ],
   "en": "in a precocious manner",
   "syn": [],
-  "exp": "her child behaves precociously"
+  "exp": "her child behaves precociously",
+  "cefr": "C2"
  },
  {
   "word": "wordsmith",
@@ -3774,7 +4114,8 @@
   ],
   "en": "a fluent and prolific writer",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "connote",
@@ -3785,7 +4126,8 @@
   "syn": [
    "imply"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "connotation",
@@ -3796,7 +4138,8 @@
   "syn": [
    "intension"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "herald",
@@ -3808,7 +4151,8 @@
   "syn": [
    "trumpeter"
   ],
-  "exp": "the chieftain had a herald who announced his arrival with a trumpet"
+  "exp": "the chieftain had a herald who announced his arrival with a trumpet",
+  "cefr": "C2"
  },
  {
   "word": "philistine",
@@ -3820,7 +4164,8 @@
    "anti-intellectual",
    "lowbrow"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "innuendo",
@@ -3831,7 +4176,8 @@
   "syn": [
    "insinuation"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "induce",
@@ -3842,7 +4188,8 @@
   "syn": [
    "bring_on"
   ],
-  "exp": "induce a crisis"
+  "exp": "induce a crisis",
+  "cefr": "C2"
  },
  {
   "word": "inducement",
@@ -3854,7 +4201,8 @@
    "incentive",
    "motivator"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "anthology",
@@ -3863,7 +4211,8 @@
   ],
   "en": "a collection of selected literary passages",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "lament",
@@ -3874,7 +4223,8 @@
   "syn": [
    "keen"
   ],
-  "exp": "we lamented the death of the child"
+  "exp": "we lamented the death of the child",
+  "cefr": "C2"
  },
  {
   "word": "lamentation",
@@ -3887,7 +4237,8 @@
    "plaint",
    "wail"
   ],
-  "exp": "their pitiful laments could be heard throughout the ward"
+  "exp": "their pitiful laments could be heard throughout the ward",
+  "cefr": "C2"
  },
  {
   "word": "conduit",
@@ -3896,7 +4247,8 @@
   ],
   "en": "a passage (a pipe or tunnel) through which water or electric wires can pass",
   "syn": [],
-  "exp": "the computers were connected through a system of conduits"
+  "exp": "the computers were connected through a system of conduits",
+  "cefr": "C2"
  },
  {
   "word": "chronology",
@@ -3905,7 +4257,8 @@
   ],
   "en": "an arrangement of events in time",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "chronological",
@@ -3914,7 +4267,8 @@
   ],
   "en": "relating to or arranged according to temporal order",
   "syn": [],
-  "exp": "chronological age"
+  "exp": "chronological age",
+  "cefr": "C2"
  },
  {
   "word": "chronologically",
@@ -3923,7 +4277,8 @@
   ],
   "en": "with respect to chronology",
   "syn": [],
-  "exp": "he is chronologically older"
+  "exp": "he is chronologically older",
+  "cefr": "C2"
  },
  {
   "word": "equilibrium",
@@ -3932,7 +4287,8 @@
   ],
   "en": "a stable situation in which forces cancel one another",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "rebound",
@@ -3947,7 +4303,8 @@
    "take_a_hop",
    "spring"
   ],
-  "exp": "spring away from an impact"
+  "exp": "spring away from an impact",
+  "cefr": "C2"
  },
  {
   "word": "proposition",
@@ -3956,7 +4313,8 @@
   ],
   "en": "(logic) a statement that affirms or denies something and is either true or false",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "flagging",
@@ -3967,7 +4325,8 @@
   "syn": [
    "drooping"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "electrode",
@@ -3976,7 +4335,8 @@
   ],
   "en": "a conductor used to make electrical contact with some part of a circuit",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "caffeinate",
@@ -3985,7 +4345,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "cosmic",
@@ -3994,7 +4355,8 @@
   ],
   "en": "of or from or pertaining to or characteristic of the cosmos or universe",
   "syn": [],
-  "exp": "cosmic laws"
+  "exp": "cosmic laws",
+  "cefr": "C2"
  },
  {
   "word": "interlude",
@@ -4003,7 +4365,8 @@
   ],
   "en": "an intervening period or episode",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "haven",
@@ -4014,7 +4377,8 @@
   "syn": [
    "oasis"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "beneficiary",
@@ -4025,7 +4389,8 @@
   "syn": [
    "donee"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "recuperate",
@@ -4037,7 +4402,8 @@
    "recover",
    "recoup"
   ],
-  "exp": "recuperate one's losses"
+  "exp": "recuperate one's losses",
+  "cefr": "C2"
  },
  {
   "word": "recuperation",
@@ -4049,7 +4415,8 @@
    "convalescence",
    "recovery"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "recuperative",
@@ -4060,7 +4427,8 @@
   "syn": [
    "restorative"
   ],
-  "exp": "restorative effects of exercise"
+  "exp": "restorative effects of exercise",
+  "cefr": "C2"
  },
  {
   "word": "cultish",
@@ -4069,7 +4437,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "seismic",
@@ -4080,7 +4449,8 @@
   "syn": [
    "seismal"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "irrevocably",
@@ -4089,7 +4459,8 @@
   ],
   "en": "in an irrevocable manner",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "irrevocable",
@@ -4100,7 +4471,8 @@
   "syn": [
    "irrevokable"
   ],
-  "exp": "firm and irrevocable is my doom- Shakespeare"
+  "exp": "firm and irrevocable is my doom- Shakespeare",
+  "cefr": "C2"
  },
  {
   "word": "slither",
@@ -4111,7 +4483,8 @@
   "syn": [
    "slide"
   ],
-  "exp": "They slid through the wicket in the big gate"
+  "exp": "They slid through the wicket in the big gate",
+  "cefr": "C2"
  },
  {
   "word": "unnerve",
@@ -4124,7 +4497,8 @@
    "enervate",
    "unsettle"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "unnerving",
@@ -4136,7 +4510,8 @@
    "formidable",
    "redoubtable"
   ],
-  "exp": "the formidable prospect of major surgery"
+  "exp": "the formidable prospect of major surgery",
+  "cefr": "C2"
  },
  {
   "word": "unnervingly",
@@ -4145,7 +4520,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "protrude",
@@ -4159,7 +4535,8 @@
    "jut",
    "project"
   ],
-  "exp": "His sharp nose jutted out"
+  "exp": "His sharp nose jutted out",
+  "cefr": "C2"
  },
  {
   "word": "protrusion",
@@ -4173,7 +4550,8 @@
    "hump",
    "swelling"
   ],
-  "exp": "the gun in his pocket made an obvious bulge"
+  "exp": "the gun in his pocket made an obvious bulge",
+  "cefr": "C2"
  },
  {
   "word": "qualitative",
@@ -4182,7 +4560,8 @@
   ],
   "en": "involving distinctions based on qualities",
   "syn": [],
-  "exp": "qualitative analysis determines the chemical constituents of a substance or mixture"
+  "exp": "qualitative analysis determines the chemical constituents of a substance or mixture",
+  "cefr": "C2"
  },
  {
   "word": "procedural",
@@ -4192,7 +4571,8 @@
   ],
   "en": "of or relating to procedure",
   "syn": [],
-  "exp": "a procedural violation"
+  "exp": "a procedural violation",
+  "cefr": "C2"
  },
  {
   "word": "demystify",
@@ -4201,7 +4581,8 @@
   ],
   "en": "make less mysterious or remove the mystery from",
   "syn": [],
-  "exp": "let's demystify the event by explaining what it is all about"
+  "exp": "let's demystify the event by explaining what it is all about",
+  "cefr": "C2"
  },
  {
   "word": "demystification",
@@ -4210,7 +4591,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "proprietary",
@@ -4219,7 +4601,8 @@
   ],
   "en": "protected by trademark or patent or copyright",
   "syn": [],
-  "exp": "made or produced or distributed by one having exclusive rights"
+  "exp": "made or produced or distributed by one having exclusive rights",
+  "cefr": "C2"
  },
  {
   "word": "proprietorial",
@@ -4228,7 +4611,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "tantamount",
@@ -4240,7 +4624,8 @@
    "equivalent",
    "tantamount(p)"
   ],
-  "exp": "it was as good as gold"
+  "exp": "it was as good as gold",
+  "cefr": "C2"
  },
  {
   "word": "floodgates",
@@ -4249,7 +4634,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "imperceptible",
@@ -4260,7 +4646,8 @@
   "syn": [
    "unperceivable"
   ],
-  "exp": "an imperceptible drop in temperature"
+  "exp": "an imperceptible drop in temperature",
+  "cefr": "C2"
  },
  {
   "word": "imperceptibly",
@@ -4271,7 +4658,8 @@
   "syn": [
    "unnoticeably"
   ],
-  "exp": "the power of the Secretary of State in London increased gradually but imperceptibly"
+  "exp": "the power of the Secretary of State in London increased gradually but imperceptibly",
+  "cefr": "C2"
  },
  {
   "word": "hapless",
@@ -4285,7 +4673,8 @@
    "pathetic",
    "piteous"
   ],
-  "exp": "miserable victims of war"
+  "exp": "miserable victims of war",
+  "cefr": "C2"
  },
  {
   "word": "catastrophic",
@@ -4296,7 +4685,8 @@
   "syn": [
    "ruinous"
   ],
-  "exp": "bringing physical or financial ruin"
+  "exp": "bringing physical or financial ruin",
+  "cefr": "C2"
  },
  {
   "word": "catastrophically",
@@ -4305,7 +4695,8 @@
   ],
   "en": "with unfortunate consequences",
   "syn": [],
-  "exp": "catastrophically complex"
+  "exp": "catastrophically complex",
+  "cefr": "C2"
  },
  {
   "word": "commission",
@@ -4315,7 +4706,8 @@
   ],
   "en": "put into commission",
   "syn": [],
-  "exp": "equip for service"
+  "exp": "equip for service",
+  "cefr": "C2"
  },
  {
   "word": "wayward",
@@ -4328,7 +4720,8 @@
    "obstinate",
    "perverse"
   ],
-  "exp": "Mary Mary quite contrary"
+  "exp": "Mary Mary quite contrary",
+  "cefr": "C2"
  },
  {
   "word": "blurb",
@@ -4340,7 +4733,8 @@
    "endorsement",
    "indorsement"
   ],
-  "exp": "the author got all his friends to write blurbs for his book"
+  "exp": "the author got all his friends to write blurbs for his book",
+  "cefr": "C2"
  },
  {
   "word": "provincial",
@@ -4349,7 +4743,8 @@
   ],
   "en": "of or associated with a province",
   "syn": [],
-  "exp": "provincial government"
+  "exp": "provincial government",
+  "cefr": "C2"
  },
  {
   "word": "indolent",
@@ -4363,7 +4758,8 @@
    "otiose",
    "slothful"
   ],
-  "exp": "faineant kings under whose rule the country languished"
+  "exp": "faineant kings under whose rule the country languished",
+  "cefr": "C2"
  },
  {
   "word": "indolently",
@@ -4372,7 +4768,8 @@
   ],
   "en": "in an indolent manner",
   "syn": [],
-  "exp": "he lives indolently with his relatives"
+  "exp": "he lives indolently with his relatives",
+  "cefr": "C2"
  },
  {
   "word": "indolence",
@@ -4383,7 +4780,8 @@
   "syn": [
    "laziness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "taste-maker",
@@ -4395,7 +4793,8 @@
    "trend-setter",
    "fashion_arbiter"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "deviant",
@@ -4408,7 +4807,8 @@
    "aberrant",
    "deviate"
   ],
-  "exp": "aberrant behavior"
+  "exp": "aberrant behavior",
+  "cefr": "C2"
  },
  {
   "word": "deviantly",
@@ -4417,7 +4817,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "engender",
@@ -4429,7 +4830,8 @@
    "breed",
    "spawn"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "emolument",
@@ -4438,7 +4840,8 @@
   ],
   "en": "compensation received by virtue of holding an office or having employment (usually in the form of wages or fees)",
   "syn": [],
-  "exp": "a clause in the U.S. constitution prevents sitting legislators from receiving emoluments from their own votes"
+  "exp": "a clause in the U.S. constitution prevents sitting legislators from receiving emoluments from their own votes",
+  "cefr": "C2"
  },
  {
   "word": "munificence",
@@ -4452,7 +4855,8 @@
    "magnanimity",
    "openhandedness"
   ],
-  "exp": "extremely liberal and generous of spirit"
+  "exp": "extremely liberal and generous of spirit",
+  "cefr": "C2"
  },
  {
   "word": "posterity",
@@ -4463,7 +4867,8 @@
   "syn": [
    "descendants"
   ],
-  "exp": "we must secure the benefits of freedom for ourselves and our posterity"
+  "exp": "we must secure the benefits of freedom for ourselves and our posterity",
+  "cefr": "C2"
  },
  {
   "word": "venomous",
@@ -4475,7 +4880,8 @@
    "deadly",
    "virulent"
   ],
-  "exp": "a virulent insect bite"
+  "exp": "a virulent insect bite",
+  "cefr": "C2"
  },
  {
   "word": "venomously",
@@ -4486,7 +4892,8 @@
   "syn": [
    "poisonously"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "choreography",
@@ -4497,7 +4904,8 @@
   "syn": [
    "stage_dancing"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "choreographical",
@@ -4506,7 +4914,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "archetype",
@@ -4518,7 +4927,8 @@
    "original",
    "pilot"
   ],
-  "exp": "this painting is a copy of the original"
+  "exp": "this painting is a copy of the original",
+  "cefr": "C2"
  },
  {
   "word": "archetypal",
@@ -4532,7 +4942,8 @@
    "prototypic",
    "prototypical"
   ],
-  "exp": "she was the prototypal student activist"
+  "exp": "she was the prototypal student activist",
+  "cefr": "C2"
  },
  {
   "word": "dissension",
@@ -4543,7 +4954,8 @@
   "syn": [
    "discord"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "exalted",
@@ -4557,7 +4969,8 @@
    "grand",
    "high-flown"
   ],
-  "exp": "elevated in nature or style"
+  "exp": "elevated in nature or style",
+  "cefr": "C2"
  },
  {
   "word": "exaltedly",
@@ -4566,7 +4979,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "adept",
@@ -4581,7 +4995,8 @@
    "practiced",
    "proficient"
   ],
-  "exp": "a lesser-known but no less skillful composer"
+  "exp": "a lesser-known but no less skillful composer",
+  "cefr": "C2"
  },
  {
   "word": "inert",
@@ -4590,7 +5005,8 @@
   ],
   "en": "unable to move or resist motion",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "hitherto",
@@ -4604,7 +5020,8 @@
    "up_to_now",
    "heretofore"
   ],
-  "exp": "So far he hasn't called"
+  "exp": "So far he hasn't called",
+  "cefr": "C2"
  },
  {
   "word": "angst",
@@ -4613,7 +5030,8 @@
   ],
   "en": "an acute but unspecific feeling of anxiety",
   "syn": [],
-  "exp": "usually reserved for philosophical anxiety about the world or about personal freedom"
+  "exp": "usually reserved for philosophical anxiety about the world or about personal freedom",
+  "cefr": "C2"
  },
  {
   "word": "angsty",
@@ -4622,7 +5040,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "drabness",
@@ -4634,7 +5053,8 @@
    "dowdiness",
    "homeliness"
   ],
-  "exp": "lacking stylishness or elegance"
+  "exp": "lacking stylishness or elegance",
+  "cefr": "C2"
  },
  {
   "word": "melodious",
@@ -4645,7 +5065,8 @@
   "syn": [
    "tuneful"
   ],
-  "exp": "especially a pleasing tune"
+  "exp": "especially a pleasing tune",
+  "cefr": "C2"
  },
  {
   "word": "melodiously",
@@ -4656,7 +5077,8 @@
   "syn": [
    "tunefully"
   ],
-  "exp": "she sang melodiously"
+  "exp": "she sang melodiously",
+  "cefr": "C2"
  },
  {
   "word": "magpie",
@@ -4665,7 +5087,8 @@
   ],
   "en": "long-tailed black-and-white crow that utters a raucous chattering call",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "lark",
@@ -4676,7 +5099,8 @@
   "syn": [
    "meadowlark"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "melancholy",
@@ -4688,7 +5112,8 @@
   "syn": [
    "melancholic"
   ],
-  "exp": "growing more melancholy every hour"
+  "exp": "growing more melancholy every hour",
+  "cefr": "C2"
  },
  {
   "word": "meteorology",
@@ -4699,7 +5124,8 @@
   "syn": [
    "weather_forecasting"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "meteorological",
@@ -4711,7 +5137,8 @@
    "meteorologic",
    "meteoric"
   ],
-  "exp": "meteoric (or meteorological) phenomena"
+  "exp": "meteoric (or meteorological) phenomena",
+  "cefr": "C2"
  },
  {
   "word": "brink",
@@ -4723,7 +5150,8 @@
    "threshold",
    "verge"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "unsurpassed",
@@ -4735,7 +5163,8 @@
    "unexcelled",
    "unexceeded"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "loiter",
@@ -4749,7 +5178,8 @@
    "lollygag",
    "loaf"
   ],
-  "exp": "The high school students like to loiter in the Central Square"
+  "exp": "The high school students like to loiter in the Central Square",
+  "cefr": "C2"
  },
  {
   "word": "topple",
@@ -4760,7 +5190,8 @@
   "syn": [
    "tumble"
   ],
-  "exp": "The tower of the World Trade Center tumbled after the plane hit it"
+  "exp": "The tower of the World Trade Center tumbled after the plane hit it",
+  "cefr": "C2"
  },
  {
   "word": "intrinsic",
@@ -4771,7 +5202,8 @@
   "syn": [
    "intrinsical"
   ],
-  "exp": "form was treated as something intrinsic, as the very essence of the thing- John Dewey"
+  "exp": "form was treated as something intrinsic, as the very essence of the thing- John Dewey",
+  "cefr": "C2"
  },
  {
   "word": "intrinsically",
@@ -4783,7 +5215,8 @@
    "per_se",
    "in_and_of_itself"
   ],
-  "exp": "this statement is interesting per se"
+  "exp": "this statement is interesting per se",
+  "cefr": "C2"
  },
  {
   "word": "merit",
@@ -4795,7 +5228,8 @@
   "syn": [
    "deserve"
   ],
-  "exp": "You deserve a promotion after all the hard work you have done"
+  "exp": "You deserve a promotion after all the hard work you have done",
+  "cefr": "C2"
  },
  {
   "word": "promotable",
@@ -4804,7 +5238,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "clinch",
@@ -4813,7 +5248,8 @@
   ],
   "en": "secure or fasten by flattening the ends of nails or bolts",
   "syn": [],
-  "exp": "The girder was clinched into the wall"
+  "exp": "The girder was clinched into the wall",
+  "cefr": "C2"
  },
  {
   "word": "anonymity",
@@ -4824,7 +5260,8 @@
   "syn": [
    "namelessness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "splinter",
@@ -4836,7 +5273,8 @@
    "secede",
    "break_away"
   ],
-  "exp": "After the break up of the Soviet Union, many republics broke away"
+  "exp": "After the break up of the Soviet Union, many republics broke away",
+  "cefr": "C2"
  },
  {
   "word": "reproach",
@@ -4847,7 +5285,8 @@
   "syn": [
    "upbraid"
   ],
-  "exp": "The president reproached the general for his irresponsible behavior"
+  "exp": "The president reproached the general for his irresponsible behavior",
+  "cefr": "C2"
  },
  {
   "word": "disseminate",
@@ -4861,7 +5300,8 @@
    "circularise",
    "distribute"
   ],
-  "exp": "spread information"
+  "exp": "spread information",
+  "cefr": "C2"
  },
  {
   "word": "dissemination",
@@ -4874,7 +5314,8 @@
    "public_exposure",
    "spreading"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "dissemble",
@@ -4888,7 +5329,8 @@
    "pretend",
    "affect"
   ],
-  "exp": "He feigned that he was ill"
+  "exp": "He feigned that he was ill",
+  "cefr": "C2"
  },
  {
   "word": "mangle",
@@ -4897,7 +5339,8 @@
   ],
   "en": "press with a mangle",
   "syn": [],
-  "exp": "mangle the sheets"
+  "exp": "mangle the sheets",
+  "cefr": "C2"
  },
  {
   "word": "bereft",
@@ -4909,7 +5352,8 @@
    "lovelorn",
    "unbeloved"
   ],
-  "exp": "suffering from unrequited love"
+  "exp": "suffering from unrequited love",
+  "cefr": "C2"
  },
  {
   "word": "bereftly",
@@ -4918,7 +5362,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "soliloquy",
@@ -4929,7 +5374,8 @@
   "syn": [
    "monologue"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "solipsism",
@@ -4938,7 +5384,8 @@
   ],
   "en": "(philosophy) the philosophical theory that the self is all that you know to exist",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "soliloquize",
@@ -4951,7 +5398,8 @@
    "monologuise",
    "soliloquise"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "mutinous",
@@ -4960,7 +5408,8 @@
   ],
   "en": "disposed to or in a state of mutiny",
   "syn": [],
-  "exp": "the men became mutinous and insubordinate"
+  "exp": "the men became mutinous and insubordinate",
+  "cefr": "C2"
  },
  {
   "word": "mutinously",
@@ -4969,7 +5418,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "prissy",
@@ -4983,7 +5433,8 @@
    "prudish",
    "puritanical"
   ],
-  "exp": "my straitlaced Aunt Anna doesn't approve of my miniskirts"
+  "exp": "my straitlaced Aunt Anna doesn't approve of my miniskirts",
+  "cefr": "C2"
  },
  {
   "word": "reptilian",
@@ -4992,7 +5443,8 @@
   ],
   "en": "of or relating to the class Reptilia",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "diminish",
@@ -5005,7 +5457,8 @@
    "lessen",
    "fall"
   ],
-  "exp": "The amount of homework decreased towards the end of the semester"
+  "exp": "The amount of homework decreased towards the end of the semester",
+  "cefr": "C2"
  },
  {
   "word": "undiminishing",
@@ -5014,7 +5467,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "contagion",
@@ -5025,7 +5479,8 @@
   "syn": [
    "contagious_disease"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "homestead",
@@ -5034,7 +5489,8 @@
   ],
   "en": "the home and adjacent grounds occupied by a family",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "computerize",
@@ -5045,7 +5501,8 @@
   "syn": [
    "computerise"
   ],
-  "exp": "Our office is fully computerized now"
+  "exp": "Our office is fully computerized now",
+  "cefr": "C2"
  },
  {
   "word": "incumbent",
@@ -5057,7 +5514,8 @@
   "syn": [
    "officeholder"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "recumbent",
@@ -5069,7 +5527,8 @@
    "accumbent",
    "decumbent"
   ],
-  "exp": "in a position of comfort or rest"
+  "exp": "in a position of comfort or rest",
+  "cefr": "C2"
  },
  {
   "word": "nonchalant",
@@ -5081,7 +5540,8 @@
    "casual",
    "insouciant"
   ],
-  "exp": "an ability to interest casual students"
+  "exp": "an ability to interest casual students",
+  "cefr": "C2"
  },
  {
   "word": "nonchalantly",
@@ -5093,7 +5553,8 @@
    "coolly",
    "nervelessly"
   ],
-  "exp": "without more ado Barker borrowed a knife from his brigade Major and honed it on a carborundum stone as coolly as a butcher"
+  "exp": "without more ado Barker borrowed a knife from his brigade Major and honed it on a carborundum stone as coolly as a butcher",
+  "cefr": "C2"
  },
  {
   "word": "mesmeric",
@@ -5106,7 +5567,8 @@
    "mesmerizing",
    "spellbinding"
   ],
-  "exp": "read the bedtime story in a hypnotic voice"
+  "exp": "read the bedtime story in a hypnotic voice",
+  "cefr": "C2"
  },
  {
   "word": "stultify",
@@ -5115,7 +5577,8 @@
   ],
   "en": "prove to be of unsound mind or demonstrate someone's incompetence",
   "syn": [],
-  "exp": "nobody is legally allowed to stultify himself"
+  "exp": "nobody is legally allowed to stultify himself",
+  "cefr": "C2"
  },
  {
   "word": "stultifyingly",
@@ -5124,7 +5587,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "wallow",
@@ -5133,7 +5597,8 @@
   ],
   "en": "devote oneself entirely to something",
   "syn": [],
-  "exp": "indulge in to an immoderate degree, usually with pleasure"
+  "exp": "indulge in to an immoderate degree, usually with pleasure",
+  "cefr": "C2"
  },
  {
   "word": "ponderous",
@@ -5145,7 +5610,8 @@
    "heavy",
    "lumbering"
   ],
-  "exp": "the heavy tread of tired troops"
+  "exp": "the heavy tread of tired troops",
+  "cefr": "C2"
  },
  {
   "word": "ponderously",
@@ -5154,7 +5620,8 @@
   ],
   "en": "in an uninterestingly ponderous manner",
   "syn": [],
-  "exp": "the play was staged with ponderously realistic sets"
+  "exp": "the play was staged with ponderously realistic sets",
+  "cefr": "C2"
  },
  {
   "word": "lassitude",
@@ -5166,7 +5633,8 @@
    "lethargy",
    "sluggishness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "vicinity",
@@ -5180,7 +5648,8 @@
    "neighbourhood",
    "neck_of_the_woods"
   ],
-  "exp": "the plane crashed in the vicinity of Asheville"
+  "exp": "the plane crashed in the vicinity of Asheville",
+  "cefr": "C2"
  },
  {
   "word": "ebb",
@@ -5194,7 +5663,8 @@
    "ebb_out",
    "ebb_off"
   ],
-  "exp": "the tides ebbed at noon"
+  "exp": "the tides ebbed at noon",
+  "cefr": "C2"
  },
  {
   "word": "wax",
@@ -5203,7 +5673,8 @@
   ],
   "en": "cover with wax",
   "syn": [],
-  "exp": "wax the car"
+  "exp": "wax the car",
+  "cefr": "C2"
  },
  {
   "word": "wane",
@@ -5215,7 +5686,8 @@
    "decline",
    "go_down"
   ],
-  "exp": "Interest in the project waned"
+  "exp": "Interest in the project waned",
+  "cefr": "C2"
  },
  {
   "word": "antediluvian",
@@ -5226,7 +5698,8 @@
   "syn": [
    "antediluvial"
   ],
-  "exp": "antediluvian man"
+  "exp": "antediluvian man",
+  "cefr": "C2"
  },
  {
   "word": "ostensible",
@@ -5238,7 +5711,8 @@
    "apparent(a)",
    "seeming(a)"
   ],
-  "exp": "for all his apparent wealth he had no money to pay the rent"
+  "exp": "for all his apparent wealth he had no money to pay the rent",
+  "cefr": "C2"
  },
  {
   "word": "ostensibly",
@@ -5251,7 +5725,8 @@
    "seemingly",
    "on_the_face_of_it"
   ],
-  "exp": "irrigation often produces bumper crops from apparently desert land"
+  "exp": "irrigation often produces bumper crops from apparently desert land",
+  "cefr": "C2"
  },
  {
   "word": "interlocking",
@@ -5264,7 +5739,8 @@
    "interlinking",
    "interwoven"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "plane",
@@ -5276,7 +5752,8 @@
    "airplane",
    "aeroplane"
   ],
-  "exp": "the flight was delayed due to trouble with the airplane"
+  "exp": "the flight was delayed due to trouble with the airplane",
+  "cefr": "C2"
  },
  {
   "word": "undemonstrative",
@@ -5285,7 +5762,8 @@
   ],
   "en": "not given to open expression of emotion",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "undemonstratively",
@@ -5294,7 +5772,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "menace",
@@ -5305,7 +5784,8 @@
   "syn": [
    "threat"
   ],
-  "exp": "earthquakes are a constant threat in Japan"
+  "exp": "earthquakes are a constant threat in Japan",
+  "cefr": "C2"
  },
  {
   "word": "menacing",
@@ -5319,7 +5799,8 @@
    "minacious",
    "minatory"
   ],
-  "exp": "his tone became menacing"
+  "exp": "his tone became menacing",
+  "cefr": "C2"
  },
  {
   "word": "menacingly",
@@ -5330,7 +5811,8 @@
   "syn": [
    "threateningly"
   ],
-  "exp": "the voice at the other end of the line dropped menacingly"
+  "exp": "the voice at the other end of the line dropped menacingly",
+  "cefr": "C2"
  },
  {
   "word": "calamity",
@@ -5344,7 +5826,8 @@
    "tragedy",
    "cataclysm"
   ],
-  "exp": "the whole city was affected by the irremediable calamity"
+  "exp": "the whole city was affected by the irremediable calamity",
+  "cefr": "C2"
  },
  {
   "word": "calamitous",
@@ -5358,7 +5841,8 @@
    "fatal",
    "fateful"
   ],
-  "exp": "the stock market crashed on Black Friday"
+  "exp": "the stock market crashed on Black Friday",
+  "cefr": "C2"
  },
  {
   "word": "calamitously",
@@ -5367,7 +5851,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "nigh",
@@ -5379,7 +5864,8 @@
    "near",
    "close"
   ],
-  "exp": "as the wedding day drew near"
+  "exp": "as the wedding day drew near",
+  "cefr": "C2"
  },
  {
   "word": "austere",
@@ -5392,7 +5878,8 @@
    "stark",
    "stern"
   ],
-  "exp": "a stark interior"
+  "exp": "a stark interior",
+  "cefr": "C2"
  },
  {
   "word": "austerely",
@@ -5401,7 +5888,8 @@
   ],
   "en": "in an austere fashion",
   "syn": [],
-  "exp": "the church was austerely simple"
+  "exp": "the church was austerely simple",
+  "cefr": "C2"
  },
  {
   "word": "austerity",
@@ -5413,7 +5901,8 @@
    "asceticism",
    "nonindulgence"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "idiosyncrasy",
@@ -5425,7 +5914,8 @@
    "foible",
    "mannerism"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "idiosyncratic",
@@ -5434,7 +5924,8 @@
   ],
   "en": "peculiar to the individual",
   "syn": [],
-  "exp": "we all have our own idiosyncratic gestures"
+  "exp": "we all have our own idiosyncratic gestures",
+  "cefr": "C2"
  },
  {
   "word": "idiomatic",
@@ -5445,7 +5936,8 @@
   "syn": [
    "idiomatical"
   ],
-  "exp": "idiomatic English"
+  "exp": "idiomatic English",
+  "cefr": "C2"
  },
  {
   "word": "idiomatically",
@@ -5454,7 +5946,8 @@
   ],
   "en": "in an idiomatic manner",
   "syn": [],
-  "exp": "he expressed himself idiomatically"
+  "exp": "he expressed himself idiomatically",
+  "cefr": "C2"
  },
  {
   "word": "kinetic",
@@ -5463,7 +5956,8 @@
   ],
   "en": "relating to the motion of material bodies and the forces associated therewith",
   "syn": [],
-  "exp": "kinetic energy"
+  "exp": "kinetic energy",
+  "cefr": "C2"
  },
  {
   "word": "kinetically",
@@ -5472,7 +5966,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "unmediated",
@@ -5483,7 +5978,8 @@
   "syn": [
    "direct"
   ],
-  "exp": "in direct contact with the voters"
+  "exp": "in direct contact with the voters",
+  "cefr": "C2"
  },
  {
   "word": "mediate",
@@ -5497,7 +5993,8 @@
    "liaise",
    "arbitrate"
   ],
-  "exp": "He interceded in the family dispute"
+  "exp": "He interceded in the family dispute",
+  "cefr": "C2"
  },
  {
   "word": "mediation",
@@ -5506,7 +6003,8 @@
   ],
   "en": "a negotiation to resolve differences that is conducted by some impartial party",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "unharried",
@@ -5515,7 +6013,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "figurative",
@@ -5526,7 +6025,8 @@
   "syn": [
    "nonliteral"
   ],
-  "exp": "using figures of speech"
+  "exp": "using figures of speech",
+  "cefr": "C2"
  },
  {
   "word": "figuratively",
@@ -5535,7 +6035,8 @@
   ],
   "en": "in a figurative sense",
   "syn": [],
-  "exp": "figuratively speaking,..."
+  "exp": "figuratively speaking,...",
+  "cefr": "C2"
  },
  {
   "word": "exorcism",
@@ -5546,7 +6047,8 @@
   "syn": [
    "dispossession"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "exorcist",
@@ -5555,7 +6057,8 @@
   ],
   "en": "one of the minor orders in the unreformed Western Church but now suppressed in the Roman Catholic Church",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "mundanity",
@@ -5568,7 +6071,8 @@
    "worldliness",
    "mundaneness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "mediocrity",
@@ -5579,7 +6083,8 @@
   "syn": [
    "averageness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "dubiously",
@@ -5590,7 +6095,8 @@
   "syn": [
    "questionably"
   ],
-  "exp": "these were estates his father questionably acquired"
+  "exp": "these were estates his father questionably acquired",
+  "cefr": "C2"
  },
  {
   "word": "curate",
@@ -5604,7 +6110,8 @@
    "parson",
    "pastor"
   ],
-  "exp": "clergymen are usually called ministers in Protestant churches"
+  "exp": "clergymen are usually called ministers in Protestant churches",
+  "cefr": "C2"
  },
  {
   "word": "curator",
@@ -5615,7 +6122,8 @@
   "syn": [
    "conservator"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "antithesis",
@@ -5624,7 +6132,8 @@
   ],
   "en": "exact opposite",
   "syn": [],
-  "exp": "his theory is the antithesis of mine"
+  "exp": "his theory is the antithesis of mine",
+  "cefr": "C2"
  },
  {
   "word": "antithetical",
@@ -5635,7 +6144,8 @@
   "syn": [
    "antithetic"
   ],
-  "exp": "practices entirely antithetical to her professed beliefs"
+  "exp": "practices entirely antithetical to her professed beliefs",
+  "cefr": "C2"
  },
  {
   "word": "parameter",
@@ -5646,7 +6156,8 @@
   "syn": [
    "parametric_quantity"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "detract",
@@ -5657,7 +6168,8 @@
   "syn": [
    "take_away"
   ],
-  "exp": "His bad manners detract from his good character"
+  "exp": "His bad manners detract from his good character",
+  "cefr": "C2"
  },
  {
   "word": "interrogate",
@@ -5666,7 +6178,8 @@
   ],
   "en": "transmit (a signal) for setting off an appropriate response, as in telecommunication",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "interrogation",
@@ -5679,7 +6192,8 @@
    "interrogative",
    "interrogative_sentence"
   ],
-  "exp": "he asked a direct question"
+  "exp": "he asked a direct question",
+  "cefr": "C2"
  },
  {
   "word": "interrogative",
@@ -5688,7 +6202,8 @@
   ],
   "en": "relating to verbs in the so-called interrogative mood",
   "syn": [],
-  "exp": "not all questions have an interrogative construction"
+  "exp": "not all questions have an interrogative construction",
+  "cefr": "C2"
  },
  {
   "word": "interrogatively",
@@ -5697,7 +6212,8 @@
   ],
   "en": "in a questioning format",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "perverse",
@@ -5706,7 +6222,8 @@
   ],
   "en": "marked by a disposition to oppose and contradict",
   "syn": [],
-  "exp": "took perverse satisfaction in foiling her plans"
+  "exp": "took perverse satisfaction in foiling her plans",
+  "cefr": "C2"
  },
  {
   "word": "perversity",
@@ -5718,7 +6235,8 @@
    "contrariness",
    "perverseness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "attainment",
@@ -5727,7 +6245,8 @@
   ],
   "en": "the act of achieving an aim",
   "syn": [],
-  "exp": "the attainment of independence"
+  "exp": "the attainment of independence",
+  "cefr": "C2"
  },
  {
   "word": "opaque",
@@ -5736,7 +6255,8 @@
   ],
   "en": "not transmitting or reflecting light or radiant energy",
   "syn": [],
-  "exp": "opaque windows of the jail"
+  "exp": "opaque windows of the jail",
+  "cefr": "C2"
  },
  {
   "word": "opacity",
@@ -5745,7 +6265,8 @@
   ],
   "en": "the phenomenon of not permitting the passage of electromagnetic radiation",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "remit",
@@ -5754,7 +6275,8 @@
   ],
   "en": "send (money) in payment",
   "syn": [],
-  "exp": "remit $25"
+  "exp": "remit $25",
+  "cefr": "C2"
  },
  {
   "word": "remittance",
@@ -5767,7 +6289,8 @@
    "remission",
    "remitment"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "recourse",
@@ -5779,7 +6302,8 @@
    "resort",
    "refuge"
   ],
-  "exp": "have recourse to the courts"
+  "exp": "have recourse to the courts",
+  "cefr": "C2"
  },
  {
   "word": "pedestal",
@@ -5791,7 +6315,8 @@
    "base",
    "stand"
   ],
-  "exp": "the base of the lamp"
+  "exp": "the base of the lamp",
+  "cefr": "C2"
  },
  {
   "word": "pedestrian",
@@ -5804,7 +6329,8 @@
    "prosy",
    "earthbound"
   ],
-  "exp": "a pedestrian movie plot"
+  "exp": "a pedestrian movie plot",
+  "cefr": "C2"
  },
  {
   "word": "lurid",
@@ -5813,7 +6339,8 @@
   ],
   "en": "horrible in fierceness or savagery",
   "syn": [],
-  "exp": "lurid crimes"
+  "exp": "lurid crimes",
+  "cefr": "C2"
  },
  {
   "word": "luridly",
@@ -5822,7 +6349,8 @@
   ],
   "en": "in a lurid manner",
   "syn": [],
-  "exp": "it was luridly described in the book as the place where mystics took refuge"
+  "exp": "it was luridly described in the book as the place where mystics took refuge",
+  "cefr": "C2"
  },
  {
   "word": "fallacy",
@@ -5833,7 +6361,8 @@
   "syn": [
    "false_belief"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "rife",
@@ -5847,7 +6376,8 @@
    "predominant",
    "dominant"
   ],
-  "exp": "prevailing winds"
+  "exp": "prevailing winds",
+  "cefr": "C2"
  },
  {
   "word": "grumble",
@@ -5859,7 +6389,8 @@
    "grouch",
    "scold"
   ],
-  "exp": "He scolded about anything that he thought was wrong"
+  "exp": "He scolded about anything that he thought was wrong",
+  "cefr": "C2"
  },
  {
   "word": "mercenary",
@@ -5870,7 +6401,8 @@
   "syn": [
    "soldier_of_fortune"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "polysyllabic",
@@ -5879,7 +6411,8 @@
   ],
   "en": "having or characterized by words of more than three syllables",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "syllabic",
@@ -5888,7 +6421,8 @@
   ],
   "en": "of or relating to syllables",
   "syn": [],
-  "exp": "syllabic characters each represent a syllable"
+  "exp": "syllabic characters each represent a syllable",
+  "cefr": "C2"
  },
  {
   "word": "superfluous",
@@ -5902,7 +6436,8 @@
    "purposeless",
    "senseless"
   ],
-  "exp": "having no excuse for being"
+  "exp": "having no excuse for being",
+  "cefr": "C2"
  },
  {
   "word": "superfluously",
@@ -5911,7 +6446,8 @@
   ],
   "en": "in a superfluous manner",
   "syn": [],
-  "exp": "superfluously, he added his silly comments to the discussion"
+  "exp": "superfluously, he added his silly comments to the discussion",
+  "cefr": "C2"
  },
  {
   "word": "snippet",
@@ -5923,7 +6459,8 @@
    "snip",
    "snipping"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "practitioner",
@@ -5934,7 +6471,8 @@
   "syn": [
    "practician"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "ephemeral",
@@ -5948,7 +6486,8 @@
    "transient",
    "transitory"
   ],
-  "exp": "the ephemeral joys of childhood"
+  "exp": "the ephemeral joys of childhood",
+  "cefr": "C2"
  },
  {
   "word": "ephemera",
@@ -5957,7 +6496,8 @@
   ],
   "en": "something transitory",
   "syn": [],
-  "exp": "lasting a day"
+  "exp": "lasting a day",
+  "cefr": "C2"
  },
  {
   "word": "ephemerality",
@@ -5969,7 +6509,8 @@
    "ephemeralness",
    "fleetingness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "summarily",
@@ -5978,7 +6519,8 @@
   ],
   "en": "without delay",
   "syn": [],
-  "exp": "in a summary manner"
+  "exp": "in a summary manner",
+  "cefr": "C2"
  },
  {
   "word": "skim",
@@ -5989,7 +6531,8 @@
   "syn": [
    "plane"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "infallibly",
@@ -5998,7 +6541,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "infallible",
@@ -6007,7 +6551,8 @@
   ],
   "en": "incapable of failure or error",
   "syn": [],
-  "exp": "the Catholic Church considers the Pope infallible"
+  "exp": "the Catholic Church considers the Pope infallible",
+  "cefr": "C2"
  },
  {
   "word": "infallibility",
@@ -6016,7 +6561,8 @@
   ],
   "en": "the quality of never making an error",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "depravity",
@@ -6030,7 +6576,8 @@
    "depravation",
    "putrefaction"
   ],
-  "exp": "impairment of virtue and moral principles"
+  "exp": "impairment of virtue and moral principles",
+  "cefr": "C2"
  },
  {
   "word": "depraved",
@@ -6043,7 +6590,8 @@
    "perverted",
    "reprobate"
   ],
-  "exp": "a perverted sense of loyalty"
+  "exp": "a perverted sense of loyalty",
+  "cefr": "C2"
  },
  {
   "word": "deprecate",
@@ -6052,7 +6600,8 @@
   ],
   "en": "express strong disapproval of",
   "syn": [],
-  "exp": "deplore"
+  "exp": "deplore",
+  "cefr": "C2"
  },
  {
   "word": "deprecatingly",
@@ -6061,7 +6610,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "revile",
@@ -6074,7 +6624,8 @@
    "vituperate",
    "rail"
   ],
-  "exp": "The Nazi propaganda vilified the Jews"
+  "exp": "The Nazi propaganda vilified the Jews",
+  "cefr": "C2"
  },
  {
   "word": "revulsion",
@@ -6087,7 +6638,8 @@
    "repulsion",
    "horror"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "meager",
@@ -6101,7 +6653,8 @@
    "stingy",
    "scrimpy"
   ],
-  "exp": "meager resources"
+  "exp": "meager resources",
+  "cefr": "C2"
  },
  {
   "word": "arcane",
@@ -6110,7 +6663,8 @@
   ],
   "en": "requiring secret or mysterious knowledge",
   "syn": [],
-  "exp": "the arcane science of dowsing"
+  "exp": "the arcane science of dowsing",
+  "cefr": "C2"
  },
  {
   "word": "arcanely",
@@ -6119,7 +6673,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "porten",
@@ -6128,7 +6683,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "divination",
@@ -6137,7 +6693,8 @@
   ],
   "en": "successful conjecture by unusual insight or good luck",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "flit",
@@ -6150,7 +6707,8 @@
    "fleet",
    "dart"
   ],
-  "exp": "The hummingbird flitted among the branches"
+  "exp": "The hummingbird flitted among the branches",
+  "cefr": "C2"
  },
  {
   "word": "hitch",
@@ -6161,7 +6719,8 @@
   "syn": [
    "catch"
   ],
-  "exp": "One foot caught in the stirrup"
+  "exp": "One foot caught in the stirrup",
+  "cefr": "C2"
  },
  {
   "word": "prone",
@@ -6170,7 +6729,8 @@
   ],
   "en": "having a tendency (to)",
   "syn": [],
-  "exp": "often used in combination"
+  "exp": "often used in combination",
+  "cefr": "C2"
  },
  {
   "word": "scavenger",
@@ -6179,7 +6739,8 @@
   ],
   "en": "a chemical agent that is added to a chemical mixture to counteract the effects of impurities",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "vermin",
@@ -6190,7 +6751,8 @@
   "syn": [
    "varmint"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "totemic",
@@ -6199,7 +6761,8 @@
   ],
   "en": "relating to totemism",
   "syn": [],
-  "exp": "totemic object"
+  "exp": "totemic object",
+  "cefr": "C2"
  },
  {
   "word": "emulate",
@@ -6208,7 +6771,8 @@
   ],
   "en": "strive to equal or match, especially by imitating",
   "syn": [],
-  "exp": "He is emulating the skating skills of his older sister"
+  "exp": "He is emulating the skating skills of his older sister",
+  "cefr": "C2"
  },
  {
   "word": "emulation",
@@ -6217,7 +6781,8 @@
   ],
   "en": "ambition to equal or excel",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "avian",
@@ -6226,7 +6791,8 @@
   ],
   "en": "pertaining to or characteristic of birds",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "vestigial",
@@ -6237,7 +6803,8 @@
   "syn": [
    "rudimentary"
   ],
-  "exp": "rudimentary wings"
+  "exp": "rudimentary wings",
+  "cefr": "C2"
  },
  {
   "word": "vestigially",
@@ -6246,7 +6813,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "barometer",
@@ -6255,7 +6823,8 @@
   ],
   "en": "an instrument that measures atmospheric pressure",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "brouhaha",
@@ -6268,7 +6837,8 @@
    "uproar",
    "katzenjammer"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "magnate",
@@ -6282,7 +6852,8 @@
    "business_leader",
    "king"
   ],
-  "exp": "an oil baron"
+  "exp": "an oil baron",
+  "cefr": "C2"
  },
  {
   "word": "magnanimous",
@@ -6293,7 +6864,8 @@
   "syn": [
    "greathearted"
   ],
-  "exp": "a greathearted general"
+  "exp": "a greathearted general",
+  "cefr": "C2"
  },
  {
   "word": "magnanimously",
@@ -6302,7 +6874,8 @@
   ],
   "en": "in a magnanimous manner",
   "syn": [],
-  "exp": "magnanimously, he forgave all those who had harmed him"
+  "exp": "magnanimously, he forgave all those who had harmed him",
+  "cefr": "C2"
  },
  {
   "word": "magnanimity",
@@ -6316,7 +6889,8 @@
    "largesse",
    "openhandedness"
   ],
-  "exp": "extremely liberal and generous of spirit"
+  "exp": "extremely liberal and generous of spirit",
+  "cefr": "C2"
  },
  {
   "word": "whirlwind",
@@ -6325,7 +6899,8 @@
   ],
   "en": "a more or less vertical column of air whirling around itself as it moves over the surface of the Earth",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "strait",
@@ -6336,7 +6911,8 @@
   "syn": [
    "sound"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "secular",
@@ -6345,7 +6921,8 @@
   ],
   "en": "of or relating to the doctrine that rejects religion and religious considerations",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "secularly",
@@ -6354,7 +6931,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "euphemism",
@@ -6363,7 +6941,8 @@
   ],
   "en": "an inoffensive or indirect expression that is substituted for one that is considered offensive or too harsh",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "euphemistic",
@@ -6372,7 +6951,8 @@
   ],
   "en": "of or the nature of euphemism",
   "syn": [],
-  "exp": "`peepee' is a common euphemistic term"
+  "exp": "`peepee' is a common euphemistic term",
+  "cefr": "C2"
  },
  {
   "word": "euphemistically",
@@ -6381,7 +6961,8 @@
   ],
   "en": "in a euphemistic manner",
   "syn": [],
-  "exp": "his violent death was euphemistically referred to as a passing away"
+  "exp": "his violent death was euphemistically referred to as a passing away",
+  "cefr": "C2"
  },
  {
   "word": "condensation",
@@ -6390,7 +6971,8 @@
   ],
   "en": "(psychoanalysis) an unconscious process whereby two ideas or images combine into a single symbol",
   "syn": [],
-  "exp": "especially in dreams"
+  "exp": "especially in dreams",
+  "cefr": "C2"
  },
  {
   "word": "redundant",
@@ -6404,7 +6986,8 @@
    "spare",
    "supererogatory"
   ],
-  "exp": "trying to lose excess weight"
+  "exp": "trying to lose excess weight",
+  "cefr": "C2"
  },
  {
   "word": "redundancy",
@@ -6413,7 +6996,8 @@
   ],
   "en": "repetition of messages to reduce the probability of errors in transmission",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "redundantly",
@@ -6422,7 +7006,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "colloquial",
@@ -6433,7 +7018,8 @@
   "syn": [
    "conversational"
   ],
-  "exp": "wrote her letters in a colloquial style"
+  "exp": "wrote her letters in a colloquial style",
+  "cefr": "C2"
  },
  {
   "word": "colloquium",
@@ -6442,7 +7028,8 @@
   ],
   "en": "an academic meeting or seminar usually led by a different lecturer and on a different topic at each meeting",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "colloquially",
@@ -6454,7 +7041,8 @@
    "conversationally",
    "informally"
   ],
-  "exp": "this building is colloquially referred to as The Barn"
+  "exp": "this building is colloquially referred to as The Barn",
+  "cefr": "C2"
  },
  {
   "word": "allusion",
@@ -6463,7 +7051,8 @@
   ],
   "en": "passing reference or indirect mention",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "allude",
@@ -6475,7 +7064,8 @@
    "touch",
    "advert"
   ],
-  "exp": "He alluded to the problem but did not mention it"
+  "exp": "He alluded to the problem but did not mention it",
+  "cefr": "C2"
  },
  {
   "word": "disparage",
@@ -6487,7 +7077,8 @@
    "belittle",
    "pick_at"
   ],
-  "exp": "She disparaged her student's efforts"
+  "exp": "She disparaged her student's efforts",
+  "cefr": "C2"
  },
  {
   "word": "disparaging",
@@ -6499,7 +7090,8 @@
    "derogative",
    "derogatory"
   ],
-  "exp": "disparaging remarks about the new house"
+  "exp": "disparaging remarks about the new house",
+  "cefr": "C2"
  },
  {
   "word": "disparagingly",
@@ -6510,7 +7102,8 @@
   "syn": [
    "slightingly"
   ],
-  "exp": "these mythological figures are described disparagingly as belonging `only to a story'"
+  "exp": "these mythological figures are described disparagingly as belonging `only to a story'",
+  "cefr": "C2"
  },
  {
   "word": "disparagement",
@@ -6522,7 +7115,8 @@
    "depreciation",
    "derogation"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "huddle",
@@ -6534,7 +7128,8 @@
   "syn": [
    "huddle_together"
   ],
-  "exp": "let's huddle together--it's cold!"
+  "exp": "let's huddle together--it's cold!",
+  "cefr": "C2"
  },
  {
   "word": "topography",
@@ -6543,7 +7138,8 @@
   ],
   "en": "the configuration of a surface and the relations among its man-made and natural features",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "topographical",
@@ -6554,7 +7150,8 @@
   "syn": [
    "topographic"
   ],
-  "exp": "a topographical engineer"
+  "exp": "a topographical engineer",
+  "cefr": "C2"
  },
  {
   "word": "topographically",
@@ -6563,7 +7160,8 @@
   ],
   "en": "with regard to topography",
   "syn": [],
-  "exp": "the geological environment is the primary factor in determining the character of a country not only topographically but historically"
+  "exp": "the geological environment is the primary factor in determining the character of a country not only topographically but historically",
+  "cefr": "C2"
  },
  {
   "word": "confabulate",
@@ -6572,7 +7170,8 @@
   ],
   "en": "unconsciously replace fact with fantasy in one's memory",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "confabulation",
@@ -6586,7 +7185,8 @@
    "schmooze",
    "schmoose"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "surrealist",
@@ -6595,7 +7195,8 @@
   ],
   "en": "an artist who is a member of the movement called surrealism",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "surrealism",
@@ -6604,7 +7205,8 @@
   ],
   "en": "a 20th century movement of artists and writers (developing out of dadaism) who used fantastic images and incongruous juxtapositions in order to represent unconscious thoughts and dreams",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "contrive",
@@ -6617,7 +7219,8 @@
    "project",
    "design"
   ],
-  "exp": "They contrived to murder their boss"
+  "exp": "They contrived to murder their boss",
+  "cefr": "C2"
  },
  {
   "word": "malice",
@@ -6631,7 +7234,8 @@
    "spitefulness",
    "venom"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "malicious",
@@ -6640,7 +7244,8 @@
   ],
   "en": "having the nature of or resulting from malice",
   "syn": [],
-  "exp": "took malicious pleasure in...watching me wince- Rudyard Kipling"
+  "exp": "took malicious pleasure in...watching me wince- Rudyard Kipling",
+  "cefr": "C2"
  },
  {
   "word": "maliciously",
@@ -6649,7 +7254,8 @@
   ],
   "en": "with malice",
   "syn": [],
-  "exp": "in a malicious manner"
+  "exp": "in a malicious manner",
+  "cefr": "C2"
  },
  {
   "word": "cinematography",
@@ -6661,7 +7267,8 @@
    "filming",
    "motion-picture_photography"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "cinematographer",
@@ -6673,7 +7280,8 @@
    "cameraman",
    "camera_operator"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "maverick",
@@ -6684,7 +7292,8 @@
   "syn": [
    "rebel"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "diligent",
@@ -6695,7 +7304,8 @@
   "syn": [
    "persevering"
   ],
-  "exp": "a diligent (or patient) worker"
+  "exp": "a diligent (or patient) worker",
+  "cefr": "C2"
  },
  {
   "word": "diligence",
@@ -6704,7 +7314,8 @@
   ],
   "en": "conscientiousness in paying proper attention to a task",
   "syn": [],
-  "exp": "giving the degree of care required in a given situation"
+  "exp": "giving the degree of care required in a given situation",
+  "cefr": "C2"
  },
  {
   "word": "diligently",
@@ -6713,7 +7324,8 @@
   ],
   "en": "with diligence",
   "syn": [],
-  "exp": "in a diligent manner"
+  "exp": "in a diligent manner",
+  "cefr": "C2"
  },
  {
   "word": "turret",
@@ -6722,7 +7334,8 @@
   ],
   "en": "a small tower extending above a building",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "impressionistic",
@@ -6731,7 +7344,8 @@
   ],
   "en": "of or relating to or based on an impression rather than on facts or reasoning",
   "syn": [],
-  "exp": "a surprisingly impressionistic review bearing marks of hasty composition"
+  "exp": "a surprisingly impressionistic review bearing marks of hasty composition",
+  "cefr": "C2"
  },
  {
   "word": "impressionistically",
@@ -6740,7 +7354,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "snobbery",
@@ -6752,7 +7367,8 @@
    "snobbism",
    "snobbishness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "parochial",
@@ -6761,7 +7377,8 @@
   ],
   "en": "relating to or supported by or located in a parish",
   "syn": [],
-  "exp": "parochial schools"
+  "exp": "parochial schools",
+  "cefr": "C2"
  },
  {
   "word": "gravitate",
@@ -6770,7 +7387,8 @@
   ],
   "en": "move toward",
   "syn": [],
-  "exp": "The conversation gravitated towards politics"
+  "exp": "The conversation gravitated towards politics",
+  "cefr": "C2"
  },
  {
   "word": "gravitational",
@@ -6781,7 +7399,8 @@
   "syn": [
    "gravitative"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "gravitationally",
@@ -6790,7 +7409,8 @@
   ],
   "en": "with respect to gravitation",
   "syn": [],
-  "exp": "gravitationally strong forces"
+  "exp": "gravitationally strong forces",
+  "cefr": "C2"
  },
  {
   "word": "consternation",
@@ -6802,7 +7422,8 @@
    "alarm",
    "dismay"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "haughty",
@@ -6816,7 +7437,8 @@
    "lordly",
    "overbearing"
   ],
-  "exp": "some economists are disdainful of their colleagues in other social disciplines"
+  "exp": "some economists are disdainful of their colleagues in other social disciplines",
+  "cefr": "C2"
  },
  {
   "word": "haughtily",
@@ -6825,7 +7447,8 @@
   ],
   "en": "in a haughty manner",
   "syn": [],
-  "exp": "he peered haughtily down his nose"
+  "exp": "he peered haughtily down his nose",
+  "cefr": "C2"
  },
  {
   "word": "axiom",
@@ -6836,7 +7459,8 @@
   "syn": [
    "maxim"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "axiomatic",
@@ -6848,7 +7472,8 @@
    "self-evident",
    "taken_for_granted(p)"
   ],
-  "exp": "we hold these truths to be self-evident"
+  "exp": "we hold these truths to be self-evident",
+  "cefr": "C2"
  },
  {
   "word": "attrition",
@@ -6861,7 +7486,8 @@
    "corrasion",
    "detrition"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "enduringly",
@@ -6870,7 +7496,8 @@
   ],
   "en": "in an enduring manner",
   "syn": [],
-  "exp": "Roman culture was enduringly fertilized"
+  "exp": "Roman culture was enduringly fertilized",
+  "cefr": "C2"
  },
  {
   "word": "reissue",
@@ -6881,7 +7508,8 @@
   "syn": [
    "reprint"
   ],
-  "exp": "They never reprinted the famous treatise"
+  "exp": "They never reprinted the famous treatise",
+  "cefr": "C2"
  },
  {
   "word": "sulphur",
@@ -6894,7 +7522,8 @@
    "S",
    "atomic_number_16"
   ],
-  "exp": "best known in yellow crystals"
+  "exp": "best known in yellow crystals",
+  "cefr": "C2"
  },
  {
   "word": "sulphuric",
@@ -6905,7 +7534,8 @@
   "syn": [
    "sulfuric"
   ],
-  "exp": "sulphuric esters"
+  "exp": "sulphuric esters",
+  "cefr": "C2"
  },
  {
   "word": "phantom",
@@ -6919,7 +7549,8 @@
    "phantasma",
    "fantasm"
   ],
-  "exp": "we were unprepared for the apparition that confronted us"
+  "exp": "we were unprepared for the apparition that confronted us",
+  "cefr": "C2"
  },
  {
   "word": "moor",
@@ -6928,7 +7559,8 @@
   ],
   "en": "one of the Muslim people of north Africa",
   "syn": [],
-  "exp": "of mixed Arab and Berber descent"
+  "exp": "of mixed Arab and Berber descent",
+  "cefr": "C2"
  },
  {
   "word": "solitary",
@@ -6940,7 +7572,8 @@
   "syn": [
    "solitary_confinement"
   ],
-  "exp": "he was held in solitary"
+  "exp": "he was held in solitary",
+  "cefr": "C2"
  },
  {
   "word": "solitariness",
@@ -6951,7 +7584,8 @@
   "syn": [
    "loneliness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "solitude",
@@ -6962,7 +7596,8 @@
   "syn": [
    "purdah"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "adhere",
@@ -6971,7 +7606,8 @@
   ],
   "en": "be compatible or in accordance with",
   "syn": [],
-  "exp": "You must adhere to the rules"
+  "exp": "You must adhere to the rules",
+  "cefr": "C2"
  },
  {
   "word": "adhesion",
@@ -6980,7 +7616,8 @@
   ],
   "en": "abnormal union of bodily tissues",
   "syn": [],
-  "exp": "most common in the abdomen"
+  "exp": "most common in the abdomen",
+  "cefr": "C2"
  },
  {
   "word": "proscribe",
@@ -6994,7 +7631,8 @@
    "interdict",
    "veto"
   ],
-  "exp": "I forbid you to call me late at night"
+  "exp": "I forbid you to call me late at night",
+  "cefr": "C2"
  },
  {
   "word": "proscription",
@@ -7006,7 +7644,8 @@
    "prohibition",
    "ban"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "crony",
@@ -7020,7 +7659,8 @@
    "chum",
    "pal"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "dribble",
@@ -7033,7 +7673,8 @@
    "drip",
    "trickle"
   ],
-  "exp": "the formation and falling of drops of liquid"
+  "exp": "the formation and falling of drops of liquid",
+  "cefr": "C2"
  },
  {
   "word": "ingrate",
@@ -7045,7 +7686,8 @@
    "thankless_wretch",
    "ungrateful_person"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "prise",
@@ -7059,7 +7701,8 @@
    "lever",
    "jimmy"
   ],
-  "exp": "The burglar jimmied the lock"
+  "exp": "The burglar jimmied the lock",
+  "cefr": "C2"
  },
  {
   "word": "rickety",
@@ -7072,7 +7715,8 @@
    "wobbly",
    "wonky"
   ],
-  "exp": "a wobbly chair with shaky legs"
+  "exp": "a wobbly chair with shaky legs",
+  "cefr": "C2"
  },
  {
   "word": "consign",
@@ -7081,7 +7725,8 @@
   ],
   "en": "commit forever",
   "syn": [],
-  "exp": "commit irrevocably"
+  "exp": "commit irrevocably",
+  "cefr": "C2"
  },
  {
   "word": "consignment",
@@ -7095,7 +7740,8 @@
    "freight",
    "load"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "fete",
@@ -7107,7 +7753,8 @@
    "feast",
    "fiesta"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "dole out",
@@ -7121,7 +7768,8 @@
    "mete_out",
    "deal"
   ],
-  "exp": "administer critical remarks to everyone present"
+  "exp": "administer critical remarks to everyone present",
+  "cefr": "C2"
  },
  {
   "word": "opulent",
@@ -7135,7 +7783,8 @@
    "grand",
    "luxurious"
   ],
-  "exp": "these architecture magazines are full of the lush interiors of the rich and famous"
+  "exp": "these architecture magazines are full of the lush interiors of the rich and famous",
+  "cefr": "C2"
  },
  {
   "word": "opulence",
@@ -7148,7 +7797,8 @@
    "luxuriousness",
    "sumptuousness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "opulently",
@@ -7159,7 +7809,8 @@
   "syn": [
    "sumptuously"
   ],
-  "exp": "this government building is sumptuously appointed"
+  "exp": "this government building is sumptuously appointed",
+  "cefr": "C2"
  },
  {
   "word": "plutocrat",
@@ -7168,7 +7819,8 @@
   ],
   "en": "someone who exercises power by virtue of wealth",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "averse",
@@ -7182,7 +7834,8 @@
    "averse(p)",
    "indisposed(p)"
   ],
-  "exp": "antipathetic to new ideas"
+  "exp": "antipathetic to new ideas",
+  "cefr": "C2"
  },
  {
   "word": "edify",
@@ -7193,7 +7846,8 @@
   "syn": [
    "enlighten"
   ],
-  "exp": "Can you enlighten me--I don't understand this proposal"
+  "exp": "Can you enlighten me--I don't understand this proposal",
+  "cefr": "C2"
  },
  {
   "word": "edification",
@@ -7204,7 +7858,8 @@
   "syn": [
    "sophistication"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "converse",
@@ -7214,7 +7869,8 @@
   ],
   "en": "a proposition obtained by conversion",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "sterility",
@@ -7227,7 +7883,8 @@
    "antisepsis",
    "sterileness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "rhetoric",
@@ -7236,7 +7893,8 @@
   ],
   "en": "using language effectively to please or persuade",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "rhetorical",
@@ -7245,7 +7903,8 @@
   ],
   "en": "of or relating to rhetoric",
   "syn": [],
-  "exp": "accepted two or three verbal and rhetorical changes I suggested- W.A.White"
+  "exp": "accepted two or three verbal and rhetorical changes I suggested- W.A.White",
+  "cefr": "C2"
  },
  {
   "word": "rhetorically",
@@ -7254,7 +7913,8 @@
   ],
   "en": "in a rhetorical manner",
   "syn": [],
-  "exp": "`What can be done?' he asked rhetorically"
+  "exp": "`What can be done?' he asked rhetorically",
+  "cefr": "C2"
  },
  {
   "word": "flighty",
@@ -7267,7 +7927,8 @@
    "head-in-the-clouds",
    "scatterbrained"
   ],
-  "exp": "flighty young girls"
+  "exp": "flighty young girls",
+  "cefr": "C2"
  },
  {
   "word": "flightiness",
@@ -7281,7 +7942,8 @@
    "whimsy",
    "whimsey"
   ],
-  "exp": "I despair at the flightiness and whimsicality of my memory"
+  "exp": "I despair at the flightiness and whimsicality of my memory",
+  "cefr": "C2"
  },
  {
   "word": "brimstone",
@@ -7293,7 +7955,8 @@
    "native_sulfur",
    "native_sulphur"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "impeccable",
@@ -7306,7 +7969,8 @@
    "immaculate",
    "incorrupted"
   ],
-  "exp": "timing and technique were immaculate"
+  "exp": "timing and technique were immaculate",
+  "cefr": "C2"
  },
  {
   "word": "impeccably",
@@ -7315,7 +7979,8 @@
   ],
   "en": "flawlessly",
   "syn": [],
-  "exp": "the film was impeccably authentic"
+  "exp": "the film was impeccably authentic",
+  "cefr": "C2"
  },
  {
   "word": "romp",
@@ -7329,7 +7994,8 @@
    "rollick",
    "skylark"
   ],
-  "exp": "The children frolicked in the garden"
+  "exp": "The children frolicked in the garden",
+  "cefr": "C2"
  },
  {
   "word": "romper",
@@ -7338,7 +8004,8 @@
   ],
   "en": "a person who romps or frolics",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "meticulous",
@@ -7349,7 +8016,8 @@
   "syn": [
    "punctilious"
   ],
-  "exp": "punctilious in his attention to rules of etiquette"
+  "exp": "punctilious in his attention to rules of etiquette",
+  "cefr": "C2"
  },
  {
   "word": "meticulously",
@@ -7358,7 +8026,8 @@
   ],
   "en": "in a meticulous manner",
   "syn": [],
-  "exp": "the set was meticulously authentic"
+  "exp": "the set was meticulously authentic",
+  "cefr": "C2"
  },
  {
   "word": "ingratiate",
@@ -7367,7 +8036,8 @@
   ],
   "en": "gain favor with somebody by deliberate efforts",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "ingratiating",
@@ -7376,7 +8046,8 @@
   ],
   "en": "capable of winning favor",
   "syn": [],
-  "exp": "with open arms and an ingratiating smile"
+  "exp": "with open arms and an ingratiating smile",
+  "cefr": "C2"
  },
  {
   "word": "ingratiatingly",
@@ -7385,7 +8056,8 @@
   ],
   "en": "in a flattering and ingratiating manner",
   "syn": [],
-  "exp": "she behaves ingratiatingly toward her boss"
+  "exp": "she behaves ingratiatingly toward her boss",
+  "cefr": "C2"
  },
  {
   "word": "shimmer",
@@ -7394,7 +8066,8 @@
   ],
   "en": "shine with a weak or fitful light",
   "syn": [],
-  "exp": "Beech leaves shimmered in the moonlight"
+  "exp": "Beech leaves shimmered in the moonlight",
+  "cefr": "C2"
  },
  {
   "word": "hull",
@@ -7403,7 +8076,8 @@
   ],
   "en": "dry outer covering of a fruit or seed or nut",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "cull",
@@ -7412,7 +8086,8 @@
   ],
   "en": "remove something that has been rejected",
   "syn": [],
-  "exp": "cull the sick members of the herd"
+  "exp": "cull the sick members of the herd",
+  "cefr": "C2"
  },
  {
   "word": "swivel",
@@ -7423,7 +8098,8 @@
   "syn": [
    "pivot"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "relinquish",
@@ -7437,7 +8113,8 @@
    "free",
    "give_up"
   ],
-  "exp": "I am relinquishing my bedroom to the long-term house guest"
+  "exp": "I am relinquishing my bedroom to the long-term house guest",
+  "cefr": "C2"
  },
  {
   "word": "quiver",
@@ -7450,7 +8127,8 @@
    "quake",
    "palpitate"
   ],
-  "exp": "His nostrils palpitated"
+  "exp": "His nostrils palpitated",
+  "cefr": "C2"
  },
  {
   "word": "sandwiched",
@@ -7459,7 +8137,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "mottled",
@@ -7470,7 +8149,8 @@
   "syn": [
    "dappled"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "epoxy",
@@ -7482,7 +8162,8 @@
    "epoxy_resin",
    "epoxy_glue"
   ],
-  "exp": "used chiefly in strong adhesives and coatings and laminates"
+  "exp": "used chiefly in strong adhesives and coatings and laminates",
+  "cefr": "C2"
  },
  {
   "word": "resin",
@@ -7493,7 +8174,8 @@
   "syn": [
    "rosin"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "sedately",
@@ -7504,7 +8186,8 @@
   "syn": [
    "calmly"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "angular",
@@ -7513,7 +8196,8 @@
   ],
   "en": "measured by an angle or by the rate of change of an angle",
   "syn": [],
-  "exp": "angular momentum"
+  "exp": "angular momentum",
+  "cefr": "C2"
  },
  {
   "word": "angularity",
@@ -7524,7 +8208,8 @@
   "syn": [
    "angular_shape"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "dampen",
@@ -7535,7 +8220,8 @@
   "syn": [
    "stifle"
   ],
-  "exp": "Stifle your curiosity"
+  "exp": "Stifle your curiosity",
+  "cefr": "C2"
  },
  {
   "word": "buccaneer",
@@ -7545,7 +8231,8 @@
   ],
   "en": "live like a buccaneer",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "conglomerate",
@@ -7556,7 +8243,8 @@
   "syn": [
    "pudding_stone"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "cay",
@@ -7568,7 +8256,8 @@
    "key",
    "Florida_key"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "singe",
@@ -7579,7 +8268,8 @@
   "syn": [
    "swinge"
   ],
-  "exp": "I singed my eyebrows"
+  "exp": "I singed my eyebrows",
+  "cefr": "C2"
  },
  {
   "word": "cordon",
@@ -7588,7 +8278,8 @@
   ],
   "en": "a series of sentinels or of military posts enclosing or guarding some place or thing",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "fabled",
@@ -7599,7 +8290,8 @@
   "syn": [
    "legendary"
   ],
-  "exp": "the fabled Paul Bunyan and his blue ox"
+  "exp": "the fabled Paul Bunyan and his blue ox",
+  "cefr": "C2"
  },
  {
   "word": "glint",
@@ -7614,7 +8306,8 @@
    "gleam",
    "shine"
   ],
-  "exp": "His eyes were glistening"
+  "exp": "His eyes were glistening",
+  "cefr": "C2"
  },
  {
   "word": "infernal",
@@ -7623,7 +8316,8 @@
   ],
   "en": "characteristic of or resembling Hell",
   "syn": [],
-  "exp": "infernal noise"
+  "exp": "infernal noise",
+  "cefr": "C2"
  },
  {
   "word": "infernally",
@@ -7634,7 +8328,8 @@
   "syn": [
    "hellishly"
   ],
-  "exp": "infernally clever"
+  "exp": "infernally clever",
+  "cefr": "C2"
  },
  {
   "word": "presentational",
@@ -7643,7 +8338,8 @@
   ],
   "en": "of or relating to a presentation (especially in psychology or philosophy)",
   "syn": [],
-  "exp": "what Whitehead calls `perception in the presentational immediacy'"
+  "exp": "what Whitehead calls `perception in the presentational immediacy'",
+  "cefr": "C2"
  },
  {
   "word": "embed",
@@ -7657,7 +8353,8 @@
    "imbed",
    "plant"
   ],
-  "exp": "He planted a knee in the back of his opponent"
+  "exp": "He planted a knee in the back of his opponent",
+  "cefr": "C2"
  },
  {
   "word": "plume",
@@ -7666,7 +8363,8 @@
   ],
   "en": "anything that resembles a feather in shape or lightness",
   "syn": [],
-  "exp": "a plume of smoke"
+  "exp": "a plume of smoke",
+  "cefr": "C2"
  },
  {
   "word": "happenstance",
@@ -7677,7 +8375,8 @@
   "syn": [
    "coincidence"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "venture",
@@ -7686,7 +8385,8 @@
   ],
   "en": "any venturesome undertaking especially one with an uncertain outcome",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "reconcile",
@@ -7698,7 +8398,8 @@
    "accommodate",
    "conciliate"
   ],
-  "exp": "The scientists had to accommodate the new results with the existing theories"
+  "exp": "The scientists had to accommodate the new results with the existing theories",
+  "cefr": "C2"
  },
  {
   "word": "reconciliation",
@@ -7709,7 +8410,8 @@
   "syn": [
    "rapprochement"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "conciliatory",
@@ -7721,7 +8423,8 @@
    "compromising",
    "flexible"
   ],
-  "exp": "loneliness tore through him...whenever he thought of...even the compromising Louis du Tillet"
+  "exp": "loneliness tore through him...whenever he thought of...even the compromising Louis du Tillet",
+  "cefr": "C2"
  },
  {
   "word": "conciliation",
@@ -7730,7 +8433,8 @@
   ],
   "en": "the state of manifesting goodwill and cooperation after being reconciled",
   "syn": [],
-  "exp": "there was a brief period of conciliation but the fighting soon resumed"
+  "exp": "there was a brief period of conciliation but the fighting soon resumed",
+  "cefr": "C2"
  },
  {
   "word": "preconception",
@@ -7744,7 +8448,8 @@
    "preconceived_opinion",
    "preconceived_idea"
   ],
-  "exp": "he did not even try to confirm his preconceptions"
+  "exp": "he did not even try to confirm his preconceptions",
+  "cefr": "C2"
  },
  {
   "word": "baroque",
@@ -7756,7 +8461,8 @@
    "churrigueresque",
    "churrigueresco"
   ],
-  "exp": "the building...frantically baroque-William Dean Howells"
+  "exp": "the building...frantically baroque-William Dean Howells",
+  "cefr": "C2"
  },
  {
   "word": "virginal",
@@ -7765,7 +8471,8 @@
   ],
   "en": "characteristic of a virgin or virginity",
   "syn": [],
-  "exp": "virginal white dresses"
+  "exp": "virginal white dresses",
+  "cefr": "C2"
  },
  {
   "word": "spire",
@@ -7776,7 +8483,8 @@
   "syn": [
    "steeple"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "elephantine",
@@ -7789,7 +8497,8 @@
    "giant",
    "jumbo"
   ],
-  "exp": "huge and bulky"
+  "exp": "huge and bulky",
+  "cefr": "C2"
  },
  {
   "word": "agency",
@@ -7803,7 +8512,8 @@
    "bureau",
    "office"
   ],
-  "exp": "the Central Intelligence Agency"
+  "exp": "the Central Intelligence Agency",
+  "cefr": "C2"
  },
  {
   "word": "condone",
@@ -7814,7 +8524,8 @@
   "syn": [
    "excuse"
   ],
-  "exp": "She condoned her husband's occasional infidelities"
+  "exp": "She condoned her husband's occasional infidelities",
+  "cefr": "C2"
  },
  {
   "word": "commodity",
@@ -7826,7 +8537,8 @@
    "trade_good",
    "good"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "commode",
@@ -7840,7 +8552,8 @@
    "crapper",
    "pot"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "unobtrusive",
@@ -7849,7 +8562,8 @@
   ],
   "en": "not obtrusive or undesirably noticeable",
   "syn": [],
-  "exp": "a quiet, unobtrusive life of self-denial"
+  "exp": "a quiet, unobtrusive life of self-denial",
+  "cefr": "C2"
  },
  {
   "word": "unobtrusively",
@@ -7858,7 +8572,8 @@
   ],
   "en": "in an unobtrusive manner",
   "syn": [],
-  "exp": "messengers were moving unobtrusively over the jet-black mountain ranges, bearing confidential tidings from sheikhdom to sheikhdom"
+  "exp": "messengers were moving unobtrusively over the jet-black mountain ranges, bearing confidential tidings from sheikhdom to sheikhdom",
+  "cefr": "C2"
  },
  {
   "word": "unobtrusiveness",
@@ -7867,7 +8582,8 @@
   ],
   "en": "the quality of not sticking out in an unwelcome way",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "compellingly",
@@ -7876,7 +8592,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "hauntingly",
@@ -7885,7 +8602,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "brim",
@@ -7894,7 +8612,8 @@
   ],
   "en": "be completely full",
   "syn": [],
-  "exp": "His eyes brimmed with tears"
+  "exp": "His eyes brimmed with tears",
+  "cefr": "C2"
  },
  {
   "word": "hazard",
@@ -7907,7 +8626,8 @@
    "venture",
    "pretend"
   ],
-  "exp": "I am guessing that the price of real estate will rise again"
+  "exp": "I am guessing that the price of real estate will rise again",
+  "cefr": "C2"
  },
  {
   "word": "authenticity",
@@ -7919,7 +8639,8 @@
    "genuineness",
    "legitimacy"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "scholarly",
@@ -7928,7 +8649,8 @@
   ],
   "en": "characteristic of scholars or scholarship",
   "syn": [],
-  "exp": "scholarly pursuits"
+  "exp": "scholarly pursuits",
+  "cefr": "C2"
  },
  {
   "word": "accessibility",
@@ -7941,7 +8663,8 @@
    "availability",
    "availableness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "cognitive",
@@ -7950,7 +8673,8 @@
   ],
   "en": "of or being or relating to or involving cognition",
   "syn": [],
-  "exp": "cognitive psychology"
+  "exp": "cognitive psychology",
+  "cefr": "C2"
  },
  {
   "word": "artifact",
@@ -7961,7 +8685,8 @@
   "syn": [
    "artefact"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "preservationist",
@@ -7970,7 +8695,8 @@
   ],
   "en": "someone who advocates the preservation of historical sites or endangered species or natural areas",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "qualm",
@@ -7982,7 +8708,8 @@
    "scruple",
    "misgiving"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "besiege",
@@ -7996,7 +8723,8 @@
    "hem_in",
    "circumvent"
   ],
-  "exp": "The Turks besieged Vienna"
+  "exp": "The Turks besieged Vienna",
+  "cefr": "C2"
  },
  {
   "word": "cloister",
@@ -8007,7 +8735,8 @@
   "syn": [
    "religious_residence"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "cloistered",
@@ -8021,7 +8750,8 @@
    "monastic",
    "monastical"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "annex",
@@ -8035,7 +8765,8 @@
    "extension",
    "wing"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "resuscitate",
@@ -8046,7 +8777,8 @@
   "syn": [
    "revive"
   ],
-  "exp": "The doctors revived the comatose man"
+  "exp": "The doctors revived the comatose man",
+  "cefr": "C2"
  },
  {
   "word": "resuscitation",
@@ -8055,7 +8787,8 @@
   ],
   "en": "the act of reviving a person and returning them to consciousness",
   "syn": [],
-  "exp": "although he was apparently drowned, resuscitation was accomplished by artificial respiration"
+  "exp": "although he was apparently drowned, resuscitation was accomplished by artificial respiration",
+  "cefr": "C2"
  },
  {
   "word": "ravish",
@@ -8069,7 +8802,8 @@
    "assault",
    "dishonor"
   ],
-  "exp": "The woman was raped on her way home at night"
+  "exp": "The woman was raped on her way home at night",
+  "cefr": "C2"
  },
  {
   "word": "fabricate",
@@ -8081,7 +8815,8 @@
    "manufacture",
    "construct"
   ],
-  "exp": "the company fabricates plastic chairs"
+  "exp": "the company fabricates plastic chairs",
+  "cefr": "C2"
  },
  {
   "word": "fabrication",
@@ -8093,7 +8828,8 @@
    "fiction",
    "fable"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "patchy",
@@ -8102,7 +8838,8 @@
   ],
   "en": "irregular or uneven in quality, texture, etc.",
   "syn": [],
-  "exp": "a patchy essay"
+  "exp": "a patchy essay",
+  "cefr": "C2"
  },
  {
   "word": "patchily",
@@ -8111,7 +8848,8 @@
   ],
   "en": "in spots",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "resounding",
@@ -8125,7 +8863,8 @@
    "reverberating",
    "reverberative"
   ],
-  "exp": "hear the rolling thunder"
+  "exp": "hear the rolling thunder",
+  "cefr": "C2"
  },
  {
   "word": "resoundingly",
@@ -8134,7 +8873,8 @@
   ],
   "en": "in a resounding manner",
   "syn": [],
-  "exp": "he then so resoundingly denounced his former friend"
+  "exp": "he then so resoundingly denounced his former friend",
+  "cefr": "C2"
  },
  {
   "word": "resound",
@@ -8147,7 +8887,8 @@
    "ring",
    "reverberate"
   ],
-  "exp": "the hall resounded with laughter"
+  "exp": "the hall resounded with laughter",
+  "cefr": "C2"
  },
  {
   "word": "ordain",
@@ -8158,7 +8899,8 @@
   "syn": [
    "enact"
   ],
-  "exp": "The King ordained the persecution and expulsion of the Jews"
+  "exp": "The King ordained the persecution and expulsion of the Jews",
+  "cefr": "C2"
  },
  {
   "word": "inchoate",
@@ -8169,7 +8911,8 @@
   "syn": [
    "incipient"
   ],
-  "exp": "a vague inchoate idea"
+  "exp": "a vague inchoate idea",
+  "cefr": "C2"
  },
  {
   "word": "inchoately",
@@ -8178,7 +8921,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "elated",
@@ -8187,7 +8931,8 @@
   ],
   "en": "exultantly proud and joyful",
   "syn": [],
-  "exp": "felt elated and excited"
+  "exp": "felt elated and excited",
+  "cefr": "C2"
  },
  {
   "word": "elation",
@@ -8196,7 +8941,8 @@
   ],
   "en": "an exhilarating psychological state of pride and optimism",
   "syn": [],
-  "exp": "an absence of depression"
+  "exp": "an absence of depression",
+  "cefr": "C2"
  },
  {
   "word": "hysteria",
@@ -8210,7 +8956,8 @@
    "frenzy",
    "fury"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "hysterical",
@@ -8221,7 +8968,8 @@
   "syn": [
    "hysteric"
   ],
-  "exp": "during hysterical conditions various functions of the human body are disordered- Morris Fishbein"
+  "exp": "during hysterical conditions various functions of the human body are disordered- Morris Fishbein",
+  "cefr": "C2"
  },
  {
   "word": "hysterically",
@@ -8230,7 +8978,8 @@
   ],
   "en": "in a hysterical manner",
   "syn": [],
-  "exp": "she screamed hysterically when she heard the news"
+  "exp": "she screamed hysterically when she heard the news",
+  "cefr": "C2"
  },
  {
   "word": "jarring",
@@ -8239,7 +8988,8 @@
   ],
   "en": "making or causing a harsh and irritating sound",
   "syn": [],
-  "exp": "the jarring noise of the iron gate scraping on the sidewalk"
+  "exp": "the jarring noise of the iron gate scraping on the sidewalk",
+  "cefr": "C2"
  },
  {
   "word": "suffuse",
@@ -8250,7 +9000,8 @@
   "syn": [
    "perfuse"
   ],
-  "exp": "The sky was suffused with a warm pink color"
+  "exp": "The sky was suffused with a warm pink color",
+  "cefr": "C2"
  },
  {
   "word": "totter",
@@ -8259,7 +9010,8 @@
   ],
   "en": "move without being stable, as if threatening to fall",
   "syn": [],
-  "exp": "The drunk man tottered over to our table"
+  "exp": "The drunk man tottered over to our table",
+  "cefr": "C2"
  },
  {
   "word": "pyre",
@@ -8270,7 +9022,8 @@
   "syn": [
    "funeral_pyre"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "contemptuous",
@@ -8283,7 +9036,8 @@
    "insulting",
    "scornful"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "contemptuously",
@@ -8296,7 +9050,8 @@
    "scornfully",
    "contumeliously"
   ],
-  "exp": "in a disdainful manner"
+  "exp": "in a disdainful manner",
+  "cefr": "C2"
  },
  {
   "word": "forlorn",
@@ -8305,7 +9060,8 @@
   ],
   "en": "marked by or showing hopelessness",
   "syn": [],
-  "exp": "the last forlorn attempt"
+  "exp": "the last forlorn attempt",
+  "cefr": "C2"
  },
  {
   "word": "forlornly",
@@ -8314,7 +9070,8 @@
   ],
   "en": "in a forlorn manner",
   "syn": [],
-  "exp": "a single chicken was scratching forlornly in the yard"
+  "exp": "a single chicken was scratching forlornly in the yard",
+  "cefr": "C2"
  },
  {
   "word": "rebuke",
@@ -8329,7 +9086,8 @@
    "reprehension",
    "reprimand"
   ],
-  "exp": "he had to take the rebuke with a smile on his face"
+  "exp": "he had to take the rebuke with a smile on his face",
+  "cefr": "C2"
  },
  {
   "word": "abhorrent",
@@ -8343,7 +9101,8 @@
    "repugnant",
    "repulsive"
   ],
-  "exp": "the obscene massacre at Wounded Knee"
+  "exp": "the obscene massacre at Wounded Knee",
+  "cefr": "C2"
  },
  {
   "word": "abhor",
@@ -8356,7 +9115,8 @@
    "abominate",
    "execrate"
   ],
-  "exp": "I loathe that man"
+  "exp": "I loathe that man",
+  "cefr": "C2"
  },
  {
   "word": "abhorrently",
@@ -8365,7 +9125,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "aberration",
@@ -8378,7 +9139,8 @@
    "aberrancy",
    "deviance"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "emulsify",
@@ -8387,7 +9149,8 @@
   ],
   "en": "cause to become an emulsion",
   "syn": [],
-  "exp": "make into an emulsion"
+  "exp": "make into an emulsion",
+  "cefr": "C2"
  },
  {
   "word": "emulsification",
@@ -8396,7 +9159,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "emulsifier",
@@ -8405,7 +9169,8 @@
   ],
   "en": "a surface-active agent that promotes the formation of an emulsion",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "additive",
@@ -8415,7 +9180,8 @@
   ],
   "en": "something added to enhance food or gasoline or paint or medicine",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "confection",
@@ -8426,7 +9192,8 @@
   "syn": [
    "sweet"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "proximal",
@@ -8435,7 +9202,8 @@
   ],
   "en": "situated nearest to point of attachment or origin",
   "syn": [],
-  "exp": "the proximal end of a bone"
+  "exp": "the proximal end of a bone",
+  "cefr": "C2"
  },
  {
   "word": "vandalize",
@@ -8446,7 +9214,8 @@
   "syn": [
    "vandalise"
   ],
-  "exp": "vandalize the park"
+  "exp": "vandalize the park",
+  "cefr": "C2"
  },
  {
   "word": "vandal",
@@ -8455,7 +9224,8 @@
   ],
   "en": "someone who willfully destroys or defaces property",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "feign",
@@ -8469,7 +9239,8 @@
    "affect",
    "dissemble"
   ],
-  "exp": "He feigned that he was ill"
+  "exp": "He feigned that he was ill",
+  "cefr": "C2"
  },
  {
   "word": "paradoxical",
@@ -8480,7 +9251,8 @@
   "syn": [
    "self-contradictory"
   ],
-  "exp": "it is paradoxical that standing is more tiring than walking"
+  "exp": "it is paradoxical that standing is more tiring than walking",
+  "cefr": "C2"
  },
  {
   "word": "paradoxically",
@@ -8489,7 +9261,8 @@
   ],
   "en": "in a paradoxical manner",
   "syn": [],
-  "exp": "paradoxically, ice ages seem to occur when the sun gets hotter"
+  "exp": "paradoxically, ice ages seem to occur when the sun gets hotter",
+  "cefr": "C2"
  },
  {
   "word": "laryngitis",
@@ -8498,7 +9271,8 @@
   ],
   "en": "inflammation of the mucous membrane of the larynx",
   "syn": [],
-  "exp": "characterized by hoarseness or loss of voice and coughing"
+  "exp": "characterized by hoarseness or loss of voice and coughing",
+  "cefr": "C2"
  },
  {
   "word": "stringent",
@@ -8510,7 +9284,8 @@
    "rigorous",
    "tight"
   ],
-  "exp": "rigorous discipline"
+  "exp": "rigorous discipline",
+  "cefr": "C2"
  },
  {
   "word": "astringent",
@@ -8522,7 +9297,8 @@
    "astringent_drug",
    "styptic"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "stringently",
@@ -8533,7 +9309,8 @@
   "syn": [
    "strictly"
   ],
-  "exp": "the laws are stringently enforced"
+  "exp": "the laws are stringently enforced",
+  "cefr": "C2"
  },
  {
   "word": "standing",
@@ -8542,7 +9319,8 @@
   ],
   "en": "social or financial or professional status or reputation",
   "syn": [],
-  "exp": "a member in good standing"
+  "exp": "a member in good standing",
+  "cefr": "C2"
  },
  {
   "word": "economize",
@@ -8555,7 +9333,8 @@
    "husband",
    "economise"
   ],
-  "exp": "I try to economize my spare time"
+  "exp": "I try to economize my spare time",
+  "cefr": "C2"
  },
  {
   "word": "breadwinner",
@@ -8564,7 +9343,8 @@
   ],
   "en": "one whose earnings are the primary source of support for their dependents",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "cosset",
@@ -8578,7 +9358,8 @@
    "cocker",
    "baby"
   ],
-  "exp": "grandparents often pamper the children"
+  "exp": "grandparents often pamper the children",
+  "cefr": "C2"
  },
  {
   "word": "counsel",
@@ -8592,7 +9373,8 @@
    "counsellor",
    "counselor-at-law"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "misdemeanor",
@@ -8606,7 +9388,8 @@
    "violation",
    "infringement"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "aptitude",
@@ -8615,7 +9398,8 @@
   ],
   "en": "inherent ability",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "torrential",
@@ -8624,7 +9408,8 @@
   ],
   "en": "relating to or resulting from the action of a torrent",
   "syn": [],
-  "exp": "torrential adaptations seen in some aquatic forms"
+  "exp": "torrential adaptations seen in some aquatic forms",
+  "cefr": "C2"
  },
  {
   "word": "banish",
@@ -8638,7 +9423,8 @@
    "ostracise",
    "shun"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "banishment",
@@ -8650,7 +9436,8 @@
    "ostracism",
    "Coventry"
   ],
-  "exp": "the association should get rid of its elderly members--not by euthanasia, of course, but by Coventry"
+  "exp": "the association should get rid of its elderly members--not by euthanasia, of course, but by Coventry",
+  "cefr": "C2"
  },
  {
   "word": "knack",
@@ -8662,7 +9449,8 @@
    "bent",
    "hang"
   ],
-  "exp": "he had a bent for it"
+  "exp": "he had a bent for it",
+  "cefr": "C2"
  },
  {
   "word": "fruition",
@@ -8671,7 +9459,8 @@
   ],
   "en": "the condition of bearing fruit",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "tantalize",
@@ -8685,7 +9474,8 @@
    "rag",
    "cod"
   ],
-  "exp": "The children teased the new teacher"
+  "exp": "The children teased the new teacher",
+  "cefr": "C2"
  },
  {
   "word": "tantalizingly",
@@ -8696,7 +9486,8 @@
   "syn": [
    "invitingly"
   ],
-  "exp": "she smiled at him tantalizingly"
+  "exp": "she smiled at him tantalizingly",
+  "cefr": "C2"
  },
  {
   "word": "maelstrom",
@@ -8708,7 +9499,8 @@
    "whirlpool",
    "vortex"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "vortex",
@@ -8721,7 +9513,8 @@
    "swirl",
    "convolution"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "depressive",
@@ -8730,7 +9523,8 @@
   ],
   "en": "someone suffering psychological depression",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "shoal",
@@ -8739,7 +9533,8 @@
   ],
   "en": "a sandbank in a stretch of water that is visible at low tide",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "scroll",
@@ -8753,7 +9548,8 @@
    "roll",
    "curl"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "collide",
@@ -8765,7 +9561,8 @@
    "clash",
    "jar"
   ],
-  "exp": "be or come into conflict"
+  "exp": "be or come into conflict",
+  "cefr": "C2"
  },
  {
   "word": "collider",
@@ -8774,7 +9571,8 @@
   ],
   "en": "an accelerator in which two beams of particles are forced to collide head on",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "edifice",
@@ -8785,7 +9583,8 @@
   "syn": [
    "building"
   ],
-  "exp": "there was a three-story building on the corner"
+  "exp": "there was a three-story building on the corner",
+  "cefr": "C2"
  },
  {
   "word": "thicket",
@@ -8799,7 +9598,8 @@
    "coppice",
    "copse"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "leaven",
@@ -8811,7 +9611,8 @@
    "raise",
    "prove"
   ],
-  "exp": "unleavened bread"
+  "exp": "unleavened bread",
+  "cefr": "C2"
  },
  {
   "word": "leavening",
@@ -8822,7 +9623,8 @@
   "syn": [
    "leaven"
   ],
-  "exp": "his sermons benefited from a leavening of humor"
+  "exp": "his sermons benefited from a leavening of humor",
+  "cefr": "C2"
  },
  {
   "word": "ethos",
@@ -8831,7 +9633,8 @@
   ],
   "en": "(anthropology) the distinctive spirit of a culture or an era",
   "syn": [],
-  "exp": "the Greek ethos"
+  "exp": "the Greek ethos",
+  "cefr": "C2"
  },
  {
   "word": "exhibitionist",
@@ -8842,7 +9645,8 @@
   "syn": [
    "flasher"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "interweave",
@@ -8853,7 +9657,8 @@
   "syn": [
    "weave"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "burgeoning",
@@ -8862,7 +9667,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "indiscrete",
@@ -8871,7 +9677,8 @@
   ],
   "en": "not divided or divisible into parts",
   "syn": [],
-  "exp": "layers that were fused into an indiscrete mass"
+  "exp": "layers that were fused into an indiscrete mass",
+  "cefr": "C2"
  },
  {
   "word": "indiscretion",
@@ -8882,7 +9689,8 @@
   "syn": [
    "injudiciousness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "telescopic",
@@ -8891,7 +9699,8 @@
   ],
   "en": "visible only with a telescope",
   "syn": [],
-  "exp": "a bright star with a telescopic companion"
+  "exp": "a bright star with a telescopic companion",
+  "cefr": "C2"
  },
  {
   "word": "telescopically",
@@ -8900,7 +9709,8 @@
   ],
   "en": "in a telescopic manner",
   "syn": [],
-  "exp": "each of the four legs contains a simple screw jack with a thrust bearing that is operated telescopically inside of two tubes"
+  "exp": "each of the four legs contains a simple screw jack with a thrust bearing that is operated telescopically inside of two tubes",
+  "cefr": "C2"
  },
  {
   "word": "amorphous",
@@ -8912,7 +9722,8 @@
    "formless",
    "shapeless"
   ],
-  "exp": "amorphous clouds of insects"
+  "exp": "amorphous clouds of insects",
+  "cefr": "C2"
  },
  {
   "word": "amorphously",
@@ -8921,7 +9732,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "hamper",
@@ -8934,7 +9746,8 @@
    "cramp",
    "strangle"
   ],
-  "exp": "He was hampered in his efforts by the bad weather"
+  "exp": "He was hampered in his efforts by the bad weather",
+  "cefr": "C2"
  },
  {
   "word": "proliferate",
@@ -8943,7 +9756,8 @@
   ],
   "en": "grow rapidly",
   "syn": [],
-  "exp": "Pizza parlors proliferate in this area"
+  "exp": "Pizza parlors proliferate in this area",
+  "cefr": "C2"
  },
  {
   "word": "deterrent",
@@ -8957,7 +9771,8 @@
    "impediment",
    "balk"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "selectivity",
@@ -8966,7 +9781,8 @@
   ],
   "en": "the property of being selective",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "fractious",
@@ -8978,7 +9794,8 @@
    "refractory",
    "recalcitrant"
   ],
-  "exp": "a fractious animal that would not submit to the harness"
+  "exp": "a fractious animal that would not submit to the harness",
+  "cefr": "C2"
  },
  {
   "word": "mystique",
@@ -8987,7 +9804,8 @@
   ],
   "en": "an aura of heightened value or interest or meaning surrounding a person or thing",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "assimilate",
@@ -9000,7 +9818,8 @@
    "ingest",
    "take_in"
   ],
-  "exp": "he absorbed the knowledge or beliefs of his tribe"
+  "exp": "he absorbed the knowledge or beliefs of his tribe",
+  "cefr": "C2"
  },
  {
   "word": "assimilation",
@@ -9009,7 +9828,8 @@
   ],
   "en": "the state of being assimilated",
   "syn": [],
-  "exp": "people of different backgrounds come to see themselves as part of a larger national family"
+  "exp": "people of different backgrounds come to see themselves as part of a larger national family",
+  "cefr": "C2"
  },
  {
   "word": "intersperse",
@@ -9018,7 +9838,8 @@
   ],
   "en": "place at intervals in or among",
   "syn": [],
-  "exp": "intersperse exclamation marks in the text"
+  "exp": "intersperse exclamation marks in the text",
+  "cefr": "C2"
  },
  {
   "word": "verbatim",
@@ -9030,7 +9851,8 @@
   "syn": [
    "word_for_word"
   ],
-  "exp": "he repeated her remarks verbatim"
+  "exp": "he repeated her remarks verbatim",
+  "cefr": "C2"
  },
  {
   "word": "verily",
@@ -9039,7 +9861,8 @@
   ],
   "en": "in truth",
   "syn": [],
-  "exp": "I verily think so"
+  "exp": "I verily think so",
+  "cefr": "C2"
  },
  {
   "word": "veritable",
@@ -9051,7 +9874,8 @@
    "regular(a)",
    "veritable(a)"
   ],
-  "exp": "a regular morass of details"
+  "exp": "a regular morass of details",
+  "cefr": "C2"
  },
  {
   "word": "verisimilitude",
@@ -9060,7 +9884,8 @@
   ],
   "en": "the appearance of truth",
   "syn": [],
-  "exp": "the quality of seeming to be true"
+  "exp": "the quality of seeming to be true",
+  "cefr": "C2"
  },
  {
   "word": "artifice",
@@ -9071,7 +9896,8 @@
   "syn": [
    "ruse"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "advantageous",
@@ -9083,7 +9909,8 @@
    "favorable",
    "favourable"
   ],
-  "exp": "a contract advantageous to our country"
+  "exp": "a contract advantageous to our country",
+  "cefr": "C2"
  },
  {
   "word": "unfeasible",
@@ -9096,7 +9923,8 @@
    "infeasible",
    "unworkable"
   ],
-  "exp": "refloating the sunken ship proved impracticable because of its fragility"
+  "exp": "refloating the sunken ship proved impracticable because of its fragility",
+  "cefr": "C2"
  },
  {
   "word": "unfeasibly",
@@ -9105,7 +9933,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "behest",
@@ -9114,7 +9943,8 @@
   ],
   "en": "an authoritative command or request",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "virtuoso",
@@ -9128,7 +9958,8 @@
    "champion",
    "sensation"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "virtuosity",
@@ -9137,7 +9968,8 @@
   ],
   "en": "technical skill or fluency or style exhibited by a virtuoso",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "cascade",
@@ -9149,7 +9981,8 @@
   "syn": [
    "cascade_down"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "crippling",
@@ -9161,7 +9994,8 @@
    "disabling",
    "incapacitating"
   ],
-  "exp": "a crippling injury"
+  "exp": "a crippling injury",
+  "cefr": "C2"
  },
  {
   "word": "nascent",
@@ -9170,7 +10004,8 @@
   ],
   "en": "being born or beginning",
   "syn": [],
-  "exp": "the nascent chicks"
+  "exp": "the nascent chicks",
+  "cefr": "C2"
  },
  {
   "word": "smattering",
@@ -9181,7 +10016,8 @@
   "syn": [
    "handful"
   ],
-  "exp": "only a handful of responses were received"
+  "exp": "only a handful of responses were received",
+  "cefr": "C2"
  },
  {
   "word": "corpus",
@@ -9193,7 +10029,8 @@
    "principal",
    "principal_sum"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "wheeze",
@@ -9202,7 +10039,8 @@
   ],
   "en": "breathe with difficulty",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "neophyte",
@@ -9211,7 +10049,8 @@
   ],
   "en": "a plant that is found in an area where it had not been recorded previously",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "coax",
@@ -9225,7 +10064,8 @@
    "palaver",
    "blarney"
   ],
-  "exp": "He palavered her into going along"
+  "exp": "He palavered her into going along",
+  "cefr": "C2"
  },
  {
   "word": "formidably",
@@ -9234,7 +10074,8 @@
   ],
   "en": "in a formidable manner",
   "syn": [],
-  "exp": "the constant risk that attends the exchanges of human beings formidably armed"
+  "exp": "the constant risk that attends the exchanges of human beings formidably armed",
+  "cefr": "C2"
  },
  {
   "word": "formidable",
@@ -9243,7 +10084,8 @@
   ],
   "en": "extremely impressive in strength or excellence",
   "syn": [],
-  "exp": "the challenge was formidable"
+  "exp": "the challenge was formidable",
+  "cefr": "C2"
  },
  {
   "word": "squint",
@@ -9254,7 +10096,8 @@
   "syn": [
    "squinch"
   ],
-  "exp": "The children squinted so as to scare each other"
+  "exp": "The children squinted so as to scare each other",
+  "cefr": "C2"
  },
  {
   "word": "hoist",
@@ -9266,7 +10109,8 @@
    "lift",
    "wind"
   ],
-  "exp": "hoist the bicycle onto the roof of the car"
+  "exp": "hoist the bicycle onto the roof of the car",
+  "cefr": "C2"
  },
  {
   "word": "flatout",
@@ -9275,7 +10119,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "buzzard",
@@ -9288,7 +10133,8 @@
    "turkey_vulture",
    "Cathartes_aura"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "bogus",
@@ -9302,7 +10148,8 @@
    "phoney",
    "bastard"
   ],
-  "exp": "having a misleading appearance"
+  "exp": "having a misleading appearance",
+  "cefr": "C2"
  },
  {
   "word": "derision",
@@ -9311,7 +10158,8 @@
   ],
   "en": "contemptuous laughter",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "derisive",
@@ -9325,7 +10173,8 @@
    "mocking",
    "taunting"
   ],
-  "exp": "expressing contempt or ridicule"
+  "exp": "expressing contempt or ridicule",
+  "cefr": "C2"
  },
  {
   "word": "derisively",
@@ -9338,7 +10187,8 @@
    "derisorily",
    "mockingly"
   ],
-  "exp": "`Sorry,' she repeated derisively"
+  "exp": "`Sorry,' she repeated derisively",
+  "cefr": "C2"
  },
  {
   "word": "truism",
@@ -9347,7 +10197,8 @@
   ],
   "en": "an obvious truth",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "prurient",
@@ -9360,7 +10211,8 @@
    "lustful",
    "salacious"
   ],
-  "exp": "eluding lubricious embraces"
+  "exp": "eluding lubricious embraces",
+  "cefr": "C2"
  },
  {
   "word": "wither",
@@ -9373,7 +10225,8 @@
    "shrivel_up",
    "shrink"
   ],
-  "exp": "The fruit dried and shriveled"
+  "exp": "The fruit dried and shriveled",
+  "cefr": "C2"
  },
  {
   "word": "prurience",
@@ -9387,7 +10240,8 @@
    "carnality",
    "lubricity"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "tetchy",
@@ -9401,7 +10255,8 @@
    "irritable",
    "nettlesome"
   ],
-  "exp": "an incorrigibly fractious young man"
+  "exp": "an incorrigibly fractious young man",
+  "cefr": "C2"
  },
  {
   "word": "agile",
@@ -9414,7 +10269,8 @@
    "quick",
    "spry"
   ],
-  "exp": "sleek and agile as a gymnast"
+  "exp": "sleek and agile as a gymnast",
+  "cefr": "C2"
  },
  {
   "word": "agility",
@@ -9428,7 +10284,8 @@
    "lightsomeness",
    "nimbleness"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "aghast",
@@ -9442,7 +10299,8 @@
    "dismayed",
    "shocked"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "dwarf",
@@ -9454,7 +10312,8 @@
    "shadow",
    "overshadow"
   ],
-  "exp": "This year's debt dwarfs that of last year"
+  "exp": "This year's debt dwarfs that of last year",
+  "cefr": "C2"
  },
  {
   "word": "dwarfism",
@@ -9465,7 +10324,8 @@
   "syn": [
    "nanism"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "etch",
@@ -9474,7 +10334,8 @@
   ],
   "en": "make an etching of",
   "syn": [],
-  "exp": "He etched her image into the surface"
+  "exp": "He etched her image into the surface",
+  "cefr": "C2"
  },
  {
   "word": "etching",
@@ -9483,7 +10344,8 @@
   ],
   "en": "an impression made from an etched plate",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "rapture",
@@ -9497,7 +10359,8 @@
    "exaltation",
    "raptus"
   ],
-  "exp": "listening to sweet music in a perfect rapture- Charles Dickens"
+  "exp": "listening to sweet music in a perfect rapture- Charles Dickens",
+  "cefr": "C2"
  },
  {
   "word": "rapturous",
@@ -9511,7 +10374,8 @@
    "rapt",
    "rhapsodic"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "rapturously",
@@ -9523,7 +10387,8 @@
    "ecstatically",
    "rhapsodically"
   ],
-  "exp": "he reacted ecstatically to my plan to travel to Africa"
+  "exp": "he reacted ecstatically to my plan to travel to Africa",
+  "cefr": "C2"
  },
  {
   "word": "ad lib",
@@ -9537,7 +10402,8 @@
    "spontaneously",
    "impromptu"
   ],
-  "exp": "he spoke ad lib"
+  "exp": "he spoke ad lib",
+  "cefr": "C2"
  },
  {
   "word": "ad-lib",
@@ -9551,7 +10417,8 @@
    "extemporize",
    "extemporise"
   ],
-  "exp": "he extemporized a speech at the wedding"
+  "exp": "he extemporized a speech at the wedding",
+  "cefr": "C2"
  },
  {
   "word": "improvisational",
@@ -9560,7 +10427,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "acrobatics",
@@ -9571,7 +10439,8 @@
   "syn": [
    "tumbling"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "acrobatically",
@@ -9580,7 +10449,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "acrobatic",
@@ -9592,7 +10462,8 @@
    "athletic",
    "gymnastic"
   ],
-  "exp": "an acrobatic dance"
+  "exp": "an acrobatic dance",
+  "cefr": "C2"
  },
  {
   "word": "arduous",
@@ -9606,7 +10477,8 @@
    "gruelling",
    "hard"
   ],
-  "exp": "worked their arduous way up the mining valley"
+  "exp": "worked their arduous way up the mining valley",
+  "cefr": "C2"
  },
  {
   "word": "ardor",
@@ -9619,7 +10491,8 @@
    "elan",
    "zeal"
   ],
-  "exp": "they were imbued with a revolutionary ardor"
+  "exp": "they were imbued with a revolutionary ardor",
+  "cefr": "C2"
  },
  {
   "word": "arduously",
@@ -9628,7 +10501,8 @@
   ],
   "en": "in an arduous manner",
   "syn": [],
-  "exp": "they worked arduously"
+  "exp": "they worked arduously",
+  "cefr": "C2"
  },
  {
   "word": "counterproductive",
@@ -9637,7 +10511,8 @@
   ],
   "en": "tending to hinder the achievement of a goal",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "counterproductively",
@@ -9646,7 +10521,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "proverbial",
@@ -9655,7 +10531,8 @@
   ],
   "en": "of or relating to or resembling or expressed in a proverb",
   "syn": [],
-  "exp": "he kicked the proverbial bucket"
+  "exp": "he kicked the proverbial bucket",
+  "cefr": "C2"
  },
  {
   "word": "instantaneous",
@@ -9666,7 +10543,8 @@
   "syn": [
    "instant(a)"
   ],
-  "exp": "relief was instantaneous"
+  "exp": "relief was instantaneous",
+  "cefr": "C2"
  },
  {
   "word": "instantaneously",
@@ -9679,7 +10557,8 @@
    "instantly",
    "in_a_flash"
   ],
-  "exp": "he was killed outright"
+  "exp": "he was killed outright",
+  "cefr": "C2"
  },
  {
   "word": "mull over",
@@ -9693,7 +10572,8 @@
    "meditate",
    "ponder"
   ],
-  "exp": "I mulled over the events of the afternoon"
+  "exp": "I mulled over the events of the afternoon",
+  "cefr": "C2"
  },
  {
   "word": "ruminate",
@@ -9702,7 +10582,8 @@
   ],
   "en": "chew the cuds",
   "syn": [],
-  "exp": "cows ruminate"
+  "exp": "cows ruminate",
+  "cefr": "C2"
  },
  {
   "word": "rumination",
@@ -9716,7 +10597,8 @@
    "reflexion",
    "musing"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "ruminant",
@@ -9725,7 +10607,8 @@
   ],
   "en": "related to or characteristic of animals of the suborder Ruminantia or any other animal that chews a cud",
   "syn": [],
-  "exp": "ruminant mammals"
+  "exp": "ruminant mammals",
+  "cefr": "C2"
  },
  {
   "word": "ruminative",
@@ -9739,7 +10622,8 @@
    "contemplative",
    "meditative"
   ],
-  "exp": "Byron lives on not only in his poetry, but also in his creation of the `Byronic hero' - the persona of a brooding melancholy young man"
+  "exp": "Byron lives on not only in his poetry, but also in his creation of the `Byronic hero' - the persona of a brooding melancholy young man",
+  "cefr": "C2"
  },
  {
   "word": "hover",
@@ -9752,7 +10636,8 @@
    "vacillate",
    "oscillate"
   ],
-  "exp": "waver between conflicting positions or courses of action"
+  "exp": "waver between conflicting positions or courses of action",
+  "cefr": "C2"
  },
  {
   "word": "armory",
@@ -9764,7 +10649,8 @@
    "armoury",
    "inventory"
   ],
-  "exp": "he dipped into his intellectual armory to find an answer"
+  "exp": "he dipped into his intellectual armory to find an answer",
+  "cefr": "C2"
  },
  {
   "word": "apostle",
@@ -9773,7 +10659,8 @@
   ],
   "en": "an ardent early supporter of a cause or reform",
   "syn": [],
-  "exp": "an apostle of revolution"
+  "exp": "an apostle of revolution",
+  "cefr": "C2"
  },
  {
   "word": "blubber",
@@ -9782,7 +10669,8 @@
   ],
   "en": "an insulating layer of fat under the skin of whales and other large marine mammals",
   "syn": [],
-  "exp": "used as a source of oil"
+  "exp": "used as a source of oil",
+  "cefr": "C2"
  },
  {
   "word": "blubbery",
@@ -9791,7 +10679,8 @@
   ],
   "en": "swollen with fat",
   "syn": [],
-  "exp": "a coarse blubbery individual"
+  "exp": "a coarse blubbery individual",
+  "cefr": "C2"
  },
  {
   "word": "merger",
@@ -9803,7 +10692,8 @@
    "amalgamation",
    "uniting"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "trifle",
@@ -9818,7 +10708,8 @@
    "wanton_away",
    "piddle_away"
   ],
-  "exp": "spend one's time idly or inefficiently"
+  "exp": "spend one's time idly or inefficiently",
+  "cefr": "C2"
  },
  {
   "word": "eke out",
@@ -9830,7 +10721,8 @@
    "eke_out",
    "fill_out"
   ],
-  "exp": "He eked out his meager pay by giving private lessons"
+  "exp": "He eked out his meager pay by giving private lessons",
+  "cefr": "C2"
  },
  {
   "word": "paramount",
@@ -9844,7 +10736,8 @@
    "predominate",
    "preponderant"
   ],
-  "exp": "the predominant mood among policy-makers is optimism"
+  "exp": "the predominant mood among policy-makers is optimism",
+  "cefr": "C2"
  },
  {
   "word": "squirm",
@@ -9858,7 +10751,8 @@
    "wriggle",
    "worm"
   ],
-  "exp": "The prisoner writhed in discomfort"
+  "exp": "The prisoner writhed in discomfort",
+  "cefr": "C2"
  },
  {
   "word": "squirmy",
@@ -9867,7 +10761,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "floe",
@@ -9878,7 +10773,8 @@
   "syn": [
    "ice_floe"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "embody",
@@ -9891,7 +10787,8 @@
    "body_forth",
    "substantiate"
   ],
-  "exp": "He embodies all that is evil wrong with the system"
+  "exp": "He embodies all that is evil wrong with the system",
+  "cefr": "C2"
  },
  {
   "word": "embodiment",
@@ -9903,7 +10800,8 @@
    "incarnation",
    "avatar"
   ],
-  "exp": "the embodiment of hope"
+  "exp": "the embodiment of hope",
+  "cefr": "C2"
  },
  {
   "word": "wistful",
@@ -9914,7 +10812,8 @@
   "syn": [
    "pensive"
   ],
-  "exp": "the sensitive and wistful response of a poet to the gentler phases of beauty"
+  "exp": "the sensitive and wistful response of a poet to the gentler phases of beauty",
+  "cefr": "C2"
  },
  {
   "word": "wistfully",
@@ -9923,7 +10822,8 @@
   ],
   "en": "in a wistful manner",
   "syn": [],
-  "exp": "his sister would have looked beautiful in that dress, he thought wistfully, just like an angel"
+  "exp": "his sister would have looked beautiful in that dress, he thought wistfully, just like an angel",
+  "cefr": "C2"
  },
  {
   "word": "mercantile",
@@ -9932,7 +10832,8 @@
   ],
   "en": "of or relating to the economic system of mercantilism",
   "syn": [],
-  "exp": "mercantile theories"
+  "exp": "mercantile theories",
+  "cefr": "C2"
  },
  {
   "word": "skew",
@@ -9941,7 +10842,8 @@
   ],
   "en": "turn or place at an angle",
   "syn": [],
-  "exp": "the lines on the sheet of paper are skewed"
+  "exp": "the lines on the sheet of paper are skewed",
+  "cefr": "C2"
  },
  {
   "word": "subsist",
@@ -9954,7 +10856,8 @@
    "survive",
    "live"
   ],
-  "exp": "he could barely exist on such a low wage"
+  "exp": "he could barely exist on such a low wage",
+  "cefr": "C2"
  },
  {
   "word": "subsistence",
@@ -9963,7 +10866,8 @@
   ],
   "en": "minimal (or marginal) resources for subsisting",
   "syn": [],
-  "exp": "social security provided only a bare subsistence"
+  "exp": "social security provided only a bare subsistence",
+  "cefr": "C2"
  },
  {
   "word": "subsidy",
@@ -9972,7 +10876,8 @@
   ],
   "en": "a grant paid by a government to an enterprise that benefits the public",
   "syn": [],
-  "exp": "a subsidy for research in artificial intelligence"
+  "exp": "a subsidy for research in artificial intelligence",
+  "cefr": "C2"
  },
  {
   "word": "subsidize",
@@ -9983,7 +10888,8 @@
   "syn": [
    "subsidise"
   ],
-  "exp": "The arts in Europe are heavily subsidized"
+  "exp": "The arts in Europe are heavily subsidized",
+  "cefr": "C2"
  },
  {
   "word": "legion",
@@ -9994,7 +10900,8 @@
   "syn": [
    "host"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "confrontational",
@@ -10003,7 +10910,8 @@
   ],
   "en": "of or relating to confrontation",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "confrontationally",
@@ -10012,7 +10920,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "bout",
@@ -10024,7 +10933,8 @@
    "turn",
    "round"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "gout",
@@ -10036,7 +10946,8 @@
    "gouty_arthritis",
    "urarthritis"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "hinder",
@@ -10047,7 +10958,8 @@
   "syn": [
    "impede"
   ],
-  "exp": "She is impeding the progress of our project"
+  "exp": "She is impeding the progress of our project",
+  "cefr": "C2"
  },
  {
   "word": "hindrance",
@@ -10061,7 +10973,8 @@
    "impediment",
    "balk"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "myriad",
@@ -10075,7 +10988,8 @@
    "innumerable",
    "innumerous"
   ],
-  "exp": "an infinite number of reasons"
+  "exp": "an infinite number of reasons",
+  "cefr": "C2"
  },
  {
   "word": "histrionic",
@@ -10086,7 +11000,8 @@
   "syn": [
    "melodramatic"
   ],
-  "exp": "an attitude of melodramatic despair"
+  "exp": "an attitude of melodramatic despair",
+  "cefr": "C2"
  },
  {
   "word": "histrionically",
@@ -10095,7 +11010,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "marketability",
@@ -10104,7 +11020,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "tacit",
@@ -10116,7 +11033,8 @@
    "silent",
    "understood"
   ],
-  "exp": "the understood provisos of a custody agreement"
+  "exp": "the understood provisos of a custody agreement",
+  "cefr": "C2"
  },
  {
   "word": "tacitly",
@@ -10125,7 +11043,8 @@
   ],
   "en": "in a tacit manner",
   "syn": [],
-  "exp": "they are tacitly expected to work 10 hours a day"
+  "exp": "they are tacitly expected to work 10 hours a day",
+  "cefr": "C2"
  },
  {
   "word": "taciturn",
@@ -10134,7 +11053,8 @@
   ],
   "en": "habitually reserved and uncommunicative",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "taciturnity",
@@ -10146,7 +11066,8 @@
    "reserve",
    "reticence"
   ],
-  "exp": "not volunteering anything more than necessary"
+  "exp": "not volunteering anything more than necessary",
+  "cefr": "C2"
  },
  {
   "word": "surreptitious",
@@ -10160,7 +11081,8 @@
    "sneaky",
    "stealthy"
   ],
-  "exp": "taking pains to avoid being observed"
+  "exp": "taking pains to avoid being observed",
+  "cefr": "C2"
  },
  {
   "word": "surreptitiously",
@@ -10171,7 +11093,8 @@
   "syn": [
    "sneakily"
   ],
-  "exp": "he was watching her surreptitiously as she waited in the hotel lobby"
+  "exp": "he was watching her surreptitiously as she waited in the hotel lobby",
+  "cefr": "C2"
  },
  {
   "word": "allegory",
@@ -10184,7 +11107,8 @@
    "parable",
    "apologue"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "allegorical",
@@ -10195,7 +11119,8 @@
   "syn": [
    "allegoric"
   ],
-  "exp": "an allegorical painting of Victory leading an army"
+  "exp": "an allegorical painting of Victory leading an army",
+  "cefr": "C2"
  },
  {
   "word": "seedy",
@@ -10204,7 +11129,8 @@
   ],
   "en": "full of seeds",
   "syn": [],
-  "exp": "as seedy as a fig"
+  "exp": "as seedy as a fig",
+  "cefr": "C2"
  },
  {
   "word": "punitive",
@@ -10215,7 +11141,8 @@
   "syn": [
    "punitory"
   ],
-  "exp": "punitive justice"
+  "exp": "punitive justice",
+  "cefr": "C2"
  },
  {
   "word": "punitively",
@@ -10227,7 +11154,8 @@
    "punitorily",
    "penally"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "temper",
@@ -10239,7 +11167,8 @@
    "anneal",
    "normalize"
   ],
-  "exp": "temper glass"
+  "exp": "temper glass",
+  "cefr": "C2"
  },
  {
   "word": "milieu",
@@ -10250,7 +11179,8 @@
   "syn": [
    "surroundings"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "self-aggrandizement",
@@ -10262,7 +11192,8 @@
    "self-aggrandisement",
    "ego_trip"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "unadulterated",
@@ -10271,7 +11202,8 @@
   ],
   "en": "not mixed with impurities",
   "syn": [],
-  "exp": "unadulterated maple syrup"
+  "exp": "unadulterated maple syrup",
+  "cefr": "C2"
  },
  {
   "word": "adulterate",
@@ -10285,7 +11217,8 @@
    "dilute",
    "debase"
   ],
-  "exp": "often by replacing valuable ingredients with inferior ones"
+  "exp": "often by replacing valuable ingredients with inferior ones",
+  "cefr": "C2"
  },
  {
   "word": "patronize",
@@ -10297,7 +11230,8 @@
    "sponsor",
    "patronise"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "patronizing",
@@ -10310,7 +11244,8 @@
    "condescending",
    "patronising"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "patronizingly",
@@ -10322,7 +11257,8 @@
    "condescendingly",
    "patronisingly"
   ],
-  "exp": "in a patronizing manner"
+  "exp": "in a patronizing manner",
+  "cefr": "C2"
  },
  {
   "word": "cogent",
@@ -10334,7 +11270,8 @@
    "telling",
    "weighty"
   ],
-  "exp": "a cogent argument"
+  "exp": "a cogent argument",
+  "cefr": "C2"
  },
  {
   "word": "cogently",
@@ -10343,7 +11280,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "incongruous",
@@ -10352,7 +11290,8 @@
   ],
   "en": "lacking in harmony or compatibility or appropriateness",
   "syn": [],
-  "exp": "a plan incongruous with reason"
+  "exp": "a plan incongruous with reason",
+  "cefr": "C2"
  },
  {
   "word": "incongruously",
@@ -10361,7 +11300,8 @@
   ],
   "en": "in an incongruous manner",
   "syn": [],
-  "exp": "his shirttails stuck out from his tuxedo pants somewhat incongruously"
+  "exp": "his shirttails stuck out from his tuxedo pants somewhat incongruously",
+  "cefr": "C2"
  },
  {
   "word": "incongruity",
@@ -10372,7 +11312,8 @@
   "syn": [
    "incongruousness"
   ],
-  "exp": "being unsuitable and inappropriate"
+  "exp": "being unsuitable and inappropriate",
+  "cefr": "C2"
  },
  {
   "word": "deaden",
@@ -10384,7 +11325,8 @@
    "dampen",
    "damp"
   ],
-  "exp": "muffle the message"
+  "exp": "muffle the message",
+  "cefr": "C2"
  },
  {
   "word": "attuned",
@@ -10393,7 +11335,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "attributive",
@@ -10404,7 +11347,8 @@
   "syn": [
    "prenominal"
   ],
-  "exp": "placed before the nouns they modify"
+  "exp": "placed before the nouns they modify",
+  "cefr": "C2"
  },
  {
   "word": "ecotourism",
@@ -10413,7 +11357,8 @@
   ],
   "en": "tourism to exotic or threatened ecosystems to observe wildlife or to help preserve nature",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "surge",
@@ -10427,7 +11372,8 @@
    "spate",
    "upsurge"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "farcical",
@@ -10439,7 +11385,8 @@
    "ludicrous",
    "ridiculous"
   ],
-  "exp": "the wild farcical exuberance of a clown"
+  "exp": "the wild farcical exuberance of a clown",
+  "cefr": "C2"
  },
  {
   "word": "incise",
@@ -10448,7 +11395,8 @@
   ],
   "en": "make an incision into by carving or cutting",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "incipient",
@@ -10459,7 +11407,8 @@
   "syn": [
    "inchoate"
   ],
-  "exp": "a vague inchoate idea"
+  "exp": "a vague inchoate idea",
+  "cefr": "C2"
  },
  {
   "word": "echolocation",
@@ -10470,7 +11419,8 @@
   "syn": [
    "echo_sounding"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "echolocate",
@@ -10479,7 +11429,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "reverb",
@@ -10488,7 +11439,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "reverberation",
@@ -10501,7 +11453,8 @@
    "sound_reflection",
    "replication"
   ],
-  "exp": "she could hear echoes of her own footsteps"
+  "exp": "she could hear echoes of her own footsteps",
+  "cefr": "C2"
  },
  {
   "word": "reverberate",
@@ -10514,7 +11467,8 @@
    "echo",
    "ring"
   ],
-  "exp": "the hall resounded with laughter"
+  "exp": "the hall resounded with laughter",
+  "cefr": "C2"
  },
  {
   "word": "ingenuous",
@@ -10525,7 +11479,8 @@
   "syn": [
    "artless"
   ],
-  "exp": "an ingenuous admission of responsibility"
+  "exp": "an ingenuous admission of responsibility",
+  "cefr": "C2"
  },
  {
   "word": "ingenuously",
@@ -10536,7 +11491,8 @@
   "syn": [
    "artlessly"
   ],
-  "exp": "she answered the judge's questions artlessly"
+  "exp": "she answered the judge's questions artlessly",
+  "cefr": "C2"
  },
  {
   "word": "impresario",
@@ -10548,7 +11504,8 @@
    "showman",
    "promoter"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "elasticity",
@@ -10559,7 +11516,8 @@
   "syn": [
    "snap"
   ],
-  "exp": "the waistband had lost its snap"
+  "exp": "the waistband had lost its snap",
+  "cefr": "C2"
  },
  {
   "word": "synthesis",
@@ -10568,7 +11526,8 @@
   ],
   "en": "the process of producing a chemical compound (usually by the union of simpler chemical compounds)",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "salivary",
@@ -10577,7 +11536,8 @@
   ],
   "en": "of or relating to saliva",
   "syn": [],
-  "exp": "salivary gland"
+  "exp": "salivary gland",
+  "cefr": "C2"
  },
  {
   "word": "hypnotherapy",
@@ -10586,7 +11546,8 @@
   ],
   "en": "the use of hypnosis in psychotherapy",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "wholly",
@@ -10600,7 +11561,8 @@
    "totally",
    "all"
   ],
-  "exp": "he was wholly convinced"
+  "exp": "he was wholly convinced",
+  "cefr": "C2"
  },
  {
   "word": "remorseful",
@@ -10613,7 +11575,8 @@
    "rueful",
    "ruthful"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "remonstrate",
@@ -10622,7 +11585,8 @@
   ],
   "en": "argue in protest or opposition",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "remonstrance",
@@ -10635,7 +11599,8 @@
    "remonstration",
    "objection"
   ],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "unexcused",
@@ -10644,7 +11609,8 @@
   ],
   "en": "not excused",
   "syn": [],
-  "exp": "too many unexcused absences"
+  "exp": "too many unexcused absences",
+  "cefr": "C2"
  },
  {
   "word": "unexceptionally",
@@ -10653,7 +11619,8 @@
   ],
   "en": "",
   "syn": [],
-  "exp": ""
+  "exp": "",
+  "cefr": "C2"
  },
  {
   "word": "unexceptional",
@@ -10667,7 +11634,8 @@
    "mine_run",
    "undistinguished"
   ],
-  "exp": "your run-of-the-mine college graduate"
+  "exp": "your run-of-the-mine college graduate",
+  "cefr": "C2"
  },
  {
   "word": "inexorable",
@@ -10681,7 +11649,8 @@
    "stern",
    "unappeasable"
   ],
-  "exp": "Russia's final hour, it seemed, approached with inexorable certainty"
+  "exp": "Russia's final hour, it seemed, approached with inexorable certainty",
+  "cefr": "C2"
  },
  {
   "word": "inexorably",
@@ -10690,7 +11659,8 @@
   ],
   "en": "in an inexorable manner",
   "syn": [],
-  "exp": "time marches on inexorably"
+  "exp": "time marches on inexorably",
+  "cefr": "C2"
  },
  {
   "word": "inexorability",
@@ -10702,7 +11672,8 @@
    "relentlessness",
    "inexorableness"
   ],
-  "exp": "the relentlessness or their pursuit"
+  "exp": "the relentlessness or their pursuit",
+  "cefr": "C2"
  },
  {
   "word": "tranquilize",
@@ -10716,6 +11687,7 @@
    "quiet",
    "tranquillize"
   ],
-  "exp": "quiet the dragons of worry and fear"
+  "exp": "quiet the dragons of worry and fear",
+  "cefr": "C2"
  }
 ]

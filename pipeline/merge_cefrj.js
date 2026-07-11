@@ -29,25 +29,43 @@ function loadAuthored() {
   return map;
 }
 
+const LEVEL_ORDER = ["a1", "a2", "b1", "b2", "c1", "c2"];
+
 function main() {
   const authored = loadAuthored();
-  const out = [];
+  const byWord = new Map(); // lowercased word -> output entry (first/lowest level wins)
   let enrichedCount = 0;
 
   if (fs.existsSync(ENRICHED_DIR)) {
-    for (const f of fs.readdirSync(ENRICHED_DIR)) {
-      if (!f.endsWith("_enriched.json")) continue;
+    const files = fs.readdirSync(ENRICHED_DIR)
+      .filter(f => f.endsWith("_enriched.json"))
+      .sort((x, y) => {
+        const ix = LEVEL_ORDER.indexOf(x.split("_")[0]);
+        const iy = LEVEL_ORDER.indexOf(y.split("_")[0]);
+        return (ix === -1 ? 99 : ix) - (iy === -1 ? 99 : iy);
+      });
+    for (const f of files) {
       const items = JSON.parse(fs.readFileSync(path.join(ENRICHED_DIR, f), "utf8"));
       enrichedCount += items.length;
       for (const hw of items) {
-        const a = authored[hw.word.toLowerCase()];
+        const key = hw.word.toLowerCase();
+        const a = authored[key];
         if (!a || !a.ko) continue; // 아직 한국어 작성 안 됨 → 스킵
         const POS_ORDER = { noun: 1, verb: 2, adjective: 3, adverb: 4 };
         const pos = (hw.pos || []).filter(p => POS_ORDER[p]).sort((x, y) => POS_ORDER[x] - POS_ORDER[y]);
+        const posTags = pos.map(p => ({ noun: "noun", verb: "verb", adjective: "adj", adverb: "adv" }[p]));
+
+        const existing = byWord.get(key);
+        if (existing) {
+          // 같은 단어가 여러 레벨 표제어 목록에 등장 — 최초(최저 레벨) 항목을 유지하고 품사만 합침
+          for (const p of posTags) if (!existing.pos.includes(p)) existing.pos.push(p);
+          continue;
+        }
+
         const entry = {
           word: hw.word,
           ipa: "",
-          pos: pos.length ? pos.map(p => ({ noun: "noun", verb: "verb", adjective: "adj", adverb: "adv" }[p])) : [],
+          pos: posTags,
           cefr: hw.cefr,
           ko: a.ko,
           en: a.enOverride || hw.en || "",
@@ -58,10 +76,11 @@ function main() {
           ex: [a.ex],
         };
         if (a.senses && a.senses.length) entry.senses = a.senses;
-        out.push(entry);
+        byWord.set(key, entry);
       }
     }
   }
+  const out = Array.from(byWord.values());
   out.sort((x, y) => x.word.localeCompare(y.word));
 
   const header =
