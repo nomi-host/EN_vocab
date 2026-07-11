@@ -23,13 +23,15 @@
 | 데이터 | 소스 | 비용 / 제한 |
 |---|---|---|
 | 표제어 + 레벨(CEFR) | **Oxford 3000/5000** (CEFR 레벨별 공개 PDF) + NGSL | 무료 공개, 개인용 문제 없음 |
-| 한국어 뜻 | 공개 사전 API **없음**(네이버 사전 API 미제공) → **Gemini 배치 생성** 후 시드에 굽기 | 사실상 0원 (1회 배치) |
-| 영영 뜻·발음기호·발음오디오 | **Free Dictionary API** (dictionaryapi.dev) | 무료, 키·한도 없음 |
-| 유의어/반의어/연관어 | **Datamuse API** (+ WordNet 오픈데이터를 시드에 굽기) | 무료 10만 요청/일 |
+| 한국어 뜻 | **1차: 오픈 사전 3종 병합** — ① 한국어판 위키낱말사전(영어 표제어의 한국어 뜻, CC BY-SA) ② 영어판 위키낱말사전 번역 섹션(영→한, kaikki.org 추출본) ③ **국립국어원 한국어-영어 학습사전**(공공누리 1유형·CC BY-SA, 데이터 전체 다운로드 가능) 역인덱스 → **빈 곳만 LLM 번역** | 무료 (LLM은 갭 필링만) |
+| 영영 뜻·발음기호·발음오디오 | **WordNet 정의 + Wiktionary(kaikki.org)**, 발음기호는 **CMUdict**(BSD류)+Wiktionary IPA, 오디오는 Wikimedia Commons/TTS. 런타임 보조로 Free Dictionary API | 전부 무료 |
+| 유의어/반의어/연관어 | **WordNet을 시드에 굽기** (Datamuse는 런타임 보조) | 무료 |
+| 같은 단어 다른 품사(파생) | **WordNet "derivationally related forms" 링크** + Wiktionary derived terms — LLM 불필요 | 무료 |
 | 어원(같은 어원 단어) | **etymology-db** (Wiktionary 파생 오픈 데이터셋, 380만 관계) → 필요한 단어만 추출해 시드화 | 무료 (오픈소스) |
-| 어근/접두·접미사 | 자체 큐레이션 데이터(~200개: com-, inter-, -tion…) — **LLM 배치 생성 + 검수** | 0원 (1회 배치) |
-| 예문 | Gemini 생성(JP 앱 방식, 캐시) + 보조로 Tatoeba(CC-BY) | 사실상 0원 |
-| 문법 정보 | **긁어올 무료 API가 사실상 없음** (Oxford API 2023 종료, English Grammar Profile은 열람만 가능) → **자체 문법 패턴 사전(태그) + Gemini 문장 분석·캐시** | 사실상 0원 |
+| 어근/접두·접미사 | 자체 큐레이션 데이터(~200개: com-, inter-, -tion…) — 위키낱말사전 접사 카테고리 기반 + 1회 검수 | 0원 (1회 작업) |
+| 예문(영어) | **Tatoeba 영어 문장(CC BY, 수백만 개) + Wiktionary·WordNet 용례** — 생성 불필요 | 무료 |
+| 예문(한국어 번역) | Tatoeba 영한 페어(수천 개, 인간 번역)는 그대로 사용 → 나머지는 **LLM은 번역만** 수행 | 1회 배치 $2 미만 |
+| 문법 정보 | **태깅은 무LLM**: 오픈소스 POS 파서(wink-nlp/compromise, MIT — 브라우저에서 구동)+규칙 매칭으로 관계사·수동태·가정법 등 자동 검출. **설명문은 자체 작성 ~100개 고정**(1회) | 0원 |
 | 보조 사전 | Merriam-Webster API (사전+시소러스) | 무료 1,000회/일 (비상업) |
 | TTS | **Google Cloud TTS** (JP 앱과 동일 프록시) + Web Speech 폴백 | 무료: Neural2/WaveNet 100만 자/월, Standard 400만 자/월 |
 | STT(말하기 입력) | **Web Speech API** (브라우저 내장, 무료) / iOS PWA에선 MediaRecorder + Gemini 오디오 입력 | 무료 / 분당 약 $0.002 |
@@ -42,6 +44,21 @@
 - **어원/어근**: "같은 어원 공유 단어 타고타고"는 etymology-db에서 라틴/그리스 어근 기준으로 역인덱스를 만들어 시드화. 어근·접사 카드(com-, inter-, -tion 등)는 양이 작아 자체 데이터로 관리하는 편이 품질이 좋음.
 - **문법정보**: 유일하게 "긁어올 곳"이 없는 영역. 결론은 **자체 태그 사전(관계대명사, 가정법, to부정사… 80~120개) + 문장별 LLM 분석을 캐시**. 문장 즐겨찾기 시점에 1회 분석해 저장하면 이후 호출 없음.
 - **외부사전 연결**: URL 스킴으로 무료 연동 — 네이버 영어사전(`en.dict.naver.com/#/search?query=단어`), Longman, Cambridge, Etymonline(어원 확인용).
+
+### 2.3 LLM 최소화 파이프라인 (생성 → 번역으로 격하)
+
+토큰 비용과 QA 부담을 줄이기 위해 **LLM의 역할을 "콘텐츠 생성"에서 "번역·갭 필링"으로 축소**한다.
+
+1. **표제어·레벨**: NGSL/Oxford 리스트 + 빈도 밴드 — 무LLM
+2. **뜻(한국어)**: 오픈 사전 3종(한국어판 위키낱말사전, 영어판 번역 섹션, 국립국어원 한영 학습사전 역인덱스) 병합 → 커버리지 측정 → **미커버 단어만 LLM 번역** (상위 5,000 단어는 오픈 사전 커버리지가 가장 높은 구간이라 갭이 작음)
+3. **예문**: Tatoeba 영어 코퍼스에서 표제어별로 길이·난이도 필터로 선별(무LLM) → 영한 페어가 이미 있으면 그대로, 없으면 **LLM은 한국어 번역만**
+4. **유의어·반의어·품사 파생·어원**: WordNet + etymology-db에서 기계 추출 — 무LLM
+5. **문법 태그**: 브라우저 내 POS 파서 + 규칙 매칭 — 무LLM. 설명문 ~100개만 1회 작성
+6. **검수(QA)**: 생성물 검수가 아니라 **번역 검수만** 남음. 번역은 원문 대조가 가능해 검수 난이도가 낮고, Tatoeba 인간 번역·사전 출처 데이터는 검수 자체가 불필요
+
+예상 배치 비용: 예문 번역 ~1만 문장 + 뜻 갭 필링 → **1회 $2 미만**. 런타임 LLM 사용처는 학습 데이터가 아닌 기능(첨삭·회화·AI 질문)으로 한정된다.
+
+라이선스 주의: 위키낱말사전·국립국어원 사전 파생 데이터는 CC BY-SA(동일조건) — **데이터 파일(words.js 등)에 출처 고지 주석을 넣고 해당 파일은 CC BY-SA 유지**(코드와 분리). 공공누리 1유형은 출처 표시만으로 상업 이용까지 허용.
 
 ---
 
@@ -213,5 +230,10 @@ JP 앱에서 그대로 복제: Leitner 망각곡선 SRS(하루 신규 N개 + 자
 - Merriam-Webster API: https://dictionaryapi.com/
 - Oxford 3000/5000 (CEFR 레벨별 리스트): https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000
 - etymology-db (어원 오픈데이터): https://github.com/droher/etymology-db
+- 국립국어원 한국어기초사전/한영 학습사전 (공공누리 1유형·CC BY-SA): https://krdict.korean.go.kr/
+- Tatoeba 코퍼스 (CC BY): https://tatoeba.org/en/downloads
+- kaikki.org (위키낱말사전 추출 데이터): https://kaikki.org/
+- WordNet: https://wordnet.princeton.edu/
+- CMUdict: https://github.com/cmusphinx/cmudict
 - Google Cloud TTS 가격: https://cloud.google.com/text-to-speech/pricing
 - Gemini API 가격: https://ai.google.dev/gemini-api/docs/pricing
