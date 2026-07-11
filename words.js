@@ -1,6 +1,6 @@
 /* ============================================================================
    EN Vocab — 시드 데이터 (pipeline/merge_cefrj.js 자동 생성)
-   생성: 2026-07-11 · 표제어 650개 (CEFR-J 전체 후보 1058개 중 작성 완료분)
+   생성: 2026-07-11 · 표제어 780개 (CEFR-J 전체 후보 1058개 중 작성 완료분)
    ----------------------------------------------------------------------------
    표제어/CEFR/품사 = CEFR-J Wordlist(Tono Lab, TUFS — 연구·상업 무료, 출처 표시 조건)
    영영 정의(en)/유의어(syn) = WordNet 3.0(Princeton, 오프라인 추출)
@@ -14185,6 +14185,2871 @@ window.SEED = [
    {
     "en": "We watched an opera last weekend.",
     "ko": "우리는 지난 주말에 오페라를 봤다."
+   }
+  ]
+ },
+ {
+  "word": "or",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A1",
+  "ko": "또는, 아니면",
+  "en": "used to connect alternatives",
+  "syn": [
+   "Oregon",
+   "Beaver_State",
+   "Ore."
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Would you like tea or coffee?",
+    "ko": "차 드릴까요, 아니면 커피 드릴까요?"
+   }
+  ]
+ },
+ {
+  "word": "orange",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "주황색; 오렌지",
+  "en": "of the color between red and yellow",
+  "syn": [
+   "orangish"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She peeled an orange.",
+    "ko": "그녀는 오렌지 껍질을 벗겼다."
+   }
+  ]
+ },
+ {
+  "word": "order",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "주문; 명령",
+  "en": "(often plural) a command given by a superior (e.g., a military or law enforcement officer) that must be obeyed",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He gave the order to leave.",
+    "ko": "그는 떠나라는 명령을 내렸다."
+   }
+  ]
+ },
+ {
+  "word": "other",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A1",
+  "ko": "다른",
+  "en": "not the same one or ones already mentioned or implied",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I have no other choice.",
+    "ko": "나는 다른 선택이 없다."
+   }
+  ]
+ },
+ {
+  "word": "our",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A1",
+  "ko": "우리의",
+  "en": "used to show that something belongs to the speaker and others",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is our house.",
+    "ko": "이곳은 우리의 집이다."
+   }
+  ]
+ },
+ {
+  "word": "ours",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A1",
+  "ko": "우리의 것",
+  "en": "used to show that something belongs to the speaker and others",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That car is ours.",
+    "ko": "저 차는 우리의 것이다."
+   }
+  ]
+ },
+ {
+  "word": "out",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A1",
+  "ko": "밖에, 밖으로",
+  "en": "away from home",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They went out last night.",
+    "ko": "그들은 어젯밤 외출했다."
+   }
+  ]
+ },
+ {
+  "word": "outside",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A1",
+  "ko": "밖에서, 외부",
+  "en": "outside a building",
+  "syn": [
+   "outdoors",
+   "out_of_doors",
+   "alfresco"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "In summer we play outside.",
+    "ko": "여름에는 우리가 밖에서 논다."
+   }
+  ]
+ },
+ {
+  "word": "over",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A1",
+  "ko": "~위에; 끝난",
+  "en": "having come or been brought to a conclusion",
+  "syn": [
+   "complete",
+   "concluded",
+   "ended",
+   "over(p)"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The meeting is over.",
+    "ko": "회의가 끝났다."
+   }
+  ]
+ },
+ {
+  "word": "own",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "자신의, 소유의",
+  "en": "belonging to or on behalf of a specified person (especially yourself)",
+  "syn": [
+   "own(a)",
+   "ain"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has her own room.",
+    "ko": "그녀는 자신만의 방이 있다."
+   }
+  ]
+ },
+ {
+  "word": "owner",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "주인, 소유자",
+  "en": "(law) someone who owns (is legal possessor of) a business",
+  "syn": [
+   "proprietor"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He is the owner of the restaurant.",
+    "ko": "그는 그 식당의 주인이다."
+   }
+  ]
+ },
+ {
+  "word": "page",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "페이지, 쪽",
+  "en": "one side of one leaf (of a book or magazine or newspaper or letter etc.) or the written or pictorial matter it contains",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please turn to page ten.",
+    "ko": "10페이지를 펴 주세요."
+   }
+  ]
+ },
+ {
+  "word": "paint",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "페인트, 물감; 칠하다",
+  "en": "make a painting",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He painted the fence white.",
+    "ko": "그는 울타리를 흰색으로 칠했다."
+   }
+  ]
+ },
+ {
+  "word": "painting",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "그림, 회화",
+  "en": "graphic art consisting of an artistic composition made by applying paints to a surface",
+  "syn": [
+   "picture"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She bought a small painting.",
+    "ko": "그녀는 작은 그림을 샀다."
+   }
+  ]
+ },
+ {
+  "word": "pair",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "한 쌍",
+  "en": "a set of two similar things considered as a unit",
+  "syn": [
+   "brace"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She bought a pair of shoes.",
+    "ko": "그녀는 신발 한 켤레를 샀다."
+   }
+  ]
+ },
+ {
+  "word": "palace",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "궁전",
+  "en": "a large and stately mansion",
+  "syn": [
+   "castle"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They visited a beautiful old palace.",
+    "ko": "그들은 아름다운 옛 궁전을 방문했다."
+   }
+  ]
+ },
+ {
+  "word": "pants",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "바지",
+  "en": "(used in the plural) underpants worn by women",
+  "syn": [
+   "bloomers",
+   "drawers",
+   "knickers"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He bought a new pair of pants.",
+    "ko": "그는 새 바지 한 벌을 샀다."
+   }
+  ]
+ },
+ {
+  "word": "paper",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "종이",
+  "en": "a material made of cellulose pulp derived mainly from wood or rags or certain grasses",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She wrote her name on a piece of paper.",
+    "ko": "그녀는 종이에 자기 이름을 적었다."
+   }
+  ]
+ },
+ {
+  "word": "paragraph",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "단락, 문단",
+  "en": "one of several distinct subdivisions of a text intended to separate ideas",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Write a short paragraph about your day.",
+    "ko": "당신의 하루에 대해 짧은 단락을 써 보세요."
+   }
+  ]
+ },
+ {
+  "word": "pardon",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "용서; 죄송합니다 (되물을 때)",
+  "en": "the act of excusing a mistake or offense",
+  "syn": [
+   "forgiveness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Pardon? Could you say that again?",
+    "ko": "죄송한데, 다시 말씀해 주시겠어요?"
+   }
+  ]
+ },
+ {
+  "word": "parent",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "부모",
+  "en": "a father or mother",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Her parents live in Busan.",
+    "ko": "그녀의 부모님은 부산에 사신다."
+   }
+  ]
+ },
+ {
+  "word": "park",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "공원",
+  "en": "a large area of land preserved in its natural state as public property",
+  "syn": [
+   "parkland"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They walked in the park.",
+    "ko": "그들은 공원에서 산책했다."
+   }
+  ]
+ },
+ {
+  "word": "partner",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "배우자, 파트너",
+  "en": "a person's partner in marriage",
+  "syn": [
+   "spouse",
+   "married_person",
+   "mate",
+   "better_half"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He introduced his business partner.",
+    "ko": "그는 자신의 사업 파트너를 소개했다."
+   }
+  ]
+ },
+ {
+  "word": "party",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "파티",
+  "en": "an organization to gain political power",
+  "syn": [
+   "political_party"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We had a great time at the party.",
+    "ko": "우리는 파티에서 즐거운 시간을 보냈다."
+   }
+  ]
+ },
+ {
+  "word": "past",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A1",
+  "ko": "과거; ~을 지나서",
+  "en": "so as to pass a given point",
+  "syn": [
+   "by"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Every hour a train goes past.",
+    "ko": "매시간 기차가 지나간다."
+   }
+  ]
+ },
+ {
+  "word": "pay",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "지불하다; 급여",
+  "en": "something that remunerates",
+  "syn": [
+   "wage",
+   "earnings",
+   "remuneration",
+   "salary"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He paid for dinner.",
+    "ko": "그는 저녁 식사비를 지불했다."
+   }
+  ]
+ },
+ {
+  "word": "peace",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "평화",
+  "en": "the state prevailing during the absence of war",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They hope for peace between the two countries.",
+    "ko": "그들은 두 나라 사이의 평화를 희망한다."
+   }
+  ]
+ },
+ {
+  "word": "pen",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "펜",
+  "en": "a writing implement with a point from which ink flows",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She wrote the letter with a pen.",
+    "ko": "그녀는 펜으로 편지를 썼다."
+   }
+  ]
+ },
+ {
+  "word": "pencil",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "연필",
+  "en": "a thin cylindrical pointed writing implement",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He drew a picture with a pencil.",
+    "ko": "그는 연필로 그림을 그렸다."
+   }
+  ]
+ },
+ {
+  "word": "people",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "사람들",
+  "en": "(plural) any group of human beings (men or women or children) collectively",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There were at least 200 people there.",
+    "ko": "그곳에는 최소 200명의 사람들이 있었다."
+   }
+  ]
+ },
+ {
+  "word": "period",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "기간, 시기",
+  "en": "an amount of time",
+  "syn": [
+   "time_period",
+   "period_of_time"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It was a difficult period in her life.",
+    "ko": "그것은 그녀의 삶에서 어려운 시기였다."
+   }
+  ]
+ },
+ {
+  "word": "person",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "사람",
+  "en": "a human being",
+  "syn": [
+   "individual",
+   "someone",
+   "somebody",
+   "mortal"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a kind person.",
+    "ko": "그녀는 친절한 사람이다."
+   }
+  ]
+ },
+ {
+  "word": "personal",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "개인적인",
+  "en": "concerning or affecting a particular person or his or her private life and personality",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a personal matter.",
+    "ko": "이것은 개인적인 문제다."
+   }
+  ]
+ },
+ {
+  "word": "pet",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "반려동물",
+  "en": "a domesticated animal kept for companionship or amusement",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has a pet dog.",
+    "ko": "그녀는 반려견을 키운다."
+   }
+  ]
+ },
+ {
+  "word": "phone",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "전화; 전화하다",
+  "en": "get or try to get into communication (with someone) by telephone",
+  "syn": [
+   "call",
+   "telephone",
+   "call_up",
+   "ring"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I tried to phone you all night.",
+    "ko": "나는 밤새 당신에게 전화하려고 했다."
+   }
+  ]
+ },
+ {
+  "word": "photo",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "사진",
+  "en": "a representation of a person or scene in the form of a print or transparent slide or in digital format",
+  "syn": [
+   "photograph",
+   "exposure",
+   "picture",
+   "pic"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He took a photo of the mountain.",
+    "ko": "그는 산 사진을 찍었다."
+   }
+  ]
+ },
+ {
+  "word": "piano",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "피아노",
+  "en": "a keyboard instrument that is played by depressing keys that cause hammers to strike tuned strings and produce sounds",
+  "syn": [
+   "pianoforte",
+   "forte-piano"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She plays the piano beautifully.",
+    "ko": "그녀는 피아노를 아름답게 연주한다."
+   }
+  ]
+ },
+ {
+  "word": "pick",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "고르다, 뽑다",
+  "en": "select carefully from a group",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She finally picked her successor.",
+    "ko": "그녀는 마침내 후임자를 선택했다."
+   }
+  ]
+ },
+ {
+  "word": "picnic",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "소풍",
+  "en": "a day devoted to an outdoor social gathering",
+  "syn": [
+   "field_day",
+   "outing"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We went on a picnic in the park.",
+    "ko": "우리는 공원으로 소풍을 갔다."
+   }
+  ]
+ },
+ {
+  "word": "picture",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "그림, 사진",
+  "en": "a visual representation (of an object or scene or person or abstraction) produced on a surface",
+  "syn": [
+   "image",
+   "icon",
+   "ikon"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They showed us the pictures of their wedding.",
+    "ko": "그들은 우리에게 결혼식 사진을 보여줬다."
+   }
+  ]
+ },
+ {
+  "word": "piece",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "조각, 부분",
+  "en": "a separate part of a whole",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She ate a piece of cake.",
+    "ko": "그녀는 케이크 한 조각을 먹었다."
+   }
+  ]
+ },
+ {
+  "word": "pig",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "돼지",
+  "en": "domestic swine",
+  "syn": [
+   "hog",
+   "grunter",
+   "squealer",
+   "Sus_scrofa"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The pig rolled in the mud.",
+    "ko": "돼지가 진흙 속에서 뒹굴었다."
+   }
+  ]
+ },
+ {
+  "word": "pink",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "분홍색",
+  "en": "of a light shade of red",
+  "syn": [
+   "pinkish"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She wore a pink dress.",
+    "ko": "그녀는 분홍색 드레스를 입었다."
+   }
+  ]
+ },
+ {
+  "word": "pizza",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "피자",
+  "en": "Italian open pie made of thin bread dough spread with a spiced mixture of e.g. tomato sauce and cheese",
+  "syn": [
+   "pizza_pie"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They ordered a large pizza.",
+    "ko": "그들은 큰 피자를 주문했다."
+   }
+  ]
+ },
+ {
+  "word": "place",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "장소",
+  "en": "a point located with respect to surface features of some region",
+  "syn": [
+   "topographic_point",
+   "spot"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a nice place for a picnic.",
+    "ko": "이곳은 소풍하기 좋은 장소다."
+   }
+  ]
+ },
+ {
+  "word": "plan",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "계획",
+  "en": "a series of steps to be carried out or goals to be accomplished",
+  "syn": [
+   "program",
+   "programme"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They drew up a plan for the trip.",
+    "ko": "그들은 여행 계획을 세웠다."
+   }
+  ]
+ },
+ {
+  "word": "plane",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "비행기",
+  "en": "an aircraft that has a fixed wing and is powered by propellers or jets",
+  "syn": [
+   "airplane",
+   "aeroplane"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The flight was delayed due to trouble with the plane.",
+    "ko": "비행기 문제로 항공편이 지연되었다."
+   }
+  ]
+ },
+ {
+  "word": "play",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "놀다, 연주하다; 연극",
+  "en": "a dramatic work intended for performance by actors on a stage",
+  "syn": [
+   "drama",
+   "dramatic_play"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The children play in the yard.",
+    "ko": "아이들이 마당에서 논다."
+   }
+  ]
+ },
+ {
+  "word": "player",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "선수, 연주자",
+  "en": "a person who participates in or is skilled at some game",
+  "syn": [
+   "participant"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He is a great soccer player.",
+    "ko": "그는 훌륭한 축구 선수다."
+   }
+  ]
+ },
+ {
+  "word": "please",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A1",
+  "ko": "제발, 부디",
+  "en": "used in polite request",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please pay attention.",
+    "ko": "주목해 주세요."
+   }
+  ]
+ },
+ {
+  "word": "pleasure",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "기쁨, 즐거움",
+  "en": "a fundamental feeling that is hard to define but that people desire to experience",
+  "syn": [
+   "pleasance"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It's a pleasure to meet you.",
+    "ko": "만나서 반갑습니다."
+   }
+  ]
+ },
+ {
+  "word": "pocket",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "주머니",
+  "en": "a small pouch inside a garment for carrying small articles",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He put his hands in his pockets.",
+    "ko": "그는 주머니에 손을 넣었다."
+   }
+  ]
+ },
+ {
+  "word": "poem",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "시",
+  "en": "a composition written in metrical feet forming rhythmical lines",
+  "syn": [
+   "verse_form"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She wrote a poem about the sea.",
+    "ko": "그녀는 바다에 관한 시를 썼다."
+   }
+  ]
+ },
+ {
+  "word": "point",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "요점, 점",
+  "en": "a geometric element that has position but no extension",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That's a good point.",
+    "ko": "그것은 좋은 지적이다."
+   }
+  ]
+ },
+ {
+  "word": "pollution",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "오염",
+  "en": "undesirable state of the natural environment being contaminated with harmful substances as a consequence of human activities",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Air pollution is a serious problem.",
+    "ko": "대기 오염은 심각한 문제다."
+   }
+  ]
+ },
+ {
+  "word": "pool",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "수영장, 웅덩이",
+  "en": "an excavation that is (usually) filled with water",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The kids swam in the pool.",
+    "ko": "아이들은 수영장에서 수영했다."
+   }
+  ]
+ },
+ {
+  "word": "poor",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "가난한, 불쌍한",
+  "en": "deserving or inciting pity",
+  "syn": [
+   "hapless",
+   "miserable",
+   "misfortunate",
+   "pathetic"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They helped the poor family.",
+    "ko": "그들은 가난한 가족을 도왔다."
+   }
+  ]
+ },
+ {
+  "word": "pop",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "아빠 (구어); 팝(음악)",
+  "en": "an informal term for a father",
+  "syn": [
+   "dad",
+   "dada",
+   "daddy",
+   "pa"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She listens to pop music.",
+    "ko": "그녀는 팝 음악을 듣는다."
+   }
+  ]
+ },
+ {
+  "word": "post",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "게시물; 우편",
+  "en": "the position where someone (as a guard or sentry) stands or is assigned to stand",
+  "syn": [
+   "station"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She shared a post online.",
+    "ko": "그녀는 온라인에 게시물을 공유했다."
+   }
+  ]
+ },
+ {
+  "word": "poster",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "포스터",
+  "en": "a sign posted in a public place as an advertisement",
+  "syn": [
+   "posting",
+   "placard",
+   "notice",
+   "bill"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "A poster advertised the concert.",
+    "ko": "포스터가 그 콘서트를 광고했다."
+   }
+  ]
+ },
+ {
+  "word": "potato",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "감자",
+  "en": "an edible tuber native to South America",
+  "syn": [
+   "white_potato",
+   "Irish_potato",
+   "murphy",
+   "spud"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She peeled the potatoes.",
+    "ko": "그녀는 감자 껍질을 벗겼다."
+   }
+  ]
+ },
+ {
+  "word": "practice",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "연습; 연습하다",
+  "en": "carry out or practice",
+  "syn": [
+   "practise",
+   "exercise",
+   "do"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She practices piano every day.",
+    "ko": "그녀는 매일 피아노를 연습한다."
+   }
+  ]
+ },
+ {
+  "word": "pray",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "기도하다",
+  "en": "address a deity, a prophet, a saint or an object of worship",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They prayed for peace.",
+    "ko": "그들은 평화를 위해 기도했다."
+   }
+  ]
+ },
+ {
+  "word": "present",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "현재; 선물",
+  "en": "the period of time that is happening now",
+  "syn": [
+   "nowadays"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Let's focus on the present.",
+    "ko": "현재에 집중합시다."
+   }
+  ]
+ },
+ {
+  "word": "pretty",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "예쁜",
+  "en": "pleasing by delicacy or grace",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has a pretty smile.",
+    "ko": "그녀는 예쁜 미소를 가지고 있다."
+   }
+  ]
+ },
+ {
+  "word": "price",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "가격",
+  "en": "the property of having material worth (often indicated by the amount of money something would bring if sold)",
+  "syn": [
+   "monetary_value",
+   "cost"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The price of gas went up.",
+    "ko": "기름값이 올랐다."
+   }
+  ]
+ },
+ {
+  "word": "prince",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "왕자",
+  "en": "a male member of a royal family other than the sovereign (especially the son of a sovereign)",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The prince lived in a castle.",
+    "ko": "그 왕자는 성에서 살았다."
+   }
+  ]
+ },
+ {
+  "word": "princess",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "공주",
+  "en": "a female member of a royal family other than the queen (especially the daughter of a sovereign)",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The princess wore a golden crown.",
+    "ko": "그 공주는 금관을 썼다."
+   }
+  ]
+ },
+ {
+  "word": "problem",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "문제",
+  "en": "a state of difficulty that needs to be resolved",
+  "syn": [
+   "job"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We need to solve this problem.",
+    "ko": "우리는 이 문제를 해결해야 한다."
+   }
+  ]
+ },
+ {
+  "word": "program",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "프로그램, 계획",
+  "en": "a series of steps to be carried out or goals to be accomplished",
+  "syn": [
+   "plan",
+   "programme"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They drew up a six-step program.",
+    "ko": "그들은 6단계 프로그램을 세웠다."
+   }
+  ]
+ },
+ {
+  "word": "purple",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "보라색",
+  "en": "a purple color or pigment",
+  "syn": [
+   "purpleness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She painted the wall purple.",
+    "ko": "그녀는 벽을 보라색으로 칠했다."
+   }
+  ]
+ },
+ {
+  "word": "push",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "밀다",
+  "en": "move with force",
+  "syn": [
+   "force"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He pushed the table into the corner.",
+    "ko": "그는 탁자를 구석으로 밀었다."
+   }
+  ]
+ },
+ {
+  "word": "put",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "놓다, 두다",
+  "en": "put into a certain place or abstract location",
+  "syn": [
+   "set",
+   "place",
+   "pose",
+   "position"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Put your things here.",
+    "ko": "당신의 물건을 여기에 두세요."
+   }
+  ]
+ },
+ {
+  "word": "quarter",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "4분의 1",
+  "en": "one of four equal parts",
+  "syn": [
+   "one-fourth",
+   "fourth",
+   "one-quarter",
+   "fourth_part"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He ate a quarter of the pizza.",
+    "ko": "그는 피자의 4분의 1을 먹었다."
+   }
+  ]
+ },
+ {
+  "word": "question",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "질문",
+  "en": "an instance of questioning",
+  "syn": [
+   "inquiry",
+   "enquiry",
+   "query",
+   "interrogation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She asked an important question.",
+    "ko": "그녀는 중요한 질문을 했다."
+   }
+  ]
+ },
+ {
+  "word": "quickly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A1",
+  "ko": "빠르게",
+  "en": "with speed",
+  "syn": [
+   "rapidly",
+   "speedily",
+   "chop-chop",
+   "apace"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He finished the work quickly.",
+    "ko": "그는 일을 빠르게 끝냈다."
+   }
+  ]
+ },
+ {
+  "word": "quiet",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "조용한",
+  "en": "characterized by an absence or near absence of agitation or activity",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The library was very quiet.",
+    "ko": "도서관은 매우 조용했다."
+   }
+  ]
+ },
+ {
+  "word": "rabbit",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "토끼",
+  "en": "any of various burrowing animals of the family Leporidae having long ears and short tails",
+  "syn": [
+   "coney",
+   "cony"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The rabbit hopped across the yard.",
+    "ko": "토끼가 마당을 가로질러 깡충깡충 뛰었다."
+   }
+  ]
+ },
+ {
+  "word": "radio",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "라디오",
+  "en": "medium for communication",
+  "syn": [
+   "radiocommunication",
+   "wireless"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She listens to the radio while driving.",
+    "ko": "그녀는 운전하면서 라디오를 듣는다."
+   }
+  ]
+ },
+ {
+  "word": "rain",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "비; 비가 오다",
+  "en": "precipitate as rain",
+  "syn": [
+   "rain_down"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "If it rains, we will stay home.",
+    "ko": "비가 오면 우리는 집에 있을 것이다."
+   }
+  ]
+ },
+ {
+  "word": "rainy",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "비 오는",
+  "en": "(of weather) wet by periods of rain",
+  "syn": [
+   "showery"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It was a rainy day.",
+    "ko": "비 오는 날이었다."
+   }
+  ]
+ },
+ {
+  "word": "rat",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "쥐",
+  "en": "any of various long-tailed rodents similar to but larger than a mouse",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "A rat ran across the street.",
+    "ko": "쥐 한 마리가 길을 가로질러 뛰어갔다."
+   }
+  ]
+ },
+ {
+  "word": "read",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "읽다",
+  "en": "interpret something that is written or printed",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Have you read this book?",
+    "ko": "이 책을 읽어봤나요?"
+   }
+  ]
+ },
+ {
+  "word": "reader",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "독자",
+  "en": "a person who enjoys reading",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a passionate reader.",
+    "ko": "그녀는 열정적인 독서가다."
+   }
+  ]
+ },
+ {
+  "word": "reading",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "독서, 읽기",
+  "en": "the cognitive process of understanding a written linguistic message",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Reading is her favorite hobby.",
+    "ko": "독서는 그녀가 가장 좋아하는 취미다."
+   }
+  ]
+ },
+ {
+  "word": "ready",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "준비된",
+  "en": "completely prepared or in condition for immediate action or use or progress",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Are you ready to go?",
+    "ko": "갈 준비 되었나요?"
+   }
+  ]
+ },
+ {
+  "word": "real",
+  "ipa": "",
+  "pos": [
+   "adj",
+   "adv"
+  ],
+  "cefr": "A1",
+  "ko": "진짜의, 실제의",
+  "en": "used as intensifiers",
+  "syn": [
+   "very",
+   "really",
+   "rattling"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Is this a real diamond?",
+    "ko": "이것은 진짜 다이아몬드인가요?"
+   }
+  ]
+ },
+ {
+  "word": "really",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A1",
+  "ko": "정말로",
+  "en": "in accordance with truth or fact or reality",
+  "syn": [
+   "truly",
+   "genuinely"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I really like this song.",
+    "ko": "나는 이 노래가 정말 좋다."
+   }
+  ]
+ },
+ {
+  "word": "reason",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "이유",
+  "en": "a rational motive for a belief or action",
+  "syn": [
+   "ground"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There is a reason for everything.",
+    "ko": "모든 것에는 이유가 있다."
+   }
+  ]
+ },
+ {
+  "word": "red",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "빨간색",
+  "en": "of a color at the end of the color spectrum (next to orange)",
+  "syn": [
+   "reddish",
+   "ruddy",
+   "blood-red",
+   "carmine"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She wore a red scarf.",
+    "ko": "그녀는 빨간 스카프를 둘렀다."
+   }
+  ]
+ },
+ {
+  "word": "remember",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "기억하다",
+  "en": "recall knowledge from memory",
+  "syn": [
+   "retrieve",
+   "recall",
+   "call_back",
+   "call_up"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I can't remember his name.",
+    "ko": "나는 그의 이름이 기억나지 않는다."
+   }
+  ]
+ },
+ {
+  "word": "repeat",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "반복하다",
+  "en": "to say, state, or perform again",
+  "syn": [
+   "reiterate",
+   "ingeminate",
+   "iterate",
+   "restate"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please repeat what you said.",
+    "ko": "말씀하신 것을 다시 말해 주세요."
+   }
+  ]
+ },
+ {
+  "word": "reporter",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "기자",
+  "en": "a person who investigates and reports or edits news stories",
+  "syn": [
+   "newsman",
+   "newsperson"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The reporter asked several questions.",
+    "ko": "그 기자는 여러 질문을 했다."
+   }
+  ]
+ },
+ {
+  "word": "restaurant",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "식당",
+  "en": "a building where people go to eat",
+  "syn": [
+   "eating_house",
+   "eating_place",
+   "eatery"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We ate dinner at a nice restaurant.",
+    "ko": "우리는 좋은 식당에서 저녁을 먹었다."
+   }
+  ]
+ },
+ {
+  "word": "result",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "결과",
+  "en": "a phenomenon that follows and is caused by some previous phenomenon",
+  "syn": [
+   "consequence",
+   "effect",
+   "outcome",
+   "event"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She was happy with the test result.",
+    "ko": "그녀는 시험 결과에 만족했다."
+   }
+  ]
+ },
+ {
+  "word": "review",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "검토, 리뷰",
+  "en": "a new appraisal or evaluation",
+  "syn": [
+   "reappraisal",
+   "revaluation",
+   "reassessment"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He wrote a review of the movie.",
+    "ko": "그는 그 영화의 리뷰를 썼다."
+   }
+  ]
+ },
+ {
+  "word": "ribbon",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "리본",
+  "en": "any long object resembling a thin line",
+  "syn": [
+   "thread"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She tied her hair with a ribbon.",
+    "ko": "그녀는 리본으로 머리를 묶었다."
+   }
+  ]
+ },
+ {
+  "word": "rice",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "쌀, 밥",
+  "en": "grains used as food either unpolished or more often polished",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They eat rice every day.",
+    "ko": "그들은 매일 밥을 먹는다."
+   }
+  ]
+ },
+ {
+  "word": "rich",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "부유한",
+  "en": "possessing material wealth",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Her father is extremely rich.",
+    "ko": "그녀의 아버지는 매우 부유하다."
+   }
+  ]
+ },
+ {
+  "word": "ride",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "타다; (탈것을) 타기",
+  "en": "a journey in a vehicle (usually an automobile)",
+  "syn": [
+   "drive"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He took the family for a ride in his new car.",
+    "ko": "그는 가족을 새 차에 태워 드라이브를 시켜줬다."
+   }
+  ]
+ },
+ {
+  "word": "right",
+  "ipa": "",
+  "pos": [
+   "adj",
+   "adv"
+  ],
+  "cefr": "A1",
+  "ko": "오른쪽의; 맞는",
+  "en": "precisely, exactly",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Turn right at the light.",
+    "ko": "신호등에서 오른쪽으로 도세요."
+   }
+  ]
+ },
+ {
+  "word": "ring",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "반지; 울리다",
+  "en": "sound loudly and sonorously",
+  "syn": [
+   "peal"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The bells rang loudly.",
+    "ko": "종이 크게 울렸다."
+   }
+  ]
+ },
+ {
+  "word": "river",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "강",
+  "en": "a large natural stream of water (larger than a creek)",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The river was navigable for fifty miles.",
+    "ko": "그 강은 50마일 동안 배가 다닐 수 있었다."
+   }
+  ]
+ },
+ {
+  "word": "role",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "역할",
+  "en": "the actions and activities assigned to or required or expected of a person or group",
+  "syn": [
+   "function",
+   "office",
+   "part"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She played the main role in the play.",
+    "ko": "그녀는 그 연극에서 주연을 맡았다."
+   }
+  ]
+ },
+ {
+  "word": "room",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "방",
+  "en": "an area within a building enclosed by walls and floor and ceiling",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The rooms were small but had a nice view.",
+    "ko": "그 방들은 작았지만 전망이 좋았다."
+   }
+  ]
+ },
+ {
+  "word": "rose",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "장미",
+  "en": "any of many shrubs of the genus Rosa that bear roses",
+  "syn": [
+   "rosebush"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He gave her a red rose.",
+    "ko": "그는 그녀에게 빨간 장미를 주었다."
+   }
+  ]
+ },
+ {
+  "word": "row",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "줄, 열",
+  "en": "an arrangement of objects or people side by side in a line",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They sat in the front row.",
+    "ko": "그들은 맨 앞줄에 앉았다."
+   }
+  ]
+ },
+ {
+  "word": "rude",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "무례한",
+  "en": "socially incorrect in behavior",
+  "syn": [
+   "ill-mannered",
+   "bad-mannered",
+   "unmannered",
+   "unmannerly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It was rude of him to interrupt.",
+    "ko": "그가 끼어든 것은 무례했다."
+   }
+  ]
+ },
+ {
+  "word": "rule",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "규칙",
+  "en": "a principle or condition that customarily governs behavior",
+  "syn": [
+   "regulation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It was his rule to walk before breakfast.",
+    "ko": "아침 식사 전에 산책하는 것이 그의 규칙이었다."
+   }
+  ]
+ },
+ {
+  "word": "ruler",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "통치자; 자 (도구)",
+  "en": "a person who rules or commands",
+  "syn": [
+   "swayer"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She measured the paper with a ruler.",
+    "ko": "그녀는 자로 종이를 측정했다."
+   }
+  ]
+ },
+ {
+  "word": "run",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "달리다",
+  "en": "to move quickly on foot",
+  "syn": [
+   "tally"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He runs five kilometers every morning.",
+    "ko": "그는 매일 아침 5킬로미터를 달린다."
+   }
+  ]
+ },
+ {
+  "word": "sad",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "슬픈",
+  "en": "experiencing or showing sorrow or unhappiness",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She felt sad because her dog had died.",
+    "ko": "그녀는 개가 죽어서 슬펐다."
+   }
+  ]
+ },
+ {
+  "word": "sailor",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "선원",
+  "en": "any member of a ship's crew",
+  "syn": [
+   "crewman"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The sailor worked on a large ship.",
+    "ko": "그 선원은 큰 배에서 일했다."
+   }
+  ]
+ },
+ {
+  "word": "salad",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "샐러드",
+  "en": "food mixtures either arranged on a plate or tossed and served with a moist dressing",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She ordered a fresh salad.",
+    "ko": "그녀는 신선한 샐러드를 주문했다."
+   }
+  ]
+ },
+ {
+  "word": "sale",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "판매, 세일",
+  "en": "a particular instance of selling",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The store is having a big sale.",
+    "ko": "그 가게는 큰 세일을 하고 있다."
+   }
+  ]
+ },
+ {
+  "word": "same",
+  "ipa": "",
+  "pos": [
+   "adj",
+   "adv"
+  ],
+  "cefr": "A1",
+  "ko": "같은",
+  "en": "same in identity",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We wore the same shirt.",
+    "ko": "우리는 같은 셔츠를 입었다."
+   }
+  ]
+ },
+ {
+  "word": "sandwich",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "샌드위치",
+  "en": "two (or more) slices of bread with a filling between them",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She made a sandwich for lunch.",
+    "ko": "그녀는 점심으로 샌드위치를 만들었다."
+   }
+  ]
+ },
+ {
+  "word": "Saturday",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "토요일",
+  "en": "the seventh and last day of the week",
+  "syn": [
+   "Sabbatum",
+   "Sat"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We go hiking every Saturday.",
+    "ko": "우리는 매주 토요일에 등산을 간다."
+   }
+  ]
+ },
+ {
+  "word": "save",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "구하다; 저축하다",
+  "en": "save from ruin, destruction, or harm",
+  "syn": [
+   "salvage",
+   "salve",
+   "relieve"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Firefighters saved a child from the fire.",
+    "ko": "소방관들이 화재에서 아이를 구했다."
+   }
+  ]
+ },
+ {
+  "word": "saw",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "보았다 (see의 과거형)",
+  "en": "the past tense of the verb 'see'",
+  "syn": [
+   "proverb",
+   "adage",
+   "byword"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I saw her at the store yesterday.",
+    "ko": "나는 어제 가게에서 그녀를 봤다."
+   }
+  ]
+ },
+ {
+  "word": "say",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "말하다",
+  "en": "express in words",
+  "syn": [
+   "state",
+   "tell"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He said that he wanted to marry her.",
+    "ko": "그는 그녀와 결혼하고 싶다고 말했다."
+   }
+  ]
+ },
+ {
+  "word": "school",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "학교",
+  "en": "an educational institution",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The school was founded in 1900.",
+    "ko": "그 학교는 1900년에 설립되었다."
+   }
+  ]
+ },
+ {
+  "word": "science",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "과학",
+  "en": "a particular branch of scientific knowledge",
+  "syn": [
+   "scientific_discipline"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She loves studying science.",
+    "ko": "그녀는 과학 공부하는 것을 좋아한다."
+   }
+  ]
+ },
+ {
+  "word": "scientist",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "과학자",
+  "en": "a person with advanced knowledge of one or more sciences",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He wants to be a scientist.",
+    "ko": "그는 과학자가 되고 싶어 한다."
+   }
+  ]
+ },
+ {
+  "word": "sea",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "바다",
+  "en": "a division of an ocean or a large body of salt water partially enclosed by land",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They swam in the sea.",
+    "ko": "그들은 바다에서 수영했다."
+   }
+  ]
+ },
+ {
+  "word": "seat",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "좌석",
+  "en": "a space reserved for sitting (as in a theater or on a train or airplane)",
+  "syn": [
+   "place"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He booked their seats in advance.",
+    "ko": "그는 미리 좌석을 예약했다."
+   }
+  ]
+ },
+ {
+  "word": "second",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A1",
+  "ko": "두 번째의; 초 (시간)",
+  "en": "coming next after the first in position in space or time or degree or magnitude",
+  "syn": [
+   "2nd",
+   "2d"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She finished second in the race.",
+    "ko": "그녀는 그 경주에서 2등을 했다."
+   }
+  ]
+ },
+ {
+  "word": "section",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "부분, 구역",
+  "en": "a self-contained part of a larger composition (written or musical)",
+  "syn": [
+   "subdivision"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He turns first to the sports section.",
+    "ko": "그는 먼저 스포츠 섹션을 펼쳐 본다."
+   }
+  ]
+ },
+ {
+  "word": "see",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "ko": "보다",
+  "en": "perceive by sight or have the power to perceive by sight",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Can you see the mountain from here?",
+    "ko": "여기서 산이 보이나요?"
+   }
+  ]
+ },
+ {
+  "word": "self",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A1",
+  "ko": "자신, 자아",
+  "en": "your consciousness of your own identity",
+  "syn": [
+   "ego"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She believes in being true to herself.",
+    "ko": "그녀는 자기 자신에게 진실해야 한다고 믿는다."
    }
   ]
  }
