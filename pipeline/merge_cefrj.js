@@ -44,7 +44,7 @@ function main() {
         if (!a || !a.ko) continue; // 아직 한국어 작성 안 됨 → 스킵
         const POS_ORDER = { noun: 1, verb: 2, adjective: 3, adverb: 4 };
         const pos = (hw.pos || []).filter(p => POS_ORDER[p]).sort((x, y) => POS_ORDER[x] - POS_ORDER[y]);
-        out.push({
+        const entry = {
           word: hw.word,
           ipa: "",
           pos: pos.length ? pos.map(p => ({ noun: "noun", verb: "verb", adjective: "adj", adverb: "adv" }[p])) : [],
@@ -56,7 +56,9 @@ function main() {
           forms: [],
           roots: [],
           ex: [a.ex],
-        });
+        };
+        if (a.senses && a.senses.length) entry.senses = a.senses;
+        out.push(entry);
       }
     }
   }
