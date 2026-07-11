@@ -129,6 +129,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .chip{flex:none;font-size:13px;font-weight:600;padding:7px 13px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);}
 .chip.on{background:var(--ink);color:#fff;border-color:var(--ink);}
 
+/* 사전 허브 목록 헤더 */
+.listhead{display:flex;align-items:center;gap:4px;margin:2px 0 0;}
+.listhead .back{color:var(--muted);display:flex;padding:4px 8px 4px 0;}
+.listhead b{font-size:17px;letter-spacing:-0.3px;}
+.listhead .cnt{font-size:13px;color:var(--muted);font-weight:600;margin-left:2px;}
+
 .addbar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--accent-soft);border-radius:14px;padding:12px 14px;}
 .addbar .t{font-size:13px;color:var(--ink-2);}
 .addbar .t b{color:var(--accent-deep);}
@@ -201,7 +207,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.1.0";
+const APP_VERSION = "v0.2.0";
 const APP_BUILD = "2026-07-11";
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -218,6 +224,9 @@ const ICONS = {
   search: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z",
   close: "M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z",
   chevron_left: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z",
+  add: "M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z",
+  grid_view: "M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z",
+  star: "M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z",
   check: "M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z",
   volume_up: "M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z",
   settings: "M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z",
@@ -232,6 +241,16 @@ function Icon({ name, size = 24 }) {
 
 const SEED = (typeof window !== "undefined" && window.SEED) ? window.SEED : [];
 const byWord = Object.fromEntries(SEED.map(w => [w.word, w]));
+
+/* 사용자가 직접 추가한 단어(내 단어장) — localStorage 보존.
+   v0에선 플레이스홀더 항목 생성만, 뜻·예문 자동 생성(LLM)은 프록시 연동 시. */
+let EXTRA = (() => { try { return JSON.parse(localStorage.getItem("en_mywords") || "{}"); } catch (e) { return {}; } })();
+function saveExtra() { try { localStorage.setItem("en_mywords", JSON.stringify(EXTRA)); } catch (e) {} }
+function wordOf(w) { return byWord[w] || EXTRA[w]; }
+function allWords() { return SEED.concat(Object.values(EXTRA)); }
+
+/* v0 데모 즐겨찾기 */
+const FAVS = new Set(["alert", "idiomatic"]);
 
 /* v0 데모용 학습 상태(파이프라인/SRS 붙기 전 표시용) */
 const LEARN_STATE = {
@@ -350,7 +369,7 @@ function Home({ onGoTab }) {
 /* ---------- 단어 상세 바텀시트 (팝업 → 타고타고 모달 스택) ---------- */
 function WordSheet({ stack, onPush, onPop, onClose }) {
   const word = stack[stack.length - 1];
-  const w = byWord[word];
+  const w = wordOf(word);
   const speak = useCallback((text) => {
     try {
       const u = new SpeechSynthesisUtterance(text);
@@ -360,7 +379,7 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
     } catch (e) {}
   }, []);
   const Chip = ({ label }) => (
-    byWord[label]
+    wordOf(label)
       ? <button className="lchip link" onClick={() => onPush(label)}>{label}</button>
       : <span className="lchip">{label}</span>
   );
@@ -421,7 +440,7 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
               <div className="wd-sec-t">같은 단어, 다른 품사</div>
               <div className="wd-chips">
                 {w.forms.map(f => (
-                  byWord[f.word]
+                  wordOf(f.word)
                     ? <button key={f.word} className="lchip link" onClick={() => onPush(f.word)}>{f.word}<span className="g">{f.pos}</span></button>
                     : <span key={f.word} className="lchip">{f.word}<span className="g">{f.pos}</span></span>
                 ))}
@@ -456,24 +475,75 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
 }
 
 /* ---------- 사전 탭 ---------- */
+/* 진입 시 목록을 쏟아내지 않고 허브(메뉴)에서 선택해 들어가는 구조.
+   검색은 어느 화면에서든 최상단 — 입력을 시작하면 즉시 검색 결과로 전환. */
+const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1"];
+
+function WordRow({ w, onOpen }) {
+  const st = LEARN_STATE[w.word];
+  return (
+    <div className="wrow" onClick={() => onOpen(w.word)}>
+      <div>
+        <div className="w">{w.word}</div>
+        <div className="k">{w.ko}</div>
+      </div>
+      <div className="meta">
+        <span className="tag lv">{w.cefr}</span>
+        {w.mine && <span className="tag">내 단어</span>}
+        {st?.status === "done" && <span className="tag done">완료</span>}
+        {st?.status === "learning" && <span className="tag learning">박스 {st.box} · {st.dueIn === 0 ? "오늘" : st.dueIn + "일 뒤"}</span>}
+        {!st && !w.mine && <span className="tag">미학습</span>}
+      </div>
+    </div>
+  );
+}
+
 function Dict({ onOpen }) {
   const [q, setQ] = useState("");
-  const [filter, setFilter] = useState("all");
-  const filters = [
-    { k: "all", label: "전체" },
-    { k: "learning", label: "학습 중" },
-    { k: "done", label: "완료" },
-    { k: "mine", label: "내 단어" },
+  const [view, setView] = useState(null);      // null=허브 | learned|category|fav|mine|add
+  const [catMode, setCatMode] = useState("cefr"); // cefr | root
+  const [, bump] = useState(0);                 // EXTRA 변경 리렌더용
+
+  const words = allWords();
+  const learned = words.filter(w => LEARN_STATE[w.word]);
+  const favs = words.filter(w => FAVS.has(w.word));
+  const mine = Object.values(EXTRA);
+
+  const query = q.trim().toLowerCase();
+  const hits = query ? words.filter(w => w.word.toLowerCase().startsWith(query)).sort((a, b) => a.word.localeCompare(b.word)) : [];
+  const noHit = query && hits.length === 0;
+
+  const addWord = name => {
+    const key = name.trim().toLowerCase();
+    if (!key || wordOf(key)) return;
+    EXTRA[key] = { word: key, ipa: "", pos: [], cefr: "—", ko: "직접 추가한 단어 · 뜻과 예문은 자동 생성 예정", en: "", syn: [], ant: [], forms: [], roots: [], ex: [], mine: true };
+    saveExtra(); bump(x => x + 1);
+    setQ(""); onOpen(key);
+  };
+
+  const MENUS = [
+    { k: "add", icon: "add", title: "새 단어 등록하기", sub: "사전에 없는 단어도 내 단어로" },
+    { k: "learned", icon: "school", title: "내가 학습한 단어", sub: learned.length + "개 · SRS 진행 상태별" },
+    { k: "category", icon: "grid_view", title: "카테고리별로 보기", sub: "레벨(CEFR) · 어근별 · 주제(예정)" },
+    { k: "fav", icon: "star", title: "즐겨찾기한 단어", sub: favs.length + "개" },
+    { k: "mine", icon: "bookmark", title: "내 단어장", sub: "내가 추가한 단어 " + mine.length + "개" },
   ];
-  const list = useMemo(() => {
-    let arr = SEED.slice().sort((a, b) => a.word.localeCompare(b.word));
-    if (q.trim()) arr = arr.filter(w => w.word.toLowerCase().startsWith(q.trim().toLowerCase()));
-    if (filter === "learning") arr = arr.filter(w => LEARN_STATE[w.word]?.status === "learning");
-    if (filter === "done") arr = arr.filter(w => LEARN_STATE[w.word]?.status === "done");
-    if (filter === "mine") arr = arr.filter(w => LEARN_STATE[w.word]?.mine);
-    return arr;
-  }, [q, filter]);
-  const noHit = q.trim() && list.length === 0;
+  const TITLES = { learned: "내가 학습한 단어", category: "카테고리별", fav: "즐겨찾기", mine: "내 단어장", add: "새 단어 등록" };
+
+  const rows = list => (
+    <div className="wlist">
+      {list.map(w => <WordRow key={w.word} w={w} onOpen={onOpen} />)}
+      {list.length === 0 && <div className="empty-note">아직 여기에 단어가 없어요.</div>}
+    </div>
+  );
+
+  const catList = level => words.filter(w => w.cefr === level).sort((a, b) => a.word.localeCompare(b.word));
+  const rootIndex = useMemo(() => {
+    const m = {};
+    words.forEach(w => (w.roots || []).forEach(r => { (m[r.affix] = m[r.affix] || { gloss: r.gloss, ws: [] }).ws.push(w); }));
+    return Object.entries(m).sort((a, b) => b[1].ws.length - a[1].ws.length);
+  }, [words.length]);
+
   return (
     <div className="content">
       <div className="search">
@@ -481,39 +551,81 @@ function Dict({ onOpen }) {
         <input value={q} onChange={e => setQ(e.target.value)} placeholder="단어를 검색하세요 (예: alert)" autoCapitalize="none" />
       </div>
 
-      {noHit && (
-        <div className="addbar">
-          <div className="t">DB에 없는 단어인가요?<br/><b>"{q.trim()}"</b> 를 내 단어로 추가</div>
-          <button>추가하기</button>
-        </div>
-      )}
-
-      <div className="chips">
-        {filters.map(f => (
-          <button key={f.k} className={"chip" + (filter === f.k ? " on" : "")} onClick={() => setFilter(f.k)}>{f.label}</button>
-        ))}
-      </div>
-
-      <div className="wlist">
-        {list.map(w => {
-          const st = LEARN_STATE[w.word];
-          return (
-            <div className="wrow" key={w.word} onClick={() => onOpen(w.word)}>
-              <div>
-                <div className="w">{w.word}</div>
-                <div className="k">{w.ko}</div>
-              </div>
-              <div className="meta">
-                <span className="tag lv">{w.cefr}</span>
-                {st?.status === "done" && <span className="tag done">완료</span>}
-                {st?.status === "learning" && <span className="tag learning">박스 {st.box} · {st.dueIn === 0 ? "오늘" : st.dueIn + "일 뒤"}</span>}
-                {!st && <span className="tag">미학습</span>}
-              </div>
+      {query ? (
+        <React.Fragment>
+          {noHit && (
+            <div className="addbar">
+              <div className="t">사전에 없는 단어인가요?<br/><b>"{q.trim()}"</b> 를 내 단어로 추가</div>
+              <button onClick={() => addWord(q)}>추가하기</button>
             </div>
-          );
-        })}
-        {!noHit && list.length === 0 && <div className="empty-note">해당하는 단어가 없어요.</div>}
-      </div>
+          )}
+          {rows(hits)}
+        </React.Fragment>
+      ) : view === null ? (
+        <React.Fragment>
+          {MENUS.map(m => (
+            <div key={m.k} className="step" onClick={() => setView(m.k)}>
+              <div className="step-ico"><Icon name={m.icon} size={20} /></div>
+              <div className="step-body">
+                <div className="step-title">{m.title}</div>
+                <div className="step-sub">{m.sub}</div>
+              </div>
+              <span className="arrow" style={{ color: "var(--muted)" }}>›</span>
+            </div>
+          ))}
+        </React.Fragment>
+      ) : (
+        <React.Fragment>
+          <div className="listhead">
+            <button className="back" onClick={() => setView(null)} aria-label="뒤로"><Icon name="chevron_left" size={22} /></button>
+            <b>{TITLES[view]}</b>
+            {view === "learned" && <span className="cnt">{learned.length}</span>}
+            {view === "fav" && <span className="cnt">{favs.length}</span>}
+            {view === "mine" && <span className="cnt">{mine.length}</span>}
+          </div>
+
+          {view === "learned" && rows(learned)}
+          {view === "fav" && rows(favs)}
+          {view === "mine" && (
+            <React.Fragment>
+              <div className="addbar">
+                <div className="t">위 검색창에 단어를 입력하면<br/><b>사전에 없는 단어</b>를 등록할 수 있어요</div>
+              </div>
+              {rows(mine)}
+            </React.Fragment>
+          )}
+          {view === "add" && (
+            <div className="addbar">
+              <div className="t">위 검색창에 추가할 단어를 입력하세요.<br/>사전에 없으면 <b>추가하기</b> 버튼이 나타납니다.</div>
+            </div>
+          )}
+          {view === "category" && (
+            <React.Fragment>
+              <div className="chips">
+                <button className={"chip" + (catMode === "cefr" ? " on" : "")} onClick={() => setCatMode("cefr")}>레벨 (CEFR)</button>
+                <button className={"chip" + (catMode === "root" ? " on" : "")} onClick={() => setCatMode("root")}>어근별</button>
+                <button className="chip" style={{ opacity: .45 }}>주제별 (예정)</button>
+              </div>
+              {catMode === "cefr" && CEFR_LEVELS.map(lv => {
+                const list = catList(lv);
+                if (!list.length) return null;
+                return (
+                  <React.Fragment key={lv}>
+                    <div className="sec">{lv} <span className="more">{list.length}개</span></div>
+                    {rows(list)}
+                  </React.Fragment>
+                );
+              })}
+              {catMode === "root" && rootIndex.map(([affix, info]) => (
+                <React.Fragment key={affix}>
+                  <div className="sec">{affix} <span style={{ color: "var(--muted)", fontWeight: 500 }}>{info.gloss}</span> <span className="more">{info.ws.length}개</span></div>
+                  {rows(info.ws)}
+                </React.Fragment>
+              ))}
+            </React.Fragment>
+          )}
+        </React.Fragment>
+      )}
     </div>
   );
 }
