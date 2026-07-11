@@ -1,6 +1,6 @@
 /* ============================================================================
    EN Vocab — 시드 데이터 (pipeline/merge_cefrj.js 자동 생성)
-   생성: 2026-07-11 · 표제어 5509개 (CEFR-J 전체 후보 7453개 중 작성 완료분)
+   생성: 2026-07-11 · 표제어 5629개 (CEFR-J 전체 후보 7453개 중 작성 완료분)
    ----------------------------------------------------------------------------
    표제어/CEFR/품사 = CEFR-J Wordlist(Tono Lab, TUFS — 연구·상업 무료, 출처 표시 조건)
    영영 정의(en)/유의어(syn) = WordNet 3.0(Princeton, 오프라인 추출)
@@ -33594,6 +33594,48 @@ window.SEED = [
   ]
  },
  {
+  "word": "critically",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "비판적으로, 위독하게",
+  "en": "in a critical manner",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He was critically injured in the crash.",
+    "ko": "그는 충돌 사고로 위독하게 다쳤어요."
+   }
+  ]
+ },
+ {
+  "word": "criticism",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "비판, 비평",
+  "en": "disapproval expressed by pointing out faults or shortcomings",
+  "syn": [
+   "unfavorable_judgment"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She handled the criticism well.",
+    "ko": "그녀는 비판을 잘 감당했어요."
+   }
+  ]
+ },
+ {
   "word": "criticize",
   "ipa": "",
   "pos": [
@@ -33614,6 +33656,26 @@ window.SEED = [
    {
     "en": "Don't criticize others too harshly.",
     "ko": "다른 사람을 너무 심하게 비판하지 마세요."
+   }
+  ]
+ },
+ {
+  "word": "crocodile",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "악어",
+  "en": "large voracious aquatic reptile having a long snout with massive jaws and sharp teeth and a body covered with bony plates",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "A crocodile swam across the river.",
+    "ko": "악어 한 마리가 강을 헤엄쳐 건넜어요."
    }
   ]
  },
@@ -33677,6 +33739,29 @@ window.SEED = [
    {
     "en": "Use the pedestrian crossing to cross the road.",
     "ko": "도로를 건너려면 횡단보도를 이용하세요."
+   }
+  ]
+ },
+ {
+  "word": "crossly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "화가 나서, 짜증스럽게",
+  "en": "in an ill-natured manner",
+  "syn": [
+   "grouchily",
+   "grumpily"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "\"Stop that,\" she said crossly.",
+    "ko": "\"그만해,\" 그녀가 짜증스럽게 말했어요."
    }
   ]
  },
@@ -33783,6 +33868,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "crucial",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "결정적인, 중대한",
+  "en": "of extreme importance",
+  "syn": [
+   "important"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a crucial decision.",
+    "ko": "이것은 결정적인 결정이에요."
+   }
+  ]
+ },
+ {
   "word": "cruel",
   "ipa": "",
   "pos": [
@@ -33808,13 +33915,55 @@ window.SEED = [
   ]
  },
  {
+  "word": "cruelly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "잔인하게",
+  "en": "excessively",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He was treated cruelly.",
+    "ko": "그는 잔인하게 대우받았어요."
+   }
+  ]
+ },
+ {
+  "word": "cruelty",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "잔인함, 학대",
+  "en": "a cruel act",
+  "syn": [
+   "inhuman_treatment"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The organization fights animal cruelty.",
+    "ko": "그 단체는 동물 학대에 맞서 싸워요."
+   }
+  ]
+ },
+ {
   "word": "cruise",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "크루즈 여행",
+  "ko": "천천히 다니다, 순항하다",
   "en": "an ocean trip taken for pleasure",
   "syn": [
    "sail"
@@ -33824,8 +33973,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "They went on a cruise to Hawaii.",
-    "ko": "그들은 하와이로 크루즈 여행을 갔어요."
+    "en": "They cruised around the town on their bikes.",
+    "ko": "그들은 자전거를 타고 마을을 천천히 돌아다녔어요."
    }
   ]
  },
@@ -33836,7 +33985,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B2",
-  "ko": "크루즈 여행",
+  "ko": "천천히 다니다, 순항하다",
   "en": "drive around aimlessly but ostentatiously and at leisure",
   "syn": [],
   "ant": [],
@@ -33844,8 +33993,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "They went on a cruise to Hawaii.",
-    "ko": "그들은 하와이로 크루즈 여행을 갔어요."
+    "en": "They cruised around the town on their bikes.",
+    "ko": "그들은 자전거를 타고 마을을 천천히 돌아다녔어요."
    }
   ]
  },
@@ -33922,6 +34071,72 @@ window.SEED = [
   ]
  },
  {
+  "word": "crystallize",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "결정화되다, 확고해지다",
+  "en": "cause to take on a definite and clear shape",
+  "syn": [
+   "crystallise",
+   "crystalise",
+   "crystalize"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Her plans finally crystallized.",
+    "ko": "그녀의 계획이 마침내 확고해졌어요."
+   }
+  ]
+ },
+ {
+  "word": "cube",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "정육면체",
+  "en": "a hexahedron with six equal squares as faces",
+  "syn": [
+   "regular_hexahedron"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Ice comes in a cube shape.",
+    "ko": "얼음은 정육면체 모양으로 나와요."
+   }
+  ]
+ },
+ {
+  "word": "cubism",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "입체파",
+  "en": "an artistic movement in France beginning in 1907 that featured surfaces of geometrical planes",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Picasso was a pioneer of cubism.",
+    "ko": "피카소는 입체파의 선구자였어요."
+   }
+  ]
+ },
+ {
   "word": "cucumber",
   "ipa": "",
   "pos": [
@@ -33941,6 +34156,50 @@ window.SEED = [
    {
     "en": "I added cucumber to the salad.",
     "ko": "저는 샐러드에 오이를 추가했어요."
+   }
+  ]
+ },
+ {
+  "word": "cuff",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "소매 끝동",
+  "en": "the lap consisting of a turned-back hem encircling the end of the sleeve or leg",
+  "syn": [
+   "turnup"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He rolled up his cuffs.",
+    "ko": "그는 소매 끝동을 걷어올렸어요."
+   }
+  ]
+ },
+ {
+  "word": "culmination",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "정점, 절정",
+  "en": "a final climactic stage",
+  "syn": [
+   "apogee"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This award is the culmination of years of hard work.",
+    "ko": "이 상은 수년간의 노력의 정점이에요."
    }
   ]
  },
@@ -33981,6 +34240,26 @@ window.SEED = [
    {
     "en": "We visited a cultural heritage site.",
     "ko": "우리는 문화유산지를 방문했어요."
+   }
+  ]
+ },
+ {
+  "word": "culturally",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "문화적으로",
+  "en": "with regard to a culture",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This city is culturally diverse.",
+    "ko": "이 도시는 문화적으로 다양해요."
    }
   ]
  },
@@ -34056,7 +34335,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "치료법, 치료하다",
+  "ko": "치료하다, 낫게 하다",
   "en": "a medicine or therapy that cures disease or relieve pain",
   "syn": [
    "remedy",
@@ -34068,8 +34347,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Scientists are searching for a cure.",
-    "ko": "과학자들은 치료법을 찾고 있어요."
+    "en": "This medicine cured her illness.",
+    "ko": "이 약은 그녀의 병을 낫게 했어요."
    }
   ]
  },
@@ -34080,7 +34359,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B2",
-  "ko": "치료법, 치료하다",
+  "ko": "치료하다, 낫게 하다",
   "en": "provide a cure for, make healthy again",
   "syn": [
    "bring_around",
@@ -34091,8 +34370,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Scientists are searching for a cure.",
-    "ko": "과학자들은 치료법을 찾고 있어요."
+    "en": "This medicine cured her illness.",
+    "ko": "이 약은 그녀의 병을 낫게 했어요."
    }
   ]
  },
@@ -34164,6 +34443,31 @@ window.SEED = [
    {
     "en": "She looked at the box curiously.",
     "ko": "그녀는 호기심에서 그 상자를 바라봤어요."
+   }
+  ]
+ },
+ {
+  "word": "curl",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "곱슬머리, 컬",
+  "en": "a round shape formed by a series of concentric circles (as formed by leaves or flower petals)",
+  "syn": [
+   "coil",
+   "whorl",
+   "roll",
+   "curlicue"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Her hair falls in soft curls.",
+    "ko": "그녀의 머리는 부드러운 컬로 떨어져요."
    }
   ]
  },
@@ -34316,6 +34620,28 @@ window.SEED = [
    {
     "en": "He muttered a curse under his breath.",
     "ko": "그는 낮은 목소리로 욕을 중얼거렸어요."
+   }
+  ]
+ },
+ {
+  "word": "cursor",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "커서",
+  "en": "(computer science) indicator consisting of a movable spot of light (an icon) on a visual display",
+  "syn": [
+   "pointer"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Move the cursor to the top of the page.",
+    "ko": "커서를 페이지 상단으로 옮기세요."
    }
   ]
  },
@@ -34544,6 +34870,129 @@ window.SEED = [
   ]
  },
  {
+  "word": "cyberaddict",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "인터넷 중독자",
+  "en": "a person who is addicted to using the internet",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He became a cyberaddict during quarantine.",
+    "ko": "그는 격리 기간 동안 인터넷 중독자가 되었어요."
+   }
+  ]
+ },
+ {
+  "word": "cybercafe",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "인터넷 카페",
+  "en": "a cafe whose customers sit at computer terminals and log on to the internet while they eat and drink",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We checked our email at a cybercafe.",
+    "ko": "우리는 인터넷 카페에서 이메일을 확인했어요."
+   }
+  ]
+ },
+ {
+  "word": "cybercrime",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "사이버 범죄",
+  "en": "crime committed using a computer and the internet to steal a person's identity or sell contraband or stalk victims or disrupt operations with malevolent programs",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Police investigated the cybercrime case.",
+    "ko": "경찰은 사이버 범죄 사건을 수사했어요."
+   }
+  ]
+ },
+ {
+  "word": "cyberpet",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "사이버 애완동물",
+  "en": "a virtual pet that exists on a computer or app",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She takes care of her cyberpet every day.",
+    "ko": "그녀는 매일 사이버 애완동물을 돌봐요."
+   }
+  ]
+ },
+ {
+  "word": "cyberschool",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "사이버 학교",
+  "en": "an online school where students study remotely",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He attends a cyberschool from home.",
+    "ko": "그는 집에서 사이버 학교에 다녀요."
+   }
+  ]
+ },
+ {
+  "word": "cyberspace",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "사이버공간",
+  "en": "a computer network consisting of a worldwide network of computer networks that use the TCP/IP network protocols to facilitate data transmission and exchange",
+  "syn": [
+   "internet",
+   "net"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They met in cyberspace before meeting in person.",
+    "ko": "그들은 직접 만나기 전에 사이버공간에서 만났어요."
+   }
+  ]
+ },
+ {
   "word": "cycle",
   "ipa": "",
   "pos": [
@@ -34581,6 +35030,31 @@ window.SEED = [
    {
     "en": "Cycling is good exercise.",
     "ko": "자전거 타기는 좋은 운동이에요."
+   }
+  ]
+ },
+ {
+  "word": "cyclist",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "자전거 타는 사람",
+  "en": "a person who rides a bicycle",
+  "syn": [
+   "bicyclist",
+   "bicycler",
+   "wheeler",
+   "biker"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The cyclist rode along the river.",
+    "ko": "그 자전거 타는 사람은 강을 따라 달렸어요."
    }
   ]
  },
@@ -34631,6 +35105,31 @@ window.SEED = [
    {
     "en": "She called out, \"Daddy!\"",
     "ko": "그녀는 \"아빠!\" 하고 불렀다."
+   }
+  ]
+ },
+ {
+  "word": "daft",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "바보 같은, 어리석은",
+  "en": "informal or slang terms for mentally irregular",
+  "syn": [
+   "balmy",
+   "barmy",
+   "bats",
+   "batty"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That's a daft idea.",
+    "ko": "그건 바보 같은 생각이에요."
    }
   ]
  },
@@ -34740,6 +35239,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "damn",
+  "ipa": "",
+  "pos": [
+   "adj",
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "빌어먹을, 저주하다",
+  "en": "extremely",
+  "syn": [
+   "bloody",
+   "all-fired",
+   "all-firedly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It's a damn shame he couldn't come.",
+    "ko": "그가 못 온 것은 정말 안타까운 일이에요."
+   }
+  ]
+ },
+ {
   "word": "damp",
   "ipa": "",
   "pos": [
@@ -34827,6 +35351,28 @@ window.SEED = [
    {
     "en": "They went dancing on Friday night.",
     "ko": "그들은 금요일 밤에 춤을 추러 갔다."
+   }
+  ]
+ },
+ {
+  "word": "dandelion",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "민들레",
+  "en": "any of several herbs of the genus Taraxacum having long tap roots and deeply notched leaves and bright yellow flowers followed by fluffy seed balls",
+  "syn": [
+   "blowball"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Dandelions grew all over the field.",
+    "ko": "들판 곳곳에 민들레가 자랐어요."
    }
   ]
  },
@@ -34961,6 +35507,98 @@ window.SEED = [
   ]
  },
  {
+  "word": "darling",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "사랑하는 사람, 자기야",
+  "en": "dearly loved",
+  "syn": [
+   "beloved",
+   "dear"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Good morning, darling.",
+    "ko": "좋은 아침이에요, 자기야."
+   }
+  ]
+ },
+ {
+  "word": "dash",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "돌진하다, 대시 기호",
+  "en": "run or move very quickly or hastily",
+  "syn": [
+   "dart",
+   "scoot",
+   "scud",
+   "flash"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She dashed to catch the bus.",
+    "ko": "그녀는 버스를 타려고 돌진했어요."
+   }
+  ]
+ },
+ {
+  "word": "data",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "데이터, 자료",
+  "en": "a collection of facts from which conclusions may be drawn",
+  "syn": [
+   "information"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The report is based on reliable data.",
+    "ko": "그 보고서는 신뢰할 수 있는 데이터에 기반해요."
+   }
+  ]
+ },
+ {
+  "word": "database",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "데이터베이스",
+  "en": "an organized body of related information",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The information is stored in a database.",
+    "ko": "그 정보는 데이터베이스에 저장돼요."
+   }
+  ]
+ },
+ {
   "word": "date",
   "ipa": "",
   "pos": [
@@ -34999,6 +35637,26 @@ window.SEED = [
    {
     "en": "They have been dating for two years.",
     "ko": "그들은 2년 동안 데이트를 해왔어요."
+   }
+  ]
+ },
+ {
+  "word": "dated",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "구식의, 시대에 뒤떨어진",
+  "en": "marked by features of the immediate and usually discounted past",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This design looks a bit dated.",
+    "ko": "이 디자인은 조금 구식으로 보여요."
    }
   ]
  },
@@ -35043,6 +35701,51 @@ window.SEED = [
    {
     "en": "Her daughter cared for her in her old age.",
     "ko": "그녀의 딸은 노년의 그녀를 돌보았다."
+   }
+  ]
+ },
+ {
+  "word": "daughter-in-law",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "며느리",
+  "en": "the wife of your son",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "My daughter-in-law is a teacher.",
+    "ko": "제 며느리는 교사예요."
+   }
+  ]
+ },
+ {
+  "word": "dawn",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "새벽, 여명",
+  "en": "the first light of day",
+  "syn": [
+   "dawning",
+   "morning",
+   "aurora",
+   "first_light"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We woke up at dawn to see the sunrise.",
+    "ko": "우리는 일출을 보려고 새벽에 일어났어요."
    }
   ]
  },
@@ -35095,6 +35798,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "daytime",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "낮, 주간",
+  "en": "the time after sunrise and before sunset while it is light outside",
+  "syn": [
+   "day",
+   "daylight"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She works during the daytime.",
+    "ko": "그녀는 낮 동안 일해요."
+   }
+  ]
+ },
+ {
   "word": "daze",
   "ipa": "",
   "pos": [
@@ -35134,6 +35860,28 @@ window.SEED = [
    {
     "en": "The bright lights dazzled us.",
     "ko": "밝은 빛이 우리를 눈부시게 했어요."
+   }
+  ]
+ },
+ {
+  "word": "de facto",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "사실상의",
+  "en": "existing in fact whether with lawful authority or not",
+  "syn": [
+   "de_facto"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "English is the de facto official language here.",
+    "ko": "영어는 이곳의 사실상 공용어예요."
    }
   ]
  },
@@ -35299,7 +36047,7 @@ window.SEED = [
    "adj"
   ],
   "cefr": "A1",
-  "ko": "소중한, 사랑하는",
+  "ko": "사랑하는 사람",
   "en": "dearly loved",
   "syn": [
    "beloved",
@@ -35310,8 +36058,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She is a dear friend of mine.",
-    "ko": "그녀는 나의 소중한 친구다."
+    "en": "She is a dear to everyone.",
+    "ko": "그녀는 모두에게 사랑받는 사람이에요."
    }
   ]
  },
@@ -35322,7 +36070,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B2",
-  "ko": "소중한, 사랑하는",
+  "ko": "사랑하는 사람",
   "en": "a beloved person",
   "syn": [
    "beloved",
@@ -35335,8 +36083,30 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She is a dear friend of mine.",
-    "ko": "그녀는 나의 소중한 친구다."
+    "en": "She is a dear to everyone.",
+    "ko": "그녀는 모두에게 사랑받는 사람이에요."
+   }
+  ]
+ },
+ {
+  "word": "dearly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "진심으로, 대가를 치르고",
+  "en": "in a sincere and heartfelt manner",
+  "syn": [
+   "in_a_heartfelt_way"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I love you dearly.",
+    "ko": "저는 당신을 진심으로 사랑해요."
    }
   ]
  },
@@ -35387,6 +36157,51 @@ window.SEED = [
   ]
  },
  {
+  "word": "debit",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "인출, 차변",
+  "en": "an accounting entry acknowledging sums that are owing",
+  "syn": [
+   "debit_entry"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The bank made a debit to her account.",
+    "ko": "은행이 그녀의 계좌에서 인출했어요."
+   }
+  ]
+ },
+ {
+  "word": "debit card",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "직불카드",
+  "en": "a card (usually plastic) that enables the holder to withdraw money or to have the cost of purchases charged directly to the holder's bank account",
+  "syn": [
+   "debit_card"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I paid with my debit card.",
+    "ko": "저는 직불카드로 결제했어요."
+   }
+  ]
+ },
+ {
   "word": "debris",
   "ipa": "",
   "pos": [
@@ -35432,6 +36247,76 @@ window.SEED = [
   ]
  },
  {
+  "word": "decade",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "십 년",
+  "en": "a period of 10 years",
+  "syn": [
+   "decennary",
+   "decennium"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They have lived here for a decade.",
+    "ko": "그들은 십 년 동안 여기 살았어요."
+   }
+  ]
+ },
+ {
+  "word": "decay",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "썩다, 부패하다",
+  "en": "lose a stored charge, magnetic flux, or current",
+  "syn": [
+   "disintegrate",
+   "decompose"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The tooth started to decay.",
+    "ko": "그 이가 썩기 시작했어요."
+   }
+  ]
+ },
+ {
+  "word": "deceive",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "속이다",
+  "en": "be false to",
+  "syn": [
+   "lead_on",
+   "delude",
+   "cozen"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He deceived his business partner.",
+    "ko": "그는 사업 파트너를 속였어요."
+   }
+  ]
+ },
+ {
   "word": "December",
   "ipa": "",
   "pos": [
@@ -35450,6 +36335,50 @@ window.SEED = [
    {
     "en": "Christmas is in December.",
     "ko": "크리스마스는 12월에 있다."
+   }
+  ]
+ },
+ {
+  "word": "decent",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "괜찮은, 품위 있는",
+  "en": "socially or conventionally correct",
+  "syn": [
+   "nice"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He earns a decent salary.",
+    "ko": "그는 괜찮은 급여를 받아요."
+   }
+  ]
+ },
+ {
+  "word": "deceptive",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "기만적인, 현혹시키는",
+  "en": "causing one to believe what is not true or fail to believe what is true",
+  "syn": [
+   "delusory"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The advertisement was deceptive.",
+    "ko": "그 광고는 기만적이었어요."
    }
   ]
  },
@@ -35500,6 +36429,46 @@ window.SEED = [
   ]
  },
  {
+  "word": "decisive",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "결정적인, 단호한",
+  "en": "determining or having the power to determine an outcome",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She made a decisive move.",
+    "ko": "그녀는 결정적인 조치를 취했어요."
+   }
+  ]
+ },
+ {
+  "word": "deck",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "갑판, 데크",
+  "en": "any of various platforms built into a vessel",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We sat on the deck of the ship.",
+    "ko": "우리는 배의 갑판에 앉았어요."
+   }
+  ]
+ },
+ {
   "word": "declaration",
   "ipa": "",
   "pos": [
@@ -35546,7 +36515,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "감소, 거절하다",
+  "ko": "쇠퇴하다, 거절하다",
   "en": "change toward something smaller or lower",
   "syn": [
    "diminution"
@@ -35556,8 +36525,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "There was a decline in sales this year.",
-    "ko": "올해 매출이 감소했어요."
+    "en": "Sales declined this quarter.",
+    "ko": "이번 분기 매출이 감소했어요."
    }
   ]
  },
@@ -35568,7 +36537,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B2",
-  "ko": "감소, 거절하다",
+  "ko": "쇠퇴하다, 거절하다",
   "en": "grow worse",
   "syn": [
    "worsen"
@@ -35578,8 +36547,101 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "There was a decline in sales this year.",
-    "ko": "올해 매출이 감소했어요."
+    "en": "Sales declined this quarter.",
+    "ko": "이번 분기 매출이 감소했어요."
+   }
+  ]
+ },
+ {
+  "word": "decomposition",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "분해, 부패",
+  "en": "the analysis of a vector field",
+  "syn": [
+   "vector_decomposition"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Decomposition of leaves enriches the soil.",
+    "ko": "낙엽의 분해는 토양을 비옥하게 해요."
+   }
+  ]
+ },
+ {
+  "word": "decorate",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "장식하다",
+  "en": "make more attractive by adding ornament, colour, etc.",
+  "syn": [
+   "adorn",
+   "grace",
+   "ornament",
+   "embellish"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We decorated the room for the party.",
+    "ko": "우리는 파티를 위해 방을 장식했어요."
+   }
+  ]
+ },
+ {
+  "word": "decoration",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "장식",
+  "en": "something used to beautify",
+  "syn": [
+   "ornament",
+   "ornamentation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The decorations were beautiful.",
+    "ko": "그 장식들은 아름다웠어요."
+   }
+  ]
+ },
+ {
+  "word": "decorative",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "장식적인",
+  "en": "serving an esthetic rather than a useful purpose",
+  "syn": [
+   "cosmetic",
+   "ornamental"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This vase is purely decorative.",
+    "ko": "이 꽃병은 순전히 장식용이에요."
    }
   ]
  },
@@ -35634,6 +36696,73 @@ window.SEED = [
   ]
  },
  {
+  "word": "dedication",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "헌신, 전념",
+  "en": "complete and wholehearted fidelity",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Her dedication to the job is impressive.",
+    "ko": "그녀의 일에 대한 헌신은 인상적이에요."
+   }
+  ]
+ },
+ {
+  "word": "deduce",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "추론하다",
+  "en": "reason by deduction",
+  "syn": [
+   "infer",
+   "deduct",
+   "derive"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She deduced the answer from the clues.",
+    "ko": "그녀는 단서들로부터 답을 추론했어요."
+   }
+  ]
+ },
+ {
+  "word": "deduction",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "공제, 추론",
+  "en": "a reduction in the gross amount on which a tax is calculated",
+  "syn": [
+   "tax_write-off",
+   "tax_deduction"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There is a tax deduction for this expense.",
+    "ko": "이 지출에 대한 세금 공제가 있어요."
+   }
+  ]
+ },
+ {
   "word": "deed",
   "ipa": "",
   "pos": [
@@ -35657,13 +36786,37 @@ window.SEED = [
   ]
  },
  {
+  "word": "deem",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "여기다, 간주하다",
+  "en": "keep in mind or convey as a conviction or view",
+  "syn": [
+   "hold",
+   "view_as",
+   "take_for"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The judge deemed the evidence sufficient.",
+    "ko": "판사는 그 증거를 충분하다고 간주했어요."
+   }
+  ]
+ },
+ {
   "word": "deep",
   "ipa": "",
   "pos": [
    "adv"
   ],
   "cefr": "A2",
-  "ko": "깊은, 깊이",
+  "ko": "깊은 (강조)",
   "en": "to a great depth",
   "syn": [
    "deeply"
@@ -35673,8 +36826,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The lake is very deep.",
-    "ko": "그 호수는 아주 깊어요."
+    "en": "She fell into a deep sleep.",
+    "ko": "그녀는 깊은 잠에 빠졌어요."
    }
   ]
  },
@@ -35685,7 +36838,7 @@ window.SEED = [
    "adj"
   ],
   "cefr": "B2",
-  "ko": "깊은, 깊이",
+  "ko": "깊은 (강조)",
   "en": "relatively deep or strong",
   "syn": [],
   "ant": [],
@@ -35693,8 +36846,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The lake is very deep.",
-    "ko": "그 호수는 아주 깊어요."
+    "en": "She fell into a deep sleep.",
+    "ko": "그녀는 깊은 잠에 빠졌어요."
    }
   ]
  },
@@ -35722,13 +36875,35 @@ window.SEED = [
   ]
  },
  {
+  "word": "deer",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "사슴",
+  "en": "distinguished from Bovidae by the male's having solid deciduous antlers",
+  "syn": [
+   "cervid"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "A deer crossed the road.",
+    "ko": "사슴 한 마리가 도로를 건넜어요."
+   }
+  ]
+ },
+ {
   "word": "defeat",
   "ipa": "",
   "pos": [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "패배시키다, 이기다",
+  "ko": "패배",
   "en": "win a victory over",
   "syn": [
    "get_the_better_of",
@@ -35739,8 +36914,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Our team defeated the champions.",
-    "ko": "우리 팀이 챔피언을 이겼어요."
+    "en": "The team accepted the defeat gracefully.",
+    "ko": "그 팀은 패배를 품위 있게 받아들였어요."
    }
   ]
  },
@@ -35751,7 +36926,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B2",
-  "ko": "패배시키다, 이기다",
+  "ko": "패배",
   "en": "an unsuccessful ending to a struggle or contest",
   "syn": [
    "licking"
@@ -35761,8 +36936,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Our team defeated the champions.",
-    "ko": "우리 팀이 챔피언을 이겼어요."
+    "en": "The team accepted the defeat gracefully.",
+    "ko": "그 팀은 패배를 품위 있게 받아들였어요."
    }
   ]
  },
@@ -35856,6 +37031,29 @@ window.SEED = [
    {
     "en": "He has a vitamin deficiency.",
     "ko": "그는 비타민 결핍이 있어요."
+   }
+  ]
+ },
+ {
+  "word": "deficit",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "적자, 부족액",
+  "en": "the property of being an amount by which something is less than expected or required",
+  "syn": [
+   "shortage",
+   "shortfall"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The country has a large budget deficit.",
+    "ko": "그 나라는 큰 예산 적자를 가지고 있어요."
    }
   ]
  },
@@ -35972,6 +37170,50 @@ window.SEED = [
   ]
  },
  {
+  "word": "deforestation",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "삼림 벌채",
+  "en": "the state of being clear of trees",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Deforestation harms wildlife.",
+    "ko": "삼림 벌채는 야생동물에게 해를 끼쳐요."
+   }
+  ]
+ },
+ {
+  "word": "defy",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "거역하다, 저항하다",
+  "en": "resist or confront with resistance",
+  "syn": [
+   "withstand",
+   "hold",
+   "hold_up"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She defied her parents' wishes.",
+    "ko": "그녀는 부모님의 바람을 거역했어요."
+   }
+  ]
+ },
+ {
   "word": "degree",
   "ipa": "",
   "pos": [
@@ -35991,6 +37233,28 @@ window.SEED = [
    {
     "en": "She has a degree in economics.",
     "ko": "그녀는 경제학 학위를 가지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "dehumanize",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "비인간화하다",
+  "en": "deprive of human qualities",
+  "syn": [
+   "dehumanise"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "War can dehumanize people.",
+    "ko": "전쟁은 사람들을 비인간화할 수 있어요."
    }
   ]
  },
@@ -36043,6 +37307,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "delegate",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "대표, 대의원",
+  "en": "a person appointed or elected to represent others",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She was chosen as a delegate to the conference.",
+    "ko": "그녀는 그 학회의 대표로 선정되었어요."
+   }
+  ]
+ },
+ {
   "word": "delete",
   "ipa": "",
   "pos": [
@@ -36065,6 +37349,77 @@ window.SEED = [
   ]
  },
  {
+  "word": "deliberate",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "의도적인, 신중한",
+  "en": "carefully thought out in advance",
+  "syn": [
+   "calculated",
+   "measured"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It was a deliberate choice.",
+    "ko": "그것은 의도적인 선택이었어요."
+   }
+  ]
+ },
+ {
+  "word": "deliberately",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "고의로, 의도적으로",
+  "en": "with intention",
+  "syn": [
+   "intentionally",
+   "designedly",
+   "on_purpose",
+   "purposely"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He deliberately ignored my question.",
+    "ko": "그는 제 질문을 고의로 무시했어요."
+   }
+  ]
+ },
+ {
+  "word": "delicacy",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "섬세함, 진미",
+  "en": "the quality of being beautiful and delicate in appearance",
+  "syn": [
+   "daintiness",
+   "fineness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This dish is a local delicacy.",
+    "ko": "이 요리는 지역 진미예요."
+   }
+  ]
+ },
+ {
   "word": "delicate",
   "ipa": "",
   "pos": [
@@ -36081,6 +37436,30 @@ window.SEED = [
    {
     "en": "This fabric is very delicate.",
     "ko": "이 천은 아주 섬세해요."
+   }
+  ]
+ },
+ {
+  "word": "delicately",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "섬세하게",
+  "en": "in a delicate manner",
+  "syn": [
+   "finely",
+   "fine",
+   "exquisitely"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She handled the vase delicately.",
+    "ko": "그녀는 그 꽃병을 섬세하게 다뤘어요."
    }
   ]
  },
@@ -36113,7 +37492,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "기쁨, 즐거움",
+  "ko": "기쁘게 하다",
   "en": "a feeling of extreme pleasure or satisfaction",
   "syn": [
    "delectation"
@@ -36123,8 +37502,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The children screamed with delight.",
-    "ko": "아이들은 기쁨의 소리를 질렀어요."
+    "en": "The show delighted the audience.",
+    "ko": "그 공연은 관객들을 기쁘게 했어요."
    }
   ]
  },
@@ -36135,7 +37514,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B2",
-  "ko": "기쁨, 즐거움",
+  "ko": "기쁘게 하다",
   "en": "give pleasure to or be pleasing to",
   "syn": [
    "please"
@@ -36145,8 +37524,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The children screamed with delight.",
-    "ko": "아이들은 기쁨의 소리를 질렀어요."
+    "en": "The show delighted the audience.",
+    "ko": "그 공연은 관객들을 기쁘게 했어요."
    }
   ]
  },
@@ -36258,6 +37637,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "demanding",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "까다로운, 힘든",
+  "en": "requiring more than usually expected or thought due",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a demanding job.",
+    "ko": "이것은 힘든 일이에요."
+   }
+  ]
+ },
+ {
   "word": "democracy",
   "ipa": "",
   "pos": [
@@ -36294,6 +37693,29 @@ window.SEED = [
    {
     "en": "They held a democratic election.",
     "ko": "그들은 민주적인 선거를 치렀어요."
+   }
+  ]
+ },
+ {
+  "word": "demolish",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "철거하다, 파괴하다",
+  "en": "destroy completely",
+  "syn": [
+   "pulverize",
+   "pulverise"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They demolished the old building.",
+    "ko": "그들은 오래된 건물을 철거했어요."
    }
   ]
  },
@@ -36342,6 +37764,95 @@ window.SEED = [
    {
     "en": "There was a demonstration downtown today.",
     "ko": "오늘 시내에서 시위가 있었어요."
+   }
+  ]
+ },
+ {
+  "word": "denim",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "데님, 청바지 소재",
+  "en": "(used in the plural) close-fitting trousers of heavy denim for manual work or casual wear",
+  "syn": [
+   "jeans",
+   "blue_jeans"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She wore a denim jacket.",
+    "ko": "그녀는 데님 재킷을 입었어요."
+   }
+  ]
+ },
+ {
+  "word": "dense",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "밀집한, 빽빽한",
+  "en": "permitting little if any light to pass through because of denseness of matter",
+  "syn": [
+   "heavy",
+   "impenetrable"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The forest is very dense.",
+    "ko": "그 숲은 아주 빽빽해요."
+   }
+  ]
+ },
+ {
+  "word": "densely",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "밀집하여, 빽빽하게",
+  "en": "in a way that is thickly packed or crowded",
+  "syn": [
+   "dumbly",
+   "obtusely"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a densely populated city.",
+    "ko": "이곳은 인구가 밀집한 도시예요."
+   }
+  ]
+ },
+ {
+  "word": "dental",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "치아의, 치과의",
+  "en": "of or relating to the teeth",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I have a dental appointment tomorrow.",
+    "ko": "저는 내일 치과 예약이 있어요."
    }
   ]
  },
@@ -36501,6 +38012,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "dependable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "믿을 수 있는",
+  "en": "worthy of reliance or trust",
+  "syn": [
+   "reliable"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a dependable friend.",
+    "ko": "그녀는 믿을 수 있는 친구예요."
+   }
+  ]
+ },
+ {
   "word": "dependent",
   "ipa": "",
   "pos": [
@@ -36527,7 +38060,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "보증금, 입금하다",
+  "ko": "예치하다, 두다",
   "en": "the phenomenon of sediment or gravel accumulating",
   "syn": [
    "sedimentation",
@@ -36538,8 +38071,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I paid a deposit for the apartment.",
-    "ko": "저는 아파트를 위해 보증금을 냈어요."
+    "en": "Please deposit the money in this account.",
+    "ko": "이 계좌에 돈을 예치해 주세요."
    }
   ]
  },
@@ -36550,7 +38083,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B2",
-  "ko": "보증금, 입금하다",
+  "ko": "예치하다, 두다",
   "en": "put, fix, force, or implant",
   "syn": [
    "lodge",
@@ -36562,8 +38095,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I paid a deposit for the apartment.",
-    "ko": "저는 아파트를 위해 보증금을 냈어요."
+    "en": "Please deposit the money in this account.",
+    "ko": "이 계좌에 돈을 예치해 주세요."
    }
   ]
  },
@@ -36678,6 +38211,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "deputy",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "대리인, 부관",
+  "en": "someone authorized to exercise the powers of sheriff in emergencies",
+  "syn": [
+   "deputy_sheriff"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The deputy took over during the sheriff's absence.",
+    "ko": "그 대리인은 보안관의 부재 중 업무를 대신했어요."
+   }
+  ]
+ },
+ {
   "word": "derive",
   "ipa": "",
   "pos": [
@@ -36698,6 +38253,30 @@ window.SEED = [
    {
     "en": "This word derives from Latin.",
     "ko": "이 단어는 라틴어에서 유래해요."
+   }
+  ]
+ },
+ {
+  "word": "descend",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "내려가다",
+  "en": "move downward and lower, but not necessarily all the way",
+  "syn": [
+   "fall",
+   "go_down",
+   "come_down"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The plane began to descend.",
+    "ko": "비행기가 하강하기 시작했어요."
    }
   ]
  },
@@ -36743,6 +38322,26 @@ window.SEED = [
    {
     "en": "Give me a description of the suspect.",
     "ko": "용의자에 대한 설명을 해주세요."
+   }
+  ]
+ },
+ {
+  "word": "descriptive",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "묘사적인, 설명하는",
+  "en": "serving to describe or inform or characterized by description",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She wrote a descriptive essay about her hometown.",
+    "ko": "그녀는 고향에 대한 묘사적인 에세이를 썼어요."
    }
   ]
  },
@@ -36851,8 +38450,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "He is a famous fashion designer.",
-    "ko": "그는 유명한 패션 디자이너예요."
+    "en": "She hired an interior designer.",
+    "ko": "그녀는 인테리어 디자이너를 고용했어요."
    }
   ]
  },
@@ -36873,8 +38472,28 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "He is a famous fashion designer.",
-    "ko": "그는 유명한 패션 디자이너예요."
+    "en": "She hired an interior designer.",
+    "ko": "그녀는 인테리어 디자이너를 고용했어요."
+   }
+  ]
+ },
+ {
+  "word": "desirable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "바람직한",
+  "en": "worth having or seeking or achieving",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a desirable outcome.",
+    "ko": "이것은 바람직한 결과예요."
    }
   ]
  },
@@ -36885,7 +38504,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "욕구, 바람",
+  "ko": "바라다, 원하다",
   "en": "the feeling that accompanies an unsatisfied state",
   "syn": [],
   "ant": [],
@@ -36893,8 +38512,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She has a strong desire to travel.",
-    "ko": "그녀는 여행에 대한 강한 욕구를 가지고 있어요."
+    "en": "She desires a peaceful life.",
+    "ko": "그녀는 평화로운 삶을 바라요."
    }
   ]
  },
@@ -36905,7 +38524,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B2",
-  "ko": "욕구, 바람",
+  "ko": "바라다, 원하다",
   "en": "feel or have a desire for",
   "syn": [
    "want"
@@ -36915,8 +38534,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She has a strong desire to travel.",
-    "ko": "그녀는 여행에 대한 강한 욕구를 가지고 있어요."
+    "en": "She desires a peaceful life.",
+    "ko": "그녀는 평화로운 삶을 바라요."
    }
   ]
  },
@@ -36937,6 +38556,48 @@ window.SEED = [
    {
     "en": "She sat at her desk and studied.",
     "ko": "그녀는 책상에 앉아 공부했다."
+   }
+  ]
+ },
+ {
+  "word": "desktop",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "데스크톱, 책상 위",
+  "en": "the top of a desk",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I keep my documents on the desktop.",
+    "ko": "저는 문서를 데스크톱에 보관해요."
+   }
+  ]
+ },
+ {
+  "word": "desolation",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "황폐, 쓸쓸함",
+  "en": "the state of being decayed or destroyed",
+  "syn": [
+   "devastation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The war left the city in desolation.",
+    "ko": "전쟁은 도시를 황폐하게 만들었어요."
    }
   ]
  },
@@ -36981,6 +38642,74 @@ window.SEED = [
    {
     "en": "She was desperate to find a job.",
     "ko": "그녀는 일자리를 찾는 데 절박했어요."
+   }
+  ]
+ },
+ {
+  "word": "desperately",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "필사적으로",
+  "en": "with great urgency",
+  "syn": [
+   "urgently"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She desperately wanted to succeed.",
+    "ko": "그녀는 필사적으로 성공하고 싶어했어요."
+   }
+  ]
+ },
+ {
+  "word": "desperation",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "절박함, 필사적임",
+  "en": "a state in which all hope is lost or absent",
+  "syn": [
+   "despair"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He acted out of desperation.",
+    "ko": "그는 절박함에서 행동했어요."
+   }
+  ]
+ },
+ {
+  "word": "despise",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "경멸하다",
+  "en": "look down on with disdain",
+  "syn": [
+   "contemn",
+   "scorn",
+   "disdain"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She despises dishonesty.",
+    "ko": "그녀는 부정직함을 경멸해요."
    }
   ]
  },
@@ -37053,6 +38782,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "destiny",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "운명",
+  "en": "an event (or a course of events) that will inevitably happen in the future",
+  "syn": [
+   "fate"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She believes in destiny.",
+    "ko": "그녀는 운명을 믿어요."
+   }
+  ]
+ },
+ {
   "word": "destroy",
   "ipa": "",
   "pos": [
@@ -37117,6 +38868,48 @@ window.SEED = [
   ]
  },
  {
+  "word": "detach",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "분리하다, 떼어내다",
+  "en": "cause to become detached or separated",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Detach this part before washing.",
+    "ko": "세척하기 전에 이 부분을 분리하세요."
+   }
+  ]
+ },
+ {
+  "word": "detachment",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "무심함, 분리",
+  "en": "avoiding emotional involvement",
+  "syn": [
+   "withdrawal"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He viewed the situation with detachment.",
+    "ko": "그는 그 상황을 무심하게 봤어요."
+   }
+  ]
+ },
+ {
   "word": "detail",
   "ipa": "",
   "pos": [
@@ -37136,6 +38929,54 @@ window.SEED = [
    {
     "en": "Please explain in detail.",
     "ko": "자세히 설명해 주세요."
+   }
+  ]
+ },
+ {
+  "word": "detailed",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "상세한",
+  "en": "developed or executed with care and in minute detail",
+  "syn": [
+   "elaborate",
+   "elaborated"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She gave a detailed explanation.",
+    "ko": "그녀는 상세한 설명을 해줬어요."
+   }
+  ]
+ },
+ {
+  "word": "detect",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "감지하다, 발견하다",
+  "en": "discover or determine the existence, presence, or fact of",
+  "syn": [
+   "observe",
+   "find",
+   "discover",
+   "notice"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The sensor detects motion.",
+    "ko": "그 센서는 움직임을 감지해요."
    }
   ]
  },
@@ -37206,6 +39047,49 @@ window.SEED = [
    {
     "en": "We need to determine the cause of the problem.",
     "ko": "우리는 문제의 원인을 알아내야 해요."
+   }
+  ]
+ },
+ {
+  "word": "determined",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "단호한, 결심한",
+  "en": "characterized by great determination",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is determined to finish the race.",
+    "ko": "그녀는 경주를 끝내기로 결심했어요."
+   }
+  ]
+ },
+ {
+  "word": "determiner",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "한정사 (문법)",
+  "en": "a word that introduces a noun and expresses its reference",
+  "syn": [
+   "clincher",
+   "determining_factor"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "\"This\" and \"the\" are determiners.",
+    "ko": "'this'와 'the'는 한정사예요."
    }
   ]
  },
@@ -37298,6 +39182,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "developing",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "개발도상의",
+  "en": "relating to societies in which capital needed to industrialize is in short supply",
+  "syn": [
+   "underdeveloped"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a developing country.",
+    "ko": "이곳은 개발도상국이에요."
+   }
+  ]
+ },
+ {
   "word": "development",
   "ipa": "",
   "pos": [
@@ -37334,6 +39240,76 @@ window.SEED = [
    {
     "en": "This device measures blood pressure.",
     "ko": "이 장치는 혈압을 측정해요."
+   }
+  ]
+ },
+ {
+  "word": "devil",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "악마",
+  "en": "(Judeo-Christian and Islamic religions) chief spirit of evil and adversary of God",
+  "syn": [
+   "Satan",
+   "Old_Nick",
+   "Lucifer",
+   "Beelzebub"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The story is about a devil in disguise.",
+    "ko": "그 이야기는 변장한 악마에 관한 것이에요."
+   }
+  ]
+ },
+ {
+  "word": "devote",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "헌신하다, 바치다",
+  "en": "give entirely to a specific person, activity, or cause",
+  "syn": [
+   "give",
+   "dedicate",
+   "consecrate",
+   "commit"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She devotes her time to charity work.",
+    "ko": "그녀는 자선 활동에 시간을 헌신해요."
+   }
+  ]
+ },
+ {
+  "word": "devoted",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "헌신적인",
+  "en": "zealous in devotion or affection",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He is a devoted father.",
+    "ko": "그는 헌신적인 아버지예요."
    }
   ]
  },
@@ -37489,6 +39465,30 @@ window.SEED = [
   ]
  },
  {
+  "word": "diarrhea",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "설사",
+  "en": "frequent and watery bowel movements",
+  "syn": [
+   "diarrhoea",
+   "looseness_of_the_bowels",
+   "looseness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has diarrhea from the spicy food.",
+    "ko": "그녀는 매운 음식 때문에 설사를 해요."
+   }
+  ]
+ },
+ {
   "word": "diary",
   "ipa": "",
   "pos": [
@@ -37507,6 +39507,26 @@ window.SEED = [
    {
     "en": "I write in my diary every night.",
     "ko": "저는 매일 밤 일기를 써요."
+   }
+  ]
+ },
+ {
+  "word": "dictator",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "독재자",
+  "en": "a speaker who dictates to a secretary or a recording machine",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The dictator ruled for thirty years.",
+    "ko": "그 독재자는 30년 동안 통치했어요."
    }
   ]
  },
@@ -37769,6 +39789,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "digest",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "소화하다, 요약본",
+  "en": "a periodical that summarizes the news",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It takes time to digest this information.",
+    "ko": "이 정보를 소화하는 데 시간이 걸려요."
+   }
+  ]
+ },
+ {
   "word": "digital",
   "ipa": "",
   "pos": [
@@ -37811,6 +39851,74 @@ window.SEED = [
   ]
  },
  {
+  "word": "dignify",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "위엄을 부여하다",
+  "en": "confer dignity or honor upon",
+  "syn": [
+   "ennoble"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The ceremony dignified the occasion.",
+    "ko": "그 의식은 그 행사에 위엄을 부여했어요."
+   }
+  ]
+ },
+ {
+  "word": "dignity",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "존엄성, 품위",
+  "en": "the quality of being worthy of esteem or respect",
+  "syn": [
+   "self-respect",
+   "self-regard",
+   "self-worth"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She handled the situation with dignity.",
+    "ko": "그녀는 그 상황을 품위 있게 처리했어요."
+   }
+  ]
+ },
+ {
+  "word": "dilemma",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "딜레마, 진퇴양난",
+  "en": "state of uncertainty or perplexity especially as requiring a choice between equally unfavorable options",
+  "syn": [
+   "quandary"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She faced a difficult dilemma.",
+    "ko": "그녀는 어려운 딜레마에 직면했어요."
+   }
+  ]
+ },
+ {
   "word": "diligence",
   "ipa": "",
   "pos": [
@@ -37849,6 +39957,68 @@ window.SEED = [
    {
     "en": "She is a diligent student.",
     "ko": "그녀는 성실한 학생이에요."
+   }
+  ]
+ },
+ {
+  "word": "dim",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "어두운, 흐릿한",
+  "en": "lacking in light",
+  "syn": [
+   "subdued"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The room was dim and quiet.",
+    "ko": "그 방은 어둡고 조용했어요."
+   }
+  ]
+ },
+ {
+  "word": "dime",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "다임 (미국 동전)",
+  "en": "a United States coin worth one tenth of a dollar",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He found a dime on the sidewalk.",
+    "ko": "그는 인도에서 다임 동전을 발견했어요."
+   }
+  ]
+ },
+ {
+  "word": "dimension",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "차원, 치수",
+  "en": "the magnitude of something in a particular direction (especially length or width or height)",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This adds a new dimension to the story.",
+    "ko": "이것은 그 이야기에 새로운 차원을 더해요."
    }
   ]
  },
@@ -37932,6 +40102,95 @@ window.SEED = [
    {
     "en": "Plants absorb carbon dioxide.",
     "ko": "식물은 이산화탄소를 흡수해요."
+   }
+  ]
+ },
+ {
+  "word": "dip",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "담그다",
+  "en": "immerse briefly into a liquid so as to wet, coat, or saturate",
+  "syn": [
+   "dunk",
+   "souse",
+   "plunge",
+   "douse"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She dipped the brush in paint.",
+    "ko": "그녀는 붓을 물감에 담갔어요."
+   }
+  ]
+ },
+ {
+  "word": "diphtheria",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "디프테리아",
+  "en": "acute contagious infection caused by the bacterium Corynebacterium diphtheriae",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Vaccines prevent diphtheria.",
+    "ko": "백신은 디프테리아를 예방해요."
+   }
+  ]
+ },
+ {
+  "word": "diploma",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "졸업장, 수료증",
+  "en": "a document certifying the successful completion of a course of study",
+  "syn": [
+   "sheepskin"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She received her diploma at graduation.",
+    "ko": "그녀는 졸업식에서 졸업장을 받았어요."
+   }
+  ]
+ },
+ {
+  "word": "diplomat",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "외교관",
+  "en": "an official engaged in international negotiations",
+  "syn": [
+   "diplomatist"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He works as a diplomat.",
+    "ko": "그는 외교관으로 일해요."
    }
   ]
  },
@@ -38248,6 +40507,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "disappearance",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "실종, 사라짐",
+  "en": "the act of leaving secretly or without explanation",
+  "syn": [
+   "disappearing"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The disappearance remains a mystery.",
+    "ko": "그 실종은 여전히 미스터리로 남아있어요."
+   }
+  ]
+ },
+ {
   "word": "disappoint",
   "ipa": "",
   "pos": [
@@ -38340,6 +40621,46 @@ window.SEED = [
   ]
  },
  {
+  "word": "disapproval",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "반대, 못마땅함",
+  "en": "a feeling of disliking something or what someone is doing",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She shook her head in disapproval.",
+    "ko": "그녀는 못마땅해서 고개를 저었어요."
+   }
+  ]
+ },
+ {
+  "word": "disapprove",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "반대하다, 못마땅해하다",
+  "en": "consider bad or wrong",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Her parents disapprove of her decision.",
+    "ko": "그녀의 부모님은 그녀의 결정에 반대해요."
+   }
+  ]
+ },
+ {
   "word": "disaster",
   "ipa": "",
   "pos": [
@@ -38412,6 +40733,73 @@ window.SEED = [
   ]
  },
  {
+  "word": "discharge",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "방출, 제대",
+  "en": "the sudden giving off of energy",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He was given an honorable discharge.",
+    "ko": "그는 명예 제대를 받았어요."
+   }
+  ]
+ },
+ {
+  "word": "disciple",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "제자",
+  "en": "someone who believes and helps to spread the doctrine of another",
+  "syn": [
+   "adherent"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He became a disciple of the famous teacher.",
+    "ko": "그는 그 유명한 스승의 제자가 되었어요."
+   }
+  ]
+ },
+ {
+  "word": "discipline",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "훈육, 규율, 학문 분야",
+  "en": "a branch of knowledge",
+  "syn": [
+   "subject",
+   "subject_area",
+   "subject_field",
+   "field"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She teaches discipline to her students.",
+    "ko": "그녀는 학생들에게 규율을 가르쳐요."
+   }
+  ]
+ },
+ {
   "word": "disco",
   "ipa": "",
   "pos": [
@@ -38452,6 +40840,28 @@ window.SEED = [
    {
     "en": "The shoes caused some discomfort.",
     "ko": "그 신발은 약간의 불편함을 유발했어요."
+   }
+  ]
+ },
+ {
+  "word": "disconnect",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "연결을 끊다",
+  "en": "pull the plug of (electrical appliances) and render inoperable",
+  "syn": [
+   "unplug"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please disconnect the cable.",
+    "ko": "케이블 연결을 끊어주세요."
    }
   ]
  },
@@ -38549,6 +40959,48 @@ window.SEED = [
   ]
  },
  {
+  "word": "discredit",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "신뢰를 떨어뜨리다",
+  "en": "cause to be distrusted or disbelieved",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The scandal discredited the politician.",
+    "ko": "그 스캔들은 그 정치인의 신뢰를 떨어뜨렸어요."
+   }
+  ]
+ },
+ {
+  "word": "discriminate",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "차별하다, 구별하다",
+  "en": "recognize or perceive the difference",
+  "syn": [
+   "know_apart"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The law forbids employers to discriminate.",
+    "ko": "그 법은 고용주가 차별하는 것을 금지해요."
+   }
+  ]
+ },
+ {
   "word": "discrimination",
   "ipa": "",
   "pos": [
@@ -38638,6 +41090,52 @@ window.SEED = [
   ]
  },
  {
+  "word": "disgrace",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "불명예, 망신",
+  "en": "a state of dishonor",
+  "syn": [
+   "shame",
+   "ignominy"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The scandal brought disgrace to the family.",
+    "ko": "그 스캔들은 가족에게 불명예를 가져왔어요."
+   }
+  ]
+ },
+ {
+  "word": "disguise",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "변장, 위장",
+  "en": "make unrecognizable",
+  "syn": [
+   "mask"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He wore a disguise to avoid being recognized.",
+    "ko": "그는 알아보지 못하게 하려고 변장을 했어요."
+   }
+  ]
+ },
+ {
   "word": "disgusting",
   "ipa": "",
   "pos": [
@@ -38705,6 +41203,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "dishonesty",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "부정직함",
+  "en": "the quality of being dishonest",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Dishonesty destroyed their friendship.",
+    "ko": "부정직함이 그들의 우정을 파괴했어요."
+   }
+  ]
+ },
+ {
   "word": "dishwasher",
   "ipa": "",
   "pos": [
@@ -38724,6 +41242,28 @@ window.SEED = [
    {
     "en": "Put the dirty dishes in the dishwasher.",
     "ko": "더러운 그릇들을 식기세척기에 넣으세요."
+   }
+  ]
+ },
+ {
+  "word": "disillusion",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "환상을 깨다, 환멸을 느끼게 하다",
+  "en": "free from enchantment",
+  "syn": [
+   "disenchant"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The scandal disillusioned many fans.",
+    "ko": "그 스캔들은 많은 팬들에게 환멸을 느끼게 했어요."
    }
   ]
  },
@@ -38791,6 +41331,115 @@ window.SEED = [
    {
     "en": "I dislike waiting in long lines.",
     "ko": "저는 긴 줄에서 기다리는 것을 싫어해요."
+   }
+  ]
+ },
+ {
+  "word": "dismiss",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "무시하다, 해고하다",
+  "en": "bar from attention or consideration",
+  "syn": [
+   "disregard",
+   "brush_aside",
+   "brush_off",
+   "discount"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She dismissed the idea immediately.",
+    "ko": "그녀는 그 아이디어를 즉시 무시했어요."
+   }
+  ]
+ },
+ {
+  "word": "disorder",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "장애, 무질서",
+  "en": "a physical condition in which there is a disturbance of normal functioning",
+  "syn": [
+   "upset"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He has a sleep disorder.",
+    "ko": "그는 수면 장애가 있어요."
+   }
+  ]
+ },
+ {
+  "word": "disorderly",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "무질서한, 난잡한",
+  "en": "undisciplined and unruly",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He was arrested for disorderly conduct.",
+    "ko": "그는 무질서한 행동으로 체포되었어요."
+   }
+  ]
+ },
+ {
+  "word": "disorganized",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "체계적이지 못한",
+  "en": "lacking order or methodical arrangement or function",
+  "syn": [
+   "disorganised"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "His notes are very disorganized.",
+    "ko": "그의 노트는 아주 체계적이지 못해요."
+   }
+  ]
+ },
+ {
+  "word": "dispensable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "없어도 되는, 필수적이지 않은",
+  "en": "capable of being dispensed with or done without",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This step is dispensable in the process.",
+    "ko": "이 단계는 그 과정에서 없어도 돼요."
    }
   ]
  },
