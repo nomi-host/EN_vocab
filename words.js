@@ -1,6 +1,6 @@
 /* ============================================================================
    EN Vocab — 시드 데이터 (pipeline/merge_cefrj.js 자동 생성)
-   생성: 2026-07-11 · 표제어 2746개 (CEFR-J 전체 후보 4762개 중 작성 완료분)
+   생성: 2026-07-11 · 표제어 2858개 (CEFR-J 전체 후보 4762개 중 작성 완료분)
    ----------------------------------------------------------------------------
    표제어/CEFR/품사 = CEFR-J Wordlist(Tono Lab, TUFS — 연구·상업 무료, 출처 표시 조건)
    영영 정의(en)/유의어(syn) = WordNet 3.0(Princeton, 오프라인 추출)
@@ -5520,6 +5520,54 @@ window.SEED = [
   ]
  },
  {
+  "word": "arrest",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "체포하다, 체포",
+  "en": "the act of apprehending (especially apprehending a criminal)",
+  "syn": [
+   "apprehension",
+   "catch",
+   "collar",
+   "pinch"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The police arrested the suspect.",
+    "ko": "경찰이 용의자를 체포했어요."
+   }
+  ]
+ },
+ {
+  "word": "arrival",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "도착",
+  "en": "accomplishment of an objective",
+  "syn": [
+   "reaching"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We waited for her arrival at the airport.",
+    "ko": "우리는 공항에서 그녀의 도착을 기다렸어요."
+   }
+  ]
+ },
+ {
   "word": "arrive",
   "ipa": "",
   "pos": [
@@ -5539,6 +5587,28 @@ window.SEED = [
    {
     "en": "We arrived at the station on time.",
     "ko": "우리는 제시간에 역에 도착했다."
+   }
+  ]
+ },
+ {
+  "word": "arrow",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "화살, 화살표",
+  "en": "a mark to indicate a direction or relation",
+  "syn": [
+   "pointer"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Follow the arrow to find the exit.",
+    "ko": "출구를 찾으려면 화살표를 따라가세요."
    }
   ]
  },
@@ -5607,6 +5677,48 @@ window.SEED = [
   ]
  },
  {
+  "word": "artist",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "예술가",
+  "en": "a person whose creative work shows sensitivity and imagination",
+  "syn": [
+   "creative_person"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a talented artist.",
+    "ko": "그녀는 재능 있는 예술가예요."
+   }
+  ]
+ },
+ {
+  "word": "artistic",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "예술적인",
+  "en": "relating to or characteristic of art or artists",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He has an artistic style.",
+    "ko": "그는 예술적인 스타일을 가지고 있어요."
+   }
+  ]
+ },
+ {
   "word": "as",
   "ipa": "",
   "pos": [],
@@ -5645,6 +5757,48 @@ window.SEED = [
    {
     "en": "She works as a teacher.",
     "ko": "그녀는 교사로 일해요."
+   }
+  ]
+ },
+ {
+  "word": "ashamed",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "부끄러운",
+  "en": "feeling shame or guilt or embarrassment or remorse",
+  "syn": [
+   "ashamed(p)"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She felt ashamed of her mistake.",
+    "ko": "그녀는 자신의 실수에 부끄러움을 느꼈어요."
+   }
+  ]
+ },
+ {
+  "word": "aside",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "옆으로, 따로",
+  "en": "on or to one side",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She put her book aside and stood up.",
+    "ko": "그녀는 책을 옆에 두고 일어섰어요."
    }
   ]
  },
@@ -5691,6 +5845,146 @@ window.SEED = [
   ]
  },
  {
+  "word": "aspect",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "측면, 양상",
+  "en": "a distinct feature or element in a problem",
+  "syn": [
+   "facet"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is an important aspect of the plan.",
+    "ko": "이것은 그 계획의 중요한 측면이에요."
+   }
+  ]
+ },
+ {
+  "word": "aspirin",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "아스피린",
+  "en": "the acetylated derivative of salicylic acid",
+  "syn": [
+   "acetylsalicylic_acid",
+   "Bayer",
+   "Empirin",
+   "St._Joseph"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Take an aspirin for the headache.",
+    "ko": "두통에는 아스피린을 드세요."
+   }
+  ]
+ },
+ {
+  "word": "assign",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "배정하다, 할당하다",
+  "en": "give an assignment to (a person) to a post, or assign a task to (a person)",
+  "syn": [
+   "delegate",
+   "designate",
+   "depute"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The teacher assigned homework for the weekend.",
+    "ko": "선생님이 주말 숙제를 내주셨어요."
+   }
+  ]
+ },
+ {
+  "word": "assignment",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "과제, 임무",
+  "en": "a duty that you are assigned to perform (especially in the armed forces)",
+  "syn": [
+   "duty_assignment"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I finished my assignment last night.",
+    "ko": "저는 어젯밤 과제를 끝냈어요."
+   }
+  ]
+ },
+ {
+  "word": "assist",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "돕다",
+  "en": "give help or assistance",
+  "syn": [
+   "help",
+   "aid"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She assists the doctor during surgery.",
+    "ko": "그녀는 수술 중에 의사를 도와요."
+   }
+  ]
+ },
+ {
+  "word": "assistance",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "도움, 원조",
+  "en": "the activity of contributing to the fulfillment of a need or furtherance of an effort or purpose",
+  "syn": [
+   "aid",
+   "assist",
+   "help"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Thank you for your assistance.",
+    "ko": "도움 주셔서 감사해요."
+   }
+  ]
+ },
+ {
   "word": "assistant",
   "ipa": "",
   "pos": [
@@ -5698,7 +5992,7 @@ window.SEED = [
   ],
   "cefr": "A2",
   "ko": "조수, 보조원",
-  "en": "a person who helps or supports someone in their work",
+  "en": "of or relating to a person who is subordinate to another",
   "syn": [
    "adjunct"
   ],
@@ -5707,8 +6001,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She is my assistant at work.",
-    "ko": "그녀는 직장에서 제 조수예요."
+    "en": "She is the manager's assistant.",
+    "ko": "그녀는 매니저의 조수예요."
    }
   ]
  },
@@ -5720,7 +6014,7 @@ window.SEED = [
   ],
   "cefr": "B1",
   "ko": "조수, 보조원",
-  "en": "a person who helps or supports someone in their work",
+  "en": "a person who contributes to the fulfillment of a need or furtherance of an effort or purpose",
   "syn": [
    "helper",
    "help",
@@ -5731,8 +6025,33 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She is my assistant at work.",
-    "ko": "그녀는 직장에서 제 조수예요."
+    "en": "She is the manager's assistant.",
+    "ko": "그녀는 매니저의 조수예요."
+   }
+  ]
+ },
+ {
+  "word": "associate",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "연관 짓다, 연상하다",
+  "en": "make a logical or causal connection",
+  "syn": [
+   "tie_in",
+   "relate",
+   "link",
+   "colligate"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I associate this song with summer.",
+    "ko": "저는 이 노래를 여름과 연관 지어요."
    }
   ]
  },
@@ -5757,6 +6076,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "assume",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "가정하다, 추정하다",
+  "en": "take to be the case or to be true",
+  "syn": [
+   "presume",
+   "take_for_granted"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I assumed she would come to the party.",
+    "ko": "저는 그녀가 파티에 올 것이라고 가정했어요."
+   }
+  ]
+ },
+ {
   "word": "astronaut",
   "ipa": "",
   "pos": [
@@ -5776,6 +6118,29 @@ window.SEED = [
    {
     "en": "The astronaut traveled to space.",
     "ko": "그 우주비행사는 우주로 여행했어요."
+   }
+  ]
+ },
+ {
+  "word": "astronomer",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "천문학자",
+  "en": "a physicist who studies astronomy",
+  "syn": [
+   "uranologist",
+   "stargazer"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The astronomer discovered a new star.",
+    "ko": "그 천문학자는 새로운 별을 발견했어요."
    }
   ]
  },
@@ -5823,6 +6188,69 @@ window.SEED = [
   ]
  },
  {
+  "word": "athletic",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "운동선수의, 체육의",
+  "en": "relating to or befitting athletics or athletes",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has an athletic build.",
+    "ko": "그녀는 운동선수 같은 체격을 가지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "Atlantic",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "대서양의",
+  "en": "relating to or bordering the Atlantic Ocean",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We flew across the Atlantic Ocean.",
+    "ko": "우리는 대서양을 가로질러 비행했어요."
+   }
+  ]
+ },
+ {
+  "word": "atmosphere",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "대기, 분위기",
+  "en": "a particular environment or surrounding influence",
+  "syn": [
+   "ambiance",
+   "ambience"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The restaurant has a cozy atmosphere.",
+    "ko": "그 식당은 아늑한 분위기를 가지고 있어요."
+   }
+  ]
+ },
+ {
   "word": "atom",
   "ipa": "",
   "pos": [
@@ -5839,6 +6267,68 @@ window.SEED = [
    {
     "en": "An atom is very small.",
     "ko": "원자는 아주 작아요."
+   }
+  ]
+ },
+ {
+  "word": "atomic",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "원자의",
+  "en": "of or relating to or comprising atoms",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is an atomic energy plant.",
+    "ko": "이곳은 원자력 발전소예요."
+   }
+  ]
+ },
+ {
+  "word": "attach",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "첨부하다, 붙이다",
+  "en": "cause to be attached",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please attach the file to your email.",
+    "ko": "이메일에 파일을 첨부해 주세요."
+   }
+  ]
+ },
+ {
+  "word": "attachment",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "첨부 파일, 애착",
+  "en": "a feeling of affection for a person or an institution",
+  "syn": [
+   "fond_regard"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I sent the document as an attachment.",
+    "ko": "저는 문서를 첨부 파일로 보냈어요."
    }
   ]
  },
@@ -5866,14 +6356,38 @@ window.SEED = [
   ]
  },
  {
+  "word": "attain",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "달성하다",
+  "en": "to gain with effort",
+  "syn": [
+   "achieve",
+   "accomplish",
+   "reach"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She attained her goal through hard work.",
+    "ko": "그녀는 열심히 노력해서 목표를 달성했어요."
+   }
+  ]
+ },
+ {
   "word": "attempt",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "시도",
-  "en": "an effort to do something",
+  "ko": "시도하다",
+  "en": "earnest and conscientious activity intended to do or accomplish something",
   "syn": [
    "effort",
    "endeavor",
@@ -5885,8 +6399,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She made an attempt to fix the bike.",
-    "ko": "그녀는 자전거를 고치려고 시도했어요."
+    "en": "He attempted to fix the car himself.",
+    "ko": "그는 직접 차를 고치려고 시도했어요."
    }
   ]
  },
@@ -5897,8 +6411,8 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "시도",
-  "en": "an effort to do something",
+  "ko": "시도하다",
+  "en": "make an effort or attempt",
   "syn": [
    "try",
    "seek",
@@ -5910,8 +6424,30 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She made an attempt to fix the bike.",
-    "ko": "그녀는 자전거를 고치려고 시도했어요."
+    "en": "He attempted to fix the car himself.",
+    "ko": "그는 직접 차를 고치려고 시도했어요."
+   }
+  ]
+ },
+ {
+  "word": "attend",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "참석하다",
+  "en": "be present at (meetings, church services, university), etc.",
+  "syn": [
+   "go_to"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She will attend the conference next week.",
+    "ko": "그녀는 다음 주 학회에 참석할 거예요."
    }
   ]
  },
@@ -5956,6 +6492,53 @@ window.SEED = [
    {
     "en": "She has a positive attitude.",
     "ko": "그녀는 긍정적인 태도를 가지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "attract",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "끌어당기다, 매료시키다",
+  "en": "direct toward itself or oneself by means of some psychological power or physical attributes",
+  "syn": [
+   "pull",
+   "pull_in",
+   "draw",
+   "draw_in"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The museum attracts many tourists.",
+    "ko": "그 박물관은 많은 관광객을 끌어들여요."
+   }
+  ]
+ },
+ {
+  "word": "attraction",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "매력, 명소",
+  "en": "the force by which one object attracts another",
+  "syn": [
+   "attractive_force"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This tower is a popular tourist attraction.",
+    "ko": "이 타워는 인기 있는 관광 명소예요."
    }
   ]
  },
@@ -6089,6 +6672,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "authority",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "권한, 권위",
+  "en": "the power or right to give orders or make decisions",
+  "syn": [
+   "authorization",
+   "authorisation",
+   "potency",
+   "dominance"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has the authority to make decisions.",
+    "ko": "그녀는 결정을 내릴 권한이 있어요."
+   }
+  ]
+ },
+ {
   "word": "automatic",
   "ipa": "",
   "pos": [
@@ -6147,6 +6755,70 @@ window.SEED = [
    {
     "en": "The leaves fall in autumn.",
     "ko": "가을에는 나뭇잎이 떨어진다."
+   }
+  ]
+ },
+ {
+  "word": "auxiliary",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "보조의",
+  "en": "functioning in a supporting capacity",
+  "syn": [
+   "subsidiary",
+   "supplemental",
+   "supplementary"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "\"Have\" is an auxiliary verb.",
+    "ko": "'have'는 조동사예요."
+   }
+  ]
+ },
+ {
+  "word": "available",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "이용 가능한",
+  "en": "obtainable or accessible and ready for use or service",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This room is available tonight.",
+    "ko": "이 방은 오늘 밤 이용 가능해요."
+   }
+  ]
+ },
+ {
+  "word": "avenue",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "대로, 거리",
+  "en": "a line of approach",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The shop is on Fifth Avenue.",
+    "ko": "그 가게는 5번가에 있어요."
    }
   ]
  },
@@ -6222,8 +6894,8 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "상",
-  "en": "a prize given for an achievement",
+  "ko": "수여하다",
+  "en": "a grant made by a law court",
   "syn": [
    "awarding"
   ],
@@ -6232,8 +6904,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She won an award for her novel.",
-    "ko": "그녀는 소설로 상을 받았어요."
+    "en": "They awarded her the first prize.",
+    "ko": "그들은 그녀에게 1등상을 수여했어요."
    }
   ]
  },
@@ -6244,8 +6916,8 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "상",
-  "en": "a prize given for an achievement",
+  "ko": "수여하다",
+  "en": "give, especially as an honor or reward",
   "syn": [
    "present"
   ],
@@ -6254,8 +6926,57 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She won an award for her novel.",
-    "ko": "그녀는 소설로 상을 받았어요."
+    "en": "They awarded her the first prize.",
+    "ko": "그들은 그녀에게 1등상을 수여했어요."
+   }
+  ]
+ },
+ {
+  "word": "aware",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "알고 있는, 인식하는",
+  "en": "(sometimes followed by `of') having or showing knowledge or understanding or realization or perception",
+  "syn": [
+   "aware(p)",
+   "cognizant",
+   "cognisant"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I am aware of the problem.",
+    "ko": "저는 그 문제를 알고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "awareness",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "인식, 자각",
+  "en": "having knowledge of",
+  "syn": [
+   "consciousness",
+   "cognizance",
+   "cognisance",
+   "knowingness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This campaign raises awareness about recycling.",
+    "ko": "이 캠페인은 재활용에 대한 인식을 높여요."
    }
   ]
  },
@@ -6279,6 +7000,31 @@ window.SEED = [
    {
     "en": "The dog ran away from the lion.",
     "ko": "그 개는 사자로부터 멀리 도망갔다."
+   }
+  ]
+ },
+ {
+  "word": "awesome",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "굉장한, 멋진",
+  "en": "inspiring awe or admiration or wonder",
+  "syn": [
+   "amazing",
+   "awe-inspiring",
+   "awful",
+   "awing"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That concert was awesome.",
+    "ko": "그 콘서트는 굉장했어요."
    }
   ]
  },
@@ -6308,6 +7054,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "awkward",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "어색한",
+  "en": "causing inconvenience",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was an awkward silence.",
+    "ko": "어색한 침묵이 있었어요."
+   }
+  ]
+ },
+ {
   "word": "baby",
   "ipa": "",
   "pos": [
@@ -6331,6 +7097,51 @@ window.SEED = [
   ]
  },
  {
+  "word": "babysit",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "아이를 봐주다",
+  "en": "take watchful responsibility for",
+  "syn": [
+   "baby-sit"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She babysits her neighbor's kids.",
+    "ko": "그녀는 이웃 아이들을 봐줘요."
+   }
+  ]
+ },
+ {
+  "word": "babysitter",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "아이 돌보미",
+  "en": "a person engaged to care for children when the parents are not home",
+  "syn": [
+   "baby-sitter",
+   "sitter"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We hired a babysitter for the evening.",
+    "ko": "우리는 저녁 동안 아이 돌보미를 고용했어요."
+   }
+  ]
+ },
+ {
   "word": "back",
   "ipa": "",
   "pos": [
@@ -6338,7 +7149,7 @@ window.SEED = [
    "adv"
   ],
   "cefr": "A1",
-  "ko": "뒤의, 등",
+  "ko": "뒤를 지지하다",
   "en": "in or to or toward a former location",
   "syn": [],
   "ant": [],
@@ -6346,8 +7157,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "My back hurts a little.",
-    "ko": "제 등이 조금 아파요."
+    "en": "My family always backs me up.",
+    "ko": "제 가족은 항상 저를 지지해줘요."
    }
   ]
  },
@@ -6358,7 +7169,7 @@ window.SEED = [
    "adj"
   ],
   "cefr": "A2",
-  "ko": "뒤의, 등",
+  "ko": "뒤를 지지하다",
   "en": "related to or located at the back",
   "syn": [
    "back(a)"
@@ -6368,8 +7179,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "My back hurts a little.",
-    "ko": "제 등이 조금 아파요."
+    "en": "My family always backs me up.",
+    "ko": "제 가족은 항상 저를 지지해줘요."
    }
   ]
  },
@@ -6380,7 +7191,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "뒤의, 등",
+  "ko": "뒤를 지지하다",
   "en": "be behind",
   "syn": [
    "endorse",
@@ -6393,8 +7204,28 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "My back hurts a little.",
-    "ko": "제 등이 조금 아파요."
+    "en": "My family always backs me up.",
+    "ko": "제 가족은 항상 저를 지지해줘요."
+   }
+  ]
+ },
+ {
+  "word": "backache",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "요통, 등의 통증",
+  "en": "an ache localized in the back",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I have a backache from sitting too long.",
+    "ko": "저는 너무 오래 앉아있어서 요통이 있어요."
    }
   ]
  },
@@ -6415,6 +7246,95 @@ window.SEED = [
    {
     "en": "Tell me about your background.",
     "ko": "당신의 배경에 대해 말해주세요."
+   }
+  ]
+ },
+ {
+  "word": "backpack",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "배낭",
+  "en": "a bag carried by a strap on your back or shoulder",
+  "syn": [
+   "back_pack",
+   "knapsack",
+   "packsack",
+   "rucksack"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He carried a heavy backpack.",
+    "ko": "그는 무거운 배낭을 메고 있었어요."
+   }
+  ]
+ },
+ {
+  "word": "backpacker",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "배낭여행객",
+  "en": "a hiker who wears a backpack",
+  "syn": [
+   "packer"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Many backpackers visit this hostel.",
+    "ko": "많은 배낭여행객이 이 호스텔을 방문해요."
+   }
+  ]
+ },
+ {
+  "word": "backpacking",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "배낭여행",
+  "en": "carrying something in a pack on the back",
+  "syn": [
+   "packing"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We went backpacking around Europe.",
+    "ko": "우리는 유럽 곳곳을 배낭여행했어요."
+   }
+  ]
+ },
+ {
+  "word": "bacon",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "베이컨",
+  "en": "back and sides of a hog salted and dried or smoked",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I had bacon and eggs for breakfast.",
+    "ko": "저는 아침으로 베이컨과 계란을 먹었어요."
    }
   ]
  },
@@ -6503,6 +7423,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "baggage",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "수하물",
+  "en": "cases used to carry belongings when traveling",
+  "syn": [
+   "luggage"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please check your baggage here.",
+    "ko": "여기서 수하물을 확인해 주세요."
+   }
+  ]
+ },
+ {
   "word": "bake",
   "ipa": "",
   "pos": [
@@ -6523,6 +7465,69 @@ window.SEED = [
   ]
  },
  {
+  "word": "baker",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "제빵사",
+  "en": "someone who bakes commercially",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The baker makes fresh bread every morning.",
+    "ko": "그 제빵사는 매일 아침 신선한 빵을 만들어요."
+   }
+  ]
+ },
+ {
+  "word": "bakery",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "빵집, 제과점",
+  "en": "a workplace where baked goods (breads and cakes and pastries) are produced or sold",
+  "syn": [
+   "bakeshop",
+   "bakehouse"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I bought a cake at the bakery.",
+    "ko": "저는 제과점에서 케이크를 샀어요."
+   }
+  ]
+ },
+ {
+  "word": "balance",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "균형, 잔액",
+  "en": "a state of equilibrium",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It's important to keep a balance between work and life.",
+    "ko": "일과 삶의 균형을 유지하는 것이 중요해요."
+   }
+  ]
+ },
+ {
   "word": "balcony",
   "ipa": "",
   "pos": [
@@ -6539,6 +7544,28 @@ window.SEED = [
    {
     "en": "We had coffee on the balcony.",
     "ko": "우리는 발코니에서 커피를 마셨어요."
+   }
+  ]
+ },
+ {
+  "word": "bald",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "대머리의",
+  "en": "with no effort to conceal",
+  "syn": [
+   "barefaced"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He is going bald.",
+    "ko": "그는 대머리가 되고 있어요."
    }
   ]
  },
@@ -6629,6 +7656,54 @@ window.SEED = [
   ]
  },
  {
+  "word": "bandage",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "붕대",
+  "en": "a piece of soft material that covers and protects an injured part of the body",
+  "syn": [
+   "patch"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She put a bandage on her wound.",
+    "ko": "그녀는 상처에 붕대를 감았어요."
+   }
+  ]
+ },
+ {
+  "word": "bang",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "쾅 소리, 세게 치다",
+  "en": "a vigorous blow",
+  "syn": [
+   "knock",
+   "bash",
+   "smash",
+   "belt"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I heard a loud bang outside.",
+    "ko": "저는 밖에서 큰 쾅 소리를 들었어요."
+   }
+  ]
+ },
+ {
   "word": "bank",
   "ipa": "",
   "pos": [
@@ -6665,6 +7740,28 @@ window.SEED = [
    {
     "en": "I need to go to the bank.",
     "ko": "저는 은행에 가야 해요."
+   }
+  ]
+ },
+ {
+  "word": "bank account",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "은행 계좌",
+  "en": "a fund that a customer has entrusted to a bank and from which the customer can make withdrawals",
+  "syn": [
+   "bank_account"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I opened a new bank account.",
+    "ko": "저는 새 은행 계좌를 개설했어요."
    }
   ]
  },
@@ -6695,7 +7792,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A1",
-  "ko": "술집; 막대",
+  "ko": "술집, 막대기",
   "en": "a room or establishment where alcoholic drinks are served over a counter",
   "syn": [
    "barroom",
@@ -6708,8 +7805,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "They met at a bar downtown.",
-    "ko": "그들은 시내의 술집에서 만났다."
+    "en": "We met at a bar downtown.",
+    "ko": "우리는 시내의 한 술집에서 만났어요."
    }
   ]
  },
@@ -6720,7 +7817,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "술집; 막대",
+  "ko": "술집, 막대기",
   "en": "prevent from entering",
   "syn": [
    "debar",
@@ -6731,8 +7828,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "They met at a bar downtown.",
-    "ko": "그들은 시내의 술집에서 만났다."
+    "en": "We met at a bar downtown.",
+    "ko": "우리는 시내의 한 술집에서 만났어요."
    }
   ]
  },
@@ -6743,7 +7840,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "바비큐",
+  "ko": "바비큐하다",
   "en": "meat that has been barbecued or grilled in a highly seasoned sauce",
   "syn": [
    "barbeque"
@@ -6753,8 +7850,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "We had a barbecue in the backyard.",
-    "ko": "우리는 뒷마당에서 바비큐를 했어요."
+    "en": "We barbecued some chicken outside.",
+    "ko": "우리는 밖에서 닭고기를 바비큐했어요."
    }
   ]
  },
@@ -6765,7 +7862,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "바비큐",
+  "ko": "바비큐하다",
   "en": "cook outdoors on a barbecue grill",
   "syn": [
    "barbeque",
@@ -6776,8 +7873,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "We had a barbecue in the backyard.",
-    "ko": "우리는 뒷마당에서 바비큐를 했어요."
+    "en": "We barbecued some chicken outside.",
+    "ko": "우리는 밖에서 닭고기를 바비큐했어요."
    }
   ]
  },
@@ -6804,6 +7901,55 @@ window.SEED = [
   ]
  },
  {
+  "word": "bare",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "벌거벗은, 텅 빈",
+  "en": "completely unclothed",
+  "syn": [
+   "au_naturel(p)",
+   "naked",
+   "nude"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He walked with bare feet.",
+    "ko": "그는 맨발로 걸었어요."
+   }
+  ]
+ },
+ {
+  "word": "barely",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "겨우, 간신히",
+  "en": "only a very short time before",
+  "syn": [
+   "hardly",
+   "just",
+   "scarcely",
+   "scarce"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I barely finished the race.",
+    "ko": "저는 겨우 경주를 끝냈어요."
+   }
+  ]
+ },
+ {
   "word": "bargain",
   "ipa": "",
   "pos": [
@@ -6826,13 +7972,80 @@ window.SEED = [
   ]
  },
  {
+  "word": "bark",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "짖다, 나무껍질",
+  "en": "tough protective covering of the woody stems and roots of trees and other woody plants",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The dog barked all night.",
+    "ko": "그 개는 밤새 짖었어요."
+   }
+  ]
+ },
+ {
+  "word": "barman",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "바텐더",
+  "en": "an employee who mixes and serves alcoholic drinks at a bar",
+  "syn": [
+   "bartender",
+   "barkeep",
+   "barkeeper",
+   "mixologist"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The barman made us fresh cocktails.",
+    "ko": "그 바텐더는 우리에게 신선한 칵테일을 만들어줬어요."
+   }
+  ]
+ },
+ {
+  "word": "barrel",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "통, 배럴",
+  "en": "a tube through which a bullet travels when a gun is fired",
+  "syn": [
+   "gun_barrel"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They store wine in wooden barrels.",
+    "ko": "그들은 나무 통에 와인을 저장해요."
+   }
+  ]
+ },
+ {
   "word": "base",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "기초, 기지",
+  "ko": "근거하다, ~에 기초하다",
   "en": "installation from which a military force initiates operations",
   "syn": [
    "base_of_operations"
@@ -6842,8 +8055,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The army built a new base.",
-    "ko": "군대는 새 기지를 건설했어요."
+    "en": "This movie is based on a true story.",
+    "ko": "이 영화는 실화에 근거해요."
    }
   ]
  },
@@ -6854,7 +8067,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "기초, 기지",
+  "ko": "근거하다, ~에 기초하다",
   "en": "use as a basis for",
   "syn": [
    "establish",
@@ -6866,8 +8079,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The army built a new base.",
-    "ko": "군대는 새 기지를 건설했어요."
+    "en": "This movie is based on a true story.",
+    "ko": "이 영화는 실화에 근거해요."
    }
   ]
  },
@@ -6891,6 +8104,28 @@ window.SEED = [
    {
     "en": "Teams take turns at bat trying to score runs.",
     "ko": "팀들은 번갈아 타석에 서서 점수를 내려 한다."
+   }
+  ]
+ },
+ {
+  "word": "basement",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "지하실",
+  "en": "the lowermost portion of a structure partly or wholly below ground level",
+  "syn": [
+   "cellar"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We store old boxes in the basement.",
+    "ko": "우리는 지하실에 오래된 상자들을 보관해요."
    }
   ]
  },
@@ -6934,6 +8169,49 @@ window.SEED = [
    {
     "en": "Basically, we agree with the plan.",
     "ko": "기본적으로 우리는 그 계획에 동의해요."
+   }
+  ]
+ },
+ {
+  "word": "basin",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "세면대, 대야",
+  "en": "a bowl-shaped vessel",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She washed her face in the basin.",
+    "ko": "그녀는 세면대에서 얼굴을 씻었어요."
+   }
+  ]
+ },
+ {
+  "word": "basis",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "근거, 기초",
+  "en": "a relation that provides the foundation for something",
+  "syn": [
+   "footing",
+   "ground"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "What is the basis for this decision?",
+    "ko": "이 결정의 근거가 뭐예요?"
    }
   ]
  },
@@ -6989,7 +8267,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A1",
-  "ko": "박쥐; 방망이",
+  "ko": "방망이로 치다, 박쥐",
   "en": "nocturnal mouselike mammal with forelimbs modified to form membranous wings and anatomical adaptations for echolocation by which they navigate",
   "syn": [
    "chiropteran"
@@ -6999,8 +8277,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "A bat flew out of the cave.",
-    "ko": "박쥐 한 마리가 동굴에서 날아 나왔다."
+    "en": "He hit the ball with the bat.",
+    "ko": "그는 방망이로 공을 쳤어요."
    }
   ]
  },
@@ -7011,7 +8289,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "박쥐; 방망이",
+  "ko": "방망이로 치다, 박쥐",
   "en": "strike with, or as if with a baseball bat",
   "syn": [],
   "ant": [],
@@ -7019,8 +8297,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "A bat flew out of the cave.",
-    "ko": "박쥐 한 마리가 동굴에서 날아 나왔다."
+    "en": "He hit the ball with the bat.",
+    "ko": "그는 방망이로 공을 쳤어요."
    }
   ]
  },
@@ -7065,6 +8343,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "bathe",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "목욕하다",
+  "en": "cleanse the entire body",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She bathes her baby every evening.",
+    "ko": "그녀는 매일 저녁 아기를 목욕시켜요."
+   }
+  ]
+ },
+ {
   "word": "bathroom",
   "ipa": "",
   "pos": [
@@ -7101,6 +8399,30 @@ window.SEED = [
    {
     "en": "My phone battery is low.",
     "ko": "제 휴대폰 배터리가 부족해요."
+   }
+  ]
+ },
+ {
+  "word": "battle",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "전투",
+  "en": "a hostile meeting of opposing military forces in the course of a war",
+  "syn": [
+   "conflict",
+   "fight",
+   "engagement"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The soldiers fought a difficult battle.",
+    "ko": "군인들은 어려운 전투를 치렀어요."
    }
   ]
  },
@@ -7231,6 +8553,79 @@ window.SEED = [
   ]
  },
  {
+  "word": "beard",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "턱수염",
+  "en": "the hair growing on the lower part of a man's face",
+  "syn": [
+   "face_fungus",
+   "whiskers"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He has a long beard.",
+    "ko": "그는 긴 턱수염을 가지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "beast",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "짐승, 야수",
+  "en": "a living organism characterized by voluntary movement",
+  "syn": [
+   "animal",
+   "animate_being",
+   "brute",
+   "creature"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The story is about a beast in the forest.",
+    "ko": "그 이야기는 숲속의 짐승에 관한 것이에요."
+   }
+  ]
+ },
+ {
+  "word": "beat",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "이기다, 두드리다",
+  "en": "come out better in a competition, race, or conflict",
+  "syn": [
+   "beat_out",
+   "crush",
+   "shell",
+   "trounce"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Our team beat theirs 3 to 1.",
+    "ko": "우리 팀이 그들을 3대 1로 이겼어요."
+   }
+  ]
+ },
+ {
   "word": "beautiful",
   "ipa": "",
   "pos": [
@@ -7247,6 +8642,28 @@ window.SEED = [
    {
     "en": "She has a beautiful voice.",
     "ko": "그녀는 아름다운 목소리를 가지고 있다."
+   }
+  ]
+ },
+ {
+  "word": "beautifully",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "아름답게",
+  "en": "in a beautiful manner",
+  "syn": [
+   "attractively"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She sang beautifully.",
+    "ko": "그녀는 아름답게 노래했어요."
    }
   ]
  },
@@ -7271,6 +8688,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "beaver",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "비버",
+  "en": "the soft brown fur of the beaver",
+  "syn": [
+   "beaver_fur"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Beavers build dams in rivers.",
+    "ko": "비버는 강에 댐을 지어요."
+   }
+  ]
+ },
+ {
   "word": "because",
   "ipa": "",
   "pos": [],
@@ -7285,6 +8724,24 @@ window.SEED = [
    {
     "en": "I stayed home because I was sick.",
     "ko": "나는 아파서 집에 있었다."
+   }
+  ]
+ },
+ {
+  "word": "because of",
+  "ipa": "",
+  "pos": [],
+  "cefr": "B1",
+  "ko": "~때문에",
+  "en": "as a result of; on account of",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The flight was delayed because of the storm.",
+    "ko": "그 비행편은 폭풍 때문에 지연되었어요."
    }
   ]
  },
@@ -7353,6 +8810,26 @@ window.SEED = [
    {
     "en": "My bedroom is upstairs.",
     "ko": "내 침실은 위층에 있다."
+   }
+  ]
+ },
+ {
+  "word": "bedside",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "침대 옆",
+  "en": "space by the side of a bed (especially the bed of a sick or dying person)",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She sat by his bedside all night.",
+    "ko": "그녀는 밤새 그의 침대 옆에 앉아 있었어요."
    }
   ]
  },
@@ -7572,6 +9049,49 @@ window.SEED = [
   ]
  },
  {
+  "word": "behalf",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "대신하여, ~을 위해",
+  "en": "as the agent of or on someone's part (usually expressed as `on behalf of' rather than `in behalf of')",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I am speaking on behalf of my team.",
+    "ko": "저는 저희 팀을 대신하여 말씀드려요."
+   }
+  ]
+ },
+ {
+  "word": "behave",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "행동하다",
+  "en": "behave in a certain manner",
+  "syn": [
+   "act",
+   "do"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The children behaved well at the party.",
+    "ko": "아이들은 파티에서 얌전히 행동했어요."
+   }
+  ]
+ },
+ {
   "word": "behavior",
   "ipa": "",
   "pos": [
@@ -7636,6 +9156,26 @@ window.SEED = [
    {
     "en": "Every human being deserves respect.",
     "ko": "모든 인간은 존중받을 자격이 있어요."
+   }
+  ]
+ },
+ {
+  "word": "belief",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "믿음, 신념",
+  "en": "any cognitive content held as true",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It's my belief that hard work pays off.",
+    "ko": "열심히 일하면 보답받는다는 것이 제 믿음이에요."
    }
   ]
  },
@@ -7720,6 +9260,29 @@ window.SEED = [
    {
     "en": "This book belongs to me.",
     "ko": "이 책은 제 거예요."
+   }
+  ]
+ },
+ {
+  "word": "beloved",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "사랑하는",
+  "en": "dearly loved",
+  "syn": [
+   "darling",
+   "dear"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She wrote a letter to her beloved husband.",
+    "ko": "그녀는 사랑하는 남편에게 편지를 썼어요."
    }
   ]
  },
@@ -7810,6 +9373,72 @@ window.SEED = [
   ]
  },
  {
+  "word": "beneath",
+  "ipa": "",
+  "pos": [],
+  "cefr": "B1",
+  "ko": "~아래에",
+  "en": "in or to a place that is lower",
+  "syn": [
+   "below",
+   "at_a_lower_place",
+   "to_a_lower_place"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The cat is hiding beneath the bed.",
+    "ko": "고양이가 침대 아래에 숨어 있어요."
+   }
+  ]
+ },
+ {
+  "word": "benefit",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "혜택, 이익",
+  "en": "financial assistance in time of need",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This job has great benefits.",
+    "ko": "이 직업은 훌륭한 혜택이 있어요."
+   }
+  ]
+ },
+ {
+  "word": "bent",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "구부러진, 결심한",
+  "en": "fixed in your purpose",
+  "syn": [
+   "bent_on(p)",
+   "dead_set(p)",
+   "out_to(p)"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The spoon is bent.",
+    "ko": "그 숟가락은 구부러져 있어요."
+   }
+  ]
+ },
+ {
   "word": "beside",
   "ipa": "",
   "pos": [],
@@ -7834,7 +9463,7 @@ window.SEED = [
    "adv"
   ],
   "cefr": "A2",
-  "ko": "게다가, ~외에",
+  "ko": "게다가, ~외에도",
   "en": "making an additional point",
   "syn": [
    "in_any_case"
@@ -7844,8 +9473,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Besides English, she speaks Spanish.",
-    "ko": "그녀는 영어 외에 스페인어도 해요."
+    "en": "Besides cooking, she also enjoys gardening.",
+    "ko": "그녀는 요리 외에도 정원 가꾸기를 즐겨요."
    }
   ]
  },
@@ -7854,7 +9483,7 @@ window.SEED = [
   "ipa": "",
   "pos": [],
   "cefr": "B1",
-  "ko": "게다가, ~외에",
+  "ko": "게다가, ~외에도",
   "en": "making an additional point",
   "syn": [
    "in_any_case"
@@ -7864,8 +9493,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Besides English, she speaks Spanish.",
-    "ko": "그녀는 영어 외에 스페인어도 해요."
+    "en": "Besides cooking, she also enjoys gardening.",
+    "ko": "그녀는 요리 외에도 정원 가꾸기를 즐겨요."
    }
   ]
  },
@@ -7887,6 +9516,28 @@ window.SEED = [
    {
     "en": "This is the best film of the year.",
     "ko": "이것은 올해 최고의 영화다."
+   }
+  ]
+ },
+ {
+  "word": "bet",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "내기하다, 장담하다",
+  "en": "maintain with or as if with a bet",
+  "syn": [
+   "wager"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I bet you can't finish this in time.",
+    "ko": "저는 당신이 제시간에 이걸 끝낼 수 없다고 장담해요."
    }
   ]
  },
@@ -8037,14 +9688,34 @@ window.SEED = [
   ]
  },
  {
+  "word": "bilingual",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "두 언어를 하는",
+  "en": "using or knowing two languages",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is bilingual in English and Korean.",
+    "ko": "그녀는 영어와 한국어 이중언어 사용자예요."
+   }
+  ]
+ },
+ {
   "word": "bill",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "청구서, 계산서",
-  "en": "a document requesting payment for goods or services",
+  "ko": "청구하다",
+  "en": "a statute in draft before it becomes law",
   "syn": [
    "measure"
   ],
@@ -8053,8 +9724,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Can I have the bill, please?",
-    "ko": "계산서 좀 주시겠어요?"
+    "en": "The company billed us twice.",
+    "ko": "그 회사는 우리에게 두 번 청구했어요."
    }
   ]
  },
@@ -8065,8 +9736,8 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "청구서, 계산서",
-  "en": "a document requesting payment for goods or services",
+  "ko": "청구하다",
+  "en": "demand payment",
   "syn": [
    "charge"
   ],
@@ -8075,8 +9746,94 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Can I have the bill, please?",
-    "ko": "계산서 좀 주시겠어요?"
+    "en": "The company billed us twice.",
+    "ko": "그 회사는 우리에게 두 번 청구했어요."
+   }
+  ]
+ },
+ {
+  "word": "bin",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "쓰레기통, 통",
+  "en": "a container",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Put the trash in the bin.",
+    "ko": "쓰레기를 쓰레기통에 버리세요."
+   }
+  ]
+ },
+ {
+  "word": "biochemistry",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "생화학",
+  "en": "the organic chemistry of compounds and processes occurring in organisms",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She studies biochemistry at university.",
+    "ko": "그녀는 대학교에서 생화학을 공부해요."
+   }
+  ]
+ },
+ {
+  "word": "biography",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "전기, 자서전",
+  "en": "an account of the series of events making up a person's life",
+  "syn": [
+   "life",
+   "life_story",
+   "life_history"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I read a biography of Steve Jobs.",
+    "ko": "저는 스티브 잡스의 전기를 읽었어요."
+   }
+  ]
+ },
+ {
+  "word": "biology",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "생물학",
+  "en": "the science that studies living organisms",
+  "syn": [
+   "biological_science"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He teaches biology at the high school.",
+    "ko": "그는 고등학교에서 생물학을 가르쳐요."
    }
   ]
  },
@@ -8161,6 +9918,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "bishop",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "주교",
+  "en": "a senior member of the Christian clergy having spiritual and administrative authority",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The bishop gave a speech at the ceremony.",
+    "ko": "그 주교는 의식에서 연설을 했어요."
+   }
+  ]
+ },
+ {
   "word": "bit",
   "ipa": "",
   "pos": [
@@ -8189,7 +9966,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "물기, 한 입",
+  "ko": "물다",
   "en": "a wound resulting from biting by an animal or a person",
   "syn": [],
   "ant": [],
@@ -8197,8 +9974,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Can I have a bite of your sandwich?",
-    "ko": "당신의 샌드위치 한 입 먹어도 될까요?"
+    "en": "The dog bit the mailman.",
+    "ko": "그 개가 우편배달부를 물었어요."
    }
   ]
  },
@@ -8209,7 +9986,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "물기, 한 입",
+  "ko": "물다",
   "en": "to grip, cut off, or tear with or as if with the teeth or jaws",
   "syn": [
    "seize_with_teeth"
@@ -8219,8 +9996,30 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Can I have a bite of your sandwich?",
-    "ko": "당신의 샌드위치 한 입 먹어도 될까요?"
+    "en": "The dog bit the mailman.",
+    "ko": "그 개가 우편배달부를 물었어요."
+   }
+  ]
+ },
+ {
+  "word": "bitter",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "쓴, 씁쓸한",
+  "en": "marked by strong resentment or cynicism",
+  "syn": [
+   "acrimonious"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This coffee tastes bitter.",
+    "ko": "이 커피는 쓴맛이 나요."
    }
   ]
  },
@@ -8277,7 +10076,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "A2",
-  "ko": "탓하다, 비난하다",
+  "ko": "비난, 책임",
   "en": "put or pin the blame on",
   "syn": [
    "fault"
@@ -8287,8 +10086,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Don't blame yourself for the mistake.",
-    "ko": "그 실수에 대해 자신을 탓하지 마세요."
+    "en": "He took the blame for the mistake.",
+    "ko": "그는 그 실수에 대한 책임을 졌어요."
    }
   ]
  },
@@ -8299,7 +10098,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "탓하다, 비난하다",
+  "ko": "비난, 책임",
   "en": "an accusation that you are responsible for some lapse or misdeed",
   "syn": [
    "incrimination",
@@ -8310,8 +10109,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Don't blame yourself for the mistake.",
-    "ko": "그 실수에 대해 자신을 탓하지 마세요."
+    "en": "He took the blame for the mistake.",
+    "ko": "그는 그 실수에 대한 책임을 졌어요."
    }
   ]
  },
@@ -8361,13 +10160,125 @@ window.SEED = [
   ]
  },
  {
+  "word": "bleed",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "피를 흘리다",
+  "en": "lose blood from one's body",
+  "syn": [
+   "shed_blood",
+   "hemorrhage"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "His hand was bleeding.",
+    "ko": "그의 손에서 피가 나고 있었어요."
+   }
+  ]
+ },
+ {
+  "word": "blend",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "섞다, 혼합하다",
+  "en": "combine into one",
+  "syn": [
+   "intermix",
+   "immingle",
+   "intermingle"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Blend the fruit until smooth.",
+    "ko": "과일을 부드러워질 때까지 섞으세요."
+   }
+  ]
+ },
+ {
+  "word": "bless",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "축복하다",
+  "en": "give a benediction to",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The priest blessed the couple.",
+    "ko": "신부님이 그 커플을 축복했어요."
+   }
+  ]
+ },
+ {
+  "word": "blessing",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "축복",
+  "en": "the formal act of approving",
+  "syn": [
+   "approval",
+   "approving"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Having good health is a blessing.",
+    "ko": "건강한 것은 축복이에요."
+   }
+  ]
+ },
+ {
+  "word": "blind",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "눈이 먼",
+  "en": "unable to see",
+  "syn": [
+   "unsighted"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The old man is blind.",
+    "ko": "그 노인은 눈이 멀었어요."
+   }
+  ]
+ },
+ {
   "word": "block",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A1",
-  "ko": "구역; 덩어리",
+  "ko": "막다, 블록",
   "en": "a solid piece of something (usually having flat rectangular sides)",
   "syn": [],
   "ant": [],
@@ -8375,8 +10286,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The pyramids were built with large stone blocks.",
-    "ko": "피라미드는 큰 돌덩이로 지어졌다."
+    "en": "A tree blocked the road.",
+    "ko": "나무가 도로를 막았어요."
    }
   ]
  },
@@ -8387,7 +10298,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "구역; 덩어리",
+  "ko": "막다, 블록",
   "en": "render unsuitable for passage",
   "syn": [
    "barricade",
@@ -8400,8 +10311,50 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The pyramids were built with large stone blocks.",
-    "ko": "피라미드는 큰 돌덩이로 지어졌다."
+    "en": "A tree blocked the road.",
+    "ko": "나무가 도로를 막았어요."
+   }
+  ]
+ },
+ {
+  "word": "blog",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "블로그",
+  "en": "a shared on-line journal where people can post diary entries about their personal experiences and hobbies",
+  "syn": [
+   "web_log"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She writes a travel blog.",
+    "ko": "그녀는 여행 블로그를 써요."
+   }
+  ]
+ },
+ {
+  "word": "blogger",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "블로거",
+  "en": "a person who keeps and updates a blog",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He is a famous food blogger.",
+    "ko": "그는 유명한 음식 블로거예요."
    }
   ]
  },
@@ -8534,13 +10487,37 @@ window.SEED = [
   ]
  },
  {
+  "word": "blush",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "얼굴이 붉어지다",
+  "en": "a rosy color (especially in the cheeks) taken as a sign of good health",
+  "syn": [
+   "bloom",
+   "flush",
+   "rosiness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She blushed when he complimented her.",
+    "ko": "그녀는 그가 칭찬하자 얼굴이 붉어졌어요."
+   }
+  ]
+ },
+ {
   "word": "board",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A1",
-  "ko": "판자; 위원회",
+  "ko": "탑승하다, 판",
   "en": "a committee having supervisory powers",
   "syn": [],
   "ant": [],
@@ -8548,8 +10525,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The board has seven members.",
-    "ko": "그 위원회는 7명으로 구성되어 있다."
+    "en": "Passengers can board the plane now.",
+    "ko": "승객들은 지금 비행기에 탑승할 수 있어요."
    }
   ]
  },
@@ -8560,7 +10537,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "판자; 위원회",
+  "ko": "탑승하다, 판",
   "en": "get on board of (trains, buses, ships, aircraft, etc.)",
   "syn": [
    "get_on"
@@ -8570,8 +10547,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The board has seven members.",
-    "ko": "그 위원회는 7명으로 구성되어 있다."
+    "en": "Passengers can board the plane now.",
+    "ko": "승객들은 지금 비행기에 탑승할 수 있어요."
    }
   ]
  },
@@ -8594,6 +10571,31 @@ window.SEED = [
    {
     "en": "We played a board game after dinner.",
     "ko": "우리는 저녁 식사 후 보드게임을 했어요."
+   }
+  ]
+ },
+ {
+  "word": "boast",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "자랑하다",
+  "en": "show off",
+  "syn": [
+   "tout",
+   "swash",
+   "shoot_a_line",
+   "brag"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He boasted about his new car.",
+    "ko": "그는 새 차에 대해 자랑했어요."
    }
   ]
  },
@@ -8683,6 +10685,91 @@ window.SEED = [
   ]
  },
  {
+  "word": "bold",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "대담한, 굵은 글씨의",
+  "en": "fearless and daring",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It was a bold decision.",
+    "ko": "그것은 대담한 결정이었어요."
+   }
+  ]
+ },
+ {
+  "word": "boldly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "대담하게",
+  "en": "with boldness, in a bold manner",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She spoke boldly in front of everyone.",
+    "ko": "그녀는 모두 앞에서 대담하게 말했어요."
+   }
+  ]
+ },
+ {
+  "word": "bomb",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "폭탄, 폭격하다",
+  "en": "throw bombs at or attack with bombs",
+  "syn": [
+   "bombard"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The city was destroyed by bombs.",
+    "ko": "그 도시는 폭탄으로 파괴되었어요."
+   }
+  ]
+ },
+ {
+  "word": "bond",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "유대, 채권",
+  "en": "an electrical force linking atoms",
+  "syn": [
+   "chemical_bond"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They have a strong bond of friendship.",
+    "ko": "그들은 강한 우정의 유대를 가지고 있어요."
+   }
+  ]
+ },
+ {
   "word": "bone",
   "ipa": "",
   "pos": [
@@ -8733,7 +10820,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A1",
-  "ko": "책",
+  "ko": "예약하다",
   "en": "a written work or composition that has been published (printed on pages bound together)",
   "syn": [],
   "ant": [],
@@ -8741,8 +10828,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I am reading a good book on economics.",
-    "ko": "나는 경제학에 관한 좋은 책을 읽고 있다."
+    "en": "I booked a table for two.",
+    "ko": "저는 두 명을 위한 테이블을 예약했어요."
    }
   ]
  },
@@ -8753,7 +10840,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "책",
+  "ko": "예약하다",
   "en": "engage for a performance",
   "syn": [],
   "ant": [],
@@ -8761,8 +10848,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I am reading a good book on economics.",
-    "ko": "나는 경제학에 관한 좋은 책을 읽고 있다."
+    "en": "I booked a table for two.",
+    "ko": "저는 두 명을 위한 테이블을 예약했어요."
    }
   ]
  },
@@ -8783,6 +10870,28 @@ window.SEED = [
    {
     "en": "The books are on the bookcase.",
     "ko": "책들이 책장에 있어요."
+   }
+  ]
+ },
+ {
+  "word": "booking",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "예약",
+  "en": "employment for performers or performing groups that lasts for a limited period of time",
+  "syn": [
+   "engagement"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I made a booking for tonight.",
+    "ko": "저는 오늘 밤 예약을 했어요."
    }
   ]
  },
@@ -8853,6 +10962,97 @@ window.SEED = [
   ]
  },
  {
+  "word": "boom",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "호황, 쾅 하는 소리",
+  "en": "a deep prolonged loud noise",
+  "syn": [
+   "roar",
+   "roaring",
+   "thunder"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The economy is experiencing a boom.",
+    "ko": "경제가 호황을 누리고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "boot",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "부츠, 장화",
+  "en": "footwear that covers the whole foot and lower leg",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She wore leather boots.",
+    "ko": "그녀는 가죽 부츠를 착용했어요."
+   }
+  ]
+ },
+ {
+  "word": "border",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "국경, 경계",
+  "en": "a line that indicates a boundary",
+  "syn": [
+   "boundary_line",
+   "borderline",
+   "delimitation",
+   "mete"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The two countries share a border.",
+    "ko": "그 두 나라는 국경을 공유해요."
+   }
+  ]
+ },
+ {
+  "word": "bore",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "지루하게 하다",
+  "en": "cause to be bored",
+  "syn": [
+   "tire"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The long lecture bored the students.",
+    "ko": "긴 강의가 학생들을 지루하게 했어요."
+   }
+  ]
+ },
+ {
   "word": "bored",
   "ipa": "",
   "pos": [
@@ -8871,6 +11071,29 @@ window.SEED = [
    {
     "en": "I feel bored on rainy days.",
     "ko": "저는 비 오는 날에 지루함을 느껴요."
+   }
+  ]
+ },
+ {
+  "word": "boredom",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "지루함",
+  "en": "the feeling of being bored by something tedious",
+  "syn": [
+   "ennui",
+   "tedium"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She felt boredom during the meeting.",
+    "ko": "그녀는 회의 중에 지루함을 느꼈어요."
    }
   ]
  },
@@ -8973,7 +11196,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "A2",
-  "ko": "귀찮게 하다, 신경 쓰다",
+  "ko": "성가심, 귀찮음",
   "en": "take the trouble to do something",
   "syn": [
    "trouble_oneself",
@@ -8985,8 +11208,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Sorry to bother you, but I have a question.",
-    "ko": "귀찮게 해서 죄송하지만 질문이 있어요."
+    "en": "It's no bother at all.",
+    "ko": "전혀 귀찮지 않아요."
    }
   ]
  },
@@ -8997,7 +11220,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "귀찮게 하다, 신경 쓰다",
+  "ko": "성가심, 귀찮음",
   "en": "an angry disturbance",
   "syn": [
    "fuss",
@@ -9009,8 +11232,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Sorry to bother you, but I have a question.",
-    "ko": "귀찮게 해서 죄송하지만 질문이 있어요."
+    "en": "It's no bother at all.",
+    "ko": "전혀 귀찮지 않아요."
    }
   ]
  },
@@ -9058,13 +11281,80 @@ window.SEED = [
   ]
  },
  {
+  "word": "bounce",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "튀다, 튀기다",
+  "en": "spring back",
+  "syn": [
+   "resile",
+   "take_a_hop",
+   "spring",
+   "bound"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The ball bounced off the wall.",
+    "ko": "공이 벽에 맞고 튀었어요."
+   }
+  ]
+ },
+ {
+  "word": "bound",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "묶인, ~할 가능성이 큰",
+  "en": "confined by bonds",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is bound to succeed with such talent.",
+    "ko": "그녀는 그런 재능이면 성공할 가능성이 커요."
+   }
+  ]
+ },
+ {
+  "word": "bow",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "리본 매듭, 절하다",
+  "en": "a knot with two loops and loose ends",
+  "syn": [
+   "bowknot"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She tied her hair with a bow.",
+    "ko": "그녀는 리본으로 머리를 묶었어요."
+   }
+  ]
+ },
+ {
   "word": "bowl",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A1",
-  "ko": "그릇, 사발",
+  "ko": "그릇, 볼링을 치다",
   "en": "a round vessel that is open at the top",
   "syn": [],
   "ant": [],
@@ -9072,8 +11362,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She poured cereal into a bowl.",
-    "ko": "그녀는 그릇에 시리얼을 부었다."
+    "en": "Put the soup in a bowl.",
+    "ko": "수프를 그릇에 담으세요."
    }
   ]
  },
@@ -9084,7 +11374,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "그릇, 사발",
+  "ko": "그릇, 볼링을 치다",
   "en": "roll (a ball)",
   "syn": [],
   "ant": [],
@@ -9092,8 +11382,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She poured cereal into a bowl.",
-    "ko": "그녀는 그릇에 시리얼을 부었다."
+    "en": "Put the soup in a bowl.",
+    "ko": "수프를 그릇에 담으세요."
    }
   ]
  },
@@ -9114,6 +11404,29 @@ window.SEED = [
    {
     "en": "He put the toys in a box.",
     "ko": "그는 장난감을 상자에 넣었다."
+   }
+  ]
+ },
+ {
+  "word": "boxing",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "권투",
+  "en": "fighting with the fists",
+  "syn": [
+   "pugilism",
+   "fisticuffs"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He trains in boxing every day.",
+    "ko": "그는 매일 권투 훈련을 해요."
    }
   ]
  },
@@ -9187,6 +11500,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "bracelet",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "팔찌",
+  "en": "a band of cloth or leather or metal links attached to a wristwatch and wrapped around the wrist",
+  "syn": [
+   "watchband",
+   "watchstrap",
+   "wristband",
+   "watch_bracelet"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She wore a silver bracelet.",
+    "ko": "그녀는 은색 팔찌를 착용했어요."
+   }
+  ]
+ },
+ {
   "word": "brain",
   "ipa": "",
   "pos": [
@@ -9232,6 +11570,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "brainstorming",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "브레인스토밍",
+  "en": "a group problem-solving technique in which members spontaneously share ideas and solutions",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We had a brainstorming session for new ideas.",
+    "ko": "우리는 새로운 아이디어를 위한 브레인스토밍 세션을 가졌어요."
+   }
+  ]
+ },
+ {
   "word": "brake",
   "ipa": "",
   "pos": [
@@ -9258,7 +11616,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "가지, 지점",
+  "ko": "가지를 뻗다, 갈라지다",
   "en": "a division of some larger or more complex organization",
   "syn": [
    "subdivision",
@@ -9269,8 +11627,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The bird sat on a branch.",
-    "ko": "새가 나뭇가지에 앉았어요."
+    "en": "The tree branches out in all directions.",
+    "ko": "그 나무는 사방으로 가지를 뻗어요."
    }
   ]
  },
@@ -9281,7 +11639,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "가지, 지점",
+  "ko": "가지를 뻗다, 갈라지다",
   "en": "grow and send out branches or branch-like structures",
   "syn": [
    "ramify"
@@ -9291,8 +11649,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The bird sat on a branch.",
-    "ko": "새가 나뭇가지에 앉았어요."
+    "en": "The tree branches out in all directions.",
+    "ko": "그 나무는 사방으로 가지를 뻗어요."
    }
   ]
  },
@@ -9321,6 +11679,50 @@ window.SEED = [
   ]
  },
  {
+  "word": "brand-new",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "새로 나온, 신품의",
+  "en": "conspicuously new",
+  "syn": [
+   "bran-new",
+   "spic-and-span",
+   "spick-and-span"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She bought a brand-new laptop.",
+    "ko": "그녀는 신품 노트북을 샀어요."
+   }
+  ]
+ },
+ {
+  "word": "brass",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "황동, 놋쇠",
+  "en": "an alloy of copper and zinc",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The instrument is made of brass.",
+    "ko": "그 악기는 황동으로 만들어졌어요."
+   }
+  ]
+ },
+ {
   "word": "brave",
   "ipa": "",
   "pos": [
@@ -9339,6 +11741,28 @@ window.SEED = [
    {
     "en": "The firefighter was very brave.",
     "ko": "그 소방관은 아주 용감했어요."
+   }
+  ]
+ },
+ {
+  "word": "bravely",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "용감하게",
+  "en": "in a courageous manner",
+  "syn": [
+   "courageously"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The firefighters acted bravely.",
+    "ko": "그 소방관들은 용감하게 행동했어요."
    }
   ]
  },
@@ -9426,6 +11850,71 @@ window.SEED = [
    {
     "en": "He always eats breakfast at seven.",
     "ko": "그는 항상 7시에 아침을 먹는다."
+   }
+  ]
+ },
+ {
+  "word": "breakthrough",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "돌파구, 획기적 발전",
+  "en": "a productive insight",
+  "syn": [
+   "discovery",
+   "find"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Scientists made a breakthrough in medicine.",
+    "ko": "과학자들이 의학에서 획기적인 발전을 이뤘어요."
+   }
+  ]
+ },
+ {
+  "word": "breast",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "가슴",
+  "en": "the front of the trunk from the neck to the abdomen",
+  "syn": [
+   "chest"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The bird has a red breast.",
+    "ko": "그 새는 붉은 가슴을 가지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "breath",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "숨, 호흡",
+  "en": "the process of taking in and expelling air during breathing",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Take a deep breath.",
+    "ko": "깊게 숨을 쉬세요."
    }
   ]
  },
