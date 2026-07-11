@@ -1,6 +1,6 @@
 /* ============================================================================
    EN Vocab — 시드 데이터 (pipeline/merge_cefrj.js 자동 생성)
-   생성: 2026-07-11 · 표제어 3103개 (CEFR-J 전체 후보 4762개 중 작성 완료분)
+   생성: 2026-07-11 · 표제어 3224개 (CEFR-J 전체 후보 4762개 중 작성 완료분)
    ----------------------------------------------------------------------------
    표제어/CEFR/품사 = CEFR-J Wordlist(Tono Lab, TUFS — 연구·상업 무료, 출처 표시 조건)
    영영 정의(en)/유의어(syn) = WordNet 3.0(Princeton, 오프라인 추출)
@@ -23687,13 +23687,33 @@ window.SEED = [
   ]
  },
  {
+  "word": "deaf",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "청각 장애가 있는",
+  "en": "lacking or deprived of the sense of hearing wholly or in part",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He has been deaf since birth.",
+    "ko": "그는 태어날 때부터 청각 장애가 있었어요."
+   }
+  ]
+ },
+ {
   "word": "deal",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "거래, 대처하다",
+  "ko": "다루다, 처리하다",
   "en": "a particular instance of buying or selling",
   "syn": [
    "trade",
@@ -23704,8 +23724,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "We made a good deal on the car.",
-    "ko": "우리는 그 차로 좋은 거래를 했어요."
+    "en": "I need to deal with this problem now.",
+    "ko": "저는 지금 이 문제를 처리해야 해요."
    }
   ]
  },
@@ -23716,7 +23736,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "거래, 대처하다",
+  "ko": "다루다, 처리하다",
   "en": "act on verbally or in some form of artistic expression",
   "syn": [
    "cover",
@@ -23729,8 +23749,32 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "We made a good deal on the car.",
-    "ko": "우리는 그 차로 좋은 거래를 했어요."
+    "en": "I need to deal with this problem now.",
+    "ko": "저는 지금 이 문제를 처리해야 해요."
+   }
+  ]
+ },
+ {
+  "word": "dealer",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "판매업자, 딜러",
+  "en": "someone who purchases and maintains an inventory of goods to be sold",
+  "syn": [
+   "trader",
+   "bargainer",
+   "monger"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He is a car dealer.",
+    "ko": "그는 자동차 판매업자예요."
    }
   ]
  },
@@ -23804,6 +23848,51 @@ window.SEED = [
   ]
  },
  {
+  "word": "debris",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "잔해, 파편",
+  "en": "the remains of something that has been destroyed or broken up",
+  "syn": [
+   "dust",
+   "junk",
+   "rubble",
+   "detritus"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The road was covered with debris after the storm.",
+    "ko": "폭풍 후 도로는 잔해로 뒤덮였어요."
+   }
+  ]
+ },
+ {
+  "word": "debt",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "빚, 부채",
+  "en": "the state of owing something (especially money)",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She paid off her debt last year.",
+    "ko": "그녀는 작년에 빚을 다 갚았어요."
+   }
+  ]
+ },
+ {
   "word": "December",
   "ipa": "",
   "pos": [
@@ -23845,6 +23934,164 @@ window.SEED = [
    {
     "en": "I decided to study abroad.",
     "ko": "저는 해외에서 공부하기로 결정했어요."
+   }
+  ]
+ },
+ {
+  "word": "decision",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "결정",
+  "en": "the act of making up your mind about something",
+  "syn": [
+   "determination",
+   "conclusion"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It was a difficult decision to make.",
+    "ko": "그것은 내리기 어려운 결정이었어요."
+   }
+  ]
+ },
+ {
+  "word": "declaration",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "선언",
+  "en": "a statement that is emphatic and explicit (spoken or written)",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They signed a declaration of independence.",
+    "ko": "그들은 독립 선언문에 서명했어요."
+   }
+  ]
+ },
+ {
+  "word": "declare",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "선언하다, 신고하다",
+  "en": "state emphatically and authoritatively",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Do you have anything to declare at customs?",
+    "ko": "세관에 신고할 것이 있으세요?"
+   }
+  ]
+ },
+ {
+  "word": "decline",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "감소, 거절하다",
+  "en": "change toward something smaller or lower",
+  "syn": [
+   "diminution"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was a decline in sales this year.",
+    "ko": "올해 매출이 감소했어요."
+   }
+  ]
+ },
+ {
+  "word": "decrease",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "감소하다",
+  "en": "decrease in size, extent, or range",
+  "syn": [
+   "diminish",
+   "lessen",
+   "fall"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Prices decreased last month.",
+    "ko": "지난달 가격이 감소했어요."
+   }
+  ]
+ },
+ {
+  "word": "dedicate",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "헌신하다, 바치다",
+  "en": "give entirely to a specific person, activity, or cause",
+  "syn": [
+   "give",
+   "consecrate",
+   "commit",
+   "devote"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She dedicated her life to helping others.",
+    "ko": "그녀는 다른 사람들을 돕는 데 자신의 삶을 헌신했어요."
+   }
+  ]
+ },
+ {
+  "word": "deed",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "행위, 증서",
+  "en": "a legal document signed and sealed and delivered to effect a transfer of property and to show the legal right to possess it",
+  "syn": [
+   "deed_of_conveyance",
+   "title"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It was a kind deed to help the old man.",
+    "ko": "그 노인을 도운 것은 친절한 행위였어요."
    }
   ]
  },
@@ -23894,6 +24141,234 @@ window.SEED = [
   ]
  },
  {
+  "word": "defeat",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "패배시키다, 이기다",
+  "en": "win a victory over",
+  "syn": [
+   "get_the_better_of",
+   "overcome"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Our team defeated the champions.",
+    "ko": "우리 팀이 챔피언을 이겼어요."
+   }
+  ]
+ },
+ {
+  "word": "defend",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "방어하다, 변호하다",
+  "en": "argue or speak in defense of",
+  "syn": [
+   "support",
+   "fend_for"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The lawyer defended her client well.",
+    "ko": "그 변호사는 의뢰인을 잘 변호했어요."
+   }
+  ]
+ },
+ {
+  "word": "defender",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "수비수, 방어자",
+  "en": "a person who cares for persons or property",
+  "syn": [
+   "guardian",
+   "protector",
+   "shielder"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He plays as a defender on the team.",
+    "ko": "그는 팀에서 수비수로 뛰어요."
+   }
+  ]
+ },
+ {
+  "word": "defense",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "방어, 국방",
+  "en": "(military) military action or resources protecting a country against potential enemies",
+  "syn": [
+   "defence",
+   "defensive_measure"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The country increased its defense budget.",
+    "ko": "그 나라는 국방 예산을 늘렸어요."
+   }
+  ]
+ },
+ {
+  "word": "deficiency",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "결핍, 부족",
+  "en": "the state of needing something that is absent or unavailable",
+  "syn": [
+   "lack",
+   "want"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He has a vitamin deficiency.",
+    "ko": "그는 비타민 결핍이 있어요."
+   }
+  ]
+ },
+ {
+  "word": "define",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "정의하다",
+  "en": "determine the essential quality of",
+  "syn": [
+   "specify",
+   "delineate",
+   "delimit",
+   "delimitate"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Can you define this word for me?",
+    "ko": "이 단어를 저에게 정의해 주시겠어요?"
+   }
+  ]
+ },
+ {
+  "word": "definite",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "확실한, 명확한",
+  "en": "precise",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We need a definite answer today.",
+    "ko": "우리는 오늘 확실한 답이 필요해요."
+   }
+  ]
+ },
+ {
+  "word": "definite article",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "정관사",
+  "en": "a determiner (as `the' in English) that indicates specificity of reference",
+  "syn": [
+   "definite_article"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "\"The\" is the definite article in English.",
+    "ko": "'the'는 영어의 정관사예요."
+   }
+  ]
+ },
+ {
+  "word": "definitely",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "확실히, 분명히",
+  "en": "without question and beyond doubt",
+  "syn": [
+   "decidedly",
+   "unquestionably",
+   "emphatically",
+   "in_spades"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I will definitely come to the party.",
+    "ko": "저는 확실히 파티에 갈 거예요."
+   }
+  ]
+ },
+ {
+  "word": "definition",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "정의, 뜻풀이",
+  "en": "a concise explanation of the meaning of a word or phrase or symbol",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Look up the definition in the dictionary.",
+    "ko": "사전에서 정의를 찾아보세요."
+   }
+  ]
+ },
+ {
   "word": "degree",
   "ipa": "",
   "pos": [
@@ -23923,7 +24398,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "지연",
+  "ko": "지연시키다",
   "en": "time during which some action is awaited",
   "syn": [
    "hold",
@@ -23948,7 +24423,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "지연",
+  "ko": "지연시키다",
   "en": "cause to be slowed down or delayed",
   "syn": [
    "detain",
@@ -23961,6 +24436,48 @@ window.SEED = [
    {
     "en": "The flight was delayed due to weather.",
     "ko": "그 비행편은 날씨 때문에 지연되었어요."
+   }
+  ]
+ },
+ {
+  "word": "delete",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "삭제하다",
+  "en": "remove or make invisible",
+  "syn": [
+   "cancel"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I accidentally deleted the file.",
+    "ko": "저는 실수로 파일을 삭제했어요."
+   }
+  ]
+ },
+ {
+  "word": "delicate",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "섬세한, 연약한",
+  "en": "exquisitely fine and subtle and pleasing",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This fabric is very delicate.",
+    "ko": "이 천은 아주 섬세해요."
    }
   ]
  },
@@ -23983,6 +24500,223 @@ window.SEED = [
    {
     "en": "This soup is delicious.",
     "ko": "이 수프는 맛있다."
+   }
+  ]
+ },
+ {
+  "word": "delight",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "기쁨, 즐거움",
+  "en": "a feeling of extreme pleasure or satisfaction",
+  "syn": [
+   "delectation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The children screamed with delight.",
+    "ko": "아이들은 기쁨의 소리를 질렀어요."
+   }
+  ]
+ },
+ {
+  "word": "delighted",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "기쁜, 즐거운",
+  "en": "greatly pleased",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I am delighted to meet you.",
+    "ko": "만나서 기뻐요."
+   }
+  ]
+ },
+ {
+  "word": "delightful",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "기분 좋은, 즐거운",
+  "en": "greatly pleasing or entertaining",
+  "syn": [
+   "delicious"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We had a delightful evening.",
+    "ko": "우리는 즐거운 저녁을 보냈어요."
+   }
+  ]
+ },
+ {
+  "word": "deliver",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "배달하다, 전달하다",
+  "en": "deliver (a speech, oration, or idea)",
+  "syn": [
+   "present"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They deliver groceries to your door.",
+    "ko": "그들은 식료품을 문 앞까지 배달해줘요."
+   }
+  ]
+ },
+ {
+  "word": "delivery",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "배달",
+  "en": "the act of delivering or distributing something (as goods or mail)",
+  "syn": [
+   "bringing"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The delivery will arrive tomorrow.",
+    "ko": "배달은 내일 도착할 거예요."
+   }
+  ]
+ },
+ {
+  "word": "demand",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "요구, 수요",
+  "en": "an urgent or peremptory request",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There is high demand for this product.",
+    "ko": "이 제품에 대한 수요가 높아요."
+   }
+  ]
+ },
+ {
+  "word": "democracy",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "민주주의",
+  "en": "the political orientation of those who favor government by the people or by their elected representatives",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This country has a strong democracy.",
+    "ko": "이 나라는 강한 민주주의를 가지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "democratic",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "민주적인",
+  "en": "characterized by or advocating or based upon the principles of democracy or social equality",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They held a democratic election.",
+    "ko": "그들은 민주적인 선거를 치렀어요."
+   }
+  ]
+ },
+ {
+  "word": "demonstrate",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "시연하다, 보여주다",
+  "en": "give an exhibition of to an interested audience",
+  "syn": [
+   "show",
+   "demo",
+   "exhibit",
+   "present"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She demonstrated how the machine works.",
+    "ko": "그녀는 그 기계가 어떻게 작동하는지 시연했어요."
+   }
+  ]
+ },
+ {
+  "word": "demonstration",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "시연, 시위",
+  "en": "a show or display",
+  "syn": [
+   "presentation",
+   "presentment"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was a demonstration downtown today.",
+    "ko": "오늘 시내에서 시위가 있었어요."
    }
   ]
  },
@@ -24010,6 +24744,71 @@ window.SEED = [
   ]
  },
  {
+  "word": "deny",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "부인하다",
+  "en": "declare untrue",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He denied stealing the money.",
+    "ko": "그는 돈을 훔쳤다는 것을 부인했어요."
+   }
+  ]
+ },
+ {
+  "word": "depart",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "출발하다, 떠나다",
+  "en": "move away from a place into another direction",
+  "syn": [
+   "go",
+   "go_away"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The train departs at nine o'clock.",
+    "ko": "그 기차는 9시에 출발해요."
+   }
+  ]
+ },
+ {
+  "word": "department",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "부서, 학과",
+  "en": "a specialized division of a large organization",
+  "syn": [
+   "section"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She works in the sales department.",
+    "ko": "그녀는 영업 부서에서 일해요."
+   }
+  ]
+ },
+ {
   "word": "department store",
   "ipa": "",
   "pos": [
@@ -24033,6 +24832,30 @@ window.SEED = [
   ]
  },
  {
+  "word": "departure",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "출발",
+  "en": "the act of departing",
+  "syn": [
+   "going",
+   "going_away",
+   "leaving"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Check the departure time before you leave.",
+    "ko": "떠나기 전에 출발 시간을 확인하세요."
+   }
+  ]
+ },
+ {
   "word": "depend",
   "ipa": "",
   "pos": [
@@ -24049,6 +24872,183 @@ window.SEED = [
    {
     "en": "It depends on the weather.",
     "ko": "그것은 날씨에 달려 있어요."
+   }
+  ]
+ },
+ {
+  "word": "dependent",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "의존하는",
+  "en": "relying on or requiring a person or thing for support, supply, or what is needed",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The baby is completely dependent on its mother.",
+    "ko": "그 아기는 엄마에게 완전히 의존해요."
+   }
+  ]
+ },
+ {
+  "word": "deposit",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "보증금, 입금하다",
+  "en": "the phenomenon of sediment or gravel accumulating",
+  "syn": [
+   "sedimentation",
+   "alluviation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I paid a deposit for the apartment.",
+    "ko": "저는 아파트를 위해 보증금을 냈어요."
+   }
+  ]
+ },
+ {
+  "word": "depressed",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "우울한",
+  "en": "lower than previously",
+  "syn": [
+   "down(p)"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She felt depressed after losing her job.",
+    "ko": "그녀는 직장을 잃은 후 우울함을 느꼈어요."
+   }
+  ]
+ },
+ {
+  "word": "depressing",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "우울하게 하는",
+  "en": "causing sad feelings of gloom and inadequacy",
+  "syn": [
+   "cheerless",
+   "uncheerful"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This news is really depressing.",
+    "ko": "이 소식은 정말 우울하게 해요."
+   }
+  ]
+ },
+ {
+  "word": "depression",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "우울증",
+  "en": "a mental state characterized by a pessimistic sense of inadequacy and a despondent lack of activity",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He is being treated for depression.",
+    "ko": "그는 우울증 치료를 받고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "deprive",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "박탈하다",
+  "en": "take away possessions from someone",
+  "syn": [
+   "strip",
+   "divest"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The illness deprived her of energy.",
+    "ko": "그 병은 그녀에게서 활력을 빼앗아갔어요."
+   }
+  ]
+ },
+ {
+  "word": "depth",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "깊이",
+  "en": "the extent downward or backward or inward",
+  "syn": [
+   "deepness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The depth of this pool is two meters.",
+    "ko": "이 수영장의 깊이는 2미터예요."
+   }
+  ]
+ },
+ {
+  "word": "derive",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "유래하다, 이끌어내다",
+  "en": "reason by deduction",
+  "syn": [
+   "deduce",
+   "infer",
+   "deduct"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This word derives from Latin.",
+    "ko": "이 단어는 라틴어에서 유래해요."
    }
   ]
  },
@@ -24118,13 +25118,35 @@ window.SEED = [
   ]
  },
  {
+  "word": "deserve",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "~할 자격이 있다",
+  "en": "be worthy or deserving",
+  "syn": [
+   "merit"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "You deserve a break after all this work.",
+    "ko": "이 모든 일을 한 후에는 휴식을 취할 자격이 있어요."
+   }
+  ]
+ },
+ {
   "word": "design",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A1",
-  "ko": "디자인, 설계",
+  "ko": "디자인하다, 설계하다",
   "en": "the act of working out the form of something (as by making a sketch or outline or plan)",
   "syn": [
    "designing"
@@ -24134,8 +25156,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "He contributed to the design of a new instrument.",
-    "ko": "그는 새 기기의 설계에 기여했다."
+    "en": "She designed the new logo.",
+    "ko": "그녀는 새 로고를 디자인했어요."
    }
   ]
  },
@@ -24146,7 +25168,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "디자인, 설계",
+  "ko": "디자인하다, 설계하다",
   "en": "make or work out a plan for",
   "syn": [
    "plan",
@@ -24158,8 +25180,50 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "He contributed to the design of a new instrument.",
-    "ko": "그는 새 기기의 설계에 기여했다."
+    "en": "She designed the new logo.",
+    "ko": "그녀는 새 로고를 디자인했어요."
+   }
+  ]
+ },
+ {
+  "word": "designer",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "디자이너",
+  "en": "a person who specializes in interior design",
+  "syn": [
+   "interior_designer"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He is a famous fashion designer.",
+    "ko": "그는 유명한 패션 디자이너예요."
+   }
+  ]
+ },
+ {
+  "word": "desire",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "욕구, 바람",
+  "en": "the feeling that accompanies an unsatisfied state",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has a strong desire to travel.",
+    "ko": "그녀는 여행에 대한 강한 욕구를 가지고 있어요."
    }
   ]
  },
@@ -24180,6 +25244,72 @@ window.SEED = [
    {
     "en": "She sat at her desk and studied.",
     "ko": "그녀는 책상에 앉아 공부했다."
+   }
+  ]
+ },
+ {
+  "word": "despair",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "절망",
+  "en": "a state in which all hope is lost or absent",
+  "syn": [
+   "desperation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He felt despair after losing everything.",
+    "ko": "그는 모든 것을 잃은 후 절망을 느꼈어요."
+   }
+  ]
+ },
+ {
+  "word": "desperate",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "필사적인, 절박한",
+  "en": "arising from or marked by despair or loss of hope",
+  "syn": [
+   "despairing"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She was desperate to find a job.",
+    "ko": "그녀는 일자리를 찾는 데 절박했어요."
+   }
+  ]
+ },
+ {
+  "word": "despite",
+  "ipa": "",
+  "pos": [],
+  "cefr": "B1",
+  "ko": "~에도 불구하고",
+  "en": "in spite of; without being affected by",
+  "syn": [
+   "contempt",
+   "disdain",
+   "scorn"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Despite the rain, we went hiking.",
+    "ko": "비가 왔음에도 불구하고 우리는 하이킹을 갔어요."
    }
   ]
  },
@@ -24207,6 +25337,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "destination",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "목적지",
+  "en": "the place designated as the end (as of a race or journey)",
+  "syn": [
+   "finish",
+   "goal"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Our final destination is Paris.",
+    "ko": "우리의 최종 목적지는 파리예요."
+   }
+  ]
+ },
+ {
   "word": "destroy",
   "ipa": "",
   "pos": [
@@ -24225,6 +25378,48 @@ window.SEED = [
    {
     "en": "The fire destroyed the whole building.",
     "ko": "화재가 건물 전체를 파괴했어요."
+   }
+  ]
+ },
+ {
+  "word": "destruction",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "파괴",
+  "en": "the termination of something by causing so much damage to it that it cannot be repaired or no longer exists",
+  "syn": [
+   "devastation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The war caused massive destruction.",
+    "ko": "그 전쟁은 대규모 파괴를 초래했어요."
+   }
+  ]
+ },
+ {
+  "word": "destructive",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "파괴적인",
+  "en": "causing destruction or much damage",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The storm was very destructive.",
+    "ko": "그 폭풍은 아주 파괴적이었어요."
    }
   ]
  },
@@ -24248,6 +25443,124 @@ window.SEED = [
    {
     "en": "Please explain in detail.",
     "ko": "자세히 설명해 주세요."
+   }
+  ]
+ },
+ {
+  "word": "detective",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "형사, 탐정",
+  "en": "a police officer who investigates crimes",
+  "syn": [
+   "investigator",
+   "tec",
+   "police_detective"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The detective solved the case quickly.",
+    "ko": "그 형사는 사건을 빠르게 해결했어요."
+   }
+  ]
+ },
+ {
+  "word": "determination",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "결단력, 결의",
+  "en": "the act of determining the properties of something, usually by research or calculation",
+  "syn": [
+   "finding"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She showed great determination to succeed.",
+    "ko": "그녀는 성공하려는 큰 결의를 보였어요."
+   }
+  ]
+ },
+ {
+  "word": "determine",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "결정하다, 알아내다",
+  "en": "establish after a calculation, investigation, experiment, survey, or study",
+  "syn": [
+   "find",
+   "find_out",
+   "ascertain"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We need to determine the cause of the problem.",
+    "ko": "우리는 문제의 원인을 알아내야 해요."
+   }
+  ]
+ },
+ {
+  "word": "devastate",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "황폐화시키다, 초토화하다",
+  "en": "cause extensive destruction or ruin utterly",
+  "syn": [
+   "lay_waste_to",
+   "waste",
+   "desolate",
+   "ravage"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The hurricane devastated the coastal town.",
+    "ko": "그 허리케인은 해안 마을을 초토화시켰어요."
+   }
+  ]
+ },
+ {
+  "word": "devastating",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "파괴적인, 충격적인",
+  "en": "making light of",
+  "syn": [
+   "annihilating",
+   "withering"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The news was devastating for the family.",
+    "ko": "그 소식은 가족에게 충격적이었어요."
    }
   ]
  },
@@ -24292,6 +25605,154 @@ window.SEED = [
   ]
  },
  {
+  "word": "development",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "발전, 개발",
+  "en": "act of improving by expanding or enlarging or refining",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is an important development for the company.",
+    "ko": "이것은 회사에 중요한 발전이에요."
+   }
+  ]
+ },
+ {
+  "word": "device",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "장치, 기기",
+  "en": "an instrumentality invented for a particular purpose",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This device measures blood pressure.",
+    "ko": "이 장치는 혈압을 측정해요."
+   }
+  ]
+ },
+ {
+  "word": "devotion",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "헌신, 애정",
+  "en": "feelings of ardent love",
+  "syn": [
+   "devotedness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She showed great devotion to her family.",
+    "ko": "그녀는 가족에게 큰 헌신을 보였어요."
+   }
+  ]
+ },
+ {
+  "word": "diagram",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "도표, 도해",
+  "en": "a drawing intended to explain how something works",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The diagram shows how the engine works.",
+    "ko": "그 도표는 엔진이 어떻게 작동하는지 보여줘요."
+   }
+  ]
+ },
+ {
+  "word": "dial",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "다이얼, 전화를 걸다",
+  "en": "operate a dial to select a telephone number",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Dial this number to reach me.",
+    "ko": "저에게 연락하려면 이 번호로 전화하세요."
+   }
+  ]
+ },
+ {
+  "word": "dialog",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "대화",
+  "en": "a conversation between two persons",
+  "syn": [
+   "dialogue",
+   "duologue"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The movie has great dialog.",
+    "ko": "그 영화는 훌륭한 대화가 있어요."
+   }
+  ]
+ },
+ {
+  "word": "diameter",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "지름, 직경",
+  "en": "the length of a straight line passing through the center of a circle and connecting two points on the circumference",
+  "syn": [
+   "diam"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The pipe has a diameter of ten centimeters.",
+    "ko": "그 파이프는 지름이 10센티미터예요."
+   }
+  ]
+ },
+ {
   "word": "diamond",
   "ipa": "",
   "pos": [
@@ -24308,6 +25769,29 @@ window.SEED = [
    {
     "en": "She wears a diamond ring.",
     "ko": "그녀는 다이아몬드 반지를 착용해요."
+   }
+  ]
+ },
+ {
+  "word": "diaper",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "기저귀",
+  "en": "garment consisting of a folded cloth drawn up between the legs and fastened at the waist",
+  "syn": [
+   "nappy",
+   "napkin"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The baby needs a new diaper.",
+    "ko": "그 아기는 새 기저귀가 필요해요."
    }
   ]
  },
@@ -24415,6 +25899,26 @@ window.SEED = [
    {
     "en": "She is on a healthy diet.",
     "ko": "그녀는 건강한 식단을 하고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "differ",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "다르다",
+  "en": "be different",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Our opinions differ on this topic.",
+    "ko": "이 주제에 대해 우리의 의견이 달라요."
    }
   ]
  },
@@ -24542,8 +26046,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The dog began to dig a hole in the yard.",
-    "ko": "그 개는 마당에 구멍을 파기 시작했다."
+    "en": "The dog is digging a hole in the yard.",
+    "ko": "개가 마당에 구멍을 파고 있어요."
    }
   ]
  },
@@ -24566,8 +26070,28 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The dog began to dig a hole in the yard.",
-    "ko": "그 개는 마당에 구멍을 파기 시작했다."
+    "en": "The dog is digging a hole in the yard.",
+    "ko": "개가 마당에 구멍을 파고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "digital",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "디지털의",
+  "en": "displaying numbers rather than scale positions",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She bought a digital camera.",
+    "ko": "그녀는 디지털 카메라를 샀어요."
    }
   ]
  },
@@ -24590,6 +26114,48 @@ window.SEED = [
    {
     "en": "I bought a new digital camera.",
     "ko": "저는 새 디지털 카메라를 샀어요."
+   }
+  ]
+ },
+ {
+  "word": "diligence",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "근면, 성실",
+  "en": "conscientiousness in paying proper attention to a task",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He succeeded through diligence and hard work.",
+    "ko": "그는 근면과 노력을 통해 성공했어요."
+   }
+  ]
+ },
+ {
+  "word": "diligent",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "근면한, 성실한",
+  "en": "quietly and steadily persevering especially in detail or exactness",
+  "syn": [
+   "persevering"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a diligent student.",
+    "ko": "그녀는 성실한 학생이에요."
    }
   ]
  },
@@ -24657,13 +26223,33 @@ window.SEED = [
   ]
  },
  {
+  "word": "dioxide",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "이산화물",
+  "en": "an oxide containing two atoms of oxygen in the molecule",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Plants absorb carbon dioxide.",
+    "ko": "식물은 이산화탄소를 흡수해요."
+   }
+  ]
+ },
+ {
   "word": "direct",
   "ipa": "",
   "pos": [
    "adj"
   ],
   "cefr": "A2",
-  "ko": "직접적인, 직행의",
+  "ko": "지시하다, 감독하다",
   "en": "direct in spatial dimensions",
   "syn": [],
   "ant": [],
@@ -24671,8 +26257,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "This is a direct flight to Tokyo.",
-    "ko": "이건 도쿄로 가는 직항편이에요."
+    "en": "She directs the school play every year.",
+    "ko": "그녀는 매년 학교 연극을 감독해요."
    }
   ]
  },
@@ -24683,7 +26269,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "직접적인, 직행의",
+  "ko": "지시하다, 감독하다",
   "en": "command with authority",
   "syn": [],
   "ant": [],
@@ -24691,8 +26277,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "This is a direct flight to Tokyo.",
-    "ko": "이건 도쿄로 가는 직항편이에요."
+    "en": "She directs the school play every year.",
+    "ko": "그녀는 매년 학교 연극을 감독해요."
    }
   ]
  },
@@ -24715,6 +26301,29 @@ window.SEED = [
    {
     "en": "We are going in the wrong direction.",
     "ko": "우리는 잘못된 방향으로 가고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "directly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "직접적으로, 곧바로",
+  "en": "without deviation",
+  "syn": [
+   "straight",
+   "direct"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please contact me directly.",
+    "ko": "저에게 직접 연락해 주세요."
    }
   ]
  },
@@ -24742,6 +26351,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "dirt",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "흙, 먼지",
+  "en": "the part of the earth's surface consisting of humus and disintegrated rock",
+  "syn": [
+   "soil"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There is dirt on your shoes.",
+    "ko": "당신의 신발에 흙이 묻어 있어요."
+   }
+  ]
+ },
+ {
   "word": "dirty",
   "ipa": "",
   "pos": [
@@ -24761,6 +26392,75 @@ window.SEED = [
    {
     "en": "His shoes were dirty after the hike.",
     "ko": "등산 후 그의 신발은 더러워졌다."
+   }
+  ]
+ },
+ {
+  "word": "disability",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "장애",
+  "en": "the condition of being unable to perform as a consequence of physical or mental unfitness",
+  "syn": [
+   "disablement",
+   "handicap",
+   "impairment"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He works with people with disabilities.",
+    "ko": "그는 장애가 있는 사람들과 함께 일해요."
+   }
+  ]
+ },
+ {
+  "word": "disable",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "무력화하다, 비활성화하다",
+  "en": "make unable to perform a certain action",
+  "syn": [
+   "disenable",
+   "incapacitate"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "You can disable this feature in settings.",
+    "ko": "설정에서 이 기능을 비활성화할 수 있어요."
+   }
+  ]
+ },
+ {
+  "word": "disabled",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "장애가 있는",
+  "en": "having restricted mental or physical functioning as a consequence of injury or illness",
+  "syn": [
+   "handicapped"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This bathroom is for disabled people.",
+    "ko": "이 화장실은 장애인을 위한 거예요."
    }
   ]
  },
@@ -24809,6 +26509,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "disagreement",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "의견 차이, 불일치",
+  "en": "a conflict of people's opinions or actions or characters",
+  "syn": [
+   "dissension",
+   "dissonance"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They had a disagreement about the plan.",
+    "ko": "그들은 그 계획에 대해 의견 차이가 있었어요."
+   }
+  ]
+ },
+ {
   "word": "disappear",
   "ipa": "",
   "pos": [
@@ -24828,6 +26551,28 @@ window.SEED = [
    {
     "en": "The cat disappeared into the forest.",
     "ko": "고양이가 숲속으로 사라졌어요."
+   }
+  ]
+ },
+ {
+  "word": "disappoint",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "실망시키다",
+  "en": "fail to meet the hopes or expectations of",
+  "syn": [
+   "let_down"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I don't want to disappoint my parents.",
+    "ko": "저는 부모님을 실망시키고 싶지 않아요."
    }
   ]
  },
@@ -24880,6 +26625,100 @@ window.SEED = [
   ]
  },
  {
+  "word": "disappointment",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "실망",
+  "en": "a feeling of dissatisfaction that results when your expectations are not realized",
+  "syn": [
+   "letdown"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She hid her disappointment well.",
+    "ko": "그녀는 실망을 잘 숨겼어요."
+   }
+  ]
+ },
+ {
+  "word": "disaster",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "재난, 재앙",
+  "en": "a state of extreme (usually irremediable) ruin and misfortune",
+  "syn": [
+   "catastrophe"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The flood was a natural disaster.",
+    "ko": "그 홍수는 자연재해였어요."
+   }
+  ]
+ },
+ {
+  "word": "disastrous",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "재앙적인, 처참한",
+  "en": "(of events) having extremely unfortunate or dire consequences",
+  "syn": [
+   "black",
+   "calamitous",
+   "fatal",
+   "fateful"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The decision had disastrous results.",
+    "ko": "그 결정은 처참한 결과를 낳았어요."
+   }
+  ]
+ },
+ {
+  "word": "disc jockey",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "디스크자키, DJ",
+  "en": "a person who announces and plays popular recorded music",
+  "syn": [
+   "disk_jockey",
+   "disc_jockey",
+   "d.j.",
+   "DJ"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The disc jockey played great music all night.",
+    "ko": "그 디스크자키는 밤새 훌륭한 음악을 틀었어요."
+   }
+  ]
+ },
+ {
   "word": "disco",
   "ipa": "",
   "pos": [
@@ -24898,6 +26737,73 @@ window.SEED = [
    {
     "en": "They danced all night at the disco.",
     "ko": "그들은 디스코에서 밤새 춤을 췄어요."
+   }
+  ]
+ },
+ {
+  "word": "discomfort",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "불편함",
+  "en": "the state of being tense and feeling pain",
+  "syn": [
+   "uncomfortableness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The shoes caused some discomfort.",
+    "ko": "그 신발은 약간의 불편함을 유발했어요."
+   }
+  ]
+ },
+ {
+  "word": "discount",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "할인",
+  "en": "the act of reducing the selling price of merchandise",
+  "syn": [
+   "price_reduction",
+   "deduction"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I got a discount on this jacket.",
+    "ko": "저는 이 재킷을 할인받았어요."
+   }
+  ]
+ },
+ {
+  "word": "discourage",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "낙담시키다, 말리다",
+  "en": "try to prevent",
+  "syn": [
+   "deter"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Don't let failure discourage you.",
+    "ko": "실패가 당신을 낙담시키게 두지 마세요."
    }
   ]
  },
@@ -24923,6 +26829,52 @@ window.SEED = [
    {
     "en": "Scientists discovered a new species.",
     "ko": "과학자들이 새로운 종을 발견했어요."
+   }
+  ]
+ },
+ {
+  "word": "discovery",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "발견",
+  "en": "the act of discovering something",
+  "syn": [
+   "find",
+   "uncovering"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This was an important scientific discovery.",
+    "ko": "이것은 중요한 과학적 발견이었어요."
+   }
+  ]
+ },
+ {
+  "word": "discrimination",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "차별",
+  "en": "unfair treatment of a person or group on the basis of prejudice",
+  "syn": [
+   "favoritism",
+   "favouritism"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The law protects against discrimination.",
+    "ko": "그 법은 차별로부터 보호해요."
    }
   ]
  },
@@ -24973,6 +26925,51 @@ window.SEED = [
   ]
  },
  {
+  "word": "disease",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "질병",
+  "en": "an impairment of health or a condition of abnormal functioning",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This disease is very rare.",
+    "ko": "이 질병은 아주 드물어요."
+   }
+  ]
+ },
+ {
+  "word": "disgusting",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "역겨운",
+  "en": "highly offensive",
+  "syn": [
+   "disgustful",
+   "distasteful",
+   "foul",
+   "loathly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That smell is disgusting.",
+    "ko": "그 냄새는 역겨워요."
+   }
+  ]
+ },
+ {
   "word": "dish",
   "ipa": "",
   "pos": [
@@ -25015,6 +27012,52 @@ window.SEED = [
   ]
  },
  {
+  "word": "dishwasher",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "식기세척기",
+  "en": "a machine for washing dishes",
+  "syn": [
+   "dish_washer",
+   "dishwashing_machine"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Put the dirty dishes in the dishwasher.",
+    "ko": "더러운 그릇들을 식기세척기에 넣으세요."
+   }
+  ]
+ },
+ {
+  "word": "disk",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "디스크, 원반",
+  "en": "something with a round shape resembling a flat circular plate",
+  "syn": [
+   "disc",
+   "saucer"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Save the file to the disk.",
+    "ko": "파일을 디스크에 저장하세요."
+   }
+  ]
+ },
+ {
   "word": "dislike",
   "ipa": "",
   "pos": [
@@ -25033,8 +27076,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I dislike loud music.",
-    "ko": "저는 시끄러운 음악을 싫어해요."
+    "en": "I dislike waiting in long lines.",
+    "ko": "저는 긴 줄에서 기다리는 것을 싫어해요."
    }
   ]
  },
@@ -25053,8 +27096,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I dislike loud music.",
-    "ko": "저는 시끄러운 음악을 싫어해요."
+    "en": "I dislike waiting in long lines.",
+    "ko": "저는 긴 줄에서 기다리는 것을 싫어해요."
    }
   ]
  },
@@ -25065,7 +27108,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "전시, 화면",
+  "ko": "전시하다, 보여주다",
   "en": "something intended to communicate a particular impression",
   "syn": [
    "show"
@@ -25075,8 +27118,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The store has a nice display of shoes.",
-    "ko": "그 가게는 멋진 신발 전시를 하고 있어요."
+    "en": "The museum displays ancient artifacts.",
+    "ko": "그 박물관은 고대 유물을 전시해요."
    }
   ]
  },
@@ -25087,7 +27130,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "전시, 화면",
+  "ko": "전시하다, 보여주다",
   "en": "to show, make visible or apparent",
   "syn": [
    "expose",
@@ -25098,8 +27141,211 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The store has a nice display of shoes.",
-    "ko": "그 가게는 멋진 신발 전시를 하고 있어요."
+    "en": "The museum displays ancient artifacts.",
+    "ko": "그 박물관은 고대 유물을 전시해요."
+   }
+  ]
+ },
+ {
+  "word": "dissolve",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "녹다, 용해되다",
+  "en": "become weaker",
+  "syn": [
+   "fade_out",
+   "fade_away"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Sugar dissolves in hot water.",
+    "ko": "설탕은 뜨거운 물에 녹아요."
+   }
+  ]
+ },
+ {
+  "word": "distance",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "거리",
+  "en": "the property created by the space between two objects or points",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "What is the distance between the two cities?",
+    "ko": "두 도시 사이의 거리가 얼마예요?"
+   }
+  ]
+ },
+ {
+  "word": "distant",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "먼, 떨어진",
+  "en": "separated in space or coming from or going to a distance",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They live in a distant country.",
+    "ko": "그들은 먼 나라에 살아요."
+   }
+  ]
+ },
+ {
+  "word": "distinction",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "차이, 구별",
+  "en": "a discrimination between things as different and distinct on the basis of their characteristics or attributes",
+  "syn": [
+   "differentiation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There is a clear distinction between the two ideas.",
+    "ko": "두 개념 사이에는 명확한 차이가 있어요."
+   }
+  ]
+ },
+ {
+  "word": "distinctly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "뚜렷하게, 명확하게",
+  "en": "clear to the mind",
+  "syn": [
+   "clearly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I distinctly remember that conversation.",
+    "ko": "저는 그 대화를 뚜렷하게 기억해요."
+   }
+  ]
+ },
+ {
+  "word": "distinguish",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "구별하다",
+  "en": "mark as different",
+  "syn": [
+   "separate",
+   "differentiate",
+   "secern",
+   "secernate"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It's hard to distinguish the twins.",
+    "ko": "그 쌍둥이를 구별하는 것은 어려워요."
+   }
+  ]
+ },
+ {
+  "word": "distribute",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "분배하다, 배포하다",
+  "en": "administer or bestow, as in small portions",
+  "syn": [
+   "administer",
+   "mete_out",
+   "deal",
+   "parcel_out"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They distributed food to the victims.",
+    "ko": "그들은 피해자들에게 음식을 분배했어요."
+   }
+  ]
+ },
+ {
+  "word": "distribution",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "분배, 유통",
+  "en": "(statistics) an arrangement of values of a variable showing their observed or theoretical frequency of occurrence",
+  "syn": [
+   "statistical_distribution"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The company handles distribution of the product.",
+    "ko": "그 회사는 제품의 유통을 담당해요."
+   }
+  ]
+ },
+ {
+  "word": "district",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "지역, 구역",
+  "en": "a region marked off for administrative or other purposes",
+  "syn": [
+   "territory",
+   "territorial_dominion",
+   "dominion"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a shopping district.",
+    "ko": "이곳은 쇼핑 구역이에요."
    }
   ]
  },
@@ -25127,13 +27373,104 @@ window.SEED = [
   ]
  },
  {
+  "word": "disturbance",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "소란, 방해",
+  "en": "activity that is a malfunction, intrusion, or interruption",
+  "syn": [
+   "perturbation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was a disturbance outside the house.",
+    "ko": "집 밖에서 소란이 있었어요."
+   }
+  ]
+ },
+ {
+  "word": "dive",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "다이빙하다, 잠수하다",
+  "en": "drop steeply",
+  "syn": [
+   "plunge",
+   "plunk"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He dove into the pool.",
+    "ko": "그는 수영장으로 다이빙했어요."
+   }
+  ]
+ },
+ {
+  "word": "diver",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "잠수부, 다이버",
+  "en": "someone who works underwater",
+  "syn": [
+   "frogman",
+   "underwater_diver"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The diver explored the coral reef.",
+    "ko": "그 다이버는 산호초를 탐험했어요."
+   }
+  ]
+ },
+ {
+  "word": "diverse",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "다양한",
+  "en": "many and different",
+  "syn": [
+   "divers(a)"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This city has a diverse population.",
+    "ko": "이 도시는 다양한 인구를 가지고 있어요."
+   }
+  ]
+ },
+ {
   "word": "divide",
   "ipa": "",
   "pos": [
    "verb"
   ],
   "cefr": "A2",
-  "ko": "나누다",
+  "ko": "분열, 격차",
   "en": "separate into parts or portions",
   "syn": [
    "split",
@@ -25146,8 +27483,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Divide the cake into eight pieces.",
-    "ko": "케이크를 여덟 조각으로 나누세요."
+    "en": "There is a growing divide between rich and poor.",
+    "ko": "부유층과 빈곤층 사이의 격차가 커지고 있어요."
    }
   ]
  },
@@ -25158,7 +27495,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "나누다",
+  "ko": "분열, 격차",
   "en": "a serious disagreement between two groups of people (typically producing tension or hostility)",
   "syn": [],
   "ant": [],
@@ -25166,8 +27503,72 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Divide the cake into eight pieces.",
-    "ko": "케이크를 여덟 조각으로 나누세요."
+    "en": "There is a growing divide between rich and poor.",
+    "ko": "부유층과 빈곤층 사이의 격차가 커지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "divine",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "신성한",
+  "en": "emanating from God",
+  "syn": [
+   "godly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They believe it was a divine sign.",
+    "ko": "그들은 그것이 신성한 징표였다고 믿어요."
+   }
+  ]
+ },
+ {
+  "word": "diving",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "다이빙",
+  "en": "an athletic competition that involves diving into water",
+  "syn": [
+   "diving_event"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She practices diving every weekend.",
+    "ko": "그녀는 매 주말 다이빙을 연습해요."
+   }
+  ]
+ },
+ {
+  "word": "divorced",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "이혼한",
+  "en": "of someone whose marriage has been legally dissolved",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "My parents got divorced last year.",
+    "ko": "제 부모님은 작년에 이혼하셨어요."
    }
   ]
  },
@@ -25196,6 +27597,30 @@ window.SEED = [
   ]
  },
  {
+  "word": "DJ",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "디제이",
+  "en": "a person who announces and plays popular recorded music",
+  "syn": [
+   "disk_jockey",
+   "disc_jockey",
+   "d.j."
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The DJ played our favorite song.",
+    "ko": "그 디제이는 우리가 가장 좋아하는 노래를 틀었어요."
+   }
+  ]
+ },
+ {
   "word": "do",
   "ipa": "",
   "pos": [],
@@ -25213,6 +27638,31 @@ window.SEED = [
    {
     "en": "What do you do on weekends?",
     "ko": "주말에 무엇을 하나요?"
+   }
+  ]
+ },
+ {
+  "word": "doc",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "의사 (구어체)",
+  "en": "a licensed medical practitioner",
+  "syn": [
+   "doctor",
+   "physician",
+   "MD",
+   "Dr."
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I have an appointment with the doc.",
+    "ko": "저는 의사와 예약이 있어요."
    }
   ]
  },
@@ -25238,6 +27688,53 @@ window.SEED = [
    {
     "en": "I felt so bad I went to see my doctor.",
     "ko": "몸이 너무 안 좋아서 병원에 갔다."
+   }
+  ]
+ },
+ {
+  "word": "document",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "문서",
+  "en": "writing that provides information (especially information of an official nature)",
+  "syn": [
+   "written_document",
+   "papers"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please sign this document.",
+    "ko": "이 문서에 서명해 주세요."
+   }
+  ]
+ },
+ {
+  "word": "documentary",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "다큐멘터리",
+  "en": "a film or TV program presenting the facts about a person or event",
+  "syn": [
+   "docudrama",
+   "documentary_film",
+   "infotainment"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We watched a documentary about the ocean.",
+    "ko": "우리는 바다에 관한 다큐멘터리를 봤어요."
    }
   ]
  },
@@ -25343,6 +27840,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "dolphin",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "돌고래",
+  "en": "large slender food and game fish widely distributed in warm seas (especially around Hawaii)",
+  "syn": [
+   "dolphinfish",
+   "mahimahi"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Dolphins are very intelligent animals.",
+    "ko": "돌고래는 아주 똑똑한 동물이에요."
+   }
+  ]
+ },
+ {
   "word": "done",
   "ipa": "",
   "pos": [],
@@ -25380,6 +27900,28 @@ window.SEED = [
    {
     "en": "He knocked on the door.",
     "ko": "그는 문을 두드렸다."
+   }
+  ]
+ },
+ {
+  "word": "dot",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "점",
+  "en": "a very small circular shape",
+  "syn": [
+   "point"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There is a small dot on the page.",
+    "ko": "페이지에 작은 점이 있어요."
    }
   ]
  },
@@ -25504,7 +28046,7 @@ window.SEED = [
    "adv"
   ],
   "cefr": "A2",
-  "ko": "아래층에",
+  "ko": "아래층의",
   "en": "on a floor below",
   "syn": [
    "down_the_stairs",
@@ -25516,8 +28058,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The kitchen is downstairs.",
-    "ko": "부엌은 아래층에 있어요."
+    "en": "The downstairs room is bigger.",
+    "ko": "아래층 방이 더 커요."
    }
   ]
  },
@@ -25528,7 +28070,7 @@ window.SEED = [
    "adj"
   ],
   "cefr": "B1",
-  "ko": "아래층에",
+  "ko": "아래층의",
   "en": "on or of lower floors of a building",
   "syn": [
    "downstair"
@@ -25538,8 +28080,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The kitchen is downstairs.",
-    "ko": "부엌은 아래층에 있어요."
+    "en": "The downstairs room is bigger.",
+    "ko": "아래층 방이 더 커요."
    }
   ]
  },
@@ -25564,6 +28106,95 @@ window.SEED = [
   ]
  },
  {
+  "word": "downward",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "아래쪽으로의",
+  "en": "extending or moving from a higher to a lower place",
+  "syn": [
+   "down(a)",
+   "downward(a)"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The path goes in a downward direction.",
+    "ko": "그 길은 아래쪽 방향으로 이어져요."
+   }
+  ]
+ },
+ {
+  "word": "doze",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "졸다, 선잠",
+  "en": "a light fitful sleep",
+  "syn": [
+   "drowse"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He dozed off during the movie.",
+    "ko": "그는 영화 도중 졸았어요."
+   }
+  ]
+ },
+ {
+  "word": "dozen",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "12개, 다스",
+  "en": "the cardinal number that is the sum of eleven and one",
+  "syn": [
+   "twelve",
+   "12",
+   "XII"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I bought a dozen eggs.",
+    "ko": "저는 계란 한 판을 샀어요."
+   }
+  ]
+ },
+ {
+  "word": "drag",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "끌다, 끌어당기다",
+  "en": "pull, as against a resistance",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Don't drag your feet.",
+    "ko": "발을 끌지 마세요."
+   }
+  ]
+ },
+ {
   "word": "drama",
   "ipa": "",
   "pos": [
@@ -25583,6 +28214,26 @@ window.SEED = [
    {
     "en": "She loves watching Korean dramas.",
     "ko": "그녀는 한국 드라마 보는 것을 아주 좋아한다."
+   }
+  ]
+ },
+ {
+  "word": "dramatic",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "극적인",
+  "en": "suitable to or characteristic of drama",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was a dramatic change in the weather.",
+    "ko": "날씨에 극적인 변화가 있었어요."
    }
   ]
  },
@@ -25958,6 +28609,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "drown",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "익사하다",
+  "en": "cover completely or make imperceptible",
+  "syn": [
+   "submerge",
+   "overwhelm"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The boy nearly drowned in the lake.",
+    "ko": "그 소년은 호수에서 익사할 뻔했어요."
+   }
+  ]
+ },
+ {
   "word": "drug",
   "ipa": "",
   "pos": [
@@ -26022,6 +28696,31 @@ window.SEED = [
    {
     "en": "He plays the drum in a band.",
     "ko": "그는 밴드에서 드럼을 연주한다."
+   }
+  ]
+ },
+ {
+  "word": "drunk",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "취한",
+  "en": "stupefied or excited by a chemical substance (especially alcohol)",
+  "syn": [
+   "intoxicated",
+   "inebriated",
+   "ripped",
+   "gone"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He was drunk after the party.",
+    "ko": "그는 파티 후 취해 있었어요."
    }
   ]
  },
