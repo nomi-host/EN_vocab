@@ -1,6 +1,6 @@
 /* ============================================================================
    EN Vocab — 시드 데이터 (pipeline/merge_cefrj.js 자동 생성)
-   생성: 2026-07-11 · 표제어 7235개 (CEFR-J 전체 후보 7453개 중 작성 완료분)
+   생성: 2026-07-11 · 표제어 7355개 (CEFR-J 전체 후보 7453개 중 작성 완료분)
    ----------------------------------------------------------------------------
    표제어/CEFR/품사 = CEFR-J Wordlist(Tono Lab, TUFS — 연구·상업 무료, 출처 표시 조건)
    영영 정의(en)/유의어(syn) = WordNet 3.0(Princeton, 오프라인 추출)
@@ -150645,6 +150645,118 @@ window.SEED = [
   ]
  },
  {
+  "word": "trivial",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "사소한, 하찮은",
+  "en": "(informal) small and of little importance",
+  "syn": [
+   "fiddling",
+   "footling",
+   "lilliputian",
+   "little"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Don't worry about such trivial matters.",
+    "ko": "그런 사소한 문제로 걱정하지 마세요."
+   }
+  ]
+ },
+ {
+  "word": "trolley",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "트롤리, 손수레",
+  "en": "a wheeled vehicle that runs on rails and is propelled by electricity",
+  "syn": [
+   "streetcar",
+   "tram",
+   "tramcar",
+   "trolley_car"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She pushed a shopping trolley.",
+    "ko": "그녀는 쇼핑 트롤리를 밀었어요."
+   }
+  ]
+ },
+ {
+  "word": "troop",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "부대, 병력",
+  "en": "a group of soldiers",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The troops marched into the city.",
+    "ko": "부대가 도시로 행진해 들어갔어요."
+   }
+  ]
+ },
+ {
+  "word": "trophy",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "트로피, 우승컵",
+  "en": "an award for success in war or hunting",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She won a trophy for first place.",
+    "ko": "그녀는 1등을 해서 트로피를 받았어요."
+   }
+  ]
+ },
+ {
+  "word": "tropic",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "열대의, 회귀선",
+  "en": "relating to or situated in or characteristic of the tropics (the region on either side of the equator)",
+  "syn": [
+   "tropical"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The tropic regions are very hot.",
+    "ko": "열대 지역은 아주 더워요."
+   }
+  ]
+ },
+ {
   "word": "tropical",
   "ipa": "",
   "pos": [
@@ -150708,6 +150820,26 @@ window.SEED = [
    {
     "en": "This problem has been troubling me all week.",
     "ko": "이 문제가 일주일 내내 저를 괴롭혔어요."
+   }
+  ]
+ },
+ {
+  "word": "troublesome",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "골치 아픈, 성가신",
+  "en": "causing difficulty or annoyance",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a troublesome issue.",
+    "ko": "이것은 골치 아픈 문제예요."
    }
   ]
  },
@@ -150824,13 +150956,36 @@ window.SEED = [
   ]
  },
  {
+  "word": "trunk",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "나무줄기, 트렁크",
+  "en": "the main stem of a tree",
+  "syn": [
+   "tree_trunk",
+   "bole"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The tree's trunk is very thick.",
+    "ko": "그 나무의 줄기는 아주 두꺼워요."
+   }
+  ]
+ },
+ {
   "word": "trust",
   "ipa": "",
   "pos": [
    "verb"
   ],
   "cefr": "A2",
-  "ko": "신뢰하다",
+  "ko": "신탁, 위탁",
   "en": "have confidence or faith in",
   "syn": [],
   "ant": [],
@@ -150838,8 +150993,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I trust you completely.",
-    "ko": "저는 당신을 완전히 신뢰해요."
+    "en": "The property is held in a family trust.",
+    "ko": "그 재산은 가족 신탁으로 보유되어 있어요."
    }
   ]
  },
@@ -150850,7 +151005,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B2",
-  "ko": "신뢰하다",
+  "ko": "신탁, 위탁",
   "en": "something (as property) held by one party (the trustee) for the benefit of another (the beneficiary)",
   "syn": [],
   "ant": [],
@@ -150858,8 +151013,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I trust you completely.",
-    "ko": "저는 당신을 완전히 신뢰해요."
+    "en": "The property is held in a family trust.",
+    "ko": "그 재산은 가족 신탁으로 보유되어 있어요."
    }
   ]
  },
@@ -150886,6 +151041,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "trusty",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "믿을 수 있는",
+  "en": "worthy of trust or belief",
+  "syn": [
+   "trustworthy"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He relies on his trusty old car.",
+    "ko": "그는 믿을 수 있는 오래된 차에 의존해요."
+   }
+  ]
+ },
+ {
   "word": "truth",
   "ipa": "",
   "pos": [
@@ -150902,6 +151079,48 @@ window.SEED = [
    {
     "en": "Please tell me the truth.",
     "ko": "저에게 진실을 말해주세요."
+   }
+  ]
+ },
+ {
+  "word": "truthful",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "진실한, 정직한",
+  "en": "expressing or given to expressing the truth",
+  "syn": [
+   "true"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please be truthful with me.",
+    "ko": "저에게 진실해 주세요."
+   }
+  ]
+ },
+ {
+  "word": "truthfulness",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "진실성",
+  "en": "the quality of being truthful",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I appreciate her truthfulness.",
+    "ko": "저는 그녀의 진실성에 감사해요."
    }
   ]
  },
@@ -150956,6 +151175,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "tub",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "욕조, 통",
+  "en": "a relatively large open container that you fill with water and use to wash the body",
+  "syn": [
+   "bathtub",
+   "bathing_tub"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She filled the tub with warm water.",
+    "ko": "그녀는 욕조에 따뜻한 물을 채웠어요."
+   }
+  ]
+ },
+ {
   "word": "tube",
   "ipa": "",
   "pos": [
@@ -150974,6 +151216,29 @@ window.SEED = [
    {
     "en": "Water flows through the tube.",
     "ko": "물이 관을 통해 흘러요."
+   }
+  ]
+ },
+ {
+  "word": "tuberculosis",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "결핵",
+  "en": "infection transmitted by inhalation or ingestion of tubercle bacilli and manifested in fever and small lesions (usually in the lungs but in various other parts of the body in acute stages)",
+  "syn": [
+   "TB",
+   "T.B."
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Tuberculosis is a serious lung disease.",
+    "ko": "결핵은 심각한 폐 질환이에요."
    }
   ]
  },
@@ -151000,6 +151265,70 @@ window.SEED = [
   ]
  },
  {
+  "word": "tug",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "잡아당기다, 세게 끌기",
+  "en": "a sudden abrupt pull",
+  "syn": [
+   "jerk"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She felt a tug on her sleeve.",
+    "ko": "그녀는 소매를 잡아당기는 느낌을 받았어요."
+   }
+  ]
+ },
+ {
+  "word": "tuition",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "학비, 수업료",
+  "en": "a fee paid for instruction (especially for higher education)",
+  "syn": [
+   "tuition_fee"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "College tuition is expensive.",
+    "ko": "대학 학비는 비싸요."
+   }
+  ]
+ },
+ {
+  "word": "tulip",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "튤립",
+  "en": "any of numerous perennial bulbous herbs having linear or broadly lanceolate leaves and usually a single showy flower",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Tulips bloom in spring.",
+    "ko": "튤립은 봄에 피어요."
+   }
+  ]
+ },
+ {
   "word": "tumble",
   "ipa": "",
   "pos": [
@@ -151018,6 +151347,29 @@ window.SEED = [
    {
     "en": "He tumbled down the stairs.",
     "ko": "그는 계단에서 굴러떨어졌어요."
+   }
+  ]
+ },
+ {
+  "word": "tumor",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "종양",
+  "en": "an abnormal new mass of tissue that serves no purpose",
+  "syn": [
+   "tumour",
+   "neoplasm"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The doctor found a tumor.",
+    "ko": "의사가 종양을 발견했어요."
    }
   ]
  },
@@ -151069,6 +151421,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "tunnel",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "터널",
+  "en": "a passageway through or under something, usually underground (especially one for trains or cars)",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The train went through a tunnel.",
+    "ko": "그 기차는 터널을 지나갔어요."
+   }
+  ]
+ },
+ {
   "word": "turbulence",
   "ipa": "",
   "pos": [
@@ -151087,6 +151459,31 @@ window.SEED = [
    {
     "en": "The plane hit some turbulence.",
     "ko": "그 비행기가 난기류를 만났어요."
+   }
+  ]
+ },
+ {
+  "word": "turbulent",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "격동의, 격렬한",
+  "en": "characterized by unrest or disorder or insubordination",
+  "syn": [
+   "disruptive",
+   "riotous",
+   "troubled",
+   "tumultuous"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It was a turbulent period in history.",
+    "ko": "그것은 역사에서 격동의 시기였어요."
    }
   ]
  },
@@ -151179,6 +151576,29 @@ window.SEED = [
    {
     "en": "The turtle moved slowly across the sand.",
     "ko": "그 거북은 모래 위를 천천히 이동했어요."
+   }
+  ]
+ },
+ {
+  "word": "tutor",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "개인 교사",
+  "en": "a person who gives private instruction (as in singing, acting, etc.)",
+  "syn": [
+   "coach",
+   "private_instructor"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She hired a math tutor for her son.",
+    "ko": "그녀는 아들을 위해 수학 개인 교사를 고용했어요."
    }
   ]
  },
@@ -151290,6 +151710,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "twinkle",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "반짝임",
+  "en": "a rapid change in brightness",
+  "syn": [
+   "scintillation",
+   "sparkling"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was a twinkle in his eye.",
+    "ko": "그의 눈에 반짝임이 있었어요."
+   }
+  ]
+ },
+ {
   "word": "twist",
   "ipa": "",
   "pos": [
@@ -151312,6 +151755,30 @@ window.SEED = [
    {
     "en": "She twisted her ankle while running.",
     "ko": "그녀는 뛰다가 발목을 비틀었어요."
+   }
+  ]
+ },
+ {
+  "word": "twisted",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "왜곡된, 뒤틀린",
+  "en": "having an intended meaning altered or misrepresented",
+  "syn": [
+   "distorted",
+   "misrepresented",
+   "perverted"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He gave a twisted version of the story.",
+    "ko": "그는 이야기의 왜곡된 버전을 전했어요."
    }
   ]
  },
@@ -151379,6 +151846,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "typhoid",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "장티푸스",
+  "en": "serious infection marked by intestinal inflammation and ulceration",
+  "syn": [
+   "typhoid_fever",
+   "enteric_fever"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She was vaccinated against typhoid.",
+    "ko": "그녀는 장티푸스 예방접종을 받았어요."
+   }
+  ]
+ },
+ {
   "word": "typical",
   "ipa": "",
   "pos": [
@@ -151419,6 +151909,54 @@ window.SEED = [
   ]
  },
  {
+  "word": "tyranny",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "폭정, 독재",
+  "en": "a form of government in which the ruler is an absolute dictator (not restricted by a constitution or laws or opposition etc.)",
+  "syn": [
+   "dictatorship",
+   "absolutism",
+   "authoritarianism",
+   "Caesarism"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The people rose up against tyranny.",
+    "ko": "국민들이 폭정에 맞서 일어났어요."
+   }
+  ]
+ },
+ {
+  "word": "tyrant",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "폭군",
+  "en": "a cruel and oppressive dictator",
+  "syn": [
+   "autocrat",
+   "despot"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He ruled as a tyrant.",
+    "ko": "그는 폭군으로 통치했어요."
+   }
+  ]
+ },
+ {
   "word": "ugly",
   "ipa": "",
   "pos": [
@@ -151435,6 +151973,51 @@ window.SEED = [
    {
     "en": "That building is really ugly.",
     "ko": "저 건물은 정말 못생겼어요."
+   }
+  ]
+ },
+ {
+  "word": "ultimate",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "궁극적인, 최고의",
+  "en": "furthest or highest in degree or order",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is the ultimate goal.",
+    "ko": "이것이 궁극적인 목표예요."
+   }
+  ]
+ },
+ {
+  "word": "ultimately",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "궁극적으로, 결국",
+  "en": "as the end result of a succession or process",
+  "syn": [
+   "finally",
+   "in_the_end",
+   "at_last",
+   "at_long_last"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Ultimately, she made the right choice.",
+    "ko": "결국 그녀는 옳은 선택을 했어요."
    }
   ]
  },
@@ -151479,6 +152062,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "unacceptable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "용납할 수 없는",
+  "en": "not adequate to give satisfaction",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This behavior is unacceptable.",
+    "ko": "이 행동은 용납할 수 없어요."
+   }
+  ]
+ },
+ {
   "word": "unafraid",
   "ipa": "",
   "pos": [
@@ -151498,6 +152101,156 @@ window.SEED = [
    {
     "en": "He was unafraid of the challenge.",
     "ko": "그는 그 도전을 두려워하지 않았어요."
+   }
+  ]
+ },
+ {
+  "word": "unashamedly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "부끄러움 없이, 뻔뻔하게",
+  "en": "without shame",
+  "syn": [
+   "shamelessly",
+   "barefacedly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He unashamedly took credit for her work.",
+    "ko": "그는 부끄러움 없이 그녀의 공을 가로챘어요."
+   }
+  ]
+ },
+ {
+  "word": "unattractive",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "매력 없는",
+  "en": "lacking beauty or charm",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The offer seemed unattractive to him.",
+    "ko": "그 제안은 그에게 매력 없어 보였어요."
+   }
+  ]
+ },
+ {
+  "word": "unauthorized",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "승인되지 않은, 무단의",
+  "en": "not endowed with authority",
+  "syn": [
+   "unauthorised"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is an unauthorized copy.",
+    "ko": "이것은 승인되지 않은 사본이에요."
+   }
+  ]
+ },
+ {
+  "word": "unavailable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "이용할 수 없는",
+  "en": "not available or accessible or at hand",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The room is unavailable tonight.",
+    "ko": "그 방은 오늘 밤 이용할 수 없어요."
+   }
+  ]
+ },
+ {
+  "word": "unaware",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "알지 못하는",
+  "en": "(often followed by `of') not aware",
+  "syn": [
+   "incognizant"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She was unaware of the danger.",
+    "ko": "그녀는 그 위험을 알지 못했어요."
+   }
+  ]
+ },
+ {
+  "word": "unbearable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "참을 수 없는",
+  "en": "incapable of being tolerated or endured",
+  "syn": [
+   "intolerable",
+   "unendurable"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The heat was unbearable.",
+    "ko": "그 더위는 참을 수 없었어요."
+   }
+  ]
+ },
+ {
+  "word": "unbeatable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "무적의, 이길 수 없는",
+  "en": "hard to defeat",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This price is unbeatable.",
+    "ko": "이 가격은 무적이에요."
    }
   ]
  },
@@ -151570,6 +152323,46 @@ window.SEED = [
   ]
  },
  {
+  "word": "unchanged",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "변하지 않은",
+  "en": "not made or become different",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Prices remained unchanged this year.",
+    "ko": "올해 가격은 변하지 않았어요."
+   }
+  ]
+ },
+ {
+  "word": "uncharacteristic",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "평소와 다른, 특징적이지 않은",
+  "en": "distinctive and not typical",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That was uncharacteristic of her.",
+    "ko": "그것은 그녀답지 않은 행동이었어요."
+   }
+  ]
+ },
+ {
   "word": "uncle",
   "ipa": "",
   "pos": [
@@ -151612,6 +152405,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "unclearly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "불명확하게",
+  "en": "in a manner that is unclear",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He explained it unclearly.",
+    "ko": "그는 그것을 불명확하게 설명했어요."
+   }
+  ]
+ },
+ {
   "word": "uncomfortable",
   "ipa": "",
   "pos": [
@@ -151628,6 +152441,86 @@ window.SEED = [
    {
     "en": "This chair is uncomfortable.",
     "ko": "이 의자는 불편해요."
+   }
+  ]
+ },
+ {
+  "word": "uncomfortably",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "불편하게",
+  "en": "in physical discomfort",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She sat uncomfortably in the chair.",
+    "ko": "그녀는 의자에 불편하게 앉았어요."
+   }
+  ]
+ },
+ {
+  "word": "uncommon",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "흔하지 않은",
+  "en": "not common or ordinarily encountered",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is an uncommon situation.",
+    "ko": "이것은 흔하지 않은 상황이에요."
+   }
+  ]
+ },
+ {
+  "word": "unconcerned",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "무관심한",
+  "en": "lacking in interest or care or feeling",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He seemed unconcerned about the risk.",
+    "ko": "그는 그 위험에 무관심해 보였어요."
+   }
+  ]
+ },
+ {
+  "word": "unconscious",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "의식이 없는",
+  "en": "not conscious",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He was unconscious after the fall.",
+    "ko": "그는 넘어진 후 의식이 없었어요."
    }
   ]
  },
@@ -151719,6 +152612,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "underestimate",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "과소평가하다",
+  "en": "assign too low a value to",
+  "syn": [
+   "undervalue"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Don't underestimate her abilities.",
+    "ko": "그녀의 능력을 과소평가하지 마세요."
+   }
+  ]
+ },
+ {
   "word": "undergo",
   "ipa": "",
   "pos": [
@@ -151735,6 +152650,49 @@ window.SEED = [
    {
     "en": "She underwent surgery last week.",
     "ko": "그녀는 지난주 수술을 받았어요."
+   }
+  ]
+ },
+ {
+  "word": "undergraduate",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "학부생",
+  "en": "a university student who has not yet received a first degree",
+  "syn": [
+   "undergrad"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is an undergraduate at the university.",
+    "ko": "그녀는 그 대학교의 학부생이에요."
+   }
+  ]
+ },
+ {
+  "word": "underground",
+  "ipa": "",
+  "pos": [
+   "adj",
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "지하의, 비밀의",
+  "en": "in or into hiding or secret operation",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They joined an underground movement.",
+    "ko": "그들은 비밀 운동에 합류했어요."
    }
   ]
  },
@@ -151789,7 +152747,7 @@ window.SEED = [
   "ipa": "",
   "pos": [],
   "cefr": "B1",
-  "ko": "~밑에",
+  "ko": "아래에",
   "en": "on the lower or downward side",
   "syn": [],
   "ant": [],
@@ -151797,8 +152755,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The cat is hiding underneath the sofa.",
-    "ko": "고양이가 소파 밑에 숨어 있어요."
+    "en": "The key is underneath the mat.",
+    "ko": "열쇠는 매트 아래에 있어요."
    }
   ]
  },
@@ -151809,7 +152767,7 @@ window.SEED = [
    "adv"
   ],
   "cefr": "B2",
-  "ko": "~밑에",
+  "ko": "아래에",
   "en": "on the lower or downward side",
   "syn": [],
   "ant": [],
@@ -151817,8 +152775,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The cat is hiding underneath the sofa.",
-    "ko": "고양이가 소파 밑에 숨어 있어요."
+    "en": "The key is underneath the mat.",
+    "ko": "열쇠는 매트 아래에 있어요."
    }
   ]
  },
@@ -151843,6 +152801,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "undersea",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "해저의",
+  "en": "beneath the surface of the sea",
+  "syn": [
+   "submarine"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They filmed an undersea documentary.",
+    "ko": "그들은 해저 다큐멘터리를 촬영했어요."
+   }
+  ]
+ },
+ {
   "word": "understand",
   "ipa": "",
   "pos": [
@@ -151863,13 +152843,82 @@ window.SEED = [
   ]
  },
  {
+  "word": "understandable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "이해할 수 있는",
+  "en": "capable of being apprehended or understood",
+  "syn": [
+   "apprehensible",
+   "intelligible",
+   "graspable",
+   "perceivable"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Her reaction was understandable.",
+    "ko": "그녀의 반응은 이해할 수 있었어요."
+   }
+  ]
+ },
+ {
+  "word": "understanding",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "이해심 있는, 이해",
+  "en": "characterized by understanding based on comprehension and discernment and empathy",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She was very understanding about the mistake.",
+    "ko": "그녀는 그 실수에 대해 아주 이해심이 있었어요."
+   }
+  ]
+ },
+ {
+  "word": "undertake",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "착수하다, 떠맡다",
+  "en": "enter upon an activity or enterprise",
+  "syn": [
+   "set_about",
+   "attempt"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She undertook a difficult project.",
+    "ko": "그녀는 어려운 프로젝트에 착수했어요."
+   }
+  ]
+ },
+ {
   "word": "underwater",
   "ipa": "",
   "pos": [
    "adj"
   ],
   "cefr": "A2",
-  "ko": "물속의, 수중의",
+  "ko": "수중에서",
   "en": "beneath the surface of the water",
   "syn": [
    "submerged",
@@ -151880,8 +152929,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "They took underwater photos.",
-    "ko": "그들은 수중 사진을 찍었어요."
+    "en": "They filmed underwater.",
+    "ko": "그들은 수중에서 촬영했어요."
    }
   ]
  },
@@ -151892,7 +152941,7 @@ window.SEED = [
    "adv"
   ],
   "cefr": "B2",
-  "ko": "물속의, 수중의",
+  "ko": "수중에서",
   "en": "beneath the surface of the water",
   "syn": [
    "submerged",
@@ -151903,8 +152952,31 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "They took underwater photos.",
-    "ko": "그들은 수중 사진을 찍었어요."
+    "en": "They filmed underwater.",
+    "ko": "그들은 수중에서 촬영했어요."
+   }
+  ]
+ },
+ {
+  "word": "underwear",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "속옷",
+  "en": "undergarment worn next to the skin and under the outer garments",
+  "syn": [
+   "underclothes",
+   "underclothing"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She bought new underwear.",
+    "ko": "그녀는 새 속옷을 샀어요."
    }
   ]
  },
@@ -151925,6 +152997,54 @@ window.SEED = [
    {
     "en": "Press this button to undo the last action.",
     "ko": "마지막 작업을 취소하려면 이 버튼을 누르세요."
+   }
+  ]
+ },
+ {
+  "word": "undoubtedly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "의심의 여지없이",
+  "en": "without doubt",
+  "syn": [
+   "doubtless",
+   "doubtlessly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is undoubtedly talented.",
+    "ko": "그녀는 의심의 여지없이 재능이 있어요."
+   }
+  ]
+ },
+ {
+  "word": "undreamed",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "꿈에도 생각지 못한",
+  "en": "not imagined even in a dream",
+  "syn": [
+   "undreamed_of",
+   "undreamt",
+   "undreamt_of",
+   "unimagined"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She achieved undreamed success.",
+    "ko": "그녀는 꿈에도 생각지 못한 성공을 이뤘어요."
    }
   ]
  },
@@ -151950,6 +153070,72 @@ window.SEED = [
    {
     "en": "The baby began to undress itself.",
     "ko": "아기가 스스로 옷을 벗기 시작했어요."
+   }
+  ]
+ },
+ {
+  "word": "undressed",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "옷을 벗은, 가공되지 않은",
+  "en": "of lumber or stone or hides",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The wood was left undressed.",
+    "ko": "그 나무는 가공되지 않은 채로 남겨졌어요."
+   }
+  ]
+ },
+ {
+  "word": "unease",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "불안, 걱정",
+  "en": "physical discomfort (as mild sickness or depression)",
+  "syn": [
+   "malaise",
+   "uneasiness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She felt a sense of unease.",
+    "ko": "그녀는 불안감을 느꼈어요."
+   }
+  ]
+ },
+ {
+  "word": "uneasily",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "불안하게",
+  "en": "with anxiety or apprehension",
+  "syn": [
+   "anxiously",
+   "apprehensively"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He shifted uneasily in his seat.",
+    "ko": "그는 자리에서 불안하게 몸을 움직였어요."
    }
   ]
  },
@@ -152010,6 +153196,46 @@ window.SEED = [
    {
     "en": "Unemployment rose last year.",
     "ko": "작년에 실업률이 증가했어요."
+   }
+  ]
+ },
+ {
+  "word": "unenthusiastic",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "열의 없는",
+  "en": "not enthusiastic",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He seemed unenthusiastic about the plan.",
+    "ko": "그는 그 계획에 열의 없어 보였어요."
+   }
+  ]
+ },
+ {
+  "word": "uneven",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "고르지 않은",
+  "en": "not even or uniform as e.g. in shape or texture",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The ground here is uneven.",
+    "ko": "이곳의 땅은 고르지 않아요."
    }
   ]
  },
@@ -152100,6 +153326,48 @@ window.SEED = [
   ]
  },
  {
+  "word": "unfamiliar",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "낯선, 익숙하지 않은",
+  "en": "not known or well known",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This place looks unfamiliar to me.",
+    "ko": "이곳은 저에게 낯설어 보여요."
+   }
+  ]
+ },
+ {
+  "word": "unfashionable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "유행에 뒤떨어진",
+  "en": "not in accord with or not following current fashion",
+  "syn": [
+   "unstylish"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "These shoes are unfashionable now.",
+    "ko": "이 신발은 이제 유행에 뒤떨어졌어요."
+   }
+  ]
+ },
+ {
   "word": "unfit",
   "ipa": "",
   "pos": [
@@ -152140,6 +153408,31 @@ window.SEED = [
    {
     "en": "The story unfolds slowly.",
     "ko": "그 이야기는 천천히 전개돼요."
+   }
+  ]
+ },
+ {
+  "word": "unforeseen",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "예기치 못한",
+  "en": "not anticipated",
+  "syn": [
+   "unanticipated",
+   "unseen",
+   "unlooked-for",
+   "out_of_the_blue(p)"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Unforeseen circumstances delayed the project.",
+    "ko": "예기치 못한 상황이 프로젝트를 지연시켰어요."
    }
   ]
  },
@@ -152228,6 +153521,51 @@ window.SEED = [
   ]
  },
  {
+  "word": "ungodly",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "터무니없는, 신을 두려워하지 않는",
+  "en": "characterized by iniquity",
+  "syn": [
+   "iniquitous",
+   "sinful"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He called at an ungodly hour.",
+    "ko": "그는 터무니없는 시간에 전화했어요."
+   }
+  ]
+ },
+ {
+  "word": "unhappiness",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "불행",
+  "en": "emotions experienced when not in a state of well-being",
+  "syn": [
+   "sadness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Money can't buy happiness, but poverty causes unhappiness.",
+    "ko": "돈으로 행복을 살 수는 없지만 가난은 불행을 초래해요."
+   }
+  ]
+ },
+ {
   "word": "unhappy",
   "ipa": "",
   "pos": [
@@ -152288,6 +153626,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "unhelpful",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "도움이 안 되는",
+  "en": "providing no assistance",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The staff was unhelpful.",
+    "ko": "그 직원들은 도움이 안 됐어요."
+   }
+  ]
+ },
+ {
   "word": "uniform",
   "ipa": "",
   "pos": [
@@ -152328,6 +153686,52 @@ window.SEED = [
    {
     "en": "They tried to unify the two teams.",
     "ko": "그들은 두 팀을 통합하려고 했어요."
+   }
+  ]
+ },
+ {
+  "word": "unimaginable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "상상할 수 없는",
+  "en": "totally unlikely",
+  "syn": [
+   "impossible",
+   "inconceivable",
+   "out_of_the_question"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The damage was unimaginable.",
+    "ko": "그 피해는 상상할 수 없었어요."
+   }
+  ]
+ },
+ {
+  "word": "unimaginably",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "상상할 수 없을 정도로",
+  "en": "to an unimaginable extent",
+  "syn": [
+   "unthinkably"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The city was unimaginably beautiful.",
+    "ko": "그 도시는 상상할 수 없을 정도로 아름다웠어요."
    }
   ]
  },
@@ -152486,6 +153890,51 @@ window.SEED = [
   ]
  },
  {
+  "word": "united",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "연합한, 단결한",
+  "en": "characterized by unity",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The team remained united.",
+    "ko": "그 팀은 단결을 유지했어요."
+   }
+  ]
+ },
+ {
+  "word": "universal",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "보편적인",
+  "en": "of worldwide scope or applicability",
+  "syn": [
+   "cosmopolitan",
+   "ecumenical",
+   "oecumenical",
+   "general"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Love is a universal language.",
+    "ko": "사랑은 보편적인 언어예요."
+   }
+  ]
+ },
+ {
   "word": "universe",
   "ipa": "",
   "pos": [
@@ -152527,6 +153976,46 @@ window.SEED = [
    {
     "en": "She studies at a famous university.",
     "ko": "그녀는 유명한 대학교에서 공부해요."
+   }
+  ]
+ },
+ {
+  "word": "unjustly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "부당하게",
+  "en": "in an unjust manner",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He was unjustly accused.",
+    "ko": "그는 부당하게 고발당했어요."
+   }
+  ]
+ },
+ {
+  "word": "unkind",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "불친절한",
+  "en": "lacking kindness",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It was unkind of her to say that.",
+    "ko": "그녀가 그 말을 한 것은 불친절했어요."
    }
   ]
  },
@@ -152575,7 +154064,7 @@ window.SEED = [
    "adj"
   ],
   "cefr": "A2",
-  "ko": "~와 다른",
+  "ko": "~와 달리",
   "en": "marked by dissimilarity",
   "syn": [],
   "ant": [],
@@ -152583,8 +154072,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Unlike her sister, she loves sports.",
-    "ko": "그녀의 언니와 다르게 그녀는 스포츠를 좋아해요."
+    "en": "Unlike her brother, she loves sports.",
+    "ko": "오빠와 달리 그녀는 스포츠를 좋아해요."
    }
   ]
  },
@@ -152593,7 +154082,7 @@ window.SEED = [
   "ipa": "",
   "pos": [],
   "cefr": "B2",
-  "ko": "~와 다른",
+  "ko": "~와 달리",
   "en": "marked by dissimilarity",
   "syn": [],
   "ant": [],
@@ -152601,8 +154090,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Unlike her sister, she loves sports.",
-    "ko": "그녀의 언니와 다르게 그녀는 스포츠를 좋아해요."
+    "en": "Unlike her brother, she loves sports.",
+    "ko": "오빠와 달리 그녀는 스포츠를 좋아해요."
    }
   ]
  },
@@ -152629,6 +154118,73 @@ window.SEED = [
   ]
  },
  {
+  "word": "unlimited",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "무제한의",
+  "en": "having no limits in range or scope",
+  "syn": [
+   "limitless"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This plan offers unlimited data.",
+    "ko": "이 요금제는 무제한 데이터를 제공해요."
+   }
+  ]
+ },
+ {
+  "word": "unload",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "짐을 내리다",
+  "en": "remove (cargo, people, etc.) from and leave",
+  "syn": [
+   "drop",
+   "drop_off",
+   "set_down",
+   "put_down"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They unloaded the truck quickly.",
+    "ko": "그들은 트럭에서 빠르게 짐을 내렸어요."
+   }
+  ]
+ },
+ {
+  "word": "unlock",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "잠금을 풀다",
+  "en": "open the lock of",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She unlocked the door.",
+    "ko": "그녀는 문의 잠금을 풀었어요."
+   }
+  ]
+ },
+ {
   "word": "unlucky",
   "ipa": "",
   "pos": [
@@ -152651,6 +154207,66 @@ window.SEED = [
   ]
  },
  {
+  "word": "unmistakable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "틀림없는, 명백한",
+  "en": "clearly evident to the mind",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The signs were unmistakable.",
+    "ko": "그 징후는 명백했어요."
+   }
+  ]
+ },
+ {
+  "word": "unmistakably",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "틀림없이, 명백하게",
+  "en": "without possibility of mistake",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It was unmistakably her handwriting.",
+    "ko": "그것은 틀림없이 그녀의 손글씨였어요."
+   }
+  ]
+ },
+ {
+  "word": "unnatural",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "부자연스러운",
+  "en": "not in accordance with or determined by nature",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Her smile looked unnatural.",
+    "ko": "그녀의 미소는 부자연스러워 보였어요."
+   }
+  ]
+ },
+ {
   "word": "unnecessary",
   "ipa": "",
   "pos": [
@@ -152669,6 +154285,26 @@ window.SEED = [
    {
     "en": "Don't worry about unnecessary things.",
     "ko": "불필요한 것들에 대해 걱정하지 마세요."
+   }
+  ]
+ },
+ {
+  "word": "unofficial",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "비공식의",
+  "en": "not having official authority or sanction",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is an unofficial statement.",
+    "ko": "이것은 비공식적인 발언이에요."
    }
   ]
  },
@@ -152715,6 +154351,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "unpopular",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "인기 없는",
+  "en": "regarded with disfavor or lacking general approval",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The decision was unpopular among staff.",
+    "ko": "그 결정은 직원들 사이에서 인기가 없었어요."
+   }
+  ]
+ },
+ {
   "word": "unpredictable",
   "ipa": "",
   "pos": [
@@ -152731,6 +154387,46 @@ window.SEED = [
    {
     "en": "The weather here is unpredictable.",
     "ko": "이곳의 날씨는 예측할 수 없어요."
+   }
+  ]
+ },
+ {
+  "word": "unrealistic",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "비현실적인",
+  "en": "not realistic",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This deadline is unrealistic.",
+    "ko": "이 마감일은 비현실적이에요."
+   }
+  ]
+ },
+ {
+  "word": "unreasonable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "불합리한, 부당한",
+  "en": "not reasonable",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That request is unreasonable.",
+    "ko": "그 요청은 불합리해요."
    }
   ]
  },
@@ -152755,6 +154451,243 @@ window.SEED = [
   ]
  },
  {
+  "word": "unreliable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "신뢰할 수 없는",
+  "en": "liable to be erroneous or misleading",
+  "syn": [
+   "undependable"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This source is unreliable.",
+    "ko": "이 출처는 신뢰할 수 없어요."
+   }
+  ]
+ },
+ {
+  "word": "unrest",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "불안, 소요",
+  "en": "a state of agitation or turbulent change or development",
+  "syn": [
+   "agitation",
+   "ferment",
+   "fermentation",
+   "tempestuousness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was political unrest in the country.",
+    "ko": "그 나라에 정치적 불안이 있었어요."
+   }
+  ]
+ },
+ {
+  "word": "unsafe",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "안전하지 않은",
+  "en": "lacking in security or safety",
+  "syn": [
+   "insecure"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This bridge is unsafe.",
+    "ko": "이 다리는 안전하지 않아요."
+   }
+  ]
+ },
+ {
+  "word": "unsatisfactory",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "만족스럽지 못한",
+  "en": "not giving satisfaction",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The results were unsatisfactory.",
+    "ko": "그 결과는 만족스럽지 못했어요."
+   }
+  ]
+ },
+ {
+  "word": "unselfish",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "이기적이지 않은",
+  "en": "disregarding your own advantages and welfare over those of others",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She made an unselfish decision.",
+    "ko": "그녀는 이기적이지 않은 결정을 내렸어요."
+   }
+  ]
+ },
+ {
+  "word": "unstoppable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "막을 수 없는",
+  "en": "not capable of being stopped",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The team seemed unstoppable this season.",
+    "ko": "그 팀은 이번 시즌 막을 수 없어 보였어요."
+   }
+  ]
+ },
+ {
+  "word": "unsuccessful",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "성공하지 못한",
+  "en": "not successful",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Her first attempt was unsuccessful.",
+    "ko": "그녀의 첫 시도는 성공하지 못했어요."
+   }
+  ]
+ },
+ {
+  "word": "unsuitable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "부적합한",
+  "en": "not meant or adapted for a particular purpose",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This job is unsuitable for beginners.",
+    "ko": "이 일은 초보자에게 부적합해요."
+   }
+  ]
+ },
+ {
+  "word": "unsure",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "확신이 없는",
+  "en": "lacking self-confidence",
+  "syn": [
+   "diffident",
+   "shy",
+   "timid"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is unsure about her decision.",
+    "ko": "그녀는 자신의 결정에 확신이 없어요."
+   }
+  ]
+ },
+ {
+  "word": "untalented",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "재능이 없는",
+  "en": "devoid of talent",
+  "syn": [
+   "talentless"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He is not untalented, just unlucky.",
+    "ko": "그는 재능이 없는 게 아니라 운이 없었을 뿐이에요."
+   }
+  ]
+ },
+ {
+  "word": "unthinkably",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "생각할 수 없을 정도로",
+  "en": "to an unimaginable extent",
+  "syn": [
+   "unimaginably"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The prices were unthinkably high.",
+    "ko": "가격이 생각할 수 없을 정도로 높았어요."
+   }
+  ]
+ },
+ {
   "word": "untidy",
   "ipa": "",
   "pos": [
@@ -152771,6 +154704,29 @@ window.SEED = [
    {
     "en": "His room is always untidy.",
     "ko": "그의 방은 항상 지저분해요."
+   }
+  ]
+ },
+ {
+  "word": "untie",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "풀다, 끄르다",
+  "en": "undo the ties of",
+  "syn": [
+   "unbrace",
+   "unlace"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She untied the knot.",
+    "ko": "그녀는 매듭을 풀었어요."
    }
   ]
  },
@@ -152807,6 +154763,66 @@ window.SEED = [
    {
     "en": "We waited until the rain stopped.",
     "ko": "우리는 비가 그칠 때까지 기다렸어요."
+   }
+  ]
+ },
+ {
+  "word": "unto",
+  "ipa": "",
+  "pos": [],
+  "cefr": "B2",
+  "ko": "~에게, ~을 향해 (고어체)",
+  "en": "an archaic form of 'to', used to indicate direction or recipient",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Do unto others as you would have them do unto you.",
+    "ko": "남에게 대접받고자 하는 대로 남을 대접하라."
+   }
+  ]
+ },
+ {
+  "word": "untreated",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "치료받지 않은",
+  "en": "not given medical care or treatment",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The infection was left untreated.",
+    "ko": "그 감염은 치료받지 않은 채로 남겨졌어요."
+   }
+  ]
+ },
+ {
+  "word": "untrimmed",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "다듬어지지 않은",
+  "en": "not trimmed",
+  "syn": [
+   "uncut"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The hedge looked untrimmed.",
+    "ko": "그 산울타리는 다듬어지지 않아 보였어요."
    }
   ]
  },
@@ -152855,6 +154871,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "unusualness",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "특이함",
+  "en": "uncommonness by virtue of being unusual",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The unusualness of the request surprised her.",
+    "ko": "그 요청의 특이함이 그녀를 놀라게 했어요."
+   }
+  ]
+ },
+ {
   "word": "unwanted",
   "ipa": "",
   "pos": [
@@ -152896,6 +154932,66 @@ window.SEED = [
    {
     "en": "He felt unwell this morning.",
     "ko": "그는 오늘 아침 몸이 안 좋았어요."
+   }
+  ]
+ },
+ {
+  "word": "unwilling",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "꺼리는, 내키지 않는",
+  "en": "not disposed or inclined toward",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He was unwilling to compromise.",
+    "ko": "그는 타협하는 것을 꺼려했어요."
+   }
+  ]
+ },
+ {
+  "word": "unwise",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "현명하지 못한",
+  "en": "showing or resulting from lack of judgment or wisdom",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That was an unwise decision.",
+    "ko": "그것은 현명하지 못한 결정이었어요."
+   }
+  ]
+ },
+ {
+  "word": "unworldly",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "세속에 얽매이지 않은",
+  "en": "not concerned with the temporal world or swayed by mundane considerations",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has an unworldly innocence.",
+    "ko": "그녀는 세속에 얽매이지 않은 순수함을 가지고 있어요."
    }
   ]
  },
@@ -152964,13 +155060,33 @@ window.SEED = [
   ]
  },
  {
+  "word": "upbringing",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "양육, 훈육",
+  "en": "properties acquired during a person's formative years",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She had a strict upbringing.",
+    "ko": "그녀는 엄격한 양육을 받았어요."
+   }
+  ]
+ },
+ {
   "word": "update",
   "ipa": "",
   "pos": [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "업데이트하다, 갱신하다",
+  "ko": "업데이트, 최신 정보",
   "en": "modernize or bring up to date",
   "syn": [],
   "ant": [],
@@ -152978,8 +155094,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Please update your information.",
-    "ko": "정보를 업데이트해 주세요."
+    "en": "Check for the latest update.",
+    "ko": "최신 업데이트를 확인하세요."
    }
   ]
  },
@@ -152990,7 +155106,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B2",
-  "ko": "업데이트하다, 갱신하다",
+  "ko": "업데이트, 최신 정보",
   "en": "information or data that updates",
   "syn": [],
   "ant": [],
@@ -152998,8 +155114,29 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Please update your information.",
-    "ko": "정보를 업데이트해 주세요."
+    "en": "Check for the latest update.",
+    "ko": "최신 업데이트를 확인하세요."
+   }
+  ]
+ },
+ {
+  "word": "upgrade",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "업그레이드하다",
+  "en": "rate higher",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She upgraded her phone.",
+    "ko": "그녀는 휴대폰을 업그레이드했어요."
    }
   ]
  },
@@ -153082,13 +155219,36 @@ window.SEED = [
   ]
  },
  {
+  "word": "upright",
+  "ipa": "",
+  "pos": [
+   "adj",
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "똑바로 선, 수직의",
+  "en": "in a vertical position",
+  "syn": [
+   "unsloped"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please keep your seat upright.",
+    "ko": "좌석을 똑바로 세워주세요."
+   }
+  ]
+ },
+ {
   "word": "upset",
   "ipa": "",
   "pos": [
    "adj"
   ],
   "cefr": "A2",
-  "ko": "속상한, 화가 난",
+  "ko": "혼란시키다, 뒤엎다",
   "en": "afflicted with or marked by anxious uneasiness or trouble or grief",
   "syn": [
    "disquieted",
@@ -153101,8 +155261,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She was upset about the test result.",
-    "ko": "그녀는 시험 결과에 속상해했어요."
+    "en": "The rain upset our plans.",
+    "ko": "비가 우리의 계획을 뒤엎었어요."
    }
   ]
  },
@@ -153113,7 +155273,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B2",
-  "ko": "속상한, 화가 난",
+  "ko": "혼란시키다, 뒤엎다",
   "en": "disturb the balance or stability of",
   "syn": [],
   "ant": [],
@@ -153121,8 +155281,31 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She was upset about the test result.",
-    "ko": "그녀는 시험 결과에 속상해했어요."
+    "en": "The rain upset our plans.",
+    "ko": "비가 우리의 계획을 뒤엎었어요."
+   }
+  ]
+ },
+ {
+  "word": "upside down",
+  "ipa": "",
+  "pos": [
+   "adj",
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "거꾸로, 뒤집힌",
+  "en": "in an inverted manner",
+  "syn": [
+   "upside_down"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The painting is hanging upside down.",
+    "ko": "그 그림이 거꾸로 걸려 있어요."
    }
   ]
  },
@@ -153193,13 +155376,33 @@ window.SEED = [
   ]
  },
  {
+  "word": "urban",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "도시의",
+  "en": "relating to or concerned with a city or densely populated area",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She lives in an urban area.",
+    "ko": "그녀는 도시 지역에 살아요."
+   }
+  ]
+ },
+ {
   "word": "urge",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "충동, 욕구",
+  "ko": "촉구하다, 재촉하다",
   "en": "an instinctive motive",
   "syn": [
    "impulse"
@@ -153209,8 +155412,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She had an urge to travel.",
-    "ko": "그녀는 여행하고 싶은 충동이 있었어요."
+    "en": "She urged him to see a doctor.",
+    "ko": "그녀는 그에게 의사를 만나보라고 촉구했어요."
    }
   ]
  },
@@ -153221,7 +155424,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B2",
-  "ko": "충동, 욕구",
+  "ko": "촉구하다, 재촉하다",
   "en": "force or impel in an indicated direction",
   "syn": [
    "urge_on",
@@ -153233,8 +155436,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She had an urge to travel.",
-    "ko": "그녀는 여행하고 싶은 충동이 있었어요."
+    "en": "She urged him to see a doctor.",
+    "ko": "그녀는 그에게 의사를 만나보라고 촉구했어요."
    }
   ]
  },
@@ -153257,6 +155460,28 @@ window.SEED = [
    {
     "en": "This is an urgent matter.",
     "ko": "이것은 긴급한 사안이에요."
+   }
+  ]
+ },
+ {
+  "word": "urgently",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "긴급히",
+  "en": "with great urgency",
+  "syn": [
+   "desperately"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We urgently need more supplies.",
+    "ko": "우리는 긴급히 더 많은 물자가 필요해요."
    }
   ]
  },
@@ -153442,6 +155667,48 @@ window.SEED = [
   ]
  },
  {
+  "word": "user",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "사용자",
+  "en": "a person who makes use of a thing",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This app has millions of users.",
+    "ko": "이 앱은 수백만 명의 사용자가 있어요."
+   }
+  ]
+ },
+ {
+  "word": "usher",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "안내하다",
+  "en": "take (someone) to their seats, as in theaters or auditoriums",
+  "syn": [
+   "show"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The usher showed us to our seats.",
+    "ko": "그 안내원이 우리를 자리로 안내했어요."
+   }
+  ]
+ },
+ {
   "word": "usual",
   "ipa": "",
   "pos": [
@@ -153487,6 +155754,104 @@ window.SEED = [
   ]
  },
  {
+  "word": "utility",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "공익사업체, 유용성",
+  "en": "a company that performs a public service",
+  "syn": [
+   "public_utility",
+   "public_utility_company",
+   "public-service_corporation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The utility company fixed the power line.",
+    "ko": "그 공익사업체가 전력선을 고쳤어요."
+   }
+  ]
+ },
+ {
+  "word": "utilize",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "활용하다, 이용하다",
+  "en": "put into service",
+  "syn": [
+   "use",
+   "utilise",
+   "apply",
+   "employ"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We should utilize our resources wisely.",
+    "ko": "우리는 자원을 현명하게 활용해야 해요."
+   }
+  ]
+ },
+ {
+  "word": "utter",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "말하다, 발언하다",
+  "en": "articulate",
+  "syn": [
+   "express",
+   "verbalize",
+   "verbalise",
+   "give_tongue_to"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He didn't utter a word.",
+    "ko": "그는 한마디도 말하지 않았어요."
+   }
+  ]
+ },
+ {
+  "word": "utterly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "완전히, 철저히",
+  "en": "completely and without qualification",
+  "syn": [
+   "absolutely",
+   "perfectly",
+   "dead"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She was utterly exhausted.",
+    "ko": "그녀는 완전히 지쳤어요."
+   }
+  ]
+ },
+ {
   "word": "vacancy",
   "ipa": "",
   "pos": [
@@ -153503,6 +155868,26 @@ window.SEED = [
    {
     "en": "There is a vacancy for a manager position.",
     "ko": "매니저 자리에 공석이 있어요."
+   }
+  ]
+ },
+ {
+  "word": "vacant",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "비어 있는, 공허한",
+  "en": "void of intelligence or thought",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The apartment has been vacant for months.",
+    "ko": "그 아파트는 몇 달 동안 비어 있었어요."
    }
   ]
  },
@@ -153525,6 +155910,28 @@ window.SEED = [
    {
     "en": "We are going to the beach for vacation.",
     "ko": "우리는 휴가로 해변에 갈 거예요."
+   }
+  ]
+ },
+ {
+  "word": "vaccine",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "백신",
+  "en": "immunogen consisting of a suspension of weakened or dead pathogenic cells injected in order to stimulate the production of antibodies",
+  "syn": [
+   "vaccinum"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The vaccine prevents the disease.",
+    "ko": "그 백신은 그 질병을 예방해요."
    }
   ]
  },
@@ -153572,6 +155979,46 @@ window.SEED = [
    {
     "en": "He is quite vain about his appearance.",
     "ko": "그는 자신의 외모에 대해 꽤 허영심이 많아요."
+   }
+  ]
+ },
+ {
+  "word": "valentine",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "연인, 발렌타인 카드",
+  "en": "a sweetheart chosen to receive a greeting on Saint Valentine's Day",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She sent him a valentine.",
+    "ko": "그녀는 그에게 발렌타인 카드를 보냈어요."
+   }
+  ]
+ },
+ {
+  "word": "valid",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "유효한, 타당한",
+  "en": "well grounded in logic or truth or having legal force",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This ticket is valid for one week.",
+    "ko": "이 표는 일주일 동안 유효해요."
    }
   ]
  },
@@ -153624,7 +156071,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "가치",
+  "ko": "가치를 매기다",
   "en": "a numerical quantity measured or assigned or computed",
   "syn": [],
   "ant": [],
@@ -153632,8 +156079,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "This painting has great value.",
-    "ko": "이 그림은 큰 가치가 있어요."
+    "en": "The house was valued at 500,000 dollars.",
+    "ko": "그 집은 50만 달러로 가치가 매겨졌어요."
    }
   ]
  },
@@ -153644,7 +156091,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B2",
-  "ko": "가치",
+  "ko": "가치를 매기다",
   "en": "fix or determine the value of",
   "syn": [],
   "ant": [],
@@ -153652,8 +156099,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "This painting has great value.",
-    "ko": "이 그림은 큰 가치가 있어요."
+    "en": "The house was valued at 500,000 dollars.",
+    "ko": "그 집은 50만 달러로 가치가 매겨졌어요."
    }
   ]
  },
@@ -153678,6 +156125,95 @@ window.SEED = [
    {
     "en": "They drove a van full of furniture.",
     "ko": "그들은 가구로 가득한 밴을 운전했어요."
+   }
+  ]
+ },
+ {
+  "word": "vanish",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "사라지다",
+  "en": "get lost, as without warning or explanation",
+  "syn": [
+   "disappear",
+   "go_away"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The magician made the coin vanish.",
+    "ko": "그 마술사는 동전을 사라지게 했어요."
+   }
+  ]
+ },
+ {
+  "word": "vanity",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "허영심",
+  "en": "feelings of excessive pride",
+  "syn": [
+   "amour_propre",
+   "conceit",
+   "self-love"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "His vanity annoyed his coworkers.",
+    "ko": "그의 허영심은 동료들을 짜증나게 했어요."
+   }
+  ]
+ },
+ {
+  "word": "variation",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "변화, 변형",
+  "en": "an instance of change",
+  "syn": [
+   "fluctuation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There is variation in temperature between seasons.",
+    "ko": "계절 간 온도 변화가 있어요."
+   }
+  ]
+ },
+ {
+  "word": "varied",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "다양한",
+  "en": "characterized by variety",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has a varied set of skills.",
+    "ko": "그녀는 다양한 기술을 가지고 있어요."
    }
   ]
  },
@@ -153883,6 +156419,49 @@ window.SEED = [
   ]
  },
  {
+  "word": "venture",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "모험적 사업, 벤처",
+  "en": "any venturesome undertaking especially one with an uncertain outcome",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a risky business venture.",
+    "ko": "이것은 위험한 사업 벤처예요."
+   }
+  ]
+ },
+ {
+  "word": "venue",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "장소, 개최지",
+  "en": "the scene of any event or action (especially the place of a meeting)",
+  "syn": [
+   "locale",
+   "locus"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They found a great venue for the wedding.",
+    "ko": "그들은 결혼식을 위한 훌륭한 장소를 찾았어요."
+   }
+  ]
+ },
+ {
   "word": "verb",
   "ipa": "",
   "pos": [
@@ -153899,6 +156478,26 @@ window.SEED = [
    {
     "en": "\"Run\" is a verb.",
     "ko": "'run'은 동사예요."
+   }
+  ]
+ },
+ {
+  "word": "verbal",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "구두의, 언어의",
+  "en": "communicated in the form of words",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They made a verbal agreement.",
+    "ko": "그들은 구두 합의를 했어요."
    }
   ]
  },
