@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="theme-color" content="#f5f6f8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>NoEnglish — 영포자 탈출</title>
+<link rel="manifest" href="manifest.json">
+<script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
+<script src="words.js"></script>
+<style>
+/* ============================================================================
+   NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
+   ※ 포인트 컬러(--accent)는 임시 플레이스홀더. 디자이너가 교체할 자리.
+============================================================================ */
+:root{
+  --bg:#f5f6f8;          /* 살짝 차가운 뉴트럴 배경 */
+  --surface:#ffffff;
+  --ink:#17181c;
+  --ink-2:#3c3d44;
+  --muted:#8b8c95;
+  --line:#ececef;
+  --fill:#eef0f3;
+  --accent:#ff5a5f;      /* 팝 코럴 (임시) */
+  --accent-deep:#e83e46; /* 흰 배경 위 텍스트 강조 */
+  --accent-soft:#ffecec; /* 옅은 배경 */
+  --on-accent:#ffffff;
+  --good:#12b886;
+  --radius:20px;
+  --shadow:0 1px 2px rgba(20,20,30,.04), 0 8px 24px rgba(20,20,30,.05);
+  --shadow-sheet:0 -8px 40px rgba(20,20,30,.16);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{height:100%;overflow:hidden;background:var(--bg);}
+body{color:var(--ink);}
+#root{height:100%;}
+button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
+
+.app{height:100vh;height:100dvh;display:flex;flex-direction:column;background:var(--bg);max-width:520px;margin:0 auto;position:relative;}
+.topbar{padding:calc(env(safe-area-inset-top) + 12px) 20px 8px;display:flex;align-items:center;justify-content:space-between;}
+.brand{font-size:20px;font-weight:800;letter-spacing:-0.4px;}
+.brand b{color:var(--accent);}
+.topbar-right{display:flex;align-items:center;gap:8px;}
+.pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);}
+.avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
+
+.scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+.content{padding:8px 20px 28px;display:flex;flex-direction:column;gap:14px;}
+
+/* 섹션 라벨 */
+.sec{font-size:13px;font-weight:700;color:var(--ink);letter-spacing:-0.2px;margin:6px 2px 0;}
+.sec .more{float:right;font-size:12px;color:var(--muted);font-weight:600;}
+
+/* 카드 공통 */
+.card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;}
+.card.tap{transition:transform .12s ease;}
+.card.tap:active{transform:scale(.985);}
+
+/* 캐릭터 히어로 */
+.hero{display:flex;flex-direction:column;align-items:center;gap:10px;padding:22px 16px 18px;text-align:center;}
+.mascot{width:112px;height:112px;border-radius:26px;background:linear-gradient(160deg,#fff,#f1f2f5);border:1.5px dashed #cfd1d6;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);line-height:1.5;}
+.sign{display:inline-block;background:var(--ink);color:#fff;font-weight:800;font-size:13px;letter-spacing:.5px;padding:6px 12px;border-radius:8px;transform:rotate(-3deg);}
+
+/* 레벨 3칸 */
+.level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.stat{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;}
+.stat .v{font-size:22px;font-weight:800;letter-spacing:-0.5px;font-variant-numeric:tabular-nums;}
+.stat .v.accent{color:var(--accent-deep);}
+.stat .l{font-size:11px;color:var(--muted);margin-top:2px;font-weight:600;}
+
+/* 루틴 스텝 */
+.step{display:flex;align-items:center;gap:13px;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;}
+.step.active{border:1.5px solid var(--accent);}
+.step-ico{width:38px;height:38px;border-radius:12px;background:var(--fill);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--ink-2);flex:none;}
+.step.done .step-ico{background:var(--accent-soft);color:var(--accent-deep);}
+.step-body{flex:1;min-width:0;}
+.step-title{font-size:15px;font-weight:700;}
+.step-sub{font-size:12px;color:var(--muted);margin-top:1px;}
+.step-cta{font-size:13px;font-weight:700;color:var(--accent-deep);flex:none;}
+.step .check{color:var(--good);font-weight:800;}
+
+/* 잔디 */
+.grass{display:grid;grid-template-columns:repeat(17,1fr);gap:3px;}
+.grass i{aspect-ratio:1;border-radius:3px;background:var(--fill);}
+.grass i.g1{background:#ffc9cb;}.grass i.g2{background:#ff8f93;}.grass i.g3{background:var(--accent);}
+
+/* 사전 검색 */
+.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:11px 14px;box-shadow:var(--shadow);}
+.search input{flex:1;border:none;outline:none;font-size:15px;background:none;color:var(--ink);}
+.search input::placeholder{color:var(--muted);}
+.search .mag{color:var(--muted);font-size:15px;}
+
+.chips{display:flex;gap:7px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none;}
+.chips::-webkit-scrollbar{display:none;}
+.chip{flex:none;font-size:13px;font-weight:600;padding:7px 13px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink);}
+
+.addbar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--accent-soft);border-radius:14px;padding:12px 14px;}
+.addbar .t{font-size:13px;color:var(--ink-2);}
+.addbar .t b{color:var(--accent-deep);}
+.addbar button{background:var(--accent);color:#fff;font-weight:700;font-size:13px;padding:8px 14px;border-radius:10px;}
+
+/* 단어 리스트 행 */
+.wlist{display:flex;flex-direction:column;gap:8px;}
+.wrow{display:flex;align-items:center;gap:10px;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
+.wrow:active{transform:scale(.99);}
+.wrow .w{font-size:16px;font-weight:700;}
+.wrow .k{font-size:13px;color:var(--muted);margin-top:1px;}
+.wrow .meta{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex:none;}
+.tag{font-size:10px;font-weight:700;padding:2px 7px;border-radius:6px;background:var(--fill);color:var(--muted);letter-spacing:.2px;}
+.tag.lv{background:var(--accent-soft);color:var(--accent-deep);}
+.tag.done{background:#e6f7f0;color:#0a9d6f;}
+.tag.learning{background:#fff2e0;color:#c77a11;}
+
+/* 준비중 */
+.soon{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:64px 24px;text-align:center;color:var(--muted);}
+.soon .big{font-size:16px;font-weight:700;color:var(--ink-2);}
+.soon .mascot{width:88px;height:88px;font-size:11px;}
+
+/* 하단 탭바 (홈 중앙) */
+.tabbar{display:flex;align-items:flex-end;justify-content:space-around;background:var(--surface);border-top:1px solid var(--line);padding:8px 8px calc(env(safe-area-inset-bottom) + 8px);}
+.tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--muted);font-size:10px;font-weight:600;padding:2px 0;}
+.tab.on{color:var(--accent-deep);}
+.tab .ti{width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:17px;}
+.tab.home .ti{width:44px;height:44px;margin-top:-18px;border-radius:50%;background:var(--accent);color:#fff;box-shadow:0 6px 16px rgba(255,90,95,.4);font-size:20px;}
+.tab.home.on{color:var(--accent-deep);}
+
+/* 바텀시트 (단어 상세) */
+.sheet-backdrop{position:fixed;inset:0;background:rgba(20,20,30,.32);display:flex;align-items:flex-end;justify-content:center;z-index:50;animation:fade .18s ease;}
+.sheet{width:100%;max-width:520px;background:var(--surface);border-radius:24px 24px 0 0;box-shadow:var(--shadow-sheet);max-height:88vh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes slideup{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.sheet-grab{width:38px;height:4px;background:#d9dade;border-radius:2px;margin:10px auto 2px;}
+.sheet-head{display:flex;align-items:center;gap:10px;padding:6px 18px 10px;}
+.sheet-head .back{font-size:20px;color:var(--muted);padding:2px 6px;margin-left:-6px;}
+.sheet-head .sp{flex:1;}
+.sheet-head .fav{font-size:13px;font-weight:600;color:var(--muted);}
+.sheet-body{overflow-y:auto;padding:0 18px 28px;display:flex;flex-direction:column;gap:16px;}
+.wd-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.wd-word{font-size:28px;font-weight:800;letter-spacing:-0.5px;}
+.wd-ipa{font-size:14px;color:var(--muted);}
+.wd-play{margin-left:auto;background:var(--fill);border-radius:999px;padding:7px 13px;font-size:12px;font-weight:700;color:var(--ink-2);}
+.wd-pos{font-size:13px;color:var(--ink-2);line-height:1.6;}
+.wd-en{font-size:13px;color:var(--muted);line-height:1.55;}
+.wd-sec-t{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:7px;letter-spacing:.2px;}
+.wd-chips{display:flex;flex-wrap:wrap;gap:7px;}
+.lchip{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--fill);color:var(--ink);border:1px solid transparent;}
+.lchip.link{background:var(--surface);border-color:var(--line);}
+.lchip.link:active{background:var(--accent-soft);}
+.lchip.affix{background:var(--ink);color:#fff;}
+.lchip .g{color:var(--muted);font-weight:500;font-size:11px;margin-left:4px;}
+.wd-ex{background:var(--bg);border-radius:14px;padding:13px 15px;}
+.wd-ex .en{font-size:14px;font-weight:600;line-height:1.5;}
+.wd-ex .en em{font-style:normal;color:var(--accent-deep);}
+.wd-ex .ko{font-size:12px;color:var(--muted);margin-top:5px;}
+.wd-ex + .wd-ex{margin-top:8px;}
+.ext{display:flex;flex-wrap:wrap;gap:7px;}
+.ext a{font-size:12px;font-weight:600;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:6px 12px;text-decoration:none;}
+.empty-note{font-size:12px;color:var(--muted);}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+const { useState, useMemo, useCallback, useEffect } = React;
+
+const APP_VERSION = "v0.1.0";
+const APP_BUILD = "2026-07-11";
+
+/* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
+const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
+
+const SEED = (typeof window !== "undefined" && window.SEED) ? window.SEED : [];
+const byWord = Object.fromEntries(SEED.map(w => [w.word, w]));
+
+/* v0 데모용 학습 상태(파이프라인/SRS 붙기 전 표시용) */
+const LEARN_STATE = {
+  alert: { status: "learning", box: 4, dueIn: 3 },
+  possibility: { status: "done" },
+  interact: { status: "learning", box: 2, dueIn: 0 },
+  deadline: { status: "learning", box: 1, dueIn: 1 },
+};
+
+/* ---------- 홈 탭 ---------- */
+function Home({ onGoTab }) {
+  const routine = [
+    { n: 1, title: "단어카드 20개", sub: "신규 12 · 복습 8", state: "done", tab: "learn" },
+    { n: 2, title: "듣기 10문장", sub: "6 / 10 진행 중", state: "active", tab: "learn" },
+    { n: 3, title: "회화 1세션", sub: "오늘의 상대: Karen (공항)", state: "todo", tab: "talk" },
+  ];
+  const grass = useMemo(() => {
+    const cells = [];
+    for (let i = 0; i < 17 * 5; i++) {
+      const r = (i * 7 + 3) % 11;
+      cells.push(r > 8 ? "g3" : r > 6 ? "g2" : r > 3 ? "g1" : "");
+    }
+    return cells;
+  }, []);
+  return (
+    <div className="content">
+      <div className="card hero">
+        <div className="mascot">메인 캐릭터<br/>(성장 3단계)</div>
+        <div className="sign">OH... ENGLISH?</div>
+      </div>
+
+      <div className="level-row" onClick={() => onGoTab("dict")}>
+        <div className="stat"><div className="v accent">B1</div><div className="l">CEFR 레벨</div></div>
+        <div className="stat"><div className="v">4,200</div><div className="l">추정 어휘량</div></div>
+        <div className="stat"><div className="v">상위 18%</div><div className="l">백분위</div></div>
+      </div>
+
+      <div className="sec">오늘의 루틴</div>
+      {routine.map(s => (
+        <div key={s.n}
+             className={"step" + (s.state === "active" ? " active" : "") + (s.state === "done" ? " done" : "")}
+             onClick={() => onGoTab(s.tab)}>
+          <div className="step-ico">{s.state === "done" ? "✓" : s.n}</div>
+          <div className="step-body">
+            <div className="step-title">{s.title}</div>
+            <div className="step-sub">{s.sub}</div>
+          </div>
+          <div className="step-cta">
+            {s.state === "done" ? <span className="check">완료</span> : s.state === "active" ? "이어서" : "시작"}
+          </div>
+        </div>
+      ))}
+
+      <div className="sec">잔디 <span className="more">최근 17주</span></div>
+      <div className="card" style={{ padding: "16px" }}>
+        <div className="grass">{grass.map((c, i) => <i key={i} className={c} />)}</div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 단어 상세 바텀시트 (팝업 → 타고타고 모달 스택) ---------- */
+function WordSheet({ stack, onPush, onPop, onClose }) {
+  const word = stack[stack.length - 1];
+  const w = byWord[word];
+  const speak = useCallback((text) => {
+    try {
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = "en-US";
+      speechSynthesis.cancel();
+      speechSynthesis.speak(u);
+    } catch (e) {}
+  }, []);
+  const Chip = ({ label }) => (
+    byWord[label]
+      ? <button className="lchip link" onClick={() => onPush(label)}>{label}</button>
+      : <span className="lchip">{label}</span>
+  );
+  if (!w) return null;
+  const ext = q => [
+    ["네이버", `https://en.dict.naver.com/#/search?query=${q}`],
+    ["Cambridge", `https://dictionary.cambridge.org/dictionary/english/${q}`],
+    ["Etymonline", `https://www.etymonline.com/word/${q}`],
+  ];
+  return ReactDOM.createPortal(
+    <div className="sheet-backdrop" onClick={onClose}>
+      <div className="sheet" onClick={e => e.stopPropagation()}>
+        <div className="sheet-grab" />
+        <div className="sheet-head">
+          {stack.length > 1
+            ? <button className="back" onClick={onPop}>‹</button>
+            : <span style={{ width: 8 }} />}
+          <span className="sp" />
+          <button className="fav">즐겨찾기</button>
+          <button className="back" onClick={onClose} style={{ marginLeft: 4 }}>✕</button>
+        </div>
+        <div className="sheet-body">
+          <div>
+            <div className="wd-top">
+              <span className="wd-word">{w.word}</span>
+              <span className="wd-ipa">{w.ipa}</span>
+              <button className="wd-play" onClick={() => speak(w.word)}>발음 듣기</button>
+            </div>
+            <div className="wd-pos" style={{ marginTop: 6 }}>
+              <span className="tag lv" style={{ marginRight: 6 }}>{w.cefr}</span>
+              {w.ko}
+            </div>
+            <div className="wd-en" style={{ marginTop: 4 }}>{w.en}</div>
+          </div>
+
+          <div className="wd-ex-wrap">
+            <div className="wd-sec-t">예문</div>
+            {w.ex.map((e, i) => (
+              <div className="wd-ex" key={i} onClick={() => speak(e.en)}>
+                <div className="en">{e.en}</div>
+                <div className="ko">{e.ko}</div>
+              </div>
+            ))}
+          </div>
+
+          {(w.syn.length > 0 || w.ant.length > 0) && (
+            <div>
+              <div className="wd-sec-t">유의어 · 반의어</div>
+              <div className="wd-chips">
+                {w.syn.map(s => <Chip key={s} label={s} />)}
+                {w.ant.map(a => <Chip key={a} label={a} />)}
+              </div>
+            </div>
+          )}
+
+          {w.forms.length > 0 && (
+            <div>
+              <div className="wd-sec-t">같은 단어, 다른 품사</div>
+              <div className="wd-chips">
+                {w.forms.map(f => (
+                  byWord[f.word]
+                    ? <button key={f.word} className="lchip link" onClick={() => onPush(f.word)}>{f.word}<span className="g">{f.pos}</span></button>
+                    : <span key={f.word} className="lchip">{f.word}<span className="g">{f.pos}</span></span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {w.roots.length > 0 && (
+            <div>
+              <div className="wd-sec-t">어근 · 접사</div>
+              <div className="wd-chips">
+                {w.roots.map(r => (
+                  <span key={r.affix} className="lchip affix">{r.affix}<span className="g" style={{ color: "#ffd0d2" }}>{r.gloss}</span></span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div>
+            <div className="wd-sec-t">외부 사전</div>
+            <div className="ext">
+              {ext(w.word).map(([label, url]) => (
+                <a key={label} href={url} target="_blank" rel="noopener noreferrer">{label}</a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>,
+    document.body
+  );
+}
+
+/* ---------- 사전 탭 ---------- */
+function Dict({ onOpen }) {
+  const [q, setQ] = useState("");
+  const [filter, setFilter] = useState("all");
+  const filters = [
+    { k: "all", label: "전체" },
+    { k: "learning", label: "학습 중" },
+    { k: "done", label: "완료" },
+    { k: "mine", label: "내 단어" },
+  ];
+  const list = useMemo(() => {
+    let arr = SEED.slice().sort((a, b) => a.word.localeCompare(b.word));
+    if (q.trim()) arr = arr.filter(w => w.word.toLowerCase().startsWith(q.trim().toLowerCase()));
+    if (filter === "learning") arr = arr.filter(w => LEARN_STATE[w.word]?.status === "learning");
+    if (filter === "done") arr = arr.filter(w => LEARN_STATE[w.word]?.status === "done");
+    if (filter === "mine") arr = arr.filter(w => LEARN_STATE[w.word]?.mine);
+    return arr;
+  }, [q, filter]);
+  const noHit = q.trim() && list.length === 0;
+  return (
+    <div className="content">
+      <div className="search">
+        <span className="mag">검색</span>
+        <input value={q} onChange={e => setQ(e.target.value)} placeholder="단어를 검색하세요 (예: alert)" autoCapitalize="none" />
+      </div>
+
+      {noHit && (
+        <div className="addbar">
+          <div className="t">DB에 없는 단어인가요?<br/><b>"{q.trim()}"</b> 를 내 단어로 추가</div>
+          <button>추가하기</button>
+        </div>
+      )}
+
+      <div className="chips">
+        {filters.map(f => (
+          <button key={f.k} className={"chip" + (filter === f.k ? " on" : "")} onClick={() => setFilter(f.k)}>{f.label}</button>
+        ))}
+      </div>
+
+      <div className="wlist">
+        {list.map(w => {
+          const st = LEARN_STATE[w.word];
+          return (
+            <div className="wrow" key={w.word} onClick={() => onOpen(w.word)}>
+              <div>
+                <div className="w">{w.word}</div>
+                <div className="k">{w.ko}</div>
+              </div>
+              <div className="meta">
+                <span className="tag lv">{w.cefr}</span>
+                {st?.status === "done" && <span className="tag done">완료</span>}
+                {st?.status === "learning" && <span className="tag learning">박스 {st.box} · {st.dueIn === 0 ? "오늘" : st.dueIn + "일 뒤"}</span>}
+                {!st && <span className="tag">미학습</span>}
+              </div>
+            </div>
+          );
+        })}
+        {!noHit && list.length === 0 && <div className="empty-note">해당하는 단어가 없어요.</div>}
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 준비중 탭 ---------- */
+function Soon({ title, desc }) {
+  return (
+    <div className="content">
+      <div className="soon">
+        <div className="mascot">캐릭터</div>
+        <div className="big">{title}</div>
+        <div>{desc}</div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 앱 셸 ---------- */
+const TABS = [
+  { k: "learn", label: "학습", icon: "◪" },
+  { k: "dict", label: "사전", icon: "𝐀" },
+  { k: "home", label: "홈", icon: "●" },
+  { k: "talk", label: "회화", icon: "◗" },
+  { k: "box", label: "보관함", icon: "★" },
+];
+
+function App() {
+  const [tab, setTab] = useState("home");
+  const [stack, setStack] = useState(null); // 단어 상세 시트 스택
+
+  const openWord = w => setStack([w]);
+  const pushWord = w => setStack(s => [...s, w]);
+  const popWord = () => setStack(s => (s.length > 1 ? s.slice(0, -1) : s));
+  const closeSheet = () => setStack(null);
+
+  useEffect(() => {
+    if (!stack) return;
+    const onKey = e => { if (e.key === "Escape") closeSheet(); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [stack]);
+
+  return (
+    <div className="app">
+      <div className="topbar">
+        <div className="brand">No<b>English</b></div>
+        <div className="topbar-right">
+          <span className="pill"><span className="dot" />연속 12일</span>
+          <button className="avatar-btn">설정</button>
+        </div>
+      </div>
+
+      <div className="scroll">
+        {tab === "home" && <Home onGoTab={setTab} />}
+        {tab === "dict" && <Dict onOpen={openWord} />}
+        {tab === "learn" && <Soon title="학습 탭은 준비 중입니다" desc="단어카드 · 듣기 세션 · 퀴즈 · 흘려듣기 · 레벨 테스트" />}
+        {tab === "talk" && <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />}
+        {tab === "box" && <Soon title="보관함은 준비 중입니다" desc="즐겨찾기 단어·문장 · 뱃지 조끼 · 성장 기록" />}
+      </div>
+
+      <div className="tabbar">
+        {TABS.map(t => (
+          <button key={t.k}
+                  className={"tab" + (t.k === "home" ? " home" : "") + (tab === t.k ? " on" : "")}
+                  onClick={() => setTab(t.k)}>
+            <span className="ti">{t.icon}</span>
+            {t.label}
+          </button>
+        ))}
+      </div>
+
+      {stack && <WordSheet stack={stack} onPush={pushWord} onPop={popWord} onClose={closeSheet} />}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>
