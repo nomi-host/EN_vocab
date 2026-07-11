@@ -1,0 +1,11133 @@
+[
+ {
+  "word": "exterior",
+  "pos": [
+   "noun"
+  ],
+  "en": "the region that is outside of something",
+  "syn": [
+   "outside"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "cloak",
+  "pos": [
+   "noun"
+  ],
+  "en": "anything that covers or conceals",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "timid",
+  "pos": [
+   "adjective"
+  ],
+  "en": "showing fear and lack of confidence",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "reluctantly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "with reluctance",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "complexity",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of being intricate and compounded",
+  "syn": [
+   "complexness"
+  ],
+  "exp": "he enjoyed the complexity of modern computers"
+ },
+ {
+  "word": "concur",
+  "pos": [
+   "verb"
+  ],
+  "en": "be in accord",
+  "syn": [
+   "agree",
+   "hold",
+   "concord"
+  ],
+  "exp": "We agreed on the terms of the settlement"
+ },
+ {
+  "word": "avid",
+  "pos": [
+   "adjective"
+  ],
+  "en": "(often followed by `for') ardently or excessively desirous",
+  "syn": [
+   "devouring(a)",
+   "esurient",
+   "greedy"
+  ],
+  "exp": "an avid ambition to succeed"
+ },
+ {
+  "word": "marvel",
+  "pos": [
+   "verb"
+  ],
+  "en": "be amazed at",
+  "syn": [
+   "wonder"
+  ],
+  "exp": "We marvelled at the child's linguistic abilities"
+ },
+ {
+  "word": "wing",
+  "pos": [
+   "noun"
+  ],
+  "en": "a movable organ for flying (one of a pair)",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "enviable",
+  "pos": [
+   "adverb"
+  ],
+  "en": "causing envy",
+  "syn": [],
+  "exp": "an enviable position"
+ },
+ {
+  "word": "organizational",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to an organization",
+  "syn": [
+   "organisational"
+  ],
+  "exp": "organizational structure"
+ },
+ {
+  "word": "psychiatrist",
+  "pos": [
+   "noun"
+  ],
+  "en": "a physician who specializes in psychiatry",
+  "syn": [
+   "head-shrinker",
+   "shrink"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "psychiatric",
+  "pos": [
+   "adjective"
+  ],
+  "en": "relating to or used in or engaged in the practice of psychiatry",
+  "syn": [
+   "psychiatrical"
+  ],
+  "exp": "psychiatric disorder"
+ },
+ {
+  "word": "clinical",
+  "pos": [
+   "adjective"
+  ],
+  "en": "relating to a clinic or conducted in or as if in a clinic and depending on direct observation of patients",
+  "syn": [],
+  "exp": "clinical observation"
+ },
+ {
+  "word": "corps",
+  "pos": [
+   "noun"
+  ],
+  "en": "an army unit usually consisting of two or more divisions and their support",
+  "syn": [
+   "army_corps"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "forensic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of, relating to, or used in public debate or argument",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "juvenile",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "en": "a young person, not fully developed",
+  "syn": [
+   "juvenile_person"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "jurisdiction",
+  "pos": [
+   "noun"
+  ],
+  "en": "(law) the right and power to interpret and apply the law",
+  "syn": [
+   "legal_power"
+  ],
+  "exp": "courts having jurisdiction in this district"
+ },
+ {
+  "word": "accustomed",
+  "pos": [
+   "adjective"
+  ],
+  "en": "commonly used or practiced",
+  "syn": [
+   "customary",
+   "habitual",
+   "wonted(a)"
+  ],
+  "exp": "took his customary morning walk"
+ },
+ {
+  "word": "trauma",
+  "pos": [
+   "noun"
+  ],
+  "en": "any physical damage to the body caused by violence or accident or fracture etc.",
+  "syn": [
+   "injury",
+   "hurt",
+   "harm"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "traumatic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to a physical injury or wound to the body",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "constraint",
+  "pos": [
+   "noun"
+  ],
+  "en": "the state of being physically constrained",
+  "syn": [
+   "restraint"
+  ],
+  "exp": "dogs should be kept under restraint"
+ },
+ {
+  "word": "revealing",
+  "pos": [
+   "adjective"
+  ],
+  "en": "disclosing unintentionally something concealed",
+  "syn": [
+   "telling",
+   "telltale(a)"
+  ],
+  "exp": "a telltale panel of lights"
+ },
+ {
+  "word": "eccentric",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "en": "conspicuously or grossly unconventional or unusual",
+  "syn": [
+   "bizarre",
+   "freakish",
+   "freaky",
+   "flaky"
+  ],
+  "exp": "restaurants of bizarre design--one like a hat, another like a rabbit"
+ },
+ {
+  "word": "sanctity",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of being holy",
+  "syn": [
+   "holiness",
+   "sanctitude"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "conform",
+  "pos": [
+   "verb"
+  ],
+  "en": "be similar, be in line with",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "norms",
+  "pos": [
+   "noun"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "quirk",
+  "pos": [
+   "noun"
+  ],
+  "en": "a strange attitude or habit",
+  "syn": [
+   "oddity",
+   "queerness",
+   "quirkiness",
+   "crotchet"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "oddity",
+  "pos": [
+   "noun"
+  ],
+  "en": "eccentricity that is not easily explained",
+  "syn": [
+   "oddness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "compel",
+  "pos": [
+   "verb"
+  ],
+  "en": "force somebody to do something",
+  "syn": [
+   "oblige",
+   "obligate"
+  ],
+  "exp": "We compel all students to fill out this form"
+ },
+ {
+  "word": "compulsion",
+  "pos": [
+   "noun"
+  ],
+  "en": "an urge to do or say something that might be better left undone or unsaid",
+  "syn": [
+   "irresistible_impulse"
+  ],
+  "exp": "he felt a compulsion to babble on about the accident"
+ },
+ {
+  "word": "conceive",
+  "pos": [
+   "verb"
+  ],
+  "en": "have the idea for",
+  "syn": [
+   "gestate",
+   "conceptualize",
+   "conceptualise"
+  ],
+  "exp": "He conceived of a robot that would help paralyzed patients"
+ },
+ {
+  "word": "conceivable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "capable of being imagined",
+  "syn": [
+   "imaginable"
+  ],
+  "exp": "that is one possible answer"
+ },
+ {
+  "word": "assertion",
+  "pos": [
+   "noun"
+  ],
+  "en": "a declaration that is made emphatically (as if no supporting evidence were necessary)",
+  "syn": [
+   "averment",
+   "asseveration"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "individuality",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of being individual",
+  "syn": [
+   "individualism",
+   "individuation"
+  ],
+  "exp": "so absorbed by the movement that she lost all sense of individuality"
+ },
+ {
+  "word": "psyche",
+  "pos": [
+   "noun"
+  ],
+  "en": "that which is responsible for one's thoughts, feelings, and conscious brain functions",
+  "syn": [
+   "mind",
+   "head",
+   "brain",
+   "nous"
+  ],
+  "exp": "the seat of the faculty of reason"
+ },
+ {
+  "word": "conformity",
+  "pos": [
+   "noun"
+  ],
+  "en": "correspondence in form or appearance",
+  "syn": [
+   "conformance"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "unconventional",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not conforming to accepted rules or standards",
+  "syn": [],
+  "exp": "her unconventional dress and hair style"
+ },
+ {
+  "word": "congregate",
+  "pos": [
+   "verb"
+  ],
+  "en": "come together, usually for a purpose",
+  "syn": [],
+  "exp": "The crowds congregated in front of the Vatican on Christmas Eve"
+ },
+ {
+  "word": "rally",
+  "pos": [
+   "verb"
+  ],
+  "en": "gather",
+  "syn": [
+   "beat_up",
+   "drum_up"
+  ],
+  "exp": "drum up support"
+ },
+ {
+  "word": "resent",
+  "pos": [
+   "verb"
+  ],
+  "en": "feel bitter or indignant about",
+  "syn": [],
+  "exp": "She resents being paid less than her co-workers"
+ },
+ {
+  "word": "self-conscious",
+  "pos": [
+   "adjective"
+  ],
+  "en": "aware of yourself as an individual or of your own being and actions and thoughts",
+  "syn": [
+   "self-aware"
+  ],
+  "exp": "self-conscious about their roles as guardians of the social values- D.M.Potter"
+ },
+ {
+  "word": "wary",
+  "pos": [
+   "adjective"
+  ],
+  "en": "marked by keen caution and watchful prudence",
+  "syn": [],
+  "exp": "they were wary in their movements"
+ },
+ {
+  "word": "stoke",
+  "pos": [
+   "verb"
+  ],
+  "en": "stir up or tend",
+  "syn": [],
+  "exp": "of a fire"
+ },
+ {
+  "word": "dynamically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a forceful dynamic manner",
+  "syn": [],
+  "exp": "this pianist plays dynamically"
+ },
+ {
+  "word": "hostess",
+  "pos": [
+   "noun"
+  ],
+  "en": "a woman host",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "perpetuate",
+  "pos": [
+   "verb"
+  ],
+  "en": "cause to continue or prevail",
+  "syn": [],
+  "exp": "perpetuate a myth"
+ },
+ {
+  "word": "naturalness",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of being natural or based on natural principles",
+  "syn": [],
+  "exp": "he accepted the naturalness of death"
+ },
+ {
+  "word": "exhibitionist",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone with a compulsive desire to expose the genitals",
+  "syn": [
+   "flasher"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "isolate",
+  "pos": [
+   "verb"
+  ],
+  "en": "place or set apart",
+  "syn": [
+   "insulate"
+  ],
+  "exp": "They isolated the political prisoners from the other inmates"
+ },
+ {
+  "word": "isolated",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not close together in time",
+  "syn": [
+   "stray"
+  ],
+  "exp": "isolated instances of rebellion"
+ },
+ {
+  "word": "humble",
+  "pos": [
+   "verb",
+   "adjective"
+  ],
+  "en": "cause to be unpretentious",
+  "syn": [],
+  "exp": "This experience will humble him"
+ },
+ {
+  "word": "refreshingly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a manner that relieves fatigue and restores vitality",
+  "syn": [
+   "refreshfully"
+  ],
+  "exp": "the air was refreshingly cool"
+ },
+ {
+  "word": "effortless",
+  "pos": [
+   "adjective"
+  ],
+  "en": "requiring or apparently requiring no effort",
+  "syn": [],
+  "exp": "the swallows glided in an effortless way through the busy air"
+ },
+ {
+  "word": "vegetation",
+  "pos": [
+   "noun"
+  ],
+  "en": "all the plant life in a particular region or period",
+  "syn": [
+   "flora",
+   "botany"
+  ],
+  "exp": "the flora of southern California"
+ },
+ {
+  "word": "brief",
+  "pos": [
+   "verb"
+  ],
+  "en": "give essential information to someone",
+  "syn": [],
+  "exp": "The reporters were briefed about the President's plan to invade"
+ },
+ {
+  "word": "respite",
+  "pos": [
+   "noun"
+  ],
+  "en": "a (temporary) relief from harm or discomfort",
+  "syn": [
+   "reprieve"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "suffice",
+  "pos": [
+   "verb"
+  ],
+  "en": "be sufficient",
+  "syn": [
+   "do",
+   "answer",
+   "serve"
+  ],
+  "exp": "be adequate, either in quality or quantity"
+ },
+ {
+  "word": "purity",
+  "pos": [
+   "noun"
+  ],
+  "en": "being undiluted or unmixed with extraneous material",
+  "syn": [
+   "pureness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "gruelling",
+  "pos": [
+   "adjective"
+  ],
+  "en": "characterized by effort to the point of exhaustion",
+  "syn": [
+   "arduous",
+   "backbreaking",
+   "grueling",
+   "hard"
+  ],
+  "exp": "worked their arduous way up the mining valley"
+ },
+ {
+  "word": "cast",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "the actors in a play",
+  "syn": [
+   "cast_of_characters",
+   "dramatis_personae"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "comprise",
+  "pos": [
+   "verb"
+  ],
+  "en": "be composed of",
+  "syn": [
+   "consist"
+  ],
+  "exp": "The land he conquered comprised several provinces"
+ },
+ {
+  "word": "plaster",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "a mixture of lime or gypsum with sand and water",
+  "syn": [],
+  "exp": "hardens into a smooth solid"
+ },
+ {
+  "word": "darkroom",
+  "pos": [
+   "noun"
+  ],
+  "en": "a room in which photographs are developed",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "induct",
+  "pos": [
+   "verb"
+  ],
+  "en": "place ceremoniously or formally in an office or position",
+  "syn": [
+   "invest",
+   "seat"
+  ],
+  "exp": "there was a ceremony to induct the president of the Academy"
+ },
+ {
+  "word": "induction",
+  "pos": [
+   "noun"
+  ],
+  "en": "a formal entry into an organization or position or office",
+  "syn": [
+   "initiation",
+   "installation"
+  ],
+  "exp": "his initiation into the club"
+ },
+ {
+  "word": "stock",
+  "pos": [
+   "verb"
+  ],
+  "en": "have on hand",
+  "syn": [
+   "carry",
+   "stockpile"
+  ],
+  "exp": "Do you carry kerosene heaters?"
+ },
+ {
+  "word": "fossil",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone whose style is out of fashion",
+  "syn": [
+   "dodo",
+   "fogy",
+   "fogey"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "geological",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to or based on geology",
+  "syn": [
+   "geologic"
+  ],
+  "exp": "geological formations"
+ },
+ {
+  "word": "geologically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "with respect to geology",
+  "syn": [],
+  "exp": "geologically speaking, this area is extremely interesting"
+ },
+ {
+  "word": "house",
+  "pos": [
+   "verb"
+  ],
+  "en": "contain or cover",
+  "syn": [],
+  "exp": "This box houses the gears"
+ },
+ {
+  "word": "specimen",
+  "pos": [
+   "noun"
+  ],
+  "en": "an example regarded as typical of its class",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "enormously",
+  "pos": [
+   "adverb"
+  ],
+  "en": "extremely",
+  "syn": [
+   "tremendously",
+   "hugely",
+   "staggeringly"
+  ],
+  "exp": "he was enormously popular"
+ },
+ {
+  "word": "gem",
+  "pos": [
+   "noun"
+  ],
+  "en": "art highly prized for its beauty or perfection",
+  "syn": [
+   "treasure"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "explanatory",
+  "pos": [
+   "adjective"
+  ],
+  "en": "serving or intended to explain or make clear",
+  "syn": [],
+  "exp": "explanatory notes"
+ },
+ {
+  "word": "vertical",
+  "pos": [
+   "adjective"
+  ],
+  "en": "at right angles to the plane of the horizon or a base line",
+  "syn": [
+   "perpendicular"
+  ],
+  "exp": "a vertical camera angle"
+ },
+ {
+  "word": "knowledgeable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "highly educated",
+  "syn": [
+   "knowing",
+   "learned",
+   "lettered",
+   "well-educated"
+  ],
+  "exp": "having extensive information or understanding"
+ },
+ {
+  "word": "ordinarily",
+  "pos": [
+   "adverb"
+  ],
+  "en": "under normal conditions",
+  "syn": [
+   "normally",
+   "usually",
+   "unremarkably",
+   "commonly"
+  ],
+  "exp": "usually she was late"
+ },
+ {
+  "word": "hanging",
+  "pos": [
+   "noun"
+  ],
+  "en": "decoration that is hung (as a tapestry) on a wall or over a window",
+  "syn": [
+   "wall_hanging"
+  ],
+  "exp": "the cold castle walls were covered with hangings"
+ },
+ {
+  "word": "tomb",
+  "pos": [
+   "noun"
+  ],
+  "en": "a place for the burial of a corpse (especially beneath the ground and marked by a tombstone)",
+  "syn": [
+   "grave"
+  ],
+  "exp": "he put flowers on his mother's grave"
+ },
+ {
+  "word": "formulate",
+  "pos": [
+   "verb"
+  ],
+  "en": "elaborate, as of theories and hypotheses",
+  "syn": [
+   "explicate",
+   "develop"
+  ],
+  "exp": "Could you develop the ideas in your thesis"
+ },
+ {
+  "word": "resin",
+  "pos": [
+   "noun"
+  ],
+  "en": "any of a class of solid or semisolid viscous substances obtained either as exudations from certain plants or prepared by polymerization of simple molecules",
+  "syn": [
+   "rosin"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "sacrifice",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "endure the loss of",
+  "syn": [
+   "give"
+  ],
+  "exp": "He gave his life for his children"
+ },
+ {
+  "word": "cleanly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "smoothly and without difficulty",
+  "syn": [
+   "flawlessly"
+  ],
+  "exp": "the gymnast landed flawlessly"
+ },
+ {
+  "word": "endorsement",
+  "pos": [
+   "noun"
+  ],
+  "en": "a promotional statement (as found on the dust jackets of books)",
+  "syn": [
+   "indorsement",
+   "blurb"
+  ],
+  "exp": "the author got all his friends to write blurbs for his book"
+ },
+ {
+  "word": "stretching",
+  "pos": [
+   "noun"
+  ],
+  "en": "act of expanding by lengthening or widening",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "continuity",
+  "pos": [
+   "noun"
+  ],
+  "en": "uninterrupted connection or union",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "shambles",
+  "pos": [
+   "noun"
+  ],
+  "en": "a condition of great disorder",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "claustrophobic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "uncomfortably closed or hemmed in",
+  "syn": [],
+  "exp": "a claustrophobic little room"
+ },
+ {
+  "word": "claustrophobia",
+  "pos": [
+   "noun"
+  ],
+  "en": "a morbid fear of being closed in a confined space",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "headstrong",
+  "pos": [
+   "adjective"
+  ],
+  "en": "habitually disposed to disobedience and opposition",
+  "syn": [
+   "froward",
+   "self-willed",
+   "willful",
+   "wilful"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "tact",
+  "pos": [
+   "noun"
+  ],
+  "en": "consideration in dealing with others and avoiding giving offense",
+  "syn": [
+   "tactfulness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "tactful",
+  "pos": [
+   "adjective"
+  ],
+  "en": "having or showing a sense of what is fitting and considerate in dealing with others",
+  "syn": [],
+  "exp": "she was tactful enough not to shatter his illusion"
+ },
+ {
+  "word": "tactfully",
+  "pos": [
+   "adverb"
+  ],
+  "en": "showing tact or tactfulness",
+  "syn": [],
+  "exp": "in a tactful manner"
+ },
+ {
+  "word": "blister",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "get blistered",
+  "syn": [
+   "vesicate"
+  ],
+  "exp": "Her feet blistered during the long hike"
+ },
+ {
+  "word": "sponsorship",
+  "pos": [
+   "noun"
+  ],
+  "en": "the act of sponsoring (either officially or financially)",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "ego",
+  "pos": [
+   "noun"
+  ],
+  "en": "an inflated feeling of pride in your superiority to others",
+  "syn": [
+   "egotism",
+   "self-importance"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "class",
+  "pos": [
+   "verb"
+  ],
+  "en": "arrange or order by classes or categories",
+  "syn": [
+   "classify",
+   "sort",
+   "assort",
+   "sort_out"
+  ],
+  "exp": "How would you classify these pottery shards--are they prehistoric?"
+ },
+ {
+  "word": "saloon",
+  "pos": [
+   "noun"
+  ],
+  "en": "a room or establishment where alcoholic drinks are served over a counter",
+  "syn": [
+   "barroom",
+   "bar",
+   "ginmill",
+   "taproom"
+  ],
+  "exp": "he drowned his sorrows in whiskey at the bar"
+ },
+ {
+  "word": "lap",
+  "pos": [
+   "noun"
+  ],
+  "en": "the upper side of the thighs of a seated person",
+  "syn": [],
+  "exp": "he picked up the little girl and plopped her down in his lap"
+ },
+ {
+  "word": "beforehand",
+  "pos": [
+   "adverb"
+  ],
+  "en": "ahead of time",
+  "syn": [
+   "ahead",
+   "in_advance"
+  ],
+  "exp": "when you pay ahead (or in advance) you receive a discount"
+ },
+ {
+  "word": "slob",
+  "pos": [
+   "noun"
+  ],
+  "en": "a coarse obnoxious person",
+  "syn": [
+   "sloven",
+   "pig",
+   "slovenly_person"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "coverage",
+  "pos": [
+   "noun"
+  ],
+  "en": "the total amount and type of insurance carried",
+  "syn": [
+   "insurance_coverage"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "unplug",
+  "pos": [
+   "verb"
+  ],
+  "en": "pull the plug of (electrical appliances) and render inoperable",
+  "syn": [
+   "disconnect"
+  ],
+  "exp": "unplug the hair dryer after using it"
+ },
+ {
+  "word": "gadget",
+  "pos": [
+   "noun"
+  ],
+  "en": "a device or control that is very useful for a particular job",
+  "syn": [
+   "appliance",
+   "contraption",
+   "contrivance",
+   "convenience"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "rediscover",
+  "pos": [
+   "verb"
+  ],
+  "en": "discover again",
+  "syn": [],
+  "exp": "I rediscovered the books that I enjoyed as a child"
+ },
+ {
+  "word": "subtly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a subtle manner",
+  "syn": [],
+  "exp": "late nineteenth-century French opera at its most beautiful, subtly romantic with a twilight melancholy"
+ },
+ {
+  "word": "brainwash",
+  "pos": [
+   "verb"
+  ],
+  "en": "persuade completely, often through coercion",
+  "syn": [],
+  "exp": "The propaganda brainwashed many people"
+ },
+ {
+  "word": "brainwashing",
+  "pos": [
+   "noun"
+  ],
+  "en": "forcible indoctrination into a new set of attitudes and beliefs",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "implicate",
+  "pos": [
+   "verb"
+  ],
+  "en": "bring into intimate and incriminating connection",
+  "syn": [],
+  "exp": "He is implicated in the scheme to defraud the government"
+ },
+ {
+  "word": "craft",
+  "pos": [
+   "verb"
+  ],
+  "en": "make by hand and with much skill",
+  "syn": [],
+  "exp": "The artisan crafted a complicated tool"
+ },
+ {
+  "word": "malfunction",
+  "pos": [
+   "verb"
+  ],
+  "en": "fail to function or function improperly",
+  "syn": [
+   "misfunction"
+  ],
+  "exp": "the coffee maker malfunctioned"
+ },
+ {
+  "word": "dependent",
+  "pos": [
+   "noun"
+  ],
+  "en": "a person who relies on another person for support (especially financial support)",
+  "syn": [
+   "dependant"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "wayside",
+  "pos": [
+   "noun"
+  ],
+  "en": "edge of a way or road or path",
+  "syn": [
+   "roadside"
+  ],
+  "exp": "flowers along the wayside"
+ },
+ {
+  "word": "expire",
+  "pos": [
+   "verb"
+  ],
+  "en": "lose validity",
+  "syn": [
+   "run_out"
+  ],
+  "exp": "My passports expired last month"
+ },
+ {
+  "word": "con",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "deprive of by deceit",
+  "syn": [
+   "victimize",
+   "swindle",
+   "rook",
+   "goldbrick"
+  ],
+  "exp": "He swindled me out of my inheritance"
+ },
+ {
+  "word": "puzzle",
+  "pos": [
+   "verb"
+  ],
+  "en": "be a mystery or bewildering to",
+  "syn": [
+   "perplex",
+   "vex",
+   "stick",
+   "get"
+  ],
+  "exp": "Got me--I don't know the answer!"
+ },
+ {
+  "word": "damply",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a damp manner",
+  "syn": [
+   "moistly"
+  ],
+  "exp": "a scarf was tied round her head but the rebellious curl had escaped and hung damply over her left eye"
+ },
+ {
+  "word": "ghostly",
+  "pos": [
+   "adjective"
+  ],
+  "en": "resembling or characteristic of a phantom",
+  "syn": [
+   "apparitional",
+   "ghostlike",
+   "phantasmal",
+   "spectral"
+  ],
+  "exp": "a ghostly face at the window"
+ },
+ {
+  "word": "carrier",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone whose employment involves carrying something",
+  "syn": [
+   "bearer",
+   "toter"
+  ],
+  "exp": "the bonds were transmitted by carrier"
+ },
+ {
+  "word": "washtub",
+  "pos": [
+   "noun"
+  ],
+  "en": "a tub in which clothes or linens can be washed",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "apt",
+  "pos": [
+   "adjective"
+  ],
+  "en": "(usually followed by `to') naturally disposed toward",
+  "syn": [
+   "apt(p)",
+   "disposed(p)",
+   "given(p)",
+   "minded(p)"
+  ],
+  "exp": "he is apt to ignore matters he considers unimportant"
+ },
+ {
+  "word": "apt to",
+  "pos": [
+   "verb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "portable",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "en": "a small light typewriter",
+  "syn": [],
+  "exp": "usually with a case in which it can be carried"
+ },
+ {
+  "word": "ornamental",
+  "pos": [
+   "adjective"
+  ],
+  "en": "serving an esthetic rather than a useful purpose",
+  "syn": [
+   "cosmetic",
+   "decorative"
+  ],
+  "exp": "cosmetic fenders on cars"
+ },
+ {
+  "word": "placid",
+  "pos": [
+   "adjective"
+  ],
+  "en": "(of a body of water) free from disturbance by heavy waves",
+  "syn": [
+   "quiet",
+   "still",
+   "tranquil",
+   "smooth"
+  ],
+  "exp": "a ribbon of sand between the angry sea and the placid bay"
+ },
+ {
+  "word": "placidly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a quiet and tranquil manner",
+  "syn": [],
+  "exp": "the sea now shimmered placidly before our eyes"
+ },
+ {
+  "word": "unmanageable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "difficult to use or handle or manage because of size or weight or shape",
+  "syn": [
+   "unwieldy"
+  ],
+  "exp": "we set about towing the unwieldy structure into the shelter"
+ },
+ {
+  "word": "appliance",
+  "pos": [
+   "noun"
+  ],
+  "en": "a device or control that is very useful for a particular job",
+  "syn": [
+   "contraption",
+   "contrivance",
+   "convenience",
+   "gadget"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "relinquish",
+  "pos": [
+   "verb"
+  ],
+  "en": "part with a possession or right",
+  "syn": [
+   "release",
+   "resign",
+   "free",
+   "give_up"
+  ],
+  "exp": "I am relinquishing my bedroom to the long-term house guest"
+ },
+ {
+  "word": "tedious",
+  "pos": [
+   "adjective"
+  ],
+  "en": "so lacking in interest as to cause mental weariness",
+  "syn": [
+   "boring",
+   "deadening",
+   "dull",
+   "ho-hum"
+  ],
+  "exp": "a boring evening with uninteresting people"
+ },
+ {
+  "word": "tedium",
+  "pos": [
+   "noun"
+  ],
+  "en": "the feeling of being bored by something tedious",
+  "syn": [
+   "boredom",
+   "ennui"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "exert",
+  "pos": [
+   "verb"
+  ],
+  "en": "put to use",
+  "syn": [
+   "exercise"
+  ],
+  "exp": "exert one's power or influence"
+ },
+ {
+  "word": "extortion",
+  "pos": [
+   "noun"
+  ],
+  "en": "an exorbitant charge",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "alleviate",
+  "pos": [
+   "verb"
+  ],
+  "en": "provide physical relief, as from pain",
+  "syn": [
+   "relieve",
+   "palliate",
+   "assuage"
+  ],
+  "exp": "This pill will relieve your headaches"
+ },
+ {
+  "word": "elaborate",
+  "pos": [
+   "adjective",
+   "verb"
+  ],
+  "en": "marked by complexity and richness of detail",
+  "syn": [
+   "luxuriant"
+  ],
+  "exp": "an elaborate lace pattern"
+ },
+ {
+  "word": "elaboration",
+  "pos": [
+   "noun"
+  ],
+  "en": "addition of extra material or illustration or clarifying detail",
+  "syn": [
+   "amplification"
+  ],
+  "exp": "a few remarks added in amplification and defense"
+ },
+ {
+  "word": "detest",
+  "pos": [
+   "verb"
+  ],
+  "en": "dislike intensely",
+  "syn": [
+   "hate"
+  ],
+  "exp": "feel antipathy or aversion towards"
+ },
+ {
+  "word": "detestable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "offensive to the mind",
+  "syn": [
+   "abhorrent",
+   "obscene",
+   "repugnant",
+   "repulsive"
+  ],
+  "exp": "the obscene massacre at Wounded Knee"
+ },
+ {
+  "word": "suds",
+  "pos": [
+   "noun"
+  ],
+  "en": "the froth produced by soaps or detergents",
+  "syn": [
+   "soapsuds",
+   "lather"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "agreeable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "conforming to your own liking or feelings or nature",
+  "syn": [],
+  "exp": "Is the plan agreeable to you?"
+ },
+ {
+  "word": "prowl",
+  "pos": [
+   "verb"
+  ],
+  "en": "move about in or as if in a predatory manner",
+  "syn": [],
+  "exp": "The suspicious stranger prowls the streets of the town"
+ },
+ {
+  "word": "speculate",
+  "pos": [
+   "verb"
+  ],
+  "en": "to believe especially on uncertain or tentative grounds",
+  "syn": [
+   "theorize",
+   "theorise",
+   "conjecture",
+   "hypothesize"
+  ],
+  "exp": "Scientists supposed that large dinosaurs lived in swamps"
+ },
+ {
+  "word": "speculation",
+  "pos": [
+   "noun"
+  ],
+  "en": "a message expressing an opinion based on incomplete evidence",
+  "syn": [
+   "guess",
+   "conjecture",
+   "supposition",
+   "surmise"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "speculative",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not financially safe or secure",
+  "syn": [
+   "bad",
+   "risky",
+   "high-risk"
+  ],
+  "exp": "anything that promises to pay too much can't help being risky"
+ },
+ {
+  "word": "peacock",
+  "pos": [
+   "noun"
+  ],
+  "en": "European butterfly having reddish-brown wings each marked with a purple eyespot",
+  "syn": [
+   "peacock_butterfly",
+   "Inachis_io"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "disdain",
+  "pos": [
+   "noun"
+  ],
+  "en": "lack of respect accompanied by a feeling of intense dislike",
+  "syn": [
+   "contempt",
+   "scorn",
+   "despite"
+  ],
+  "exp": "he was held in contempt"
+ },
+ {
+  "word": "reenact",
+  "pos": [
+   "verb"
+  ],
+  "en": "enact or perform again",
+  "syn": [],
+  "exp": "They reenacted the battle of Princeton"
+ },
+ {
+  "word": "torment",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "torment emotionally or mentally",
+  "syn": [
+   "torture",
+   "excruciate",
+   "rack"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "extravagance",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of exceeding the appropriate limits of decorum or probability or truth",
+  "syn": [
+   "extravagancy"
+  ],
+  "exp": "we were surprised by the extravagance of his description"
+ },
+ {
+  "word": "exploit",
+  "pos": [
+   "verb"
+  ],
+  "en": "use or manipulate to one's advantage",
+  "syn": [
+   "work"
+  ],
+  "exp": "He exploit the new taxation system"
+ },
+ {
+  "word": "exploitation",
+  "pos": [
+   "noun"
+  ],
+  "en": "the act of making some area of land or water more profitable or productive or useful",
+  "syn": [
+   "development"
+  ],
+  "exp": "the development of Alaskan resources"
+ },
+ {
+  "word": "mechanism",
+  "pos": [
+   "noun"
+  ],
+  "en": "the atomic process that occurs during a chemical reaction",
+  "syn": [
+   "chemical_mechanism"
+  ],
+  "exp": "he determined unique mechanisms for the photochemical reactions"
+ },
+ {
+  "word": "hence",
+  "pos": [
+   "adverb"
+  ],
+  "en": "(used to introduce a logical conclusion) from that fact or reason or as a result",
+  "syn": [
+   "therefore",
+   "thence",
+   "thus",
+   "so"
+  ],
+  "exp": "therefore X must be true"
+ },
+ {
+  "word": "offspring",
+  "pos": [
+   "noun"
+  ],
+  "en": "the immediate descendants of a person",
+  "syn": [
+   "progeny",
+   "issue"
+  ],
+  "exp": "she was the mother of many offspring"
+ },
+ {
+  "word": "fit",
+  "pos": [
+   "adjective"
+  ],
+  "en": "meeting adequate standards for a purpose",
+  "syn": [],
+  "exp": "a fit subject for discussion"
+ },
+ {
+  "word": "oblige",
+  "pos": [
+   "verb"
+  ],
+  "en": "force somebody to do something",
+  "syn": [
+   "compel",
+   "obligate"
+  ],
+  "exp": "We compel all students to fill out this form"
+ },
+ {
+  "word": "drive",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "the act of applying force to propel something",
+  "syn": [
+   "thrust",
+   "driving_force"
+  ],
+  "exp": "after reaching the desired velocity the drive is cut off"
+ },
+ {
+  "word": "collaborate",
+  "pos": [
+   "verb"
+  ],
+  "en": "work together on a common enterprise of project",
+  "syn": [
+   "join_forces",
+   "cooperate",
+   "get_together"
+  ],
+  "exp": "The soprano and the pianist did not get together very well"
+ },
+ {
+  "word": "collaborator",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone who assists in a plot",
+  "syn": [
+   "confederate",
+   "henchman",
+   "partner_in_crime"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "collaboration",
+  "pos": [
+   "noun"
+  ],
+  "en": "act of working jointly",
+  "syn": [
+   "coaction"
+  ],
+  "exp": "they worked either in collaboration or independently"
+ },
+ {
+  "word": "collaborative",
+  "pos": [
+   "adjective"
+  ],
+  "en": "accomplished by collaboration",
+  "syn": [],
+  "exp": "collaborative research"
+ },
+ {
+  "word": "showy",
+  "pos": [
+   "adjective"
+  ],
+  "en": "marked by ostentation but often tasteless",
+  "syn": [
+   "flamboyant",
+   "splashy"
+  ],
+  "exp": "a cheap showy rhinestone bracelet"
+ },
+ {
+  "word": "wrangle",
+  "pos": [
+   "verb"
+  ],
+  "en": "to quarrel noisily, angrily or disruptively",
+  "syn": [
+   "brawl"
+  ],
+  "exp": "The bar keeper threw them out, but they continued to wrangle on down the street"
+ },
+ {
+  "word": "premise",
+  "pos": [
+   "noun"
+  ],
+  "en": "a statement that is assumed to be true and from which a conclusion can be drawn",
+  "syn": [
+   "premiss",
+   "assumption"
+  ],
+  "exp": "on the assumption that he has been injured we can infer that he will not play"
+ },
+ {
+  "word": "advantageous",
+  "pos": [
+   "adjective"
+  ],
+  "en": "giving an advantage",
+  "syn": [
+   "favorable",
+   "favourable"
+  ],
+  "exp": "a contract advantageous to our country"
+ },
+ {
+  "word": "parasite",
+  "pos": [
+   "noun"
+  ],
+  "en": "an animal or plant that lives in or on a host (another animal or plant)",
+  "syn": [],
+  "exp": "it obtains nourishment from the host without benefiting or killing the host"
+ },
+ {
+  "word": "fanciful",
+  "pos": [
+   "adjective"
+  ],
+  "en": "indulging in or influenced by fancy",
+  "syn": [
+   "notional"
+  ],
+  "exp": "all the notional vagaries of childhood"
+ },
+ {
+  "word": "poise",
+  "pos": [
+   "noun"
+  ],
+  "en": "a cgs unit of dynamic viscosity equal to one dyne-second per square centimeter",
+  "syn": [],
+  "exp": "the viscosity of a fluid in which a force of one dyne per square centimeter maintains a velocity of 1 centimeter per second"
+ },
+ {
+  "word": "customary",
+  "pos": [
+   "adjective"
+  ],
+  "en": "in accordance with convention or custom",
+  "syn": [],
+  "exp": "sealed the deal with the customary handshake"
+ },
+ {
+  "word": "insightful",
+  "pos": [
+   "adjective"
+  ],
+  "en": "exhibiting insight or clear and deep perception",
+  "syn": [],
+  "exp": "the chapter is insightful and suggestive of new perspectives-R.C.Angell"
+ },
+ {
+  "word": "notable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "widely known and esteemed",
+  "syn": [
+   "celebrated",
+   "famed",
+   "far-famed",
+   "famous"
+  ],
+  "exp": "a famous actor"
+ },
+ {
+  "word": "vicious",
+  "pos": [
+   "adjective"
+  ],
+  "en": "(of persons or their actions) able or disposed to inflict pain or suffering",
+  "syn": [
+   "barbarous",
+   "brutal",
+   "cruel",
+   "fell"
+  ],
+  "exp": "Stalin's roughshod treatment of the kulaks"
+ },
+ {
+  "word": "viciously",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a vicious manner",
+  "syn": [
+   "brutally",
+   "savagely"
+  ],
+  "exp": "he was viciously attacked"
+ },
+ {
+  "word": "pupil",
+  "pos": [
+   "noun"
+  ],
+  "en": "a learner who is enrolled in an educational institution",
+  "syn": [
+   "student",
+   "educatee"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "withdrawn",
+  "pos": [
+   "adjective"
+  ],
+  "en": "withdrawn from society",
+  "syn": [
+   "recluse",
+   "reclusive"
+  ],
+  "exp": "lived an unsocial reclusive life"
+ },
+ {
+  "word": "withdrawal",
+  "pos": [
+   "noun"
+  ],
+  "en": "a retraction of a previously held position",
+  "syn": [
+   "backdown",
+   "climb-down"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "torturous",
+  "pos": [
+   "adjective"
+  ],
+  "en": "extremely painful",
+  "syn": [
+   "agonizing",
+   "agonising",
+   "excruciating",
+   "harrowing"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "depict",
+  "pos": [
+   "verb"
+  ],
+  "en": "show in, or as in, a picture",
+  "syn": [
+   "picture",
+   "render",
+   "show"
+  ],
+  "exp": "This scene depicts country life"
+ },
+ {
+  "word": "depiction",
+  "pos": [
+   "noun"
+  ],
+  "en": "a graphic or vivid verbal description",
+  "syn": [
+   "word_picture",
+   "word-painting",
+   "delineation",
+   "picture"
+  ],
+  "exp": "too often the narrative was interrupted by long word pictures"
+ },
+ {
+  "word": "upheaval",
+  "pos": [
+   "noun"
+  ],
+  "en": "a state of violent disturbance and disorder (as in politics or social conditions generally)",
+  "syn": [
+   "turbulence",
+   "Sturm_und_Drang"
+  ],
+  "exp": "the industrial revolution was a period of great turbulence"
+ },
+ {
+  "word": "shortlist",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "put someone or something on a short list",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "uneventful",
+  "pos": [
+   "adjective"
+  ],
+  "en": "marked by no noteworthy or significant events",
+  "syn": [],
+  "exp": "the voyage was pleasant and uneventful"
+ },
+ {
+  "word": "pertinent",
+  "pos": [
+   "adjective"
+  ],
+  "en": "having precise or logical relevance to the matter at hand",
+  "syn": [],
+  "exp": "a list of articles pertinent to the discussion"
+ },
+ {
+  "word": "pertain to",
+  "pos": [
+   "verb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "daydream",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "absentminded dreaming while awake",
+  "syn": [
+   "reverie",
+   "revery",
+   "daydreaming",
+   "oneirism"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "protagonist",
+  "pos": [
+   "noun"
+  ],
+  "en": "a person who backs a politician or a team etc.",
+  "syn": [
+   "supporter",
+   "champion",
+   "admirer",
+   "booster"
+  ],
+  "exp": "all their supporters came out for the game"
+ },
+ {
+  "word": "simplicity",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of being simple or uncompounded",
+  "syn": [
+   "simpleness"
+  ],
+  "exp": "the simplicity of a crystal"
+ },
+ {
+  "word": "blockbuster",
+  "pos": [
+   "noun"
+  ],
+  "en": "a large bomb used to demolish extensive areas (as a city block)",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "resonate",
+  "pos": [
+   "verb"
+  ],
+  "en": "sound with resonance",
+  "syn": [
+   "vibrate"
+  ],
+  "exp": "The sound resonates well in this theater"
+ },
+ {
+  "word": "sequel",
+  "pos": [
+   "noun"
+  ],
+  "en": "something that follows something else",
+  "syn": [
+   "subsequence"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "irony",
+  "pos": [
+   "noun"
+  ],
+  "en": "witty language used to convey insults or scorn",
+  "syn": [
+   "sarcasm",
+   "satire",
+   "caustic_remark"
+  ],
+  "exp": "he used sarcasm to upset his opponent"
+ },
+ {
+  "word": "acidic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "being or containing an acid",
+  "syn": [],
+  "exp": "of a solution having an excess of hydrogen atoms (having a pH of less than 7)"
+ },
+ {
+  "word": "align",
+  "pos": [
+   "verb"
+  ],
+  "en": "place in a line or arrange so as to be parallel or straight",
+  "syn": [
+   "aline",
+   "line_up",
+   "adjust"
+  ],
+  "exp": "align the car with the curb"
+ },
+ {
+  "word": "alignment",
+  "pos": [
+   "noun"
+  ],
+  "en": "an organization of people (or countries) involved in a pact or treaty",
+  "syn": [
+   "alliance",
+   "coalition",
+   "alinement"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "manipulation",
+  "pos": [
+   "noun"
+  ],
+  "en": "exerting shrewd or devious influence especially for one's own advantage",
+  "syn": [
+   "use"
+  ],
+  "exp": "his manipulation of his friends was scandalous"
+ },
+ {
+  "word": "suitor",
+  "pos": [
+   "noun"
+  ],
+  "en": "a man who courts a woman",
+  "syn": [
+   "suer",
+   "wooer"
+  ],
+  "exp": "a suer for the hand of the princess"
+ },
+ {
+  "word": "deceit",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of being fraudulent",
+  "syn": [
+   "fraudulence"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "alienate",
+  "pos": [
+   "verb"
+  ],
+  "en": "arouse hostility or indifference in where there had formerly been love, affection, or friendliness",
+  "syn": [
+   "estrange",
+   "disaffect"
+  ],
+  "exp": "She alienated her friends when she became fanatically religious"
+ },
+ {
+  "word": "persuasively",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a persuasive manner",
+  "syn": [],
+  "exp": "this essay argues so persuasively..."
+ },
+ {
+  "word": "confinement",
+  "pos": [
+   "noun"
+  ],
+  "en": "concluding state of pregnancy",
+  "syn": [
+   "parturiency",
+   "labor",
+   "labour",
+   "lying-in"
+  ],
+  "exp": "from the onset of contractions to the birth of a child"
+ },
+ {
+  "word": "minutiae",
+  "pos": [
+   "noun"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "peasant",
+  "pos": [
+   "noun"
+  ],
+  "en": "a country person",
+  "syn": [
+   "provincial",
+   "bucolic"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "inexplicable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "incapable of being explained or accounted for",
+  "syn": [
+   "incomprehensible"
+  ],
+  "exp": "left the house at three in the morning for inexplicable reasons"
+ },
+ {
+  "word": "inexplicably",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a manner differing from the usual or expected",
+  "syn": [
+   "curiously",
+   "oddly",
+   "peculiarly"
+  ],
+  "exp": "had a curiously husky voice"
+ },
+ {
+  "word": "pigeon",
+  "pos": [
+   "noun"
+  ],
+  "en": "wild and domesticated birds having a heavy body and short legs",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "harass",
+  "pos": [
+   "verb"
+  ],
+  "en": "annoy continually or chronically",
+  "syn": [
+   "hassle",
+   "harry",
+   "chivy",
+   "chivvy"
+  ],
+  "exp": "He is known to harry his staff when he is overworked"
+ },
+ {
+  "word": "harassment",
+  "pos": [
+   "noun"
+  ],
+  "en": "a feeling of intense annoyance caused by being tormented",
+  "syn": [
+   "torment"
+  ],
+  "exp": "so great was his harassment that he wanted to destroy his tormentors"
+ },
+ {
+  "word": "believably",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a believable manner",
+  "syn": [],
+  "exp": "he acted believably sincere"
+ },
+ {
+  "word": "readable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "easily deciphered",
+  "syn": [
+   "clear",
+   "decipherable"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "cleverness",
+  "pos": [
+   "noun"
+  ],
+  "en": "the power of creative imagination",
+  "syn": [
+   "inventiveness",
+   "ingeniousness",
+   "ingenuity"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "persecute",
+  "pos": [
+   "verb"
+  ],
+  "en": "cause to suffer",
+  "syn": [
+   "oppress"
+  ],
+  "exp": "Some religious groups are persecuted in some countries"
+ },
+ {
+  "word": "persecution",
+  "pos": [
+   "noun"
+  ],
+  "en": "the act of persecuting (especially on the basis of race or religion)",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "smug",
+  "pos": [
+   "adjective"
+  ],
+  "en": "marked by excessive complacency or self-satisfaction",
+  "syn": [
+   "self-satisfied"
+  ],
+  "exp": "a smug glow of self-congratulation"
+ },
+ {
+  "word": "smugly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a smug manner",
+  "syn": [],
+  "exp": "the bureaucrats explained smugly that the facts provided by their own experts show no cause for concern"
+ },
+ {
+  "word": "ferocious",
+  "pos": [
+   "adjective"
+  ],
+  "en": "marked by extreme and violent energy",
+  "syn": [
+   "fierce",
+   "furious",
+   "savage"
+  ],
+  "exp": "a ferocious beating"
+ },
+ {
+  "word": "ferociously",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a physically fierce manner",
+  "syn": [
+   "fiercely"
+  ],
+  "exp": "silence broken by dogs barking ferociously"
+ },
+ {
+  "word": "hostile",
+  "pos": [
+   "adjective"
+  ],
+  "en": "characterized by enmity or ill will",
+  "syn": [],
+  "exp": "a hostile nation"
+ },
+ {
+  "word": "hostility",
+  "pos": [
+   "noun"
+  ],
+  "en": "a hostile (very unfriendly) disposition",
+  "syn": [
+   "ill_will"
+  ],
+  "exp": "he could not conceal his hostility"
+ },
+ {
+  "word": "dismay",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "lower someone's spirits",
+  "syn": [
+   "depress",
+   "deject",
+   "cast_down",
+   "get_down"
+  ],
+  "exp": "These news depressed her"
+ },
+ {
+  "word": "methodical",
+  "pos": [
+   "adjective"
+  ],
+  "en": "characterized by method and orderliness",
+  "syn": [],
+  "exp": "a methodical scholar"
+ },
+ {
+  "word": "ruthless",
+  "pos": [
+   "adjective"
+  ],
+  "en": "without mercy or pity",
+  "syn": [
+   "pitiless",
+   "remorseless",
+   "unpitying"
+  ],
+  "exp": "an act of ruthless ferocity"
+ },
+ {
+  "word": "ruthlessness",
+  "pos": [
+   "noun"
+  ],
+  "en": "mercilessness characterized by a lack of pity",
+  "syn": [
+   "pitilessness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "talkative",
+  "pos": [
+   "adjective"
+  ],
+  "en": "full of trivial conversation",
+  "syn": [
+   "chatty",
+   "gabby",
+   "garrulous",
+   "loquacious"
+  ],
+  "exp": "kept from her housework by gabby neighbors"
+ },
+ {
+  "word": "awe",
+  "pos": [
+   "verb"
+  ],
+  "en": "inspire awe in",
+  "syn": [],
+  "exp": "The famous professor awed the undergraduates"
+ },
+ {
+  "word": "clan",
+  "pos": [
+   "noun"
+  ],
+  "en": "group of people related by blood or marriage",
+  "syn": [
+   "kin",
+   "kin_group",
+   "kinship_group",
+   "kindred"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "privileged",
+  "pos": [
+   "adjective"
+  ],
+  "en": "blessed with privileges",
+  "syn": [],
+  "exp": "the privileged few"
+ },
+ {
+  "word": "crumble",
+  "pos": [
+   "verb"
+  ],
+  "en": "fall apart",
+  "syn": [
+   "crumple",
+   "tumble",
+   "break_down",
+   "collapse"
+  ],
+  "exp": "the building crumbled after the explosion"
+ },
+ {
+  "word": "crumb",
+  "pos": [
+   "noun"
+  ],
+  "en": "a very small quantity of something",
+  "syn": [],
+  "exp": "he gave only a crumb of information about his plans"
+ },
+ {
+  "word": "pace",
+  "pos": [
+   "verb"
+  ],
+  "en": "walk with slow or fast paces",
+  "syn": [],
+  "exp": "He paced up and down the hall"
+ },
+ {
+  "word": "closeness",
+  "pos": [
+   "noun"
+  ],
+  "en": "a feeling of being intimate and belonging together",
+  "syn": [
+   "intimacy"
+  ],
+  "exp": "their closeness grew as the night wore on"
+ },
+ {
+  "word": "rarity",
+  "pos": [
+   "noun"
+  ],
+  "en": "noteworthy scarcity",
+  "syn": [
+   "rareness",
+   "infrequency"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "evoke",
+  "pos": [
+   "verb"
+  ],
+  "en": "call forth (emotions, feelings, and responses)",
+  "syn": [
+   "arouse",
+   "elicit",
+   "enkindle",
+   "kindle"
+  ],
+  "exp": "arouse pity"
+ },
+ {
+  "word": "repel",
+  "pos": [
+   "verb"
+  ],
+  "en": "cause to move back by force or influence",
+  "syn": [
+   "drive",
+   "repulse",
+   "force_back",
+   "push_back"
+  ],
+  "exp": "push back the urge to smoke"
+ },
+ {
+  "word": "repellant",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "en": "serving or tending to repel",
+  "syn": [
+   "rebarbative",
+   "repellent"
+  ],
+  "exp": "he became rebarbative and prickly and spiteful"
+ },
+ {
+  "word": "aqua",
+  "pos": [
+   "adjective"
+  ],
+  "en": "a shade of blue tinged with green",
+  "syn": [
+   "greenish_blue",
+   "aquamarine",
+   "turquoise",
+   "cobalt_blue"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "aquarium",
+  "pos": [
+   "noun"
+  ],
+  "en": "a tank or pool or bowl filled with water for keeping live fish and underwater animals",
+  "syn": [
+   "fish_tank",
+   "marine_museum"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "insightfully",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "flashback",
+  "pos": [
+   "noun"
+  ],
+  "en": "a transition (in literary or theatrical works or films) to an earlier event or scene that interrupts the normal chronological development of the story",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "self-worth",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of being worthy of esteem or respect",
+  "syn": [
+   "dignity",
+   "self-respect",
+   "self-regard"
+  ],
+  "exp": "it was beneath his dignity to cheat"
+ },
+ {
+  "word": "agonize",
+  "pos": [
+   "verb"
+  ],
+  "en": "cause to agonize",
+  "syn": [
+   "agonise"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "cite",
+  "pos": [
+   "verb"
+  ],
+  "en": "make reference to",
+  "syn": [
+   "mention",
+   "advert",
+   "bring_up",
+   "name"
+  ],
+  "exp": "His name was mentioned in connection with the invention"
+ },
+ {
+  "word": "citation",
+  "pos": [
+   "noun"
+  ],
+  "en": "an official award (as for bravery or service) usually given as formal public statement",
+  "syn": [
+   "commendation"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "recite",
+  "pos": [
+   "verb"
+  ],
+  "en": "recite in elocution",
+  "syn": [
+   "declaim"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "ecstasy",
+  "pos": [
+   "noun"
+  ],
+  "en": "a state of being carried away by overwhelming emotion",
+  "syn": [
+   "rapture",
+   "transport",
+   "exaltation",
+   "raptus"
+  ],
+  "exp": "listening to sweet music in a perfect rapture- Charles Dickens"
+ },
+ {
+  "word": "ecstatic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "feeling great rapture or delight",
+  "syn": [
+   "enraptured",
+   "rapturous",
+   "rapt",
+   "rhapsodic"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "ecstatically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an ecstatic manner",
+  "syn": [
+   "rapturously",
+   "rhapsodically"
+  ],
+  "exp": "he reacted ecstatically to my plan to travel to Africa"
+ },
+ {
+  "word": "pleasurable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "affording satisfaction or pleasure",
+  "syn": [
+   "enjoyable",
+   "gratifying"
+  ],
+  "exp": "the company was enjoyable"
+ },
+ {
+  "word": "nature",
+  "pos": [
+   "noun"
+  ],
+  "en": "the essential qualities or characteristics by which something is recognized",
+  "syn": [],
+  "exp": "it is the nature of fire to burn"
+ },
+ {
+  "word": "substantially",
+  "pos": [
+   "adverb"
+  ],
+  "en": "to a great extent or degree",
+  "syn": [
+   "well",
+   "considerably"
+  ],
+  "exp": "I'm afraid the film was well over budget"
+ },
+ {
+  "word": "favorably",
+  "pos": [
+   "adverb"
+  ],
+  "en": "showing approval",
+  "syn": [
+   "favourably"
+  ],
+  "exp": "he reviewed the play favorably"
+ },
+ {
+  "word": "diversity",
+  "pos": [
+   "noun"
+  ],
+  "en": "noticeable heterogeneity",
+  "syn": [
+   "diverseness",
+   "multifariousness",
+   "variety"
+  ],
+  "exp": "a diversity of possibilities"
+ },
+ {
+  "word": "elitist",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone who believes in rule by an elite group",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "grumble",
+  "pos": [
+   "verb"
+  ],
+  "en": "show one's unhappiness or critical attitude",
+  "syn": [
+   "grouch",
+   "scold"
+  ],
+  "exp": "He scolded about anything that he thought was wrong"
+ },
+ {
+  "word": "rumble",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "make a low noise",
+  "syn": [
+   "grumble"
+  ],
+  "exp": "rumbling thunder"
+ },
+ {
+  "word": "neglectful",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not showing due care or attention",
+  "syn": [
+   "inattentive"
+  ],
+  "exp": "inattentive students"
+ },
+ {
+  "word": "roundup",
+  "pos": [
+   "noun"
+  ],
+  "en": "the activity of gathering livestock together so that they can be counted or branded or sold",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "conscientious",
+  "pos": [
+   "adjective"
+  ],
+  "en": "characterized by extreme care and great effort",
+  "syn": [
+   "painstaking",
+   "scrupulous"
+  ],
+  "exp": "conscientious application to the work at hand"
+ },
+ {
+  "word": "conscientiously",
+  "pos": [
+   "adverb"
+  ],
+  "en": "with extreme conscientiousness",
+  "syn": [
+   "scrupulously",
+   "religiously"
+  ],
+  "exp": "he came religiously every morning at 8 o'clock"
+ },
+ {
+  "word": "indefinite",
+  "pos": [
+   "adjective"
+  ],
+  "en": "vague or not clearly defined or stated",
+  "syn": [],
+  "exp": "must you be so indefinite?"
+ },
+ {
+  "word": "indefinitely",
+  "pos": [
+   "adverb"
+  ],
+  "en": "to an indefinite extent",
+  "syn": [],
+  "exp": "for an indefinite time"
+ },
+ {
+  "word": "atmospheric",
+  "pos": [
+   "adjective"
+  ],
+  "en": "relating to or located in the atmosphere",
+  "syn": [
+   "atmospherical"
+  ],
+  "exp": "atmospheric tests"
+ },
+ {
+  "word": "fuse",
+  "pos": [
+   "verb"
+  ],
+  "en": "mix together different elements",
+  "syn": [
+   "blend",
+   "flux",
+   "mix",
+   "conflate"
+  ],
+  "exp": "The colors blend well"
+ },
+ {
+  "word": "fusion",
+  "pos": [
+   "noun"
+  ],
+  "en": "an occurrence that involves the production of a union",
+  "syn": [
+   "merger",
+   "unification"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "robust",
+  "pos": [
+   "adjective"
+  ],
+  "en": "sturdy and strong in form, constitution, or construction",
+  "syn": [],
+  "exp": "a robust body"
+ },
+ {
+  "word": "robustly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a robust manner",
+  "syn": [],
+  "exp": "he was robustly built"
+ },
+ {
+  "word": "dismal",
+  "pos": [
+   "adjective"
+  ],
+  "en": "causing dejection",
+  "syn": [
+   "blue",
+   "dark",
+   "dingy",
+   "disconsolate"
+  ],
+  "exp": "the dark days of the war"
+ },
+ {
+  "word": "dismally",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a cheerless manner",
+  "syn": [
+   "drearily"
+  ],
+  "exp": "in August 1914, there was a dismally sentimental little dinner, when the French, German, Austrian and Belgian members of the committee drank together to the peace of the future"
+ },
+ {
+  "word": "crave",
+  "pos": [
+   "verb"
+  ],
+  "en": "have a craving, appetite, or great desire for",
+  "syn": [
+   "hunger",
+   "thirst",
+   "starve",
+   "lust"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "craving",
+  "pos": [
+   "noun"
+  ],
+  "en": "an intense desire for some particular thing",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "prospective",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or concerned with or related to the future",
+  "syn": [],
+  "exp": "the statute is solely prospective in operation"
+ },
+ {
+  "word": "swap",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "exchange or give (something) in exchange for",
+  "syn": [
+   "trade",
+   "swop",
+   "switch"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "remotely",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a remote manner",
+  "syn": [],
+  "exp": "when the measured speech of the chorus passes over into song the tones are, remotely but unmistakably, those taught by the orthodox liturgy"
+ },
+ {
+  "word": "splatter",
+  "pos": [
+   "verb"
+  ],
+  "en": "cause or allow (a liquid substance) to run or flow from a container",
+  "syn": [
+   "spill",
+   "slop"
+  ],
+  "exp": "spill the milk"
+ },
+ {
+  "word": "automatic",
+  "pos": [
+   "verb"
+  ],
+  "en": "light machine gun",
+  "syn": [
+   "automatic_rifle",
+   "machine_rifle"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "automatically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a reflex manner",
+  "syn": [],
+  "exp": "he answered automatically"
+ },
+ {
+  "word": "exhaust",
+  "pos": [
+   "verb"
+  ],
+  "en": "wear out completely",
+  "syn": [
+   "wash_up",
+   "beat",
+   "tucker",
+   "tucker_out"
+  ],
+  "exp": "This kind of work exhausts me"
+ },
+ {
+  "word": "violet",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of a color intermediate between red and blue",
+  "syn": [
+   "purple",
+   "purplish"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "bubbly",
+  "pos": [
+   "adjective"
+  ],
+  "en": "emitting or filled with bubbles as from carbonation or fermentation",
+  "syn": [
+   "bubbling",
+   "foaming",
+   "foamy",
+   "frothy"
+  ],
+  "exp": "foamy (or frothy) beer"
+ },
+ {
+  "word": "chaotically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a wild and confused manner",
+  "syn": [],
+  "exp": "the drugged man was talking chaotically"
+ },
+ {
+  "word": "apprehensive",
+  "pos": [
+   "adjective"
+  ],
+  "en": "quick to understand",
+  "syn": [
+   "discerning"
+  ],
+  "exp": "a kind and apprehensive friend- Nathaniel Hawthorne"
+ },
+ {
+  "word": "settee",
+  "pos": [
+   "noun"
+  ],
+  "en": "a long wooden bench with a back",
+  "syn": [
+   "settle"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "trampoline",
+  "pos": [
+   "noun"
+  ],
+  "en": "gymnastic apparatus consisting of a strong canvas sheet attached with springs to a metal frame",
+  "syn": [],
+  "exp": "used for tumbling"
+ },
+ {
+  "word": "stamina",
+  "pos": [
+   "noun"
+  ],
+  "en": "enduring strength and energy",
+  "syn": [
+   "staying_power",
+   "toughness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "ploy",
+  "pos": [
+   "noun"
+  ],
+  "en": "an opening remark intended to secure an advantage for the speaker",
+  "syn": [
+   "gambit"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "dither",
+  "pos": [
+   "verb"
+  ],
+  "en": "act nervously",
+  "syn": [],
+  "exp": "be undecided"
+ },
+ {
+  "word": "overalls",
+  "pos": [
+   "noun"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "unison",
+  "pos": [
+   "noun"
+  ],
+  "en": "corresponding exactly",
+  "syn": [],
+  "exp": "marching in unison"
+ },
+ {
+  "word": "snail",
+  "pos": [
+   "noun"
+  ],
+  "en": "freshwater or marine or terrestrial gastropod mollusk usually having an external enclosing spiral shell",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "bliss",
+  "pos": [
+   "noun"
+  ],
+  "en": "a state of extreme happiness",
+  "syn": [
+   "blissfulness",
+   "cloud_nine",
+   "seventh_heaven",
+   "walking_on_air"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "inexhaustible",
+  "pos": [
+   "adjective"
+  ],
+  "en": "that cannot be entirely consumed or used up",
+  "syn": [
+   "unlimited"
+  ],
+  "exp": "an inexhaustible supply of coal"
+ },
+ {
+  "word": "acre",
+  "pos": [
+   "noun"
+  ],
+  "en": "a unit of area (4840 square yards) used in English-speaking countries",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "calf",
+  "pos": [
+   "noun"
+  ],
+  "en": "young of domestic cattle",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "heifer",
+  "pos": [
+   "noun"
+  ],
+  "en": "young cow",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "ewe",
+  "pos": [
+   "noun"
+  ],
+  "en": "a member of a people living in southern Benin and Togo and southeastern Ghana",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "adversary",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone who offers opposition",
+  "syn": [
+   "antagonist",
+   "opponent",
+   "opposer",
+   "resister"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "victorious",
+  "pos": [
+   "adjective"
+  ],
+  "en": "having won",
+  "syn": [
+   "winning"
+  ],
+  "exp": "the victorious entry"
+ },
+ {
+  "word": "victoriously",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a victorious manner",
+  "syn": [],
+  "exp": "Virginia had defended her land victoriously"
+ },
+ {
+  "word": "profound",
+  "pos": [
+   "adjective"
+  ],
+  "en": "showing intellectual penetration or emotional depth",
+  "syn": [],
+  "exp": "the differences are profound"
+ },
+ {
+  "word": "profoundly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "to a great depth psychologically or emotionally",
+  "syn": [
+   "deeply",
+   "intensely"
+  ],
+  "exp": "They felt the loss deeply"
+ },
+ {
+  "word": "baldly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a bald manner",
+  "syn": [],
+  "exp": "this book is, to put it baldly, an uneven work."
+ },
+ {
+  "word": "bald",
+  "pos": [
+   "verb"
+  ],
+  "en": "grow bald",
+  "syn": [],
+  "exp": "lose hair on one's head"
+ },
+ {
+  "word": "bearded",
+  "pos": [
+   "adjective"
+  ],
+  "en": "having hair on the cheeks and chin",
+  "syn": [
+   "barbate",
+   "bewhiskered",
+   "whiskered",
+   "whiskery"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "professionalism",
+  "pos": [
+   "noun"
+  ],
+  "en": "the expertness characteristic of a professional person",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "artistically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an artistic manner",
+  "syn": [],
+  "exp": "it was artistically decorated"
+ },
+ {
+  "word": "popularization",
+  "pos": [
+   "noun"
+  ],
+  "en": "an interpretation that easily understandable and acceptable",
+  "syn": [
+   "popularisation"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "pendulum",
+  "pos": [
+   "noun"
+  ],
+  "en": "an apparatus consisting of an object mounted so that it swings freely under the influence of gravity",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "predecessor",
+  "pos": [
+   "noun"
+  ],
+  "en": "one who precedes you in time (as in holding a position or office)",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "boast",
+  "pos": [
+   "noun"
+  ],
+  "en": "speaking of yourself in superlatives",
+  "syn": [
+   "boasting",
+   "self-praise",
+   "jactitation"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "lapse",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "a mistake resulting from inattention",
+  "syn": [
+   "oversight"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "ceaseless",
+  "pos": [
+   "adjective"
+  ],
+  "en": "uninterrupted in time and indefinitely long continuing",
+  "syn": [
+   "constant",
+   "incessant",
+   "never-ending",
+   "perpetual"
+  ],
+  "exp": "the ceaseless thunder of surf"
+ },
+ {
+  "word": "ceaselessly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "with unflagging resolve",
+  "syn": [
+   "endlessly",
+   "incessantly",
+   "unceasingly",
+   "unendingly"
+  ],
+  "exp": "dance inspires him ceaselessly to strive higher and higher toward the shining pinnacle of perfection that is the goal of every artiste"
+ },
+ {
+  "word": "climax",
+  "pos": [
+   "noun"
+  ],
+  "en": "the highest point of anything conceived of as growing or developing or unfolding",
+  "syn": [
+   "flood_tide"
+  ],
+  "exp": "the climax of the artist's career"
+ },
+ {
+  "word": "climactic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "consisting of or causing a climax",
+  "syn": [],
+  "exp": "a climactic development"
+ },
+ {
+  "word": "anticlimactic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to a sudden change from an impressive to a ludicrous style",
+  "syn": [
+   "anticlimactical"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "scramble",
+  "pos": [
+   "noun"
+  ],
+  "en": "an unceremonious and disorganized struggle",
+  "syn": [
+   "scuffle"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "forfeit",
+  "pos": [
+   "verb"
+  ],
+  "en": "lose (s.th.) or lose the right to (s.th.) by some error, offense, or crime",
+  "syn": [
+   "give_up",
+   "throw_overboard",
+   "waive",
+   "forgo"
+  ],
+  "exp": "you've forfeited your right to name your successor"
+ },
+ {
+  "word": "twitch",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "a sudden muscle spasm",
+  "syn": [
+   "twitching",
+   "vellication"
+  ],
+  "exp": "especially one caused by a nervous condition"
+ },
+ {
+  "word": "intellect",
+  "pos": [
+   "noun"
+  ],
+  "en": "knowledge and intellectual ability",
+  "syn": [
+   "mind"
+  ],
+  "exp": "he reads to improve his mind"
+ },
+ {
+  "word": "descent",
+  "pos": [
+   "noun"
+  ],
+  "en": "a movement downward",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "shed",
+  "pos": [
+   "verb"
+  ],
+  "en": "get rid of",
+  "syn": [
+   "cast",
+   "cast_off",
+   "shake_off",
+   "throw"
+  ],
+  "exp": "he shed his image as a pushy boss"
+ },
+ {
+  "word": "exodus",
+  "pos": [
+   "noun"
+  ],
+  "en": "a journey by a large group to escape from a hostile environment",
+  "syn": [
+   "hegira",
+   "hejira"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "immortalize",
+  "pos": [
+   "verb"
+  ],
+  "en": "be or provide a memorial to a person or an event",
+  "syn": [
+   "commemorate",
+   "memorialize",
+   "memorialise",
+   "immortalise"
+  ],
+  "exp": "This sculpture commemorates the victims of the concentration camps"
+ },
+ {
+  "word": "genome",
+  "pos": [
+   "noun"
+  ],
+  "en": "the ordering of genes in a haploid set of chromosomes of a particular organism",
+  "syn": [],
+  "exp": "the full DNA sequence of an organism"
+ },
+ {
+  "word": "fraction",
+  "pos": [
+   "noun"
+  ],
+  "en": "a component of a mixture that has been separated by a fractional process",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "faction",
+  "pos": [
+   "noun"
+  ],
+  "en": "a clique (often secret) that seeks power usually through intrigue",
+  "syn": [
+   "cabal",
+   "junto",
+   "camarilla"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "physique",
+  "pos": [
+   "noun"
+  ],
+  "en": "constitution of the human body",
+  "syn": [
+   "build",
+   "body-build",
+   "habitus"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "utensil",
+  "pos": [
+   "noun"
+  ],
+  "en": "an implement for practical use (especially in a household)",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "otter",
+  "pos": [
+   "noun"
+  ],
+  "en": "the fur of an otter",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "clammy",
+  "pos": [
+   "adjective"
+  ],
+  "en": "unpleasantly cool and humid",
+  "syn": [
+   "dank"
+  ],
+  "exp": "a clammy handshake"
+ },
+ {
+  "word": "absolute",
+  "pos": [
+   "noun"
+  ],
+  "en": "something that is conceived or that exists independently and not in relation to other things",
+  "syn": [],
+  "exp": "something that does not depend on anything else and is beyond human control"
+ },
+ {
+  "word": "dispense",
+  "pos": [
+   "verb"
+  ],
+  "en": "administer or bestow, as in small portions",
+  "syn": [
+   "distribute",
+   "administer",
+   "mete_out",
+   "deal"
+  ],
+  "exp": "administer critical remarks to everyone present"
+ },
+ {
+  "word": "dispensable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "capable of being dispensed with or done without",
+  "syn": [],
+  "exp": "dispensable items of personal property"
+ },
+ {
+  "word": "dispensary",
+  "pos": [
+   "noun"
+  ],
+  "en": "clinic where medicine and medical supplies are dispensed",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "indispensable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not to be dispensed with",
+  "syn": [],
+  "exp": "foods indispensable to good nutrition"
+ },
+ {
+  "word": "diverge",
+  "pos": [
+   "verb"
+  ],
+  "en": "move or draw apart",
+  "syn": [],
+  "exp": "The two paths diverge here"
+ },
+ {
+  "word": "divergence",
+  "pos": [
+   "noun"
+  ],
+  "en": "the act of moving away in different direction from a common point",
+  "syn": [
+   "divergency"
+  ],
+  "exp": "an angle is formed by the divergence of two straight lines"
+ },
+ {
+  "word": "divergent",
+  "pos": [
+   "adjective"
+  ],
+  "en": "diverging from another or from a standard",
+  "syn": [],
+  "exp": "a divergent opinion"
+ },
+ {
+  "word": "burst",
+  "pos": [
+   "noun"
+  ],
+  "en": "the act of exploding or bursting",
+  "syn": [
+   "explosion"
+  ],
+  "exp": "the explosion of the firecrackers awoke the children"
+ },
+ {
+  "word": "superficial",
+  "pos": [
+   "adjective"
+  ],
+  "en": "concerned with or comprehending only what is apparent or obvious",
+  "syn": [],
+  "exp": "not deep or penetrating emotionally or intellectually"
+ },
+ {
+  "word": "superficially",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a superficial manner",
+  "syn": [],
+  "exp": "he was superficially interested"
+ },
+ {
+  "word": "aesthetic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "relating to or dealing with the subject of aesthetics",
+  "syn": [
+   "esthetic"
+  ],
+  "exp": "aesthetic values"
+ },
+ {
+  "word": "aesthetically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a tasteful way",
+  "syn": [
+   "esthetically"
+  ],
+  "exp": "this building is aesthetically very pleasing"
+ },
+ {
+  "word": "scrutinize",
+  "pos": [
+   "verb"
+  ],
+  "en": "to look at critically or searchingly, or in minute detail",
+  "syn": [
+   "size_up",
+   "take_stock",
+   "scrutinise"
+  ],
+  "exp": "he scrutinized his likeness in the mirror"
+ },
+ {
+  "word": "scrutiny",
+  "pos": [
+   "noun"
+  ],
+  "en": "the act of examining something closely (as for mistakes)",
+  "syn": [
+   "examination"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "quip",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "make jokes or quips",
+  "syn": [
+   "gag"
+  ],
+  "exp": "The students were gagging during dinner"
+ },
+ {
+  "word": "woo",
+  "pos": [
+   "verb"
+  ],
+  "en": "seek someone's favor",
+  "syn": [
+   "court"
+  ],
+  "exp": "China is wooing Russia"
+ },
+ {
+  "word": "criteria",
+  "pos": [
+   "noun"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "plausible",
+  "pos": [
+   "adjective"
+  ],
+  "en": "apparently reasonable and credible, and therefore convincing",
+  "syn": [],
+  "exp": "a plausible excuse"
+ },
+ {
+  "word": "plausibility",
+  "pos": [
+   "noun"
+  ],
+  "en": "apparent validity",
+  "syn": [
+   "plausibleness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "plausibly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "easy to believe on the basis of available evidence",
+  "syn": [
+   "credibly",
+   "believably",
+   "probably"
+  ],
+  "exp": "he talked plausibly before the committee"
+ },
+ {
+  "word": "instinctive",
+  "pos": [
+   "adjective"
+  ],
+  "en": "unthinking",
+  "syn": [
+   "natural"
+  ],
+  "exp": "prompted by (or as if by) instinct"
+ },
+ {
+  "word": "instinctively",
+  "pos": [
+   "adverb"
+  ],
+  "en": "as a matter of instinct",
+  "syn": [],
+  "exp": "he instinctively grabbed the knife"
+ },
+ {
+  "word": "stylistic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to style (especially in the use of language)",
+  "syn": [],
+  "exp": "stylistic devices"
+ },
+ {
+  "word": "stylistically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a rhetorically stylistic manner",
+  "syn": [],
+  "exp": "stylistically complex"
+ },
+ {
+  "word": "inheritance",
+  "pos": [
+   "noun"
+  ],
+  "en": "hereditary succession to a title or an office or property",
+  "syn": [
+   "heritage"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "inherent",
+  "pos": [
+   "adjective"
+  ],
+  "en": "existing as an essential constituent or characteristic",
+  "syn": [
+   "built-in",
+   "constitutional",
+   "inbuilt",
+   "integral"
+  ],
+  "exp": "the Ptolemaic system with its built-in concept of periodicity"
+ },
+ {
+  "word": "inherently",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an inherent manner",
+  "syn": [],
+  "exp": "the subject matter is sexual activity of any overt kind, which is depicted as inherently desirable and exciting"
+ },
+ {
+  "word": "tune",
+  "pos": [
+   "verb"
+  ],
+  "en": "adjust for (better) functioning",
+  "syn": [
+   "tune_up"
+  ],
+  "exp": "tune the engine"
+ },
+ {
+  "word": "spontaneous",
+  "pos": [
+   "adjective"
+  ],
+  "en": "happening or arising without apparent external cause",
+  "syn": [
+   "self-generated"
+  ],
+  "exp": "spontaneous laughter"
+ },
+ {
+  "word": "spontaneously",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a spontaneous manner",
+  "syn": [],
+  "exp": "this shift occurs spontaneously"
+ },
+ {
+  "word": "honk",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "the cry of a goose (or any sound resembling this)",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "goose",
+  "pos": [
+   "noun"
+  ],
+  "en": "web-footed long-necked typically gregarious migratory aquatic birds usually larger and less aquatic than ducks",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "innovate",
+  "pos": [
+   "verb"
+  ],
+  "en": "bring something new to an environment",
+  "syn": [
+   "introduce"
+  ],
+  "exp": "A new word processor was introduced"
+ },
+ {
+  "word": "innovation",
+  "pos": [
+   "noun"
+  ],
+  "en": "a creation (a new device or process) resulting from study and experimentation",
+  "syn": [
+   "invention"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "innovative",
+  "pos": [
+   "adjective"
+  ],
+  "en": "ahead of the times",
+  "syn": [
+   "advanced",
+   "forward-looking",
+   "modern"
+  ],
+  "exp": "the advanced teaching methods"
+ },
+ {
+  "word": "connoisseur",
+  "pos": [
+   "noun"
+  ],
+  "en": "an expert able to appreciate a field",
+  "syn": [
+   "cognoscente"
+  ],
+  "exp": "especially in the fine arts"
+ },
+ {
+  "word": "abstraction",
+  "pos": [
+   "noun"
+  ],
+  "en": "a concept or idea not associated with any specific instance",
+  "syn": [
+   "abstract"
+  ],
+  "exp": "he loved her only in the abstract--not in person"
+ },
+ {
+  "word": "tantrum",
+  "pos": [
+   "noun"
+  ],
+  "en": "a display of bad temper",
+  "syn": [
+   "fit",
+   "scene",
+   "conniption"
+  ],
+  "exp": "he had a fit"
+ },
+ {
+  "word": "institute",
+  "pos": [
+   "verb"
+  ],
+  "en": "set up or lay the groundwork for",
+  "syn": [
+   "establish",
+   "found",
+   "plant",
+   "constitute"
+  ],
+  "exp": "establish a new department"
+ },
+ {
+  "word": "discard",
+  "pos": [
+   "verb"
+  ],
+  "en": "throw or cast away",
+  "syn": [
+   "fling",
+   "toss",
+   "toss_out",
+   "toss_away"
+  ],
+  "exp": "Put away your worries"
+ },
+ {
+  "word": "fatality",
+  "pos": [
+   "noun"
+  ],
+  "en": "a death resulting from an accident or a disaster",
+  "syn": [
+   "human_death"
+  ],
+  "exp": "a decrease in the number of automobile fatalities"
+ },
+ {
+  "word": "angle",
+  "pos": [
+   "verb"
+  ],
+  "en": "move or proceed at an angle",
+  "syn": [],
+  "exp": "he angled his way into the room"
+ },
+ {
+  "word": "stiffen",
+  "pos": [
+   "verb"
+  ],
+  "en": "become stiff or stiffer",
+  "syn": [],
+  "exp": "He stiffened when he saw his boss enter the room"
+ },
+ {
+  "word": "wooded",
+  "pos": [
+   "adjective"
+  ],
+  "en": "covered with growing trees and bushes etc",
+  "syn": [],
+  "exp": "a heavily wooded tract"
+ },
+ {
+  "word": "flatter",
+  "pos": [
+   "verb"
+  ],
+  "en": "praise somewhat dishonestly",
+  "syn": [
+   "blandish"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "flattery",
+  "pos": [
+   "noun"
+  ],
+  "en": "excessive or insincere praise",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "aimless",
+  "pos": [
+   "adjective"
+  ],
+  "en": "aimlessly drifting",
+  "syn": [
+   "adrift(p)",
+   "afloat(p)",
+   "directionless",
+   "planless"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "aimlessly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "without aim",
+  "syn": [],
+  "exp": "in an aimless manner"
+ },
+ {
+  "word": "meaningless",
+  "pos": [
+   "adjective"
+  ],
+  "en": "having no meaning or direction or purpose",
+  "syn": [
+   "nonmeaningful"
+  ],
+  "exp": "a verbose but meaningless explanation"
+ },
+ {
+  "word": "meaninglessly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "candid",
+  "pos": [
+   "adjective"
+  ],
+  "en": "characterized by directness in manner or speech",
+  "syn": [
+   "blunt",
+   "forthright",
+   "frank",
+   "free-spoken"
+  ],
+  "exp": "without subtlety or evasion"
+ },
+ {
+  "word": "candidly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "(used as intensives reflecting the speaker's attitude) it is sincerely the case that",
+  "syn": [
+   "honestly",
+   "frankly"
+  ],
+  "exp": "honestly, I don't believe it"
+ },
+ {
+  "word": "vitality",
+  "pos": [
+   "noun"
+  ],
+  "en": "an energetic style",
+  "syn": [
+   "verve"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "provoke",
+  "pos": [
+   "verb"
+  ],
+  "en": "call forth (emotions, feelings, and responses)",
+  "syn": [
+   "arouse",
+   "elicit",
+   "enkindle",
+   "kindle"
+  ],
+  "exp": "arouse pity"
+ },
+ {
+  "word": "provocative",
+  "pos": [
+   "adjective"
+  ],
+  "en": "serving or tending to provoke, excite, or stimulate",
+  "syn": [],
+  "exp": "stimulating discussion or exciting controversy"
+ },
+ {
+  "word": "provocatively",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a provocative manner",
+  "syn": [
+   "provokingly"
+  ],
+  "exp": "`Try it,' he said provocatively"
+ },
+ {
+  "word": "clench",
+  "pos": [
+   "verb"
+  ],
+  "en": "hold in a tight grasp",
+  "syn": [
+   "clinch"
+  ],
+  "exp": "clench a steering wheel"
+ },
+ {
+  "word": "haggle",
+  "pos": [
+   "verb"
+  ],
+  "en": "wrangle (over a price, terms of an agreement, etc.)",
+  "syn": [
+   "higgle",
+   "chaffer",
+   "huckster"
+  ],
+  "exp": "Let's not haggle over a few dollars"
+ },
+ {
+  "word": "scorn",
+  "pos": [
+   "noun"
+  ],
+  "en": "lack of respect accompanied by a feeling of intense dislike",
+  "syn": [
+   "contempt",
+   "disdain",
+   "despite"
+  ],
+  "exp": "he was held in contempt"
+ },
+ {
+  "word": "scornful",
+  "pos": [
+   "adjective"
+  ],
+  "en": "expressing extreme contempt",
+  "syn": [
+   "contemptuous",
+   "disdainful",
+   "insulting"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "scornfully",
+  "pos": [
+   "adverb"
+  ],
+  "en": "without respect",
+  "syn": [
+   "contemptuously",
+   "disdainfully",
+   "contumeliously"
+  ],
+  "exp": "in a disdainful manner"
+ },
+ {
+  "word": "animatedly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an animated manner",
+  "syn": [],
+  "exp": "they talked animatedly"
+ },
+ {
+  "word": "obscure",
+  "pos": [
+   "verb",
+   "adjective"
+  ],
+  "en": "make less visible or unclear",
+  "syn": [
+   "befog",
+   "becloud",
+   "obnubilate",
+   "haze_over"
+  ],
+  "exp": "The stars are obscured by the clouds"
+ },
+ {
+  "word": "obscurely",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an obscure manner",
+  "syn": [],
+  "exp": "this work is obscurely written"
+ },
+ {
+  "word": "elevate",
+  "pos": [
+   "verb"
+  ],
+  "en": "give a promotion to or assign to a higher position",
+  "syn": [
+   "promote",
+   "upgrade",
+   "advance",
+   "kick_upstairs"
+  ],
+  "exp": "John was kicked upstairs when a replacement was hired"
+ },
+ {
+  "word": "elevation",
+  "pos": [
+   "noun"
+  ],
+  "en": "the event of something being raised upward",
+  "syn": [
+   "lift",
+   "raising"
+  ],
+  "exp": "an elevation of the temperature in the afternoon"
+ },
+ {
+  "word": "pose",
+  "pos": [
+   "verb"
+  ],
+  "en": "introduce",
+  "syn": [
+   "present"
+  ],
+  "exp": "This poses an interesting question"
+ },
+ {
+  "word": "tediously",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a tedious manner",
+  "syn": [
+   "boringly",
+   "tiresomely"
+  ],
+  "exp": "he plodded tediously forward"
+ },
+ {
+  "word": "succession",
+  "pos": [
+   "noun"
+  ],
+  "en": "a following of one thing after another in time",
+  "syn": [
+   "sequence",
+   "chronological_sequence",
+   "successiveness",
+   "chronological_succession"
+  ],
+  "exp": "the doctor saw a sequence of patients"
+ },
+ {
+  "word": "formality",
+  "pos": [
+   "noun"
+  ],
+  "en": "a requirement of etiquette or custom",
+  "syn": [
+   "formalities"
+  ],
+  "exp": "a mere formality"
+ },
+ {
+  "word": "jog",
+  "pos": [
+   "verb"
+  ],
+  "en": "continue talking or writing in a desultory manner",
+  "syn": [
+   "ramble_on",
+   "ramble"
+  ],
+  "exp": "This novel rambles on and jogs"
+ },
+ {
+  "word": "mountaineer",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone who climbs mountains",
+  "syn": [
+   "mountain_climber"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "pioneer",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "open up an area or prepare a way",
+  "syn": [
+   "open_up"
+  ],
+  "exp": "She pioneered a graduate program for women students"
+ },
+ {
+  "word": "quest",
+  "pos": [
+   "noun"
+  ],
+  "en": "a search for an alternative that meets cognitive criteria",
+  "syn": [
+   "pursuit",
+   "pursuance"
+  ],
+  "exp": "the pursuit of love"
+ },
+ {
+  "word": "transatlantic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "crossing the Atlantic Ocean",
+  "syn": [],
+  "exp": "transatlantic flight"
+ },
+ {
+  "word": "rudiments",
+  "pos": [
+   "noun"
+  ],
+  "en": "a statement of fundamental facts or principles",
+  "syn": [
+   "basics"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "rudimentary",
+  "pos": [
+   "adjective"
+  ],
+  "en": "being or involving basic facts or principles",
+  "syn": [
+   "fundamental",
+   "underlying"
+  ],
+  "exp": "the fundamental laws of the universe"
+ },
+ {
+  "word": "paddle",
+  "pos": [
+   "verb"
+  ],
+  "en": "propel with a paddle",
+  "syn": [],
+  "exp": "paddle your own canoe"
+ },
+ {
+  "word": "immense",
+  "pos": [
+   "adjective"
+  ],
+  "en": "unusually great in size or amount or degree or especially extent or scope",
+  "syn": [
+   "huge",
+   "vast",
+   "Brobdingnagian"
+  ],
+  "exp": "huge popular demand for higher education"
+ },
+ {
+  "word": "immensely",
+  "pos": [
+   "adverb"
+  ],
+  "en": "to an exceedingly great extent or degree",
+  "syn": [
+   "vastly"
+  ],
+  "exp": "He had vastly overestimated his resources"
+ },
+ {
+  "word": "advisory",
+  "pos": [
+   "adjective"
+  ],
+  "en": "giving advice",
+  "syn": [
+   "consultative",
+   "consultatory",
+   "consultive"
+  ],
+  "exp": "his function was purely consultative"
+ },
+ {
+  "word": "trying",
+  "pos": [
+   "adjective"
+  ],
+  "en": "hard to endure",
+  "syn": [],
+  "exp": "fell upon trying times"
+ },
+ {
+  "word": "adrenaline",
+  "pos": [
+   "noun"
+  ],
+  "en": "a catecholamine secreted by the adrenal medulla in response to stress (trade name Adrenalin)",
+  "syn": [
+   "epinephrine",
+   "epinephrin",
+   "Adrenalin"
+  ],
+  "exp": "stimulates autonomic nerve action"
+ },
+ {
+  "word": "tinker",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "do random, unplanned work or activities or spend time idly",
+  "syn": [
+   "putter",
+   "mess_around",
+   "potter",
+   "monkey"
+  ],
+  "exp": "The old lady is usually mucking about in her little house"
+ },
+ {
+  "word": "lavatory",
+  "pos": [
+   "noun"
+  ],
+  "en": "a room or building equipped with one or more toilets",
+  "syn": [
+   "toilet",
+   "lav",
+   "can",
+   "john"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "expedition",
+  "pos": [
+   "noun"
+  ],
+  "en": "a military campaign designed to achieve a specific objective in a foreign country",
+  "syn": [
+   "military_expedition",
+   "hostile_expedition"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "pinnacle",
+  "pos": [
+   "noun"
+  ],
+  "en": "(architecture) a slender upright spire at the top of a buttress of tower",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "insecure",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not firm or firmly fixed",
+  "syn": [],
+  "exp": "likely to fail or give way"
+ },
+ {
+  "word": "insecurely",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a tentative and self-conscious manner",
+  "syn": [],
+  "exp": "she always acts very insecurely in the presence of her father"
+ },
+ {
+  "word": "reassure",
+  "pos": [
+   "verb"
+  ],
+  "en": "cause to feel sure",
+  "syn": [
+   "assure"
+  ],
+  "exp": "The airline tried to reassure the customers that the planes were safe"
+ },
+ {
+  "word": "reassurance",
+  "pos": [
+   "noun"
+  ],
+  "en": "the act of reassuring",
+  "syn": [],
+  "exp": "restoring someone's confidence"
+ },
+ {
+  "word": "insensitive",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not responsive to physical stimuli",
+  "syn": [],
+  "exp": "insensitive to radiation"
+ },
+ {
+  "word": "insensitively",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an insensitive manner",
+  "syn": [],
+  "exp": "the police officer questioned the woman rather insensitively about the attack"
+ },
+ {
+  "word": "profess",
+  "pos": [
+   "verb"
+  ],
+  "en": "practice as a profession, teach, or claim to be knowledgeable about",
+  "syn": [],
+  "exp": "She professes organic chemistry"
+ },
+ {
+  "word": "drawback",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of being a hindrance",
+  "syn": [],
+  "exp": "he pointed out all the drawbacks to my plan"
+ },
+ {
+  "word": "resort",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "have recourse to",
+  "syn": [
+   "fall_back",
+   "recur"
+  ],
+  "exp": "The government resorted to rationing meat"
+ },
+ {
+  "word": "oversee",
+  "pos": [
+   "verb"
+  ],
+  "en": "watch and direct",
+  "syn": [
+   "supervise",
+   "superintend",
+   "manage"
+  ],
+  "exp": "Who is overseeing this project?"
+ },
+ {
+  "word": "overseer",
+  "pos": [
+   "noun"
+  ],
+  "en": "a person who directs and manages an organization",
+  "syn": [
+   "superintendent"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "estimation",
+  "pos": [
+   "noun"
+  ],
+  "en": "a document appraising the value of something (as for insurance or taxation)",
+  "syn": [
+   "appraisal",
+   "estimate"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "commission",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "put into commission",
+  "syn": [],
+  "exp": "equip for service"
+ },
+ {
+  "word": "liaison",
+  "pos": [
+   "noun"
+  ],
+  "en": "a usually secretive or illicit sexual relationship",
+  "syn": [
+   "affair",
+   "affaire",
+   "intimacy",
+   "involvement"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "stressfully",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "loom",
+  "pos": [
+   "verb"
+  ],
+  "en": "come into view indistinctly, often threateningly",
+  "syn": [],
+  "exp": "Another air plane loomed into the sky"
+ },
+ {
+  "word": "notwithstanding",
+  "pos": [
+   "preposition"
+  ],
+  "en": "despite anything to the contrary (usually preceding a concession)",
+  "syn": [
+   "however",
+   "nevertheless",
+   "withal",
+   "still"
+  ],
+  "exp": "although I'm a little afraid, however I'd like to try it"
+ },
+ {
+  "word": "structurally",
+  "pos": [
+   "adverb"
+  ],
+  "en": "with respect to structure",
+  "syn": [],
+  "exp": "structurally, the organization is healthy"
+ },
+ {
+  "word": "structural",
+  "pos": [
+   "adjective"
+  ],
+  "en": "relating to or caused by structure, especially political or economic structure",
+  "syn": [],
+  "exp": "structural unemployment in a technological society"
+ },
+ {
+  "word": "chauffer",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "sedentary",
+  "pos": [
+   "adjective"
+  ],
+  "en": "requiring sitting or little activity",
+  "syn": [],
+  "exp": "forced by illness to lead a sedentary life"
+ },
+ {
+  "word": "rapport",
+  "pos": [
+   "noun"
+  ],
+  "en": "a relationship of mutual understanding or trust and agreement between people",
+  "syn": [
+   "resonance"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "landscape",
+  "pos": [
+   "verb"
+  ],
+  "en": "embellish with plants",
+  "syn": [],
+  "exp": "Let's landscape the yard"
+ },
+ {
+  "word": "consultation",
+  "pos": [
+   "noun"
+  ],
+  "en": "a conference (usually with someone important)",
+  "syn": [
+   "audience",
+   "interview"
+  ],
+  "exp": "he had a consultation with the judge"
+ },
+ {
+  "word": "consultancy",
+  "pos": [
+   "noun"
+  ],
+  "en": "the practice of giving expert advice within a particular field",
+  "syn": [],
+  "exp": "a business management consultancy"
+ },
+ {
+  "word": "bloom",
+  "pos": [
+   "verb"
+  ],
+  "en": "produce or yield flowers",
+  "syn": [
+   "blossom",
+   "flower"
+  ],
+  "exp": "The cherry tree bloomed"
+ },
+ {
+  "word": "engineer",
+  "pos": [
+   "verb"
+  ],
+  "en": "design as an engineer",
+  "syn": [],
+  "exp": "He engineered the water supply project"
+ },
+ {
+  "word": "retention",
+  "pos": [
+   "noun"
+  ],
+  "en": "the act of retaining something",
+  "syn": [
+   "keeping",
+   "holding"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "quarry",
+  "pos": [
+   "noun"
+  ],
+  "en": "a person who is the aim of an attack (especially a victim of ridicule or exploitation) by some hostile person or influence",
+  "syn": [
+   "prey",
+   "target",
+   "fair_game"
+  ],
+  "exp": "he fell prey to muggers"
+ },
+ {
+  "word": "specification",
+  "pos": [
+   "noun"
+  ],
+  "en": "a detailed description of design criteria for a piece of work",
+  "syn": [
+   "spec"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "contract",
+  "pos": [
+   "verb"
+  ],
+  "en": "enter into a contractual arrangement",
+  "syn": [
+   "undertake"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "contractor",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone (a person or firm) who contracts to build things",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "query",
+  "pos": [
+   "verb"
+  ],
+  "en": "pose a question",
+  "syn": [
+   "question"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "possessor",
+  "pos": [
+   "noun"
+  ],
+  "en": "a person who owns something",
+  "syn": [
+   "owner"
+  ],
+  "exp": "they are searching for the owner of the car"
+ },
+ {
+  "word": "chill",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "depress or discourage",
+  "syn": [],
+  "exp": "The news of the city's surrender chilled the soldiers"
+ },
+ {
+  "word": "chilly",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not characterized by emotion",
+  "syn": [],
+  "exp": "a female form in marble--a chilly but ideal medium for depicting abstract virtues-C.W.Cunningham"
+ },
+ {
+  "word": "frost",
+  "pos": [
+   "verb"
+  ],
+  "en": "decorate with frosting",
+  "syn": [
+   "ice"
+  ],
+  "exp": "frost a cake"
+ },
+ {
+  "word": "frosty",
+  "pos": [
+   "adjective"
+  ],
+  "en": "devoid of warmth and cordiality",
+  "syn": [
+   "frigid",
+   "frozen",
+   "glacial",
+   "icy"
+  ],
+  "exp": "expressive of unfriendliness or disdain"
+ },
+ {
+  "word": "frostily",
+  "pos": [
+   "adverb"
+  ],
+  "en": "without warmth or enthusiasm",
+  "syn": [
+   "frigidly"
+  ],
+  "exp": "`Come in if you have to,' he said frostily"
+ },
+ {
+  "word": "man",
+  "pos": [
+   "verb"
+  ],
+  "en": "take charge of a certain job",
+  "syn": [],
+  "exp": "occupy a certain work place"
+ },
+ {
+  "word": "unmanned",
+  "pos": [
+   "adjective"
+  ],
+  "en": "lacking a crew",
+  "syn": [
+   "remote-controlled"
+  ],
+  "exp": "an unmanned satellite to Mars"
+ },
+ {
+  "word": "impersonal",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not relating to or responsive to individual persons",
+  "syn": [],
+  "exp": "an impersonal corporation"
+ },
+ {
+  "word": "impersonally",
+  "pos": [
+   "adverb"
+  ],
+  "en": "without warmth",
+  "syn": [],
+  "exp": "he treated his patients impersonally"
+ },
+ {
+  "word": "impersonate",
+  "pos": [
+   "verb"
+  ],
+  "en": "assume or act the character of",
+  "syn": [
+   "portray"
+  ],
+  "exp": "The actor portrays an elderly, lonely man"
+ },
+ {
+  "word": "impersonator",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone who (fraudulently) assumes the appearance of another",
+  "syn": [
+   "imitator"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "impersonation",
+  "pos": [
+   "noun"
+  ],
+  "en": "a representation of a person that is exaggerated for comic effect",
+  "syn": [
+   "caricature",
+   "imitation"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "buzzer",
+  "pos": [
+   "noun"
+  ],
+  "en": "a push button at an outer door that gives a ringing or buzzing signal when pushed",
+  "syn": [
+   "doorbell",
+   "bell"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "desert",
+  "pos": [
+   "verb"
+  ],
+  "en": "leave someone who needs or counts on you",
+  "syn": [
+   "abandon",
+   "forsake",
+   "desolate"
+  ],
+  "exp": "leave in the lurch"
+ },
+ {
+  "word": "desertion",
+  "pos": [
+   "noun"
+  ],
+  "en": "withdrawing support or help despite allegiance or responsibility",
+  "syn": [
+   "abandonment",
+   "defection"
+  ],
+  "exp": "his abandonment of his wife and children left them penniless"
+ },
+ {
+  "word": "unoccupied",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not held or filled or in use",
+  "syn": [],
+  "exp": "an unoccupied telephone booth"
+ },
+ {
+  "word": "stuffy",
+  "pos": [
+   "adjective"
+  ],
+  "en": "lacking fresh air",
+  "syn": [
+   "airless",
+   "close",
+   "unaired"
+  ],
+  "exp": "a dusty airless attic"
+ },
+ {
+  "word": "stuffily",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a stuffy manner",
+  "syn": [
+   "stodgily"
+  ],
+  "exp": "`Come in please,' he said stuffily"
+ },
+ {
+  "word": "stuffiness",
+  "pos": [
+   "noun"
+  ],
+  "en": "state of obstruction or stoppage or air in the nose or throat",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "gape",
+  "pos": [
+   "verb"
+  ],
+  "en": "look with amazement",
+  "syn": [
+   "goggle",
+   "gawp",
+   "gawk"
+  ],
+  "exp": "look stupidly"
+ },
+ {
+  "word": "repute",
+  "pos": [
+   "verb"
+  ],
+  "en": "look on as or consider",
+  "syn": [
+   "think_of",
+   "know_as",
+   "be_known_as",
+   "regard_as"
+  ],
+  "exp": "she looked on this affair as a joke"
+ },
+ {
+  "word": "toughness",
+  "pos": [
+   "noun"
+  ],
+  "en": "enduring strength and energy",
+  "syn": [
+   "stamina",
+   "staying_power"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "recall",
+  "pos": [
+   "noun"
+  ],
+  "en": "a request by the manufacturer of a defective product to return the product (as for replacement or repair)",
+  "syn": [
+   "callback"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "recollection",
+  "pos": [
+   "noun"
+  ],
+  "en": "the ability to recall past occurrences",
+  "syn": [
+   "remembrance",
+   "anamnesis"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "plumbing",
+  "pos": [
+   "noun"
+  ],
+  "en": "utility consisting of the pipes and fixtures for the distribution of water or gas in a building and for the disposal of sewage",
+  "syn": [
+   "plumbing_system"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "usher",
+  "pos": [
+   "noun"
+  ],
+  "en": "Irish prelate who deduced from the Bible that Creation occurred in the year 4004 BC (1581-1656)",
+  "syn": [
+   "Ussher",
+   "James_Ussher",
+   "James_Usher"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "glum",
+  "pos": [
+   "adjective"
+  ],
+  "en": "moody and melancholic",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "glumly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a sullen manner",
+  "syn": [
+   "dourly",
+   "sullenly"
+  ],
+  "exp": "he sat in his chair dourly"
+ },
+ {
+  "word": "gamely",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a plucky manner",
+  "syn": [],
+  "exp": "he was seen by a shepherd, gamely negotiating a particularly tricky section of the mountain road to San Doloroso"
+ },
+ {
+  "word": "dissect",
+  "pos": [
+   "verb"
+  ],
+  "en": "cut open or cut apart",
+  "syn": [],
+  "exp": "dissect the bodies for analysis"
+ },
+ {
+  "word": "dissection",
+  "pos": [
+   "noun"
+  ],
+  "en": "cutting so as to separate into pieces",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "commend",
+  "pos": [
+   "verb"
+  ],
+  "en": "express approval of",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "commendation",
+  "pos": [
+   "noun"
+  ],
+  "en": "an official award (as for bravery or service) usually given as formal public statement",
+  "syn": [
+   "citation"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "thereby",
+  "pos": [
+   "adverb"
+  ],
+  "en": "by that means or because of that",
+  "syn": [],
+  "exp": "He knocked over the red wine, thereby ruining the table cloth"
+ },
+ {
+  "word": "flick",
+  "pos": [
+   "verb"
+  ],
+  "en": "flash intermittently",
+  "syn": [
+   "flicker"
+  ],
+  "exp": "The lights flicked on and off"
+ },
+ {
+  "word": "flicker",
+  "pos": [
+   "noun"
+  ],
+  "en": "a momentary flash of light",
+  "syn": [
+   "spark",
+   "glint"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "unenviable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "hard to deal with",
+  "syn": [
+   "awkward",
+   "embarrassing",
+   "sticky"
+  ],
+  "exp": "especially causing pain or embarrassment"
+ },
+ {
+  "word": "unenviably",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "voice",
+  "pos": [
+   "verb"
+  ],
+  "en": "give voice to",
+  "syn": [],
+  "exp": "He voiced his concern"
+ },
+ {
+  "word": "tread",
+  "pos": [
+   "noun"
+  ],
+  "en": "a step in walking or running",
+  "syn": [
+   "pace",
+   "stride"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "allege",
+  "pos": [
+   "verb"
+  ],
+  "en": "report or maintain",
+  "syn": [
+   "aver",
+   "say"
+  ],
+  "exp": "He alleged that he was the victim of a crime"
+ },
+ {
+  "word": "allegation",
+  "pos": [
+   "noun"
+  ],
+  "en": "(law) a formal accusation against somebody (often in a court of law)",
+  "syn": [],
+  "exp": "an allegation of malpractice"
+ },
+ {
+  "word": "bribe",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "make illegal payments to in exchange for favors or influence",
+  "syn": [
+   "corrupt",
+   "buy",
+   "grease_one's_palms"
+  ],
+  "exp": "This judge can be bought"
+ },
+ {
+  "word": "bribery",
+  "pos": [
+   "noun"
+  ],
+  "en": "the practice of offering something (usually money) in order to gain an illicit advantage",
+  "syn": [
+   "graft"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "inclusion",
+  "pos": [
+   "noun"
+  ],
+  "en": "the state of being included",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "inclusive",
+  "pos": [
+   "adjective"
+  ],
+  "en": "including much or everything",
+  "syn": [],
+  "exp": "and especially including stated limits"
+ },
+ {
+  "word": "inclusively",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "unconvincing",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not convincing",
+  "syn": [
+   "flimsy"
+  ],
+  "exp": "as unconvincing as a forced smile"
+ },
+ {
+  "word": "unconvincingly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an unconvincing manner",
+  "syn": [],
+  "exp": "he argued unconvincingly"
+ },
+ {
+  "word": "recharge",
+  "pos": [
+   "verb"
+  ],
+  "en": "load anew",
+  "syn": [
+   "reload"
+  ],
+  "exp": "She reloaded the gun carefully"
+ },
+ {
+  "word": "facilitation",
+  "pos": [
+   "noun"
+  ],
+  "en": "the condition of being made easy (or easier)",
+  "syn": [],
+  "exp": "social facilitation is an adaptive condition"
+ },
+ {
+  "word": "condition",
+  "pos": [
+   "verb"
+  ],
+  "en": "establish a conditioned response",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "conditional",
+  "pos": [
+   "adjective"
+  ],
+  "en": "qualified by reservations",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "conditionally",
+  "pos": [
+   "adverb"
+  ],
+  "en": "subject to a condition",
+  "syn": [],
+  "exp": "he accepted the offer conditionally"
+ },
+ {
+  "word": "tone",
+  "pos": [
+   "verb"
+  ],
+  "en": "utter monotonously and repetitively and rhythmically",
+  "syn": [
+   "chant",
+   "intone"
+  ],
+  "exp": "The students chanted the same slogan over and over again"
+ },
+ {
+  "word": "supple",
+  "pos": [
+   "adjective"
+  ],
+  "en": "gracefully thin and bending and moving with ease",
+  "syn": [
+   "lissome",
+   "lissom",
+   "lithe",
+   "lithesome"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "manicure",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "trim carefully and neatly",
+  "syn": [],
+  "exp": "manicure fingernails"
+ },
+ {
+  "word": "pedicure",
+  "pos": [
+   "noun"
+  ],
+  "en": "professional care for the feet and toenails",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "facial",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "en": "cranial nerve that supplies facial muscles",
+  "syn": [
+   "facial_nerve",
+   "nervus_facialis",
+   "seventh_cranial_nerve"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "bouquet",
+  "pos": [
+   "noun"
+  ],
+  "en": "an arrangement of flowers that is usually given as a present",
+  "syn": [
+   "corsage",
+   "posy",
+   "nosegay"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "refurbish",
+  "pos": [
+   "verb"
+  ],
+  "en": "make brighter and prettier",
+  "syn": [
+   "renovate",
+   "freshen_up"
+  ],
+  "exp": "we refurbished the guest wing"
+ },
+ {
+  "word": "refurbishment",
+  "pos": [
+   "noun"
+  ],
+  "en": "the state of being restored to its former good condition",
+  "syn": [
+   "renovation",
+   "restoration"
+  ],
+  "exp": "the inn was a renovation of a Colonial house"
+ },
+ {
+  "word": "grounds",
+  "pos": [
+   "noun"
+  ],
+  "en": "your basis for belief or disbelief",
+  "syn": [
+   "evidence"
+  ],
+  "exp": "knowledge on which to base belief"
+ },
+ {
+  "word": "ground",
+  "pos": [
+   "verb"
+  ],
+  "en": "fix firmly and stably",
+  "syn": [
+   "anchor"
+  ],
+  "exp": "anchor the lamppost in concrete"
+ },
+ {
+  "word": "lethargy",
+  "pos": [
+   "noun"
+  ],
+  "en": "a state of comatose torpor (as found in sleeping sickness)",
+  "syn": [
+   "lassitude",
+   "sluggishness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "lethargic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "deficient in alertness or activity",
+  "syn": [
+   "unenergetic"
+  ],
+  "exp": "bullfrogs became lethargic with the first cold nights"
+ },
+ {
+  "word": "lethargically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "without energy",
+  "syn": [
+   "unenergetically"
+  ],
+  "exp": "in a lethargic manner"
+ },
+ {
+  "word": "stately",
+  "pos": [
+   "adjective"
+  ],
+  "en": "impressive in appearance",
+  "syn": [
+   "baronial",
+   "imposing",
+   "noble"
+  ],
+  "exp": "severe-looking policemen sat astride noble horses"
+ },
+ {
+  "word": "conserve",
+  "pos": [
+   "verb"
+  ],
+  "en": "keep constant through physical or chemical reactions or evolutionary change",
+  "syn": [],
+  "exp": "Energy is conserved in this process"
+ },
+ {
+  "word": "conservatory",
+  "pos": [
+   "noun"
+  ],
+  "en": "the faculty and students of a school specializing in one of the fine arts",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "disquieting",
+  "pos": [
+   "adjective"
+  ],
+  "en": "causing mental discomfort",
+  "syn": [],
+  "exp": "the disquieting sounds of nearby gunfire"
+ },
+ {
+  "word": "fiercely",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a physically fierce manner",
+  "syn": [
+   "ferociously"
+  ],
+  "exp": "silence broken by dogs barking ferociously"
+ },
+ {
+  "word": "grapefruit",
+  "pos": [
+   "noun"
+  ],
+  "en": "citrus tree bearing large round edible fruit having a thick yellow rind and juicy somewhat acid pulp",
+  "syn": [
+   "Citrus_paradisi"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "exotic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "being or from or characteristic of another place or part of the world",
+  "syn": [
+   "alien"
+  ],
+  "exp": "exotic plants in a greenhouse"
+ },
+ {
+  "word": "exotically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "flask",
+  "pos": [
+   "noun"
+  ],
+  "en": "bottle that has a narrow neck",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "spacious",
+  "pos": [
+   "adjective"
+  ],
+  "en": "very large in expanse or scope",
+  "syn": [
+   "broad",
+   "wide"
+  ],
+  "exp": "a broad lawn"
+ },
+ {
+  "word": "gourmet",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "en": "a person devoted to refined sensuous enjoyment (especially good food and drink)",
+  "syn": [
+   "epicure",
+   "gastronome",
+   "bon_vivant",
+   "epicurean"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "rich",
+  "pos": [
+   "adjective"
+  ],
+  "en": "possessing material wealth",
+  "syn": [],
+  "exp": "her father is extremely rich"
+ },
+ {
+  "word": "conjure",
+  "pos": [
+   "verb"
+  ],
+  "en": "summon into action or bring into existence, often as if by magic",
+  "syn": [
+   "raise",
+   "conjure_up",
+   "invoke",
+   "evoke"
+  ],
+  "exp": "raise the specter of unemployment"
+ },
+ {
+  "word": "creamy",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of the color of cream",
+  "syn": [],
+  "exp": "creamy translucent pebbles"
+ },
+ {
+  "word": "sauna",
+  "pos": [
+   "noun"
+  ],
+  "en": "a Finnish steam bath",
+  "syn": [
+   "sweat_room"
+  ],
+  "exp": "steam is produced by pouring water over heated rocks"
+ },
+ {
+  "word": "remedial",
+  "pos": [
+   "adjective"
+  ],
+  "en": "tending or intended to rectify or improve",
+  "syn": [],
+  "exp": "a remedial reading course"
+ },
+ {
+  "word": "posture",
+  "pos": [
+   "noun"
+  ],
+  "en": "the arrangement of the body and its limbs",
+  "syn": [
+   "position",
+   "attitude"
+  ],
+  "exp": "he assumed an attitude of surrender"
+ },
+ {
+  "word": "sedate",
+  "pos": [
+   "verb",
+   "adjective"
+  ],
+  "en": "characterized by dignity and propriety",
+  "syn": [
+   "staid"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "sedately",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a sedate manner",
+  "syn": [
+   "calmly"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "clutch",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "take hold of",
+  "syn": [
+   "seize",
+   "prehend"
+  ],
+  "exp": "The sales clerk quickly seized the money on the counter"
+ },
+ {
+  "word": "stagger",
+  "pos": [
+   "verb"
+  ],
+  "en": "walk as if unable to control one's movements",
+  "syn": [
+   "reel",
+   "keel",
+   "lurch",
+   "swag"
+  ],
+  "exp": "The drunken man staggered into the room"
+ },
+ {
+  "word": "staggering",
+  "pos": [
+   "adjective"
+  ],
+  "en": "so surprisingly impressive as to stun or overwhelm",
+  "syn": [
+   "astonishing",
+   "astounding",
+   "stupefying"
+  ],
+  "exp": "such an enormous response was astonishing"
+ },
+ {
+  "word": "dutiful",
+  "pos": [
+   "adjective"
+  ],
+  "en": "willingly obedient out of a sense of duty and respect",
+  "syn": [
+   "duteous"
+  ],
+  "exp": "Patient Griselda was a chaste and duteous wife"
+ },
+ {
+  "word": "dutifully",
+  "pos": [
+   "adverb"
+  ],
+  "en": "out of a sense of duty",
+  "syn": [],
+  "exp": "in a dutiful manner"
+ },
+ {
+  "word": "calorie",
+  "pos": [
+   "noun"
+  ],
+  "en": "a unit of heat equal to the amount of heat required to raise the temperature of one kilogram of water by one degree at one atmosphere pressure",
+  "syn": [
+   "kilogram_calorie",
+   "kilocalorie",
+   "large_calorie",
+   "nutritionist's_calorie"
+  ],
+  "exp": "used by nutritionists to characterize the energy-producing potential in food"
+ },
+ {
+  "word": "firm",
+  "pos": [
+   "verb"
+  ],
+  "en": "become taut or tauter",
+  "syn": [
+   "tauten"
+  ],
+  "exp": "Your muscles will firm when you exercise regularly"
+ },
+ {
+  "word": "fabulously",
+  "pos": [
+   "adverb"
+  ],
+  "en": "exceedingly",
+  "syn": [
+   "fantastically",
+   "incredibly"
+  ],
+  "exp": "she plays fabulously well"
+ },
+ {
+  "word": "premises",
+  "pos": [
+   "noun"
+  ],
+  "en": "land and the buildings on it",
+  "syn": [],
+  "exp": "bread is baked on the premises"
+ },
+ {
+  "word": "eclectic",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "en": "selecting what seems best of various styles or ideas",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "eclectically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "revere",
+  "pos": [
+   "verb"
+  ],
+  "en": "love unquestioningly and uncritically or to excess",
+  "syn": [
+   "idolize",
+   "idolise",
+   "worship",
+   "hero-worship"
+  ],
+  "exp": "venerate as an idol"
+ },
+ {
+  "word": "harbor",
+  "pos": [
+   "verb"
+  ],
+  "en": "maintain (a theory, thoughts, or feelings)",
+  "syn": [
+   "harbour",
+   "hold",
+   "entertain",
+   "nurse"
+  ],
+  "exp": "bear a grudge"
+ },
+ {
+  "word": "recognizable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "easily perceived",
+  "syn": [],
+  "exp": "easy to become aware of"
+ },
+ {
+  "word": "recognizably",
+  "pos": [
+   "adverb"
+  ],
+  "en": "to a recognizable degree",
+  "syn": [],
+  "exp": "he was recognizably slimmer now"
+ },
+ {
+  "word": "batter",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "strike against forcefully",
+  "syn": [
+   "buffet",
+   "knock_about"
+  ],
+  "exp": "Winds buffeted the tent"
+ },
+ {
+  "word": "battery",
+  "pos": [
+   "noun"
+  ],
+  "en": "group of guns or missile launchers operated together at one place",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "unreliably",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an unfaithful undependable unreliable manner",
+  "syn": [
+   "unfaithfully",
+   "undependably"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "waterfront",
+  "pos": [
+   "noun"
+  ],
+  "en": "the area of a city (such as a harbor or dockyard) alongside a body of water",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "amply",
+  "pos": [
+   "adverb"
+  ],
+  "en": "to an ample degree or in an ample manner",
+  "syn": [
+   "richly"
+  ],
+  "exp": "these voices were amply represented"
+ },
+ {
+  "word": "amplification",
+  "pos": [
+   "noun"
+  ],
+  "en": "addition of extra material or illustration or clarifying detail",
+  "syn": [
+   "elaboration"
+  ],
+  "exp": "a few remarks added in amplification and defense"
+ },
+ {
+  "word": "battered",
+  "pos": [
+   "adjective"
+  ],
+  "en": "damaged by blows or hard usage",
+  "syn": [
+   "beat-up",
+   "beaten-up"
+  ],
+  "exp": "a battered old car"
+ },
+ {
+  "word": "comply",
+  "pos": [
+   "verb"
+  ],
+  "en": "act in accordance with someone's rules, commands, or wishes",
+  "syn": [
+   "follow",
+   "abide_by"
+  ],
+  "exp": "He complied with my instructions"
+ },
+ {
+  "word": "compliance",
+  "pos": [
+   "noun"
+  ],
+  "en": "acting according to certain accepted standards",
+  "syn": [
+   "conformity",
+   "conformation",
+   "abidance"
+  ],
+  "exp": "their financial statements are in conformity with generally accepted accounting practices"
+ },
+ {
+  "word": "compliant",
+  "pos": [
+   "adjective"
+  ],
+  "en": "inclined to comply",
+  "syn": [],
+  "exp": "children compliant with the parental will"
+ },
+ {
+  "word": "compliantly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "blankness",
+  "pos": [
+   "noun"
+  ],
+  "en": "the state of being blank",
+  "syn": [],
+  "exp": "void"
+ },
+ {
+  "word": "exuberant",
+  "pos": [
+   "adjective"
+  ],
+  "en": "joyously unrestrained",
+  "syn": [
+   "ebullient",
+   "high-spirited"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "exuberance",
+  "pos": [
+   "noun"
+  ],
+  "en": "joyful enthusiasm",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "exuberantly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an exuberant manner",
+  "syn": [
+   "riotously"
+  ],
+  "exp": "the exuberantly baroque decoration of the church"
+ },
+ {
+  "word": "linear",
+  "pos": [
+   "adjective"
+  ],
+  "en": "designating or involving an equation whose terms are of the first degree",
+  "syn": [
+   "additive"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "linearly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a linear manner",
+  "syn": [],
+  "exp": "linearly polarized radiation"
+ },
+ {
+  "word": "flourish",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "grow vigorously",
+  "syn": [
+   "boom",
+   "thrive",
+   "expand"
+  ],
+  "exp": "The deer population in this town is thriving"
+ },
+ {
+  "word": "anchor",
+  "pos": [
+   "verb"
+  ],
+  "en": "fix firmly and stably",
+  "syn": [
+   "ground"
+  ],
+  "exp": "anchor the lamppost in concrete"
+ },
+ {
+  "word": "anchored",
+  "pos": [
+   "adjective"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "domination",
+  "pos": [
+   "noun"
+  ],
+  "en": "social control by dominating",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "dominant",
+  "pos": [
+   "adjective"
+  ],
+  "en": "exercising influence or control",
+  "syn": [],
+  "exp": "television plays a dominant role in molding public opinion"
+ },
+ {
+  "word": "dominantly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "interject",
+  "pos": [
+   "verb"
+  ],
+  "en": "to insert between other elements",
+  "syn": [
+   "come_in",
+   "interpose",
+   "put_in",
+   "throw_in"
+  ],
+  "exp": "She interjected clever remarks"
+ },
+ {
+  "word": "interjection",
+  "pos": [
+   "noun"
+  ],
+  "en": "an abrupt emphatic exclamation expressing emotion",
+  "syn": [
+   "ejaculation"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "gush",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "a sudden rapid flow (as of water)",
+  "syn": [
+   "flush",
+   "outpouring"
+  ],
+  "exp": "he heard the flush of a toilet"
+ },
+ {
+  "word": "gushing",
+  "pos": [
+   "adjective"
+  ],
+  "en": "flowing profusely",
+  "syn": [
+   "pouring"
+  ],
+  "exp": "a gushing hydrant"
+ },
+ {
+  "word": "gushingly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a gushing manner",
+  "syn": [],
+  "exp": "a gushingly prolific writer"
+ },
+ {
+  "word": "voracious",
+  "pos": [
+   "adjective"
+  ],
+  "en": "excessively greedy and grasping",
+  "syn": [
+   "rapacious",
+   "ravening"
+  ],
+  "exp": "a rapacious divorcee on the prowl"
+ },
+ {
+  "word": "voraciously",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an eagerly voracious manner",
+  "syn": [],
+  "exp": "she reads voraciously"
+ },
+ {
+  "word": "sketchbook",
+  "pos": [
+   "noun"
+  ],
+  "en": "a book containing sheets of paper on which sketches can be drawn",
+  "syn": [
+   "sketch_block",
+   "sketch_pad"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "sketch",
+  "pos": [
+   "noun"
+  ],
+  "en": "preliminary drawing for later elaboration",
+  "syn": [
+   "study"
+  ],
+  "exp": "he made several studies before starting to paint"
+ },
+ {
+  "word": "prop",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "support by placing against something solid or rigid",
+  "syn": [
+   "prop_up",
+   "shore_up",
+   "shore"
+  ],
+  "exp": "shore and buttress an old building"
+ },
+ {
+  "word": "imp",
+  "pos": [
+   "noun"
+  ],
+  "en": "(folklore) fairies that are somewhat mischievous",
+  "syn": [
+   "elf",
+   "hob",
+   "gremlin",
+   "pixie"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "impish",
+  "pos": [
+   "adjective"
+  ],
+  "en": "naughtily or annoyingly playful",
+  "syn": [
+   "arch",
+   "implike",
+   "mischievous",
+   "pixilated"
+  ],
+  "exp": "teasing and worrying with impish laughter"
+ },
+ {
+  "word": "impishly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an appealing but bold manner",
+  "syn": [
+   "puckishly"
+  ],
+  "exp": "she asked him impishly to come in"
+ },
+ {
+  "word": "wicked",
+  "pos": [
+   "adjective"
+  ],
+  "en": "morally bad in principle or practice",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "wickedly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a wicked evil manner",
+  "syn": [
+   "evilly"
+  ],
+  "exp": "act wickedly"
+ },
+ {
+  "word": "macabre",
+  "pos": [
+   "adjective"
+  ],
+  "en": "shockingly repellent",
+  "syn": [
+   "ghastly",
+   "grim",
+   "grisly",
+   "gruesome"
+  ],
+  "exp": "the grim aftermath of the bombing"
+ },
+ {
+  "word": "gusto",
+  "pos": [
+   "noun"
+  ],
+  "en": "vigorous and enthusiastic enjoyment",
+  "syn": [
+   "relish",
+   "zest",
+   "zestfulness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "tantamount",
+  "pos": [
+   "adjective"
+  ],
+  "en": "being essentially equal to something",
+  "syn": [
+   "equivalent",
+   "tantamount(p)"
+  ],
+  "exp": "it was as good as gold"
+ },
+ {
+  "word": "antics",
+  "pos": [
+   "noun"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "relapse",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "a failure to maintain a higher state",
+  "syn": [
+   "backsliding",
+   "lapse",
+   "lapsing",
+   "relapsing"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "impede",
+  "pos": [
+   "verb"
+  ],
+  "en": "be a hindrance or obstacle to",
+  "syn": [
+   "hinder"
+  ],
+  "exp": "She is impeding the progress of our project"
+ },
+ {
+  "word": "impediment",
+  "pos": [
+   "noun"
+  ],
+  "en": "something immaterial that interferes with or delays action or progress",
+  "syn": [
+   "hindrance",
+   "hinderance",
+   "deterrent",
+   "balk"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "taut",
+  "pos": [
+   "adjective"
+  ],
+  "en": "pulled or drawn tight",
+  "syn": [
+   "tight"
+  ],
+  "exp": "taut sails"
+ },
+ {
+  "word": "tautly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a taut manner",
+  "syn": [],
+  "exp": "the rope was tautly stretched"
+ },
+ {
+  "word": "jersey",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "en": "a Mid-Atlantic state on the Atlantic",
+  "syn": [
+   "New_Jersey",
+   "Garden_State",
+   "NJ",
+   "N.J."
+  ],
+  "exp": "one of the original 13 colonies"
+ },
+ {
+  "word": "startling",
+  "pos": [
+   "adjective"
+  ],
+  "en": "so remarkably different or sudden as to cause momentary shock or alarm",
+  "syn": [],
+  "exp": "Sydney's startling new Opera House"
+ },
+ {
+  "word": "startlingly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a startling manner",
+  "syn": [],
+  "exp": "a startlingly modern voice"
+ },
+ {
+  "word": "slack",
+  "pos": [
+   "verb",
+   "noun",
+   "adjective"
+  ],
+  "en": "not tense or taut",
+  "syn": [
+   "loose"
+  ],
+  "exp": "the old man's skin hung loose and grey"
+ },
+ {
+  "word": "slackly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a relaxed manner",
+  "syn": [
+   "loosely"
+  ],
+  "exp": "his hands lay loosely"
+ },
+ {
+  "word": "unwavering",
+  "pos": [
+   "adjective"
+  ],
+  "en": "marked by firm determination or resolution",
+  "syn": [
+   "firm",
+   "steadfast",
+   "steady",
+   "stiff"
+  ],
+  "exp": "a man of unbendable perseverence"
+ },
+ {
+  "word": "unwaveringly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "with resolute determination",
+  "syn": [
+   "firm",
+   "firmly",
+   "steadfastly"
+  ],
+  "exp": "we firmly believed it"
+ },
+ {
+  "word": "removed",
+  "pos": [
+   "adjective"
+  ],
+  "en": "separated in relationship by a given degree of descent",
+  "syn": [
+   "removed(p)"
+  ],
+  "exp": "a cousin once removed"
+ },
+ {
+  "word": "buffoon",
+  "pos": [
+   "noun"
+  ],
+  "en": "a rude or vulgar fool",
+  "syn": [
+   "clown"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "beguiling",
+  "pos": [
+   "adjective"
+  ],
+  "en": "highly attractive and able to arouse hope or desire",
+  "syn": [
+   "alluring",
+   "enticing",
+   "tempting"
+  ],
+  "exp": "the voice was low and beguiling"
+ },
+ {
+  "word": "beguilingly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "blithely",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a joyous manner",
+  "syn": [
+   "happily",
+   "merrily",
+   "mirthfully",
+   "gayly"
+  ],
+  "exp": "they shouted happily"
+ },
+ {
+  "word": "stray",
+  "pos": [
+   "verb",
+   "adjective",
+   "noun"
+  ],
+  "en": "not close together in time",
+  "syn": [
+   "isolated"
+  ],
+  "exp": "isolated instances of rebellion"
+ },
+ {
+  "word": "mythological",
+  "pos": [
+   "adjective"
+  ],
+  "en": "based on or told of in traditional stories",
+  "syn": [
+   "fabulous",
+   "mythic",
+   "mythical",
+   "mythologic"
+  ],
+  "exp": "lacking factual basis or historical validity"
+ },
+ {
+  "word": "mythology",
+  "pos": [
+   "noun"
+  ],
+  "en": "myths collectively",
+  "syn": [],
+  "exp": "the body of stories associated with a culture or institution or person"
+ },
+ {
+  "word": "venerate",
+  "pos": [
+   "verb"
+  ],
+  "en": "regard with feelings of respect and reverence",
+  "syn": [
+   "reverence",
+   "fear",
+   "revere"
+  ],
+  "exp": "consider hallowed or exalted or be in awe of"
+ },
+ {
+  "word": "veneration",
+  "pos": [
+   "noun"
+  ],
+  "en": "a feeling of profound respect for someone or something",
+  "syn": [
+   "fear",
+   "reverence",
+   "awe"
+  ],
+  "exp": "the fear of God"
+ },
+ {
+  "word": "ethical",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to the philosophical study of ethics",
+  "syn": [],
+  "exp": "ethical codes"
+ },
+ {
+  "word": "ethically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an ethical manner",
+  "syn": [],
+  "exp": "from an ethical point of view"
+ },
+ {
+  "word": "heroine",
+  "pos": [
+   "noun"
+  ],
+  "en": "the main good female character in a work of fiction",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "refreshing",
+  "pos": [
+   "adjective"
+  ],
+  "en": "imparting vitality and energy",
+  "syn": [
+   "bracing",
+   "brisk",
+   "fresh",
+   "refreshful"
+  ],
+  "exp": "the bracing mountain air"
+ },
+ {
+  "word": "refresh",
+  "pos": [
+   "verb"
+  ],
+  "en": "refresh one's memory",
+  "syn": [
+   "review",
+   "brush_up"
+  ],
+  "exp": "I reviewed the material before the test"
+ },
+ {
+  "word": "zany",
+  "pos": [
+   "adjective"
+  ],
+  "en": "ludicrous, foolish",
+  "syn": [
+   "goofy",
+   "silly",
+   "wacky",
+   "whacky"
+  ],
+  "exp": "wore a goofy hat"
+ },
+ {
+  "word": "devotee",
+  "pos": [
+   "noun"
+  ],
+  "en": "an ardent follower and admirer",
+  "syn": [
+   "fan",
+   "buff",
+   "lover"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "salve",
+  "pos": [
+   "noun"
+  ],
+  "en": "semisolid preparation (usually containing a medicine) applied externally as a remedy or for soothing an irritation",
+  "syn": [
+   "ointment",
+   "unction",
+   "unguent",
+   "balm"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "salvation",
+  "pos": [
+   "noun"
+  ],
+  "en": "(theology) the act of delivering from sin or saving from evil",
+  "syn": [
+   "redemption"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "salvage",
+  "pos": [
+   "verb"
+  ],
+  "en": "save from ruin, destruction, or harm",
+  "syn": [
+   "salve",
+   "relieve",
+   "save"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "staccato",
+  "pos": [
+   "adjective",
+   "adverb"
+  ],
+  "en": "separating the notes",
+  "syn": [],
+  "exp": "play this staccato, please"
+ },
+ {
+  "word": "verve",
+  "pos": [
+   "noun"
+  ],
+  "en": "an energetic style",
+  "syn": [
+   "vitality"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "motley",
+  "pos": [
+   "adjective"
+  ],
+  "en": "consisting of a haphazard assortment of different kinds",
+  "syn": [
+   "assorted",
+   "miscellaneous",
+   "mixed",
+   "sundry(a)"
+  ],
+  "exp": "an arrangement of assorted spring flowers"
+ },
+ {
+  "word": "preach",
+  "pos": [
+   "verb"
+  ],
+  "en": "deliver a sermon",
+  "syn": [
+   "prophesy"
+  ],
+  "exp": "The minister is not preaching this Sunday"
+ },
+ {
+  "word": "preacher",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone whose occupation is preaching the gospel",
+  "syn": [
+   "preacher_man",
+   "sermonizer",
+   "sermoniser"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "behind",
+  "pos": [
+   "preposition"
+  ],
+  "en": "the fleshy part of the human body that you sit on",
+  "syn": [
+   "buttocks",
+   "nates",
+   "arse",
+   "butt"
+  ],
+  "exp": "he deserves a good kick in the butt"
+ },
+ {
+  "word": "justly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "with honesty",
+  "syn": [
+   "rightly",
+   "justifiedly"
+  ],
+  "exp": "he was rightly considered the greatest singer of his time"
+ },
+ {
+  "word": "wry",
+  "pos": [
+   "adjective"
+  ],
+  "en": "humorously sarcastic or mocking",
+  "syn": [
+   "dry",
+   "ironic",
+   "ironical"
+  ],
+  "exp": "an ironic remark often conveys an intended meaning obliquely"
+ },
+ {
+  "word": "wryly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a wry manner",
+  "syn": [],
+  "exp": "`I see,' he commented wryly"
+ },
+ {
+  "word": "poetess",
+  "pos": [
+   "noun"
+  ],
+  "en": "a woman poet",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "confide",
+  "pos": [
+   "verb"
+  ],
+  "en": "reveal in private",
+  "syn": [],
+  "exp": "tell confidentially"
+ },
+ {
+  "word": "sentient",
+  "pos": [
+   "adjective"
+  ],
+  "en": "endowed with feeling and unstructured consciousness",
+  "syn": [
+   "animate"
+  ],
+  "exp": "the living knew themselves just sentient puppets on God's stage- T.E.Lawrence"
+ },
+ {
+  "word": "sentiment",
+  "pos": [
+   "noun"
+  ],
+  "en": "tender, romantic, or nostalgic feeling or emotion",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "sentimental",
+  "pos": [
+   "adjective"
+  ],
+  "en": "given to or marked by sentiment or sentimentality",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "sentimentally",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a sentimental manner",
+  "syn": [],
+  "exp": "`I miss the good old days,' she added sentimentally"
+ },
+ {
+  "word": "tangle",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "a twisted and tangled mass that is highly interwoven",
+  "syn": [],
+  "exp": "they carved their way through the tangle of vines"
+ },
+ {
+  "word": "tangled",
+  "pos": [
+   "adjective"
+  ],
+  "en": "in a confused mass",
+  "syn": [],
+  "exp": "pushed back her tangled hair"
+ },
+ {
+  "word": "untangle",
+  "pos": [
+   "verb"
+  ],
+  "en": "release from entanglement of difficulty",
+  "syn": [
+   "extricate",
+   "disentangle",
+   "disencumber"
+  ],
+  "exp": "I cannot extricate myself from this task"
+ },
+ {
+  "word": "untangled",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not tangled",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "perceptive",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to perception",
+  "syn": [],
+  "exp": "perceptive faculties"
+ },
+ {
+  "word": "perceptively",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a perceptive manner",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "outset",
+  "pos": [
+   "noun"
+  ],
+  "en": "the time at which something is supposed to begin",
+  "syn": [
+   "beginning",
+   "commencement",
+   "first",
+   "get-go"
+  ],
+  "exp": "they got an early start"
+ },
+ {
+  "word": "tycoon",
+  "pos": [
+   "noun"
+  ],
+  "en": "a very wealthy or powerful businessman",
+  "syn": [
+   "baron",
+   "big_businessman",
+   "business_leader",
+   "king"
+  ],
+  "exp": "an oil baron"
+ },
+ {
+  "word": "launch",
+  "pos": [
+   "noun"
+  ],
+  "en": "a motorboat with an open deck or a half deck",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "engross",
+  "pos": [
+   "verb"
+  ],
+  "en": "devote (oneself) fully to",
+  "syn": [
+   "steep",
+   "immerse",
+   "engulf",
+   "plunge"
+  ],
+  "exp": "He immersed himself into his studies"
+ },
+ {
+  "word": "engrossing",
+  "pos": [
+   "adjective"
+  ],
+  "en": "capable of arousing and holding the attention",
+  "syn": [
+   "absorbing",
+   "fascinating",
+   "gripping",
+   "riveting"
+  ],
+  "exp": "a fascinating story"
+ },
+ {
+  "word": "plague",
+  "pos": [
+   "verb"
+  ],
+  "en": "cause to suffer a blight",
+  "syn": [
+   "blight"
+  ],
+  "exp": "Too much rain may blight the garden with mold"
+ },
+ {
+  "word": "orphan",
+  "pos": [
+   "verb"
+  ],
+  "en": "deprive of parents",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "detritus",
+  "pos": [
+   "noun"
+  ],
+  "en": "the remains of something that has been destroyed or broken up",
+  "syn": [
+   "debris",
+   "dust",
+   "junk",
+   "rubble"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "detriment",
+  "pos": [
+   "noun"
+  ],
+  "en": "a damage or loss",
+  "syn": [
+   "hurt"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "detrimental",
+  "pos": [
+   "adjective"
+  ],
+  "en": "(sometimes followed by `to') causing harm or injury",
+  "syn": [
+   "damaging",
+   "prejudicial",
+   "prejudicious"
+  ],
+  "exp": "damaging to career and reputation"
+ },
+ {
+  "word": "detrimentally",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a detrimental manner",
+  "syn": [
+   "harmfully",
+   "noxiously"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "domestically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "with respect to the internal affairs of a government",
+  "syn": [],
+  "exp": "domestically, the president proposes a more moderate economic policy"
+ },
+ {
+  "word": "domesticate",
+  "pos": [
+   "verb"
+  ],
+  "en": "adapt (a wild plant or unclaimed land) to the environment",
+  "syn": [
+   "cultivate",
+   "naturalize",
+   "naturalise",
+   "tame"
+  ],
+  "exp": "domesticate oats"
+ },
+ {
+  "word": "domestication",
+  "pos": [
+   "noun"
+  ],
+  "en": "adaptation to intimate association with human beings",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "eccentrically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an eccentric or bizarre manner",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "render",
+  "pos": [
+   "verb"
+  ],
+  "en": "cause to become",
+  "syn": [],
+  "exp": "The shot rendered her immobile"
+ },
+ {
+  "word": "rendering",
+  "pos": [
+   "noun"
+  ],
+  "en": "a performance of a musical composition or a dramatic role etc.",
+  "syn": [
+   "rendition"
+  ],
+  "exp": "they heard a live rendition of three pieces by Schubert"
+ },
+ {
+  "word": "pathos",
+  "pos": [
+   "noun"
+  ],
+  "en": "a quality that arouses emotions (especially pity or sorrow)",
+  "syn": [
+   "poignancy"
+  ],
+  "exp": "the film captured all the pathos of their situation"
+ },
+ {
+  "word": "tailor",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "a person whose occupation is making and altering garments",
+  "syn": [
+   "seamster",
+   "sartor"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "personalize",
+  "pos": [
+   "verb"
+  ],
+  "en": "make personal or more personal",
+  "syn": [
+   "personalise",
+   "individualize",
+   "individualise"
+  ],
+  "exp": "personalized service"
+ },
+ {
+  "word": "personalization",
+  "pos": [
+   "noun"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "personification",
+  "pos": [
+   "noun"
+  ],
+  "en": "a person who represents an abstract quality",
+  "syn": [],
+  "exp": "she is the personification of optimism"
+ },
+ {
+  "word": "limitless",
+  "pos": [
+   "adjective"
+  ],
+  "en": "without limits in extent or size or quantity",
+  "syn": [
+   "illimitable",
+   "measureless",
+   "unmeasured"
+  ],
+  "exp": "limitless vastness of our solar system"
+ },
+ {
+  "word": "apprentice",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "be or work as an apprentice",
+  "syn": [],
+  "exp": "She apprenticed with the great master"
+ },
+ {
+  "word": "apprenticeship",
+  "pos": [
+   "noun"
+  ],
+  "en": "the position of apprentice",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "precision",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of being reproducible in amount or performance",
+  "syn": [
+   "preciseness"
+  ],
+  "exp": "he handled it with the preciseness of an automaton"
+ },
+ {
+  "word": "perfect",
+  "pos": [
+   "verb"
+  ],
+  "en": "make perfect or complete",
+  "syn": [
+   "hone"
+  ],
+  "exp": "perfect your French in Paris!"
+ },
+ {
+  "word": "silhouette",
+  "pos": [
+   "noun"
+  ],
+  "en": "an outline of a solid object (as cast by its shadow)",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "nondescript",
+  "pos": [
+   "adjective"
+  ],
+  "en": "lacking distinct or individual characteristics",
+  "syn": [
+   "characterless"
+  ],
+  "exp": "women dressed in nondescript clothes"
+ },
+ {
+  "word": "signal",
+  "pos": [
+   "verb"
+  ],
+  "en": "communicate silently and non-verbally by signals or signs",
+  "syn": [
+   "sign",
+   "signalize",
+   "signalise"
+  ],
+  "exp": "He signed his disapproval with a dismissive hand gesture"
+ },
+ {
+  "word": "negligible",
+  "pos": [
+   "adjective"
+  ],
+  "en": "so small as to be meaningless",
+  "syn": [],
+  "exp": "the effect was negligible"
+ },
+ {
+  "word": "negligent",
+  "pos": [
+   "adjective"
+  ],
+  "en": "characterized by neglect and undue lack of concern",
+  "syn": [],
+  "exp": "negligent in his correspondence"
+ },
+ {
+  "word": "negligently",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a negligent manner",
+  "syn": [],
+  "exp": "he did his work negligently"
+ },
+ {
+  "word": "principally",
+  "pos": [
+   "adverb"
+  ],
+  "en": "for the most part",
+  "syn": [
+   "chiefly",
+   "primarily",
+   "mainly",
+   "in_the_main"
+  ],
+  "exp": "he is mainly interested in butterflies"
+ },
+ {
+  "word": "altruism",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of unselfish concern for the welfare of others",
+  "syn": [
+   "selflessness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "altruistic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "showing unselfish concern for the welfare of others",
+  "syn": [
+   "selfless"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "scenario",
+  "pos": [
+   "noun"
+  ],
+  "en": "an outline or synopsis of a play (or, by extension, of a literary work)",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "voluntary",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of your own free will or design",
+  "syn": [],
+  "exp": "not forced or compelled"
+ },
+ {
+  "word": "voluntarily",
+  "pos": [
+   "adverb"
+  ],
+  "en": "out of your own free will",
+  "syn": [],
+  "exp": "he voluntarily submitted to the fingerprinting"
+ },
+ {
+  "word": "reap",
+  "pos": [
+   "verb"
+  ],
+  "en": "gather, as of natural products",
+  "syn": [
+   "harvest",
+   "glean"
+  ],
+  "exp": "harvest the grapes"
+ },
+ {
+  "word": "paternal",
+  "pos": [
+   "adjective"
+  ],
+  "en": "belonging to or inherited from one's father",
+  "syn": [],
+  "exp": "spent his childhood on the paternal farm"
+ },
+ {
+  "word": "maternal",
+  "pos": [
+   "adjective"
+  ],
+  "en": "characteristic of a mother",
+  "syn": [],
+  "exp": "warm maternal affection for her guest- Dorothy Sayers"
+ },
+ {
+  "word": "maternalistic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "showing maternal instincts",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "paternalistic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "benevolent but sometimes intrusive",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "provisions",
+  "pos": [
+   "noun"
+  ],
+  "en": "a stock or supply of foods",
+  "syn": [
+   "commissariat",
+   "provender",
+   "viands",
+   "victuals"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "injustice",
+  "pos": [
+   "noun"
+  ],
+  "en": "an unjust act",
+  "syn": [
+   "unfairness",
+   "iniquity",
+   "shabbiness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "impoverished",
+  "pos": [
+   "adjective"
+  ],
+  "en": "poor enough to need help from others",
+  "syn": [
+   "destitute",
+   "indigent",
+   "necessitous",
+   "needy"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "unsustainable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "unsustainably",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "sustainable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "capable of being sustained",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "sustainably",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "bypass",
+  "pos": [
+   "verb"
+  ],
+  "en": "avoid something unpleasant or laborious",
+  "syn": [
+   "short-circuit",
+   "go_around",
+   "get_around"
+  ],
+  "exp": "You cannot bypass these rules!"
+ },
+ {
+  "word": "imperative",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "en": "a mood that expresses an intention to influence the listener's behavior",
+  "syn": [
+   "imperative_mood",
+   "jussive_mood",
+   "imperative_form"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "cynic",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone who is critical of the motives of others",
+  "syn": [
+   "faultfinder"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "cynical",
+  "pos": [
+   "adjective"
+  ],
+  "en": "believing the worst of human nature and motives",
+  "syn": [
+   "misanthropic",
+   "misanthropical"
+  ],
+  "exp": "having a sneering disbelief in e.g. selflessness of others"
+ },
+ {
+  "word": "cynically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "with cynicism",
+  "syn": [],
+  "exp": "in a cynical manner"
+ },
+ {
+  "word": "cynicism",
+  "pos": [
+   "noun"
+  ],
+  "en": "a cynical feeling of distrust",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "sarcasm",
+  "pos": [
+   "noun"
+  ],
+  "en": "witty language used to convey insults or scorn",
+  "syn": [
+   "irony",
+   "satire",
+   "caustic_remark"
+  ],
+  "exp": "he used sarcasm to upset his opponent"
+ },
+ {
+  "word": "sarcastic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "expressing or expressive of ridicule that wounds",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "sarcastically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a sarcastic manner",
+  "syn": [
+   "sardonically"
+  ],
+  "exp": "`Ah, now we're getting at the truth,' he interposed sarcastically"
+ },
+ {
+  "word": "misplace",
+  "pos": [
+   "verb"
+  ],
+  "en": "place (something) where one cannot find it again",
+  "syn": [
+   "mislay"
+  ],
+  "exp": "I misplaced my eyeglasses"
+ },
+ {
+  "word": "symptomatic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "characteristic or indicative of a disease",
+  "syn": [
+   "diagnostic"
+  ],
+  "exp": "a diagnostic sign of yellow fever"
+ },
+ {
+  "word": "degrade",
+  "pos": [
+   "verb"
+  ],
+  "en": "reduce the level of land, as by erosion",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "degrading",
+  "pos": [
+   "adjective"
+  ],
+  "en": "harmful to the mind or morals",
+  "syn": [
+   "corrupting"
+  ],
+  "exp": "corrupt judges and their corrupting influence"
+ },
+ {
+  "word": "degradation",
+  "pos": [
+   "noun"
+  ],
+  "en": "changing to a lower state (a less respected state)",
+  "syn": [
+   "debasement"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "discourse",
+  "pos": [
+   "noun"
+  ],
+  "en": "extended verbal expression in speech or writing",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "amid",
+  "pos": [
+   "preposition"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "hedgehog",
+  "pos": [
+   "noun"
+  ],
+  "en": "relatively large rodents with sharp erectile bristles mingled with the fur",
+  "syn": [
+   "porcupine"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "nocturnal",
+  "pos": [
+   "adjective"
+  ],
+  "en": "belonging to or active during the night",
+  "syn": [],
+  "exp": "nocturnal animals are active at night"
+ },
+ {
+  "word": "hibernate",
+  "pos": [
+   "verb"
+  ],
+  "en": "sleep during winter",
+  "syn": [
+   "hole_up"
+  ],
+  "exp": "Bears must eat a lot of food before they hibernate in their caves"
+ },
+ {
+  "word": "hibernation",
+  "pos": [
+   "noun"
+  ],
+  "en": "the torpid or resting state in which some animals pass the winter",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "convict",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "find or declare guilty",
+  "syn": [],
+  "exp": "The man was convicted of fraud and sentenced"
+ },
+ {
+  "word": "conviction",
+  "pos": [
+   "noun"
+  ],
+  "en": "an unshakable belief in something without need for proof or evidence",
+  "syn": [
+   "strong_belief",
+   "article_of_faith"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "latent",
+  "pos": [
+   "adjective"
+  ],
+  "en": "potentially existing but not presently evident or realized",
+  "syn": [],
+  "exp": "a latent fingerprint"
+ },
+ {
+  "word": "snooze",
+  "pos": [
+   "verb"
+  ],
+  "en": "sleep lightly or for a short period of time",
+  "syn": [
+   "drowse",
+   "doze"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "classy",
+  "pos": [
+   "adjective"
+  ],
+  "en": "elegant and fashionable",
+  "syn": [
+   "posh",
+   "swish"
+  ],
+  "exp": "a swish pastry shop on the Rue du Bac- Julia Child"
+ },
+ {
+  "word": "wrench",
+  "pos": [
+   "verb"
+  ],
+  "en": "twist or pull violently or suddenly, especially so as to remove (something) from that to which it is attached or from where it originates",
+  "syn": [
+   "twist"
+  ],
+  "exp": "wrench a window off its hinges"
+ },
+ {
+  "word": "reminisce",
+  "pos": [
+   "verb"
+  ],
+  "en": "recall the past",
+  "syn": [],
+  "exp": "The grandparents sat there, reminiscing all afternoon"
+ },
+ {
+  "word": "reminiscent",
+  "pos": [
+   "adjective"
+  ],
+  "en": "serving to bring to mind",
+  "syn": [
+   "evocative",
+   "redolent",
+   "remindful",
+   "resonant"
+  ],
+  "exp": "cannot forbear to close on this redolent literary note- Wilder Hobson"
+ },
+ {
+  "word": "intuit",
+  "pos": [
+   "verb"
+  ],
+  "en": "know or grasp by intuition or feeling",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "intuition",
+  "pos": [
+   "noun"
+  ],
+  "en": "instinctive knowing (without the use of rational processes)",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "intuitive",
+  "pos": [
+   "adjective"
+  ],
+  "en": "spontaneously derived from or prompted by a natural tendency",
+  "syn": [],
+  "exp": "an intuitive revulsion"
+ },
+ {
+  "word": "intuitively",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an intuitive manner",
+  "syn": [],
+  "exp": "inventors seem to have chosen intuitively a combination of explosive and aggressive sounds as warning signals to be used on automobiles"
+ },
+ {
+  "word": "marginal",
+  "pos": [
+   "adjective"
+  ],
+  "en": "at or constituting a border or edge",
+  "syn": [
+   "fringy"
+  ],
+  "exp": "the marginal strip of beach"
+ },
+ {
+  "word": "marginally",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a marginal manner",
+  "syn": [],
+  "exp": "marginally interesting"
+ },
+ {
+  "word": "crude",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not carefully or expertly made",
+  "syn": [
+   "rough"
+  ],
+  "exp": "managed to make a crude splint"
+ },
+ {
+  "word": "crudely",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a crude or unrefined manner",
+  "syn": [],
+  "exp": "he was crudely bold"
+ },
+ {
+  "word": "strap",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "an elongated leather strip (or a strip of similar material) for binding things together or holding something in position",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "strapping",
+  "pos": [
+   "adjective"
+  ],
+  "en": "muscular and heavily built",
+  "syn": [
+   "beefy",
+   "burly",
+   "husky",
+   "buirdly"
+  ],
+  "exp": "had a tall burly frame"
+ },
+ {
+  "word": "scoff",
+  "pos": [
+   "verb"
+  ],
+  "en": "laugh at with contempt and derision",
+  "syn": [
+   "jeer",
+   "flout",
+   "barrack",
+   "gibe"
+  ],
+  "exp": "The crowd jeered at the speaker"
+ },
+ {
+  "word": "fiddly",
+  "pos": [
+   "adjective"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "fiddler",
+  "pos": [
+   "noun"
+  ],
+  "en": "a musician who plays the violin",
+  "syn": [
+   "violinist"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "fiddle",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "bowed stringed instrument that is the highest member of the violin family",
+  "syn": [
+   "violin"
+  ],
+  "exp": "this instrument has four strings and a hollow body and an unfretted fingerboard and is played with a bow"
+ },
+ {
+  "word": "unmusical",
+  "pos": [
+   "adjective"
+  ],
+  "en": "lacking interest in or talent for music",
+  "syn": [
+   "nonmusical"
+  ],
+  "exp": "too unmusical to care for concerts"
+ },
+ {
+  "word": "unmusically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an unmusical manner",
+  "syn": [],
+  "exp": "She sings rather unmusically"
+ },
+ {
+  "word": "repertory",
+  "pos": [
+   "noun"
+  ],
+  "en": "a storehouse where a stock of things is kept",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "concerto",
+  "pos": [
+   "noun"
+  ],
+  "en": "a composition for orchestra and a soloist",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "premier",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "en": "first in rank or degree",
+  "syn": [
+   "premier(a)",
+   "prime(a)"
+  ],
+  "exp": "an architect of premier rank"
+ },
+ {
+  "word": "fanatic",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "en": "marked by excessive enthusiasm for and intense devotion to a cause or idea",
+  "syn": [
+   "fanatical",
+   "overzealous",
+   "rabid"
+  ],
+  "exp": "rabid isolationist"
+ },
+ {
+  "word": "fanatically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a passionately fanatic manner",
+  "syn": [],
+  "exp": "he followed the teachings of his guru fanatically"
+ },
+ {
+  "word": "acoustically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "with respect to acoustics",
+  "syn": [],
+  "exp": "acoustically ill-equipped studios"
+ },
+ {
+  "word": "acoustic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to the science of acoustics",
+  "syn": [
+   "acoustical"
+  ],
+  "exp": "acoustic properties of a hall"
+ },
+ {
+  "word": "acoustics",
+  "pos": [
+   "noun"
+  ],
+  "en": "the study of the physical properties of sound",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "compromised",
+  "pos": [
+   "adjective"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "daunt",
+  "pos": [
+   "verb"
+  ],
+  "en": "cause to lose courage",
+  "syn": [
+   "dash",
+   "scare_off",
+   "pall",
+   "frighten_off"
+  ],
+  "exp": "dashed by the refusal"
+ },
+ {
+  "word": "daunting",
+  "pos": [
+   "adjective"
+  ],
+  "en": "discouraging through fear",
+  "syn": [
+   "intimidating"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "realist",
+  "pos": [
+   "noun"
+  ],
+  "en": "a philosopher who believes that universals are real and exist independently of anyone thinking of them",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "realism",
+  "pos": [
+   "noun"
+  ],
+  "en": "the attribute of accepting the facts of life and favoring practicality and literal truth",
+  "syn": [
+   "pragmatism"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "recess",
+  "pos": [
+   "noun"
+  ],
+  "en": "a state of abeyance or suspended business",
+  "syn": [
+   "deferral"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "recessive",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or pertaining to a recession",
+  "syn": [
+   "recessionary"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "prolific",
+  "pos": [
+   "adjective"
+  ],
+  "en": "intellectually productive",
+  "syn": [
+   "fecund",
+   "fertile"
+  ],
+  "exp": "a prolific writer"
+ },
+ {
+  "word": "prolifically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "proliferate",
+  "pos": [
+   "verb"
+  ],
+  "en": "grow rapidly",
+  "syn": [],
+  "exp": "Pizza parlors proliferate in this area"
+ },
+ {
+  "word": "fragmentation",
+  "pos": [
+   "noun"
+  ],
+  "en": "separating something into fine particles",
+  "syn": [
+   "atomization",
+   "atomisation"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "campaign",
+  "pos": [
+   "verb"
+  ],
+  "en": "run, stand, or compete for an office or a position",
+  "syn": [
+   "run"
+  ],
+  "exp": "Who's running for treasurer this year?"
+ },
+ {
+  "word": "astray",
+  "pos": [
+   "adverb"
+  ],
+  "en": "away from the right path or direction",
+  "syn": [],
+  "exp": "he was led astray"
+ },
+ {
+  "word": "duration",
+  "pos": [
+   "noun"
+  ],
+  "en": "the period of time during which something continues",
+  "syn": [
+   "continuance"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "durable",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "en": "existing for a long time",
+  "syn": [
+   "lasting",
+   "long-lasting",
+   "long-lived"
+  ],
+  "exp": "hopes for a durable peace"
+ },
+ {
+  "word": "likelihood",
+  "pos": [
+   "noun"
+  ],
+  "en": "the probability of a specified outcome",
+  "syn": [
+   "likeliness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "naive",
+  "pos": [
+   "adjective"
+  ],
+  "en": "marked by or showing unaffected simplicity and lack of guile or worldly experience",
+  "syn": [
+   "naif"
+  ],
+  "exp": "a teenager's naive ignorance of life"
+ },
+ {
+  "word": "naively",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a naive manner",
+  "syn": [],
+  "exp": "he believed, naively, that she would leave him her money"
+ },
+ {
+  "word": "naivety",
+  "pos": [
+   "noun"
+  ],
+  "en": "lack of sophistication or worldliness",
+  "syn": [
+   "naivete",
+   "naiveness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "impervious",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not admitting of passage or capable of being affected",
+  "syn": [
+   "imperviable"
+  ],
+  "exp": "a material impervious to water"
+ },
+ {
+  "word": "ludicrous",
+  "pos": [
+   "adjective"
+  ],
+  "en": "broadly or extravagantly humorous",
+  "syn": [
+   "farcical",
+   "ridiculous"
+  ],
+  "exp": "the wild farcical exuberance of a clown"
+ },
+ {
+  "word": "ludicrously",
+  "pos": [
+   "adverb"
+  ],
+  "en": "so as to arouse or deserve laughter",
+  "syn": [
+   "laughably",
+   "ridiculously",
+   "preposterously"
+  ],
+  "exp": "her income was laughably small, but she managed to live well"
+ },
+ {
+  "word": "cost-effective",
+  "pos": [
+   "adjective"
+  ],
+  "en": "productive relative to the cost",
+  "syn": [
+   "cost-efficient"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "gruesome",
+  "pos": [
+   "adjective"
+  ],
+  "en": "shockingly repellent",
+  "syn": [
+   "ghastly",
+   "grim",
+   "grisly",
+   "macabre"
+  ],
+  "exp": "the grim aftermath of the bombing"
+ },
+ {
+  "word": "gruesomely",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a gruesome manner",
+  "syn": [],
+  "exp": "he was gruesomely wounded"
+ },
+ {
+  "word": "envisage",
+  "pos": [
+   "verb"
+  ],
+  "en": "form a mental image of something that is not present or that is not the case",
+  "syn": [
+   "imagine",
+   "conceive_of",
+   "ideate"
+  ],
+  "exp": "Can you conceive of him as the president?"
+ },
+ {
+  "word": "screenwriter",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone who writes screenplays",
+  "syn": [
+   "film_writer"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "mingle",
+  "pos": [
+   "verb"
+  ],
+  "en": "to bring or combine together or with something else",
+  "syn": [
+   "mix",
+   "commix",
+   "unify",
+   "amalgamate"
+  ],
+  "exp": "resourcefully he mingled music and dance"
+ },
+ {
+  "word": "churn",
+  "pos": [
+   "verb"
+  ],
+  "en": "stir (cream) vigorously in order to make butter",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "buffer",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "add a buffer (a solution)",
+  "syn": [],
+  "exp": "buffered saline solution for the eyes"
+ },
+ {
+  "word": "irate",
+  "pos": [
+   "adjective"
+  ],
+  "en": "feeling or showing extreme anger",
+  "syn": [
+   "ireful"
+  ],
+  "exp": "irate protesters"
+ },
+ {
+  "word": "irately",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an irate manner",
+  "syn": [],
+  "exp": "`Get out,' he shouted irately"
+ },
+ {
+  "word": "docile",
+  "pos": [
+   "adjective"
+  ],
+  "en": "willing to be taught or led or supervised or directed",
+  "syn": [],
+  "exp": "the docile masses of an enslaved nation"
+ },
+ {
+  "word": "docilely",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "fiend",
+  "pos": [
+   "noun"
+  ],
+  "en": "a cruel wicked and inhuman person",
+  "syn": [
+   "monster",
+   "devil",
+   "demon",
+   "ogre"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "fiendish",
+  "pos": [
+   "adjective"
+  ],
+  "en": "extremely evil or cruel",
+  "syn": [
+   "demonic",
+   "diabolic",
+   "diabolical",
+   "hellish"
+  ],
+  "exp": "expressive of cruelty or befitting hell"
+ },
+ {
+  "word": "fiendishly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "as a devil",
+  "syn": [
+   "diabolically",
+   "devilishly"
+  ],
+  "exp": "in an evil manner"
+ },
+ {
+  "word": "transfix",
+  "pos": [
+   "verb"
+  ],
+  "en": "to render motionless, as with a fixed stare or by arousing terror or awe",
+  "syn": [
+   "fascinate",
+   "grip",
+   "spellbind"
+  ],
+  "exp": "The snake charmer fascinates the cobra"
+ },
+ {
+  "word": "gypsy",
+  "pos": [
+   "noun"
+  ],
+  "en": "a laborer who moves from place to place as demanded by employment",
+  "syn": [
+   "itinerant",
+   "gipsy"
+  ],
+  "exp": "itinerant traders"
+ },
+ {
+  "word": "temperament",
+  "pos": [
+   "noun"
+  ],
+  "en": "your usual mood",
+  "syn": [
+   "disposition"
+  ],
+  "exp": "he has a happy disposition"
+ },
+ {
+  "word": "temperamental",
+  "pos": [
+   "adjective"
+  ],
+  "en": "relating to or caused by temperament",
+  "syn": [],
+  "exp": "temperamental indifference to neatness"
+ },
+ {
+  "word": "temperamentally",
+  "pos": [
+   "adverb"
+  ],
+  "en": "by temperament",
+  "syn": [],
+  "exp": "temperamentally suited to each other"
+ },
+ {
+  "word": "screenplay",
+  "pos": [
+   "noun"
+  ],
+  "en": "a script for a film including dialogue and descriptions of characters and sets",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "disillusionment",
+  "pos": [
+   "noun"
+  ],
+  "en": "freeing from false belief or illusions",
+  "syn": [
+   "disenchantment",
+   "disillusion"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "demise",
+  "pos": [
+   "noun"
+  ],
+  "en": "the time when something ends",
+  "syn": [
+   "death",
+   "dying"
+  ],
+  "exp": "it was the death of all his plans"
+ },
+ {
+  "word": "raunchy",
+  "pos": [
+   "adjective"
+  ],
+  "en": "earthy and sexually explicit",
+  "syn": [],
+  "exp": "a raunchy novel"
+ },
+ {
+  "word": "raunchily",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "overdraft",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "a draft in excess of the credit balance",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "synopsis",
+  "pos": [
+   "noun"
+  ],
+  "en": "a sketchy summary of the main points of an argument or theory",
+  "syn": [
+   "outline",
+   "abstract",
+   "precis"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "renown",
+  "pos": [
+   "noun"
+  ],
+  "en": "the state or quality of being widely honored and acclaimed",
+  "syn": [
+   "fame",
+   "celebrity"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "contest",
+  "pos": [
+   "verb"
+  ],
+  "en": "to make the subject of dispute, contention, or litigation",
+  "syn": [
+   "contend",
+   "repugn"
+  ],
+  "exp": "They contested the outcome of the race"
+ },
+ {
+  "word": "contested",
+  "pos": [
+   "adjective"
+  ],
+  "en": "disputed or made the object of contention or competition",
+  "syn": [],
+  "exp": "a contested election"
+ },
+ {
+  "word": "verandah",
+  "pos": [
+   "noun"
+  ],
+  "en": "a porch along the outside of a building (sometimes partly enclosed)",
+  "syn": [
+   "veranda",
+   "gallery"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "occupational",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to the activity or business for which you are trained",
+  "syn": [],
+  "exp": "occupational hazard"
+ },
+ {
+  "word": "verdict",
+  "pos": [
+   "noun"
+  ],
+  "en": "(law) the findings of a jury on issues of fact submitted to it for decision",
+  "syn": [
+   "finding_of_fact"
+  ],
+  "exp": "can be used in formulating a judgment"
+ },
+ {
+  "word": "ventilate",
+  "pos": [
+   "verb"
+  ],
+  "en": "expose to cool or cold air so as to cool or freshen",
+  "syn": [
+   "vent",
+   "air_out",
+   "air"
+  ],
+  "exp": "air the old winter clothes"
+ },
+ {
+  "word": "ventilation",
+  "pos": [
+   "noun"
+  ],
+  "en": "the act of supplying fresh air and getting rid of foul air",
+  "syn": [
+   "airing"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "occupant",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone who lives at a particular place for a prolonged period or who was born there",
+  "syn": [
+   "resident",
+   "occupier"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "radiator",
+  "pos": [
+   "noun"
+  ],
+  "en": "any object that radiates energy",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "homely",
+  "pos": [
+   "adjective"
+  ],
+  "en": "lacking in physical beauty or proportion",
+  "syn": [
+   "plain"
+  ],
+  "exp": "several of the buildings were downright homely"
+ },
+ {
+  "word": "bureaucratic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to or resembling a bureaucrat or bureaucracy",
+  "syn": [],
+  "exp": "his bureaucratic behavior annoyed his colleagues"
+ },
+ {
+  "word": "bureaucratically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a bureaucratic manner",
+  "syn": [],
+  "exp": "his bureaucratically petty behavior annoyed her"
+ },
+ {
+  "word": "adjustable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "capable of being changed so as to match or fit",
+  "syn": [],
+  "exp": "adjustable seat belts"
+ },
+ {
+  "word": "fatigue",
+  "pos": [
+   "noun"
+  ],
+  "en": "temporary loss of strength and energy resulting from hard physical or mental work",
+  "syn": [
+   "weariness",
+   "tiredness"
+  ],
+  "exp": "he was hospitalized for extreme fatigue"
+ },
+ {
+  "word": "muscular",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to or consisting of muscle",
+  "syn": [],
+  "exp": "muscular contraction"
+ },
+ {
+  "word": "versatile",
+  "pos": [
+   "adjective"
+  ],
+  "en": "having great diversity or variety",
+  "syn": [
+   "various"
+  ],
+  "exp": "his various achievements are impressive"
+ },
+ {
+  "word": "versatility",
+  "pos": [
+   "noun"
+  ],
+  "en": "having a wide variety of skills",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "stimuli",
+  "pos": [
+   "noun"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "uninspiring",
+  "pos": [
+   "adjective"
+  ],
+  "en": "depressing to the spirit",
+  "syn": [],
+  "exp": "a villa of uninspiring design"
+ },
+ {
+  "word": "mutually",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a mutual or shared manner",
+  "syn": [
+   "reciprocally"
+  ],
+  "exp": "the agreement was mutually satisfactory"
+ },
+ {
+  "word": "somber",
+  "pos": [
+   "adjective"
+  ],
+  "en": "lacking brightness or color",
+  "syn": [
+   "drab",
+   "sober",
+   "sombre"
+  ],
+  "exp": "children in somber brown clothes"
+ },
+ {
+  "word": "somberly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a somber manner",
+  "syn": [
+   "sombrely"
+  ],
+  "exp": "`That's sure bad news,' said Dowd, somberly"
+ },
+ {
+  "word": "clutter",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "fill a space in a disorderly way",
+  "syn": [
+   "clutter_up"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "lodge",
+  "pos": [
+   "verb"
+  ],
+  "en": "be a lodger",
+  "syn": [],
+  "exp": "Where are you lodging in Paris?"
+ },
+ {
+  "word": "dislodge",
+  "pos": [
+   "verb"
+  ],
+  "en": "remove or force out from a position",
+  "syn": [
+   "free"
+  ],
+  "exp": "The dentist dislodged the piece of food that had been stuck under my gums"
+ },
+ {
+  "word": "carpenter",
+  "pos": [
+   "noun"
+  ],
+  "en": "a woodworker who makes or repairs wooden objects",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "carpentry",
+  "pos": [
+   "noun"
+  ],
+  "en": "the craft of a carpenter: making things out of wood",
+  "syn": [
+   "woodworking",
+   "woodwork"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "transit",
+  "pos": [
+   "noun"
+  ],
+  "en": "a surveying instrument for measuring horizontal and vertical angles, consisting of a small telescope mounted on a tripod",
+  "syn": [
+   "theodolite"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "plummet",
+  "pos": [
+   "verb"
+  ],
+  "en": "drop sharply",
+  "syn": [
+   "plump"
+  ],
+  "exp": "The stock market plummeted"
+ },
+ {
+  "word": "circulate",
+  "pos": [
+   "verb"
+  ],
+  "en": "become widely known and passed on",
+  "syn": [
+   "go_around",
+   "spread"
+  ],
+  "exp": "the story went around in the office"
+ },
+ {
+  "word": "circulation",
+  "pos": [
+   "noun"
+  ],
+  "en": "the dissemination of copies of periodicals (as newspapers or magazines)",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "demography",
+  "pos": [
+   "noun"
+  ],
+  "en": "the branch of sociology that studies the characteristics of human populations",
+  "syn": [
+   "human_ecology"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "demographic",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "en": "of or relating to demography",
+  "syn": [],
+  "exp": "demographic surveys"
+ },
+ {
+  "word": "demographically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "phenomenal",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to a phenomenon",
+  "syn": [],
+  "exp": "phenomenal science"
+ },
+ {
+  "word": "phenomenally",
+  "pos": [
+   "adverb"
+  ],
+  "en": "to a phenomenal degree",
+  "syn": [],
+  "exp": "his reaction was phenomenally quick"
+ },
+ {
+  "word": "prophet",
+  "pos": [
+   "noun"
+  ],
+  "en": "an authoritative person who divines the future",
+  "syn": [
+   "prophesier",
+   "oracle",
+   "seer",
+   "vaticinator"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "prophetic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "foretelling events as if by supernatural intervention",
+  "syn": [
+   "prophetical"
+  ],
+  "exp": "words that proved prophetic"
+ },
+ {
+  "word": "paywall",
+  "pos": [
+   "noun"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "firewall",
+  "pos": [
+   "noun"
+  ],
+  "en": "(colloquial) the application of maximum thrust",
+  "syn": [],
+  "exp": "he moved the throttle to the firewall"
+ },
+ {
+  "word": "invoice",
+  "pos": [
+   "noun"
+  ],
+  "en": "an itemized statement of money owed for goods shipped or services rendered",
+  "syn": [
+   "bill",
+   "account"
+  ],
+  "exp": "he paid his bill and left"
+ },
+ {
+  "word": "demolition",
+  "pos": [
+   "noun"
+  ],
+  "en": "an event (or the result of an event) that completely destroys something",
+  "syn": [
+   "destruction",
+   "wipeout"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "demo",
+  "pos": [
+   "noun"
+  ],
+  "en": "a visual presentation showing how something works",
+  "syn": [
+   "demonstration"
+  ],
+  "exp": "the lecture was accompanied by dramatic demonstrations"
+ },
+ {
+  "word": "gig",
+  "pos": [
+   "noun"
+  ],
+  "en": "long and light rowing boat",
+  "syn": [],
+  "exp": "especially for racing"
+ },
+ {
+  "word": "socialization",
+  "pos": [
+   "noun"
+  ],
+  "en": "the action of establishing on a socialist basis",
+  "syn": [
+   "socialisation"
+  ],
+  "exp": "the socialization of medical services"
+ },
+ {
+  "word": "antiquity",
+  "pos": [
+   "noun"
+  ],
+  "en": "the historic period preceding the Middle Ages in Europe",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "antiquated",
+  "pos": [
+   "adjective"
+  ],
+  "en": "so extremely old as seeming to belong to an earlier period",
+  "syn": [
+   "antediluvian",
+   "archaic"
+  ],
+  "exp": "a ramshackle antediluvian tenement"
+ },
+ {
+  "word": "restoration",
+  "pos": [
+   "noun"
+  ],
+  "en": "the reign of Charles II in England",
+  "syn": [],
+  "exp": "1660-1685"
+ },
+ {
+  "word": "restorative",
+  "pos": [
+   "adjective"
+  ],
+  "en": "tending to impart new life and vigor to",
+  "syn": [
+   "renewing",
+   "reviving",
+   "revitalizing",
+   "revitalising"
+  ],
+  "exp": "the renewing warmth of the sunshine"
+ },
+ {
+  "word": "rotate",
+  "pos": [
+   "verb"
+  ],
+  "en": "turn on or around an axis or a center",
+  "syn": [
+   "revolve",
+   "go_around"
+  ],
+  "exp": "The Earth revolves around the Sun"
+ },
+ {
+  "word": "till",
+  "pos": [
+   "noun"
+  ],
+  "en": "unstratified soil deposited by a glacier",
+  "syn": [
+   "boulder_clay"
+  ],
+  "exp": "consists of sand and clay and gravel and boulders mixed together"
+ },
+ {
+  "word": "coupled",
+  "pos": [
+   "adjective"
+  ],
+  "en": "joined together especially in a pair or pairs",
+  "syn": [
+   "conjugate",
+   "conjugated"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "itinerary",
+  "pos": [
+   "noun"
+  ],
+  "en": "an established line of travel or access",
+  "syn": [
+   "path",
+   "route"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "charter",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "a document incorporating an institution and specifying its rights",
+  "syn": [],
+  "exp": "includes the articles of incorporation and the certificate of incorporation"
+ },
+ {
+  "word": "terrain",
+  "pos": [
+   "noun"
+  ],
+  "en": "a piece of ground having specific characteristics or military potential",
+  "syn": [],
+  "exp": "they decided to attack across the rocky terrain"
+ },
+ {
+  "word": "resilient",
+  "pos": [
+   "adjective"
+  ],
+  "en": "recovering readily from adversity, depression, or the like",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "resilience",
+  "pos": [
+   "noun"
+  ],
+  "en": "the physical property of a material that can return to its original shape or position after deformation that does not exceed its elastic limit",
+  "syn": [
+   "resiliency"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "enterprising",
+  "pos": [
+   "adjective"
+  ],
+  "en": "marked by imagination, initiative, and readiness to undertake new projects",
+  "syn": [],
+  "exp": "an enterprising foreign policy"
+ },
+ {
+  "word": "integral",
+  "pos": [
+   "adjective"
+  ],
+  "en": "existing as an essential constituent or characteristic",
+  "syn": [
+   "built-in",
+   "constitutional",
+   "inbuilt",
+   "inherent"
+  ],
+  "exp": "the Ptolemaic system with its built-in concept of periodicity"
+ },
+ {
+  "word": "canoe",
+  "pos": [
+   "noun"
+  ],
+  "en": "small and light boat",
+  "syn": [],
+  "exp": "pointed at both ends"
+ },
+ {
+  "word": "magnetic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to or caused by magnetism",
+  "syn": [],
+  "exp": "magnetic forces"
+ },
+ {
+  "word": "magnetism",
+  "pos": [
+   "noun"
+  ],
+  "en": "attraction for iron",
+  "syn": [
+   "magnetic_attraction",
+   "magnetic_force"
+  ],
+  "exp": "associated with electric currents as well as magnets"
+ },
+ {
+  "word": "magnetically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "by the use of magnetism",
+  "syn": [],
+  "exp": "magnetically contaminated material"
+ },
+ {
+  "word": "credible",
+  "pos": [
+   "adjective"
+  ],
+  "en": "capable of being believed",
+  "syn": [
+   "believable"
+  ],
+  "exp": "completely credible testimony"
+ },
+ {
+  "word": "credibly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "easy to believe on the basis of available evidence",
+  "syn": [
+   "believably",
+   "plausibly",
+   "probably"
+  ],
+  "exp": "he talked plausibly before the committee"
+ },
+ {
+  "word": "credibility",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of being believable or trustworthy",
+  "syn": [
+   "credibleness",
+   "believability"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "credential",
+  "pos": [
+   "noun"
+  ],
+  "en": "a document attesting to the truth of certain stated facts",
+  "syn": [
+   "certificate",
+   "certification",
+   "credentials"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "acutely",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a keen or penetrating way",
+  "syn": [
+   "keenly"
+  ],
+  "exp": "he was keenly aware of his own shortcomings"
+ },
+ {
+  "word": "prohibitive",
+  "pos": [
+   "adjective"
+  ],
+  "en": "tending to discourage (especially of prices)",
+  "syn": [
+   "prohibitory"
+  ],
+  "exp": "the price was prohibitive"
+ },
+ {
+  "word": "prohibitively",
+  "pos": [
+   "adverb"
+  ],
+  "en": "to a prohibitive degree",
+  "syn": [],
+  "exp": "it is prohibitively expensive"
+ },
+ {
+  "word": "fissure",
+  "pos": [
+   "noun"
+  ],
+  "en": "a long narrow depression in a surface",
+  "syn": [
+   "crevice",
+   "cranny",
+   "crack",
+   "chap"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "pendulous",
+  "pos": [
+   "adjective"
+  ],
+  "en": "having branches or flower heads that bend downward",
+  "syn": [
+   "cernuous",
+   "drooping",
+   "nodding",
+   "weeping"
+  ],
+  "exp": "the pendulous branches of a weeping willow"
+ },
+ {
+  "word": "suspension",
+  "pos": [
+   "noun"
+  ],
+  "en": "a mixture in which fine particles are suspended in a fluid where they are supported by buoyancy",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "aboard",
+  "pos": [
+   "preposition"
+  ],
+  "en": "on a ship, train, plane or other vehicle",
+  "syn": [
+   "on_board"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "drill",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "make a hole, especially with a pointed power or hand tool",
+  "syn": [
+   "bore"
+  ],
+  "exp": "don't drill here, there's a gas pipe"
+ },
+ {
+  "word": "anthropology",
+  "pos": [
+   "noun"
+  ],
+  "en": "the social science that studies the origins and social relationships of human beings",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "anthropologist",
+  "pos": [
+   "noun"
+  ],
+  "en": "a social scientist who specializes in anthropology",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "squander",
+  "pos": [
+   "verb"
+  ],
+  "en": "spend thoughtlessly",
+  "syn": [
+   "waste",
+   "blow"
+  ],
+  "exp": "He wasted his inheritance on his insincere friends"
+ },
+ {
+  "word": "munch",
+  "pos": [
+   "verb"
+  ],
+  "en": "chew noisily",
+  "syn": [
+   "crunch"
+  ],
+  "exp": "The children crunched the celery sticks"
+ },
+ {
+  "word": "adjoin",
+  "pos": [
+   "verb"
+  ],
+  "en": "lie adjacent to another or share a boundary",
+  "syn": [
+   "border",
+   "edge",
+   "abut",
+   "march"
+  ],
+  "exp": "Canada adjoins the U.S."
+ },
+ {
+  "word": "adjoining",
+  "pos": [
+   "adjective"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "wizened",
+  "pos": [
+   "adjective"
+  ],
+  "en": "lean and wrinkled by shrinkage as from age or illness",
+  "syn": [
+   "shriveled",
+   "shrivelled",
+   "shrunken",
+   "withered"
+  ],
+  "exp": "the old woman's shriveled skin"
+ },
+ {
+  "word": "graft",
+  "pos": [
+   "verb"
+  ],
+  "en": "cause to grow together parts from different plants",
+  "syn": [
+   "engraft",
+   "ingraft"
+  ],
+  "exp": "graft the cherry tree branch onto the plum tree"
+ },
+ {
+  "word": "orchard",
+  "pos": [
+   "noun"
+  ],
+  "en": "garden consisting of a small cultivated wood without undergrowth",
+  "syn": [
+   "grove",
+   "woodlet",
+   "plantation"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "seedling",
+  "pos": [
+   "noun"
+  ],
+  "en": "young plant or tree grown from a seed",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "tract",
+  "pos": [
+   "noun"
+  ],
+  "en": "an extended area of land",
+  "syn": [
+   "piece_of_land",
+   "piece_of_ground",
+   "parcel_of_land",
+   "parcel"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "folktale",
+  "pos": [
+   "noun"
+  ],
+  "en": "a tale circulated by word of mouth among the common folk",
+  "syn": [
+   "folk_tale"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "sprout",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "produce buds, branches, or germinate",
+  "syn": [
+   "shoot",
+   "spud",
+   "germinate",
+   "pullulate"
+  ],
+  "exp": "the potatoes sprouted"
+ },
+ {
+  "word": "hypocrisy",
+  "pos": [
+   "noun"
+  ],
+  "en": "an expression of agreement that is not supported by real conviction",
+  "syn": [
+   "lip_service"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "hypocrite",
+  "pos": [
+   "noun"
+  ],
+  "en": "a person who professes beliefs and opinions that he or she does not hold in order to conceal his or her real feelings or motives",
+  "syn": [
+   "dissembler",
+   "dissimulator",
+   "phony",
+   "phoney"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "hypocritical",
+  "pos": [
+   "adjective"
+  ],
+  "en": "professing feelings or virtues one does not have",
+  "syn": [],
+  "exp": "hypocritical praise"
+ },
+ {
+  "word": "hypocritically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a hypocritical manner",
+  "syn": [],
+  "exp": "he behaved hypocritically by praying piously when people were watching"
+ },
+ {
+  "word": "midwife",
+  "pos": [
+   "noun"
+  ],
+  "en": "a woman skilled in aiding the delivery of babies",
+  "syn": [
+   "accoucheuse"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "harvest",
+  "pos": [
+   "verb"
+  ],
+  "en": "gather, as of natural products",
+  "syn": [
+   "reap",
+   "glean"
+  ],
+  "exp": "harvest the grapes"
+ },
+ {
+  "word": "commercially",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a commercial manner",
+  "syn": [],
+  "exp": "the product is commercially available"
+ },
+ {
+  "word": "uniformity",
+  "pos": [
+   "noun"
+  ],
+  "en": "a condition in which everything is regular and unvarying",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "numb",
+  "pos": [
+   "adjective",
+   "verb"
+  ],
+  "en": "make numb or insensitive",
+  "syn": [
+   "benumb",
+   "blunt",
+   "dull"
+  ],
+  "exp": "The shock numbed her senses"
+ },
+ {
+  "word": "tastebud",
+  "pos": [
+   "noun"
+  ],
+  "en": "an oval sensory end organ on the surface of the tongue",
+  "syn": [
+   "taste_bud",
+   "gustatory_organ"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "amateur",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "en": "engaged in as a pastime",
+  "syn": [
+   "recreational",
+   "unpaid"
+  ],
+  "exp": "gained valuable experience in amateur theatricals"
+ },
+ {
+  "word": "retrace",
+  "pos": [
+   "verb"
+  ],
+  "en": "to go back over again",
+  "syn": [
+   "trace"
+  ],
+  "exp": "we retraced the route we took last summer"
+ },
+ {
+  "word": "chart",
+  "pos": [
+   "verb"
+  ],
+  "en": "make a chart of",
+  "syn": [],
+  "exp": "chart the territory"
+ },
+ {
+  "word": "insubordinate",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not submissive to authority",
+  "syn": [],
+  "exp": "a history of insubordinate behavior"
+ },
+ {
+  "word": "insubordination",
+  "pos": [
+   "noun"
+  ],
+  "en": "defiance of authority",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "insubordinately",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "subordinate",
+  "pos": [
+   "noun"
+  ],
+  "en": "an assistant subject to the authority or control of another",
+  "syn": [
+   "subsidiary",
+   "underling",
+   "foot_soldier"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "primitively",
+  "pos": [
+   "adverb"
+  ],
+  "en": "with reference to the origin or beginning",
+  "syn": [
+   "originally",
+   "in_the_beginning"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "embark",
+  "pos": [
+   "verb"
+  ],
+  "en": "go on board",
+  "syn": [
+   "ship"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "expedite",
+  "pos": [
+   "verb"
+  ],
+  "en": "speed up the progress of",
+  "syn": [
+   "hasten"
+  ],
+  "exp": "This should expedite the process"
+ },
+ {
+  "word": "contextual",
+  "pos": [
+   "adjective"
+  ],
+  "en": "relating to or determined by or in context",
+  "syn": [],
+  "exp": "contextual information"
+ },
+ {
+  "word": "contextually",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a manner dependent on context",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "whilst",
+  "pos": [
+   "conjunction"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "maneuver",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "direct the course",
+  "syn": [
+   "steer",
+   "manoeuver",
+   "manoeuvre",
+   "direct"
+  ],
+  "exp": "determine the direction of travelling"
+ },
+ {
+  "word": "riveting",
+  "pos": [
+   "adjective"
+  ],
+  "en": "capable of arousing and holding the attention",
+  "syn": [
+   "absorbing",
+   "engrossing",
+   "fascinating",
+   "gripping"
+  ],
+  "exp": "a fascinating story"
+ },
+ {
+  "word": "plunge",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "a brief swim in water",
+  "syn": [
+   "dip"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "debut",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "the act of beginning something new",
+  "syn": [
+   "introduction",
+   "first_appearance",
+   "launching",
+   "unveiling"
+  ],
+  "exp": "they looked forward to the debut of their new product line"
+ },
+ {
+  "word": "turmoil",
+  "pos": [
+   "noun"
+  ],
+  "en": "a violent disturbance",
+  "syn": [
+   "convulsion",
+   "upheaval"
+  ],
+  "exp": "the convulsions of the stock market"
+ },
+ {
+  "word": "scathing",
+  "pos": [
+   "adjective"
+  ],
+  "en": "marked by harshly abusive criticism",
+  "syn": [
+   "vituperative"
+  ],
+  "exp": "his scathing remarks about silly lady novelists"
+ },
+ {
+  "word": "unscathing",
+  "pos": [
+   "adjective"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "convoluted",
+  "pos": [
+   "adjective"
+  ],
+  "en": "rolled longitudinally upon itself",
+  "syn": [
+   "convolute"
+  ],
+  "exp": "a convolute petal"
+ },
+ {
+  "word": "undaunted",
+  "pos": [
+   "adjective"
+  ],
+  "en": "unshaken in purpose",
+  "syn": [
+   "undismayed",
+   "unshaken"
+  ],
+  "exp": "wholly undismayed by the commercial failure of the three movies he had made"
+ },
+ {
+  "word": "gutsy",
+  "pos": [
+   "adjective"
+  ],
+  "en": "marked by courage and determination in the face of difficulties or danger",
+  "syn": [
+   "plucky"
+  ],
+  "exp": "you have to admire her"
+ },
+ {
+  "word": "deprivation",
+  "pos": [
+   "noun"
+  ],
+  "en": "a state of extreme poverty",
+  "syn": [
+   "privation",
+   "want",
+   "neediness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "farce",
+  "pos": [
+   "noun"
+  ],
+  "en": "a comedy characterized by broad satire and improbable situations",
+  "syn": [
+   "farce_comedy",
+   "travesty"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "portray",
+  "pos": [
+   "verb"
+  ],
+  "en": "portray in words",
+  "syn": [],
+  "exp": "The book portrays the actor as a selfish person"
+ },
+ {
+  "word": "portrayal",
+  "pos": [
+   "noun"
+  ],
+  "en": "a word picture of a person's appearance and character",
+  "syn": [
+   "portraiture",
+   "portrait"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "elusive",
+  "pos": [
+   "adjective"
+  ],
+  "en": "difficult to describe",
+  "syn": [],
+  "exp": "a haunting elusive odor"
+ },
+ {
+  "word": "elude",
+  "pos": [
+   "verb"
+  ],
+  "en": "escape, either physically or mentally",
+  "syn": [
+   "evade",
+   "bilk"
+  ],
+  "exp": "The thief eluded the police"
+ },
+ {
+  "word": "incisor",
+  "pos": [
+   "noun"
+  ],
+  "en": "a tooth for cutting or gnawing",
+  "syn": [],
+  "exp": "located in the front of the mouth in both jaws"
+ },
+ {
+  "word": "incision",
+  "pos": [
+   "noun"
+  ],
+  "en": "a depression scratched or carved into a surface",
+  "syn": [
+   "scratch",
+   "prick",
+   "slit",
+   "dent"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "chisel",
+  "pos": [
+   "verb"
+  ],
+  "en": "engage in deceitful behavior",
+  "syn": [
+   "cheat"
+  ],
+  "exp": "practice trickery or fraud"
+ },
+ {
+  "word": "chiselled",
+  "pos": [
+   "adjective"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "gnaw",
+  "pos": [
+   "verb"
+  ],
+  "en": "bite or chew on with the teeth",
+  "syn": [],
+  "exp": "gnaw an old cracker"
+ },
+ {
+  "word": "elongate",
+  "pos": [
+   "verb"
+  ],
+  "en": "make long or longer by pulling and stretching",
+  "syn": [
+   "stretch"
+  ],
+  "exp": "stretch the fabric"
+ },
+ {
+  "word": "telltale",
+  "pos": [
+   "adjective"
+  ],
+  "en": "disclosing unintentionally something concealed",
+  "syn": [
+   "revealing",
+   "telling",
+   "telltale(a)"
+  ],
+  "exp": "a telltale panel of lights"
+ },
+ {
+  "word": "cavity",
+  "pos": [
+   "noun"
+  ],
+  "en": "a sizeable hole (usually in the ground)",
+  "syn": [
+   "pit"
+  ],
+  "exp": "they dug a pit to bury the body"
+ },
+ {
+  "word": "rustle",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "a light noise, like the noise of silk clothing or leaves blowing in the wind",
+  "syn": [
+   "rustling",
+   "whisper",
+   "whispering"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "glean",
+  "pos": [
+   "verb"
+  ],
+  "en": "gather, as of natural products",
+  "syn": [
+   "reap",
+   "harvest"
+  ],
+  "exp": "harvest the grapes"
+ },
+ {
+  "word": "niche",
+  "pos": [
+   "noun"
+  ],
+  "en": "a position particularly well suited to the person who occupies it",
+  "syn": [],
+  "exp": "he found his niche in the academic world"
+ },
+ {
+  "word": "somersault",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "do a somersault",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "exhilarate",
+  "pos": [
+   "verb"
+  ],
+  "en": "fill with sublime emotion",
+  "syn": [
+   "tickle_pink",
+   "inebriate",
+   "thrill",
+   "exalt"
+  ],
+  "exp": "The children were thrilled at the prospect of going to the movies"
+ },
+ {
+  "word": "exhilarating",
+  "pos": [
+   "adjective"
+  ],
+  "en": "making lively and cheerful",
+  "syn": [
+   "stimulating"
+  ],
+  "exp": "the exhilarating effect of mountain air"
+ },
+ {
+  "word": "exhilaration",
+  "pos": [
+   "noun"
+  ],
+  "en": "the feeling of lively and cheerful joy",
+  "syn": [
+   "excitement"
+  ],
+  "exp": "he could hardly conceal his excitement when she agreed"
+ },
+ {
+  "word": "physicality",
+  "pos": [
+   "noun"
+  ],
+  "en": "preoccupation with satisfaction of physical drives and appetites",
+  "syn": [
+   "animalism"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "hack",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "en": "cut with a hacking tool",
+  "syn": [
+   "chop"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "lust",
+  "pos": [
+   "noun"
+  ],
+  "en": "a strong sexual desire",
+  "syn": [
+   "lecherousness",
+   "lustfulness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "unsettling",
+  "pos": [
+   "adjective"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "unsettle",
+  "pos": [
+   "verb"
+  ],
+  "en": "disturb the composure of",
+  "syn": [
+   "faze",
+   "unnerve",
+   "enervate"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "suburban",
+  "pos": [
+   "adjective"
+  ],
+  "en": "relating to or characteristic of or situated in suburbs",
+  "syn": [],
+  "exp": "suburban population"
+ },
+ {
+  "word": "suburbia",
+  "pos": [
+   "noun"
+  ],
+  "en": "a residential district located on the outskirts of a city",
+  "syn": [
+   "suburb",
+   "suburban_area"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "dramatist",
+  "pos": [
+   "noun"
+  ],
+  "en": "someone who writes plays",
+  "syn": [
+   "playwright"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "characterization",
+  "pos": [
+   "noun"
+  ],
+  "en": "a graphic or vivid verbal description",
+  "syn": [
+   "word_picture",
+   "word-painting",
+   "delineation",
+   "depiction"
+  ],
+  "exp": "too often the narrative was interrupted by long word pictures"
+ },
+ {
+  "word": "quirky",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "en": "(informal) strikingly unconventional",
+  "syn": [
+   "far-out",
+   "kinky",
+   "offbeat",
+   "way-out"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "sprawl",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "en": "sit or lie with one's limbs spread out",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "ingenuity",
+  "pos": [
+   "noun"
+  ],
+  "en": "the power of creative imagination",
+  "syn": [
+   "inventiveness",
+   "ingeniousness",
+   "cleverness"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "panorama",
+  "pos": [
+   "noun"
+  ],
+  "en": "the visual percept of a region",
+  "syn": [
+   "view",
+   "aspect",
+   "prospect",
+   "scene"
+  ],
+  "exp": "the most desirable feature of the park are the beautiful views"
+ },
+ {
+  "word": "panoramic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "as from an altitude or distance",
+  "syn": [
+   "bird's-eye"
+  ],
+  "exp": "a bird's-eye survey"
+ },
+ {
+  "word": "benign",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not dangerous to health",
+  "syn": [],
+  "exp": "not recurrent or progressive (especially of a tumor)"
+ },
+ {
+  "word": "benignly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a benign manner",
+  "syn": [
+   "benignantly"
+  ],
+  "exp": "this drug is benignly soporific"
+ },
+ {
+  "word": "explosively",
+  "pos": [
+   "adverb"
+  ],
+  "en": "suddenly and rapidly",
+  "syn": [],
+  "exp": "the population in Central America is growing explosively"
+ },
+ {
+  "word": "bequeath",
+  "pos": [
+   "verb"
+  ],
+  "en": "leave or give by will after one's death",
+  "syn": [
+   "will",
+   "leave"
+  ],
+  "exp": "My aunt bequeathed me all her jewelry"
+ },
+ {
+  "word": "legacy",
+  "pos": [
+   "noun"
+  ],
+  "en": "(law) a gift of personal property by will",
+  "syn": [
+   "bequest"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "synthetic",
+  "pos": [
+   "adjective"
+  ],
+  "en": "not of natural origin",
+  "syn": [
+   "man-made",
+   "semisynthetic"
+  ],
+  "exp": "prepared or made artificially"
+ },
+ {
+  "word": "synthetically",
+  "pos": [
+   "adverb"
+  ],
+  "en": "by synthesis",
+  "syn": [],
+  "exp": "in a synthetic manner"
+ },
+ {
+  "word": "lackluster",
+  "pos": [
+   "adjective"
+  ],
+  "en": "lacking brilliance or vitality",
+  "syn": [
+   "lacklustre",
+   "lusterless",
+   "lustreless"
+  ],
+  "exp": "a dull lackluster life"
+ },
+ {
+  "word": "elastic",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "en": "capable of resuming original shape after stretching or compression",
+  "syn": [],
+  "exp": "a youthful and elastic walk"
+ },
+ {
+  "word": "appall",
+  "pos": [
+   "verb"
+  ],
+  "en": "strike with disgust or revulsion",
+  "syn": [
+   "shock",
+   "offend",
+   "scandalize",
+   "scandalise"
+  ],
+  "exp": "The scandalous behavior of this married woman shocked her friends"
+ },
+ {
+  "word": "appalling",
+  "pos": [
+   "adjective"
+  ],
+  "en": "causing consternation",
+  "syn": [
+   "dismaying"
+  ],
+  "exp": "appalling conditions"
+ },
+ {
+  "word": "appallingly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "to an appalling extent",
+  "syn": [],
+  "exp": "the prisoners were appallingly thin"
+ },
+ {
+  "word": "pounce",
+  "pos": [
+   "verb"
+  ],
+  "en": "move down on as if in an attack",
+  "syn": [
+   "swoop"
+  ],
+  "exp": "The raptor swooped down on its prey"
+ },
+ {
+  "word": "abound",
+  "pos": [
+   "verb"
+  ],
+  "en": "be abundant or plentiful",
+  "syn": [],
+  "exp": "exist in large quantities"
+ },
+ {
+  "word": "sap",
+  "pos": [
+   "noun"
+  ],
+  "en": "a watery solution of sugars, salts, and minerals that circulates through the vascular system of a plant",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "monotonous",
+  "pos": [
+   "adjective"
+  ],
+  "en": "tediously repetitious or lacking in variety",
+  "syn": [
+   "humdrum"
+  ],
+  "exp": "all work and no play"
+ },
+ {
+  "word": "monotonously",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a monotonous manner",
+  "syn": [],
+  "exp": "the history of the play throughout the latter part of the eighteenth century is monotonously uneventful"
+ },
+ {
+  "word": "monotony",
+  "pos": [
+   "noun"
+  ],
+  "en": "the quality of wearisome constancy, routine, and lack of variety",
+  "syn": [
+   "humdrum",
+   "sameness"
+  ],
+  "exp": "he had never grown accustomed to the monotony of his work"
+ },
+ {
+  "word": "turn to",
+  "pos": [
+   "verb"
+  ],
+  "en": "speak to",
+  "syn": [
+   "address",
+   "turn_to"
+  ],
+  "exp": "He addressed the crowd outside the window"
+ },
+ {
+  "word": "ingenious",
+  "pos": [
+   "adjective"
+  ],
+  "en": "showing inventiveness and skill",
+  "syn": [
+   "clever",
+   "cunning"
+  ],
+  "exp": "the cunning maneuvers leading to his success"
+ },
+ {
+  "word": "plaque",
+  "pos": [
+   "noun"
+  ],
+  "en": "(pathology) a small abnormal patch on or inside the body",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "neutralize",
+  "pos": [
+   "verb"
+  ],
+  "en": "make politically neutral and thus inoffensive",
+  "syn": [],
+  "exp": "The treaty neutralized the small republic"
+ },
+ {
+  "word": "neutralization",
+  "pos": [
+   "noun"
+  ],
+  "en": "action intended to keep a country politically neutral or exclude it from a possible war",
+  "syn": [
+   "neutralisation"
+  ],
+  "exp": "the neutralization of Belgium"
+ },
+ {
+  "word": "salivate",
+  "pos": [
+   "verb"
+  ],
+  "en": "produce saliva",
+  "syn": [],
+  "exp": "We salivated when he described the great meal"
+ },
+ {
+  "word": "cessation",
+  "pos": [
+   "noun"
+  ],
+  "en": "a stopping",
+  "syn": [
+   "surcease"
+  ],
+  "exp": "a cessation of the thunder"
+ },
+ {
+  "word": "remorse",
+  "pos": [
+   "noun"
+  ],
+  "en": "a feeling of deep regret (usually for some misdeed)",
+  "syn": [
+   "compunction",
+   "self-reproach"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "remorseless",
+  "pos": [
+   "adjective"
+  ],
+  "en": "without mercy or pity",
+  "syn": [
+   "pitiless",
+   "ruthless",
+   "unpitying"
+  ],
+  "exp": "an act of ruthless ferocity"
+ },
+ {
+  "word": "remorsefully",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in a rueful manner",
+  "syn": [
+   "ruefully",
+   "contritely"
+  ],
+  "exp": "`I made a big mistake,' he said ruefully"
+ },
+ {
+  "word": "remorselessly",
+  "pos": [
+   "adverb"
+  ],
+  "en": "without pity",
+  "syn": [
+   "mercilessly",
+   "pitilessly",
+   "unmercifully"
+  ],
+  "exp": "in a merciless manner"
+ },
+ {
+  "word": "inexcusable",
+  "pos": [
+   "adjective"
+  ],
+  "en": "without excuse or justification",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "inexcusably",
+  "pos": [
+   "adverb"
+  ],
+  "en": "in an unpardonable manner or to an unpardonable degree",
+  "syn": [
+   "unpardonably",
+   "unforgivably"
+  ],
+  "exp": "he was inexcusably cruel to his wife"
+ },
+ {
+  "word": "unassisted",
+  "pos": [
+   "adjective"
+  ],
+  "en": "unsupported by other people",
+  "syn": [
+   "single-handed",
+   "unbacked"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "heighten",
+  "pos": [
+   "verb"
+  ],
+  "en": "become more extreme",
+  "syn": [
+   "rise"
+  ],
+  "exp": "The tension heightened"
+ },
+ {
+  "word": "fixture",
+  "pos": [
+   "noun"
+  ],
+  "en": "an object firmly fixed in place (especially in a household)",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "bulk",
+  "pos": [
+   "noun"
+  ],
+  "en": "the property resulting from being or relating to the greater in number of two parts",
+  "syn": [
+   "majority"
+  ],
+  "exp": "the majority of his customers prefer it"
+ },
+ {
+  "word": "bulky",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of large size for its weight",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "bulk up",
+  "pos": [
+   "verb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "digitalize",
+  "pos": [
+   "verb"
+  ],
+  "en": "put into digital form, as for use in a computer",
+  "syn": [
+   "digitize",
+   "digitise",
+   "digitalise"
+  ],
+  "exp": "he bought a device to digitize the data"
+ },
+ {
+  "word": "digitalization",
+  "pos": [
+   "noun"
+  ],
+  "en": "the administration of digitalis for the treatment of certain heart disorders",
+  "syn": [
+   "digitalisation"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "mark-up",
+  "pos": [
+   "noun"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "complementary",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of words or propositions so related that each is the negation of the other",
+  "syn": [],
+  "exp": "`male' and `female' are complementary terms"
+ },
+ {
+  "word": "complimentary",
+  "pos": [
+   "adjective"
+  ],
+  "en": "conveying or resembling a compliment",
+  "syn": [],
+  "exp": "a complimentary remark"
+ },
+ {
+  "word": "staple",
+  "pos": [
+   "noun"
+  ],
+  "en": "(usually in the plural) a necessary commodity for which demand is constant",
+  "syn": [
+   "basic"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "wares",
+  "pos": [
+   "noun"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "testament",
+  "pos": [
+   "noun"
+  ],
+  "en": "a profession of belief",
+  "syn": [],
+  "exp": "he stated his political testament"
+ },
+ {
+  "word": "succulent",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "en": "tender and full of juice",
+  "syn": [
+   "lush"
+  ],
+  "exp": "succulent plants with thick fleshy leaves"
+ },
+ {
+  "word": "succulently",
+  "pos": [
+   "adverb"
+  ],
+  "en": "",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "tranquil",
+  "pos": [
+   "adjective"
+  ],
+  "en": "(of a body of water) free from disturbance by heavy waves",
+  "syn": [
+   "placid",
+   "quiet",
+   "still",
+   "smooth"
+  ],
+  "exp": "a ribbon of sand between the angry sea and the placid bay"
+ },
+ {
+  "word": "tranquility",
+  "pos": [
+   "noun"
+  ],
+  "en": "a disposition free from stress or emotion",
+  "syn": [
+   "repose",
+   "quiet",
+   "placidity",
+   "serenity"
+  ],
+  "exp": ""
+ },
+ {
+  "word": "spartan",
+  "pos": [
+   "adjective"
+  ],
+  "en": "of or relating to or characteristic of Sparta or its people",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "peninsula",
+  "pos": [
+   "noun"
+  ],
+  "en": "a large mass of land projecting into a body of water",
+  "syn": [],
+  "exp": ""
+ },
+ {
+  "word": "billiards",
+  "pos": [
+   "noun"
+  ],
+  "en": "any of several games played on rectangular cloth-covered table (with cushioned edges) in which long tapering cue sticks are used to propel ivory (or composition) balls",
+  "syn": [],
+  "exp": ""
+ }
+]
