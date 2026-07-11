@@ -1,6 +1,6 @@
 /* ============================================================================
    EN Vocab — 시드 데이터 (pipeline/merge_cefrj.js 자동 생성)
-   생성: 2026-07-11 · 표제어 2125개 (CEFR-J 전체 후보 2408개 중 작성 완료분)
+   생성: 2026-07-11 · 표제어 2242개 (CEFR-J 전체 후보 2408개 중 작성 완료분)
    ----------------------------------------------------------------------------
    표제어/CEFR/품사 = CEFR-J Wordlist(Tono Lab, TUFS — 연구·상업 무료, 출처 표시 조건)
    영영 정의(en)/유의어(syn) = WordNet 3.0(Princeton, 오프라인 추출)
@@ -39877,6 +39877,69 @@ window.SEED = [
   ]
  },
  {
+  "word": "seed",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "씨앗",
+  "en": "a small hard fruit",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We planted seeds in the garden.",
+    "ko": "우리는 정원에 씨앗을 심었어요."
+   }
+  ]
+ },
+ {
+  "word": "seek",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "찾다, 추구하다",
+  "en": "try to get or reach",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is seeking a new job.",
+    "ko": "그녀는 새 일자리를 찾고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "seem",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "~인 것 같다",
+  "en": "give a certain impression or have a certain outward aspect",
+  "syn": [
+   "look",
+   "appear"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She seems very happy today.",
+    "ko": "그녀는 오늘 아주 행복해 보여요."
+   }
+  ]
+ },
+ {
   "word": "self",
   "ipa": "",
   "pos": [
@@ -39919,6 +39982,89 @@ window.SEED = [
   ]
  },
  {
+  "word": "semester",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "학기",
+  "en": "one of two divisions of an academic year",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This semester has been very busy.",
+    "ko": "이번 학기는 아주 바빴어요."
+   }
+  ]
+ },
+ {
+  "word": "send",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "보내다",
+  "en": "cause to go somewhere",
+  "syn": [
+   "direct"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I will send you the file tonight.",
+    "ko": "제가 오늘 밤 파일을 보내드릴게요."
+   }
+  ]
+ },
+ {
+  "word": "senior",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "고학년의, 상급자",
+  "en": "an undergraduate student during the year preceding graduation",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a senior at university.",
+    "ko": "그녀는 대학교 졸업반이에요."
+   }
+  ]
+ },
+ {
+  "word": "sense",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "감각, 느낌",
+  "en": "a general conscious awareness",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has a good sense of humor.",
+    "ko": "그녀는 좋은 유머 감각을 가지고 있어요."
+   }
+  ]
+ },
+ {
   "word": "sentence",
   "ipa": "",
   "pos": [
@@ -39935,6 +40081,26 @@ window.SEED = [
    {
     "en": "He always spoke in complete sentences.",
     "ko": "그는 항상 완전한 문장으로 말했다."
+   }
+  ]
+ },
+ {
+  "word": "separate",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "분리된, 별개의",
+  "en": "independent",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They have separate rooms.",
+    "ko": "그들은 각자 방을 따로 가지고 있어요."
    }
   ]
  },
@@ -39962,13 +40128,58 @@ window.SEED = [
   ]
  },
  {
+  "word": "seriously",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A2",
+  "ko": "진지하게, 심각하게",
+  "en": "in a serious manner",
+  "syn": [
+   "earnestly",
+   "in_earnest"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please take this seriously.",
+    "ko": "이것을 진지하게 받아들여 주세요."
+   }
+  ]
+ },
+ {
+  "word": "serve",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "제공하다, 봉사하다",
+  "en": "serve a purpose, role, or function",
+  "syn": [
+   "function"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This restaurant serves great food.",
+    "ko": "이 식당은 훌륭한 음식을 제공해요."
+   }
+  ]
+ },
+ {
   "word": "set",
   "ipa": "",
   "pos": [
    "verb"
   ],
   "cefr": "A1",
-  "ko": "놓다, 두다; 세트",
+  "ko": "세트, 놓다",
   "en": "put into a certain place or abstract location",
   "syn": [
    "put",
@@ -39981,8 +40192,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She set the plates on the table.",
-    "ko": "그녀는 접시를 탁자에 놓았다."
+    "en": "I bought a set of cups.",
+    "ko": "저는 컵 한 세트를 샀어요."
    }
   ]
  },
@@ -39993,7 +40204,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "놓다, 두다; 세트",
+  "ko": "세트, 놓다",
   "en": "a group of things of the same kind that belong together and are so used",
   "syn": [],
   "ant": [],
@@ -40001,8 +40212,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She set the plates on the table.",
-    "ko": "그녀는 접시를 탁자에 놓았다."
+    "en": "I bought a set of cups.",
+    "ko": "저는 컵 한 세트를 샀어요."
    }
   ]
  },
@@ -40070,6 +40281,93 @@ window.SEED = [
   ]
  },
  {
+  "word": "several",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A2",
+  "ko": "몇몇의",
+  "en": "(used with count nouns) of an indefinite number more than 2 or 3 but not many",
+  "syn": [
+   "several(a)"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I have several questions.",
+    "ko": "저는 몇 가지 질문이 있어요."
+   }
+  ]
+ },
+ {
+  "word": "sew",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "바느질하다, 꿰매다",
+  "en": "fasten by sewing",
+  "syn": [
+   "run_up",
+   "sew_together",
+   "stitch"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She sewed a button on my shirt.",
+    "ko": "그녀는 제 셔츠에 단추를 꿰매줬어요."
+   }
+  ]
+ },
+ {
+  "word": "shade",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "그늘",
+  "en": "relative darkness caused by light rays being intercepted by an opaque body",
+  "syn": [
+   "shadiness",
+   "shadowiness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Let's sit in the shade.",
+    "ko": "그늘에 앉아요."
+   }
+  ]
+ },
+ {
+  "word": "shadow",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "그림자",
+  "en": "shade within clear boundaries",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The tree casts a long shadow.",
+    "ko": "그 나무는 긴 그림자를 드리워요."
+   }
+  ]
+ },
+ {
   "word": "shake",
   "ipa": "",
   "pos": [
@@ -40092,13 +40390,76 @@ window.SEED = [
   ]
  },
  {
+  "word": "shall",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A2",
+  "ko": "~할 것이다 (조동사)",
+  "en": "used to express what will happen or to make a suggestion",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Shall we go now?",
+    "ko": "이제 갈까요?"
+   }
+  ]
+ },
+ {
+  "word": "shampoo",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "샴푸",
+  "en": "cleansing agent consisting of soaps or detergents used for washing the hair",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I need to buy some shampoo.",
+    "ko": "저는 샴푸를 좀 사야 해요."
+   }
+  ]
+ },
+ {
+  "word": "shape",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "모양",
+  "en": "any spatial attributes (especially as defined by outline)",
+  "syn": [
+   "form",
+   "configuration",
+   "contour",
+   "conformation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This cookie has a heart shape.",
+    "ko": "이 쿠키는 하트 모양이에요."
+   }
+  ]
+ },
+ {
   "word": "share",
   "ipa": "",
   "pos": [
    "verb"
   ],
   "cefr": "A1",
-  "ko": "나누다, 공유하다",
+  "ko": "공유하다, 나누다",
   "en": "have in common",
   "syn": [],
   "ant": [],
@@ -40106,8 +40467,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Our children share a love of music.",
-    "ko": "우리 아이들은 음악에 대한 사랑을 공유한다."
+    "en": "Let's share this pizza.",
+    "ko": "이 피자를 나눠 먹어요."
    }
   ]
  },
@@ -40118,7 +40479,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "나누다, 공유하다",
+  "ko": "공유하다, 나누다",
   "en": "assets belonging to or due to or contributed by an individual person or group",
   "syn": [
    "portion",
@@ -40130,8 +40491,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Our children share a love of music.",
-    "ko": "우리 아이들은 음악에 대한 사랑을 공유한다."
+    "en": "Let's share this pizza.",
+    "ko": "이 피자를 나눠 먹어요."
    }
   ]
  },
@@ -40194,6 +40555,48 @@ window.SEED = [
   ]
  },
  {
+  "word": "shell",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "껍질, 조개껍데기",
+  "en": "the hard outer covering of an egg, nut, or shellfish",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She collected seashells on the beach.",
+    "ko": "그녀는 해변에서 조개껍데기를 모았어요."
+   }
+  ]
+ },
+ {
+  "word": "shine",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "빛나다",
+  "en": "be bright by reflecting or casting light",
+  "syn": [
+   "reflect"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The sun shines brightly today.",
+    "ko": "오늘 해가 밝게 빛나요."
+   }
+  ]
+ },
+ {
   "word": "ship",
   "ipa": "",
   "pos": [
@@ -40234,6 +40637,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "shock",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "충격",
+  "en": "the feeling of distress and disbelief that you have when something bad happens accidentally",
+  "syn": [
+   "daze",
+   "stupor"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The news gave everyone a shock.",
+    "ko": "그 소식은 모두에게 충격을 줬어요."
+   }
+  ]
+ },
+ {
   "word": "shoe",
   "ipa": "",
   "pos": [
@@ -40250,6 +40676,29 @@ window.SEED = [
    {
     "en": "She bought new shoes.",
     "ko": "그녀는 새 신발을 샀다."
+   }
+  ]
+ },
+ {
+  "word": "shoot",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "쏘다, 촬영하다",
+  "en": "hit with a missile from a weapon",
+  "syn": [
+   "hit",
+   "pip"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They are shooting a movie downtown.",
+    "ko": "그들은 시내에서 영화를 촬영하고 있어요."
    }
   ]
  },
@@ -40276,6 +40725,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "shop assistant",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "매장 직원, 점원",
+  "en": "a salesperson in a store",
+  "syn": [
+   "salesclerk",
+   "shop_clerk",
+   "clerk",
+   "shop_assistant"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The shop assistant helped me choose a gift.",
+    "ko": "그 매장 직원은 제가 선물 고르는 것을 도와줬어요."
+   }
+  ]
+ },
+ {
   "word": "shopping",
   "ipa": "",
   "pos": [
@@ -40296,6 +40770,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "shore",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "해안, 물가",
+  "en": "the land along the edge of a body of water",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We walked along the shore.",
+    "ko": "우리는 해안을 따라 걸었어요."
+   }
+  ]
+ },
+ {
   "word": "short",
   "ipa": "",
   "pos": [
@@ -40304,7 +40798,7 @@ window.SEED = [
   ],
   "cefr": "A1",
   "ko": "짧은, 키가 작은",
-  "en": "quickly and without warning",
+  "en": "having little length or height",
   "syn": [
    "abruptly",
    "suddenly",
@@ -40315,8 +40809,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "He has short hair.",
-    "ko": "그는 머리가 짧다."
+    "en": "She has short hair.",
+    "ko": "그녀는 짧은 머리를 가지고 있어요."
    }
   ]
  },
@@ -40328,15 +40822,37 @@ window.SEED = [
   ],
   "cefr": "A2",
   "ko": "짧은, 키가 작은",
-  "en": "the location on a baseball field where the shortstop is stationed",
+  "en": "having little length or height",
   "syn": [],
   "ant": [],
   "forms": [],
   "roots": [],
   "ex": [
    {
-    "en": "He has short hair.",
-    "ko": "그는 머리가 짧다."
+    "en": "She has short hair.",
+    "ko": "그녀는 짧은 머리를 가지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "shot",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "발사, 사진 한 장",
+  "en": "the act of firing a projectile",
+  "syn": [
+   "shooting"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That was a great shot.",
+    "ko": "그건 훌륭한 슛이었어요."
    }
   ]
  },
@@ -40379,13 +40895,38 @@ window.SEED = [
   ]
  },
  {
+  "word": "shout",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "외침, 소리치다",
+  "en": "a loud utterance",
+  "syn": [
+   "cry",
+   "outcry",
+   "call",
+   "yell"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I heard someone shout for help.",
+    "ko": "저는 누군가 도움을 요청하며 소리치는 것을 들었어요."
+   }
+  ]
+ },
+ {
   "word": "show",
   "ipa": "",
   "pos": [
    "verb"
   ],
   "cefr": "A1",
-  "ko": "보여주다; 쇼",
+  "ko": "쇼, 보여주다",
   "en": "give an exhibition of to an interested audience",
   "syn": [
    "demo",
@@ -40398,8 +40939,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She showed us her new car.",
-    "ko": "그녀는 우리에게 새 차를 보여줬다."
+    "en": "We watched a TV show together.",
+    "ko": "우리는 함께 TV 쇼를 봤어요."
    }
   ]
  },
@@ -40410,7 +40951,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "보여주다; 쇼",
+  "ko": "쇼, 보여주다",
   "en": "the act of publicly exhibiting or entertaining",
   "syn": [],
   "ant": [],
@@ -40418,8 +40959,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She showed us her new car.",
-    "ko": "그녀는 우리에게 새 차를 보여줬다."
+    "en": "We watched a TV show together.",
+    "ko": "우리는 함께 TV 쇼를 봤어요."
    }
   ]
  },
@@ -40440,6 +40981,28 @@ window.SEED = [
    {
     "en": "He takes a shower every morning.",
     "ko": "그는 매일 아침 샤워를 한다."
+   }
+  ]
+ },
+ {
+  "word": "shut",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "닫다",
+  "en": "move so that an opening or passage is obstructed",
+  "syn": [
+   "close"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please shut the window.",
+    "ko": "창문을 닫아주세요."
    }
   ]
  },
@@ -40530,6 +41093,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "sightseeing",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "관광",
+  "en": "going about to look at places of interest",
+  "syn": [
+   "rubber-necking"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We went sightseeing around the city.",
+    "ko": "우리는 도시를 돌아다니며 관광했어요."
+   }
+  ]
+ },
+ {
   "word": "sign",
   "ipa": "",
   "pos": [
@@ -40548,6 +41133,201 @@ window.SEED = [
    {
     "en": "There was a sign on the door.",
     "ko": "문에 표지판이 있었다."
+   }
+  ]
+ },
+ {
+  "word": "significant",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "중요한, 상당한",
+  "en": "important in effect or meaning",
+  "syn": [
+   "important"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a significant improvement.",
+    "ko": "이것은 상당한 개선이에요."
+   }
+  ]
+ },
+ {
+  "word": "silence",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "침묵, 고요",
+  "en": "the state of being silent (as when no one is speaking)",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was complete silence in the room.",
+    "ko": "방 안에는 완전한 침묵이 있었어요."
+   }
+  ]
+ },
+ {
+  "word": "silently",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A2",
+  "ko": "조용히",
+  "en": "without speaking",
+  "syn": [
+   "mutely",
+   "wordlessly",
+   "taciturnly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She silently walked away.",
+    "ko": "그녀는 조용히 걸어갔어요."
+   }
+  ]
+ },
+ {
+  "word": "silly",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "바보 같은, 우스운",
+  "en": "ludicrous, foolish",
+  "syn": [
+   "goofy",
+   "wacky",
+   "whacky",
+   "zany"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That's a silly question.",
+    "ko": "그건 바보 같은 질문이에요."
+   }
+  ]
+ },
+ {
+  "word": "silver",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "은색, 은",
+  "en": "made from or largely consisting of silver",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She wore silver earrings.",
+    "ko": "그녀는 은색 귀걸이를 착용했어요."
+   }
+  ]
+ },
+ {
+  "word": "similar",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "비슷한",
+  "en": "marked by correspondence or resemblance",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "These two bags look similar.",
+    "ko": "이 두 가방은 비슷해 보여요."
+   }
+  ]
+ },
+ {
+  "word": "simple",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "간단한",
+  "en": "having few parts",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This recipe is simple to follow.",
+    "ko": "이 레시피는 따라 하기 간단해요."
+   }
+  ]
+ },
+ {
+  "word": "simply",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A2",
+  "ko": "그저, 단순히",
+  "en": "and nothing more",
+  "syn": [
+   "merely",
+   "just",
+   "only",
+   "but"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I simply want to relax.",
+    "ko": "저는 그저 쉬고 싶어요."
+   }
+  ]
+ },
+ {
+  "word": "since",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A2",
+  "ko": "~이래로, ~때문에",
+  "en": "from a time in the past until now, or because",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I've lived here since 2010.",
+    "ko": "저는 2010년부터 여기 살고 있어요."
    }
   ]
  },
@@ -40592,6 +41372,93 @@ window.SEED = [
    {
     "en": "She wants to be a singer.",
     "ko": "그녀는 가수가 되고 싶어 한다."
+   }
+  ]
+ },
+ {
+  "word": "singing",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "노래하기",
+  "en": "the act of singing vocal music",
+  "syn": [
+   "vocalizing"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Singing makes her happy.",
+    "ko": "노래하는 것은 그녀를 행복하게 해요."
+   }
+  ]
+ },
+ {
+  "word": "single",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "하나의, 독신의",
+  "en": "being or characteristic of a single thing or person",
+  "syn": [
+   "individual"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He is still single.",
+    "ko": "그는 아직 독신이에요."
+   }
+  ]
+ },
+ {
+  "word": "singular",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "단수형",
+  "en": "the form of a word that is used to denote a singleton",
+  "syn": [
+   "singular_form"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "\"Book\" is the singular form of \"books\".",
+    "ko": "'book'은 'books'의 단수형이에요."
+   }
+  ]
+ },
+ {
+  "word": "sink",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "싱크대, 가라앉다",
+  "en": "plumbing fixture consisting of a water basin fixed to a wall or floor and having a drainpipe",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Wash the dishes in the sink.",
+    "ko": "싱크대에서 설거지를 하세요."
    }
   ]
  },
@@ -40682,6 +41549,53 @@ window.SEED = [
   ]
  },
  {
+  "word": "sitting room",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "거실",
+  "en": "a room in a private house or establishment where people can sit and talk and relax",
+  "syn": [
+   "living_room",
+   "living-room",
+   "sitting_room",
+   "front_room"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We watched TV in the sitting room.",
+    "ko": "우리는 거실에서 TV를 봤어요."
+   }
+  ]
+ },
+ {
+  "word": "situation",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "상황",
+  "en": "the general state of things",
+  "syn": [
+   "state_of_affairs"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a difficult situation.",
+    "ko": "이것은 어려운 상황이에요."
+   }
+  ]
+ },
+ {
   "word": "six",
   "ipa": "",
   "pos": [],
@@ -40768,6 +41682,106 @@ window.SEED = [
   ]
  },
  {
+  "word": "skate",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "스케이트",
+  "en": "sports equipment that is worn on the feet to enable the wearer to glide along and to be propelled by the alternate actions of the legs",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She got new skates for her birthday.",
+    "ko": "그녀는 생일 선물로 새 스케이트를 받았어요."
+   }
+  ]
+ },
+ {
+  "word": "skateboarding",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "스케이트보드 타기",
+  "en": "the sport of skating on a skateboard",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He enjoys skateboarding on weekends.",
+    "ko": "그는 주말에 스케이트보드 타는 것을 즐겨요."
+   }
+  ]
+ },
+ {
+  "word": "skating",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "스케이트 타기",
+  "en": "the sport of gliding on skates",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We went ice skating last winter.",
+    "ko": "우리는 지난 겨울 아이스스케이트를 탔어요."
+   }
+  ]
+ },
+ {
+  "word": "ski",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "스키",
+  "en": "narrow wood or metal or plastic runners used in pairs for gliding over snow",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She bought new skis for the trip.",
+    "ko": "그녀는 여행을 위해 새 스키를 샀어요."
+   }
+  ]
+ },
+ {
+  "word": "skiing",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "스키 타기",
+  "en": "a sport in which participants must travel on skis",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We go skiing every winter.",
+    "ko": "우리는 매년 겨울 스키를 타요."
+   }
+  ]
+ },
+ {
   "word": "skill",
   "ipa": "",
   "pos": [
@@ -40833,6 +41847,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "slave",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "노예",
+  "en": "a person who is owned by someone",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The book is about the history of slaves.",
+    "ko": "그 책은 노예의 역사에 관한 것이에요."
+   }
+  ]
+ },
+ {
   "word": "sleep",
   "ipa": "",
   "pos": [
@@ -40858,6 +41892,120 @@ window.SEED = [
   ]
  },
  {
+  "word": "sleepless",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "잠 못 이루는",
+  "en": "experiencing or accompanied by sleeplessness",
+  "syn": [
+   "insomniac",
+   "watchful"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I had a sleepless night.",
+    "ko": "저는 잠 못 이루는 밤을 보냈어요."
+   }
+  ]
+ },
+ {
+  "word": "sleepy",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "졸린",
+  "en": "ready to fall asleep",
+  "syn": [
+   "sleepy-eyed",
+   "sleepyheaded"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I feel sleepy after lunch.",
+    "ko": "저는 점심 후에 졸림을 느껴요."
+   }
+  ]
+ },
+ {
+  "word": "slice",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "조각, 얇게 썬 조각",
+  "en": "a share of something",
+  "syn": [
+   "piece"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Can I have a slice of bread?",
+    "ko": "빵 한 조각 먹어도 될까요?"
+   }
+  ]
+ },
+ {
+  "word": "slide",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "미끄러지다, 미끄럼틀",
+  "en": "a small flat rectangular piece of glass on which specimens can be mounted for microscopic study",
+  "syn": [
+   "microscope_slide"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The kids played on the slide.",
+    "ko": "아이들이 미끄럼틀에서 놀았어요."
+   }
+  ]
+ },
+ {
+  "word": "slim",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "날씬한, 가느다란",
+  "en": "being of delicate or slender build",
+  "syn": [
+   "slender",
+   "slight",
+   "svelte"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has a slim figure.",
+    "ko": "그녀는 날씬한 몸매를 가지고 있어요."
+   }
+  ]
+ },
+ {
   "word": "slow",
   "ipa": "",
   "pos": [
@@ -40874,6 +42022,30 @@ window.SEED = [
    {
     "en": "The train was very slow today.",
     "ko": "오늘 기차가 매우 느렸다."
+   }
+  ]
+ },
+ {
+  "word": "slowly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A2",
+  "ko": "천천히",
+  "en": "without speed (`slow' is sometimes used informally for `slowly')",
+  "syn": [
+   "slow",
+   "easy",
+   "tardily"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please speak slowly.",
+    "ko": "천천히 말씀해 주세요."
    }
   ]
  },
@@ -40998,7 +42170,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A1",
-  "ko": "연기",
+  "ko": "담배를 피우다, 연기",
   "en": "a cloud of fine particles suspended in a gas",
   "syn": [
    "fume"
@@ -41008,8 +42180,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Smoke rose from the chimney.",
-    "ko": "굴뚝에서 연기가 피어올랐다."
+    "en": "Please don't smoke here.",
+    "ko": "여기서 담배를 피우지 마세요."
    }
   ]
  },
@@ -41020,7 +42192,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "A2",
-  "ko": "연기",
+  "ko": "담배를 피우다, 연기",
   "en": "inhale and exhale smoke from cigarettes, cigars, pipes",
   "syn": [],
   "ant": [],
@@ -41028,8 +42200,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Smoke rose from the chimney.",
-    "ko": "굴뚝에서 연기가 피어올랐다."
+    "en": "Please don't smoke here.",
+    "ko": "여기서 담배를 피우지 마세요."
    }
   ]
  },
@@ -41052,6 +42224,71 @@ window.SEED = [
    {
     "en": "Smoking is not allowed here.",
     "ko": "이곳에서는 흡연이 허용되지 않는다."
+   }
+  ]
+ },
+ {
+  "word": "smooth",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "매끄러운, 부드러운",
+  "en": "having a surface free from roughness or bumps or ridges or irregularities",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This surface is very smooth.",
+    "ko": "이 표면은 아주 매끄러워요."
+   }
+  ]
+ },
+ {
+  "word": "smoothly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A2",
+  "ko": "순조롭게",
+  "en": "with no problems or difficulties",
+  "syn": [
+   "swimmingly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The meeting went smoothly.",
+    "ko": "그 회의는 순조롭게 진행되었어요."
+   }
+  ]
+ },
+ {
+  "word": "snack",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "간식",
+  "en": "a light informal meal",
+  "syn": [
+   "bite",
+   "collation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I want a snack before dinner.",
+    "ko": "저는 저녁 전에 간식을 먹고 싶어요."
    }
   ]
  },
@@ -41085,7 +42322,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A1",
-  "ko": "눈 (날씨)",
+  "ko": "눈이 오다, 눈",
   "en": "precipitation falling from clouds in the form of ice crystals",
   "syn": [
    "snowfall"
@@ -41095,8 +42332,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Snow covered the mountains.",
-    "ko": "눈이 산을 덮었다."
+    "en": "It's snowing outside.",
+    "ko": "밖에 눈이 오고 있어요."
    }
   ]
  },
@@ -41107,7 +42344,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "A2",
-  "ko": "눈 (날씨)",
+  "ko": "눈이 오다, 눈",
   "en": "fall as snow",
   "syn": [],
   "ant": [],
@@ -41115,8 +42352,28 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Snow covered the mountains.",
-    "ko": "눈이 산을 덮었다."
+    "en": "It's snowing outside.",
+    "ko": "밖에 눈이 오고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "snowboarding",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "스노보드 타기",
+  "en": "the act of sliding down a snow-covered slope while standing on a snowboard",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He learned snowboarding last winter.",
+    "ko": "그는 지난 겨울 스노보드 타는 법을 배웠어요."
    }
   ]
  },
@@ -41147,8 +42404,8 @@ window.SEED = [
   "ipa": "",
   "pos": [],
   "cefr": "A1",
-  "ko": "그래서, 그렇게",
-  "en": "used to show a result, or to a great degree",
+  "ko": "그래서, 매우",
+  "en": "the syllable naming the fifth (dominant) note of any musical scale in solmization",
   "syn": [
    "sol",
    "soh"
@@ -41158,8 +42415,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "It was late, so we went home.",
-    "ko": "늦어서 우리는 집에 갔다."
+    "en": "I was tired, so I went to bed early.",
+    "ko": "저는 피곤해서 일찍 잤어요."
    }
   ]
  },
@@ -41170,16 +42427,36 @@ window.SEED = [
    "adv"
   ],
   "cefr": "A2",
-  "ko": "그래서, 그렇게",
-  "en": "used to show a result, or to a great degree",
+  "ko": "그래서, 매우",
+  "en": "to a very great extent or degree",
   "syn": [],
   "ant": [],
   "forms": [],
   "roots": [],
   "ex": [
    {
-    "en": "It was late, so we went home.",
-    "ko": "늦어서 우리는 집에 갔다."
+    "en": "I was tired, so I went to bed early.",
+    "ko": "저는 피곤해서 일찍 잤어요."
+   }
+  ]
+ },
+ {
+  "word": "soap",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "비누",
+  "en": "a cleansing agent made from the salts of vegetable or animal fats",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Wash your hands with soap.",
+    "ko": "비누로 손을 씻으세요."
    }
   ]
  },
@@ -41228,6 +42505,71 @@ window.SEED = [
   ]
  },
  {
+  "word": "society",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "사회",
+  "en": "an extended social group having a distinctive cultural and economic organization",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Education is important for society.",
+    "ko": "교육은 사회에 중요해요."
+   }
+  ]
+ },
+ {
+  "word": "sock",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "양말",
+  "en": "hosiery consisting of a cloth covering for the foot",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I can't find my other sock.",
+    "ko": "저는 다른 짝 양말을 찾을 수 없어요."
+   }
+  ]
+ },
+ {
+  "word": "soda",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "탄산음료, 소다",
+  "en": "a sodium salt of carbonic acid",
+  "syn": [
+   "sodium_carbonate",
+   "washing_soda",
+   "sal_soda",
+   "soda_ash"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I drank a can of soda.",
+    "ko": "저는 탄산음료 한 캔을 마셨어요."
+   }
+  ]
+ },
+ {
   "word": "sofa",
   "ipa": "",
   "pos": [
@@ -41247,6 +42589,135 @@ window.SEED = [
    {
     "en": "He fell asleep on the sofa.",
     "ko": "그는 소파에서 잠들었다."
+   }
+  ]
+ },
+ {
+  "word": "soft",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "부드러운",
+  "en": "yielding readily to pressure or weight",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This pillow is very soft.",
+    "ko": "이 베개는 아주 부드러워요."
+   }
+  ]
+ },
+ {
+  "word": "soft drink",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "청량음료",
+  "en": "nonalcoholic beverage (usually carbonated)",
+  "syn": [
+   "soft_drink"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We don't sell soft drinks here.",
+    "ko": "우리는 여기서 청량음료를 팔지 않아요."
+   }
+  ]
+ },
+ {
+  "word": "softly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A2",
+  "ko": "부드럽게, 조용히",
+  "en": "with low volume",
+  "syn": [
+   "quietly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She spoke softly to the baby.",
+    "ko": "그녀는 아기에게 부드럽게 말했어요."
+   }
+  ]
+ },
+ {
+  "word": "software",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "소프트웨어",
+  "en": "(computer science) written programs or procedures or rules and associated documentation pertaining to the operation of a computer system and that are stored in read/write memory",
+  "syn": [
+   "software_program",
+   "computer_software",
+   "software_system",
+   "software_package"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This software is easy to use.",
+    "ko": "이 소프트웨어는 사용하기 쉬워요."
+   }
+  ]
+ },
+ {
+  "word": "soldier",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "군인",
+  "en": "an enlisted man or woman who serves in an army",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He was a soldier for ten years.",
+    "ko": "그는 10년 동안 군인이었어요."
+   }
+  ]
+ },
+ {
+  "word": "solution",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "해결책",
+  "en": "a homogeneous mixture of two or more substances",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We found a good solution to the problem.",
+    "ko": "우리는 그 문제에 대한 좋은 해결책을 찾았어요."
    }
   ]
  },
@@ -41299,6 +42770,49 @@ window.SEED = [
   ]
  },
  {
+  "word": "somebody",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A2",
+  "ko": "누군가",
+  "en": "a human being",
+  "syn": [
+   "person",
+   "individual",
+   "someone",
+   "mortal"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Somebody left their bag here.",
+    "ko": "누군가 여기에 가방을 두고 갔어요."
+   }
+  ]
+ },
+ {
+  "word": "someday",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A2",
+  "ko": "언젠가",
+  "en": "some unspecified time in the future",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I hope to visit Europe someday.",
+    "ko": "저는 언젠가 유럽을 방문하고 싶어요."
+   }
+  ]
+ },
+ {
   "word": "someone",
   "ipa": "",
   "pos": [],
@@ -41336,6 +42850,28 @@ window.SEED = [
    {
     "en": "I have something to tell you.",
     "ko": "당신에게 할 말이 있어요."
+   }
+  ]
+ },
+ {
+  "word": "somewhere",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A2",
+  "ko": "어딘가에",
+  "en": "in or at or to some place",
+  "syn": [
+   "someplace"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Let's go somewhere quiet.",
+    "ko": "조용한 곳 어딘가로 가요."
    }
   ]
  },
@@ -41431,6 +42967,27 @@ window.SEED = [
   ]
  },
  {
+  "word": "sound",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "소리, ~처럼 들리다",
+  "en": "appear in a certain way",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I heard a strange sound.",
+    "ko": "저는 이상한 소리를 들었어요."
+   }
+  ]
+ },
+ {
   "word": "soup",
   "ipa": "",
   "pos": [
@@ -41447,6 +43004,117 @@ window.SEED = [
    {
     "en": "She made vegetable soup.",
     "ko": "그녀는 채소 수프를 만들었다."
+   }
+  ]
+ },
+ {
+  "word": "source",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "출처, 원천",
+  "en": "the place where something begins, where it springs into being",
+  "syn": [
+   "beginning",
+   "origin",
+   "root",
+   "rootage"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "What is the source of this information?",
+    "ko": "이 정보의 출처가 뭐예요?"
+   }
+  ]
+ },
+ {
+  "word": "south",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "adj",
+   "adv"
+  ],
+  "cefr": "A2",
+  "ko": "남쪽",
+  "en": "situated in or facing or moving toward or coming from the south",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We drove south for two hours.",
+    "ko": "우리는 두 시간 동안 남쪽으로 운전했어요."
+   }
+  ]
+ },
+ {
+  "word": "space",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "공간, 우주",
+  "en": "the unlimited expanse in which everything is located",
+  "syn": [
+   "infinite"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We need more space in this room.",
+    "ko": "우리는 이 방에 더 많은 공간이 필요해요."
+   }
+  ]
+ },
+ {
+  "word": "spaceship",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "우주선",
+  "en": "a spacecraft designed to carry a crew into interstellar space (especially in science fiction)",
+  "syn": [
+   "starship"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The movie is about a spaceship traveling to Mars.",
+    "ko": "그 영화는 화성으로 여행하는 우주선에 관한 것이에요."
+   }
+  ]
+ },
+ {
+  "word": "spaghetti",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "스파게티",
+  "en": "spaghetti served with a tomato sauce",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I cooked spaghetti for dinner.",
+    "ko": "저는 저녁으로 스파게티를 요리했어요."
    }
   ]
  },
@@ -41476,6 +43144,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "speaker",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "연사, 스피커",
+  "en": "someone who expresses in language",
+  "syn": [
+   "talker",
+   "utterer",
+   "verbalizer",
+   "verbaliser"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The speaker gave an interesting talk.",
+    "ko": "그 연사는 흥미로운 강연을 했어요."
+   }
+  ]
+ },
+ {
   "word": "special",
   "ipa": "",
   "pos": [
@@ -41496,6 +43189,26 @@ window.SEED = [
    {
     "en": "Today is a special day.",
     "ko": "오늘은 특별한 날이다."
+   }
+  ]
+ },
+ {
+  "word": "specific",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "구체적인, 특정한",
+  "en": "(sometimes followed by `to') applying to or characterized by or distinguishing something particular or special or unique",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Can you be more specific?",
+    "ko": "좀 더 구체적으로 말씀해 주시겠어요?"
    }
   ]
  },
@@ -41522,6 +43235,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "speed",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "속도",
+  "en": "distance travelled per unit time",
+  "syn": [
+   "velocity"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The car was going at high speed.",
+    "ko": "그 차는 빠른 속도로 가고 있었어요."
+   }
+  ]
+ },
+ {
   "word": "spell",
   "ipa": "",
   "pos": [
@@ -41529,7 +43264,7 @@ window.SEED = [
   ],
   "cefr": "A1",
   "ko": "철자를 쓰다",
-  "en": "to write or say the letters of a word in the correct order",
+  "en": "a psychological state induced by (or as if induced by) a magical incantation",
   "syn": [
    "enchantment",
    "trance"
@@ -41539,8 +43274,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Can you spell your name for me?",
-    "ko": "당신의 이름 철자를 말해 줄 수 있나요?"
+    "en": "Can you spell your name, please?",
+    "ko": "이름 철자를 말씀해 주시겠어요?"
    }
   ]
  },
@@ -41552,7 +43287,7 @@ window.SEED = [
   ],
   "cefr": "A2",
   "ko": "철자를 쓰다",
-  "en": "to write or say the letters of a word in the correct order",
+  "en": "orally recite the letters of or give the spelling of",
   "syn": [
    "spell_out"
   ],
@@ -41561,8 +43296,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Can you spell your name for me?",
-    "ko": "당신의 이름 철자를 말해 줄 수 있나요?"
+    "en": "Can you spell your name, please?",
+    "ko": "이름 철자를 말씀해 주시겠어요?"
    }
   ]
  },
@@ -41589,6 +43324,96 @@ window.SEED = [
   ]
  },
  {
+  "word": "spill",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "쏟다, 흘리다",
+  "en": "cause or allow (a liquid substance) to run or flow from a container",
+  "syn": [
+   "slop",
+   "splatter"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Be careful not to spill the coffee.",
+    "ko": "커피를 쏟지 않게 조심하세요."
+   }
+  ]
+ },
+ {
+  "word": "splash",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "튀기다, 첨벙거리다",
+  "en": "cause (a liquid) to spatter about, especially with force",
+  "syn": [
+   "sprinkle",
+   "splosh"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The kids splashed water in the pool.",
+    "ko": "아이들이 수영장에서 물을 튀겼어요."
+   }
+  ]
+ },
+ {
+  "word": "split",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "나누다, 쪼개다",
+  "en": "having been divided",
+  "syn": [
+   "disconnected",
+   "disunited",
+   "fragmented"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Let's split the bill.",
+    "ko": "계산서를 나눠 내요."
+   }
+  ]
+ },
+ {
+  "word": "spoon",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "숟가락",
+  "en": "a piece of cutlery with a shallow bowl-shaped container and a handle",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I need a spoon for my soup.",
+    "ko": "저는 수프를 먹을 숟가락이 필요해요."
+   }
+  ]
+ },
+ {
   "word": "sport",
   "ipa": "",
   "pos": [
@@ -41607,6 +43432,26 @@ window.SEED = [
    {
     "en": "Soccer is a popular sport.",
     "ko": "축구는 인기 있는 스포츠다."
+   }
+  ]
+ },
+ {
+  "word": "sports center",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "스포츠 센터",
+  "en": "a place with facilities for playing sports",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We play basketball at the sports center.",
+    "ko": "우리는 스포츠 센터에서 농구를 해요."
    }
   ]
  },
@@ -41630,6 +43475,28 @@ window.SEED = [
    {
     "en": "This is a nice spot for a picnic.",
     "ko": "이곳은 소풍하기 좋은 자리다."
+   }
+  ]
+ },
+ {
+  "word": "spread",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "퍼지다, 펼치다",
+  "en": "process or result of distributing or extending over a wide expanse of space",
+  "syn": [
+   "spreading"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The news spread quickly.",
+    "ko": "그 소식은 빠르게 퍼졌어요."
    }
   ]
  },
@@ -41678,6 +43545,71 @@ window.SEED = [
   ]
  },
  {
+  "word": "square",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "정사각형, 광장",
+  "en": "having four equal sides and four right angles or forming a right angle",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We met at the town square.",
+    "ko": "우리는 마을 광장에서 만났어요."
+   }
+  ]
+ },
+ {
+  "word": "stadium",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "경기장",
+  "en": "a large structure for open-air sports or entertainments",
+  "syn": [
+   "bowl",
+   "arena",
+   "sports_stadium"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The stadium was full of fans.",
+    "ko": "경기장은 팬들로 가득했어요."
+   }
+  ]
+ },
+ {
+  "word": "staff",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "직원들",
+  "en": "personnel who assist their superior in carrying out an assigned task",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The staff was very helpful.",
+    "ko": "직원들이 아주 도움이 되었어요."
+   }
+  ]
+ },
+ {
   "word": "stage",
   "ipa": "",
   "pos": [
@@ -41700,13 +43632,59 @@ window.SEED = [
   ]
  },
  {
+  "word": "stair",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "계단",
+  "en": "support consisting of a place to rest the foot while ascending or descending a stairway",
+  "syn": [
+   "step"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Be careful on the stairs.",
+    "ko": "계단에서 조심하세요."
+   }
+  ]
+ },
+ {
+  "word": "stamp",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "우표, 도장",
+  "en": "the distinctive form in which a thing is made",
+  "syn": [
+   "cast",
+   "mold",
+   "mould"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I need to buy a stamp for this letter.",
+    "ko": "저는 이 편지를 위해 우표를 사야 해요."
+   }
+  ]
+ },
+ {
   "word": "stand",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A1",
-  "ko": "서다",
+  "ko": "서다, 참다",
   "en": "a support or foundation",
   "syn": [
    "base",
@@ -41717,8 +43695,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Please stand up.",
-    "ko": "일어서 주세요."
+    "en": "Please stand in line.",
+    "ko": "줄을 서 주세요."
    }
   ]
  },
@@ -41729,7 +43707,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "A2",
-  "ko": "서다",
+  "ko": "서다, 참다",
   "en": "be standing",
   "syn": [
    "stand_up"
@@ -41739,8 +43717,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Please stand up.",
-    "ko": "일어서 주세요."
+    "en": "Please stand in line.",
+    "ko": "줄을 서 주세요."
    }
   ]
  },
@@ -41786,6 +43764,48 @@ window.SEED = [
   ]
  },
  {
+  "word": "state",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "주, 상태",
+  "en": "the territory occupied by one of the constituent administrative districts of a nation",
+  "syn": [
+   "province"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "California is a state in the US.",
+    "ko": "캘리포니아는 미국의 주예요."
+   }
+  ]
+ },
+ {
+  "word": "statement",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "진술, 성명",
+  "en": "a message that is stated or declared",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He made a public statement.",
+    "ko": "그는 공개 성명을 발표했어요."
+   }
+  ]
+ },
+ {
   "word": "station",
   "ipa": "",
   "pos": [
@@ -41802,6 +43822,26 @@ window.SEED = [
    {
     "en": "We met at the train station.",
     "ko": "우리는 기차역에서 만났다."
+   }
+  ]
+ },
+ {
+  "word": "statue",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "동상, 조각상",
+  "en": "a sculpture representing a human or animal",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There is a famous statue in the park.",
+    "ko": "공원에 유명한 동상이 있어요."
    }
   ]
  },
@@ -41829,6 +43869,49 @@ window.SEED = [
   ]
  },
  {
+  "word": "steak",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "스테이크",
+  "en": "a slice of meat cut from the fleshy part of an animal or large fish",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I ordered a steak for dinner.",
+    "ko": "저는 저녁으로 스테이크를 주문했어요."
+   }
+  ]
+ },
+ {
+  "word": "steal",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "훔치다",
+  "en": "take without the owner's consent",
+  "syn": [
+   "rip_off",
+   "rip"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Someone stole my bike.",
+    "ko": "누군가 제 자전거를 훔쳤어요."
+   }
+  ]
+ },
+ {
   "word": "step",
   "ipa": "",
   "pos": [
@@ -41843,8 +43926,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She took a step back.",
-    "ko": "그녀는 한 걸음 물러났다."
+    "en": "This is the first step to success.",
+    "ko": "이것은 성공을 향한 첫 걸음이에요."
    }
   ]
  },
@@ -41865,8 +43948,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She took a step back.",
-    "ko": "그녀는 한 걸음 물러났다."
+    "en": "This is the first step to success.",
+    "ko": "이것은 성공을 향한 첫 걸음이에요."
    }
   ]
  },
@@ -41889,8 +43972,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "He is still at work.",
-    "ko": "그는 아직도 일하고 있다."
+    "en": "She still lives in her hometown.",
+    "ko": "그녀는 여전히 고향에 살아요."
    }
   ]
  },
@@ -41909,8 +43992,56 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "He is still at work.",
-    "ko": "그는 아직도 일하고 있다."
+    "en": "She still lives in her hometown.",
+    "ko": "그녀는 여전히 고향에 살아요."
+   }
+  ]
+ },
+ {
+  "word": "stomach",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "위, 배",
+  "en": "an enlarged and muscular saclike organ of the alimentary canal",
+  "syn": [
+   "tummy",
+   "tum",
+   "breadbasket"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "My stomach hurts.",
+    "ko": "제 배가 아파요."
+   }
+  ]
+ },
+ {
+  "word": "stomachache",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "복통",
+  "en": "an ache localized in the stomach or abdominal region",
+  "syn": [
+   "stomach_ache",
+   "bellyache",
+   "gastralgia"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I have a stomachache.",
+    "ko": "저는 복통이 있어요."
    }
   ]
  },
@@ -41982,6 +44113,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "storm",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "폭풍",
+  "en": "a violent weather condition with winds 64-72 knots (11 on the Beaufort scale) and precipitation and thunder and lightning",
+  "syn": [
+   "violent_storm"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "A storm is coming tonight.",
+    "ko": "오늘 밤 폭풍이 올 거예요."
+   }
+  ]
+ },
+ {
   "word": "story",
   "ipa": "",
   "pos": [
@@ -42006,13 +44159,38 @@ window.SEED = [
   ]
  },
  {
+  "word": "stove",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "가스레인지, 스토브",
+  "en": "a kitchen appliance used for cooking food",
+  "syn": [
+   "kitchen_stove",
+   "range",
+   "kitchen_range",
+   "cooking_stove"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The soup is on the stove.",
+    "ko": "수프가 가스레인지 위에 있어요."
+   }
+  ]
+ },
+ {
   "word": "straight",
   "ipa": "",
   "pos": [
    "adv"
   ],
   "cefr": "A1",
-  "ko": "곧장, 똑바로",
+  "ko": "곧은, 똑바로",
   "en": "without deviation",
   "syn": [
    "directly",
@@ -42023,8 +44201,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The path leads straight to the lake.",
-    "ko": "그 길은 호수까지 곧장 이어진다."
+    "en": "Go straight and turn right.",
+    "ko": "곧장 가서 오른쪽으로 도세요."
    }
   ]
  },
@@ -42035,7 +44213,7 @@ window.SEED = [
    "adj"
   ],
   "cefr": "A2",
-  "ko": "곧장, 똑바로",
+  "ko": "곧은, 똑바로",
   "en": "successive (without a break)",
   "syn": [
    "consecutive"
@@ -42045,8 +44223,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The path leads straight to the lake.",
-    "ko": "그 길은 호수까지 곧장 이어진다."
+    "en": "Go straight and turn right.",
+    "ko": "곧장 가서 오른쪽으로 도세요."
    }
   ]
  },
@@ -42073,6 +44251,51 @@ window.SEED = [
   ]
  },
  {
+  "word": "stranger",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "낯선 사람",
+  "en": "anyone who does not belong in the environment in which they are found",
+  "syn": [
+   "alien",
+   "unknown"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Don't talk to strangers.",
+    "ko": "낯선 사람과 이야기하지 마세요."
+   }
+  ]
+ },
+ {
+  "word": "strategy",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "전략",
+  "en": "an elaborate and systematic plan of action",
+  "syn": [
+   "scheme"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We need a new marketing strategy.",
+    "ko": "우리는 새로운 마케팅 전략이 필요해요."
+   }
+  ]
+ },
+ {
   "word": "street",
   "ipa": "",
   "pos": [
@@ -42089,6 +44312,26 @@ window.SEED = [
    {
     "en": "They walked down the street.",
     "ko": "그들은 거리를 걸어 내려갔다."
+   }
+  ]
+ },
+ {
+  "word": "strength",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "힘, 강점",
+  "en": "the property of being physically or mentally strong",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Patience is one of her strengths.",
+    "ko": "인내심은 그녀의 강점 중 하나예요."
    }
   ]
  },
@@ -42115,6 +44358,50 @@ window.SEED = [
   ]
  },
  {
+  "word": "strike",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "파업, 치다",
+  "en": "a group's refusal to work in protest against low pay or bad work conditions",
+  "syn": [
+   "work_stoppage"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The workers went on strike.",
+    "ko": "노동자들이 파업을 했어요."
+   }
+  ]
+ },
+ {
+  "word": "string",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "끈, 실",
+  "en": "a lightweight cord",
+  "syn": [
+   "twine"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Tie the box with a string.",
+    "ko": "끈으로 상자를 묶으세요."
+   }
+  ]
+ },
+ {
   "word": "strong",
   "ipa": "",
   "pos": [
@@ -42131,6 +44418,48 @@ window.SEED = [
    {
     "en": "He is very strong.",
     "ko": "그는 매우 힘이 세다."
+   }
+  ]
+ },
+ {
+  "word": "strongly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A2",
+  "ko": "강하게, 강력히",
+  "en": "with strength or in a strong manner",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I strongly recommend this book.",
+    "ko": "저는 이 책을 강력히 추천해요."
+   }
+  ]
+ },
+ {
+  "word": "structure",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "구조",
+  "en": "a thing constructed",
+  "syn": [
+   "construction"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The building has a strong structure.",
+    "ko": "그 건물은 튼튼한 구조를 가지고 있어요."
    }
   ]
  },
@@ -42164,7 +44493,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "A1",
-  "ko": "공부하다",
+  "ko": "연구, 공부",
   "en": "consider in detail and subject to an analysis in order to discover essential features or meaning",
   "syn": [
    "analyze",
@@ -42177,8 +44506,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "He studies math every evening.",
-    "ko": "그는 매일 저녁 수학을 공부한다."
+    "en": "This study shows interesting results.",
+    "ko": "이 연구는 흥미로운 결과를 보여줘요."
    }
   ]
  },
@@ -42189,7 +44518,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "공부하다",
+  "ko": "연구, 공부",
   "en": "a detailed critical inspection",
   "syn": [
    "survey"
@@ -42199,8 +44528,55 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "He studies math every evening.",
-    "ko": "그는 매일 저녁 수학을 공부한다."
+    "en": "This study shows interesting results.",
+    "ko": "이 연구는 흥미로운 결과를 보여줘요."
+   }
+  ]
+ },
+ {
+  "word": "stuff",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "물건, 것들",
+  "en": "the tangible substance that goes into the makeup of a physical object",
+  "syn": [
+   "material"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I need to put away my stuff.",
+    "ko": "저는 제 물건들을 치워야 해요."
+   }
+  ]
+ },
+ {
+  "word": "style",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "스타일, 방식",
+  "en": "how something is done or how it happens",
+  "syn": [
+   "manner",
+   "mode",
+   "way",
+   "fashion"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I like her fashion style.",
+    "ko": "저는 그녀의 패션 스타일을 좋아해요."
    }
   ]
  },
@@ -42253,6 +44629,51 @@ window.SEED = [
   ]
  },
  {
+  "word": "succeed",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "성공하다",
+  "en": "attain success or reach a desired goal",
+  "syn": [
+   "win",
+   "come_through",
+   "bring_home_the_bacon",
+   "deliver_the_goods"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She worked hard to succeed.",
+    "ko": "그녀는 성공하기 위해 열심히 노력했어요."
+   }
+  ]
+ },
+ {
+  "word": "success",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "ko": "성공",
+  "en": "an event that accomplishes its intended purpose",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The project was a great success.",
+    "ko": "그 프로젝트는 큰 성공이었어요."
+   }
+  ]
+ },
+ {
   "word": "successful",
   "ipa": "",
   "pos": [
@@ -42269,6 +44690,64 @@ window.SEED = [
    {
     "en": "It was a successful business.",
     "ko": "그것은 성공적인 사업이었다."
+   }
+  ]
+ },
+ {
+  "word": "successfully",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "A2",
+  "ko": "성공적으로",
+  "en": "with success",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She successfully finished the marathon.",
+    "ko": "그녀는 마라톤을 성공적으로 완주했어요."
+   }
+  ]
+ },
+ {
+  "word": "such",
+  "ipa": "",
+  "pos": [],
+  "cefr": "A2",
+  "ko": "그러한, 그렇게",
+  "en": "to so extreme a degree",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I've never seen such a big dog.",
+    "ko": "저는 그렇게 큰 개를 본 적이 없어요."
+   }
+  ]
+ },
+ {
+  "word": "sudden",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "갑작스러운",
+  "en": "happening without warning or in a short space of time",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was a sudden change in the weather.",
+    "ko": "날씨에 갑작스러운 변화가 있었어요."
    }
   ]
  },
@@ -42295,6 +44774,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "suggest",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "제안하다",
+  "en": "make a proposal, declare a plan for something",
+  "syn": [
+   "propose",
+   "advise"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I suggest we leave early.",
+    "ko": "저는 우리가 일찍 떠나는 것을 제안해요."
+   }
+  ]
+ },
+ {
   "word": "suggestion",
   "ipa": "",
   "pos": [
@@ -42311,6 +44813,52 @@ window.SEED = [
    {
     "en": "The picnic was her suggestion.",
     "ko": "소풍은 그녀의 제안이었다."
+   }
+  ]
+ },
+ {
+  "word": "suit",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "A2",
+  "ko": "정장, 어울리다",
+  "en": "be agreeable or acceptable to",
+  "syn": [
+   "accommodate",
+   "fit"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He wore a black suit.",
+    "ko": "그는 검은색 정장을 입었어요."
+   }
+  ]
+ },
+ {
+  "word": "suitable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "A2",
+  "ko": "적합한",
+  "en": "meant or adapted for an occasion or use",
+  "syn": [
+   "suited"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This dress is suitable for the party.",
+    "ko": "이 드레스는 파티에 적합해요."
    }
   ]
  },
