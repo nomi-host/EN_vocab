@@ -1,6 +1,6 @@
 /* ============================================================================
    EN Vocab — 시드 데이터 (pipeline/merge_cefrj.js 자동 생성)
-   생성: 2026-07-11 · 표제어 4166개 (CEFR-J 전체 후보 4762개 중 작성 완료분)
+   생성: 2026-07-11 · 표제어 4285개 (CEFR-J 전체 후보 4762개 중 작성 완료분)
    ----------------------------------------------------------------------------
    표제어/CEFR/품사 = CEFR-J Wordlist(Tono Lab, TUFS — 연구·상업 무료, 출처 표시 조건)
    영영 정의(en)/유의어(syn) = WordNet 3.0(Princeton, 오프라인 추출)
@@ -74037,6 +74037,50 @@ window.SEED = [
   ]
  },
  {
+  "word": "rarely",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "드물게, 좀처럼 ~않는",
+  "en": "not often",
+  "syn": [
+   "seldom"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He rarely eats fast food.",
+    "ko": "그는 패스트푸드를 좀처럼 먹지 않아요."
+   }
+  ]
+ },
+ {
+  "word": "raspberry",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "라즈베리, 산딸기",
+  "en": "woody brambles bearing usually red but sometimes black or yellow fruits that separate from the receptacle when ripe and are rounder and smaller than blackberries",
+  "syn": [
+   "raspberry_bush"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I put raspberries in my yogurt.",
+    "ko": "저는 요거트에 라즈베리를 넣어요."
+   }
+  ]
+ },
+ {
   "word": "rat",
   "ipa": "",
   "pos": [
@@ -74122,6 +74166,46 @@ window.SEED = [
   ]
  },
  {
+  "word": "ration",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "배급, 배급량",
+  "en": "the food allowance for one day (especially for service personnel)",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Soldiers received a daily food ration.",
+    "ko": "군인들은 하루 식량 배급을 받았어요."
+   }
+  ]
+ },
+ {
+  "word": "rational",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "합리적인, 이성적인",
+  "en": "consistent with or based on or using reason",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please make a rational decision.",
+    "ko": "합리적인 결정을 내려주세요."
+   }
+  ]
+ },
+ {
   "word": "raw",
   "ipa": "",
   "pos": [
@@ -74171,13 +74255,33 @@ window.SEED = [
   ]
  },
  {
+  "word": "razor",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "면도기, 면도날",
+  "en": "edge tool used in shaving",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He shaved with a razor.",
+    "ko": "그는 면도기로 면도했어요."
+   }
+  ]
+ },
+ {
   "word": "reach",
   "ipa": "",
   "pos": [
    "verb"
   ],
   "cefr": "A2",
-  "ko": "도달하다, 이르다",
+  "ko": "도달 범위, 손이 닿는 거리",
   "en": "reach a destination, either real or abstract",
   "syn": [
    "make",
@@ -74190,8 +74294,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "We reached the top of the mountain.",
-    "ko": "우리는 산의 정상에 도달했어요."
+    "en": "Keep the medicine out of children's reach.",
+    "ko": "약을 아이들의 손이 닿지 않는 곳에 두세요."
    }
   ]
  },
@@ -74202,7 +74306,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "도달하다, 이르다",
+  "ko": "도달 범위, 손이 닿는 거리",
   "en": "the limits within which something can be effective",
   "syn": [
    "range"
@@ -74212,8 +74316,30 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "We reached the top of the mountain.",
-    "ko": "우리는 산의 정상에 도달했어요."
+    "en": "Keep the medicine out of children's reach.",
+    "ko": "약을 아이들의 손이 닿지 않는 곳에 두세요."
+   }
+  ]
+ },
+ {
+  "word": "react",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "반응하다",
+  "en": "show a response or a reaction to something",
+  "syn": [
+   "respond"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She reacted calmly to the bad news.",
+    "ko": "그녀는 나쁜 소식에 침착하게 반응했어요."
    }
   ]
  },
@@ -74323,6 +74449,48 @@ window.SEED = [
   ]
  },
  {
+  "word": "realistic",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "현실적인",
+  "en": "aware or expressing awareness of things as they really are",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We need a realistic plan.",
+    "ko": "우리는 현실적인 계획이 필요해요."
+   }
+  ]
+ },
+ {
+  "word": "reality",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "현실",
+  "en": "all of your experiences that determine how things appear to you",
+  "syn": [
+   "world"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Her dream became a reality.",
+    "ko": "그녀의 꿈이 현실이 되었어요."
+   }
+  ]
+ },
+ {
   "word": "realize",
   "ipa": "",
   "pos": [
@@ -74371,6 +74539,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "rearrange",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "재배열하다",
+  "en": "put into a new order or arrangement",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We rearranged the furniture in the living room.",
+    "ko": "우리는 거실의 가구를 재배열했어요."
+   }
+  ]
+ },
+ {
   "word": "reason",
   "ipa": "",
   "pos": [
@@ -74389,6 +74577,75 @@ window.SEED = [
    {
     "en": "There is a reason for everything.",
     "ko": "모든 것에는 이유가 있다."
+   }
+  ]
+ },
+ {
+  "word": "reasonable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "합리적인, 타당한",
+  "en": "showing reason or sound judgment",
+  "syn": [
+   "sensible"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a reasonable price.",
+    "ko": "이것은 합리적인 가격이에요."
+   }
+  ]
+ },
+ {
+  "word": "rebuild",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "재건하다",
+  "en": "build again",
+  "syn": [
+   "reconstruct"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They rebuilt the house after the fire.",
+    "ko": "그들은 화재 후 집을 재건했어요."
+   }
+  ]
+ },
+ {
+  "word": "recall",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "기억해내다, 회상하다",
+  "en": "recall knowledge from memory",
+  "syn": [
+   "remember",
+   "retrieve",
+   "call_back",
+   "call_up"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I can't recall her name.",
+    "ko": "저는 그녀의 이름이 기억나지 않아요."
    }
   ]
  },
@@ -74482,6 +74739,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "reception",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "환영, 접수처",
+  "en": "the manner in which something is greeted",
+  "syn": [
+   "response"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please check in at the reception.",
+    "ko": "접수처에서 체크인해 주세요."
+   }
+  ]
+ },
+ {
   "word": "receptionist",
   "ipa": "",
   "pos": [
@@ -74502,13 +74781,104 @@ window.SEED = [
   ]
  },
  {
+  "word": "recite",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "암송하다, 낭독하다",
+  "en": "recite in elocution",
+  "syn": [
+   "declaim"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She recited a poem at the ceremony.",
+    "ko": "그녀는 행사에서 시를 암송했어요."
+   }
+  ]
+ },
+ {
+  "word": "reclaim",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "되찾다, 회수하다",
+  "en": "claim back",
+  "syn": [
+   "repossess"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He reclaimed his lost wallet.",
+    "ko": "그는 잃어버린 지갑을 되찾았어요."
+   }
+  ]
+ },
+ {
+  "word": "recognize",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "알아보다, 인정하다",
+  "en": "accept (someone) to be what is claimed or accept his power and authority",
+  "syn": [
+   "acknowledge",
+   "recognise",
+   "know"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I didn't recognize her with short hair.",
+    "ko": "저는 짧은 머리를 한 그녀를 알아보지 못했어요."
+   }
+  ]
+ },
+ {
+  "word": "recommend",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "추천하다",
+  "en": "push for something",
+  "syn": [
+   "urge",
+   "advocate"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Can you recommend a good restaurant?",
+    "ko": "좋은 식당을 추천해 주시겠어요?"
+   }
+  ]
+ },
+ {
   "word": "record",
   "ipa": "",
   "pos": [
    "verb"
   ],
   "cefr": "A2",
-  "ko": "기록하다, 녹음하다",
+  "ko": "기록",
   "en": "make a record of",
   "syn": [
    "enter",
@@ -74519,8 +74889,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I recorded the meeting on my phone.",
-    "ko": "저는 회의를 휴대폰으로 녹음했어요."
+    "en": "She broke the world record.",
+    "ko": "그녀는 세계 기록을 깼어요."
    }
   ]
  },
@@ -74531,7 +74901,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "기록하다, 녹음하다",
+  "ko": "기록",
   "en": "anything (such as a document or a phonograph record or a photograph) providing permanent evidence of or information about past events",
   "syn": [],
   "ant": [],
@@ -74539,8 +74909,72 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I recorded the meeting on my phone.",
-    "ko": "저는 회의를 휴대폰으로 녹음했어요."
+    "en": "She broke the world record.",
+    "ko": "그녀는 세계 기록을 깼어요."
+   }
+  ]
+ },
+ {
+  "word": "recording",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "녹음, 녹화",
+  "en": "a signal that encodes something (e.g., picture or sound) that has been recorded",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a live recording of the concert.",
+    "ko": "이것은 콘서트의 라이브 녹음이에요."
+   }
+  ]
+ },
+ {
+  "word": "recover",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "회복하다",
+  "en": "get or find back",
+  "syn": [
+   "retrieve",
+   "find",
+   "regain"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She recovered quickly from the flu.",
+    "ko": "그녀는 독감에서 빠르게 회복했어요."
+   }
+  ]
+ },
+ {
+  "word": "recovery",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "회복",
+  "en": "return to an original state",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "His recovery took several weeks.",
+    "ko": "그의 회복은 몇 주가 걸렸어요."
    }
   ]
  },
@@ -74561,6 +74995,46 @@ window.SEED = [
    {
     "en": "We recycle paper and plastic.",
     "ko": "우리는 종이와 플라스틱을 재활용해요."
+   }
+  ]
+ },
+ {
+  "word": "recycled",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "재활용된",
+  "en": "made from materials that have been processed for reuse",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This paper is made from recycled materials.",
+    "ko": "이 종이는 재활용된 재료로 만들어졌어요."
+   }
+  ]
+ },
+ {
+  "word": "recycling",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "재활용",
+  "en": "used or abandoned materials for use in creating new products",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Recycling helps protect the environment.",
+    "ko": "재활용은 환경을 보호하는 데 도움이 돼요."
    }
   ]
  },
@@ -74612,6 +75086,75 @@ window.SEED = [
   ]
  },
  {
+  "word": "reduce",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "줄이다, 감소시키다",
+  "en": "cut down on",
+  "syn": [
+   "cut_down",
+   "cut_back",
+   "trim",
+   "trim_down"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We need to reduce our expenses.",
+    "ko": "우리는 지출을 줄여야 해요."
+   }
+  ]
+ },
+ {
+  "word": "reduction",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "감소, 축소",
+  "en": "the act of decreasing or reducing something",
+  "syn": [
+   "decrease",
+   "diminution",
+   "step-down"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was a reduction in prices.",
+    "ko": "가격에 감소가 있었어요."
+   }
+  ]
+ },
+ {
+  "word": "reef",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "암초, 산호초",
+  "en": "a submerged ridge of rock or coral near the surface of the water",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We went diving near the coral reef.",
+    "ko": "우리는 산호초 근처에서 다이빙했어요."
+   }
+  ]
+ },
+ {
   "word": "refer",
   "ipa": "",
   "pos": [
@@ -74637,6 +75180,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "referee",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "심판",
+  "en": "(sports) the chief official (as in boxing or American football) who is expected to ensure fair play",
+  "syn": [
+   "ref"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The referee blew the whistle.",
+    "ko": "그 심판이 호루라기를 불었어요."
+   }
+  ]
+ },
+ {
   "word": "reflect",
   "ipa": "",
   "pos": [
@@ -74653,6 +75218,51 @@ window.SEED = [
    {
     "en": "The lake reflects the mountains.",
     "ko": "호수가 산을 반사해요."
+   }
+  ]
+ },
+ {
+  "word": "reflection",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "반사, 성찰",
+  "en": "a calm, lengthy, intent consideration",
+  "syn": [
+   "contemplation",
+   "reflexion",
+   "rumination",
+   "musing"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I saw my reflection in the mirror.",
+    "ko": "저는 거울에서 제 모습의 반사를 봤어요."
+   }
+  ]
+ },
+ {
+  "word": "refreshments",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "다과, 간단한 음식과 음료",
+  "en": "food and drinks provided at an event",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Refreshments will be served after the meeting.",
+    "ko": "회의 후 다과가 제공될 거예요."
    }
   ]
  },
@@ -74675,6 +75285,226 @@ window.SEED = [
    {
     "en": "Put the milk in the refrigerator.",
     "ko": "우유를 냉장고에 넣으세요."
+   }
+  ]
+ },
+ {
+  "word": "refund",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "환불",
+  "en": "money returned to a payer",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I asked for a refund on the broken item.",
+    "ko": "저는 고장 난 물건에 대해 환불을 요청했어요."
+   }
+  ]
+ },
+ {
+  "word": "refusal",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "거절",
+  "en": "the act of refusing",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "His refusal surprised everyone.",
+    "ko": "그의 거절은 모두를 놀라게 했어요."
+   }
+  ]
+ },
+ {
+  "word": "refuse",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "거절하다",
+  "en": "food that is discarded (as from a kitchen)",
+  "syn": [
+   "garbage",
+   "food_waste",
+   "scraps"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She refused to answer the question.",
+    "ko": "그녀는 그 질문에 답하기를 거절했어요."
+   }
+  ]
+ },
+ {
+  "word": "regain",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "되찾다, 회복하다",
+  "en": "get or find back",
+  "syn": [
+   "recover",
+   "retrieve",
+   "find"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He regained his confidence after the win.",
+    "ko": "그는 승리 후 자신감을 되찾았어요."
+   }
+  ]
+ },
+ {
+  "word": "regard",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "여기다, 간주하다",
+  "en": "deem to be",
+  "syn": [
+   "see",
+   "consider",
+   "reckon",
+   "view"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I regard her as a close friend.",
+    "ko": "저는 그녀를 친한 친구로 여겨요."
+   }
+  ]
+ },
+ {
+  "word": "regarding",
+  "ipa": "",
+  "pos": [],
+  "cefr": "B1",
+  "ko": "~에 관하여",
+  "en": "concerning or in relation to",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I have a question regarding the schedule.",
+    "ko": "일정에 관해 질문이 있어요."
+   }
+  ]
+ },
+ {
+  "word": "region",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "지역",
+  "en": "the extended spatial location of something",
+  "syn": [
+   "part"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This region is known for its wine.",
+    "ko": "이 지역은 와인으로 유명해요."
+   }
+  ]
+ },
+ {
+  "word": "regional",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "지역의",
+  "en": "characteristic of a region",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a regional dish.",
+    "ko": "이것은 지역 요리예요."
+   }
+  ]
+ },
+ {
+  "word": "register",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "등록하다",
+  "en": "an official written record of names or events or transactions",
+  "syn": [
+   "registry"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please register for the course online.",
+    "ko": "온라인으로 강좌에 등록해 주세요."
+   }
+  ]
+ },
+ {
+  "word": "registration",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "등록",
+  "en": "the act of enrolling",
+  "syn": [
+   "enrollment",
+   "enrolment"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Registration closes tomorrow.",
+    "ko": "등록은 내일 마감돼요."
    }
   ]
  },
@@ -74744,6 +75574,160 @@ window.SEED = [
   ]
  },
  {
+  "word": "regulation",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "규정, 규제",
+  "en": "an authoritative rule",
+  "syn": [
+   "ordinance"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The new regulation affects all businesses.",
+    "ko": "그 새 규정은 모든 사업체에 영향을 미쳐요."
+   }
+  ]
+ },
+ {
+  "word": "reject",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "거절하다, 거부하다",
+  "en": "refuse to accept or acknowledge",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They rejected my proposal.",
+    "ko": "그들은 제 제안을 거절했어요."
+   }
+  ]
+ },
+ {
+  "word": "relate",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "관련시키다, 공감하다",
+  "en": "make a logical or causal connection",
+  "syn": [
+   "associate",
+   "tie_in",
+   "link",
+   "colligate"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I can relate to her story.",
+    "ko": "저는 그녀의 이야기에 공감할 수 있어요."
+   }
+  ]
+ },
+ {
+  "word": "relation",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "관계, 연관",
+  "en": "an abstraction belonging to or characteristic of two entities or parts together",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There is no relation between the two events.",
+    "ko": "그 두 사건 사이에는 아무런 관계가 없어요."
+   }
+  ]
+ },
+ {
+  "word": "relationship",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "관계",
+  "en": "a relation between people",
+  "syn": [
+   "human_relationship"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They have a close relationship.",
+    "ko": "그들은 가까운 관계를 가지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "relative",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "친척, 상대적인",
+  "en": "estimated by comparison",
+  "syn": [
+   "comparative"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She visited her relatives over the holiday.",
+    "ko": "그녀는 휴일 동안 친척들을 방문했어요."
+   }
+  ]
+ },
+ {
+  "word": "relatively",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "상대적으로",
+  "en": "in a relative manner",
+  "syn": [
+   "comparatively"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This dish is relatively easy to make.",
+    "ko": "이 요리는 상대적으로 만들기 쉬워요."
+   }
+  ]
+ },
+ {
   "word": "relax",
   "ipa": "",
   "pos": [
@@ -74789,13 +75773,36 @@ window.SEED = [
   ]
  },
  {
+  "word": "relaxing",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "편안하게 해주는",
+  "en": "affording physical or mental rest",
+  "syn": [
+   "restful",
+   "reposeful"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We had a relaxing weekend.",
+    "ko": "우리는 편안한 주말을 보냈어요."
+   }
+  ]
+ },
+ {
   "word": "release",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "출시하다, 발표",
+  "ko": "풀어주다, 놓아주다",
   "en": "merchandise issued for sale or public showing (especially a record or film)",
   "syn": [],
   "ant": [],
@@ -74803,8 +75810,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The new album will be released next week.",
-    "ko": "새 앨범은 다음 주에 출시될 거예요."
+    "en": "They released the bird back into the wild.",
+    "ko": "그들은 새를 다시 야생으로 풀어줬어요."
    }
   ]
  },
@@ -74815,7 +75822,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "출시하다, 발표",
+  "ko": "풀어주다, 놓아주다",
   "en": "release, as from one's grip",
   "syn": [
    "let_go_of",
@@ -74827,8 +75834,100 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The new album will be released next week.",
-    "ko": "새 앨범은 다음 주에 출시될 거예요."
+    "en": "They released the bird back into the wild.",
+    "ko": "그들은 새를 다시 야생으로 풀어줬어요."
+   }
+  ]
+ },
+ {
+  "word": "reliable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "믿을 수 있는",
+  "en": "worthy of reliance or trust",
+  "syn": [
+   "dependable"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He is a reliable friend.",
+    "ko": "그는 믿을 수 있는 친구예요."
+   }
+  ]
+ },
+ {
+  "word": "religion",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "종교",
+  "en": "a strong belief in a supernatural power or powers that control human destiny",
+  "syn": [
+   "faith",
+   "religious_belief"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Different religions have different customs.",
+    "ko": "여러 종교는 서로 다른 관습을 가지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "religious",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "종교적인",
+  "en": "concerned with sacred matters or religion or the church",
+  "syn": [
+   "spiritual"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a religious person.",
+    "ko": "그녀는 종교적인 사람이에요."
+   }
+  ]
+ },
+ {
+  "word": "rely",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "의존하다",
+  "en": "have faith or confidence in",
+  "syn": [
+   "count",
+   "bet",
+   "depend",
+   "swear"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "You can rely on me.",
+    "ko": "저를 의지해도 돼요."
    }
   ]
  },
@@ -74856,6 +75955,100 @@ window.SEED = [
   ]
  },
  {
+  "word": "remainder",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "나머지",
+  "en": "something left after other parts have been taken away",
+  "syn": [
+   "balance",
+   "residual",
+   "residue",
+   "residuum"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Divide 10 by 3, and the remainder is 1.",
+    "ko": "10을 3으로 나누면 나머지는 1이에요."
+   }
+  ]
+ },
+ {
+  "word": "remark",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "말하다, 언급하다",
+  "en": "make mention of",
+  "syn": [
+   "note",
+   "observe",
+   "mention"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She remarked on how nice the weather was.",
+    "ko": "그녀는 날씨가 얼마나 좋은지 언급했어요."
+   }
+  ]
+ },
+ {
+  "word": "remarkable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "놀라운, 주목할 만한",
+  "en": "unusual or striking",
+  "syn": [
+   "singular"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She made a remarkable recovery.",
+    "ko": "그녀는 놀라운 회복을 했어요."
+   }
+  ]
+ },
+ {
+  "word": "remedy",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "치료법, 해결책",
+  "en": "act of correcting an error or a fault or an evil",
+  "syn": [
+   "redress",
+   "remediation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This tea is a natural remedy for colds.",
+    "ko": "이 차는 감기를 위한 자연 치료법이에요."
+   }
+  ]
+ },
+ {
   "word": "remember",
   "ipa": "",
   "pos": [
@@ -74877,6 +76070,29 @@ window.SEED = [
    {
     "en": "I can't remember his name.",
     "ko": "나는 그의 이름이 기억나지 않는다."
+   }
+  ]
+ },
+ {
+  "word": "remembrance",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "기억, 추모",
+  "en": "the ability to recall past occurrences",
+  "syn": [
+   "recollection",
+   "anamnesis"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They held a ceremony in remembrance of the war.",
+    "ko": "그들은 전쟁을 추모하는 행사를 열었어요."
    }
   ]
  },
@@ -74919,6 +76135,75 @@ window.SEED = [
    {
     "en": "They live in a remote village.",
     "ko": "그들은 외딴 마을에 살아요."
+   }
+  ]
+ },
+ {
+  "word": "remote control",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "리모컨",
+  "en": "a device that can be used to control a machine or apparatus from a distance",
+  "syn": [
+   "remote_control",
+   "remote"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Where is the TV remote control?",
+    "ko": "TV 리모컨이 어디 있어요?"
+   }
+  ]
+ },
+ {
+  "word": "remove",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "제거하다, 없애다",
+  "en": "remove something concrete, as by lifting, pushing, or taking off, or remove something abstract",
+  "syn": [
+   "take",
+   "take_away",
+   "withdraw"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please remove your shoes before entering.",
+    "ko": "들어가기 전에 신발을 벗어주세요."
+   }
+  ]
+ },
+ {
+  "word": "renew",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "갱신하다",
+  "en": "reestablish on a new, usually improved, basis or make new or like new",
+  "syn": [
+   "regenerate"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I need to renew my passport.",
+    "ko": "저는 여권을 갱신해야 해요."
    }
   ]
  },
@@ -74972,6 +76257,30 @@ window.SEED = [
   ]
  },
  {
+  "word": "repay",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "갚다, 상환하다",
+  "en": "pay back",
+  "syn": [
+   "refund",
+   "return",
+   "give_back"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He repaid the loan in full.",
+    "ko": "그는 대출금을 전액 상환했어요."
+   }
+  ]
+ },
+ {
   "word": "repeat",
   "ipa": "",
   "pos": [
@@ -74993,6 +76302,26 @@ window.SEED = [
    {
     "en": "Please repeat what you said.",
     "ko": "말씀하신 것을 다시 말해 주세요."
+   }
+  ]
+ },
+ {
+  "word": "repeatedly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "반복해서",
+  "en": "several time",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She repeatedly asked the same question.",
+    "ko": "그녀는 같은 질문을 반복해서 했어요."
    }
   ]
  },
@@ -75023,7 +76352,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "답장, 대답하다",
+  "ko": "답하다, 대답하다",
   "en": "a statement (either spoken or written) that is made to reply to a question or request or criticism or accusation",
   "syn": [
    "answer",
@@ -75034,8 +76363,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She sent a quick reply.",
-    "ko": "그녀는 빠른 답장을 보냈어요."
+    "en": "She replied to my email quickly.",
+    "ko": "그녀는 제 이메일에 빠르게 답했어요."
    }
   ]
  },
@@ -75046,7 +76375,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "답장, 대답하다",
+  "ko": "답하다, 대답하다",
   "en": "react verbally",
   "syn": [
    "answer",
@@ -75057,8 +76386,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She sent a quick reply.",
-    "ko": "그녀는 빠른 답장을 보냈어요."
+    "en": "She replied to my email quickly.",
+    "ko": "그녀는 제 이메일에 빠르게 답했어요."
    }
   ]
  },
@@ -75069,7 +76398,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "보고서, 보고하다",
+  "ko": "보고하다",
   "en": "a written document describing the findings of some individual or group",
   "syn": [
    "study",
@@ -75080,8 +76409,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I have to finish this report by Friday.",
-    "ko": "저는 금요일까지 이 보고서를 끝내야 해요."
+    "en": "He reported the incident to the police.",
+    "ko": "그는 그 사건을 경찰에 보고했어요."
    }
   ]
  },
@@ -75092,7 +76421,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "보고서, 보고하다",
+  "ko": "보고하다",
   "en": "to give an account or representation of in words",
   "syn": [
    "describe",
@@ -75103,8 +76432,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I have to finish this report by Friday.",
-    "ko": "저는 금요일까지 이 보고서를 끝내야 해요."
+    "en": "He reported the incident to the police.",
+    "ko": "그는 그 사건을 경찰에 보고했어요."
    }
   ]
  },
@@ -75155,13 +76484,98 @@ window.SEED = [
   ]
  },
  {
+  "word": "representative",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "대표자",
+  "en": "a person who represents others",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is the representative of our company.",
+    "ko": "그녀는 우리 회사의 대표자예요."
+   }
+  ]
+ },
+ {
+  "word": "reproduce",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "복제하다, 번식하다",
+  "en": "make a copy or equivalent of",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Some plants reproduce quickly.",
+    "ko": "어떤 식물들은 빠르게 번식해요."
+   }
+  ]
+ },
+ {
+  "word": "republic",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "공화국",
+  "en": "a political system in which the supreme power lies in a body of citizens who can elect people to represent them",
+  "syn": [
+   "democracy",
+   "commonwealth"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Korea is a republic.",
+    "ko": "한국은 공화국이에요."
+   }
+  ]
+ },
+ {
+  "word": "reputation",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "명성, 평판",
+  "en": "the state of being held in high esteem and honor",
+  "syn": [
+   "repute"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This restaurant has a great reputation.",
+    "ko": "이 식당은 훌륭한 평판을 가지고 있어요."
+   }
+  ]
+ },
+ {
   "word": "request",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "요청",
+  "ko": "요청하다",
   "en": "a formal message requesting something that is submitted to an authority",
   "syn": [
    "petition",
@@ -75172,8 +76586,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I have a special request.",
-    "ko": "저는 특별한 요청이 있어요."
+    "en": "She requested a day off.",
+    "ko": "그녀는 하루 휴가를 요청했어요."
    }
   ]
  },
@@ -75184,7 +76598,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "요청",
+  "ko": "요청하다",
   "en": "express the need or desire for",
   "syn": [
    "ask_for",
@@ -75197,8 +76611,80 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I have a special request.",
-    "ko": "저는 특별한 요청이 있어요."
+    "en": "She requested a day off.",
+    "ko": "그녀는 하루 휴가를 요청했어요."
+   }
+  ]
+ },
+ {
+  "word": "require",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "요구하다, 필요로 하다",
+  "en": "require as useful, just, or proper",
+  "syn": [
+   "necessitate",
+   "ask",
+   "postulate",
+   "need"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This job requires experience.",
+    "ko": "이 일자리는 경험을 필요로 해요."
+   }
+  ]
+ },
+ {
+  "word": "requirement",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "요구사항, 필요조건",
+  "en": "required activity",
+  "syn": [
+   "demand"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "What are the requirements for this course?",
+    "ko": "이 강좌의 요구사항이 뭐예요?"
+   }
+  ]
+ },
+ {
+  "word": "rescue",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "구조",
+  "en": "recovery or preservation from loss or danger",
+  "syn": [
+   "deliverance",
+   "delivery",
+   "saving"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The rescue team saved the hikers.",
+    "ko": "구조팀이 등산객들을 구했어요."
    }
   ]
  },
@@ -75223,6 +76709,290 @@ window.SEED = [
   ]
  },
  {
+  "word": "researcher",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "연구원",
+  "en": "a scientist who devotes himself to doing research",
+  "syn": [
+   "research_worker",
+   "investigator"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She works as a researcher at the university.",
+    "ko": "그녀는 대학교에서 연구원으로 일해요."
+   }
+  ]
+ },
+ {
+  "word": "resemble",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "닮다, 비슷하다",
+  "en": "appear like",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She resembles her mother a lot.",
+    "ko": "그녀는 어머니를 많이 닮았어요."
+   }
+  ]
+ },
+ {
+  "word": "reservation",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "예약",
+  "en": "a district that is reserved for particular purpose",
+  "syn": [
+   "reserve"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I have a reservation for two.",
+    "ko": "저는 두 명 예약이 있어요."
+   }
+  ]
+ },
+ {
+  "word": "reserve",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "예약하다, 비축하다",
+  "en": "hold back or set aside, especially for future use or contingency",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I reserved a table for dinner.",
+    "ko": "저는 저녁을 위해 테이블을 예약했어요."
+   }
+  ]
+ },
+ {
+  "word": "resident",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "거주하는, 주민",
+  "en": "living in a particular place",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a resident of this city.",
+    "ko": "그녀는 이 도시의 주민이에요."
+   }
+  ]
+ },
+ {
+  "word": "residential",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "주거의",
+  "en": "used or designed for residence or limited to residences",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a quiet residential area.",
+    "ko": "이곳은 조용한 주거 지역이에요."
+   }
+  ]
+ },
+ {
+  "word": "resist",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "저항하다, 참다",
+  "en": "elude, especially in a baffling way",
+  "syn": [
+   "defy",
+   "refuse"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I couldn't resist the chocolate cake.",
+    "ko": "저는 초콜릿 케이크를 참을 수 없었어요."
+   }
+  ]
+ },
+ {
+  "word": "resolve",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "해결하다",
+  "en": "bring to an end",
+  "syn": [
+   "decide",
+   "settle",
+   "adjudicate"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They resolved the conflict peacefully.",
+    "ko": "그들은 갈등을 평화롭게 해결했어요."
+   }
+  ]
+ },
+ {
+  "word": "resort",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "리조트",
+  "en": "a hotel located in a resort area",
+  "syn": [
+   "resort_hotel",
+   "holiday_resort"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We stayed at a beach resort.",
+    "ko": "우리는 해변 리조트에 머물렀어요."
+   }
+  ]
+ },
+ {
+  "word": "resource",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "자원",
+  "en": "available source of wealth",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Water is a valuable resource.",
+    "ko": "물은 소중한 자원이에요."
+   }
+  ]
+ },
+ {
+  "word": "respect",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "존중, 존경하다",
+  "en": "regard highly",
+  "syn": [
+   "esteem",
+   "value",
+   "prize",
+   "prise"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I respect her opinion.",
+    "ko": "저는 그녀의 의견을 존중해요."
+   }
+  ]
+ },
+ {
+  "word": "respectable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "존경할 만한, 훌륭한",
+  "en": "characterized by socially or conventionally acceptable morals",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He comes from a respectable family.",
+    "ko": "그는 존경받는 가족 출신이에요."
+   }
+  ]
+ },
+ {
+  "word": "respond",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "응답하다, 반응하다",
+  "en": "show a response or a reaction to something",
+  "syn": [
+   "react"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She responded quickly to my message.",
+    "ko": "그녀는 제 메시지에 빠르게 응답했어요."
+   }
+  ]
+ },
+ {
   "word": "response",
   "ipa": "",
   "pos": [
@@ -75239,6 +77009,75 @@ window.SEED = [
    {
     "en": "I haven't received a response yet.",
     "ko": "저는 아직 응답을 받지 못했어요."
+   }
+  ]
+ },
+ {
+  "word": "responsibility",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "책임",
+  "en": "the social force that binds you to the courses of action demanded by that force",
+  "syn": [
+   "duty",
+   "obligation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It's your responsibility to take care of the pet.",
+    "ko": "그 반려동물을 돌보는 것은 당신의 책임이에요."
+   }
+  ]
+ },
+ {
+  "word": "responsible",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "책임 있는",
+  "en": "worthy of or requiring responsibility or trust",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is responsible for the project.",
+    "ko": "그녀는 그 프로젝트에 책임이 있어요."
+   }
+  ]
+ },
+ {
+  "word": "rest",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "휴식, 나머지",
+  "en": "something left after other parts have been taken away",
+  "syn": [
+   "remainder",
+   "balance",
+   "residual",
+   "residue"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "You need to get some rest.",
+    "ko": "당신은 휴식을 좀 취해야 해요."
    }
   ]
  },
@@ -75267,13 +77106,59 @@ window.SEED = [
   ]
  },
  {
+  "word": "restore",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "복원하다, 회복시키다",
+  "en": "return to its original or usable and functioning condition",
+  "syn": [
+   "reconstruct"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They restored the old painting.",
+    "ko": "그들은 오래된 그림을 복원했어요."
+   }
+  ]
+ },
+ {
+  "word": "restrict",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "제한하다",
+  "en": "place restrictions on",
+  "syn": [
+   "curtail",
+   "curb",
+   "cut_back"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The rule restricts access to this area.",
+    "ko": "그 규칙은 이 구역의 접근을 제한해요."
+   }
+  ]
+ },
+ {
   "word": "result",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A1",
-  "ko": "결과",
+  "ko": "결과가 되다",
   "en": "a phenomenon that follows and is caused by some previous phenomenon",
   "syn": [
    "consequence",
@@ -75286,8 +77171,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She was happy with the test result.",
-    "ko": "그녀는 시험 결과에 만족했다."
+    "en": "Hard work results in success.",
+    "ko": "노력은 성공이라는 결과를 가져와요."
    }
   ]
  },
@@ -75298,7 +77183,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "결과",
+  "ko": "결과가 되다",
   "en": "issue or terminate (in a specified way, state, etc.)",
   "syn": [
    "ensue"
@@ -75308,8 +77193,70 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She was happy with the test result.",
-    "ko": "그녀는 시험 결과에 만족했다."
+    "en": "Hard work results in success.",
+    "ko": "노력은 성공이라는 결과를 가져와요."
+   }
+  ]
+ },
+ {
+  "word": "retail",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "소매",
+  "en": "the selling of goods to consumers",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She works in retail management.",
+    "ko": "그녀는 소매 관리 분야에서 일해요."
+   }
+  ]
+ },
+ {
+  "word": "retain",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "유지하다, 보유하다",
+  "en": "hold back within",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The company retained its top employees.",
+    "ko": "그 회사는 최고의 직원들을 유지했어요."
+   }
+  ]
+ },
+ {
+  "word": "retell",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "다시 이야기하다",
+  "en": "render verbally",
+  "syn": [
+   "recite"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She retold the story to her children.",
+    "ko": "그녀는 아이들에게 그 이야기를 다시 들려줬어요."
    }
   ]
  },
@@ -75354,6 +77301,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "retrospect",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "회고, 돌이켜봄",
+  "en": "contemplation of things past",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "In retrospect, I should have studied harder.",
+    "ko": "돌이켜보면 저는 더 열심히 공부했어야 했어요."
+   }
+  ]
+ },
+ {
   "word": "return",
   "ipa": "",
   "pos": [
@@ -75374,6 +77341,50 @@ window.SEED = [
    {
     "en": "I will return the book tomorrow.",
     "ko": "저는 내일 책을 반납할 거예요."
+   }
+  ]
+ },
+ {
+  "word": "reunification",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "재통일",
+  "en": "the act of coming together again",
+  "syn": [
+   "reunion"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Many people hope for reunification.",
+    "ko": "많은 사람들이 재통일을 희망해요."
+   }
+  ]
+ },
+ {
+  "word": "reunify",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "재통일하다",
+  "en": "unify again, as of a country",
+  "syn": [
+   "reunite"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The two regions were reunified after the war.",
+    "ko": "그 두 지역은 전쟁 후 재통일되었어요."
    }
   ]
  },
@@ -75441,6 +77452,91 @@ window.SEED = [
    {
     "en": "He wrote a review of the movie.",
     "ko": "그는 그 영화의 리뷰를 썼다."
+   }
+  ]
+ },
+ {
+  "word": "revise",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "수정하다, 개정하다",
+  "en": "make revisions in",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please revise this paragraph.",
+    "ko": "이 문단을 수정해 주세요."
+   }
+  ]
+ },
+ {
+  "word": "revision",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "수정, 개정",
+  "en": "the act of revising or altering (involving reconsideration and modification)",
+  "syn": [
+   "alteration"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The document needs some revision.",
+    "ko": "그 문서는 약간의 수정이 필요해요."
+   }
+  ]
+ },
+ {
+  "word": "reward",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "보상",
+  "en": "a recompense for worthy acts or retribution for wrongdoing",
+  "syn": [
+   "wages",
+   "payoff"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She received a reward for her honesty.",
+    "ko": "그녀는 정직함에 대한 보상을 받았어요."
+   }
+  ]
+ },
+ {
+  "word": "rewrite",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "다시 쓰다",
+  "en": "write differently",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I need to rewrite this essay.",
+    "ko": "저는 이 에세이를 다시 써야 해요."
    }
   ]
  },
@@ -75530,6 +77626,49 @@ window.SEED = [
   ]
  },
  {
+  "word": "rid",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "없애다, 제거하다",
+  "en": "relieve from",
+  "syn": [
+   "free",
+   "disembarrass"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We need to get rid of these old boxes.",
+    "ko": "우리는 이 오래된 상자들을 없애야 해요."
+   }
+  ]
+ },
+ {
+  "word": "riddle",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "수수께끼",
+  "en": "pierce with many holes",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Can you solve this riddle?",
+    "ko": "이 수수께끼를 풀 수 있어요?"
+   }
+  ]
+ },
+ {
   "word": "ride",
   "ipa": "",
   "pos": [
@@ -75549,6 +77688,29 @@ window.SEED = [
    {
     "en": "He took the family for a ride in his new car.",
     "ko": "그는 가족을 새 차에 태워 드라이브를 시켜줬다."
+   }
+  ]
+ },
+ {
+  "word": "ridiculous",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "터무니없는, 우스꽝스러운",
+  "en": "inspiring scornful pity",
+  "syn": [
+   "pathetic",
+   "silly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That's a ridiculous idea.",
+    "ko": "그것은 터무니없는 생각이에요."
    }
   ]
  },
@@ -75658,6 +77820,74 @@ window.SEED = [
   ]
  },
  {
+  "word": "ripe",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "익은",
+  "en": "fully developed or matured and ready to be eaten or used",
+  "syn": [
+   "mature"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "These bananas are ripe now.",
+    "ko": "이 바나나들은 이제 익었어요."
+   }
+  ]
+ },
+ {
+  "word": "rise",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B1",
+  "ko": "상승, 오르다",
+  "en": "a growth in strength or number or importance",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was a rise in temperature today.",
+    "ko": "오늘 기온에 상승이 있었어요."
+   }
+  ]
+ },
+ {
+  "word": "risk",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "위험",
+  "en": "a source of danger",
+  "syn": [
+   "hazard",
+   "jeopardy",
+   "peril",
+   "endangerment"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There is a risk of infection.",
+    "ko": "감염의 위험이 있어요."
+   }
+  ]
+ },
+ {
   "word": "river",
   "ipa": "",
   "pos": [
@@ -75696,6 +77926,28 @@ window.SEED = [
    {
     "en": "This road leads to the city center.",
     "ko": "이 도로는 도심으로 이어져요."
+   }
+  ]
+ },
+ {
+  "word": "roadside",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "길가",
+  "en": "edge of a way or road or path",
+  "syn": [
+   "wayside"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We stopped at a roadside cafe.",
+    "ko": "우리는 길가의 카페에 멈췄어요."
    }
   ]
  },
@@ -75785,6 +78037,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "robot",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "로봇",
+  "en": "a mechanism that can move automatically",
+  "syn": [
+   "automaton",
+   "golem"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The factory uses robots to build cars.",
+    "ko": "그 공장은 자동차를 만들기 위해 로봇을 사용해요."
+   }
+  ]
+ },
+ {
   "word": "rock",
   "ipa": "",
   "pos": [
@@ -75849,6 +78124,29 @@ window.SEED = [
   "ex": [
    {
     "en": "The ball rolled down the hill.",
+    "ko": "공이 언덕 아래로 굴러갔어요."
+   }
+  ]
+ },
+ {
+  "word": "rolling",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "구르는, 굴러가는",
+  "en": "uttered with a trill",
+  "syn": [
+   "rolled",
+   "trilled"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The ball went rolling down the hill.",
     "ko": "공이 언덕 아래로 굴러갔어요."
    }
   ]
@@ -75925,7 +78223,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "A1",
-  "ko": "방",
+  "ko": "숙박하다, 방을 쓰다",
   "en": "an area within a building enclosed by walls and floor and ceiling",
   "syn": [],
   "ant": [],
@@ -75933,8 +78231,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The rooms were small but had a nice view.",
-    "ko": "그 방들은 작았지만 전망이 좋았다."
+    "en": "She rooms with two other students.",
+    "ko": "그녀는 다른 두 학생과 방을 같이 써요."
    }
   ]
  },
@@ -75945,7 +78243,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "방",
+  "ko": "숙박하다, 방을 쓰다",
   "en": "live and take one's meals at or in",
   "syn": [
    "board"
@@ -75955,8 +78253,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The rooms were small but had a nice view.",
-    "ko": "그 방들은 작았지만 전망이 좋았다."
+    "en": "She rooms with two other students.",
+    "ko": "그녀는 다른 두 학생과 방을 같이 써요."
    }
   ]
  },
@@ -76023,6 +78321,53 @@ window.SEED = [
   ]
  },
  {
+  "word": "rotten",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "썩은",
+  "en": "very bad",
+  "syn": [
+   "icky",
+   "crappy",
+   "lousy",
+   "shitty"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This fruit is rotten.",
+    "ko": "이 과일은 썩었어요."
+   }
+  ]
+ },
+ {
+  "word": "rough",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "거친",
+  "en": "having or caused by an irregular surface",
+  "syn": [
+   "unsmooth"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The road was very rough.",
+    "ko": "그 길은 아주 거칠었어요."
+   }
+  ]
+ },
+ {
   "word": "roughly",
   "ipa": "",
   "pos": [
@@ -76054,7 +78399,7 @@ window.SEED = [
    "adv"
   ],
   "cefr": "A2",
-  "ko": "둥근, 한 판",
+  "ko": "둥근, 라운드",
   "en": "from beginning to end",
   "syn": [
    "around"
@@ -76064,8 +78409,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The table is round.",
-    "ko": "그 테이블은 둥글어요."
+    "en": "This is the final round of the match.",
+    "ko": "이것은 경기의 마지막 라운드예요."
    }
   ]
  },
@@ -76077,7 +78422,7 @@ window.SEED = [
    "adj"
   ],
   "cefr": "B1",
-  "ko": "둥근, 한 판",
+  "ko": "둥근, 라운드",
   "en": "having the shape or form of a circle",
   "syn": [
    "circular"
@@ -76087,8 +78432,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The table is round.",
-    "ko": "그 테이블은 둥글어요."
+    "en": "This is the final round of the match.",
+    "ko": "이것은 경기의 마지막 라운드예요."
    }
   ]
  },
@@ -76113,6 +78458,28 @@ window.SEED = [
    {
     "en": "Turn left at the roundabout.",
     "ko": "로터리에서 왼쪽으로 도세요."
+   }
+  ]
+ },
+ {
+  "word": "routine",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "일상, 루틴",
+  "en": "an unvarying or habitual method or procedure",
+  "syn": [
+   "modus_operandi"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has a strict morning routine.",
+    "ko": "그녀는 엄격한 아침 루틴을 가지고 있어요."
    }
   ]
  },
@@ -76157,6 +78524,54 @@ window.SEED = [
   ]
  },
  {
+  "word": "rubber",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "고무",
+  "en": "an elastic material obtained from the latex sap of trees (especially trees of the genera Hevea and Ficus) that can be vulcanized and finished into a variety of products",
+  "syn": [
+   "natural_rubber",
+   "India_rubber",
+   "gum_elastic",
+   "caoutchouc"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "These boots are made of rubber.",
+    "ko": "이 부츠는 고무로 만들어졌어요."
+   }
+  ]
+ },
+ {
+  "word": "rubbish",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "쓰레기",
+  "en": "worthless material that is to be disposed of",
+  "syn": [
+   "trash",
+   "scrap"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please put the rubbish in the bin.",
+    "ko": "쓰레기를 쓰레기통에 넣어주세요."
+   }
+  ]
+ },
+ {
   "word": "rude",
   "ipa": "",
   "pos": [
@@ -76178,6 +78593,29 @@ window.SEED = [
    {
     "en": "It was rude of him to interrupt.",
     "ko": "그가 끼어든 것은 무례했다."
+   }
+  ]
+ },
+ {
+  "word": "rudely",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "무례하게",
+  "en": "in an impolite manner",
+  "syn": [
+   "impolitely",
+   "discourteously"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He spoke rudely to the waiter.",
+    "ko": "그는 웨이터에게 무례하게 말했어요."
    }
   ]
  },
@@ -76211,7 +78649,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "A2",
-  "ko": "망치다",
+  "ko": "폐허, 파멸",
   "en": "destroy completely",
   "syn": [
    "destroy"
@@ -76221,8 +78659,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The rain ruined our picnic.",
-    "ko": "비가 우리의 소풍을 망쳤어요."
+    "en": "They explored the ancient ruins.",
+    "ko": "그들은 고대 폐허를 탐험했어요."
    }
   ]
  },
@@ -76233,7 +78671,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "망치다",
+  "ko": "폐허, 파멸",
   "en": "an irrecoverable state of devastation and destruction",
   "syn": [
    "ruination"
@@ -76243,8 +78681,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The rain ruined our picnic.",
-    "ko": "비가 우리의 소풍을 망쳤어요."
+    "en": "They explored the ancient ruins.",
+    "ko": "그들은 고대 폐허를 탐험했어요."
    }
   ]
  },
@@ -76339,6 +78777,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "runaway",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "가출자, 도망자",
+  "en": "an easy victory",
+  "syn": [
+   "blowout",
+   "romp",
+   "laugher",
+   "shoo-in"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The shelter helps runaway teens.",
+    "ko": "그 보호소는 가출 청소년을 도와요."
+   }
+  ]
+ },
+ {
   "word": "runner",
   "ipa": "",
   "pos": [
@@ -76388,13 +78851,37 @@ window.SEED = [
   ]
  },
  {
+  "word": "runway",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "활주로",
+  "en": "a bar or pair of parallel bars of rolled steel making the railway along which railroad cars or other vehicles can roll",
+  "syn": [
+   "track",
+   "rail",
+   "rails"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The plane landed on the runway.",
+    "ko": "비행기가 활주로에 착륙했어요."
+   }
+  ]
+ },
+ {
   "word": "rush",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "A2",
-  "ko": "서두름, 돌진하다",
+  "ko": "서두르다, 급히 가다",
   "en": "the act of moving hurriedly and in a careless manner",
   "syn": [
    "haste",
@@ -76406,8 +78893,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "There is no need to rush.",
-    "ko": "서두를 필요 없어요."
+    "en": "She rushed to catch the train.",
+    "ko": "그녀는 기차를 타려고 서둘렀어요."
    }
   ]
  },
@@ -76418,7 +78905,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B1",
-  "ko": "서두름, 돌진하다",
+  "ko": "서두르다, 급히 가다",
   "en": "move hurridly",
   "syn": [
    "hotfoot",
@@ -76431,8 +78918,28 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "There is no need to rush.",
-    "ko": "서두를 필요 없어요."
+    "en": "She rushed to catch the train.",
+    "ko": "그녀는 기차를 타려고 서둘렀어요."
+   }
+  ]
+ },
+ {
+  "word": "sacred",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B1",
+  "ko": "신성한",
+  "en": "concerned with religion or religious purposes",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a sacred place for many people.",
+    "ko": "이곳은 많은 사람들에게 신성한 장소예요."
    }
   ]
  },
@@ -76479,6 +78986,51 @@ window.SEED = [
   ]
  },
  {
+  "word": "sadness",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "슬픔",
+  "en": "emotions experienced when not in a state of well-being",
+  "syn": [
+   "unhappiness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She felt sadness after the loss.",
+    "ko": "그녀는 상실 후 슬픔을 느꼈어요."
+   }
+  ]
+ },
+ {
+  "word": "safari",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "사파리",
+  "en": "an overland journey by hunters (especially in Africa)",
+  "syn": [
+   "campaign",
+   "hunting_expedition"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We went on a safari in Africa.",
+    "ko": "우리는 아프리카에서 사파리를 갔어요."
+   }
+  ]
+ },
+ {
   "word": "safe",
   "ipa": "",
   "pos": [
@@ -76495,6 +79047,69 @@ window.SEED = [
    {
     "en": "This area is safe at night.",
     "ko": "이 지역은 밤에 안전해요."
+   }
+  ]
+ },
+ {
+  "word": "safeguard",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "보호 조치, 안전장치",
+  "en": "a precautionary measure warding off impending danger or damage or injury etc.",
+  "syn": [
+   "precaution",
+   "guard"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This law is a safeguard against fraud.",
+    "ko": "이 법은 사기에 대한 보호 조치예요."
+   }
+  ]
+ },
+ {
+  "word": "safely",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B1",
+  "ko": "안전하게",
+  "en": "with safety",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please drive safely.",
+    "ko": "안전하게 운전해 주세요."
+   }
+  ]
+ },
+ {
+  "word": "safety",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "안전",
+  "en": "the state of being certain that adverse effects will not be caused by some agent under defined conditions",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Safety is our top priority.",
+    "ko": "안전은 우리의 최우선 사항이에요."
    }
   ]
  },
@@ -76602,6 +79217,26 @@ window.SEED = [
    {
     "en": "The store is having a big sale.",
     "ko": "그 가게는 큰 세일을 하고 있다."
+   }
+  ]
+ },
+ {
+  "word": "salesman",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B1",
+  "ko": "판매원 (남)",
+  "en": "a man salesperson",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The salesman explained the product's features.",
+    "ko": "그 판매원은 제품의 특징을 설명했어요."
    }
   ]
  },
