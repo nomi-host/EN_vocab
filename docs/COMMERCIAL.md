@@ -14,7 +14,7 @@
 
 | 소스 | 개인용 | 판매 시 | 조치 |
 |---|---|---|---|
-| Oxford 3000/5000 | 사용 가능 | **불가** — 약관상 "domestic and private use only", 상업 이용은 OUP 별도 라이선스 계약 필요 | **NGSL(CC BY 3.0) + 자체 빈도 기반 레벨 밴드로 교체** |
+| CEFR-J Wordlist(A1–B2) + Octanove Vocabulary Profile(C1–C2) | 사용 가능 | **가능** — CEFR-J는 출처 표시 조건으로 연구·상업 이용 무료, Octanove C1/C2 분은 CC BY-SA 4.0(출처 표시 + 동일조건 계승) | 조치 불필요(교체 완료, 이미 채택) — 앱 내 출처 고지 화면만 추가 |
 | Datamuse API | 사용 가능 | **불가** — 무료는 비상업 한정, 상업용은 유료 계약 | **WordNet 셀프호스트로 교체** (Princeton 라이선스, 상업 OK, 출처 표기) |
 | Merriam-Webster API | 사용 가능 | **불가** — 무료 키는 비상업 한정 | 제거 (기능상 대체 가능) |
 | Free Dictionary API / Wiktionary 계열 | 가능 | 가능 (조건부) | 데이터가 CC BY-SA → **출처 표기 + 데이터 부분 동일조건 유지**. 무료 호스팅 서비스는 SLA 없음 → kaikki.org(wiktextract) 데이터 셀프호스트 권장 |
@@ -83,7 +83,7 @@ NGSL·WordNet·wiktextract 모두 오픈 데이터라 **추가 금전 비용은 
 
 ### 2.5 권고 경로
 
-1. **P1~P5를 개인용으로 완성** (현 기획 그대로, Oxford/Datamuse 사용 무방)
+1. **P1~P5를 개인용으로 완성** (현 기획 그대로 — 표제어는 CEFR-J/Octanove, Datamuse는 개인 사용 무방)
 2. TestFlight로 지인 소규모 배포 → 리텐션 확인 (여기까지 $99 외 추가 비용 없음)
 3. 반응이 실재할 때만 상용화 리팩터링: 1.1 데이터 교체 + 계정/결제 백엔드 + 사용량 캡 + 구독 모델
 4. 판매 시작 전 1.2 행정·법무 체크리스트 처리
@@ -101,7 +101,7 @@ NGSL·WordNet·wiktextract 모두 오픈 데이터라 **추가 금전 비용은 
 | LLM·TTS API | **월 0~4천 원** (Gemini 무료 티어 + TTS 무료 티어 + 캐시) | 유저가 부담하는 구조로 전환 — 인당 변동비 500~4,000원, **캡으로 상한 ~2,000원 관리** |
 | 개발자 계정 | 0원 (PWA는 스토어 불필요) | 첫해 **$124**(애플 $99+구글 $25), 이후 연 $99 |
 | 결제 인프라 | 불필요 | IAP+RevenueCat (월매출 $2,500까지 무료) |
-| 데이터 라이선스 | 0원 (Oxford·Datamuse 개인 사용 가능) | 0원 (단 NGSL·WordNet 등으로 **교체 작업 1~2주**) |
+| 데이터 라이선스 | 0원 (CEFR-J·Octanove·Datamuse 개인 사용 가능) | 0원 (표제어 소스는 이미 상업 호환 — Datamuse만 WordNet 셀프호스트로 교체, 수 일 소요) |
 | 행정 | 없음 | 사업자등록(무료) + 통신판매업 신고(등록면허세 연 1.2만~4.5만 원) |
 | 추가 개발 기간 | — | 백엔드 4~7주 (부록 A) |
 | **월 고정 지출 합계** | **약 0~4천 원** | **약 5만 원** (+인당 변동비는 구독료에서 회수) |
@@ -232,7 +232,8 @@ NGSL·WordNet·wiktextract 모두 오픈 데이터라 **추가 금전 비용은 
 
 ## 3. 참고 링크
 
-- Oxford Learner's Dictionaries 약관 (소비자용 사적 이용 한정): https://www.oxfordlearnersdictionaries.com/terms-and-conditions
+- CEFR-J Wordlist 이용 조건 (연구·상업 무료, 출처 표시 조건): http://www.cefr-j.org/download.html
+- Octanove Vocabulary Profile C1/C2 (CC BY-SA 4.0): https://github.com/openlanguageprofiles/olp-en-cefrj
 - Datamuse API (상업 이용은 별도 계약): https://www.datamuse.com/api/
 - NGSL (CC BY 3.0): https://www.newgeneralservicelist.com/
 - WordNet 라이선스: https://wordnet.princeton.edu/license-and-commercial-use

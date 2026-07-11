@@ -22,7 +22,7 @@
 
 | 데이터 | 소스 | 비용 / 제한 |
 |---|---|---|
-| 표제어 + 레벨(CEFR) | **Oxford 3000/5000** (CEFR 레벨별 공개 PDF) + NGSL | 무료 공개, 개인용 문제 없음 |
+| 표제어 + 레벨(CEFR) | **CEFR-J Wordlist**(Tono Lab, TUFS, A1–B2) + **Octanove Vocabulary Profile**(C1–C2) | 무료, 출처 표시 조건으로 상업 이용까지 허용(Octanove 분은 CC BY-SA 4.0) |
 | 한국어 뜻 | **1차: 오픈 사전 3종 병합** — ① 한국어판 위키낱말사전(영어 표제어의 한국어 뜻, CC BY-SA) ② 영어판 위키낱말사전 번역 섹션(영→한, kaikki.org 추출본) ③ **국립국어원 한국어-영어 학습사전**(공공누리 1유형·CC BY-SA, 데이터 전체 다운로드 가능) 역인덱스 → **빈 곳만 LLM 번역** | 무료 (LLM은 갭 필링만) |
 | 영영 뜻·발음기호·발음오디오 | **WordNet 정의 + Wiktionary(kaikki.org)**, 발음기호는 **CMUdict**(BSD류)+Wiktionary IPA, 오디오는 Wikimedia Commons/TTS. 런타임 보조로 Free Dictionary API | 전부 무료 |
 | 유의어/반의어/연관어 | **WordNet을 시드에 굽기** (Datamuse는 런타임 보조) | 무료 |
@@ -49,7 +49,7 @@
 
 토큰 비용과 QA 부담을 줄이기 위해 **LLM의 역할을 "콘텐츠 생성"에서 "번역·갭 필링"으로 축소**한다.
 
-1. **표제어·레벨**: NGSL/Oxford 리스트 + 빈도 밴드 — 무LLM
+1. **표제어·레벨**: CEFR-J Wordlist(A1–B2) + Octanove Vocabulary Profile(C1–C2) — 무LLM
 2. **뜻(한국어)**: 오픈 사전 3종(한국어판 위키낱말사전, 영어판 번역 섹션, 국립국어원 한영 학습사전 역인덱스) 병합 → 커버리지 측정 → **미커버 단어만 LLM 번역** (상위 5,000 단어는 오픈 사전 커버리지가 가장 높은 구간이라 갭이 작음)
 3. **예문**: Tatoeba 영어 코퍼스에서 표제어별로 길이·난이도 필터로 선별(무LLM) → 영한 페어가 이미 있으면 그대로, 없으면 **LLM은 한국어 번역만**
 4. **유의어·반의어·품사 파생·어원**: WordNet + etymology-db에서 기계 추출 — 무LLM
@@ -394,7 +394,7 @@ JP 앱에서 그대로 복제: Leitner 망각곡선 SRS(하루 신규 N개 + 자
 
 | 주차 | 개발 (Claude) | 사용자 할 일 (병행) |
 |---|---|---|
-| **1주차 — 코어** | 시드 파이프라인(Oxford 5000/NGSL + Gemini 배치: 한국어 뜻·예문·상황문 생성) · JP 앱 포크 → 학습 카드(빈칸 타이핑/음성 입력) · SRS · TTS 프록시 · 잔디 · 통계 골격 · 임시 디자인 토큰(토스풍) | 무드보드·컬러·타이포 확정 |
+| **1주차 — 코어** | 시드 파이프라인(CEFR-J Wordlist + WordNet 자동 추출 + 한국어 뜻·예문 직접 작성) · JP 앱 포크 → 학습 카드(빈칸 타이핑/음성 입력) · SRS · TTS 프록시 · 잔디 · 통계 골격 · 임시 디자인 토큰(토스풍) | 무드보드·컬러·타이포 확정 |
 | **2주차 — 단어 네트워크 + 퀴즈** | 단어 상세(유의어/반의어/어원/어근/품사 파생, 타고타고) · 어근 탐색 · WordNet·etymology-db 가공 · 수동 추가 · 외부사전 링크 · 단어/문장 퀴즈(빈칸·딕테이션, 연음 토글) · 흘려듣기 | 카드·홈 화면 시안 → 주말에 1차 반영 |
 | **3주차 — 회화력** | 작문 첨삭(카테고리·자연스러움%·수능체 감지·즐겨찾기) · 회화 엔진(페르소나 10종, 피드백 게이트, SOS 버튼, 음성 파이프라인) · 단어장(문장·문법 태그) | 캐릭터·페르소나 아바타 10종 제작 |
 | **4주차 — 레벨테스트 + 마감** | 레벨 테스트(인지/산출 이원 측정, 어휘량·상위%) · 온보딩 · 필러 팩·산출 큐 · 디자인 시안 최종 반영 · 캐릭터 통합 · PWA/캐시/성능 · 버그픽스 · 배포(Vercel) | 최종 시안 전달 · 전체 검수·실기기 테스트 |
@@ -439,7 +439,8 @@ v2 추가 기능 배치: **발음 진단(Azure)·사용자 페르소나 → 3주
 - Free Dictionary API: https://dictionaryapi.dev/
 - Datamuse API: https://www.datamuse.com/api/
 - Merriam-Webster API: https://dictionaryapi.com/
-- Oxford 3000/5000 (CEFR 레벨별 리스트): https://www.oxfordlearnersdictionaries.com/about/wordlists/oxford3000-5000
+- CEFR-J Wordlist ver 1.5 (Tono Lab, TUFS, A1–B2 — 연구·상업 무료, 출처 표시 조건): http://www.cefr-j.org/download.html
+- Octanove Vocabulary Profile C1/C2 ver 1.0 (Octanove Labs, CC BY-SA 4.0): https://github.com/openlanguageprofiles/olp-en-cefrj
 - etymology-db (어원 오픈데이터): https://github.com/droher/etymology-db
 - 국립국어원 한국어기초사전/한영 학습사전 (공공누리 1유형·CC BY-SA): https://krdict.korean.go.kr/
 - Tatoeba 코퍼스 (CC BY): https://tatoeba.org/en/downloads
