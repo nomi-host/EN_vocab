@@ -77,7 +77,26 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .badge.locked{background:var(--fill);color:var(--muted);font-size:20px;}
 .hero-char{position:relative;z-index:2;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:9px;}
 .char-face{width:104px;height:104px;border-radius:26px;background:radial-gradient(120% 120% at 50% 30%,#ffffff,#e9edf6);border:4px solid var(--surface);box-shadow:0 8px 22px rgba(20,20,30,.16);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;}
-.char-picker{display:flex;gap:8px;justify-content:center;margin-top:2px;}
+/* 달리는 씬(placeholder). 실제 캐릭터는 Lottie/Rive/스프라이트로 이 슬롯 교체 */
+.hero-char.run .char-face{animation:runbob var(--bob,.5s) ease-in-out infinite alternate;}
+@keyframes runbob{from{transform:translateY(1px) rotate(-1.5deg);}to{transform:translateY(-7px) rotate(1.5deg);}}
+.road{position:absolute;left:0;right:0;bottom:16px;height:6px;z-index:0;border-radius:3px;
+  background:repeating-linear-gradient(90deg,var(--line) 0 20px,transparent 20px 44px);
+  animation:roadmove var(--road,.6s) linear infinite;}
+@keyframes roadmove{from{background-position:0 0;}to{background-position:-44px 0;}}
+.mlines{position:absolute;z-index:1;left:calc(50% - 96px);top:46%;display:flex;flex-direction:column;gap:8px;pointer-events:none;}
+.mlines i{height:3px;border-radius:2px;background:var(--accent);animation:whoosh var(--bob,.5s) linear infinite;}
+.mlines i:nth-child(1){width:28px;}
+.mlines i:nth-child(2){width:18px;animation-delay:.16s;}
+.mlines i:nth-child(3){width:24px;animation-delay:.32s;}
+@keyframes whoosh{0%{opacity:0;transform:translateX(10px);}40%{opacity:.55;}100%{opacity:0;transform:translateX(-16px);}}
+/* 교통표지판(위젯 콘셉트 프리뷰) — 연속일에 따라 표지가 바뀜 */
+.signpost{position:absolute;z-index:3;top:14px;left:14px;display:flex;flex-direction:column;align-items:center;gap:4px;}
+.sign-speed{width:46px;height:46px;border-radius:50%;background:#fff;border:5px solid #e5484d;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:var(--ink);box-shadow:var(--shadow);font-variant-numeric:tabular-nums;}
+.sign-warn{width:46px;height:41px;background:#ffcf3f;clip-path:polygon(50% 4%,96% 92%,4% 92%);display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-weight:800;font-size:17px;color:var(--ink);box-shadow:var(--shadow);}
+.sign-lbl{font-size:10px;font-weight:700;color:var(--muted);}
+@media (prefers-reduced-motion: reduce){.hero-char.run .char-face,.road,.mlines i{animation:none!important;}}
+.char-picker{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:2px;}
 .char-opt{font-size:12px;font-weight:600;padding:8px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow);}
 .char-opt.on{background:var(--accent);color:#fff;border-color:var(--accent);}
 
@@ -257,7 +276,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.3.0";
+const APP_VERSION = "v0.4.0";
 const APP_BUILD = "2026-07-11";
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -380,12 +399,16 @@ function pickSession(n = 10) {
 }
 
 /* ---------- 홈 탭 ---------- */
-/* 기본 캐릭터(사용자 제작 아트로 교체될 슬롯) */
+/* 기본 캐릭터(사용자 제작 Lottie/Rive/스프라이트로 교체될 슬롯).
+   move = 달리기 표현(홈 첫 화면에서 계속 달려가는 모션의 콘셉트) */
 const CHARACTERS = [
-  { k: "ghost", label: "고양이 유령" },
-  { k: "mole", label: "두더지" },
-  { k: "rat", label: "쥐" },
+  { k: "ghost", label: "고양이 유령", move: "스케이트보드" },
+  { k: "mole", label: "두더지", move: "땅 파며 질주" },
+  { k: "rat", label: "쥐", move: "짐보따리 메고 달리기" },
+  { k: "alien", label: "외계인", move: "UFO 타고" },
 ];
+/* 연속 학습일 → 성장 4단계 + 달리기 속도 */
+function streakStage(days) { return days < 3 ? 1 : days < 7 ? 2 : days < 14 ? 3 : 4; }
 /* 뱃지: earned(달성일) 또는 null(미획득). mark=칩 표시, cond=미획득 시 조건 */
 const BADGES = [
   { k: "streak7", mark: "7일", title: "7일 연속 학습", earned: "2026.06.20" },
@@ -403,7 +426,10 @@ function Home({ onGoTab }) {
   });
   const [badge, setBadge] = useState(null);
   const pickChar = k => { setCharK(k); try { localStorage.setItem("en_char", k); } catch (e) {} };
-  const charLabel = (CHARACTERS.find(c => c.k === charK) || CHARACTERS[0]).label;
+  const chr = CHARACTERS.find(c => c.k === charK) || CHARACTERS[0];
+  const STREAK = 12;                       // 데모: 실제로는 학습 로그에서
+  const stage = streakStage(STREAK);       // 1~4
+  const speed = { "--bob": (0.64 - stage * 0.06) + "s", "--road": (0.8 - stage * 0.09) + "s" };
 
   const routine = [
     { n: 1, title: "단어카드 20개", sub: "신규 12 · 복습 8", state: "done", tab: "learn" },
@@ -420,7 +446,13 @@ function Home({ onGoTab }) {
   }, []);
   return (
     <div className="content">
-      <div className="stage">
+      <div className="stage" style={speed}>
+        <div className="signpost">
+          {STREAK === 0
+            ? <div className="sign-warn">!</div>
+            : <div className="sign-speed">{STREAK}</div>}
+          <div className="sign-lbl">{STREAK === 0 ? "학습 위험" : "연속 " + STREAK + "일"}</div>
+        </div>
         <div className="badge-track">
           {BADGES.map(b => (
             <button key={b.k} className={"badge " + (b.earned ? "earned" : "locked")} onClick={() => setBadge(b)}>
@@ -428,8 +460,10 @@ function Home({ onGoTab }) {
             </button>
           ))}
         </div>
-        <div className="hero-char">
-          <div className="char-face">{charLabel}<br/>(성장 3단계)</div>
+        <div className="road" />
+        <div className="mlines"><i /><i /><i /></div>
+        <div className="hero-char run">
+          <div className="char-face">{chr.label}<br/>{chr.move}<br/>{stage}단계</div>
           <div className="sign">OH... ENGLISH?</div>
         </div>
       </div>
