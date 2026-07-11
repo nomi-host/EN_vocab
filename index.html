@@ -67,6 +67,33 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .mascot{width:112px;height:112px;border-radius:26px;background:linear-gradient(160deg,#fff,#f1f2f5);border:1.5px dashed #cfd1d6;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);line-height:1.5;}
 .sign{display:inline-block;background:var(--ink);color:#fff;font-weight:800;font-size:13px;letter-spacing:.5px;padding:6px 12px;border-radius:8px;transform:rotate(-3deg);}
 
+/* 캐릭터 스테이지: 가운데 캐릭터 + 뒤로 뱃지 가로스크롤 */
+.stage{position:relative;height:210px;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.badge-track{position:absolute;left:0;right:0;top:44%;transform:translateY(-50%);display:flex;gap:14px;align-items:center;overflow-x:auto;padding:0 42%;scrollbar-width:none;z-index:1;}
+.badge-track::-webkit-scrollbar{display:none;}
+.badge{flex:none;width:62px;height:62px;border-radius:17px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;text-align:center;line-height:1.15;padding:4px;transition:transform .1s;}
+.badge:active{transform:scale(.94);}
+.badge.earned{background:var(--accent-soft);color:var(--accent-deep);border:1.5px solid var(--accent);}
+.badge.locked{background:var(--fill);color:var(--muted);font-size:20px;}
+.hero-char{position:relative;z-index:2;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:9px;}
+.char-face{width:104px;height:104px;border-radius:26px;background:radial-gradient(120% 120% at 50% 30%,#ffffff,#e9edf6);border:4px solid var(--surface);box-shadow:0 8px 22px rgba(20,20,30,.16);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;}
+.char-picker{display:flex;gap:8px;justify-content:center;margin-top:2px;}
+.char-opt{font-size:12px;font-weight:600;padding:8px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow);}
+.char-opt.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+
+/* 뱃지 팝업 */
+.dlg-backdrop{position:fixed;inset:0;background:rgba(20,20,30,.42);display:flex;align-items:center;justify-content:center;z-index:60;padding:32px;animation:fade .15s ease;}
+.dlg{background:var(--surface);border-radius:24px;padding:28px 24px 22px;text-align:center;max-width:300px;width:100%;box-shadow:0 24px 64px rgba(20,20,30,.3);animation:pop .22s cubic-bezier(.2,.9,.3,1.2);}
+@keyframes pop{from{transform:scale(.88);opacity:0}to{transform:scale(1);opacity:1}}
+.dlg-badge{width:80px;height:80px;border-radius:22px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;}
+.dlg-badge.earned{background:var(--accent-soft);color:var(--accent-deep);border:2px solid var(--accent);}
+.dlg-badge.locked{background:var(--fill);color:var(--muted);font-size:30px;}
+.dlg-title{font-size:19px;font-weight:800;letter-spacing:-0.3px;}
+.dlg-sub{font-size:14px;color:var(--accent-deep);font-weight:800;margin-top:4px;}
+.dlg-sub.locked{color:var(--muted);}
+.dlg-date{font-size:13px;color:var(--muted);margin-top:8px;font-variant-numeric:tabular-nums;}
+.dlg button{margin-top:20px;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:12px;border-radius:13px;width:100%;}
+
 /* 레벨 3칸 */
 .level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
 .stat{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;}
@@ -215,7 +242,31 @@ const LEARN_STATE = {
 };
 
 /* ---------- 홈 탭 ---------- */
+/* 기본 캐릭터(사용자 제작 아트로 교체될 슬롯) */
+const CHARACTERS = [
+  { k: "ghost", label: "고양이 유령" },
+  { k: "mole", label: "두더지" },
+  { k: "rat", label: "쥐" },
+];
+/* 뱃지: earned(달성일) 또는 null(미획득). mark=칩 표시, cond=미획득 시 조건 */
+const BADGES = [
+  { k: "streak7", mark: "7일", title: "7일 연속 학습", earned: "2026.06.20" },
+  { k: "firsttalk", mark: "회화", title: "첫 회화 완주", earned: "2026.06.22" },
+  { k: "root30", mark: "어원", title: "어원 30개 탐험", earned: "2026.07.01" },
+  { k: "w3000", mark: "3000", title: "3000단어 학습", earned: "2026.07.09" },
+  { k: "sos0", mark: "SOS", title: "SOS 없이 대화 완주", earned: null, cond: "회화에서 SOS 없이 한 세션 완주" },
+  { k: "streak30", mark: "30일", title: "30일 연속 학습", earned: null, cond: "30일 연속 학습 유지" },
+  { k: "w5000", mark: "5000", title: "5000단어 학습", earned: null, cond: "학습 단어 5000개 달성" },
+];
+
 function Home({ onGoTab }) {
+  const [charK, setCharK] = useState(() => {
+    try { return localStorage.getItem("en_char") || "ghost"; } catch (e) { return "ghost"; }
+  });
+  const [badge, setBadge] = useState(null);
+  const pickChar = k => { setCharK(k); try { localStorage.setItem("en_char", k); } catch (e) {} };
+  const charLabel = (CHARACTERS.find(c => c.k === charK) || CHARACTERS[0]).label;
+
   const routine = [
     { n: 1, title: "단어카드 20개", sub: "신규 12 · 복습 8", state: "done", tab: "learn" },
     { n: 2, title: "듣기 10문장", sub: "6 / 10 진행 중", state: "active", tab: "learn" },
@@ -231,10 +282,40 @@ function Home({ onGoTab }) {
   }, []);
   return (
     <div className="content">
-      <div className="card hero">
-        <div className="mascot">메인 캐릭터<br/>(성장 3단계)</div>
-        <div className="sign">OH... ENGLISH?</div>
+      <div className="stage">
+        <div className="badge-track">
+          {BADGES.map(b => (
+            <button key={b.k} className={"badge " + (b.earned ? "earned" : "locked")} onClick={() => setBadge(b)}>
+              {b.earned ? b.mark : "?"}
+            </button>
+          ))}
+        </div>
+        <div className="hero-char">
+          <div className="char-face">{charLabel}<br/>(성장 3단계)</div>
+          <div className="sign">OH... ENGLISH?</div>
+        </div>
       </div>
+
+      <div className="char-picker">
+        {CHARACTERS.map(c => (
+          <button key={c.k} className={"char-opt" + (c.k === charK ? " on" : "")} onClick={() => pickChar(c.k)}>{c.label}</button>
+        ))}
+      </div>
+
+      {badge && ReactDOM.createPortal(
+        <div className="dlg-backdrop" onClick={() => setBadge(null)}>
+          <div className="dlg" onClick={e => e.stopPropagation()}>
+            <div className={"dlg-badge " + (badge.earned ? "earned" : "locked")}>{badge.earned ? badge.mark : "?"}</div>
+            <div className="dlg-title">{badge.earned ? badge.title : "미획득 뱃지"}</div>
+            {badge.earned
+              ? <div className="dlg-sub">달성!</div>
+              : <div className="dlg-sub locked">아직 획득하지 못했어요</div>}
+            <div className="dlg-date">{badge.earned ? badge.earned : "조건: " + badge.cond}</div>
+            <button onClick={() => setBadge(null)}>확인</button>
+          </div>
+        </div>,
+        document.body
+      )}
 
       <div className="level-row" onClick={() => onGoTab("dict")}>
         <div className="stat"><div className="v accent">B1</div><div className="l">CEFR 레벨</div></div>
