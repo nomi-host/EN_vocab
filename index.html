@@ -12,6 +12,7 @@
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <script src="words.js"></script>
+<script src="img/rat_run.js"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -192,12 +193,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .sheet{width:100%;max-width:520px;background:var(--surface);border-radius:24px 24px 0 0;box-shadow:var(--shadow-sheet);max-height:88vh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 @keyframes slideup{from{transform:translateY(100%)}to{transform:translateY(0)}}
-.sheet-grab{width:38px;height:4px;background:#d9dade;border-radius:2px;margin:10px auto 2px;}
-.sheet-head{display:flex;align-items:center;gap:10px;padding:6px 18px 10px;}
+.sheet-grab{width:38px;height:4px;background:#d9dade;border-radius:2px;margin:10px auto 2px;flex:none;}
+.sheet-head{display:flex;align-items:center;gap:10px;padding:6px 18px 10px;flex:none;}
 .sheet-head .back{font-size:20px;color:var(--muted);padding:2px 6px;margin-left:-6px;}
 .sheet-head .sp{flex:1;}
 .sheet-head .fav{font-size:13px;font-weight:600;color:var(--muted);}
-.sheet-body{overflow-y:auto;padding:0 18px 28px;display:flex;flex-direction:column;gap:16px;}
+/* flex:1+min-height:0 필수 — 없으면 내용이 길어질 때(다의어 등) 이 영역이 축소되지 않고
+   시트 전체가 화면 밖으로 밀려 상단 헤더(닫기 버튼)까지 넘어간다(flex item min-height:auto 버그). */
+.sheet-body{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:0 18px 28px;display:flex;flex-direction:column;gap:16px;flex:1;min-height:0;}
 .wd-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
 .wd-word{font-size:28px;font-weight:800;letter-spacing:-0.5px;}
 .wd-ipa{font-size:14px;color:var(--muted);}
@@ -228,6 +231,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .s-en{font-size:13px;color:var(--ink-2);font-style:italic;line-height:1.5;margin-top:9px;}
 .sense .wd-ex{margin-top:9px;background:var(--fill);}
 .s-add{display:block;width:100%;margin-top:10px;text-align:center;background:var(--accent-soft);color:var(--accent-deep);font-weight:700;font-size:13px;padding:9px;border-radius:11px;}
+.s-more{display:block;width:100%;margin-top:6px;text-align:center;background:var(--fill);color:var(--ink-2);font-weight:700;font-size:13px;padding:11px;border-radius:13px;}
 
 .ext{display:flex;flex-wrap:wrap;gap:7px;}
 .ext a{font-size:12px;font-weight:600;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:6px 12px;text-decoration:none;}
@@ -269,6 +273,21 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 학습 탭 허브 */
 .learnmenu .step.soon{opacity:.5;}
+
+/* 설정 화면 (캐릭터 변경 등) — WordSheet와 동일한 바텀시트 패턴 재사용 */
+.charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;}
+.charrow .cf{width:52px;height:52px;border-radius:14px;background:var(--fill);display:flex;align-items:center;justify-content:center;flex:none;overflow:hidden;font-size:9px;color:var(--muted);text-align:center;line-height:1.2;}
+.charrow .body{flex:1;min-width:0;}
+.charrow .name{font-size:14px;font-weight:700;}
+.charrow .move{font-size:11px;color:var(--muted);margin-top:1px;}
+.charrow .cta{flex:none;font-size:12px;font-weight:700;padding:9px 12px;border-radius:11px;text-align:center;white-space:nowrap;}
+.charrow .cta.use{background:var(--accent-soft);color:var(--accent-deep);}
+.charrow .cta.free{background:var(--accent);color:#fff;}
+.charrow .cta.buy{background:var(--ink);color:#fff;}
+.charrow .cta.locked{background:var(--fill);color:var(--muted);}
+.ptbox{display:flex;align-items:center;justify-content:space-between;background:var(--accent-soft);border-radius:16px;padding:14px 16px;}
+.ptbox .v{font-size:20px;font-weight:800;color:var(--accent-deep);font-variant-numeric:tabular-nums;}
+.ptbox .l{font-size:12px;color:var(--ink-2);}
 </style>
 </head>
 <body>
@@ -276,7 +295,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.4.0";
+const APP_VERSION = "v0.5.0";
 const APP_BUILD = "2026-07-11";
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -350,8 +369,25 @@ const SRS = (() => {
       s.box = ok ? Math.min(MAX_BOX, s.box + 1) : 1;
       s.seen = true;
       s.due = Date.now() + BOX_INTERVALS[s.box] * DAY;
-      store[k] = s; save(); return s;
+      store[k] = s; save();
+      if (ok) POINTS.add(10); // 꾸준한 학습으로만 쌓이는 포인트 — 캐릭터 변경 잠금 해제에 사용
+      return s;
     },
+  };
+})();
+
+/* ===================== 포인트 엔진 =====================
+   캐릭터는 처음 1회는 무료로 선택하고, 이후 변경하려면 학습으로 쌓은 포인트가 필요(소모형).
+   포인트는 카드 정답 시에만 적립 — "일정 학습량 유지"를 계량하는 유일한 지표. */
+const CHAR_CHANGE_COST = 300;
+const POINTS = (() => {
+  let n = 0;
+  try { n = parseInt(localStorage.getItem("en_points") || "0", 10) || 0; } catch (e) {}
+  const save = () => { try { localStorage.setItem("en_points", String(n)); } catch (e) {} };
+  return {
+    get: () => n,
+    add(v) { n += v; save(); },
+    spend(v) { if (n < v) return false; n -= v; save(); return true; },
   };
 })();
 
@@ -420,13 +456,22 @@ const BADGES = [
   { k: "w5000", mark: "5000", title: "5000단어 학습", earned: null, cond: "학습 단어 5000개 달성" },
 ];
 
-function Home({ onGoTab }) {
-  const [charK, setCharK] = useState(() => {
-    try { return localStorage.getItem("en_char") || "ghost"; } catch (e) { return "ghost"; }
-  });
+/* 프레임 배열(svgo 최적화된 자체 생성 SVG, 외부 입력 아님) 순환 재생 — 실제 캐릭터 아트 슬롯 */
+function SpriteChar({ frames, size = 100, fps = 8 }) {
+  const [i, setI] = useState(0);
+  useEffect(() => {
+    if (!frames || frames.length < 2) return;
+    const id = setInterval(() => setI(v => (v + 1) % frames.length), 1000 / fps);
+    return () => clearInterval(id);
+  }, [frames, fps]);
+  if (!frames || !frames.length) return null;
+  const f = frames[i % frames.length];
+  return <svg width={size} height={size} viewBox={f.vb} style={{ display: "block" }} dangerouslySetInnerHTML={{ __html: f.inner }} />;
+}
+
+function Home({ onGoTab, charK, onOpenSettings }) {
   const [badge, setBadge] = useState(null);
-  const pickChar = k => { setCharK(k); try { localStorage.setItem("en_char", k); } catch (e) {} };
-  const chr = CHARACTERS.find(c => c.k === charK) || CHARACTERS[0];
+  const chr = CHARACTERS.find(c => c.k === charK) || null;
   const STREAK = 12;                       // 데모: 실제로는 학습 로그에서
   const stage = streakStage(STREAK);       // 1~4
   const speed = { "--bob": (0.64 - stage * 0.06) + "s", "--road": (0.8 - stage * 0.09) + "s" };
@@ -446,33 +491,39 @@ function Home({ onGoTab }) {
   }, []);
   return (
     <div className="content">
-      <div className="stage" style={speed}>
-        <div className="signpost">
-          {STREAK === 0
-            ? <div className="sign-warn">!</div>
-            : <div className="sign-speed">{STREAK}</div>}
-          <div className="sign-lbl">{STREAK === 0 ? "학습 위험" : "연속 " + STREAK + "일"}</div>
+      {!chr ? (
+        <div className="card" style={{ textAlign: "center", padding: "26px 20px" }}>
+          <div className="step-title" style={{ marginBottom: 4 }}>캐릭터를 선택해 주세요</div>
+          <div className="step-sub" style={{ marginBottom: 14 }}>처음 한 번은 무료로 고를 수 있어요</div>
+          <button className="btn" style={{ background: "var(--accent)", color: "#fff", fontWeight: 700, padding: "12px 20px", borderRadius: 13 }} onClick={onOpenSettings}>캐릭터 고르러 가기</button>
         </div>
-        <div className="badge-track">
-          {BADGES.map(b => (
-            <button key={b.k} className={"badge " + (b.earned ? "earned" : "locked")} onClick={() => setBadge(b)}>
-              {b.earned ? b.mark : "?"}
-            </button>
-          ))}
+      ) : (
+        <div className="stage" style={speed}>
+          <div className="signpost">
+            {STREAK === 0
+              ? <div className="sign-warn">!</div>
+              : <div className="sign-speed">{STREAK}</div>}
+            <div className="sign-lbl">{STREAK === 0 ? "학습 위험" : "연속 " + STREAK + "일"}</div>
+          </div>
+          <div className="badge-track">
+            {BADGES.map(b => (
+              <button key={b.k} className={"badge " + (b.earned ? "earned" : "locked")} onClick={() => setBadge(b)}>
+                {b.earned ? b.mark : "?"}
+              </button>
+            ))}
+          </div>
+          <div className="road" />
+          <div className="mlines"><i /><i /><i /></div>
+          <div className="hero-char run">
+            <div className="char-face">
+              {chr.k === "rat" && window.CHAR_RAT_RUN
+                ? <SpriteChar frames={window.CHAR_RAT_RUN} size={100} fps={5 + stage * 2} />
+                : <React.Fragment>{chr.label}<br/>{chr.move}<br/>{stage}단계</React.Fragment>}
+            </div>
+            <div className="sign">OH... ENGLISH?</div>
+          </div>
         </div>
-        <div className="road" />
-        <div className="mlines"><i /><i /><i /></div>
-        <div className="hero-char run">
-          <div className="char-face">{chr.label}<br/>{chr.move}<br/>{stage}단계</div>
-          <div className="sign">OH... ENGLISH?</div>
-        </div>
-      </div>
-
-      <div className="char-picker">
-        {CHARACTERS.map(c => (
-          <button key={c.k} className={"char-opt" + (c.k === charK ? " on" : "")} onClick={() => pickChar(c.k)}>{c.label}</button>
-        ))}
-      </div>
+      )}
 
       {badge && ReactDOM.createPortal(
         <div className="dlg-backdrop" onClick={() => setBadge(null)}>
@@ -520,11 +571,15 @@ function Home({ onGoTab }) {
 }
 
 /* ---------- 단어 상세 바텀시트 (팝업 → 타고타고 모달 스택) ---------- */
+/* 다의어 상한선: 실사전은 뜻이 수십 개인 단어(run, set 등)가 있어 기본 노출을 제한 */
+const SENSE_CAP = 6;
+
 function WordSheet({ stack, onPush, onPop, onClose }) {
   const word = stack[stack.length - 1];
   const w = wordOf(word);
   const [senseOpen, setSenseOpen] = useState(0); // 다의어: 첫 의미 펼침
-  useEffect(() => { setSenseOpen(0); }, [word]);
+  const [showAllSenses, setShowAllSenses] = useState(false);
+  useEffect(() => { setSenseOpen(0); setShowAllSenses(false); }, [word]);
   const speak = useCallback((text) => {
     try {
       const u = new SpeechSynthesisUtterance(text);
@@ -571,10 +626,12 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
           </div>
 
           {w.senses && w.senses.length ? (
-            /* 다의어: 의미별 카드 — 뜻마다 별도 예문·별도 학습 단위 */
+            /* 다의어: 의미별 카드 — 뜻마다 별도 예문·별도 학습 단위.
+               뜻이 많은 단어(예: run·set 수십 개 의미)에서 목록이 무한정 길어지지 않도록
+               기본 SENSE_CAP개만 보여주고 나머지는 '더보기'로 펼친다. */
             <div>
               <div className="wd-sec-t">의미별로 학습해요 (탭해서 펼치기)</div>
-              {w.senses.map((s, i) => (
+              {(showAllSenses ? w.senses : w.senses.slice(0, SENSE_CAP)).map((s, i) => (
                 <div key={i} className={"sense" + (senseOpen === i ? " open" : "")}
                      onClick={() => setSenseOpen(senseOpen === i ? -1 : i)}>
                   <div className="s-head">
@@ -601,6 +658,11 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
                   )}
                 </div>
               ))}
+              {!showAllSenses && w.senses.length > SENSE_CAP && (
+                <button className="s-more" onClick={() => setShowAllSenses(true)}>
+                  + {w.senses.length - SENSE_CAP}개 뜻 더보기
+                </button>
+              )}
             </div>
           ) : (
             <div className="wd-ex-wrap">
@@ -986,6 +1048,75 @@ function Learn({ onOpenWord }) {
   );
 }
 
+/* ---------- 설정 (캐릭터 변경 등) ---------- */
+function Settings({ charK, onChangeChar, onClose }) {
+  const [pts, setPts] = useState(POINTS.get());
+  const first = charK === null;
+
+  const handlePick = k => {
+    if (k === charK) return;
+    if (first) { onChangeChar(k); return; } // 처음 1회는 무료
+    if (POINTS.spend(CHAR_CHANGE_COST)) { setPts(POINTS.get()); onChangeChar(k); }
+  };
+
+  return ReactDOM.createPortal(
+    <div className="sheet-backdrop" onClick={onClose}>
+      <div className="sheet" onClick={e => e.stopPropagation()}>
+        <div className="sheet-grab" />
+        <div className="sheet-head">
+          <b style={{ fontSize: 16, fontWeight: 800 }}>설정</b>
+          <span className="sp" />
+          <button className="back" onClick={onClose} aria-label="닫기"><Icon name="close" size={20} /></button>
+        </div>
+        <div className="sheet-body">
+          <div className="ptbox">
+            <div>
+              <div className="l">보유 포인트</div>
+              <div className="v">{pts}P</div>
+            </div>
+            <div className="l" style={{ textAlign: "right", maxWidth: 160 }}>단어카드 정답마다 10P 적립 · 캐릭터 변경에 {CHAR_CHANGE_COST}P 필요</div>
+          </div>
+
+          <div>
+            <div className="wd-sec-t">캐릭터 {first ? "선택 (첫 선택 무료)" : "변경"}</div>
+            <div className="wlist">
+              {CHARACTERS.map(c => {
+                const isCur = c.k === charK;
+                const affordable = pts >= CHAR_CHANGE_COST;
+                return (
+                  <div key={c.k} className="charrow">
+                    <div className="cf">
+                      {c.k === "rat" && window.CHAR_RAT_RUN
+                        ? <SpriteChar frames={window.CHAR_RAT_RUN} size={44} fps={6} />
+                        : c.label}
+                    </div>
+                    <div className="body">
+                      <div className="name">{c.label}</div>
+                      <div className="move">{c.move}</div>
+                    </div>
+                    {isCur ? (
+                      <div className="cta use">사용 중</div>
+                    ) : first ? (
+                      <button className="cta free" onClick={() => handlePick(c.k)}>선택하기</button>
+                    ) : affordable ? (
+                      <button className="cta buy" onClick={() => handlePick(c.k)}>{CHAR_CHANGE_COST}P 변경</button>
+                    ) : (
+                      <div className="cta locked">{pts}/{CHAR_CHANGE_COST}P</div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="empty-note" style={{ textAlign: "center", marginTop: 4 }}>{APP_VERSION} · {APP_BUILD}</div>
+        </div>
+      </div>
+    </div>,
+    document.body
+  );
+}
+
 /* ---------- 앱 셸 ---------- */
 const TABS = [
   { k: "learn", label: "학습", icon: "school" },
@@ -998,6 +1129,11 @@ const TABS = [
 function App() {
   const [tab, setTab] = useState("home");
   const [stack, setStack] = useState(null); // 단어 상세 시트 스택
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [charK, setCharKState] = useState(() => {
+    try { return localStorage.getItem("en_char"); } catch (e) { return null; }
+  });
+  const changeChar = k => { setCharKState(k); try { localStorage.setItem("en_char", k); } catch (e) {} };
 
   const openWord = w => setStack([w]);
   const pushWord = w => setStack(s => [...s, w]);
@@ -1017,17 +1153,19 @@ function App() {
         <div className="brand">No<b>English</b></div>
         <div className="topbar-right">
           <span className="pill"><span className="dot" />연속 12일</span>
-          <button className="avatar-btn" aria-label="설정"><Icon name="settings" size={19} /></button>
+          <button className="avatar-btn" aria-label="설정" onClick={() => setSettingsOpen(true)}><Icon name="settings" size={19} /></button>
         </div>
       </div>
 
       <div className="scroll">
-        {tab === "home" && <Home onGoTab={setTab} />}
+        {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} />}
         {tab === "dict" && <Dict onOpen={openWord} />}
         {tab === "learn" && <Learn onOpenWord={openWord} />}
         {tab === "talk" && <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />}
         {tab === "box" && <Soon title="보관함은 준비 중입니다" desc="즐겨찾기 단어·문장 · 뱃지 조끼 · 성장 기록" />}
       </div>
+
+      {settingsOpen && <Settings charK={charK} onChangeChar={changeChar} onClose={() => setSettingsOpen(false)} />}
 
       <div className="tabbar">
         {TABS.map(t => (
