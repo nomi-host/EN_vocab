@@ -1,6 +1,6 @@
 /* ============================================================================
    EN Vocab — 시드 데이터 (pipeline/merge_cefrj.js 자동 생성)
-   생성: 2026-07-11 · 표제어 6332개 (CEFR-J 전체 후보 7453개 중 작성 완료분)
+   생성: 2026-07-11 · 표제어 6449개 (CEFR-J 전체 후보 7453개 중 작성 완료분)
    ----------------------------------------------------------------------------
    표제어/CEFR/품사 = CEFR-J Wordlist(Tono Lab, TUFS — 연구·상업 무료, 출처 표시 조건)
    영영 정의(en)/유의어(syn) = WordNet 3.0(Princeton, 오프라인 추출)
@@ -89450,6 +89450,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "miniature",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "축소된, 소형의",
+  "en": "being on a very small scale",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She collects miniature dolls.",
+    "ko": "그녀는 소형 인형을 수집해요."
+   }
+  ]
+ },
+ {
   "word": "minimize",
   "ipa": "",
   "pos": [
@@ -89495,6 +89515,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "minister",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "장관, 성직자",
+  "en": "a person authorized to conduct religious worship",
+  "syn": [
+   "curate",
+   "minister_of_religion",
+   "parson",
+   "pastor"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The minister of education announced new policies.",
+    "ko": "교육부 장관이 새 정책을 발표했어요."
+   }
+  ]
+ },
+ {
   "word": "minor",
   "ipa": "",
   "pos": [
@@ -89531,6 +89576,31 @@ window.SEED = [
    {
     "en": "Only a minority voted against the plan.",
     "ko": "소수만이 그 계획에 반대표를 던졌어요."
+   }
+  ]
+ },
+ {
+  "word": "mint",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "박하, 조폐국",
+  "en": "(often followed by `of') a large number or amount or extent",
+  "syn": [
+   "batch",
+   "deal",
+   "flock",
+   "good_deal"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She chews mint gum.",
+    "ko": "그녀는 박하 껌을 씹어요."
    }
   ]
  },
@@ -89642,6 +89712,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "misconception",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "오해, 잘못된 인식",
+  "en": "an incorrect conception",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That's a common misconception.",
+    "ko": "그것은 흔한 오해예요."
+   }
+  ]
+ },
+ {
   "word": "miserable",
   "ipa": "",
   "pos": [
@@ -89688,6 +89778,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "misfortune",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "불운, 재난",
+  "en": "unnecessary and unforeseen trouble resulting from an unfortunate event",
+  "syn": [
+   "bad_luck"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She faced great misfortune this year.",
+    "ko": "그녀는 올해 큰 불운을 겪었어요."
+   }
+  ]
+ },
+ {
   "word": "mislead",
   "ipa": "",
   "pos": [
@@ -89708,6 +89820,28 @@ window.SEED = [
    {
     "en": "The advertisement misled customers.",
     "ko": "그 광고는 고객들을 오도했어요."
+   }
+  ]
+ },
+ {
+  "word": "misleading",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "오해의 소지가 있는",
+  "en": "designed to deceive or mislead either deliberately or inadvertently",
+  "syn": [
+   "deceptive"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The advertisement was misleading.",
+    "ko": "그 광고는 오해의 소지가 있었어요."
    }
   ]
  },
@@ -89759,6 +89893,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "missile",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "미사일",
+  "en": "a rocket carrying a warhead of conventional or nuclear explosives",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The country tested a new missile.",
+    "ko": "그 나라는 새 미사일을 시험했어요."
+   }
+  ]
+ },
+ {
   "word": "missing",
   "ipa": "",
   "pos": [
@@ -89803,6 +89957,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "mist",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "안개",
+  "en": "a thin fog with condensation near the ground",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The mountain was covered in mist.",
+    "ko": "그 산은 안개로 덮여 있었어요."
+   }
+  ]
+ },
+ {
   "word": "mistake",
   "ipa": "",
   "pos": [
@@ -89822,6 +89996,56 @@ window.SEED = [
    {
     "en": "I made a mistake in the report.",
     "ko": "저는 보고서에서 실수를 했어요."
+   }
+  ]
+ },
+ {
+  "word": "mistreat",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "학대하다, 함부로 대하다",
+  "en": "treat badly",
+  "syn": [
+   "maltreat",
+   "abuse",
+   "ill-use",
+   "step"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He was fired for mistreating employees.",
+    "ko": "그는 직원들을 함부로 대해서 해고되었어요."
+   }
+  ]
+ },
+ {
+  "word": "mistrustful",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "불신하는",
+  "en": "openly distrustful and unwilling to confide",
+  "syn": [
+   "leery",
+   "suspicious",
+   "untrusting",
+   "wary"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is mistrustful of strangers.",
+    "ko": "그녀는 낯선 사람들을 불신해요."
    }
   ]
  },
@@ -89846,6 +90070,31 @@ window.SEED = [
    {
     "en": "It was a misty morning.",
     "ko": "안개 낀 아침이었어요."
+   }
+  ]
+ },
+ {
+  "word": "misunderstand",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "오해하다",
+  "en": "interpret in the wrong way",
+  "syn": [
+   "misconstrue",
+   "misinterpret",
+   "misconceive",
+   "misapprehend"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Don't misunderstand my intentions.",
+    "ko": "제 의도를 오해하지 마세요."
    }
   ]
  },
@@ -89879,7 +90128,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "A2",
-  "ko": "섞다",
+  "ko": "혼합물, 배합",
   "en": "mix together different elements",
   "syn": [
    "blend",
@@ -89892,8 +90141,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Mix the flour and sugar together.",
-    "ko": "밀가루와 설탕을 함께 섞으세요."
+    "en": "I bought a cake mix.",
+    "ko": "저는 케이크 믹스를 샀어요."
    }
   ]
  },
@@ -89904,7 +90153,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B2",
-  "ko": "섞다",
+  "ko": "혼합물, 배합",
   "en": "a commercially prepared mixture of dry ingredients",
   "syn": [
    "premix"
@@ -89914,8 +90163,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Mix the flour and sugar together.",
-    "ko": "밀가루와 설탕을 함께 섞으세요."
+    "en": "I bought a cake mix.",
+    "ko": "저는 케이크 믹스를 샀어요."
    }
   ]
  },
@@ -89938,6 +90187,26 @@ window.SEED = [
    {
     "en": "Put the flour in a mixing bowl.",
     "ko": "밀가루를 믹싱볼에 넣으세요."
+   }
+  ]
+ },
+ {
+  "word": "mixture",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "혼합물",
+  "en": "(chemistry) a substance consisting of two or more substances mixed together (not in fixed proportions and not with chemical bonding)",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a mixture of oil and water.",
+    "ko": "이것은 기름과 물의 혼합물이에요."
    }
   ]
  },
@@ -90010,6 +90279,46 @@ window.SEED = [
    {
     "en": "He lost his mobile phone yesterday.",
     "ko": "그는 어제 휴대폰을 잃어버렸다."
+   }
+  ]
+ },
+ {
+  "word": "mobility",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "이동성, 유동성",
+  "en": "the quality of moving freely",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The wheelchair improved her mobility.",
+    "ko": "그 휠체어는 그녀의 이동성을 개선했어요."
+   }
+  ]
+ },
+ {
+  "word": "mock",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "모의의, 가짜의",
+  "en": "constituting a copy or imitation of something",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They held a mock exam before the real one.",
+    "ko": "그들은 진짜 시험 전에 모의고사를 실시했어요."
    }
   ]
  },
@@ -90146,6 +90455,94 @@ window.SEED = [
   ]
  },
  {
+  "word": "modernization",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "현대화",
+  "en": "making modern in appearance or behavior",
+  "syn": [
+   "modernisation"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The city underwent rapid modernization.",
+    "ko": "그 도시는 빠른 현대화를 겪었어요."
+   }
+  ]
+ },
+ {
+  "word": "modernize",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "현대화하다",
+  "en": "make repairs, renovations, revisions or adjustments to",
+  "syn": [
+   "overhaul",
+   "modernise"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They modernized the old factory.",
+    "ko": "그들은 오래된 공장을 현대화했어요."
+   }
+  ]
+ },
+ {
+  "word": "modest",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "겸손한, 적당한",
+  "en": "marked by simplicity",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She lives in a modest house.",
+    "ko": "그녀는 소박한 집에 살아요."
+   }
+  ]
+ },
+ {
+  "word": "modification",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "수정, 변경",
+  "en": "the act of making something different (as e.g. the size of a garment)",
+  "syn": [
+   "alteration",
+   "adjustment"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The plan needs some modification.",
+    "ko": "그 계획은 약간의 수정이 필요해요."
+   }
+  ]
+ },
+ {
   "word": "modify",
   "ipa": "",
   "pos": [
@@ -90162,6 +90559,26 @@ window.SEED = [
    {
     "en": "We need to modify the plan slightly.",
     "ko": "우리는 계획을 약간 수정해야 해요."
+   }
+  ]
+ },
+ {
+  "word": "mogul",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "거물, 유력자",
+  "en": "a bump on a ski slope",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He is a media mogul.",
+    "ko": "그는 미디어 거물이에요."
    }
   ]
  },
@@ -90184,6 +90601,30 @@ window.SEED = [
    {
     "en": "This cream keeps your skin's moisture.",
     "ko": "이 크림은 피부의 수분을 유지해줘요."
+   }
+  ]
+ },
+ {
+  "word": "mold",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "곰팡이, 틀",
+  "en": "the distinctive form in which a thing is made",
+  "syn": [
+   "cast",
+   "mould",
+   "stamp"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There is mold on the bread.",
+    "ko": "빵에 곰팡이가 있어요."
    }
   ]
  },
@@ -90257,6 +90698,52 @@ window.SEED = [
   ]
  },
  {
+  "word": "momentarily",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "잠깐, 곧",
+  "en": "for an instant or moment",
+  "syn": [
+   "momently"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She paused momentarily before answering.",
+    "ko": "그녀는 대답하기 전에 잠깐 멈췄어요."
+   }
+  ]
+ },
+ {
+  "word": "momentary",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "순간적인",
+  "en": "lasting for a markedly brief time",
+  "syn": [
+   "fleeting",
+   "fugitive",
+   "momentaneous"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was a momentary silence.",
+    "ko": "순간적인 침묵이 있었어요."
+   }
+  ]
+ },
+ {
   "word": "mommy",
   "ipa": "",
   "pos": [
@@ -90278,6 +90765,26 @@ window.SEED = [
    {
     "en": "She called out, \"Mommy!\"",
     "ko": "그녀는 \"엄마!\" 하고 불렀다."
+   }
+  ]
+ },
+ {
+  "word": "monastery",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "수도원",
+  "en": "the residence of a religious community",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The monks live in a mountain monastery.",
+    "ko": "수도승들은 산속 수도원에서 살아요."
    }
   ]
  },
@@ -90498,6 +91005,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "moody",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "변덕스러운, 침울한",
+  "en": "showing a brooding ill humor",
+  "syn": [
+   "dark",
+   "dour",
+   "glowering",
+   "glum"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He has been moody lately.",
+    "ko": "그는 최근 침울했어요."
+   }
+  ]
+ },
+ {
   "word": "moon",
   "ipa": "",
   "pos": [
@@ -90518,13 +91050,56 @@ window.SEED = [
   ]
  },
  {
+  "word": "moonlight",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "달빛",
+  "en": "the light of the Moon",
+  "syn": [
+   "moonshine",
+   "Moon"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They walked along the beach in the moonlight.",
+    "ko": "그들은 달빛 아래 해변을 걸었어요."
+   }
+  ]
+ },
+ {
+  "word": "moonscape",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "달 표면 풍경",
+  "en": "a landscape resembling the surface of the moon",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The desert looked like a moonscape.",
+    "ko": "그 사막은 달 표면 풍경처럼 보였어요."
+   }
+  ]
+ },
+ {
   "word": "moral",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "교훈, 도덕적인",
+  "ko": "도덕적인",
   "en": "the significance of a story or event",
   "syn": [
    "lesson"
@@ -90534,8 +91109,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The moral of the story is to be honest.",
-    "ko": "그 이야기의 교훈은 정직하라는 거예요."
+    "en": "She has strong moral values.",
+    "ko": "그녀는 강한 도덕적 가치관을 가지고 있어요."
    }
   ]
  },
@@ -90546,7 +91121,7 @@ window.SEED = [
    "adj"
   ],
   "cefr": "B2",
-  "ko": "교훈, 도덕적인",
+  "ko": "도덕적인",
   "en": "concerned with principles of right and wrong or conforming to standards of behavior and character based on those principles",
   "syn": [],
   "ant": [],
@@ -90554,8 +91129,48 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "The moral of the story is to be honest.",
-    "ko": "그 이야기의 교훈은 정직하라는 거예요."
+    "en": "She has strong moral values.",
+    "ko": "그녀는 강한 도덕적 가치관을 가지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "morality",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "도덕성",
+  "en": "concern with the distinction between good and evil or right and wrong",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They discussed the morality of the decision.",
+    "ko": "그들은 그 결정의 도덕성에 대해 논의했어요."
+   }
+  ]
+ },
+ {
+  "word": "morally",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "도덕적으로",
+  "en": "with respect to moral principles",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He felt morally obligated to help.",
+    "ko": "그는 도덕적으로 도와야 한다는 의무감을 느꼈어요."
    }
   ]
  },
@@ -90646,6 +91261,89 @@ window.SEED = [
    {
     "en": "I spent the morning running errands.",
     "ko": "나는 아침에 심부름을 하며 보냈다."
+   }
+  ]
+ },
+ {
+  "word": "mortal",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "죽을 운명의, 인간의",
+  "en": "subject to death",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "All humans are mortal.",
+    "ko": "모든 인간은 죽을 운명이에요."
+   }
+  ]
+ },
+ {
+  "word": "mortar",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "박격포, 회반죽",
+  "en": "a muzzle-loading high-angle gun with a short barrel that fires shells at high elevations for a short range",
+  "syn": [
+   "howitzer",
+   "trench_mortar"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The bricks were held together with mortar.",
+    "ko": "벽돌들은 회반죽으로 고정되었어요."
+   }
+  ]
+ },
+ {
+  "word": "mortgage",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "주택담보대출",
+  "en": "a conditional conveyance of property as security for the repayment of a loan",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They pay a monthly mortgage.",
+    "ko": "그들은 매달 주택담보대출금을 갚아요."
+   }
+  ]
+ },
+ {
+  "word": "mortify",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "굴욕감을 주다, 몹시 당황하게 하다",
+  "en": "practice self-denial of one's body and appetites",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She was mortified by the mistake.",
+    "ko": "그녀는 그 실수에 몹시 당황했어요."
    }
   ]
  },
@@ -90797,6 +91495,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "mother-in-law",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "장모, 시어머니",
+  "en": "the mother of your spouse",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "My mother-in-law visits us often.",
+    "ko": "제 시어머니는 우리를 자주 방문하세요."
+   }
+  ]
+ },
+ {
   "word": "motherland",
   "ipa": "",
   "pos": [
@@ -90818,6 +91536,28 @@ window.SEED = [
    {
     "en": "He returned to his motherland after many years.",
     "ko": "그는 여러 해 만에 조국으로 돌아갔어요."
+   }
+  ]
+ },
+ {
+  "word": "motion",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "동작, 움직임",
+  "en": "the use of movements (especially of the hands) to communicate familiar or prearranged signals",
+  "syn": [
+   "gesture"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She made a motion with her hand.",
+    "ko": "그녀는 손으로 동작을 취했어요."
    }
   ]
  },
@@ -90867,6 +91607,26 @@ window.SEED = [
    {
     "en": "Her success motivated me to try harder.",
     "ko": "그녀의 성공은 저에게 더 열심히 하도록 동기를 부여했어요."
+   }
+  ]
+ },
+ {
+  "word": "motivated",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "동기부여된, 의욕적인",
+  "en": "provided with a motive or given incentive for action",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a highly motivated student.",
+    "ko": "그녀는 아주 의욕적인 학생이에요."
    }
   ]
  },
@@ -90937,6 +91697,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "motorbike",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "모터바이크, 오토바이",
+  "en": "small motorcycle with a low frame and small wheels and elevated handlebars",
+  "syn": [
+   "minibike"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He rides a motorbike to work.",
+    "ko": "그는 오토바이를 타고 출근해요."
+   }
+  ]
+ },
+ {
   "word": "motorcycle",
   "ipa": "",
   "pos": [
@@ -90955,6 +91737,28 @@ window.SEED = [
    {
     "en": "He rides a motorcycle to work.",
     "ko": "그는 오토바이를 타고 출근해요."
+   }
+  ]
+ },
+ {
+  "word": "motorist",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "운전자",
+  "en": "someone who drives (or travels in) an automobile",
+  "syn": [
+   "automobilist"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Motorists should slow down in this area.",
+    "ko": "운전자들은 이 지역에서 속도를 줄여야 해요."
    }
   ]
  },
@@ -91014,7 +91818,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "오르다, 산",
+  "ko": "설치하다, 장착하다",
   "en": "a lightweight horse kept for riding only",
   "syn": [
    "saddle_horse",
@@ -91025,8 +91829,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "They mounted the horse and rode away.",
-    "ko": "그들은 말에 올라타고 떠났어요."
+    "en": "She mounted the TV on the wall.",
+    "ko": "그녀는 TV를 벽에 장착했어요."
    }
   ]
  },
@@ -91037,7 +91841,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B2",
-  "ko": "오르다, 산",
+  "ko": "설치하다, 장착하다",
   "en": "attach to a support",
   "syn": [],
   "ant": [],
@@ -91045,8 +91849,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "They mounted the horse and rode away.",
-    "ko": "그들은 말에 올라타고 떠났어요."
+    "en": "She mounted the TV on the wall.",
+    "ko": "그녀는 TV를 벽에 장착했어요."
    }
   ]
  },
@@ -91109,6 +91913,28 @@ window.SEED = [
    {
     "en": "The whole town mourned his death.",
     "ko": "온 마을이 그의 죽음을 애도했어요."
+   }
+  ]
+ },
+ {
+  "word": "mournful",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "슬픈, 애도하는",
+  "en": "expressing sorrow",
+  "syn": [
+   "plaintive"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She sang a mournful song.",
+    "ko": "그녀는 슬픈 노래를 불렀어요."
    }
   ]
  },
@@ -91225,6 +92051,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "mover",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "이삿짐 운반원",
+  "en": "workman employed by a moving company",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The movers arrived early in the morning.",
+    "ko": "이삿짐 운반원들이 아침 일찍 도착했어요."
+   }
+  ]
+ },
+ {
   "word": "movie",
   "ipa": "",
   "pos": [
@@ -91246,6 +92092,26 @@ window.SEED = [
    {
     "en": "They went to a movie every Saturday night.",
     "ko": "그들은 매주 토요일 밤에 영화를 보러 갔다."
+   }
+  ]
+ },
+ {
+  "word": "moving",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "감동적인, 움직이는",
+  "en": "in motion",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "It was a moving speech.",
+    "ko": "그것은 감동적인 연설이었어요."
    }
   ]
  },
@@ -91292,6 +92158,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "muddy",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "진흙투성이의",
+  "en": "(of soil) soft and watery",
+  "syn": [
+   "boggy",
+   "marshy",
+   "miry",
+   "mucky"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The road was muddy after the rain.",
+    "ko": "그 길은 비 온 후 진흙투성이였어요."
+   }
+  ]
+ },
+ {
   "word": "mug",
   "ipa": "",
   "pos": [
@@ -91334,6 +92225,46 @@ window.SEED = [
   ]
  },
  {
+  "word": "multiple",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "다수의, 복합의",
+  "en": "having or involving or consisting of more than one part or entity or individual",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She has multiple degrees.",
+    "ko": "그녀는 여러 개의 학위를 가지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "multiply",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "곱하다, 증가시키다",
+  "en": "combine by multiplication",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Multiply five by three.",
+    "ko": "5에 3을 곱하세요."
+   }
+  ]
+ },
+ {
   "word": "mum",
   "ipa": "",
   "pos": [
@@ -91355,6 +92286,27 @@ window.SEED = [
    {
     "en": "She lives with her mum.",
     "ko": "그녀는 엄마와 함께 산다."
+   }
+  ]
+ },
+ {
+  "word": "mumble",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "중얼거리다",
+  "en": "a soft indistinct utterance",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He mumbled an apology.",
+    "ko": "그는 사과의 말을 중얼거렸어요."
    }
   ]
  },
@@ -91430,6 +92382,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "murmur",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "중얼거림, 웅성거림",
+  "en": "a low continuous indistinct sound",
+  "syn": [
+   "mutter",
+   "muttering",
+   "murmuring",
+   "murmuration"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I heard a murmur in the crowd.",
+    "ko": "저는 군중 속에서 웅성거림을 들었어요."
+   }
+  ]
+ },
+ {
   "word": "muscle",
   "ipa": "",
   "pos": [
@@ -91448,6 +92425,31 @@ window.SEED = [
    {
     "en": "He pulled a muscle while exercising.",
     "ko": "그는 운동하다가 근육을 다쳤어요."
+   }
+  ]
+ },
+ {
+  "word": "muse",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "숙고하다, 곰곰이 생각하다",
+  "en": "reflect deeply on a subject",
+  "syn": [
+   "chew_over",
+   "think_over",
+   "meditate",
+   "ponder"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She mused about her future plans.",
+    "ko": "그녀는 미래 계획에 대해 곰곰이 생각했어요."
    }
   ]
  },
@@ -91518,7 +92520,7 @@ window.SEED = [
    "adj"
   ],
   "cefr": "A2",
-  "ko": "음악의, 뮤지컬",
+  "ko": "뮤지컬",
   "en": "characterized by or capable of producing music",
   "syn": [],
   "ant": [],
@@ -91526,8 +92528,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "We watched a musical last night.",
-    "ko": "우리는 어젯밤 뮤지컬을 봤어요."
+    "en": "We watched a musical on Broadway.",
+    "ko": "우리는 브로드웨이에서 뮤지컬을 봤어요."
    }
   ]
  },
@@ -91538,7 +92540,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B2",
-  "ko": "음악의, 뮤지컬",
+  "ko": "뮤지컬",
   "en": "a play or film whose action and dialogue is interspersed with singing and dancing",
   "syn": [
    "musical_comedy",
@@ -91549,8 +92551,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "We watched a musical last night.",
-    "ko": "우리는 어젯밤 뮤지컬을 봤어요."
+    "en": "We watched a musical on Broadway.",
+    "ko": "우리는 브로드웨이에서 뮤지컬을 봤어요."
    }
   ]
  },
@@ -91598,6 +92600,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "mustache",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "콧수염",
+  "en": "an unshaved growth of hair on the upper lip",
+  "syn": [
+   "moustache"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He has a thick mustache.",
+    "ko": "그는 두꺼운 콧수염을 가지고 있어요."
+   }
+  ]
+ },
+ {
   "word": "mustard",
   "ipa": "",
   "pos": [
@@ -91614,6 +92638,98 @@ window.SEED = [
    {
     "en": "I put mustard on my hot dog.",
     "ko": "저는 핫도그에 머스터드를 발랐어요."
+   }
+  ]
+ },
+ {
+  "word": "mutability",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "가변성",
+  "en": "the quality of being capable of mutation",
+  "syn": [
+   "mutableness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The mutability of fashion trends is interesting.",
+    "ko": "패션 트렌드의 가변성은 흥미로워요."
+   }
+  ]
+ },
+ {
+  "word": "mutable",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "변하기 쉬운",
+  "en": "capable of or tending to change in form or quality or nature",
+  "syn": [
+   "changeable"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Human opinions are often mutable.",
+    "ko": "인간의 의견은 종종 변하기 쉬워요."
+   }
+  ]
+ },
+ {
+  "word": "mutter",
+  "ipa": "",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "투덜거리다, 중얼거리다",
+  "en": "a low continuous indistinct sound",
+  "syn": [
+   "muttering",
+   "murmur",
+   "murmuring",
+   "murmuration"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He muttered under his breath.",
+    "ko": "그는 낮은 목소리로 투덜거렸어요."
+   }
+  ]
+ },
+ {
+  "word": "mutton",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "양고기",
+  "en": "meat from a mature domestic sheep",
+  "syn": [
+   "mouton"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They cooked mutton curry.",
+    "ko": "그들은 양고기 카레를 요리했어요."
    }
   ]
  },
@@ -91721,6 +92837,31 @@ window.SEED = [
    {
     "en": "This is a mystery novel.",
     "ko": "이것은 미스터리 소설이에요."
+   }
+  ]
+ },
+ {
+  "word": "mystify",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "어리둥절하게 하다, 신비롭게 하다",
+  "en": "be a mystery or bewildering to",
+  "syn": [
+   "perplex",
+   "vex",
+   "stick",
+   "get"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The results mystified the scientists.",
+    "ko": "그 결과는 과학자들을 어리둥절하게 했어요."
    }
   ]
  },
@@ -91833,6 +92974,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "nano",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "나노, 아주 작은",
+  "en": "extremely small in scale, especially referring to nanotechnology",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This device uses nano technology.",
+    "ko": "이 기기는 나노 기술을 사용해요."
+   }
+  ]
+ },
+ {
   "word": "nap",
   "ipa": "",
   "pos": [
@@ -91878,6 +93039,30 @@ window.SEED = [
   ]
  },
  {
+  "word": "narcissistic",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "자기애가 강한, 나르시시즘적인",
+  "en": "characteristic of those having an inflated idea of their own importance",
+  "syn": [
+   "egotistic",
+   "egotistical",
+   "self-loving"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He has a narcissistic personality.",
+    "ko": "그는 자기애가 강한 성격을 가지고 있어요."
+   }
+  ]
+ },
+ {
   "word": "narrate",
   "ipa": "",
   "pos": [
@@ -91918,6 +93103,29 @@ window.SEED = [
   ]
  },
  {
+  "word": "narrator",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "내레이터, 서술자",
+  "en": "someone who tells a story",
+  "syn": [
+   "storyteller",
+   "teller"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The narrator explained the background story.",
+    "ko": "그 내레이터는 배경 이야기를 설명했어요."
+   }
+  ]
+ },
+ {
   "word": "narrow",
   "ipa": "",
   "pos": [
@@ -91934,6 +93142,26 @@ window.SEED = [
    {
     "en": "The street is very narrow.",
     "ko": "그 거리는 아주 좁아요."
+   }
+  ]
+ },
+ {
+  "word": "narrowly",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "간신히, 아슬아슬하게",
+  "en": "in a narrow manner",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She narrowly avoided the accident.",
+    "ko": "그녀는 그 사고를 간신히 피했어요."
    }
   ]
  },
@@ -92047,6 +93275,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "nationwide",
+  "ipa": "",
+  "pos": [
+   "adj",
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "전국적인",
+  "en": "extending throughout an entire nation",
+  "syn": [
+   "nationally",
+   "across_the_nation",
+   "across_the_country"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "There was a nationwide protest.",
+    "ko": "전국적인 시위가 있었어요."
+   }
+  ]
+ },
+ {
   "word": "native",
   "ipa": "",
   "pos": [
@@ -92063,6 +93316,28 @@ window.SEED = [
    {
     "en": "She is a native speaker of English.",
     "ko": "그녀는 영어 원어민이에요."
+   }
+  ]
+ },
+ {
+  "word": "native speaker",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "원어민",
+  "en": "a speaker of a particular language who has spoken that language since earliest childhood",
+  "syn": [
+   "native_speaker"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a native speaker of French.",
+    "ko": "그녀는 프랑스어 원어민이에요."
    }
   ]
  },
@@ -92126,6 +93401,119 @@ window.SEED = [
    {
     "en": "I love spending time in nature.",
     "ko": "저는 자연에서 시간을 보내는 것을 좋아해요."
+   }
+  ]
+ },
+ {
+  "word": "naughty",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "장난꾸러기의, 짓궂은",
+  "en": "suggestive of sexual impropriety",
+  "syn": [
+   "blue",
+   "gamy",
+   "gamey",
+   "juicy"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The naughty puppy chewed my shoes.",
+    "ko": "그 장난꾸러기 강아지가 제 신발을 씹었어요."
+   }
+  ]
+ },
+ {
+  "word": "naval",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "해군의",
+  "en": "connected with or belonging to or used in a navy",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He serves in the naval forces.",
+    "ko": "그는 해군에서 복무해요."
+   }
+  ]
+ },
+ {
+  "word": "navigate",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "항해하다, 길을 찾다",
+  "en": "travel on water propelled by wind or by other means",
+  "syn": [
+   "voyage",
+   "sail"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She navigated the ship through the storm.",
+    "ko": "그녀는 폭풍 속에서 배를 항해시켰어요."
+   }
+  ]
+ },
+ {
+  "word": "navigation",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "항해, 내비게이션",
+  "en": "the guidance of ships or airplanes from place to place",
+  "syn": [
+   "pilotage",
+   "piloting"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The app has a navigation feature.",
+    "ko": "그 앱은 내비게이션 기능이 있어요."
+   }
+  ]
+ },
+ {
+  "word": "navy",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "해군",
+  "en": "an organization of military vessels belonging to a country and available for sea warfare",
+  "syn": [
+   "naval_forces"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He joined the navy after high school.",
+    "ko": "그는 고등학교 졸업 후 해군에 입대했어요."
    }
   ]
  },
@@ -92247,6 +93635,50 @@ window.SEED = [
   ]
  },
  {
+  "word": "neat",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "깔끔한, 정돈된",
+  "en": "clean or organized",
+  "syn": [
+   "orderly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Her desk is always neat.",
+    "ko": "그녀의 책상은 항상 깔끔해요."
+   }
+  ]
+ },
+ {
+  "word": "necessarily",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "반드시, 필연적으로",
+  "en": "in an essential manner",
+  "syn": [
+   "needfully"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This doesn't necessarily mean she is wrong.",
+    "ko": "이것이 반드시 그녀가 틀렸다는 것을 의미하지는 않아요."
+   }
+  ]
+ },
+ {
   "word": "necessary",
   "ipa": "",
   "pos": [
@@ -92263,6 +93695,26 @@ window.SEED = [
    {
     "en": "Is this trip really necessary?",
     "ko": "이 여행이 정말 필요한가요?"
+   }
+  ]
+ },
+ {
+  "word": "necessity",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "필수품, 필요성",
+  "en": "the condition of being essential or indispensable",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Water is a basic necessity.",
+    "ko": "물은 기본적인 필수품이에요."
    }
   ]
  },
@@ -92333,7 +93785,7 @@ window.SEED = [
   "ipa": "",
   "pos": [],
   "cefr": "A1",
-  "ko": "필요하다",
+  "ko": "필요, 요구",
   "en": "require as useful, just, or proper",
   "syn": [
    "necessitate",
@@ -92346,8 +93798,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I need some water.",
-    "ko": "저는 물이 좀 필요해요."
+    "en": "There is an urgent need for volunteers.",
+    "ko": "자원봉사자에 대한 긴급한 필요가 있어요."
    }
   ]
  },
@@ -92358,7 +93810,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "A2",
-  "ko": "필요하다",
+  "ko": "필요, 요구",
   "en": "require as useful, just, or proper",
   "syn": [
    "necessitate",
@@ -92371,8 +93823,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I need some water.",
-    "ko": "저는 물이 좀 필요해요."
+    "en": "There is an urgent need for volunteers.",
+    "ko": "자원봉사자에 대한 긴급한 필요가 있어요."
    }
   ]
  },
@@ -92383,7 +93835,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B2",
-  "ko": "필요하다",
+  "ko": "필요, 요구",
   "en": "a condition requiring relief",
   "syn": [
    "demand"
@@ -92393,8 +93845,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I need some water.",
-    "ko": "저는 물이 좀 필요해요."
+    "en": "There is an urgent need for volunteers.",
+    "ko": "자원봉사자에 대한 긴급한 필요가 있어요."
    }
   ]
  },
@@ -92421,6 +93873,54 @@ window.SEED = [
   ]
  },
  {
+  "word": "needless",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "불필요한",
+  "en": "unnecessary and unwarranted",
+  "syn": [
+   "gratuitous",
+   "uncalled-for"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This caused needless worry.",
+    "ko": "이것은 불필요한 걱정을 일으켰어요."
+   }
+  ]
+ },
+ {
+  "word": "needy",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "궁핍한, 어려운",
+  "en": "poor enough to need help from others",
+  "syn": [
+   "destitute",
+   "impoverished",
+   "indigent",
+   "necessitous"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They donated food to needy families.",
+    "ko": "그들은 어려운 가정에 음식을 기부했어요."
+   }
+  ]
+ },
+ {
   "word": "negative",
   "ipa": "",
   "pos": [
@@ -92437,6 +93937,48 @@ window.SEED = [
    {
     "en": "Try not to have negative thoughts.",
     "ko": "부정적인 생각을 하지 않도록 노력하세요."
+   }
+  ]
+ },
+ {
+  "word": "negatively",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "부정적으로",
+  "en": "in a harmful manner",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The news affected the market negatively.",
+    "ko": "그 소식은 시장에 부정적으로 영향을 미쳤어요."
+   }
+  ]
+ },
+ {
+  "word": "neglect",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "방치, 소홀함",
+  "en": "lack of attention and due care",
+  "syn": [
+   "disregard"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The house showed signs of neglect.",
+    "ko": "그 집은 방치된 흔적을 보였어요."
    }
   ]
  },
@@ -92534,6 +94076,51 @@ window.SEED = [
   ]
  },
  {
+  "word": "neighboring",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "인접한, 이웃한",
+  "en": "having a common boundary or edge",
+  "syn": [
+   "adjacent",
+   "conterminous",
+   "contiguous",
+   "neighboring(a)"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They visited a neighboring country.",
+    "ko": "그들은 인접한 나라를 방문했어요."
+   }
+  ]
+ },
+ {
+  "word": "neither",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "둘 다 ~아니다",
+  "en": "not either",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Neither of them came to the party.",
+    "ko": "그들 둘 다 파티에 오지 않았어요."
+   }
+  ]
+ },
+ {
   "word": "nephew",
   "ipa": "",
   "pos": [
@@ -92554,6 +94141,50 @@ window.SEED = [
   ]
  },
  {
+  "word": "nerve",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "신경",
+  "en": "any bundle of nerve fibers running to various organs and tissues of the body",
+  "syn": [
+   "nervus"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The dentist numbed the nerve before the procedure.",
+    "ko": "치과의사는 시술 전에 신경을 마취시켰어요."
+   }
+  ]
+ },
+ {
+  "word": "nerves",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "긴장, 불안",
+  "en": "an uneasy psychological state",
+  "syn": [
+   "nervousness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She calmed her nerves before the interview.",
+    "ko": "그녀는 면접 전에 긴장을 진정시켰어요."
+   }
+  ]
+ },
+ {
   "word": "nervous",
   "ipa": "",
   "pos": [
@@ -92570,6 +94201,26 @@ window.SEED = [
    {
     "en": "I feel nervous before exams.",
     "ko": "저는 시험 전에 긴장해요."
+   }
+  ]
+ },
+ {
+  "word": "nervously",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "초조하게, 불안하게",
+  "en": "in an anxiously nervous manner",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He laughed nervously.",
+    "ko": "그는 초조하게 웃었어요."
    }
   ]
  },
@@ -92665,6 +94316,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "netsurfer",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "인터넷 서핑을 하는 사람",
+  "en": "a person who browses the internet",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a frequent netsurfer.",
+    "ko": "그녀는 자주 인터넷 서핑을 해요."
+   }
+  ]
+ },
+ {
   "word": "network",
   "ipa": "",
   "pos": [
@@ -92683,6 +94354,29 @@ window.SEED = [
    {
     "en": "She has a wide network of contacts.",
     "ko": "그녀는 넓은 인맥 네트워크를 가지고 있어요."
+   }
+  ]
+ },
+ {
+  "word": "neurosis",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "신경증",
+  "en": "a mental or personality disturbance not attributable to any known neurological or organic dysfunction",
+  "syn": [
+   "neuroticism",
+   "psychoneurosis"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He was diagnosed with a mild neurosis.",
+    "ko": "그는 경미한 신경증을 진단받았어요."
    }
   ]
  },
@@ -92869,6 +94563,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "newscaster",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "뉴스 진행자",
+  "en": "someone who broadcasts the news",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is a well-known newscaster.",
+    "ko": "그녀는 잘 알려진 뉴스 진행자예요."
+   }
+  ]
+ },
+ {
   "word": "newspaper",
   "ipa": "",
   "pos": [
@@ -92891,13 +94605,33 @@ window.SEED = [
   ]
  },
  {
+  "word": "newsworthy",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "뉴스거리가 되는",
+  "en": "sufficiently interesting to be reported in a newspaper",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This story is newsworthy.",
+    "ko": "이 이야기는 뉴스거리가 돼요."
+   }
+  ]
+ },
+ {
   "word": "next",
   "ipa": "",
   "pos": [
    "adv"
   ],
   "cefr": "A2",
-  "ko": "다음의",
+  "ko": "다음 것",
   "en": "at the time or occasion immediately following",
   "syn": [],
   "ant": [],
@@ -92905,8 +94639,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "See you next week.",
-    "ko": "다음 주에 봐요."
+    "en": "What comes next in the story?",
+    "ko": "이야기에서 다음은 뭐예요?"
    }
   ]
  },
@@ -92915,7 +94649,7 @@ window.SEED = [
   "ipa": "",
   "pos": [],
   "cefr": "B2",
-  "ko": "다음의",
+  "ko": "다음 것",
   "en": "at the time or occasion immediately following",
   "syn": [],
   "ant": [],
@@ -92923,8 +94657,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "See you next week.",
-    "ko": "다음 주에 봐요."
+    "en": "What comes next in the story?",
+    "ko": "이야기에서 다음은 뭐예요?"
    }
   ]
  },
@@ -93011,6 +94745,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "nicely",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "멋지게, 잘",
+  "en": "in a nice way",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She handled the situation nicely.",
+    "ko": "그녀는 그 상황을 잘 처리했어요."
+   }
+  ]
+ },
+ {
   "word": "nickname",
   "ipa": "",
   "pos": [
@@ -93079,6 +94833,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "nightclub",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "나이트클럽",
+  "en": "a spot that is open late at night and that provides entertainment (as singers or dancers) as well as dancing and food and drink",
+  "syn": [
+   "cabaret",
+   "night_club",
+   "club",
+   "nightspot"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They danced all night at the nightclub.",
+    "ko": "그들은 나이트클럽에서 밤새 춤을 췄어요."
+   }
+  ]
+ },
+ {
   "word": "nightlife",
   "ipa": "",
   "pos": [
@@ -93097,6 +94876,28 @@ window.SEED = [
    {
     "en": "This city is known for its nightlife.",
     "ko": "이 도시는 밤 문화로 유명해요."
+   }
+  ]
+ },
+ {
+  "word": "nightmare",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "악몽",
+  "en": "a situation resembling a terrifying dream",
+  "syn": [
+   "incubus"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She had a nightmare last night.",
+    "ko": "그녀는 어젯밤 악몽을 꿨어요."
    }
   ]
  },
@@ -93204,6 +95005,75 @@ window.SEED = [
   ]
  },
  {
+  "word": "nobility",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "귀족, 고귀함",
+  "en": "a privileged class holding hereditary titles",
+  "syn": [
+   "aristocracy"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He showed great nobility of character.",
+    "ko": "그는 훌륭한 인격의 고귀함을 보였어요."
+   }
+  ]
+ },
+ {
+  "word": "noble",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "고귀한, 귀족의",
+  "en": "impressive in appearance",
+  "syn": [
+   "baronial",
+   "imposing",
+   "stately"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "That was a noble gesture.",
+    "ko": "그것은 고귀한 행동이었어요."
+   }
+  ]
+ },
+ {
+  "word": "nobleman",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "귀족 (남)",
+  "en": "a titled peer of the realm",
+  "syn": [
+   "Lord",
+   "noble"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The nobleman lived in a grand castle.",
+    "ko": "그 귀족은 웅장한 성에서 살았어요."
+   }
+  ]
+ },
+ {
   "word": "nobody",
   "ipa": "",
   "pos": [],
@@ -93232,7 +95102,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "고개를 끄덕이다",
+  "ko": "고개를 끄덕여 표현하다",
   "en": "a sign of assent or salutation or command",
   "syn": [],
   "ant": [],
@@ -93240,8 +95110,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She nodded in agreement.",
-    "ko": "그녀는 동의하며 고개를 끄덕였어요."
+    "en": "She nodded her agreement.",
+    "ko": "그녀는 고개를 끄덕여 동의를 표현했어요."
    }
   ]
  },
@@ -93252,7 +95122,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B2",
-  "ko": "고개를 끄덕이다",
+  "ko": "고개를 끄덕여 표현하다",
   "en": "express or signify by nodding",
   "syn": [],
   "ant": [],
@@ -93260,8 +95130,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "She nodded in agreement.",
-    "ko": "그녀는 동의하며 고개를 끄덕였어요."
+    "en": "She nodded her agreement.",
+    "ko": "그녀는 고개를 끄덕여 동의를 표현했어요."
    }
   ]
  },
@@ -93326,6 +95196,89 @@ window.SEED = [
   ]
  },
  {
+  "word": "nomad",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "유목민",
+  "en": "a member of a people who have no permanent home but move about according to the seasons",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The nomads moved with their herds.",
+    "ko": "그 유목민들은 가축 떼와 함께 이동했어요."
+   }
+  ]
+ },
+ {
+  "word": "nomination",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "지명, 추천",
+  "en": "the act of officially naming a candidate",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She received a nomination for the award.",
+    "ko": "그녀는 그 상의 후보로 지명되었어요."
+   }
+  ]
+ },
+ {
+  "word": "nominee",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "후보자, 지명자",
+  "en": "a politician who is running for public office",
+  "syn": [
+   "campaigner",
+   "candidate"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The nominee gave a speech.",
+    "ko": "그 후보자가 연설을 했어요."
+   }
+  ]
+ },
+ {
+  "word": "non-smoking",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "금연의",
+  "en": "where smoking is not allowed",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "We requested a non-smoking room.",
+    "ko": "우리는 금연 객실을 요청했어요."
+   }
+  ]
+ },
+ {
   "word": "none",
   "ipa": "",
   "pos": [],
@@ -93365,6 +95318,26 @@ window.SEED = [
    {
     "en": "It was late; nonetheless, we finished the work.",
     "ko": "늦었지만 그럼에도 불구하고 우리는 일을 끝냈어요."
+   }
+  ]
+ },
+ {
+  "word": "nonprofessional",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "비전문적인",
+  "en": "not professional",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a nonprofessional opinion.",
+    "ko": "이것은 비전문적인 의견이에요."
    }
   ]
  },
@@ -93575,6 +95548,30 @@ window.SEED = [
   ]
  },
  {
+  "word": "northward",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "북쪽으로",
+  "en": "in a northern direction",
+  "syn": [
+   "north",
+   "northerly",
+   "northwards"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The birds flew northward.",
+    "ko": "새들이 북쪽으로 날아갔어요."
+   }
+  ]
+ },
+ {
   "word": "northwest",
   "ipa": "",
   "pos": [
@@ -93640,6 +95637,28 @@ window.SEED = [
    {
     "en": "She has a small nose.",
     "ko": "그녀는 작은 코를 가지고 있다."
+   }
+  ]
+ },
+ {
+  "word": "nostril",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "콧구멍",
+  "en": "either one of the two external openings to the nasal cavity in the nose",
+  "syn": [
+   "anterior_naris"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Air passes through the nostril.",
+    "ko": "공기가 콧구멍을 통과해요."
    }
   ]
  },
@@ -93862,6 +95881,31 @@ window.SEED = [
   ]
  },
  {
+  "word": "nought",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "영, 제로",
+  "en": "a mathematical element that when added to another number yields the same number",
+  "syn": [
+   "zero",
+   "0",
+   "cipher",
+   "cypher"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The score was five to nought.",
+    "ko": "점수는 5대 0이었어요."
+   }
+  ]
+ },
+ {
   "word": "noun",
   "ipa": "",
   "pos": [
@@ -93878,6 +95922,54 @@ window.SEED = [
    {
     "en": "\"Dog\" is a noun.",
     "ko": "'dog'는 명사예요."
+   }
+  ]
+ },
+ {
+  "word": "nourish",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "영양분을 공급하다",
+  "en": "provide with nourishment",
+  "syn": [
+   "nurture",
+   "sustain"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This soup will nourish you.",
+    "ko": "이 수프는 당신에게 영양분을 공급해줄 거예요."
+   }
+  ]
+ },
+ {
+  "word": "nourishment",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "영양분, 자양물",
+  "en": "a source of materials to nourish the body",
+  "syn": [
+   "nutriment",
+   "nutrition",
+   "sustenance",
+   "aliment"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The plant needs nourishment to grow.",
+    "ko": "그 식물은 자라기 위해 영양분이 필요해요."
    }
   ]
  },
@@ -93922,6 +96014,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "novelty",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "참신함, 새로움",
+  "en": "originality by virtue of being refreshingly novel",
+  "syn": [
+   "freshness"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The novelty of the idea impressed everyone.",
+    "ko": "그 아이디어의 참신함이 모두를 감동시켰어요."
+   }
+  ]
+ },
+ {
   "word": "November",
   "ipa": "",
   "pos": [
@@ -93950,7 +96064,7 @@ window.SEED = [
    "adv"
   ],
   "cefr": "A1",
-  "ko": "지금",
+  "ko": "지금, 현재",
   "en": "in the historical present",
   "syn": [],
   "ant": [],
@@ -93958,8 +96072,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I have to go now.",
-    "ko": "나는 지금 가야 한다."
+    "en": "Now is the best time to act.",
+    "ko": "지금이 행동하기 가장 좋은 때예요."
    }
   ]
  },
@@ -93968,7 +96082,7 @@ window.SEED = [
   "ipa": "",
   "pos": [],
   "cefr": "B2",
-  "ko": "지금",
+  "ko": "지금, 현재",
   "en": "the momentary present",
   "syn": [],
   "ant": [],
@@ -93976,8 +96090,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "I have to go now.",
-    "ko": "나는 지금 가야 한다."
+    "en": "Now is the best time to act.",
+    "ko": "지금이 행동하기 가장 좋은 때예요."
    }
   ]
  },
@@ -94070,6 +96184,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "nuisance",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "성가신 것, 골칫거리",
+  "en": "(law) a broad legal concept including anything that disturbs the reasonable use of your property or endangers life and health or is offensive",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The noise is a nuisance to neighbors.",
+    "ko": "그 소음은 이웃들에게 골칫거리예요."
+   }
+  ]
+ },
+ {
   "word": "number",
   "ipa": "",
   "pos": [
@@ -94088,6 +96222,28 @@ window.SEED = [
    {
     "en": "Can I have your phone number?",
     "ko": "전화번호를 알려주실 수 있나요?"
+   }
+  ]
+ },
+ {
+  "word": "numerical",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "수치의, 숫자의",
+  "en": "measured or expressed in numbers",
+  "syn": [
+   "numeric"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Please provide a numerical answer.",
+    "ko": "숫자로 된 답을 제공해 주세요."
    }
   ]
  },
@@ -94150,6 +96306,48 @@ window.SEED = [
    {
     "en": "She nursed her sick father back to health.",
     "ko": "그녀는 아픈 아버지를 간호해서 건강을 되찾게 했어요."
+   }
+  ]
+ },
+ {
+  "word": "nursery",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "아기방, 보육원",
+  "en": "a child's room for a baby",
+  "syn": [
+   "baby's_room"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The baby's nursery is painted blue.",
+    "ko": "아기의 아기방은 파란색으로 칠해져 있어요."
+   }
+  ]
+ },
+ {
+  "word": "nut",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "견과",
+  "en": "usually large hard-shelled seed",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is allergic to nuts.",
+    "ko": "그녀는 견과류에 알레르기가 있어요."
    }
   ]
  },
@@ -94221,6 +96419,26 @@ window.SEED = [
   ]
  },
  {
+  "word": "nutshell",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "요약하면, 견과 껍질",
+  "en": "the shell around the kernel of a nut",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "In a nutshell, the plan failed.",
+    "ko": "요약하면 그 계획은 실패했어요."
+   }
+  ]
+ },
+ {
   "word": "o'clock",
   "ipa": "",
   "pos": [
@@ -94261,13 +96479,123 @@ window.SEED = [
   ]
  },
  {
+  "word": "oath",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "맹세, 서약",
+  "en": "profane or obscene expression usually of surprise or anger",
+  "syn": [
+   "curse",
+   "curse_word",
+   "expletive",
+   "swearing"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He took an oath of office.",
+    "ko": "그는 취임 선서를 했어요."
+   }
+  ]
+ },
+ {
+  "word": "obedience",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "복종",
+  "en": "the act of obeying",
+  "syn": [
+   "obeisance"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The dog was trained for obedience.",
+    "ko": "그 개는 복종 훈련을 받았어요."
+   }
+  ]
+ },
+ {
+  "word": "obedient",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "순종적인, 말 잘 듣는",
+  "en": "dutifully complying with the commands or instructions of those in authority",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Their dog is very obedient.",
+    "ko": "그들의 개는 아주 말을 잘 들어요."
+   }
+  ]
+ },
+ {
+  "word": "obey",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "복종하다, 따르다",
+  "en": "be obedient to",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Soldiers must obey orders.",
+    "ko": "군인들은 명령에 복종해야 해요."
+   }
+  ]
+ },
+ {
+  "word": "obituary",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "부고",
+  "en": "a notice of someone's death",
+  "syn": [
+   "obit",
+   "necrology"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She read his obituary in the newspaper.",
+    "ko": "그녀는 신문에서 그의 부고를 읽었어요."
+   }
+  ]
+ },
+ {
   "word": "object",
   "ipa": "",
   "pos": [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "물체, 반대하다",
+  "ko": "반대하다, 이의를 제기하다",
   "en": "a tangible and visible entity",
   "syn": [
    "physical_object"
@@ -94277,8 +96605,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "There is a strange object on the table.",
-    "ko": "테이블 위에 이상한 물체가 있어요."
+    "en": "She objected to the proposal.",
+    "ko": "그녀는 그 제안에 반대했어요."
    }
   ]
  },
@@ -94289,7 +96617,7 @@ window.SEED = [
    "verb"
   ],
   "cefr": "B2",
-  "ko": "물체, 반대하다",
+  "ko": "반대하다, 이의를 제기하다",
   "en": "express or raise an objection or protest or criticism or express dissent",
   "syn": [],
   "ant": [],
@@ -94297,8 +96625,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "There is a strange object on the table.",
-    "ko": "테이블 위에 이상한 물체가 있어요."
+    "en": "She objected to the proposal.",
+    "ko": "그녀는 그 제안에 반대했어요."
    }
   ]
  },
@@ -94333,7 +96661,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B1",
-  "ko": "목표, 객관적인",
+  "ko": "객관적인",
   "en": "the goal intended to be attained (and which is believed to be attainable)",
   "syn": [
    "aim",
@@ -94345,8 +96673,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Our objective is to increase sales.",
-    "ko": "우리의 목표는 매출을 늘리는 거예요."
+    "en": "Try to be objective about the situation.",
+    "ko": "그 상황에 대해 객관적이려고 노력하세요."
    }
   ]
  },
@@ -94357,7 +96685,7 @@ window.SEED = [
    "adj"
   ],
   "cefr": "B2",
-  "ko": "목표, 객관적인",
+  "ko": "객관적인",
   "en": "undistorted by emotion or personal bias",
   "syn": [
    "nonsubjective"
@@ -94367,8 +96695,31 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "Our objective is to increase sales.",
-    "ko": "우리의 목표는 매출을 늘리는 거예요."
+    "en": "Try to be objective about the situation.",
+    "ko": "그 상황에 대해 객관적이려고 노력하세요."
+   }
+  ]
+ },
+ {
+  "word": "obligation",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "의무",
+  "en": "the social force that binds you to the courses of action demanded by that force",
+  "syn": [
+   "duty",
+   "responsibility"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She feels an obligation to help her family.",
+    "ko": "그녀는 가족을 도와야 한다는 의무감을 느껴요."
    }
   ]
  },
@@ -94414,6 +96765,97 @@ window.SEED = [
    {
     "en": "We observed the animals in their habitat.",
     "ko": "우리는 동물들을 서식지에서 관찰했어요."
+   }
+  ]
+ },
+ {
+  "word": "observer",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "관찰자, 옵서버",
+  "en": "a person who becomes aware (of things or events) through the senses",
+  "syn": [
+   "perceiver",
+   "percipient",
+   "beholder"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "An observer noted the changes.",
+    "ko": "관찰자가 변화를 기록했어요."
+   }
+  ]
+ },
+ {
+  "word": "obsess",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "사로잡다, 집착하게 하다",
+  "en": "haunt like a ghost",
+  "syn": [
+   "haunt",
+   "ghost"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She is obsessed with organizing her closet.",
+    "ko": "그녀는 옷장 정리에 집착해요."
+   }
+  ]
+ },
+ {
+  "word": "obsession",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "집착",
+  "en": "an irrational motive for performing trivial or repetitive actions, even against your will",
+  "syn": [
+   "compulsion"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "His obsession with work worries his family.",
+    "ko": "그의 일에 대한 집착은 가족을 걱정시켜요."
+   }
+  ]
+ },
+ {
+  "word": "obsessive",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "집착하는, 강박적인",
+  "en": "characterized by or constituting an obsession",
+  "syn": [
+   "obsessional"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "He has an obsessive personality.",
+    "ko": "그는 강박적인 성격을 가지고 있어요."
    }
   ]
  },
@@ -94687,6 +97129,28 @@ window.SEED = [
   ]
  },
  {
+  "word": "odd",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "홀수의, 이상한",
+  "en": "not divisible by two",
+  "syn": [
+   "uneven"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Seven is an odd number.",
+    "ko": "7은 홀수예요."
+   }
+  ]
+ },
+ {
   "word": "of",
   "ipa": "",
   "pos": [],
@@ -94771,6 +97235,74 @@ window.SEED = [
   ]
  },
  {
+  "word": "offend",
+  "ipa": "",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "ko": "기분 상하게 하다",
+  "en": "cause to feel resentment or indignation",
+  "syn": [
+   "pique"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I didn't mean to offend you.",
+    "ko": "저는 당신을 기분 상하게 할 의도가 없었어요."
+   }
+  ]
+ },
+ {
+  "word": "offender",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "범죄자, 위반자",
+  "en": "a person who transgresses moral or civil law",
+  "syn": [
+   "wrongdoer"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The offender was arrested.",
+    "ko": "그 범죄자는 체포되었어요."
+   }
+  ]
+ },
+ {
+  "word": "offense",
+  "ipa": "",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "ko": "위반, 범죄",
+  "en": "a lack of politeness",
+  "syn": [
+   "discourtesy",
+   "offence",
+   "offensive_activity"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "This is a minor offense.",
+    "ko": "이것은 경미한 위반이에요."
+   }
+  ]
+ },
+ {
   "word": "offensive",
   "ipa": "",
   "pos": [
@@ -94812,6 +97344,29 @@ window.SEED = [
    {
     "en": "She offered to help me.",
     "ko": "그녀는 저를 도와주겠다고 제안했어요."
+   }
+  ]
+ },
+ {
+  "word": "offhand",
+  "ipa": "",
+  "pos": [
+   "adv"
+  ],
+  "cefr": "B2",
+  "ko": "즉흥적으로, 대충",
+  "en": "without previous thought or preparation",
+  "syn": [
+   "offhanded",
+   "offhandedly"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "I can't say offhand what the price is.",
+    "ko": "가격이 얼마인지 즉흥적으로 말할 수 없어요."
    }
   ]
  },
@@ -94866,7 +97421,7 @@ window.SEED = [
    "adj"
   ],
   "cefr": "A2",
-  "ko": "공식적인",
+  "ko": "공무원, 관리",
   "en": "having official authority or sanction",
   "syn": [],
   "ant": [],
@@ -94874,8 +97429,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "This is the official announcement.",
-    "ko": "이것이 공식 발표예요."
+    "en": "A government official visited the site.",
+    "ko": "정부 관리가 그 현장을 방문했어요."
    }
   ]
  },
@@ -94886,7 +97441,7 @@ window.SEED = [
    "noun"
   ],
   "cefr": "B2",
-  "ko": "공식적인",
+  "ko": "공무원, 관리",
   "en": "a worker who holds or is invested with an office",
   "syn": [
    "functionary"
@@ -94896,8 +97451,8 @@ window.SEED = [
   "roots": [],
   "ex": [
    {
-    "en": "This is the official announcement.",
-    "ko": "이것이 공식 발표예요."
+    "en": "A government official visited the site.",
+    "ko": "정부 관리가 그 현장을 방문했어요."
    }
   ]
  },
@@ -94918,6 +97473,28 @@ window.SEED = [
    {
     "en": "The event is officially cancelled.",
     "ko": "그 행사는 공식적으로 취소되었어요."
+   }
+  ]
+ },
+ {
+  "word": "offshore",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "B2",
+  "ko": "앞바다의, 해외의",
+  "en": "(of winds) coming from the land",
+  "syn": [
+   "seaward"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "They found oil in offshore fields.",
+    "ko": "그들은 앞바다 유전에서 석유를 발견했어요."
    }
   ]
  },
