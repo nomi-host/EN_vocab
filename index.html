@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.9">
+<link rel="manifest" href="manifest.json?v=0.11.10">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.9"></script>
-<script src="img/rat_run.js?v=0.11.9"></script>
+<script src="words.js?v=0.11.10"></script>
+<script src="img/rat_run.js?v=0.11.10"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -352,6 +352,17 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .ptbox{display:flex;align-items:center;justify-content:space-between;background:var(--accent-soft);border-radius:16px;padding:14px 16px;}
 .ptbox .v{font-size:20px;font-weight:800;color:var(--accent-deep);font-variant-numeric:tabular-nums;}
 .ptbox .l{font-size:12px;color:var(--ink-2);}
+
+/* 설정 — 일일 목표 스테퍼 · 듣기 속도 프리셋 */
+.goalrow{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:11px 15px;margin-bottom:8px;}
+.goal-lbl{font-size:14px;font-weight:700;flex:1;}
+.goal-step{width:30px;height:30px;border-radius:999px;background:var(--fill);color:var(--ink-2);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;flex:none;}
+.goal-v{font-size:14px;font-weight:800;color:var(--accent-deep);min-width:44px;text-align:center;font-variant-numeric:tabular-nums;flex:none;}
+.prefrow{display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:12px 15px;text-align:left;}
+.prefrow.on{background:var(--accent-soft);}
+.pf-name{font-size:14px;font-weight:700;}
+.prefrow.on .pf-name{color:var(--accent-deep);}
+.pf-sub{font-size:12px;color:var(--muted);}
 </style>
 </head>
 <body>
@@ -359,7 +370,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.9";
+const APP_VERSION = "v0.11.10";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -442,6 +453,50 @@ function renameWordlist(id, name) {
 function deleteWordlist(id) {
   WORDLISTS = WORDLISTS.filter(l => l.id !== id);
   saveWordlists();
+}
+
+/* ===================== 학습 환경설정 (일일 목표 · 듣기 속도/악센트) — localStorage =====================
+   속도는 SpeechSynthesisUtterance.rate로 실제 반영됨. 악센트는 lang 코드 + 가능하면 그 lang의 브라우저
+   음성을 매칭(en-US/en-GB/en-AU) — 단, "뉴욕/캘리포니아/텍사스" 같은 도시 단위 악센트는 브라우저 TTS는
+   물론 상용 TTS(Google/Azure 등)에도 그 단위로 구분된 음성이 없어 구현 불가. 국가 단위까지만 지원. */
+const SPEED_PRESETS = {
+  teacher: { label: "영어선생님", sub: "수능 듣기평가 수준", rate: 0.82 },
+  casual: { label: "일상회화", sub: "연음 강조", rate: 1.0 },
+  native: { label: "원어민대화", sub: "원어민 수준의 빠른 말", rate: 1.3 },
+};
+const ACCENT_PRESETS = {
+  us: { label: "미국", lang: "en-US" },
+  gb: { label: "영국", lang: "en-GB" },
+  au: { label: "호주", lang: "en-AU" },
+};
+const PREFS = (() => {
+  let p;
+  try { p = JSON.parse(localStorage.getItem("en_prefs") || "null"); } catch (e) {}
+  if (!p || typeof p !== "object") p = {};
+  if (!SPEED_PRESETS[p.speed]) p.speed = "casual";
+  if (!ACCENT_PRESETS[p.accent]) p.accent = "us";
+  p.goalWords = Number.isFinite(p.goalWords) ? p.goalWords : 20;
+  p.goalListen = Number.isFinite(p.goalListen) ? p.goalListen : 20;
+  p.goalTalk = Number.isFinite(p.goalTalk) ? p.goalTalk : 10;
+  const save = () => { try { localStorage.setItem("en_prefs", JSON.stringify(p)); } catch (e) {} };
+  save();
+  return { get: () => p, set(patch) { Object.assign(p, patch); save(); } };
+})();
+
+/* 앱 전체 공용 TTS — 저장된 속도·악센트 설정을 실제 발화에 반영 */
+function speakText(text) {
+  try {
+    const u = new SpeechSynthesisUtterance(text);
+    const prefs = PREFS.get();
+    const accent = ACCENT_PRESETS[prefs.accent];
+    u.lang = accent.lang;
+    u.rate = SPEED_PRESETS[prefs.speed].rate;
+    const voices = speechSynthesis.getVoices();
+    const voice = voices.find(v => v.lang === accent.lang) || voices.find(v => v.lang && v.lang.startsWith("en"));
+    if (voice) u.voice = voice;
+    speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+  } catch (e) {}
 }
 
 /* ===================== SRS 엔진 (Leitner · localStorage) =====================
@@ -597,10 +652,11 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards }) {
   const stage = streakStage(STREAK);       // 1~4
   const speed = { "--bob": (0.64 - stage * 0.06) + "s", "--road": (0.8 - stage * 0.09) + "s" };
 
+  const goals = PREFS.get(); // 설정 > 일일 목표(단어·듣기·회화) — 기본 20/20/10
   // direct: 탭 메뉴를 거치지 않고 바로 그 학습을 시작(단어카드는 세션 즉시 시작, 회화는 페르소나 선택 화면 — 준비되면 연결)
   const routine = [
-    { n: 1, title: "단어카드 20개", sub: "신규 12 · 복습 8", state: "done", tab: "learn", direct: true },
-    { n: 2, title: "듣기 10문장", sub: "6 / 10 진행 중", state: "active", tab: "learn" },
+    { n: 1, title: `단어카드 ${goals.goalWords}개`, sub: "신규 12 · 복습 8", state: "done", tab: "learn", direct: true },
+    { n: 2, title: `듣기 ${goals.goalListen}문장`, sub: "6 / 10 진행 중", state: "active", tab: "learn" },
     { n: 3, title: "회화 1세션", sub: "오늘의 상대: Karen (공항)", state: "todo", tab: "talk" },
   ];
   const grass = useMemo(() => {
@@ -705,14 +761,7 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
   const [, bump] = useState(0); // 즐겨찾기·내 단어장 토글 리렌더용
   const [showPicker, setShowPicker] = useState(false);
   useEffect(() => { setSenseOpen(0); setShowAllSenses(false); }, [word]);
-  const speak = useCallback((text) => {
-    try {
-      const u = new SpeechSynthesisUtterance(text);
-      u.lang = "en-US";
-      speechSynthesis.cancel();
-      speechSynthesis.speak(u);
-    } catch (e) {}
-  }, []);
+  const speak = useCallback(speakText, []);
   const Chip = ({ label }) => (
     wordOf(label)
       ? <button className="lchip link" onClick={() => onPush(label)}>{label}</button>
@@ -1216,7 +1265,7 @@ function CardSession({ items, onExit, onOpenWord }) {
   const expected = blank ? blank.answer : it && it.word.toLowerCase();
   const synonyms = useMemo(() => (it && wordOf(it.word) && wordOf(it.word).syn) || [], [it]);
 
-  const speak = txt => { try { const u = new SpeechSynthesisUtterance(txt); u.lang = "en-US"; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch (e) {} };
+  const speak = speakText;
 
   // 정답 판정: 빈칸의 정답 또는 원형 단어와 일치해야 정답. 유의어는 정답으로 인정하지 않음(문장에 안 맞을 수 있어서) —
   // 대신 유의어를 입력하면 아래 useEffect에서 안내 문구를 보여주고 힌트를 열어줌(패널티 없음).
@@ -1511,15 +1560,27 @@ function Learn({ onOpenWord, customStudy, onConsumeCustomStudy }) {
   );
 }
 
-/* ---------- 설정 (캐릭터 변경 등) ---------- */
+/* ---------- 설정 (캐릭터 변경 · 일일 목표 · 듣기 속도/악센트) ---------- */
 function Settings({ charK, onChangeChar, onClose }) {
   const [pts, setPts] = useState(POINTS.get());
+  const [prefs, setPrefsState] = useState(PREFS.get());
   const first = charK === null;
 
   const handlePick = k => {
     if (k === charK) return;
     if (first) { onChangeChar(k); return; } // 처음 1회는 무료
     if (POINTS.spend(CHAR_CHANGE_COST)) { setPts(POINTS.get()); onChangeChar(k); }
+  };
+
+  const setGoal = (key, v) => {
+    const n = Math.max(0, Math.min(999, v));
+    PREFS.set({ [key]: n });
+    setPrefsState({ ...PREFS.get() });
+  };
+  const setPref = (key, v) => {
+    PREFS.set({ [key]: v });
+    setPrefsState({ ...PREFS.get() });
+    speakText("This is a sample sentence."); // 바꾼 속도·악센트를 바로 들어볼 수 있도록
   };
 
   return ReactDOM.createPortal(
@@ -1570,6 +1631,50 @@ function Settings({ charK, onChangeChar, onClose }) {
                 );
               })}
             </div>
+          </div>
+
+          <div>
+            <div className="wd-sec-t">오늘의 목표</div>
+            <div className="goalrow">
+              <span className="goal-lbl">단어</span>
+              <button className="goal-step" onClick={() => setGoal("goalWords", prefs.goalWords - 5)}>−</button>
+              <span className="goal-v">{prefs.goalWords}개</span>
+              <button className="goal-step" onClick={() => setGoal("goalWords", prefs.goalWords + 5)}>+</button>
+            </div>
+            <div className="goalrow">
+              <span className="goal-lbl">듣기</span>
+              <button className="goal-step" onClick={() => setGoal("goalListen", prefs.goalListen - 5)}>−</button>
+              <span className="goal-v">{prefs.goalListen}개</span>
+              <button className="goal-step" onClick={() => setGoal("goalListen", prefs.goalListen + 5)}>+</button>
+            </div>
+            <div className="goalrow">
+              <span className="goal-lbl">회화·작문</span>
+              <button className="goal-step" onClick={() => setGoal("goalTalk", prefs.goalTalk - 5)}>−</button>
+              <span className="goal-v">{prefs.goalTalk}개</span>
+              <button className="goal-step" onClick={() => setGoal("goalTalk", prefs.goalTalk + 5)}>+</button>
+            </div>
+          </div>
+
+          <div>
+            <div className="wd-sec-t">듣기 속도</div>
+            <div className="wlist">
+              {Object.entries(SPEED_PRESETS).map(([k, s]) => (
+                <button key={k} className={"prefrow" + (prefs.speed === k ? " on" : "")} onClick={() => setPref("speed", k)}>
+                  <span className="pf-name">{s.label}</span>
+                  <span className="pf-sub">{s.sub}</span>
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <div className="wd-sec-t">악센트</div>
+            <div className="chips">
+              {Object.entries(ACCENT_PRESETS).map(([k, a]) => (
+                <button key={k} className={"chip" + (prefs.accent === k ? " on" : "")} onClick={() => setPref("accent", k)}>{a.label}</button>
+              ))}
+            </div>
+            <div className="empty-note" style={{ marginTop: 6 }}>브라우저 음성 합성 특성상 국가 단위까지만 구분돼요. 도시별 악센트(뉴욕·캘리포니아·텍사스 등)는 지금 기술로는 구현할 수 없어요.</div>
           </div>
 
           <div className="empty-note" style={{ textAlign: "center", marginTop: 4 }}>{APP_VERSION} · {APP_BUILD}</div>
