@@ -19,7 +19,7 @@ const BATCH_DIR = path.join(__dirname, "batches");
 const ENRICHED_DIR = path.join(__dirname, "cefrj");
 const NETWORK_PATH = path.join(__dirname, "cefrj", "network.json");
 const ROOTS_PATH = path.join(__dirname, "cefrj", "roots.json");
-const SENSES_PATH = path.join(__dirname, "senses.json");
+const SENSES_DIR = path.join(__dirname, "senses_parts");
 
 function loadAuthored() {
   const map = {};
@@ -42,9 +42,17 @@ function loadRoots() {
   return JSON.parse(fs.readFileSync(ROOTS_PATH, "utf8"));
 }
 
+// senses_parts/ 안의 모든 *.json을 병합. 레벨별 소넷 에이전트가 각자 별도 파일에
+// 써서 병렬 충돌을 피하고, 여기서 하나로 합친다. 같은 단어가 겹치면 나중 파일이 우선.
 function loadSenses() {
-  if (!fs.existsSync(SENSES_PATH)) return {};
-  return JSON.parse(fs.readFileSync(SENSES_PATH, "utf8"));
+  const map = {};
+  if (!fs.existsSync(SENSES_DIR)) return map;
+  for (const f of fs.readdirSync(SENSES_DIR).sort()) {
+    if (!f.endsWith(".json")) continue;
+    const part = JSON.parse(fs.readFileSync(path.join(SENSES_DIR, f), "utf8"));
+    for (const [k, v] of Object.entries(part)) map[k.toLowerCase()] = v;
+  }
+  return map;
 }
 
 const LEVEL_ORDER = ["a1", "a2", "b1", "b2", "c1", "c2"];
