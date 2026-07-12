@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.3">
+<link rel="manifest" href="manifest.json?v=0.11.4">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.3"></script>
-<script src="img/rat_run.js?v=0.11.3"></script>
+<script src="words.js?v=0.11.4"></script>
+<script src="img/rat_run.js?v=0.11.4"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -46,7 +46,7 @@ body{color:var(--ink);}
 #root{height:100%;}
 button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
-.app{height:100vh;height:100dvh;display:flex;flex-direction:column;background:var(--bg);max-width:520px;margin:0 auto;position:relative;}
+.app{height:100vh;height:100dvh;height:var(--app-vh, 100dvh);display:flex;flex-direction:column;background:var(--bg);max-width:520px;margin:0 auto;position:relative;}
 .topbar{padding:calc(env(safe-area-inset-top) + 12px) 20px 8px;display:flex;align-items:center;justify-content:space-between;}
 .brand{font-size:20px;font-weight:800;letter-spacing:-0.4px;}
 .brand b{color:var(--accent);}
@@ -221,6 +221,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .sheet-head .back{font-size:20px;color:var(--muted);padding:2px 6px;margin-left:-6px;}
 .sheet-head .sp{flex:1;}
 .sheet-head .fav{font-size:13px;font-weight:600;color:var(--muted);}
+.sheet-head .fav.on{color:var(--accent-deep);font-weight:800;}
 /* flex:1+min-height:0 필수 — 없으면 내용이 길어질 때(다의어 등) 이 영역이 축소되지 않고
    시트 전체가 화면 밖으로 밀려 상단 헤더(닫기 버튼)까지 넘어간다(flex item min-height:auto 버그). */
 .sheet-body{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:0 18px 28px;display:flex;flex-direction:column;gap:16px;flex:1;min-height:0;}
@@ -267,7 +268,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .study-bar{flex:1;height:8px;background:var(--fill);border-radius:999px;overflow:hidden;}
 .study-bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .3s ease;}
 .study-n{font-size:13px;font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;flex:none;}
-.qcard{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
+/* flex:1+min-height:0+overflow-y:auto — 공간이 부족할 때(키보드가 뜬 상태 등) 카드 내용이
+   스크롤되어 줄어들고, 그 아래 힌트·확인 버튼은 항상 화면 안에 남도록(.sheet-body와 동일 패턴) */
+.qcard{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;}
 .qcue{font-size:12px;color:var(--muted);}
 .qko{font-size:17px;font-weight:800;letter-spacing:-0.3px;line-height:1.4;}
 .qdiv{height:1px;background:var(--line);margin:2px 0;}
@@ -282,7 +285,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 글자수 힌트: 정답 글자 수만큼 칸(cell)으로 분리 — 같은 회색 솔리드 톤, 다음 입력 칸에 캐럿 깜빡임 */
 .cellrow{display:inline-flex;gap:5px;position:relative;vertical-align:middle;}
 .cell{width:26px;height:36px;border-radius:8px;background:var(--fill);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:var(--accent-deep);text-transform:none;}
-.cell.filled{background:var(--accent-soft);}
+.cell.correct{background:var(--accent-soft);color:var(--accent-deep);}
+.cell.wrong{background:var(--fill);color:var(--muted);}
 .cell.cur::after{content:"";width:2px;height:17px;border-radius:1px;background:var(--accent);animation:caretblink 1.06s steps(1) infinite;}
 @keyframes caretblink{50%{opacity:0;}}
 @media (prefers-reduced-motion: reduce){.cell.cur::after{animation:none;}}
@@ -297,6 +301,10 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qres.ok{color:var(--good);}
 .qres.no{color:#d64545;}
 .qres .due{margin-left:auto;font-size:12px;color:var(--muted);font-weight:600;background:var(--fill);padding:5px 10px;border-radius:999px;}
+.qsyn{display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
+.qsyn-lbl{font-size:12px;font-weight:700;color:var(--muted);}
+.qsyn-chip{font-size:12px;font-weight:600;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:5px 10px;}
+.qsyn-chip.link{color:var(--accent-deep);}
 .qactions{margin-top:auto;display:flex;gap:8px;}
 .qactions button{flex:1;padding:14px;border-radius:14px;font-weight:700;font-size:15px;}
 .qactions .ghost{background:var(--surface);border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow);}
@@ -331,7 +339,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.3";
+const APP_VERSION = "v0.11.4";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -374,8 +382,16 @@ function saveExtra() { try { localStorage.setItem("en_mywords", JSON.stringify(E
 function wordOf(w) { return byWord[w] || EXTRA[w]; }
 function allWords() { return SEED.concat(Object.values(EXTRA)); }
 
-/* v0 데모 즐겨찾기 */
-const FAVS = new Set(["alert", "idiomatic"]);
+/* 즐겨찾기 — localStorage 보존(EXTRA·SRS와 동일 패턴). 첫 실행에만 데모 시드. */
+let FAVS = (() => {
+  try {
+    const raw = localStorage.getItem("en_favs");
+    if (raw === null) return new Set(["alert", "idiomatic"]);
+    return new Set(JSON.parse(raw));
+  } catch (e) { return new Set(["alert", "idiomatic"]); }
+})();
+function saveFavs() { try { localStorage.setItem("en_favs", JSON.stringify([...FAVS])); } catch (e) {} }
+function toggleFav(word) { if (FAVS.has(word)) FAVS.delete(word); else FAVS.add(word); saveFavs(); }
 
 /* ===================== SRS 엔진 (Leitner · localStorage) =====================
    학습 단위 키 = 다의어면 `word#senseIndex`, 단일 의미면 `word`.
@@ -631,6 +647,7 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
   const w = wordOf(word);
   const [senseOpen, setSenseOpen] = useState(0); // 다의어: 첫 의미 펼침
   const [showAllSenses, setShowAllSenses] = useState(false);
+  const [, bump] = useState(0); // 즐겨찾기·내 단어장 토글 리렌더용
   useEffect(() => { setSenseOpen(0); setShowAllSenses(false); }, [word]);
   const speak = useCallback((text) => {
     try {
@@ -660,7 +677,9 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
             ? <button className="back" onClick={onPop} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
             : <span style={{ width: 8 }} />}
           <span className="sp" />
-          <button className="fav">즐겨찾기</button>
+          <button className={"fav" + (FAVS.has(w.word) ? " on" : "")} onClick={() => { toggleFav(w.word); bump(v => v + 1); }}>
+            {FAVS.has(w.word) ? "즐겨찾기 ✓" : "즐겨찾기"}
+          </button>
           <button className="back" onClick={onClose} style={{ marginLeft: 4 }} aria-label="닫기"><Icon name="close" size={20} /></button>
         </div>
         <div className="sheet-body">
@@ -988,31 +1007,54 @@ function Soon({ title, desc }) {
 
 /* ---------- 단어카드 세션 ---------- */
 function CardSession({ items, onExit, onOpenWord }) {
+  const [queue, setQueue] = useState(items);
   const [idx, setIdx] = useState(0);
   const [val, setVal] = useState("");
   const [res, setRes] = useState(null); // null | {ok, answer, dueIn}
   const [correct, setCorrect] = useState(0);
   const [hintLen, setHintLen] = useState(false);   // 글자수 힌트
   const [hintFirst, setHintFirst] = useState(false); // 첫 글자 힌트
+  const [hintUsed, setHintUsed] = useState(false);   // 이 카드에서 힌트를 썼는지 — 쓰면 이번 세션에 한 번 더 출제
 
-  const it = items[idx];
+  const it = queue[idx];
   const blank = useMemo(() => it ? makeBlank(it.ex.en, it.word) : null, [it]);
   const mode = blank ? "cloze" : "spell";
   const expected = blank ? blank.answer : it && it.word.toLowerCase();
+  const synonyms = useMemo(() => (it && wordOf(it.word) && wordOf(it.word).syn) || [], [it]);
 
   const speak = txt => { try { const u = new SpeechSynthesisUtterance(txt); u.lang = "en-US"; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch (e) {} };
 
-  const check = () => {
-    if (res || !val.trim()) return;
-    const ok = val.trim().toLowerCase() === expected || val.trim().toLowerCase() === it.word.toLowerCase();
+  // 정답 판정: 빈칸의 정답, 원형 단어, 유의어 중 하나와 일치하면 정답 처리
+  const isAnswer = raw => {
+    const v = raw.trim().toLowerCase();
+    if (!v) return false;
+    return v === expected || v === it.word.toLowerCase() || synonyms.some(s => s.toLowerCase() === v);
+  };
+
+  const submit = raw => {
+    if (res) return;
+    const v = (raw !== undefined ? raw : val).trim();
+    if (!v) return;
+    const ok = isAnswer(v);
     const s = SRS.grade(it.key, ok);
     if (ok) setCorrect(c => c + 1);
     setRes({ ok, answer: expected, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) });
     speak(it.ex.en);
   };
+
+  // 입력이 정답(유의어 포함)과 일치하면 '확인'을 누르지 않아도 바로 채점
+  const handleChange = raw => {
+    setVal(raw);
+    if (isAnswer(raw)) submit(raw);
+  };
+
+  const hintUsedNextLen = hintUsed ? queue.length + 1 : queue.length; // 힌트 사용 시 재출제로 늘어날 총 문항 수(다음 버튼 표기용)
   const next = () => {
-    if (idx + 1 >= items.length) { onExit(true, correct); return; }
-    setIdx(idx + 1); setVal(""); setRes(null); setHintLen(false); setHintFirst(false);
+    let q = queue;
+    if (hintUsed) q = queue.concat([it]); // 힌트를 쓴 단어는 이번 세션에 한 번 더 출제
+    if (idx + 1 >= q.length) { onExit(true, correct, q.length); return; }
+    if (q !== queue) setQueue(q);
+    setIdx(idx + 1); setVal(""); setRes(null); setHintLen(false); setHintFirst(false); setHintUsed(false);
   };
 
   const hiddenRef = React.useRef(null);
@@ -1022,24 +1064,46 @@ function CardSession({ items, onExit, onOpenWord }) {
   const toggleFirst = () => {
     setHintFirst(v => {
       const nv = !v;
-      if (nv && expected && val === "") setVal(expected[0]);
-      else if (!nv && val === (expected ? expected[0] : "")) setVal("");
+      if (nv) { setHintUsed(true); if (expected && val === "") setVal(expected[0]); }
+      else if (val === (expected ? expected[0] : "")) setVal("");
       return nv;
     });
   };
 
-  // 입력창: 기본은 박스 하나. 글자수 힌트를 켜면 정답 글자 수만큼 칸(cell)으로 분리.
+  // 글자수 힌트: 켜는 순간 지금까지 입력한 것 중 정답과 일치하는 앞부분만 남기고 나머지는 버림
+  const toggleLen = () => {
+    setHintLen(v => {
+      const nv = !v;
+      if (nv) {
+        setHintUsed(true);
+        if (expected) {
+          let kept = "";
+          for (let i = 0; i < val.length && i < expected.length; i++) {
+            if (val[i].toLowerCase() === expected[i]) kept += val[i]; else break;
+          }
+          setVal(kept);
+        }
+      }
+      return nv;
+    });
+  };
+
+  // 입력창: 기본은 박스 하나. 글자수 힌트를 켜면 정답 글자 수만큼 칸(cell)으로 분리하고,
+  // 위치별로 정답과 대조해 맞은 글자는 파랑(correct), 틀린 글자는 회색(wrong)으로 표시.
   const boxInput = () => {
     if (hintLen && expected) {
       const n = expected.length;
       return (
         <span className="cellrow" onMouseDown={e => { e.preventDefault(); focusHidden(); }}>
-          {Array.from({ length: n }).map((_, k) => (
-            <span key={k} className={"cell" + (val[k] ? " filled" : "") + (k === val.length ? " cur" : "")}>{val[k] || ""}</span>
-          ))}
+          {Array.from({ length: n }).map((_, k) => {
+            const ch = val[k];
+            const right = ch && ch.toLowerCase() === expected[k];
+            const cls = "cell" + (ch ? (right ? " correct" : " wrong") : "") + (k === val.length ? " cur" : "");
+            return <span key={k} className={cls}>{ch || ""}</span>;
+          })}
           <input key={idx} ref={hiddenRef} className="cell-catch" autoFocus value={val}
-            onChange={e => setVal(e.target.value.replace(/[^A-Za-z']/g, "").slice(0, n))}
-            onKeyDown={e => e.key === "Enter" && check()}
+            onChange={e => handleChange(e.target.value.replace(/[^A-Za-z']/g, "").slice(0, n))}
+            onKeyDown={e => e.key === "Enter" && submit()}
             maxLength={n} autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
             aria-label="빈칸 입력" />
         </span>
@@ -1047,8 +1111,8 @@ function CardSession({ items, onExit, onOpenWord }) {
     }
     return (
       <input key={idx} ref={hiddenRef} className="qbox" autoFocus value={val}
-        onChange={e => setVal(e.target.value)}
-        onKeyDown={e => e.key === "Enter" && check()}
+        onChange={e => handleChange(e.target.value)}
+        onKeyDown={e => e.key === "Enter" && submit()}
         size={Math.max(8, val.length + 1)}
         autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
         aria-label="빈칸 입력" />
@@ -1093,8 +1157,8 @@ function CardSession({ items, onExit, onOpenWord }) {
     <div className="content study">
       <div className="study-top">
         <button className="x" onClick={() => onExit(false, correct)} aria-label="종료"><Icon name="close" size={22} /></button>
-        <div className="study-bar"><i style={{ width: ((idx + (res ? 1 : 0)) / items.length * 100) + "%" }} /></div>
-        <span className="study-n">{idx + 1} / {items.length}</span>
+        <div className="study-bar"><i style={{ width: ((idx + (res ? 1 : 0)) / queue.length * 100) + "%" }} /></div>
+        <span className="study-n">{idx + 1} / {queue.length}</span>
       </div>
 
       <div className="qcard">
@@ -1122,21 +1186,31 @@ function CardSession({ items, onExit, onOpenWord }) {
             <span className="due">{res.dueIn === 0 ? "곧 복습" : res.dueIn + "일 뒤 복습"}</span>
           </div>
         )}
+        {res && synonyms.length > 0 && (
+          <div className="qsyn">
+            <span className="qsyn-lbl">유의어</span>
+            {synonyms.map(s => (
+              wordOf(s)
+                ? <button key={s} className="qsyn-chip link" onClick={() => onOpenWord(s)}>{s}</button>
+                : <span key={s} className="qsyn-chip">{s}</span>
+            ))}
+          </div>
+        )}
       </div>
 
       {!res ? (
         <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: "auto" }}>
           <div className="qhintrow">
             <span className="qhint-lbl">힌트</span>
-            <button className={"qhint-btn" + (hintLen ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={() => setHintLen(v => !v)}>글자수</button>
+            <button className={"qhint-btn" + (hintLen ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={toggleLen}>글자수</button>
             <button className={"qhint-btn" + (hintFirst ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={toggleFirst}>첫 글자</button>
           </div>
-          <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={check}>확인</button>
+          <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={() => submit()}>확인</button>
         </div>
       ) : (
         <div className="qactions">
           <button className="ghost" onClick={() => onOpenWord(it.word)}>단어 정보</button>
-          <button className="primary" onClick={next}>{idx + 1 >= items.length ? "학습 완료" : "다음 문제"}</button>
+          <button className="primary" onClick={next}>{idx + 1 >= hintUsedNextLen ? "학습 완료" : "다음 문제"}</button>
         </div>
       )}
     </div>
@@ -1168,8 +1242,8 @@ function Learn({ onOpenWord }) {
   }
   if (session) {
     return <CardSession items={session} onOpenWord={onOpenWord}
-      onExit={(done, correct) => {
-        if (done) { setSummary({ total: session.length, correct }); setSession("done"); }
+      onExit={(done, correct, total) => {
+        if (done) { setSummary({ total: total ?? session.length, correct }); setSession("done"); }
         else setSession(null);
       }} />;
   }
@@ -1292,6 +1366,19 @@ function App() {
     try { return localStorage.getItem("en_char"); } catch (e) { return null; }
   });
   const changeChar = k => { setCharKState(k); try { localStorage.setItem("en_char", k); } catch (e) {} };
+
+  /* 모바일 소프트 키보드가 뜨면 100dvh가 줄어들지 않는 브라우저(특히 iOS 홈화면 PWA)가 있어
+     학습카드 하단 고정 버튼(힌트·확인)이 키보드에 가려짐. visualViewport 실측 높이를
+     CSS 변수로 반영해 .app 실제 높이를 키보드 유무에 맞춰 보정. */
+  useEffect(() => {
+    const vv = window.visualViewport;
+    if (!vv) return;
+    const setVH = () => document.documentElement.style.setProperty("--app-vh", vv.height + "px");
+    setVH();
+    vv.addEventListener("resize", setVH);
+    vv.addEventListener("scroll", setVH);
+    return () => { vv.removeEventListener("resize", setVH); vv.removeEventListener("scroll", setVH); };
+  }, []);
 
   const openWord = w => setStack([w]);
   const pushWord = w => setStack(s => [...s, w]);
