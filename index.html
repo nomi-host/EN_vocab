@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.7">
+<link rel="manifest" href="manifest.json?v=0.11.8">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.7"></script>
-<script src="img/rat_run.js?v=0.11.7"></script>
+<script src="words.js?v=0.11.8"></script>
+<script src="img/rat_run.js?v=0.11.8"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -237,7 +237,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .sheet-head .back{font-size:20px;color:var(--muted);padding:2px 6px;margin-left:-6px;}
 .sheet-head .sp{flex:1;}
 .sheet-head .fav{font-size:13px;font-weight:600;color:var(--muted);}
-.sheet-head .fav.on{color:var(--accent-deep);font-weight:800;}
+.favstar{color:var(--muted);display:flex;padding:2px 4px;}
+.favstar.on{color:var(--accent);}
 /* flex:1+min-height:0 필수 — 없으면 내용이 길어질 때(다의어 등) 이 영역이 축소되지 않고
    시트 전체가 화면 밖으로 밀려 상단 헤더(닫기 버튼)까지 넘어간다(flex item min-height:auto 버그). */
 .sheet-body{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:0 18px 28px;display:flex;flex-direction:column;gap:16px;flex:1;min-height:0;}
@@ -287,6 +288,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .study-bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .3s ease;}
 .study-n{font-size:13px;font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;flex:none;}
 .qcard{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
+.qlvrow{display:flex;justify-content:flex-end;margin-bottom:-6px;}
 .qcue{font-size:12px;color:var(--muted);}
 .qko{font-size:17px;font-weight:800;letter-spacing:-0.3px;line-height:1.4;}
 .qdiv{height:1px;background:var(--line);margin:2px 0;}
@@ -318,8 +320,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qres.ok{color:var(--good);}
 .qres.no{color:#d64545;}
 .qres .due{margin-left:auto;font-size:12px;color:var(--muted);font-weight:600;background:var(--fill);padding:5px 10px;border-radius:999px;}
-.qsyn{display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
+.qsyn{display:flex;flex-direction:column;gap:6px;}
 .qsyn-lbl{font-size:12px;font-weight:700;color:var(--muted);}
+.qsyn-chips{display:flex;gap:6px;flex-wrap:wrap;}
 .qsyn-chip{font-size:12px;font-weight:600;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:5px 10px;}
 .qsyn-chip.link{color:var(--accent-deep);}
 .qactions{margin-top:auto;display:flex;gap:8px;}
@@ -356,7 +359,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.7";
+const APP_VERSION = "v0.11.8";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -587,15 +590,16 @@ function SpriteChar({ frames, size = 100, fps = 8 }) {
   );
 }
 
-function Home({ onGoTab, charK, onOpenSettings }) {
+function Home({ onGoTab, charK, onOpenSettings, onStartCards }) {
   const [badge, setBadge] = useState(null);
   const chr = CHARACTERS.find(c => c.k === charK) || null;
   const STREAK = 12;                       // 데모: 실제로는 학습 로그에서
   const stage = streakStage(STREAK);       // 1~4
   const speed = { "--bob": (0.64 - stage * 0.06) + "s", "--road": (0.8 - stage * 0.09) + "s" };
 
+  // direct: 탭 메뉴를 거치지 않고 바로 그 학습을 시작(단어카드는 세션 즉시 시작, 회화는 페르소나 선택 화면 — 준비되면 연결)
   const routine = [
-    { n: 1, title: "단어카드 20개", sub: "신규 12 · 복습 8", state: "done", tab: "learn" },
+    { n: 1, title: "단어카드 20개", sub: "신규 12 · 복습 8", state: "done", tab: "learn", direct: true },
     { n: 2, title: "듣기 10문장", sub: "6 / 10 진행 중", state: "active", tab: "learn" },
     { n: 3, title: "회화 1세션", sub: "오늘의 상대: Karen (공항)", state: "todo", tab: "talk" },
   ];
@@ -669,7 +673,7 @@ function Home({ onGoTab, charK, onOpenSettings }) {
       {routine.map(s => (
         <div key={s.n}
              className={"step" + (s.state === "active" ? " active" : "") + (s.state === "done" ? " done" : "")}
-             onClick={() => onGoTab(s.tab)}>
+             onClick={() => (s.direct ? onStartCards() : onGoTab(s.tab))}>
           <div className="step-ico">{s.state === "done" ? <Icon name="check" size={20} /> : s.n}</div>
           <div className="step-body">
             <div className="step-title">{s.title}</div>
@@ -730,8 +734,8 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
             : <span style={{ width: 8 }} />}
           <span className="sp" />
           <button className="fav" onClick={() => setShowPicker(true)}>내 단어장</button>
-          <button className={"fav" + (FAVS.has(w.word) ? " on" : "")} onClick={() => { toggleFav(w.word); bump(v => v + 1); }}>
-            {FAVS.has(w.word) ? "즐겨찾기 ✓" : "즐겨찾기"}
+          <button className={"favstar" + (FAVS.has(w.word) ? " on" : "")} onClick={() => { toggleFav(w.word); bump(v => v + 1); }} aria-label="즐겨찾기">
+            <Icon name="star" size={22} />
           </button>
           <button className="back" onClick={onClose} style={{ marginLeft: 4 }} aria-label="닫기"><Icon name="close" size={20} /></button>
         </div>
@@ -1233,10 +1237,15 @@ function CardSession({ items, onExit, onOpenWord }) {
     speak(it.ex.en);
   };
 
-  // 입력이 정답과 일치하면 '확인'을 누르지 않아도 바로 채점
+  // 입력이 정답과 일치하면 '확인'을 누르지 않아도 채점되지만, 마지막 글자를 치자마자
+  // 키보드가 바로 사라지면 너무 갑작스러워서 짧게 텀을 두고(완성된 답을 한 박자 보여준 뒤) 채점
+  const submitTimer = React.useRef(null);
+  const clearSubmitTimer = () => { if (submitTimer.current) { clearTimeout(submitTimer.current); submitTimer.current = null; } };
+  useEffect(() => clearSubmitTimer, []);
   const handleChange = raw => {
     setVal(raw);
-    if (isAnswer(raw)) submit(raw);
+    clearSubmitTimer();
+    if (isAnswer(raw)) submitTimer.current = setTimeout(() => submit(raw), 380);
   };
 
   // 유의어를 입력했을 때: 오답 처리하지 않고 안내 문구를 띄우고 힌트 두 개를 열어 정답을 유도.
@@ -1257,6 +1266,7 @@ function CardSession({ items, onExit, onOpenWord }) {
 
   const hintUsedNextLen = hintUsed ? queue.length + 1 : queue.length; // 힌트 사용 시 재출제로 늘어날 총 문항 수(다음 버튼 표기용)
   const next = () => {
+    clearSubmitTimer();
     let q = queue;
     if (hintUsed) q = queue.concat([it]); // 힌트를 쓴 단어는 이번 세션에 한 번 더 출제
     if (idx + 1 >= q.length) { onExit(true, correct, q.length); return; }
@@ -1369,6 +1379,7 @@ function CardSession({ items, onExit, onOpenWord }) {
       </div>
 
       <div className="qcard">
+        <div className="qlvrow"><span className="tag lv">{it.cefr}</span></div>
         {mode === "cloze" ? (
           <React.Fragment>
             {/* 빈칸 문제: 위에는 '문장의 한국어 뜻'을 제시(단어 뜻을 직접 주면 답을 알려주는 셈) */}
@@ -1397,12 +1408,14 @@ function CardSession({ items, onExit, onOpenWord }) {
         )}
         {res && synonyms.length > 0 && (
           <div className="qsyn">
-            <span className="qsyn-lbl">유의어</span>
-            {synonyms.map(s => (
-              wordOf(s)
-                ? <button key={s} className="qsyn-chip link" onClick={() => onOpenWord(s)}>{s}</button>
-                : <span key={s} className="qsyn-chip">{s}</span>
-            ))}
+            <div className="qsyn-lbl">아래 단어들도 대신 사용할 수 있어요</div>
+            <div className="qsyn-chips">
+              {synonyms.map(s => (
+                wordOf(s)
+                  ? <button key={s} className="qsyn-chip link" onClick={() => onOpenWord(s)}>{s}</button>
+                  : <span key={s} className="qsyn-chip">{s}</span>
+              ))}
+            </div>
           </div>
         )}
       </div>
@@ -1623,7 +1636,7 @@ function App() {
       </div>
 
       <div className="scroll">
-        {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} />}
+        {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} />}
         {tab === "dict" && <Dict onOpen={openWord} onStudyList={startCustomStudy} />}
         {tab === "learn" && <Learn onOpenWord={openWord} customStudy={customStudy} onConsumeCustomStudy={() => setCustomStudy(null)} />}
         {tab === "talk" && <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />}
