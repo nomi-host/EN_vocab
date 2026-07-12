@@ -69,7 +69,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .sign{display:inline-block;background:var(--ink);color:#fff;font-weight:800;font-size:13px;letter-spacing:.5px;padding:6px 12px;border-radius:8px;transform:rotate(-3deg);}
 
 /* 캐릭터 스테이지: 가운데 캐릭터 + 뒤로 뱃지 가로스크롤 */
-.stage{position:relative;height:210px;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.stage{position:relative;height:240px;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;align-items:center;justify-content:center;}
 .badge-track{position:absolute;left:0;right:0;top:44%;transform:translateY(-50%);display:flex;gap:14px;align-items:center;overflow-x:auto;padding:0 42%;scrollbar-width:none;z-index:1;}
 .badge-track::-webkit-scrollbar{display:none;}
 .badge{flex:none;width:62px;height:62px;border-radius:17px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;text-align:center;line-height:1.15;padding:4px;transition:transform .1s;}
@@ -77,10 +77,15 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .badge.earned{background:var(--accent-soft);color:var(--accent-deep);border:1.5px solid var(--accent);}
 .badge.locked{background:var(--fill);color:var(--muted);font-size:20px;}
 .hero-char{position:relative;z-index:2;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:9px;}
-.char-face{width:104px;height:104px;border-radius:26px;background:radial-gradient(120% 120% at 50% 30%,#ffffff,#e9edf6);border:4px solid var(--surface);box-shadow:0 8px 22px rgba(20,20,30,.16);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;}
+.char-face{width:156px;height:156px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;}
 /* 달리는 씬(placeholder). 실제 캐릭터는 Lottie/Rive/스프라이트로 이 슬롯 교체 */
 .hero-char.run .char-face{animation:runbob var(--bob,.5s) ease-in-out infinite alternate;}
 @keyframes runbob{from{transform:translateY(1px) rotate(-1.5deg);}to{transform:translateY(-7px) rotate(1.5deg);}}
+/* 스프라이트 프레임 전환 크로스페이드 — 프레임이 뚝뚝 끊기지 않고 자연스럽게 이어지도록 */
+.sprite-frame{position:absolute;inset:0;display:block;}
+@keyframes spriteFadeIn{from{opacity:0;}to{opacity:1;}}
+@keyframes spriteFadeOut{from{opacity:1;}to{opacity:0;}}
+@media (prefers-reduced-motion: reduce){.sprite-frame{animation:none!important;opacity:1!important;}}
 .road{position:absolute;left:0;right:0;bottom:16px;height:6px;z-index:0;border-radius:3px;
   background:repeating-linear-gradient(90deg,var(--line) 0 20px,transparent 20px 44px);
   animation:roadmove var(--road,.6s) linear infinite;}
@@ -295,8 +300,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.7.0";
-const APP_BUILD = "2026-07-11";
+const APP_VERSION = "v0.7.1";
+const APP_BUILD = "2026-07-12";
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -456,17 +461,39 @@ const BADGES = [
   { k: "w5000", mark: "5000", title: "5000단어 학습", earned: null, cond: "학습 단어 5000개 달성" },
 ];
 
-/* 프레임 배열(svgo 최적화된 자체 생성 SVG, 외부 입력 아님) 순환 재생 — 실제 캐릭터 아트 슬롯 */
+/* 프레임 배열(svgo 최적화된 자체 생성 SVG, 외부 입력 아님) 순환 재생 — 실제 캐릭터 아트 슬롯.
+   프레임 전환은 하드컷 대신 이전/다음 프레임을 겹쳐 크로스페이드해 자연스럽게 이어지도록 처리. */
 function SpriteChar({ frames, size = 100, fps = 8 }) {
   const [i, setI] = useState(0);
+  const [prevI, setPrevI] = useState(null);
+  const reduceMotion = useMemo(
+    () => typeof window !== "undefined" && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    []
+  );
   useEffect(() => {
     if (!frames || frames.length < 2) return;
-    const id = setInterval(() => setI(v => (v + 1) % frames.length), 1000 / fps);
+    const id = setInterval(() => {
+      setI(v => { setPrevI(v); return (v + 1) % frames.length; });
+    }, 1000 / fps);
     return () => clearInterval(id);
   }, [frames, fps]);
   if (!frames || !frames.length) return null;
-  const f = frames[i % frames.length];
-  return <svg width={size} height={size} viewBox={f.vb} style={{ display: "block" }} dangerouslySetInnerHTML={{ __html: f.inner }} />;
+  const dur = (1000 / fps) + "ms";
+  const cur = frames[i % frames.length];
+  const showCrossfade = !reduceMotion && frames.length > 1 && prevI != null && prevI !== i;
+  const prev = showCrossfade ? frames[prevI % frames.length] : null;
+  return (
+    <div style={{ position: "relative", width: size, height: size }}>
+      {prev && (
+        <svg key={"p" + prevI + "-" + i} className="sprite-frame" width={size} height={size} viewBox={prev.vb}
+             style={{ animation: `spriteFadeOut ${dur} linear forwards` }}
+             dangerouslySetInnerHTML={{ __html: prev.inner }} />
+      )}
+      <svg key={"c" + i} className="sprite-frame" width={size} height={size} viewBox={cur.vb}
+           style={{ animation: showCrossfade ? `spriteFadeIn ${dur} linear forwards` : "none" }}
+           dangerouslySetInnerHTML={{ __html: cur.inner }} />
+    </div>
+  );
 }
 
 function Home({ onGoTab, charK, onOpenSettings }) {
@@ -517,7 +544,7 @@ function Home({ onGoTab, charK, onOpenSettings }) {
           <div className="hero-char run">
             <div className="char-face">
               {chr.k === "rat" && window.CHAR_RAT_RUN
-                ? <SpriteChar frames={window.CHAR_RAT_RUN} size={100} fps={5 + stage * 2} />
+                ? <SpriteChar frames={window.CHAR_RAT_RUN} size={150} fps={5 + stage * 2} />
                 : <React.Fragment>{chr.label}<br/>{chr.move}<br/>{stage}단계</React.Fragment>}
             </div>
             <div className="sign">OH... ENGLISH?</div>
