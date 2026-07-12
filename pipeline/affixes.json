@@ -1,5 +1,4 @@
 [
- {"affix": "a-", "type": "prefix", "gloss": "부정, 없음", "min_stem": 4},
  {"affix": "ab-", "type": "prefix", "gloss": "~로부터, 떨어져서", "min_stem": 3},
  {"affix": "ad-", "type": "prefix", "gloss": "~쪽으로", "min_stem": 3},
  {"affix": "ambi-", "type": "prefix", "gloss": "양쪽의", "min_stem": 3},
@@ -9,7 +8,6 @@
  {"affix": "bi-", "type": "prefix", "gloss": "둘의", "min_stem": 3},
  {"affix": "bio-", "type": "prefix", "gloss": "생명의", "min_stem": 3},
  {"affix": "circum-", "type": "prefix", "gloss": "주위에", "min_stem": 3},
- {"affix": "co-", "type": "prefix", "gloss": "함께", "min_stem": 4},
  {"affix": "com-", "type": "prefix", "gloss": "함께", "min_stem": 3},
  {"affix": "con-", "type": "prefix", "gloss": "함께", "min_stem": 3},
  {"affix": "contra-", "type": "prefix", "gloss": "반대로", "min_stem": 3},
@@ -129,7 +127,7 @@
  {"affix": "-ling", "type": "suffix", "gloss": "작은 것, ~하는 사람", "min_stem": 3},
  {"affix": "-logy", "type": "suffix", "gloss": "~학(學)", "min_stem": 3},
  {"affix": "-ology", "type": "suffix", "gloss": "~학(學)", "min_stem": 3},
- {"affix": "-ly", "type": "suffix", "gloss": "~하게(부사)", "min_stem": 4},
+ {"affix": "-ly", "type": "suffix", "gloss": "~하게(부사)", "min_stem": 3},
  {"affix": "-ment", "type": "suffix", "gloss": "결과, 상태(명사)", "min_stem": 3},
  {"affix": "-ness", "type": "suffix", "gloss": "상태, 성질", "min_stem": 3},
  {"affix": "-oid", "type": "suffix", "gloss": "~같은 모양의", "min_stem": 3},
@@ -144,6 +142,5 @@
  {"affix": "-tude", "type": "suffix", "gloss": "상태", "min_stem": 3},
  {"affix": "-ward", "type": "suffix", "gloss": "~쪽으로", "min_stem": 3},
  {"affix": "-wards", "type": "suffix", "gloss": "~쪽으로", "min_stem": 3},
- {"affix": "-wise", "type": "suffix", "gloss": "~방향으로, ~에 관해", "min_stem": 3},
- {"affix": "-y", "type": "suffix", "gloss": "~한 성질의", "min_stem": 4}
+ {"affix": "-wise", "type": "suffix", "gloss": "~방향으로, ~에 관해", "min_stem": 3}
 ]

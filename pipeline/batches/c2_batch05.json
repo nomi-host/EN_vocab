@@ -31,7 +31,7 @@
  {"word": "meager", "ko": "빈약한, 부족한", "ex": {"en": "They survived on a meager diet during the famine.", "ko": "그들은 기근 동안 빈약한 식사로 버텼다."}},
  {"word": "arcane", "ko": "난해한, 비밀스러운", "ex": {"en": "The rules of the game are arcane and confusing.", "ko": "그 게임의 규칙은 난해하고 혼란스럽다."}},
  {"word": "arcanely", "ko": "난해하게, 비밀스럽게", "ex": {"en": "The contract was written arcanely, full of legal jargon.", "ko": "그 계약서는 법률 전문 용어로 가득 차 난해하게 작성되어 있었다."}, "enOverride": "in a mysterious or difficult-to-understand manner"},
- {"word": "porten", "ko": "징조, 전조", "ex": {"en": "The dark clouds were seen as a porten of disaster.", "ko": "그 먹구름은 재앙의 징조로 여겨졌다."}, "enOverride": "an omen or sign of something, especially something bad, about to happen (also spelled 'portent')"},
+ {"word": "portent", "ko": "징조, 전조", "ex": {"en": "The dark clouds were seen as a portent of disaster.", "ko": "그 먹구름은 재앙의 징조로 여겨졌다."}, "enOverride": "an omen or sign of something, especially something bad, about to happen"},
  {"word": "divination", "ko": "점, 예언", "ex": {"en": "The tribe practiced divination using animal bones.", "ko": "그 부족은 동물 뼈를 이용한 점을 행했다."}},
  {"word": "flit", "ko": "훨훨 날다, 재빨리 움직이다", "ex": {"en": "Butterflies flitted among the flowers.", "ko": "나비들이 꽃들 사이를 훨훨 날아다녔다."}},
  {"word": "hitch", "ko": "걸리다, 얽매다; 장애", "ex": {"en": "The plan went smoothly without a hitch.", "ko": "그 계획은 아무 장애 없이 순조롭게 진행되었다."}},
