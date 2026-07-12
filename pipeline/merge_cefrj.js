@@ -19,6 +19,7 @@ const BATCH_DIR = path.join(__dirname, "batches");
 const ENRICHED_DIR = path.join(__dirname, "cefrj");
 const NETWORK_PATH = path.join(__dirname, "cefrj", "network.json");
 const ROOTS_PATH = path.join(__dirname, "cefrj", "roots.json");
+const SENSES_PATH = path.join(__dirname, "senses.json");
 
 function loadAuthored() {
   const map = {};
@@ -41,12 +42,18 @@ function loadRoots() {
   return JSON.parse(fs.readFileSync(ROOTS_PATH, "utf8"));
 }
 
+function loadSenses() {
+  if (!fs.existsSync(SENSES_PATH)) return {};
+  return JSON.parse(fs.readFileSync(SENSES_PATH, "utf8"));
+}
+
 const LEVEL_ORDER = ["a1", "a2", "b1", "b2", "c1", "c2"];
 
 function main() {
   const authored = loadAuthored();
   const network = loadNetwork();
   const roots = loadRoots();
+  const sensesData = loadSenses();
   const byWord = new Map(); // lowercased word -> output entry (first/lowest level wins)
   let enrichedCount = 0;
 
@@ -90,7 +97,8 @@ function main() {
           roots: roots[key] || [],
           ex: [a.ex],
         };
-        if (a.senses && a.senses.length) entry.senses = a.senses;
+        if (sensesData[key] && sensesData[key].length) entry.senses = sensesData[key];
+        else if (a.senses && a.senses.length) entry.senses = a.senses;
         byWord.set(key, entry);
       }
     }
