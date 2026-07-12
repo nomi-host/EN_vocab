@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.0">
+<link rel="manifest" href="manifest.json?v=0.11.1">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.0"></script>
-<script src="img/rat_run.js?v=0.11.0"></script>
+<script src="words.js?v=0.11.1"></script>
+<script src="img/rat_run.js?v=0.11.1"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -81,7 +81,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .badge.earned{background:var(--accent-soft);color:var(--accent-deep);border:1.5px solid var(--accent);}
 .badge.locked{background:var(--fill);color:var(--muted);font-size:20px;}
 .hero-char{position:relative;z-index:2;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:9px;}
-.char-face{width:156px;height:156px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;background:var(--surface);}
+.char-face{width:156px;height:156px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;}
 /* 달리는 씬(placeholder). 실제 캐릭터는 Lottie/Rive/스프라이트로 이 슬롯 교체 */
 .hero-char.run .char-face{animation:runbob var(--bob,.5s) ease-in-out infinite alternate;}
 @keyframes runbob{from{transform:translateY(1px) rotate(-1.5deg);}to{transform:translateY(-7px) rotate(1.5deg);}}
@@ -310,7 +310,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.0";
+const APP_VERSION = "v0.11.1";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -472,42 +472,33 @@ const BADGES = [
 ];
 
 /* 프레임 배열(svgo 최적화된 자체 생성 SVG, 외부 입력 아님) 순환 재생 — 실제 캐릭터 아트 슬롯.
-   프레임 전환은 하드컷 대신 이전/다음 프레임을 겹쳐 크로스페이드해 자연스럽게 이어지도록 처리. */
+   모든 프레임을 한 번만 마운트해두고 opacity만 토글해 크로스페이드 — 매 프레임 SVG를
+   언마운트/재파싱하던 이전 방식의 깜빡임(flicker)을 제거. */
 function SpriteChar({ frames, size = 100, fps = 8 }) {
   const [i, setI] = useState(0);
-  const [prevI, setPrevI] = useState(null);
   const reduceMotion = useMemo(
     () => typeof window !== "undefined" && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches,
     []
   );
   useEffect(() => {
-    if (!frames || frames.length < 2) return;
-    const id = setInterval(() => {
-      setI(v => { setPrevI(v); return (v + 1) % frames.length; });
-    }, 1000 / fps);
+    if (!frames || frames.length < 2 || reduceMotion) return;
+    const id = setInterval(() => setI(v => (v + 1) % frames.length), 1000 / fps);
     return () => clearInterval(id);
-  }, [frames, fps]);
+  }, [frames, fps, reduceMotion]);
   if (!frames || !frames.length) return null;
-  const dur = (1000 / fps) + "ms";
-  const cur = frames[i % frames.length];
-  const showCrossfade = !reduceMotion && frames.length > 1 && prevI != null && prevI !== i;
-  const prev = showCrossfade ? frames[prevI % frames.length] : null;
+  const dur = Math.round(1000 / fps / 2) + "ms"; // 전환 시간은 프레임 간격의 절반
   return (
     <div style={{ position: "relative", width: size, height: size }}>
-      {prev && (
-        <svg key={"p" + prevI + "-" + i} className="sprite-frame" width={size} height={size} viewBox={prev.vb}
-             style={{ animation: `spriteFadeOut ${dur} linear forwards` }}
-             dangerouslySetInnerHTML={{ __html: prev.inner }} />
-      )}
-      <svg key={"c" + i} className="sprite-frame" width={size} height={size} viewBox={cur.vb}
-           style={{ animation: showCrossfade ? `spriteFadeIn ${dur} linear forwards` : "none" }}
-           dangerouslySetInnerHTML={{ __html: cur.inner }} />
+      {frames.map((f, idx) => (
+        <svg key={idx} className="sprite-frame" width={size} height={size} viewBox={f.vb}
+             style={{ opacity: idx === i ? 1 : 0, transition: reduceMotion ? "none" : `opacity ${dur} linear` }}
+             dangerouslySetInnerHTML={{ __html: f.inner }} />
+      ))}
     </div>
   );
 }
 
 function Home({ onGoTab, charK, onOpenSettings }) {
-  const [badge, setBadge] = useState(null);
   const chr = CHARACTERS.find(c => c.k === charK) || null;
   const STREAK = 12;                       // 데모: 실제로는 학습 로그에서
   const stage = streakStage(STREAK);       // 1~4
@@ -542,13 +533,6 @@ function Home({ onGoTab, charK, onOpenSettings }) {
               : <div className="sign-speed">{STREAK}</div>}
             <div className="sign-lbl">{STREAK === 0 ? "학습 위험" : "연속 " + STREAK + "일"}</div>
           </div>
-          <div className="badge-track">
-            {BADGES.map(b => (
-              <button key={b.k} className={"badge " + (b.earned ? "earned" : "locked")} onClick={() => setBadge(b)}>
-                {b.earned ? b.mark : "?"}
-              </button>
-            ))}
-          </div>
           <div className="road" />
           <div className="mlines"><i /><i /><i /></div>
           <div className="hero-char run">
@@ -560,21 +544,6 @@ function Home({ onGoTab, charK, onOpenSettings }) {
             <div className="sign">OH... ENGLISH?</div>
           </div>
         </div>
-      )}
-
-      {badge && ReactDOM.createPortal(
-        <div className="dlg-backdrop" onClick={() => setBadge(null)}>
-          <div className="dlg" onClick={e => e.stopPropagation()}>
-            <div className={"dlg-badge " + (badge.earned ? "earned" : "locked")}>{badge.earned ? badge.mark : "?"}</div>
-            <div className="dlg-title">{badge.earned ? badge.title : "미획득 뱃지"}</div>
-            {badge.earned
-              ? <div className="dlg-sub">달성!</div>
-              : <div className="dlg-sub locked">아직 획득하지 못했어요</div>}
-            <div className="dlg-date">{badge.earned ? badge.earned : "조건: " + badge.cond}</div>
-            <button onClick={() => setBadge(null)}>확인</button>
-          </div>
-        </div>,
-        document.body
       )}
 
       <div className="level-row" onClick={() => onGoTab("dict")}>
@@ -1025,12 +994,23 @@ function CardSession({ items, onExit, onOpenWord }) {
       </div>
 
       <div className="qcard">
-        {it.cue && <div className="qcue">{it.cue}</div>}
-        <div className="qko">{it.ko}</div>
-        <div className="qdiv" />
-        {mode === "cloze" ? renderEn() : <div className="qko" style={{ fontSize: 15, fontWeight: 600, color: "var(--muted)" }}>{it.ex.ko}</div>}
-        {mode === "spell" && renderEn()}
-        {res && <div className="qcue" style={{ marginTop: 2 }}>{it.ex.ko}</div>}
+        {mode === "cloze" ? (
+          <React.Fragment>
+            {/* 빈칸 문제: 위에는 '문장의 한국어 뜻'을 제시(단어 뜻을 직접 주면 답을 알려주는 셈) */}
+            <div className="qko">{it.ex.ko}</div>
+            <div className="qdiv" />
+            {renderEn()}
+            {res && <div className="qcue" style={{ marginTop: 2 }}><b>{it.word}</b> — {it.ko}</div>}
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            {/* 스펠링 문제: 예문에 타깃 단어가 없어 빈칸을 못 만드는 경우 — 단어 뜻을 보고 영단어 입력 */}
+            {it.cue && <div className="qcue">{it.cue}</div>}
+            <div className="qko">{it.ko}</div>
+            <div className="qdiv" />
+            {renderEn()}
+          </React.Fragment>
+        )}
         {res && (
           <div className={"qres " + (res.ok ? "ok" : "no")}>
             {res.ok ? <Icon name="check" size={18} /> : <Icon name="close" size={18} />}
