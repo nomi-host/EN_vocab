@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.1">
+<link rel="manifest" href="manifest.json?v=0.11.2">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.1"></script>
-<script src="img/rat_run.js?v=0.11.1"></script>
+<script src="words.js?v=0.11.2"></script>
+<script src="img/rat_run.js?v=0.11.2"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -72,9 +72,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .mascot{width:112px;height:112px;border-radius:26px;background:linear-gradient(160deg,#fff,#f1f2f5);border:1.5px dashed #cfd1d6;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);line-height:1.5;}
 .sign{display:inline-block;background:var(--ink);color:#fff;font-weight:800;font-size:13px;letter-spacing:.5px;padding:6px 12px;border-radius:8px;transform:rotate(-3deg);}
 
-/* 캐릭터 스테이지: 가운데 캐릭터 + 뒤로 뱃지 가로스크롤 */
+/* 캐릭터 스테이지: 가운데 캐릭터(앞) + 뒤로 뱃지 가로 스크롤 트랙(스와이프해서 봄) */
 .stage{position:relative;height:240px;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;align-items:center;justify-content:center;}
-.badge-track{position:absolute;left:0;right:0;top:44%;transform:translateY(-50%);display:flex;gap:14px;align-items:center;overflow-x:auto;padding:0 42%;scrollbar-width:none;z-index:1;}
+.badge-track{position:absolute;left:0;right:0;top:44%;transform:translateY(-50%);display:flex;gap:14px;align-items:center;overflow-x:auto;padding:0 42%;scrollbar-width:none;z-index:1;-webkit-overflow-scrolling:touch;}
 .badge-track::-webkit-scrollbar{display:none;}
 .badge{flex:none;width:62px;height:62px;border-radius:17px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;text-align:center;line-height:1.15;padding:4px;transition:transform .1s;}
 .badge:active{transform:scale(.94);}
@@ -262,15 +262,19 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qen .fill{color:var(--accent-deep);font-weight:800;border-bottom:2.5px solid var(--accent);padding:0 2px;}
 .qen .fill.bad{color:#d64545;border-color:#d64545;text-decoration:line-through;text-decoration-color:#d6454577;}
 .qhint{font-size:12px;color:var(--muted);}
-/* 빈칸 안에 직접 입력하는 인라인 입력창 */
-.qen .binput,.spell-input{border:none;border-bottom:2.5px solid var(--accent);background:transparent;font:inherit;font-weight:800;color:var(--accent-deep);text-align:center;padding:0 4px;outline:none;vertical-align:baseline;min-width:64px;}
-.spell-input{display:block;margin:2px auto 0;font-size:22px;min-width:140px;}
-.qen .binput::placeholder,.spell-input::placeholder{color:var(--line);font-weight:700;}
-/* 힌트(글자수/첫글자) */
+/* 입력창 = 박스. 예문 빈칸(또는 스펠링 모드)에 직접 타이핑 */
+.qbox{border:2px solid var(--line);border-radius:11px;background:var(--surface);font:inherit;font-weight:800;font-size:19px;color:var(--accent-deep);text-align:center;padding:9px 12px;outline:none;vertical-align:middle;}
+.qbox:focus{border-color:var(--accent);}
+/* 글자수 힌트: 정답 글자 수만큼 칸(cell)으로 분리 */
+.cellrow{display:inline-flex;gap:6px;position:relative;vertical-align:middle;}
+.cell{width:30px;height:42px;border:2px solid var(--line);border-radius:9px;background:var(--surface);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:21px;color:var(--accent-deep);text-transform:none;}
+.cell.filled{border-color:var(--accent);}
+.cell-catch{position:absolute;inset:0;width:100%;height:100%;opacity:0;border:0;padding:0;margin:0;font-size:16px;}
+/* 힌트 버튼 */
 .qhintrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
-.qhint-btn{font-size:12px;font-weight:700;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:7px 13px;}
+.qhint-lbl{font-size:12px;font-weight:700;color:var(--muted);}
+.qhint-btn{font-size:13px;font-weight:700;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:8px 14px;}
 .qhint-btn.on{background:var(--accent-soft);color:var(--accent-deep);}
-.qmask{font-size:13px;font-weight:700;color:var(--muted);margin-left:2px;}
 .qsub{background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:14px 20px;border-radius:14px;width:100%;}
 .qres{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;}
 .qres.ok{color:var(--good);}
@@ -310,11 +314,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.1";
+const APP_VERSION = "v0.11.2";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
+const MAX_BOX = BOX_INTERVALS.length - 1; // 최고 박스 인덱스(6) — 정답 시 box 상한
 
 /* Material Symbols (filled) 아이콘 — 공식 SVG 패스 인라인(Apache 2.0).
    외부 폰트/네트워크 의존 없이 오프라인·아티팩트에서도 동일하게 렌더. */
@@ -499,6 +504,7 @@ function SpriteChar({ frames, size = 100, fps = 8 }) {
 }
 
 function Home({ onGoTab, charK, onOpenSettings }) {
+  const [badge, setBadge] = useState(null);
   const chr = CHARACTERS.find(c => c.k === charK) || null;
   const STREAK = 12;                       // 데모: 실제로는 학습 로그에서
   const stage = streakStage(STREAK);       // 1~4
@@ -533,6 +539,14 @@ function Home({ onGoTab, charK, onOpenSettings }) {
               : <div className="sign-speed">{STREAK}</div>}
             <div className="sign-lbl">{STREAK === 0 ? "학습 위험" : "연속 " + STREAK + "일"}</div>
           </div>
+          {/* 뱃지: 캐릭터 뒤에 가로로 쭉 — 스와이프해서 넘겨봄. 전체는 보관함의 뱃지 컬렉션. */}
+          <div className="badge-track">
+            {BADGES.map(b => (
+              <button key={b.k} className={"badge " + (b.earned ? "earned" : "locked")} onClick={() => setBadge(b)}>
+                {b.earned ? b.mark : "?"}
+              </button>
+            ))}
+          </div>
           <div className="road" />
           <div className="mlines"><i /><i /><i /></div>
           <div className="hero-char run">
@@ -544,6 +558,21 @@ function Home({ onGoTab, charK, onOpenSettings }) {
             <div className="sign">OH... ENGLISH?</div>
           </div>
         </div>
+      )}
+
+      {badge && ReactDOM.createPortal(
+        <div className="dlg-backdrop" onClick={() => setBadge(null)}>
+          <div className="dlg" onClick={e => e.stopPropagation()}>
+            <div className={"dlg-badge " + (badge.earned ? "earned" : "locked")}>{badge.earned ? badge.mark : "?"}</div>
+            <div className="dlg-title">{badge.earned ? badge.title : "미획득 뱃지"}</div>
+            {badge.earned
+              ? <div className="dlg-sub">달성!</div>
+              : <div className="dlg-sub locked">아직 획득하지 못했어요</div>}
+            <div className="dlg-date">{badge.earned ? badge.earned : "조건: " + badge.cond}</div>
+            <button onClick={() => setBadge(null)}>확인</button>
+          </div>
+        </div>,
+        document.body
       )}
 
       <div className="level-row" onClick={() => onGoTab("dict")}>
@@ -931,25 +960,45 @@ function CardSession({ items, onExit, onOpenWord }) {
     setIdx(idx + 1); setVal(""); setRes(null); setHintLen(false); setHintFirst(false);
   };
 
-  // 힌트 문구: 글자수/첫글자를 독립 토글
-  const hintText = (() => {
-    if (!expected) return "";
-    const parts = [];
-    if (hintFirst) parts.push("첫 글자 " + expected[0]);
-    if (hintLen) parts.push(expected.length + "글자");
-    return parts.join(" · ");
-  })();
+  const hiddenRef = React.useRef(null);
+  const focusHidden = () => { if (hiddenRef.current) hiddenRef.current.focus(); };
 
-  // 빈칸 안 인라인 입력창 (직접 타이핑)
-  const blankInput = extraClass => (
-    <input key={idx} className={extraClass} autoFocus value={val}
-      onChange={e => setVal(e.target.value)}
-      onKeyDown={e => e.key === "Enter" && check()}
-      size={Math.max(6, val.length + 1, hintLen ? expected.length + 1 : 0)}
-      placeholder={hintLen ? "·".repeat(expected.length) : ""}
-      autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
-      aria-label="빈칸 입력" />
-  );
+  // 첫 글자 힌트: 빈칸 앞(첫 칸)에 정답 첫 글자를 미리 채워 줌
+  const toggleFirst = () => {
+    setHintFirst(v => {
+      const nv = !v;
+      if (nv && expected && val === "") setVal(expected[0]);
+      else if (!nv && val === (expected ? expected[0] : "")) setVal("");
+      return nv;
+    });
+  };
+
+  // 입력창: 기본은 박스 하나. 글자수 힌트를 켜면 정답 글자 수만큼 칸(cell)으로 분리.
+  const boxInput = () => {
+    if (hintLen && expected) {
+      const n = expected.length;
+      return (
+        <span className="cellrow" onMouseDown={e => { e.preventDefault(); focusHidden(); }}>
+          {Array.from({ length: n }).map((_, k) => (
+            <span key={k} className={"cell" + (val[k] ? " filled" : "")}>{val[k] || ""}</span>
+          ))}
+          <input key={idx} ref={hiddenRef} className="cell-catch" autoFocus value={val}
+            onChange={e => setVal(e.target.value.replace(/[^A-Za-z']/g, "").slice(0, n))}
+            onKeyDown={e => e.key === "Enter" && check()}
+            maxLength={n} autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+            aria-label="빈칸 입력" />
+        </span>
+      );
+    }
+    return (
+      <input key={idx} ref={hiddenRef} className="qbox" autoFocus value={val}
+        onChange={e => setVal(e.target.value)}
+        onKeyDown={e => e.key === "Enter" && check()}
+        size={Math.max(8, val.length + 1)}
+        autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+        aria-label="빈칸 입력" />
+    );
+  };
 
   if (!it) {
     return (
@@ -966,10 +1015,10 @@ function CardSession({ items, onExit, onOpenWord }) {
       return (
         <React.Fragment>
           <span className="qhint">위 뜻에 해당하는 <b>영어 단어</b>를 입력하세요.</span>
-          <div className="qen" style={{ textAlign: "center" }}>
+          <div className="qen" style={{ textAlign: "center", marginTop: 4 }}>
             {res
               ? <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? res.answer : val.trim() || "—"}</span>
-              : blankInput("spell-input")}
+              : boxInput()}
           </div>
         </React.Fragment>
       );
@@ -979,7 +1028,7 @@ function CardSession({ items, onExit, onOpenWord }) {
         {blank.before}
         {res
           ? <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? res.answer : val.trim() || "—"}</span>
-          : blankInput("binput")}
+          : boxInput()}
         {blank.after}
       </div>
     );
@@ -1023,9 +1072,9 @@ function CardSession({ items, onExit, onOpenWord }) {
       {!res ? (
         <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: "auto" }}>
           <div className="qhintrow">
+            <span className="qhint-lbl">힌트</span>
             <button className={"qhint-btn" + (hintLen ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={() => setHintLen(v => !v)}>글자수</button>
-            <button className={"qhint-btn" + (hintFirst ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={() => setHintFirst(v => !v)}>첫 글자</button>
-            {hintText && <span className="qmask">{hintText}</span>}
+            <button className={"qhint-btn" + (hintFirst ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={toggleFirst}>첫 글자</button>
           </div>
           <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={check}>확인</button>
         </div>
@@ -1204,7 +1253,7 @@ function App() {
   return (
     <div className="app">
       <div className="topbar">
-        <div className="brand">No<b>English</b></div>
+        <div className="brand" role="button" tabIndex={0} onClick={() => setTab("home")} style={{ cursor: "pointer" }}>No<b>English</b></div>
         <div className="topbar-right">
           <span className="pill"><span className="dot" />연속 12일</span>
           <button className="avatar-btn" aria-label="설정" onClick={() => setSettingsOpen(true)}><Icon name="settings" size={19} /></button>
