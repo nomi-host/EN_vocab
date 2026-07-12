@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="theme-color" content="#f5f6f8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>NoEnglish — 영포자 탈출</title>
+<!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
+<link rel="manifest" href="manifest.json?v=0.11.3">
+<script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
+<script src="words.js?v=0.11.3"></script>
+<script src="img/rat_run.js?v=0.11.3"></script>
+<style>
+/* ============================================================================
+   NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
+   ※ 포인트 컬러(--accent)는 임시 플레이스홀더. 디자이너가 교체할 자리.
+============================================================================ */
+:root{
+  --bg:#f5f6f8;          /* 살짝 차가운 뉴트럴 배경 */
+  --surface:#ffffff;
+  --ink:#17181c;
+  --ink-2:#3c3d44;
+  --muted:#8b8c95;
+  --line:#ececef;
+  --fill:#eef0f3;
+  --accent:#6b86ff;      /* 포인트 컬러 (페리윙클 블루) */
+  --accent-deep:#3f56e0; /* 흰 배경 위 텍스트 강조 (진한 톤) */
+  --accent-soft:#e9edff; /* 옅은 배경 */
+  --on-accent:#ffffff;
+  --good:#12b886;
+  --radius:20px;
+  --shadow:0 1px 2px rgba(20,20,30,.04), 0 8px 24px rgba(20,20,30,.05);
+  --shadow-sheet:0 -8px 40px rgba(20,20,30,.16);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html,body{height:100%;overflow:hidden;background:var(--bg);}
+body{color:var(--ink);}
+#root{height:100%;}
+button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
+
+.app{height:100vh;height:100dvh;display:flex;flex-direction:column;background:var(--bg);max-width:520px;margin:0 auto;position:relative;}
+.topbar{padding:calc(env(safe-area-inset-top) + 12px) 20px 8px;display:flex;align-items:center;justify-content:space-between;}
+.brand{font-size:20px;font-weight:800;letter-spacing:-0.4px;}
+.brand b{color:var(--accent);}
+.topbar-right{display:flex;align-items:center;gap:8px;}
+.pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);}
+.avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
+
+.scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+.content{padding:8px 20px 28px;display:flex;flex-direction:column;gap:14px;}
+
+/* 섹션 라벨 */
+.sec{font-size:13px;font-weight:700;color:var(--ink);letter-spacing:-0.2px;margin:6px 2px 0;}
+.sec .more{float:right;font-size:12px;color:var(--muted);font-weight:600;}
+
+/* 카드 공통 */
+.card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;}
+.card.tap{transition:transform .12s ease;}
+.card.tap:active{transform:scale(.985);}
+
+/* 캐릭터 히어로 */
+.hero{display:flex;flex-direction:column;align-items:center;gap:10px;padding:22px 16px 18px;text-align:center;}
+.mascot{width:112px;height:112px;border-radius:26px;background:linear-gradient(160deg,#fff,#f1f2f5);border:1.5px dashed #cfd1d6;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);line-height:1.5;}
+.sign{display:inline-block;background:var(--ink);color:#fff;font-weight:800;font-size:13px;letter-spacing:.5px;padding:6px 12px;border-radius:8px;transform:rotate(-3deg);}
+
+/* 캐릭터 스테이지: 가운데 캐릭터(앞) + 뒤로 뱃지 가로 스크롤 트랙(스와이프해서 봄) */
+.stage{position:relative;height:240px;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.badge-track{position:absolute;left:0;right:0;top:44%;transform:translateY(-50%);display:flex;gap:14px;align-items:center;overflow-x:auto;padding:0 42%;scrollbar-width:none;z-index:1;-webkit-overflow-scrolling:touch;}
+.badge-track::-webkit-scrollbar{display:none;}
+.badge{flex:none;width:62px;height:62px;border-radius:17px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;text-align:center;line-height:1.15;padding:4px;transition:transform .1s;}
+.badge:active{transform:scale(.94);}
+.badge.earned{background:var(--accent-soft);color:var(--accent-deep);border:1.5px solid var(--accent);}
+.badge.locked{background:var(--fill);color:var(--muted);font-size:20px;}
+.hero-char{position:relative;z-index:2;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:9px;}
+.char-face{width:156px;height:156px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;}
+/* 달리는 씬(placeholder). 실제 캐릭터는 Lottie/Rive/스프라이트로 이 슬롯 교체 */
+.hero-char.run .char-face{animation:runbob var(--bob,.5s) ease-in-out infinite alternate;}
+@keyframes runbob{from{transform:translateY(1px) rotate(-1.5deg);}to{transform:translateY(-7px) rotate(1.5deg);}}
+/* 스프라이트 프레임 전환 크로스페이드 — 프레임이 뚝뚝 끊기지 않고 자연스럽게 이어지도록 */
+.sprite-frame{position:absolute;inset:0;display:block;}
+@keyframes spriteFadeIn{from{opacity:0;}to{opacity:1;}}
+@keyframes spriteFadeOut{from{opacity:1;}to{opacity:0;}}
+@media (prefers-reduced-motion: reduce){.sprite-frame{animation:none!important;opacity:1!important;}}
+.road{position:absolute;left:0;right:0;bottom:16px;height:6px;z-index:0;border-radius:3px;
+  background:repeating-linear-gradient(90deg,var(--line) 0 20px,transparent 20px 44px);
+  animation:roadmove var(--road,.6s) linear infinite;}
+@keyframes roadmove{from{background-position:0 0;}to{background-position:-44px 0;}}
+.mlines{position:absolute;z-index:1;left:calc(50% - 96px);top:46%;display:flex;flex-direction:column;gap:8px;pointer-events:none;}
+.mlines i{height:3px;border-radius:2px;background:var(--accent);animation:whoosh var(--bob,.5s) linear infinite;}
+.mlines i:nth-child(1){width:28px;}
+.mlines i:nth-child(2){width:18px;animation-delay:.16s;}
+.mlines i:nth-child(3){width:24px;animation-delay:.32s;}
+@keyframes whoosh{0%{opacity:0;transform:translateX(10px);}40%{opacity:.55;}100%{opacity:0;transform:translateX(-16px);}}
+/* 교통표지판(위젯 콘셉트 프리뷰) — 연속일에 따라 표지가 바뀜 */
+.signpost{position:absolute;z-index:3;top:14px;left:14px;display:flex;flex-direction:column;align-items:center;gap:4px;}
+.sign-speed{width:46px;height:46px;border-radius:50%;background:#fff;border:5px solid #e5484d;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:var(--ink);box-shadow:var(--shadow);font-variant-numeric:tabular-nums;}
+.sign-warn{width:46px;height:41px;background:#ffcf3f;clip-path:polygon(50% 4%,96% 92%,4% 92%);display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-weight:800;font-size:17px;color:var(--ink);box-shadow:var(--shadow);}
+.sign-lbl{font-size:10px;font-weight:700;color:var(--muted);}
+@media (prefers-reduced-motion: reduce){.hero-char.run .char-face,.road,.mlines i{animation:none!important;}}
+.char-picker{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:2px;}
+.char-opt{font-size:12px;font-weight:600;padding:8px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow);}
+.char-opt.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+
+/* 뱃지 팝업 */
+.dlg-backdrop{position:fixed;inset:0;background:rgba(20,20,30,.42);display:flex;align-items:center;justify-content:center;z-index:60;padding:32px;animation:fade .15s ease;}
+.dlg{background:var(--surface);border-radius:24px;padding:28px 24px 22px;text-align:center;max-width:300px;width:100%;box-shadow:0 24px 64px rgba(20,20,30,.3);animation:pop .22s cubic-bezier(.2,.9,.3,1.2);}
+@keyframes pop{from{transform:scale(.88);opacity:0}to{transform:scale(1);opacity:1}}
+.dlg-badge{width:80px;height:80px;border-radius:22px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;}
+.dlg-badge.earned{background:var(--accent-soft);color:var(--accent-deep);border:2px solid var(--accent);}
+.dlg-badge.locked{background:var(--fill);color:var(--muted);font-size:30px;}
+.dlg-title{font-size:19px;font-weight:800;letter-spacing:-0.3px;}
+.dlg-sub{font-size:14px;color:var(--accent-deep);font-weight:800;margin-top:4px;}
+.dlg-sub.locked{color:var(--muted);}
+.dlg-date{font-size:13px;color:var(--muted);margin-top:8px;font-variant-numeric:tabular-nums;}
+.dlg button{margin-top:20px;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:12px;border-radius:13px;width:100%;}
+
+/* 레벨 3칸 */
+.level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.stat{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;}
+.stat .v{font-size:22px;font-weight:800;letter-spacing:-0.5px;font-variant-numeric:tabular-nums;}
+.stat .v.accent{color:var(--accent-deep);}
+.stat .l{font-size:11px;color:var(--muted);margin-top:2px;font-weight:600;}
+
+/* 루틴 스텝 */
+.step{display:flex;align-items:center;gap:13px;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;}
+.step.active{border:1.5px solid var(--accent);}
+.step-ico{width:38px;height:38px;border-radius:12px;background:var(--fill);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--ink-2);flex:none;}
+.step.done .step-ico{background:var(--accent-soft);color:var(--accent-deep);}
+.step-body{flex:1;min-width:0;}
+.step-title{font-size:15px;font-weight:700;}
+.step-sub{font-size:12px;color:var(--muted);margin-top:1px;}
+.step-cta{font-size:13px;font-weight:700;color:var(--accent-deep);flex:none;}
+.step .check{color:var(--good);font-weight:800;}
+
+/* 잔디 */
+.grass{display:grid;grid-template-columns:repeat(17,1fr);gap:3px;}
+.grass i{aspect-ratio:1;border-radius:3px;background:var(--fill);}
+.grass i.g1{background:#ccd6ff;}.grass i.g2{background:#95a9ff;}.grass i.g3{background:var(--accent);}
+
+/* 사전 검색 */
+.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:11px 14px;box-shadow:var(--shadow);}
+.search input{flex:1;border:none;outline:none;font-size:15px;background:none;color:var(--ink);}
+.search input::placeholder{color:var(--muted);}
+.search .mag{color:var(--muted);display:flex;align-items:center;}
+.icon{display:inline-block;vertical-align:middle;fill:currentColor;flex:none;}
+
+.chips{display:flex;gap:7px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none;}
+.chips::-webkit-scrollbar{display:none;}
+.chip{flex:none;font-size:13px;font-weight:600;padding:7px 13px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink);}
+
+/* 사전 허브 목록 헤더 */
+.listhead{display:flex;align-items:center;gap:4px;margin:2px 0 0;}
+.listhead .back{color:var(--muted);display:flex;padding:4px 8px 4px 0;}
+.listhead b{font-size:17px;letter-spacing:-0.3px;}
+.listhead .cnt{font-size:13px;color:var(--muted);font-weight:600;margin-left:2px;}
+
+.addbar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--accent-soft);border-radius:14px;padding:12px 14px;}
+.addbar .t{font-size:13px;color:var(--ink-2);}
+.addbar .t b{color:var(--accent-deep);}
+.addbar button{background:var(--accent);color:#fff;font-weight:700;font-size:13px;padding:8px 14px;border-radius:10px;}
+
+/* 단어 리스트 행 */
+.wlist{display:flex;flex-direction:column;gap:8px;}
+.wrow{display:flex;align-items:center;gap:10px;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
+.wrow:active{transform:scale(.99);}
+.wrow .w{font-size:16px;font-weight:700;}
+.wrow .k{font-size:13px;color:var(--muted);margin-top:1px;}
+.wrow .meta{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex:none;}
+.tag{font-size:10px;font-weight:700;padding:2px 7px;border-radius:6px;background:var(--fill);color:var(--muted);letter-spacing:.2px;}
+.tag.lv{background:var(--accent-soft);color:var(--accent-deep);}
+.tag.done{background:#e6f7f0;color:#0a9d6f;}
+.tag.learning{background:#fff2e0;color:#c77a11;}
+
+/* 카테고리 선택: 레벨 카드 그리드 · 어근 행 목록 */
+.lv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.lv-card{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:16px 8px 14px;text-align:center;transition:transform .1s;}
+.lv-card:active{transform:scale(.96);}
+.lv-card .lv{font-size:21px;font-weight:800;color:var(--accent-deep);letter-spacing:-0.3px;}
+.lv-card .nm{font-size:12px;font-weight:700;color:var(--ink-2);margin-top:2px;}
+.lv-card .n{font-size:11px;color:var(--muted);margin-top:1px;font-weight:600;font-variant-numeric:tabular-nums;}
+.rootrow{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
+.rootrow:active{transform:scale(.99);}
+.rootrow .ax{font-size:16px;font-weight:800;color:var(--accent-deep);min-width:62px;}
+.rootrow .gl{flex:1;font-size:13px;color:var(--ink-2);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.rootrow .n{font-size:12px;color:var(--muted);font-weight:600;font-variant-numeric:tabular-nums;flex:none;}
+.more-btn{display:block;width:100%;text-align:center;background:var(--fill);color:var(--ink-2);font-weight:700;font-size:13px;padding:12px;border-radius:13px;}
+
+/* 준비중 */
+.soon{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:64px 24px;text-align:center;color:var(--muted);}
+.soon .big{font-size:16px;font-weight:700;color:var(--ink-2);}
+.soon .mascot{width:88px;height:88px;font-size:11px;}
+
+/* 하단 탭바 (홈 중앙) */
+.tabbar{display:flex;align-items:flex-end;justify-content:space-around;background:var(--surface);border-top:1px solid var(--line);padding:10px 8px calc(env(safe-area-inset-bottom) + 8px);position:relative;z-index:5;overflow:visible;}
+.tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--muted);font-size:10px;font-weight:600;padding:2px 0;overflow:visible;}
+.tab.on{color:var(--accent-deep);}
+.tab .ti{width:24px;height:24px;display:flex;align-items:center;justify-content:center;}
+/* 홈: 바 위로 튀어나오는 원형 FAB. 조상 overflow가 자르지 않도록 tabbar를 overflow:visible로 두고
+   음수 마진으로 바 상단선 위로 올린다. .scroll의 뒤 형제라 스크롤 콘텐츠 위에 항상 얹혀 안 잘린다. */
+.tab.home{position:relative;}
+.tab.home .ti{width:54px;height:54px;margin-top:-30px;margin-bottom:2px;border-radius:50%;background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(107,134,255,.5);border:4px solid var(--surface);}
+.tab.home.on{color:var(--accent-deep);}
+
+/* 바텀시트 (단어 상세) */
+.sheet-backdrop{position:fixed;inset:0;background:rgba(20,20,30,.32);display:flex;align-items:flex-end;justify-content:center;z-index:50;animation:fade .18s ease;}
+.sheet{width:100%;max-width:520px;background:var(--surface);border-radius:24px 24px 0 0;box-shadow:var(--shadow-sheet);max-height:88vh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes slideup{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.sheet-grab{width:38px;height:4px;background:#d9dade;border-radius:2px;margin:10px auto 2px;flex:none;}
+.sheet-head{display:flex;align-items:center;gap:10px;padding:6px 18px 10px;flex:none;}
+.sheet-head .back{font-size:20px;color:var(--muted);padding:2px 6px;margin-left:-6px;}
+.sheet-head .sp{flex:1;}
+.sheet-head .fav{font-size:13px;font-weight:600;color:var(--muted);}
+/* flex:1+min-height:0 필수 — 없으면 내용이 길어질 때(다의어 등) 이 영역이 축소되지 않고
+   시트 전체가 화면 밖으로 밀려 상단 헤더(닫기 버튼)까지 넘어간다(flex item min-height:auto 버그). */
+.sheet-body{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:0 18px 28px;display:flex;flex-direction:column;gap:16px;flex:1;min-height:0;}
+.wd-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;}
+.wd-word{font-size:28px;font-weight:800;letter-spacing:-0.5px;}
+.wd-ipa{font-size:14px;color:var(--muted);}
+.wd-play{margin-left:auto;background:var(--fill);border-radius:999px;padding:7px 13px;font-size:12px;font-weight:700;color:var(--ink-2);}
+.wd-pos{font-size:13px;color:var(--ink-2);line-height:1.6;}
+.wd-en{font-size:13px;color:var(--muted);line-height:1.55;}
+.wd-sec-t{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:7px;letter-spacing:.2px;}
+.wd-chips{display:flex;flex-wrap:wrap;gap:7px;}
+.lchip{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--fill);color:var(--ink);border:1px solid transparent;}
+.lchip.link{background:var(--surface);border-color:var(--line);}
+.lchip.link:active{background:var(--accent-soft);}
+.lchip.affix{background:var(--ink);color:#fff;}
+.lchip .g{color:var(--muted);font-weight:500;font-size:11px;margin-left:4px;}
+.wd-ex{background:var(--bg);border-radius:14px;padding:13px 15px;}
+.wd-ex .en{font-size:14px;font-weight:600;line-height:1.5;}
+.wd-ex .en em{font-style:normal;color:var(--accent-deep);}
+.wd-ex .ko{font-size:12px;color:var(--muted);margin-top:5px;}
+.wd-ex + .wd-ex{margin-top:8px;}
+
+/* 다의어: 의미(sense) 카드 리스트 */
+.sense{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:13px 15px;transition:border-color .12s;}
+.sense + .sense{margin-top:8px;}
+.sense.open{background:var(--surface);border:1.5px solid var(--accent);box-shadow:var(--shadow);}
+.s-head{display:flex;align-items:flex-start;gap:8px;}
+.s-cue{font-size:12px;color:var(--muted);}
+.s-ko{font-size:16px;font-weight:800;margin-top:1px;letter-spacing:-0.2px;}
+.s-meta{margin-left:auto;display:flex;gap:4px;flex:none;align-items:center;}
+.s-en{font-size:13px;color:var(--ink-2);font-style:italic;line-height:1.5;margin-top:9px;}
+.sense .wd-ex{margin-top:9px;background:var(--fill);}
+.s-add{display:block;width:100%;margin-top:10px;text-align:center;background:var(--accent-soft);color:var(--accent-deep);font-weight:700;font-size:13px;padding:9px;border-radius:11px;}
+.s-more{display:block;width:100%;margin-top:6px;text-align:center;background:var(--fill);color:var(--ink-2);font-weight:700;font-size:13px;padding:11px;border-radius:13px;}
+
+.ext{display:flex;flex-wrap:wrap;gap:7px;}
+.ext a{font-size:12px;font-weight:600;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:6px 12px;text-decoration:none;}
+.empty-note{font-size:12px;color:var(--muted);}
+
+/* 학습 카드 세션 */
+.study{display:flex;flex-direction:column;gap:14px;height:100%;}
+.study-top{display:flex;align-items:center;gap:12px;}
+.study-top .x{color:var(--muted);display:flex;padding:2px;}
+.study-bar{flex:1;height:8px;background:var(--fill);border-radius:999px;overflow:hidden;}
+.study-bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .3s ease;}
+.study-n{font-size:13px;font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;flex:none;}
+.qcard{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
+.qcue{font-size:12px;color:var(--muted);}
+.qko{font-size:17px;font-weight:800;letter-spacing:-0.3px;line-height:1.4;}
+.qdiv{height:1px;background:var(--line);margin:2px 0;}
+.qen{font-size:17px;font-weight:600;line-height:1.65;}
+.qen .blank{display:inline-block;min-width:74px;border-bottom:2.5px solid var(--accent);vertical-align:baseline;height:1.1em;margin:0 2px;}
+.qen .fill{color:var(--accent-deep);font-weight:800;border-bottom:2.5px solid var(--accent);padding:0 2px;}
+.qen .fill.bad{color:#d64545;border-color:#d64545;text-decoration:line-through;text-decoration-color:#d6454577;}
+.qhint{font-size:12px;color:var(--muted);}
+/* 입력창 = 문장 속 빈칸. 회색 솔리드 + 살짝 라운드, 문장 글자 크기 그대로, 네이티브 캐럿이 깜빡임 */
+.qbox{border:none;border-radius:8px;background:var(--fill);font:inherit;font-weight:800;font-size:inherit;line-height:inherit;color:var(--accent-deep);text-align:center;padding:2px 8px;outline:none;vertical-align:baseline;caret-color:var(--accent);min-width:64px;}
+.qbox:focus{background:#e9ebef;} /* 포커스 링 없이 톤만 반 단계 — 포커스 표시는 깜빡이는 캐럿이 담당 */
+/* 글자수 힌트: 정답 글자 수만큼 칸(cell)으로 분리 — 같은 회색 솔리드 톤, 다음 입력 칸에 캐럿 깜빡임 */
+.cellrow{display:inline-flex;gap:5px;position:relative;vertical-align:middle;}
+.cell{width:26px;height:36px;border-radius:8px;background:var(--fill);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:var(--accent-deep);text-transform:none;}
+.cell.filled{background:var(--accent-soft);}
+.cell.cur::after{content:"";width:2px;height:17px;border-radius:1px;background:var(--accent);animation:caretblink 1.06s steps(1) infinite;}
+@keyframes caretblink{50%{opacity:0;}}
+@media (prefers-reduced-motion: reduce){.cell.cur::after{animation:none;}}
+.cell-catch{position:absolute;inset:0;width:100%;height:100%;opacity:0;border:0;padding:0;margin:0;font-size:16px;}
+/* 힌트 버튼 */
+.qhintrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.qhint-lbl{font-size:12px;font-weight:700;color:var(--muted);}
+.qhint-btn{font-size:13px;font-weight:700;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:8px 14px;}
+.qhint-btn.on{background:var(--accent-soft);color:var(--accent-deep);}
+.qsub{background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:14px 20px;border-radius:14px;width:100%;}
+.qres{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;}
+.qres.ok{color:var(--good);}
+.qres.no{color:#d64545;}
+.qres .due{margin-left:auto;font-size:12px;color:var(--muted);font-weight:600;background:var(--fill);padding:5px 10px;border-radius:999px;}
+.qactions{margin-top:auto;display:flex;gap:8px;}
+.qactions button{flex:1;padding:14px;border-radius:14px;font-weight:700;font-size:15px;}
+.qactions .ghost{background:var(--surface);border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow);}
+.qactions .primary{background:var(--accent);color:#fff;}
+.finish{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:40px 20px;}
+.finish .big{font-size:40px;font-weight:800;color:var(--accent-deep);font-variant-numeric:tabular-nums;}
+.finish .msg{font-size:15px;font-weight:700;}
+.finish .sub{font-size:13px;color:var(--muted);}
+.finish .mascot{width:96px;height:96px;margin-bottom:6px;}
+
+/* 학습 탭 허브 */
+.learnmenu .step.soon{opacity:.5;}
+
+/* 설정 화면 (캐릭터 변경 등) — WordSheet와 동일한 바텀시트 패턴 재사용 */
+.charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;}
+.charrow .cf{width:52px;height:52px;border-radius:14px;background:var(--fill);display:flex;align-items:center;justify-content:center;flex:none;overflow:hidden;font-size:9px;color:var(--muted);text-align:center;line-height:1.2;}
+.charrow .body{flex:1;min-width:0;}
+.charrow .name{font-size:14px;font-weight:700;}
+.charrow .move{font-size:11px;color:var(--muted);margin-top:1px;}
+.charrow .cta{flex:none;font-size:12px;font-weight:700;padding:9px 12px;border-radius:11px;text-align:center;white-space:nowrap;}
+.charrow .cta.use{background:var(--accent-soft);color:var(--accent-deep);}
+.charrow .cta.free{background:var(--accent);color:#fff;}
+.charrow .cta.buy{background:var(--ink);color:#fff;}
+.charrow .cta.locked{background:var(--fill);color:var(--muted);}
+.ptbox{display:flex;align-items:center;justify-content:space-between;background:var(--accent-soft);border-radius:16px;padding:14px 16px;}
+.ptbox .v{font-size:20px;font-weight:800;color:var(--accent-deep);font-variant-numeric:tabular-nums;}
+.ptbox .l{font-size:12px;color:var(--ink-2);}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" data-presets="react">
+const { useState, useMemo, useCallback, useEffect } = React;
+
+const APP_VERSION = "v0.11.3";
+const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+
+/* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
+const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
+const MAX_BOX = BOX_INTERVALS.length - 1; // 최고 박스 인덱스(6) — 정답 시 box 상한
+
+/* Material Symbols (filled) 아이콘 — 공식 SVG 패스 인라인(Apache 2.0).
+   외부 폰트/네트워크 의존 없이 오프라인·아티팩트에서도 동일하게 렌더. */
+const ICONS = {
+  home: "M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z",
+  menu_book: "M21 5c-1.11-.35-2.33-.5-3.5-.5-1.95 0-4.05.4-5.5 1.5-1.45-1.1-3.55-1.5-5.5-1.5S2.45 4.9 1 6v14.65c0 .25.25.5.5.5.1 0 .15-.05.25-.05C3.1 20.45 5.05 20 6.5 20c1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.3 4.75 1.05.1.05.15.05.25.05.25 0 .5-.25.5-.5V6c-.6-.45-1.25-.75-2-1zm0 13.5c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V8c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5v11.5z",
+  school: "M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z",
+  forum: "M22 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h11c.55 0 1-.45 1-1z",
+  bookmark: "M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2z",
+  search: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z",
+  close: "M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z",
+  chevron_left: "M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z",
+  add: "M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z",
+  grid_view: "M3 3v8h8V3H3zm6 6H5V5h4v4zm-6 4v8h8v-8H3zm6 6H5v-4h4v4zm4-16v8h8V3h-8zm6 6h-4V5h4v4zm-6 4v8h8v-8h-8zm6 6h-4v-4h4v4z",
+  star: "M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z",
+  check: "M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z",
+  volume_up: "M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z",
+  settings: "M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z",
+};
+function Icon({ name, size = 24 }) {
+  return (
+    <svg className="icon" width={size} height={size} viewBox="0 0 24 24" aria-hidden="true">
+      <path d={ICONS[name]} />
+    </svg>
+  );
+}
+
+const SEED = (typeof window !== "undefined" && window.SEED) ? window.SEED : [];
+const byWord = Object.fromEntries(SEED.map(w => [w.word, w]));
+
+/* 사용자가 직접 추가한 단어(내 단어장) — localStorage 보존.
+   v0에선 플레이스홀더 항목 생성만, 뜻·예문 자동 생성(LLM)은 프록시 연동 시. */
+let EXTRA = (() => { try { return JSON.parse(localStorage.getItem("en_mywords") || "{}"); } catch (e) { return {}; } })();
+function saveExtra() { try { localStorage.setItem("en_mywords", JSON.stringify(EXTRA)); } catch (e) {} }
+function wordOf(w) { return byWord[w] || EXTRA[w]; }
+function allWords() { return SEED.concat(Object.values(EXTRA)); }
+
+/* v0 데모 즐겨찾기 */
+const FAVS = new Set(["alert", "idiomatic"]);
+
+/* ===================== SRS 엔진 (Leitner · localStorage) =====================
+   학습 단위 키 = 다의어면 `word#senseIndex`, 단일 의미면 `word`.
+   box↑ → 다음 복습 간격↑(BOX_INTERVALS). 오답 시 box=1로 리셋. box>=6이면 '완료'에 근접. */
+const DAY = 86400000;
+const SRS = (() => {
+  let store;
+  try { store = JSON.parse(localStorage.getItem("en_srs") || "null"); } catch (e) {}
+  if (!store) {
+    const t = Date.now();
+    store = { // 첫 실행 데모 시드(앱이 비어 보이지 않게) — 실제 학습하면 덮어써짐
+      "alert": { box: 4, due: t + 3 * DAY, seen: true },
+      "possibility": { box: 6, due: t + 30 * DAY, seen: true },
+      "interact": { box: 2, due: t - DAY, seen: true },
+      "deadline": { box: 1, due: t + DAY, seen: true },
+    };
+  }
+  const save = () => { try { localStorage.setItem("en_srs", JSON.stringify(store)); } catch (e) {} };
+  return {
+    get: k => store[k],
+    status(k) {
+      const s = store[k]; if (!s) return null;
+      return { status: s.box >= 6 ? "done" : "learning", box: s.box, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) };
+    },
+    isDue: k => { const s = store[k]; return s && s.seen && s.due <= Date.now(); },
+    grade(k, ok) {
+      const s = store[k] || { box: 0, seen: false };
+      s.box = ok ? Math.min(MAX_BOX, s.box + 1) : 1;
+      s.seen = true;
+      s.due = Date.now() + BOX_INTERVALS[s.box] * DAY;
+      store[k] = s; save();
+      if (ok) POINTS.add(10); // 꾸준한 학습으로만 쌓이는 포인트 — 캐릭터 변경 잠금 해제에 사용
+      return s;
+    },
+  };
+})();
+
+/* ===================== 포인트 엔진 =====================
+   캐릭터는 처음 1회는 무료로 선택하고, 이후 변경하려면 학습으로 쌓은 포인트가 필요(소모형).
+   포인트는 카드 정답 시에만 적립 — "일정 학습량 유지"를 계량하는 유일한 지표. */
+const CHAR_CHANGE_COST = 300;
+const POINTS = (() => {
+  let n = 0;
+  try { n = parseInt(localStorage.getItem("en_points") || "0", 10) || 0; } catch (e) {}
+  const save = () => { try { localStorage.setItem("en_points", String(n)); } catch (e) {} };
+  return {
+    get: () => n,
+    add(v) { n += v; save(); },
+    spend(v) { if (n < v) return false; n -= v; save(); return true; },
+  };
+})();
+
+/* 단어의 표시 상태: 의미 중 하나라도 학습 중이면 learning, 전부 done이면 done */
+function wordStatus(w) {
+  const keys = (w.senses && w.senses.length) ? w.senses.map((_, i) => w.word + "#" + i) : [w.word];
+  const sts = keys.map(k => SRS.status(k)).filter(Boolean);
+  if (!sts.length) return null;
+  if (sts.every(s => s.status === "done")) return { status: "done" };
+  return sts.find(s => s.status === "learning") || sts[0];
+}
+
+/* 학습 아이템(카드 단위) = 의미별 1개. 예문 하나를 문맥으로 사용 */
+function allItems() {
+  const items = [];
+  allWords().forEach(w => {
+    if (w.senses && w.senses.length) {
+      w.senses.forEach((s, i) => { if ((s.ex || []).length) items.push({ key: w.word + "#" + i, word: w.word, ko: s.ko, cue: s.cue, ex: s.ex[0], cefr: w.cefr }); });
+    } else if ((w.ex || []).length) {
+      items.push({ key: w.word, word: w.word, ko: w.ko, cue: null, ex: w.ex[0], cefr: w.cefr });
+    }
+  });
+  return items;
+}
+
+/* 영어 예문에서 타깃 단어를 빈칸으로. 굴절형(saved/delivers)도 어간 매칭. 실패 시 null */
+function makeBlank(en, word) {
+  const stem = word.replace(/e$/, "").toLowerCase();
+  const parts = en.split(/(\s+)/);
+  for (let i = 0; i < parts.length; i++) {
+    const clean = parts[i].replace(/[^A-Za-z']/g, "").toLowerCase();
+    if (clean && (clean === word.toLowerCase() || (stem.length >= 3 && clean.startsWith(stem)))) {
+      return { before: parts.slice(0, i).join(""), answer: clean, after: parts.slice(i + 1).join("") };
+    }
+  }
+  return null;
+}
+
+/* 오늘 세션 아이템 선정: 복습 예정(due) 우선 → 신규 순, 최대 n개 */
+function pickSession(n = 10) {
+  const its = allItems();
+  const due = its.filter(it => SRS.isDue(it.key));
+  const fresh = its.filter(it => !SRS.get(it.key));
+  return due.concat(fresh).slice(0, n);
+}
+
+/* ---------- 홈 탭 ---------- */
+/* 기본 캐릭터(사용자 제작 Lottie/Rive/스프라이트로 교체될 슬롯).
+   move = 달리기 표현(홈 첫 화면에서 계속 달려가는 모션의 콘셉트) */
+const CHARACTERS = [
+  { k: "ghost", label: "고양이 유령", move: "스케이트보드" },
+  { k: "mole", label: "두더지", move: "땅 파며 질주" },
+  { k: "rat", label: "쥐", move: "짐보따리 메고 달리기" },
+  { k: "alien", label: "외계인", move: "UFO 타고" },
+];
+/* 연속 학습일 → 성장 4단계 + 달리기 속도 */
+function streakStage(days) { return days < 3 ? 1 : days < 7 ? 2 : days < 14 ? 3 : 4; }
+/* 뱃지: earned(달성일) 또는 null(미획득). mark=칩 표시, cond=미획득 시 조건 */
+const BADGES = [
+  { k: "streak7", mark: "7일", title: "7일 연속 학습", earned: "2026.06.20" },
+  { k: "firsttalk", mark: "회화", title: "첫 회화 완주", earned: "2026.06.22" },
+  { k: "root30", mark: "어원", title: "어원 30개 탐험", earned: "2026.07.01" },
+  { k: "w3000", mark: "3000", title: "3000단어 학습", earned: "2026.07.09" },
+  { k: "sos0", mark: "SOS", title: "SOS 없이 대화 완주", earned: null, cond: "회화에서 SOS 없이 한 세션 완주" },
+  { k: "streak30", mark: "30일", title: "30일 연속 학습", earned: null, cond: "30일 연속 학습 유지" },
+  { k: "w5000", mark: "5000", title: "5000단어 학습", earned: null, cond: "학습 단어 5000개 달성" },
+];
+
+/* 프레임 배열(svgo 최적화된 자체 생성 SVG, 외부 입력 아님) 순환 재생 — 실제 캐릭터 아트 슬롯.
+   모든 프레임을 한 번만 마운트해두고 opacity만 토글해 크로스페이드 — 매 프레임 SVG를
+   언마운트/재파싱하던 이전 방식의 깜빡임(flicker)을 제거. */
+function SpriteChar({ frames, size = 100, fps = 8 }) {
+  const [i, setI] = useState(0);
+  const reduceMotion = useMemo(
+    () => typeof window !== "undefined" && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    []
+  );
+  useEffect(() => {
+    if (!frames || frames.length < 2 || reduceMotion) return;
+    const id = setInterval(() => setI(v => (v + 1) % frames.length), 1000 / fps);
+    return () => clearInterval(id);
+  }, [frames, fps, reduceMotion]);
+  if (!frames || !frames.length) return null;
+  const dur = Math.round(1000 / fps / 2) + "ms"; // 전환 시간은 프레임 간격의 절반
+  return (
+    <div style={{ position: "relative", width: size, height: size }}>
+      {frames.map((f, idx) => (
+        <svg key={idx} className="sprite-frame" width={size} height={size} viewBox={f.vb}
+             style={{ opacity: idx === i ? 1 : 0, transition: reduceMotion ? "none" : `opacity ${dur} linear` }}
+             dangerouslySetInnerHTML={{ __html: f.inner }} />
+      ))}
+    </div>
+  );
+}
+
+function Home({ onGoTab, charK, onOpenSettings }) {
+  const [badge, setBadge] = useState(null);
+  const chr = CHARACTERS.find(c => c.k === charK) || null;
+  const STREAK = 12;                       // 데모: 실제로는 학습 로그에서
+  const stage = streakStage(STREAK);       // 1~4
+  const speed = { "--bob": (0.64 - stage * 0.06) + "s", "--road": (0.8 - stage * 0.09) + "s" };
+
+  const routine = [
+    { n: 1, title: "단어카드 20개", sub: "신규 12 · 복습 8", state: "done", tab: "learn" },
+    { n: 2, title: "듣기 10문장", sub: "6 / 10 진행 중", state: "active", tab: "learn" },
+    { n: 3, title: "회화 1세션", sub: "오늘의 상대: Karen (공항)", state: "todo", tab: "talk" },
+  ];
+  const grass = useMemo(() => {
+    const cells = [];
+    for (let i = 0; i < 17 * 5; i++) {
+      const r = (i * 7 + 3) % 11;
+      cells.push(r > 8 ? "g3" : r > 6 ? "g2" : r > 3 ? "g1" : "");
+    }
+    return cells;
+  }, []);
+  return (
+    <div className="content">
+      {!chr ? (
+        <div className="card" style={{ textAlign: "center", padding: "26px 20px" }}>
+          <div className="step-title" style={{ marginBottom: 4 }}>캐릭터를 선택해 주세요</div>
+          <div className="step-sub" style={{ marginBottom: 14 }}>처음 한 번은 무료로 고를 수 있어요</div>
+          <button className="btn" style={{ background: "var(--accent)", color: "#fff", fontWeight: 700, padding: "12px 20px", borderRadius: 13 }} onClick={onOpenSettings}>캐릭터 고르러 가기</button>
+        </div>
+      ) : (
+        <div className="stage" style={speed}>
+          <div className="signpost">
+            {STREAK === 0
+              ? <div className="sign-warn">!</div>
+              : <div className="sign-speed">{STREAK}</div>}
+            <div className="sign-lbl">{STREAK === 0 ? "학습 위험" : "연속 " + STREAK + "일"}</div>
+          </div>
+          {/* 뱃지: 캐릭터 뒤에 가로로 쭉 — 스와이프해서 넘겨봄. 전체는 보관함의 뱃지 컬렉션. */}
+          <div className="badge-track">
+            {BADGES.map(b => (
+              <button key={b.k} className={"badge " + (b.earned ? "earned" : "locked")} onClick={() => setBadge(b)}>
+                {b.earned ? b.mark : "?"}
+              </button>
+            ))}
+          </div>
+          <div className="road" />
+          <div className="mlines"><i /><i /><i /></div>
+          <div className="hero-char run">
+            <div className="char-face">
+              {chr.k === "rat" && window.CHAR_RAT_RUN
+                ? <SpriteChar frames={window.CHAR_RAT_RUN} size={150} fps={5 + stage * 2} />
+                : <React.Fragment>{chr.label}<br/>{chr.move}<br/>{stage}단계</React.Fragment>}
+            </div>
+            <div className="sign">OH... ENGLISH?</div>
+          </div>
+        </div>
+      )}
+
+      {badge && ReactDOM.createPortal(
+        <div className="dlg-backdrop" onClick={() => setBadge(null)}>
+          <div className="dlg" onClick={e => e.stopPropagation()}>
+            <div className={"dlg-badge " + (badge.earned ? "earned" : "locked")}>{badge.earned ? badge.mark : "?"}</div>
+            <div className="dlg-title">{badge.earned ? badge.title : "미획득 뱃지"}</div>
+            {badge.earned
+              ? <div className="dlg-sub">달성!</div>
+              : <div className="dlg-sub locked">아직 획득하지 못했어요</div>}
+            <div className="dlg-date">{badge.earned ? badge.earned : "조건: " + badge.cond}</div>
+            <button onClick={() => setBadge(null)}>확인</button>
+          </div>
+        </div>,
+        document.body
+      )}
+
+      <div className="level-row" onClick={() => onGoTab("dict")}>
+        <div className="stat"><div className="v accent">B1</div><div className="l">CEFR 레벨</div></div>
+        <div className="stat"><div className="v">4,200</div><div className="l">추정 어휘량</div></div>
+        <div className="stat"><div className="v">상위 18%</div><div className="l">백분위</div></div>
+      </div>
+
+      <div className="sec">오늘의 루틴</div>
+      {routine.map(s => (
+        <div key={s.n}
+             className={"step" + (s.state === "active" ? " active" : "") + (s.state === "done" ? " done" : "")}
+             onClick={() => onGoTab(s.tab)}>
+          <div className="step-ico">{s.state === "done" ? <Icon name="check" size={20} /> : s.n}</div>
+          <div className="step-body">
+            <div className="step-title">{s.title}</div>
+            <div className="step-sub">{s.sub}</div>
+          </div>
+          <div className="step-cta">
+            {s.state === "done" ? <span className="check">완료</span> : s.state === "active" ? "이어서" : "시작"}
+          </div>
+        </div>
+      ))}
+
+      <div className="sec">잔디 <span className="more">최근 17주</span></div>
+      <div className="card" style={{ padding: "16px" }}>
+        <div className="grass">{grass.map((c, i) => <i key={i} className={c} />)}</div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 단어 상세 바텀시트 (팝업 → 타고타고 모달 스택) ---------- */
+/* 다의어 상한선: 실사전은 뜻이 수십 개인 단어(run, set 등)가 있어 기본 노출을 제한 */
+const SENSE_CAP = 6;
+
+function WordSheet({ stack, onPush, onPop, onClose }) {
+  const word = stack[stack.length - 1];
+  const w = wordOf(word);
+  const [senseOpen, setSenseOpen] = useState(0); // 다의어: 첫 의미 펼침
+  const [showAllSenses, setShowAllSenses] = useState(false);
+  useEffect(() => { setSenseOpen(0); setShowAllSenses(false); }, [word]);
+  const speak = useCallback((text) => {
+    try {
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = "en-US";
+      speechSynthesis.cancel();
+      speechSynthesis.speak(u);
+    } catch (e) {}
+  }, []);
+  const Chip = ({ label }) => (
+    wordOf(label)
+      ? <button className="lchip link" onClick={() => onPush(label)}>{label}</button>
+      : <span className="lchip">{label}</span>
+  );
+  if (!w) return null;
+  const ext = q => [
+    ["네이버", `https://en.dict.naver.com/#/search?query=${q}`],
+    ["Cambridge", `https://dictionary.cambridge.org/dictionary/english/${q}`],
+    ["Etymonline", `https://www.etymonline.com/word/${q}`],
+  ];
+  return ReactDOM.createPortal(
+    <div className="sheet-backdrop" onClick={onClose}>
+      <div className="sheet" onClick={e => e.stopPropagation()}>
+        <div className="sheet-grab" />
+        <div className="sheet-head">
+          {stack.length > 1
+            ? <button className="back" onClick={onPop} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
+            : <span style={{ width: 8 }} />}
+          <span className="sp" />
+          <button className="fav">즐겨찾기</button>
+          <button className="back" onClick={onClose} style={{ marginLeft: 4 }} aria-label="닫기"><Icon name="close" size={20} /></button>
+        </div>
+        <div className="sheet-body">
+          <div>
+            <div className="wd-top">
+              <span className="wd-word">{w.word}</span>
+              <span className="wd-ipa">{w.ipa}</span>
+              <button className="wd-play" onClick={() => speak(w.word)}><Icon name="volume_up" size={15} /> 발음 듣기</button>
+            </div>
+            <div className="wd-pos" style={{ marginTop: 6 }}>
+              <span className="tag lv" style={{ marginRight: 6 }}>{w.cefr}</span>
+              {w.senses && w.senses.length ? <span className="tag">뜻 {w.senses.length}개</span> : w.ko}
+            </div>
+            {!(w.senses && w.senses.length) && <div className="wd-en" style={{ marginTop: 4 }}>{w.en}</div>}
+          </div>
+
+          {w.senses && w.senses.length ? (
+            /* 다의어: 의미별 카드 — 뜻마다 별도 예문·별도 학습 단위.
+               뜻이 많은 단어(예: run·set 수십 개 의미)에서 목록이 무한정 길어지지 않도록
+               기본 SENSE_CAP개만 보여주고 나머지는 '더보기'로 펼친다. */
+            <div>
+              <div className="wd-sec-t">의미별로 학습해요 (탭해서 펼치기)</div>
+              {(showAllSenses ? w.senses : w.senses.slice(0, SENSE_CAP)).map((s, i) => (
+                <div key={i} className={"sense" + (senseOpen === i ? " open" : "")}
+                     onClick={() => setSenseOpen(senseOpen === i ? -1 : i)}>
+                  <div className="s-head">
+                    <div>
+                      <div className="s-cue">{s.cue}</div>
+                      <div className="s-ko">{s.ko}</div>
+                    </div>
+                    <div className="s-meta">
+                      <span className="tag">{s.pos}</span>
+                      <span className="tag lv">레벨 {s.lv}</span>
+                    </div>
+                  </div>
+                  {senseOpen === i && (
+                    <React.Fragment>
+                      <div className="s-en">{s.en}</div>
+                      {(s.ex || []).map((e, j) => (
+                        <div className="wd-ex" key={j} onClick={ev => { ev.stopPropagation(); speak(e.en); }}>
+                          <div className="en">{e.en}</div>
+                          <div className="ko">{e.ko}</div>
+                        </div>
+                      ))}
+                      <button className="s-add" onClick={ev => ev.stopPropagation()}>+ 이 의미를 학습에 추가</button>
+                    </React.Fragment>
+                  )}
+                </div>
+              ))}
+              {!showAllSenses && w.senses.length > SENSE_CAP && (
+                <button className="s-more" onClick={() => setShowAllSenses(true)}>
+                  + {w.senses.length - SENSE_CAP}개 뜻 더보기
+                </button>
+              )}
+            </div>
+          ) : (
+            <div className="wd-ex-wrap">
+              <div className="wd-sec-t">예문</div>
+              {w.ex.map((e, i) => (
+                <div className="wd-ex" key={i} onClick={() => speak(e.en)}>
+                  <div className="en">{e.en}</div>
+                  <div className="ko">{e.ko}</div>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {(w.syn.length > 0 || w.ant.length > 0) && (
+            <div>
+              <div className="wd-sec-t">유의어 · 반의어</div>
+              <div className="wd-chips">
+                {w.syn.map(s => <Chip key={s} label={s} />)}
+                {w.ant.map(a => <Chip key={a} label={a} />)}
+              </div>
+            </div>
+          )}
+
+          {w.forms.length > 0 && (
+            <div>
+              <div className="wd-sec-t">같은 단어, 다른 품사</div>
+              <div className="wd-chips">
+                {w.forms.map(f => (
+                  wordOf(f.word)
+                    ? <button key={f.word} className="lchip link" onClick={() => onPush(f.word)}>{f.word}<span className="g">{f.pos}</span></button>
+                    : <span key={f.word} className="lchip">{f.word}<span className="g">{f.pos}</span></span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {w.roots.length > 0 && (
+            <div>
+              <div className="wd-sec-t">어근 · 접사</div>
+              <div className="wd-chips">
+                {w.roots.map(r => (
+                  <span key={r.affix} className="lchip affix">{r.affix}<span className="g" style={{ color: "#c3ceff" }}>{r.gloss}</span></span>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div>
+            <div className="wd-sec-t">외부 사전</div>
+            <div className="ext">
+              {ext(w.word).map(([label, url]) => (
+                <a key={label} href={url} target="_blank" rel="noopener noreferrer">{label}</a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>,
+    document.body
+  );
+}
+
+/* ---------- 사전 탭 ---------- */
+/* 진입 시 목록을 쏟아내지 않고 허브(메뉴)에서 선택해 들어가는 구조.
+   검색은 어느 화면에서든 최상단 — 입력을 시작하면 즉시 검색 결과로 전환. */
+const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
+
+function WordRow({ w, onOpen }) {
+  const st = wordStatus(w);
+  const multi = w.senses && w.senses.length > 1;
+  return (
+    <div className="wrow" onClick={() => onOpen(w.word)}>
+      <div>
+        <div className="w">{w.word}</div>
+        <div className="k">{multi ? w.senses[0].ko + " 외 " + (w.senses.length - 1) + "개 뜻" : w.ko}</div>
+      </div>
+      <div className="meta">
+        <span className="tag lv">{w.cefr}</span>
+        {multi && <span className="tag">뜻 {w.senses.length}</span>}
+        {w.mine && <span className="tag">내 단어</span>}
+        {st?.status === "done" && <span className="tag done">완료</span>}
+        {st?.status === "learning" && <span className="tag learning">박스 {st.box} · {st.dueIn === 0 ? "오늘" : st.dueIn + "일 뒤"}</span>}
+        {!st && !w.mine && <span className="tag">미학습</span>}
+      </div>
+    </div>
+  );
+}
+
+/* 긴 목록 분할 렌더 — 한 번에 다 그리면(레벨당 1,000+행) 프리즈되므로 "더 보기"로 나눔 */
+const LIST_CHUNK = 100;
+function WList({ list, onOpen }) {
+  const [limit, setLimit] = useState(LIST_CHUNK);
+  useEffect(() => setLimit(LIST_CHUNK), [list]);
+  return (
+    <div className="wlist">
+      {list.slice(0, limit).map(w => <WordRow key={w.word} w={w} onOpen={onOpen} />)}
+      {list.length === 0 && <div className="empty-note">아직 여기에 단어가 없어요.</div>}
+      {list.length > limit && (
+        <button className="more-btn" onClick={() => setLimit(l => l + LIST_CHUNK * 2)}>
+          더 보기 ({list.length - limit}개 남음)
+        </button>
+      )}
+    </div>
+  );
+}
+
+const CEFR_NAMES = { A1: "입문", A2: "초급", B1: "중급", B2: "중상급", C1: "고급", C2: "최상급" };
+
+function Dict({ onOpen }) {
+  const [q, setQ] = useState("");
+  const [view, setView] = useState(null);      // null=허브 | learned|category|fav|mine|add
+  const [catMode, setCatModeState] = useState("cefr"); // cefr | root
+  const [catSel, setCatSel] = useState(null);   // 선택된 레벨(A1) 또는 어근(-tion) — null이면 선택 화면
+  const setCatMode = m => { setCatModeState(m); setCatSel(null); };
+  const [, bump] = useState(0);                 // EXTRA 변경 리렌더용
+
+  const words = allWords();
+  const learned = words.filter(w => wordStatus(w));
+  const favs = words.filter(w => FAVS.has(w.word));
+  const mine = Object.values(EXTRA);
+
+  const query = q.trim().toLowerCase();
+  const hits = query ? words.filter(w => w.word.toLowerCase().startsWith(query)).sort((a, b) => a.word.localeCompare(b.word)) : [];
+  const noHit = query && hits.length === 0;
+
+  const addWord = name => {
+    const key = name.trim().toLowerCase();
+    if (!key || wordOf(key)) return;
+    EXTRA[key] = { word: key, ipa: "", pos: [], cefr: "—", ko: "직접 추가한 단어 · 뜻과 예문은 자동 생성 예정", en: "", syn: [], ant: [], forms: [], roots: [], ex: [], mine: true };
+    saveExtra(); bump(x => x + 1);
+    setQ(""); onOpen(key);
+  };
+
+  const MENUS = [
+    { k: "add", icon: "add", title: "새 단어 등록하기", sub: "사전에 없는 단어도 내 단어로" },
+    { k: "learned", icon: "school", title: "내가 학습한 단어", sub: learned.length + "개 · SRS 진행 상태별" },
+    { k: "category", icon: "grid_view", title: "카테고리별로 보기", sub: "레벨(CEFR) · 어근별 · 주제(예정)" },
+    { k: "fav", icon: "star", title: "즐겨찾기한 단어", sub: favs.length + "개" },
+    { k: "mine", icon: "bookmark", title: "내 단어장", sub: "내가 추가한 단어 " + mine.length + "개" },
+  ];
+  const TITLES = { learned: "내가 학습한 단어", category: "카테고리별", fav: "즐겨찾기", mine: "내 단어장", add: "새 단어 등록" };
+
+  const rows = list => <WList list={list} onOpen={onOpen} />;
+
+  const catList = level => words.filter(w => w.cefr === level).sort((a, b) => a.word.localeCompare(b.word));
+  const rootIndex = useMemo(() => {
+    const m = {};
+    words.forEach(w => (w.roots || []).forEach(r => { (m[r.affix] = m[r.affix] || { gloss: r.gloss, ws: [] }).ws.push(w); }));
+    return Object.entries(m).sort((a, b) => b[1].ws.length - a[1].ws.length);
+  }, [words.length]);
+
+  return (
+    <div className="content">
+      <div className="search">
+        <span className="mag"><Icon name="search" size={20} /></span>
+        <input value={q} onChange={e => setQ(e.target.value)} placeholder="단어를 검색하세요 (예: alert)" autoCapitalize="none" />
+      </div>
+
+      {query ? (
+        <React.Fragment>
+          {noHit && (
+            <div className="addbar">
+              <div className="t">사전에 없는 단어인가요?<br/><b>"{q.trim()}"</b> 를 내 단어로 추가</div>
+              <button onClick={() => addWord(q)}>추가하기</button>
+            </div>
+          )}
+          {rows(hits)}
+        </React.Fragment>
+      ) : view === null ? (
+        <React.Fragment>
+          {MENUS.map(m => (
+            <div key={m.k} className="step" onClick={() => setView(m.k)}>
+              <div className="step-ico"><Icon name={m.icon} size={20} /></div>
+              <div className="step-body">
+                <div className="step-title">{m.title}</div>
+                <div className="step-sub">{m.sub}</div>
+              </div>
+              <span className="arrow" style={{ color: "var(--muted)" }}>›</span>
+            </div>
+          ))}
+        </React.Fragment>
+      ) : (
+        <React.Fragment>
+          <div className="listhead">
+            <button className="back" onClick={() => { if (view === "category" && catSel !== null) setCatSel(null); else { setCatSel(null); setView(null); } }} aria-label="뒤로"><Icon name="chevron_left" size={22} /></button>
+            <b>{TITLES[view]}</b>
+            {view === "learned" && <span className="cnt">{learned.length}</span>}
+            {view === "fav" && <span className="cnt">{favs.length}</span>}
+            {view === "mine" && <span className="cnt">{mine.length}</span>}
+          </div>
+
+          {view === "learned" && rows(learned)}
+          {view === "fav" && rows(favs)}
+          {view === "mine" && (
+            <React.Fragment>
+              <div className="addbar">
+                <div className="t">위 검색창에 단어를 입력하면<br/><b>사전에 없는 단어</b>를 등록할 수 있어요</div>
+              </div>
+              {rows(mine)}
+            </React.Fragment>
+          )}
+          {view === "add" && (
+            <div className="addbar">
+              <div className="t">위 검색창에 추가할 단어를 입력하세요.<br/>사전에 없으면 <b>추가하기</b> 버튼이 나타납니다.</div>
+            </div>
+          )}
+          {view === "category" && (
+            <React.Fragment>
+              <div className="chips">
+                <button className={"chip" + (catMode === "cefr" ? " on" : "")} onClick={() => setCatMode("cefr")}>레벨 (CEFR)</button>
+                <button className={"chip" + (catMode === "root" ? " on" : "")} onClick={() => setCatMode("root")}>어근별</button>
+                <button className="chip" style={{ opacity: .45 }}>주제별 (예정)</button>
+              </div>
+              {catSel === null ? (
+                /* 선택 화면 — 목록을 쏟아내지 않고 레벨/어근을 먼저 고른다 */
+                catMode === "cefr" ? (
+                  <div className="lv-grid">
+                    {CEFR_LEVELS.map(lv => (
+                      <button key={lv} className="lv-card" onClick={() => setCatSel(lv)}>
+                        <div className="lv">{lv}</div>
+                        <div className="nm">{CEFR_NAMES[lv]}</div>
+                        <div className="n">{catList(lv).length.toLocaleString()}개</div>
+                      </button>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="wlist">
+                    {rootIndex.map(([affix, info]) => (
+                      <button key={affix} className="rootrow" onClick={() => setCatSel(affix)}>
+                        <span className="ax">{affix}</span>
+                        <span className="gl">{info.gloss}</span>
+                        <span className="n">{info.ws.length}개 ›</span>
+                      </button>
+                    ))}
+                  </div>
+                )
+              ) : (
+                /* 선택한 레벨/어근의 단어 목록 */
+                <React.Fragment>
+                  <div className="sec">
+                    {catMode === "cefr" ? catSel + " · " + CEFR_NAMES[catSel] : catSel}
+                    {catMode === "root" && <span style={{ color: "var(--muted)", fontWeight: 500 }}> {(rootIndex.find(([a]) => a === catSel) || [null, { gloss: "" }])[1].gloss}</span>}
+                  </div>
+                  {rows(
+                    catMode === "cefr"
+                      ? catList(catSel)
+                      : ((rootIndex.find(([a]) => a === catSel) || [null, { ws: [] }])[1].ws.slice().sort((a, b) => a.word.localeCompare(b.word)))
+                  )}
+                </React.Fragment>
+              )}
+            </React.Fragment>
+          )}
+        </React.Fragment>
+      )}
+    </div>
+  );
+}
+
+/* ---------- 준비중 탭 ---------- */
+function Soon({ title, desc }) {
+  return (
+    <div className="content">
+      <div className="soon">
+        <div className="mascot">캐릭터</div>
+        <div className="big">{title}</div>
+        <div>{desc}</div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- 단어카드 세션 ---------- */
+function CardSession({ items, onExit, onOpenWord }) {
+  const [idx, setIdx] = useState(0);
+  const [val, setVal] = useState("");
+  const [res, setRes] = useState(null); // null | {ok, answer, dueIn}
+  const [correct, setCorrect] = useState(0);
+  const [hintLen, setHintLen] = useState(false);   // 글자수 힌트
+  const [hintFirst, setHintFirst] = useState(false); // 첫 글자 힌트
+
+  const it = items[idx];
+  const blank = useMemo(() => it ? makeBlank(it.ex.en, it.word) : null, [it]);
+  const mode = blank ? "cloze" : "spell";
+  const expected = blank ? blank.answer : it && it.word.toLowerCase();
+
+  const speak = txt => { try { const u = new SpeechSynthesisUtterance(txt); u.lang = "en-US"; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch (e) {} };
+
+  const check = () => {
+    if (res || !val.trim()) return;
+    const ok = val.trim().toLowerCase() === expected || val.trim().toLowerCase() === it.word.toLowerCase();
+    const s = SRS.grade(it.key, ok);
+    if (ok) setCorrect(c => c + 1);
+    setRes({ ok, answer: expected, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) });
+    speak(it.ex.en);
+  };
+  const next = () => {
+    if (idx + 1 >= items.length) { onExit(true, correct); return; }
+    setIdx(idx + 1); setVal(""); setRes(null); setHintLen(false); setHintFirst(false);
+  };
+
+  const hiddenRef = React.useRef(null);
+  const focusHidden = () => { if (hiddenRef.current) hiddenRef.current.focus(); };
+
+  // 첫 글자 힌트: 빈칸 앞(첫 칸)에 정답 첫 글자를 미리 채워 줌
+  const toggleFirst = () => {
+    setHintFirst(v => {
+      const nv = !v;
+      if (nv && expected && val === "") setVal(expected[0]);
+      else if (!nv && val === (expected ? expected[0] : "")) setVal("");
+      return nv;
+    });
+  };
+
+  // 입력창: 기본은 박스 하나. 글자수 힌트를 켜면 정답 글자 수만큼 칸(cell)으로 분리.
+  const boxInput = () => {
+    if (hintLen && expected) {
+      const n = expected.length;
+      return (
+        <span className="cellrow" onMouseDown={e => { e.preventDefault(); focusHidden(); }}>
+          {Array.from({ length: n }).map((_, k) => (
+            <span key={k} className={"cell" + (val[k] ? " filled" : "") + (k === val.length ? " cur" : "")}>{val[k] || ""}</span>
+          ))}
+          <input key={idx} ref={hiddenRef} className="cell-catch" autoFocus value={val}
+            onChange={e => setVal(e.target.value.replace(/[^A-Za-z']/g, "").slice(0, n))}
+            onKeyDown={e => e.key === "Enter" && check()}
+            maxLength={n} autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+            aria-label="빈칸 입력" />
+        </span>
+      );
+    }
+    return (
+      <input key={idx} ref={hiddenRef} className="qbox" autoFocus value={val}
+        onChange={e => setVal(e.target.value)}
+        onKeyDown={e => e.key === "Enter" && check()}
+        size={Math.max(8, val.length + 1)}
+        autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+        aria-label="빈칸 입력" />
+    );
+  };
+
+  if (!it) {
+    return (
+      <div className="content"><div className="finish">
+        <div className="msg">복습할 카드가 없어요</div>
+        <div className="sub">새 단어를 학습하거나 내일 다시 복습해요.</div>
+        <div className="qactions" style={{ width: "100%", marginTop: 16 }}><button className="primary" onClick={() => onExit(false, 0)}>돌아가기</button></div>
+      </div></div>
+    );
+  }
+
+  const renderEn = () => {
+    if (mode === "spell") {
+      return (
+        <React.Fragment>
+          <span className="qhint">위 뜻에 해당하는 <b>영어 단어</b>를 입력하세요.</span>
+          <div className="qen" style={{ textAlign: "center", marginTop: 4 }}>
+            {res
+              ? <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? res.answer : val.trim() || "—"}</span>
+              : boxInput()}
+          </div>
+        </React.Fragment>
+      );
+    }
+    return (
+      <div className="qen">
+        {blank.before}
+        {res
+          ? <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? res.answer : val.trim() || "—"}</span>
+          : boxInput()}
+        {blank.after}
+      </div>
+    );
+  };
+
+  return (
+    <div className="content study">
+      <div className="study-top">
+        <button className="x" onClick={() => onExit(false, correct)} aria-label="종료"><Icon name="close" size={22} /></button>
+        <div className="study-bar"><i style={{ width: ((idx + (res ? 1 : 0)) / items.length * 100) + "%" }} /></div>
+        <span className="study-n">{idx + 1} / {items.length}</span>
+      </div>
+
+      <div className="qcard">
+        {mode === "cloze" ? (
+          <React.Fragment>
+            {/* 빈칸 문제: 위에는 '문장의 한국어 뜻'을 제시(단어 뜻을 직접 주면 답을 알려주는 셈) */}
+            <div className="qko">{it.ex.ko}</div>
+            <div className="qdiv" />
+            {renderEn()}
+            {res && <div className="qcue" style={{ marginTop: 2 }}><b>{it.word}</b> — {it.ko}</div>}
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            {/* 스펠링 문제: 예문에 타깃 단어가 없어 빈칸을 못 만드는 경우 — 단어 뜻을 보고 영단어 입력 */}
+            {it.cue && <div className="qcue">{it.cue}</div>}
+            <div className="qko">{it.ko}</div>
+            <div className="qdiv" />
+            {renderEn()}
+          </React.Fragment>
+        )}
+        {res && (
+          <div className={"qres " + (res.ok ? "ok" : "no")}>
+            {res.ok ? <Icon name="check" size={18} /> : <Icon name="close" size={18} />}
+            {res.ok ? "정답!" : <span>정답: <b>{res.answer}</b></span>}
+            <span className="due">{res.dueIn === 0 ? "곧 복습" : res.dueIn + "일 뒤 복습"}</span>
+          </div>
+        )}
+      </div>
+
+      {!res ? (
+        <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: "auto" }}>
+          <div className="qhintrow">
+            <span className="qhint-lbl">힌트</span>
+            <button className={"qhint-btn" + (hintLen ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={() => setHintLen(v => !v)}>글자수</button>
+            <button className={"qhint-btn" + (hintFirst ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={toggleFirst}>첫 글자</button>
+          </div>
+          <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={check}>확인</button>
+        </div>
+      ) : (
+        <div className="qactions">
+          <button className="ghost" onClick={() => onOpenWord(it.word)}>단어 정보</button>
+          <button className="primary" onClick={next}>{idx + 1 >= items.length ? "학습 완료" : "다음 문제"}</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* 학습 완료 요약 */
+function Finish({ total, correct, onExit }) {
+  return (
+    <div className="content"><div className="finish">
+      <div className="char-face mascot">잘했어요!</div>
+      <div className="big">{correct} / {total}</div>
+      <div className="msg">오늘 단어카드 완료</div>
+      <div className="sub">복습 시점은 정답률에 맞춰 자동 조정됐어요.</div>
+      <div className="qactions" style={{ width: "100%", marginTop: 18 }}><button className="primary" onClick={onExit}>돌아가기</button></div>
+    </div></div>
+  );
+}
+
+/* ---------- 학습 탭 ---------- */
+function Learn({ onOpenWord }) {
+  const [session, setSession] = useState(null); // null | {items} | "done"
+  const [summary, setSummary] = useState(null);
+  const dueCount = allItems().filter(it => SRS.isDue(it.key)).length;
+  const newCount = allItems().filter(it => !SRS.get(it.key)).length;
+
+  if (session === "done" && summary) {
+    return <Finish total={summary.total} correct={summary.correct} onExit={() => { setSession(null); setSummary(null); }} />;
+  }
+  if (session) {
+    return <CardSession items={session} onOpenWord={onOpenWord}
+      onExit={(done, correct) => {
+        if (done) { setSummary({ total: session.length, correct }); setSession("done"); }
+        else setSession(null);
+      }} />;
+  }
+
+  const start = () => {
+    const items = pickSession(10);
+    if (items.length) setSession(items);
+  };
+
+  const MENU = [
+    { k: "card", icon: "school", title: "단어카드", sub: `복습 ${dueCount} · 신규 ${newCount} 대기`, on: true },
+    { k: "listen", icon: "volume_up", title: "듣기 세션 (딕테이션)", sub: "듣고 그대로 타이핑", on: false },
+    { k: "quiz", icon: "grid_view", title: "퀴즈", sub: "뜻·스펠링·빈칸", on: false },
+    { k: "level", icon: "add", title: "레벨 테스트", sub: "어휘 + 문장구사력", on: false },
+  ];
+
+  return (
+    <div className="content learnmenu">
+      <div className="stat" style={{ padding: "18px 8px", marginBottom: 2 }}>
+        <div className="v accent">{dueCount}</div>
+        <div className="l">지금 복습할 카드</div>
+      </div>
+      {MENU.map(m => (
+        <div key={m.k} className={"step" + (m.on ? "" : " soon")} onClick={() => m.on && start()}>
+          <div className="step-ico"><Icon name={m.icon} size={20} /></div>
+          <div className="step-body">
+            <div className="step-title">{m.title}</div>
+            <div className="step-sub">{m.on ? m.sub : "준비 중"}</div>
+          </div>
+          {m.on ? <div className="step-cta">시작</div> : <span className="arrow" style={{ color: "var(--muted)" }}>›</span>}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/* ---------- 설정 (캐릭터 변경 등) ---------- */
+function Settings({ charK, onChangeChar, onClose }) {
+  const [pts, setPts] = useState(POINTS.get());
+  const first = charK === null;
+
+  const handlePick = k => {
+    if (k === charK) return;
+    if (first) { onChangeChar(k); return; } // 처음 1회는 무료
+    if (POINTS.spend(CHAR_CHANGE_COST)) { setPts(POINTS.get()); onChangeChar(k); }
+  };
+
+  return ReactDOM.createPortal(
+    <div className="sheet-backdrop" onClick={onClose}>
+      <div className="sheet" onClick={e => e.stopPropagation()}>
+        <div className="sheet-grab" />
+        <div className="sheet-head">
+          <b style={{ fontSize: 16, fontWeight: 800 }}>설정</b>
+          <span className="sp" />
+          <button className="back" onClick={onClose} aria-label="닫기"><Icon name="close" size={20} /></button>
+        </div>
+        <div className="sheet-body">
+          <div className="ptbox">
+            <div>
+              <div className="l">보유 포인트</div>
+              <div className="v">{pts}P</div>
+            </div>
+            <div className="l" style={{ textAlign: "right", maxWidth: 160 }}>단어카드 정답마다 10P 적립 · 캐릭터 변경에 {CHAR_CHANGE_COST}P 필요</div>
+          </div>
+
+          <div>
+            <div className="wd-sec-t">캐릭터 {first ? "선택 (첫 선택 무료)" : "변경"}</div>
+            <div className="wlist">
+              {CHARACTERS.map(c => {
+                const isCur = c.k === charK;
+                const affordable = pts >= CHAR_CHANGE_COST;
+                return (
+                  <div key={c.k} className="charrow">
+                    <div className="cf">
+                      {c.k === "rat" && window.CHAR_RAT_RUN
+                        ? <SpriteChar frames={window.CHAR_RAT_RUN} size={44} fps={6} />
+                        : c.label}
+                    </div>
+                    <div className="body">
+                      <div className="name">{c.label}</div>
+                      <div className="move">{c.move}</div>
+                    </div>
+                    {isCur ? (
+                      <div className="cta use">사용 중</div>
+                    ) : first ? (
+                      <button className="cta free" onClick={() => handlePick(c.k)}>선택하기</button>
+                    ) : affordable ? (
+                      <button className="cta buy" onClick={() => handlePick(c.k)}>{CHAR_CHANGE_COST}P 변경</button>
+                    ) : (
+                      <div className="cta locked">{pts}/{CHAR_CHANGE_COST}P</div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className="empty-note" style={{ textAlign: "center", marginTop: 4 }}>{APP_VERSION} · {APP_BUILD}</div>
+        </div>
+      </div>
+    </div>,
+    document.body
+  );
+}
+
+/* ---------- 앱 셸 ---------- */
+const TABS = [
+  { k: "learn", label: "학습", icon: "school" },
+  { k: "dict", label: "사전", icon: "menu_book" },
+  { k: "home", label: "홈", icon: "home" },
+  { k: "talk", label: "회화", icon: "forum" },
+  { k: "box", label: "보관함", icon: "bookmark" },
+];
+
+function App() {
+  const [tab, setTab] = useState("home");
+  const [stack, setStack] = useState(null); // 단어 상세 시트 스택
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [charK, setCharKState] = useState(() => {
+    try { return localStorage.getItem("en_char"); } catch (e) { return null; }
+  });
+  const changeChar = k => { setCharKState(k); try { localStorage.setItem("en_char", k); } catch (e) {} };
+
+  const openWord = w => setStack([w]);
+  const pushWord = w => setStack(s => [...s, w]);
+  const popWord = () => setStack(s => (s.length > 1 ? s.slice(0, -1) : s));
+  const closeSheet = () => setStack(null);
+
+  useEffect(() => {
+    if (!stack) return;
+    const onKey = e => { if (e.key === "Escape") closeSheet(); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [stack]);
+
+  return (
+    <div className="app">
+      <div className="topbar">
+        <div className="brand" role="button" tabIndex={0} onClick={() => setTab("home")} style={{ cursor: "pointer" }}>No<b>English</b></div>
+        <div className="topbar-right">
+          <span className="pill"><span className="dot" />연속 12일</span>
+          <button className="avatar-btn" aria-label="설정" onClick={() => setSettingsOpen(true)}><Icon name="settings" size={19} /></button>
+        </div>
+      </div>
+
+      <div className="scroll">
+        {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} />}
+        {tab === "dict" && <Dict onOpen={openWord} />}
+        {tab === "learn" && <Learn onOpenWord={openWord} />}
+        {tab === "talk" && <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />}
+        {tab === "box" && <Soon title="보관함은 준비 중입니다" desc="즐겨찾기 단어·문장 · 뱃지 컬렉션 · 성장 기록" />}
+      </div>
+
+      {settingsOpen && <Settings charK={charK} onChangeChar={changeChar} onClose={() => setSettingsOpen(false)} />}
+
+      <div className="tabbar">
+        {TABS.map(t => (
+          <button key={t.k}
+                  className={"tab" + (t.k === "home" ? " home" : "") + (tab === t.k ? " on" : "")}
+                  onClick={() => setTab(t.k)}>
+            <span className="ti"><Icon name={t.icon} size={t.k === "home" ? 26 : 24} /></span>
+            {t.label}
+          </button>
+        ))}
+      </div>
+
+      {stack && <WordSheet stack={stack} onPush={pushWord} onPop={popWord} onClose={closeSheet} />}
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+</body>
+</html>

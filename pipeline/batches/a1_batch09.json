@@ -1,0 +1,20 @@
+[
+  {"word": "worry", "ko": "걱정하다", "ex": {"en": "Don't worry about the exam.", "ko": "시험에 대해 걱정하지 마세요."}},
+  {"word": "would", "ko": "~할 것이다 (조동사)", "enOverride": "used to express what someone would do in a hypothetical situation, or a polite request", "ex": {"en": "Would you like some coffee?", "ko": "커피 좀 드시겠어요?"}},
+  {"word": "write", "ko": "쓰다", "ex": {"en": "I write in my diary every day.", "ko": "저는 매일 일기를 써요."}},
+  {"word": "writer", "ko": "작가", "ex": {"en": "She is a famous writer.", "ko": "그녀는 유명한 작가예요."}},
+  {"word": "wrong", "ko": "틀린, 잘못된", "ex": {"en": "That answer is wrong.", "ko": "그 답은 틀렸어요."}},
+  {"word": "yard", "ko": "마당, 뜰", "enOverride": "a piece of ground next to a house", "ex": {"en": "The kids are playing in the yard.", "ko": "아이들이 마당에서 놀고 있어요."}},
+  {"word": "year", "ko": "년, 해", "ex": {"en": "I have lived here for one year.", "ko": "저는 여기서 1년 동안 살았어요."}},
+  {"word": "yellow", "ko": "노란색, 노란", "ex": {"en": "She likes yellow flowers.", "ko": "그녀는 노란 꽃을 좋아해요."}},
+  {"word": "yes", "ko": "네, 예", "ex": {"en": "Yes, I would love to come.", "ko": "네, 꼭 가고 싶어요."}},
+  {"word": "yesterday", "ko": "어제", "ex": {"en": "I met her yesterday.", "ko": "저는 어제 그녀를 만났어요."}},
+  {"word": "yet", "ko": "아직", "ex": {"en": "I haven't finished my homework yet.", "ko": "저는 아직 숙제를 끝내지 못했어요."}},
+  {"word": "yogurt", "ko": "요거트", "ex": {"en": "I eat yogurt for breakfast.", "ko": "저는 아침으로 요거트를 먹어요."}},
+  {"word": "you", "ko": "당신, 너", "enOverride": "the person being addressed", "ex": {"en": "How are you today?", "ko": "오늘 어떻게 지내요?"}},
+  {"word": "young", "ko": "어린, 젊은", "ex": {"en": "He looks very young.", "ko": "그는 아주 젊어 보여요."}},
+  {"word": "your", "ko": "당신의", "enOverride": "belonging to you", "ex": {"en": "Is this your bag?", "ko": "이거 당신 가방이에요?"}},
+  {"word": "yours", "ko": "당신의 것", "enOverride": "the one belonging to you", "ex": {"en": "This pen is yours.", "ko": "이 펜은 당신 거예요."}},
+  {"word": "yourself", "ko": "당신 자신", "enOverride": "you and nobody else", "ex": {"en": "Take care of yourself.", "ko": "몸조심하세요."}},
+  {"word": "zoo", "ko": "동물원", "ex": {"en": "We went to the zoo on Sunday.", "ko": "우리는 일요일에 동물원에 갔어요."}}
+]
