@@ -81,7 +81,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .badge.earned{background:var(--accent-soft);color:var(--accent-deep);border:1.5px solid var(--accent);}
 .badge.locked{background:var(--fill);color:var(--muted);font-size:20px;}
 .hero-char{position:relative;z-index:2;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:9px;}
-.char-face{width:156px;height:156px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;}
+.char-face{width:156px;height:156px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;background:var(--surface);}
 /* 달리는 씬(placeholder). 실제 캐릭터는 Lottie/Rive/스프라이트로 이 슬롯 교체 */
 .hero-char.run .char-face{animation:runbob var(--bob,.5s) ease-in-out infinite alternate;}
 @keyframes runbob{from{transform:translateY(1px) rotate(-1.5deg);}to{transform:translateY(-7px) rotate(1.5deg);}}
