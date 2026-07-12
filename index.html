@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.4">
+<link rel="manifest" href="manifest.json?v=0.11.5">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.4"></script>
-<script src="img/rat_run.js?v=0.11.4"></script>
+<script src="words.js?v=0.11.5"></script>
+<script src="img/rat_run.js?v=0.11.5"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -279,6 +279,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qen .fill{color:var(--accent-deep);font-weight:800;border-bottom:2.5px solid var(--accent);padding:0 2px;}
 .qen .fill.bad{color:#d64545;border-color:#d64545;text-decoration:line-through;text-decoration-color:#d6454577;}
 .qhint{font-size:12px;color:var(--muted);}
+.qnudge{font-size:12px;color:var(--accent-deep);background:var(--accent-soft);border-radius:10px;padding:8px 10px;line-height:1.4;}
 /* 입력창 = 문장 속 빈칸. 회색 솔리드 + 살짝 라운드, 문장 글자 크기 그대로, 네이티브 캐럿이 깜빡임 */
 .qbox{border:none;border-radius:8px;background:var(--fill);font:inherit;font-weight:800;font-size:inherit;line-height:inherit;color:var(--accent-deep);text-align:center;padding:2px 8px;outline:none;vertical-align:baseline;caret-color:var(--accent);min-width:64px;}
 .qbox:focus{background:#e9ebef;} /* 포커스 링 없이 톤만 반 단계 — 포커스 표시는 깜빡이는 캐럿이 담당 */
@@ -339,7 +340,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.4";
+const APP_VERSION = "v0.11.5";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -1015,6 +1016,7 @@ function CardSession({ items, onExit, onOpenWord }) {
   const [hintLen, setHintLen] = useState(false);   // 글자수 힌트
   const [hintFirst, setHintFirst] = useState(false); // 첫 글자 힌트
   const [hintUsed, setHintUsed] = useState(false);   // 이 카드에서 힌트를 썼는지 — 쓰면 이번 세션에 한 번 더 출제
+  const [nudgeWord, setNudgeWord] = useState(null);  // 유의어를 입력했을 때 안내 문구에 쓸 단어
 
   const it = queue[idx];
   const blank = useMemo(() => it ? makeBlank(it.ex.en, it.word) : null, [it]);
@@ -1024,11 +1026,12 @@ function CardSession({ items, onExit, onOpenWord }) {
 
   const speak = txt => { try { const u = new SpeechSynthesisUtterance(txt); u.lang = "en-US"; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch (e) {} };
 
-  // 정답 판정: 빈칸의 정답, 원형 단어, 유의어 중 하나와 일치하면 정답 처리
+  // 정답 판정: 빈칸의 정답 또는 원형 단어와 일치해야 정답. 유의어는 정답으로 인정하지 않음(문장에 안 맞을 수 있어서) —
+  // 대신 유의어를 입력하면 아래 useEffect에서 안내 문구를 보여주고 힌트를 열어줌(패널티 없음).
   const isAnswer = raw => {
     const v = raw.trim().toLowerCase();
     if (!v) return false;
-    return v === expected || v === it.word.toLowerCase() || synonyms.some(s => s.toLowerCase() === v);
+    return v === expected || v === it.word.toLowerCase();
   };
 
   const submit = raw => {
@@ -1042,11 +1045,27 @@ function CardSession({ items, onExit, onOpenWord }) {
     speak(it.ex.en);
   };
 
-  // 입력이 정답(유의어 포함)과 일치하면 '확인'을 누르지 않아도 바로 채점
+  // 입력이 정답과 일치하면 '확인'을 누르지 않아도 바로 채점
   const handleChange = raw => {
     setVal(raw);
     if (isAnswer(raw)) submit(raw);
   };
+
+  // 유의어를 입력했을 때: 오답 처리하지 않고 안내 문구를 띄우고 힌트 두 개를 열어 정답을 유도.
+  // 힌트 버튼을 직접 누른 게 아니므로 hintUsed(재출제 패널티)는 건드리지 않음.
+  useEffect(() => {
+    if (res || !it || !expected) return;
+    const v = val.trim().toLowerCase();
+    if (!v) return;
+    const hit = synonyms.find(s => s.toLowerCase() === v);
+    if (hit) {
+      setNudgeWord(hit);
+      setHintFirst(true);
+      setHintLen(true);
+      setVal(expected[0]);
+    }
+    // eslint-disable-next-line
+  }, [val]);
 
   const hintUsedNextLen = hintUsed ? queue.length + 1 : queue.length; // 힌트 사용 시 재출제로 늘어날 총 문항 수(다음 버튼 표기용)
   const next = () => {
@@ -1054,7 +1073,7 @@ function CardSession({ items, onExit, onOpenWord }) {
     if (hintUsed) q = queue.concat([it]); // 힌트를 쓴 단어는 이번 세션에 한 번 더 출제
     if (idx + 1 >= q.length) { onExit(true, correct, q.length); return; }
     if (q !== queue) setQueue(q);
-    setIdx(idx + 1); setVal(""); setRes(null); setHintLen(false); setHintFirst(false); setHintUsed(false);
+    setIdx(idx + 1); setVal(""); setRes(null); setHintLen(false); setHintFirst(false); setHintUsed(false); setNudgeWord(null);
   };
 
   const hiddenRef = React.useRef(null);
@@ -1168,6 +1187,7 @@ function CardSession({ items, onExit, onOpenWord }) {
             <div className="qko">{it.ex.ko}</div>
             <div className="qdiv" />
             {renderEn()}
+            {!res && nudgeWord && <div className="qnudge">'{nudgeWord}'도 비슷한 뜻이지만, 이 문장에는 더 어울리는 다른 단어가 있어요. 힌트를 참고해 보세요.</div>}
             {res && <div className="qcue" style={{ marginTop: 2 }}><b>{it.word}</b> — {it.ko}</div>}
           </React.Fragment>
         ) : (
@@ -1177,6 +1197,7 @@ function CardSession({ items, onExit, onOpenWord }) {
             <div className="qko">{it.ko}</div>
             <div className="qdiv" />
             {renderEn()}
+            {!res && nudgeWord && <div className="qnudge">'{nudgeWord}'도 비슷한 뜻이지만, 더 어울리는 다른 단어가 있어요. 힌트를 참고해 보세요.</div>}
           </React.Fragment>
         )}
         {res && (
