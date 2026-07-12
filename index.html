@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.5">
+<link rel="manifest" href="manifest.json?v=0.11.6">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.5"></script>
-<script src="img/rat_run.js?v=0.11.5"></script>
+<script src="words.js?v=0.11.6"></script>
+<script src="img/rat_run.js?v=0.11.6"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -55,7 +55,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .pill .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);}
 .avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
 
-.scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+/* 탭바가 고정(fixed)으로 빠지면서 밑에 가려질 콘텐츠 여유분 확보 */
+.scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding-bottom:calc(70px + env(safe-area-inset-bottom));}
 .content{padding:8px 20px 28px;display:flex;flex-direction:column;gap:14px;}
 
 /* 섹션 라벨 */
@@ -200,8 +201,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .soon .big{font-size:16px;font-weight:700;color:var(--ink-2);}
 .soon .mascot{width:88px;height:88px;font-size:11px;}
 
-/* 하단 탭바 (홈 중앙) */
-.tabbar{display:flex;align-items:flex-end;justify-content:space-around;background:var(--surface);border-top:1px solid var(--line);padding:10px 8px calc(env(safe-area-inset-bottom) + 8px);position:relative;z-index:5;overflow:visible;}
+/* 하단 탭바 (홈 중앙) — 화면 실제 하단에 고정. 키보드가 뜨면(레이아웃 뷰포트 기준 고정이라)
+   키보드 뒤로 가려지고, 키보드가 내려가면 다시 보인다. 그만큼 학습카드 쪽 공간이 넉넉해짐. */
+.tabbar{display:flex;align-items:flex-end;justify-content:space-around;background:var(--surface);border-top:1px solid var(--line);padding:10px 8px calc(env(safe-area-inset-bottom) + 8px);position:fixed;left:0;right:0;bottom:0;max-width:520px;margin:0 auto;z-index:5;overflow:visible;}
 .tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;color:var(--muted);font-size:10px;font-weight:600;padding:2px 0;overflow:visible;}
 .tab.on{color:var(--accent-deep);}
 .tab .ti{width:24px;height:24px;display:flex;align-items:center;justify-content:center;}
@@ -261,16 +263,16 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .ext a{font-size:12px;font-weight:600;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:6px 12px;text-decoration:none;}
 .empty-note{font-size:12px;color:var(--muted);}
 
-/* 학습 카드 세션 */
-.study{display:flex;flex-direction:column;gap:14px;height:100%;}
+/* 학습 카드 세션. min-height(고정 height 아님)라 공간이 부족하면(키보드 등) 자연스럽게
+   더 자라나고 .scroll(overflow-y:auto)이 스크롤을 맡는다 — 문제(qcard)는 맨 위라 항상
+   스크롤 없이 바로 보이고, 부족분은 힌트·확인 버튼 쪽이 스크롤 대상이 된다. */
+.study{display:flex;flex-direction:column;gap:14px;min-height:100%;}
 .study-top{display:flex;align-items:center;gap:12px;}
 .study-top .x{color:var(--muted);display:flex;padding:2px;}
 .study-bar{flex:1;height:8px;background:var(--fill);border-radius:999px;overflow:hidden;}
 .study-bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .3s ease;}
 .study-n{font-size:13px;font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;flex:none;}
-/* flex:1+min-height:0+overflow-y:auto — 공간이 부족할 때(키보드가 뜬 상태 등) 카드 내용이
-   스크롤되어 줄어들고, 그 아래 힌트·확인 버튼은 항상 화면 안에 남도록(.sheet-body와 동일 패턴) */
-.qcard{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;flex:1;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;}
+.qcard{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
 .qcue{font-size:12px;color:var(--muted);}
 .qko{font-size:17px;font-weight:800;letter-spacing:-0.3px;line-height:1.4;}
 .qdiv{height:1px;background:var(--line);margin:2px 0;}
@@ -340,7 +342,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.5";
+const APP_VERSION = "v0.11.6";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
