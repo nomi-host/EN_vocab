@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.2">
+<link rel="manifest" href="manifest.json?v=0.11.3">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.2"></script>
-<script src="img/rat_run.js?v=0.11.2"></script>
+<script src="words.js?v=0.11.3"></script>
+<script src="img/rat_run.js?v=0.11.3"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -181,6 +181,20 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .tag.done{background:#e6f7f0;color:#0a9d6f;}
 .tag.learning{background:#fff2e0;color:#c77a11;}
 
+/* 카테고리 선택: 레벨 카드 그리드 · 어근 행 목록 */
+.lv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.lv-card{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:16px 8px 14px;text-align:center;transition:transform .1s;}
+.lv-card:active{transform:scale(.96);}
+.lv-card .lv{font-size:21px;font-weight:800;color:var(--accent-deep);letter-spacing:-0.3px;}
+.lv-card .nm{font-size:12px;font-weight:700;color:var(--ink-2);margin-top:2px;}
+.lv-card .n{font-size:11px;color:var(--muted);margin-top:1px;font-weight:600;font-variant-numeric:tabular-nums;}
+.rootrow{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
+.rootrow:active{transform:scale(.99);}
+.rootrow .ax{font-size:16px;font-weight:800;color:var(--accent-deep);min-width:62px;}
+.rootrow .gl{flex:1;font-size:13px;color:var(--ink-2);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.rootrow .n{font-size:12px;color:var(--muted);font-weight:600;font-variant-numeric:tabular-nums;flex:none;}
+.more-btn{display:block;width:100%;text-align:center;background:var(--fill);color:var(--ink-2);font-weight:700;font-size:13px;padding:12px;border-radius:13px;}
+
 /* 준비중 */
 .soon{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:64px 24px;text-align:center;color:var(--muted);}
 .soon .big{font-size:16px;font-weight:700;color:var(--ink-2);}
@@ -262,13 +276,16 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qen .fill{color:var(--accent-deep);font-weight:800;border-bottom:2.5px solid var(--accent);padding:0 2px;}
 .qen .fill.bad{color:#d64545;border-color:#d64545;text-decoration:line-through;text-decoration-color:#d6454577;}
 .qhint{font-size:12px;color:var(--muted);}
-/* 입력창 = 박스. 예문 빈칸(또는 스펠링 모드)에 직접 타이핑 */
-.qbox{border:2px solid var(--line);border-radius:11px;background:var(--surface);font:inherit;font-weight:800;font-size:19px;color:var(--accent-deep);text-align:center;padding:9px 12px;outline:none;vertical-align:middle;}
-.qbox:focus{border-color:var(--accent);}
-/* 글자수 힌트: 정답 글자 수만큼 칸(cell)으로 분리 */
-.cellrow{display:inline-flex;gap:6px;position:relative;vertical-align:middle;}
-.cell{width:30px;height:42px;border:2px solid var(--line);border-radius:9px;background:var(--surface);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:21px;color:var(--accent-deep);text-transform:none;}
-.cell.filled{border-color:var(--accent);}
+/* 입력창 = 문장 속 빈칸. 회색 솔리드 + 살짝 라운드, 문장 글자 크기 그대로, 네이티브 캐럿이 깜빡임 */
+.qbox{border:none;border-radius:8px;background:var(--fill);font:inherit;font-weight:800;font-size:inherit;line-height:inherit;color:var(--accent-deep);text-align:center;padding:2px 8px;outline:none;vertical-align:baseline;caret-color:var(--accent);min-width:64px;}
+.qbox:focus{background:#e9ebef;} /* 포커스 링 없이 톤만 반 단계 — 포커스 표시는 깜빡이는 캐럿이 담당 */
+/* 글자수 힌트: 정답 글자 수만큼 칸(cell)으로 분리 — 같은 회색 솔리드 톤, 다음 입력 칸에 캐럿 깜빡임 */
+.cellrow{display:inline-flex;gap:5px;position:relative;vertical-align:middle;}
+.cell{width:26px;height:36px;border-radius:8px;background:var(--fill);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:var(--accent-deep);text-transform:none;}
+.cell.filled{background:var(--accent-soft);}
+.cell.cur::after{content:"";width:2px;height:17px;border-radius:1px;background:var(--accent);animation:caretblink 1.06s steps(1) infinite;}
+@keyframes caretblink{50%{opacity:0;}}
+@media (prefers-reduced-motion: reduce){.cell.cur::after{animation:none;}}
 .cell-catch{position:absolute;inset:0;width:100%;height:100%;opacity:0;border:0;padding:0;margin:0;font-size:16px;}
 /* 힌트 버튼 */
 .qhintrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
@@ -314,7 +331,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.2";
+const APP_VERSION = "v0.11.3";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -786,10 +803,32 @@ function WordRow({ w, onOpen }) {
   );
 }
 
+/* 긴 목록 분할 렌더 — 한 번에 다 그리면(레벨당 1,000+행) 프리즈되므로 "더 보기"로 나눔 */
+const LIST_CHUNK = 100;
+function WList({ list, onOpen }) {
+  const [limit, setLimit] = useState(LIST_CHUNK);
+  useEffect(() => setLimit(LIST_CHUNK), [list]);
+  return (
+    <div className="wlist">
+      {list.slice(0, limit).map(w => <WordRow key={w.word} w={w} onOpen={onOpen} />)}
+      {list.length === 0 && <div className="empty-note">아직 여기에 단어가 없어요.</div>}
+      {list.length > limit && (
+        <button className="more-btn" onClick={() => setLimit(l => l + LIST_CHUNK * 2)}>
+          더 보기 ({list.length - limit}개 남음)
+        </button>
+      )}
+    </div>
+  );
+}
+
+const CEFR_NAMES = { A1: "입문", A2: "초급", B1: "중급", B2: "중상급", C1: "고급", C2: "최상급" };
+
 function Dict({ onOpen }) {
   const [q, setQ] = useState("");
   const [view, setView] = useState(null);      // null=허브 | learned|category|fav|mine|add
-  const [catMode, setCatMode] = useState("cefr"); // cefr | root
+  const [catMode, setCatModeState] = useState("cefr"); // cefr | root
+  const [catSel, setCatSel] = useState(null);   // 선택된 레벨(A1) 또는 어근(-tion) — null이면 선택 화면
+  const setCatMode = m => { setCatModeState(m); setCatSel(null); };
   const [, bump] = useState(0);                 // EXTRA 변경 리렌더용
 
   const words = allWords();
@@ -818,12 +857,7 @@ function Dict({ onOpen }) {
   ];
   const TITLES = { learned: "내가 학습한 단어", category: "카테고리별", fav: "즐겨찾기", mine: "내 단어장", add: "새 단어 등록" };
 
-  const rows = list => (
-    <div className="wlist">
-      {list.map(w => <WordRow key={w.word} w={w} onOpen={onOpen} />)}
-      {list.length === 0 && <div className="empty-note">아직 여기에 단어가 없어요.</div>}
-    </div>
-  );
+  const rows = list => <WList list={list} onOpen={onOpen} />;
 
   const catList = level => words.filter(w => w.cefr === level).sort((a, b) => a.word.localeCompare(b.word));
   const rootIndex = useMemo(() => {
@@ -865,7 +899,7 @@ function Dict({ onOpen }) {
       ) : (
         <React.Fragment>
           <div className="listhead">
-            <button className="back" onClick={() => setView(null)} aria-label="뒤로"><Icon name="chevron_left" size={22} /></button>
+            <button className="back" onClick={() => { if (view === "category" && catSel !== null) setCatSel(null); else { setCatSel(null); setView(null); } }} aria-label="뒤로"><Icon name="chevron_left" size={22} /></button>
             <b>{TITLES[view]}</b>
             {view === "learned" && <span className="cnt">{learned.length}</span>}
             {view === "fav" && <span className="cnt">{favs.length}</span>}
@@ -894,22 +928,43 @@ function Dict({ onOpen }) {
                 <button className={"chip" + (catMode === "root" ? " on" : "")} onClick={() => setCatMode("root")}>어근별</button>
                 <button className="chip" style={{ opacity: .45 }}>주제별 (예정)</button>
               </div>
-              {catMode === "cefr" && CEFR_LEVELS.map(lv => {
-                const list = catList(lv);
-                if (!list.length) return null;
-                return (
-                  <React.Fragment key={lv}>
-                    <div className="sec">{lv} <span className="more">{list.length}개</span></div>
-                    {rows(list)}
-                  </React.Fragment>
-                );
-              })}
-              {catMode === "root" && rootIndex.map(([affix, info]) => (
-                <React.Fragment key={affix}>
-                  <div className="sec">{affix} <span style={{ color: "var(--muted)", fontWeight: 500 }}>{info.gloss}</span> <span className="more">{info.ws.length}개</span></div>
-                  {rows(info.ws)}
+              {catSel === null ? (
+                /* 선택 화면 — 목록을 쏟아내지 않고 레벨/어근을 먼저 고른다 */
+                catMode === "cefr" ? (
+                  <div className="lv-grid">
+                    {CEFR_LEVELS.map(lv => (
+                      <button key={lv} className="lv-card" onClick={() => setCatSel(lv)}>
+                        <div className="lv">{lv}</div>
+                        <div className="nm">{CEFR_NAMES[lv]}</div>
+                        <div className="n">{catList(lv).length.toLocaleString()}개</div>
+                      </button>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="wlist">
+                    {rootIndex.map(([affix, info]) => (
+                      <button key={affix} className="rootrow" onClick={() => setCatSel(affix)}>
+                        <span className="ax">{affix}</span>
+                        <span className="gl">{info.gloss}</span>
+                        <span className="n">{info.ws.length}개 ›</span>
+                      </button>
+                    ))}
+                  </div>
+                )
+              ) : (
+                /* 선택한 레벨/어근의 단어 목록 */
+                <React.Fragment>
+                  <div className="sec">
+                    {catMode === "cefr" ? catSel + " · " + CEFR_NAMES[catSel] : catSel}
+                    {catMode === "root" && <span style={{ color: "var(--muted)", fontWeight: 500 }}> {(rootIndex.find(([a]) => a === catSel) || [null, { gloss: "" }])[1].gloss}</span>}
+                  </div>
+                  {rows(
+                    catMode === "cefr"
+                      ? catList(catSel)
+                      : ((rootIndex.find(([a]) => a === catSel) || [null, { ws: [] }])[1].ws.slice().sort((a, b) => a.word.localeCompare(b.word)))
+                  )}
                 </React.Fragment>
-              ))}
+              )}
             </React.Fragment>
           )}
         </React.Fragment>
@@ -980,7 +1035,7 @@ function CardSession({ items, onExit, onOpenWord }) {
       return (
         <span className="cellrow" onMouseDown={e => { e.preventDefault(); focusHidden(); }}>
           {Array.from({ length: n }).map((_, k) => (
-            <span key={k} className={"cell" + (val[k] ? " filled" : "")}>{val[k] || ""}</span>
+            <span key={k} className={"cell" + (val[k] ? " filled" : "") + (k === val.length ? " cur" : "")}>{val[k] || ""}</span>
           ))}
           <input key={idx} ref={hiddenRef} className="cell-catch" autoFocus value={val}
             onChange={e => setVal(e.target.value.replace(/[^A-Za-z']/g, "").slice(0, n))}
