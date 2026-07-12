@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.6">
+<link rel="manifest" href="manifest.json?v=0.11.7">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.6"></script>
-<script src="img/rat_run.js?v=0.11.6"></script>
+<script src="words.js?v=0.11.7"></script>
+<script src="img/rat_run.js?v=0.11.7"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -196,6 +196,20 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .rootrow .n{font-size:12px;color:var(--muted);font-weight:600;font-variant-numeric:tabular-nums;flex:none;}
 .more-btn{display:block;width:100%;text-align:center;background:var(--fill);color:var(--ink-2);font-weight:700;font-size:13px;padding:12px;border-radius:13px;}
 
+/* 사전 목록 다중선택(담기) 체크 · 내 단어장(커스텀 리스트) UI */
+.wchk{width:22px;height:22px;border-radius:999px;border:2px solid var(--line);flex:none;display:flex;align-items:center;justify-content:center;color:#fff;}
+.wchk.on{background:var(--accent);border-color:var(--accent);}
+.wl-newrow{display:flex;gap:8px;}
+.wl-newrow input{flex:1;border:1px solid var(--line);border-radius:12px;padding:11px 14px;font-size:14px;background:var(--surface);outline:none;color:var(--ink);}
+.wl-newrow input::placeholder{color:var(--muted);}
+.wl-newrow button{background:var(--accent);color:#fff;font-weight:700;font-size:13px;padding:0 16px;border-radius:12px;white-space:nowrap;flex:none;}
+.wl-actions{display:flex;gap:8px;}
+.wl-actions button{flex:1;padding:11px 6px;border-radius:13px;font-weight:700;font-size:12px;white-space:nowrap;}
+.wl-actions .primary{flex:1.5;}
+.wl-actions .primary{background:var(--accent);color:#fff;}
+.wl-actions .ghost{background:var(--surface);border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow);}
+.wl-remove{margin-left:auto;flex:none;color:var(--muted);display:flex;padding:6px;}
+
 /* 준비중 */
 .soon{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:64px 24px;text-align:center;color:var(--muted);}
 .soon .big{font-size:16px;font-weight:700;color:var(--ink-2);}
@@ -342,7 +356,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.6";
+const APP_VERSION = "v0.11.7";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -395,6 +409,37 @@ let FAVS = (() => {
 })();
 function saveFavs() { try { localStorage.setItem("en_favs", JSON.stringify([...FAVS])); } catch (e) {} }
 function toggleFav(word) { if (FAVS.has(word)) FAVS.delete(word); else FAVS.add(word); saveFavs(); }
+
+/* 내 단어장(커스텀 리스트) — localStorage 보존. { id, name, words:[word,...] } 배열.
+   전체 표제어 중 고른 단어를 이름 붙인 리스트로 묶어서 그 리스트만 따로 학습할 수 있게 함. */
+let WORDLISTS = (() => { try { return JSON.parse(localStorage.getItem("en_wordlists") || "[]"); } catch (e) { return []; } })();
+function saveWordlists() { try { localStorage.setItem("en_wordlists", JSON.stringify(WORDLISTS)); } catch (e) {} }
+function createWordlist(name) {
+  const list = { id: "wl_" + Date.now().toString(36) + Math.random().toString(36).slice(2, 7), name: name.trim(), words: [] };
+  WORDLISTS.push(list); saveWordlists();
+  return list;
+}
+function addToWordlist(id, words) {
+  const list = WORDLISTS.find(l => l.id === id);
+  if (!list) return;
+  words.forEach(w => { if (!list.words.includes(w)) list.words.push(w); });
+  saveWordlists();
+}
+function removeFromWordlist(id, word) {
+  const list = WORDLISTS.find(l => l.id === id);
+  if (!list) return;
+  list.words = list.words.filter(w => w !== word);
+  saveWordlists();
+}
+function renameWordlist(id, name) {
+  const list = WORDLISTS.find(l => l.id === id);
+  if (!list || !name.trim()) return;
+  list.name = name.trim(); saveWordlists();
+}
+function deleteWordlist(id) {
+  WORDLISTS = WORDLISTS.filter(l => l.id !== id);
+  saveWordlists();
+}
 
 /* ===================== SRS 엔진 (Leitner · localStorage) =====================
    학습 단위 키 = 다의어면 `word#senseIndex`, 단일 의미면 `word`.
@@ -457,9 +502,9 @@ function wordStatus(w) {
 }
 
 /* 학습 아이템(카드 단위) = 의미별 1개. 예문 하나를 문맥으로 사용 */
-function allItems() {
+function itemsFromWords(list) {
   const items = [];
-  allWords().forEach(w => {
+  list.forEach(w => {
     if (w.senses && w.senses.length) {
       w.senses.forEach((s, i) => { if ((s.ex || []).length) items.push({ key: w.word + "#" + i, word: w.word, ko: s.ko, cue: s.cue, ex: s.ex[0], cefr: w.cefr }); });
     } else if ((w.ex || []).length) {
@@ -467,6 +512,9 @@ function allItems() {
     }
   });
   return items;
+}
+function allItems() {
+  return itemsFromWords(allWords());
 }
 
 /* 영어 예문에서 타깃 단어를 빈칸으로. 굴절형(saved/delivers)도 어간 매칭. 실패 시 null */
@@ -651,6 +699,7 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
   const [senseOpen, setSenseOpen] = useState(0); // 다의어: 첫 의미 펼침
   const [showAllSenses, setShowAllSenses] = useState(false);
   const [, bump] = useState(0); // 즐겨찾기·내 단어장 토글 리렌더용
+  const [showPicker, setShowPicker] = useState(false);
   useEffect(() => { setSenseOpen(0); setShowAllSenses(false); }, [word]);
   const speak = useCallback((text) => {
     try {
@@ -680,11 +729,15 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
             ? <button className="back" onClick={onPop} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
             : <span style={{ width: 8 }} />}
           <span className="sp" />
+          <button className="fav" onClick={() => setShowPicker(true)}>내 단어장</button>
           <button className={"fav" + (FAVS.has(w.word) ? " on" : "")} onClick={() => { toggleFav(w.word); bump(v => v + 1); }}>
             {FAVS.has(w.word) ? "즐겨찾기 ✓" : "즐겨찾기"}
           </button>
           <button className="back" onClick={onClose} style={{ marginLeft: 4 }} aria-label="닫기"><Icon name="close" size={20} /></button>
         </div>
+        {showPicker && (
+          <ListPicker words={[w.word]} onClose={() => setShowPicker(false)} onChanged={() => bump(v => v + 1)} />
+        )}
         <div className="sheet-body">
           <div>
             <div className="wd-top">
@@ -804,11 +857,12 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
    검색은 어느 화면에서든 최상단 — 입력을 시작하면 즉시 검색 결과로 전환. */
 const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
-function WordRow({ w, onOpen }) {
+function WordRow({ w, onOpen, pickMode, picked, onTogglePick }) {
   const st = wordStatus(w);
   const multi = w.senses && w.senses.length > 1;
   return (
-    <div className="wrow" onClick={() => onOpen(w.word)}>
+    <div className="wrow" onClick={() => (pickMode ? onTogglePick(w.word) : onOpen(w.word))}>
+      {pickMode && <span className={"wchk" + (picked ? " on" : "")}>{picked && <Icon name="check" size={13} />}</span>}
       <div>
         <div className="w">{w.word}</div>
         <div className="k">{multi ? w.senses[0].ko + " 외 " + (w.senses.length - 1) + "개 뜻" : w.ko}</div>
@@ -827,12 +881,15 @@ function WordRow({ w, onOpen }) {
 
 /* 긴 목록 분할 렌더 — 한 번에 다 그리면(레벨당 1,000+행) 프리즈되므로 "더 보기"로 나눔 */
 const LIST_CHUNK = 100;
-function WList({ list, onOpen }) {
+function WList({ list, onOpen, pickMode, picked, onTogglePick }) {
   const [limit, setLimit] = useState(LIST_CHUNK);
   useEffect(() => setLimit(LIST_CHUNK), [list]);
   return (
     <div className="wlist">
-      {list.slice(0, limit).map(w => <WordRow key={w.word} w={w} onOpen={onOpen} />)}
+      {list.slice(0, limit).map(w => (
+        <WordRow key={w.word} w={w} onOpen={onOpen}
+          pickMode={pickMode} picked={picked && picked.has(w.word)} onTogglePick={onTogglePick} />
+      ))}
       {list.length === 0 && <div className="empty-note">아직 여기에 단어가 없어요.</div>}
       {list.length > limit && (
         <button className="more-btn" onClick={() => setLimit(l => l + LIST_CHUNK * 2)}>
@@ -843,15 +900,57 @@ function WList({ list, onOpen }) {
   );
 }
 
+/* 단어(들)를 내 단어장(커스텀 리스트)에 담는 공용 다이얼로그 — 사전 다중선택, 단어 상세 모달에서 공용 */
+function ListPicker({ words, onClose, onChanged }) {
+  const [newName, setNewName] = useState("");
+  const commit = id => { addToWordlist(id, words); onChanged(); onClose(); };
+  const createAndCommit = () => {
+    if (!newName.trim()) return;
+    const list = createWordlist(newName);
+    commit(list.id);
+  };
+  return ReactDOM.createPortal(
+    <div className="dlg-backdrop" onClick={onClose}>
+      <div className="dlg" onClick={e => e.stopPropagation()}>
+        <div className="dlg-title">리스트에 담기</div>
+        <div className="dlg-sub">{words.length}개 단어</div>
+        {WORDLISTS.length === 0 ? (
+          <div className="empty-note" style={{ margin: "10px 0" }}>아직 만든 리스트가 없어요.</div>
+        ) : (
+          <div className="wl-picklist">
+            {WORDLISTS.map(l => (
+              <button key={l.id} className="rootrow" onClick={() => commit(l.id)}>
+                <span className="ax" style={{ minWidth: 0, flex: 1 }}>{l.name}</span>
+                <span className="n">{l.words.length}개 ›</span>
+              </button>
+            ))}
+          </div>
+        )}
+        <div className="wl-newrow">
+          <input value={newName} onChange={e => setNewName(e.target.value)} placeholder="새 리스트 이름 (예: 비즈니스용)" autoCapitalize="none" />
+          <button onClick={createAndCommit}>만들기</button>
+        </div>
+        <button className="ghost" style={{ width: "100%", marginTop: 12, padding: 12, borderRadius: 13, background: "var(--fill)", color: "var(--ink-2)", fontWeight: 700 }} onClick={onClose}>닫기</button>
+      </div>
+    </div>,
+    document.body
+  );
+}
+
 const CEFR_NAMES = { A1: "입문", A2: "초급", B1: "중급", B2: "중상급", C1: "고급", C2: "최상급" };
 
-function Dict({ onOpen }) {
+function Dict({ onOpen, onStudyList }) {
   const [q, setQ] = useState("");
   const [view, setView] = useState(null);      // null=허브 | learned|category|fav|mine|add
   const [catMode, setCatModeState] = useState("cefr"); // cefr | root
   const [catSel, setCatSel] = useState(null);   // 선택된 레벨(A1) 또는 어근(-tion) — null이면 선택 화면
   const setCatMode = m => { setCatModeState(m); setCatSel(null); };
-  const [, bump] = useState(0);                 // EXTRA 변경 리렌더용
+  const [, bump] = useState(0);                 // EXTRA·즐겨찾기·내 단어장 변경 리렌더용
+  const [listSel, setListSel] = useState(null); // 내 단어장 안에서 연 리스트 id ("__added__"=직접 등록한 단어)
+  const [newListName, setNewListName] = useState("");
+  const [pickMode, setPickMode] = useState(false); // 단어 목록 다중선택(담기) 모드
+  const [picked, setPicked] = useState(() => new Set());
+  const [showPicker, setShowPicker] = useState(false); // 리스트 선택 다이얼로그
 
   const words = allWords();
   const learned = words.filter(w => wordStatus(w));
@@ -875,11 +974,22 @@ function Dict({ onOpen }) {
     { k: "learned", icon: "school", title: "내가 학습한 단어", sub: learned.length + "개 · SRS 진행 상태별" },
     { k: "category", icon: "grid_view", title: "카테고리별로 보기", sub: "레벨(CEFR) · 어근별 · 주제(예정)" },
     { k: "fav", icon: "star", title: "즐겨찾기한 단어", sub: favs.length + "개" },
-    { k: "mine", icon: "bookmark", title: "내 단어장", sub: "내가 추가한 단어 " + mine.length + "개" },
+    { k: "mine", icon: "bookmark", title: "내 단어장", sub: "내가 만든 리스트 " + WORDLISTS.length + "개" },
   ];
   const TITLES = { learned: "내가 학습한 단어", category: "카테고리별", fav: "즐겨찾기", mine: "내 단어장", add: "새 단어 등록" };
 
-  const rows = list => <WList list={list} onOpen={onOpen} />;
+  const togglePick = w => setPicked(s => { const n = new Set(s); n.has(w) ? n.delete(w) : n.add(w); return n; });
+  const togglePickMode = () => { setPickMode(v => !v); setPicked(new Set()); };
+  const rows = list => <WList list={list} onOpen={onOpen} pickMode={pickMode} picked={picked} onTogglePick={togglePick} />;
+  const pickToggleBtn = (
+    <button className="chip" style={{ marginLeft: "auto" }} onClick={togglePickMode}>{pickMode ? "선택 취소" : "담기"}</button>
+  );
+  const pickBar = pickMode && (
+    <div className="addbar">
+      <div className="t">{picked.size > 0 ? `${picked.size}개 선택됨` : "담을 단어를 선택하세요"}</div>
+      <button disabled={picked.size === 0} style={picked.size === 0 ? { opacity: .5 } : undefined} onClick={() => setShowPicker(true)}>리스트에 담기</button>
+    </div>
+  );
 
   const catList = level => words.filter(w => w.cefr === level).sort((a, b) => a.word.localeCompare(b.word));
   const rootIndex = useMemo(() => {
@@ -903,6 +1013,8 @@ function Dict({ onOpen }) {
               <button onClick={() => addWord(q)}>추가하기</button>
             </div>
           )}
+          {!noHit && hits.length > 0 && <div className="listhead" style={{ margin: "0 0 2px" }}>{pickToggleBtn}</div>}
+          {pickBar}
           {rows(hits)}
         </React.Fragment>
       ) : view === null ? (
@@ -921,23 +1033,88 @@ function Dict({ onOpen }) {
       ) : (
         <React.Fragment>
           <div className="listhead">
-            <button className="back" onClick={() => { if (view === "category" && catSel !== null) setCatSel(null); else { setCatSel(null); setView(null); } }} aria-label="뒤로"><Icon name="chevron_left" size={22} /></button>
-            <b>{TITLES[view]}</b>
+            <button className="back" onClick={() => {
+              if (view === "mine" && listSel !== null) { setListSel(null); setPickMode(false); setPicked(new Set()); }
+              else if (view === "category" && catSel !== null) setCatSel(null);
+              else { setCatSel(null); setListSel(null); setPickMode(false); setPicked(new Set()); setView(null); }
+            }} aria-label="뒤로"><Icon name="chevron_left" size={22} /></button>
+            <b>
+              {view === "mine" && listSel === "__added__" ? "직접 등록한 단어"
+                : view === "mine" && listSel ? (WORDLISTS.find(l => l.id === listSel) || {}).name
+                : TITLES[view]}
+            </b>
             {view === "learned" && <span className="cnt">{learned.length}</span>}
             {view === "fav" && <span className="cnt">{favs.length}</span>}
-            {view === "mine" && <span className="cnt">{mine.length}</span>}
+            {view === "mine" && listSel === "__added__" && <span className="cnt">{mine.length}</span>}
+            {view === "mine" && listSel === null && <span className="cnt">{WORDLISTS.length}</span>}
+            {(view === "learned" || view === "fav" || (view === "mine" && listSel === "__added__")) && pickToggleBtn}
           </div>
 
+          {view === "learned" && pickBar}
           {view === "learned" && rows(learned)}
+          {view === "fav" && pickBar}
           {view === "fav" && rows(favs)}
-          {view === "mine" && (
+          {view === "mine" && listSel === null && (
+            <React.Fragment>
+              <div className="wl-newrow">
+                <input value={newListName} onChange={e => setNewListName(e.target.value)} placeholder="새 리스트 이름 (예: 비즈니스용)" autoCapitalize="none" />
+                <button onClick={() => { if (newListName.trim()) { createWordlist(newListName); setNewListName(""); bump(x => x + 1); } }}>만들기</button>
+              </div>
+              {WORDLISTS.length === 0 && mine.length === 0 && (
+                <div className="empty-note">아직 만든 리스트가 없어요. 카테고리별 목록이나 검색 결과에서 '담기'로 단어를 모아보세요.</div>
+              )}
+              <div className="wlist">
+                {WORDLISTS.map(l => (
+                  <button key={l.id} className="rootrow" onClick={() => setListSel(l.id)}>
+                    <span className="ax" style={{ minWidth: 0, flex: 1 }}>{l.name}</span>
+                    <span className="n">{l.words.length}개 ›</span>
+                  </button>
+                ))}
+                {mine.length > 0 && (
+                  <button className="rootrow" onClick={() => setListSel("__added__")}>
+                    <span className="ax" style={{ minWidth: 0, flex: 1 }}>직접 등록한 단어</span>
+                    <span className="n">{mine.length}개 ›</span>
+                  </button>
+                )}
+              </div>
+            </React.Fragment>
+          )}
+          {view === "mine" && listSel === "__added__" && (
             <React.Fragment>
               <div className="addbar">
                 <div className="t">위 검색창에 단어를 입력하면<br/><b>사전에 없는 단어</b>를 등록할 수 있어요</div>
               </div>
+              {pickBar}
               {rows(mine)}
             </React.Fragment>
           )}
+          {view === "mine" && listSel !== null && listSel !== "__added__" && (() => {
+            const list = WORDLISTS.find(l => l.id === listSel);
+            if (!list) return null;
+            const listWords = list.words.map(w => wordOf(w)).filter(Boolean);
+            const studyItems = itemsFromWords(listWords);
+            return (
+              <React.Fragment>
+                <div className="wl-actions">
+                  <button className="primary" disabled={!studyItems.length} style={!studyItems.length ? { opacity: .5 } : undefined} onClick={() => onStudyList(studyItems)}>이 리스트로 학습</button>
+                  <button className="ghost" onClick={() => { const nm = prompt("리스트 이름", list.name); if (nm) { renameWordlist(list.id, nm); bump(x => x + 1); } }}>이름 변경</button>
+                  <button className="ghost" onClick={() => { if (confirm(`"${list.name}" 리스트를 삭제할까요?`)) { deleteWordlist(list.id); setListSel(null); bump(x => x + 1); } }}>삭제</button>
+                </div>
+                {listWords.length === 0 && <div className="empty-note">아직 담긴 단어가 없어요.</div>}
+                <div className="wlist">
+                  {listWords.map(w => (
+                    <div key={w.word} className="wrow" onClick={() => onOpen(w.word)}>
+                      <div>
+                        <div className="w">{w.word}</div>
+                        <div className="k">{(w.senses && w.senses.length) ? w.senses[0].ko : w.ko}</div>
+                      </div>
+                      <button className="wl-remove" onClick={ev => { ev.stopPropagation(); removeFromWordlist(list.id, w.word); bump(x => x + 1); }} aria-label="리스트에서 제거"><Icon name="close" size={16} /></button>
+                    </div>
+                  ))}
+                </div>
+              </React.Fragment>
+            );
+          })()}
           {view === "add" && (
             <div className="addbar">
               <div className="t">위 검색창에 추가할 단어를 입력하세요.<br/>사전에 없으면 <b>추가하기</b> 버튼이 나타납니다.</div>
@@ -976,10 +1153,12 @@ function Dict({ onOpen }) {
               ) : (
                 /* 선택한 레벨/어근의 단어 목록 */
                 <React.Fragment>
-                  <div className="sec">
+                  <div className="sec" style={{ display: "flex", alignItems: "center" }}>
                     {catMode === "cefr" ? catSel + " · " + CEFR_NAMES[catSel] : catSel}
                     {catMode === "root" && <span style={{ color: "var(--muted)", fontWeight: 500 }}> {(rootIndex.find(([a]) => a === catSel) || [null, { gloss: "" }])[1].gloss}</span>}
+                    {pickToggleBtn}
                   </div>
+                  {pickBar}
                   {rows(
                     catMode === "cefr"
                       ? catList(catSel)
@@ -990,6 +1169,13 @@ function Dict({ onOpen }) {
             </React.Fragment>
           )}
         </React.Fragment>
+      )}
+      {showPicker && (
+        <ListPicker
+          words={[...picked]}
+          onClose={() => setShowPicker(false)}
+          onChanged={() => { setPickMode(false); setPicked(new Set()); bump(x => x + 1); }}
+        />
       )}
     </div>
   );
@@ -1254,11 +1440,20 @@ function Finish({ total, correct, onExit }) {
 }
 
 /* ---------- 학습 탭 ---------- */
-function Learn({ onOpenWord }) {
+function Learn({ onOpenWord, customStudy, onConsumeCustomStudy }) {
   const [session, setSession] = useState(null); // null | {items} | "done"
   const [summary, setSummary] = useState(null);
   const dueCount = allItems().filter(it => SRS.isDue(it.key)).length;
   const newCount = allItems().filter(it => !SRS.get(it.key)).length;
+
+  // 사전(내 단어장)에서 '이 리스트로 학습'을 눌러 넘어온 경우 곧바로 그 목록으로 세션 시작
+  useEffect(() => {
+    if (customStudy && customStudy.length) {
+      setSession(customStudy);
+      onConsumeCustomStudy();
+    }
+    // eslint-disable-next-line
+  }, [customStudy]);
 
   if (session === "done" && summary) {
     return <Finish total={summary.total} correct={summary.correct} onExit={() => { setSession(null); setSummary(null); }} />;
@@ -1389,6 +1584,8 @@ function App() {
     try { return localStorage.getItem("en_char"); } catch (e) { return null; }
   });
   const changeChar = k => { setCharKState(k); try { localStorage.setItem("en_char", k); } catch (e) {} };
+  const [customStudy, setCustomStudy] = useState(null); // 사전 > 내 단어장에서 '이 리스트로 학습' 요청
+  const startCustomStudy = items => { setCustomStudy(items); setTab("learn"); };
 
   /* 모바일 소프트 키보드가 뜨면 100dvh가 줄어들지 않는 브라우저(특히 iOS 홈화면 PWA)가 있어
      학습카드 하단 고정 버튼(힌트·확인)이 키보드에 가려짐. visualViewport 실측 높이를
@@ -1427,8 +1624,8 @@ function App() {
 
       <div className="scroll">
         {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} />}
-        {tab === "dict" && <Dict onOpen={openWord} />}
-        {tab === "learn" && <Learn onOpenWord={openWord} />}
+        {tab === "dict" && <Dict onOpen={openWord} onStudyList={startCustomStudy} />}
+        {tab === "learn" && <Learn onOpenWord={openWord} customStudy={customStudy} onConsumeCustomStudy={() => setCustomStudy(null)} />}
         {tab === "talk" && <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />}
         {tab === "box" && <Soon title="보관함은 준비 중입니다" desc="즐겨찾기 단어·문장 · 뱃지 컬렉션 · 성장 기록" />}
       </div>
