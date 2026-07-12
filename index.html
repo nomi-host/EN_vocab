@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.10.0">
+<link rel="manifest" href="manifest.json?v=0.11.0">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.10.0"></script>
-<script src="img/rat_run.js?v=0.10.0"></script>
+<script src="words.js?v=0.11.0"></script>
+<script src="img/rat_run.js?v=0.11.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -262,10 +262,16 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qen .fill{color:var(--accent-deep);font-weight:800;border-bottom:2.5px solid var(--accent);padding:0 2px;}
 .qen .fill.bad{color:#d64545;border-color:#d64545;text-decoration:line-through;text-decoration-color:#d6454577;}
 .qhint{font-size:12px;color:var(--muted);}
-.qinput{display:flex;gap:8px;}
-.qinput input{flex:1;border:1.5px solid var(--line);border-radius:13px;padding:13px 15px;font-size:16px;outline:none;background:var(--surface);color:var(--ink);}
-.qinput input:focus{border-color:var(--accent);}
-.qsub{background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:0 20px;border-radius:13px;flex:none;}
+/* 빈칸 안에 직접 입력하는 인라인 입력창 */
+.qen .binput,.spell-input{border:none;border-bottom:2.5px solid var(--accent);background:transparent;font:inherit;font-weight:800;color:var(--accent-deep);text-align:center;padding:0 4px;outline:none;vertical-align:baseline;min-width:64px;}
+.spell-input{display:block;margin:2px auto 0;font-size:22px;min-width:140px;}
+.qen .binput::placeholder,.spell-input::placeholder{color:var(--line);font-weight:700;}
+/* 힌트(글자수/첫글자) */
+.qhintrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.qhint-btn{font-size:12px;font-weight:700;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:7px 13px;}
+.qhint-btn.on{background:var(--accent-soft);color:var(--accent-deep);}
+.qmask{font-size:13px;font-weight:700;color:var(--muted);margin-left:2px;}
+.qsub{background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:14px 20px;border-radius:14px;width:100%;}
 .qres{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;}
 .qres.ok{color:var(--good);}
 .qres.no{color:#d64545;}
@@ -304,7 +310,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.10.0";
+const APP_VERSION = "v0.11.0";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -933,6 +939,8 @@ function CardSession({ items, onExit, onOpenWord }) {
   const [val, setVal] = useState("");
   const [res, setRes] = useState(null); // null | {ok, answer, dueIn}
   const [correct, setCorrect] = useState(0);
+  const [hintLen, setHintLen] = useState(false);   // 글자수 힌트
+  const [hintFirst, setHintFirst] = useState(false); // 첫 글자 힌트
 
   const it = items[idx];
   const blank = useMemo(() => it ? makeBlank(it.ex.en, it.word) : null, [it]);
@@ -951,8 +959,28 @@ function CardSession({ items, onExit, onOpenWord }) {
   };
   const next = () => {
     if (idx + 1 >= items.length) { onExit(true, correct); return; }
-    setIdx(idx + 1); setVal(""); setRes(null);
+    setIdx(idx + 1); setVal(""); setRes(null); setHintLen(false); setHintFirst(false);
   };
+
+  // 힌트 문구: 글자수/첫글자를 독립 토글
+  const hintText = (() => {
+    if (!expected) return "";
+    const parts = [];
+    if (hintFirst) parts.push("첫 글자 " + expected[0]);
+    if (hintLen) parts.push(expected.length + "글자");
+    return parts.join(" · ");
+  })();
+
+  // 빈칸 안 인라인 입력창 (직접 타이핑)
+  const blankInput = extraClass => (
+    <input key={idx} className={extraClass} autoFocus value={val}
+      onChange={e => setVal(e.target.value)}
+      onKeyDown={e => e.key === "Enter" && check()}
+      size={Math.max(6, val.length + 1, hintLen ? expected.length + 1 : 0)}
+      placeholder={hintLen ? "·".repeat(expected.length) : ""}
+      autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+      aria-label="빈칸 입력" />
+  );
 
   if (!it) {
     return (
@@ -965,11 +993,24 @@ function CardSession({ items, onExit, onOpenWord }) {
   }
 
   const renderEn = () => {
-    if (mode === "spell") return <span className="qhint">위 뜻에 해당하는 <b>영어 단어</b>를 입력하세요.</span>;
+    if (mode === "spell") {
+      return (
+        <React.Fragment>
+          <span className="qhint">위 뜻에 해당하는 <b>영어 단어</b>를 입력하세요.</span>
+          <div className="qen" style={{ textAlign: "center" }}>
+            {res
+              ? <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? res.answer : val.trim() || "—"}</span>
+              : blankInput("spell-input")}
+          </div>
+        </React.Fragment>
+      );
+    }
     return (
       <div className="qen">
         {blank.before}
-        {res ? <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? res.answer : val.trim() || "—"}</span> : <span className="blank" />}
+        {res
+          ? <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? res.answer : val.trim() || "—"}</span>
+          : blankInput("binput")}
         {blank.after}
       </div>
     );
@@ -1000,11 +1041,13 @@ function CardSession({ items, onExit, onOpenWord }) {
       </div>
 
       {!res ? (
-        <div className="qinput">
-          <input autoFocus value={val} onChange={e => setVal(e.target.value)}
-                 onKeyDown={e => e.key === "Enter" && check()}
-                 placeholder="빈칸에 들어갈 단어" autoCapitalize="none" autoComplete="off" />
-          <button className="qsub" onClick={check}>확인</button>
+        <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: "auto" }}>
+          <div className="qhintrow">
+            <button className={"qhint-btn" + (hintLen ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={() => setHintLen(v => !v)}>글자수</button>
+            <button className={"qhint-btn" + (hintFirst ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={() => setHintFirst(v => !v)}>첫 글자</button>
+            {hintText && <span className="qmask">{hintText}</span>}
+          </div>
+          <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={check}>확인</button>
         </div>
       ) : (
         <div className="qactions">
