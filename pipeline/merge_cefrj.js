@@ -17,6 +17,7 @@ const path = require("path");
 const ROOT = path.resolve(__dirname, "..");
 const BATCH_DIR = path.join(__dirname, "batches");
 const ENRICHED_DIR = path.join(__dirname, "cefrj");
+const NETWORK_PATH = path.join(__dirname, "cefrj", "network.json");
 
 function loadAuthored() {
   const map = {};
@@ -29,10 +30,16 @@ function loadAuthored() {
   return map;
 }
 
+function loadNetwork() {
+  if (!fs.existsSync(NETWORK_PATH)) return {};
+  return JSON.parse(fs.readFileSync(NETWORK_PATH, "utf8"));
+}
+
 const LEVEL_ORDER = ["a1", "a2", "b1", "b2", "c1", "c2"];
 
 function main() {
   const authored = loadAuthored();
+  const network = loadNetwork();
   const byWord = new Map(); // lowercased word -> output entry (first/lowest level wins)
   let enrichedCount = 0;
 
@@ -62,6 +69,7 @@ function main() {
           continue;
         }
 
+        const net = network[key];
         const entry = {
           word: hw.word,
           ipa: "",
@@ -70,8 +78,8 @@ function main() {
           ko: a.ko,
           en: a.enOverride || hw.en || "",
           syn: hw.syn || [],
-          ant: [],
-          forms: [],
+          ant: (net && net.ant) || [],
+          forms: (net && net.forms) || [],
           roots: [],
           ex: [a.ex],
         };
@@ -89,7 +97,7 @@ function main() {
    생성: ${new Date().toISOString().slice(0, 10)} · 표제어 ${out.length}개 (CEFR-J 전체 후보 ${enrichedCount}개 중 작성 완료분)
    ----------------------------------------------------------------------------
    표제어/CEFR/품사 = CEFR-J Wordlist(Tono Lab, TUFS — 연구·상업 무료, 출처 표시 조건)
-   영영 정의(en)/유의어(syn) = WordNet 3.0(Princeton, 오프라인 추출)
+   영영 정의(en)/유의어(syn)/반의어(ant)/파생어(forms) = WordNet 3.0(Princeton, 오프라인 추출)
    한국어 뜻(ko)/예문(ex) = 자체 작성(LLM 갭필 단계를 세션 내 직접 수행)
    ※ 직접 수정하지 말 것 — pipeline/batches/*.json 수정 후 재빌드(node pipeline/merge_cefrj.js).
    진행 현황: pipeline/PROGRESS.md 참조.
