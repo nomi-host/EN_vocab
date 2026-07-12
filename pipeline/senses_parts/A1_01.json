@@ -5,6 +5,7 @@
    "ko": "하나의 (부정관사)",
    "pos": "관사",
    "lv": 1,
+   "cefr": "A1",
    "en": "used before a singular noun to refer to one unspecified thing",
    "ex": [
     {
@@ -20,6 +21,7 @@
    "ko": "~에 대하여",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A1",
    "en": "on the subject of; concerning",
    "ex": [
     {
@@ -33,6 +35,7 @@
    "ko": "대략, 약",
    "pos": "부사",
    "lv": 2,
+   "cefr": "A2",
    "en": "used to show that a number or amount is not exact",
    "ex": [
     {
@@ -48,6 +51,7 @@
    "ko": "위에, ~보다 위에",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A1",
    "en": "in or to a higher position than something",
    "ex": [
     {
@@ -61,6 +65,7 @@
    "ko": "위에서 언급한, 위의",
    "pos": "형용사",
    "lv": 5,
+   "cefr": "B1",
    "en": "mentioned or written earlier in a document",
    "ex": [
     {
@@ -76,6 +81,7 @@
    "ko": "행동, 조치",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the process of doing something, especially to achieve an aim",
    "ex": [
     {
@@ -91,6 +97,7 @@
    "ko": "활동",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "something that you do for pleasure, exercise, or as part of your life",
    "ex": [
     {
@@ -106,6 +113,7 @@
    "ko": "배우",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a person who performs in a play, movie, or television show",
    "ex": [
     {
@@ -121,6 +129,7 @@
    "ko": "더하다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "put numbers or amounts together to get a total",
    "ex": [
     {
@@ -134,6 +143,7 @@
    "ko": "추가하다, 덧붙이다",
    "pos": "동사",
    "lv": 2,
+   "cefr": "A2",
    "en": "put something with another thing to make it bigger or more complete",
    "ex": [
     {
@@ -149,6 +159,7 @@
    "ko": "주소",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the number of the building and the name of the street and town where someone lives or works",
    "ex": [
     {
@@ -162,6 +173,7 @@
    "ko": "연설하다",
    "pos": "동사",
    "lv": 4,
+   "cefr": "B2",
    "en": "give a formal speech to a group of people",
    "ex": [
     {
@@ -175,6 +187,7 @@
    "ko": "(문제를) 다루다, 처리하다",
    "pos": "동사",
    "lv": 6,
+   "cefr": "B2",
    "en": "deal with or discuss a problem or issue",
    "ex": [
     {
@@ -190,6 +203,7 @@
    "ko": "두려워하는, 무서워하는",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "feeling fear because you think something bad might happen",
    "ex": [
     {
@@ -203,6 +217,7 @@
    "ko": "유감이지만 (~인 것 같다)",
    "pos": "형용사",
    "lv": 5,
+   "cefr": "B1",
    "en": "used to politely say you are sorry about something",
    "ex": [
     {
@@ -218,6 +233,7 @@
    "ko": "~후에",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A1",
    "en": "later than a particular time or event",
    "ex": [
     {
@@ -233,6 +249,7 @@
    "ko": "오후",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the part of the day between noon and evening",
    "ex": [
     {
@@ -248,6 +265,7 @@
    "ko": "다시",
    "pos": "부사",
    "lv": 1,
+   "cefr": "A1",
    "en": "one more time",
    "ex": [
     {
@@ -263,6 +281,7 @@
    "ko": "나이",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the number of years someone has lived",
    "ex": [
     {
@@ -276,6 +295,7 @@
    "ko": "시대",
    "pos": "명사",
    "lv": 5,
+   "cefr": "B1",
    "en": "a particular period of history",
    "ex": [
     {
@@ -291,6 +311,7 @@
    "ko": "(지금부터) ~전에",
    "pos": "부사",
    "lv": 1,
+   "cefr": "A1",
    "en": "before the present time; in the past",
    "ex": [
     {
@@ -306,6 +327,7 @@
    "ko": "동의하다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A2",
    "en": "have the same opinion as someone else, or accept a suggestion",
    "ex": [
     {
@@ -321,6 +343,7 @@
    "ko": "비행기",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a vehicle with wings and engines that flies in the air",
    "ex": [
     {
@@ -336,6 +359,7 @@
    "ko": "공항",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a place where airplanes take off and land",
    "ex": [
     {
@@ -351,6 +375,7 @@
    "ko": "음반, 앨범",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A2",
    "en": "a collection of songs released together by a singer or band",
    "ex": [
     {
@@ -364,6 +389,7 @@
    "ko": "사진첩, 앨범",
    "pos": "명사",
    "lv": 3,
+   "cefr": "A2",
    "en": "a book with blank pages used for keeping photographs",
    "ex": [
     {
@@ -379,6 +405,7 @@
    "ko": "모든, 전부의",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the whole amount or number of something",
    "ex": [
     {
@@ -394,6 +421,7 @@
    "ko": "괜찮은, 좋은",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "satisfactory, acceptable, or in good condition",
    "ex": [
     {
@@ -409,6 +437,7 @@
    "ko": "거의",
    "pos": "부사",
    "lv": 1,
+   "cefr": "A1",
    "en": "very nearly, but not completely",
    "ex": [
     {
@@ -424,6 +453,7 @@
    "ko": "혼자, 홀로",
    "pos": "부사",
    "lv": 1,
+   "cefr": "A1",
    "en": "without other people around",
    "ex": [
     {
@@ -439,6 +469,7 @@
    "ko": "~을 따라",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A2",
    "en": "moving or existing beside or through the length of something",
    "ex": [
     {
@@ -454,6 +485,7 @@
    "ko": "이미, 벌써",
    "pos": "부사",
    "lv": 1,
+   "cefr": "A2",
    "en": "before now or before a particular time; earlier than expected",
    "ex": [
     {
@@ -469,6 +501,7 @@
    "ko": "또한, ~도",
    "pos": "부사",
    "lv": 1,
+   "cefr": "A1",
    "en": "in addition; too",
    "ex": [
     {
@@ -484,6 +517,7 @@
    "ko": "항상, 언제나",
    "pos": "부사",
    "lv": 1,
+   "cefr": "A1",
    "en": "at all times; every time",
    "ex": [
     {
@@ -499,6 +533,7 @@
    "ko": "(나는) ~이다, 있다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the form of 'be' used with 'I'",
    "ex": [
     {
@@ -514,6 +549,7 @@
    "ko": "하나의 (모음 앞 부정관사)",
    "pos": "관사",
    "lv": 1,
+   "cefr": "A1",
    "en": "used before a singular noun starting with a vowel sound to refer to one unspecified thing",
    "ex": [
     {
@@ -529,6 +565,7 @@
    "ko": "그리고, ~와",
    "pos": "접속사",
    "lv": 1,
+   "cefr": "A1",
    "en": "used to connect words, phrases, or sentences",
    "ex": [
     {
@@ -544,6 +581,7 @@
    "ko": "화난",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "feeling or showing strong displeasure",
    "ex": [
     {
@@ -559,6 +597,7 @@
    "ko": "동물",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a living creature that is not a plant, such as a dog, bird, or fish",
    "ex": [
     {
@@ -574,6 +613,7 @@
    "ko": "또 다른, 하나 더",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "one more, or a different one, of the same kind",
    "ex": [
     {
@@ -589,6 +629,7 @@
    "ko": "대답, 답",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "something said or written to react to a question",
    "ex": [
     {
@@ -602,6 +643,7 @@
    "ko": "대답하다",
    "pos": "동사",
    "lv": 2,
+   "cefr": "A1",
    "en": "say or write something in response to a question",
    "ex": [
     {
@@ -617,6 +659,7 @@
    "ko": "어떤, 조금이라도",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "used to refer to one, some, or any amount of a thing, especially in questions or negatives",
    "ex": [
     {
@@ -632,6 +675,7 @@
    "ko": "누구든지, 아무도",
    "pos": "대명사",
    "lv": 1,
+   "cefr": "A2",
    "en": "any person; used mainly in questions and negative sentences",
    "ex": [
     {
@@ -647,6 +691,7 @@
    "ko": "누구든지, 아무나",
    "pos": "대명사",
    "lv": 1,
+   "cefr": "A2",
    "en": "any person; used mainly in questions and negative sentences",
    "ex": [
     {
@@ -662,6 +707,7 @@
    "ko": "무엇이든, 아무것도",
    "pos": "대명사",
    "lv": 1,
+   "cefr": "A2",
    "en": "any thing; used mainly in questions and negative sentences",
    "ex": [
     {
@@ -677,6 +723,7 @@
    "ko": "사과",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a round fruit with red, green, or yellow skin and white flesh",
    "ex": [
     {
@@ -692,6 +739,7 @@
    "ko": "앞치마",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A2",
    "en": "a piece of clothing worn over the front of your clothes to keep them clean, especially while cooking",
    "ex": [
     {
@@ -707,6 +755,7 @@
    "ko": "(너는/그들은) ~이다, 있다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the form of 'be' used with 'you', 'we', or 'they'",
    "ex": [
     {
@@ -722,6 +771,7 @@
    "ko": "팔",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the part of the body from the shoulder to the hand",
    "ex": [
     {
@@ -735,6 +785,7 @@
    "ko": "무장시키다",
    "pos": "동사",
    "lv": 6,
+   "cefr": "B2",
    "en": "supply someone with weapons",
    "ex": [
     {
@@ -750,6 +801,7 @@
    "ko": "주위에, 둘레에",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A1",
    "en": "on all sides of something, or in a circle surrounding it",
    "ex": [
     {
@@ -763,6 +815,7 @@
    "ko": "약, 대략",
    "pos": "부사",
    "lv": 2,
+   "cefr": "A2",
    "en": "used to show that a number or time is not exact",
    "ex": [
     {
@@ -778,6 +831,7 @@
    "ko": "도착하다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A2",
    "en": "reach a place after traveling",
    "ex": [
     {
@@ -793,6 +847,7 @@
    "ko": "예술, 미술",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the creation of paintings, drawings, or other works that express ideas or beauty",
    "ex": [
     {
@@ -808,6 +863,7 @@
    "ko": "기사, 글",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A2",
    "en": "a piece of writing on a particular topic in a newspaper, magazine, or website",
    "ex": [
     {
@@ -821,6 +877,7 @@
    "ko": "관사",
    "pos": "명사",
    "lv": 6,
+   "cefr": "B1",
    "en": "a word such as 'a', 'an', or 'the' used before a noun",
    "ex": [
     {
@@ -836,6 +893,7 @@
    "ko": "~로서",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A2",
    "en": "used to say what role or purpose someone or something has",
    "ex": [
     {
@@ -849,6 +907,7 @@
    "ko": "~만큼, ~처럼",
    "pos": "접속사",
    "lv": 2,
+   "cefr": "A2",
    "en": "used to compare two things that are equal or similar",
    "ex": [
     {
@@ -862,6 +921,7 @@
    "ko": "~때문에, ~이므로",
    "pos": "접속사",
    "lv": 4,
+   "cefr": "B1",
    "en": "because; for the reason that",
    "ex": [
     {
@@ -877,6 +937,7 @@
    "ko": "묻다, 질문하다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "say something in order to get information",
    "ex": [
     {
@@ -890,6 +951,7 @@
    "ko": "요청하다, 부탁하다",
    "pos": "동사",
    "lv": 2,
+   "cefr": "A2",
    "en": "request someone to do or give something",
    "ex": [
     {
@@ -905,6 +967,7 @@
    "ko": "~에서, ~에",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A1",
    "en": "used to show a specific place or time",
    "ex": [
     {
@@ -920,6 +983,7 @@
    "ko": "이모, 고모, 숙모",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the sister of your mother or father, or the wife of your uncle",
    "ex": [
     {
@@ -935,6 +999,7 @@
    "ko": "가을",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the season between summer and winter",
    "ex": [
     {
@@ -950,6 +1015,7 @@
    "ko": "깨어 있는",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A2",
    "en": "not sleeping",
    "ex": [
     {
@@ -965,6 +1031,7 @@
    "ko": "떨어져, 멀리",
    "pos": "부사",
    "lv": 1,
+   "cefr": "A1",
    "en": "at a distance from a particular place, or moving from a place",
    "ex": [
     {
@@ -980,6 +1047,7 @@
    "ko": "아기",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a very young child who has not yet begun to walk or talk",
    "ex": [
     {
@@ -995,6 +1063,7 @@
    "ko": "등",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the part of the body from the neck to the bottom of the spine",
    "ex": [
     {
@@ -1008,6 +1077,7 @@
    "ko": "다시, 뒤로",
    "pos": "부사",
    "lv": 2,
+   "cefr": "A1",
    "en": "in or to a previous place or condition",
    "ex": [
     {
@@ -1021,6 +1091,7 @@
    "ko": "뒤쪽의",
    "pos": "형용사",
    "lv": 4,
+   "cefr": "A2",
    "en": "located at or near the rear of something",
    "ex": [
     {
@@ -1034,6 +1105,7 @@
    "ko": "지지하다, 후원하다",
    "pos": "동사",
    "lv": 7,
+   "cefr": "B2",
    "en": "support someone or something, especially with money",
    "ex": [
     {
@@ -1049,6 +1121,7 @@
    "ko": "나쁜",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "not good; unpleasant or of low quality",
    "ex": [
     {
@@ -1064,6 +1137,7 @@
    "ko": "가방, 봉지",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a container made of cloth, plastic, or paper, used for carrying things",
    "ex": [
     {
@@ -1079,6 +1153,7 @@
    "ko": "공",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a round object used in games and sports",
    "ex": [
     {
@@ -1092,6 +1167,7 @@
    "ko": "무도회",
    "pos": "명사",
    "lv": 8,
+   "cefr": "B2",
    "en": "a large formal party where people dance",
    "ex": [
     {
@@ -1107,6 +1183,7 @@
    "ko": "바나나",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a long curved yellow fruit with soft sweet flesh",
    "ex": [
     {
@@ -1122,6 +1199,7 @@
    "ko": "악단, 밴드",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A2",
    "en": "a group of musicians who play music together",
    "ex": [
     {
@@ -1135,6 +1213,7 @@
    "ko": "띠, 밴드",
    "pos": "명사",
    "lv": 4,
+   "cefr": "A2",
    "en": "a thin strip of material used to hold or decorate something",
    "ex": [
     {
@@ -1148,6 +1227,7 @@
    "ko": "무리, 집단",
    "pos": "명사",
    "lv": 6,
+   "cefr": "B1",
    "en": "a group of people who share a common purpose",
    "ex": [
     {
@@ -1163,6 +1243,7 @@
    "ko": "술집, 바",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A2",
    "en": "a place where you can buy and drink alcoholic drinks",
    "ex": [
     {
@@ -1176,6 +1257,7 @@
    "ko": "막대, 봉",
    "pos": "명사",
    "lv": 3,
+   "cefr": "B1",
    "en": "a long, straight piece of solid material such as metal or wood",
    "ex": [
     {
@@ -1189,6 +1271,7 @@
    "ko": "(초콜릿 등의) 바, 조각",
    "pos": "명사",
    "lv": 4,
+   "cefr": "A2",
    "en": "a small block of a solid substance such as chocolate or soap",
    "ex": [
     {
@@ -1202,6 +1285,7 @@
    "ko": "막다, 금지하다",
    "pos": "동사",
    "lv": 7,
+   "cefr": "B2",
    "en": "prevent someone from entering a place or doing something",
    "ex": [
     {
@@ -1217,6 +1301,7 @@
    "ko": "야구",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a sport played with a bat and ball between two teams of nine players",
    "ex": [
     {
@@ -1232,6 +1317,7 @@
    "ko": "농구",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a sport in which two teams try to score by throwing a ball through a high hoop",
    "ex": [
     {
@@ -1247,6 +1333,7 @@
    "ko": "목욕",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "an act of washing your whole body while sitting in water",
    "ex": [
     {
@@ -1262,6 +1349,7 @@
    "ko": "욕실, 화장실",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a room with a bathtub or shower, and usually a toilet",
    "ex": [
     {
@@ -1277,6 +1365,7 @@
    "ko": "~이다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "used to say what someone or something is or is like",
    "ex": [
     {
@@ -1290,6 +1379,7 @@
    "ko": "있다, 존재하다",
    "pos": "동사",
    "lv": 2,
+   "cefr": "A1",
    "en": "exist or be present in a place",
    "ex": [
     {
@@ -1305,6 +1395,7 @@
    "ko": "해변, 바닷가",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "an area of sand or stones next to the sea",
    "ex": [
     {
@@ -1320,6 +1411,7 @@
    "ko": "콩",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the seed or pod of certain plants, eaten as food",
    "ex": [
     {
@@ -1335,6 +1427,7 @@
    "ko": "아름다운",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "very pleasant to look at or listen to",
    "ex": [
     {
@@ -1350,6 +1443,7 @@
    "ko": "~때문에, 왜냐하면",
    "pos": "접속사",
    "lv": 1,
+   "cefr": "A1",
    "en": "for the reason that",
    "ex": [
     {
@@ -1365,6 +1459,7 @@
    "ko": "~이 되다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "start to be something, or change into something",
    "ex": [
     {
@@ -1380,6 +1475,7 @@
    "ko": "침대",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a piece of furniture that you sleep on",
    "ex": [
     {
@@ -1395,6 +1491,7 @@
    "ko": "침실",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a room used for sleeping",
    "ex": [
     {
@@ -1410,6 +1507,7 @@
    "ko": "벌",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a flying insect that makes honey and can sting",
    "ex": [
     {
@@ -1425,6 +1523,7 @@
    "ko": "소고기",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "meat from a cow",
    "ex": [
     {
@@ -1440,6 +1539,7 @@
    "ko": "~전에",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A1",
    "en": "earlier than a particular time or event",
    "ex": [
     {
@@ -1455,6 +1555,7 @@
    "ko": "시작하다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "start to do something or start to happen",
    "ex": [
     {
@@ -1470,6 +1571,7 @@
    "ko": "~뒤에",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A1",
    "en": "at or to the back of something",
    "ex": [
     {
@@ -1483,6 +1585,7 @@
    "ko": "엉덩이 (구어)",
    "pos": "명사",
    "lv": 7,
+   "cefr": "B1",
    "en": "the part of your body that you sit on (informal)",
    "ex": [
     {
@@ -1498,6 +1601,7 @@
    "ko": "믿다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "think that something is true or that someone is telling the truth",
    "ex": [
     {
@@ -1513,6 +1617,7 @@
    "ko": "종, 벨",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a hollow metal object that makes a ringing sound when struck, or a device that makes a similar sound",
    "ex": [
     {
@@ -1528,6 +1633,7 @@
    "ko": "~아래에",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A1",
    "en": "in or to a lower position than something",
    "ex": [
     {
@@ -1543,6 +1649,7 @@
    "ko": "~옆에",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A2",
    "en": "next to or at the side of something",
    "ex": [
     {
@@ -1558,6 +1665,7 @@
    "ko": "최고의, 가장 좋은",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "of the highest quality or the most excellent (superlative of 'good')",
    "ex": [
     {
@@ -1573,6 +1681,7 @@
    "ko": "더 나은, 더 좋은",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "of higher quality or more suitable (comparative of 'good')",
    "ex": [
     {
@@ -1588,6 +1697,7 @@
    "ko": "~사이에",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A1",
    "en": "in the space or time separating two things or people",
    "ex": [
     {
@@ -1603,6 +1713,7 @@
    "ko": "자전거",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a vehicle with two wheels that you ride by pushing pedals",
    "ex": [
     {
@@ -1618,6 +1729,7 @@
    "ko": "큰",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "large in size, amount, or degree",
    "ex": [
     {
@@ -1633,6 +1745,7 @@
    "ko": "자전거",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a bicycle (informal)",
    "ex": [
     {
@@ -1646,6 +1759,7 @@
    "ko": "오토바이",
    "pos": "명사",
    "lv": 5,
+   "cefr": "B1",
    "en": "a motorcycle",
    "ex": [
     {
@@ -1661,6 +1775,7 @@
    "ko": "새",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "an animal with feathers and wings that can usually fly",
    "ex": [
     {
@@ -1676,6 +1791,7 @@
    "ko": "출생, 탄생",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A2",
    "en": "the time when a baby is born",
    "ex": [
     {
@@ -1691,6 +1807,7 @@
    "ko": "생일",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the anniversary of the day someone was born",
    "ex": [
     {
@@ -1706,6 +1823,7 @@
    "ko": "비스킷, 과자",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a small, flat, crisp baked snack",
    "ex": [
     {
@@ -1721,6 +1839,7 @@
    "ko": "검은색",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the darkest color, like the color of night",
    "ex": [
     {
@@ -1734,6 +1853,7 @@
    "ko": "검은, 검은색의",
    "pos": "형용사",
    "lv": 2,
+   "cefr": "A1",
    "en": "having the darkest color, like the color of night",
    "ex": [
     {
@@ -1749,6 +1869,7 @@
    "ko": "빈, 백지의",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A2",
    "en": "having nothing written, printed, or recorded on it",
    "ex": [
     {
@@ -1762,6 +1883,7 @@
    "ko": "빈칸",
    "pos": "명사",
    "lv": 4,
+   "cefr": "A2",
    "en": "an empty space on a page or form to be filled in",
    "ex": [
     {
@@ -1777,6 +1899,7 @@
    "ko": "막다, 차단하다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A2",
    "en": "stop something from moving or passing through",
    "ex": [
     {
@@ -1790,6 +1913,7 @@
    "ko": "블록, 구역",
    "pos": "명사",
    "lv": 2,
+   "cefr": "A2",
    "en": "an area of a city with streets on every side",
    "ex": [
     {
@@ -1803,6 +1927,7 @@
    "ko": "덩어리, 블록",
    "pos": "명사",
    "lv": 6,
+   "cefr": "A2",
    "en": "a solid piece of a hard material, such as wood or stone, usually with flat sides",
    "ex": [
     {
@@ -1818,6 +1943,7 @@
    "ko": "(바람이) 불다, (입으로) 불다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A2",
    "en": "move air out of your mouth, or (of wind) move quickly",
    "ex": [
     {
@@ -1831,6 +1957,7 @@
    "ko": "강타, 타격",
    "pos": "명사",
    "lv": 5,
+   "cefr": "B1",
    "en": "a hard hit with a fist or object",
    "ex": [
     {
@@ -1846,6 +1973,7 @@
    "ko": "파란색",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the color of a clear sky",
    "ex": [
     {
@@ -1859,6 +1987,7 @@
    "ko": "파란, 파란색의",
    "pos": "형용사",
    "lv": 2,
+   "cefr": "A1",
    "en": "having the color of a clear sky",
    "ex": [
     {
@@ -1874,6 +2003,7 @@
    "ko": "탑승하다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A2",
    "en": "get on a bus, plane, ship, or train",
    "ex": [
     {
@@ -1887,6 +2017,7 @@
    "ko": "판자, 판",
    "pos": "명사",
    "lv": 2,
+   "cefr": "A2",
    "en": "a flat, thin piece of wood or other hard material",
    "ex": [
     {
@@ -1900,6 +2031,7 @@
    "ko": "이사회, 위원회",
    "pos": "명사",
    "lv": 6,
+   "cefr": "B2",
    "en": "a group of people who officially manage or advise an organization",
    "ex": [
     {
@@ -1915,6 +2047,7 @@
    "ko": "배, 보트",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a small vehicle that travels on water",
    "ex": [
     {
@@ -1930,6 +2063,7 @@
    "ko": "몸, 신체",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the whole physical structure of a person or animal",
    "ex": [
     {
@@ -1943,6 +2077,7 @@
    "ko": "시체",
    "pos": "명사",
    "lv": 6,
+   "cefr": "B1",
    "en": "the physical body of a dead person or animal",
    "ex": [
     {
@@ -1958,6 +2093,7 @@
    "ko": "뼈",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "one of the hard parts inside the body that form the skeleton",
    "ex": [
     {
@@ -1973,6 +2109,7 @@
    "ko": "서점",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a shop that sells books",
    "ex": [
     {
@@ -1988,6 +2125,7 @@
    "ko": "지루한",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "not interesting or exciting",
    "ex": [
     {
@@ -2003,6 +2141,7 @@
    "ko": "빌리다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "take and use something that belongs to someone else, planning to return it",
    "ex": [
     {
@@ -2018,6 +2157,7 @@
    "ko": "둘 다",
    "pos": "대명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the two things or people mentioned, not just one",
    "ex": [
     {
@@ -2033,6 +2173,7 @@
    "ko": "병",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a glass or plastic container for keeping liquids",
    "ex": [
     {
@@ -2046,6 +2187,7 @@
    "ko": "병에 담다",
    "pos": "동사",
    "lv": 6,
+   "cefr": "B1",
    "en": "put a liquid into bottles",
    "ex": [
     {
@@ -2061,6 +2203,7 @@
    "ko": "바닥, 맨 아래",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the lowest part of something",
    "ex": [
     {
@@ -2076,6 +2219,7 @@
    "ko": "그릇, 사발",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a round, deep dish used for holding food or liquid",
    "ex": [
     {
@@ -2089,6 +2233,7 @@
    "ko": "볼링을 치다",
    "pos": "동사",
    "lv": 6,
+   "cefr": "B1",
    "en": "play the game of bowling by rolling a ball",
    "ex": [
     {
@@ -2104,6 +2249,7 @@
    "ko": "상자",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a container, usually rectangular, used for holding or carrying things",
    "ex": [
     {
@@ -2117,6 +2263,7 @@
    "ko": "권투를 하다",
    "pos": "동사",
    "lv": 7,
+   "cefr": "B1",
    "en": "fight using your fists as a sport",
    "ex": [
     {
@@ -2132,6 +2279,7 @@
    "ko": "소년, 남자아이",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a young male child",
    "ex": [
     {
@@ -2147,6 +2295,7 @@
    "ko": "남자친구",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a man that someone is romantically involved with",
    "ex": [
     {
@@ -2162,6 +2311,7 @@
    "ko": "뇌, 두뇌",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the organ inside your head that controls thought, memory, and feeling",
    "ex": [
     {
@@ -2177,6 +2327,7 @@
    "ko": "빵",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "food made from flour, water, and yeast, baked in an oven",
    "ex": [
     {
@@ -2192,6 +2343,7 @@
    "ko": "아침 식사",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the first meal of the day, eaten in the morning",
    "ex": [
     {
@@ -2207,6 +2359,7 @@
    "ko": "숨쉬다, 호흡하다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "take air into your lungs and let it out",
    "ex": [
     {
@@ -2222,6 +2375,7 @@
    "ko": "다리, 교량",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a structure built over a river or road so people can cross it",
    "ex": [
     {
@@ -2237,6 +2391,7 @@
    "ko": "밝은",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "full of light; shining strongly",
    "ex": [
     {
@@ -2250,6 +2405,7 @@
    "ko": "영리한, 총명한",
    "pos": "형용사",
    "lv": 4,
+   "cefr": "A2",
    "en": "intelligent and quick to learn",
    "ex": [
     {
@@ -2265,6 +2421,7 @@
    "ko": "가져오다, 데려오다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "take something or someone with you to a place",
    "ex": [
     {
@@ -2280,6 +2437,7 @@
    "ko": "부서진, 고장난",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "damaged and no longer able to work or be whole",
    "ex": [
     {
@@ -2295,6 +2453,7 @@
    "ko": "형, 오빠, 남동생",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a boy or man who has the same parents as you",
    "ex": [
     {
@@ -2310,6 +2469,7 @@
    "ko": "갈색의",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "having the color of wood or coffee",
    "ex": [
     {
@@ -2323,6 +2483,7 @@
    "ko": "갈색",
    "pos": "명사",
    "lv": 2,
+   "cefr": "A1",
    "en": "the color of wood or coffee",
    "ex": [
     {
@@ -2338,6 +2499,7 @@
    "ko": "솔, 붓, 빗",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a tool with bristles used for cleaning, painting, or styling hair",
    "ex": [
     {
@@ -2351,6 +2513,7 @@
    "ko": "솔질하다, 빗질하다",
    "pos": "동사",
    "lv": 2,
+   "cefr": "A2",
    "en": "clean or smooth something using a brush",
    "ex": [
     {
@@ -2366,6 +2529,7 @@
    "ko": "양동이",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a round container with a handle, used for carrying liquids",
    "ex": [
     {
@@ -2381,6 +2545,7 @@
    "ko": "짓다, 건설하다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "make something by putting materials and parts together",
    "ex": [
     {
@@ -2396,6 +2561,7 @@
    "ko": "건물",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a structure with a roof and walls, such as a house or school",
    "ex": [
     {
@@ -2411,6 +2577,7 @@
    "ko": "버거, 햄버거",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a sandwich made with a round bun and a cooked meat patty",
    "ex": [
     {
@@ -2426,6 +2593,7 @@
    "ko": "버스",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a large vehicle that carries many passengers",
    "ex": [
     {
@@ -2441,6 +2609,7 @@
    "ko": "사업, 비즈니스",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A2",
    "en": "the activity of buying and selling goods or services to make money",
    "ex": [
     {
@@ -2454,6 +2623,7 @@
    "ko": "볼일, 일",
    "pos": "명사",
    "lv": 4,
+   "cefr": "B1",
    "en": "a matter that concerns a particular person",
    "ex": [
     {
@@ -2469,6 +2639,7 @@
    "ko": "바쁜",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "having a lot of things to do",
    "ex": [
     {
@@ -2484,6 +2655,7 @@
    "ko": "그러나, 하지만",
    "pos": "접속사",
    "lv": 1,
+   "cefr": "A1",
    "en": "used to introduce something that contrasts with what was just said",
    "ex": [
     {
@@ -2499,6 +2671,7 @@
    "ko": "버터",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a soft yellow food made from cream, spread on bread or used in cooking",
    "ex": [
     {
@@ -2514,6 +2687,7 @@
    "ko": "나비",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "an insect with large, often colorful wings",
    "ex": [
     {
@@ -2529,6 +2703,7 @@
    "ko": "단추",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a small round object used to fasten clothes",
    "ex": [
     {
@@ -2542,6 +2717,7 @@
    "ko": "버튼",
    "pos": "명사",
    "lv": 2,
+   "cefr": "A1",
    "en": "a small object that you press to make a machine work",
    "ex": [
     {
@@ -2557,6 +2733,7 @@
    "ko": "사다, 구입하다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "get something by paying money for it",
    "ex": [
     {
@@ -2572,6 +2749,7 @@
    "ko": "~옆에, ~가까이에",
    "pos": "전치사",
    "lv": 1,
+   "cefr": "A1",
    "en": "near or beside something",
    "ex": [
     {
@@ -2585,6 +2763,7 @@
    "ko": "~에 의해",
    "pos": "전치사",
    "lv": 2,
+   "cefr": "A2",
    "en": "used to show who or what does something",
    "ex": [
     {
@@ -2600,6 +2779,7 @@
    "ko": "안녕 (작별 인사)",
    "pos": "감탄사",
    "lv": 1,
+   "cefr": "A1",
    "en": "used to say goodbye to someone",
    "ex": [
     {
@@ -2615,6 +2795,7 @@
    "ko": "카페",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a small restaurant that sells coffee, drinks, and light meals",
    "ex": [
     {
@@ -2630,6 +2811,7 @@
    "ko": "케이크",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a sweet food made from flour, eggs, and sugar, baked in an oven",
    "ex": [
     {
@@ -2645,6 +2827,7 @@
    "ko": "부르다, ~라고 부르다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "give a name to someone or something, or say someone's name to get their attention",
    "ex": [
     {
@@ -2658,6 +2841,7 @@
    "ko": "전화하다",
    "pos": "동사",
    "lv": 2,
+   "cefr": "A1",
    "en": "speak to someone by telephone",
    "ex": [
     {
@@ -2671,6 +2855,7 @@
    "ko": "전화, 통화",
    "pos": "명사",
    "lv": 3,
+   "cefr": "A1",
    "en": "an act of speaking to someone by telephone",
    "ex": [
     {
@@ -2686,6 +2871,7 @@
    "ko": "카메라",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a device used to take photographs or record video",
    "ex": [
     {
@@ -2701,6 +2887,7 @@
    "ko": "캠핑하다, 야영하다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "stay outdoors in a tent for a period of time",
    "ex": [
     {
@@ -2714,6 +2901,7 @@
    "ko": "야영지, 캠프",
    "pos": "명사",
    "lv": 2,
+   "cefr": "A1",
    "en": "a place where people stay in tents or cabins, especially for a vacation or program",
    "ex": [
     {
@@ -2729,6 +2917,7 @@
    "ko": "캔, 깡통",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a metal container for food or drinks",
    "ex": [
     {
@@ -2742,6 +2931,7 @@
    "ko": "~할 수 있다",
    "pos": "조동사",
    "lv": 1,
+   "cefr": "A1",
    "en": "used to say that someone is able to do something",
    "ex": [
     {
@@ -2757,6 +2947,7 @@
    "ko": "사탕, 캔디",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a sweet food made mostly of sugar",
    "ex": [
     {
@@ -2772,6 +2963,7 @@
    "ko": "모자 (챙 있는)",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a soft hat, often with a curved part at the front",
    "ex": [
     {
@@ -2785,6 +2977,7 @@
    "ko": "뚜껑",
    "pos": "명사",
    "lv": 4,
+   "cefr": "A2",
    "en": "a cover for the top of a bottle or container",
    "ex": [
     {
@@ -2800,6 +2993,7 @@
    "ko": "자동차, 차",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a road vehicle with four wheels, powered by an engine",
    "ex": [
     {
@@ -2815,6 +3009,7 @@
    "ko": "카드",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "a small piece of stiff paper with a message or picture, sent to someone",
    "ex": [
     {
@@ -2828,6 +3023,7 @@
    "ko": "(놀이용) 카드",
    "pos": "명사",
    "lv": 3,
+   "cefr": "A1",
    "en": "one of a set of pieces of stiff paper used for playing games",
    "ex": [
     {
@@ -2841,6 +3037,7 @@
    "ko": "신용카드, 체크카드",
    "pos": "명사",
    "lv": 4,
+   "cefr": "A2",
    "en": "a small plastic card used to pay for things or prove your identity",
    "ex": [
     {
@@ -2856,6 +3053,7 @@
    "ko": "돌보다, 보살피다",
    "pos": "동사",
    "lv": 1,
+   "cefr": "A2",
    "en": "look after someone and make sure they are safe and well",
    "ex": [
     {
@@ -2869,6 +3067,7 @@
    "ko": "신경 쓰다, 관심을 가지다",
    "pos": "동사",
    "lv": 2,
+   "cefr": "A2",
    "en": "feel interested in or worried about something",
    "ex": [
     {
@@ -2882,6 +3081,7 @@
    "ko": "돌봄, 보살핌",
    "pos": "명사",
    "lv": 4,
+   "cefr": "B1",
    "en": "the process of looking after someone",
    "ex": [
     {
@@ -2897,6 +3097,7 @@
    "ko": "조심스러운, 주의 깊은",
    "pos": "형용사",
    "lv": 1,
+   "cefr": "A1",
    "en": "paying close attention to avoid mistakes or danger",
    "ex": [
     {
@@ -2912,6 +3113,7 @@
    "ko": "조심스럽게, 주의 깊게",
    "pos": "부사",
    "lv": 1,
+   "cefr": "A1",
    "en": "in a way that pays close attention to avoid mistakes or danger",
    "ex": [
     {
@@ -2927,6 +3129,7 @@
    "ko": "4월",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the fourth month of the year",
    "ex": [
     {
@@ -2942,6 +3145,7 @@
    "ko": "8월",
    "pos": "명사",
    "lv": 1,
+   "cefr": "A1",
    "en": "the eighth month of the year",
    "ex": [
     {

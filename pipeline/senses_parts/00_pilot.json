@@ -1,230 +1,2154 @@
 {
-"run": [
-{"cue":"발로 빠르게","ko":"달리다","pos":"동사","lv":1,"en":"move fast on foot","ex":[{"en":"She runs five miles every morning.","ko":"그녀는 매일 아침 5마일을 달린다."}]},
-{"cue":"사업·조직을","ko":"운영하다","pos":"동사","lv":3,"en":"be in charge of a business, organization, or activity and make it work","ex":[{"en":"He runs a small bakery downtown.","ko":"그는 시내에서 작은 빵집을 운영한다."}]},
-{"cue":"기계·엔진이","ko":"작동하다, 가동되다","pos":"동사","lv":4,"en":"(of a machine or engine) work or operate","ex":[{"en":"The old engine still runs well.","ko":"그 낡은 엔진은 여전히 잘 작동한다."}]},
-{"cue":"물·눈물 등이","ko":"흐르다","pos":"동사","lv":6,"en":"(of a liquid) flow in a continuous stream","ex":[{"en":"Tears ran down her cheeks.","ko":"눈물이 그녀의 뺨을 타고 흘러내렸다."}]},
-{"cue":"선거에","ko":"출마하다","pos":"동사","lv":8,"en":"be a candidate in an election","ex":[{"en":"She decided to run for mayor.","ko":"그녀는 시장 선거에 출마하기로 결심했다."}]}
-],
-"set": [
-{"cue":"특정 장소에 물건을","ko":"놓다, 두다","pos":"동사","lv":2,"en":"put something in a particular place or position","ex":[{"en":"She set the vase on the table.","ko":"그녀는 꽃병을 탁자 위에 놓았다."}]},
-{"cue":"목표·규칙을","ko":"정하다, 설정하다","pos":"동사","lv":3,"en":"establish or fix a goal, rule, or standard","ex":[{"en":"The teacher set a deadline for the essay.","ko":"선생님은 에세이 제출 마감일을 정했다."}]},
-{"cue":"도구·물건 한 벌","ko":"세트, 한 벌","pos":"명사","lv":4,"en":"a group of similar things that belong together or are used together","ex":[{"en":"He bought a set of golf clubs.","ko":"그는 골프채 한 세트를 샀다."}]},
-{"cue":"해가","ko":"(해가) 지다","pos":"동사","lv":5,"en":"(of the sun) go down below the horizon","ex":[{"en":"The sun sets early in winter.","ko":"겨울에는 해가 일찍 진다."}]},
-{"cue":"미리 정해진","ko":"고정된, 정해진","pos":"형용사","lv":7,"en":"fixed and not changing","ex":[{"en":"We have a set menu for the party.","ko":"우리는 파티를 위한 고정 메뉴가 있다."}]},
-{"cue":"영화·연극의","ko":"(촬영/무대) 세트, 배경","pos":"명사","lv":9,"en":"the place where a film or play is performed or filmed, built to look like a real place","ex":[{"en":"The actors gathered on set early in the morning.","ko":"배우들은 이른 아침 촬영 세트에 모였다."}]}
-],
-"get": [
-{"cue":"선물·정보 등을","ko":"얻다, 받다","pos":"동사","lv":1,"en":"come to have or receive something","ex":[{"en":"I got a new phone for my birthday.","ko":"나는 생일에 새 휴대폰을 받았다."}]},
-{"cue":"상태·감정이","ko":"~하게 되다","pos":"동사","lv":2,"en":"become or start to be in a particular state","ex":[{"en":"It's getting dark outside.","ko":"밖이 어두워지고 있다."}]},
-{"cue":"목적지에","ko":"도착하다, 가다","pos":"동사","lv":3,"en":"arrive at a place","ex":[{"en":"What time did you get home?","ko":"몇 시에 집에 도착했어?"}]},
-{"cue":"말·농담을","ko":"이해하다","pos":"동사","lv":4,"en":"understand something","ex":[{"en":"Sorry, I don't get the joke.","ko":"미안한데, 나는 그 농담을 이해하지 못하겠어."}]},
-{"cue":"가서 가져오다","ko":"가져오다, 데려오다","pos":"동사","lv":5,"en":"go and bring something or someone back","ex":[{"en":"Can you get my glasses from the kitchen?","ko":"부엌에서 내 안경 좀 가져다줄래?"}]}
-],
-"take": [
-{"cue":"다른 곳으로 가지고","ko":"가지고 가다, 데리고 가다","pos":"동사","lv":1,"en":"carry or move something or someone from one place to another","ex":[{"en":"Don't forget to take an umbrella with you.","ko":"우산 챙겨 가는 것 잊지 마."}]},
-{"cue":"손으로 잡아","ko":"잡다, 손에 들다","pos":"동사","lv":2,"en":"reach out and hold something in your hand","ex":[{"en":"He took her hand and smiled.","ko":"그는 그녀의 손을 잡고 미소지었다."}]},
-{"cue":"버스·기차 등을","ko":"타다, 이용하다","pos":"동사","lv":2,"en":"travel somewhere using a particular vehicle","ex":[{"en":"I usually take the bus to work.","ko":"나는 보통 버스를 타고 출근한다."}]},
-{"cue":"시간이","ko":"(시간이) 걸리다","pos":"동사","lv":3,"en":"require a certain amount of time","ex":[{"en":"The trip takes about two hours.","ko":"그 여행은 약 두 시간이 걸린다."}]},
-{"cue":"시험·수업을","ko":"(시험을) 치다, 듣다","pos":"동사","lv":4,"en":"do an examination or attend a course","ex":[{"en":"She is going to take the driving test next week.","ko":"그녀는 다음 주에 운전면허 시험을 칠 예정이다."}]},
-{"cue":"약을","ko":"복용하다","pos":"동사","lv":5,"en":"swallow or consume medicine","ex":[{"en":"Take this medicine twice a day.","ko":"이 약을 하루에 두 번 복용하세요."}]}
-],
-"make": [
-{"cue":"물건을","ko":"만들다","pos":"동사","lv":1,"en":"produce or create something","ex":[{"en":"She made a cake for the party.","ko":"그녀는 파티를 위해 케이크를 만들었다."}]},
-{"cue":"어떤 상태가 되게","ko":"~하게 만들다","pos":"동사","lv":2,"en":"cause someone or something to be in a particular state","ex":[{"en":"That movie made me cry.","ko":"그 영화는 나를 울게 만들었다."}]},
-{"cue":"돈을","ko":"(돈을) 벌다","pos":"동사","lv":4,"en":"earn money","ex":[{"en":"He makes a good salary as an engineer.","ko":"그는 엔지니어로 좋은 급여를 번다."}]},
-{"cue":"결정·선택을","ko":"(결정을) 내리다","pos":"동사","lv":5,"en":"decide on or reach something such as a decision or agreement","ex":[{"en":"We need to make a decision by Friday.","ko":"우리는 금요일까지 결정을 내려야 한다."}]}
-],
-"light": [
-{"cue":"밝게 비추는","ko":"빛","pos":"명사","lv":1,"en":"the natural energy that comes from the sun, fire, or a lamp, allowing you to see","ex":[{"en":"Sunlight streamed through the window.","ko":"햇빛이 창문으로 쏟아져 들어왔다."}]},
-{"cue":"켜고 끄는 조명","ko":"전등, 조명","pos":"명사","lv":2,"en":"a device such as a lamp that produces light","ex":[{"en":"Please turn off the light before you leave.","ko":"나가기 전에 불 좀 꺼 주세요."}]},
-{"cue":"무게가","ko":"가벼운","pos":"형용사","lv":3,"en":"not heavy; easy to lift or carry","ex":[{"en":"This suitcase is much lighter than mine.","ko":"이 여행 가방은 내 것보다 훨씬 가볍다."}]},
-{"cue":"색이 연한","ko":"밝은, 연한","pos":"형용사","lv":6,"en":"(of a color) pale rather than dark","ex":[{"en":"She painted the room a light blue.","ko":"그녀는 방을 연한 파란색으로 칠했다."}]},
-{"cue":"담뱃불·초에 불을","ko":"불을 붙이다","pos":"동사","lv":7,"en":"make something start to burn","ex":[{"en":"He lit a candle on the table.","ko":"그는 탁자 위의 초에 불을 붙였다."}]}
-],
-"book": [
-{"cue":"읽는 책","ko":"책","pos":"명사","lv":1,"en":"a written work printed on pages and bound together","ex":[{"en":"She read a book before going to sleep.","ko":"그녀는 자기 전에 책을 읽었다."}]},
-{"cue":"표·자리를 미리","ko":"예약하다","pos":"동사","lv":2,"en":"arrange to have a seat, room, ticket, etc. at a future time","ex":[{"en":"We booked a table for two at the restaurant.","ko":"우리는 그 식당에 2인 테이블을 예약했다."}]}
-],
-"right": [
-{"cue":"사실·답이","ko":"옳은, 맞는","pos":"형용사","lv":1,"en":"correct or true","ex":[{"en":"You were right about the weather.","ko":"날씨에 대해 네 말이 맞았어."}]},
-{"cue":"방향이 오른쪽","ko":"오른쪽의","pos":"형용사","lv":2,"en":"on or towards the side of the body that is to the east when facing north","ex":[{"en":"Turn right at the next corner.","ko":"다음 모퉁이에서 오른쪽으로 도세요."}]},
-{"cue":"법적·도덕적","ko":"권리","pos":"명사","lv":4,"en":"something that you are morally or legally allowed to do or have","ex":[{"en":"Everyone has the right to education.","ko":"모든 사람은 교육받을 권리가 있다."}]},
-{"cue":"정확한 위치·시간에","ko":"바로, 정확히","pos":"부사","lv":6,"en":"exactly or immediately","ex":[{"en":"Stay right here until I come back.","ko":"내가 돌아올 때까지 바로 여기 있어."}]}
-],
-"hold": [
-{"cue":"손으로 붙잡아","ko":"잡다, 들다","pos":"동사","lv":1,"en":"have or keep something in your hand or arms","ex":[{"en":"She held the baby gently.","ko":"그녀는 아기를 부드럽게 안았다."}]},
-{"cue":"행사를","ko":"개최하다, 열다","pos":"동사","lv":3,"en":"organize and take part in an event","ex":[{"en":"The school holds a festival every autumn.","ko":"그 학교는 매년 가을 축제를 개최한다."}]},
-{"cue":"자리·물건을 맡아","ko":"맡아 두다, 보류하다","pos":"동사","lv":4,"en":"keep something for someone to use or collect later","ex":[{"en":"Can you hold my seat while I get some coffee?","ko":"내가 커피 가지러 가는 동안 내 자리 좀 맡아 줄래?"}]},
-{"cue":"공간·용량이","ko":"수용하다, 담다","pos":"동사","lv":6,"en":"have enough space for a certain amount or number","ex":[{"en":"This hall can hold up to 500 people.","ko":"이 홀은 최대 500명을 수용할 수 있다."}]},
-{"cue":"전화를 끊지 않고","ko":"(전화를) 끊지 않고 기다리다","pos":"동사","lv":7,"en":"wait on the phone without hanging up","ex":[{"en":"Please hold while I transfer your call.","ko":"전화 연결해 드리는 동안 끊지 말고 기다려 주세요."}]}
-],
-"break": [
-{"cue":"물건이 깨져","ko":"부수다, 깨지다","pos":"동사","lv":1,"en":"separate into pieces as a result of force","ex":[{"en":"He accidentally broke the window.","ko":"그는 실수로 창문을 깼다."}]},
-{"cue":"잠깐의 휴식","ko":"휴식, 쉬는 시간","pos":"명사","lv":2,"en":"a short period of rest from work or activity","ex":[{"en":"Let's take a ten-minute break.","ko":"10분 동안 휴식을 취하자."}]},
-{"cue":"법·약속을","ko":"어기다","pos":"동사","lv":3,"en":"fail to keep a law, rule, or promise","ex":[{"en":"He broke his promise to call her.","ko":"그는 그녀에게 전화하겠다는 약속을 어겼다."}]},
-{"cue":"기록을","ko":"(기록을) 깨다","pos":"동사","lv":6,"en":"do better than a previous record","ex":[{"en":"She broke the world record in swimming.","ko":"그녀는 수영에서 세계 기록을 깼다."}]},
-{"cue":"뉴스·소식이","ko":"(소식이) 알려지다, 터지다","pos":"동사","lv":8,"en":"(of news) become known suddenly","ex":[{"en":"The scandal broke just before the election.","ko":"선거 직전에 그 스캔들이 터졌다."}]}
-],
-"draw": [
-{"cue":"연필·펜으로 그림을","ko":"그리다","pos":"동사","lv":1,"en":"make a picture using a pencil, pen, or crayon","ex":[{"en":"The kids drew pictures of their families.","ko":"아이들은 자기 가족 그림을 그렸다."}]},
-{"cue":"주의·관심을","ko":"끌다, 끌어당기다","pos":"동사","lv":4,"en":"attract someone's attention or interest","ex":[{"en":"The street performer drew a large crowd.","ko":"그 거리 공연자는 많은 사람들을 끌어모았다."}]},
-{"cue":"경기가 비겨서","ko":"무승부, 비김","pos":"명사","lv":6,"en":"a result of a game or contest in which both sides have the same score","ex":[{"en":"The match ended in a 2-2 draw.","ko":"그 경기는 2대2 무승부로 끝났다."}]},
-{"cue":"결론을","ko":"(결론을) 내리다, 이끌어내다","pos":"동사","lv":7,"en":"reach a conclusion after considering information","ex":[{"en":"It's too early to draw any conclusions.","ko":"결론을 내리기에는 아직 이르다."}]}
-],
-"play": [
-{"cue":"아이들이 재미로","ko":"놀다","pos":"동사","lv":1,"en":"do things for enjoyment, especially as children do","ex":[{"en":"The children are playing in the park.","ko":"아이들이 공원에서 놀고 있다."}]},
-{"cue":"악기를","ko":"연주하다","pos":"동사","lv":2,"en":"perform music using an instrument","ex":[{"en":"She plays the violin beautifully.","ko":"그녀는 바이올린을 아름답게 연주한다."}]},
-{"cue":"운동 경기를","ko":"(스포츠를) 하다","pos":"동사","lv":2,"en":"take part in a sport or game","ex":[{"en":"He plays soccer every weekend.","ko":"그는 주말마다 축구를 한다."}]},
-{"cue":"배역·역할을","ko":"연기하다, 맡다","pos":"동사","lv":5,"en":"act the part of a character in a film or play","ex":[{"en":"She played the lead role in the movie.","ko":"그녀는 그 영화에서 주연을 맡았다."}]},
-{"cue":"무대에서 공연하는 작품","ko":"연극","pos":"명사","lv":6,"en":"a piece of writing performed by actors on stage","ex":[{"en":"We watched a play at the theater last night.","ko":"우리는 어젯밤 극장에서 연극을 봤다."}]}
-],
-"turn": [
-{"cue":"몸·손잡이를 돌려","ko":"돌다, 돌리다","pos":"동사","lv":1,"en":"move or cause something to move around a central point","ex":[{"en":"She turned the key and opened the door.","ko":"그녀는 열쇠를 돌려 문을 열었다."}]},
-{"cue":"길에서 방향을","ko":"방향을 바꾸다, 돌다","pos":"동사","lv":2,"en":"change the direction you are facing or moving","ex":[{"en":"Turn left at the traffic light.","ko":"신호등에서 왼쪽으로 도세요."}]},
-{"cue":"순서·차례","ko":"차례, 순번","pos":"명사","lv":3,"en":"the time when someone is allowed or expected to do something in a set order","ex":[{"en":"It's your turn to choose the movie.","ko":"영화 고를 차례는 네 차례야."}]},
-{"cue":"상태·나이가 바뀌어","ko":"~이 되다, 변하다","pos":"동사","lv":5,"en":"become something or reach a particular state","ex":[{"en":"The leaves turn red in autumn.","ko":"가을이 되면 나뭇잎이 빨갛게 변한다."}]}
-],
-"mean": [
-{"cue":"단어·행동이 뜻하는 바","ko":"의미하다, 뜻하다","pos":"동사","lv":1,"en":"have a particular meaning or sense","ex":[{"en":"What does this word mean?","ko":"이 단어는 무슨 뜻이야?"}]},
-{"cue":"진심으로","ko":"진심으로 말하다, 의도하다","pos":"동사","lv":4,"en":"be serious or sincere about what you say","ex":[{"en":"I really mean it — thank you for everything.","ko":"진심이야, 모든 것에 고마워."}]},
-{"cue":"성격이 심술궂은","ko":"못된, 심술궂은","pos":"형용사","lv":5,"en":"unkind or unpleasant to other people","ex":[{"en":"It was mean of him to laugh at her.","ko":"그가 그녀를 비웃은 것은 못된 짓이었다."}]}
-],
-"kind": [
-{"cue":"성격이 다정한","ko":"친절한","pos":"형용사","lv":1,"en":"caring and helpful towards other people","ex":[{"en":"She is always kind to strangers.","ko":"그녀는 항상 낯선 사람들에게 친절하다."}]},
-{"cue":"종류·유형","ko":"종류","pos":"명사","lv":2,"en":"a group of things or people that share similar qualities","ex":[{"en":"What kind of music do you like?","ko":"어떤 종류의 음악을 좋아해?"}]}
-],
-"fair": [
-{"cue":"규칙·대우가 공평한","ko":"공정한","pos":"형용사","lv":1,"en":"treating everyone equally and reasonably","ex":[{"en":"The teacher was fair to all the students.","ko":"그 선생님은 모든 학생에게 공정했다."}]},
-{"cue":"놀이기구·물건을 파는 행사","ko":"축제, 박람회","pos":"명사","lv":4,"en":"an event where people buy and sell things or where rides and games are set up","ex":[{"en":"We went to the county fair last weekend.","ko":"우리는 지난 주말에 지역 축제에 갔다."}]},
-{"cue":"피부·머리색이 밝은","ko":"흰, 금발의","pos":"형용사","lv":7,"en":"(of hair or skin) light in color","ex":[{"en":"She has fair skin and blonde hair.","ko":"그녀는 흰 피부와 금발 머리를 가지고 있다."}]},
-{"cue":"날씨가 맑은","ko":"(날씨가) 맑은","pos":"형용사","lv":9,"en":"(of weather) fine and not raining","ex":[{"en":"The forecast promises fair weather this weekend.","ko":"일기예보에서 이번 주말은 맑은 날씨라고 한다."}]}
-],
-"leave": [
-{"cue":"장소를 떠나서","ko":"떠나다","pos":"동사","lv":1,"en":"go away from a place or person","ex":[{"en":"She left the office at six.","ko":"그녀는 6시에 사무실을 나갔다."}]},
-{"cue":"물건을 그대로 두고","ko":"남겨 두다, 두고 가다","pos":"동사","lv":3,"en":"allow something to remain in a particular place or condition","ex":[{"en":"I left my umbrella on the bus.","ko":"나는 버스에 우산을 두고 내렸다."}]},
-{"cue":"직장에서의 휴가","ko":"휴가","pos":"명사","lv":7,"en":"a period of time when someone is allowed to be away from work","ex":[{"en":"She is on maternity leave for six months.","ko":"그녀는 6개월간 출산 휴가 중이다."}]}
-],
-"fall": [
-{"cue":"사람·물건이 아래로","ko":"넘어지다, 떨어지다","pos":"동사","lv":1,"en":"drop down or collapse to a lower position accidentally","ex":[{"en":"He slipped and fell on the ice.","ko":"그는 미끄러져 얼음 위에 넘어졌다."}]},
-{"cue":"계절 (미국식)","ko":"가을","pos":"명사","lv":3,"en":"the season between summer and winter","ex":[{"en":"The leaves change color in the fall.","ko":"가을에는 나뭇잎 색이 변한다."}]},
-{"cue":"가격·온도 등 수치가","ko":"하락하다, 내려가다","pos":"동사","lv":4,"en":"decrease in amount, level, or value","ex":[{"en":"Prices fell sharply last month.","ko":"지난달 가격이 급격히 하락했다."}]},
-{"cue":"사랑·잠에 빠지다","ko":"(어떤 상태에) 빠지다","pos":"동사","lv":6,"en":"come to be in a particular state, especially suddenly","ex":[{"en":"They fell in love at first sight.","ko":"그들은 첫눈에 사랑에 빠졌다."}]}
-],
-"miss": [
-{"cue":"버스·기회를 놓쳐서","ko":"놓치다","pos":"동사","lv":1,"en":"fail to catch, reach, see, or do something","ex":[{"en":"I missed the bus this morning.","ko":"나는 오늘 아침 버스를 놓쳤다."}]},
-{"cue":"보고 싶은 사람을","ko":"그리워하다, 보고 싶어하다","pos":"동사","lv":2,"en":"feel sad because someone is not with you","ex":[{"en":"I really miss my family.","ko":"나는 가족이 정말 그립다."}]},
-{"cue":"미혼 여성 호칭","ko":"~양, ~씨","pos":"명사","lv":6,"en":"a title used before the name of an unmarried woman","ex":[{"en":"Miss Kim will help you with the paperwork.","ko":"김 양이 서류 작업을 도와드릴 겁니다."}]}
-],
-"match": [
-{"cue":"색·스타일이 서로","ko":"어울리다, 일치하다","pos":"동사","lv":1,"en":"be similar to or go well with something else","ex":[{"en":"Her shoes match her bag perfectly.","ko":"그녀의 신발은 가방과 완벽하게 어울린다."}]},
-{"cue":"스포츠 경기","ko":"경기, 시합","pos":"명사","lv":2,"en":"an organized contest between two players or teams","ex":[{"en":"They watched the soccer match together.","ko":"그들은 함께 축구 경기를 봤다."}]},
-{"cue":"불을 붙이는 작은 막대","ko":"성냥","pos":"명사","lv":5,"en":"a small stick that produces fire when you rub it against a rough surface","ex":[{"en":"He lit the candle with a match.","ko":"그는 성냥으로 초에 불을 붙였다."}]}
-],
-"bank": [
-{"cue":"돈을 맡기는 곳","ko":"은행","pos":"명사","lv":1,"en":"an organization where people keep their money","ex":[{"en":"She works at a bank downtown.","ko":"그녀는 시내에 있는 은행에서 일한다."}]},
-{"cue":"강의 가장자리","ko":"강둑, 둔치","pos":"명사","lv":5,"en":"the land along the edge of a river","ex":[{"en":"They had a picnic on the river bank.","ko":"그들은 강둑에서 소풍을 즐겼다."}]}
-],
-"bark": [
-{"cue":"개가 짖는 소리","ko":"(개가) 짖다","pos":"동사","lv":1,"en":"(of a dog) make a short, loud sound","ex":[{"en":"The dog barked at the mailman.","ko":"그 개는 우편배달부를 보고 짖었다."}]},
-{"cue":"나무 겉면","ko":"나무껍질","pos":"명사","lv":5,"en":"the hard outer covering of a tree","ex":[{"en":"The bark of this tree is very rough.","ko":"이 나무의 껍질은 매우 거칠다."}]}
-],
-"bat": [
-{"cue":"밤에 나는 동물","ko":"박쥐","pos":"명사","lv":1,"en":"a small flying animal that is active at night","ex":[{"en":"Bats sleep upside down during the day.","ko":"박쥐는 낮 동안 거꾸로 매달려 잔다."}]},
-{"cue":"야구·크리켓에서 치는 도구","ko":"방망이, 배트","pos":"명사","lv":2,"en":"a wooden or metal club used to hit the ball in sports like baseball","ex":[{"en":"He swung the bat and hit a home run.","ko":"그는 방망이를 휘둘러 홈런을 쳤다."}]}
-],
-"bear": [
-{"cue":"숲에 사는 동물","ko":"곰","pos":"명사","lv":1,"en":"a large, heavy wild animal with thick fur","ex":[{"en":"A bear wandered into the campsite.","ko":"곰 한 마리가 야영지로 들어왔다."}]},
-{"cue":"고통·상황을","ko":"참다, 견디다","pos":"동사","lv":3,"en":"accept or deal with something unpleasant, especially with patience","ex":[{"en":"She couldn't bear the pain any longer.","ko":"그녀는 더 이상 그 고통을 견딜 수 없었다."}]},
-{"cue":"책임·비용을","ko":"(책임을) 지다, 부담하다","pos":"동사","lv":7,"en":"be responsible for something, such as a cost or a duty","ex":[{"en":"The company will bear the cost of repairs.","ko":"그 회사가 수리 비용을 부담할 것이다."}]}
-],
-"spring": [
-{"cue":"겨울 다음 계절","ko":"봄","pos":"명사","lv":1,"en":"the season between winter and summer","ex":[{"en":"Flowers bloom in spring.","ko":"봄에는 꽃이 핀다."}]},
-{"cue":"금속 코일","ko":"용수철, 스프링","pos":"명사","lv":4,"en":"a coiled piece of metal that returns to its original shape after being pressed or pulled","ex":[{"en":"The mattress has springs inside it.","ko":"그 매트리스 안에는 스프링이 들어 있다."}]},
-{"cue":"갑자기 튀어 오르다","ko":"뛰어오르다, 튀다","pos":"동사","lv":6,"en":"jump or move suddenly and quickly","ex":[{"en":"The cat sprang onto the shelf.","ko":"고양이가 갑자기 선반 위로 뛰어올랐다."}]}
-],
-"rock": [
-{"cue":"단단한 돌덩이","ko":"바위, 돌","pos":"명사","lv":1,"en":"a large piece of stone","ex":[{"en":"They climbed over the rocks on the beach.","ko":"그들은 해변의 바위들을 넘어갔다."}]},
-{"cue":"좌우로 흔들다","ko":"흔들다, 흔들리다","pos":"동사","lv":3,"en":"move gently backward and forward or from side to side","ex":[{"en":"She rocked the baby to sleep.","ko":"그녀는 아기를 흔들어 재웠다."}]},
-{"cue":"기타·드럼 음악 장르","ko":"록 음악","pos":"명사","lv":4,"en":"a type of popular music with a strong beat, usually played with electric guitars","ex":[{"en":"He loves listening to classic rock.","ko":"그는 클래식 록 음악 듣는 것을 좋아한다."}]}
-],
-"ring": [
-{"cue":"손가락에 끼는 장신구","ko":"반지","pos":"명사","lv":1,"en":"a piece of jewelry worn on a finger","ex":[{"en":"He proposed with a diamond ring.","ko":"그는 다이아몬드 반지로 프러포즈했다."}]},
-{"cue":"전화벨·종소리가","ko":"울리다","pos":"동사","lv":2,"en":"make a clear, loud sound like a bell","ex":[{"en":"The phone rang three times before she answered.","ko":"그녀가 받기 전에 전화가 세 번 울렸다."}]},
-{"cue":"둥근 모양의 고리","ko":"원, 고리","pos":"명사","lv":5,"en":"an object or shape in the form of a circle","ex":[{"en":"The children stood in a ring around the tree.","ko":"아이들은 나무 주위에 원을 그리며 섰다."}]},
-{"cue":"권투 경기장","ko":"(권투) 링","pos":"명사","lv":8,"en":"the square area where boxers fight","ex":[{"en":"The boxers stepped into the ring.","ko":"그 복서들은 링 안으로 들어갔다."}]}
-],
-"watch": [
-{"cue":"TV·경기 등을","ko":"보다, 시청하다","pos":"동사","lv":1,"en":"look at something for a period of time, especially something moving or changing","ex":[{"en":"We watched a movie last night.","ko":"우리는 어젯밤 영화를 봤다."}]},
-{"cue":"손목에 차는 시계","ko":"손목시계","pos":"명사","lv":2,"en":"a small device worn on the wrist that shows the time","ex":[{"en":"He checked his watch and hurried out.","ko":"그는 손목시계를 확인하고 서둘러 나갔다."}]},
-{"cue":"위험·상황을 조심해서","ko":"조심하다, 주의하다","pos":"동사","lv":3,"en":"be careful about something","ex":[{"en":"Watch your step on the stairs.","ko":"계단에서 발밑 조심하세요."}]},
-{"cue":"누군가를 몰래 지켜보다","ko":"지켜보다, 감시하다","pos":"동사","lv":5,"en":"keep someone or something under close observation","ex":[{"en":"The guard watched the entrance all night.","ko":"경비원은 밤새 입구를 지켜보았다."}]}
-],
-"wave": [
-{"cue":"바다에서 일렁이는 물결","ko":"파도","pos":"명사","lv":1,"en":"a raised line of water that moves across the surface of the sea","ex":[{"en":"The children played in the waves.","ko":"아이들이 파도 속에서 놀았다."}]},
-{"cue":"손을 흔들어 인사","ko":"손을 흔들다","pos":"동사","lv":2,"en":"move your hand from side to side to greet someone or attract attention","ex":[{"en":"She waved at me from across the street.","ko":"그녀는 길 건너편에서 나에게 손을 흔들었다."}]},
-{"cue":"더위·범죄 등이 갑자기 몰려오는","ko":"(현상의) 물결, 급증","pos":"명사","lv":7,"en":"a sudden increase in a particular activity or feeling that spreads through a place","ex":[{"en":"The country is experiencing a heat wave.","ko":"그 나라는 폭염을 겪고 있다."}]}
-],
-"note": [
-{"cue":"짧게 적은 글","ko":"메모, 쪽지","pos":"명사","lv":1,"en":"a short piece of writing that helps you remember something","ex":[{"en":"She left a note on the fridge.","ko":"그녀는 냉장고에 메모를 남겼다."}]},
-{"cue":"특히 유의해서","ko":"주목하다, 유의하다","pos":"동사","lv":3,"en":"notice or pay careful attention to something","ex":[{"en":"Please note that the office is closed on Sundays.","ko":"사무실은 일요일에 문을 닫는다는 점을 유의해 주세요."}]},
-{"cue":"악기가 내는 음","ko":"음, 음표","pos":"명사","lv":5,"en":"a single musical sound of a particular pitch","ex":[{"en":"She hit a wrong note during the performance.","ko":"그녀는 공연 중에 잘못된 음을 냈다."}]},
-{"cue":"지폐 (영국식)","ko":"지폐","pos":"명사","lv":7,"en":"a piece of paper money","ex":[{"en":"He paid with a ten-pound note.","ko":"그는 10파운드 지폐로 계산했다."}]}
-],
-"order": [
-{"cue":"음식·물건을","ko":"주문하다","pos":"동사","lv":1,"en":"ask for something to be brought, made, or supplied","ex":[{"en":"We ordered pizza for dinner.","ko":"우리는 저녁으로 피자를 주문했다."}]},
-{"cue":"차례·배열","ko":"순서","pos":"명사","lv":3,"en":"the way in which things are arranged in relation to each other","ex":[{"en":"Please put the names in alphabetical order.","ko":"이름을 알파벳 순서대로 정리해 주세요."}]},
-{"cue":"윗사람의 지시","ko":"명령","pos":"명사","lv":4,"en":"an instruction given by someone in authority","ex":[{"en":"The soldiers followed the general's orders.","ko":"병사들은 장군의 명령을 따랐다."}]},
-{"cue":"사회가 잘 유지되는 상태","ko":"질서","pos":"명사","lv":7,"en":"a situation in which everything is well organized and follows rules or laws","ex":[{"en":"The police worked to restore order after the riot.","ko":"경찰은 폭동 이후 질서를 회복하려 노력했다."}]}
-],
-"present": [
-{"cue":"생일·기념일에 주는","ko":"선물","pos":"명사","lv":1,"en":"a thing given to someone as a gift","ex":[{"en":"She gave him a present for his birthday.","ko":"그녀는 그의 생일에 선물을 주었다."}]},
-{"cue":"지금 이 순간","ko":"현재","pos":"명사","lv":2,"en":"the period of time that is happening now","ex":[{"en":"Let's focus on the present instead of worrying about the future.","ko":"미래를 걱정하는 대신 현재에 집중하자."}]},
-{"cue":"정보·계획을 청중에게","ko":"제시하다, 발표하다","pos":"동사","lv":4,"en":"show or explain something to a group of people","ex":[{"en":"She presented her research at the conference.","ko":"그녀는 학회에서 자신의 연구를 발표했다."}]},
-{"cue":"자리에 있는","ko":"참석한, 있는","pos":"형용사","lv":6,"en":"being in a particular place at a particular time","ex":[{"en":"All the students were present for the exam.","ko":"모든 학생이 시험에 참석했다."}]}
-],
-"close": [
-{"cue":"문·가게를","ko":"닫다","pos":"동사","lv":1,"en":"shut something so there is no opening","ex":[{"en":"Please close the door when you leave.","ko":"나갈 때 문 좀 닫아 주세요."}]},
-{"cue":"거리·사이가 가까운","ko":"가까운","pos":"형용사","lv":2,"en":"near in distance or time","ex":[{"en":"The hotel is close to the beach.","ko":"그 호텔은 해변에서 가깝다."}]},
-{"cue":"관계가 친밀한","ko":"친한, 가까운","pos":"형용사","lv":4,"en":"having a strong friendship or bond with someone","ex":[{"en":"She is very close to her sister.","ko":"그녀는 언니와 매우 가깝다."}]}
-],
-"park": [
-{"cue":"산책·놀이하는 녹지","ko":"공원","pos":"명사","lv":1,"en":"a public area with grass and trees where people can walk and relax","ex":[{"en":"They had a picnic in the park.","ko":"그들은 공원에서 소풍을 즐겼다."}]},
-{"cue":"차를 세워두다","ko":"주차하다","pos":"동사","lv":2,"en":"leave a vehicle somewhere for a period of time","ex":[{"en":"He parked the car in front of the building.","ko":"그는 건물 앞에 차를 주차했다."}]}
-],
-"cool": [
-{"cue":"온도가 시원한","ko":"시원한, 서늘한","pos":"형용사","lv":1,"en":"slightly cold; not warm","ex":[{"en":"There was a cool breeze in the evening.","ko":"저녁에 시원한 바람이 불었다."}]},
-{"cue":"멋지다는 느낌 (구어)","ko":"멋진, 근사한","pos":"형용사","lv":3,"en":"fashionable or impressive (informal)","ex":[{"en":"That's a really cool jacket.","ko":"그거 정말 멋진 재킷이네."}]},
-{"cue":"뜨거운 것을 식혀서","ko":"식히다","pos":"동사","lv":5,"en":"make something less hot","ex":[{"en":"Let the soup cool before you eat it.","ko":"먹기 전에 수프를 좀 식혀."}]},
-{"cue":"흥분을 가라앉히고","ko":"차분한, 침착한","pos":"형용사","lv":6,"en":"calm and not showing much emotion, especially under pressure","ex":[{"en":"She stayed cool during the emergency.","ko":"그녀는 그 비상 상황에서도 침착함을 유지했다."}]}
-],
-"dry": [
-{"cue":"물기가 없는","ko":"마른, 건조한","pos":"형용사","lv":1,"en":"free from water or moisture","ex":[{"en":"The towels are already dry.","ko":"수건들이 벌써 다 말랐다."}]},
-{"cue":"젖은 것을 말리다","ko":"말리다, 마르다","pos":"동사","lv":3,"en":"remove moisture from something, or become free of moisture","ex":[{"en":"Hang the clothes outside to dry.","ko":"빨래를 밖에 널어서 말려."}]},
-{"cue":"유머·강의가 재미없는","ko":"무미건조한, 재미없는","pos":"형용사","lv":8,"en":"boring or lacking liveliness","ex":[{"en":"The lecture was long and dry.","ko":"그 강의는 길고 무미건조했다."}]}
-],
-"hard": [
-{"cue":"재질이 단단한","ko":"단단한","pos":"형용사","lv":1,"en":"firm and solid; not easy to press or break","ex":[{"en":"The rock felt hard and cold.","ko":"그 바위는 단단하고 차갑게 느껴졌다."}]},
-{"cue":"일·문제가 어려운","ko":"어려운","pos":"형용사","lv":2,"en":"difficult to do or understand","ex":[{"en":"This math problem is really hard.","ko":"이 수학 문제는 정말 어렵다."}]},
-{"cue":"노력을 많이 들여","ko":"열심히","pos":"부사","lv":3,"en":"with a lot of effort or energy","ex":[{"en":"She worked hard to pass the exam.","ko":"그녀는 시험에 합격하려고 열심히 공부했다."}]}
-],
-"sharp": [
-{"cue":"칼날이 잘 드는","ko":"날카로운","pos":"형용사","lv":1,"en":"having a fine cutting edge or point","ex":[{"en":"Be careful, the knife is very sharp.","ko":"조심해, 그 칼은 아주 날카로워."}]},
-{"cue":"두뇌 회전이 빠른","ko":"영리한, 예리한","pos":"형용사","lv":4,"en":"quick to notice, understand, or judge things","ex":[{"en":"She has a sharp mind for numbers.","ko":"그녀는 숫자에 예리한 두뇌를 가지고 있다."}]},
-{"cue":"통증이 갑자기 강하게","ko":"(통증이) 격렬한, 찌르는 듯한","pos":"형용사","lv":6,"en":"(of pain) sudden and intense","ex":[{"en":"He felt a sharp pain in his chest.","ko":"그는 가슴에 격렬한 통증을 느꼈다."}]},
-{"cue":"증가·감소가 급격한","ko":"급격한","pos":"형용사","lv":7,"en":"(of a change) sudden and significant","ex":[{"en":"There was a sharp rise in prices.","ko":"물가가 급격히 상승했다."}]},
-{"cue":"시간이 정각에","ko":"정각에, 딱 맞춰","pos":"부사","lv":9,"en":"exactly at a stated time","ex":[{"en":"The meeting starts at nine sharp.","ko":"회의는 9시 정각에 시작한다."}]}
-],
-"charge": [
-{"cue":"이용·서비스 비용을","ko":"청구하다, 부과하다","pos":"동사","lv":1,"en":"ask someone to pay a particular amount of money for something","ex":[{"en":"The hotel charges extra for breakfast.","ko":"그 호텔은 조식에 추가 요금을 청구한다."}]},
-{"cue":"지불해야 할 금액","ko":"요금, 비용","pos":"명사","lv":2,"en":"an amount of money that you must pay for goods or services","ex":[{"en":"There is no charge for delivery.","ko":"배송비는 청구되지 않는다."}]},
-{"cue":"배터리에 전기를","ko":"충전하다","pos":"동사","lv":3,"en":"fill a battery with electrical power","ex":[{"en":"I need to charge my phone.","ko":"내 휴대폰을 충전해야 한다."}]},
-{"cue":"어떤 일을 책임지고 담당","ko":"책임, 담당","pos":"명사","lv":5,"en":"the responsibility for taking care of or controlling something","ex":[{"en":"She is in charge of the marketing team.","ko":"그녀는 마케팅 팀을 책임지고 있다."}]},
-{"cue":"범죄 혐의로","ko":"기소하다, 고발하다","pos":"동사","lv":8,"en":"formally accuse someone of a crime","ex":[{"en":"He was charged with theft.","ko":"그는 절도 혐의로 기소되었다."}]}
-],
-"current": [
-{"cue":"지금의 상황·상태","ko":"현재의","pos":"형용사","lv":1,"en":"happening or existing now","ex":[{"en":"What is your current job?","ko":"현재 하고 있는 일이 무엇인가요?"}]},
-{"cue":"전기가 흐르는","ko":"전류","pos":"명사","lv":3,"en":"a flow of electricity through a wire or circuit","ex":[{"en":"An electric current flows through the wire.","ko":"전선에 전류가 흐른다."}]},
-{"cue":"강·바다·공기의 흐름","ko":"해류, 기류","pos":"명사","lv":5,"en":"a continuous flowing movement of water or air in one direction","ex":[{"en":"The boat was pulled by a strong current.","ko":"그 배는 강한 해류에 휩쓸렸다."}]}
-]
+ "run": [
+  {
+   "cue": "발로 빠르게",
+   "ko": "달리다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "move fast on foot",
+   "ex": [
+    {
+     "en": "She runs five miles every morning.",
+     "ko": "그녀는 매일 아침 5마일을 달린다."
+    }
+   ]
+  },
+  {
+   "cue": "사업·조직을",
+   "ko": "운영하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "be in charge of a business, organization, or activity and make it work",
+   "ex": [
+    {
+     "en": "He runs a small bakery downtown.",
+     "ko": "그는 시내에서 작은 빵집을 운영한다."
+    }
+   ]
+  },
+  {
+   "cue": "기계·엔진이",
+   "ko": "작동하다, 가동되다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "A2",
+   "en": "(of a machine or engine) work or operate",
+   "ex": [
+    {
+     "en": "The old engine still runs well.",
+     "ko": "그 낡은 엔진은 여전히 잘 작동한다."
+    }
+   ]
+  },
+  {
+   "cue": "물·눈물 등이",
+   "ko": "흐르다",
+   "pos": "동사",
+   "lv": 6,
+   "cefr": "A2",
+   "en": "(of a liquid) flow in a continuous stream",
+   "ex": [
+    {
+     "en": "Tears ran down her cheeks.",
+     "ko": "눈물이 그녀의 뺨을 타고 흘러내렸다."
+    }
+   ]
+  },
+  {
+   "cue": "선거에",
+   "ko": "출마하다",
+   "pos": "동사",
+   "lv": 8,
+   "cefr": "B2",
+   "en": "be a candidate in an election",
+   "ex": [
+    {
+     "en": "She decided to run for mayor.",
+     "ko": "그녀는 시장 선거에 출마하기로 결심했다."
+    }
+   ]
+  }
+ ],
+ "set": [
+  {
+   "cue": "특정 장소에 물건을",
+   "ko": "놓다, 두다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "put something in a particular place or position",
+   "ex": [
+    {
+     "en": "She set the vase on the table.",
+     "ko": "그녀는 꽃병을 탁자 위에 놓았다."
+    }
+   ]
+  },
+  {
+   "cue": "목표·규칙을",
+   "ko": "정하다, 설정하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "establish or fix a goal, rule, or standard",
+   "ex": [
+    {
+     "en": "The teacher set a deadline for the essay.",
+     "ko": "선생님은 에세이 제출 마감일을 정했다."
+    }
+   ]
+  },
+  {
+   "cue": "도구·물건 한 벌",
+   "ko": "세트, 한 벌",
+   "pos": "명사",
+   "lv": 4,
+   "cefr": "A1",
+   "en": "a group of similar things that belong together or are used together",
+   "ex": [
+    {
+     "en": "He bought a set of golf clubs.",
+     "ko": "그는 골프채 한 세트를 샀다."
+    }
+   ]
+  },
+  {
+   "cue": "해가",
+   "ko": "(해가) 지다",
+   "pos": "동사",
+   "lv": 5,
+   "cefr": "A2",
+   "en": "(of the sun) go down below the horizon",
+   "ex": [
+    {
+     "en": "The sun sets early in winter.",
+     "ko": "겨울에는 해가 일찍 진다."
+    }
+   ]
+  },
+  {
+   "cue": "미리 정해진",
+   "ko": "고정된, 정해진",
+   "pos": "형용사",
+   "lv": 7,
+   "cefr": "B1",
+   "en": "fixed and not changing",
+   "ex": [
+    {
+     "en": "We have a set menu for the party.",
+     "ko": "우리는 파티를 위한 고정 메뉴가 있다."
+    }
+   ]
+  },
+  {
+   "cue": "영화·연극의",
+   "ko": "(촬영/무대) 세트, 배경",
+   "pos": "명사",
+   "lv": 9,
+   "cefr": "B1",
+   "en": "the place where a film or play is performed or filmed, built to look like a real place",
+   "ex": [
+    {
+     "en": "The actors gathered on set early in the morning.",
+     "ko": "배우들은 이른 아침 촬영 세트에 모였다."
+    }
+   ]
+  }
+ ],
+ "get": [
+  {
+   "cue": "선물·정보 등을",
+   "ko": "얻다, 받다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "come to have or receive something",
+   "ex": [
+    {
+     "en": "I got a new phone for my birthday.",
+     "ko": "나는 생일에 새 휴대폰을 받았다."
+    }
+   ]
+  },
+  {
+   "cue": "상태·감정이",
+   "ko": "~하게 되다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "become or start to be in a particular state",
+   "ex": [
+    {
+     "en": "It's getting dark outside.",
+     "ko": "밖이 어두워지고 있다."
+    }
+   ]
+  },
+  {
+   "cue": "목적지에",
+   "ko": "도착하다, 가다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "A1",
+   "en": "arrive at a place",
+   "ex": [
+    {
+     "en": "What time did you get home?",
+     "ko": "몇 시에 집에 도착했어?"
+    }
+   ]
+  },
+  {
+   "cue": "말·농담을",
+   "ko": "이해하다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "A2",
+   "en": "understand something",
+   "ex": [
+    {
+     "en": "Sorry, I don't get the joke.",
+     "ko": "미안한데, 나는 그 농담을 이해하지 못하겠어."
+    }
+   ]
+  },
+  {
+   "cue": "가서 가져오다",
+   "ko": "가져오다, 데려오다",
+   "pos": "동사",
+   "lv": 5,
+   "cefr": "A1",
+   "en": "go and bring something or someone back",
+   "ex": [
+    {
+     "en": "Can you get my glasses from the kitchen?",
+     "ko": "부엌에서 내 안경 좀 가져다줄래?"
+    }
+   ]
+  }
+ ],
+ "take": [
+  {
+   "cue": "다른 곳으로 가지고",
+   "ko": "가지고 가다, 데리고 가다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "carry or move something or someone from one place to another",
+   "ex": [
+    {
+     "en": "Don't forget to take an umbrella with you.",
+     "ko": "우산 챙겨 가는 것 잊지 마."
+    }
+   ]
+  },
+  {
+   "cue": "손으로 잡아",
+   "ko": "잡다, 손에 들다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "reach out and hold something in your hand",
+   "ex": [
+    {
+     "en": "He took her hand and smiled.",
+     "ko": "그는 그녀의 손을 잡고 미소지었다."
+    }
+   ]
+  },
+  {
+   "cue": "버스·기차 등을",
+   "ko": "타다, 이용하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "travel somewhere using a particular vehicle",
+   "ex": [
+    {
+     "en": "I usually take the bus to work.",
+     "ko": "나는 보통 버스를 타고 출근한다."
+    }
+   ]
+  },
+  {
+   "cue": "시간이",
+   "ko": "(시간이) 걸리다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "require a certain amount of time",
+   "ex": [
+    {
+     "en": "The trip takes about two hours.",
+     "ko": "그 여행은 약 두 시간이 걸린다."
+    }
+   ]
+  },
+  {
+   "cue": "시험·수업을",
+   "ko": "(시험을) 치다, 듣다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "A2",
+   "en": "do an examination or attend a course",
+   "ex": [
+    {
+     "en": "She is going to take the driving test next week.",
+     "ko": "그녀는 다음 주에 운전면허 시험을 칠 예정이다."
+    }
+   ]
+  },
+  {
+   "cue": "약을",
+   "ko": "복용하다",
+   "pos": "동사",
+   "lv": 5,
+   "cefr": "A2",
+   "en": "swallow or consume medicine",
+   "ex": [
+    {
+     "en": "Take this medicine twice a day.",
+     "ko": "이 약을 하루에 두 번 복용하세요."
+    }
+   ]
+  }
+ ],
+ "make": [
+  {
+   "cue": "물건을",
+   "ko": "만들다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "produce or create something",
+   "ex": [
+    {
+     "en": "She made a cake for the party.",
+     "ko": "그녀는 파티를 위해 케이크를 만들었다."
+    }
+   ]
+  },
+  {
+   "cue": "어떤 상태가 되게",
+   "ko": "~하게 만들다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "cause someone or something to be in a particular state",
+   "ex": [
+    {
+     "en": "That movie made me cry.",
+     "ko": "그 영화는 나를 울게 만들었다."
+    }
+   ]
+  },
+  {
+   "cue": "돈을",
+   "ko": "(돈을) 벌다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "A2",
+   "en": "earn money",
+   "ex": [
+    {
+     "en": "He makes a good salary as an engineer.",
+     "ko": "그는 엔지니어로 좋은 급여를 번다."
+    }
+   ]
+  },
+  {
+   "cue": "결정·선택을",
+   "ko": "(결정을) 내리다",
+   "pos": "동사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "decide on or reach something such as a decision or agreement",
+   "ex": [
+    {
+     "en": "We need to make a decision by Friday.",
+     "ko": "우리는 금요일까지 결정을 내려야 한다."
+    }
+   ]
+  }
+ ],
+ "light": [
+  {
+   "cue": "밝게 비추는",
+   "ko": "빛",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "the natural energy that comes from the sun, fire, or a lamp, allowing you to see",
+   "ex": [
+    {
+     "en": "Sunlight streamed through the window.",
+     "ko": "햇빛이 창문으로 쏟아져 들어왔다."
+    }
+   ]
+  },
+  {
+   "cue": "켜고 끄는 조명",
+   "ko": "전등, 조명",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "a device such as a lamp that produces light",
+   "ex": [
+    {
+     "en": "Please turn off the light before you leave.",
+     "ko": "나가기 전에 불 좀 꺼 주세요."
+    }
+   ]
+  },
+  {
+   "cue": "무게가",
+   "ko": "가벼운",
+   "pos": "형용사",
+   "lv": 3,
+   "cefr": "A1",
+   "en": "not heavy; easy to lift or carry",
+   "ex": [
+    {
+     "en": "This suitcase is much lighter than mine.",
+     "ko": "이 여행 가방은 내 것보다 훨씬 가볍다."
+    }
+   ]
+  },
+  {
+   "cue": "색이 연한",
+   "ko": "밝은, 연한",
+   "pos": "형용사",
+   "lv": 6,
+   "cefr": "A2",
+   "en": "(of a color) pale rather than dark",
+   "ex": [
+    {
+     "en": "She painted the room a light blue.",
+     "ko": "그녀는 방을 연한 파란색으로 칠했다."
+    }
+   ]
+  },
+  {
+   "cue": "담뱃불·초에 불을",
+   "ko": "불을 붙이다",
+   "pos": "동사",
+   "lv": 7,
+   "cefr": "A2",
+   "en": "make something start to burn",
+   "ex": [
+    {
+     "en": "He lit a candle on the table.",
+     "ko": "그는 탁자 위의 초에 불을 붙였다."
+    }
+   ]
+  }
+ ],
+ "book": [
+  {
+   "cue": "읽는 책",
+   "ko": "책",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a written work printed on pages and bound together",
+   "ex": [
+    {
+     "en": "She read a book before going to sleep.",
+     "ko": "그녀는 자기 전에 책을 읽었다."
+    }
+   ]
+  },
+  {
+   "cue": "표·자리를 미리",
+   "ko": "예약하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "arrange to have a seat, room, ticket, etc. at a future time",
+   "ex": [
+    {
+     "en": "We booked a table for two at the restaurant.",
+     "ko": "우리는 그 식당에 2인 테이블을 예약했다."
+    }
+   ]
+  }
+ ],
+ "right": [
+  {
+   "cue": "사실·답이",
+   "ko": "옳은, 맞는",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "correct or true",
+   "ex": [
+    {
+     "en": "You were right about the weather.",
+     "ko": "날씨에 대해 네 말이 맞았어."
+    }
+   ]
+  },
+  {
+   "cue": "방향이 오른쪽",
+   "ko": "오른쪽의",
+   "pos": "형용사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "on or towards the side of the body that is to the east when facing north",
+   "ex": [
+    {
+     "en": "Turn right at the next corner.",
+     "ko": "다음 모퉁이에서 오른쪽으로 도세요."
+    }
+   ]
+  },
+  {
+   "cue": "법적·도덕적",
+   "ko": "권리",
+   "pos": "명사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "something that you are morally or legally allowed to do or have",
+   "ex": [
+    {
+     "en": "Everyone has the right to education.",
+     "ko": "모든 사람은 교육받을 권리가 있다."
+    }
+   ]
+  },
+  {
+   "cue": "정확한 위치·시간에",
+   "ko": "바로, 정확히",
+   "pos": "부사",
+   "lv": 6,
+   "cefr": "A2",
+   "en": "exactly or immediately",
+   "ex": [
+    {
+     "en": "Stay right here until I come back.",
+     "ko": "내가 돌아올 때까지 바로 여기 있어."
+    }
+   ]
+  }
+ ],
+ "hold": [
+  {
+   "cue": "손으로 붙잡아",
+   "ko": "잡다, 들다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "have or keep something in your hand or arms",
+   "ex": [
+    {
+     "en": "She held the baby gently.",
+     "ko": "그녀는 아기를 부드럽게 안았다."
+    }
+   ]
+  },
+  {
+   "cue": "행사를",
+   "ko": "개최하다, 열다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "organize and take part in an event",
+   "ex": [
+    {
+     "en": "The school holds a festival every autumn.",
+     "ko": "그 학교는 매년 가을 축제를 개최한다."
+    }
+   ]
+  },
+  {
+   "cue": "자리·물건을 맡아",
+   "ko": "맡아 두다, 보류하다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "keep something for someone to use or collect later",
+   "ex": [
+    {
+     "en": "Can you hold my seat while I get some coffee?",
+     "ko": "내가 커피 가지러 가는 동안 내 자리 좀 맡아 줄래?"
+    }
+   ]
+  },
+  {
+   "cue": "공간·용량이",
+   "ko": "수용하다, 담다",
+   "pos": "동사",
+   "lv": 6,
+   "cefr": "B1",
+   "en": "have enough space for a certain amount or number",
+   "ex": [
+    {
+     "en": "This hall can hold up to 500 people.",
+     "ko": "이 홀은 최대 500명을 수용할 수 있다."
+    }
+   ]
+  },
+  {
+   "cue": "전화를 끊지 않고",
+   "ko": "(전화를) 끊지 않고 기다리다",
+   "pos": "동사",
+   "lv": 7,
+   "cefr": "B1",
+   "en": "wait on the phone without hanging up",
+   "ex": [
+    {
+     "en": "Please hold while I transfer your call.",
+     "ko": "전화 연결해 드리는 동안 끊지 말고 기다려 주세요."
+    }
+   ]
+  }
+ ],
+ "break": [
+  {
+   "cue": "물건이 깨져",
+   "ko": "부수다, 깨지다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "separate into pieces as a result of force",
+   "ex": [
+    {
+     "en": "He accidentally broke the window.",
+     "ko": "그는 실수로 창문을 깼다."
+    }
+   ]
+  },
+  {
+   "cue": "잠깐의 휴식",
+   "ko": "휴식, 쉬는 시간",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "a short period of rest from work or activity",
+   "ex": [
+    {
+     "en": "Let's take a ten-minute break.",
+     "ko": "10분 동안 휴식을 취하자."
+    }
+   ]
+  },
+  {
+   "cue": "법·약속을",
+   "ko": "어기다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "fail to keep a law, rule, or promise",
+   "ex": [
+    {
+     "en": "He broke his promise to call her.",
+     "ko": "그는 그녀에게 전화하겠다는 약속을 어겼다."
+    }
+   ]
+  },
+  {
+   "cue": "기록을",
+   "ko": "(기록을) 깨다",
+   "pos": "동사",
+   "lv": 6,
+   "cefr": "B1",
+   "en": "do better than a previous record",
+   "ex": [
+    {
+     "en": "She broke the world record in swimming.",
+     "ko": "그녀는 수영에서 세계 기록을 깼다."
+    }
+   ]
+  },
+  {
+   "cue": "뉴스·소식이",
+   "ko": "(소식이) 알려지다, 터지다",
+   "pos": "동사",
+   "lv": 8,
+   "cefr": "B2",
+   "en": "(of news) become known suddenly",
+   "ex": [
+    {
+     "en": "The scandal broke just before the election.",
+     "ko": "선거 직전에 그 스캔들이 터졌다."
+    }
+   ]
+  }
+ ],
+ "draw": [
+  {
+   "cue": "연필·펜으로 그림을",
+   "ko": "그리다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "make a picture using a pencil, pen, or crayon",
+   "ex": [
+    {
+     "en": "The kids drew pictures of their families.",
+     "ko": "아이들은 자기 가족 그림을 그렸다."
+    }
+   ]
+  },
+  {
+   "cue": "주의·관심을",
+   "ko": "끌다, 끌어당기다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "attract someone's attention or interest",
+   "ex": [
+    {
+     "en": "The street performer drew a large crowd.",
+     "ko": "그 거리 공연자는 많은 사람들을 끌어모았다."
+    }
+   ]
+  },
+  {
+   "cue": "경기가 비겨서",
+   "ko": "무승부, 비김",
+   "pos": "명사",
+   "lv": 6,
+   "cefr": "B1",
+   "en": "a result of a game or contest in which both sides have the same score",
+   "ex": [
+    {
+     "en": "The match ended in a 2-2 draw.",
+     "ko": "그 경기는 2대2 무승부로 끝났다."
+    }
+   ]
+  },
+  {
+   "cue": "결론을",
+   "ko": "(결론을) 내리다, 이끌어내다",
+   "pos": "동사",
+   "lv": 7,
+   "cefr": "B2",
+   "en": "reach a conclusion after considering information",
+   "ex": [
+    {
+     "en": "It's too early to draw any conclusions.",
+     "ko": "결론을 내리기에는 아직 이르다."
+    }
+   ]
+  }
+ ],
+ "play": [
+  {
+   "cue": "아이들이 재미로",
+   "ko": "놀다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "do things for enjoyment, especially as children do",
+   "ex": [
+    {
+     "en": "The children are playing in the park.",
+     "ko": "아이들이 공원에서 놀고 있다."
+    }
+   ]
+  },
+  {
+   "cue": "악기를",
+   "ko": "연주하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "perform music using an instrument",
+   "ex": [
+    {
+     "en": "She plays the violin beautifully.",
+     "ko": "그녀는 바이올린을 아름답게 연주한다."
+    }
+   ]
+  },
+  {
+   "cue": "운동 경기를",
+   "ko": "(스포츠를) 하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "take part in a sport or game",
+   "ex": [
+    {
+     "en": "He plays soccer every weekend.",
+     "ko": "그는 주말마다 축구를 한다."
+    }
+   ]
+  },
+  {
+   "cue": "배역·역할을",
+   "ko": "연기하다, 맡다",
+   "pos": "동사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "act the part of a character in a film or play",
+   "ex": [
+    {
+     "en": "She played the lead role in the movie.",
+     "ko": "그녀는 그 영화에서 주연을 맡았다."
+    }
+   ]
+  },
+  {
+   "cue": "무대에서 공연하는 작품",
+   "ko": "연극",
+   "pos": "명사",
+   "lv": 6,
+   "cefr": "A2",
+   "en": "a piece of writing performed by actors on stage",
+   "ex": [
+    {
+     "en": "We watched a play at the theater last night.",
+     "ko": "우리는 어젯밤 극장에서 연극을 봤다."
+    }
+   ]
+  }
+ ],
+ "turn": [
+  {
+   "cue": "몸·손잡이를 돌려",
+   "ko": "돌다, 돌리다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "move or cause something to move around a central point",
+   "ex": [
+    {
+     "en": "She turned the key and opened the door.",
+     "ko": "그녀는 열쇠를 돌려 문을 열었다."
+    }
+   ]
+  },
+  {
+   "cue": "길에서 방향을",
+   "ko": "방향을 바꾸다, 돌다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "change the direction you are facing or moving",
+   "ex": [
+    {
+     "en": "Turn left at the traffic light.",
+     "ko": "신호등에서 왼쪽으로 도세요."
+    }
+   ]
+  },
+  {
+   "cue": "순서·차례",
+   "ko": "차례, 순번",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "the time when someone is allowed or expected to do something in a set order",
+   "ex": [
+    {
+     "en": "It's your turn to choose the movie.",
+     "ko": "영화 고를 차례는 네 차례야."
+    }
+   ]
+  },
+  {
+   "cue": "상태·나이가 바뀌어",
+   "ko": "~이 되다, 변하다",
+   "pos": "동사",
+   "lv": 5,
+   "cefr": "A2",
+   "en": "become something or reach a particular state",
+   "ex": [
+    {
+     "en": "The leaves turn red in autumn.",
+     "ko": "가을이 되면 나뭇잎이 빨갛게 변한다."
+    }
+   ]
+  }
+ ],
+ "mean": [
+  {
+   "cue": "단어·행동이 뜻하는 바",
+   "ko": "의미하다, 뜻하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "have a particular meaning or sense",
+   "ex": [
+    {
+     "en": "What does this word mean?",
+     "ko": "이 단어는 무슨 뜻이야?"
+    }
+   ]
+  },
+  {
+   "cue": "진심으로",
+   "ko": "진심으로 말하다, 의도하다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "be serious or sincere about what you say",
+   "ex": [
+    {
+     "en": "I really mean it — thank you for everything.",
+     "ko": "진심이야, 모든 것에 고마워."
+    }
+   ]
+  },
+  {
+   "cue": "성격이 심술궂은",
+   "ko": "못된, 심술궂은",
+   "pos": "형용사",
+   "lv": 5,
+   "cefr": "A2",
+   "en": "unkind or unpleasant to other people",
+   "ex": [
+    {
+     "en": "It was mean of him to laugh at her.",
+     "ko": "그가 그녀를 비웃은 것은 못된 짓이었다."
+    }
+   ]
+  }
+ ],
+ "kind": [
+  {
+   "cue": "성격이 다정한",
+   "ko": "친절한",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "caring and helpful towards other people",
+   "ex": [
+    {
+     "en": "She is always kind to strangers.",
+     "ko": "그녀는 항상 낯선 사람들에게 친절하다."
+    }
+   ]
+  },
+  {
+   "cue": "종류·유형",
+   "ko": "종류",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "a group of things or people that share similar qualities",
+   "ex": [
+    {
+     "en": "What kind of music do you like?",
+     "ko": "어떤 종류의 음악을 좋아해?"
+    }
+   ]
+  }
+ ],
+ "fair": [
+  {
+   "cue": "규칙·대우가 공평한",
+   "ko": "공정한",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "treating everyone equally and reasonably",
+   "ex": [
+    {
+     "en": "The teacher was fair to all the students.",
+     "ko": "그 선생님은 모든 학생에게 공정했다."
+    }
+   ]
+  },
+  {
+   "cue": "놀이기구·물건을 파는 행사",
+   "ko": "축제, 박람회",
+   "pos": "명사",
+   "lv": 4,
+   "cefr": "A2",
+   "en": "an event where people buy and sell things or where rides and games are set up",
+   "ex": [
+    {
+     "en": "We went to the county fair last weekend.",
+     "ko": "우리는 지난 주말에 지역 축제에 갔다."
+    }
+   ]
+  },
+  {
+   "cue": "피부·머리색이 밝은",
+   "ko": "흰, 금발의",
+   "pos": "형용사",
+   "lv": 7,
+   "cefr": "B1",
+   "en": "(of hair or skin) light in color",
+   "ex": [
+    {
+     "en": "She has fair skin and blonde hair.",
+     "ko": "그녀는 흰 피부와 금발 머리를 가지고 있다."
+    }
+   ]
+  },
+  {
+   "cue": "날씨가 맑은",
+   "ko": "(날씨가) 맑은",
+   "pos": "형용사",
+   "lv": 9,
+   "cefr": "B2",
+   "en": "(of weather) fine and not raining",
+   "ex": [
+    {
+     "en": "The forecast promises fair weather this weekend.",
+     "ko": "일기예보에서 이번 주말은 맑은 날씨라고 한다."
+    }
+   ]
+  }
+ ],
+ "leave": [
+  {
+   "cue": "장소를 떠나서",
+   "ko": "떠나다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "go away from a place or person",
+   "ex": [
+    {
+     "en": "She left the office at six.",
+     "ko": "그녀는 6시에 사무실을 나갔다."
+    }
+   ]
+  },
+  {
+   "cue": "물건을 그대로 두고",
+   "ko": "남겨 두다, 두고 가다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "allow something to remain in a particular place or condition",
+   "ex": [
+    {
+     "en": "I left my umbrella on the bus.",
+     "ko": "나는 버스에 우산을 두고 내렸다."
+    }
+   ]
+  },
+  {
+   "cue": "직장에서의 휴가",
+   "ko": "휴가",
+   "pos": "명사",
+   "lv": 7,
+   "cefr": "B1",
+   "en": "a period of time when someone is allowed to be away from work",
+   "ex": [
+    {
+     "en": "She is on maternity leave for six months.",
+     "ko": "그녀는 6개월간 출산 휴가 중이다."
+    }
+   ]
+  }
+ ],
+ "fall": [
+  {
+   "cue": "사람·물건이 아래로",
+   "ko": "넘어지다, 떨어지다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "drop down or collapse to a lower position accidentally",
+   "ex": [
+    {
+     "en": "He slipped and fell on the ice.",
+     "ko": "그는 미끄러져 얼음 위에 넘어졌다."
+    }
+   ]
+  },
+  {
+   "cue": "계절 (미국식)",
+   "ko": "가을",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "A1",
+   "en": "the season between summer and winter",
+   "ex": [
+    {
+     "en": "The leaves change color in the fall.",
+     "ko": "가을에는 나뭇잎 색이 변한다."
+    }
+   ]
+  },
+  {
+   "cue": "가격·온도 등 수치가",
+   "ko": "하락하다, 내려가다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "A2",
+   "en": "decrease in amount, level, or value",
+   "ex": [
+    {
+     "en": "Prices fell sharply last month.",
+     "ko": "지난달 가격이 급격히 하락했다."
+    }
+   ]
+  },
+  {
+   "cue": "사랑·잠에 빠지다",
+   "ko": "(어떤 상태에) 빠지다",
+   "pos": "동사",
+   "lv": 6,
+   "cefr": "B1",
+   "en": "come to be in a particular state, especially suddenly",
+   "ex": [
+    {
+     "en": "They fell in love at first sight.",
+     "ko": "그들은 첫눈에 사랑에 빠졌다."
+    }
+   ]
+  }
+ ],
+ "miss": [
+  {
+   "cue": "버스·기회를 놓쳐서",
+   "ko": "놓치다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "fail to catch, reach, see, or do something",
+   "ex": [
+    {
+     "en": "I missed the bus this morning.",
+     "ko": "나는 오늘 아침 버스를 놓쳤다."
+    }
+   ]
+  },
+  {
+   "cue": "보고 싶은 사람을",
+   "ko": "그리워하다, 보고 싶어하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "feel sad because someone is not with you",
+   "ex": [
+    {
+     "en": "I really miss my family.",
+     "ko": "나는 가족이 정말 그립다."
+    }
+   ]
+  },
+  {
+   "cue": "미혼 여성 호칭",
+   "ko": "~양, ~씨",
+   "pos": "명사",
+   "lv": 6,
+   "cefr": "B1",
+   "en": "a title used before the name of an unmarried woman",
+   "ex": [
+    {
+     "en": "Miss Kim will help you with the paperwork.",
+     "ko": "김 양이 서류 작업을 도와드릴 겁니다."
+    }
+   ]
+  }
+ ],
+ "match": [
+  {
+   "cue": "색·스타일이 서로",
+   "ko": "어울리다, 일치하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "be similar to or go well with something else",
+   "ex": [
+    {
+     "en": "Her shoes match her bag perfectly.",
+     "ko": "그녀의 신발은 가방과 완벽하게 어울린다."
+    }
+   ]
+  },
+  {
+   "cue": "스포츠 경기",
+   "ko": "경기, 시합",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "an organized contest between two players or teams",
+   "ex": [
+    {
+     "en": "They watched the soccer match together.",
+     "ko": "그들은 함께 축구 경기를 봤다."
+    }
+   ]
+  },
+  {
+   "cue": "불을 붙이는 작은 막대",
+   "ko": "성냥",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "A1",
+   "en": "a small stick that produces fire when you rub it against a rough surface",
+   "ex": [
+    {
+     "en": "He lit the candle with a match.",
+     "ko": "그는 성냥으로 초에 불을 붙였다."
+    }
+   ]
+  }
+ ],
+ "bank": [
+  {
+   "cue": "돈을 맡기는 곳",
+   "ko": "은행",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "an organization where people keep their money",
+   "ex": [
+    {
+     "en": "She works at a bank downtown.",
+     "ko": "그녀는 시내에 있는 은행에서 일한다."
+    }
+   ]
+  },
+  {
+   "cue": "강의 가장자리",
+   "ko": "강둑, 둔치",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "the land along the edge of a river",
+   "ex": [
+    {
+     "en": "They had a picnic on the river bank.",
+     "ko": "그들은 강둑에서 소풍을 즐겼다."
+    }
+   ]
+  }
+ ],
+ "bark": [
+  {
+   "cue": "개가 짖는 소리",
+   "ko": "(개가) 짖다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "(of a dog) make a short, loud sound",
+   "ex": [
+    {
+     "en": "The dog barked at the mailman.",
+     "ko": "그 개는 우편배달부를 보고 짖었다."
+    }
+   ]
+  },
+  {
+   "cue": "나무 겉면",
+   "ko": "나무껍질",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "the hard outer covering of a tree",
+   "ex": [
+    {
+     "en": "The bark of this tree is very rough.",
+     "ko": "이 나무의 껍질은 매우 거칠다."
+    }
+   ]
+  }
+ ],
+ "bat": [
+  {
+   "cue": "밤에 나는 동물",
+   "ko": "박쥐",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a small flying animal that is active at night",
+   "ex": [
+    {
+     "en": "Bats sleep upside down during the day.",
+     "ko": "박쥐는 낮 동안 거꾸로 매달려 잔다."
+    }
+   ]
+  },
+  {
+   "cue": "야구·크리켓에서 치는 도구",
+   "ko": "방망이, 배트",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "a wooden or metal club used to hit the ball in sports like baseball",
+   "ex": [
+    {
+     "en": "He swung the bat and hit a home run.",
+     "ko": "그는 방망이를 휘둘러 홈런을 쳤다."
+    }
+   ]
+  }
+ ],
+ "bear": [
+  {
+   "cue": "숲에 사는 동물",
+   "ko": "곰",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a large, heavy wild animal with thick fur",
+   "ex": [
+    {
+     "en": "A bear wandered into the campsite.",
+     "ko": "곰 한 마리가 야영지로 들어왔다."
+    }
+   ]
+  },
+  {
+   "cue": "고통·상황을",
+   "ko": "참다, 견디다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "accept or deal with something unpleasant, especially with patience",
+   "ex": [
+    {
+     "en": "She couldn't bear the pain any longer.",
+     "ko": "그녀는 더 이상 그 고통을 견딜 수 없었다."
+    }
+   ]
+  },
+  {
+   "cue": "책임·비용을",
+   "ko": "(책임을) 지다, 부담하다",
+   "pos": "동사",
+   "lv": 7,
+   "cefr": "B2",
+   "en": "be responsible for something, such as a cost or a duty",
+   "ex": [
+    {
+     "en": "The company will bear the cost of repairs.",
+     "ko": "그 회사가 수리 비용을 부담할 것이다."
+    }
+   ]
+  }
+ ],
+ "spring": [
+  {
+   "cue": "겨울 다음 계절",
+   "ko": "봄",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "the season between winter and summer",
+   "ex": [
+    {
+     "en": "Flowers bloom in spring.",
+     "ko": "봄에는 꽃이 핀다."
+    }
+   ]
+  },
+  {
+   "cue": "금속 코일",
+   "ko": "용수철, 스프링",
+   "pos": "명사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "a coiled piece of metal that returns to its original shape after being pressed or pulled",
+   "ex": [
+    {
+     "en": "The mattress has springs inside it.",
+     "ko": "그 매트리스 안에는 스프링이 들어 있다."
+    }
+   ]
+  },
+  {
+   "cue": "갑자기 튀어 오르다",
+   "ko": "뛰어오르다, 튀다",
+   "pos": "동사",
+   "lv": 6,
+   "cefr": "B1",
+   "en": "jump or move suddenly and quickly",
+   "ex": [
+    {
+     "en": "The cat sprang onto the shelf.",
+     "ko": "고양이가 갑자기 선반 위로 뛰어올랐다."
+    }
+   ]
+  }
+ ],
+ "rock": [
+  {
+   "cue": "단단한 돌덩이",
+   "ko": "바위, 돌",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a large piece of stone",
+   "ex": [
+    {
+     "en": "They climbed over the rocks on the beach.",
+     "ko": "그들은 해변의 바위들을 넘어갔다."
+    }
+   ]
+  },
+  {
+   "cue": "좌우로 흔들다",
+   "ko": "흔들다, 흔들리다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "move gently backward and forward or from side to side",
+   "ex": [
+    {
+     "en": "She rocked the baby to sleep.",
+     "ko": "그녀는 아기를 흔들어 재웠다."
+    }
+   ]
+  },
+  {
+   "cue": "기타·드럼 음악 장르",
+   "ko": "록 음악",
+   "pos": "명사",
+   "lv": 4,
+   "cefr": "A2",
+   "en": "a type of popular music with a strong beat, usually played with electric guitars",
+   "ex": [
+    {
+     "en": "He loves listening to classic rock.",
+     "ko": "그는 클래식 록 음악 듣는 것을 좋아한다."
+    }
+   ]
+  }
+ ],
+ "ring": [
+  {
+   "cue": "손가락에 끼는 장신구",
+   "ko": "반지",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a piece of jewelry worn on a finger",
+   "ex": [
+    {
+     "en": "He proposed with a diamond ring.",
+     "ko": "그는 다이아몬드 반지로 프러포즈했다."
+    }
+   ]
+  },
+  {
+   "cue": "전화벨·종소리가",
+   "ko": "울리다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "make a clear, loud sound like a bell",
+   "ex": [
+    {
+     "en": "The phone rang three times before she answered.",
+     "ko": "그녀가 받기 전에 전화가 세 번 울렸다."
+    }
+   ]
+  },
+  {
+   "cue": "둥근 모양의 고리",
+   "ko": "원, 고리",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "A2",
+   "en": "an object or shape in the form of a circle",
+   "ex": [
+    {
+     "en": "The children stood in a ring around the tree.",
+     "ko": "아이들은 나무 주위에 원을 그리며 섰다."
+    }
+   ]
+  },
+  {
+   "cue": "권투 경기장",
+   "ko": "(권투) 링",
+   "pos": "명사",
+   "lv": 8,
+   "cefr": "B1",
+   "en": "the square area where boxers fight",
+   "ex": [
+    {
+     "en": "The boxers stepped into the ring.",
+     "ko": "그 복서들은 링 안으로 들어갔다."
+    }
+   ]
+  }
+ ],
+ "watch": [
+  {
+   "cue": "TV·경기 등을",
+   "ko": "보다, 시청하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "look at something for a period of time, especially something moving or changing",
+   "ex": [
+    {
+     "en": "We watched a movie last night.",
+     "ko": "우리는 어젯밤 영화를 봤다."
+    }
+   ]
+  },
+  {
+   "cue": "손목에 차는 시계",
+   "ko": "손목시계",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "a small device worn on the wrist that shows the time",
+   "ex": [
+    {
+     "en": "He checked his watch and hurried out.",
+     "ko": "그는 손목시계를 확인하고 서둘러 나갔다."
+    }
+   ]
+  },
+  {
+   "cue": "위험·상황을 조심해서",
+   "ko": "조심하다, 주의하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "be careful about something",
+   "ex": [
+    {
+     "en": "Watch your step on the stairs.",
+     "ko": "계단에서 발밑 조심하세요."
+    }
+   ]
+  },
+  {
+   "cue": "누군가를 몰래 지켜보다",
+   "ko": "지켜보다, 감시하다",
+   "pos": "동사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "keep someone or something under close observation",
+   "ex": [
+    {
+     "en": "The guard watched the entrance all night.",
+     "ko": "경비원은 밤새 입구를 지켜보았다."
+    }
+   ]
+  }
+ ],
+ "wave": [
+  {
+   "cue": "바다에서 일렁이는 물결",
+   "ko": "파도",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a raised line of water that moves across the surface of the sea",
+   "ex": [
+    {
+     "en": "The children played in the waves.",
+     "ko": "아이들이 파도 속에서 놀았다."
+    }
+   ]
+  },
+  {
+   "cue": "손을 흔들어 인사",
+   "ko": "손을 흔들다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "move your hand from side to side to greet someone or attract attention",
+   "ex": [
+    {
+     "en": "She waved at me from across the street.",
+     "ko": "그녀는 길 건너편에서 나에게 손을 흔들었다."
+    }
+   ]
+  },
+  {
+   "cue": "더위·범죄 등이 갑자기 몰려오는",
+   "ko": "(현상의) 물결, 급증",
+   "pos": "명사",
+   "lv": 7,
+   "cefr": "B2",
+   "en": "a sudden increase in a particular activity or feeling that spreads through a place",
+   "ex": [
+    {
+     "en": "The country is experiencing a heat wave.",
+     "ko": "그 나라는 폭염을 겪고 있다."
+    }
+   ]
+  }
+ ],
+ "note": [
+  {
+   "cue": "짧게 적은 글",
+   "ko": "메모, 쪽지",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a short piece of writing that helps you remember something",
+   "ex": [
+    {
+     "en": "She left a note on the fridge.",
+     "ko": "그녀는 냉장고에 메모를 남겼다."
+    }
+   ]
+  },
+  {
+   "cue": "특히 유의해서",
+   "ko": "주목하다, 유의하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "notice or pay careful attention to something",
+   "ex": [
+    {
+     "en": "Please note that the office is closed on Sundays.",
+     "ko": "사무실은 일요일에 문을 닫는다는 점을 유의해 주세요."
+    }
+   ]
+  },
+  {
+   "cue": "악기가 내는 음",
+   "ko": "음, 음표",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "A2",
+   "en": "a single musical sound of a particular pitch",
+   "ex": [
+    {
+     "en": "She hit a wrong note during the performance.",
+     "ko": "그녀는 공연 중에 잘못된 음을 냈다."
+    }
+   ]
+  },
+  {
+   "cue": "지폐 (영국식)",
+   "ko": "지폐",
+   "pos": "명사",
+   "lv": 7,
+   "cefr": "B1",
+   "en": "a piece of paper money",
+   "ex": [
+    {
+     "en": "He paid with a ten-pound note.",
+     "ko": "그는 10파운드 지폐로 계산했다."
+    }
+   ]
+  }
+ ],
+ "order": [
+  {
+   "cue": "음식·물건을",
+   "ko": "주문하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "ask for something to be brought, made, or supplied",
+   "ex": [
+    {
+     "en": "We ordered pizza for dinner.",
+     "ko": "우리는 저녁으로 피자를 주문했다."
+    }
+   ]
+  },
+  {
+   "cue": "차례·배열",
+   "ko": "순서",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "the way in which things are arranged in relation to each other",
+   "ex": [
+    {
+     "en": "Please put the names in alphabetical order.",
+     "ko": "이름을 알파벳 순서대로 정리해 주세요."
+    }
+   ]
+  },
+  {
+   "cue": "윗사람의 지시",
+   "ko": "명령",
+   "pos": "명사",
+   "lv": 4,
+   "cefr": "A2",
+   "en": "an instruction given by someone in authority",
+   "ex": [
+    {
+     "en": "The soldiers followed the general's orders.",
+     "ko": "병사들은 장군의 명령을 따랐다."
+    }
+   ]
+  },
+  {
+   "cue": "사회가 잘 유지되는 상태",
+   "ko": "질서",
+   "pos": "명사",
+   "lv": 7,
+   "cefr": "B1",
+   "en": "a situation in which everything is well organized and follows rules or laws",
+   "ex": [
+    {
+     "en": "The police worked to restore order after the riot.",
+     "ko": "경찰은 폭동 이후 질서를 회복하려 노력했다."
+    }
+   ]
+  }
+ ],
+ "present": [
+  {
+   "cue": "생일·기념일에 주는",
+   "ko": "선물",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a thing given to someone as a gift",
+   "ex": [
+    {
+     "en": "She gave him a present for his birthday.",
+     "ko": "그녀는 그의 생일에 선물을 주었다."
+    }
+   ]
+  },
+  {
+   "cue": "지금 이 순간",
+   "ko": "현재",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "the period of time that is happening now",
+   "ex": [
+    {
+     "en": "Let's focus on the present instead of worrying about the future.",
+     "ko": "미래를 걱정하는 대신 현재에 집중하자."
+    }
+   ]
+  },
+  {
+   "cue": "정보·계획을 청중에게",
+   "ko": "제시하다, 발표하다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "show or explain something to a group of people",
+   "ex": [
+    {
+     "en": "She presented her research at the conference.",
+     "ko": "그녀는 학회에서 자신의 연구를 발표했다."
+    }
+   ]
+  },
+  {
+   "cue": "자리에 있는",
+   "ko": "참석한, 있는",
+   "pos": "형용사",
+   "lv": 6,
+   "cefr": "B1",
+   "en": "being in a particular place at a particular time",
+   "ex": [
+    {
+     "en": "All the students were present for the exam.",
+     "ko": "모든 학생이 시험에 참석했다."
+    }
+   ]
+  }
+ ],
+ "close": [
+  {
+   "cue": "문·가게를",
+   "ko": "닫다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "shut something so there is no opening",
+   "ex": [
+    {
+     "en": "Please close the door when you leave.",
+     "ko": "나갈 때 문 좀 닫아 주세요."
+    }
+   ]
+  },
+  {
+   "cue": "거리·사이가 가까운",
+   "ko": "가까운",
+   "pos": "형용사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "near in distance or time",
+   "ex": [
+    {
+     "en": "The hotel is close to the beach.",
+     "ko": "그 호텔은 해변에서 가깝다."
+    }
+   ]
+  },
+  {
+   "cue": "관계가 친밀한",
+   "ko": "친한, 가까운",
+   "pos": "형용사",
+   "lv": 4,
+   "cefr": "A2",
+   "en": "having a strong friendship or bond with someone",
+   "ex": [
+    {
+     "en": "She is very close to her sister.",
+     "ko": "그녀는 언니와 매우 가깝다."
+    }
+   ]
+  }
+ ],
+ "park": [
+  {
+   "cue": "산책·놀이하는 녹지",
+   "ko": "공원",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a public area with grass and trees where people can walk and relax",
+   "ex": [
+    {
+     "en": "They had a picnic in the park.",
+     "ko": "그들은 공원에서 소풍을 즐겼다."
+    }
+   ]
+  },
+  {
+   "cue": "차를 세워두다",
+   "ko": "주차하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "leave a vehicle somewhere for a period of time",
+   "ex": [
+    {
+     "en": "He parked the car in front of the building.",
+     "ko": "그는 건물 앞에 차를 주차했다."
+    }
+   ]
+  }
+ ],
+ "cool": [
+  {
+   "cue": "온도가 시원한",
+   "ko": "시원한, 서늘한",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "slightly cold; not warm",
+   "ex": [
+    {
+     "en": "There was a cool breeze in the evening.",
+     "ko": "저녁에 시원한 바람이 불었다."
+    }
+   ]
+  },
+  {
+   "cue": "멋지다는 느낌 (구어)",
+   "ko": "멋진, 근사한",
+   "pos": "형용사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "fashionable or impressive (informal)",
+   "ex": [
+    {
+     "en": "That's a really cool jacket.",
+     "ko": "그거 정말 멋진 재킷이네."
+    }
+   ]
+  },
+  {
+   "cue": "뜨거운 것을 식혀서",
+   "ko": "식히다",
+   "pos": "동사",
+   "lv": 5,
+   "cefr": "A2",
+   "en": "make something less hot",
+   "ex": [
+    {
+     "en": "Let the soup cool before you eat it.",
+     "ko": "먹기 전에 수프를 좀 식혀."
+    }
+   ]
+  },
+  {
+   "cue": "흥분을 가라앉히고",
+   "ko": "차분한, 침착한",
+   "pos": "형용사",
+   "lv": 6,
+   "cefr": "B1",
+   "en": "calm and not showing much emotion, especially under pressure",
+   "ex": [
+    {
+     "en": "She stayed cool during the emergency.",
+     "ko": "그녀는 그 비상 상황에서도 침착함을 유지했다."
+    }
+   ]
+  }
+ ],
+ "dry": [
+  {
+   "cue": "물기가 없는",
+   "ko": "마른, 건조한",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "free from water or moisture",
+   "ex": [
+    {
+     "en": "The towels are already dry.",
+     "ko": "수건들이 벌써 다 말랐다."
+    }
+   ]
+  },
+  {
+   "cue": "젖은 것을 말리다",
+   "ko": "말리다, 마르다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "remove moisture from something, or become free of moisture",
+   "ex": [
+    {
+     "en": "Hang the clothes outside to dry.",
+     "ko": "빨래를 밖에 널어서 말려."
+    }
+   ]
+  },
+  {
+   "cue": "유머·강의가 재미없는",
+   "ko": "무미건조한, 재미없는",
+   "pos": "형용사",
+   "lv": 8,
+   "cefr": "B2",
+   "en": "boring or lacking liveliness",
+   "ex": [
+    {
+     "en": "The lecture was long and dry.",
+     "ko": "그 강의는 길고 무미건조했다."
+    }
+   ]
+  }
+ ],
+ "hard": [
+  {
+   "cue": "재질이 단단한",
+   "ko": "단단한",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "firm and solid; not easy to press or break",
+   "ex": [
+    {
+     "en": "The rock felt hard and cold.",
+     "ko": "그 바위는 단단하고 차갑게 느껴졌다."
+    }
+   ]
+  },
+  {
+   "cue": "일·문제가 어려운",
+   "ko": "어려운",
+   "pos": "형용사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "difficult to do or understand",
+   "ex": [
+    {
+     "en": "This math problem is really hard.",
+     "ko": "이 수학 문제는 정말 어렵다."
+    }
+   ]
+  },
+  {
+   "cue": "노력을 많이 들여",
+   "ko": "열심히",
+   "pos": "부사",
+   "lv": 3,
+   "cefr": "A1",
+   "en": "with a lot of effort or energy",
+   "ex": [
+    {
+     "en": "She worked hard to pass the exam.",
+     "ko": "그녀는 시험에 합격하려고 열심히 공부했다."
+    }
+   ]
+  }
+ ],
+ "sharp": [
+  {
+   "cue": "칼날이 잘 드는",
+   "ko": "날카로운",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "having a fine cutting edge or point",
+   "ex": [
+    {
+     "en": "Be careful, the knife is very sharp.",
+     "ko": "조심해, 그 칼은 아주 날카로워."
+    }
+   ]
+  },
+  {
+   "cue": "두뇌 회전이 빠른",
+   "ko": "영리한, 예리한",
+   "pos": "형용사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "quick to notice, understand, or judge things",
+   "ex": [
+    {
+     "en": "She has a sharp mind for numbers.",
+     "ko": "그녀는 숫자에 예리한 두뇌를 가지고 있다."
+    }
+   ]
+  },
+  {
+   "cue": "통증이 갑자기 강하게",
+   "ko": "(통증이) 격렬한, 찌르는 듯한",
+   "pos": "형용사",
+   "lv": 6,
+   "cefr": "B1",
+   "en": "(of pain) sudden and intense",
+   "ex": [
+    {
+     "en": "He felt a sharp pain in his chest.",
+     "ko": "그는 가슴에 격렬한 통증을 느꼈다."
+    }
+   ]
+  },
+  {
+   "cue": "증가·감소가 급격한",
+   "ko": "급격한",
+   "pos": "형용사",
+   "lv": 7,
+   "cefr": "B2",
+   "en": "(of a change) sudden and significant",
+   "ex": [
+    {
+     "en": "There was a sharp rise in prices.",
+     "ko": "물가가 급격히 상승했다."
+    }
+   ]
+  },
+  {
+   "cue": "시간이 정각에",
+   "ko": "정각에, 딱 맞춰",
+   "pos": "부사",
+   "lv": 9,
+   "cefr": "B1",
+   "en": "exactly at a stated time",
+   "ex": [
+    {
+     "en": "The meeting starts at nine sharp.",
+     "ko": "회의는 9시 정각에 시작한다."
+    }
+   ]
+  }
+ ],
+ "charge": [
+  {
+   "cue": "이용·서비스 비용을",
+   "ko": "청구하다, 부과하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "ask someone to pay a particular amount of money for something",
+   "ex": [
+    {
+     "en": "The hotel charges extra for breakfast.",
+     "ko": "그 호텔은 조식에 추가 요금을 청구한다."
+    }
+   ]
+  },
+  {
+   "cue": "지불해야 할 금액",
+   "ko": "요금, 비용",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "an amount of money that you must pay for goods or services",
+   "ex": [
+    {
+     "en": "There is no charge for delivery.",
+     "ko": "배송비는 청구되지 않는다."
+    }
+   ]
+  },
+  {
+   "cue": "배터리에 전기를",
+   "ko": "충전하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "fill a battery with electrical power",
+   "ex": [
+    {
+     "en": "I need to charge my phone.",
+     "ko": "내 휴대폰을 충전해야 한다."
+    }
+   ]
+  },
+  {
+   "cue": "어떤 일을 책임지고 담당",
+   "ko": "책임, 담당",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "the responsibility for taking care of or controlling something",
+   "ex": [
+    {
+     "en": "She is in charge of the marketing team.",
+     "ko": "그녀는 마케팅 팀을 책임지고 있다."
+    }
+   ]
+  },
+  {
+   "cue": "범죄 혐의로",
+   "ko": "기소하다, 고발하다",
+   "pos": "동사",
+   "lv": 8,
+   "cefr": "B2",
+   "en": "formally accuse someone of a crime",
+   "ex": [
+    {
+     "en": "He was charged with theft.",
+     "ko": "그는 절도 혐의로 기소되었다."
+    }
+   ]
+  }
+ ],
+ "current": [
+  {
+   "cue": "지금의 상황·상태",
+   "ko": "현재의",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "happening or existing now",
+   "ex": [
+    {
+     "en": "What is your current job?",
+     "ko": "현재 하고 있는 일이 무엇인가요?"
+    }
+   ]
+  },
+  {
+   "cue": "전기가 흐르는",
+   "ko": "전류",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "a flow of electricity through a wire or circuit",
+   "ex": [
+    {
+     "en": "An electric current flows through the wire.",
+     "ko": "전선에 전류가 흐른다."
+    }
+   ]
+  },
+  {
+   "cue": "강·바다·공기의 흐름",
+   "ko": "해류, 기류",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "B2",
+   "en": "a continuous flowing movement of water or air in one direction",
+   "ex": [
+    {
+     "en": "The boat was pulled by a strong current.",
+     "ko": "그 배는 강한 해류에 휩쓸렸다."
+    }
+   ]
+  }
+ ]
 }
