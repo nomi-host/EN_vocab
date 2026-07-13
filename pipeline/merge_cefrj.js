@@ -8,11 +8,13 @@
    동작: enriched 리스트를 기준으로, 배치에 ko가 있는 단어만 최종 words.js에 편입.
          (아직 작성 안 된 단어는 조용히 건너뜀 — 미완성 데이터를 앱에 노출하지 않음)
    출처: CEFR-J Wordlist(Tono Lab, TUFS) — 연구·상업 목적 무료 이용 가능(출처 표시 조건).
-         WordNet 3.0(Princeton, 오프라인). 한국어 뜻·예문은 자체 작성.
+         WordNet 3.0(Princeton, 오프라인). 발음기호(ipa)는 CMUdict(오프라인, ISC 라이선스,
+         ARPABET→IPA 변환은 pipeline/ipa.js). 한국어 뜻·예문은 자체 작성.
    실행: node pipeline/merge_cefrj.js [출력파일]
 ============================================================================ */
 const fs = require("fs");
 const path = require("path");
+const { ipaFor } = require("./ipa.js");
 
 const ROOT = path.resolve(__dirname, "..");
 const BATCH_DIR = path.join(__dirname, "batches");
@@ -94,7 +96,7 @@ function main() {
         const net = network[key];
         const entry = {
           word: hw.word,
-          ipa: "",
+          ipa: ipaFor(hw.word),
           pos: posTags,
           cefr: hw.cefr,
           ko: a.ko,
@@ -121,6 +123,7 @@ function main() {
    ----------------------------------------------------------------------------
    표제어/CEFR/품사 = CEFR-J Wordlist(Tono Lab, TUFS — 연구·상업 무료, 출처 표시 조건)
    영영 정의(en)/유의어(syn)/반의어(ant)/파생어(forms) = WordNet 3.0(Princeton, 오프라인 추출)
+   발음기호(ipa) = CMUdict(오프라인, ARPABET→IPA 변환, pipeline/ipa.js) — 사전에 없는 단어는 빈 문자열
    한국어 뜻(ko)/예문(ex) = 자체 작성(LLM 갭필 단계를 세션 내 직접 수행)
    ※ 직접 수정하지 말 것 — pipeline/batches/*.json 수정 후 재빌드(node pipeline/merge_cefrj.js).
    진행 현황: pipeline/PROGRESS.md 참조.

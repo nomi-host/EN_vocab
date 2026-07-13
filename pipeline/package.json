@@ -7,6 +7,7 @@
     "build": "node build_seed.js"
   },
   "dependencies": {
+    "cmu-pronouncing-dictionary": "^3.0.0",
     "wordpos": "2.1.0"
   }
 }
