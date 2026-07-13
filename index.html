@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.12.0">
+<link rel="manifest" href="manifest.json?v=0.13.0">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.12.0"></script>
-<script src="img/rat_run.js?v=0.12.0"></script>
+<script src="words.js?v=0.13.0"></script>
+<script src="img/rat_run.js?v=0.13.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -337,6 +337,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qchoice{width:100%;text-align:left;padding:13px 15px;border-radius:13px;background:var(--fill);font-size:15px;font-weight:700;color:var(--ink-2);border:1.5px solid transparent;}
 .qchoice.correct{background:var(--accent-soft);color:var(--accent-deep);border-color:var(--accent);}
 .qchoice.wrong{background:#fbe9e9;color:#d64545;border-color:#d64545;}
+/* 듣기 세션(딕테이션) */
+.qdictate{width:100%;border:none;border-radius:12px;background:var(--fill);font:inherit;font-weight:600;font-size:16px;line-height:1.5;color:var(--ink);padding:12px 14px;outline:none;resize:none;}
+.qdictate:focus{background:#e9ebef;}
+.qdictate-result{font-size:16px;line-height:1.7;}
+.dw-ok{color:var(--ink);}
+.dw-bad{color:#d64545;text-decoration:underline;text-decoration-color:#d6454577;}
 .qactions{margin-top:auto;display:flex;gap:8px;}
 .qactions button{flex:1;padding:14px;border-radius:14px;font-weight:700;font-size:15px;}
 .qactions .ghost{background:var(--surface);border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow);}
@@ -385,7 +391,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.12.0";
+const APP_VERSION = "v0.13.0";
 const APP_BUILD = "2026-07-13"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -665,6 +671,14 @@ function buildQuiz(n = 10) {
     for (let a = choices.length - 1; a > 0; a--) { const b = Math.floor(Math.random() * (a + 1));[choices[a], choices[b]] = [choices[b], choices[a]]; }
     return { type: "choice", it, choices };
   });
+}
+
+/* 듣기 세션(딕테이션) 문제 구성: 퀴즈와 같은 이유로 이미 학습한 단어의 예문만 사용.
+   학습한 단어가 4개 미만이면 문제 구성 불가(null). */
+function buildDictation(n = 10) {
+  const studied = allItems().filter(it => SRS.get(it.key));
+  if (studied.length < 4) return null;
+  return [...studied].sort(() => Math.random() - 0.5).slice(0, n);
 }
 
 /* ---------- 홈 탭 ---------- */
@@ -1737,12 +1751,97 @@ function QuizSession({ questions, onExit }) {
   );
 }
 
+/* ---------- 듣기 세션(딕테이션) ---------- */
+/* 문장 전체를 듣고 그대로 타이핑. 새 문제로 넘어가면 자동 재생, 다시 듣기·느리게 듣기(0.7x)는
+   언제든 다시 누를 수 있음(정답 여부와 무관하게 항상 노출). 채점은 구두점 무시·소문자 비교,
+   단어 단위로 맞은 곳/틀린 곳을 색으로 대조 표시. 카드·퀴즈와 마찬가지로 SRS에는 영향 없음. */
+function DictationSession({ items, onExit }) {
+  const [idx, setIdx] = useState(0);
+  const [correct, setCorrect] = useState(0);
+  const [val, setVal] = useState("");
+  const [res, setRes] = useState(null); // null | {ok, diff}
+
+  const it = items[idx];
+  const speak = speakText;
+
+  useEffect(() => {
+    speak(it.ex.en);
+    // eslint-disable-next-line
+  }, [idx]);
+
+  const normalize = s => s.toLowerCase().replace(/[^a-z0-9' ]/g, " ").replace(/\s+/g, " ").trim();
+
+  const submit = () => {
+    if (res) return;
+    const v = val.trim();
+    if (!v) return;
+    const expWords = normalize(it.ex.en).split(" ");
+    const gotWords = normalize(v).split(" ");
+    const ok = gotWords.join(" ") === expWords.join(" ");
+    if (ok) setCorrect(c => c + 1);
+    setRes({ ok, diff: expWords.map((w, i) => ({ w, ok: gotWords[i] === w })) });
+  };
+
+  const next = () => {
+    if (idx + 1 >= items.length) { onExit(true, correct, items.length); return; }
+    setIdx(idx + 1); setVal(""); setRes(null);
+  };
+
+  return (
+    <div className="content study">
+      <div className="study-top">
+        <button className="x" onClick={() => onExit(false, correct)} aria-label="종료"><Icon name="close" size={22} /></button>
+        <div className="study-bar"><i style={{ width: ((idx + (res ? 1 : 0)) / items.length * 100) + "%" }} /></div>
+        <span className="study-n">{idx + 1} / {items.length}</span>
+      </div>
+
+      <div className="qcard">
+        <div className="qlvrow">
+          <span className="qaudio">
+            <button onClick={() => speak(it.ex.en)} aria-label="다시 듣기"><Icon name="replay" size={16} /></button>
+            <button onClick={() => speak(it.ex.en, 0.7)} aria-label="느리게 듣기">0.7x</button>
+          </span>
+          <span className="tag lv">{it.cefr}</span>
+        </div>
+        <span className="qhint">문장을 듣고 그대로 타이핑하세요.</span>
+        {!res ? (
+          <textarea className="qdictate" autoFocus value={val} onChange={e => setVal(e.target.value)}
+            onKeyDown={e => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); submit(); } }}
+            rows={2} autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+            placeholder="들은 문장을 입력하세요" aria-label="딕테이션 입력" />
+        ) : (
+          <div className="qdictate-result">
+            {res.diff.map((d, i) => <span key={i} className={d.ok ? "dw-ok" : "dw-bad"}>{d.w} </span>)}
+          </div>
+        )}
+        {res && (
+          <div className={"qres " + (res.ok ? "ok" : "no")}>
+            {res.ok ? <Icon name="check" size={18} /> : <Icon name="close" size={18} />}
+            {res.ok ? "정답!" : "빨간 글자를 다시 확인해 보세요"}
+          </div>
+        )}
+        {res && <div className="qcue">{it.ex.ko}</div>}
+      </div>
+
+      {!res ? (
+        <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={submit}>확인</button>
+      ) : (
+        <div className="qactions">
+          <button className="primary" onClick={next}>{idx + 1 >= items.length ? "결과 보기" : "다음 문제"}</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 /* ---------- 학습 탭 ---------- */
 function Learn({ onOpenWord, customStudy, onConsumeCustomStudy }) {
   const [session, setSession] = useState(null); // null | {items} | "done"
   const [summary, setSummary] = useState(null);
   const [quiz, setQuiz] = useState(null); // null | questions[] | "done"
   const [quizSummary, setQuizSummary] = useState(null);
+  const [dictation, setDictation] = useState(null); // null | items[] | "done"
+  const [dictationSummary, setDictationSummary] = useState(null);
   const dueCount = allItems().filter(it => SRS.isDue(it.key)).length;
   const newCount = allItems().filter(it => !SRS.get(it.key)).length;
   const studiedCount = allItems().filter(it => SRS.get(it.key)).length;
@@ -1778,6 +1877,18 @@ function Learn({ onOpenWord, customStudy, onConsumeCustomStudy }) {
         else setQuiz(null);
       }} />;
   }
+  if (dictation === "done" && dictationSummary) {
+    return <Finish total={dictationSummary.total} correct={dictationSummary.correct}
+      title="듣기 세션 완료" sub="정답 여부는 SRS 복습 일정에는 영향을 주지 않아요."
+      onExit={() => { setDictation(null); setDictationSummary(null); }} />;
+  }
+  if (dictation) {
+    return <DictationSession items={dictation}
+      onExit={(done, correct, total) => {
+        if (done) { setDictationSummary({ total: total ?? dictation.length, correct }); setDictation("done"); }
+        else setDictation(null);
+      }} />;
+  }
 
   const start = () => {
     const items = pickSession(10);
@@ -1787,10 +1898,14 @@ function Learn({ onOpenWord, customStudy, onConsumeCustomStudy }) {
     const qs = buildQuiz(10);
     if (qs) setQuiz(qs);
   };
+  const startDictation = () => {
+    const its = buildDictation(10);
+    if (its) setDictation(its);
+  };
 
   const MENU = [
     { k: "card", icon: "school", title: "단어카드", sub: `복습 ${dueCount} · 신규 ${newCount} 대기`, on: true, start },
-    { k: "listen", icon: "volume_up", title: "듣기 세션 (딕테이션)", sub: "준비 중", on: false },
+    { k: "listen", icon: "volume_up", title: "듣기 세션 (딕테이션)", sub: studiedCount >= 4 ? "문장을 듣고 타이핑" : "먼저 단어카드로 학습해 보세요", on: studiedCount >= 4, start: startDictation },
     { k: "quiz", icon: "grid_view", title: "퀴즈", sub: studiedCount >= 4 ? "뜻 4지선다 · 스펠링" : "먼저 단어카드로 학습해 보세요", on: studiedCount >= 4, start: startQuiz },
     { k: "level", icon: "add", title: "레벨 테스트", sub: "준비 중", on: false },
   ];
