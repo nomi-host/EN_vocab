@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.13.0">
+<link rel="manifest" href="manifest.json?v=0.14.0">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.13.0"></script>
-<script src="img/rat_run.js?v=0.13.0"></script>
+<script src="words.js?v=0.14.0"></script>
+<script src="img/rat_run.js?v=0.14.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -81,6 +81,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .badge:active{transform:scale(.94);}
 .badge.earned{background:var(--accent-soft);color:var(--accent-deep);border:1.5px solid var(--accent);}
 .badge.locked{background:var(--fill);color:var(--muted);font-size:20px;}
+/* 보관함: 뱃지 컬렉션 그리드(홈의 가로 스크롤과 달리 전부 한눈에) */
+.badge-grid{display:grid;grid-template-columns:repeat(4, 1fr);gap:12px;}
+.badge-grid .badge{width:100%;aspect-ratio:1;border-radius:16px;font-size:11px;}
+.badge-grid .badge.locked{font-size:18px;}
+.vault-sec{display:flex;flex-direction:column;gap:10px;margin-top:22px;}
+.vault-sec:first-child{margin-top:0;}
+.vault-link{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;}
+.vault-link .n{margin-left:auto;font-size:13px;color:var(--muted);font-weight:600;}
 .hero-char{position:relative;z-index:2;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:9px;}
 .char-face{width:156px;height:156px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;}
 /* 달리는 씬(placeholder). 실제 캐릭터는 Lottie/Rive/스프라이트로 이 슬롯 교체 */
@@ -391,7 +399,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.13.0";
+const APP_VERSION = "v0.14.0";
 const APP_BUILD = "2026-07-13"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -1366,6 +1374,69 @@ function Soon({ title, desc }) {
   );
 }
 
+/* ---------- 보관함 탭 ---------- */
+/* 뱃지 컬렉션(홈의 가로 스크롤 트랙과 같은 BADGES 데이터를 그리드로 전부 노출) +
+   즐겨찾기 단어·내 단어장 바로가기(실제 데이터는 사전 탭 안에 있어 그리로 이동).
+   문장 컬렉션·성장 기록은 상위 기능(작문·회화·실 학습 로그)이 아직 없어 준비 중만 표시. */
+function Vault({ onGoTab }) {
+  const [badge, setBadge] = useState(null);
+  const favCount = allWords().filter(w => FAVS.has(w.word)).length;
+
+  return (
+    <div className="content">
+      <div className="vault-sec">
+        <div className="sec">뱃지 컬렉션</div>
+        <div className="badge-grid">
+          {BADGES.map(b => (
+            <button key={b.k} className={"badge " + (b.earned ? "earned" : "locked")} onClick={() => setBadge(b)}>
+              {b.earned ? b.mark : "?"}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="vault-sec">
+        <div className="sec">단어</div>
+        <button className="vault-link" onClick={() => onGoTab("dict")}>
+          <Icon name="star" size={20} />
+          <span>즐겨찾기한 단어</span>
+          <span className="n">{favCount}개 ›</span>
+        </button>
+        <button className="vault-link" onClick={() => onGoTab("dict")}>
+          <Icon name="bookmark" size={20} />
+          <span>내 단어장</span>
+          <span className="n">{WORDLISTS.length}개 리스트 ›</span>
+        </button>
+      </div>
+
+      <div className="vault-sec">
+        <div className="sec">문장</div>
+        <div className="empty-note">작문·회화·학습 카드에서 저장한 문장이 여기 모여요. 아직 준비 중입니다.</div>
+      </div>
+
+      <div className="vault-sec">
+        <div className="sec">성장 기록</div>
+        <div className="empty-note">연속 학습일·학습량 통계가 여기 모여요. 아직 준비 중입니다.</div>
+      </div>
+
+      {badge && ReactDOM.createPortal(
+        <div className="dlg-backdrop" onClick={() => setBadge(null)}>
+          <div className="dlg" onClick={e => e.stopPropagation()}>
+            <div className={"dlg-badge " + (badge.earned ? "earned" : "locked")}>{badge.earned ? badge.mark : "?"}</div>
+            <div className="dlg-title">{badge.earned ? badge.title : "미획득 뱃지"}</div>
+            {badge.earned
+              ? <div className="dlg-sub">달성!</div>
+              : <div className="dlg-sub locked">아직 획득하지 못했어요</div>}
+            <div className="dlg-date">{badge.earned ? badge.earned : "조건: " + badge.cond}</div>
+            <button onClick={() => setBadge(null)}>확인</button>
+          </div>
+        </div>,
+        document.body
+      )}
+    </div>
+  );
+}
+
 /* ---------- 단어카드 세션 ---------- */
 function CardSession({ items, onExit, onOpenWord }) {
   const [queue, setQueue] = useState(items);
@@ -2129,7 +2200,7 @@ function App() {
         {tab === "dict" && <Dict onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} />}
         {tab === "learn" && <Learn onOpenWord={openWord} customStudy={customStudy} onConsumeCustomStudy={() => setCustomStudy(null)} />}
         {tab === "talk" && <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />}
-        {tab === "box" && <Soon title="보관함은 준비 중입니다" desc="즐겨찾기 단어·문장 · 뱃지 컬렉션 · 성장 기록" />}
+        {tab === "box" && <Vault onGoTab={setTab} />}
       </div>
 
       {settingsOpen && <Settings charK={charK} onChangeChar={changeChar} onClose={() => setSettingsOpen(false)} />}
