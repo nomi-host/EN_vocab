@@ -1,0 +1,797 @@
+{
+ "painter": [
+  {
+   "cue": "그림을 그리는 사람",
+   "ko": "화가",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "an artist who paints pictures",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The painter finished the portrait in a week.",
+     "ko": "그 화가는 일주일 만에 초상화를 완성했다."
+    }
+   ]
+  },
+  {
+   "cue": "벽·집에 페인트를 칠하는 사람",
+   "ko": "페인트공, 도장공",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "a worker whose job is to cover walls or objects with paint",
+   "syn": [],
+   "ex": [
+    {
+     "en": "We hired a painter to repaint the fence.",
+     "ko": "우리는 울타리를 다시 칠하려고 페인트공을 고용했다."
+    }
+   ]
+  }
+ ],
+ "pal": [
+  {
+   "cue": "친하게 지내는 사람 (구어)",
+   "ko": "친구, 단짝",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a close friend (informal)",
+   "syn": ["buddy", "chum"],
+   "ex": [
+    {
+     "en": "We've been pals since childhood.",
+     "ko": "우리는 어릴 때부터 친구 사이였다."
+    }
+   ]
+  }
+ ],
+ "pan": [
+  {
+   "cue": "요리할 때 쓰는 넓은 용기",
+   "ko": "냄비, 팬",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a wide metal container used for cooking food",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Heat some oil in the pan.",
+     "ko": "팬에 기름을 좀 데워라."
+    }
+   ]
+  }
+ ],
+ "panic": [
+  {
+   "cue": "갑작스러운 두려움에",
+   "ko": "겁에 질리다, 공황 상태에 빠지다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "suddenly feel so frightened that you cannot think clearly",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Don't panic, everything will be fine.",
+     "ko": "당황하지 마, 다 괜찮아질 거야."
+    }
+   ]
+  },
+  {
+   "cue": "극심한 두려움 그 자체",
+   "ko": "공황, 극심한 공포",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "a sudden overwhelming feeling of fear",
+   "syn": ["terror"],
+   "ex": [
+    {
+     "en": "There was panic in the crowd when the alarm went off.",
+     "ko": "경보가 울리자 군중 사이에 공황이 일었다."
+    }
+   ]
+  }
+ ],
+ "part": [
+  {
+   "cue": "함께 지내던 사람과",
+   "ko": "헤어지다, 갈라지다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "leave someone or stop being together",
+   "syn": ["separate"],
+   "ex": [
+    {
+     "en": "The two friends parted at the station.",
+     "ko": "두 친구는 역에서 헤어졌다."
+    }
+   ]
+  },
+  {
+   "cue": "전체 중의 하나",
+   "ko": "부분",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "a piece or section of something that combines with other pieces to make a whole",
+   "syn": ["portion"],
+   "ex": [
+    {
+     "en": "This is the best part of the movie.",
+     "ko": "이게 그 영화에서 가장 좋은 부분이야."
+    }
+   ]
+  },
+  {
+   "cue": "기계를 이루는 조각",
+   "ko": "부품",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "a piece that is used to make a machine or object",
+   "syn": [],
+   "ex": [
+    {
+     "en": "We need to order some car parts.",
+     "ko": "우리는 자동차 부품을 좀 주문해야 한다."
+    }
+   ]
+  },
+  {
+   "cue": "연극·영화에서 맡은",
+   "ko": "배역, 역할",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "the character that an actor plays in a film or play",
+   "syn": ["role"],
+   "ex": [
+    {
+     "en": "She played the part of the queen.",
+     "ko": "그녀는 여왕 역을 맡았다."
+    }
+   ]
+  }
+ ],
+ "partly": [
+  {
+   "cue": "전체가 아니라 일부만",
+   "ko": "부분적으로",
+   "pos": "부사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "to some degree, but not completely",
+   "syn": ["partially"],
+   "ex": [
+    {
+     "en": "The delay was partly due to bad weather.",
+     "ko": "그 지연은 부분적으로 나쁜 날씨 때문이었다."
+    }
+   ]
+  }
+ ],
+ "pass": [
+  {
+   "cue": "장소를 지나쳐",
+   "ko": "지나가다, 통과하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "move past or through a place",
+   "syn": [],
+   "ex": [
+    {
+     "en": "We passed a small village on the way.",
+     "ko": "우리는 가는 길에 작은 마을을 지나쳤다."
+    }
+   ]
+  },
+  {
+   "cue": "물건을 손으로 옆 사람에게",
+   "ko": "건네다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "give something to someone by putting it in their hand",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Could you pass the salt, please?",
+     "ko": "소금 좀 건네주시겠어요?"
+    }
+   ]
+  },
+  {
+   "cue": "시험에",
+   "ko": "합격하다, 통과하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "succeed in a test or examination",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She passed her driving test on the first try.",
+     "ko": "그녀는 첫 시도에 운전면허 시험에 합격했다."
+    }
+   ]
+  },
+  {
+   "cue": "출입·이용을 허가하는 증",
+   "ko": "출입증, 패스",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "A2",
+   "en": "a card or document that allows you to enter a place or use a service",
+   "syn": [],
+   "ex": [
+    {
+     "en": "You need a pass to enter the stadium.",
+     "ko": "경기장에 입장하려면 출입증이 필요하다."
+    }
+   ]
+  },
+  {
+   "cue": "시간이 흘러서",
+   "ko": "(시간이) 지나가다, 흐르다",
+   "pos": "동사",
+   "lv": 6,
+   "cefr": "A2",
+   "en": "(of time) go by",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Two years passed quickly.",
+     "ko": "2년이 빠르게 지나갔다."
+    }
+   ]
+  }
+ ],
+ "passage": [
+  {
+   "cue": "글의 한 부분",
+   "ko": "구절, 글",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "a short section of a piece of writing",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Read the passage and answer the questions.",
+     "ko": "그 구절을 읽고 질문에 답하세요."
+    }
+   ]
+  },
+  {
+   "cue": "좁고 긴 통로",
+   "ko": "통로, 복도",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "a long narrow area that connects one place to another",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They walked down a narrow passage to the exit.",
+     "ko": "그들은 좁은 통로를 걸어 출구로 향했다."
+    }
+   ]
+  }
+ ],
+ "passenger": [
+  {
+   "cue": "차·배·비행기를 타는 사람 (운전자 제외)",
+   "ko": "승객",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a person traveling in a vehicle who is not driving or operating it",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The bus can carry fifty passengers.",
+     "ko": "그 버스는 승객 50명을 태울 수 있다."
+    }
+   ]
+  }
+ ],
+ "pasta": [
+  {
+   "cue": "이탈리아식 밀가루 음식",
+   "ko": "파스타",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "an Italian food made from flour and water, often served with sauce",
+   "syn": [],
+   "ex": [
+    {
+     "en": "We had pasta for dinner.",
+     "ko": "우리는 저녁으로 파스타를 먹었다."
+    }
+   ]
+  }
+ ],
+ "path": [
+  {
+   "cue": "걷는 좁은 길",
+   "ko": "길, 오솔길",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a narrow way for walking",
+   "syn": [],
+   "ex": [
+    {
+     "en": "We followed the path through the forest.",
+     "ko": "우리는 숲속 오솔길을 따라갔다."
+    }
+   ]
+  },
+  {
+   "cue": "목표로 나아가는 방향",
+   "ko": "(나아갈) 길, 방향",
+   "pos": "명사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "a course of action that leads towards a particular result",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She chose a difficult path to success.",
+     "ko": "그녀는 성공으로 가는 어려운 길을 택했다."
+    }
+   ]
+  }
+ ],
+ "patient": [
+  {
+   "cue": "화내지 않고 기다리는",
+   "ko": "참을성 있는, 인내심 있는",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "able to wait or accept problems without becoming annoyed",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Please be patient; the bus will come soon.",
+     "ko": "조금만 참으세요, 버스는 곧 올 거예요."
+    }
+   ]
+  },
+  {
+   "cue": "병원에서 치료받는 사람",
+   "ko": "환자",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "a person who is receiving medical treatment",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The doctor examined the patient carefully.",
+     "ko": "의사는 환자를 세심하게 진찰했다."
+    }
+   ]
+  }
+ ],
+ "PC": [
+  {
+   "cue": "책상에 두고 쓰는 컴퓨터",
+   "ko": "개인용 컴퓨터, PC",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a personal computer, especially one used at home or in an office",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He bought a new PC for gaming.",
+     "ko": "그는 게임용으로 새 PC를 샀다."
+    }
+   ]
+  }
+ ],
+ "pea": [
+  {
+   "cue": "작고 둥근 초록색 채소",
+   "ko": "완두콩",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a small round green vegetable that grows in pods",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She added peas to the soup.",
+     "ko": "그녀는 수프에 완두콩을 넣었다."
+    }
+   ]
+  }
+ ],
+ "peaceful": [
+  {
+   "cue": "전쟁·다툼 없이 조용한",
+   "ko": "평화로운, 평온한",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "calm and free from disturbance or war",
+   "syn": [],
+   "ex": [
+    {
+     "en": "It was a peaceful morning in the village.",
+     "ko": "그 마을의 아침은 평화로웠다."
+    }
+   ]
+  },
+  {
+   "cue": "폭력을 쓰지 않는 방식",
+   "ko": "비폭력적인, 평화적인",
+   "pos": "형용사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "not using violence, especially in a protest",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They organized a peaceful protest.",
+     "ko": "그들은 평화적인 시위를 조직했다."
+    }
+   ]
+  }
+ ],
+ "pear": [
+  {
+   "cue": "달콤하고 즙 많은 과일",
+   "ko": "배 (과일)",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a sweet juicy fruit that is narrow at the top and round at the bottom",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She sliced a ripe pear for the salad.",
+     "ko": "그녀는 샐러드를 위해 잘 익은 배를 썰었다."
+    }
+   ]
+  }
+ ],
+ "pence": [
+  {
+   "cue": "영국 화폐 단위 (penny의 복수)",
+   "ko": "펜스",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "the plural of penny, a small unit of British money",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The chocolate bar costs eighty pence.",
+     "ko": "그 초콜릿 바는 80펜스이다."
+    }
+   ]
+  }
+ ],
+ "penfriend": [
+  {
+   "cue": "편지를 주고받는 친구",
+   "ko": "펜팔 친구",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "someone you become friends with by writing letters, usually without meeting",
+   "syn": [],
+   "ex": [
+    {
+     "en": "I have a penfriend in France.",
+     "ko": "나는 프랑스에 펜팔 친구가 있다."
+    }
+   ]
+  }
+ ],
+ "pepper": [
+  {
+   "cue": "요리에 뿌리는 매운 가루",
+   "ko": "후추",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a spicy powder used to flavor food, made from dried berries",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Add some salt and pepper to the soup.",
+     "ko": "수프에 소금과 후추를 좀 넣으세요."
+    }
+   ]
+  },
+  {
+   "cue": "채소로 먹는 고추·피망",
+   "ko": "고추, 피망",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "a hollow vegetable, often red, green, or yellow, that can be mild or spicy",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She chopped a red pepper for the salad.",
+     "ko": "그녀는 샐러드용으로 빨간 피망을 썰었다."
+    }
+   ]
+  }
+ ],
+ "perfect": [
+  {
+   "cue": "결점이 전혀 없이 완벽하게 하다",
+   "ko": "완벽하게 하다, 다듬다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "make something completely correct or as good as it can be",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She practiced for years to perfect her technique.",
+     "ko": "그녀는 기술을 완벽하게 다듬기 위해 수년간 연습했다."
+    }
+   ]
+  },
+  {
+   "cue": "결점이 전혀 없는",
+   "ko": "완벽한",
+   "pos": "형용사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "having no faults or flaws; as good as possible",
+   "syn": [],
+   "ex": [
+    {
+     "en": "It was a perfect day for a picnic.",
+     "ko": "소풍하기에 완벽한 날이었다."
+    }
+   ]
+  }
+ ],
+ "perfectly": [
+  {
+   "cue": "결점 없이 완전하게",
+   "ko": "완벽하게",
+   "pos": "부사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "in a way that has no faults; completely",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She sang the song perfectly.",
+     "ko": "그녀는 그 노래를 완벽하게 불렀다."
+    }
+   ]
+  }
+ ],
+ "perform": [
+  {
+   "cue": "무대에서 노래·연기를",
+   "ko": "공연하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "entertain an audience by singing, acting, or playing music",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The band performed at the festival.",
+     "ko": "그 밴드는 축제에서 공연했다."
+    }
+   ]
+  },
+  {
+   "cue": "임무·작업을",
+   "ko": "수행하다, 행하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "carry out a task or action",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The surgeon performed the operation successfully.",
+     "ko": "그 외과의사는 수술을 성공적으로 수행했다."
+    }
+   ]
+  }
+ ],
+ "performance": [
+  {
+   "cue": "무대 위의 공연",
+   "ko": "공연",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a show performed in front of an audience",
+   "syn": [],
+   "ex": [
+    {
+     "en": "We watched an amazing dance performance.",
+     "ko": "우리는 놀라운 춤 공연을 봤다."
+    }
+   ]
+  },
+  {
+   "cue": "일·능력이 이룬 결과",
+   "ko": "성과, 실적",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "how well someone or something does a task",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The team's performance improved this season.",
+     "ko": "그 팀의 성과는 이번 시즌에 향상되었다."
+    }
+   ]
+  }
+ ],
+ "perfume": [
+  {
+   "cue": "몸에 뿌리는 향기 나는 액체",
+   "ko": "향수",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a liquid with a pleasant smell that people put on their skin",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She wore a light floral perfume.",
+     "ko": "그녀는 은은한 꽃향의 향수를 뿌렸다."
+    }
+   ]
+  }
+ ],
+ "perhaps": [
+  {
+   "cue": "확실하지 않은 추측",
+   "ko": "아마도, 어쩌면",
+   "pos": "부사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "used to say that something is possible but not certain",
+   "syn": ["maybe"],
+   "ex": [
+    {
+     "en": "Perhaps we should leave earlier.",
+     "ko": "아마도 우리는 더 일찍 출발해야 할 것 같다."
+    }
+   ]
+  }
+ ],
+ "permission": [
+  {
+   "cue": "무언가를 해도 좋다는 승낙",
+   "ko": "허가, 허락",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "official agreement that lets you do something",
+   "syn": [],
+   "ex": [
+    {
+     "en": "You need permission to park here.",
+     "ko": "여기 주차하려면 허가가 필요하다."
+    }
+   ]
+  }
+ ],
+ "personality": [
+  {
+   "cue": "사람의 성질·기질",
+   "ko": "성격",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "the set of qualities that make a person different from others",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She has a warm and friendly personality.",
+     "ko": "그녀는 따뜻하고 친근한 성격을 가지고 있다."
+    }
+   ]
+  },
+  {
+   "cue": "TV·매체에 나오는 유명한 사람",
+   "ko": "유명인, 인기인",
+   "pos": "명사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "a person who is well known, especially in entertainment or media",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He became a famous TV personality.",
+     "ko": "그는 유명한 TV 인기인이 되었다."
+    }
+   ]
+  }
+ ],
+ "petrol": [
+  {
+   "cue": "자동차 연료 (영국식)",
+   "ko": "휘발유",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "fuel used in cars and other vehicles (British English)",
+   "syn": ["gasoline"],
+   "ex": [
+    {
+     "en": "We stopped to buy some petrol.",
+     "ko": "우리는 휘발유를 사려고 멈췄다."
+    }
+   ]
+  }
+ ],
+ "petrol station": [
+  {
+   "cue": "기름을 넣는 곳",
+   "ko": "주유소",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a place where you can buy petrol for your car",
+   "syn": [],
+   "ex": [
+    {
+     "en": "There's a petrol station just around the corner.",
+     "ko": "모퉁이만 돌면 주유소가 있다."
+    }
+   ]
+  }
+ ],
+ "photograph": [
+  {
+   "cue": "카메라로",
+   "ko": "사진을 찍다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "take a picture of someone or something using a camera",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He photographed the sunset.",
+     "ko": "그는 노을 사진을 찍었다."
+    }
+   ]
+  },
+  {
+   "cue": "카메라로 찍은 사진",
+   "ko": "사진",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a picture made using a camera",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She showed us photographs from her trip.",
+     "ko": "그녀는 여행에서 찍은 사진들을 우리에게 보여주었다."
+    }
+   ]
+  }
+ ]
+}
