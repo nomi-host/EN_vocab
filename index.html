@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.12">
+<link rel="manifest" href="manifest.json?v=0.11.13">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.12"></script>
-<script src="img/rat_run.js?v=0.11.12"></script>
+<script src="words.js?v=0.11.13"></script>
+<script src="img/rat_run.js?v=0.11.13"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -374,7 +374,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.12";
+const APP_VERSION = "v0.11.13";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -563,14 +563,16 @@ function wordStatus(w) {
   return sts.find(s => s.status === "learning") || sts[0];
 }
 
-/* 학습 아이템(카드 단위) = 의미별 1개. 예문 하나를 문맥으로 사용 */
+/* 학습 아이템(카드 단위) = 의미별 1개. 예문 하나를 문맥으로 사용.
+   syn: 그 의미(sense) 하나에 한정된 문맥 치환어 — 없는(백필 전) sense는 표제어 전체
+   유의어(w.syn)로 폴백(부정확할 수 있음, 데이터 채워지면 자동으로 정밀해짐). */
 function itemsFromWords(list) {
   const items = [];
   list.forEach(w => {
     if (w.senses && w.senses.length) {
-      w.senses.forEach((s, i) => { if ((s.ex || []).length) items.push({ key: w.word + "#" + i, word: w.word, ko: s.ko, cue: s.cue, ex: s.ex[0], cefr: s.cefr || w.cefr }); });
+      w.senses.forEach((s, i) => { if ((s.ex || []).length) items.push({ key: w.word + "#" + i, word: w.word, ko: s.ko, cue: s.cue, ex: s.ex[0], cefr: s.cefr || w.cefr, syn: s.syn && s.syn.length ? s.syn : (w.syn || []) }); });
     } else if ((w.ex || []).length) {
-      items.push({ key: w.word, word: w.word, ko: w.ko, cue: null, ex: w.ex[0], cefr: w.cefr });
+      items.push({ key: w.word, word: w.word, ko: w.ko, cue: null, ex: w.ex[0], cefr: w.cefr, syn: w.syn || [] });
     }
   });
   return items;
@@ -1286,7 +1288,8 @@ function CardSession({ items, onExit, onOpenWord }) {
   const blank = useMemo(() => it ? makeBlank(it.ex.en, it.word) : null, [it]);
   const mode = blank ? "cloze" : "spell";
   const expected = blank ? blank.answer : it && it.word.toLowerCase();
-  const synonyms = useMemo(() => (it && wordOf(it.word) && wordOf(it.word).syn) || [], [it]);
+  // 이 카드(문맥) 하나에 한정된 유의어 — 사전 상세의 표제어 전체 유의어와는 다름(itemsFromWords 참고)
+  const synonyms = useMemo(() => (it && it.syn) || [], [it]);
 
   const speak = speakText;
 
