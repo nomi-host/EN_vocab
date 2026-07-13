@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.14">
+<link rel="manifest" href="manifest.json?v=0.12.0">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.14"></script>
-<script src="img/rat_run.js?v=0.11.14"></script>
+<script src="words.js?v=0.12.0"></script>
+<script src="img/rat_run.js?v=0.12.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -332,6 +332,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qsyn-chips{display:flex;gap:6px;flex-wrap:wrap;}
 .qsyn-chip{font-size:12px;font-weight:600;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:5px 10px;}
 .qsyn-chip.link{color:var(--accent-deep);}
+/* 퀴즈: 4지선다 뜻 맞추기 */
+.qchoices{display:flex;flex-direction:column;gap:8px;}
+.qchoice{width:100%;text-align:left;padding:13px 15px;border-radius:13px;background:var(--fill);font-size:15px;font-weight:700;color:var(--ink-2);border:1.5px solid transparent;}
+.qchoice.correct{background:var(--accent-soft);color:var(--accent-deep);border-color:var(--accent);}
+.qchoice.wrong{background:#fbe9e9;color:#d64545;border-color:#d64545;}
 .qactions{margin-top:auto;display:flex;gap:8px;}
 .qactions button{flex:1;padding:14px;border-radius:14px;font-weight:700;font-size:15px;}
 .qactions .ghost{background:var(--surface);border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow);}
@@ -380,8 +385,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.14";
-const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.12.0";
+const APP_BUILD = "2026-07-13"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -636,6 +641,30 @@ function pickSession(n = 10) {
   const due = its.filter(it => SRS.isDue(it.key));
   const fresh = its.filter(it => !SRS.get(it.key));
   return due.concat(fresh).slice(0, n);
+}
+
+/* 퀴즈 문제 구성: 이미 학습(SRS 기록 있음)한 단어 중에서만 출제 — 카드로 한 번도
+   안 본 단어가 나오면 실질적으로 풀 수 없는 문제라 대상에서 제외. 뜻 4지선다와
+   스펠링을 절반씩 섞음. 학습한 단어가 4개 미만이면 문제 구성 불가(null). */
+function buildQuiz(n = 10) {
+  const studied = allItems().filter(it => SRS.get(it.key));
+  if (studied.length < 4) return null;
+  const shuffled = [...studied].sort(() => Math.random() - 0.5).slice(0, n);
+  const distractorPool = allItems();
+  return shuffled.map((it, i) => {
+    if (i % 2 === 1) return { type: "spell", it };
+    const pool = [...distractorPool].sort(() => Math.random() - 0.5);
+    const distractors = [];
+    for (const p of pool) {
+      if (distractors.length >= 3) break;
+      if (p.key === it.key || p.ko === it.ko) continue;
+      if (distractors.some(d => d.ko === p.ko)) continue;
+      distractors.push(p);
+    }
+    const choices = [it.ko, ...distractors.map(d => d.ko)];
+    for (let a = choices.length - 1; a > 0; a--) { const b = Math.floor(Math.random() * (a + 1));[choices[a], choices[b]] = [choices[b], choices[a]]; }
+    return { type: "choice", it, choices };
+  });
 }
 
 /* ---------- 홈 탭 ---------- */
@@ -1590,15 +1619,121 @@ function CardSession({ items, onExit, onOpenWord }) {
 }
 
 /* 학습 완료 요약 */
-function Finish({ total, correct, onExit }) {
+function Finish({ total, correct, onExit, title = "오늘 단어카드 완료", sub = "복습 시점은 정답률에 맞춰 자동 조정됐어요." }) {
   return (
     <div className="content"><div className="finish">
       <div className="char-face mascot">잘했어요!</div>
       <div className="big">{correct} / {total}</div>
-      <div className="msg">오늘 단어카드 완료</div>
-      <div className="sub">복습 시점은 정답률에 맞춰 자동 조정됐어요.</div>
+      <div className="msg">{title}</div>
+      <div className="sub">{sub}</div>
       <div className="qactions" style={{ width: "100%", marginTop: 18 }}><button className="primary" onClick={onExit}>돌아가기</button></div>
     </div></div>
+  );
+}
+
+/* ---------- 퀴즈 세션 ---------- */
+/* 이미 학습한 단어 대상 뜻 4지선다 + 스펠링(발음 듣고 타이핑)을 절반씩 섞어 출제.
+   단어카드(SRS 복습 간격 조정)와 달리 보조 훈련이라 정답/오답이 SRS 박스에 영향을 주지 않음. */
+function QuizSession({ questions, onExit }) {
+  const [idx, setIdx] = useState(0);
+  const [correct, setCorrect] = useState(0);
+  const [picked, setPicked] = useState(null); // 4지선다에서 고른 인덱스
+  const [val, setVal] = useState("");         // 스펠링 입력값
+  const [res, setRes] = useState(null);       // null | {ok}
+
+  const q = questions[idx];
+  const it = q.it;
+  const speak = speakText;
+
+  useEffect(() => {
+    if (q.type === "spell") speak(it.word);
+    // eslint-disable-next-line
+  }, [idx]);
+
+  const gradeChoice = (choice, ci) => {
+    if (res) return;
+    const ok = choice === it.ko;
+    setPicked(ci);
+    if (ok) setCorrect(c => c + 1);
+    setRes({ ok });
+  };
+
+  const submitSpell = () => {
+    if (res) return;
+    const v = val.trim();
+    if (!v) return;
+    const ok = v.toLowerCase() === it.word.toLowerCase();
+    if (ok) setCorrect(c => c + 1);
+    setRes({ ok });
+  };
+
+  const next = () => {
+    if (idx + 1 >= questions.length) { onExit(true, correct, questions.length); return; }
+    setIdx(idx + 1); setPicked(null); setVal(""); setRes(null);
+  };
+
+  return (
+    <div className="content study">
+      <div className="study-top">
+        <button className="x" onClick={() => onExit(false, correct)} aria-label="종료"><Icon name="close" size={22} /></button>
+        <div className="study-bar"><i style={{ width: ((idx + (res ? 1 : 0)) / questions.length * 100) + "%" }} /></div>
+        <span className="study-n">{idx + 1} / {questions.length}</span>
+      </div>
+
+      <div className="qcard">
+        <div className="qlvrow">
+          {q.type === "spell" && (
+            <span className="qaudio">
+              <button onClick={() => speak(it.word)} aria-label="다시 듣기"><Icon name="replay" size={16} /></button>
+            </span>
+          )}
+          <span className="tag lv">{it.cefr}</span>
+        </div>
+        {q.type === "choice" ? (
+          <React.Fragment>
+            <span className="qhint">다음 <b>영어 단어</b>의 뜻을 고르세요.</span>
+            <div className="qko" style={{ textAlign: "center" }}>{it.word}</div>
+            <div className="qdiv" />
+            <div className="qchoices">
+              {q.choices.map((c, ci) => {
+                const cls = "qchoice" + (res ? (c === it.ko ? " correct" : (picked === ci ? " wrong" : "")) : "");
+                return <button key={ci} className={cls} disabled={!!res} onClick={() => gradeChoice(c, ci)}>{c}</button>;
+              })}
+            </div>
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            <span className="qhint">발음을 듣고 <b>영어 단어</b>를 입력하세요.</span>
+            {it.cue && <div className="qcue">{it.cue}</div>}
+            <div className="qko">{it.ko}</div>
+            <div className="qdiv" />
+            <div className="qen" style={{ textAlign: "center" }}>
+              {res
+                ? <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? it.word : val.trim() || "—"}</span>
+                : <input className="qbox" autoFocus value={val} onChange={e => setVal(e.target.value)}
+                    onKeyDown={e => e.key === "Enter" && submitSpell()}
+                    size={Math.max(8, val.length + 1)}
+                    autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false} aria-label="정답 입력" />}
+            </div>
+          </React.Fragment>
+        )}
+        {res && (
+          <div className={"qres " + (res.ok ? "ok" : "no")}>
+            {res.ok ? <Icon name="check" size={18} /> : <Icon name="close" size={18} />}
+            {res.ok ? "정답!" : <span>정답: <b>{it.word}</b> — {it.ko}</span>}
+          </div>
+        )}
+      </div>
+
+      {q.type === "spell" && !res && (
+        <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={submitSpell}>확인</button>
+      )}
+      {res && (
+        <div className="qactions">
+          <button className="primary" onClick={next}>{idx + 1 >= questions.length ? "결과 보기" : "다음 문제"}</button>
+        </div>
+      )}
+    </div>
   );
 }
 
@@ -1606,8 +1741,11 @@ function Finish({ total, correct, onExit }) {
 function Learn({ onOpenWord, customStudy, onConsumeCustomStudy }) {
   const [session, setSession] = useState(null); // null | {items} | "done"
   const [summary, setSummary] = useState(null);
+  const [quiz, setQuiz] = useState(null); // null | questions[] | "done"
+  const [quizSummary, setQuizSummary] = useState(null);
   const dueCount = allItems().filter(it => SRS.isDue(it.key)).length;
   const newCount = allItems().filter(it => !SRS.get(it.key)).length;
+  const studiedCount = allItems().filter(it => SRS.get(it.key)).length;
 
   // 사전(내 단어장)에서 '이 리스트로 학습'을 눌러 넘어온 경우 곧바로 그 목록으로 세션 시작
   useEffect(() => {
@@ -1628,17 +1766,33 @@ function Learn({ onOpenWord, customStudy, onConsumeCustomStudy }) {
         else setSession(null);
       }} />;
   }
+  if (quiz === "done" && quizSummary) {
+    return <Finish total={quizSummary.total} correct={quizSummary.correct}
+      title="퀴즈 완료" sub="정답 여부는 SRS 복습 일정에는 영향을 주지 않아요."
+      onExit={() => { setQuiz(null); setQuizSummary(null); }} />;
+  }
+  if (quiz) {
+    return <QuizSession questions={quiz}
+      onExit={(done, correct, total) => {
+        if (done) { setQuizSummary({ total: total ?? quiz.length, correct }); setQuiz("done"); }
+        else setQuiz(null);
+      }} />;
+  }
 
   const start = () => {
     const items = pickSession(10);
     if (items.length) setSession(items);
   };
+  const startQuiz = () => {
+    const qs = buildQuiz(10);
+    if (qs) setQuiz(qs);
+  };
 
   const MENU = [
-    { k: "card", icon: "school", title: "단어카드", sub: `복습 ${dueCount} · 신규 ${newCount} 대기`, on: true },
-    { k: "listen", icon: "volume_up", title: "듣기 세션 (딕테이션)", sub: "듣고 그대로 타이핑", on: false },
-    { k: "quiz", icon: "grid_view", title: "퀴즈", sub: "뜻·스펠링·빈칸", on: false },
-    { k: "level", icon: "add", title: "레벨 테스트", sub: "어휘 + 문장구사력", on: false },
+    { k: "card", icon: "school", title: "단어카드", sub: `복습 ${dueCount} · 신규 ${newCount} 대기`, on: true, start },
+    { k: "listen", icon: "volume_up", title: "듣기 세션 (딕테이션)", sub: "준비 중", on: false },
+    { k: "quiz", icon: "grid_view", title: "퀴즈", sub: studiedCount >= 4 ? "뜻 4지선다 · 스펠링" : "먼저 단어카드로 학습해 보세요", on: studiedCount >= 4, start: startQuiz },
+    { k: "level", icon: "add", title: "레벨 테스트", sub: "준비 중", on: false },
   ];
 
   return (
@@ -1648,11 +1802,11 @@ function Learn({ onOpenWord, customStudy, onConsumeCustomStudy }) {
         <div className="l">지금 복습할 카드</div>
       </div>
       {MENU.map(m => (
-        <div key={m.k} className={"step" + (m.on ? "" : " soon")} onClick={() => m.on && start()}>
+        <div key={m.k} className={"step" + (m.on ? "" : " soon")} onClick={() => m.on && m.start()}>
           <div className="step-ico"><Icon name={m.icon} size={20} /></div>
           <div className="step-body">
             <div className="step-title">{m.title}</div>
-            <div className="step-sub">{m.on ? m.sub : "준비 중"}</div>
+            <div className="step-sub">{m.sub}</div>
           </div>
           {m.on ? <div className="step-cta">시작</div> : <span className="arrow" style={{ color: "var(--muted)" }}>›</span>}
         </div>
