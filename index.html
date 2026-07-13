@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.13">
+<link rel="manifest" href="manifest.json?v=0.11.14">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.13"></script>
-<script src="img/rat_run.js?v=0.11.13"></script>
+<script src="words.js?v=0.11.14"></script>
+<script src="img/rat_run.js?v=0.11.14"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -260,6 +260,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .wd-ex .en em{font-style:normal;color:var(--accent-deep);}
 .wd-ex .ko{font-size:12px;color:var(--muted);margin-top:5px;}
 .wd-ex + .wd-ex{margin-top:8px;}
+.ex-word{color:var(--accent-deep);text-decoration:underline;text-decoration-color:var(--accent-soft);text-underline-offset:2px;}
 
 /* 다의어: 의미(sense) 카드 리스트 */
 .sense{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:13px 15px;transition:border-color .12s;}
@@ -272,6 +273,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .s-en{font-size:13px;color:var(--ink-2);font-style:italic;line-height:1.5;margin-top:9px;}
 .sense .wd-ex{margin-top:9px;background:var(--fill);}
 .s-add{display:block;width:100%;margin-top:10px;text-align:center;background:var(--accent-soft);color:var(--accent-deep);font-weight:700;font-size:13px;padding:9px;border-radius:11px;}
+.s-add.added{background:var(--fill);color:var(--muted);}
 .s-more{display:block;width:100%;margin-top:6px;text-align:center;background:var(--fill);color:var(--ink-2);font-weight:700;font-size:13px;padding:11px;border-radius:13px;}
 
 .ext{display:flex;flex-wrap:wrap;gap:7px;}
@@ -288,7 +290,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .study-bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .3s ease;}
 .study-n{font-size:13px;font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;flex:none;}
 .qcard{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
-.qlvrow{display:flex;justify-content:flex-end;margin-bottom:-6px;}
+.qlvrow{display:flex;align-items:center;margin-bottom:-6px;}
+.qlvrow .tag.lv{margin-left:auto;}
+.qaudio{display:flex;align-items:center;gap:6px;}
+.qaudio button{display:flex;align-items:center;gap:3px;color:var(--muted);background:var(--fill);border-radius:999px;padding:5px 10px;font-size:11px;font-weight:700;}
+.study-top .favstar{margin-left:4px;}
 .qcue{font-size:12px;color:var(--muted);}
 .qko{font-size:17px;font-weight:800;letter-spacing:-0.3px;line-height:1.4;}
 .qdiv{height:1px;background:var(--line);margin:2px 0;}
@@ -374,7 +380,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.13";
+const APP_VERSION = "v0.11.14";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -398,6 +404,8 @@ const ICONS = {
   check: "M9 16.17 4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z",
   volume_up: "M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z",
   settings: "M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z",
+  favorite: "M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z",
+  replay: "M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z",
 };
 function Icon({ name, size = 24 }) {
   return (
@@ -487,14 +495,15 @@ const PREFS = (() => {
   return { get: () => p, set(patch) { Object.assign(p, patch); save(); } };
 })();
 
-/* 앱 전체 공용 TTS — 저장된 속도·악센트 설정을 실제 발화에 반영 */
-function speakText(text) {
+/* 앱 전체 공용 TTS — 저장된 속도·악센트 설정을 실제 발화에 반영.
+   rateOverride: 카드의 "느리게 듣기"처럼 그 순간만 설정과 무관하게 속도를 강제할 때. */
+function speakText(text, rateOverride) {
   try {
     const u = new SpeechSynthesisUtterance(text);
     const prefs = PREFS.get();
     const accent = ACCENT_PRESETS[prefs.accent];
     u.lang = accent.lang;
-    u.rate = SPEED_PRESETS[prefs.speed].rate;
+    u.rate = rateOverride || SPEED_PRESETS[prefs.speed].rate;
     const voices = speechSynthesis.getVoices();
     const voice = voices.find(v => v.lang === accent.lang) || voices.find(v => v.lang && v.lang.startsWith("en"));
     if (voice) u.voice = voice;
@@ -535,6 +544,14 @@ const SRS = (() => {
       store[k] = s; save();
       if (ok) POINTS.add(10); // 꾸준한 학습으로만 쌓이는 포인트 — 캐릭터 변경 잠금 해제에 사용
       return s;
+    },
+    // 다의어 상세의 "+ 이 의미를 학습에 추가" — 이미 학습 중이면 그대로 두고(진행 유지),
+    // 처음이면 즉시 복습 대상(due=지금)으로 등록해 바로 다음 세션에 나오게 함.
+    markForStudy(k) {
+      if (store[k]) return false;
+      store[k] = { box: 0, seen: true, due: Date.now() };
+      save();
+      return true;
     },
   };
 })();
@@ -774,11 +791,32 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards }) {
   );
 }
 
+/* 예문 속 단어를 개별 칩으로 — 사전에 있는 단어만 탭하면 그 단어 상세로 스택 진입(타고타고).
+   문장 클릭(발음 재생)과 겹치므로 단어 클릭은 stopPropagation. */
+function ExampleWords({ text, onOpen }) {
+  const parts = text.split(/(\s+)/);
+  return parts.map((p, idx) => {
+    if (!p || /^\s+$/.test(p)) return p;
+    const cleanStart = p.search(/[A-Za-z']/);
+    if (cleanStart === -1) return p;
+    const clean = p.replace(/[^A-Za-z']/g, "");
+    const w = clean && wordOf(clean.toLowerCase());
+    if (!w) return p;
+    const lead = p.slice(0, cleanStart);
+    const trail = p.slice(cleanStart + clean.length);
+    return (
+      <React.Fragment key={idx}>
+        {lead}<span className="ex-word" onClick={ev => { ev.stopPropagation(); onOpen(w.word); }}>{clean}</span>{trail}
+      </React.Fragment>
+    );
+  });
+}
+
 /* ---------- 단어 상세 바텀시트 (팝업 → 타고타고 모달 스택) ---------- */
 /* 다의어 상한선: 실사전은 뜻이 수십 개인 단어(run, set 등)가 있어 기본 노출을 제한 */
 const SENSE_CAP = 6;
 
-function WordSheet({ stack, onPush, onPop, onClose }) {
+function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
   const word = stack[stack.length - 1];
   const w = wordOf(word);
   const [senseOpen, setSenseOpen] = useState(0); // 다의어: 첫 의미 펼침
@@ -854,11 +892,14 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
                       <div className="s-en">{s.en}</div>
                       {(s.ex || []).map((e, j) => (
                         <div className="wd-ex" key={j} onClick={ev => { ev.stopPropagation(); speak(e.en); }}>
-                          <div className="en">{e.en}</div>
+                          <div className="en"><ExampleWords text={e.en} onOpen={onPush} /></div>
                           <div className="ko">{e.ko}</div>
                         </div>
                       ))}
-                      <button className="s-add" onClick={ev => ev.stopPropagation()}>+ 이 의미를 학습에 추가</button>
+                      <button className={"s-add" + (SRS.get(w.word + "#" + i) ? " added" : "")}
+                              onClick={ev => { ev.stopPropagation(); if (SRS.markForStudy(w.word + "#" + i)) bump(v => v + 1); }}>
+                        {SRS.get(w.word + "#" + i) ? "✓ 학습에 추가됨" : "+ 이 의미를 학습에 추가"}
+                      </button>
                     </React.Fragment>
                   )}
                 </div>
@@ -874,7 +915,7 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
               <div className="wd-sec-t">예문</div>
               {w.ex.map((e, i) => (
                 <div className="wd-ex" key={i} onClick={() => speak(e.en)}>
-                  <div className="en">{e.en}</div>
+                  <div className="en"><ExampleWords text={e.en} onOpen={onPush} /></div>
                   <div className="ko">{e.ko}</div>
                 </div>
               ))}
@@ -909,7 +950,9 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
               <div className="wd-sec-t">어근 · 접사</div>
               <div className="wd-chips">
                 {w.roots.map(r => (
-                  <span key={r.affix} className="lchip affix">{r.affix}<span className="g" style={{ color: "#c3ceff" }}>{r.gloss}</span></span>
+                  <button key={r.affix} className="lchip affix" onClick={() => onOpenRoot(r.affix)}>
+                    {r.affix}<span className="g" style={{ color: "#c3ceff" }}>{r.gloss}</span>
+                  </button>
                 ))}
               </div>
             </div>
@@ -1017,7 +1060,7 @@ function ListPicker({ words, onClose, onChanged }) {
 
 const CEFR_NAMES = { A1: "입문", A2: "초급", B1: "중급", B2: "중상급", C1: "고급", C2: "최상급" };
 
-function Dict({ onOpen, onStudyList }) {
+function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump }) {
   const [q, setQ] = useState("");
   const [view, setView] = useState(null);      // null=허브 | learned|category|fav|mine|add
   const [catMode, setCatModeState] = useState("cefr"); // cefr | root
@@ -1029,6 +1072,14 @@ function Dict({ onOpen, onStudyList }) {
   const [pickMode, setPickMode] = useState(false); // 단어 목록 다중선택(담기) 모드
   const [picked, setPicked] = useState(() => new Set());
   const [showPicker, setShowPicker] = useState(false); // 리스트 선택 다이얼로그
+
+  // 단어상세의 어근 칩에서 넘어온 경우: 카테고리 > 어근별 > 그 어근 목록으로 바로 진입
+  useEffect(() => {
+    if (!rootJump) return;
+    setQ(""); setView("category"); setCatModeState("root"); setCatSel(rootJump);
+    onConsumeRootJump();
+    // eslint-disable-next-line
+  }, [rootJump]);
 
   const words = allWords();
   const learned = words.filter(w => wordStatus(w));
@@ -1283,6 +1334,7 @@ function CardSession({ items, onExit, onOpenWord }) {
   const [hintFirst, setHintFirst] = useState(false); // 첫 글자 힌트
   const [hintUsed, setHintUsed] = useState(false);   // 이 카드에서 힌트를 썼는지 — 쓰면 이번 세션에 한 번 더 출제
   const [nudgeWord, setNudgeWord] = useState(null);  // 유의어를 입력했을 때 안내 문구에 쓸 단어
+  const [, bumpFav] = useState(0); // 카드 즐겨찾기(하트) 토글 리렌더용
 
   const it = queue[idx];
   const blank = useMemo(() => it ? makeBlank(it.ex.en, it.word) : null, [it]);
@@ -1463,10 +1515,21 @@ function CardSession({ items, onExit, onOpenWord }) {
         <button className="x" onClick={() => onExit(false, correct)} aria-label="종료"><Icon name="close" size={22} /></button>
         <div className="study-bar"><i style={{ width: ((idx + (res ? 1 : 0)) / queue.length * 100) + "%" }} /></div>
         <span className="study-n">{idx + 1} / {queue.length}</span>
+        <button className={"favstar" + (FAVS.has(it.word) ? " on" : "")} onClick={() => { toggleFav(it.word); bumpFav(v => v + 1); }} aria-label="카드 즐겨찾기">
+          <Icon name="favorite" size={20} />
+        </button>
       </div>
 
       <div className="qcard">
-        <div className="qlvrow"><span className="tag lv">{it.cefr}</span></div>
+        <div className="qlvrow">
+          {res && (
+            <span className="qaudio">
+              <button onClick={() => speak(it.ex.en)} aria-label="다시 듣기"><Icon name="replay" size={16} /></button>
+              <button onClick={() => speak(it.ex.en, 0.7)} aria-label="느리게 듣기">0.7x</button>
+            </span>
+          )}
+          <span className="tag lv">{it.cefr}</span>
+        </div>
         {mode === "cloze" ? (
           <React.Fragment>
             {/* 빈칸 문제: 위에는 '문장의 한국어 뜻'을 제시(단어 뜻을 직접 주면 답을 알려주는 셈) */}
@@ -1754,6 +1817,8 @@ function App() {
   const changeChar = k => { setCharKState(k); try { localStorage.setItem("en_char", k); } catch (e) {} };
   const [customStudy, setCustomStudy] = useState(null); // 사전 > 내 단어장에서 '이 리스트로 학습' 요청
   const startCustomStudy = items => { setCustomStudy(items); setTab("learn"); };
+  const [dictRootJump, setDictRootJump] = useState(null); // 단어상세 > 어근 칩 클릭 → 사전 카테고리(어근)로 이동
+  const openRoot = affix => { setDictRootJump(affix); setTab("dict"); closeSheet(); };
 
   /* 모바일 소프트 키보드가 뜨면 100dvh가 줄어들지 않는 브라우저(특히 iOS 홈화면 PWA)가 있어
      학습카드 하단 고정 버튼(힌트·확인)이 키보드에 가려짐. visualViewport 실측 높이를
@@ -1792,7 +1857,7 @@ function App() {
 
       <div className="scroll">
         {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} />}
-        {tab === "dict" && <Dict onOpen={openWord} onStudyList={startCustomStudy} />}
+        {tab === "dict" && <Dict onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} />}
         {tab === "learn" && <Learn onOpenWord={openWord} customStudy={customStudy} onConsumeCustomStudy={() => setCustomStudy(null)} />}
         {tab === "talk" && <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />}
         {tab === "box" && <Soon title="보관함은 준비 중입니다" desc="즐겨찾기 단어·문장 · 뱃지 컬렉션 · 성장 기록" />}
@@ -1811,7 +1876,7 @@ function App() {
         ))}
       </div>
 
-      {stack && <WordSheet stack={stack} onPush={pushWord} onPop={popWord} onClose={closeSheet} />}
+      {stack && <WordSheet stack={stack} onPush={pushWord} onPop={popWord} onClose={closeSheet} onOpenRoot={openRoot} />}
     </div>
   );
 }
