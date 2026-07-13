@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.4">
+<link rel="manifest" href="manifest.json?v=0.11.5">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.4"></script>
-<script src="img/rat_run.js?v=0.11.4"></script>
+<script src="words.js?v=0.11.5"></script>
+<script src="img/rat_run.js?v=0.11.5"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -294,13 +294,21 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qhint-btn.on{background:var(--accent-soft);color:var(--accent-deep);}
 .qhint-btn.play{display:inline-flex;align-items:center;gap:5px;}
 
-/* 딕테이션(듣기 세션): 단어 수만큼 빈칸 — qbox를 좁게 재사용해 나란히 줄바꿈 */
+/* 딕테이션(듣기 세션): 단어 수만큼 빈칸 — qbox를 좁게 재사용해 나란히 줄바꿈.
+   빈칸 폭은 항상 정답 글자 수 기준 고정(입력 중에도 안 늘어남) — 왼쪽부터 채워지고
+   남은 자리가 자연히 빈칸처럼 보임(자모 단위로 나누지 않음). */
 .dict-words{display:flex;flex-wrap:wrap;gap:9px 6px;font-size:17px;font-weight:600;line-height:1.65;}
-.dict-box{min-width:34px;}
-.dict-result{font-size:17px;font-weight:600;line-height:1.8;display:flex;flex-wrap:wrap;gap:2px 0;}
-.dict-rword{display:inline-flex;align-items:center;gap:2px;}
+.dict-word{display:inline-flex;align-items:baseline;}
+.dict-box{min-width:30px;}
+.dict-result{font-size:17px;font-weight:600;line-height:1.8;display:flex;flex-wrap:wrap;gap:6px 7px;align-items:baseline;}
+.dict-rword{color:inherit;}
 .dict-rword.bad{color:var(--accent-deep);font-weight:800;background:var(--accent-soft);padding:1px 7px;border-radius:7px;}
-.dict-rword .wordplay{color:var(--accent-deep);display:inline-flex;padding:2px;opacity:.75;}
+.dict-rword:disabled{cursor:default;}
+/* 정답 화면의 발음 해설(연음·축약) — 보조 정보라 낮은 위계로 */
+.dict-notes{display:flex;flex-direction:column;gap:6px;margin-top:2px;}
+.dict-note{font-size:12px;font-weight:500;color:var(--ink-2);background:var(--bg);border-radius:10px;padding:9px 11px;line-height:1.5;}
+.dict-note b{color:var(--accent-deep);font-weight:800;}
+.dict-relearn-note{font-size:12px;font-weight:700;color:#c77a11;background:#fff2e0;border-radius:10px;padding:9px 11px;}
 .qsub{background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:14px 20px;border-radius:14px;width:100%;}
 .qres{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;}
 .qres.ok{color:var(--good);}
@@ -340,7 +348,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.4";
+const APP_VERSION = "v0.11.5";
 const APP_BUILD = "2026-07-13"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -478,6 +486,43 @@ function pickSession(n = 10) {
   const due = its.filter(it => SRS.isDue(it.key));
   const fresh = its.filter(it => !SRS.get(it.key));
   return due.concat(fresh).slice(0, n);
+}
+
+/* **강조** 마크업을 <b>로 렌더 (WHATS_NEW 등 안내 문구 공용 규칙) */
+function renderBold(text) {
+  const parts = (text || "").split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((p, i) => p.startsWith("**") && p.endsWith("**")
+    ? <b key={i}>{p.slice(2, -2)}</b>
+    : <React.Fragment key={i}>{p}</React.Fragment>);
+}
+
+/* 연음·축약(연결 발음) 규칙 기반 해설 — LLM/서버 TTS 없이도 되는 소규모 큐레이션.
+   문장에 매칭되는 패턴이 있을 때만 노출(없으면 섹션 자체를 숨김). 최대 2개. */
+const PRONUNCIATION_NOTES = [
+  [/\bgoing to\b/i, "**going to**는 실제로 **gonna**처럼 발음돼요."],
+  [/\bwant(?:s)? to\b/i, "**want to**는 실제로 **wanna**처럼 발음돼요."],
+  [/\bgot to\b/i, "**got to**는 실제로 **gotta**처럼 발음돼요."],
+  [/\bhave to\b/i, "**have to**는 실제로 **hafta**처럼 발음돼요."],
+  [/\bhas to\b/i, "**has to**는 실제로 **hasta**처럼 발음돼요."],
+  [/\bkind of\b/i, "**kind of**는 실제로 **kinda**처럼 발음돼요."],
+  [/\bsort of\b/i, "**sort of**는 실제로 **sorta**처럼 발음돼요."],
+  [/\blet me\b/i, "**let me**는 실제로 **lemme**처럼 발음돼요."],
+  [/\bgive me\b/i, "**give me**는 실제로 **gimme**처럼 발음돼요."],
+  [/\bdon'?t know\b/i, "**don't know**는 실제로 **dunno**처럼 빠르게 이어져요."],
+  [/\bwhat (?:are|do) you\b/i, "**what do you**는 실제로 **whaddaya**처럼 이어져요."],
+  [/\bdid you\b/i, "**did you**는 실제로 **didja**처럼 이어져요."],
+  [/\bshould have\b/i, "**should have**는 실제로 **should've(슈다브)**처럼 짧아져요."],
+  [/\bwould have\b/i, "**would have**는 실제로 **would've(우다브)**처럼 짧아져요."],
+  [/\bcould have\b/i, "**could have**는 실제로 **could've(쿠다브)**처럼 짧아져요."],
+  [/\ban? [aeiou]/i, "자음으로 끝나는 단어 다음에 모음으로 시작하는 단어가 오면 **이어서(연음)** 발음돼요."],
+];
+function findPronunciationNotes(text) {
+  const hits = [];
+  for (const [re, note] of PRONUNCIATION_NOTES) {
+    if (re.test(text)) hits.push(note);
+    if (hits.length >= 2) break;
+  }
+  return hits;
 }
 
 /* ---------- 홈 탭 ---------- */
@@ -1170,67 +1215,101 @@ function Finish({ total, correct, onExit, label }) {
    출제 소스는 학습카드와 동일한 pickSession(due→fresh)이라 정답 시 그 단어의 SRS도 같이 오른다.
    보조 컨트롤: 0.8x 느리게, 또박또박(단어별로 끊어 발화 — Web Speech엔 진짜 연음 억제가 없어
    문장 통짜 발화(자연) vs 단어별 개별 발화(또박또박)로 근사), 오답 단어만 다시 듣기. */
-function DictationSession({ items, onExit }) {
+/* 단어 토큰 → 앞 구두점 / 타이핑 대상(알파벳+따옴표) / 뒤 구두점 분리.
+   "others." → pre:"", core:"others", post:"." — core 길이로 빈칸 폭·셀 개수를 정한다. */
+function splitWordToken(w) {
+  const m = w.match(/^([^A-Za-z0-9']*)([A-Za-z0-9']+)([^A-Za-z0-9']*)$/);
+  return m ? { pre: m[1], core: m[2], post: m[3] } : { pre: "", core: w, post: "" };
+}
+
+/* 음절보기 힌트: 단어학습카드(CardSession)의 글자수 힌트 셀 UI를 그대로 재사용 — 단어 하나마다 독립된 cellrow */
+function DictWordCells({ core, value, onChange, onKeyDown, refCb, autoFocus, onRowClick }) {
+  const n = core.length;
+  return (
+    <span className="cellrow" onMouseDown={e => { e.preventDefault(); onRowClick && onRowClick(); }}>
+      {Array.from({ length: n }).map((_, k) => (
+        <span key={k} className={"cell" + (value[k] ? " filled" : "") + (k === value.length ? " cur" : "")}>{value[k] || ""}</span>
+      ))}
+      <input ref={refCb} className="cell-catch" autoFocus={autoFocus} value={value}
+        onChange={e => onChange(e.target.value.replace(/[^A-Za-z']/g, "").slice(0, n))}
+        onKeyDown={onKeyDown}
+        maxLength={n} autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+        aria-label="빈칸 입력" />
+    </span>
+  );
+}
+
+function DictationSession({ items: initialItems, onExit, onOpenWord }) {
+  const [queue, setQueue] = useState(() => initialItems.slice()); // 로컬 사본 — 재생 패널티로 다음 문제를 바꾸거나(교체) 재학습 문제를 뒤에 붙일 수 있어야 함
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState([]);
-  const [res, setRes] = useState(null); // null | { perWordOk, dueIn }
+  const [res, setRes] = useState(null); // null | { perWordOk, dueIn, forcedRelearn? }
   const [correct, setCorrect] = useState(0);
-  const [slow, setSlow] = useState(false);
-  const [careful, setCareful] = useState(false);
+  const [replayCount, setReplayCount] = useState(0);
+  const [syllableHint, setSyllableHint] = useState(false); // 음절보기
 
-  const it = items[idx];
-  const expectedWords = useMemo(() => (it ? it.ex.en.trim().split(/\s+/) : []), [it]);
+  const it = queue[idx];
+  const tokens = useMemo(() => (it ? it.ex.en.trim().split(/\s+/).map(splitWordToken) : []), [it]);
   const norm = s => (s || "").toLowerCase().replace(/[^a-z0-9']/g, "");
   const inputRefs = React.useRef([]);
 
-  useEffect(() => { setAnswers(new Array(expectedWords.length).fill("")); inputRefs.current = []; }, [idx, expectedWords.length]);
+  useEffect(() => { setAnswers(new Array(tokens.length).fill("")); inputRefs.current = []; setReplayCount(0); }, [idx, tokens.length]);
   useEffect(() => {
     if (!it) return;
     const t = setTimeout(() => speakSentence(it.ex.en), 300);
     return () => clearTimeout(t);
-    // eslint: slow/careful는 의도적으로 미포함 — 토글은 설정만 바꾸고, 재생은 '다시 듣기'로 사용자가 직접 트리거
   }, [idx]);
 
-  const speakWord = text => {
-    try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = "en-US"; u.rate = 1; speechSynthesis.speak(u); } catch (e) {}
-  };
   const speakSentence = text => {
-    try {
-      speechSynthesis.cancel();
-      const rate = slow ? 0.72 : 1;
-      if (!careful) {
-        const u = new SpeechSynthesisUtterance(text);
-        u.lang = "en-US"; u.rate = rate;
-        speechSynthesis.speak(u);
-        return;
-      }
-      const words = text.trim().split(/\s+/);
-      let i = 0;
-      const speakNext = () => {
-        if (i >= words.length) return;
-        const u = new SpeechSynthesisUtterance(words[i]);
-        u.lang = "en-US"; u.rate = rate;
-        u.onend = () => { i++; setTimeout(speakNext, 90); };
-        speechSynthesis.speak(u);
-      };
-      speakNext();
-    } catch (e) {}
+    try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = "en-US"; speechSynthesis.speak(u); } catch (e) {}
   };
 
   const focusInput = i => { const el = inputRefs.current[i]; if (el) el.focus(); };
 
+  /* 다시 듣기 패널티: 매 재생마다 다음 문제를 한 단계 쉬운 레벨로 교체.
+     3번째 재생이면 그 자리에서 이 문제를 오답 처리하고 세션 끝에 다시 배치(재학습). */
+  const downgradeNext = () => {
+    setQueue(q => {
+      if (idx + 1 >= q.length) return q;
+      const li = CEFR_LEVELS.indexOf(it.cefr);
+      if (li <= 0) return q;
+      const lowerLv = CEFR_LEVELS[li - 1];
+      const used = new Set(q.map(x => x.key));
+      const pool = allItems().filter(x => x.cefr === lowerLv && !used.has(x.key));
+      if (!pool.length) return q;
+      const pick = pool[Math.floor(Math.random() * pool.length)];
+      const nq = q.slice();
+      nq[idx + 1] = pick;
+      return nq;
+    });
+  };
+  const forceRelearn = () => {
+    const s = SRS.grade(it.key, false);
+    setQueue(q => q.concat([it]));
+    setRes({ perWordOk: tokens.map(() => false), dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)), forcedRelearn: true });
+  };
+  const replay = () => {
+    speakSentence(it.ex.en);
+    if (res) return; // 정답 확인 후에는 그냥 다시 들려주기만(패널티 없음)
+    setReplayCount(c => {
+      const nc = c + 1;
+      if (nc >= 3) forceRelearn(); else downgradeNext();
+      return nc;
+    });
+  };
+
   const check = () => {
     if (res) return;
     if (!answers.some(a => (a || "").trim())) return;
-    const perWordOk = expectedWords.map((w, i) => norm(answers[i]) === norm(w));
+    const perWordOk = tokens.map((t, i) => norm(answers[i]) === norm(t.core));
     const allOk = perWordOk.every(Boolean);
     const s = SRS.grade(it.key, allOk);
     if (allOk) setCorrect(c => c + 1);
     setRes({ perWordOk, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) });
   };
   const next = () => {
-    if (idx + 1 >= items.length) { onExit(true, correct); return; }
-    setIdx(idx + 1); setRes(null);
+    if (idx + 1 >= queue.length) { onExit(true, correct); return; }
+    setIdx(i => i + 1); setRes(null);
   };
 
   if (!it) {
@@ -1244,56 +1323,94 @@ function DictationSession({ items, onExit }) {
   }
 
   const allOk = res && res.perWordOk.every(Boolean);
+  const notes = res ? findPronunciationNotes(it.ex.en) : [];
 
   return (
     <div className="content study">
       <div className="study-top">
         <button className="x" onClick={() => onExit(false, correct)} aria-label="종료"><Icon name="close" size={22} /></button>
-        <div className="study-bar"><i style={{ width: ((idx + (res ? 1 : 0)) / items.length * 100) + "%" }} /></div>
-        <span className="study-n">{idx + 1} / {items.length}</span>
+        <div className="study-bar"><i style={{ width: ((idx + (res ? 1 : 0)) / queue.length * 100) + "%" }} /></div>
+        <span className="study-n">{idx + 1} / {queue.length}</span>
       </div>
 
       <div className="qcard">
         <div className="qhintrow">
-          <button className="qhint-btn play" onClick={() => speakSentence(it.ex.en)}><Icon name="volume_up" size={15} /> 다시 듣기</button>
-          <button className={"qhint-btn" + (slow ? " on" : "")} onClick={() => setSlow(v => !v)}>느리게 0.8x</button>
-          <button className={"qhint-btn" + (careful ? " on" : "")} onClick={() => setCareful(v => !v)}>또박또박</button>
+          <span className="qhint-lbl">힌트</span>
+          <button className="qhint-btn play" onClick={replay}><Icon name="volume_up" size={15} /> 다시 듣기</button>
+          {!res && <button className={"qhint-btn" + (syllableHint ? " on" : "")} onClick={() => setSyllableHint(v => !v)}>음절보기</button>}
         </div>
-        <div className="qdiv" />
+        {!res && replayCount > 0 && (
+          <div className="qhint" style={{ marginTop: 6 }}>
+            다시 듣기 {replayCount}회 — 다음 문제 난이도가 낮아져요{replayCount >= 2 ? " · 한 번 더 들으면 이 문제를 다시 학습해요" : ""}
+          </div>
+        )}
+        <div className="qdiv" style={{ marginTop: 10 }} />
 
         {!res ? (
           <div className="dict-words">
-            {expectedWords.map((w, i) => (
-              <input key={i} ref={el => { inputRefs.current[i] = el; }} className="qbox dict-box"
-                value={answers[i] || ""} autoFocus={i === 0}
-                size={Math.max(2, (answers[i] || "").length + 1)}
-                onChange={e => { const v = e.target.value.replace(/\s/g, ""); setAnswers(a => { const n = a.slice(); n[i] = v; return n; }); }}
-                onKeyDown={e => {
-                  if (e.key === " " || e.key === "Enter") {
-                    e.preventDefault();
-                    if (i + 1 < expectedWords.length) focusInput(i + 1); else check();
-                  } else if (e.key === "Backspace" && !answers[i] && i > 0) {
-                    focusInput(i - 1);
-                  }
-                }}
-                autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
-                aria-label={"단어 " + (i + 1)} />
+            {tokens.map((t, i) => (
+              <span key={i} className="dict-word">
+                {t.pre}
+                {syllableHint ? (
+                  <DictWordCells core={t.core} value={answers[i] || ""} autoFocus={i === 0}
+                    refCb={el => { inputRefs.current[i] = el; }}
+                    onRowClick={() => focusInput(i)}
+                    onChange={v => setAnswers(a => { const n = a.slice(); n[i] = v; return n; })}
+                    onKeyDown={e => {
+                      if (e.key === " " || e.key === "Enter") {
+                        e.preventDefault();
+                        if (i + 1 < tokens.length) focusInput(i + 1); else check();
+                      } else if (e.key === "Backspace" && !answers[i] && i > 0) {
+                        focusInput(i - 1);
+                      }
+                    }} />
+                ) : (
+                  <input ref={el => { inputRefs.current[i] = el; }} className="qbox dict-box"
+                    value={answers[i] || ""} autoFocus={i === 0}
+                    size={Math.max(2, t.core.length)}
+                    onChange={e => { const v = e.target.value.replace(/\s/g, ""); setAnswers(a => { const n = a.slice(); n[i] = v; return n; }); }}
+                    onKeyDown={e => {
+                      if (e.key === " " || e.key === "Enter") {
+                        e.preventDefault();
+                        if (i + 1 < tokens.length) focusInput(i + 1); else check();
+                      } else if (e.key === "Backspace" && !answers[i] && i > 0) {
+                        focusInput(i - 1);
+                      }
+                    }}
+                    autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+                    aria-label={"단어 " + (i + 1)} />
+                )}
+                {t.post}
+              </span>
             ))}
           </div>
         ) : (
           <div className="dict-result">
-            {expectedWords.map((w, i) => (
-              <span key={i} className={"dict-rword" + (res.perWordOk[i] ? "" : " bad")}>
-                {w}
-                {!res.perWordOk[i] && (
-                  <button className="wordplay" onClick={() => speakWord(w.replace(/[^A-Za-z']/g, ""))} aria-label="이 단어 다시 듣기"><Icon name="volume_up" size={12} /></button>
-                )}
-              </span>
-            ))}
+            {tokens.map((t, i) => {
+              const known = t.core && wordOf(t.core.toLowerCase());
+              return (
+                <span key={i} className="dict-word">
+                  {t.pre}
+                  <button type="button" className={"dict-rword" + (res.perWordOk[i] ? "" : " bad")}
+                    disabled={!known} onClick={() => known && onOpenWord(t.core.toLowerCase())}>
+                    {t.core}
+                  </button>
+                  {t.post}
+                </span>
+              );
+            })}
           </div>
         )}
 
+        {res && res.forcedRelearn && (
+          <div className="dict-relearn-note">다시 듣기를 3번 사용해서 이 문제는 세션 뒤쪽에서 다시 나와요.</div>
+        )}
         {res && <div className="qcue" style={{ marginTop: 8 }}>{it.ex.ko}</div>}
+        {res && notes.length > 0 && (
+          <div className="dict-notes">
+            {notes.map((n, i) => <div key={i} className="dict-note">{renderBold(n)}</div>)}
+          </div>
+        )}
         {res && (
           <div className={"qres " + (allOk ? "ok" : "no")}>
             {allOk ? <Icon name="check" size={18} /> : <Icon name="close" size={18} />}
@@ -1309,7 +1426,7 @@ function DictationSession({ items, onExit }) {
         </div>
       ) : (
         <div className="qactions">
-          <button className="primary" onClick={next}>{idx + 1 >= items.length ? "학습 완료" : "다음 문장"}</button>
+          <button className="primary" onClick={next}>{idx + 1 >= queue.length ? "학습 완료" : "다음 문장"}</button>
         </div>
       )}
     </div>
@@ -1333,7 +1450,7 @@ function Learn({ onOpenWord }) {
     if (done) { setSummary({ total: session.length, correct }); setSession("done"); }
     else setSession(null);
   };
-  if (session && mode === "listen") return <DictationSession items={session} onExit={onSessionExit} />;
+  if (session && mode === "listen") return <DictationSession items={session} onExit={onSessionExit} onOpenWord={onOpenWord} />;
   if (session) return <CardSession items={session} onOpenWord={onOpenWord} onExit={onSessionExit} />;
 
   const startCard = () => { const items = pickSession(10); if (items.length) { setMode("card"); setSession(items); } };
