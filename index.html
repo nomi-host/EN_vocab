@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.3">
+<link rel="manifest" href="manifest.json?v=0.11.4">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.3"></script>
-<script src="img/rat_run.js?v=0.11.3"></script>
+<script src="words.js?v=0.11.4"></script>
+<script src="img/rat_run.js?v=0.11.4"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -292,6 +292,15 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qhint-lbl{font-size:12px;font-weight:700;color:var(--muted);}
 .qhint-btn{font-size:13px;font-weight:700;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:8px 14px;}
 .qhint-btn.on{background:var(--accent-soft);color:var(--accent-deep);}
+.qhint-btn.play{display:inline-flex;align-items:center;gap:5px;}
+
+/* 딕테이션(듣기 세션): 단어 수만큼 빈칸 — qbox를 좁게 재사용해 나란히 줄바꿈 */
+.dict-words{display:flex;flex-wrap:wrap;gap:9px 6px;font-size:17px;font-weight:600;line-height:1.65;}
+.dict-box{min-width:34px;}
+.dict-result{font-size:17px;font-weight:600;line-height:1.8;display:flex;flex-wrap:wrap;gap:2px 0;}
+.dict-rword{display:inline-flex;align-items:center;gap:2px;}
+.dict-rword.bad{color:var(--accent-deep);font-weight:800;background:var(--accent-soft);padding:1px 7px;border-radius:7px;}
+.dict-rword .wordplay{color:var(--accent-deep);display:inline-flex;padding:2px;opacity:.75;}
 .qsub{background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:14px 20px;border-radius:14px;width:100%;}
 .qres{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;}
 .qres.ok{color:var(--good);}
@@ -331,8 +340,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.3";
-const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.11.4";
+const APP_BUILD = "2026-07-13"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1144,44 +1153,195 @@ function CardSession({ items, onExit, onOpenWord }) {
 }
 
 /* 학습 완료 요약 */
-function Finish({ total, correct, onExit }) {
+function Finish({ total, correct, onExit, label }) {
   return (
     <div className="content"><div className="finish">
       <div className="char-face mascot">잘했어요!</div>
       <div className="big">{correct} / {total}</div>
-      <div className="msg">오늘 단어카드 완료</div>
+      <div className="msg">{label || "오늘 단어카드 완료"}</div>
       <div className="sub">복습 시점은 정답률에 맞춰 자동 조정됐어요.</div>
       <div className="qactions" style={{ width: "100%", marginTop: 18 }}><button className="primary" onClick={onExit}>돌아가기</button></div>
     </div></div>
   );
 }
 
+/* ---------- 듣기 세션 (딕테이션) ----------
+   문장 전체 재생 → 단어 수만큼 빈칸에 타이핑 → 채점 → 정답(오답 단어만 강조)·해석·다시듣기.
+   출제 소스는 학습카드와 동일한 pickSession(due→fresh)이라 정답 시 그 단어의 SRS도 같이 오른다.
+   보조 컨트롤: 0.8x 느리게, 또박또박(단어별로 끊어 발화 — Web Speech엔 진짜 연음 억제가 없어
+   문장 통짜 발화(자연) vs 단어별 개별 발화(또박또박)로 근사), 오답 단어만 다시 듣기. */
+function DictationSession({ items, onExit }) {
+  const [idx, setIdx] = useState(0);
+  const [answers, setAnswers] = useState([]);
+  const [res, setRes] = useState(null); // null | { perWordOk, dueIn }
+  const [correct, setCorrect] = useState(0);
+  const [slow, setSlow] = useState(false);
+  const [careful, setCareful] = useState(false);
+
+  const it = items[idx];
+  const expectedWords = useMemo(() => (it ? it.ex.en.trim().split(/\s+/) : []), [it]);
+  const norm = s => (s || "").toLowerCase().replace(/[^a-z0-9']/g, "");
+  const inputRefs = React.useRef([]);
+
+  useEffect(() => { setAnswers(new Array(expectedWords.length).fill("")); inputRefs.current = []; }, [idx, expectedWords.length]);
+  useEffect(() => {
+    if (!it) return;
+    const t = setTimeout(() => speakSentence(it.ex.en), 300);
+    return () => clearTimeout(t);
+    // eslint: slow/careful는 의도적으로 미포함 — 토글은 설정만 바꾸고, 재생은 '다시 듣기'로 사용자가 직접 트리거
+  }, [idx]);
+
+  const speakWord = text => {
+    try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = "en-US"; u.rate = 1; speechSynthesis.speak(u); } catch (e) {}
+  };
+  const speakSentence = text => {
+    try {
+      speechSynthesis.cancel();
+      const rate = slow ? 0.72 : 1;
+      if (!careful) {
+        const u = new SpeechSynthesisUtterance(text);
+        u.lang = "en-US"; u.rate = rate;
+        speechSynthesis.speak(u);
+        return;
+      }
+      const words = text.trim().split(/\s+/);
+      let i = 0;
+      const speakNext = () => {
+        if (i >= words.length) return;
+        const u = new SpeechSynthesisUtterance(words[i]);
+        u.lang = "en-US"; u.rate = rate;
+        u.onend = () => { i++; setTimeout(speakNext, 90); };
+        speechSynthesis.speak(u);
+      };
+      speakNext();
+    } catch (e) {}
+  };
+
+  const focusInput = i => { const el = inputRefs.current[i]; if (el) el.focus(); };
+
+  const check = () => {
+    if (res) return;
+    if (!answers.some(a => (a || "").trim())) return;
+    const perWordOk = expectedWords.map((w, i) => norm(answers[i]) === norm(w));
+    const allOk = perWordOk.every(Boolean);
+    const s = SRS.grade(it.key, allOk);
+    if (allOk) setCorrect(c => c + 1);
+    setRes({ perWordOk, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) });
+  };
+  const next = () => {
+    if (idx + 1 >= items.length) { onExit(true, correct); return; }
+    setIdx(idx + 1); setRes(null);
+  };
+
+  if (!it) {
+    return (
+      <div className="content"><div className="finish">
+        <div className="msg">들을 문장이 없어요</div>
+        <div className="sub">새 단어를 학습하거나 내일 다시 복습해요.</div>
+        <div className="qactions" style={{ width: "100%", marginTop: 16 }}><button className="primary" onClick={() => onExit(false, 0)}>돌아가기</button></div>
+      </div></div>
+    );
+  }
+
+  const allOk = res && res.perWordOk.every(Boolean);
+
+  return (
+    <div className="content study">
+      <div className="study-top">
+        <button className="x" onClick={() => onExit(false, correct)} aria-label="종료"><Icon name="close" size={22} /></button>
+        <div className="study-bar"><i style={{ width: ((idx + (res ? 1 : 0)) / items.length * 100) + "%" }} /></div>
+        <span className="study-n">{idx + 1} / {items.length}</span>
+      </div>
+
+      <div className="qcard">
+        <div className="qhintrow">
+          <button className="qhint-btn play" onClick={() => speakSentence(it.ex.en)}><Icon name="volume_up" size={15} /> 다시 듣기</button>
+          <button className={"qhint-btn" + (slow ? " on" : "")} onClick={() => setSlow(v => !v)}>느리게 0.8x</button>
+          <button className={"qhint-btn" + (careful ? " on" : "")} onClick={() => setCareful(v => !v)}>또박또박</button>
+        </div>
+        <div className="qdiv" />
+
+        {!res ? (
+          <div className="dict-words">
+            {expectedWords.map((w, i) => (
+              <input key={i} ref={el => { inputRefs.current[i] = el; }} className="qbox dict-box"
+                value={answers[i] || ""} autoFocus={i === 0}
+                size={Math.max(2, (answers[i] || "").length + 1)}
+                onChange={e => { const v = e.target.value.replace(/\s/g, ""); setAnswers(a => { const n = a.slice(); n[i] = v; return n; }); }}
+                onKeyDown={e => {
+                  if (e.key === " " || e.key === "Enter") {
+                    e.preventDefault();
+                    if (i + 1 < expectedWords.length) focusInput(i + 1); else check();
+                  } else if (e.key === "Backspace" && !answers[i] && i > 0) {
+                    focusInput(i - 1);
+                  }
+                }}
+                autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+                aria-label={"단어 " + (i + 1)} />
+            ))}
+          </div>
+        ) : (
+          <div className="dict-result">
+            {expectedWords.map((w, i) => (
+              <span key={i} className={"dict-rword" + (res.perWordOk[i] ? "" : " bad")}>
+                {w}
+                {!res.perWordOk[i] && (
+                  <button className="wordplay" onClick={() => speakWord(w.replace(/[^A-Za-z']/g, ""))} aria-label="이 단어 다시 듣기"><Icon name="volume_up" size={12} /></button>
+                )}
+              </span>
+            ))}
+          </div>
+        )}
+
+        {res && <div className="qcue" style={{ marginTop: 8 }}>{it.ex.ko}</div>}
+        {res && (
+          <div className={"qres " + (allOk ? "ok" : "no")}>
+            {allOk ? <Icon name="check" size={18} /> : <Icon name="close" size={18} />}
+            {allOk ? "정답!" : "강조된 단어를 확인해 보세요"}
+            <span className="due">{res.dueIn === 0 ? "곧 복습" : res.dueIn + "일 뒤 복습"}</span>
+          </div>
+        )}
+      </div>
+
+      {!res ? (
+        <div style={{ marginTop: "auto" }}>
+          <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={check}>확인</button>
+        </div>
+      ) : (
+        <div className="qactions">
+          <button className="primary" onClick={next}>{idx + 1 >= items.length ? "학습 완료" : "다음 문장"}</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 /* ---------- 학습 탭 ---------- */
 function Learn({ onOpenWord }) {
-  const [session, setSession] = useState(null); // null | {items} | "done"
+  const [session, setSession] = useState(null); // null | items | "done"
+  const [mode, setMode] = useState("card");      // "card" | "listen" — session이 어느 세션인지
   const [summary, setSummary] = useState(null);
   const dueCount = allItems().filter(it => SRS.isDue(it.key)).length;
   const newCount = allItems().filter(it => !SRS.get(it.key)).length;
 
   if (session === "done" && summary) {
-    return <Finish total={summary.total} correct={summary.correct} onExit={() => { setSession(null); setSummary(null); }} />;
+    return <Finish total={summary.total} correct={summary.correct}
+      label={mode === "listen" ? "오늘 듣기 세션 완료" : undefined}
+      onExit={() => { setSession(null); setSummary(null); }} />;
   }
-  if (session) {
-    return <CardSession items={session} onOpenWord={onOpenWord}
-      onExit={(done, correct) => {
-        if (done) { setSummary({ total: session.length, correct }); setSession("done"); }
-        else setSession(null);
-      }} />;
-  }
-
-  const start = () => {
-    const items = pickSession(10);
-    if (items.length) setSession(items);
+  const onSessionExit = (done, correct) => {
+    if (done) { setSummary({ total: session.length, correct }); setSession("done"); }
+    else setSession(null);
   };
+  if (session && mode === "listen") return <DictationSession items={session} onExit={onSessionExit} />;
+  if (session) return <CardSession items={session} onOpenWord={onOpenWord} onExit={onSessionExit} />;
+
+  const startCard = () => { const items = pickSession(10); if (items.length) { setMode("card"); setSession(items); } };
+  const startListen = () => { const items = pickSession(10); if (items.length) { setMode("listen"); setSession(items); } };
 
   const MENU = [
-    { k: "card", icon: "school", title: "단어카드", sub: `복습 ${dueCount} · 신규 ${newCount} 대기`, on: true },
-    { k: "listen", icon: "volume_up", title: "듣기 세션 (딕테이션)", sub: "듣고 그대로 타이핑", on: false },
+    { k: "card", icon: "school", title: "단어카드", sub: `복습 ${dueCount} · 신규 ${newCount} 대기`, on: true, start: startCard },
+    { k: "listen", icon: "volume_up", title: "듣기 세션 (딕테이션)", sub: "듣고 그대로 타이핑", on: true, start: startListen },
     { k: "quiz", icon: "grid_view", title: "퀴즈", sub: "뜻·스펠링·빈칸", on: false },
     { k: "level", icon: "add", title: "레벨 테스트", sub: "어휘 + 문장구사력", on: false },
   ];
@@ -1193,7 +1353,7 @@ function Learn({ onOpenWord }) {
         <div className="l">지금 복습할 카드</div>
       </div>
       {MENU.map(m => (
-        <div key={m.k} className={"step" + (m.on ? "" : " soon")} onClick={() => m.on && start()}>
+        <div key={m.k} className={"step" + (m.on ? "" : " soon")} onClick={() => m.on && m.start()}>
           <div className="step-ico"><Icon name={m.icon} size={20} /></div>
           <div className="step-body">
             <div className="step-title">{m.title}</div>
