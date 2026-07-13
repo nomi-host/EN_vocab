@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.6">
+<link rel="manifest" href="manifest.json?v=0.11.7">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.6"></script>
-<script src="img/rat_run.js?v=0.11.6"></script>
+<script src="words.js?v=0.11.7"></script>
+<script src="img/rat_run.js?v=0.11.7"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -354,7 +354,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.6";
+const APP_VERSION = "v0.11.7";
 const APP_BUILD = "2026-07-13"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -1359,18 +1359,6 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
       </div>
 
       <div className="qcard">
-        <div className="qhintrow">
-          <span className="qhint-lbl">힌트</span>
-          <button className="qhint-btn play" onClick={replay}><Icon name="volume_up" size={15} /> 다시 듣기</button>
-          {!res && <button className={"qhint-btn" + (syllableHint ? " on" : "")} onClick={() => setSyllableHint(v => !v)}>음절보기</button>}
-        </div>
-        {!res && replayCount > 0 && (
-          <div className="qhint" style={{ marginTop: 6 }}>
-            다시 듣기 {replayCount}회 — 다음 문제 난이도가 낮아져요{replayCount >= 2 ? " · 한 번 더 들으면 이 문제를 다시 학습해요" : ""}
-          </div>
-        )}
-        <div className="qdiv" style={{ marginTop: 10 }} />
-
         {!res ? (
           <React.Fragment>
             <div className="dict-words">
@@ -1444,7 +1432,17 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
       </div>
 
       {!res ? (
-        <div style={{ marginTop: "auto" }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: "auto" }}>
+          <div className="qhintrow">
+            <span className="qhint-lbl">힌트</span>
+            <button className="qhint-btn play" onClick={replay}><Icon name="volume_up" size={15} /> 다시 듣기</button>
+            <button className={"qhint-btn" + (syllableHint ? " on" : "")} onClick={() => setSyllableHint(v => !v)}>음절보기</button>
+          </div>
+          {replayCount > 0 && (
+            <div className="qhint">
+              다시 듣기 {replayCount}회 — 다음 문제 난이도가 낮아져요{replayCount >= 2 ? " · 한 번 더 들으면 이 문제를 다시 학습해요" : ""}
+            </div>
+          )}
           <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={check}>확인</button>
         </div>
       ) : (
