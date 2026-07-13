@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.11">
+<link rel="manifest" href="manifest.json?v=0.11.12">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.11"></script>
-<script src="img/rat_run.js?v=0.11.11"></script>
+<script src="words.js?v=0.11.12"></script>
+<script src="img/rat_run.js?v=0.11.12"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -307,6 +307,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .cell.correct{background:var(--accent-soft);color:var(--accent-deep);}
 .cell.wrong{background:var(--fill);color:var(--muted);}
 .cell.cur::after{content:"";width:2px;height:17px;border-radius:1px;background:var(--accent);animation:caretblink 1.06s steps(1) infinite;}
+.cell-gap{width:10px;flex:none;} /* 구동사 빈칸의 단어 사이 간격 */
 @keyframes caretblink{50%{opacity:0;}}
 @media (prefers-reduced-motion: reduce){.cell.cur::after{animation:none;}}
 .cell-catch{position:absolute;inset:0;width:100%;height:100%;opacity:0;border:0;padding:0;margin:0;font-size:16px;}
@@ -373,7 +374,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.11";
+const APP_VERSION = "v0.11.12";
 const APP_BUILD = "2026-07-12"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -578,14 +579,33 @@ function allItems() {
   return itemsFromWords(allWords());
 }
 
-/* 영어 예문에서 타깃 단어를 빈칸으로. 굴절형(saved/delivers)도 어간 매칭. 실패 시 null */
+/* 영어 예문에서 타깃 단어를 빈칸으로. 굴절형(saved/delivers)도 어간 매칭. 실패 시 null.
+   구동사·숙어(give up, carve out 등)는 첫 단어만 어간 매칭하고 나머지 단어(불변화사)는
+   그대로 이어지는지 확인 — "She carved out a career"에서 "carved out" 전체를 빈칸으로. */
 function makeBlank(en, word) {
-  const stem = word.replace(/e$/, "").toLowerCase();
-  const parts = en.split(/(\s+)/);
-  for (let i = 0; i < parts.length; i++) {
-    const clean = parts[i].replace(/[^A-Za-z']/g, "").toLowerCase();
-    if (clean && (clean === word.toLowerCase() || (stem.length >= 3 && clean.startsWith(stem)))) {
-      return { before: parts.slice(0, i).join(""), answer: clean, after: parts.slice(i + 1).join("") };
+  const parts = en.split(/(\s+)/); // 짝수 인덱스=단어, 홀수=공백(원문 보존)
+  const clean = t => t.replace(/[^A-Za-z']/g, "").toLowerCase();
+  const stemOf = w => w.replace(/e$/, "").toLowerCase();
+  const targets = word.toLowerCase().split(/\s+/);
+  const stem = stemOf(targets[0]);
+  const matchHead = t => t && (t === targets[0] || (stem.length >= 3 && t.startsWith(stem)));
+
+  for (let i = 0; i < parts.length; i += 2) {
+    if (!matchHead(clean(parts[i]))) continue;
+    if (targets.length === 1) {
+      return { before: parts.slice(0, i).join(""), answer: clean(parts[i]), after: parts.slice(i + 1).join("") };
+    }
+    // 다단어: 뒤따르는 단어들이 순서대로 일치하는지(불변화사는 굴절이 없어 완전 일치)
+    const endIdx = i + (targets.length - 1) * 2;
+    if (endIdx >= parts.length) continue;
+    let ok = true;
+    for (let k = 1; k < targets.length; k++) {
+      if (clean(parts[i + k * 2]) !== targets[k]) { ok = false; break; }
+    }
+    if (ok) {
+      const answer = [];
+      for (let k = 0; k < targets.length; k++) answer.push(clean(parts[i + k * 2]));
+      return { before: parts.slice(0, i).join(""), answer: answer.join(" "), after: parts.slice(endIdx + 1).join("") };
     }
   }
   return null;
@@ -1359,19 +1379,31 @@ function CardSession({ items, onExit, onOpenWord }) {
 
   // 입력창: 기본은 박스 하나. 글자수 힌트를 켜면 정답 글자 수만큼 칸(cell)으로 분리하고,
   // 위치별로 정답과 대조해 맞은 글자는 파랑(correct), 틀린 글자는 회색(wrong)으로 표시.
+  // 구동사(give up 등) 대응: 정답의 공백 위치는 입력 없이 자동 통과되는 간격(cell gap)으로 표시.
   const boxInput = () => {
     if (hintLen && expected) {
       const n = expected.length;
+      const curIdx = expected[val.length] === " " ? val.length + 1 : val.length; // 캐럿이 공백 간격에 걸리면 다음 칸에
       return (
         <span className="cellrow" onMouseDown={e => { e.preventDefault(); focusHidden(); }}>
           {Array.from({ length: n }).map((_, k) => {
+            if (expected[k] === " ") return <span key={k} className="cell-gap" />;
             const ch = val[k];
             const right = ch && ch.toLowerCase() === expected[k];
-            const cls = "cell" + (ch ? (right ? " correct" : " wrong") : "") + (k === val.length ? " cur" : "");
+            const cls = "cell" + (ch ? (right ? " correct" : " wrong") : "") + (k === curIdx ? " cur" : "");
             return <span key={k} className={cls}>{ch || ""}</span>;
           })}
           <input key={idx} ref={hiddenRef} className="cell-catch" autoFocus value={val}
-            onChange={e => handleChange(e.target.value.replace(/[^A-Za-z']/g, "").slice(0, n))}
+            onChange={e => {
+              // 공백은 정답의 공백 위치에서만 자동 삽입(사용자가 스페이스를 신경 쓸 필요 없게)
+              let raw = e.target.value.replace(/[^A-Za-z']/g, "");
+              let out = "";
+              for (let i = 0, j = 0; j < raw.length && out.length < n; ) {
+                if (expected[out.length] === " ") { out += " "; continue; }
+                out += raw[j++];
+              }
+              handleChange(out);
+            }}
             onKeyDown={e => e.key === "Enter" && submit()}
             maxLength={n} autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
             aria-label="빈칸 입력" />
