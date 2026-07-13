@@ -1,0 +1,1056 @@
+{
+ "return": [
+  {
+   "cue": "장소·상태로 다시",
+   "ko": "돌아오다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "go back to a place or state",
+   "syn": [
+    "go back",
+    "come back"
+   ],
+   "ex": [
+    {
+     "en": "She returned home late last night.",
+     "ko": "그녀는 어젯밤 늦게 집으로 돌아왔다."
+    }
+   ]
+  },
+  {
+   "cue": "빌린 것을",
+   "ko": "반납하다, 돌려주다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "give something back to its owner or original place",
+   "syn": [
+    "give back"
+   ],
+   "ex": [
+    {
+     "en": "I need to return this book to the library.",
+     "ko": "나는 이 책을 도서관에 반납해야 한다."
+    }
+   ]
+  },
+  {
+   "cue": "왕복하는 표",
+   "ko": "왕복(의)",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "a journey to a place and back again",
+   "syn": [],
+   "ex": [
+    {
+     "en": "I bought a return ticket to London.",
+     "ko": "나는 런던행 왕복표를 샀다."
+    }
+   ]
+  },
+  {
+   "cue": "투자·사업에서 얻는",
+   "ko": "수익, 이익",
+   "pos": "명사",
+   "lv": 6,
+   "cefr": "B1",
+   "en": "the profit gained from an investment or business",
+   "syn": [
+    "profit"
+   ],
+   "ex": [
+    {
+     "en": "The company reported strong returns this year.",
+     "ko": "그 회사는 올해 높은 수익을 기록했다."
+    }
+   ]
+  }
+ ],
+ "reunion": [
+  {
+   "cue": "오랜만에 다시 만나는 일",
+   "ko": "재회",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "the act of meeting again after being apart",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Their reunion after ten years was very emotional.",
+     "ko": "10년 만의 재회는 매우 감동적이었다."
+    }
+   ]
+  },
+  {
+   "cue": "동창·가족이 모이는 행사",
+   "ko": "동창회, 가족 모임",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "a party where former classmates, friends, or family members meet again",
+   "syn": [],
+   "ex": [
+    {
+     "en": "We are having a family reunion this weekend.",
+     "ko": "우리는 이번 주말에 가족 모임을 갖는다."
+    }
+   ]
+  }
+ ],
+ "reveal": [
+  {
+   "cue": "숨겨진 것을 보이게",
+   "ko": "드러내다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "make something visible that was hidden",
+   "syn": [
+    "show"
+   ],
+   "ex": [
+    {
+     "en": "She pulled back the curtain to reveal a hidden room.",
+     "ko": "그녀는 커튼을 젖혀 숨겨진 방을 드러냈다."
+    }
+   ]
+  },
+  {
+   "cue": "비밀·정보를 알려서",
+   "ko": "밝히다, 폭로하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "make known information that was secret",
+   "syn": [
+    "disclose"
+   ],
+   "ex": [
+    {
+     "en": "He finally revealed the truth about the accident.",
+     "ko": "그는 마침내 사고에 대한 진실을 밝혔다."
+    }
+   ]
+  }
+ ],
+ "rhythm": [
+  {
+   "cue": "음악·말의 규칙적인 흐름",
+   "ko": "리듬",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a regular repeated pattern of sound or movement",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The song has a great rhythm for dancing.",
+     "ko": "그 노래는 춤추기 좋은 리듬을 가지고 있다."
+    }
+   ]
+  }
+ ],
+ "right-hand": [
+  {
+   "cue": "위치·방향이 오른쪽",
+   "ko": "오른쪽의",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "on or towards the right side",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Take the right-hand turn at the crossroads.",
+     "ko": "교차로에서 오른쪽 길로 가세요."
+    }
+   ]
+  },
+  {
+   "cue": "가장 신뢰하는 조수 (관용구)",
+   "ko": "가장 신뢰하는, 오른팔 같은",
+   "pos": "형용사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "most helpful and trusted, especially in 'right-hand man'",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He is the manager's right-hand man.",
+     "ko": "그는 매니저의 오른팔 같은 사람이다."
+    }
+   ]
+  }
+ ],
+ "road": [
+  {
+   "cue": "차가 다니는 길",
+   "ko": "도로, 길",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a way built for vehicles to travel on",
+   "syn": [],
+   "ex": [
+    {
+     "en": "We drove down a long, winding road.",
+     "ko": "우리는 길고 구불구불한 도로를 따라 운전했다."
+    }
+   ]
+  },
+  {
+   "cue": "목표에 이르는 과정 (비유)",
+   "ko": "(성공 등에 이르는) 길, 과정",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "a way or course of action leading to something",
+   "syn": [],
+   "ex": [
+    {
+     "en": "It was a long road to recovery.",
+     "ko": "회복까지는 긴 과정이 필요했다."
+    }
+   ]
+  }
+ ],
+ "roast": [
+  {
+   "cue": "오븐에 구운 (고기 등)",
+   "ko": "구운",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "of meat, cooked using dry heat in an oven",
+   "syn": [],
+   "ex": [
+    {
+     "en": "We had roast chicken for dinner.",
+     "ko": "우리는 저녁으로 구운 치킨을 먹었다."
+    }
+   ]
+  },
+  {
+   "cue": "오븐에서 굽다",
+   "ko": "굽다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "cook food using dry heat, usually in an oven",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She roasted the vegetables with olive oil.",
+     "ko": "그녀는 올리브유를 넣어 채소를 구웠다."
+    }
+   ]
+  }
+ ],
+ "rob": [
+  {
+   "cue": "폭력·위협으로 재산을",
+   "ko": "강도짓하다, 훔치다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "take money or property from a person or place illegally, often using force",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Thieves robbed the bank yesterday.",
+     "ko": "어제 도둑들이 은행을 털었다."
+    }
+   ]
+  }
+ ],
+ "robbery": [
+  {
+   "cue": "폭력·위협으로 빼앗는 범죄",
+   "ko": "강도, 강도 행위",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "the crime of stealing from a person or place using force or threats",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The robbery took place in broad daylight.",
+     "ko": "그 강도 사건은 대낮에 발생했다."
+    }
+   ]
+  }
+ ],
+ "robin": [
+  {
+   "cue": "가슴이 붉은 작은 새",
+   "ko": "울새, 로빈",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a small bird with a reddish breast",
+   "syn": [],
+   "ex": [
+    {
+     "en": "A robin landed on the fence.",
+     "ko": "울새 한 마리가 울타리에 내려앉았다."
+    }
+   ]
+  }
+ ],
+ "roll": [
+  {
+   "cue": "공·바퀴가 돌아서 이동",
+   "ko": "구르다, 굴리다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "move by turning over and over",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The ball rolled down the hill.",
+     "ko": "공이 언덕 아래로 굴러갔다."
+    }
+   ]
+  },
+  {
+   "cue": "종이·매트 등을 둥글게",
+   "ko": "말다, 감다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "wrap something into the shape of a cylinder",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He rolled up the yoga mat.",
+     "ko": "그는 요가 매트를 말았다."
+    }
+   ]
+  },
+  {
+   "cue": "동그란 모양의 빵",
+   "ko": "롤빵",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "a small, round piece of bread",
+   "syn": [
+    "bun"
+   ],
+   "ex": [
+    {
+     "en": "She bought a bag of fresh rolls.",
+     "ko": "그녀는 신선한 롤빵 한 봉지를 샀다."
+    }
+   ]
+  },
+  {
+   "cue": "출석·명부 확인",
+   "ko": "명단, 출석부",
+   "pos": "명사",
+   "lv": 6,
+   "cefr": "B1",
+   "en": "an official list of names",
+   "syn": [
+    "roster"
+   ],
+   "ex": [
+    {
+     "en": "The teacher called the roll before class.",
+     "ko": "선생님은 수업 전에 출석을 불렀다."
+    }
+   ]
+  }
+ ],
+ "romance": [
+  {
+   "cue": "연인 사이의 사랑",
+   "ko": "연애, 로맨스",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a relationship between two people who are in love",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Their romance began in college.",
+     "ko": "그들의 연애는 대학 시절에 시작되었다."
+    }
+   ]
+  },
+  {
+   "cue": "사랑을 다루는 이야기",
+   "ko": "연애 소설, 로맨스물",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "a story about a romantic relationship",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She loves reading historical romances.",
+     "ko": "그녀는 역사 로맨스 소설 읽기를 좋아한다."
+    }
+   ]
+  }
+ ],
+ "romantic": [
+  {
+   "cue": "사랑을 표현하는 분위기",
+   "ko": "낭만적인, 로맨틱한",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "relating to or expressing feelings of love",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They had a romantic dinner by candlelight.",
+     "ko": "그들은 촛불 아래에서 낭만적인 저녁 식사를 했다."
+    }
+   ]
+  },
+  {
+   "cue": "현실보다 이상을 좇는",
+   "ko": "비현실적인, 이상주의적인",
+   "pos": "형용사",
+   "lv": 4,
+   "cefr": "B2",
+   "en": "not sensible or realistic about practical matters",
+   "syn": [],
+   "ex": [
+    {
+     "en": "His romantic view of farming ignored the hard work involved.",
+     "ko": "농사에 대한 그의 이상주의적인 시각은 힘든 노동을 간과했다."
+    }
+   ]
+  }
+ ],
+ "roof": [
+  {
+   "cue": "건물 맨 위 덮개",
+   "ko": "지붕",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "the covering on top of a building or vehicle",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Snow covered the roof of the house.",
+     "ko": "눈이 집 지붕을 덮었다."
+    }
+   ]
+  },
+  {
+   "cue": "가격·비용의 상한",
+   "ko": "상한선, 한도",
+   "pos": "명사",
+   "lv": 4,
+   "cefr": "B2",
+   "en": "an upper limit on an amount, such as prices or spending",
+   "syn": [
+    "ceiling",
+    "cap"
+   ],
+   "ex": [
+    {
+     "en": "The government set a roof on rent increases.",
+     "ko": "정부는 임대료 인상에 상한선을 두었다."
+    }
+   ]
+  }
+ ],
+ "root": [
+  {
+   "cue": "식물이 땅속으로 뻗는 부분",
+   "ko": "뿌리",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "the part of a plant that grows underground",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The tree's roots spread deep into the soil.",
+     "ko": "그 나무의 뿌리는 땅속 깊이 뻗어 있다."
+    }
+   ]
+  },
+  {
+   "cue": "문제·현상의 근원",
+   "ko": "근원, 뿌리",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "the origin or cause of something",
+   "syn": [
+    "origin",
+    "source"
+   ],
+   "ex": [
+    {
+     "en": "They tried to find the root of the problem.",
+     "ko": "그들은 문제의 근원을 찾으려 했다."
+    }
+   ]
+  },
+  {
+   "cue": "스포츠 팀을 응원하다 (구어)",
+   "ko": "응원하다",
+   "pos": "동사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "cheer for a team or person to succeed",
+   "syn": [],
+   "ex": [
+    {
+     "en": "We were rooting for our local team.",
+     "ko": "우리는 우리 지역 팀을 응원하고 있었다."
+    }
+   ]
+  }
+ ],
+ "rope": [
+  {
+   "cue": "굵고 튼튼한 줄",
+   "ko": "밧줄, 로프",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a thick strong cord made of twisted fibers",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They tied the boat with a rope.",
+     "ko": "그들은 밧줄로 배를 묶었다."
+    }
+   ]
+  }
+ ],
+ "roughly": [
+  {
+   "cue": "정확하지 않지만 비슷하게",
+   "ko": "대략",
+   "pos": "부사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "approximately; not exactly",
+   "syn": [
+    "approximately",
+    "about"
+   ],
+   "ex": [
+    {
+     "en": "The trip takes roughly two hours.",
+     "ko": "그 여행은 대략 두 시간 걸린다."
+    }
+   ]
+  },
+  {
+   "cue": "거칠고 세게 다루다",
+   "ko": "거칠게, 난폭하게",
+   "pos": "부사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "in a rough or violent way",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He pushed the door roughly and it broke.",
+     "ko": "그는 문을 거칠게 밀었고 문이 부서졌다."
+    }
+   ]
+  }
+ ],
+ "round": [
+  {
+   "cue": "모양이 원 모양인",
+   "ko": "둥근",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "shaped like a circle",
+   "syn": [
+    "circular"
+   ],
+   "ex": [
+    {
+     "en": "The table is round.",
+     "ko": "그 탁자는 둥글다."
+    }
+   ]
+  },
+  {
+   "cue": "경기·시합의 한 회",
+   "ko": "(경기의) 한 회, 라운드",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "one of a series of contests or parts of a game",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She won the first round of the competition.",
+     "ko": "그녀는 대회 첫 번째 라운드에서 이겼다."
+    }
+   ]
+  },
+  {
+   "cue": "장소 주위를 빙 돌아",
+   "ko": "~을 빙 둘러, ~주위에",
+   "pos": "전치사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "in a circle or curve around something",
+   "syn": [
+    "around"
+   ],
+   "ex": [
+    {
+     "en": "They walked round the lake.",
+     "ko": "그들은 호수 주위를 걸었다."
+    }
+   ]
+  },
+  {
+   "cue": "숫자를 가까운 단위로",
+   "ko": "반올림하다",
+   "pos": "동사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "adjust a number to the nearest whole number, ten, etc.",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Round the price up to the nearest dollar.",
+     "ko": "가격을 가장 가까운 달러 단위로 반올림해라."
+    }
+   ]
+  },
+  {
+   "cue": "총알 한 발",
+   "ko": "(총의) 탄환 한 발",
+   "pos": "명사",
+   "lv": 7,
+   "cefr": "B2",
+   "en": "a single shot or unit of ammunition fired from a gun",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He fired a round into the air.",
+     "ko": "그는 공중에 탄환 한 발을 쐈다."
+    }
+   ]
+  }
+ ],
+ "roundabout": [
+  {
+   "cue": "차량이 도는 원형 교차로",
+   "ko": "로터리, 원형 교차로",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a place where roads meet, arranged as a circle that traffic goes around",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Turn right at the roundabout.",
+     "ko": "로터리에서 오른쪽으로 도세요."
+    }
+   ]
+  },
+  {
+   "cue": "놀이공원의 회전 놀이기구 (영국식)",
+   "ko": "회전목마",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "a large rotating machine with seats for children to ride (British English)",
+   "syn": [
+    "merry-go-round"
+   ],
+   "ex": [
+    {
+     "en": "The kids rode the roundabout at the fair.",
+     "ko": "아이들은 축제에서 회전목마를 탔다."
+    }
+   ]
+  },
+  {
+   "cue": "말을 빙 둘러서 하는",
+   "ko": "에두른, 우회적인",
+   "pos": "형용사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "not direct or straightforward",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He gave a roundabout answer to avoid the truth.",
+     "ko": "그는 진실을 피하려고 에두른 답을 했다."
+    }
+   ]
+  }
+ ],
+ "royal": [
+  {
+   "cue": "국왕·여왕과 관련된",
+   "ko": "왕실의, 왕의",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "relating to a king or queen or their family",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The royal family waved to the crowd.",
+     "ko": "왕실 가족이 군중에게 손을 흔들었다."
+    }
+   ]
+  }
+ ],
+ "rugby": [
+  {
+   "cue": "타원형 공을 쓰는 스포츠",
+   "ko": "럭비",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a team sport played with an oval-shaped ball",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He plays rugby every Saturday.",
+     "ko": "그는 매주 토요일마다 럭비를 한다."
+    }
+   ]
+  }
+ ],
+ "ruin": [
+  {
+   "cue": "무너진 건물의 잔해",
+   "ko": "폐허, 유적",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "the remains of a building that has been destroyed or is falling apart",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They explored the ancient ruins.",
+     "ko": "그들은 고대 유적을 탐험했다."
+    }
+   ]
+  },
+  {
+   "cue": "계획·물건을 완전히",
+   "ko": "망치다, 파괴하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "destroy or spoil something completely",
+   "syn": [
+    "destroy"
+   ],
+   "ex": [
+    {
+     "en": "The rain ruined our picnic.",
+     "ko": "비가 우리 소풍을 망쳤다."
+    }
+   ]
+  },
+  {
+   "cue": "재정적으로 완전히",
+   "ko": "파산시키다, 몰락시키다",
+   "pos": "동사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "cause someone to lose all their money",
+   "syn": [
+    "bankrupt"
+   ],
+   "ex": [
+    {
+     "en": "The bad investment ruined the company.",
+     "ko": "그 잘못된 투자가 회사를 파산시켰다."
+    }
+   ]
+  }
+ ],
+ "rumor": [
+  {
+   "cue": "확인되지 않은 이야기",
+   "ko": "소문",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "information or a story that people talk about but is not proven true",
+   "syn": [],
+   "ex": [
+    {
+     "en": "There's a rumor that the shop is closing.",
+     "ko": "그 가게가 문을 닫는다는 소문이 있다."
+    }
+   ]
+  },
+  {
+   "cue": "소문을 퍼뜨리다",
+   "ko": "소문을 내다, 퍼뜨리다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "spread unproven information as if it were true",
+   "syn": [],
+   "ex": [
+    {
+     "en": "It was rumored that she had resigned.",
+     "ko": "그녀가 사임했다는 소문이 돌았다."
+    }
+   ]
+  }
+ ],
+ "runner": [
+  {
+   "cue": "달리기를 하는 사람",
+   "ko": "달리는 사람, 주자",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a person who runs, especially in a race",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The runner crossed the finish line first.",
+     "ko": "그 주자는 결승선을 가장 먼저 통과했다."
+    }
+   ]
+  },
+  {
+   "cue": "야구에서 베이스에 있는 선수",
+   "ko": "(야구) 주자",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "a player who is on or running to a base in baseball",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The runner stole second base.",
+     "ko": "그 주자는 2루를 도루했다."
+    }
+   ]
+  }
+ ],
+ "running": [
+  {
+   "cue": "달리는 운동/행위",
+   "ko": "달리기",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "the activity or sport of running",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Running is good exercise.",
+     "ko": "달리기는 좋은 운동이다."
+    }
+   ]
+  },
+  {
+   "cue": "기계·시스템이 작동 중인",
+   "ko": "작동하는, 가동 중인",
+   "pos": "형용사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "of a machine or system, working or operating",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Leave the engine running while you wait.",
+     "ko": "기다리는 동안 엔진을 켜 둬."
+    }
+   ]
+  },
+  {
+   "cue": "계속해서 이어지는",
+   "ko": "계속되는, 연속적인",
+   "pos": "형용사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "continuing without stopping",
+   "syn": [],
+   "ex": [
+    {
+     "en": "There's a running joke about his bad cooking.",
+     "ko": "그의 형편없는 요리 실력에 대한 계속되는 농담이 있다."
+    }
+   ]
+  }
+ ],
+ "rush": [
+  {
+   "cue": "급하게 움직이다",
+   "ko": "서두르다, 급히 가다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "move or do something very quickly, especially because of limited time",
+   "syn": [],
+   "ex": [
+    {
+     "en": "We had to rush to catch the train.",
+     "ko": "우리는 기차를 타기 위해 서둘러야 했다."
+    }
+   ]
+  },
+  {
+   "cue": "사람·물건이 갑자기 몰려듦",
+   "ko": "(사람들의) 쇄도, 급증",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "a sudden movement of many people or things to one place",
+   "syn": [],
+   "ex": [
+    {
+     "en": "There was a rush of customers during the sale.",
+     "ko": "세일 기간 동안 손님들이 몰려들었다."
+    }
+   ]
+  },
+  {
+   "cue": "갑자기 공격하다",
+   "ko": "급습하다, 돌진하다",
+   "pos": "동사",
+   "lv": 6,
+   "cefr": "B2",
+   "en": "attack or move towards suddenly and quickly",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The fans rushed the stage after the concert.",
+     "ko": "콘서트가 끝난 후 팬들이 무대로 돌진했다."
+    }
+   ]
+  }
+ ],
+ "sadly": [
+  {
+   "cue": "문장 전체를 수식, 안타깝게도",
+   "ko": "안타깝게도, 유감스럽게도",
+   "pos": "부사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "used to say that something is unfortunate",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Sadly, the shop has closed down.",
+     "ko": "안타깝게도 그 가게는 문을 닫았다."
+    }
+   ]
+  },
+  {
+   "cue": "슬픈 감정으로",
+   "ko": "슬프게",
+   "pos": "부사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "in a sad manner",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She looked at the photo sadly.",
+     "ko": "그녀는 슬프게 그 사진을 바라보았다."
+    }
+   ]
+  }
+ ],
+ "safe": [
+  {
+   "cue": "위험이 없는",
+   "ko": "안전한",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "free from danger or risk of harm",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Make sure the children are safe.",
+     "ko": "아이들이 안전한지 확인해라."
+    }
+   ]
+  },
+  {
+   "cue": "귀중품을 보관하는 금고",
+   "ko": "금고",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "a strong box used to keep valuable things secure",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He kept his jewelry in a safe.",
+     "ko": "그는 보석을 금고에 보관했다."
+    }
+   ]
+  }
+ ],
+ "sailing": [
+  {
+   "cue": "배를 타고 바다를 다니는 것",
+   "ko": "항해, 요트타기",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "the activity or sport of traveling in a boat using sails",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They went sailing on the lake.",
+     "ko": "그들은 호수에서 요트를 탔다."
+    }
+   ]
+  }
+ ],
+ "sake": [
+  {
+   "cue": "관용구 'for the sake of'",
+   "ko": "~을 위해서, 이유",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "the purpose or reason for doing something, mainly used in 'for the sake of'",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She quit smoking for the sake of her health.",
+     "ko": "그녀는 건강을 위해서 담배를 끊었다."
+    }
+   ]
+  },
+  {
+   "cue": "일본의 쌀로 만든 술 (다른 발음)",
+   "ko": "사케 (일본 술)",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "a Japanese alcoholic drink made from fermented rice",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They drank warm sake with dinner.",
+     "ko": "그들은 저녁 식사와 함께 따뜻한 사케를 마셨다."
+    }
+   ]
+  }
+ ]
+}
