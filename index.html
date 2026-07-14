@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.9">
+<link rel="manifest" href="manifest.json?v=0.11.10">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.9"></script>
-<script src="img/rat_run.js?v=0.11.9"></script>
+<script src="words.js?v=0.11.10"></script>
+<script src="img/rat_run.js?v=0.11.10"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -338,6 +338,20 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 학습 탭 허브 */
 .learnmenu .step.soon{opacity:.5;}
 
+/* 레벨 테스트 */
+.lt-choices{display:flex;flex-direction:column;gap:8px;margin-top:auto;}
+.lt-choice{padding:14px;border-radius:14px;font-weight:700;font-size:15px;background:var(--surface);border:1px solid var(--line);color:var(--ink);box-shadow:var(--shadow);text-align:center;}
+.lt-choice:active{background:var(--fill);}
+.lt-band{display:inline-flex;align-items:center;font-size:14px;font-weight:800;padding:6px 14px;border-radius:999px;background:var(--accent-deep);color:#fff;}
+.lt-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;align-items:center;}
+.lt-answer{min-height:26px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px;font-size:16px;font-weight:700;line-height:1.5;letter-spacing:.2px;}
+.lt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;}
+@keyframes lt-shake{0%,100%{transform:translateX(0);}20%{transform:translateX(-4px);}40%{transform:translateX(4px);}60%{transform:translateX(-3px);}80%{transform:translateX(3px);}}
+.lt-chips .lchip.wrong{animation:lt-shake .35s ease;background:#fdeceb;color:#d64545;border-color:#d64545;}
+.lt-curve-lbl{display:flex;justify-content:space-between;font-size:9px;color:var(--muted);padding:0 4px;}
+.lt-note{font-size:12px;color:var(--ink-2);background:var(--bg);border-radius:10px;padding:10px 12px;line-height:1.5;}
+.lt-note b{color:var(--accent-deep);font-weight:800;}
+
 /* 설정 화면 (캐릭터 변경 등) — WordSheet와 동일한 바텀시트 패턴 재사용 */
 .charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;}
 .charrow .cf{width:52px;height:52px;border-radius:14px;background:var(--fill);display:flex;align-items:center;justify-content:center;flex:none;overflow:hidden;font-size:9px;color:var(--muted);text-align:center;line-height:1.2;}
@@ -359,8 +373,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.9";
-const APP_BUILD = "2026-07-13"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.11.10";
+const APP_BUILD = "2026-07-14"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -562,6 +576,236 @@ function listeningDifficulty(text) {
   const tier = Math.min(LISTEN_LEVELS.length - 1, Math.max(0, Math.round(score / 0.75)));
   return { tier, label: LISTEN_LEVELS[tier] };
 }
+
+/* ===================== 레벨 테스트 엔진 (4.3) =====================
+   UI 비의존 순수 로직. 밴드 표기는 12단계(LISTEN_LEVELS 재사용, 2026-07-13 확정).
+   어휘력(Part A)과 문장구사력(Part B)은 끝까지 별도 축 — 합산하지 않는다.
+
+   [다의어 호환 원칙 — 2026-07-14, senses 배치와의 간섭 검토 결론]
+   run=달리다(lv1)/운영하다(lv3)/출마하다(lv8)처럼 의미마다 난이도가 다르므로,
+   뜻을 보여주는 문항(4지선다·산출)은 반드시 ltAnchor()를 거쳐 senses[0](최빈 의미)의
+   뜻으로 앵커한다. senses가 없으면 flat ko 폴백 — 배치가 42개든 수천 개든 동작 동일.
+   단어 자체의 cefr(밴드 샘플링)와 어휘량 추정은 단어(word family) 단위라 배치 무관. */
+
+/* 분포 파라미터 — "대한민국 영어학습자 상위 %"는 실제 전국 표본이 없어 공개 통계 참고
+   추정 정규분포를 쓴다(UI에 반드시 "추정치" 라벨). 근거(대략): 국내 대학생 어휘량
+   측정 연구(VST 기반)들이 평균 5~6천 워드패밀리, 전체 성인 학습자로 넓히면 하향 —
+   평균 4,600/표준편차 2,100로 가정. 구사력은 수능형 프로필(산출<인지)을 반영해
+   12밴드 인덱스 기준 평균 3.0(A2+)/표준편차 2.2로 가정. 실사용자 데이터 축적 시 교체. */
+const LT_DIST = {
+  vocab: { mean: 4600, sd: 2100 },
+  flu: { mean: 3.0, sd: 2.2 },
+};
+/* 표준정규 CDF (Abramowitz-Stegun 근사) */
+function normCdf(x) {
+  const t = 1 / (1 + 0.2316419 * Math.abs(x));
+  const d = 0.3989423 * Math.exp(-x * x / 2);
+  let p = d * t * (0.3193815 + t * (-0.3565638 + t * (1.781478 + t * (-1.821256 + t * 1.330274))));
+  return x > 0 ? 1 - p : p;
+}
+/* 상위 % (1~99로 클램프 — 0%/100%는 표본 없는 추정치로서 부정직) */
+function ltTopPercent(value, dist) {
+  return Math.min(99, Math.max(1, Math.round((1 - normCdf((value - dist.mean) / dist.sd)) * 100)));
+}
+
+/* 가짜 단어(허수 방지) — 실단어와 충돌하지 않는 유사 영단어 형태 */
+const LT_FAKES = ["flenidor", "brastle", "morvane", "quastic", "dilturn", "prenity", "stoback", "cravish", "luntish", "vorple", "antrede", "miskun"];
+
+/* 다의어 앵커: 뜻을 보여줄 땐 항상 최빈 의미(senses[0]) 기준 */
+function ltAnchor(w) {
+  if (w.senses && w.senses.length) return { ko: w.senses[0].ko, cue: w.senses[0].cue || null };
+  return { ko: w.ko, cue: null };
+}
+
+/* 밴드별 단어 풀 — 단의어 우선(뜻 제시가 모호하지 않음), 부족하면 다의어(앵커 사용) */
+function ltBandPool(band6) {
+  const lv = CEFR_LEVELS[band6];
+  const all = SEED.filter(w => w.cefr === lv && w.ko && w.word.length >= 3);
+  const mono = all.filter(w => !(w.senses && w.senses.length > 1));
+  return mono.length >= 30 ? mono : all;
+}
+function ltPick(arr, n, usedSet) {
+  const out = [];
+  let guard = 0;
+  while (out.length < n && guard++ < 4000) {
+    const w = arr[Math.floor(Math.random() * arr.length)];
+    if (!w || usedSet.has(w.word)) continue;
+    usedSet.add(w.word);
+    out.push(w);
+  }
+  return out;
+}
+
+/* ---- Part A. 어휘 — 적응형(1-up-1-down 계단식) ----
+   문항 구성: know(아는 단어인지) → "알아요"면 meaning(뜻 4지선다 확인)이 즉시 이어짐.
+   know+meaning 둘 다 통과해야 그 밴드 정답. 실단어 18문항 사이에 가짜 단어 3개 삽입
+   ("알아요"를 누르면 조용히 false alarm 기록 — 뜻 확인 없이 다음으로). 매 4번째
+   실단어마다 산출(produce: 앵커 뜻 → 영단어 타이핑) 문항 1개 — 인지/산출 이원 측정.
+
+   UI 계약:
+   const t = createLevelTestA();
+   t.current() → null(종료) 또는
+     {kind:"know",    word, idx, total}                          → t.answerKnow(bool)
+     {kind:"meaning", word, choices:[ko×4], idx, total}          → t.answerMeaning(choiceIdx)
+     {kind:"produce", ko, cue, len, idx, total}                  → t.answerProduce(text)
+   모든 answer*는 자동으로 다음 문항으로 진행. t.result() → 종료 후 결과. */
+const LT_REAL_N = 18, LT_FAKE_N = 3, LT_PRODUCE_EVERY = 4;
+function createLevelTestA() {
+  const used = new Set();
+  let band = 1;               // A2에서 시작
+  let realDone = 0, fakeDone = 0, produceDone = 0;
+  let fakeYes = 0;
+  let lastOkBand = 0;         // 마지막으로 맞힌 실단어의 밴드 — 산출 문항 출제 기준
+  const bandStat = {};        // band6 → {n, ok}
+  const trail = [];           // 실단어 문항의 밴드 궤적(능력치 추정용)
+  const produceLog = [];      // {ok}
+  let cur = null;             // 현재 문항
+  let pendingMeaning = null;  // know에서 "알아요"한 단어의 뜻 확인 대기
+  const totalN = LT_REAL_N + LT_FAKE_N + Math.floor(LT_REAL_N / LT_PRODUCE_EVERY);
+  let seq = 0;
+
+  const fakeSlots = new Set();
+  while (fakeSlots.size < LT_FAKE_N) fakeSlots.add(1 + Math.floor(Math.random() * (LT_REAL_N + LT_FAKE_N - 2)));
+
+  function gradeReal(ok) {
+    bandStat[band] = bandStat[band] || { n: 0, ok: 0 };
+    bandStat[band].n++;
+    if (ok) { bandStat[band].ok++; lastOkBand = band; }
+    trail.push(band);
+    band = Math.max(0, Math.min(CEFR_LEVELS.length - 1, band + (ok ? 1 : -1)));
+    realDone++;
+  }
+  function nextItem() {
+    if (pendingMeaning) {
+      // 뜻 확인은 같은 문항의 2단계 — 진행 카운트(seq)를 늘리지 않는다
+      const w = pendingMeaning;
+      const myKo = ltAnchor(w).ko;
+      const wrongPool = ltBandPool(CEFR_LEVELS.indexOf(w.cefr)).filter(x => x.word !== w.word && ltAnchor(x).ko !== myKo);
+      const wrongs = ltPick(wrongPool, 3, new Set([w.word]));
+      const choices = wrongs.map(x => ltAnchor(x).ko);
+      const answerIdx = Math.floor(Math.random() * (choices.length + 1));
+      choices.splice(answerIdx, 0, myKo);
+      cur = { kind: "meaning", word: w.word, choices, _answerIdx: answerIdx, _w: w, idx: seq, total: totalN };
+      return;
+    }
+    seq++;
+    if (realDone >= LT_REAL_N && fakeDone >= LT_FAKE_N) { cur = null; return; }
+    if (realDone > 0 && realDone % LT_PRODUCE_EVERY === 0 && produceDone < Math.floor(realDone / LT_PRODUCE_EVERY)) {
+      // 산출은 "아는 단어를 입으로 낼 수 있는가"(수동→능동, PLAN 4.12-1) 측정이므로
+      // 계단식 현재 밴드(대개 실력 바로 위 = 모르는 단어)가 아니라 마지막으로 맞힌 밴드에서 출제
+      const w = ltPick(ltBandPool(lastOkBand), 1, used)[0];
+      if (w) {
+        const a = ltAnchor(w);
+        cur = { kind: "produce", ko: a.ko, cue: a.cue, len: w.word.length, _w: w, idx: seq, total: totalN };
+        return;
+      }
+    }
+    const useFake = fakeDone < LT_FAKE_N && (fakeSlots.has(realDone + fakeDone + 1) || realDone >= LT_REAL_N);
+    if (useFake) {
+      const fw = LT_FAKES[Math.floor(Math.random() * LT_FAKES.length)] ;
+      cur = { kind: "know", word: fw, _fake: true, idx: seq, total: totalN };
+      return;
+    }
+    const w = ltPick(ltBandPool(band), 1, used)[0];
+    cur = w ? { kind: "know", word: w.word, _fake: false, _w: w, idx: seq, total: totalN } : null;
+  }
+  nextItem();
+
+  return {
+    current: () => cur,
+    progress: () => ({ done: Math.min(seq, totalN), total: totalN }),
+    answerKnow(knows) {
+      if (!cur || cur.kind !== "know") return;
+      if (cur._fake) { fakeDone++; if (knows) fakeYes++; nextItem(); return; }
+      if (!knows) { gradeReal(false); nextItem(); return; }
+      pendingMeaning = cur._w; nextItem(); pendingMeaning = null;
+    },
+    answerMeaning(i) {
+      if (!cur || cur.kind !== "meaning") return;
+      gradeReal(i === cur._answerIdx);
+      nextItem();
+    },
+    answerProduce(text) {
+      if (!cur || cur.kind !== "produce") return;
+      const ok = (text || "").trim().toLowerCase() === cur._w.word.toLowerCase();
+      produceLog.push({ ok });
+      produceDone++;
+      nextItem();
+    },
+    /* 종료 후 결과: 12밴드·추정 어휘량(인지/산출)·상위%(추정) */
+    result() {
+      const fa = fakeDone ? fakeYes / fakeDone : 0;
+      // 능력치 = 궤적 후반(수렴 구간) 평균 → 6밴드 실수 → 12밴드
+      const tail = trail.slice(-10);
+      const band6f = tail.length ? tail.reduce((a, b) => a + b, 0) / tail.length : 0;
+      const band12 = Math.max(0, Math.min(11, Math.round(band6f * 2)));
+      // 밴드별 커버리지(방문 밴드는 실측+허수 보정, 미방문은 외삽) × 밴드 단어 수
+      const counts = {};
+      SEED.forEach(w => { counts[w.cefr] = (counts[w.cefr] || 0) + 1; });
+      const visited = Object.keys(bandStat).map(Number);
+      const lo = Math.min(...visited), hi = Math.max(...visited);
+      let vocab = 0;
+      CEFR_LEVELS.forEach((lv, b) => {
+        let c;
+        if (bandStat[b]) c = bandStat[b].ok / bandStat[b].n;
+        else if (b < lo) c = 0.95;
+        else if (b > hi) c = 0.05;
+        else c = 0.5;
+        c = fa >= 1 ? 0 : Math.max(0, (c - fa) / (1 - fa)); // 가짜단어 오인지율만큼 하향 보정(전부 오인지면 0)
+        vocab += c * (counts[lv] || 0);
+      });
+      vocab = Math.round(vocab / 10) * 10;
+      const produceRate = produceLog.length ? produceLog.filter(p => p.ok).length / produceLog.length : 0;
+      return {
+        band12, band: LISTEN_LEVELS[band12],
+        vocab, activeVocab: Math.round(vocab * produceRate / 10) * 10,
+        pct: ltTopPercent(vocab, LT_DIST.vocab),
+        falseAlarm: fa, produceRate,
+      };
+    },
+  };
+}
+
+/* ---- Part B. 문장구사력 — v1은 어순 배열 스피드만(부분 측정) ----
+   따라 말하기(EI)·순간영작은 STT/LLM 프록시(미구현) 필요 → 프록시 도입 후 확장.
+   출제: 6~9단어 예문 5개(A2~B2 혼합), 청크 셔플 → 순서대로 탭. 채점: 문장별
+   완성 여부·오탭 수·단어당 소요 시간 → 12밴드 + 상위%(추정). */
+function createLevelTestB() {
+  const used = new Set();
+  const items = [];
+  [1, 2, 2, 3, 3].forEach(b => {
+    const pool = SEED.filter(w => w.cefr === CEFR_LEVELS[b] && w.ex && w.ex[0] && !used.has(w.word))
+      .filter(w => { const n = w.ex[0].en.trim().split(/\s+/).length; return n >= 6 && n <= 9; });
+    const w = pool[Math.floor(Math.random() * pool.length)];
+    if (w) { used.add(w.word); items.push({ band6: b, en: w.ex[0].en, ko: w.ex[0].ko }); }
+  });
+  items.forEach(it => {
+    it.words = it.en.replace(/[.!?]$/, "").split(/\s+/);
+    it.shuffled = it.words.slice();
+    for (let i = it.shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [it.shuffled[i], it.shuffled[j]] = [it.shuffled[j], it.shuffled[i]];
+    }
+  });
+  return {
+    items, // UI가 순회하며 {ok, errors, seconds}를 채워 report()에 전달
+    report(logs) { // logs: [{band6, ok, errors, seconds, nWords}]
+      const okLogs = logs.filter(l => l.ok && l.errors <= 1);
+      let band6f;
+      if (!okLogs.length) band6f = 0.5;
+      else band6f = okLogs.reduce((a, l) => a + l.band6, 0) / okLogs.length;
+      const spw = logs.length ? logs.reduce((a, l) => a + l.seconds / Math.max(1, l.nWords), 0) / logs.length : 3;
+      if (spw <= 0.9) band6f += 0.5; else if (spw >= 2.2) band6f -= 0.5; // 자동화 속도 보정
+      const band12 = Math.max(0, Math.min(11, Math.round(band6f * 2)));
+      return { band12, band: LISTEN_LEVELS[band12], pct: ltTopPercent(band12, LT_DIST.flu), partial: true, spw };
+    },
+  };
+}
+
+/* 결과 저장 — 홈/통계에서 읽어 쓸 수 있게 localStorage 보존 */
+const LT_KEY = "en_leveltest_v1";
+function saveLevelTest(res) { try { localStorage.setItem(LT_KEY, JSON.stringify(Object.assign({ at: Date.now() }, res))); } catch (e) {} }
+function loadLevelTest() { try { return JSON.parse(localStorage.getItem(LT_KEY) || "null"); } catch (e) { return null; } }
 
 /* ---------- 홈 탭 ---------- */
 /* 기본 캐릭터(사용자 제작 Lottie/Rive/스프라이트로 교체될 슬롯).
@@ -1479,13 +1723,272 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   );
 }
 
+/* ---------- 레벨 테스트 UI ----------
+   엔진(createLevelTestA/B, saveLevelTest 등)은 위쪽 "레벨 테스트 엔진 (4.3)" 섹션 그대로 사용.
+   여기서는 그 엔진이 내놓는 문항을 그리고, 사용자의 응답을 엔진에 그대로 돌려주기만 한다. */
+
+/* Part A(어휘) — know → (알아요면) meaning → produce가 섞여 나온다. 엔진은 React state가 아니라
+   내부 클로저 변수로 진행되므로, answer* 호출 뒤 tick을 올려 강제로 다시 그린다. */
+function LevelTestPartA({ onExit, onDone }) {
+  const engineRef = React.useRef(null);
+  if (!engineRef.current) engineRef.current = createLevelTestA();
+  const t = engineRef.current;
+  const [, setTick] = useState(0);
+  const bump = () => setTick(x => x + 1);
+  const cur = t.current();
+  const progress = t.progress();
+
+  const [val, setVal] = useState("");
+  useEffect(() => { setVal(""); }, [cur]);
+  useEffect(() => { if (!cur) onDone(t.result()); }, [cur]);
+  if (!cur) return null;
+
+  const submitProduce = () => { t.answerProduce(val); bump(); };
+
+  return (
+    <div className="content study">
+      <div className="study-top">
+        <button className="x" onClick={onExit} aria-label="종료"><Icon name="close" size={22} /></button>
+        <div className="study-bar"><i style={{ width: (progress.done / progress.total * 100) + "%" }} /></div>
+        <span className="study-n">{progress.done} / {progress.total}</span>
+      </div>
+
+      {cur.kind === "know" && (
+        <React.Fragment>
+          <div className="qcard" style={{ alignItems: "center", textAlign: "center" }}>
+            <div className="qcue">이 단어를 아세요?</div>
+            <div className="qko" style={{ fontSize: 24 }}>{cur.word}</div>
+          </div>
+          <div className="qactions">
+            <button className="ghost" onClick={() => { t.answerKnow(false); bump(); }}>모름</button>
+            <button className="primary" onClick={() => { t.answerKnow(true); bump(); }}>뜻 압니다</button>
+          </div>
+        </React.Fragment>
+      )}
+
+      {cur.kind === "meaning" && (
+        <React.Fragment>
+          <div className="qcard" style={{ alignItems: "center", textAlign: "center" }}>
+            <div className="qcue">뜻을 골라 주세요</div>
+            <div className="qko" style={{ fontSize: 22 }}>{cur.word}</div>
+          </div>
+          <div className="lt-choices">
+            {cur.choices.map((c, i) => (
+              <button key={i} className="lt-choice" onClick={() => { t.answerMeaning(i); bump(); }}>{c}</button>
+            ))}
+          </div>
+        </React.Fragment>
+      )}
+
+      {cur.kind === "produce" && (
+        <React.Fragment>
+          <div className="qcard" style={{ alignItems: "center", textAlign: "center" }}>
+            {cur.cue && <div className="qcue">{cur.cue}</div>}
+            <div className="qko">{cur.ko}</div>
+            <div className="qdiv" />
+            <div className="qen" style={{ textAlign: "center" }}>
+              <input className="qbox" autoFocus value={val}
+                onChange={e => setVal(e.target.value)}
+                onKeyDown={e => e.key === "Enter" && submitProduce()}
+                size={Math.max(8, val.length + 1)}
+                autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+                aria-label="영단어 입력" />
+            </div>
+            <div className="qhint">{cur.len}글자</div>
+          </div>
+          <div className="qactions">
+            <button className="primary" onClick={submitProduce}>확인</button>
+          </div>
+        </React.Fragment>
+      )}
+    </div>
+  );
+}
+
+/* Part A 완료 → Part B 진행 여부를 묻는 중간 안내 */
+function LevelTestInterim({ onSkip, onContinue }) {
+  return (
+    <div className="content"><div className="finish">
+      <div className="msg">Part A 완료</div>
+      <div className="sub">이어서 문장구사력(어순 배열 5문장)을 측정할까요?</div>
+      <div className="qactions" style={{ width: "100%", marginTop: 18 }}>
+        <button className="ghost" onClick={onSkip}>건너뛰기</button>
+        <button className="primary" onClick={onContinue}>이어서 측정</button>
+      </div>
+    </div></div>
+  );
+}
+
+/* Part B(문장구사력) — 어순 배열. 셔플된 칩을 정답 순서대로 탭하면 위 답 영역에 쌓인다.
+   순서가 아닌 칩을 탭하면 잠깐 빨갛게 흔들리고 errors만 오르고 답에는 안 들어간다.
+   마지막 단어를 탭하면 그 자리에서 다음 문항(또는 종료)으로 자동 진행. */
+function LevelTestPartB({ onExit, onDone }) {
+  const engineRef = React.useRef(null);
+  if (!engineRef.current) engineRef.current = createLevelTestB();
+  const logsRef = React.useRef([]);
+  const items = engineRef.current.items;
+
+  const [idx, setIdx] = useState(0);
+  const [picked, setPicked] = useState([]);     // shuffled 배열 내 인덱스(선택 순서)
+  const [errors, setErrors] = useState(0);
+  const [startedAt, setStartedAt] = useState(() => Date.now());
+  const [wrongPos, setWrongPos] = useState(null); // 흔들림 표시 중인 칩 위치
+
+  useEffect(() => { if (!items.length) onDone(engineRef.current.report([])); }, []);
+  if (!items.length) return null;
+
+  const it = items[idx];
+  const pickedSet = new Set(picked);
+  const nextWord = it.words[picked.length];
+
+  const tapChip = pos => {
+    if (pickedSet.has(pos)) return;
+    if (it.shuffled[pos] !== nextWord) {
+      setErrors(e => e + 1);
+      setWrongPos(pos);
+      setTimeout(() => setWrongPos(null), 350);
+      return;
+    }
+    const np = picked.concat(pos);
+    if (np.length >= it.words.length) {
+      const seconds = (Date.now() - startedAt) / 1000;
+      logsRef.current = logsRef.current.concat([{ band6: it.band6, ok: true, errors, seconds, nWords: it.words.length }]);
+      if (idx + 1 >= items.length) { onDone(engineRef.current.report(logsRef.current)); return; }
+      setIdx(idx + 1); setPicked([]); setErrors(0); setStartedAt(Date.now());
+    } else {
+      setPicked(np);
+    }
+  };
+
+  return (
+    <div className="content study" data-answer={it.words.join(" ")}>
+      <div className="study-top">
+        <button className="x" onClick={onExit} aria-label="종료"><Icon name="close" size={22} /></button>
+        <div className="study-bar"><i style={{ width: (idx / items.length * 100) + "%" }} /></div>
+        <span className="study-n">{idx + 1} / {items.length}</span>
+      </div>
+
+      <div className="qcue" style={{ textAlign: "center" }}>{it.ko}</div>
+      <div className="lt-answer">{picked.map(p => it.shuffled[p]).join(" ")}</div>
+      <div className="lt-chips">
+        {it.shuffled.map((w, pos) => pickedSet.has(pos) ? null : (
+          <button key={pos} className={"lchip link" + (wrongPos === pos ? " wrong" : "")} onClick={() => tapChip(pos)}>{w}</button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/* 결과 분포 곡선 — 실제 정규분포를 그리지 않고, SVG 베지어 곡선
+   (M4,62 C60,62 80,8 130,8 C180,8 200,62 256,62) 위에 마커를 얹는 시각적 근사.
+   마커 x = 좌측여백(4) + (1 - pct/100) * 곡선폭(252) — pct(상위%)가 낮을수록(고급일수록) 오른쪽. */
+function ltCurveY(x) {
+  const t = Math.exp(-Math.pow(x - 130, 2) / (2 * 55 * 55));
+  return 62 - 54 * t;
+}
+function LtDistCurve({ pct }) {
+  // 극단 백분위(1%·99%)에서 마커·"나" 라벨이 viewBox 밖으로 잘리지 않게 클램프
+  const x = Math.max(12, Math.min(248, 4 + (1 - pct / 100) * 252));
+  const y = ltCurveY(x);
+  return (
+    <div className="qcard" style={{ padding: "10px 8px 4px" }}>
+      <svg width="100%" height="70" viewBox="0 0 260 70">
+        <path d="M4,62 C60,62 80,8 130,8 C180,8 200,62 256,62" fill="none" stroke="var(--accent)" strokeWidth="2" />
+        <line x1={x} y1="6" x2={x} y2="64" stroke="var(--ink)" strokeWidth="2" strokeDasharray="3,3" />
+        <circle cx={x} cy={y} r="4" fill="var(--ink)" />
+        <text x={x} y="9" fontSize="9" fill="var(--ink)" textAnchor="middle">나</text>
+      </svg>
+      <div className="lt-curve-lbl"><span>초급</span><span>평균</span><span>고급</span></div>
+    </div>
+  );
+}
+
+/* 결과 화면 — 어휘력(Part A)·문장구사력(Part B)을 분리된 두 축으로 표시.
+   진입 시 saveLevelTest를 1회만 호출(홈/통계에서 나중에 읽어 씀). */
+function LevelTestResult({ resultA, resultB, onExit, onRetry }) {
+  const savedRef = React.useRef(false);
+  useEffect(() => {
+    if (savedRef.current) return;
+    savedRef.current = true;
+    saveLevelTest({ lex: resultA, flu: resultB || null });
+  }, []);
+
+  const gapNote = resultB && Math.abs(resultA.band12 - resultB.band12) >= 2
+    ? (resultA.band12 > resultB.band12
+        ? `어휘는 **${resultA.band}**인데 문장 구사는 **${resultB.band}** — 산출 연습이 필요해요`
+        : `문장 구사는 **${resultB.band}**인데 어휘는 **${resultA.band}** — 어휘를 늘리면 더 좋아져요`)
+    : null;
+
+  return (
+    <div className="content">
+      <div className="lt-note">{renderBold("아래 분포는 **공개 통계 참고 추정치**입니다. 실제 전국 표본이 아니라 동기부여용 근사값이에요.")}</div>
+
+      <div className="sec">어휘력</div>
+      <div className="lt-row">
+        <span className="lt-band">{resultA.band}</span>
+        <span className="chip">{resultA.vocab.toLocaleString()} 단어</span>
+        <span className="chip">상위 {resultA.pct}% (추정)</span>
+      </div>
+      <div style={{ textAlign: "center", fontSize: 12, color: "var(--muted)", fontWeight: 600 }}>
+        말할 수 있는 단어 약 {resultA.activeVocab.toLocaleString()}개
+      </div>
+      <LtDistCurve pct={resultA.pct} />
+
+      <div className="sec">문장구사력</div>
+      {resultB ? (
+        <React.Fragment>
+          <div className="lt-row">
+            <span className="lt-band">{resultB.band}</span>
+            <span className="chip">상위 {resultB.pct}% (추정)</span>
+          </div>
+          <LtDistCurve pct={resultB.pct} />
+          <div className="lt-note">{renderBold("**어순 배열만으로 부분 측정**한 값이에요")}</div>
+        </React.Fragment>
+      ) : (
+        <div className="lt-note">측정 안 함 — 나중에 다시 할 수 있어요</div>
+      )}
+
+      {gapNote && <div className="lt-note">{renderBold(gapNote)}</div>}
+
+      <div className="qactions" style={{ marginTop: 4 }}>
+        <button className="ghost" onClick={onRetry}>다시 측정</button>
+        <button className="primary" onClick={onExit}>완료</button>
+      </div>
+    </div>
+  );
+}
+
+/* Part A → (중간 안내) → Part B(선택) → 결과, 4단계를 오가는 오케스트레이터 */
+function LevelTest({ onExit }) {
+  const [phase, setPhase] = useState("a"); // "a" | "interim" | "b" | "result"
+  const [resultA, setResultA] = useState(null);
+  const [resultB, setResultB] = useState(null);
+
+  if (phase === "a") {
+    return <LevelTestPartA onExit={onExit} onDone={r => { setResultA(r); setPhase("interim"); }} />;
+  }
+  if (phase === "interim") {
+    return <LevelTestInterim
+      onSkip={() => { setResultB(null); setPhase("result"); }}
+      onContinue={() => setPhase("b")} />;
+  }
+  if (phase === "b") {
+    return <LevelTestPartB onExit={onExit} onDone={r => { setResultB(r); setPhase("result"); }} />;
+  }
+  return <LevelTestResult resultA={resultA} resultB={resultB} onExit={onExit}
+    onRetry={() => { setResultA(null); setResultB(null); setPhase("a"); }} />;
+}
+
 /* ---------- 학습 탭 ---------- */
 function Learn({ onOpenWord }) {
   const [session, setSession] = useState(null); // null | items | "done"
   const [mode, setMode] = useState("card");      // "card" | "listen" — session이 어느 세션인지
   const [summary, setSummary] = useState(null);
+  const [ltOpen, setLtOpen] = useState(false);   // 레벨 테스트는 카드/듣기 세션과 별도 상태로 관리
   const dueCount = allItems().filter(it => SRS.isDue(it.key)).length;
   const newCount = allItems().filter(it => !SRS.get(it.key)).length;
+
+  if (ltOpen) return <LevelTest onExit={() => setLtOpen(false)} />;
 
   if (session === "done" && summary) {
     return <Finish total={summary.total} correct={summary.correct}
@@ -1506,7 +2009,7 @@ function Learn({ onOpenWord }) {
     { k: "card", icon: "school", title: "단어카드", sub: `복습 ${dueCount} · 신규 ${newCount} 대기`, on: true, start: startCard },
     { k: "listen", icon: "volume_up", title: "듣기 세션 (딕테이션)", sub: "듣고 그대로 타이핑", on: true, start: startListen },
     { k: "quiz", icon: "grid_view", title: "퀴즈", sub: "뜻·스펠링·빈칸", on: false },
-    { k: "level", icon: "add", title: "레벨 테스트", sub: "어휘 + 문장구사력", on: false },
+    { k: "level", icon: "add", title: "레벨 테스트", sub: "어휘 + 문장구사력", on: true, start: () => setLtOpen(true) },
   ];
 
   return (
