@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.8">
+<link rel="manifest" href="manifest.json?v=0.11.9">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.8"></script>
-<script src="img/rat_run.js?v=0.11.8"></script>
+<script src="words.js?v=0.11.9"></script>
+<script src="img/rat_run.js?v=0.11.9"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -359,7 +359,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.8";
+const APP_VERSION = "v0.11.9";
 const APP_BUILD = "2026-07-13"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -544,19 +544,23 @@ function sentenceCefrLevel(text) {
   return maxIdx >= 0 ? CEFR_LEVELS[maxIdx] : null;
 }
 
+/* 레벨테스트(4.3)와 같은 12단계 스케일 — CEFR 6밴드를 각각 base/+ 로 나눔.
+   지금은 듣기 난이도 표시·판정 전용(words.js의 cefr 필드 자체는 6단계 그대로). */
+const LISTEN_LEVELS = ["A1", "A1+", "A2", "A2+", "B1", "B1+", "B2", "B2+", "C1", "C1+", "C2", "C2+"];
+
 /* 듣기 난이도 — 어휘 CEFR만으로는 "r u all good?"처럼 단어는 전부 쉬운데
    연음·문장 길이 때문에 귀로 듣긴 어려운 문장을 못 잡는다. 그래서 별도로:
    어휘 레벨(0~5) + 연음 지점 수(가중치 1.2) + 8단어를 넘는 만큼(가중치 0.3)을
-   합산해 3단계(쉬움/보통/어려움)로 판정. 다시듣기 패널티(다음 문제 다운그레이드)도
-   이 지표 기준으로 바꿈 — 어휘가 쉬워도 듣기가 어려우면 실제로는 어려운 문제이므로. */
+   합산해 LISTEN_LEVELS(12단계, A1~C2+)로 판정. 다시듣기 패널티(다음 문제
+   다운그레이드)도 이 지표 기준 — 어휘가 쉬워도 듣기가 어려우면 실제로는 어려운
+   문제이므로. 구간폭 0.75는 경험적 근사치(실제 음성학적 난이도 측정 아님). */
 function listeningDifficulty(text) {
   const words = (text || "").replace(/[.,!?;:"']/g, "").trim().split(/\s+/).filter(Boolean);
   const lexIdx = Math.max(0, CEFR_LEVELS.indexOf(sentenceCefrLevel(text)));
   const liaisonCount = liaisonPoints(text).length;
   const score = lexIdx + liaisonCount * 1.2 + Math.max(0, words.length - 8) * 0.3;
-  if (score >= 5) return { tier: 3, label: "어려움" };
-  if (score >= 2.5) return { tier: 2, label: "보통" };
-  return { tier: 1, label: "쉬움" };
+  const tier = Math.min(LISTEN_LEVELS.length - 1, Math.max(0, Math.round(score / 0.75)));
+  return { tier, label: LISTEN_LEVELS[tier] };
 }
 
 /* ---------- 홈 탭 ---------- */
@@ -1309,7 +1313,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
     setQueue(q => {
       if (idx + 1 >= q.length) return q;
       const curTier = listeningDifficulty(it.ex.en).tier;
-      if (curTier <= 1) return q;
+      if (curTier <= 0) return q;
       const used = new Set(q.map(x => x.key));
       const pool = allItems().filter(x => !used.has(x.key) && listeningDifficulty(x.ex.en).tier < curTier);
       if (!pool.length) return q;
@@ -1378,7 +1382,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
 
       <div className="qcard">
         <div className="dict-difficulty">
-          <span className={"tag dl" + diff.tier}>듣기 난이도 · {diff.label}</span>
+          <span className={"tag dl" + (diff.tier < 4 ? 1 : diff.tier < 8 ? 2 : 3)}>듣기 난이도 · {diff.label}</span>
         </div>
         {!res ? (
           <React.Fragment>
