@@ -1,132 +1,1133 @@
 [
-{"word":"or","ko":"또는, 아니면","enOverride":"used to connect alternatives","ex":{"en":"Would you like tea or coffee?","ko":"차 드릴까요, 아니면 커피 드릴까요?"}},
-{"word":"orange","ko":"주황색; 오렌지","ex":{"en":"She peeled an orange.","ko":"그녀는 오렌지 껍질을 벗겼다."}},
-{"word":"order","ko":"주문; 명령","ex":{"en":"He gave the order to leave.","ko":"그는 떠나라는 명령을 내렸다."}},
-{"word":"other","ko":"다른","ex":{"en":"I have no other choice.","ko":"나는 다른 선택이 없다."}},
-{"word":"our","ko":"우리의","enOverride":"used to show that something belongs to the speaker and others","ex":{"en":"This is our house.","ko":"이곳은 우리의 집이다."}},
-{"word":"ours","ko":"우리의 것","enOverride":"used to show that something belongs to the speaker and others","ex":{"en":"That car is ours.","ko":"저 차는 우리의 것이다."}},
-{"word":"out","ko":"밖에, 밖으로","ex":{"en":"They went out last night.","ko":"그들은 어젯밤 외출했다."}},
-{"word":"outside","ko":"밖에서, 외부","ex":{"en":"In summer we play outside.","ko":"여름에는 우리가 밖에서 논다."}},
-{"word":"over","ko":"~위에; 끝난","ex":{"en":"The meeting is over.","ko":"회의가 끝났다."}},
-{"word":"own","ko":"자신의, 소유의","ex":{"en":"She has her own room.","ko":"그녀는 자신만의 방이 있다."}},
-{"word":"owner","ko":"주인, 소유자","ex":{"en":"He is the owner of the restaurant.","ko":"그는 그 식당의 주인이다."}},
-{"word":"page","ko":"페이지, 쪽","ex":{"en":"Please turn to page ten.","ko":"10페이지를 펴 주세요."}},
-{"word":"paint","ko":"페인트, 물감; 칠하다","ex":{"en":"He painted the fence white.","ko":"그는 울타리를 흰색으로 칠했다."}},
-{"word":"painting","ko":"그림, 회화","ex":{"en":"She bought a small painting.","ko":"그녀는 작은 그림을 샀다."}},
-{"word":"pair","ko":"한 쌍","ex":{"en":"She bought a pair of shoes.","ko":"그녀는 신발 한 켤레를 샀다."}},
-{"word":"palace","ko":"궁전","ex":{"en":"They visited a beautiful old palace.","ko":"그들은 아름다운 옛 궁전을 방문했다."}},
-{"word":"pants","ko":"바지","ex":{"en":"He bought a new pair of pants.","ko":"그는 새 바지 한 벌을 샀다."}},
-{"word":"paper","ko":"종이","ex":{"en":"She wrote her name on a piece of paper.","ko":"그녀는 종이에 자기 이름을 적었다."}},
-{"word":"paragraph","ko":"단락, 문단","ex":{"en":"Write a short paragraph about your day.","ko":"당신의 하루에 대해 짧은 단락을 써 보세요."}},
-{"word":"pardon","ko":"용서; 죄송합니다 (되물을 때)","ex":{"en":"Pardon? Could you say that again?","ko":"죄송한데, 다시 말씀해 주시겠어요?"}},
-{"word":"parent","ko":"부모","ex":{"en":"Her parents live in Busan.","ko":"그녀의 부모님은 부산에 사신다."}},
-{"word":"park","ko":"공원","ex":{"en":"They walked in the park.","ko":"그들은 공원에서 산책했다."}},
-{"word":"partner","ko":"배우자, 파트너","ex":{"en":"He introduced his business partner.","ko":"그는 자신의 사업 파트너를 소개했다."}},
-{"word":"party","ko":"파티","ex":{"en":"We had a great time at the party.","ko":"우리는 파티에서 즐거운 시간을 보냈다."}},
-{"word":"past","ko":"과거; ~을 지나서","ex":{"en":"Every hour a train goes past.","ko":"매시간 기차가 지나간다."}},
-{"word":"pay","ko":"지불하다; 급여","ex":{"en":"He paid for dinner.","ko":"그는 저녁 식사비를 지불했다."}},
-{"word":"peace","ko":"평화","ex":{"en":"They hope for peace between the two countries.","ko":"그들은 두 나라 사이의 평화를 희망한다."}},
-{"word":"pen","ko":"펜","ex":{"en":"She wrote the letter with a pen.","ko":"그녀는 펜으로 편지를 썼다."}},
-{"word":"pencil","ko":"연필","ex":{"en":"He drew a picture with a pencil.","ko":"그는 연필로 그림을 그렸다."}},
-{"word":"people","ko":"사람들","ex":{"en":"There were at least 200 people there.","ko":"그곳에는 최소 200명의 사람들이 있었다."}},
-{"word":"period","ko":"기간, 시기","ex":{"en":"It was a difficult period in her life.","ko":"그것은 그녀의 삶에서 어려운 시기였다."}},
-{"word":"person","ko":"사람","ex":{"en":"She is a kind person.","ko":"그녀는 친절한 사람이다."}},
-{"word":"personal","ko":"개인적인","ex":{"en":"This is a personal matter.","ko":"이것은 개인적인 문제다."}},
-{"word":"pet","ko":"반려동물","ex":{"en":"She has a pet dog.","ko":"그녀는 반려견을 키운다."}},
-{"word":"phone","ko":"전화; 전화하다","ex":{"en":"I tried to phone you all night.","ko":"나는 밤새 당신에게 전화하려고 했다."}},
-{"word":"photo","ko":"사진","ex":{"en":"He took a photo of the mountain.","ko":"그는 산 사진을 찍었다."}},
-{"word":"piano","ko":"피아노","ex":{"en":"She plays the piano beautifully.","ko":"그녀는 피아노를 아름답게 연주한다."}},
-{"word":"pick","ko":"고르다, 뽑다","ex":{"en":"She finally picked her successor.","ko":"그녀는 마침내 후임자를 선택했다."}},
-{"word":"picnic","ko":"소풍","ex":{"en":"We went on a picnic in the park.","ko":"우리는 공원으로 소풍을 갔다."}},
-{"word":"picture","ko":"그림, 사진","ex":{"en":"They showed us the pictures of their wedding.","ko":"그들은 우리에게 결혼식 사진을 보여줬다."}},
-{"word":"piece","ko":"조각, 부분","ex":{"en":"She ate a piece of cake.","ko":"그녀는 케이크 한 조각을 먹었다."}},
-{"word":"pig","ko":"돼지","ex":{"en":"The pig rolled in the mud.","ko":"돼지가 진흙 속에서 뒹굴었다."}},
-{"word":"pink","ko":"분홍색","ex":{"en":"She wore a pink dress.","ko":"그녀는 분홍색 드레스를 입었다."}},
-{"word":"pizza","ko":"피자","ex":{"en":"They ordered a large pizza.","ko":"그들은 큰 피자를 주문했다."}},
-{"word":"place","ko":"장소","ex":{"en":"This is a nice place for a picnic.","ko":"이곳은 소풍하기 좋은 장소다."}},
-{"word":"plan","ko":"계획","ex":{"en":"They drew up a plan for the trip.","ko":"그들은 여행 계획을 세웠다."}},
-{"word":"plane","ko":"비행기","ex":{"en":"The flight was delayed due to trouble with the plane.","ko":"비행기 문제로 항공편이 지연되었다."}},
-{"word":"play","ko":"놀다, 연주하다; 연극","ex":{"en":"The children play in the yard.","ko":"아이들이 마당에서 논다."}},
-{"word":"player","ko":"선수, 연주자","ex":{"en":"He is a great soccer player.","ko":"그는 훌륭한 축구 선수다."}},
-{"word":"please","ko":"제발, 부디","ex":{"en":"Please pay attention.","ko":"주목해 주세요."}},
-{"word":"pleasure","ko":"기쁨, 즐거움","ex":{"en":"It's a pleasure to meet you.","ko":"만나서 반갑습니다."}},
-{"word":"pocket","ko":"주머니","ex":{"en":"He put his hands in his pockets.","ko":"그는 주머니에 손을 넣었다."}},
-{"word":"poem","ko":"시","ex":{"en":"She wrote a poem about the sea.","ko":"그녀는 바다에 관한 시를 썼다."}},
-{"word":"point","ko":"요점, 점","ex":{"en":"That's a good point.","ko":"그것은 좋은 지적이다."}},
-{"word":"pollution","ko":"오염","ex":{"en":"Air pollution is a serious problem.","ko":"대기 오염은 심각한 문제다."}},
-{"word":"pool","ko":"수영장, 웅덩이","ex":{"en":"The kids swam in the pool.","ko":"아이들은 수영장에서 수영했다."}},
-{"word":"poor","ko":"가난한, 불쌍한","ex":{"en":"They helped the poor family.","ko":"그들은 가난한 가족을 도왔다."}},
-{"word":"pop","ko":"아빠 (구어); 팝(음악)","ex":{"en":"She listens to pop music.","ko":"그녀는 팝 음악을 듣는다."}},
-{"word":"post","ko":"게시물; 우편","ex":{"en":"She shared a post online.","ko":"그녀는 온라인에 게시물을 공유했다."}},
-{"word":"poster","ko":"포스터","ex":{"en":"A poster advertised the concert.","ko":"포스터가 그 콘서트를 광고했다."}},
-{"word":"potato","ko":"감자","ex":{"en":"She peeled the potatoes.","ko":"그녀는 감자 껍질을 벗겼다."}},
-{"word":"practice","ko":"연습; 연습하다","ex":{"en":"She practices piano every day.","ko":"그녀는 매일 피아노를 연습한다."}},
-{"word":"pray","ko":"기도하다","ex":{"en":"They prayed for peace.","ko":"그들은 평화를 위해 기도했다."}},
-{"word":"present","ko":"현재; 선물","ex":{"en":"Let's focus on the present.","ko":"현재에 집중합시다."}},
-{"word":"pretty","ko":"예쁜","ex":{"en":"She has a pretty smile.","ko":"그녀는 예쁜 미소를 가지고 있다."}},
-{"word":"price","ko":"가격","ex":{"en":"The price of gas went up.","ko":"기름값이 올랐다."}},
-{"word":"prince","ko":"왕자","ex":{"en":"The prince lived in a castle.","ko":"그 왕자는 성에서 살았다."}},
-{"word":"princess","ko":"공주","ex":{"en":"The princess wore a golden crown.","ko":"그 공주는 금관을 썼다."}},
-{"word":"problem","ko":"문제","ex":{"en":"We need to solve this problem.","ko":"우리는 이 문제를 해결해야 한다."}},
-{"word":"program","ko":"프로그램, 계획","ex":{"en":"They drew up a six-step program.","ko":"그들은 6단계 프로그램을 세웠다."}},
-{"word":"purple","ko":"보라색","ex":{"en":"She painted the wall purple.","ko":"그녀는 벽을 보라색으로 칠했다."}},
-{"word":"push","ko":"밀다","ex":{"en":"He pushed the table into the corner.","ko":"그는 탁자를 구석으로 밀었다."}},
-{"word":"put","ko":"놓다, 두다","ex":{"en":"Put your things here.","ko":"당신의 물건을 여기에 두세요."}},
-{"word":"quarter","ko":"4분의 1","ex":{"en":"He ate a quarter of the pizza.","ko":"그는 피자의 4분의 1을 먹었다."}},
-{"word":"question","ko":"질문","ex":{"en":"She asked an important question.","ko":"그녀는 중요한 질문을 했다."}},
-{"word":"quickly","ko":"빠르게","ex":{"en":"He finished the work quickly.","ko":"그는 일을 빠르게 끝냈다."}},
-{"word":"quiet","ko":"조용한","ex":{"en":"The library was very quiet.","ko":"도서관은 매우 조용했다."}},
-{"word":"rabbit","ko":"토끼","ex":{"en":"The rabbit hopped across the yard.","ko":"토끼가 마당을 가로질러 깡충깡충 뛰었다."}},
-{"word":"radio","ko":"라디오","ex":{"en":"She listens to the radio while driving.","ko":"그녀는 운전하면서 라디오를 듣는다."}},
-{"word":"rain","ko":"비; 비가 오다","ex":{"en":"If it rains, we will stay home.","ko":"비가 오면 우리는 집에 있을 것이다."}},
-{"word":"rainy","ko":"비 오는","ex":{"en":"It was a rainy day.","ko":"비 오는 날이었다."}},
-{"word":"rat","ko":"쥐","ex":{"en":"A rat ran across the street.","ko":"쥐 한 마리가 길을 가로질러 뛰어갔다."}},
-{"word":"read","ko":"읽다","ex":{"en":"Have you read this book?","ko":"이 책을 읽어봤나요?"}},
-{"word":"reader","ko":"독자","ex":{"en":"She is a passionate reader.","ko":"그녀는 열정적인 독서가다."}},
-{"word":"reading","ko":"독서, 읽기","ex":{"en":"Reading is her favorite hobby.","ko":"독서는 그녀가 가장 좋아하는 취미다."}},
-{"word":"ready","ko":"준비된","ex":{"en":"Are you ready to go?","ko":"갈 준비 되었나요?"}},
-{"word":"real","ko":"진짜의, 실제의","ex":{"en":"Is this a real diamond?","ko":"이것은 진짜 다이아몬드인가요?"}},
-{"word":"really","ko":"정말로","ex":{"en":"I really like this song.","ko":"나는 이 노래가 정말 좋다."}},
-{"word":"reason","ko":"이유","ex":{"en":"There is a reason for everything.","ko":"모든 것에는 이유가 있다."}},
-{"word":"red","ko":"빨간색","ex":{"en":"She wore a red scarf.","ko":"그녀는 빨간 스카프를 둘렀다."}},
-{"word":"remember","ko":"기억하다","ex":{"en":"I can't remember his name.","ko":"나는 그의 이름이 기억나지 않는다."}},
-{"word":"repeat","ko":"반복하다","ex":{"en":"Please repeat what you said.","ko":"말씀하신 것을 다시 말해 주세요."}},
-{"word":"reporter","ko":"기자","ex":{"en":"The reporter asked several questions.","ko":"그 기자는 여러 질문을 했다."}},
-{"word":"restaurant","ko":"식당","ex":{"en":"We ate dinner at a nice restaurant.","ko":"우리는 좋은 식당에서 저녁을 먹었다."}},
-{"word":"result","ko":"결과","ex":{"en":"She was happy with the test result.","ko":"그녀는 시험 결과에 만족했다."}},
-{"word":"review","ko":"검토, 리뷰","ex":{"en":"He wrote a review of the movie.","ko":"그는 그 영화의 리뷰를 썼다."}},
-{"word":"ribbon","ko":"리본","ex":{"en":"She tied her hair with a ribbon.","ko":"그녀는 리본으로 머리를 묶었다."}},
-{"word":"rice","ko":"쌀, 밥","ex":{"en":"They eat rice every day.","ko":"그들은 매일 밥을 먹는다."}},
-{"word":"rich","ko":"부유한","ex":{"en":"Her father is extremely rich.","ko":"그녀의 아버지는 매우 부유하다."}},
-{"word":"ride","ko":"타다; (탈것을) 타기","ex":{"en":"He took the family for a ride in his new car.","ko":"그는 가족을 새 차에 태워 드라이브를 시켜줬다."}},
-{"word":"right","ko":"오른쪽의; 맞는","ex":{"en":"Turn right at the light.","ko":"신호등에서 오른쪽으로 도세요."}},
-{"word":"ring","ko":"반지; 울리다","ex":{"en":"The bells rang loudly.","ko":"종이 크게 울렸다."}},
-{"word":"river","ko":"강","ex":{"en":"The river was navigable for fifty miles.","ko":"그 강은 50마일 동안 배가 다닐 수 있었다."}},
-{"word":"role","ko":"역할","ex":{"en":"She played the main role in the play.","ko":"그녀는 그 연극에서 주연을 맡았다."}},
-{"word":"room","ko":"방","ex":{"en":"The rooms were small but had a nice view.","ko":"그 방들은 작았지만 전망이 좋았다."}},
-{"word":"rose","ko":"장미","ex":{"en":"He gave her a red rose.","ko":"그는 그녀에게 빨간 장미를 주었다."}},
-{"word":"row","ko":"줄, 열","ex":{"en":"They sat in the front row.","ko":"그들은 맨 앞줄에 앉았다."}},
-{"word":"rude","ko":"무례한","ex":{"en":"It was rude of him to interrupt.","ko":"그가 끼어든 것은 무례했다."}},
-{"word":"rule","ko":"규칙","ex":{"en":"It was his rule to walk before breakfast.","ko":"아침 식사 전에 산책하는 것이 그의 규칙이었다."}},
-{"word":"ruler","ko":"통치자; 자 (도구)","ex":{"en":"She measured the paper with a ruler.","ko":"그녀는 자로 종이를 측정했다."}},
-{"word":"run","ko":"달리다","enOverride":"to move quickly on foot","ex":{"en":"He runs five kilometers every morning.","ko":"그는 매일 아침 5킬로미터를 달린다."}},
-{"word":"sad","ko":"슬픈","ex":{"en":"She felt sad because her dog had died.","ko":"그녀는 개가 죽어서 슬펐다."}},
-{"word":"sailor","ko":"선원","ex":{"en":"The sailor worked on a large ship.","ko":"그 선원은 큰 배에서 일했다."}},
-{"word":"salad","ko":"샐러드","ex":{"en":"She ordered a fresh salad.","ko":"그녀는 신선한 샐러드를 주문했다."}},
-{"word":"sale","ko":"판매, 세일","ex":{"en":"The store is having a big sale.","ko":"그 가게는 큰 세일을 하고 있다."}},
-{"word":"same","ko":"같은","ex":{"en":"We wore the same shirt.","ko":"우리는 같은 셔츠를 입었다."}},
-{"word":"sandwich","ko":"샌드위치","ex":{"en":"She made a sandwich for lunch.","ko":"그녀는 점심으로 샌드위치를 만들었다."}},
-{"word":"Saturday","ko":"토요일","ex":{"en":"We go hiking every Saturday.","ko":"우리는 매주 토요일에 등산을 간다."}},
-{"word":"save","ko":"구하다; 저축하다","ex":{"en":"Firefighters saved a child from the fire.","ko":"소방관들이 화재에서 아이를 구했다."},"senses":[{"cue":"위험으로부터","ko":"구하다","pos":"동사","lv":4,"en":"keep safe or rescue (someone or something) from harm or danger","ex":[{"en":"Firefighters saved a child from the burning house.","ko":"소방관들이 불타는 집에서 아이를 구했다."}]},{"cue":"나중에 쓰려고","ko":"남겨 두다, 아끼다","pos":"동사","lv":6,"en":"keep something so that you can use it later","ex":[{"en":"Save some pizza for your brother.","ko":"동생 몫으로 피자 좀 남겨 둬."}]},{"cue":"낭비하지 않고","ko":"아끼다, 절약하다","pos":"동사","lv":6,"en":"avoid wasting something such as time or money","ex":[{"en":"Taking the subway saves time and money.","ko":"지하철을 타면 시간과 돈이 절약된다."}]},{"cue":"컴퓨터에서 자료를","ko":"저장하다","pos":"동사","lv":9,"en":"make a computer keep the work that you have done on it","ex":[{"en":"Don't forget to save the file before closing.","ko":"닫기 전에 파일 저장하는 것 잊지 마."}]},{"cue":"돈을","ko":"모으다, 저축하다","pos":"동사","lv":12,"en":"keep money so that you can use it later, especially by adding to it over time","ex":[{"en":"I'm saving up for a trip to London.","ko":"런던 여행 가려고 돈을 모으고 있어."}]},{"cue":"비용·수고 등을","ko":"덜어주다, 절약하게 해 주다","pos":"동사","lv":13,"en":"make it unnecessary for someone to use money, time, or effort","ex":[{"en":"Online check-in saves you a lot of hassle.","ko":"온라인 체크인은 수고를 크게 덜어준다."}]}]},
-{"word":"saw","ko":"보았다 (see의 과거형)","enOverride":"the past tense of the verb 'see'","ex":{"en":"I saw her at the store yesterday.","ko":"나는 어제 가게에서 그녀를 봤다."}},
-{"word":"say","ko":"말하다","ex":{"en":"He said that he wanted to marry her.","ko":"그는 그녀와 결혼하고 싶다고 말했다."}},
-{"word":"school","ko":"학교","ex":{"en":"The school was founded in 1900.","ko":"그 학교는 1900년에 설립되었다."}},
-{"word":"science","ko":"과학","ex":{"en":"She loves studying science.","ko":"그녀는 과학 공부하는 것을 좋아한다."}},
-{"word":"scientist","ko":"과학자","ex":{"en":"He wants to be a scientist.","ko":"그는 과학자가 되고 싶어 한다."}},
-{"word":"sea","ko":"바다","ex":{"en":"They swam in the sea.","ko":"그들은 바다에서 수영했다."}},
-{"word":"seat","ko":"좌석","ex":{"en":"He booked their seats in advance.","ko":"그는 미리 좌석을 예약했다."}},
-{"word":"second","ko":"두 번째의; 초 (시간)","ex":{"en":"She finished second in the race.","ko":"그녀는 그 경주에서 2등을 했다."}},
-{"word":"section","ko":"부분, 구역","ex":{"en":"He turns first to the sports section.","ko":"그는 먼저 스포츠 섹션을 펼쳐 본다."}},
-{"word":"see","ko":"보다","ex":{"en":"Can you see the mountain from here?","ko":"여기서 산이 보이나요?"}},
-{"word":"self","ko":"자신, 자아","ex":{"en":"She believes in being true to herself.","ko":"그녀는 자기 자신에게 진실해야 한다고 믿는다."}}
+ {
+  "word": "or",
+  "ko": "또는, 아니면",
+  "enOverride": "used to connect alternatives",
+  "ex": {
+   "en": "Would you like tea or coffee?",
+   "ko": "차 드릴까요, 아니면 커피 드릴까요?"
+  }
+ },
+ {
+  "word": "orange",
+  "ko": "주황색; 오렌지",
+  "ex": {
+   "en": "She peeled an orange.",
+   "ko": "그녀는 오렌지 껍질을 벗겼다."
+  }
+ },
+ {
+  "word": "order",
+  "ko": "주문; 명령",
+  "ex": {
+   "en": "He gave the order to leave.",
+   "ko": "그는 떠나라는 명령을 내렸다."
+  }
+ },
+ {
+  "word": "other",
+  "ko": "다른",
+  "ex": {
+   "en": "I have no other choice.",
+   "ko": "나는 다른 선택이 없다."
+  }
+ },
+ {
+  "word": "our",
+  "ko": "우리의",
+  "enOverride": "used to show that something belongs to the speaker and others",
+  "ex": {
+   "en": "This is our house.",
+   "ko": "이곳은 우리의 집이다."
+  }
+ },
+ {
+  "word": "ours",
+  "ko": "우리의 것",
+  "enOverride": "used to show that something belongs to the speaker and others",
+  "ex": {
+   "en": "That car is ours.",
+   "ko": "저 차는 우리의 것이다."
+  }
+ },
+ {
+  "word": "out",
+  "ko": "밖에, 밖으로",
+  "ex": {
+   "en": "They went out last night.",
+   "ko": "그들은 어젯밤 외출했다."
+  }
+ },
+ {
+  "word": "outside",
+  "ko": "밖에서, 외부",
+  "ex": {
+   "en": "In summer we play outside.",
+   "ko": "여름에는 우리가 밖에서 논다."
+  }
+ },
+ {
+  "word": "over",
+  "ko": "~위에; 끝난",
+  "ex": {
+   "en": "The meeting is over.",
+   "ko": "회의가 끝났다."
+  }
+ },
+ {
+  "word": "own",
+  "ko": "자신의, 소유의",
+  "ex": {
+   "en": "She has her own room.",
+   "ko": "그녀는 자신만의 방이 있다."
+  }
+ },
+ {
+  "word": "owner",
+  "ko": "주인, 소유자",
+  "ex": {
+   "en": "He is the owner of the restaurant.",
+   "ko": "그는 그 식당의 주인이다."
+  }
+ },
+ {
+  "word": "page",
+  "ko": "페이지, 쪽",
+  "ex": {
+   "en": "Please turn to page ten.",
+   "ko": "10페이지를 펴 주세요."
+  }
+ },
+ {
+  "word": "paint",
+  "ko": "페인트, 물감; 칠하다",
+  "ex": {
+   "en": "He painted the fence white.",
+   "ko": "그는 울타리를 흰색으로 칠했다."
+  }
+ },
+ {
+  "word": "painting",
+  "ko": "그림, 회화",
+  "ex": {
+   "en": "She bought a small painting.",
+   "ko": "그녀는 작은 그림을 샀다."
+  }
+ },
+ {
+  "word": "pair",
+  "ko": "한 쌍",
+  "ex": {
+   "en": "She bought a pair of shoes.",
+   "ko": "그녀는 신발 한 켤레를 샀다."
+  }
+ },
+ {
+  "word": "palace",
+  "ko": "궁전",
+  "ex": {
+   "en": "They visited a beautiful old palace.",
+   "ko": "그들은 아름다운 옛 궁전을 방문했다."
+  }
+ },
+ {
+  "word": "pants",
+  "ko": "바지",
+  "ex": {
+   "en": "He bought a new pair of pants.",
+   "ko": "그는 새 바지 한 벌을 샀다."
+  }
+ },
+ {
+  "word": "paper",
+  "ko": "종이",
+  "ex": {
+   "en": "She wrote her name on a piece of paper.",
+   "ko": "그녀는 종이에 자기 이름을 적었다."
+  }
+ },
+ {
+  "word": "paragraph",
+  "ko": "단락, 문단",
+  "ex": {
+   "en": "Write a short paragraph about your day.",
+   "ko": "당신의 하루에 대해 짧은 단락을 써 보세요."
+  }
+ },
+ {
+  "word": "pardon",
+  "ko": "용서; 죄송합니다 (되물을 때)",
+  "ex": {
+   "en": "Pardon? Could you say that again?",
+   "ko": "죄송한데, 다시 말씀해 주시겠어요?"
+  }
+ },
+ {
+  "word": "parent",
+  "ko": "부모",
+  "ex": {
+   "en": "Her parents live in Busan.",
+   "ko": "그녀의 부모님은 부산에 사신다."
+  }
+ },
+ {
+  "word": "park",
+  "ko": "공원",
+  "ex": {
+   "en": "They walked in the park.",
+   "ko": "그들은 공원에서 산책했다."
+  }
+ },
+ {
+  "word": "partner",
+  "ko": "배우자, 파트너",
+  "ex": {
+   "en": "He introduced his business partner.",
+   "ko": "그는 자신의 사업 파트너를 소개했다."
+  }
+ },
+ {
+  "word": "party",
+  "ko": "파티",
+  "ex": {
+   "en": "We had a great time at the party.",
+   "ko": "우리는 파티에서 즐거운 시간을 보냈다."
+  }
+ },
+ {
+  "word": "past",
+  "ko": "과거; ~을 지나서",
+  "ex": {
+   "en": "Every hour a train goes past.",
+   "ko": "매시간 기차가 지나간다."
+  }
+ },
+ {
+  "word": "pay",
+  "ko": "지불하다; 급여",
+  "ex": {
+   "en": "He paid for dinner.",
+   "ko": "그는 저녁 식사비를 지불했다."
+  }
+ },
+ {
+  "word": "peace",
+  "ko": "평화",
+  "ex": {
+   "en": "They hope for peace between the two countries.",
+   "ko": "그들은 두 나라 사이의 평화를 희망한다."
+  }
+ },
+ {
+  "word": "pen",
+  "ko": "펜",
+  "ex": {
+   "en": "She wrote the letter with a pen.",
+   "ko": "그녀는 펜으로 편지를 썼다."
+  }
+ },
+ {
+  "word": "pencil",
+  "ko": "연필",
+  "ex": {
+   "en": "He drew a picture with a pencil.",
+   "ko": "그는 연필로 그림을 그렸다."
+  }
+ },
+ {
+  "word": "people",
+  "ko": "사람들",
+  "ex": {
+   "en": "There were at least 200 people there.",
+   "ko": "그곳에는 최소 200명의 사람들이 있었다."
+  }
+ },
+ {
+  "word": "period",
+  "ko": "기간, 시기",
+  "ex": {
+   "en": "It was a difficult period in her life.",
+   "ko": "그것은 그녀의 삶에서 어려운 시기였다."
+  }
+ },
+ {
+  "word": "person",
+  "ko": "사람",
+  "ex": {
+   "en": "She is a kind person.",
+   "ko": "그녀는 친절한 사람이다."
+  }
+ },
+ {
+  "word": "personal",
+  "ko": "개인적인",
+  "ex": {
+   "en": "This is a personal matter.",
+   "ko": "이것은 개인적인 문제다."
+  }
+ },
+ {
+  "word": "pet",
+  "ko": "반려동물",
+  "ex": {
+   "en": "She has a pet dog.",
+   "ko": "그녀는 반려견을 키운다."
+  }
+ },
+ {
+  "word": "phone",
+  "ko": "전화; 전화하다",
+  "ex": {
+   "en": "I tried to phone you all night.",
+   "ko": "나는 밤새 당신에게 전화하려고 했다."
+  }
+ },
+ {
+  "word": "photo",
+  "ko": "사진",
+  "ex": {
+   "en": "He took a photo of the mountain.",
+   "ko": "그는 산 사진을 찍었다."
+  }
+ },
+ {
+  "word": "piano",
+  "ko": "피아노",
+  "ex": {
+   "en": "She plays the piano beautifully.",
+   "ko": "그녀는 피아노를 아름답게 연주한다."
+  }
+ },
+ {
+  "word": "pick",
+  "ko": "고르다, 뽑다",
+  "ex": {
+   "en": "She finally picked her successor.",
+   "ko": "그녀는 마침내 후임자를 선택했다."
+  }
+ },
+ {
+  "word": "picnic",
+  "ko": "소풍",
+  "ex": {
+   "en": "We went on a picnic in the park.",
+   "ko": "우리는 공원으로 소풍을 갔다."
+  }
+ },
+ {
+  "word": "picture",
+  "ko": "그림, 사진",
+  "ex": {
+   "en": "They showed us the pictures of their wedding.",
+   "ko": "그들은 우리에게 결혼식 사진을 보여줬다."
+  }
+ },
+ {
+  "word": "piece",
+  "ko": "조각, 부분",
+  "ex": {
+   "en": "She ate a piece of cake.",
+   "ko": "그녀는 케이크 한 조각을 먹었다."
+  }
+ },
+ {
+  "word": "pig",
+  "ko": "돼지",
+  "ex": {
+   "en": "The pig rolled in the mud.",
+   "ko": "돼지가 진흙 속에서 뒹굴었다."
+  }
+ },
+ {
+  "word": "pink",
+  "ko": "분홍색",
+  "ex": {
+   "en": "She wore a pink dress.",
+   "ko": "그녀는 분홍색 드레스를 입었다."
+  }
+ },
+ {
+  "word": "pizza",
+  "ko": "피자",
+  "ex": {
+   "en": "They ordered a large pizza.",
+   "ko": "그들은 큰 피자를 주문했다."
+  }
+ },
+ {
+  "word": "place",
+  "ko": "장소",
+  "ex": {
+   "en": "This is a nice place for a picnic.",
+   "ko": "이곳은 소풍하기 좋은 장소다."
+  }
+ },
+ {
+  "word": "plan",
+  "ko": "계획",
+  "ex": {
+   "en": "They drew up a plan for the trip.",
+   "ko": "그들은 여행 계획을 세웠다."
+  }
+ },
+ {
+  "word": "plane",
+  "ko": "비행기",
+  "ex": {
+   "en": "The flight was delayed due to trouble with the plane.",
+   "ko": "비행기 문제로 항공편이 지연되었다."
+  }
+ },
+ {
+  "word": "play",
+  "ko": "놀다, 연주하다; 연극",
+  "ex": {
+   "en": "The children play in the yard.",
+   "ko": "아이들이 마당에서 논다."
+  }
+ },
+ {
+  "word": "player",
+  "ko": "선수, 연주자",
+  "ex": {
+   "en": "He is a great soccer player.",
+   "ko": "그는 훌륭한 축구 선수다."
+  }
+ },
+ {
+  "word": "please",
+  "ko": "제발, 부디",
+  "ex": {
+   "en": "Please pay attention.",
+   "ko": "주목해 주세요."
+  }
+ },
+ {
+  "word": "pleasure",
+  "ko": "기쁨, 즐거움",
+  "ex": {
+   "en": "It's a pleasure to meet you.",
+   "ko": "만나서 반갑습니다."
+  }
+ },
+ {
+  "word": "pocket",
+  "ko": "주머니",
+  "ex": {
+   "en": "He put his hands in his pockets.",
+   "ko": "그는 주머니에 손을 넣었다."
+  }
+ },
+ {
+  "word": "poem",
+  "ko": "시",
+  "ex": {
+   "en": "She wrote a poem about the sea.",
+   "ko": "그녀는 바다에 관한 시를 썼다."
+  }
+ },
+ {
+  "word": "point",
+  "ko": "요점, 점",
+  "ex": {
+   "en": "That's a good point.",
+   "ko": "그것은 좋은 지적이다."
+  }
+ },
+ {
+  "word": "pollution",
+  "ko": "오염",
+  "ex": {
+   "en": "Air pollution is a serious problem.",
+   "ko": "대기 오염은 심각한 문제다."
+  }
+ },
+ {
+  "word": "pool",
+  "ko": "수영장, 웅덩이",
+  "ex": {
+   "en": "The kids swam in the pool.",
+   "ko": "아이들은 수영장에서 수영했다."
+  }
+ },
+ {
+  "word": "poor",
+  "ko": "가난한, 불쌍한",
+  "ex": {
+   "en": "They helped the poor family.",
+   "ko": "그들은 가난한 가족을 도왔다."
+  }
+ },
+ {
+  "word": "pop",
+  "ko": "아빠 (구어); 팝(음악)",
+  "ex": {
+   "en": "She listens to pop music.",
+   "ko": "그녀는 팝 음악을 듣는다."
+  }
+ },
+ {
+  "word": "post",
+  "ko": "게시물; 우편",
+  "ex": {
+   "en": "She shared a post online.",
+   "ko": "그녀는 온라인에 게시물을 공유했다."
+  }
+ },
+ {
+  "word": "poster",
+  "ko": "포스터",
+  "ex": {
+   "en": "A poster advertised the concert.",
+   "ko": "포스터가 그 콘서트를 광고했다."
+  }
+ },
+ {
+  "word": "potato",
+  "ko": "감자",
+  "ex": {
+   "en": "She peeled the potatoes.",
+   "ko": "그녀는 감자 껍질을 벗겼다."
+  }
+ },
+ {
+  "word": "practice",
+  "ko": "연습; 연습하다",
+  "ex": {
+   "en": "She practices piano every day.",
+   "ko": "그녀는 매일 피아노를 연습한다."
+  }
+ },
+ {
+  "word": "pray",
+  "ko": "기도하다",
+  "ex": {
+   "en": "They prayed for peace.",
+   "ko": "그들은 평화를 위해 기도했다."
+  }
+ },
+ {
+  "word": "present",
+  "ko": "현재; 선물",
+  "ex": {
+   "en": "Let's focus on the present.",
+   "ko": "현재에 집중합시다."
+  }
+ },
+ {
+  "word": "pretty",
+  "ko": "예쁜",
+  "ex": {
+   "en": "She has a pretty smile.",
+   "ko": "그녀는 예쁜 미소를 가지고 있다."
+  }
+ },
+ {
+  "word": "price",
+  "ko": "가격",
+  "ex": {
+   "en": "The price of gas went up.",
+   "ko": "기름값이 올랐다."
+  }
+ },
+ {
+  "word": "prince",
+  "ko": "왕자",
+  "ex": {
+   "en": "The prince lived in a castle.",
+   "ko": "그 왕자는 성에서 살았다."
+  }
+ },
+ {
+  "word": "princess",
+  "ko": "공주",
+  "ex": {
+   "en": "The princess wore a golden crown.",
+   "ko": "그 공주는 금관을 썼다."
+  }
+ },
+ {
+  "word": "problem",
+  "ko": "문제",
+  "ex": {
+   "en": "We need to solve this problem.",
+   "ko": "우리는 이 문제를 해결해야 한다."
+  }
+ },
+ {
+  "word": "program",
+  "ko": "프로그램, 계획",
+  "ex": {
+   "en": "They drew up a six-step program.",
+   "ko": "그들은 6단계 프로그램을 세웠다."
+  }
+ },
+ {
+  "word": "purple",
+  "ko": "보라색",
+  "ex": {
+   "en": "She painted the wall purple.",
+   "ko": "그녀는 벽을 보라색으로 칠했다."
+  }
+ },
+ {
+  "word": "push",
+  "ko": "밀다",
+  "ex": {
+   "en": "He pushed the table into the corner.",
+   "ko": "그는 탁자를 구석으로 밀었다."
+  }
+ },
+ {
+  "word": "put",
+  "ko": "놓다, 두다",
+  "ex": {
+   "en": "Put your things here.",
+   "ko": "당신의 물건을 여기에 두세요."
+  }
+ },
+ {
+  "word": "quarter",
+  "ko": "4분의 1",
+  "ex": {
+   "en": "He ate a quarter of the pizza.",
+   "ko": "그는 피자의 4분의 1을 먹었다."
+  }
+ },
+ {
+  "word": "question",
+  "ko": "질문",
+  "ex": {
+   "en": "She asked an important question.",
+   "ko": "그녀는 중요한 질문을 했다."
+  }
+ },
+ {
+  "word": "quickly",
+  "ko": "빠르게",
+  "ex": {
+   "en": "He finished the work quickly.",
+   "ko": "그는 일을 빠르게 끝냈다."
+  }
+ },
+ {
+  "word": "quiet",
+  "ko": "조용한",
+  "ex": {
+   "en": "The library was very quiet.",
+   "ko": "도서관은 매우 조용했다."
+  }
+ },
+ {
+  "word": "rabbit",
+  "ko": "토끼",
+  "ex": {
+   "en": "The rabbit hopped across the yard.",
+   "ko": "토끼가 마당을 가로질러 깡충깡충 뛰었다."
+  }
+ },
+ {
+  "word": "radio",
+  "ko": "라디오",
+  "ex": {
+   "en": "She listens to the radio while driving.",
+   "ko": "그녀는 운전하면서 라디오를 듣는다."
+  }
+ },
+ {
+  "word": "rain",
+  "ko": "비; 비가 오다",
+  "ex": {
+   "en": "If it rains, we will stay home.",
+   "ko": "비가 오면 우리는 집에 있을 것이다."
+  }
+ },
+ {
+  "word": "rainy",
+  "ko": "비 오는",
+  "ex": {
+   "en": "It was a rainy day.",
+   "ko": "비 오는 날이었다."
+  }
+ },
+ {
+  "word": "rat",
+  "ko": "쥐",
+  "ex": {
+   "en": "A rat ran across the street.",
+   "ko": "쥐 한 마리가 길을 가로질러 뛰어갔다."
+  }
+ },
+ {
+  "word": "read",
+  "ko": "읽다",
+  "ex": {
+   "en": "Have you read this book?",
+   "ko": "이 책을 읽어봤나요?"
+  }
+ },
+ {
+  "word": "reader",
+  "ko": "독자",
+  "ex": {
+   "en": "She is a passionate reader.",
+   "ko": "그녀는 열정적인 독서가다."
+  }
+ },
+ {
+  "word": "reading",
+  "ko": "독서, 읽기",
+  "ex": {
+   "en": "Reading is her favorite hobby.",
+   "ko": "독서는 그녀가 가장 좋아하는 취미다."
+  }
+ },
+ {
+  "word": "ready",
+  "ko": "준비된",
+  "ex": {
+   "en": "Are you ready to go?",
+   "ko": "갈 준비 되었나요?"
+  }
+ },
+ {
+  "word": "real",
+  "ko": "진짜의, 실제의",
+  "ex": {
+   "en": "Is this a real diamond?",
+   "ko": "이것은 진짜 다이아몬드인가요?"
+  }
+ },
+ {
+  "word": "really",
+  "ko": "정말로",
+  "ex": {
+   "en": "I really like this song.",
+   "ko": "나는 이 노래가 정말 좋다."
+  }
+ },
+ {
+  "word": "reason",
+  "ko": "이유",
+  "ex": {
+   "en": "There is a reason for everything.",
+   "ko": "모든 것에는 이유가 있다."
+  }
+ },
+ {
+  "word": "red",
+  "ko": "빨간색",
+  "ex": {
+   "en": "She wore a red scarf.",
+   "ko": "그녀는 빨간 스카프를 둘렀다."
+  }
+ },
+ {
+  "word": "remember",
+  "ko": "기억하다",
+  "ex": {
+   "en": "I can't remember his name.",
+   "ko": "나는 그의 이름이 기억나지 않는다."
+  }
+ },
+ {
+  "word": "repeat",
+  "ko": "반복하다",
+  "ex": {
+   "en": "Please repeat what you said.",
+   "ko": "말씀하신 것을 다시 말해 주세요."
+  }
+ },
+ {
+  "word": "reporter",
+  "ko": "기자",
+  "ex": {
+   "en": "The reporter asked several questions.",
+   "ko": "그 기자는 여러 질문을 했다."
+  }
+ },
+ {
+  "word": "restaurant",
+  "ko": "식당",
+  "ex": {
+   "en": "We ate dinner at a nice restaurant.",
+   "ko": "우리는 좋은 식당에서 저녁을 먹었다."
+  }
+ },
+ {
+  "word": "result",
+  "ko": "결과",
+  "ex": {
+   "en": "She was happy with the test result.",
+   "ko": "그녀는 시험 결과에 만족했다."
+  }
+ },
+ {
+  "word": "review",
+  "ko": "검토, 리뷰",
+  "ex": {
+   "en": "He wrote a review of the movie.",
+   "ko": "그는 그 영화의 리뷰를 썼다."
+  }
+ },
+ {
+  "word": "ribbon",
+  "ko": "리본",
+  "ex": {
+   "en": "She tied her hair with a ribbon.",
+   "ko": "그녀는 리본으로 머리를 묶었다."
+  }
+ },
+ {
+  "word": "rice",
+  "ko": "쌀, 밥",
+  "ex": {
+   "en": "They eat rice every day.",
+   "ko": "그들은 매일 밥을 먹는다."
+  }
+ },
+ {
+  "word": "rich",
+  "ko": "부유한",
+  "ex": {
+   "en": "Her father is extremely rich.",
+   "ko": "그녀의 아버지는 매우 부유하다."
+  }
+ },
+ {
+  "word": "ride",
+  "ko": "타다; (탈것을) 타기",
+  "ex": {
+   "en": "He took the family for a ride in his new car.",
+   "ko": "그는 가족을 새 차에 태워 드라이브를 시켜줬다."
+  }
+ },
+ {
+  "word": "right",
+  "ko": "오른쪽의; 맞는",
+  "ex": {
+   "en": "Turn right at the light.",
+   "ko": "신호등에서 오른쪽으로 도세요."
+  }
+ },
+ {
+  "word": "ring",
+  "ko": "반지; 울리다",
+  "ex": {
+   "en": "The bells rang loudly.",
+   "ko": "종이 크게 울렸다."
+  }
+ },
+ {
+  "word": "river",
+  "ko": "강",
+  "ex": {
+   "en": "The river was navigable for fifty miles.",
+   "ko": "그 강은 50마일 동안 배가 다닐 수 있었다."
+  }
+ },
+ {
+  "word": "role",
+  "ko": "역할",
+  "ex": {
+   "en": "She played the main role in the play.",
+   "ko": "그녀는 그 연극에서 주연을 맡았다."
+  }
+ },
+ {
+  "word": "room",
+  "ko": "방",
+  "ex": {
+   "en": "The rooms were small but had a nice view.",
+   "ko": "그 방들은 작았지만 전망이 좋았다."
+  }
+ },
+ {
+  "word": "rose",
+  "ko": "장미",
+  "ex": {
+   "en": "He gave her a red rose.",
+   "ko": "그는 그녀에게 빨간 장미를 주었다."
+  }
+ },
+ {
+  "word": "row",
+  "ko": "줄, 열",
+  "ex": {
+   "en": "They sat in the front row.",
+   "ko": "그들은 맨 앞줄에 앉았다."
+  }
+ },
+ {
+  "word": "rude",
+  "ko": "무례한",
+  "ex": {
+   "en": "It was rude of him to interrupt.",
+   "ko": "그가 끼어든 것은 무례했다."
+  }
+ },
+ {
+  "word": "rule",
+  "ko": "규칙",
+  "ex": {
+   "en": "It was his rule to walk before breakfast.",
+   "ko": "아침 식사 전에 산책하는 것이 그의 규칙이었다."
+  }
+ },
+ {
+  "word": "ruler",
+  "ko": "통치자; 자 (도구)",
+  "ex": {
+   "en": "She measured the paper with a ruler.",
+   "ko": "그녀는 자로 종이를 측정했다."
+  }
+ },
+ {
+  "word": "run",
+  "ko": "달리다",
+  "enOverride": "to move quickly on foot",
+  "ex": {
+   "en": "He runs five kilometers every morning.",
+   "ko": "그는 매일 아침 5킬로미터를 달린다."
+  }
+ },
+ {
+  "word": "sad",
+  "ko": "슬픈",
+  "ex": {
+   "en": "She felt sad because her dog had died.",
+   "ko": "그녀는 개가 죽어서 슬펐다."
+  }
+ },
+ {
+  "word": "sailor",
+  "ko": "선원",
+  "ex": {
+   "en": "The sailor worked on a large ship.",
+   "ko": "그 선원은 큰 배에서 일했다."
+  }
+ },
+ {
+  "word": "salad",
+  "ko": "샐러드",
+  "ex": {
+   "en": "She ordered a fresh salad.",
+   "ko": "그녀는 신선한 샐러드를 주문했다."
+  }
+ },
+ {
+  "word": "sale",
+  "ko": "판매, 세일",
+  "ex": {
+   "en": "The store is having a big sale.",
+   "ko": "그 가게는 큰 세일을 하고 있다."
+  }
+ },
+ {
+  "word": "same",
+  "ko": "같은",
+  "ex": {
+   "en": "We wore the same shirt.",
+   "ko": "우리는 같은 셔츠를 입었다."
+  }
+ },
+ {
+  "word": "sandwich",
+  "ko": "샌드위치",
+  "ex": {
+   "en": "She made a sandwich for lunch.",
+   "ko": "그녀는 점심으로 샌드위치를 만들었다."
+  }
+ },
+ {
+  "word": "Saturday",
+  "ko": "토요일",
+  "ex": {
+   "en": "We go hiking every Saturday.",
+   "ko": "우리는 매주 토요일에 등산을 간다."
+  }
+ },
+ {
+  "word": "save",
+  "ko": "구하다; 저축하다",
+  "ex": {
+   "en": "Firefighters saved a child from the fire.",
+   "ko": "소방관들이 화재에서 아이를 구했다."
+  },
+  "senses": [
+   {
+    "cue": "위험으로부터",
+    "ko": "구하다",
+    "pos": "동사",
+    "lv": 4,
+    "cefr": "A2",
+    "en": "keep safe or rescue (someone or something) from harm or danger",
+    "ex": [
+     {
+      "en": "Firefighters saved a child from the burning house.",
+      "ko": "소방관들이 불타는 집에서 아이를 구했다."
+     }
+    ]
+   },
+   {
+    "cue": "나중에 쓰려고",
+    "ko": "남겨 두다, 아끼다",
+    "pos": "동사",
+    "lv": 6,
+    "cefr": "A2",
+    "en": "keep something so that you can use it later",
+    "ex": [
+     {
+      "en": "Save some pizza for your brother.",
+      "ko": "동생 몫으로 피자 좀 남겨 둬."
+     }
+    ]
+   },
+   {
+    "cue": "낭비하지 않고",
+    "ko": "아끼다, 절약하다",
+    "pos": "동사",
+    "lv": 6,
+    "cefr": "A2",
+    "en": "avoid wasting something such as time or money",
+    "ex": [
+     {
+      "en": "Taking the subway saves time and money.",
+      "ko": "지하철을 타면 시간과 돈이 절약된다."
+     }
+    ]
+   },
+   {
+    "cue": "컴퓨터에서 자료를",
+    "ko": "저장하다",
+    "pos": "동사",
+    "lv": 9,
+    "cefr": "A1",
+    "en": "make a computer keep the work that you have done on it",
+    "ex": [
+     {
+      "en": "Don't forget to save the file before closing.",
+      "ko": "닫기 전에 파일 저장하는 것 잊지 마."
+     }
+    ]
+   },
+   {
+    "cue": "돈을",
+    "ko": "모으다, 저축하다",
+    "pos": "동사",
+    "lv": 12,
+    "cefr": "A2",
+    "en": "keep money so that you can use it later, especially by adding to it over time",
+    "ex": [
+     {
+      "en": "I'm saving up for a trip to London.",
+      "ko": "런던 여행 가려고 돈을 모으고 있어."
+     }
+    ]
+   },
+   {
+    "cue": "비용·수고 등을",
+    "ko": "덜어주다, 절약하게 해 주다",
+    "pos": "동사",
+    "lv": 13,
+    "cefr": "B1",
+    "en": "make it unnecessary for someone to use money, time, or effort",
+    "ex": [
+     {
+      "en": "Online check-in saves you a lot of hassle.",
+      "ko": "온라인 체크인은 수고를 크게 덜어준다."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "word": "saw",
+  "ko": "보았다 (see의 과거형)",
+  "enOverride": "the past tense of the verb 'see'",
+  "ex": {
+   "en": "I saw her at the store yesterday.",
+   "ko": "나는 어제 가게에서 그녀를 봤다."
+  }
+ },
+ {
+  "word": "say",
+  "ko": "말하다",
+  "ex": {
+   "en": "He said that he wanted to marry her.",
+   "ko": "그는 그녀와 결혼하고 싶다고 말했다."
+  }
+ },
+ {
+  "word": "school",
+  "ko": "학교",
+  "ex": {
+   "en": "The school was founded in 1900.",
+   "ko": "그 학교는 1900년에 설립되었다."
+  }
+ },
+ {
+  "word": "science",
+  "ko": "과학",
+  "ex": {
+   "en": "She loves studying science.",
+   "ko": "그녀는 과학 공부하는 것을 좋아한다."
+  }
+ },
+ {
+  "word": "scientist",
+  "ko": "과학자",
+  "ex": {
+   "en": "He wants to be a scientist.",
+   "ko": "그는 과학자가 되고 싶어 한다."
+  }
+ },
+ {
+  "word": "sea",
+  "ko": "바다",
+  "ex": {
+   "en": "They swam in the sea.",
+   "ko": "그들은 바다에서 수영했다."
+  }
+ },
+ {
+  "word": "seat",
+  "ko": "좌석",
+  "ex": {
+   "en": "He booked their seats in advance.",
+   "ko": "그는 미리 좌석을 예약했다."
+  }
+ },
+ {
+  "word": "second",
+  "ko": "두 번째의; 초 (시간)",
+  "ex": {
+   "en": "She finished second in the race.",
+   "ko": "그녀는 그 경주에서 2등을 했다."
+  }
+ },
+ {
+  "word": "section",
+  "ko": "부분, 구역",
+  "ex": {
+   "en": "He turns first to the sports section.",
+   "ko": "그는 먼저 스포츠 섹션을 펼쳐 본다."
+  }
+ },
+ {
+  "word": "see",
+  "ko": "보다",
+  "ex": {
+   "en": "Can you see the mountain from here?",
+   "ko": "여기서 산이 보이나요?"
+  }
+ },
+ {
+  "word": "self",
+  "ko": "자신, 자아",
+  "ex": {
+   "en": "She believes in being true to herself.",
+   "ko": "그녀는 자기 자신에게 진실해야 한다고 믿는다."
+  }
+ }
 ]

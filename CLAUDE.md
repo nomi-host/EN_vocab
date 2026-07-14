@@ -24,3 +24,6 @@
 ## 데이터 파이프라인 메모
 - 시드는 `pipeline/`에서 생성 → `pipeline/merge_cefrj.js`가 `words.js`로 병합. `words.js`는 직접 수정 금지(배치/보강 파일 수정 후 재빌드).
 - 다의어 senses는 `pipeline/senses_parts/*.json`(에이전트별 분할)을 merge가 합침. WordNet 뼈대는 `pipeline/wordnet_senses.json`.
+- **다의어 배치 실행 개수 제한**: 한 세션에서 배치를 **2개 완료하면 자동으로 다음 배치를 이어서 실행하지 말 것.**
+  사용자가 "더 해" 등으로 명시적으로 요청하기 전까지는 멈추고 기다린다. (세션 리밋 대비 보수적 실행 원칙과 별개로,
+  배치 개수 자체를 사용자 통제하에 둔다.)
