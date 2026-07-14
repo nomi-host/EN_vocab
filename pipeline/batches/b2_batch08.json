@@ -101,7 +101,7 @@
   {"word": "grip", "ko": "꽉 잡다, 움켜쥐다", "ex": {"en": "She gripped the rail tightly.", "ko": "그녀는 난간을 꽉 잡았어요."}},
   {"word": "gross", "ko": "총, 세전의", "ex": {"en": "The gross income was higher than expected.", "ko": "총 수입은 예상보다 높았어요."}},
   {"word": "growing", "ko": "성장하는, 증가하는", "ex": {"en": "There is a growing demand for this product.", "ko": "이 제품에 대한 증가하는 수요가 있어요."}},
-  {"word": "grown-up", "ko": "성인, 어른", "ex": {"en": "She talks like a grown-up.", "ko": "그녀는 어른처럼 말해요."}},
+  {"word": "grown-up", "ko": "성인, 어른", "enOverride": "an adult person", "ex": {"en": "She talks like a grown-up.", "ko": "그녀는 어른처럼 말해요."}},
   {"word": "guarantee", "ko": "보장하다", "ex": {"en": "We guarantee your satisfaction.", "ko": "우리는 당신의 만족을 보장해요."}},
   {"word": "guard", "ko": "지키다, 감시하다", "ex": {"en": "The dog guards the house.", "ko": "그 개는 집을 지켜요."}},
   {"word": "guerrilla", "ko": "게릴라", "ex": {"en": "The guerrilla forces attacked at night.", "ko": "게릴라 세력이 밤에 공격했어요."}},

@@ -59,7 +59,7 @@
   {"word": "allegation", "ko": "혐의, 주장", "ex": {"en": "He denied all allegations.", "ko": "그는 모든 혐의를 부인했어요."}},
   {"word": "alliance", "ko": "동맹", "ex": {"en": "The two countries formed an alliance.", "ko": "그 두 나라는 동맹을 맺었어요."}},
   {"word": "ally", "ko": "동맹국, 협력자", "ex": {"en": "They have been close allies for years.", "ko": "그들은 수년간 가까운 동맹국이었어요."}},
-  {"word": "alongside", "ko": "옆에, 나란히", "ex": {"en": "The boat sailed alongside the pier.", "ko": "배가 부두 옆으로 항해했어요."}},
+  {"word": "alongside", "ko": "옆에, 나란히", "enOverride": "next to or along the side of something", "ex": {"en": "The boat sailed alongside the pier.", "ko": "배가 부두 옆으로 항해했어요."}},
   {"word": "alphabetical", "ko": "알파벳순의", "ex": {"en": "The names are in alphabetical order.", "ko": "이름들은 알파벳순으로 되어 있어요."}},
   {"word": "altar", "ko": "제단", "ex": {"en": "They exchanged vows at the altar.", "ko": "그들은 제단에서 서약을 교환했어요."}},
   {"word": "alter", "ko": "바꾸다, 변경하다", "ex": {"en": "This event altered his life completely.", "ko": "이 사건은 그의 인생을 완전히 바꿨어요."}},

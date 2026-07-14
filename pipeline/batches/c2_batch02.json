@@ -31,7 +31,7 @@
  {"word": "distill", "ko": "증류하다, 정제하다", "ex": {"en": "The whiskey is distilled three times.", "ko": "그 위스키는 세 번 증류된다."}},
  {"word": "distillation", "ko": "증류", "ex": {"en": "The process of distillation removes impurities from water.", "ko": "증류 과정은 물에서 불순물을 제거한다."}},
  {"word": "informant", "ko": "정보 제공자, 밀고자", "ex": {"en": "The police relied on an informant to catch the gang.", "ko": "경찰은 그 갱단을 잡기 위해 정보 제공자에 의존했다."}},
- {"word": "vis-a-vis", "ko": "~에 대하여, ~와 비교하여", "ex": {"en": "The report examines the economy vis-a-vis last year.", "ko": "그 보고서는 작년과 비교하여 경제를 살펴본다."}},
+ {"word": "vis-a-vis", "ko": "~에 대하여, ~와 비교하여", "enOverride": "in relation to; in comparison with", "ex": {"en": "The report examines the economy vis-a-vis last year.", "ko": "그 보고서는 작년과 비교하여 경제를 살펴본다."}},
  {"word": "overlay", "ko": "덧씌우다, 겹쳐놓다", "ex": {"en": "The chart overlays sales data from two different years.", "ko": "그 차트는 두 해의 판매 데이터를 겹쳐 놓는다."}},
  {"word": "nostalgia", "ko": "향수, 그리움", "ex": {"en": "The old song filled her with nostalgia.", "ko": "그 오래된 노래는 그녀에게 향수를 불러일으켰다."}},
  {"word": "nostalgic", "ko": "향수를 불러일으키는", "ex": {"en": "He felt nostalgic looking at his childhood photos.", "ko": "그는 어린 시절 사진을 보며 향수를 느꼈다."}},

@@ -2037,9 +2037,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "face-to-face with",
+  "en": "",
   "syn": [],
-  "exp": "literally `face to face'",
+  "exp": "",
   "cefr": "C2"
  },
  {
@@ -6681,9 +6681,14 @@
   "pos": [
    "noun"
   ],
-  "en": "",
-  "syn": [],
-  "exp": "",
+  "en": "a sign of something about to happen",
+  "syn": [
+   "omen",
+   "presage",
+   "prognostic",
+   "prognostication"
+  ],
+  "exp": "he looked for an omen before going into battle",
   "cefr": "C2"
  },
  {

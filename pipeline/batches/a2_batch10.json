@@ -50,7 +50,7 @@
   {"word": "thirsty", "ko": "목마른", "ex": {"en": "I am very thirsty right now.", "ko": "저는 지금 아주 목말라요."}},
   {"word": "though", "ko": "비록 ~이지만", "ex": {"en": "It's a small house, though it's very cozy.", "ko": "작은 집이지만 아주 아늑해요."}},
   {"word": "thought", "ko": "생각", "ex": {"en": "That's an interesting thought.", "ko": "그것은 흥미로운 생각이에요."}},
-  {"word": "thousand", "ko": "천, 1000", "ex": {"en": "The concert had a thousand people.", "ko": "그 콘서트에는 천 명의 사람이 있었어요."}},
+  {"word": "thousand", "ko": "천, 1000", "enOverride": "the number 1,000", "ex": {"en": "The concert had a thousand people.", "ko": "그 콘서트에는 천 명의 사람이 있었어요."}},
   {"word": "thunderstorm", "ko": "뇌우, 천둥번개를 동반한 폭풍", "ex": {"en": "A thunderstorm hit the city last night.", "ko": "어젯밤 도시에 뇌우가 몰아쳤어요."}},
   {"word": "tidy", "ko": "깔끔한, 정리하다", "ex": {"en": "Keep your room tidy.", "ko": "방을 깔끔하게 유지하세요."}},
   {"word": "tie", "ko": "넥타이, 묶다", "ex": {"en": "He wore a blue tie.", "ko": "그는 파란색 넥타이를 착용했어요."}},

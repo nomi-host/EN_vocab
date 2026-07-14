@@ -736,10 +736,8 @@
    "conjunction"
   ],
   "cefr": "B1",
-  "en": "located farther aft",
-  "syn": [
-   "after(a)"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -2590,12 +2588,8 @@
    "preposition"
   ],
   "cefr": "B1",
-  "en": "in or to a place that is lower",
-  "syn": [
-   "below",
-   "at_a_lower_place",
-   "to_a_lower_place"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -2628,11 +2622,9 @@
    "preposition"
   ],
   "cefr": "B1",
-  "en": "making an additional point",
-  "syn": [
-   "in_any_case"
-  ],
-  "exp": "I don't want to go to a restaurant"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "bet",
@@ -3543,14 +3535,9 @@
    "preposition"
   ],
   "cefr": "B1",
-  "en": "and nothing more",
-  "syn": [
-   "merely",
-   "simply",
-   "just",
-   "only"
-  ],
-  "exp": "I was merely asking"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "butcher",
@@ -6991,13 +6978,9 @@
    "preposition"
   ],
   "cefr": "B1",
-  "en": "lack of respect accompanied by a feeling of intense dislike",
-  "syn": [
-   "contempt",
-   "disdain",
-   "scorn"
-  ],
-  "exp": "he was held in contempt"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "destination",
@@ -8285,9 +8268,9 @@
    "pronoun"
   ],
   "cefr": "B1",
-  "en": "after a negative statement used as an intensive meaning something like `likewise' or `also'",
+  "en": "",
   "syn": [],
-  "exp": "he isn't stupid, but he isn't exactly a genius either"
+  "exp": ""
  },
  {
   "word": "elbow",
@@ -9863,9 +9846,9 @@
    "pronoun"
   ],
   "cefr": "B1",
-  "en": "a quantifier that can be used with count nouns and is often preceded by `a'",
+  "en": "",
   "syn": [],
-  "exp": "a small but indefinite number"
+  "exp": ""
  },
  {
   "word": "fifth",
@@ -10235,11 +10218,11 @@
    "verb"
   ],
   "cefr": "B1",
-  "en": "the motion characteristic of fluids (liquids or gases)",
+  "en": "move or progress freely as if in a stream",
   "syn": [
-   "flowing"
+   "flux"
   ],
-  "exp": ""
+  "exp": "The crowd flowed out of the stadium"
  },
  {
   "word": "flu",
@@ -11021,12 +11004,9 @@
    "interjection"
   ],
   "cefr": "B1",
-  "en": "a unit of force equal to the force exerted by gravity",
-  "syn": [
-   "g",
-   "g-force"
-  ],
-  "exp": "used to indicate the force to which a body is subjected when it is accelerated"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "gene",
@@ -11385,11 +11365,9 @@
    "interjection"
   ],
   "cefr": "B1",
-  "en": "that which is pleasing or valuable or useful",
-  "syn": [
-   "good"
-  ],
-  "exp": "weigh the good against the bad"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "goods",
@@ -14866,12 +14844,9 @@
    "conjunction"
   ],
   "cefr": "B1",
-  "en": "a similar kind",
-  "syn": [
-   "the_like",
-   "the_likes_of"
-  ],
-  "exp": "dogs, foxes, and the like"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "likeness",
@@ -14992,9 +14967,9 @@
    "pronoun"
   ],
   "cefr": "B1",
-  "en": "not much",
+  "en": "",
   "syn": [],
-  "exp": "he talked little about his family"
+  "exp": ""
  },
  {
   "word": "live",
@@ -15969,11 +15944,9 @@
    "preposition"
   ],
   "cefr": "B1",
-  "en": "an arithmetic operation in which the difference between two numbers is calculated",
-  "syn": [
-   "subtraction"
-  ],
-  "exp": "the subtraction of three from four leaves one"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "miracle",
@@ -16979,9 +16952,9 @@
    "pronoun"
   ],
   "cefr": "B1",
-  "en": "not at all or in no way",
+  "en": "",
   "syn": [],
-  "exp": "seemed none too pleased with his dinner"
+  "exp": ""
  },
  {
   "word": "nonetheless",
@@ -17462,14 +17435,9 @@
    "preposition"
   ],
   "cefr": "B1",
-  "en": "kill intentionally and with premeditation",
-  "syn": [
-   "murder",
-   "slay",
-   "hit",
-   "dispatch"
-  ],
-  "exp": "The mafia boss ordered his enemies murdered"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "offensive",
@@ -18392,11 +18360,14 @@
    "verb"
   ],
   "cefr": "B1",
-  "en": "interrupt temporarily an activity before continuing",
+  "en": "a time interval during which there is a temporary cessation of something",
   "syn": [
-   "hesitate"
+   "intermission",
+   "break",
+   "interruption",
+   "suspension"
   ],
-  "exp": "The speaker paused"
+  "exp": ""
  },
  {
   "word": "peanut",
@@ -18869,11 +18840,9 @@
    "pronoun"
   ],
   "cefr": "B1",
-  "en": "as much as necessary",
-  "syn": [
-   "enough"
-  ],
-  "exp": "Have I eaten enough?"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "plug",
@@ -18894,10 +18863,8 @@
    "conjunction"
   ],
   "cefr": "B1",
-  "en": "a useful or valuable quality",
-  "syn": [
-   "asset"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -25728,11 +25695,9 @@
    "preposition"
   ],
   "cefr": "B1",
-  "en": "from first to last",
-  "syn": [
-   "end-to-end"
-  ],
-  "exp": "the play was excellent end-to-end"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "thumb",
@@ -25875,9 +25840,9 @@
    "conjunction"
   ],
   "cefr": "B1",
-  "en": "work land as by ploughing, harrowing, and manuring, in order to make it ready for cultivation",
+  "en": "",
   "syn": [],
-  "exp": "till the soil"
+  "exp": ""
  },
  {
   "word": "timely",
@@ -26689,9 +26654,9 @@
    "preposition"
   ],
   "cefr": "B1",
-  "en": "on the lower or downward side",
+  "en": "",
   "syn": [],
-  "exp": "on the underside of"
+  "exp": ""
  },
  {
   "word": "underpants",
@@ -27171,12 +27136,9 @@
    "modal auxiliary"
   ],
   "cefr": "B1",
-  "en": "in the habit of or adapted to",
-  "syn": [
-   "accustomed_to",
-   "used_to"
-  ],
-  "exp": "accustomed to doing her own work"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "useless",
@@ -27979,12 +27941,9 @@
    "pronoun"
   ],
   "cefr": "B1",
-  "en": "one or some or every or all without specification",
-  "syn": [
-   "any(a)",
-   "whatsoever"
-  ],
-  "exp": "give me any peaches you don't want"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "whenever",
@@ -28003,10 +27962,8 @@
    "conjunction"
   ],
   "cefr": "B1",
-  "en": "where in the world",
-  "syn": [
-   "wheresoever"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -28424,9 +28381,9 @@
    "conjunction"
   ],
   "cefr": "B1",
-  "en": "up to the present time",
+  "en": "",
   "syn": [],
-  "exp": "I have yet to see the results"
+  "exp": ""
  },
  {
   "word": "yoga",

@@ -43,7 +43,7 @@
  {"word": "liaison", "ko": "연락, 연락 담당자", "ex": {"en": "She works as a liaison between the two departments.", "ko": "그녀는 그 두 부서 사이의 연락 담당자로 일한다."}, "enOverride": "communication or cooperation between people or organizations"},
  {"word": "stressfully", "ko": "긴장되게, 스트레스를 받으며", "ex": {"en": "She reacted stressfully to the sudden deadline.", "ko": "그녀는 갑작스러운 마감일에 긴장하며 반응했다."}, "enOverride": "in a stressful manner, causing mental or emotional strain"},
  {"word": "loom", "ko": "어렴풋이 나타나다, 다가오다", "ex": {"en": "A dark shape loomed in the fog.", "ko": "안개 속에서 어두운 형체가 어렴풋이 나타났다."}},
- {"word": "notwithstanding", "ko": "~에도 불구하고", "ex": {"en": "Notwithstanding the risks, she decided to proceed.", "ko": "위험에도 불구하고, 그녀는 진행하기로 결정했다."}},
+ {"word": "notwithstanding", "ko": "~에도 불구하고", "enOverride": "despite something; without being prevented by it", "ex": {"en": "Notwithstanding the risks, she decided to proceed.", "ko": "위험에도 불구하고, 그녀는 진행하기로 결정했다."}},
  {"word": "structurally", "ko": "구조적으로", "ex": {"en": "The building is structurally sound.", "ko": "그 건물은 구조적으로 안전하다."}},
  {"word": "structural", "ko": "구조적인", "ex": {"en": "The earthquake caused structural damage to the building.", "ko": "그 지진은 건물에 구조적 손상을 입혔다."}},
  {"word": "chauffer", "ko": "운전기사; 운전해 주다", "ex": {"en": "The businessman was chauffered to the airport.", "ko": "그 사업가는 운전기사가 모는 차로 공항까지 갔다."}, "enOverride": "a person employed to drive a private car; to drive someone as a chauffeur"},

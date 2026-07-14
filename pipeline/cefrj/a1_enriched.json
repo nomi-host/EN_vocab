@@ -5,12 +5,9 @@
   "pos": [
    "determiner"
   ],
-  "en": "a metric unit of length equal to one ten billionth of a meter (or 0.0001 micron)",
-  "syn": [
-   "angstrom",
-   "angstrom_unit"
-  ],
-  "exp": "used to specify wavelengths of electromagnetic radiation"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "about",
@@ -117,10 +114,8 @@
   "pos": [
    "preposition"
   ],
-  "en": "located farther aft",
-  "syn": [
-   "after(a)"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -227,14 +222,9 @@
    "determiner",
    "pronoun"
   ],
-  "en": "to a complete degree or to the full or entire extent (`whole' is often used informally for `wholly')",
-  "syn": [
-   "wholly",
-   "entirely",
-   "completely",
-   "totally"
-  ],
-  "exp": "he was wholly convinced"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "all right",
@@ -338,12 +328,9 @@
   "pos": [
    "be-verb"
   ],
-  "en": "a radioactive transuranic metallic element",
-  "syn": [
-   "americium",
-   "atomic_number_95"
-  ],
-  "exp": "discovered by bombarding uranium with helium atoms"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "an",
@@ -351,10 +338,8 @@
   "pos": [
    "determiner"
   ],
-  "en": "an associate degree in nursing",
-  "syn": [
-   "Associate_in_Nursing"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -398,12 +383,9 @@
   "pos": [
    "determiner"
   ],
-  "en": "any of various alternatives",
-  "syn": [
-   "another(a)",
-   "some_other"
-  ],
-  "exp": "put it off to another (or some other) day"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "answer",
@@ -426,9 +408,9 @@
    "determiner",
    "pronoun"
   ],
-  "en": "to any degree or extent",
+  "en": "",
   "syn": [],
-  "exp": "it isn't any better"
+  "exp": ""
  },
  {
   "word": "anybody",
@@ -498,10 +480,8 @@
   "pos": [
    "be-verb"
   ],
-  "en": "a unit of surface area equal to 100 square meters",
-  "syn": [
-   "ar"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -520,11 +500,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "in the area or vicinity",
-  "syn": [
-   "about"
-  ],
-  "exp": "a few spectators standing about"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "arrive",
@@ -567,12 +545,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "to the same degree (often followed by `as')",
-  "syn": [
-   "equally",
-   "every_bit"
-  ],
-  "exp": "they were equally beautiful"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "ask",
@@ -590,12 +565,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "a highly unstable radioactive element (the heaviest of the halogen series)",
-  "syn": [
-   "astatine",
-   "atomic_number_85"
-  ],
-  "exp": "a decay product of uranium and thorium"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "August",
@@ -828,12 +800,8 @@
   "pos": [
    "be-verb"
   ],
-  "en": "a light strong brittle grey toxic bivalent metallic element",
-  "syn": [
-   "beryllium",
-   "glucinium",
-   "atomic_number_4"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -1039,9 +1007,9 @@
    "adjective",
    "adverb"
   ],
-  "en": "(superlative of `good') having the most positive qualities",
+  "en": "in a most excellent way or manner",
   "syn": [],
-  "exp": "the best film of the year"
+  "exp": "he played best after a couple of martinis"
  },
  {
   "word": "better",
@@ -1059,11 +1027,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "in the interval",
-  "syn": [
-   "betwixt"
-  ],
-  "exp": "dancing all the dances with little rest between"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "bicycle",
@@ -1618,14 +1584,9 @@
   "pos": [
    "conjunction"
   ],
-  "en": "and nothing more",
-  "syn": [
-   "merely",
-   "simply",
-   "just",
-   "only"
-  ],
-  "exp": "I was merely asking"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "butter",
@@ -1675,11 +1636,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "so as to pass a given point",
-  "syn": [
-   "past"
-  ],
-  "exp": "every hour a train goes past"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "bye",
@@ -1764,12 +1723,9 @@
   "pos": [
    "modal auxiliary"
   ],
-  "en": "preserve in a can or tin",
-  "syn": [
-   "tin",
-   "put_up"
-  ],
-  "exp": "tinned foods are not very tasty"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "candy",
@@ -2226,11 +2182,9 @@
    "adjective",
    "verb"
   ],
-  "en": "move so that an opening or passage is obstructed",
-  "syn": [
-   "shut"
-  ],
-  "exp": "make shut"
+  "en": "at or within a short distance in space or time or having elements near each other",
+  "syn": [],
+  "exp": "how close are we to town?"
  },
  {
   "word": "closed",
@@ -2423,13 +2377,14 @@
    "noun",
    "verb"
   ],
-  "en": "a visual attribute of things that results from the light they emit or transmit or reflect",
+  "en": "add color to",
   "syn": [
-   "colour",
-   "coloring",
-   "colouring"
+   "colorize",
+   "colorise",
+   "colourise",
+   "colourize"
   ],
-  "exp": "a white color is made up of many different wavelengths of light"
+  "exp": "The child colored the drawings"
  },
  {
   "word": "come",
@@ -3308,14 +3263,9 @@
    "determiner",
    "pronoun"
   ],
-  "en": "to or from every one of two or more (considered individually)",
-  "syn": [
-   "to_each_one",
-   "for_each_one",
-   "from_each_one",
-   "apiece"
-  ],
-  "exp": "they received $10 each"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "each other",
@@ -3385,11 +3335,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than seven",
-  "syn": [
-   "8",
-   "viii"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -3398,11 +3345,8 @@
   "pos": [
    "number"
   ],
-  "en": "the cardinal number that is the sum of seventeen and one",
-  "syn": [
-   "18",
-   "XVIII"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -3411,12 +3355,8 @@
   "pos": [
    "number"
   ],
-  "en": "being ten more than seventy",
-  "syn": [
-   "80",
-   "lxxx",
-   "fourscore"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -3449,11 +3389,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than ten",
-  "syn": [
-   "11",
-   "xi"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -3549,11 +3486,9 @@
   "pos": [
    "determiner"
   ],
-  "en": "(used of count nouns) each and all of the members of a group considered singly and without exception",
-  "syn": [
-   "every(a)"
-  ],
-  "exp": "every person is mortal"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "everybody",
@@ -3976,11 +3911,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than fourteen",
-  "syn": [
-   "15",
-   "xv"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -3989,11 +3921,8 @@
   "pos": [
    "number"
   ],
-  "en": "being ten more than forty",
-  "syn": [
-   "50",
-   "l"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -4132,11 +4061,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than four",
-  "syn": [
-   "5",
-   "v"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -4325,12 +4251,8 @@
   "pos": [
    "number"
   ],
-  "en": "being ten more than thirty",
-  "syn": [
-   "40",
-   "xl",
-   "twoscore"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -4339,11 +4261,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than three",
-  "syn": [
-   "4",
-   "iv"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -4352,11 +4271,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than thirteen",
-  "syn": [
-   "14",
-   "xiv"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -4686,11 +4602,8 @@
   "pos": [
    "interjection"
   ],
-  "en": "a conventional expression of greeting or farewell",
-  "syn": [
-   "good_afternoon",
-   "afternoon"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -4699,11 +4612,8 @@
   "pos": [
    "interjection"
   ],
-  "en": "a conventional expression of greeting or farewell",
-  "syn": [
-   "good_morning",
-   "morning"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -4712,10 +4622,8 @@
   "pos": [
    "interjection"
   ],
-  "en": "a conventional expression of farewell",
-  "syn": [
-   "good_night"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -5171,12 +5079,9 @@
   "pos": [
    "pronoun"
   ],
-  "en": "a very light colorless element that is one of the six inert gasses",
-  "syn": [
-   "helium",
-   "atomic_number_2"
-  ],
-  "exp": "the most difficult gas to liquefy"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "head",
@@ -5323,14 +5228,9 @@
   "pos": [
    "interjection"
   ],
-  "en": "an expression of greeting",
-  "syn": [
-   "hello",
-   "hullo",
-   "howdy",
-   "how-do-you-do"
-  ],
-  "exp": "every morning they exchanged polite hellos"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "hide",
@@ -5623,13 +5523,9 @@
   "pos": [
    "pronoun"
   ],
-  "en": "used of a single unit or thing",
-  "syn": [
-   "one",
-   "1",
-   "ane"
-  ],
-  "exp": "not two or more"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "ice",
@@ -5720,12 +5616,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "to or toward the inside of",
-  "syn": [
-   "inwards",
-   "inward"
-  ],
-  "exp": "smash in the door"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "information",
@@ -5745,10 +5638,8 @@
   "pos": [
    "preposition"
   ],
-  "en": "the region that is inside of something",
-  "syn": [
-   "interior"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -5853,10 +5744,8 @@
   "pos": [
    "pronoun"
   ],
-  "en": "the branch of engineering that deals with the use of computers and telecommunications to retrieve and store and transmit information",
-  "syn": [
-   "information_technology"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -6738,9 +6627,9 @@
    "determiner",
    "pronoun"
   ],
-  "en": "a quantifier that can be used with count nouns and is often preceded by `as' or `too' or `so' or `that'",
+  "en": "",
   "syn": [],
-  "exp": "amounting to a large but indefinite number"
+  "exp": ""
  },
  {
   "word": "map",
@@ -6809,7 +6698,7 @@
   "pos": [
    "modal auxiliary"
   ],
-  "en": "the month following April and preceding June",
+  "en": "",
   "syn": [],
   "exp": ""
  },
@@ -6844,12 +6733,8 @@
   "pos": [
    "pronoun"
   ],
-  "en": "a state in New England",
-  "syn": [
-   "Maine",
-   "Pine_Tree_State",
-   "Me."
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -7004,9 +6889,9 @@
   "pos": [
    "pronoun"
   ],
-  "en": "get from the earth by excavation",
+  "en": "",
   "syn": [],
-  "exp": "mine ores and metals"
+  "exp": ""
  },
  {
   "word": "minute",
@@ -7179,12 +7064,9 @@
    "determiner",
    "pronoun"
   ],
-  "en": "English statesman who opposed Henry VIII's divorce from Catherine of Aragon and was imprisoned and beheaded",
-  "syn": [
-   "Thomas_More",
-   "Sir_Thomas_More"
-  ],
-  "exp": "recalled for his concept of Utopia, the ideal state"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "morning",
@@ -7206,11 +7088,9 @@
   "pos": [
    "determiner"
   ],
-  "en": "(superlative of `many' used with count nouns and often preceded by `the') quantifier meaning the greatest in number",
-  "syn": [
-   "most(a)"
-  ],
-  "exp": "who has the most apples?"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "mother",
@@ -7341,11 +7221,9 @@
   "pos": [
    "modal auxiliary"
   ],
-  "en": "highly recommended",
-  "syn": [
-   "must(a)"
-  ],
-  "exp": "a book that is must reading"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "my",
@@ -7383,14 +7261,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "move towards",
-  "syn": [
-   "approach",
-   "come_on",
-   "go_up",
-   "draw_near"
-  ],
-  "exp": "We were approaching our destination"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "neck",
@@ -7410,14 +7283,9 @@
   "pos": [
    "modal auxiliary"
   ],
-  "en": "require as useful, just, or proper",
-  "syn": [
-   "necessitate",
-   "ask",
-   "postulate",
-   "require"
-  ],
-  "exp": "It takes nerve to do what she did"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "neighbor",
@@ -7508,11 +7376,8 @@
   "pos": [
    "number"
   ],
-  "en": "denoting a quantity consisting of one more than eight and one less than ten",
-  "syn": [
-   "9",
-   "ix"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -7521,11 +7386,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than eighteen",
-  "syn": [
-   "19",
-   "xix"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -7534,11 +7396,8 @@
   "pos": [
    "number"
   ],
-  "en": "being ten more than eighty",
-  "syn": [
-   "90",
-   "xc"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -7619,9 +7478,9 @@
   "pos": [
    "pronoun"
   ],
-  "en": "in no respect",
+  "en": "",
   "syn": [],
-  "exp": "he looks nothing like his father"
+  "exp": ""
  },
  {
   "word": "November",
@@ -7793,9 +7652,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "in operation or operational",
+  "en": "",
   "syn": [],
-  "exp": "left the oven on"
+  "exp": ""
  },
  {
   "word": "once",
@@ -7817,14 +7676,9 @@
    "determiner",
    "number"
   ],
-  "en": "the smallest whole number or a numeral representing this number",
-  "syn": [
-   "1",
-   "I",
-   "ace",
-   "single"
-  ],
-  "exp": "he has the one but will need a two and three to go with it"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "only",
@@ -7871,12 +7725,8 @@
   "pos": [
    "conjunction"
   ],
-  "en": "a state in northwestern United States on the Pacific",
-  "syn": [
-   "Oregon",
-   "Beaver_State",
-   "Ore."
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -7908,9 +7758,9 @@
   "pos": [
    "determiner"
   ],
-  "en": "not the same one or ones already mentioned or implied",
+  "en": "",
   "syn": [],
-  "exp": "today isn't any other day- the White Queen"
+  "exp": ""
  },
  {
   "word": "our",
@@ -7962,14 +7812,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "having come or been brought to a conclusion",
-  "syn": [
-   "complete",
-   "concluded",
-   "ended",
-   "over(p)"
-  ],
-  "exp": "the harvesting was complete"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "own",
@@ -9496,11 +9341,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than six",
-  "syn": [
-   "7",
-   "vii"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -9509,11 +9351,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than sixteen",
-  "syn": [
-   "17",
-   "xvii"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -9522,11 +9361,8 @@
   "pos": [
    "number"
   ],
-  "en": "being ten more than sixty",
-  "syn": [
-   "70",
-   "lxx"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -9827,13 +9663,8 @@
   "pos": [
    "number"
   ],
-  "en": "denoting a quantity consisting of six items or units",
-  "syn": [
-   "6",
-   "vi",
-   "half_dozen",
-   "half-dozen"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -9842,11 +9673,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than fifteen",
-  "syn": [
-   "16",
-   "xvi"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -9855,12 +9683,8 @@
   "pos": [
    "number"
   ],
-  "en": "being ten more than fifty",
-  "syn": [
-   "60",
-   "lx",
-   "threescore"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -10064,11 +9888,8 @@
   "pos": [
    "conjunction"
   ],
-  "en": "the syllable naming the fifth (dominant) note of any musical scale in solmization",
-  "syn": [
-   "sol",
-   "soh"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -10130,14 +9951,9 @@
    "determiner",
    "pronoun"
   ],
-  "en": "(of quantities) imprecise but fairly close to correct",
-  "syn": [
-   "approximately",
-   "about",
-   "close_to",
-   "just_about"
-  ],
-  "exp": "lasted approximately an hour"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "someone",
@@ -10145,14 +9961,9 @@
   "pos": [
    "pronoun"
   ],
-  "en": "a human being",
-  "syn": [
-   "person",
-   "individual",
-   "somebody",
-   "mortal"
-  ],
-  "exp": "there was too much for one person to do"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "something",
@@ -10997,11 +10808,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than nine",
-  "syn": [
-   "10",
-   "x"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -11227,11 +11035,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than twelve",
-  "syn": [
-   "13",
-   "xiii"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -11240,11 +11045,8 @@
   "pos": [
    "number"
   ],
-  "en": "being ten more than twenty",
-  "syn": [
-   "30",
-   "xxx"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -11275,11 +11077,8 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than two",
-  "syn": [
-   "3",
-   "iii"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -11288,12 +11087,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "having finished or arrived at completion",
-  "syn": [
-   "done",
-   "through_with(p)"
-  ],
-  "exp": "certain to make history before he's done"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "throw",
@@ -11744,12 +11540,8 @@
   "pos": [
    "number"
   ],
-  "en": "denoting a quantity consisting of 12 items or units",
-  "syn": [
-   "12",
-   "xii",
-   "dozen"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -11758,11 +11550,8 @@
   "pos": [
    "number"
   ],
-  "en": "denoting a quantity consisting of 20 items or units",
-  "syn": [
-   "20",
-   "xx"
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -11771,12 +11560,9 @@
   "pos": [
    "number"
   ],
-  "en": "being one more than one",
-  "syn": [
-   "2",
-   "ii"
-  ],
-  "exp": "he received two messages"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "type",
@@ -11824,11 +11610,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "located below or beneath something else",
-  "syn": [
-   "nether"
-  ],
-  "exp": "the under parts of a machine"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "underline",
@@ -11858,9 +11642,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "raise",
+  "en": "",
   "syn": [],
-  "exp": "up the ante"
+  "exp": ""
  },
  {
   "word": "us",
@@ -11868,14 +11652,9 @@
   "pos": [
    "pronoun"
   ],
-  "en": "North American republic containing 50 states - 48 conterminous states in North America plus Alaska in northwest North America and the Hawaiian Islands in the Pacific Ocean",
-  "syn": [
-   "United_States",
-   "United_States_of_America",
-   "America",
-   "the_States"
-  ],
-  "exp": "achieved independence in 1776"
+  "en": "",
+  "syn": [],
+  "exp": ""
  },
  {
   "word": "use",
@@ -12342,11 +12121,8 @@
   "pos": [
    "pronoun"
   ],
-  "en": "a United Nations agency to coordinate international health activities and to help governments improve health services",
-  "syn": [
-   "World_Health_Organization",
-   "W.H.O."
-  ],
+  "en": "",
+  "syn": [],
   "exp": ""
  },
  {
@@ -12390,9 +12166,9 @@
   "pos": [
    "modal auxiliary"
   ],
-  "en": "decree or ordain",
+  "en": "",
   "syn": [],
-  "exp": "God wills our existence"
+  "exp": ""
  },
  {
   "word": "win",
