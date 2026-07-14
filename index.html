@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.10">
+<link rel="manifest" href="manifest.json?v=0.11.11">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.10"></script>
-<script src="img/rat_run.js?v=0.11.10"></script>
+<script src="words.js?v=0.11.11"></script>
+<script src="img/rat_run.js?v=0.11.11"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -309,6 +309,10 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .dict-box{min-width:30px;}
 .dict-box.ok{background:#e3f7ef;color:#0a9d6f;}
 .dict-box.wrong{background:#fdeceb;color:#d64545;}
+/* 맞게 타이핑한 순간 입력창이 사라지고 텍스트로 고정 — 살짝 튀는 팝 모션 */
+.dict-fixed{font-weight:800;color:var(--accent-deep);animation:dictfix .18s ease;}
+@keyframes dictfix{from{transform:scale(1.18);opacity:.4;}to{transform:scale(1);opacity:1;}}
+@media (prefers-reduced-motion: reduce){.dict-fixed{animation:none;}}
 /* 음절보기: 정확한 분리가 아니라 대략적인 길이 감(조각 폭)만 — 단어 아래 얇은 바로 표시 */
 .syl-row{display:flex;gap:3px;}
 .syl-row i{height:4px;border-radius:2px;background:var(--accent-soft);}
@@ -373,7 +377,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.10";
+const APP_VERSION = "v0.11.11";
 const APP_BUILD = "2026-07-14"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -415,6 +419,69 @@ let EXTRA = (() => { try { return JSON.parse(localStorage.getItem("en_mywords") 
 function saveExtra() { try { localStorage.setItem("en_mywords", JSON.stringify(EXTRA)); } catch (e) {} }
 function wordOf(w) { return byWord[w] || EXTRA[w]; }
 function allWords() { return SEED.concat(Object.values(EXTRA)); }
+
+/* 굴절형 → 표제어 역추적: children→child, others→other, running→run 등.
+   사전 표제어는 원형만 있어서 문장 속 활용형이 상세 연결에 실패하던 문제 대응.
+   불규칙 변화는 소규모 큐레이션 맵, 나머지는 접미사 규칙 — 후보가 실제 사전에
+   있을 때만 채택하므로 오탐(sing→s 같은)은 발생하지 않는다. */
+const DICT_IRREGULAR = {
+  children: "child", men: "man", women: "woman", people: "person", feet: "foot", teeth: "tooth",
+  mice: "mouse", geese: "goose", went: "go", gone: "go", did: "do", done: "do", had: "have",
+  has: "have", was: "be", were: "be", is: "be", are: "be", am: "be", been: "be",
+  better: "good", best: "good", worse: "bad", worst: "bad", made: "make", said: "say",
+  took: "take", taken: "take", got: "get", came: "come", saw: "see", seen: "see", ran: "run",
+  knew: "know", known: "know", thought: "think", bought: "buy", brought: "bring", felt: "feel",
+  found: "find", gave: "give", given: "give", left: "leave", met: "meet", paid: "pay",
+  sat: "sit", spoke: "speak", spoken: "speak", stood: "stand", told: "tell",
+  understood: "understand", wrote: "write", written: "write", heard: "hear", held: "hold",
+  kept: "keep", lost: "lose", meant: "mean", sent: "send", spent: "spend", won: "win",
+};
+function dictLookup(raw) {
+  const w = (raw || "").toLowerCase().replace(/[^a-z']/g, "");
+  if (!w) return null;
+  if (wordOf(w)) return wordOf(w);
+  if (DICT_IRREGULAR[w] && wordOf(DICT_IRREGULAR[w])) return wordOf(DICT_IRREGULAR[w]);
+  const cands = [];
+  if (w.endsWith("ies")) cands.push(w.slice(0, -3) + "y");
+  if (w.endsWith("es")) cands.push(w.slice(0, -2));
+  if (w.endsWith("s") && !w.endsWith("ss")) cands.push(w.slice(0, -1));
+  if (w.endsWith("ing")) {
+    cands.push(w.slice(0, -3), w.slice(0, -3) + "e");
+    if (w.length > 5 && w[w.length - 4] === w[w.length - 5]) cands.push(w.slice(0, -4)); // running→run
+  }
+  if (w.endsWith("ied")) cands.push(w.slice(0, -3) + "y");
+  if (w.endsWith("ed")) {
+    cands.push(w.slice(0, -2), w.slice(0, -1));
+    if (w.length > 4 && w[w.length - 3] === w[w.length - 4]) cands.push(w.slice(0, -3)); // stopped→stop
+  }
+  if (w.endsWith("est")) cands.push(w.slice(0, -3), w.slice(0, -2));
+  if (w.endsWith("er")) cands.push(w.slice(0, -2), w.slice(0, -1));
+  if (w.endsWith("ly")) cands.push(w.slice(0, -2));
+  for (const c of cands) { if (c.length >= 2 && wordOf(c)) return wordOf(c); }
+  return null;
+}
+
+/* 정답 효과음 — 에셋 없이 Web Audio 사인톤. word=짧은 블립(단어 하나 고정될 때),
+   done=띠링 2음(문장 전체 정답). 오디오 컨텍스트는 첫 사용자 입력 후 생성되므로 자동재생 제약 없음. */
+let dingCtx = null;
+function playDing(kind) {
+  try {
+    dingCtx = dingCtx || new (window.AudioContext || window.webkitAudioContext)();
+    const ctx = dingCtx;
+    if (ctx.state === "suspended") ctx.resume();
+    const t0 = ctx.currentTime;
+    const notes = kind === "done" ? [[880, 0, 0.1], [1318.5, 0.09, 0.28]] : [[1174.7, 0, 0.09]];
+    notes.forEach(([f, dt, dur]) => {
+      const o = ctx.createOscillator(), g = ctx.createGain();
+      o.type = "sine"; o.frequency.value = f;
+      g.gain.setValueAtTime(0.0001, t0 + dt);
+      g.gain.exponentialRampToValueAtTime(kind === "done" ? 0.16 : 0.1, t0 + dt + 0.012);
+      g.gain.exponentialRampToValueAtTime(0.0001, t0 + dt + dur);
+      o.connect(g); g.connect(ctx.destination);
+      o.start(t0 + dt); o.stop(t0 + dt + dur + 0.03);
+    });
+  } catch (e) {}
+}
 
 /* v0 데모 즐겨찾기 */
 const FAVS = new Set(["alert", "idiomatic"]);
@@ -1521,6 +1588,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   const [queue, setQueue] = useState(() => initialItems.slice()); // 로컬 사본 — 재생 패널티로 다음 문제를 바꾸거나(교체) 재학습 문제를 뒤에 붙일 수 있어야 함
   const [idx, setIdx] = useState(0);
   const [answers, setAnswers] = useState([]);
+  const [locked, setLocked] = useState([]);   // 단어별 고정 여부 — 맞게 타이핑하는 즉시 true(입력창 → 고정 텍스트)
   const [wrongMask, setWrongMask] = useState(null); // null | boolean[] — 방금 확인에서 어느 칸이 틀렸는지(정답은 공개 안 함)
   const [hadWrongAttempt, setHadWrongAttempt] = useState(false);
   const [res, setRes] = useState(null); // null | { dueIn, forcedRelearn? } — 완전히 맞았을 때만(또는 강제 재학습) 세팅
@@ -1534,7 +1602,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   const inputRefs = React.useRef([]);
 
   useEffect(() => {
-    setAnswers(new Array(tokens.length).fill("")); inputRefs.current = [];
+    setAnswers(new Array(tokens.length).fill("")); setLocked(new Array(tokens.length).fill(false)); inputRefs.current = [];
     setReplayCount(0); setWrongMask(null); setHadWrongAttempt(false);
   }, [idx, tokens.length]);
   useEffect(() => {
@@ -1583,20 +1651,38 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
     });
   };
 
+  /* 문장 완성(모든 단어 고정) — 확인 버튼 없이 자동으로 정답 처리 + 띠링 */
+  const complete = wasClean => {
+    if (res) return;
+    const s = SRS.grade(it.key, wasClean);
+    if (wasClean) setCorrect(c => c + 1);
+    setWrongMask(null);
+    setRes({ dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) });
+    playDing("done");
+  };
+
+  /* 타이핑 중 단어가 정답과 일치하는 순간 그 자리에서 고정(입력창 → 텍스트) + 블립,
+     다음 미고정 칸으로 포커스 이동. 마지막 단어까지 고정되면 자동 완료. */
+  const onTypeWord = (i, v) => {
+    setAnswers(a => { const n = a.slice(); n[i] = v; return n; });
+    if (locked[i] || norm(v) !== norm(tokens[i].core)) return;
+    const nl = locked.slice(); nl[i] = true;
+    setLocked(nl);
+    if (nl.every(Boolean)) { complete(!hadWrongAttempt); return; }
+    playDing("word");
+    for (let j = 1; j <= tokens.length; j++) {
+      const k = (i + j) % tokens.length;
+      if (!nl[k]) { focusInput(k); break; }
+    }
+  };
+
+  /* 확인 버튼 = 막혔을 때 어느 칸이 틀렸는지만 보여주는 용도(오답 사용 기록).
+     완성 자체는 위 자동 고정으로만 일어난다. */
   const check = () => {
     if (res) return;
     if (!answers.some(a => (a || "").trim())) return;
-    const perWordOk = tokens.map((t, i) => norm(answers[i]) === norm(t.core));
-    const allOk = perWordOk.every(Boolean);
-    if (allOk) {
-      const s = SRS.grade(it.key, !hadWrongAttempt);
-      if (!hadWrongAttempt) setCorrect(c => c + 1);
-      setWrongMask(null);
-      setRes({ dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) });
-    } else {
-      setWrongMask(perWordOk.map(ok => !ok));
-      setHadWrongAttempt(true);
-    }
+    setWrongMask(locked.map(l => !l)); // 고정 안 된 칸 = 아직 틀린 칸
+    setHadWrongAttempt(true);
   };
   const next = () => {
     if (idx + 1 >= queue.length) { onExit(true, correct, queue.length); return; }
@@ -1635,24 +1721,30 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
                 <span key={i} className="dict-word">
                   <span className="dict-word-row">
                     {t.pre}
-                    <input ref={el => { inputRefs.current[i] = el; }}
-                      className={"qbox dict-box" + (wrongMask ? (wrongMask[i] ? " wrong" : " ok") : "")}
-                      value={answers[i] || ""} autoFocus={i === 0}
-                      size={Math.max(2, t.core.length)}
-                      onChange={e => { const v = e.target.value.replace(/\s/g, ""); setAnswers(a => { const n = a.slice(); n[i] = v; return n; }); }}
-                      onKeyDown={e => {
-                        if (e.key === " " || e.key === "Enter") {
-                          e.preventDefault();
-                          if (i + 1 < tokens.length) focusInput(i + 1); else check();
-                        } else if (e.key === "Backspace" && !answers[i] && i > 0) {
-                          focusInput(i - 1);
-                        }
-                      }}
-                      autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
-                      aria-label={"단어 " + (i + 1)} />
+                    {locked[i] ? (
+                      <span className="dict-fixed">{t.core}</span>
+                    ) : (
+                      <input ref={el => { inputRefs.current[i] = el; }}
+                        className={"qbox dict-box" + (wrongMask && wrongMask[i] ? " wrong" : "")}
+                        value={answers[i] || ""} autoFocus={i === 0}
+                        size={Math.max(2, t.core.length)}
+                        onChange={e => onTypeWord(i, e.target.value.replace(/\s/g, ""))}
+                        onKeyDown={e => {
+                          if (e.key === " " || e.key === "Enter") {
+                            e.preventDefault();
+                            let moved = false;
+                            for (let j = i + 1; j < tokens.length; j++) { if (!locked[j]) { focusInput(j); moved = true; break; } }
+                            if (!moved) check();
+                          } else if (e.key === "Backspace" && !answers[i] && i > 0) {
+                            for (let j = i - 1; j >= 0; j--) { if (!locked[j]) { focusInput(j); break; } }
+                          }
+                        }}
+                        autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+                        aria-label={"단어 " + (i + 1)} />
+                    )}
                     {t.post}
                   </span>
-                  {syllableHint && (
+                  {syllableHint && !locked[i] && (
                     <div className="syl-row">
                       {syllableChunks(t.core).map((len, k) => <i key={k} style={{ width: Math.max(10, len * 7) + "px" }} />)}
                     </div>
@@ -1662,18 +1754,19 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
             </div>
             {wrongMask && (
               <div className="qres no" style={{ marginTop: 10 }}>
-                <Icon name="close" size={18} /> 빨간 칸이 달라요 — 정답은 그대로 두고 다시 시도해 보세요
+                <Icon name="close" size={18} /> 빨간 칸이 아직 달라요 — 맞게 고치면 자동으로 고정돼요
               </div>
             )}
           </React.Fragment>
         ) : (
           <div className="dict-result">
             {tokens.map((t, i) => {
-              const known = t.core && wordOf(t.core.toLowerCase());
+              // 굴절형도 표제어로 역추적해 연결(Children→child, others→other)
+              const hit = t.core && dictLookup(t.core);
               return (
                 <span key={i} className="dict-word-row">
                   {t.pre}
-                  <button type="button" className="dict-rword" disabled={!known} onClick={() => known && onOpenWord(t.core.toLowerCase())}>
+                  <button type="button" className="dict-rword" disabled={!hit} onClick={() => hit && onOpenWord(hit.word)}>
                     {t.core}
                   </button>
                   {t.post}
@@ -1980,15 +2073,12 @@ function LevelTest({ onExit }) {
 }
 
 /* ---------- 학습 탭 ---------- */
-function Learn({ onOpenWord }) {
+function Learn({ onOpenWord, onStartLevelTest }) {
   const [session, setSession] = useState(null); // null | items | "done"
   const [mode, setMode] = useState("card");      // "card" | "listen" — session이 어느 세션인지
   const [summary, setSummary] = useState(null);
-  const [ltOpen, setLtOpen] = useState(false);   // 레벨 테스트는 카드/듣기 세션과 별도 상태로 관리
   const dueCount = allItems().filter(it => SRS.isDue(it.key)).length;
   const newCount = allItems().filter(it => !SRS.get(it.key)).length;
-
-  if (ltOpen) return <LevelTest onExit={() => setLtOpen(false)} />;
 
   if (session === "done" && summary) {
     return <Finish total={summary.total} correct={summary.correct}
@@ -2009,7 +2099,7 @@ function Learn({ onOpenWord }) {
     { k: "card", icon: "school", title: "단어카드", sub: `복습 ${dueCount} · 신규 ${newCount} 대기`, on: true, start: startCard },
     { k: "listen", icon: "volume_up", title: "듣기 세션 (딕테이션)", sub: "듣고 그대로 타이핑", on: true, start: startListen },
     { k: "quiz", icon: "grid_view", title: "퀴즈", sub: "뜻·스펠링·빈칸", on: false },
-    { k: "level", icon: "add", title: "레벨 테스트", sub: "어휘 + 문장구사력", on: true, start: () => setLtOpen(true) },
+    { k: "level", icon: "add", title: "레벨 테스트", sub: "어휘 + 문장구사력", on: true, start: onStartLevelTest },
   ];
 
   return (
@@ -2033,9 +2123,10 @@ function Learn({ onOpenWord }) {
 }
 
 /* ---------- 설정 (캐릭터 변경 등) ---------- */
-function Settings({ charK, onChangeChar, onClose }) {
+function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
   const [pts, setPts] = useState(POINTS.get());
   const first = charK === null;
+  const lastLt = loadLevelTest();
 
   const handlePick = k => {
     if (k === charK) return;
@@ -2059,6 +2150,22 @@ function Settings({ charK, onChangeChar, onClose }) {
               <div className="v">{pts}P</div>
             </div>
             <div className="l" style={{ textAlign: "right", maxWidth: 160 }}>단어카드 정답마다 10P 적립 · 캐릭터 변경에 {CHAR_CHANGE_COST}P 필요</div>
+          </div>
+
+          <div>
+            <div className="wd-sec-t">레벨 테스트</div>
+            <div className="step" onClick={onStartLevelTest}>
+              <div className="step-ico"><Icon name="school" size={20} /></div>
+              <div className="step-body">
+                <div className="step-title">레벨 테스트 {lastLt ? "다시하기" : "하러 가기"}</div>
+                <div className="step-sub">
+                  {lastLt && lastLt.lex
+                    ? `지난 결과: 어휘 ${lastLt.lex.band} · 상위 ${lastLt.lex.pct}% (추정)`
+                    : "어휘력 + 문장구사력 측정"}
+                </div>
+              </div>
+              <div className="step-cta">시작</div>
+            </div>
           </div>
 
           <div>
@@ -2114,10 +2221,12 @@ function App() {
   const [tab, setTab] = useState("home");
   const [stack, setStack] = useState(null); // 단어 상세 시트 스택
   const [settingsOpen, setSettingsOpen] = useState(false);
+  const [ltOpen, setLtOpen] = useState(false); // 레벨 테스트 — 학습 탭 메뉴와 설정 두 곳에서 진입하므로 앱 레벨에서 관리
   const [charK, setCharKState] = useState(() => {
     try { return localStorage.getItem("en_char"); } catch (e) { return null; }
   });
   const changeChar = k => { setCharKState(k); try { localStorage.setItem("en_char", k); } catch (e) {} };
+  const startLevelTest = () => { setSettingsOpen(false); setLtOpen(true); };
 
   const openWord = w => setStack([w]);
   const pushWord = w => setStack(s => [...s, w]);
@@ -2142,14 +2251,20 @@ function App() {
       </div>
 
       <div className="scroll">
-        {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} />}
-        {tab === "dict" && <Dict onOpen={openWord} />}
-        {tab === "learn" && <Learn onOpenWord={openWord} />}
-        {tab === "talk" && <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />}
-        {tab === "box" && <Soon title="보관함은 준비 중입니다" desc="즐겨찾기 단어·문장 · 뱃지 컬렉션 · 성장 기록" />}
+        {ltOpen ? (
+          <LevelTest onExit={() => setLtOpen(false)} />
+        ) : (
+          <React.Fragment>
+            {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} />}
+            {tab === "dict" && <Dict onOpen={openWord} />}
+            {tab === "learn" && <Learn onOpenWord={openWord} onStartLevelTest={startLevelTest} />}
+            {tab === "talk" && <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />}
+            {tab === "box" && <Soon title="보관함은 준비 중입니다" desc="즐겨찾기 단어·문장 · 뱃지 컬렉션 · 성장 기록" />}
+          </React.Fragment>
+        )}
       </div>
 
-      {settingsOpen && <Settings charK={charK} onChangeChar={changeChar} onClose={() => setSettingsOpen(false)} />}
+      {settingsOpen && <Settings charK={charK} onChangeChar={changeChar} onClose={() => setSettingsOpen(false)} onStartLevelTest={startLevelTest} />}
 
       <div className="tabbar">
         {TABS.map(t => (
