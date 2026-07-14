@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
-<meta name="theme-color" content="#f5f6f8">
+<meta name="theme-color" content="#F5EEDD">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -11,34 +11,67 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.13">
+<link rel="manifest" href="manifest.json?v=0.12.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.12.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.12.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.13"></script>
-<script src="img/rat_run.js?v=0.11.13"></script>
+<script src="words.js?v=0.12.0"></script>
 <style>
 /* ============================================================================
-   NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
-   ※ 포인트 컬러(--accent)는 임시 플레이스홀더. 디자이너가 교체할 자리.
+   NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
+   폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
 ============================================================================ */
+@font-face{
+  font-family:"LINE Seed KR";
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.12.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.12.0") format("woff");
+}
+@font-face{
+  font-family:"LINE Seed KR";
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.12.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.12.0") format("woff");
+}
 :root{
-  --bg:#f5f6f8;          /* 살짝 차가운 뉴트럴 배경 */
-  --surface:#ffffff;
-  --ink:#17181c;
-  --ink-2:#3c3d44;
-  --muted:#8b8c95;
-  --line:#ececef;
-  --fill:#eef0f3;
-  --accent:#6b86ff;      /* 포인트 컬러 (페리윙클 블루) */
-  --accent-deep:#3f56e0; /* 흰 배경 위 텍스트 강조 (진한 톤) */
-  --accent-soft:#e9edff; /* 옅은 배경 */
-  --on-accent:#ffffff;
-  --good:#12b886;
+  --bg:#F5EEDD;            /* 옅은 노트 베이지 */
+  --surface:#FAF4E7;       /* 베이지보다 밝은 크림 (카드/시트) — bg 대비 밝기 격차를 절반으로 축소 */
+  --surface-container:#FBF4E3;      /* 톤 위계 1단 (M3 tonal elevation) */
+  --surface-container-high:#F1E7CE; /* 톤 위계 2단 */
+  --ink:#211C15;           /* 노트 잉크 블랙 (웜톤) — 텍스트 + 블랙 버튼 */
+  --ink-2:#4A4234;
+  --muted:#8C8270;
+  --line:#E6DCC3;
+  --fill:#EFE6D0;
+  --accent:#211C15;        /* 포인트 = 잉크 블랙(블랙 버튼 컨셉) */
+  --accent-deep:#4A3A20;   /* 흰 배경 위 텍스트 강조 (웜 브라운) */
+  --accent-soft:#EDE1C2;   /* 옅은 배경 */
+  --on-accent:#FFFBF1;
+  --good:#2F8F5B;
+  --good-container:#E3F1E7;
+  --danger:#D9483C;
+  --danger-container:#F9E1DD;
+  --hi-green:#D8ED77;      /* 형광펜 — 연두 */
+  --hi-pink:#FFB4D4;       /* 형광펜 — 핑크 */
+  --hi-yellow:#FFDD5C;     /* 형광펜 — 옐로우 */
+  --hi-blue:#93D3FF;       /* 형광펜 — 블루 */
+  /* 형광펜 5단 톤 스케일(가장연한→가장진한). base(위 4개)는 하이라이터 마커·큰 강조 텍스트용,
+     xlight+xdark 조합은 뱃지/태그처럼 "연한 배경 + 진한 텍스트"가 필요한 곳에 사용. */
+  --hi-green-xlight:#F6FBE1;  --hi-green-light:#E7F4AB;  --hi-green-dark:#92AD17;  --hi-green-xdark:#45520B;
+  --hi-yellow-xlight:#FFF8DB; --hi-yellow-light:#FFEA9A; --hi-yellow-dark:#BF9700; --hi-yellow-xdark:#5A4700;
+  --hi-pink-xlight:#FFEEF6;   --hi-pink-light:#FFD1E4;   --hi-pink-dark:#EF0066;   --hi-pink-xdark:#710030;
+  --hi-blue-xlight:#E7F5FF;   --hi-blue-light:#BCE4FF;   --hi-blue-dark:#0083DD;   --hi-blue-xdark:#003E69;
+  --card-border:rgba(33,28,21,.15); /* 카드류 소프트 잉크 보더(outline-variant) — 인터랙션 요소는 var(--ink) 풀보더(outline) 사용 */
   --radius:20px;
-  --shadow:0 1px 2px rgba(20,20,30,.04), 0 8px 24px rgba(20,20,30,.05);
-  --shadow-sheet:0 -8px 40px rgba(20,20,30,.16);
-  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
+  --shadow:0 1px 2px rgba(33,28,21,.05), 0 8px 24px rgba(33,28,21,.06);
+  --shadow-sheet:0 -8px 40px rgba(33,28,21,.18);
+  font-family:"LINE Seed KR",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
 html,body{height:100%;overflow:hidden;background:var(--bg);}
@@ -51,8 +84,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .brand{font-size:20px;font-weight:800;letter-spacing:-0.4px;}
 .brand b{color:var(--accent);}
 .topbar-right{display:flex;align-items:center;gap:8px;}
-.pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);}
-.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);}
+.pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--hi-green-dark);}
 .avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
 
 .scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;}
@@ -63,78 +96,120 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .sec .more{float:right;font-size:12px;color:var(--muted);font-weight:600;}
 
 /* 카드 공통 */
-.card{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;}
+.card{background-color:var(--surface);border:1.5px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;}
 .card.tap{transition:transform .12s ease;}
 .card.tap:active{transform:scale(.985);}
 
+/* 공용 버튼/화살표 (기존엔 인라인 스타일로만 존재하던 클래스를 정식 규칙으로 승격) */
+.btn{background:var(--accent);color:var(--on-accent);font-weight:700;padding:12px 20px;border-radius:13px;}
+.arrow{color:var(--muted);}
+
 /* 캐릭터 히어로 */
 .hero{display:flex;flex-direction:column;align-items:center;gap:10px;padding:22px 16px 18px;text-align:center;}
-.mascot{width:112px;height:112px;border-radius:26px;background:linear-gradient(160deg,#fff,#f1f2f5);border:1.5px dashed #cfd1d6;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);line-height:1.5;}
-.sign{display:inline-block;background:var(--ink);color:#fff;font-weight:800;font-size:13px;letter-spacing:.5px;padding:6px 12px;border-radius:8px;transform:rotate(-3deg);}
+.mascot{width:112px;height:112px;border-radius:26px;background:linear-gradient(160deg,var(--surface),var(--fill));border:1.5px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);line-height:1.5;}
+.sign{display:inline-block;background:var(--ink);color:var(--on-accent);font-weight:800;font-size:13px;letter-spacing:.5px;padding:6px 12px;border-radius:8px;transform:rotate(-3deg);}
+
+/* 노트 줄공책 배경 — 가로선(파란톤 반복) + 좌측 여백 세로 두줄(빨간톤). 캐릭터가 뛰어다니는 무대(.stage)와
+   캐릭터 미선택 카드에 공용 사용. 컴포넌트 자체 background 위에 겹쳐 그림(배경색은 그대로 유지). */
+.ruled-paper{
+  background-image:
+    repeating-linear-gradient(to bottom, transparent 0 26px, rgba(90,138,189,.4) 26px 27px),
+    linear-gradient(to right, transparent 0 24px, rgba(214,74,64,.55) 24px 25px, transparent 25px 27px, rgba(214,74,64,.55) 27px 28px, transparent 28px 100%);
+  background-repeat: repeat, no-repeat;
+}
 
 /* 캐릭터 스테이지: 가운데 캐릭터(앞) + 뒤로 뱃지 가로 스크롤 트랙(스와이프해서 봄) */
-.stage{position:relative;height:240px;background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.stage{position:relative;height:240px;background-color:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;align-items:center;justify-content:center;}
 .badge-track{position:absolute;left:0;right:0;top:44%;transform:translateY(-50%);display:flex;gap:14px;align-items:center;overflow-x:auto;padding:0 42%;scrollbar-width:none;z-index:1;-webkit-overflow-scrolling:touch;}
 .badge-track::-webkit-scrollbar{display:none;}
 .badge{flex:none;width:62px;height:62px;border-radius:17px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;text-align:center;line-height:1.15;padding:4px;transition:transform .1s;}
 .badge:active{transform:scale(.94);}
-.badge.earned{background:var(--accent-soft);color:var(--accent-deep);border:1.5px solid var(--accent);}
+.badge.earned{border:1.5px solid var(--card-border);}
+.badge.earned.hi-green{background:var(--hi-green-light);color:var(--hi-green-xdark);}
+.badge.earned.hi-pink{background:var(--hi-pink-light);color:var(--hi-pink-xdark);}
+.badge.earned.hi-yellow{background:var(--hi-yellow-light);color:var(--hi-yellow-xdark);}
+.badge.earned.hi-blue{background:var(--hi-blue-light);color:var(--hi-blue-xdark);}
 .badge.locked{background:var(--fill);color:var(--muted);font-size:20px;}
 .hero-char{position:relative;z-index:2;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:9px;}
 .char-face{width:156px;height:156px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;}
+/* CHAR_ART_READY=false일 때 쓰는 최소 플레이스홀더(색상 스와치) */
+.char-swatch-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;}
+.char-swatch{width:56px;height:56px;border-radius:16px;border:2px solid var(--card-border);}
+.char-swatch.hi-green{background:var(--hi-green);}
+.char-swatch.hi-pink{background:var(--hi-pink);}
+.char-swatch.hi-yellow{background:var(--hi-yellow);}
+.char-swatch.hi-blue{background:var(--hi-blue);}
+.char-swatch-lbl{font-size:12px;font-weight:700;color:var(--muted);}
+.char-swatch-sm{width:28px;height:28px;border-radius:9px;border:1.5px solid var(--card-border);}
 /* 달리는 씬(placeholder). 실제 캐릭터는 Lottie/Rive/스프라이트로 이 슬롯 교체 */
 .hero-char.run .char-face{animation:runbob var(--bob,.5s) ease-in-out infinite alternate;}
 @keyframes runbob{from{transform:translateY(1px) rotate(-1.5deg);}to{transform:translateY(-7px) rotate(1.5deg);}}
-/* 스프라이트 프레임 전환 크로스페이드 — 프레임이 뚝뚝 끊기지 않고 자연스럽게 이어지도록 */
-.sprite-frame{position:absolute;inset:0;display:block;}
-@keyframes spriteFadeIn{from{opacity:0;}to{opacity:1;}}
-@keyframes spriteFadeOut{from{opacity:1;}to{opacity:0;}}
-@media (prefers-reduced-motion: reduce){.sprite-frame{animation:none!important;opacity:1!important;}}
-.road{position:absolute;left:0;right:0;bottom:16px;height:6px;z-index:0;border-radius:3px;
-  background:repeating-linear-gradient(90deg,var(--line) 0 20px,transparent 20px 44px);
+/* 손그림 러프닝 점선 타일(SVG data URI, --ink 하드코딩 — data URI 안에서는 CSS 변수 사용 불가) 반복.
+   캐릭터 윤곽선과 같은 원리(잡음 준 점을 직선으로 연결)로 거친 느낌 통일 */
+.road{position:absolute;left:0;right:0;bottom:16px;height:10px;z-index:0;
+  background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='44'%20height='10'%20viewBox='0%200%2044%2010'%3E%3Cpath%20d='M1.0,4.6%20L4.4,6.3%20L7.8,5.0%20L11.2,4.8%20L14.6,3.8%20L18.0,5.7'%20stroke='%23211C15'%20stroke-width='2.4'%20fill='none'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:repeat-x;
   animation:roadmove var(--road,.6s) linear infinite;}
 @keyframes roadmove{from{background-position:0 0;}to{background-position:-44px 0;}}
 .mlines{position:absolute;z-index:1;left:calc(50% - 96px);top:46%;display:flex;flex-direction:column;gap:8px;pointer-events:none;}
-.mlines i{height:3px;border-radius:2px;background:var(--accent);animation:whoosh var(--bob,.5s) linear infinite;}
+/* 직선 막대 대신 손그림 러프닝 스트로크(SVG data URI)를 각 막대 크기에 맞춰 늘려 채움 */
+.mlines i{height:6px;background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='6'%20viewBox='0%200%2024%206'%3E%3Cpath%20d='M1.0,4.7%20L5.4,3.1%20L9.8,3.2%20L14.2,2.9%20L18.6,1.9%20L23.0,1.3'%20stroke='%23211C15'%20stroke-width='2.2'%20fill='none'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-size:100% 100%;animation:whoosh var(--bob,.5s) linear infinite;}
 .mlines i:nth-child(1){width:28px;}
 .mlines i:nth-child(2){width:18px;animation-delay:.16s;}
 .mlines i:nth-child(3){width:24px;animation-delay:.32s;}
 @keyframes whoosh{0%{opacity:0;transform:translateX(10px);}40%{opacity:.55;}100%{opacity:0;transform:translateX(-16px);}}
 /* 교통표지판(위젯 콘셉트 프리뷰) — 연속일에 따라 표지가 바뀜 */
 .signpost{position:absolute;z-index:3;top:14px;left:14px;display:flex;flex-direction:column;align-items:center;gap:4px;}
-.sign-speed{width:46px;height:46px;border-radius:50%;background:#fff;border:5px solid #e5484d;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:var(--ink);box-shadow:var(--shadow);font-variant-numeric:tabular-nums;}
-.sign-warn{width:46px;height:41px;background:#ffcf3f;clip-path:polygon(50% 4%,96% 92%,4% 92%);display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-weight:800;font-size:17px;color:var(--ink);box-shadow:var(--shadow);}
+.sign-speed{width:46px;height:46px;border-radius:50%;background:var(--surface);border:5px solid var(--danger);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;color:var(--ink);box-shadow:var(--shadow);font-variant-numeric:tabular-nums;}
+.sign-warn{width:46px;height:41px;background:var(--hi-yellow);clip-path:polygon(50% 4%,96% 92%,4% 92%);display:flex;align-items:flex-end;justify-content:center;padding-bottom:3px;font-weight:800;font-size:17px;color:var(--ink);box-shadow:var(--shadow);}
 .sign-lbl{font-size:10px;font-weight:700;color:var(--muted);}
 @media (prefers-reduced-motion: reduce){.hero-char.run .char-face,.road,.mlines i{animation:none!important;}}
 .char-picker{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:2px;}
 .char-opt{font-size:12px;font-weight:600;padding:8px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow);}
-.char-opt.on{background:var(--accent);color:#fff;border-color:var(--accent);}
+.char-opt.on{background:var(--accent);color:var(--on-accent);border-color:var(--accent);}
 
 /* 뱃지 팝업 */
-.dlg-backdrop{position:fixed;inset:0;background:rgba(20,20,30,.42);display:flex;align-items:center;justify-content:center;z-index:60;padding:32px;animation:fade .15s ease;}
-.dlg{background:var(--surface);border-radius:24px;padding:28px 24px 22px;text-align:center;max-width:300px;width:100%;box-shadow:0 24px 64px rgba(20,20,30,.3);animation:pop .22s cubic-bezier(.2,.9,.3,1.2);}
+.dlg-backdrop{position:fixed;inset:0;background:rgba(33,28,21,.42);display:flex;align-items:center;justify-content:center;z-index:60;padding:32px;animation:fade .15s ease;}
+.dlg{background:var(--surface);border:1.5px solid var(--card-border);border-radius:24px;padding:28px 24px 22px;text-align:center;max-width:300px;width:100%;box-shadow:0 24px 64px rgba(33,28,21,.3);animation:pop .22s cubic-bezier(.2,.9,.3,1.2);}
 @keyframes pop{from{transform:scale(.88);opacity:0}to{transform:scale(1);opacity:1}}
 .dlg-badge{width:80px;height:80px;border-radius:22px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;}
-.dlg-badge.earned{background:var(--accent-soft);color:var(--accent-deep);border:2px solid var(--accent);}
+.dlg-badge.earned.hi-green{background:var(--hi-green-light);color:var(--hi-green-xdark);border:2px solid var(--hi-green-dark);}
+.dlg-badge.earned.hi-pink{background:var(--hi-pink-light);color:var(--hi-pink-xdark);border:2px solid var(--hi-pink-dark);}
+.dlg-badge.earned.hi-yellow{background:var(--hi-yellow-light);color:var(--hi-yellow-xdark);border:2px solid var(--hi-yellow-dark);}
+.dlg-badge.earned.hi-blue{background:var(--hi-blue-light);color:var(--hi-blue-xdark);border:2px solid var(--hi-blue-dark);}
 .dlg-badge.locked{background:var(--fill);color:var(--muted);font-size:30px;}
 .dlg-title{font-size:19px;font-weight:800;letter-spacing:-0.3px;}
 .dlg-sub{font-size:14px;color:var(--accent-deep);font-weight:800;margin-top:4px;}
 .dlg-sub.locked{color:var(--muted);}
 .dlg-date{font-size:13px;color:var(--muted);margin-top:8px;font-variant-numeric:tabular-nums;}
-.dlg button{margin-top:20px;background:var(--accent);color:#fff;font-weight:700;font-size:14px;padding:12px;border-radius:13px;width:100%;}
+.dlg button{margin-top:20px;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:14px;padding:12px;border-radius:13px;width:100%;}
 
 /* 레벨 3칸 */
 .level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
-.stat{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;}
-.stat .v{font-size:22px;font-weight:800;letter-spacing:-0.5px;font-variant-numeric:tabular-nums;}
+.stat{background:var(--surface);border:1.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;}
+.stat .v{display:inline-block;font-size:22px;font-weight:800;letter-spacing:-0.5px;font-variant-numeric:tabular-nums;}
 .stat .v.accent{color:var(--accent-deep);}
 .stat .l{font-size:11px;color:var(--muted);margin-top:2px;font-weight:600;}
 
+/* 형광펜 강조 — 텍스트 하단 ~60%만 색 박스, 좌우로 살짝 삐져나옴. 손그림 느낌으로 살짝 기울임 */
+.hl{background-repeat:no-repeat;background-size:100% 58%;background-position:0 66%;padding:0 7px;margin:0 -7px;border-radius:1px;display:inline-block;}
+.hl-green{background-image:linear-gradient(var(--hi-green),var(--hi-green));}
+.hl-pink{background-image:linear-gradient(var(--hi-pink),var(--hi-pink));}
+.hl-yellow{background-image:linear-gradient(var(--hi-yellow),var(--hi-yellow));}
+.hl-blue{background-image:linear-gradient(var(--hi-blue),var(--hi-blue));}
+
+/* 하이어라키 뱃지 — 연한 배경 + 가장진한 텍스트(.tag/.badge 등 이미 배경 있는 요소용) */
+.tier-green{background:var(--hi-green-light);color:var(--hi-green-xdark);}
+.tier-yellow{background:var(--hi-yellow-light);color:var(--hi-yellow-xdark);}
+.tier-pink{background:var(--hi-pink-light);color:var(--hi-pink-xdark);}
+.tier-blue{background:var(--hi-blue-light);color:var(--hi-blue-xdark);}
+
 /* 루틴 스텝 */
-.step{display:flex;align-items:center;gap:13px;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;}
-.step.active{border:1.5px solid var(--accent);}
-.step-ico{width:38px;height:38px;border-radius:12px;background:var(--fill);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--ink-2);flex:none;}
-.step.done .step-ico{background:var(--accent-soft);color:var(--accent-deep);}
+.step{display:flex;align-items:center;gap:13px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;}
+.step.active{border:1.5px solid var(--ink);}
+.step-ico{width:38px;height:38px;border-radius:12px;background:var(--bg);border:1.5px solid var(--card-border);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--ink-2);flex:none;}
+.step.done .step-ico{background:var(--ink);border-color:var(--ink);color:var(--on-accent);}
 .step-body{flex:1;min-width:0;}
 .step-title{font-size:15px;font-weight:700;}
 .step-sub{font-size:12px;color:var(--muted);margin-top:1px;}
@@ -143,11 +218,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 잔디 */
 .grass{display:grid;grid-template-columns:repeat(17,1fr);gap:3px;}
-.grass i{aspect-ratio:1;border-radius:3px;background:var(--fill);}
-.grass i.g1{background:#ccd6ff;}.grass i.g2{background:#95a9ff;}.grass i.g3{background:var(--accent);}
+.grass i{aspect-ratio:1;border-radius:3px;background-color:var(--fill);}
+/* 잉크 톤 단색(스크리블 실험은 되돌림) — 가장 진한 단계도 잉크 60%까지만 */
+.grass i.g1{background-color:var(--ink);opacity:.22;}
+.grass i.g2{background-color:var(--ink);opacity:.4;}
+.grass i.g3{background-color:var(--ink);opacity:.6;}
 
 /* 사전 검색 */
-.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:11px 14px;box-shadow:var(--shadow);}
+.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:14px;padding:11px 14px;box-shadow:var(--shadow);}
 .search input{flex:1;border:none;outline:none;font-size:15px;background:none;color:var(--ink);}
 .search input::placeholder{color:var(--muted);}
 .search .mag{color:var(--muted);display:flex;align-items:center;}
@@ -156,7 +234,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .chips{display:flex;gap:7px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none;}
 .chips::-webkit-scrollbar{display:none;}
 .chip{flex:none;font-size:13px;font-weight:600;padding:7px 13px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);}
-.chip.on{background:var(--ink);color:#fff;border-color:var(--ink);}
+.chip.on{background:var(--ink);color:var(--on-accent);border-color:var(--ink);}
 
 /* 사전 허브 목록 헤더 */
 .listhead{display:flex;align-items:center;gap:4px;margin:2px 0 0;}
@@ -167,28 +245,28 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .addbar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--accent-soft);border-radius:14px;padding:12px 14px;}
 .addbar .t{font-size:13px;color:var(--ink-2);}
 .addbar .t b{color:var(--accent-deep);}
-.addbar button{background:var(--accent);color:#fff;font-weight:700;font-size:13px;padding:8px 14px;border-radius:10px;}
+.addbar button{background:var(--accent);color:var(--on-accent);font-weight:700;font-size:13px;padding:8px 14px;border-radius:10px;}
 
 /* 단어 리스트 행 */
 .wlist{display:flex;flex-direction:column;gap:8px;}
-.wrow{display:flex;align-items:center;gap:10px;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
+.wrow{display:flex;align-items:center;gap:10px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
 .wrow:active{transform:scale(.99);}
 .wrow .w{font-size:16px;font-weight:700;}
 .wrow .k{font-size:13px;color:var(--muted);margin-top:1px;}
 .wrow .meta{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex:none;}
 .tag{font-size:10px;font-weight:700;padding:2px 7px;border-radius:6px;background:var(--fill);color:var(--muted);letter-spacing:.2px;}
 .tag.lv{background:var(--accent-soft);color:var(--accent-deep);}
-.tag.done{background:#e6f7f0;color:#0a9d6f;}
-.tag.learning{background:#fff2e0;color:#c77a11;}
+.tag.done{background:var(--good-container);color:var(--good);}
+.tag.learning{background:var(--fill);color:var(--ink-2);}
 
 /* 카테고리 선택: 레벨 카드 그리드 · 어근 행 목록 */
 .lv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
-.lv-card{background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:16px 8px 14px;text-align:center;transition:transform .1s;}
+.lv-card{background:var(--surface);border:1.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:16px 8px 14px;text-align:center;transition:transform .1s;}
 .lv-card:active{transform:scale(.96);}
 .lv-card .lv{font-size:21px;font-weight:800;color:var(--accent-deep);letter-spacing:-0.3px;}
 .lv-card .nm{font-size:12px;font-weight:700;color:var(--ink-2);margin-top:2px;}
 .lv-card .n{font-size:11px;color:var(--muted);margin-top:1px;font-weight:600;font-variant-numeric:tabular-nums;}
-.rootrow{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
+.rootrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
 .rootrow:active{transform:scale(.99);}
 .rootrow .ax{font-size:16px;font-weight:800;color:var(--accent-deep);min-width:62px;}
 .rootrow .gl{flex:1;font-size:13px;color:var(--ink-2);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
@@ -208,15 +286,15 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 홈: 바 위로 튀어나오는 원형 FAB. 조상 overflow가 자르지 않도록 tabbar를 overflow:visible로 두고
    음수 마진으로 바 상단선 위로 올린다. .scroll의 뒤 형제라 스크롤 콘텐츠 위에 항상 얹혀 안 잘린다. */
 .tab.home{position:relative;}
-.tab.home .ti{width:54px;height:54px;margin-top:-30px;margin-bottom:2px;border-radius:50%;background:var(--accent);color:#fff;box-shadow:0 8px 20px rgba(107,134,255,.5);border:4px solid var(--surface);}
+.tab.home .ti{width:54px;height:54px;margin-top:-30px;margin-bottom:2px;border-radius:50%;background:var(--accent);color:var(--on-accent);box-shadow:0 8px 20px rgba(33,28,21,.35);}
 .tab.home.on{color:var(--accent-deep);}
 
 /* 바텀시트 (단어 상세) */
-.sheet-backdrop{position:fixed;inset:0;background:rgba(20,20,30,.32);display:flex;align-items:flex-end;justify-content:center;z-index:50;animation:fade .18s ease;}
-.sheet{width:100%;max-width:520px;background:var(--surface);border-radius:24px 24px 0 0;box-shadow:var(--shadow-sheet);max-height:88vh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
+.sheet-backdrop{position:fixed;inset:0;background:rgba(33,28,21,.32);display:flex;align-items:flex-end;justify-content:center;z-index:50;animation:fade .18s ease;}
+.sheet{width:100%;max-width:520px;background:var(--surface);border:1.5px solid var(--card-border);border-bottom:none;border-radius:24px 24px 0 0;box-shadow:var(--shadow-sheet);max-height:88vh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 @keyframes slideup{from{transform:translateY(100%)}to{transform:translateY(0)}}
-.sheet-grab{width:38px;height:4px;background:#d9dade;border-radius:2px;margin:10px auto 2px;flex:none;}
+.sheet-grab{width:38px;height:4px;background:var(--line);border-radius:2px;margin:10px auto 2px;flex:none;}
 .sheet-head{display:flex;align-items:center;gap:10px;padding:6px 18px 10px;flex:none;}
 .sheet-head .back{font-size:20px;color:var(--muted);padding:2px 6px;margin-left:-6px;}
 .sheet-head .sp{flex:1;}
@@ -235,7 +313,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lchip{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--fill);color:var(--ink);border:1px solid transparent;}
 .lchip.link{background:var(--surface);border-color:var(--line);}
 .lchip.link:active{background:var(--accent-soft);}
-.lchip.affix{background:var(--ink);color:#fff;}
+.lchip.affix{background:var(--ink);color:var(--on-accent);}
 .lchip .g{color:var(--muted);font-weight:500;font-size:11px;margin-left:4px;}
 .wd-ex{background:var(--bg);border-radius:14px;padding:13px 15px;}
 .wd-ex .en{font-size:14px;font-weight:600;line-height:1.5;}
@@ -267,18 +345,18 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .study-bar{flex:1;height:8px;background:var(--fill);border-radius:999px;overflow:hidden;}
 .study-bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .3s ease;}
 .study-n{font-size:13px;font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;flex:none;}
-.qcard{background:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
+.qcard{background:var(--surface);border:1.5px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
 .qcue{font-size:12px;color:var(--muted);}
 .qko{font-size:17px;font-weight:800;letter-spacing:-0.3px;line-height:1.4;}
 .qdiv{height:1px;background:var(--line);margin:2px 0;}
 .qen{font-size:17px;font-weight:600;line-height:1.65;}
 .qen .blank{display:inline-block;min-width:74px;border-bottom:2.5px solid var(--accent);vertical-align:baseline;height:1.1em;margin:0 2px;}
 .qen .fill{color:var(--accent-deep);font-weight:800;border-bottom:2.5px solid var(--accent);padding:0 2px;}
-.qen .fill.bad{color:#d64545;border-color:#d64545;text-decoration:line-through;text-decoration-color:#d6454577;}
+.qen .fill.bad{color:var(--danger);border-color:var(--danger);text-decoration:line-through;text-decoration-color:color-mix(in srgb, var(--danger) 47%, transparent);}
 .qhint{font-size:12px;color:var(--muted);}
 /* 입력창 = 문장 속 빈칸. 회색 솔리드 + 살짝 라운드, 문장 글자 크기 그대로, 네이티브 캐럿이 깜빡임 */
 .qbox{border:none;border-radius:8px;background:var(--fill);font:inherit;font-weight:800;font-size:inherit;line-height:inherit;color:var(--accent-deep);text-align:center;padding:2px 8px;outline:none;vertical-align:baseline;caret-color:var(--accent);min-width:64px;}
-.qbox:focus{background:#e9ebef;} /* 포커스 링 없이 톤만 반 단계 — 포커스 표시는 깜빡이는 캐럿이 담당 */
+.qbox:focus{background:#E5D9B8;} /* 포커스 링 없이 톤만 반 단계 — 포커스 표시는 깜빡이는 캐럿이 담당 */
 /* 글자수 힌트: 정답 글자 수만큼 칸(cell)으로 분리 — 같은 회색 솔리드 톤, 다음 입력 칸에 캐럿 깜빡임 */
 .cellrow{display:inline-flex;gap:5px;position:relative;vertical-align:middle;}
 .cell{width:26px;height:36px;border-radius:8px;background:var(--fill);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:var(--accent-deep);text-transform:none;}
@@ -300,15 +378,15 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    맞혀야 다음으로 넘어가므로, 오답 시 칸별 정오만 색으로 표시(정답 문자는 안 보여줌). */
 /* 듣기 난이도 뱃지 — 어휘 CEFR과는 별개 지표(연음·문장길이 반영), 기존 상태 색 재사용 */
 .dict-difficulty{margin-bottom:10px;}
-.tag.dl1{background:#e6f7f0;color:#0a9d6f;}
-.tag.dl2{background:#fff2e0;color:#c77a11;}
-.tag.dl3{background:#fdeceb;color:#d64545;}
+.tag.dl1{background:var(--hi-green-light);color:var(--hi-green-xdark);}
+.tag.dl2{background:var(--hi-yellow-light);color:var(--hi-yellow-xdark);}
+.tag.dl3{background:var(--hi-pink-light);color:var(--hi-pink-xdark);}
 .dict-words{display:flex;flex-wrap:wrap;gap:11px 7px;font-size:17px;font-weight:600;line-height:1.65;}
 .dict-word{display:inline-flex;flex-direction:column;align-items:center;gap:4px;}
 .dict-word-row{display:inline-flex;align-items:baseline;}
 .dict-box{min-width:30px;}
-.dict-box.ok{background:#e3f7ef;color:#0a9d6f;}
-.dict-box.wrong{background:#fdeceb;color:#d64545;}
+.dict-box.ok{background:var(--good-container);color:var(--good);}
+.dict-box.wrong{background:var(--danger-container);color:var(--danger);}
 /* 맞게 타이핑한 순간 입력창이 사라지고 텍스트로 고정 — 살짝 튀는 팝 모션 */
 .dict-fixed{font-weight:800;color:var(--accent-deep);animation:dictfix .18s ease;}
 @keyframes dictfix{from{transform:scale(1.18);opacity:.4;}to{transform:scale(1);opacity:1;}}
@@ -323,16 +401,16 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .dict-notes{display:flex;flex-direction:column;gap:6px;margin-top:2px;}
 .dict-note{font-size:12px;font-weight:500;color:var(--ink-2);background:var(--bg);border-radius:10px;padding:9px 11px;line-height:1.5;}
 .dict-note b{color:var(--accent-deep);font-weight:800;}
-.dict-relearn-note{font-size:12px;font-weight:700;color:#c77a11;background:#fff2e0;border-radius:10px;padding:9px 11px;}
-.qsub{background:var(--accent);color:#fff;font-weight:700;font-size:15px;padding:14px 20px;border-radius:14px;width:100%;}
+.dict-relearn-note{font-size:12px;font-weight:700;color:var(--hi-yellow-xdark);background:var(--hi-yellow-light);border-radius:10px;padding:9px 11px;}
+.qsub{background:var(--accent);color:var(--on-accent);font-weight:700;font-size:15px;padding:14px 20px;border-radius:14px;width:100%;}
 .qres{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;}
 .qres.ok{color:var(--good);}
-.qres.no{color:#d64545;}
+.qres.no{color:var(--danger);}
 .qres .due{margin-left:auto;font-size:12px;color:var(--muted);font-weight:600;background:var(--fill);padding:5px 10px;border-radius:999px;}
 .qactions{margin-top:auto;display:flex;gap:8px;}
 .qactions button{flex:1;padding:14px;border-radius:14px;font-weight:700;font-size:15px;}
-.qactions .ghost{background:var(--surface);border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow);}
-.qactions .primary{background:var(--accent);color:#fff;}
+.qactions .ghost{background:var(--surface);border:1.5px solid var(--ink);color:var(--ink);}
+.qactions .primary{background:var(--accent);color:var(--on-accent);}
 .finish{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:40px 20px;}
 .finish .big{font-size:40px;font-weight:800;color:var(--accent-deep);font-variant-numeric:tabular-nums;}
 .finish .msg{font-size:15px;font-weight:700;}
@@ -347,14 +425,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lt-qcard{align-items:center;text-align:center;justify-content:center;min-height:150px;}
 .lt-word{font-size:24px;font-weight:800;letter-spacing:-0.3px;}
 .lt-choices{display:flex;flex-direction:column;gap:8px;margin-top:auto;}
-.lt-choice{padding:14px;border-radius:14px;font-weight:700;font-size:15px;background:var(--surface);border:1px solid var(--line);color:var(--ink);box-shadow:var(--shadow);text-align:center;}
+.lt-choice{padding:14px;border-radius:14px;font-weight:700;font-size:15px;background:var(--surface);border:1.5px solid var(--card-border);color:var(--ink);box-shadow:var(--shadow);text-align:center;}
 .lt-choice:active{background:var(--fill);}
-.lt-band{display:inline-flex;align-items:center;font-size:14px;font-weight:800;padding:6px 14px;border-radius:999px;background:var(--accent-deep);color:#fff;}
+.lt-band{display:inline-flex;align-items:center;font-size:14px;font-weight:800;padding:6px 14px;border-radius:999px;background:var(--accent-deep);color:var(--on-accent);}
 .lt-row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;align-items:center;}
-.lt-answer{min-height:26px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px;font-size:16px;font-weight:700;line-height:1.5;letter-spacing:.2px;}
+.lt-answer{min-height:26px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px;font-size:16px;font-weight:700;line-height:1.5;letter-spacing:.2px;}
 .lt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;}
 @keyframes lt-shake{0%,100%{transform:translateX(0);}20%{transform:translateX(-4px);}40%{transform:translateX(4px);}60%{transform:translateX(-3px);}80%{transform:translateX(3px);}}
-.lt-chips .lchip.wrong{animation:lt-shake .35s ease;background:#fdeceb;color:#d64545;border-color:#d64545;}
+.lt-chips .lchip.wrong{animation:lt-shake .35s ease;background:var(--danger-container);color:var(--danger);border-color:var(--danger);}
 /* 탭한 칩은 자리를 유지한 채 흐려지기만 — 남은 칩이 당겨지면 다음 탭이 빗나간다 */
 .lt-chips .lchip.picked{opacity:.22;pointer-events:none;}
 .lt-curve-lbl{display:flex;justify-content:space-between;font-size:9px;color:var(--muted);padding:0 4px;}
@@ -362,15 +440,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lt-note b{color:var(--accent-deep);font-weight:800;}
 
 /* 설정 화면 (캐릭터 변경 등) — WordSheet와 동일한 바텀시트 패턴 재사용 */
-.charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;}
+.charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;}
 .charrow .cf{width:52px;height:52px;border-radius:14px;background:var(--fill);display:flex;align-items:center;justify-content:center;flex:none;overflow:hidden;font-size:9px;color:var(--muted);text-align:center;line-height:1.2;}
 .charrow .body{flex:1;min-width:0;}
 .charrow .name{font-size:14px;font-weight:700;}
-.charrow .move{font-size:11px;color:var(--muted);margin-top:1px;}
 .charrow .cta{flex:none;font-size:12px;font-weight:700;padding:9px 12px;border-radius:11px;text-align:center;white-space:nowrap;}
 .charrow .cta.use{background:var(--accent-soft);color:var(--accent-deep);}
-.charrow .cta.free{background:var(--accent);color:#fff;}
-.charrow .cta.buy{background:var(--ink);color:#fff;}
+.charrow .cta.free{background:var(--accent);color:var(--on-accent);}
+.charrow .cta.buy{background:var(--ink);color:var(--on-accent);}
 .charrow .cta.locked{background:var(--fill);color:var(--muted);}
 .ptbox{display:flex;align-items:center;justify-content:space-between;background:var(--accent-soft);border-radius:16px;padding:14px 16px;}
 .ptbox .v{font-size:20px;font-weight:800;color:var(--accent-deep);font-variant-numeric:tabular-nums;}
@@ -382,7 +459,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.13";
+const APP_VERSION = "v0.12.0";
 const APP_BUILD = "2026-07-14"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -946,51 +1023,54 @@ function saveLevelTest(res) { try { localStorage.setItem(LT_KEY, JSON.stringify(
 function loadLevelTest() { try { return JSON.parse(localStorage.getItem(LT_KEY) || "null"); } catch (e) { return null; } }
 
 /* ---------- 홈 탭 ---------- */
-/* 기본 캐릭터(사용자 제작 Lottie/Rive/스프라이트로 교체될 슬롯).
-   move = 달리기 표현(홈 첫 화면에서 계속 달려가는 모션의 콘셉트) */
+/* 캐릭터 아트(CharDoodle)를 사용자가 "일단 보기 싫다"고 해서 임시로 꺼둔 스위치(2026-07-14).
+   CHARACTERS·CharDoodle·CHAR_PATHS·뱃지트랙·road·mlines 로직/CSS는 전부 그대로 둔 채
+   렌더만 최소 플레이스홀더(색상 스와치)로 대체 — 사용자가 디자인 파일을 주면 true로 되돌리고
+   Home()의 스테이지 분기, Settings()의 charrow .cf 분기 두 곳만 원복하면 됨. */
+const CHAR_ART_READY = false;
+/* 캐릭터 1~4 — 원/삼각/사각/꽃 실루엣 + 형광펜 악센트로 구분(CharDoodle이 렌더) */
 const CHARACTERS = [
-  { k: "ghost", label: "고양이 유령", move: "스케이트보드" },
-  { k: "mole", label: "두더지", move: "땅 파며 질주" },
-  { k: "rat", label: "쥐", move: "짐보따리 메고 달리기" },
-  { k: "alien", label: "외계인", move: "UFO 타고" },
+  { k: "char1", label: "캐릭터 1", shape: "circle", accent: "green" },
+  { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
+  { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
+  { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
 ];
 /* 연속 학습일 → 성장 4단계 + 달리기 속도 */
 function streakStage(days) { return days < 3 ? 1 : days < 7 ? 2 : days < 14 ? 3 : 4; }
 /* 뱃지: earned(달성일) 또는 null(미획득). mark=칩 표시, cond=미획득 시 조건 */
+/* hl = 형광펜 하이어라키(달성 난이도 기준, cefrHl과 동일한 4단계 규칙 재사용):
+   연두=쉬움 · 옐로우=중간 · 핑크=어려움 · 블루=최상급(가장 희귀한 달성) */
 const BADGES = [
-  { k: "streak7", mark: "7일", title: "7일 연속 학습", earned: "2026.06.20" },
-  { k: "firsttalk", mark: "회화", title: "첫 회화 완주", earned: "2026.06.22" },
-  { k: "root30", mark: "어원", title: "어원 30개 탐험", earned: "2026.07.01" },
-  { k: "w3000", mark: "3000", title: "3000단어 학습", earned: "2026.07.09" },
-  { k: "sos0", mark: "SOS", title: "SOS 없이 대화 완주", earned: null, cond: "회화에서 SOS 없이 한 세션 완주" },
-  { k: "streak30", mark: "30일", title: "30일 연속 학습", earned: null, cond: "30일 연속 학습 유지" },
-  { k: "w5000", mark: "5000", title: "5000단어 학습", earned: null, cond: "학습 단어 5000개 달성" },
+  { k: "streak7", mark: "7일", title: "7일 연속 학습", earned: "2026.06.20", hl: "green" },
+  { k: "firsttalk", mark: "회화", title: "첫 회화 완주", earned: "2026.06.22", hl: "green" },
+  { k: "root30", mark: "어원", title: "어원 30개 탐험", earned: "2026.07.01", hl: "yellow" },
+  { k: "w3000", mark: "3000", title: "3000단어 학습", earned: "2026.07.09", hl: "yellow" },
+  { k: "sos0", mark: "SOS", title: "SOS 없이 대화 완주", earned: null, cond: "회화에서 SOS 없이 한 세션 완주", hl: "pink" },
+  { k: "streak30", mark: "30일", title: "30일 연속 학습", earned: null, cond: "30일 연속 학습 유지", hl: "blue" },
+  { k: "w5000", mark: "5000", title: "5000단어 학습", earned: null, cond: "학습 단어 5000개 달성", hl: "blue" },
 ];
 
-/* 프레임 배열(svgo 최적화된 자체 생성 SVG, 외부 입력 아님) 순환 재생 — 실제 캐릭터 아트 슬롯.
-   모든 프레임을 한 번만 마운트해두고 opacity만 토글해 크로스페이드 — 매 프레임 SVG를
-   언마운트/재파싱하던 이전 방식의 깜빡임(flicker)을 제거. */
-function SpriteChar({ frames, size = 100, fps = 8 }) {
-  const [i, setI] = useState(0);
-  const reduceMotion = useMemo(
-    () => typeof window !== "undefined" && window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches,
-    []
-  );
-  useEffect(() => {
-    if (!frames || frames.length < 2 || reduceMotion) return;
-    const id = setInterval(() => setI(v => (v + 1) % frames.length), 1000 / fps);
-    return () => clearInterval(id);
-  }, [frames, fps, reduceMotion]);
-  if (!frames || !frames.length) return null;
-  const dur = Math.round(1000 / fps / 2) + "ms"; // 전환 시간은 프레임 간격의 절반
+/* 두들 캐릭터 — 원/삼각/사각/꽃 4가지 실루엣. 촘촘히 샘플링한 점(60~144개)에 작은 잡음을 주고
+   직선(L)으로 연결 + 약한 이동평균 스무딩 1회 — 벡터 Scribble/Roughen 필터와 동일한 원리로
+   "손으로 대충 그은" 거친 윤곽선을 재현(고정 시드로 1회 생성, 자체 제작 SVG). 몸통 전체를 형광펜
+   색으로 채우고 눈+다리만 표시(입·팔 없음). */
+const CHAR_PATHS = {
+  circle: "M100.3,61.9 L99.6,66.0 L100.8,70.2 L100.2,74.1 L97.6,77.6 L95.2,80.8 L92.3,83.5 L89.5,86.3 L87.6,89.7 L85.2,92.7 L82.2,95.3 L79.0,97.5 L75.0,97.8 L70.9,98.0 L67.4,99.8 L63.9,101.7 L60.0,101.9 L56.2,101.1 L52.3,100.8 L48.4,100.2 L45.0,98.4 L41.8,96.1 L38.4,94.3 L35.6,91.8 L32.5,89.4 L28.6,87.7 L25.7,84.9 L23.5,81.5 L21.9,77.8 L21.8,73.7 L21.5,69.6 L20.9,65.8 L20.3,62.0 L20.7,58.2 L22.2,54.5 L22.6,50.6 L23.3,46.8 L25.8,43.8 L28.1,40.6 L29.8,37.3 L32.6,34.6 L35.4,32.0 L38.7,30.3 L42.4,29.1 L45.7,27.4 L49.1,26.2 L52.6,24.3 L56.1,21.9 L59.9,21.3 L63.9,22.1 L67.8,22.6 L71.6,23.7 L75.5,24.6 L79.2,26.0 L82.5,28.3 L86.1,30.3 L89.3,32.7 L90.9,36.5 L91.5,40.8 L92.7,44.5 L94.7,47.7 L97.7,50.7 L100.9,53.9 L101.7,57.8 Z",
+  tri: "M59.1,21.4 L61.2,23.0 L64.8,27.0 L67.0,31.4 L68.7,36.0 L72.2,40.6 L75.3,44.9 L76.4,49.1 L78.2,54.1 L81.4,58.7 L83.6,62.6 L85.0,67.1 L87.6,71.9 L90.6,75.8 L92.7,79.6 L95.1,84.9 L97.9,89.9 L101.0,93.2 L101.8,96.0 L98.2,97.7 L93.5,97.9 L89.2,98.3 L84.8,99.1 L80.1,99.4 L74.6,99.5 L69.9,99.1 L65.5,99.0 L60.3,99.4 L55.5,99.4 L51.5,98.7 L46.9,98.7 L41.8,98.7 L36.6,98.2 L31.3,98.4 L26.7,98.4 L22.2,98.0 L19.5,96.6 L19.5,93.5 L20.5,89.1 L22.5,84.0 L25.2,78.7 L27.8,73.9 L30.1,69.7 L33.3,65.8 L36.3,61.6 L37.9,57.4 L39.6,53.7 L42.6,49.8 L46.0,45.9 L48.5,41.2 L50.2,35.1 L52.3,30.0 L55.9,26.8 L58.4,23.7 Z",
+  square: "M27.1,28.7 L29.3,28.0 L32.7,26.8 L37.3,27.1 L42.3,28.0 L46.8,27.2 L50.8,26.3 L55.5,26.1 L59.3,26.5 L62.9,27.5 L68.1,28.1 L73.6,28.8 L78.2,29.3 L82.3,29.0 L86.6,28.6 L91.5,28.9 L95.0,29.3 L95.2,32.5 L95.5,38.4 L96.6,43.3 L96.3,47.0 L95.1,50.6 L94.6,54.3 L95.5,58.0 L97.1,62.8 L96.8,68.5 L96.0,73.8 L96.8,79.0 L97.0,83.0 L96.6,86.4 L96.2,91.4 L95.7,96.7 L94.1,99.8 L89.8,100.3 L85.8,100.3 L82.9,100.4 L78.3,100.2 L73.0,100.0 L68.7,100.2 L64.1,100.2 L59.7,99.9 L55.9,100.1 L51.7,101.2 L46.6,102.1 L41.2,101.4 L36.9,99.6 L33.5,99.2 L29.7,100.5 L26.1,99.6 L24.3,94.8 L23.6,90.2 L23.2,86.5 L23.7,81.4 L24.4,76.3 L25.1,72.5 L24.8,68.5 L23.9,63.6 L23.9,58.8 L24.6,54.4 L24.4,50.4 L24.0,46.8 L24.6,42.7 L25.1,37.5 L25.7,31.7 Z",
+  flower: "M60.1,35.2 L64.1,32.7 L69.3,28.7 L75.3,25.8 L81.0,25.8 L84.5,29.7 L83.8,37.4 L80.9,45.4 L81.2,49.9 L85.9,51.6 L92.6,53.7 L99.3,57.2 L102.3,62.0 L100.1,67.0 L93.9,70.6 L86.3,72.5 L81.6,74.5 L81.5,79.0 L83.7,86.5 L84.2,94.1 L81.1,98.6 L75.5,98.6 L69.2,94.3 L63.9,88.6 L60.0,86.4 L56.1,88.9 L51.0,93.8 L44.3,98.8 L38.2,99.7 L35.5,94.6 L36.6,86.1 L38.0,79.1 L37.4,75.1 L33.5,72.6 L26.6,70.5 L20.2,66.9 L17.7,62.0 L20.9,57.2 L27.0,53.5 L33.2,51.3 L37.5,49.0 L37.5,44.2 L35.2,36.5 L35.1,29.2 L38.8,25.5 L44.8,26.1 L51.1,30.6 L56.2,34.7 Z",
+};
+function CharDoodle({ shape, accent, size = 120 }) {
+  const stroke = "var(--ink)";
+  const fill = "var(--hi-" + accent + ")";
   return (
-    <div style={{ position: "relative", width: size, height: size }}>
-      {frames.map((f, idx) => (
-        <svg key={idx} className="sprite-frame" width={size} height={size} viewBox={f.vb}
-             style={{ opacity: idx === i ? 1 : 0, transition: reduceMotion ? "none" : `opacity ${dur} linear` }}
-             dangerouslySetInnerHTML={{ __html: f.inner }} />
-      ))}
-    </div>
+    <svg width={size} height={size} viewBox="0 0 120 120">
+      <path d="M46.0,94.0 L44.8,98.8 L44.8,103.7 L47.4,109.2 L46.7,114.3 L47.0,119.0" fill="none" stroke={stroke} strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M74.0,94.0 L74.6,99.2 L73.3,103.6 L74.0,109.6 L73.0,114.4 L73.0,119.0" fill="none" stroke={stroke} strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d={CHAR_PATHS[shape]} fill={fill} stroke={stroke} strokeWidth="5" strokeLinejoin="round" />
+      <circle cx="48" cy="58" r="4.5" fill={stroke} />
+      <circle cx="66" cy="58" r="4.5" fill={stroke} />
+    </svg>
   );
 }
 
@@ -1017,23 +1097,26 @@ function Home({ onGoTab, charK, onOpenSettings }) {
   return (
     <div className="content">
       {!chr ? (
-        <div className="card" style={{ textAlign: "center", padding: "26px 20px" }}>
+        <div className="card ruled-paper" style={{ textAlign: "center", padding: "26px 20px" }}>
           <div className="step-title" style={{ marginBottom: 4 }}>캐릭터를 선택해 주세요</div>
           <div className="step-sub" style={{ marginBottom: 14 }}>처음 한 번은 무료로 고를 수 있어요</div>
-          <button className="btn" style={{ background: "var(--accent)", color: "#fff", fontWeight: 700, padding: "12px 20px", borderRadius: 13 }} onClick={onOpenSettings}>캐릭터 고르러 가기</button>
+          <button className="btn" onClick={onOpenSettings}>캐릭터 고르러 가기</button>
+        </div>
+      ) : !CHAR_ART_READY ? (
+        /* 디자인 파일 받기 전 임시 스테이지 — 노트 배경만 남기고 캐릭터/뱃지트랙/road/mlines는
+           숨김(로직은 CHAR_ART_READY 상단 주석 참고, 그대로 보존). */
+        <div className="stage ruled-paper" style={{ ...speed, justifyContent: "center" }}>
+          <div className="char-swatch-wrap">
+            <div className={"char-swatch hi-" + chr.accent} />
+            <div className="char-swatch-lbl">{chr.label} · 준비 중</div>
+          </div>
         </div>
       ) : (
-        <div className="stage" style={speed}>
-          <div className="signpost">
-            {STREAK === 0
-              ? <div className="sign-warn">!</div>
-              : <div className="sign-speed">{STREAK}</div>}
-            <div className="sign-lbl">{STREAK === 0 ? "학습 위험" : "연속 " + STREAK + "일"}</div>
-          </div>
+        <div className="stage ruled-paper" style={speed}>
           {/* 뱃지: 캐릭터 뒤에 가로로 쭉 — 스와이프해서 넘겨봄. 전체는 보관함의 뱃지 컬렉션. */}
           <div className="badge-track">
             {BADGES.map(b => (
-              <button key={b.k} className={"badge " + (b.earned ? "earned" : "locked")} onClick={() => setBadge(b)}>
+              <button key={b.k} className={"badge " + (b.earned ? "earned hi-" + b.hl : "locked")} onClick={() => setBadge(b)}>
                 {b.earned ? b.mark : "?"}
               </button>
             ))}
@@ -1042,11 +1125,8 @@ function Home({ onGoTab, charK, onOpenSettings }) {
           <div className="mlines"><i /><i /><i /></div>
           <div className="hero-char run">
             <div className="char-face">
-              {chr.k === "rat" && window.CHAR_RAT_RUN
-                ? <SpriteChar frames={window.CHAR_RAT_RUN} size={150} fps={5 + stage * 2} />
-                : <React.Fragment>{chr.label}<br/>{chr.move}<br/>{stage}단계</React.Fragment>}
+              <CharDoodle shape={chr.shape} accent={chr.accent} size={140} />
             </div>
-            <div className="sign">OH... ENGLISH?</div>
           </div>
         </div>
       )}
@@ -1054,7 +1134,7 @@ function Home({ onGoTab, charK, onOpenSettings }) {
       {badge && ReactDOM.createPortal(
         <div className="dlg-backdrop" onClick={() => setBadge(null)}>
           <div className="dlg" onClick={e => e.stopPropagation()}>
-            <div className={"dlg-badge " + (badge.earned ? "earned" : "locked")}>{badge.earned ? badge.mark : "?"}</div>
+            <div className={"dlg-badge " + (badge.earned ? "earned hi-" + badge.hl : "locked")}>{badge.earned ? badge.mark : "?"}</div>
             <div className="dlg-title">{badge.earned ? badge.title : "미획득 뱃지"}</div>
             {badge.earned
               ? <div className="dlg-sub">달성!</div>
@@ -1067,9 +1147,11 @@ function Home({ onGoTab, charK, onOpenSettings }) {
       )}
 
       <div className="level-row" onClick={() => onGoTab("dict")}>
-        <div className="stat"><div className="v accent">B1</div><div className="l">CEFR 레벨</div></div>
-        <div className="stat"><div className="v">4,200</div><div className="l">추정 어휘량</div></div>
-        <div className="stat"><div className="v">상위 18%</div><div className="l">백분위</div></div>
+        {/* 형광펜 색은 cefrHl 하이어라키 규칙 공유: B1=옐로우(중급), 어휘량 4,200은 B1대 수준이라 동일 톤,
+            백분위는 상위 구간일수록 상급 색(<=10 블루·<=25 핑크·<=50 옐로우·그외 연두)로 매핑 */}
+        <div className="stat"><div className="v"><span className={"hl hl-" + cefrHl("B1")} style={{ transform: "rotate(-1.5deg)" }}>B1</span></div><div className="l">CEFR 레벨</div></div>
+        <div className="stat"><div className="v"><span className={"hl hl-" + cefrHl("B1")} style={{ transform: "rotate(1deg)" }}>4,200</span></div><div className="l">추정 어휘량</div></div>
+        <div className="stat"><div className="v"><span className="hl hl-pink" style={{ transform: "rotate(-1deg)" }}>상위 18%</span></div><div className="l">백분위</div></div>
       </div>
 
       <div className="sec">오늘의 루틴</div>
@@ -1145,7 +1227,7 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
               <button className="wd-play" onClick={() => speak(w.word)}><Icon name="volume_up" size={15} /> 발음 듣기</button>
             </div>
             <div className="wd-pos" style={{ marginTop: 6 }}>
-              <span className="tag lv" style={{ marginRight: 6 }}>{w.cefr}</span>
+              <span className={"tag lv tier-" + cefrHl(w.cefr)} style={{ marginRight: 6 }}>{w.cefr}</span>
               {w.senses && w.senses.length ? <span className="tag">뜻 {w.senses.length}개</span> : w.ko}
             </div>
             {!(w.senses && w.senses.length) && <div className="wd-en" style={{ marginTop: 4 }}>{w.en}</div>}
@@ -1230,7 +1312,7 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
               <div className="wd-sec-t">어근 · 접사</div>
               <div className="wd-chips">
                 {w.roots.map(r => (
-                  <span key={r.affix} className="lchip affix">{r.affix}<span className="g" style={{ color: "#c3ceff" }}>{r.gloss}</span></span>
+                  <span key={r.affix} className="lchip affix">{r.affix}<span className="g" style={{ color: "rgba(255,251,241,.62)" }}>{r.gloss}</span></span>
                 ))}
               </div>
             </div>
@@ -1255,6 +1337,11 @@ function WordSheet({ stack, onPush, onPop, onClose }) {
 /* 진입 시 목록을 쏟아내지 않고 허브(메뉴)에서 선택해 들어가는 구조.
    검색은 어느 화면에서든 최상단 — 입력을 시작하면 즉시 검색 결과로 전환. */
 const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
+/* 형광펜 하이어라키 규칙(낮음→높음): 연두(A1·A2, 입문) → 옐로우(B1·B2, 중급) → 핑크(C1, 고급) → 블루(C2, 최상급).
+   뱃지·레벨 강조·카테고리 카드 등 "레벨/난이도"를 표시하는 곳은 전부 이 규칙을 공유한다. */
+function cefrHl(lv) {
+  return lv === "A1" || lv === "A2" ? "green" : lv === "B1" || lv === "B2" ? "yellow" : lv === "C1" ? "pink" : "blue";
+}
 
 function WordRow({ w, onOpen }) {
   const st = wordStatus(w);
@@ -1266,7 +1353,7 @@ function WordRow({ w, onOpen }) {
         <div className="k">{multi ? w.senses[0].ko + " 외 " + (w.senses.length - 1) + "개 뜻" : w.ko}</div>
       </div>
       <div className="meta">
-        <span className="tag lv">{w.cefr}</span>
+        <span className={"tag lv tier-" + cefrHl(w.cefr)}>{w.cefr}</span>
         {multi && <span className="tag">뜻 {w.senses.length}</span>}
         {w.mine && <span className="tag">내 단어</span>}
         {st?.status === "done" && <span className="tag done">완료</span>}
@@ -1378,7 +1465,7 @@ function Dict({ onOpen }) {
                 <div className="step-title">{m.title}</div>
                 <div className="step-sub">{m.sub}</div>
               </div>
-              <span className="arrow" style={{ color: "var(--muted)" }}>›</span>
+              <span className="arrow">›</span>
             </div>
           ))}
         </React.Fragment>
@@ -1420,7 +1507,7 @@ function Dict({ onOpen }) {
                   <div className="lv-grid">
                     {CEFR_LEVELS.map(lv => (
                       <button key={lv} className="lv-card" onClick={() => setCatSel(lv)}>
-                        <div className="lv">{lv}</div>
+                        <div className={"lv hl hl-" + cefrHl(lv)}>{lv}</div>
                         <div className="nm">{CEFR_NAMES[lv]}</div>
                         <div className="n">{catList(lv).length.toLocaleString()}개</div>
                       </button>
@@ -2211,7 +2298,7 @@ function Learn({ onOpenWord, onStartLevelTest }) {
             <div className="step-title">{m.title}</div>
             <div className="step-sub">{m.on ? m.sub : "준비 중"}</div>
           </div>
-          {m.on ? <div className="step-cta">시작</div> : <span className="arrow" style={{ color: "var(--muted)" }}>›</span>}
+          {m.on ? <div className="step-cta">시작</div> : <span className="arrow">›</span>}
         </div>
       ))}
     </div>
@@ -2273,13 +2360,12 @@ function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
                 return (
                   <div key={c.k} className="charrow">
                     <div className="cf">
-                      {c.k === "rat" && window.CHAR_RAT_RUN
-                        ? <SpriteChar frames={window.CHAR_RAT_RUN} size={44} fps={6} />
-                        : c.label}
+                      {CHAR_ART_READY
+                        ? <CharDoodle shape={c.shape} accent={c.accent} size={44} />
+                        : <div className={"char-swatch char-swatch-sm hi-" + c.accent} />}
                     </div>
                     <div className="body">
                       <div className="name">{c.label}</div>
-                      <div className="move">{c.move}</div>
                     </div>
                     {isCur ? (
                       <div className="cta use">사용 중</div>
