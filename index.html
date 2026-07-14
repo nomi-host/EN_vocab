@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.17.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.17.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.17.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.18.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.18.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.18.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.17.0"></script>
+<script src="words.js?v=0.18.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.17.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.17.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.18.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.18.0") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.17.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.17.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.18.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.18.0") format("woff");
 }
 :root{
   --bg:#F5EEDD;            /* 옅은 노트 베이지 */
@@ -283,10 +283,10 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .tag.tier-yellow{background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
 .tag.tier-pink{background:var(--hi-pink);color:var(--hi-pink-xdark);}
 .tag.tier-blue{background:var(--hi-blue);color:var(--hi-blue-xdark);}
-.tag.done{background:var(--hi-green);color:var(--hi-green-xdark);}
-.tag.learning{background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
-.tag.mine{background:var(--hi-blue);color:var(--hi-blue-xdark);}
-.tag.sense{background:var(--hi-pink);color:var(--hi-pink-xdark);}
+.tag.done{background:var(--hi-green-light);color:var(--hi-green-xdark);}
+.tag.learning{background:var(--hi-yellow-light);color:var(--hi-yellow-xdark);}
+.tag.mine{background:var(--hi-blue-light);color:var(--hi-blue-xdark);}
+.tag.sense{background:var(--hi-pink-light);color:var(--hi-pink-xdark);}
 
 /* 카테고리 선택: 레벨 카드 그리드 · 어근 행 목록 */
 .lv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
@@ -526,9 +526,15 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lt-chips .lchip.wrong{animation:lt-shake .35s ease;background:var(--danger-container);color:var(--danger);border-color:var(--danger);}
 /* 탭한 칩은 자리를 유지한 채 흐려지기만 — 남은 칩이 당겨지면 다음 탭이 빗나간다 */
 .lt-chips .lchip.picked{opacity:.22;pointer-events:none;}
-.lt-curve-lbl{display:flex;justify-content:space-between;font-size:9px;color:var(--muted);padding:0 4px;}
-.lt-note{font-size:12px;color:var(--ink-2);background:var(--bg);border-radius:10px;padding:10px 12px;line-height:1.5;}
-.lt-note b{color:var(--accent-deep);font-weight:800;}
+.lt-curve-lbl{display:flex;justify-content:space-between;font-size:9px;color:var(--muted);padding:0 4px;margin-top:-6px;}
+.lt-note{font-size:12px;color:var(--ink-2);background:var(--fill);border-radius:10px;padding:10px 12px;line-height:1.5;}
+/* 분석 문장 속 핵심부만 형광펜으로 짚어줌(단순 볼드가 아니라 실제 마커 배경) */
+.lt-note b{background:var(--hi-yellow-light);color:var(--ink);font-weight:800;padding:1px 3px;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+/* 어휘력/문장구사력 결과 칩(단어 수·상위%)도 밴드 컬러위계를 연하게 반영 */
+.chip.tier-green{background:var(--hi-green-light);color:var(--hi-green-xdark);border-color:transparent;}
+.chip.tier-yellow{background:var(--hi-yellow-light);color:var(--hi-yellow-xdark);border-color:transparent;}
+.chip.tier-pink{background:var(--hi-pink-light);color:var(--hi-pink-xdark);border-color:transparent;}
+.chip.tier-blue{background:var(--hi-blue-light);color:var(--hi-blue-xdark);border-color:transparent;}
 
 /* 설정 화면 (캐릭터 변경 등) — WordSheet와 동일한 바텀시트 패턴 재사용 */
 .charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;}
@@ -564,7 +570,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.17.0";
+const APP_VERSION = "v0.18.0";
 const APP_BUILD = "2026-07-14"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -1826,7 +1832,7 @@ function WordRow({ w, onOpen, pickMode, picked, onTogglePick }) {
         {multi && <span className="tag sense">뜻 {w.senses.length}개</span>}
         {w.mine && <span className="tag mine">내 단어</span>}
         {st?.status === "done" && <span className="tag done">완료</span>}
-        {st?.status === "learning" && <span className="tag learning">박스 {st.box} · {st.dueIn === 0 ? "오늘" : st.dueIn + "일 뒤"}</span>}
+        {st?.status === "learning" && <span className="tag learning">{st.dueIn === 0 ? "오늘 복습" : st.dueIn + "일 뒤 복습"}</span>}
         {!st && !w.mine && <span className="tag">미학습</span>}
       </div>
     </div>
@@ -3060,9 +3066,9 @@ function LtDistCurve({ pct }) {
     <div className="qcard" style={{ padding: "10px 8px 4px" }}>
       <svg width="100%" height="70" viewBox="0 0 260 70">
         <path d="M4,62 C60,62 80,8 130,8 C180,8 200,62 256,62" fill="none" stroke="var(--accent)" strokeWidth="2" />
-        <line x1={x} y1="6" x2={x} y2="64" stroke="var(--ink)" strokeWidth="2" strokeDasharray="3,3" />
+        <line x1={x} y1="18" x2={x} y2="64" stroke="var(--ink)" strokeWidth="2" strokeDasharray="3,3" />
         <circle cx={x} cy={y} r="4" fill="var(--ink)" />
-        <text x={x} y="9" fontSize="9" fill="var(--ink)" textAnchor="middle">나</text>
+        <text x={x} y="11" fontSize="9" fontWeight="800" fill="var(--ink)" textAnchor="middle">나</text>
       </svg>
       <div className="lt-curve-lbl"><span>초급</span><span>평균</span><span>고급</span></div>
     </div>
@@ -3116,8 +3122,8 @@ function LevelTestResult({ resultA, resultB, onExit, onRetry }) {
       <div className="sec">어휘력</div>
       <div className="lt-row">
         <span className={"lt-band tier-" + ltBandHl(resultA.band)}>{resultA.band}</span>
-        <span className="chip">{resultA.vocab.toLocaleString()} 단어</span>
-        <span className="chip">상위 {resultA.pct}% (추정)</span>
+        <span className={"chip tier-" + ltBandHl(resultA.band)}>{resultA.vocab.toLocaleString()} 단어</span>
+        <span className={"chip tier-" + ltBandHl(resultA.band)}>상위 {resultA.pct}% (추정)</span>
       </div>
       <div style={{ textAlign: "center", fontSize: 12, color: "var(--muted)", fontWeight: 600 }}>
         말할 수 있는 단어 약 {resultA.activeVocab.toLocaleString()}개
@@ -3129,7 +3135,7 @@ function LevelTestResult({ resultA, resultB, onExit, onRetry }) {
         <React.Fragment>
           <div className="lt-row">
             <span className={"lt-band tier-" + ltBandHl(resultB.band)}>{resultB.band}</span>
-            <span className="chip">상위 {resultB.pct}% (추정)</span>
+            <span className={"chip tier-" + ltBandHl(resultB.band)}>상위 {resultB.pct}% (추정)</span>
           </div>
           <LtDistCurve pct={resultB.pct} />
           <div className="lt-note">{renderBold("**어순 배열만으로 부분 측정**한 값이에요")}</div>
@@ -3177,8 +3183,6 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, onConsumeCustomStudy
   const [summary, setSummary] = useState(null);
   const [quiz, setQuiz] = useState(null); // null | questions[] | "done"
   const [quizSummary, setQuizSummary] = useState(null);
-  const [dictation, setDictation] = useState(null); // null | items[] | "done"
-  const [dictationSummary, setDictationSummary] = useState(null);
   const dueCount = allItems().filter(it => SRS.isDue(it.key)).length;
   const newCount = allItems().filter(it => !SRS.get(it.key)).length;
   const studiedCount = allItems().filter(it => SRS.get(it.key)).length;
