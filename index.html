@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, interactive-widget=resizes-content">
 <meta name="theme-color" content="#F5EEDD">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.12.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.12.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.12.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.12.1">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.12.1" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.12.1" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.12.0"></script>
+<script src="words.js?v=0.12.1"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.12.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.12.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.12.1") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.12.1") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.12.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.12.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.12.1") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.12.1") format("woff");
 }
 :root{
   --bg:#F5EEDD;            /* 옅은 노트 베이지 */
@@ -99,7 +99,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .gami-chip.blue{background:var(--hi-blue-light);color:var(--hi-blue-xdark);}
 
 .scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;}
-.content{padding:8px 20px 28px;display:flex;flex-direction:column;gap:14px;}
+/* --kb = 소프트 키보드가 가리는 높이(App의 visualViewport 리스너가 갱신) —
+   키보드가 열리면 하단 컨트롤(힌트·확인 버튼)이 키보드 위로 올라오도록 바닥 패딩 확장 */
+.content{padding:8px 20px calc(28px + var(--kb, 0px));display:flex;flex-direction:column;gap:14px;}
 
 /* 섹션 라벨 */
 .sec{font-size:13px;font-weight:700;color:var(--ink);letter-spacing:-0.2px;margin:6px 2px 0;}
@@ -469,7 +471,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.12.0";
+const APP_VERSION = "v0.12.1";
 const APP_BUILD = "2026-07-14"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -2444,6 +2446,22 @@ function App() {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [stack]);
+
+  /* 소프트 키보드가 하단 컨트롤(힌트·확인 버튼)을 가리지 않도록:
+     visualViewport로 키보드가 가리는 높이를 재서 --kb CSS 변수로 내려줌(.content 바닥 패딩이 그만큼 늘어남).
+     iOS는 키보드가 오버레이 방식이라 layout viewport(100dvh)가 안 줄어드는 것에 대한 대응. */
+  useEffect(() => {
+    const vv = window.visualViewport;
+    if (!vv) return;
+    const update = () => {
+      const kb = Math.max(0, window.innerHeight - vv.height - vv.offsetTop);
+      document.documentElement.style.setProperty("--kb", Math.round(kb) + "px");
+    };
+    vv.addEventListener("resize", update);
+    vv.addEventListener("scroll", update);
+    update();
+    return () => { vv.removeEventListener("resize", update); vv.removeEventListener("scroll", update); };
+  }, []);
 
   return (
     <div className="app">
