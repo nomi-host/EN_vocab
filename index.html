@@ -88,6 +88,16 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .pill .dot{width:7px;height:7px;border-radius:50%;background:var(--hi-green-dark);}
 .avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
 
+/* 홈 상단 게이미피케이션 지수 스트립 — 항목별로 다른 색, 같은 요소(캐릭터)에 속한 칩은 그 캐릭터의
+   악센트 색을 그대로 씀(캐릭터가 곧 색 그룹). 형광펜 5단 톤의 light+xdark 조합 재사용. */
+.gami-row{position:absolute;z-index:4;top:14px;left:14px;right:14px;display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none;}
+.gami-row::-webkit-scrollbar{display:none;}
+.gami-chip{flex:none;display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:800;padding:8px 13px;border-radius:999px;white-space:nowrap;}
+.gami-chip.green{background:var(--hi-green-light);color:var(--hi-green-xdark);}
+.gami-chip.pink{background:var(--hi-pink-light);color:var(--hi-pink-xdark);}
+.gami-chip.yellow{background:var(--hi-yellow-light);color:var(--hi-yellow-xdark);}
+.gami-chip.blue{background:var(--hi-blue-light);color:var(--hi-blue-xdark);}
+
 .scroll{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;}
 .content{padding:8px 20px 28px;display:flex;flex-direction:column;gap:14px;}
 
@@ -1094,6 +1104,16 @@ function Home({ onGoTab, charK, onOpenSettings }) {
     }
     return cells;
   }, []);
+  const badgesEarned = BADGES.filter(b => b.earned).length;
+  const pts = POINTS.get();
+  const gamiRow = (
+    <div className="gami-row">
+      <span className="gami-chip green">연속 {STREAK}일</span>
+      <span className="gami-chip pink">뱃지 {badgesEarned}개</span>
+      <span className="gami-chip blue">보유 {pts}P</span>
+      {chr && <span className={"gami-chip " + chr.accent}>{chr.label} {stage}단계</span>}
+    </div>
+  );
   return (
     <div className="content">
       {!chr ? (
@@ -1104,8 +1124,10 @@ function Home({ onGoTab, charK, onOpenSettings }) {
         </div>
       ) : !CHAR_ART_READY ? (
         /* 디자인 파일 받기 전 임시 스테이지 — 노트 배경만 남기고 캐릭터/뱃지트랙/road/mlines는
-           숨김(로직은 CHAR_ART_READY 상단 주석 참고, 그대로 보존). */
+           숨김(로직은 CHAR_ART_READY 상단 주석 참고, 그대로 보존). 게이미피케이션 칩은 스테이지
+           좌상단에 계속 띄움. */
         <div className="stage ruled-paper" style={{ ...speed, justifyContent: "center" }}>
+          {gamiRow}
           <div className="char-swatch-wrap">
             <div className={"char-swatch hi-" + chr.accent} />
             <div className="char-swatch-lbl">{chr.label} · 준비 중</div>
@@ -1113,6 +1135,7 @@ function Home({ onGoTab, charK, onOpenSettings }) {
         </div>
       ) : (
         <div className="stage ruled-paper" style={speed}>
+          {gamiRow}
           {/* 뱃지: 캐릭터 뒤에 가로로 쭉 — 스와이프해서 넘겨봄. 전체는 보관함의 뱃지 컬렉션. */}
           <div className="badge-track">
             {BADGES.map(b => (

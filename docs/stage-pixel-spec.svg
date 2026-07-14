@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="350" height="620" viewBox="0 0 350 620" font-family="-apple-system,'Apple SD Gothic Neo',sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="660" viewBox="0 0 350 660" font-family="-apple-system,'Apple SD Gothic Neo',sans-serif">
 <text x="8" y="22" font-size="15" font-weight="700" fill="#211C15">홈 히어로 스테이지 — 픽셀 스펙 (기준 뷰포트 390px 폭)</text>
 <rect x="0.0" y="40.0" width="350.0" height="240.0" rx="20" fill="#FAF4E7" stroke="#211C15" stroke-width="1.5"/>
 <line x1="0" y1="66" x2="350" y2="66" stroke="#5A8ABD" stroke-opacity=".4" stroke-width="1"/>
@@ -18,31 +18,40 @@
 <rect x="223.0" y="114.6" width="62" height="62" fill="none" stroke="#E5007A" stroke-width="1.5" stroke-dasharray="4 3" opacity=".55"/>
 <rect x="0.0" y="254.0" width="350.0" height="10.0" fill="none" stroke="#E5007A" stroke-width="1.5" stroke-dasharray="4 3"/><circle cx="12" cy="259" r="9" fill="#E5007A"/><text x="12" y="263" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">4</text>
 <rect x="68.0" y="150.4" width="36.0" height="34.0" fill="none" stroke="#E5007A" stroke-width="1.5" stroke-dasharray="4 3"/><circle cx="66" cy="148.4" r="9" fill="#E5007A"/><text x="66" y="152.4" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<rect x="14.0" y="54.0" width="322.0" height="34.0" fill="none" stroke="#E5007A" stroke-width="1.5" stroke-dasharray="4 3"/><circle cx="14" cy="46" r="9" fill="#E5007A"/><text x="14" y="50" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">6</text>
 <text x="8" y="310" font-size="13" font-weight="700" fill="#211C15">스펙 (px, 390 기준 뷰포트 / 스테이지 좌상단 0,0)</text>
 <circle cx="16" cy="328" r="9" fill="#E5007A"/>
 <text x="16" y="332" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">1</text>
 <text x="34" y="328" font-size="12" font-weight="700" fill="#211C15">캐릭터 아트 캔버스</text>
 <text x="34" y="342" font-size="10.5" fill="#4A3A20">x=105 y=47 w=140 h=140</text>
 <text x="34" y="356" font-size="10" fill="#8C8270">일러스트를 그릴 실제 영역. 정사각형, 캐릭터 발끝까지 이 안에 들어와야 함</text>
-<circle cx="16" cy="382" r="9" fill="#E5007A"/>
-<text x="16" y="386" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">2</text>
-<text x="34" y="382" font-size="12" font-weight="700" fill="#211C15">캐릭터 슬롯(외곽)</text>
-<text x="34" y="396" font-size="10.5" fill="#4A3A20">x=97 y=39 w=156 h=156</text>
-<text x="34" y="410" font-size="10" fill="#8C8270">달리기 bob 애니메이션(상하 ±7px, 회전 ±1.5°) 여유 포함한 컨테이너 — 아트는 1번 안에, 애니메이션 여백은 여기까지</text>
-<circle cx="16" cy="436" r="9" fill="#E5007A"/>
-<text x="16" y="440" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">3</text>
-<text x="34" y="436" font-size="12" font-weight="700" fill="#211C15">뱃지(가로 스크롤)</text>
-<text x="34" y="450" font-size="10.5" fill="#4A3A20">62×62, gap 14, 첫 뱃지 x=147 y=74.6</text>
-<text x="34" y="464" font-size="10" fill="#8C8270">캐릭터 뒤로 가로 스크롤. 카드 우측으로 자연스럽게 잘려 나가며 스와이프 유도</text>
-<circle cx="16" cy="490" r="9" fill="#E5007A"/>
-<text x="16" y="494" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">4</text>
-<text x="34" y="490" font-size="12" font-weight="700" fill="#211C15">도로선(하단)</text>
-<text x="34" y="504" font-size="10.5" fill="#4A3A20">x=0 y=214 w=350 h=10</text>
-<text x="34" y="518" font-size="10" fill="#8C8270">화면 폭 전체, 캐릭터 속도에 따라 좌측으로 스크롤 애니메이션</text>
-<circle cx="16" cy="544" r="9" fill="#E5007A"/>
-<text x="16" y="548" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">5</text>
-<text x="34" y="544" font-size="12" font-weight="700" fill="#211C15">모션 라인(잔상)</text>
-<text x="34" y="558" font-size="10.5" fill="#4A3A20">x=68 y=110.4 w=36 h=34, 막대 3개(28/18/24px, 6px 높이, 8px 간격)</text>
-<text x="34" y="572" font-size="10" fill="#8C8270">캐릭터 뒤쪽에서 whoosh 페이드 애니메이션</text>
-<text x="8" y="608" font-size="10.5" fill="#8C8270">배경: 가로선 26px 간격(파란 40% 불투명), 좌측 여백 세로 두줄 x=24.5/27.5(빨강 55% 불투명) — .ruled-paper 클래스</text>
+<circle cx="16" cy="375" r="9" fill="#E5007A"/>
+<text x="16" y="379" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="34" y="375" font-size="12" font-weight="700" fill="#211C15">캐릭터 슬롯(외곽)</text>
+<text x="34" y="389" font-size="10.5" fill="#4A3A20">x=97 y=39 w=156 h=156</text>
+<text x="34" y="403" font-size="10" fill="#8C8270">달리기 bob 애니메이션(상하 ±7px, 회전 ±1.5°) 여유 포함한 컨테이너 — 아트는 1번</text>
+<text x="34" y="416" font-size="10" fill="#8C8270">안에, 애니메이션 여백은 여기까지</text>
+<circle cx="16" cy="435" r="9" fill="#E5007A"/>
+<text x="16" y="439" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="34" y="435" font-size="12" font-weight="700" fill="#211C15">뱃지(가로 스크롤)</text>
+<text x="34" y="449" font-size="10.5" fill="#4A3A20">62×62, gap 14, 첫 뱃지 x=147 y=74.6</text>
+<text x="34" y="463" font-size="10" fill="#8C8270">캐릭터 뒤로 가로 스크롤. 카드 우측으로 자연스럽게 잘려 나가며 스와이프 유도</text>
+<circle cx="16" cy="482" r="9" fill="#E5007A"/>
+<text x="16" y="486" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">4</text>
+<text x="34" y="482" font-size="12" font-weight="700" fill="#211C15">도로선(하단)</text>
+<text x="34" y="496" font-size="10.5" fill="#4A3A20">x=0 y=214 w=350 h=10</text>
+<text x="34" y="510" font-size="10" fill="#8C8270">화면 폭 전체, 캐릭터 속도에 따라 좌측으로 스크롤 애니메이션</text>
+<circle cx="16" cy="529" r="9" fill="#E5007A"/>
+<text x="16" y="533" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">5</text>
+<text x="34" y="529" font-size="12" font-weight="700" fill="#211C15">모션 라인(잔상)</text>
+<text x="34" y="543" font-size="10.5" fill="#4A3A20">x=68 y=110.4 w=36 h=34, 막대 3개(28/18/24px, 6px 높이, 8px 간격)</text>
+<text x="34" y="557" font-size="10" fill="#8C8270">캐릭터 뒤쪽에서 whoosh 페이드 애니메이션</text>
+<circle cx="16" cy="576" r="9" fill="#E5007A"/>
+<text x="16" y="580" font-size="11" font-weight="700" fill="#fff" text-anchor="middle">6</text>
+<text x="34" y="576" font-size="12" font-weight="700" fill="#211C15">게이미피케이션 칩 스트립</text>
+<text x="34" y="590" font-size="10.5" fill="#4A3A20">x=14 y=14 w=322 h=34 (가로 스크롤, 칩 높이 34px)</text>
+<text x="34" y="604" font-size="10" fill="#8C8270">스테이지 좌상단에 오버레이. 연속학습일(연두)·뱃지수(핑크)·포인트(블루)·캐릭터 성장단계(캐릭터</text>
+<text x="34" y="617" font-size="10" fill="#8C8270">고유색) — 항목별 색 분리, 같은 요소(캐릭터)는 그 캐릭터 악센트 색으로 묶임. 뱃지(3번)와</text>
+<text x="34" y="630" font-size="10" fill="#8C8270">마찬가지로 우측으로 잘려나가며 스크롤 유도</text>
+<text x="8" y="659" font-size="10.5" fill="#8C8270">배경: 가로선 26px 간격(파란 40% 불투명), 좌측 여백 세로 두줄 x=24.5/27.5(빨강 55% 불투명) — .ruled-paper 클래스</text>
 </svg>
