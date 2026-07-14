@@ -77,7 +77,7 @@
   {"word": "behave", "ko": "행동하다", "ex": {"en": "The children behaved well at the party.", "ko": "아이들은 파티에서 얌전히 행동했어요."}},
   {"word": "belief", "ko": "믿음, 신념", "ex": {"en": "It's my belief that hard work pays off.", "ko": "열심히 일하면 보답받는다는 것이 제 믿음이에요."}},
   {"word": "beloved", "ko": "사랑하는", "ex": {"en": "She wrote a letter to her beloved husband.", "ko": "그녀는 사랑하는 남편에게 편지를 썼어요."}},
-  {"word": "beneath", "ko": "~아래에", "ex": {"en": "The cat is hiding beneath the bed.", "ko": "고양이가 침대 아래에 숨어 있어요."}},
+  {"word": "beneath", "ko": "~아래에", "enOverride": "in or to a lower position than something; under", "ex": {"en": "The cat is hiding beneath the bed.", "ko": "고양이가 침대 아래에 숨어 있어요."}},
   {"word": "benefit", "ko": "혜택, 이익", "ex": {"en": "This job has great benefits.", "ko": "이 직업은 훌륭한 혜택이 있어요."}},
   {"word": "bent", "ko": "구부러진, 결심한", "ex": {"en": "The spoon is bent.", "ko": "그 숟가락은 구부러져 있어요."}},
   {"word": "besides", "ko": "게다가, ~외에도", "ex": {"en": "Besides cooking, she also enjoys gardening.", "ko": "그녀는 요리 외에도 정원 가꾸기를 즐겨요."}},

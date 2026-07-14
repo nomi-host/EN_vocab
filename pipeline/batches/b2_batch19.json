@@ -54,7 +54,7 @@
   {"word": "thirdly", "ko": "셋째로", "ex": {"en": "Thirdly, we should consider the cost.", "ko": "셋째로 우리는 비용을 고려해야 해요."}},
   {"word": "thirst", "ko": "갈증, 목마름", "ex": {"en": "He quenched his thirst with water.", "ko": "그는 물로 갈증을 해소했어요."}},
   {"word": "thoroughly", "ko": "철저하게, 완전히", "ex": {"en": "She cleaned the house thoroughly.", "ko": "그녀는 집을 철저하게 청소했어요."}},
-  {"word": "though", "ko": "하지만, 그래도", "ex": {"en": "It's expensive. I'll buy it, though.", "ko": "그것은 비싸요. 그래도 저는 그것을 살 거예요."}},
+  {"word": "though", "ko": "하지만, 그래도", "enOverride": "despite the fact that; however", "ex": {"en": "It's expensive. I'll buy it, though.", "ko": "그것은 비싸요. 그래도 저는 그것을 살 거예요."}},
   {"word": "thoughtful", "ko": "사려 깊은", "ex": {"en": "That was a thoughtful gift.", "ko": "그것은 사려 깊은 선물이었어요."}},
   {"word": "thoughtless", "ko": "생각 없는, 배려 없는", "ex": {"en": "That was a thoughtless comment.", "ko": "그것은 배려 없는 발언이었어요."}},
   {"word": "thread", "ko": "실", "ex": {"en": "She sewed with a needle and thread.", "ko": "그녀는 바늘과 실로 바느질했어요."}},

@@ -276,14 +276,14 @@
    "adjective",
    "noun"
   ],
-  "en": "conspicuously or grossly unconventional or unusual",
+  "en": "a person with an unusual or odd personality",
   "syn": [
-   "bizarre",
-   "freakish",
-   "freaky",
-   "flaky"
+   "eccentric_person",
+   "flake",
+   "oddball",
+   "geek"
   ],
-  "exp": "restaurants of bizarre design--one like a hat, another like a rabbit",
+  "exp": "",
   "cefr": "C1"
  },
  {
@@ -3327,13 +3327,13 @@
    "verb",
    "noun"
   ],
-  "en": "exchange or give (something) in exchange for",
+  "en": "an equal exchange",
   "syn": [
-   "trade",
+   "barter",
    "swop",
-   "switch"
+   "trade"
   ],
-  "exp": "",
+  "exp": "we had no money so we had to live by barter",
   "cefr": "C1"
  },
  {
@@ -4908,11 +4908,13 @@
    "verb",
    "noun"
   ],
-  "en": "open up an area or prepare a way",
+  "en": "someone who helps to open up a new line of research or technology or art",
   "syn": [
-   "open_up"
+   "innovator",
+   "trailblazer",
+   "groundbreaker"
   ],
-  "exp": "She pioneered a graduate program for women students",
+  "exp": "",
   "cefr": "C1"
  },
  {
@@ -5277,14 +5279,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "despite anything to the contrary (usually preceding a concession)",
-  "syn": [
-   "however",
-   "nevertheless",
-   "withal",
-   "still"
-  ],
-  "exp": "although I'm a little afraid, however I'd like to try it",
+  "en": "",
+  "syn": [],
+  "exp": "",
   "cefr": "C1"
  },
  {
@@ -6144,9 +6141,9 @@
    "noun",
    "verb"
   ],
-  "en": "trim carefully and neatly",
+  "en": "professional care for the hands and fingernails",
   "syn": [],
-  "exp": "manicure fingernails",
+  "exp": "",
   "cefr": "C1"
  },
  {
@@ -6165,13 +6162,9 @@
    "adjective",
    "noun"
   ],
-  "en": "cranial nerve that supplies facial muscles",
-  "syn": [
-   "facial_nerve",
-   "nervus_facialis",
-   "seventh_cranial_nerve"
-  ],
-  "exp": "",
+  "en": "of or concerning the face",
+  "syn": [],
+  "exp": "a facial massage",
   "cefr": "C1"
  },
  {
@@ -6480,11 +6473,14 @@
    "verb",
    "adjective"
   ],
-  "en": "characterized by dignity and propriety",
+  "en": "cause to be calm or quiet as by administering a sedative to",
   "syn": [
-   "staid"
+   "calm",
+   "tranquilize",
+   "tranquillize",
+   "tranquillise"
   ],
-  "exp": "",
+  "exp": "The patient must be sedated before the operation",
   "cefr": "C1"
  },
  {
@@ -6691,12 +6687,13 @@
    "verb",
    "noun"
   ],
-  "en": "strike against forcefully",
+  "en": "(baseball) a ballplayer who is batting",
   "syn": [
-   "buffet",
-   "knock_about"
+   "hitter",
+   "slugger",
+   "batsman"
   ],
-  "exp": "Winds buffeted the tent",
+  "exp": "",
   "cefr": "C1"
  },
  {
@@ -7418,11 +7415,9 @@
    "adjective",
    "noun"
   ],
-  "en": "not close together in time",
-  "syn": [
-   "isolated"
-  ],
-  "exp": "isolated instances of rebellion",
+  "en": "an animal that has strayed (especially a domestic animal)",
+  "syn": [],
+  "exp": "",
   "cefr": "C1"
  },
  {
@@ -7675,14 +7670,9 @@
   "pos": [
    "preposition"
   ],
-  "en": "the fleshy part of the human body that you sit on",
-  "syn": [
-   "buttocks",
-   "nates",
-   "arse",
-   "butt"
-  ],
-  "exp": "he deserves a good kick in the butt",
+  "en": "",
+  "syn": [],
+  "exp": "",
   "cefr": "C1"
  },
  {
@@ -8473,13 +8463,9 @@
    "adjective",
    "noun"
   ],
-  "en": "a mood that expresses an intention to influence the listener's behavior",
-  "syn": [
-   "imperative_mood",
-   "jussive_mood",
-   "imperative_form"
-  ],
-  "exp": "",
+  "en": "requiring attention or action",
+  "syn": [],
+  "exp": "as nuclear weapons proliferate, preventing war becomes imperative",
   "cefr": "C1"
  },
  {
@@ -10515,10 +10501,8 @@
   "pos": [
    "preposition"
   ],
-  "en": "on a ship, train, plane or other vehicle",
-  "syn": [
-   "on_board"
-  ],
+  "en": "",
+  "syn": [],
   "exp": "",
   "cefr": "C1"
  },
@@ -10528,11 +10512,9 @@
    "verb",
    "noun"
   ],
-  "en": "make a hole, especially with a pointed power or hand tool",
-  "syn": [
-   "bore"
-  ],
-  "exp": "don't drill here, there's a gas pipe",
+  "en": "a tool with a sharp point and cutting edges for making holes in hard materials (usually rotating rapidly or by repeated blows)",
+  "syn": [],
+  "exp": "",
   "cefr": "C1"
  },
  {

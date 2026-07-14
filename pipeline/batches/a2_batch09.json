@@ -124,7 +124,7 @@
   {"word": "succeed", "ko": "성공하다", "ex": {"en": "She worked hard to succeed.", "ko": "그녀는 성공하기 위해 열심히 노력했어요."}},
   {"word": "success", "ko": "성공", "ex": {"en": "The project was a great success.", "ko": "그 프로젝트는 큰 성공이었어요."}},
   {"word": "successfully", "ko": "성공적으로", "ex": {"en": "She successfully finished the marathon.", "ko": "그녀는 마라톤을 성공적으로 완주했어요."}},
-  {"word": "such", "ko": "그러한, 그렇게", "ex": {"en": "I've never seen such a big dog.", "ko": "저는 그렇게 큰 개를 본 적이 없어요."}},
+  {"word": "such", "ko": "그러한, 그렇게", "enOverride": "of the kind or degree already described or implied", "ex": {"en": "I've never seen such a big dog.", "ko": "저는 그렇게 큰 개를 본 적이 없어요."}},
   {"word": "sudden", "ko": "갑작스러운", "ex": {"en": "There was a sudden change in the weather.", "ko": "날씨에 갑작스러운 변화가 있었어요."}},
   {"word": "suggest", "ko": "제안하다", "ex": {"en": "I suggest we leave early.", "ko": "저는 우리가 일찍 떠나는 것을 제안해요."}},
   {"word": "suit", "ko": "정장, 어울리다", "ex": {"en": "He wore a black suit.", "ko": "그는 검은색 정장을 입었어요."}},

@@ -33,7 +33,7 @@
   {"word": "wisdom", "ko": "지혜", "ex": {"en": "My grandmother's wisdom always helps me.", "ko": "제 할머니의 지혜는 항상 저에게 도움이 돼요."}},
   {"word": "wise", "ko": "현명한", "ex": {"en": "He gave me wise advice.", "ko": "그는 저에게 현명한 조언을 해줬어요."}},
   {"word": "wish", "ko": "바라다, 소원하다", "ex": {"en": "I wish I could travel more.", "ko": "저는 여행을 더 많이 할 수 있으면 좋겠어요."}},
-  {"word": "within", "ko": "~이내에", "ex": {"en": "Please reply within three days.", "ko": "3일 이내에 답장해 주세요."}},
+  {"word": "within", "ko": "~이내에", "enOverride": "inside the limits of a place, time, or amount", "ex": {"en": "Please reply within three days.", "ko": "3일 이내에 답장해 주세요."}},
   {"word": "without", "ko": "~없이", "enOverride": "not having or accompanied by", "ex": {"en": "I can't live without my phone.", "ko": "저는 휴대폰 없이 살 수 없어요."}},
   {"word": "wonder", "ko": "궁금해하다", "ex": {"en": "I wonder what she is doing now.", "ko": "저는 그녀가 지금 뭘 하고 있는지 궁금해요."}},
   {"word": "wood", "ko": "나무, 목재", "ex": {"en": "This table is made of wood.", "ko": "이 테이블은 나무로 만들어졌어요."}},

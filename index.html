@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.16.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.16.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.16.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.17.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.17.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.17.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.16.0"></script>
+<script src="words.js?v=0.17.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.13.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.13.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.17.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.17.0") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.13.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.13.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.17.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.17.0") format("woff");
 }
 :root{
   --bg:#F5EEDD;            /* 옅은 노트 베이지 */
@@ -274,10 +274,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .wrow .w{font-size:16px;font-weight:700;}
 .wrow .k{font-size:13px;color:var(--muted);margin-top:1px;}
 .wrow .meta{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex:none;}
-/* 뱃지 — 형광펜 느낌(라운드 없는 납작한 색칠 조각). 레벨은 컬러위계(연두<옐로우<핑크<블루)를 그대로 반영.
+/* 뱃지 — CEFR 레벨(.tag.lv)만 형광펜 느낌(라운드 없는 납작한 색칠 조각)으로 구분, 나머지는 알약형
+   통일(2026-07-14). 레벨은 컬러위계(연두<옐로우<핑크<블루)를 그대로 반영.
    예전엔 .tag.lv(specificity 0,2,0)가 .tier-*(0,1,0)를 눌러 위계색이 안 먹었음 → .tag.tier-*를 .tag.lv 뒤에 정의해 복구. */
-.tag{font-size:10px;font-weight:800;padding:3px 7px;border-radius:2px;background:var(--fill);color:var(--ink-2);letter-spacing:.2px;}
-.tag.lv{background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
+.tag{font-size:10px;font-weight:800;padding:3px 7px;border-radius:999px;background:var(--fill);color:var(--ink-2);letter-spacing:.2px;}
+.tag.lv{border-radius:2px;background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
 .tag.tier-green{background:var(--hi-green);color:var(--hi-green-xdark);}
 .tag.tier-yellow{background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
 .tag.tier-pink{background:var(--hi-pink);color:var(--hi-pink-xdark);}
@@ -563,7 +564,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.16.0";
+const APP_VERSION = "v0.17.0";
 const APP_BUILD = "2026-07-14"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -1822,7 +1823,7 @@ function WordRow({ w, onOpen, pickMode, picked, onTogglePick }) {
       </div>
       <div className="meta">
         <span className={"tag lv tier-" + cefrHl(w.cefr)}>{w.cefr}</span>
-        {multi && <span className="tag sense">뜻 {w.senses.length}</span>}
+        {multi && <span className="tag sense">뜻 {w.senses.length}개</span>}
         {w.mine && <span className="tag mine">내 단어</span>}
         {st?.status === "done" && <span className="tag done">완료</span>}
         {st?.status === "learning" && <span className="tag learning">박스 {st.box} · {st.dueIn === 0 ? "오늘" : st.dueIn + "일 뒤"}</span>}

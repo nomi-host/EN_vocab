@@ -44,7 +44,7 @@
   {"word": "threatening", "ko": "위협적인", "ex": {"en": "The sky looked threatening.", "ko": "하늘이 위협적으로 보였어요."}},
   {"word": "thriller", "ko": "스릴러", "ex": {"en": "She loves reading thrillers.", "ko": "그녀는 스릴러 읽는 것을 좋아해요."}},
   {"word": "through", "ko": "완전히, 끝까지", "ex": {"en": "She read the book through.", "ko": "그녀는 책을 끝까지 읽었어요."}},
-  {"word": "throughout", "ko": "~내내, 도처에", "ex": {"en": "It rained throughout the trip.", "ko": "여행 내내 비가 왔어요."}},
+  {"word": "throughout", "ko": "~내내, 도처에", "enOverride": "all the way through, from beginning to end", "ex": {"en": "It rained throughout the trip.", "ko": "여행 내내 비가 왔어요."}},
   {"word": "thumb", "ko": "엄지손가락", "ex": {"en": "He hurt his thumb while working.", "ko": "그는 일하다가 엄지손가락을 다쳤어요."}},
   {"word": "thump", "ko": "쿵 소리를 내다", "ex": {"en": "Her heart thumped with excitement.", "ko": "그녀의 심장이 흥분으로 쿵쾅거렸어요."}},
   {"word": "thunder", "ko": "천둥", "ex": {"en": "We heard thunder in the distance.", "ko": "우리는 멀리서 천둥소리를 들었어요."}},

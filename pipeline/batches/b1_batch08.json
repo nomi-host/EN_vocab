@@ -23,7 +23,7 @@
   {"word": "goalkeeper", "ko": "골키퍼", "ex": {"en": "He is the goalkeeper of our team.", "ko": "그는 우리 팀의 골키퍼예요."}},
   {"word": "goddess", "ko": "여신", "ex": {"en": "She is like a goddess in the movie.", "ko": "그녀는 영화에서 여신 같아요."}},
   {"word": "golfer", "ko": "골프 선수", "ex": {"en": "He is a professional golfer.", "ko": "그는 프로 골프 선수예요."}},
-  {"word": "goodness", "ko": "선함, 맙소사 (감탄사)", "ex": {"en": "Goodness, that was a close call!", "ko": "맙소사, 아슬아슬했네요!"}},
+  {"word": "goodness", "ko": "선함, 맙소사 (감탄사)", "enOverride": "the quality of being good, kind, or virtuous", "ex": {"en": "Goodness, that was a close call!", "ko": "맙소사, 아슬아슬했네요!"}},
   {"word": "goods", "ko": "상품, 물품", "enOverride": "things that are bought, sold, or traded", "ex": {"en": "The store sells many kinds of goods.", "ko": "그 가게는 많은 종류의 상품을 팔아요."}},
   {"word": "gorgeous", "ko": "아름다운, 멋진", "ex": {"en": "She looked gorgeous in that dress.", "ko": "그녀는 그 드레스를 입으니 아름다워 보였어요."}},
   {"word": "gorilla", "ko": "고릴라", "ex": {"en": "The gorilla is the largest primate.", "ko": "고릴라는 가장 큰 영장류예요."}},

@@ -44,7 +44,7 @@
   {"word": "underestimate", "ko": "과소평가하다", "ex": {"en": "Don't underestimate her abilities.", "ko": "그녀의 능력을 과소평가하지 마세요."}},
   {"word": "undergraduate", "ko": "학부생", "ex": {"en": "She is an undergraduate at the university.", "ko": "그녀는 그 대학교의 학부생이에요."}},
   {"word": "underground", "ko": "지하의, 비밀의", "ex": {"en": "They joined an underground movement.", "ko": "그들은 비밀 운동에 합류했어요."}},
-  {"word": "underneath", "ko": "아래에", "ex": {"en": "The key is underneath the mat.", "ko": "열쇠는 매트 아래에 있어요."}},
+  {"word": "underneath", "ko": "아래에", "enOverride": "under or below something", "ex": {"en": "The key is underneath the mat.", "ko": "열쇠는 매트 아래에 있어요."}},
   {"word": "undersea", "ko": "해저의", "ex": {"en": "They filmed an undersea documentary.", "ko": "그들은 해저 다큐멘터리를 촬영했어요."}},
   {"word": "understandable", "ko": "이해할 수 있는", "ex": {"en": "Her reaction was understandable.", "ko": "그녀의 반응은 이해할 수 있었어요."}},
   {"word": "understanding", "ko": "이해심 있는, 이해", "ex": {"en": "She was very understanding about the mistake.", "ko": "그녀는 그 실수에 대해 아주 이해심이 있었어요."}},
