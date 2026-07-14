@@ -63,8 +63,8 @@
 </head>
 <body>
 
-<h1>EN Vocab (가칭 NoEnglish) — 와이어프레임 v3</h1>
-<div class="meta">2026-07-11 · 기획서(docs/PLAN.md)와 세트 · 하단 탭 5개(홈 중앙): 학습 / 사전 / 홈 / 회화 / 보관함 · 루틴: 단어카드-듣기-회화 (통계&설정은 홈 프로필로 진입) · 캐릭터 자리는 회색 슬롯으로 표기(제작: 사용자)</div>
+<h1>EN Vocab (가칭 NoEnglish) — 와이어프레임 v4</h1>
+<div class="meta">2026-07-14 · 기획서(docs/PLAN.md)와 세트 · 하단 탭 5개(홈 중앙): 학습 / 사전 / 홈 / 회화 / 보관함 · 루틴: 단어카드-듣기-회화 (통계&설정은 홈 프로필로 진입) · 캐릭터 자리는 회색 슬롯으로 표기(제작: 사용자) · v4: 레벨테스트 진행 화면(19)·어휘력+문장구사력 분포 결과(20) 신규, 홈 화면(1) 이원 백분위 반영</div>
 
 <div class="grid">
 
@@ -79,9 +79,12 @@
         <span style="font-size:11px">팻말: "OH... ENGLISH?"</span>
       </div>
       <div class="row">
-        <div class="box center"><b>B1</b><br><span style="font-size:9px">CEFR</span></div>
+        <div class="box center"><b>B1+</b><br><span style="font-size:9px">CEFR (어휘)</span></div>
         <div class="box center"><b>4,200</b><br><span style="font-size:9px">추정 어휘량</span></div>
-        <div class="box center"><b>상위 18%</b><br><span style="font-size:9px">백분위</span></div>
+      </div>
+      <div class="row">
+        <div class="box center"><b>상위 18%</b><br><span style="font-size:9px">어휘력 (추정)</span></div>
+        <div class="box center"><b>상위 34%</b><br><span style="font-size:9px">문장구사력 (추정)</span></div>
       </div>
       <div class="sec">오늘의 루틴</div>
       <div class="box"><b>1. 단어카드 20개</b> — 완료 ✓<br><span style="font-size:10px">신규 12 · 복습 8</span></div>
@@ -95,7 +98,7 @@
     </div>
     <div class="tabbar"><div>학습</div><div>사전</div><div class="on">홈</div><div>회화</div><div>보관함</div></div>
   </div>
-  <div class="note">루틴형 홈(단어카드-듣기-회화 3단계). 내 레벨(CEFR·어휘량·백분위)을 캐릭터 아래 상시 노출 — 탭하면 레벨 상세(화면 6). 통계&설정은 프로필, 단어 추가·목록은 사전 탭으로. 루틴 순서·분량은 설정에서 조정.</div>
+  <div class="note">루틴형 홈(단어카드-듣기-회화 3단계). 내 레벨을 캐릭터 아래 상시 노출 — 어휘력·문장구사력은 완전히 분리된 두 축이라 각각 백분위를 따로 표시(2026-07-14 갱신). 탭하면 레벨 상세(화면 20, 분포 포함). 통계&설정은 프로필, 단어 추가·목록은 사전 탭으로. 루틴 순서·분량은 설정에서 조정.</div>
 </div>
 
 <!-- 2. 학습 카드 (입력 전) -->
@@ -221,7 +224,7 @@
       <div class="row"><div class="btn ghost">다시 측정</div><div class="btn">부족한 레벨 학습하기</div></div>
     </div>
   </div>
-  <div class="note">적응형 체크(가짜 단어 섞어 허수 방지) + SRS 정답률로 지속 보정. 상위%는 테스트 분포 기반 근사치로 동기부여 목적임을 명시.</div>
+  <div class="note">적응형 체크(가짜 단어 섞어 허수 방지) + SRS 정답률로 지속 보정. 상위%는 테스트 분포 기반 근사치로 동기부여 목적임을 명시. 어휘력만의 요약 화면 — 문장구사력과 함께 보는 분포 상세는 화면 20 참고.</div>
 </div>
 
 <!-- 7. 퀴즈 -->
@@ -515,6 +518,65 @@
     <div class="tabbar"><div>학습</div><div class="on">사전</div><div>홈</div><div>회화</div><div>보관함</div></div>
   </div>
   <div class="note">"없는 단어 추가"의 진입점 + 전체/학습 중/완료/내 단어 목록을 한 탭에서 해결. 각 행에 SRS 상태(박스 단계·다음 복습일) 표시. 행 탭 → 단어 상세 팝업(화면 4) → 타고타고. 회화 말풍선·작문에서 단어 탭해도 같은 흐름.</div>
+</div>
+
+<!-- 19. 레벨 테스트 — 진행 -->
+<div class="cell">
+  <h2>19. 레벨 테스트 — 진행 (신규, 2026-07-14)</h2>
+  <div class="phone">
+    <div class="bar">&lt; 레벨 테스트<span class="sp"></span><span class="chip dark">Part A 어휘</span><span class="chip">Part B 구사력</span></div>
+    <div class="scroll">
+      <div class="box" style="font-size:11px">문항 14 · 난이도가 응답에 따라 자동 조정됩니다</div>
+      <div class="box center" style="background:#fff; padding:16px;">
+        <span style="font-size:11px">이 단어를 아세요?</span><br><br>
+        <b style="font-size:22px">ubiquitous</b>
+      </div>
+      <div class="row">
+        <div class="btn ghost">모름</div><div class="btn">뜻 압니다</div>
+      </div>
+      <div class="box" style="font-size:10px">"뜻 압니다"를 고르면 이어서 <b>산출 문항</b>(한국어 뜻을 보고 이 단어를 직접 말하기)이 나와 인지/산출을 함께 측정합니다.<br><br>가짜 단어("flenidor" 등)가 간간이 섞여 허수 응답을 걸러냅니다.</div>
+    </div>
+  </div>
+  <div class="note">Part A(어휘) 적응형 체크의 대표 화면 — 정답/오답에 따라 다음 문항 난이도가 계단식으로 실시간 조정. 상단 탭으로 Part B(문장구사력: 문장 따라 말하기·한→영 순간영작·어순 배열 스피드 3종, 기획서 4.3 Part B 참조)로 전환. 온보딩 시 1회, 어휘 파트만 먼저 하고 구사력은 건너뛰기 허용.</div>
+</div>
+
+<!-- 20. 레벨 테스트 결과 — 어휘력·문장구사력 분포 -->
+<div class="cell">
+  <h2>20. 레벨 테스트 결과 — 어휘력·문장구사력 분포 (신규, 2026-07-14)</h2>
+  <div class="phone">
+    <div class="bar">&lt; 레벨 테스트 결과</div>
+    <div class="scroll">
+      <div class="box" style="font-size:10px">아래 분포는 <b>공개 통계(토익 등) 참고 추정치</b>입니다. 실제 전국 표본이 아니라 동기부여용 근사값이에요.</div>
+
+      <div class="sec">어휘력</div>
+      <div class="box center"><span class="chip dark">B1+</span> <span class="chip">4,200 단어</span> <span class="chip">상위 18% (추정)</span></div>
+      <div class="box" style="background:#fff; padding:10px 8px 4px;">
+        <svg width="100%" height="70" viewBox="0 0 260 70">
+          <path d="M4,62 C60,62 80,8 130,8 C180,8 200,62 256,62" fill="none" stroke="var(--hi)" stroke-width="2"/>
+          <line x1="176" y1="6" x2="176" y2="64" stroke="var(--ink)" stroke-width="2" stroke-dasharray="3,3"/>
+          <circle cx="176" cy="20" r="4" fill="var(--ink)"/>
+          <text x="176" y="0" font-size="9" fill="var(--ink)" text-anchor="middle">나</text>
+        </svg>
+        <div class="row" style="font-size:9px; color:var(--sub)"><span>초급</span><span class="center">평균</span><span style="text-align:right">고급</span></div>
+      </div>
+
+      <div class="sec">문장구사력</div>
+      <div class="box center"><span class="chip dark">A2</span> <span class="chip">상위 34% (추정)</span></div>
+      <div class="box" style="background:#fff; padding:10px 8px 4px;">
+        <svg width="100%" height="70" viewBox="0 0 260 70">
+          <path d="M4,62 C60,62 80,8 130,8 C180,8 200,62 256,62" fill="none" stroke="var(--hi)" stroke-width="2"/>
+          <line x1="112" y1="6" x2="112" y2="64" stroke="var(--ink)" stroke-width="2" stroke-dasharray="3,3"/>
+          <circle cx="112" cy="15" r="4" fill="var(--ink)"/>
+          <text x="112" y="0" font-size="9" fill="var(--ink)" text-anchor="middle">나</text>
+        </svg>
+        <div class="row" style="font-size:9px; color:var(--sub)"><span>초급</span><span class="center">평균</span><span style="text-align:right">고급</span></div>
+      </div>
+
+      <div class="box">어휘는 <b>B1+</b>인데 문장 구사는 <b>A2</b> — 전형적인 "수능형" 격차입니다. 구사력 드릴 비중이 자동으로 늘어납니다.</div>
+      <div class="row"><div class="btn ghost">다시 측정</div><div class="btn">구사력 드릴 시작하기</div></div>
+    </div>
+  </div>
+  <div class="note">어휘력·문장구사력을 완전히 분리된 두 축으로, 각각 12단계(A1~C2+) CEFR 밴드 + 상위% 표시(2026-07-13 확정 스케일 — 기획서 4.3 참고). 분포 곡선은 공개 통계(토익 점수 분포 등) 참고한 추정 정규분포 — "추정치" 라벨을 항상 함께 노출(실제 전국 표본 아님). 실사용자 데이터가 쌓이면 자체 분포로 전환 가능. 화면 6(어휘 단독 요약)의 상세 확장판.</div>
 </div>
 
 </div>
