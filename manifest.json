@@ -4,8 +4,8 @@
   "description": "회화가 안 되는 사람을 위한 영어 학습앱",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f5f6f8",
-  "theme_color": "#f5f6f8",
+  "background_color": "#F5EEDD",
+  "theme_color": "#F5EEDD",
   "orientation": "portrait",
   "icons": [
     { "src": "img/icon-192.png", "sizes": "192x192", "type": "image/png" },
