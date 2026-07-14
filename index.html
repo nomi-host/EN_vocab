@@ -11,12 +11,12 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.11.11">
+<link rel="manifest" href="manifest.json?v=0.11.12">
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.11.11"></script>
-<script src="img/rat_run.js?v=0.11.11"></script>
+<script src="words.js?v=0.11.12"></script>
+<script src="img/rat_run.js?v=0.11.12"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 토스/iOS 톤 + 팝 코럴 포인트)
@@ -343,6 +343,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .learnmenu .step.soon{opacity:.5;}
 
 /* 레벨 테스트 */
+/* 문항 카드 — know↔meaning 전환 시 크기·폰트가 흔들리지 않게 고정(min-height + 동일 타이포) */
+.lt-qcard{align-items:center;text-align:center;justify-content:center;min-height:150px;}
+.lt-word{font-size:24px;font-weight:800;letter-spacing:-0.3px;}
 .lt-choices{display:flex;flex-direction:column;gap:8px;margin-top:auto;}
 .lt-choice{padding:14px;border-radius:14px;font-weight:700;font-size:15px;background:var(--surface);border:1px solid var(--line);color:var(--ink);box-shadow:var(--shadow);text-align:center;}
 .lt-choice:active{background:var(--fill);}
@@ -352,6 +355,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;}
 @keyframes lt-shake{0%,100%{transform:translateX(0);}20%{transform:translateX(-4px);}40%{transform:translateX(4px);}60%{transform:translateX(-3px);}80%{transform:translateX(3px);}}
 .lt-chips .lchip.wrong{animation:lt-shake .35s ease;background:#fdeceb;color:#d64545;border-color:#d64545;}
+/* 탭한 칩은 자리를 유지한 채 흐려지기만 — 남은 칩이 당겨지면 다음 탭이 빗나간다 */
+.lt-chips .lchip.picked{opacity:.22;pointer-events:none;}
 .lt-curve-lbl{display:flex;justify-content:space-between;font-size:9px;color:var(--muted);padding:0 4px;}
 .lt-note{font-size:12px;color:var(--ink-2);background:var(--bg);border-radius:10px;padding:10px 12px;line-height:1.5;}
 .lt-note b{color:var(--accent-deep);font-weight:800;}
@@ -377,7 +382,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.11.11";
+const APP_VERSION = "v0.11.12";
 const APP_BUILD = "2026-07-14"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -683,6 +688,8 @@ function ltAnchor(w) {
   if (w.senses && w.senses.length) return { ko: w.senses[0].ko, cue: w.senses[0].cue || null };
   return { ko: w.ko, cue: null };
 }
+/* 대표 품사 — 뜻 4지선다의 오답을 같은 품사로 맞추는 데 사용(품사가 다르면 소거로 너무 쉬움) */
+function ltPos(w) { return (w.pos && w.pos[0]) || null; }
 
 /* 밴드별 단어 풀 — 단의어 우선(뜻 제시가 모호하지 않음), 부족하면 다의어(앵커 사용) */
 function ltBandPool(band6) {
@@ -734,6 +741,25 @@ function createLevelTestA() {
   const fakeSlots = new Set();
   while (fakeSlots.size < LT_FAKE_N) fakeSlots.add(1 + Math.floor(Math.random() * (LT_REAL_N + LT_FAKE_N - 2)));
 
+  /* 한 단계 뒤로가기(실수 응답 복구) — 매 응답 직전 스냅샷을 쌓아두고 통째로 복원.
+     used에 새로 추가된 단어는 되돌리지 않음(풀이 커서 무해, 같은 단어 재출제 방지에 오히려 유리). */
+  const history = [];
+  function snapshot() {
+    history.push({
+      cur, seq, band, realDone, fakeDone, produceDone, fakeYes, lastOkBand,
+      trail: trail.slice(), produceLog: produceLog.slice(),
+      bandStat: JSON.parse(JSON.stringify(bandStat)),
+    });
+  }
+  function restore(s) {
+    cur = s.cur; seq = s.seq; band = s.band; realDone = s.realDone; fakeDone = s.fakeDone;
+    produceDone = s.produceDone; fakeYes = s.fakeYes; lastOkBand = s.lastOkBand;
+    trail.length = 0; Array.prototype.push.apply(trail, s.trail);
+    produceLog.length = 0; Array.prototype.push.apply(produceLog, s.produceLog);
+    Object.keys(bandStat).forEach(k => delete bandStat[k]);
+    Object.assign(bandStat, s.bandStat);
+  }
+
   function gradeReal(ok) {
     bandStat[band] = bandStat[band] || { n: 0, ok: 0 };
     bandStat[band].n++;
@@ -747,7 +773,11 @@ function createLevelTestA() {
       // 뜻 확인은 같은 문항의 2단계 — 진행 카운트(seq)를 늘리지 않는다
       const w = pendingMeaning;
       const myKo = ltAnchor(w).ko;
-      const wrongPool = ltBandPool(CEFR_LEVELS.indexOf(w.cefr)).filter(x => x.word !== w.word && ltAnchor(x).ko !== myKo);
+      const myPos = ltPos(w);
+      // 오답도 같은 품사로(품사가 섞이면 소거법으로 너무 쉬워짐) — 같은 품사 풀이 부족하면 밴드 전체로 폴백
+      const basePool = ltBandPool(CEFR_LEVELS.indexOf(w.cefr)).filter(x => x.word !== w.word && ltAnchor(x).ko !== myKo);
+      const posPool = myPos ? basePool.filter(x => ltPos(x) === myPos) : [];
+      const wrongPool = posPool.length >= 8 ? posPool : basePool;
       const wrongs = ltPick(wrongPool, 3, new Set([w.word]));
       const choices = wrongs.map(x => ltAnchor(x).ko);
       const answerIdx = Math.floor(Math.random() * (choices.length + 1));
@@ -781,19 +811,24 @@ function createLevelTestA() {
   return {
     current: () => cur,
     progress: () => ({ done: Math.min(seq, totalN), total: totalN }),
+    canUndo: () => history.length > 0,
+    undo() { if (history.length) restore(history.pop()); },
     answerKnow(knows) {
       if (!cur || cur.kind !== "know") return;
+      snapshot();
       if (cur._fake) { fakeDone++; if (knows) fakeYes++; nextItem(); return; }
       if (!knows) { gradeReal(false); nextItem(); return; }
       pendingMeaning = cur._w; nextItem(); pendingMeaning = null;
     },
     answerMeaning(i) {
       if (!cur || cur.kind !== "meaning") return;
+      snapshot();
       gradeReal(i === cur._answerIdx);
       nextItem();
     },
     answerProduce(text) {
       if (!cur || cur.kind !== "produce") return;
+      snapshot();
       const ok = (text || "").trim().toLowerCase() === cur._w.word.toLowerCase();
       produceLog.push({ ok });
       produceDone++;
@@ -835,28 +870,61 @@ function createLevelTestA() {
 
 /* ---- Part B. 문장구사력 — v1은 어순 배열 스피드만(부분 측정) ----
    따라 말하기(EI)·순간영작은 STT/LLM 프록시(미구현) 필요 → 프록시 도입 후 확장.
-   출제: 6~9단어 예문 5개(A2~B2 혼합), 청크 셔플 → 순서대로 탭. 채점: 문장별
-   완성 여부·오탭 수·단어당 소요 시간 → 12밴드 + 상위%(추정). */
+   출제도 Part A처럼 적응형: A2에서 시작해 오탭 1개 이하로 완성하면 한 단계 위 문장,
+   아니면 한 단계 아래 문장(고정 [A2,B1,B1,B2,B2] 순서였던 것을 2026-07-14 개정 —
+   "맞으면 더 어려운 문제"가 체감되도록). 총 5문항. 채점: 밴드 궤적 + 단어당 속도 보정.
+
+   UI 계약: const b = createLevelTestB();
+   b.current() → null(종료) 또는 {band6, en, ko, words, shuffled}
+   b.answer({ok, errors, seconds}) → 채점 기록 + 다음 문항으로(밴드 조정)
+   b.progress() → {done, total} / b.report() → 결과 */
+const LT_B_N = 5;
 function createLevelTestB() {
   const used = new Set();
-  const items = [];
-  [1, 2, 2, 3, 3].forEach(b => {
-    const pool = SEED.filter(w => w.cefr === CEFR_LEVELS[b] && w.ex && w.ex[0] && !used.has(w.word))
-      .filter(w => { const n = w.ex[0].en.trim().split(/\s+/).length; return n >= 6 && n <= 9; });
-    const w = pool[Math.floor(Math.random() * pool.length)];
-    if (w) { used.add(w.word); items.push({ band6: b, en: w.ex[0].en, ko: w.ex[0].ko }); }
-  });
-  items.forEach(it => {
-    it.words = it.en.replace(/[.!?]$/, "").split(/\s+/);
-    it.shuffled = it.words.slice();
-    for (let i = it.shuffled.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [it.shuffled[i], it.shuffled[j]] = [it.shuffled[j], it.shuffled[i]];
+  let band = 1; // A2 시작
+  const logs = [];
+  let cur = null;
+
+  function makeItem(w, b) {
+    const en = w.ex[0].en;
+    const words = en.replace(/[.!?]$/, "").split(/\s+/);
+    const shuffled = words.slice();
+    let guard = 0;
+    do {
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+    } while (shuffled.join(" ") === words.join(" ") && guard++ < 5); // 셔플 결과가 정답 순서면 다시
+    return { band6: b, en, ko: w.ex[0].ko, words, shuffled };
+  }
+  function pickSentence() {
+    // 현재 밴드 우선, 풀이 비면 인접 밴드로 폴백
+    for (const b of [band, band - 1, band + 1, band - 2, band + 2]) {
+      if (b < 0 || b >= CEFR_LEVELS.length) continue;
+      const pool = SEED.filter(w => w.cefr === CEFR_LEVELS[b] && w.ex && w.ex[0] && !used.has(w.word))
+        .filter(w => { const n = w.ex[0].en.trim().split(/\s+/).length; return n >= 6 && n <= 9; });
+      if (pool.length) {
+        const w = pool[Math.floor(Math.random() * pool.length)];
+        used.add(w.word);
+        return makeItem(w, b);
+      }
     }
-  });
+    return null;
+  }
+  cur = pickSentence();
+
   return {
-    items, // UI가 순회하며 {ok, errors, seconds}를 채워 report()에 전달
-    report(logs) { // logs: [{band6, ok, errors, seconds, nWords}]
+    current: () => cur,
+    progress: () => ({ done: logs.length, total: LT_B_N }),
+    answer(log) { // {ok, errors, seconds}
+      if (!cur) return;
+      logs.push({ band6: cur.band6, ok: !!log.ok, errors: log.errors || 0, seconds: log.seconds || 0, nWords: cur.words.length });
+      // 적응: 오탭 1개 이하로 완성 → 한 단계 위, 아니면 한 단계 아래
+      band = Math.max(0, Math.min(CEFR_LEVELS.length - 1, band + (log.ok && (log.errors || 0) <= 1 ? 1 : -1)));
+      cur = logs.length >= LT_B_N ? null : pickSentence();
+    },
+    report() {
       const okLogs = logs.filter(l => l.ok && l.errors <= 1);
       let band6f;
       if (!okLogs.length) band6f = 0.5;
@@ -1242,6 +1310,10 @@ function Dict({ onOpen }) {
   const query = q.trim().toLowerCase();
   const hits = query ? words.filter(w => w.word.toLowerCase().startsWith(query)).sort((a, b) => a.word.localeCompare(b.word)) : [];
   const noHit = query && hits.length === 0;
+  // 표제어는 원형만 수록되므로 children/ran 같은 굴절형 검색은 표제어로 역추적해 안내.
+  // prefix 일치(ran→range 등)가 있어도, 검색어 자체가 표제어가 아니고 변화형이면 최상단에 안내
+  const lemma = query && !wordOf(query) ? dictLookup(query) : null;
+  const lemmaHit = lemma && lemma.word !== query ? lemma : null;
 
   const addWord = name => {
     const key = name.trim().toLowerCase();
@@ -1278,7 +1350,15 @@ function Dict({ onOpen }) {
 
       {query ? (
         <React.Fragment>
-          {noHit && (
+          {lemmaHit && (
+            <React.Fragment>
+              <div className="addbar">
+                <div className="t"><b>"{q.trim()}"</b> 은(는) <b>{lemmaHit.word}</b>의 변화형이에요</div>
+              </div>
+              <WordRow w={lemmaHit} onOpen={onOpen} />
+            </React.Fragment>
+          )}
+          {noHit && !lemmaHit && (
             <div className="addbar">
               <div className="t">사전에 없는 단어인가요?<br/><b>"{q.trim()}"</b> 를 내 단어로 추가</div>
               <button onClick={() => addWord(q)}>추가하기</button>
@@ -1837,20 +1917,23 @@ function LevelTestPartA({ onExit, onDone }) {
   if (!cur) return null;
 
   const submitProduce = () => { t.answerProduce(val); bump(); };
+  const undoBack = () => { if (t.canUndo()) { t.undo(); bump(); } };
 
   return (
     <div className="content study">
       <div className="study-top">
         <button className="x" onClick={onExit} aria-label="종료"><Icon name="close" size={22} /></button>
+        <button className="x" onClick={undoBack} disabled={!t.canUndo()} style={{ opacity: t.canUndo() ? 1 : 0.3 }} aria-label="한 단계 뒤로"><Icon name="chevron_left" size={24} /></button>
         <div className="study-bar"><i style={{ width: (progress.done / progress.total * 100) + "%" }} /></div>
         <span className="study-n">{progress.done} / {progress.total}</span>
       </div>
 
       {cur.kind === "know" && (
         <React.Fragment>
-          <div className="qcard" style={{ alignItems: "center", textAlign: "center" }}>
+          {/* know↔meaning 전환 시 카드 크기·폰트가 흔들리지 않게 동일 구조(.lt-qcard/.lt-word) 고정 */}
+          <div className="qcard lt-qcard">
             <div className="qcue">이 단어를 아세요?</div>
-            <div className="qko" style={{ fontSize: 24 }}>{cur.word}</div>
+            <div className="lt-word">{cur.word}</div>
           </div>
           <div className="qactions">
             <button className="ghost" onClick={() => { t.answerKnow(false); bump(); }}>모름</button>
@@ -1861,9 +1944,9 @@ function LevelTestPartA({ onExit, onDone }) {
 
       {cur.kind === "meaning" && (
         <React.Fragment>
-          <div className="qcard" style={{ alignItems: "center", textAlign: "center" }}>
+          <div className="qcard lt-qcard">
             <div className="qcue">뜻을 골라 주세요</div>
-            <div className="qko" style={{ fontSize: 22 }}>{cur.word}</div>
+            <div className="lt-word">{cur.word}</div>
           </div>
           <div className="lt-choices">
             {cur.choices.map((c, i) => (
@@ -1875,10 +1958,10 @@ function LevelTestPartA({ onExit, onDone }) {
 
       {cur.kind === "produce" && (
         <React.Fragment>
-          <div className="qcard" style={{ alignItems: "center", textAlign: "center" }}>
+          <div className="qcard lt-qcard">
             {cur.cue && <div className="qcue">{cur.cue}</div>}
             <div className="qko">{cur.ko}</div>
-            <div className="qdiv" />
+            <div className="qdiv" style={{ alignSelf: "stretch" }} />
             <div className="qen" style={{ textAlign: "center" }}>
               <input className="qbox" autoFocus value={val}
                 onChange={e => setVal(e.target.value)}
@@ -1890,6 +1973,7 @@ function LevelTestPartA({ onExit, onDone }) {
             <div className="qhint">{cur.len}글자</div>
           </div>
           <div className="qactions">
+            <button className="ghost" onClick={() => { t.answerProduce(""); bump(); }}>모름</button>
             <button className="primary" onClick={submitProduce}>확인</button>
           </div>
         </React.Fragment>
@@ -1914,59 +1998,68 @@ function LevelTestInterim({ onSkip, onContinue }) {
 
 /* Part B(문장구사력) — 어순 배열. 셔플된 칩을 정답 순서대로 탭하면 위 답 영역에 쌓인다.
    순서가 아닌 칩을 탭하면 잠깐 빨갛게 흔들리고 errors만 오르고 답에는 안 들어간다.
-   마지막 단어를 탭하면 그 자리에서 다음 문항(또는 종료)으로 자동 진행. */
+   탭한 칩은 자리를 유지한 채 흐려지기만 함(남은 칩이 당겨지면 오탭 유발) + 실행취소 버튼.
+   출제는 적응형(엔진) — 오탭 1개 이하로 완성하면 다음 문장은 한 단계 위 밴드. */
 function LevelTestPartB({ onExit, onDone }) {
   const engineRef = React.useRef(null);
   if (!engineRef.current) engineRef.current = createLevelTestB();
-  const logsRef = React.useRef([]);
-  const items = engineRef.current.items;
+  const b = engineRef.current;
+  const [, setTick] = useState(0);
+  const bump = () => setTick(x => x + 1);
 
-  const [idx, setIdx] = useState(0);
+  const cur = b.current();
+  const progress = b.progress();
   const [picked, setPicked] = useState([]);     // shuffled 배열 내 인덱스(선택 순서)
   const [errors, setErrors] = useState(0);
-  const [startedAt, setStartedAt] = useState(() => Date.now());
+  const startRef = React.useRef(Date.now());
   const [wrongPos, setWrongPos] = useState(null); // 흔들림 표시 중인 칩 위치
 
-  useEffect(() => { if (!items.length) onDone(engineRef.current.report([])); }, []);
-  if (!items.length) return null;
+  useEffect(() => { setPicked([]); setErrors(0); startRef.current = Date.now(); }, [cur]);
+  useEffect(() => { if (!cur) onDone(b.report()); }, [cur]);
+  if (!cur) return null;
 
-  const it = items[idx];
   const pickedSet = new Set(picked);
-  const nextWord = it.words[picked.length];
+  const nextWord = cur.words[picked.length];
 
   const tapChip = pos => {
     if (pickedSet.has(pos)) return;
-    if (it.shuffled[pos] !== nextWord) {
+    if (cur.shuffled[pos] !== nextWord) {
       setErrors(e => e + 1);
       setWrongPos(pos);
       setTimeout(() => setWrongPos(null), 350);
       return;
     }
     const np = picked.concat(pos);
-    if (np.length >= it.words.length) {
-      const seconds = (Date.now() - startedAt) / 1000;
-      logsRef.current = logsRef.current.concat([{ band6: it.band6, ok: true, errors, seconds, nWords: it.words.length }]);
-      if (idx + 1 >= items.length) { onDone(engineRef.current.report(logsRef.current)); return; }
-      setIdx(idx + 1); setPicked([]); setErrors(0); setStartedAt(Date.now());
+    if (np.length >= cur.words.length) {
+      const seconds = (Date.now() - startRef.current) / 1000;
+      b.answer({ ok: true, errors, seconds });
+      bump();
     } else {
       setPicked(np);
     }
   };
+  const undoPick = () => { if (picked.length) setPicked(picked.slice(0, -1)); };
 
   return (
-    <div className="content study" data-answer={it.words.join(" ")}>
+    <div className="content study" data-answer={cur.words.join(" ")}>
       <div className="study-top">
         <button className="x" onClick={onExit} aria-label="종료"><Icon name="close" size={22} /></button>
-        <div className="study-bar"><i style={{ width: (idx / items.length * 100) + "%" }} /></div>
-        <span className="study-n">{idx + 1} / {items.length}</span>
+        <div className="study-bar"><i style={{ width: (progress.done / progress.total * 100) + "%" }} /></div>
+        <span className="study-n">{progress.done + 1} / {progress.total}</span>
       </div>
 
-      <div className="qcue" style={{ textAlign: "center" }}>{it.ko}</div>
-      <div className="lt-answer">{picked.map(p => it.shuffled[p]).join(" ")}</div>
+      <div className="qcue" style={{ textAlign: "center" }}>{cur.ko}</div>
+      <div className="lt-answer">{picked.map(p => cur.shuffled[p]).join(" ")}</div>
       <div className="lt-chips">
-        {it.shuffled.map((w, pos) => pickedSet.has(pos) ? null : (
-          <button key={pos} className={"lchip link" + (wrongPos === pos ? " wrong" : "")} onClick={() => tapChip(pos)}>{w}</button>
+        {cur.shuffled.map((w, pos) => (
+          <button key={pos}
+            className={"lchip link" + (wrongPos === pos ? " wrong" : "") + (pickedSet.has(pos) ? " picked" : "")}
+            disabled={pickedSet.has(pos)}
+            onClick={() => tapChip(pos)}>{w}</button>
         ))}
+      </div>
+      <div className="qhintrow" style={{ justifyContent: "flex-end" }}>
+        <button className="qhint-btn" onClick={undoPick} disabled={!picked.length} style={{ opacity: picked.length ? 1 : 0.4 }}>실행취소</button>
       </div>
     </div>
   );
