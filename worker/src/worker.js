@@ -115,10 +115,10 @@ export default {
     const headers = corsHeaders(origin, allowed);
 
     if (request.method === "OPTIONS") return new Response(null, { headers });
+    if (url.pathname === "/health") return json({ ok: true }, 200, headers);
     if (!allowed) return json({ error: "origin not allowed" }, 403, headers);
 
     try {
-      if (url.pathname === "/health") return json({ ok: true }, 200, headers);
       if (url.pathname === "/gemini" && request.method === "POST") return await handleGemini(request, env, headers);
       if (url.pathname === "/tts" && request.method === "POST") return await handleTts(request, env, headers);
       return json({ error: "not found" }, 404, headers);
