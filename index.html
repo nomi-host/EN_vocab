@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.25.1">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.25.1" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.25.1" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.25.2">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.25.2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.25.2" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.25.1"></script>
+<script src="words.js?v=0.25.2"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.25.1") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.25.1") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.25.2") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.25.2") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.25.1") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.25.1") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.25.2") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.25.2") format("woff");
 }
 :root{
   --bg:#FAF4E7;            /* 옅은 노트 베이지(2026-07-15, 전체 한 톤 밝게 — 이전 카드색을 배경으로) */
@@ -376,7 +376,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 바텀시트 (단어 상세) */
 .sheet-backdrop{position:fixed;inset:0;background:rgba(33,28,21,.32);display:flex;align-items:flex-end;justify-content:center;z-index:50;animation:fade .18s ease;}
-.sheet{width:100%;max-width:520px;background:var(--surface);border:1px solid var(--card-border);border-bottom:none;border-radius:24px 24px 0 0;box-shadow:var(--shadow-sheet);max-height:88vh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
+.sheet{width:100%;max-width:520px;background:var(--surface);border:1px solid var(--card-border);border-bottom:none;border-radius:24px 24px 0 0;box-shadow:var(--shadow-sheet);max-height:88vh;max-height:88dvh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 @keyframes slideup{from{transform:translateY(100%)}to{transform:translateY(0)}}
 .sheet-grab{width:38px;height:4px;background:var(--line);border-radius:2px;margin:10px auto 2px;flex:none;}
@@ -610,7 +610,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.25.1";
+const APP_VERSION = "v0.25.2";
 const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -3630,7 +3630,7 @@ function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
             <div className="cefrinfo">
               {CEFR_LEVELS.map(lv => (
                 <div key={lv} className="cefrinfo-row">
-                  <span className="tag lv">{lv}</span>
+                  <span className={"tag lv tier-" + cefrHl(lv)}>{lv}</span>
                   <span className="cefrinfo-nm">{CEFR_NAMES[lv]}</span>
                 </div>
               ))}
