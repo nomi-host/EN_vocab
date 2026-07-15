@@ -590,6 +590,20 @@ v2 추가 기능 배치: **발음 진단(Azure)·사용자 페르소나 → 3주
 - **오프라인-우선(offline-first)**: 클라이언트는 계속 localStorage/IndexedDB를 1차 캐시로 쓰고, 로그인 시 Supabase와 **동기화**. 비로그인도 앱은 그대로 동작(게스트 모드) → 로그인하면 그 시점 로컬 데이터를 서버로 업로드·병합.
 - LLM/TTS 프록시(`api/proxy.js`)는 Vercel 서버리스로 시작하되, 사용량 카운트가 필요해지면 Supabase Edge Function으로 이전(DB에 사용량 기록).
 
+**DB 선택 — SQLite vs PostgreSQL 검토 결론(2026-07-15): Postgres.** 근거:
+
+| 기준 | SQLite | PostgreSQL |
+|---|---|---|
+| 동시 쓰기 | 단일 writer 락 — 다수 사용자 동시 저장에 취약 | 다중 사용자 동시성에 강함 |
+| 관계형(친구·추천·대결·구독) | 조인·제약 직접 관리 부담 | 관계·제약·트랜잭션 네이티브 |
+| 사용자 격리(보안) | 앱 레벨에서 수동 | **RLS**로 행 단위 자동 |
+| 성장 대응 | 단일 파일 → 스케일 한계(Turso/D1 필요) | 수직·수평 확장 경로 명확 |
+
+- "사용자 많아지면 데이터가 쌓인다"는 우려가 **오히려 Postgres를 택하는 이유** — 다중 사용자·동시 접근·관계형(특히 친구·주간 대결·추천)이 SQLite의 약점이다.
+- **클라이언트엔 이미 로컬 저장(IndexedDB/localStorage)이 있으므로 클라이언트용 SQLite는 불필요.** 서버 Postgres는 동기화·소셜·결제의 진실 원천 역할만.
+- **DB 저장 자체는 스케일 병목이 아니다** — 사용자당 텍스트(단어장·SRS·뱃지)는 수 KB~수 MB라 Supabase 무료 500MB에도 수천 명. 실제 비용 드라이버는 LLM/TTS 호출(3장·COMMERCIAL 2장). 누적 로그(대화·사용량)만 TTL/롤업으로 관리.
+- **SQLite 계열이 후보가 되는 유일 경로**: 스택을 Cloudflare로 통일할 때의 **Cloudflare D1**(엣지 SQLite) 또는 **Turso(libSQL)** — 서버리스에서 도는 SQLite라 동시성 단점을 상당 부분 보완. 단 친구·구독처럼 관계·RLS가 핵심이면 Postgres가 여전히 단순. → **기본은 Supabase Postgres, 스택 통일 시 D1/Turso를 실질 대안으로 열어둠.**
+
 ### 6.6.3 DB 스키마 초안 (Postgres)
 
 | 테이블 | 핵심 컬럼 | 비고 |
@@ -599,7 +613,10 @@ v2 추가 기능 배치: **발음 진단(Azure)·사용자 페르소나 → 3주
 | `badges` | user_id, cat_key, tier, dates(jsonb) | 카테고리별 진행값(현재 `BADGE_PROGRESS`의 서버판) |
 | `friends` | user_id, friend_id, status(pending/accepted), created_at | 양방향 엣지 · 초대 상태 |
 | `invites` | code, inviter_id, used_by, created_at | 초대 링크/코드 |
-| `subscriptions` | user_id, plan, status, provider(apple/google/kakao/toss), current_period_end, receipt | 결제 엔타이틀먼트 |
+| `referrals` | inviter_id, invitee_id, reward_status(pending/granted), reward_kind, created_at | 친구 추천 → 할인 지급 추적(어뷰징 방지: 초대받은 쪽 실사용/결제 조건 후 granted) |
+| `duels` | id, week(iso), user_a, user_b, score_a, score_b, winner, status(active/ended) | 친구와 주간 대결(애플워치 피트니스형) — 주 단위 매칭 |
+| `duel_events` | duel_id, user_id, ts, points, source(card/listen/talk) | 대결 점수 적립 로그(주간 집계 → duels.score_*) |
+| `subscriptions` | user_id, plan, status, provider(apple/google/kakao/toss), current_period_end, receipt, discount_ref(→referrals) | 결제 엔타이틀먼트 · 추천 할인 반영 |
 | `usage` | user_id, day, llm_tokens, tts_chars | 사용량 캡(무료/유료 티어 제한) |
 
 ### 6.6.4 인증 — 구글 · 카카오 로그인
@@ -634,10 +651,20 @@ v2 추가 기능 배치: **발음 진단(Azure)·사용자 페르소나 → 3주
 |---|---|---|
 | **P0 (현재)** | 전부 localStorage/IndexedDB · 게스트 · 프록시(키 은닉)만 | — |
 | **P1 인증+동기화** | Supabase Auth(구글·카카오) + `learning_state`·`badges` 동기화 | "기기 바꿔도 유지"가 필요해질 때 |
-| **P2 소셜** | `friends`·`invites` + 친구 초대·소셜 뱃지·백분위 실데이터 | 친구 기능/랭킹을 켤 때 |
-| **P3 결제** | `subscriptions` + 카카오페이/토스 정기결제(웹), 이후 IAP/RevenueCat(스토어) | 유료화 결정 시 |
+| **P2 소셜** | `friends`·`invites`·`referrals`·`duels` + 친구·초대·**주간 대결**·소셜 뱃지·백분위 실데이터 | 친구 기능/랭킹을 켤 때 |
+| **P3 결제** | `subscriptions` + 카카오페이/토스 정기결제(웹), 이후 IAP/RevenueCat(스토어) + **추천 할인** 반영 | 유료화 결정 시 |
 
 각 단계는 앞 단계 위에 얹기만 하면 되도록 스키마를 미리 잡아둔다(P0에서도 데이터 모델은 P1 스키마와 호환되는 형태로 유지 — 예: 뱃지 진행값 `{cat_key, tier, dates}` 구조 그대로).
+
+### 6.6.8 소셜 기능 설계 — 친구 · 추천 할인 · 주간 대결 `[설계만 · P2]`
+
+> 전부 다중 사용자·관계형·(대결은)실시간 성격 → **서버 DB(Postgres) 없이는 불가**. 6.6.3 `friends`/`referrals`/`duels`/`duel_events` 테이블이 이들의 저장소.
+
+- **친구**: 초대 코드/링크(`invites`)로 연결 → 수락 시 `friends` 양방향 엣지. 친구 목록에서 상대 프로필(레벨·스트릭·주간 점수) 열람. 뱃지 `친구 초대` 카테고리(4.10)가 실데이터로 전환.
+- **친구 추천 할인**: 추천인 코드로 가입/결제 시 `referrals` 기록 → **양쪽에 할인/혜택 지급**(예: 추천인·피추천인 각 1개월 할인 또는 포인트). **어뷰징 방지**가 핵심 — 피추천인이 실사용(온보딩 완료·최초 결제 등) 조건을 충족해야 `reward_status=granted`로 전환, 지급은 **서버가 판정**(클라이언트 신뢰 금지). 할인은 `subscriptions.discount_ref`로 결제에 반영.
+- **친구와 주간 대결(애플워치 피트니스형)**: 친구 1:1로 **한 주(ISO week) 동안 학습 점수 겨루기**. 점수원 = 학습 활동(`duel_events`: 단어카드 정답·듣기 세션·회화 완주 등에 가중치). 주말에 `duels.winner` 확정 → 승패 기록·연승 스트릭. UI는 상대와 나의 주간 점수 바 + 남은 시간(애플워치 "친구와 겨루기" 레이아웃 차용). **뱃지 후보 카테고리 신설**: `주간 대결 승리`(누적 승수 티어) — 4.10 카테고리에 추가 여지(현재 9종 → 확장 범위 8~12 안에서).
+  - 공정성·부정 방지: 점수는 **서버가 학습 로그를 집계**(클라이언트가 보낸 raw 점수 불신), 비정상 급증은 사용량/레이트 체크로 필터. 상대가 비활성이면 "혼자 목표" 모드로 폴백.
+- **실시간성**: 주간 대결 점수판은 Supabase Realtime(Postgres 변경 구독)으로 갱신 가능 — 다만 P2 초기엔 주기적 폴링/새로고침으로도 충분(실시간은 후순위 최적화).
 
 ---
 
