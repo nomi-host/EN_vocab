@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.25.5">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.25.5" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.25.5" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.26.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.26.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.26.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.25.5"></script>
+<script src="words.js?v=0.26.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,27 +28,27 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.25.5") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.25.5") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.26.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.26.0") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.25.5") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.25.5") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.26.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.26.0") format("woff");
 }
 :root{
-  --bg:#FAF4E7;            /* 옅은 노트 베이지(2026-07-15, 전체 한 톤 밝게 — 이전 카드색을 배경으로) */
-  --surface:#FFFAF1;       /* 배경보다 밝은 크림 (카드/시트) — 이전과 동일한 밝기 격차 유지 */
+  --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
+  --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
   --surface-container:#FBF4E3;      /* 톤 위계 1단 (M3 tonal elevation) */
   --surface-container-high:#F1E7CE; /* 톤 위계 2단 */
   --ink:#211C15;           /* 노트 잉크 블랙 (웜톤) — 텍스트 + 블랙 버튼 */
   --ink-2:#4A4234;
   --muted:#8C8270;
   --line:#E6DCC3;
-  --fill:#EFE6D0;
+  --fill:#FAF4E7;          /* 박스강조 크림 — 이전 배경색을 재활용 */
   --accent:#211C15;        /* 포인트 = 잉크 블랙(블랙 버튼 컨셉) */
   --accent-deep:#4A3A20;   /* 흰 배경 위 텍스트 강조 (웜 브라운) */
   --accent-soft:#EDE1C2;   /* 옅은 배경 */
@@ -67,7 +67,7 @@
   --hi-yellow-xlight:#FFF8DB; --hi-yellow-light:#FFEA9A; --hi-yellow-dark:#BF9700; --hi-yellow-xdark:#5A4700;
   --hi-pink-xlight:#FFEEF6;   --hi-pink-light:#FFD1E4;   --hi-pink-dark:#EF0066;   --hi-pink-xdark:#710030;
   --hi-blue-xlight:#E7F5FF;   --hi-blue-light:#BCE4FF;   --hi-blue-dark:#0083DD;   --hi-blue-xdark:#003E69;
-  --card-border:rgba(158,124,58,.22); /* 카드류 소프트 보더(outline-variant) — 잉크 기반 대신 베이지 톤(그레이하게 보이던 문제 개선). 인터랙션 요소는 var(--ink) 풀보더(outline) 사용 */
+  --card-border:rgba(158,124,58,.4); /* 카드류 소프트 보더(outline-variant) — 얇아진 두께(0.5px) 보완 위해 더 진한 베이지로. 인터랙션 요소는 var(--ink) 풀보더(outline) 사용 */
   --radius:20px;
   --shadow:0 1px 2px rgba(33,28,21,.05), 0 8px 24px rgba(33,28,21,.06);
   --shadow-sheet:0 -8px 40px rgba(33,28,21,.18);
@@ -84,11 +84,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .brand{font-size:20px;font-weight:800;letter-spacing:-0.4px;}
 .brand b{color:var(--accent);}
 .topbar-right{display:flex;align-items:center;gap:8px;}
-.pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1px solid var(--card-border);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);}
+.pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);}
 .pill .dot{width:7px;height:7px;border-radius:50%;background:var(--hi-green-dark);}
 .avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
 
-.update-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 20px 10px;padding:9px 14px;background:var(--hi-yellow-light);border:1px solid var(--card-border);border-radius:12px;font-size:13px;font-weight:700;color:var(--ink);flex:none;}
+.update-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 20px 10px;padding:9px 14px;background:var(--hi-yellow-light);border:0.5px solid var(--card-border);border-radius:12px;font-size:13px;font-weight:700;color:var(--ink);flex:none;}
 .update-banner button{background:var(--ink);color:var(--surface);border-radius:999px;padding:5px 13px;font-size:12px;font-weight:800;white-space:nowrap;}
 
 /* 홈 상단 게이미피케이션 지수 스트립 — 항목별로 다른 색, 같은 요소(캐릭터)에 속한 칩은 그 캐릭터의
@@ -111,7 +111,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .sec .more{float:right;font-size:12px;color:var(--muted);font-weight:600;}
 
 /* 카드 공통 */
-.card{background-color:var(--surface);border:1px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;}
+.card{background-color:var(--surface);border:0.5px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;}
 .card.tap{transition:transform .12s ease;}
 .card.tap:active{transform:scale(.985);}
 
@@ -173,7 +173,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 상세 팝업 — 3D 뒤집기 카드 */
 .bd-card{width:100%;max-width:300px;perspective:1200px;}
 .bd-inner{position:relative;width:100%;min-height:340px;transform-style:preserve-3d;}
-.bd-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--surface);border:1px solid var(--card-border);border-radius:24px;box-shadow:0 24px 64px rgba(33,28,21,.3);padding:28px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+.bd-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--surface);border:0.5px solid var(--card-border);border-radius:24px;box-shadow:0 24px 64px rgba(33,28,21,.3);padding:28px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
 .bd-back{transform:rotateY(180deg);}
 .bd-medal{transform:scale(2.05);margin:34px 0 46px;}
 .bd-title{font-size:20px;font-weight:800;letter-spacing:-0.3px;}
@@ -200,7 +200,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .char-swatch.hi-yellow{background:var(--hi-yellow);}
 .char-swatch.hi-blue{background:var(--hi-blue);}
 .char-swatch-lbl{font-size:12px;font-weight:700;color:var(--muted);}
-.char-swatch-sm{width:28px;height:28px;border-radius:9px;border:1px solid var(--card-border);}
+.char-swatch-sm{width:28px;height:28px;border-radius:9px;border:0.5px solid var(--card-border);}
 /* 달리는 씬(placeholder). 실제 캐릭터는 Lottie/Rive/스프라이트로 이 슬롯 교체 */
 .hero-char.run .char-face{animation:runbob var(--bob,.5s) ease-in-out infinite alternate;}
 @keyframes runbob{from{transform:translateY(1px) rotate(-1.5deg);}to{transform:translateY(-7px) rotate(1.5deg);}}
@@ -231,7 +231,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 뱃지 팝업 */
 .dlg-backdrop{position:fixed;inset:0;background:rgba(33,28,21,.42);display:flex;align-items:center;justify-content:center;z-index:60;padding:32px;animation:fade .15s ease;}
-.dlg{background:var(--surface);border:1px solid var(--card-border);border-radius:24px;padding:28px 24px 22px;text-align:center;max-width:300px;width:100%;box-shadow:0 24px 64px rgba(33,28,21,.3);animation:pop .22s cubic-bezier(.2,.9,.3,1.2);}
+.dlg{background:var(--surface);border:0.5px solid var(--card-border);border-radius:24px;padding:28px 24px 22px;text-align:center;max-width:300px;width:100%;box-shadow:0 24px 64px rgba(33,28,21,.3);animation:pop .22s cubic-bezier(.2,.9,.3,1.2);}
 @keyframes pop{from{transform:scale(.88);opacity:0}to{transform:scale(1);opacity:1}}
 .dlg-title{font-size:19px;font-weight:800;letter-spacing:-0.3px;}
 .dlg-sub{font-size:14px;color:var(--accent-deep);font-weight:800;margin-top:4px;}
@@ -242,7 +242,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 레벨 3칸 */
 .level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
 /* 포스트잇 느낌 — 형광색 라이트톤 정사각(카드보다 각짐), 안의 숫자/글자는 .hl 형광펜(진한 톤)로 대비 */
-.stat{border-radius:10px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;background:var(--surface);border:1px solid var(--card-border);}
+.stat{border-radius:10px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;background:var(--surface);border:0.5px solid var(--card-border);}
 .stat.tier-green{background:var(--hi-green-light);border-color:transparent;}
 .stat.tier-yellow{background:var(--hi-yellow-light);border-color:transparent;}
 .stat.tier-pink{background:var(--hi-pink-light);border-color:transparent;}
@@ -265,9 +265,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .tier-blue{background:var(--hi-blue-light);color:var(--hi-blue-xdark);}
 
 /* 루틴 스텝 */
-.step{display:flex;align-items:center;gap:13px;background:var(--surface);border:1px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;}
+.step{display:flex;align-items:center;gap:13px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;}
 .step.active{border:1.5px solid var(--ink);}
-.step-ico{width:38px;height:38px;border-radius:12px;background:var(--bg);border:1px solid var(--card-border);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--ink-2);flex:none;}
+.step-ico{width:38px;height:38px;border-radius:12px;background:var(--bg);border:0.5px solid var(--card-border);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--ink-2);flex:none;}
 .step.done .step-ico{background:var(--ink);border-color:var(--ink);color:var(--on-accent);}
 .step-body{flex:1;min-width:0;}
 .step-title{font-size:15px;font-weight:700;}
@@ -284,7 +284,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .grass i.g3{background-color:var(--ink);opacity:.6;}
 
 /* 사전 검색 */
-.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--card-border);border-radius:14px;padding:11px 14px;box-shadow:var(--shadow);}
+.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:14px;padding:11px 14px;box-shadow:var(--shadow);}
 .search input{flex:1;border:none;outline:none;font-size:15px;background:none;color:var(--ink);}
 .search input::placeholder{color:var(--muted);}
 .search .mag{color:var(--muted);display:flex;align-items:center;}
@@ -308,7 +308,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 단어 리스트 행 */
 .wlist{display:flex;flex-direction:column;gap:8px;}
-.wrow{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
+.wrow{display:flex;align-items:center;gap:10px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
 .wrow:active{transform:scale(.99);}
 .wrow .w{font-size:16px;font-weight:700;}
 .wrow .k{font-size:13px;color:var(--muted);margin-top:1px;}
@@ -329,7 +329,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 카테고리 선택: 레벨 카드 그리드 · 어근 행 목록 */
 .lv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
-.lv-card{border-radius:10px;box-shadow:var(--shadow);padding:16px 8px 14px;text-align:center;transition:transform .1s;background:var(--surface);border:1px solid var(--card-border);}
+.lv-card{border-radius:10px;box-shadow:var(--shadow);padding:16px 8px 14px;text-align:center;transition:transform .1s;background:var(--surface);border:0.5px solid var(--card-border);}
 .lv-card.tier-green{background:var(--hi-green-light);border-color:transparent;}
 .lv-card.tier-yellow{background:var(--hi-yellow-light);border-color:transparent;}
 .lv-card.tier-pink{background:var(--hi-pink-light);border-color:transparent;}
@@ -338,7 +338,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lv-card .lv{font-size:21px;font-weight:800;color:var(--accent-deep);letter-spacing:-0.3px;}
 .lv-card .nm{font-size:12px;font-weight:700;color:var(--ink-2);margin-top:2px;}
 .lv-card .n{font-size:11px;color:var(--muted);margin-top:1px;font-weight:600;font-variant-numeric:tabular-nums;}
-.rootrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
+.rootrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
 .rootrow:active{transform:scale(.99);}
 .rootrow .ax{font-size:16px;font-weight:800;color:var(--accent-deep);min-width:62px;}
 .rootrow .gl{flex:1;font-size:13px;color:var(--ink-2);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
@@ -379,7 +379,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 바텀시트 (단어 상세) */
 .sheet-backdrop{position:fixed;inset:0;background:rgba(33,28,21,.32);display:flex;align-items:flex-end;justify-content:center;z-index:50;animation:fade .18s ease;}
-.sheet{width:100%;max-width:520px;background:var(--surface);border:1px solid var(--card-border);border-bottom:none;border-radius:24px 24px 0 0;box-shadow:var(--shadow-sheet);max-height:88vh;max-height:88dvh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
+.sheet{width:100%;max-width:520px;background:var(--surface);border:0.5px solid var(--card-border);border-bottom:none;border-radius:24px 24px 0 0;box-shadow:var(--shadow-sheet);max-height:88vh;max-height:88dvh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 @keyframes slideup{from{transform:translateY(100%)}to{transform:translateY(0)}}
 .sheet-grab{width:38px;height:4px;background:var(--line);border-radius:2px;margin:10px auto 2px;flex:none;}
@@ -440,7 +440,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .study-bar{flex:1;height:8px;background:var(--fill);border-radius:999px;overflow:hidden;}
 .study-bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .3s ease;}
 .study-n{font-size:13px;font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;flex:none;}
-.qcard{background:var(--surface);border:1px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
+.qcard{background:var(--surface);border:0.5px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
 .qlvrow{display:flex;align-items:center;margin-bottom:-6px;}
 .qlvrow .tag.lv{margin-left:auto;}
 .qaudio{display:flex;align-items:center;gap:6px;}
@@ -472,7 +472,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qhintrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
 .qhint-lbl{font-size:12px;font-weight:700;color:var(--muted);}
 .qhint-btn{font-size:13px;font-weight:700;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:8px 14px;}
-.qhint-btn.on{background:var(--accent-soft);color:var(--accent-deep);}
+.qhint-btn.on{background:var(--accent);color:var(--on-accent);}
 .qhint-btn.play{display:inline-flex;align-items:center;gap:5px;}
 
 /* 딕테이션(듣기 세션): 단어 수만큼 빈칸 — qbox를 좁게 재사용해 나란히 줄바꿈.
@@ -501,9 +501,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .dict-fixed{font-weight:800;color:var(--accent-deep);animation:dictfix .18s ease;}
 @keyframes dictfix{from{transform:scale(1.18);opacity:.4;}to{transform:scale(1);opacity:1;}}
 @media (prefers-reduced-motion: reduce){.dict-fixed{animation:none;}}
-/* 음절보기: 정확한 분리가 아니라 대략적인 길이 감(조각 폭)만 — 단어 아래 얇은 바로 표시 */
-.syl-row{display:flex;gap:3px;}
-.syl-row i{height:4px;border-radius:2px;background:var(--accent-soft);}
+/* 단어길이 보기: 정답 글자 수만큼 작은 네모 칸(추측 아님, 정확한 길이) — 단어 아래 표시 */
+.len-row{display:flex;gap:3px;}
+.len-row i{width:9px;height:9px;border-radius:2px;background:var(--accent-soft);}
+
+/* 듣기 세션 시작 전 3·2·1 카운트다운 원 */
+.countdown-circle{width:96px;height:96px;border-radius:50%;background:rgba(33,28,21,.5);color:#FFFBF1;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:800;animation:countpulse .7s ease;}
+@keyframes countpulse{from{transform:scale(1.3);opacity:0;}to{transform:scale(1);opacity:1;}}
+@media (prefers-reduced-motion: reduce){.countdown-circle{animation:none;}}
 .dict-result{font-size:17px;font-weight:600;line-height:1.8;display:flex;flex-wrap:wrap;gap:6px 7px;align-items:baseline;}
 .dict-rword{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;}
 .dict-rword:disabled{cursor:default;color:var(--muted);text-decoration:none;}
@@ -551,7 +556,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lt-qcard{align-items:center;text-align:center;justify-content:center;min-height:150px;}
 .lt-word{font-size:24px;font-weight:800;letter-spacing:-0.3px;}
 .lt-choices{display:flex;flex-direction:column;gap:8px;margin-top:auto;}
-.lt-choice{padding:14px;border-radius:14px;font-weight:700;font-size:15px;background:var(--surface);border:1px solid var(--card-border);color:var(--ink);box-shadow:var(--shadow);text-align:center;}
+.lt-choice{padding:14px;border-radius:14px;font-weight:700;font-size:15px;background:var(--surface);border:0.5px solid var(--card-border);color:var(--ink);box-shadow:var(--shadow);text-align:center;}
 .lt-choice:active{background:var(--fill);}
 .lt-band{display:inline-flex;align-items:center;font-size:14px;font-weight:800;padding:6px 14px;border-radius:999px;background:var(--accent-deep);color:var(--on-accent);}
 /* 결과 레벨 밴드 — 컬러위계 반영(연두<옐로우<핑크<블루). .lt-band(0,1,0)를 이기려 (0,2,0)로 정의 */
@@ -563,7 +568,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 한국어 예시(Part B) — 예전엔 .qcue(12px 회색)라 너무 작았음. 문제문이므로 크게·볼드 */
 .lt-ko{font-size:18px;font-weight:800;text-align:center;line-height:1.45;letter-spacing:-0.2px;margin:4px 0;color:var(--ink);}
 /* 답 칸 — 조립한 답이 쌓이는 곳. 내용이 없거나 늘어나도 크기가 흔들리지 않게 높이 고정 */
-.lt-answer{min-height:66px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px;text-align:center;background:var(--surface);border:1px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px;font-size:17px;font-weight:700;line-height:1.5;letter-spacing:.2px;}
+.lt-answer{min-height:66px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px;text-align:center;background:var(--surface);border:0.5px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px;font-size:17px;font-weight:700;line-height:1.5;letter-spacing:.2px;}
 .lt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;}
 @keyframes lt-shake{0%,100%{transform:translateX(0);}20%{transform:translateX(-4px);}40%{transform:translateX(4px);}60%{transform:translateX(-3px);}80%{transform:translateX(3px);}}
 .lt-chips .lchip.wrong{animation:lt-shake .35s ease;background:var(--danger-container);color:var(--danger);border-color:var(--danger);}
@@ -580,7 +585,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .chip.tier-blue{background:var(--hi-blue-light);color:var(--hi-blue-xdark);border-color:transparent;}
 
 /* 설정 화면 (캐릭터 변경 등) — WordSheet와 동일한 바텀시트 패턴 재사용 */
-.charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;}
+.charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;}
 .charrow .cf{width:52px;height:52px;border-radius:14px;background:var(--fill);display:flex;align-items:center;justify-content:center;flex:none;overflow:hidden;font-size:9px;color:var(--muted);text-align:center;line-height:1.2;}
 .charrow .body{flex:1;min-width:0;}
 .charrow .name{font-size:14px;font-weight:700;}
@@ -613,7 +618,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.25.5";
+const APP_VERSION = "v0.26.0";
 const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -752,10 +757,14 @@ function speakTextWebSpeech(text, lang, rate) {
    같은 세션에서 반복 재생하는 문장은 TTS_CACHE(메모리, blob URL)로 재호출 없이 재생.
    실패·타임아웃·미설정 시 항상 브라우저 음성으로 폴백(예외가 사용자에게 보이지 않음). */
 const TTS_CACHE = new Map();
+let _activeAudio = null; // 프록시 TTS로 재생 중인 Audio — 연타 시 이전 것부터 끊어야 에코가 안 남
 async function speakText(text, rateOverride) {
   const prefs = PREFS.get();
   const accent = ACCENT_PRESETS[prefs.accent];
   const rate = rateOverride || SPEED_PRESETS[prefs.speed].rate;
+  // 새로 말하기 전에 이전 재생(프록시 Audio·Web Speech 둘 다) 정지 — 연타 에코 방지
+  try { speechSynthesis.cancel(); } catch (e) {}
+  if (_activeAudio) { try { _activeAudio.pause(); } catch (e) {} _activeAudio = null; }
   if (PROXY_BASE) {
     const cacheKey = accent.lang + "|" + rate + "|" + text;
     try {
@@ -775,7 +784,9 @@ async function speakText(text, rateOverride) {
         url = URL.createObjectURL(blob);
         TTS_CACHE.set(cacheKey, url);
       }
-      await new Audio(url).play();
+      const audio = new Audio(url);
+      _activeAudio = audio;
+      await audio.play();
       return;
     } catch (e) { /* 폴백으로 진행 */ }
   }
@@ -2878,17 +2889,20 @@ function splitWordToken(w) {
   return m ? { pre: m[1], core: m[2], post: m[3] } : { pre: "", core: w, post: "" };
 }
 
-/* 음절보기 힌트용 — 정확한 음절 분리가 아니라 "대략" 몇 조각인지만 보여주는 근사치.
-   모음 그룹 수를 음절 수로 추정하고, 글자 수를 그 조각 수만큼 대충 나눠 폭에 반영한다. */
-function syllableChunks(core) {
-  const w = core.toLowerCase().replace(/e$/, "");
-  const groups = w.match(/[aeiouy]+/g);
-  const syl = Math.max(1, groups ? groups.length : 1);
-  const base = Math.floor(core.length / syl);
-  const rem = core.length % syl;
-  const chunks = [];
-  for (let i = 0; i < syl; i++) chunks.push(base + (i < rem ? 1 : 0));
-  return chunks;
+/* 듣기 세션 시작 전 3·2·1 카운트다운 — 화면 전환 직후 바로 딕테이션 문장이 재생되면
+   준비할 틈이 없어서, 짧게 마음의 준비 시간을 준다. */
+function ListenCountdown({ onDone }) {
+  const [n, setN] = useState(3);
+  useEffect(() => {
+    if (n <= 0) { onDone(); return; }
+    const t = setTimeout(() => setN(v => v - 1), 700);
+    return () => clearTimeout(t);
+  }, [n]);
+  return (
+    <div className="content" style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "50vh" }}>
+      <div className="countdown-circle" key={n}>{n}</div>
+    </div>
+  );
 }
 
 function DictationSession({ items: initialItems, onExit, onOpenWord }) {
@@ -2901,7 +2915,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   const [res, setRes] = useState(null); // null | { dueIn, forcedRelearn? } — 완전히 맞았을 때만(또는 강제 재학습) 세팅
   const [correct, setCorrect] = useState(0); // 첫 시도에 맞힌 문장 수
   const [replayCount, setReplayCount] = useState(0);
-  const [syllableHint, setSyllableHint] = useState(false); // 음절보기
+  const [lenHint, setLenHint] = useState(false); // 단어길이 보기
 
   const it = queue[idx];
   const tokens = useMemo(() => (it ? it.ex.en.trim().split(/\s+/).map(splitWordToken) : []), [it]);
@@ -2910,7 +2924,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
 
   useEffect(() => {
     setAnswers(new Array(tokens.length).fill("")); setLocked(new Array(tokens.length).fill(false)); inputRefs.current = [];
-    setReplayCount(0); setWrongMask(null); setHadWrongAttempt(false); setSyllableHint(false); // 음절보기는 문제마다 초기화
+    setReplayCount(0); setWrongMask(null); setHadWrongAttempt(false); setLenHint(false); // 단어길이 보기는 문제마다 초기화
   }, [idx, tokens.length]);
   useEffect(() => {
     if (!it) return;
@@ -2918,9 +2932,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
     return () => clearTimeout(t);
   }, [idx]);
 
-  const speakSentence = text => {
-    try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(text); u.lang = "en-US"; speechSynthesis.speak(u); } catch (e) {}
-  };
+  const speakSentence = text => { speakText(text); }; // 앱 공용 speakText로 통일(프록시 TTS + 연타 에코 방지 공유)
 
   const focusInput = i => { const el = inputRefs.current[i]; if (el) el.focus(); };
 
@@ -3054,9 +3066,9 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
                     )}
                     {t.post}
                   </span>
-                  {syllableHint && !locked[i] && (
-                    <div className="syl-row">
-                      {syllableChunks(t.core).map((len, k) => <i key={k} style={{ width: Math.max(10, len * 7) + "px" }} />)}
+                  {lenHint && !locked[i] && (
+                    <div className="len-row">
+                      {t.core.split("").map((_, k) => <i key={k} />)}
                     </div>
                   )}
                 </span>
@@ -3108,7 +3120,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
           <div className="qhintrow">
             <span className="qhint-lbl">힌트</span>
             <button className="qhint-btn play" onClick={replay}><Icon name="volume_up" size={15} /> 다시 듣기</button>
-            <button className={"qhint-btn" + (syllableHint ? " on" : "")} onClick={() => setSyllableHint(v => !v)}>음절보기</button>
+            <button className={"qhint-btn" + (lenHint ? " on" : "")} onClick={() => setLenHint(v => !v)}>단어길이 보기</button>
           </div>
           {replayCount > 0 && (
             <div className="qhint">
@@ -3427,6 +3439,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   const [summary, setSummary] = useState(null);
   const [quiz, setQuiz] = useState(null); // null | questions[] | "done"
   const [quizSummary, setQuizSummary] = useState(null);
+  const [listenReady, setListenReady] = useState(false); // 듣기 세션 3·2·1 카운트다운 통과 여부
   const dueCount = allItems().filter(it => SRS.isDue(it.key)).length;
   const newCount = allItems().filter(it => !SRS.get(it.key)).length;
   const studiedCount = allItems().filter(it => SRS.get(it.key)).length;
@@ -3435,8 +3448,10 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   // (customMode로 카드/듣기 중 어느 세션을 열지 지정 — 홈 "듣기 N문장"이 학습 탭 메뉴만 보여주던 버그 수정)
   useEffect(() => {
     if (customStudy && customStudy.length) {
-      setMode(customMode || "card");
+      const m = customMode || "card";
+      setMode(m);
       setSession(customStudy);
+      if (m === "listen") setListenReady(false);
       onConsumeCustomStudy();
     }
     // eslint-disable-next-line
@@ -3451,7 +3466,11 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
     if (done) { setSummary({ total: total || session.length, correct }); setSession("done"); }
     else setSession(null);
   };
-  if (session && mode === "listen") return <DictationSession items={session} onExit={onSessionExit} onOpenWord={onOpenWord} />;
+  if (session && mode === "listen") {
+    return listenReady
+      ? <DictationSession items={session} onExit={onSessionExit} onOpenWord={onOpenWord} />
+      : <ListenCountdown onDone={() => setListenReady(true)} />;
+  }
   if (session) return <CardSession items={session} onOpenWord={onOpenWord} onExit={onSessionExit} />;
   if (quiz === "done" && quizSummary) {
     return <Finish total={quizSummary.total} correct={quizSummary.correct}
@@ -3467,7 +3486,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   }
 
   const startCard = () => { const items = pickSession(10); if (items.length) { setMode("card"); setSession(items); } };
-  const startListen = () => { const items = pickSession(10); if (items.length) { setMode("listen"); setSession(items); } };
+  const startListen = () => { const items = pickSession(10); if (items.length) { setMode("listen"); setSession(items); setListenReady(false); } };
   const startQuiz = () => {
     const qs = buildQuiz(10);
     if (qs) setQuiz(qs);
