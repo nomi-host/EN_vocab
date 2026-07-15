@@ -20,6 +20,7 @@
 ## 버전 표기
 - 기능을 수정/배포할 때마다 `index.html`의 `APP_VERSION`을 갱신하고, `<head>`의 `?v=` 캐시 무효화 태그(manifest/words.js/rat_run.js)도 **같은 버전으로 함께** 갱신한다.
 - `APP_BUILD`는 작업 당일 날짜(YYYY-MM-DD).
+- **`version.json`의 `v` 값도 APP_VERSION과 항상 같이 갱신할 것.** PWA는 새로고침 제스처가 없어서, 앱이 이 파일을 캐시 없이 주기적으로 읽어 배포 감지 배너(`.update-banner`)를 띄운다 — 안 올리면 사용자에게 새 버전 알림이 안 감.
 
 ## 데이터 파이프라인 메모
 - 시드는 `pipeline/`에서 생성 → `pipeline/merge_cefrj.js`가 `words.js`로 병합. `words.js`는 직접 수정 금지(배치/보강 파일 수정 후 재빌드).

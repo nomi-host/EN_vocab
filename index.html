@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.25.3">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.25.3" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.25.3" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.25.4">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.25.4" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.25.4" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.25.3"></script>
+<script src="words.js?v=0.25.4"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.25.3") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.25.3") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.25.4") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.25.4") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.25.3") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.25.3") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.25.4") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.25.4") format("woff");
 }
 :root{
   --bg:#FAF4E7;            /* 옅은 노트 베이지(2026-07-15, 전체 한 톤 밝게 — 이전 카드색을 배경으로) */
@@ -87,6 +87,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1px solid var(--card-border);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);}
 .pill .dot{width:7px;height:7px;border-radius:50%;background:var(--hi-green-dark);}
 .avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
+
+.update-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 20px 10px;padding:9px 14px;background:var(--hi-yellow-light);border:1px solid var(--card-border);border-radius:12px;font-size:13px;font-weight:700;color:var(--ink);flex:none;}
+.update-banner button{background:var(--ink);color:var(--surface);border-radius:999px;padding:5px 13px;font-size:12px;font-weight:800;white-space:nowrap;}
 
 /* 홈 상단 게이미피케이션 지수 스트립 — 항목별로 다른 색, 같은 요소(캐릭터)에 속한 칩은 그 캐릭터의
    악센트 색을 그대로 씀(캐릭터가 곧 색 그룹). 형광펜 5단 톤의 light+xdark 조합 재사용. */
@@ -610,7 +613,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.25.3";
+const APP_VERSION = "v0.25.4";
 const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -3699,6 +3702,23 @@ function App() {
     return () => { vv.removeEventListener("resize", update); vv.removeEventListener("scroll", update); };
   }, []);
 
+  /* 새 버전 배포 감지: version.json을 캐시 없이 주기적으로/포그라운드 복귀 시 확인해서
+     APP_VERSION과 다르면 새로고침 배너 노출(PWA는 새로고침 제스처가 없어 수동 감지 필요). */
+  const [updateAvailable, setUpdateAvailable] = useState(false);
+  useEffect(() => {
+    const check = () => {
+      fetch("version.json?t=" + Date.now(), { cache: "no-store" })
+        .then(r => (r.ok ? r.json() : null))
+        .then(data => { if (data && data.v && data.v !== APP_VERSION) setUpdateAvailable(true); })
+        .catch(() => {});
+    };
+    check();
+    const iv = setInterval(check, 5 * 60 * 1000);
+    const onVis = () => { if (document.visibilityState === "visible") check(); };
+    document.addEventListener("visibilitychange", onVis);
+    return () => { clearInterval(iv); document.removeEventListener("visibilitychange", onVis); };
+  }, []);
+
   return (
     <div className="app">
       <div className="topbar">
@@ -3708,6 +3728,13 @@ function App() {
           <button className="avatar-btn" aria-label="설정" onClick={() => setSettingsOpen(true)}><Icon name="settings" size={19} /></button>
         </div>
       </div>
+
+      {updateAvailable && (
+        <div className="update-banner">
+          <span>새 버전이 있어요</span>
+          <button onClick={() => window.location.reload()}>새로고침</button>
+        </div>
+      )}
 
       <div className="scroll">
         {ltOpen ? (
