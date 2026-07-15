@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.19.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.19.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.19.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.20.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.20.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.20.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.19.0"></script>
+<script src="words.js?v=0.20.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,20 +28,20 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.19.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.19.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.20.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.20.0") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.19.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.19.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.20.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.20.0") format("woff");
 }
 :root{
-  --bg:#F5EEDD;            /* 옅은 노트 베이지 */
-  --surface:#FAF4E7;       /* 베이지보다 밝은 크림 (카드/시트) — bg 대비 밝기 격차를 절반으로 축소 */
+  --bg:#FAF4E7;            /* 옅은 노트 베이지(2026-07-15, 전체 한 톤 밝게 — 이전 카드색을 배경으로) */
+  --surface:#FFFAF1;       /* 배경보다 밝은 크림 (카드/시트) — 이전과 동일한 밝기 격차 유지 */
   --surface-container:#FBF4E3;      /* 톤 위계 1단 (M3 tonal elevation) */
   --surface-container-high:#F1E7CE; /* 톤 위계 2단 */
   --ink:#211C15;           /* 노트 잉크 블랙 (웜톤) — 텍스트 + 블랙 버튼 */
@@ -208,11 +208,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 레벨 3칸 */
 .level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
 /* 포스트잇 느낌 — 형광색 라이트톤 정사각(카드보다 각짐), 안의 숫자/글자는 .hl 형광펜(진한 톤)로 대비 */
-.stat{border-radius:10px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;background:var(--hi-yellow-light);}
-.stat.tier-green{background:var(--hi-green-light);}
-.stat.tier-yellow{background:var(--hi-yellow-light);}
-.stat.tier-pink{background:var(--hi-pink-light);}
-.stat.tier-blue{background:var(--hi-blue-light);}
+.stat{border-radius:10px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;background:var(--surface);border:1px solid var(--card-border);}
+.stat.tier-green{background:var(--hi-green-light);border-color:transparent;}
+.stat.tier-yellow{background:var(--hi-yellow-light);border-color:transparent;}
+.stat.tier-pink{background:var(--hi-pink-light);border-color:transparent;}
+.stat.tier-blue{background:var(--hi-blue-light);border-color:transparent;}
 .stat .v{display:inline-block;font-size:22px;font-weight:800;letter-spacing:-0.5px;font-variant-numeric:tabular-nums;}
 .stat .v.accent{color:var(--accent-deep);}
 .stat .l{font-size:11px;color:var(--muted);margin-top:2px;font-weight:600;}
@@ -295,11 +295,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 카테고리 선택: 레벨 카드 그리드 · 어근 행 목록 */
 .lv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
-.lv-card{border-radius:10px;box-shadow:var(--shadow);padding:16px 8px 14px;text-align:center;transition:transform .1s;background:var(--hi-yellow-light);}
-.lv-card.tier-green{background:var(--hi-green-light);}
-.lv-card.tier-yellow{background:var(--hi-yellow-light);}
-.lv-card.tier-pink{background:var(--hi-pink-light);}
-.lv-card.tier-blue{background:var(--hi-blue-light);}
+.lv-card{border-radius:10px;box-shadow:var(--shadow);padding:16px 8px 14px;text-align:center;transition:transform .1s;background:var(--surface);border:1px solid var(--card-border);}
+.lv-card.tier-green{background:var(--hi-green-light);border-color:transparent;}
+.lv-card.tier-yellow{background:var(--hi-yellow-light);border-color:transparent;}
+.lv-card.tier-pink{background:var(--hi-pink-light);border-color:transparent;}
+.lv-card.tier-blue{background:var(--hi-blue-light);border-color:transparent;}
 .lv-card:active{transform:scale(.96);}
 .lv-card .lv{font-size:21px;font-weight:800;color:var(--accent-deep);letter-spacing:-0.3px;}
 .lv-card .nm{font-size:12px;font-weight:700;color:var(--ink-2);margin-top:2px;}
@@ -579,7 +579,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.19.0";
+const APP_VERSION = "v0.20.0";
 const APP_BUILD = "2026-07-14"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -3253,7 +3253,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   const MENU = [
     { k: "card", icon: "school", title: "단어카드", sub: `복습 ${dueCount} · 신규 ${newCount} 대기`, on: true, start: startCard },
     { k: "listen", icon: "volume_up", title: "듣기 세션 (딕테이션)", sub: "듣고 그대로 타이핑", on: true, start: startListen },
-    { k: "quiz", icon: "grid_view", title: "퀴즈", sub: studiedCount >= 4 ? "뜻 4지선다 · 스펠링" : "먼저 단어카드로 학습해 보세요", on: studiedCount >= 4, start: startQuiz },
+    { k: "quiz", icon: "grid_view", title: "퀴즈", sub: studiedCount >= 4 ? "뜻 4지선다 · 스펠링" : "먼저 단어카드로 학습해 보세요", on: studiedCount >= 4, start: startQuiz, hidden: true }, // 2026-07-15 메뉴에서만 숨김(코드는 보존 — hidden 지우면 복원)
     { k: "level", icon: "add", title: "레벨 테스트", sub: "어휘 + 문장구사력", on: true, start: onStartLevelTest },
   ];
 
@@ -3263,7 +3263,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
         <div className="v accent">{dueCount}</div>
         <div className="l">지금 복습할 카드</div>
       </div>
-      {MENU.map(m => (
+      {MENU.filter(m => !m.hidden).map(m => (
         <div key={m.k} className={"step" + (m.on ? "" : " soon")} onClick={() => m.on && m.start()}>
           <div className="step-ico"><Icon name={m.icon} size={20} /></div>
           <div className="step-body">
