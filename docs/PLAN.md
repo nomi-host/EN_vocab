@@ -588,7 +588,8 @@ v2 추가 기능 배치: **발음 진단(Azure)·사용자 페르소나 → 3주
 
 - **Supabase Pro(월 $25)**: Postgres(DB) + Auth(소셜 로그인) + Edge Functions(서버 함수) + Storage + RLS(Row Level Security)를 한 곳에서. 부록 A가 이미 이걸 골라뒀으므로 웹앱 단계와 상용화가 같은 스택을 공유(리팩터링 최소).
 - **오프라인-우선(offline-first)**: 클라이언트는 계속 localStorage/IndexedDB를 1차 캐시로 쓰고, 로그인 시 Supabase와 **동기화**. 비로그인도 앱은 그대로 동작(게스트 모드) → 로그인하면 그 시점 로컬 데이터를 서버로 업로드·병합.
-- LLM/TTS 프록시(`api/proxy.js`)는 Vercel 서버리스로 시작하되, 사용량 카운트가 필요해지면 Supabase Edge Function으로 이전(DB에 사용량 기록).
+- **LLM/TTS 프록시 호스팅 결정(2026-07-15): Cloudflare Workers.** 무료 티어가 **상업 이용까지 허용**(하루 10만 요청)이라 수익화해도 Vercel Pro(월 $20) 강제 없이 $0 유지 가능. 정적 사이트는 당분간 Vercel 무료(개인·비상업)에 두되, 수익화 시 Cloudflare Pages로 함께 이전(에셋만 이동, 프록시는 이미 Workers). 사용량 카운트/DB 결합이 필요해지면 Supabase Edge Function으로도 이전 가능(코드는 웹 표준 fetch 핸들러로 이식성 유지).
+- **키는 런타임 시크릿**: `GEMINI_API_KEY`, `GOOGLE_TTS_KEY`는 Workers 시크릿(`wrangler secret put` 또는 대시보드)으로만 주입 — 레포·클라이언트 번들에 절대 미포함.
 
 **DB 선택 — SQLite vs PostgreSQL 검토 결론(2026-07-15): Postgres.** 근거:
 
