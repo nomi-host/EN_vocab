@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.30.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.30.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.30.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.31.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.31.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.31.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.30.0"></script><style>
+<script src="words.js?v=0.31.0"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.30.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.30.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.31.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.31.0") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.30.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.30.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.31.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.31.0") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -565,6 +565,52 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .finish{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:40px 20px;}
 .finish .big{font-size:40px;font-weight:800;color:var(--accent-deep);font-variant-numeric:tabular-nums;}
 .finish .msg{font-size:15px;font-weight:700;}
+
+/* ---------- 회화 탭 — 대화방 목록 + 채팅 ---------- */
+.step.soon{opacity:.5;}
+.talk-room{display:flex;align-items:center;gap:13px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:var(--shadow);padding:14px 16px;margin-bottom:8px;}
+.talk-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex:none;}
+.talk-avatar.hi-green{background:var(--hi-green);color:var(--hi-green-xdark);}
+.talk-avatar.hi-yellow{background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
+.talk-avatar.hi-pink{background:var(--hi-pink);color:var(--hi-pink-xdark);}
+.talk-avatar.hi-blue{background:var(--hi-blue);color:var(--hi-blue-xdark);}
+.talk-avatar.hi-orange{background:var(--hi-orange);color:var(--ink);}
+.talk-room-body{flex:1;min-width:0;}
+.talk-room-name{font-size:14px;font-weight:800;}
+.talk-room-sub{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px;}
+
+.talk-head{display:flex;align-items:center;gap:10px;padding:4px 2px 10px;}
+.talk-head-name{font-weight:800;font-size:16px;}
+.talk-head-trait{font-size:12px;color:var(--muted);}
+.talk-end-btn{margin-left:auto;font-size:12px;font-weight:700;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:7px 12px;flex:none;}
+.talk-toggles{display:flex;gap:8px;margin-bottom:10px;}
+.talk-toggle{font-size:12px;font-weight:700;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:6px 12px;}
+.talk-toggle.on{background:var(--ink);color:var(--on-accent);}
+
+.talk-msgs{display:flex;flex-direction:column;gap:10px;padding-bottom:12px;max-height:calc(100dvh - 320px);overflow-y:auto;}
+.talk-msg{display:flex;flex-direction:column;max-width:82%;gap:3px;}
+.talk-msg.bot{align-self:flex-start;align-items:flex-start;}
+.talk-msg.user{align-self:flex-end;align-items:flex-end;}
+.talk-bubble{padding:10px 13px;font-size:14px;line-height:1.5;font-weight:600;display:flex;align-items:center;gap:8px;}
+.talk-msg.bot .talk-bubble{background:var(--fill);color:var(--ink);}
+.talk-msg.user .talk-bubble{background:var(--ink);color:var(--on-accent);}
+.talk-play{color:inherit;opacity:.7;flex:none;}
+.talk-msg-ko{font-size:11px;color:var(--muted);padding:0 3px;}
+.talk-msg-fav{color:var(--muted);padding:0 3px;}
+.talk-msg-fav.on{color:var(--hi-pink-dark);}
+
+.talk-fb{border:0.5px solid var(--card-border);background:var(--warmgray-light);padding:11px 13px;font-size:12px;line-height:1.6;color:var(--ink-2);max-width:100%;}
+.talk-fb.ok{border-color:var(--good);}
+.talk-fb .t{font-weight:800;margin-bottom:3px;color:var(--ink);}
+.talk-fb button{margin-top:8px;background:var(--ink);color:var(--on-accent);border-radius:999px;padding:6px 14px;font-size:12px;font-weight:700;}
+
+.talk-input-row{display:flex;gap:8px;position:sticky;bottom:0;background:var(--bg);padding:8px 0 2px;}
+.talk-input-row input{flex:1;border:0.5px solid var(--card-border);background:var(--surface);border-radius:0;padding:11px 13px;font:inherit;font-size:14px;outline:none;}
+.talk-input-row input:disabled{opacity:.5;}
+.talk-input-row button{background:var(--ink);color:var(--on-accent);border-radius:999px;padding:0 18px;font-weight:700;font-size:13px;flex:none;}
+.talk-input-row button:disabled{opacity:.4;}
+
+.talk-summary-item{border:0.5px solid var(--card-border);background:var(--surface);padding:11px 13px;margin-bottom:8px;font-size:13px;line-height:1.6;}
 .finish .sub{font-size:13px;color:var(--muted);}
 .finish .mascot{width:96px;height:96px;margin-bottom:6px;}
 
@@ -640,7 +686,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.30.0";const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.31.0";const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -861,9 +907,9 @@ function stopSpeaking() {
   try { speechSynthesis.cancel(); } catch (e) {}
   if (_activeAudio) { try { _activeAudio.pause(); } catch (e) {} _activeAudio = null; }
 }
-async function speakText(text, rateOverride) {
+async function speakText(text, rateOverride, accentOverride) {
   const prefs = PREFS.get();
-  const accent = ACCENT_PRESETS[prefs.accent];
+  const accent = ACCENT_PRESETS[accentOverride] || ACCENT_PRESETS[prefs.accent];
   const rate = rateOverride || SPEED_PRESETS[prefs.speed].rate;
   const myGen = ++_speakGen; // 이 호출 이후 speakText/stopSpeaking이 또 불리면 myGen은 낡은 세대가 됨
   // 새로 말하기 전에 이전 재생(프록시 Audio·Web Speech 둘 다) 정지 — 연타 에코 방지
@@ -2574,11 +2620,264 @@ function Soon({ title, desc }) {
   );
 }
 
+/* ---------- 회화 탭 — 페르소나 대화방 (PLAN 4.6) ----------
+   MVP 범위(2026-07-15): 텍스트 대화 + 정확성 모드(피드백마다 확인 눌러야 진행)만 우선 구현.
+   음성 입력·유창성 모드(무중단, 종료 후 일괄 리뷰)·사용자 커스텀 페르소나 생성은 다음 단계로 남김. */
+const PERSONAS = [
+  { id: "coworker", name: "직장동료", trait: "IT회사 개발자 · 미국인", accent: "us", rate: 1, avatar: "green", letter: "동",
+    promptDesc: "당신은 사용자와 같은 IT회사에서 일하는 미국인 개발자 동료입니다. 친근하고 캐주얼한 톤으로 업무 잡담을 나눕니다." },
+  { id: "partner", name: "3년 사귄 애인", trait: "영국인", accent: "gb", rate: 1, avatar: "pink", letter: "애",
+    promptDesc: "당신은 사용자와 3년째 사귀고 있는 영국인 애인입니다. 다정하고 편안한 톤으로 일상 대화를 나눕니다." },
+  { id: "traveler", name: "여행지에서 만난 사람", trait: "호주인", accent: "au", rate: 1, avatar: "blue", letter: "여",
+    promptDesc: "당신은 여행지에서 사용자와 방금 처음 만난 호주인입니다. 밝고 스몰토크에 능한 톤으로 대화합니다." },
+  { id: "cashier", name: "마트 점원", trait: "미국인 · 캐주얼한 말투", accent: "us", rate: 1, avatar: "yellow", letter: "마",
+    promptDesc: "당신은 미국 마트에서 일하는 점원입니다. 캐주얼하고 친근한 구어체로 짧게 응대합니다." },
+  { id: "airport", name: "공항 지상직 직원", trait: "영국인 · 사무적", accent: "gb", rate: 1, avatar: "orange", letter: "공",
+    promptDesc: "당신은 공항 지상직 직원입니다. 무례하진 않지만 다소 사무적이고 퉁명스러운 톤으로 응대합니다." },
+  { id: "doctor", name: "의사", trait: "중장년 남성 · 빠른 말투", accent: "us", rate: 1.2, avatar: "blue", letter: "의",
+    promptDesc: "당신은 중장년 남성 의사입니다. 말이 빠르고 전문적인 톤으로 진료를 진행합니다." },
+  { id: "barista", name: "카페 직원", trait: "20대 여성 · 빠른 말투", accent: "us", rate: 1.2, avatar: "green", letter: "카",
+    promptDesc: "당신은 20대 여성 카페 직원입니다. 밝고 빠른 톤으로 주문을 받습니다." },
+  { id: "stranger", name: "지나가는 행인", trait: "도움이 필요한 상황 · 미국인", accent: "us", rate: 1, avatar: "yellow", letter: "행",
+    promptDesc: "당신은 길에서 도움이 필요한(또는 사용자를 도와줄 수 있는) 미국인 행인입니다." },
+  { id: "tutor", name: "친절한 영어 튜터", trait: "30대 · 뉴욕 발음", accent: "us", rate: 1, avatar: "pink", letter: "튜",
+    promptDesc: "당신은 뉴욕 출신의 친절한 30대 영어 튜터입니다. 격려하는 톤으로 자연스럽게 학습자를 이끕니다." },
+  { id: "friend", name: "10년지기 친구", trait: "슬랭 다수 · 미국인", accent: "us", rate: 1, avatar: "orange", letter: "친",
+    promptDesc: "당신은 사용자와 10년지기인 미국인 친구입니다. 편하고 슬랭이 섞인 캐주얼한 톤으로 대화합니다." },
+];
+
+/* 대화방 상태(페르소나별 메시지 이력) + 즐겨찾기 문장 — 보관함 "문장" 탭과 공유 데이터. */
+let TALK_ROOMS = (() => { try { return JSON.parse(localStorage.getItem("en_talk_rooms") || "{}"); } catch (e) { return {}; } })();
+function saveTalkRooms() { try { localStorage.setItem("en_talk_rooms", JSON.stringify(TALK_ROOMS)); } catch (e) {} }
+let FAV_SENTENCES = (() => { try { return JSON.parse(localStorage.getItem("en_fav_sentences") || "[]"); } catch (e) { return []; } })();
+function saveFavSentences() { try { localStorage.setItem("en_fav_sentences", JSON.stringify(FAV_SENTENCES)); } catch (e) {} }
+function isFavSentence(en) { return FAV_SENTENCES.some(s => s.en === en); }
+function toggleFavSentence(en, ko, source) {
+  const i = FAV_SENTENCES.findIndex(s => s.en === en);
+  if (i >= 0) FAV_SENTENCES.splice(i, 1);
+  else FAV_SENTENCES.unshift({ en, ko: ko || "", source: source || "", savedAt: Date.now() });
+  saveFavSentences();
+}
+
+/* Gemini 프록시에 "JSON만 응답하도록" 프롬프트를 보내고 파싱까지 해주는 공용 헬퍼(회화 기능 전용 호출 3곳이 공유) */
+async function geminiJSON(prompt) {
+  const r = await fetch(PROXY_BASE + "/gemini", {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ prompt }),
+  });
+  const data = await r.json().catch(() => null);
+  if (!r.ok || !data || !data.text) throw new Error((data && data.error) || "gemini failed");
+  const cleaned = data.text.replace(/^```json\s*|^```\s*|```\s*$/g, "").trim();
+  return JSON.parse(cleaned);
+}
+function talkNextLine(persona, history) {
+  const histText = history.slice(-8).map(m => (m.role === "bot" ? "상대: " : "나: ") + m.en).join("\n");
+  const prompt = "역할극을 진행합니다. " + persona.promptDesc +
+    "\n지금까지 대화:\n" + (histText || "(대화 시작 전 — 상대가 먼저 자연스럽게 말을 건넵니다)") +
+    "\n위 상황에 이어서 당신(상대 역할)이 할 다음 대사를 한두 문장으로 자연스럽게 영어로 말하세요." +
+    "\n아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요." +
+    '\n{"en":"영어 대사","ko":"그 대사의 자연스러운 한국어 번역"}';
+  return geminiJSON(prompt);
+}
+function talkFeedback(persona, userEn) {
+  const prompt = "아래는 한국인 영어 학습자가 \"" + persona.name + "\"과의 영어 회화 연습에서 입력한 문장입니다.\n문장: \"" + userEn + "\"" +
+    "\n문법이나 자연스러움에 문제가 있으면 교정하고, 문제가 없으면 그대로 인정하세요." +
+    "\n아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요." +
+    '\n{"ok":true 또는 false,"note_ko":"짧은 한국어 코멘트 한 줄","corrected":"교정된 영어 문장(문제 없으면 원문 그대로)"}';
+  return geminiJSON(prompt);
+}
+
+function TalkRooms({ onOpenRoom, onOpenSOS }) {
+  return (
+    <div className="content">
+      <div className="sec">회화</div>
+      <div className="step" onClick={onOpenSOS}>
+        <div className="step-ico round black"><Icon name="auto_awesome" size={20} /></div>
+        <div className="step-body">
+          <div className="step-title">막히면 SOS</div>
+          <div className="step-sub">하고 싶은 말을 한국어로 입력하면 영어로 알려드려요</div>
+        </div>
+        <span className="arrow">›</span>
+      </div>
+      <div className="step soon">
+        <div className="step-ico round"><Icon name="menu_book" size={20} /></div>
+        <div className="step-body">
+          <div className="step-title">작문 연습</div>
+          <div className="step-sub">준비 중</div>
+        </div>
+      </div>
+      <div className="step soon">
+        <div className="step-ico round"><Icon name="volume_up" size={20} /></div>
+        <div className="step-body">
+          <div className="step-title">발음 클리닉</div>
+          <div className="step-sub">준비 중</div>
+        </div>
+      </div>
+
+      <div className="sec" style={{ marginTop: 18 }}>대화방</div>
+      {PERSONAS.map(p => {
+        const room = TALK_ROOMS[p.id];
+        const last = room && room.messages.length ? room.messages[room.messages.length - 1] : null;
+        return (
+          <div key={p.id} className="talk-room" onClick={() => onOpenRoom(p.id)}>
+            <div className={"talk-avatar hi-" + p.avatar}>{p.letter}</div>
+            <div className="talk-room-body">
+              <div className="talk-room-name">{p.name}</div>
+              <div className="talk-room-sub">{last ? (last.role === "bot" ? last.en : "나: " + last.en) : p.trait}</div>
+            </div>
+            {!last && <span className="tag" style={{ flex: "none" }}>시작 전</span>}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function TalkRoom({ persona, onExit }) {
+  const saved = TALK_ROOMS[persona.id];
+  const [messages, setMessages] = useState((saved && saved.messages) || []);
+  const [showEn, setShowEn] = useState(true);
+  const [showKo, setShowKo] = useState(true);
+  const [input, setInput] = useState("");
+  const [awaitingAck, setAwaitingAck] = useState(false);
+  const [loadingBot, setLoadingBot] = useState(false);
+  const [loadingFb, setLoadingFb] = useState(false);
+  const [err, setErr] = useState(null);
+  const [showSummary, setShowSummary] = useState(false);
+  const [, bump] = useState(0);
+  const scrollRef = useRef(null);
+
+  useEffect(() => { TALK_ROOMS[persona.id] = { messages }; saveTalkRooms(); }, [messages]);
+  useEffect(() => { if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight; }, [messages]);
+
+  const fetchBotLine = async hist => {
+    setLoadingBot(true); setErr(null);
+    try {
+      const r = await talkNextLine(persona, hist);
+      const msg = { role: "bot", en: (r.en || "").trim(), ko: (r.ko || "").trim() };
+      setMessages(m => [...m, msg]);
+      speakText(msg.en, persona.rate, persona.accent);
+    } catch (e) {
+      setErr("상대의 대답을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.");
+    } finally {
+      setLoadingBot(false);
+    }
+  };
+
+  useEffect(() => {
+    if (messages.length === 0) fetchBotLine([]);
+    // eslint-disable-next-line
+  }, []);
+
+  const send = async () => {
+    const text = input.trim();
+    if (!text || loadingBot || loadingFb || awaitingAck) return;
+    setMessages(m => [...m, { role: "user", en: text }]);
+    setInput(""); setLoadingFb(true); setErr(null);
+    try {
+      const fb = await talkFeedback(persona, text);
+      setMessages(m => m.map((msg, i) => (i === m.length - 1 ? { ...msg, feedback: fb } : msg)));
+    } catch (e) {
+      setMessages(m => m.map((msg, i) => (i === m.length - 1 ? { ...msg, feedback: { ok: true, note_ko: "", corrected: text } } : msg)));
+    } finally {
+      setLoadingFb(false); setAwaitingAck(true);
+    }
+  };
+  const ackFeedback = () => { setAwaitingAck(false); fetchBotLine(messages); };
+  const toggleFav = m => { toggleFavSentence(m.en, m.ko || "", persona.name); bump(v => v + 1); };
+  const corrections = messages.filter(m => m.role === "user" && m.feedback && !m.feedback.ok);
+
+  if (showSummary) {
+    return (
+      <div className="content">
+        <div className="talk-head">
+          <button className="back" onClick={() => setShowSummary(false)} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
+          <div className="talk-head-name">대화 요약 · {persona.name}</div>
+        </div>
+        {corrections.length === 0 ? (
+          <div className="empty-note">이번 대화에서는 교정할 부분이 없었어요. 잘하고 있어요.</div>
+        ) : corrections.map((m, i) => (
+          <div key={i} className="talk-summary-item">
+            <div style={{ color: "var(--muted)", marginBottom: 4 }}>{m.en}</div>
+            <div style={{ fontWeight: 700 }}>→ {m.feedback.corrected}</div>
+            {m.feedback.note_ko && <div style={{ marginTop: 4, fontSize: 12, color: "var(--ink-2)" }}>{m.feedback.note_ko}</div>}
+          </div>
+        ))}
+        <button className="qsub" style={{ marginTop: 10 }} onClick={() => setShowSummary(false)}>대화로 돌아가기</button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="content talk-room-screen">
+      <div className="talk-head">
+        <button className="back" onClick={onExit} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
+        <div style={{ flex: 1 }}>
+          <div className="talk-head-name">{persona.name}</div>
+          <div className="talk-head-trait">{persona.trait}</div>
+        </div>
+        {messages.length > 1 && <button className="talk-end-btn" onClick={() => setShowSummary(true)}>대화 요약</button>}
+      </div>
+      <div className="talk-toggles">
+        <button className={"talk-toggle" + (showEn ? " on" : "")} onClick={() => setShowEn(v => !v)}>대사 {showEn ? "표시" : "숨김"}</button>
+        <button className={"talk-toggle" + (showKo ? " on" : "")} onClick={() => setShowKo(v => !v)}>번역 {showKo ? "표시" : "숨김"}</button>
+      </div>
+
+      <div className="talk-msgs" ref={scrollRef}>
+        {messages.map((m, i) => (
+          <div key={i} className={"talk-msg " + m.role}>
+            <div className="talk-bubble">
+              {m.role === "bot" && !showEn ? "•••" : m.en}
+              {m.role === "bot" && (
+                <button className="talk-play" onClick={() => speakText(m.en, persona.rate, persona.accent)} aria-label="다시 듣기">
+                  <Icon name="volume_up" size={13} />
+                </button>
+              )}
+            </div>
+            {showKo && m.ko && <div className="talk-msg-ko">{m.ko}</div>}
+            <button className={"talk-msg-fav" + (isFavSentence(m.en) ? " on" : "")} onClick={() => toggleFav(m)} aria-label="문장 즐겨찾기">
+              <Icon name="favorite" size={14} />
+            </button>
+            {m.role === "user" && m.feedback && (
+              <div className={"talk-fb" + (m.feedback.ok ? " ok" : "")}>
+                <div className="t">{m.feedback.ok ? "좋아요!" : "이렇게 말하면 더 자연스러워요"}</div>
+                {!m.feedback.ok && m.feedback.corrected && <div>{m.feedback.corrected}</div>}
+                {m.feedback.note_ko && <div>{m.feedback.note_ko}</div>}
+                {awaitingAck && i === messages.length - 1 && <button onClick={ackFeedback}>확인</button>}
+              </div>
+            )}
+          </div>
+        ))}
+        {loadingBot && <div className="empty-note">상대가 대답을 준비하고 있어요…</div>}
+        {loadingFb && <div className="empty-note">확인하고 있어요…</div>}
+        {err && <div className="empty-note" style={{ color: "var(--danger)" }}>{err}</div>}
+      </div>
+
+      <div className="talk-input-row">
+        <input value={input} onChange={e => setInput(e.target.value)} placeholder="영어로 답해보세요"
+          disabled={awaitingAck || loadingBot || loadingFb}
+          onKeyDown={e => { if (e.key === "Enter") send(); }}
+          autoCapitalize="none" autoComplete="off" autoCorrect="off" />
+        <button onClick={send} disabled={!input.trim() || awaitingAck || loadingBot || loadingFb}>전송</button>
+      </div>
+    </div>
+  );
+}
+
+function Talk() {
+  const [view, setView] = useState(null); // null=대화방 목록 | "sos" | 페르소나 id
+  if (!PROXY_BASE) return <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />;
+  if (view === "sos") return <TalkSOS onBack={() => setView(null)} />;
+  if (view) {
+    const persona = PERSONAS.find(p => p.id === view);
+    return <TalkRoom persona={persona} onExit={() => setView(null)} />;
+  }
+  return <TalkRooms onOpenRoom={setView} onOpenSOS={() => setView("sos")} />;
+}
+
 /* ---------- 회화 탭 — SOS 미니 도구 (PLAN 4.12-5) ----------
-   풀 회화(페르소나·대화방)는 아직 준비 중 — 그중 "막히면 SOS"만 먼저 독립 기능으로 뗌.
    한국어로 하고 싶은 말을 입력 → Gemini 프록시가 자연스러운 영어 한 문장으로 알려줌.
-   PROXY_BASE 미설정 시 기존 Soon 플레이스홀더와 동일하게 노출(기능 추가로 인한 회귀 없음). */
-function TalkSOS() {
+   onBack이 있으면(대화방 목록에서 들어온 경우) 뒤로가기 헤더 표시, 없으면(구버전 단독 탭) 기존과 동일. */
+function TalkSOS({ onBack }) {
   const [ko, setKo] = useState("");
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -2614,7 +2913,14 @@ function TalkSOS() {
 
   return (
     <div className="content">
-      <div className="sec">SOS — 하고 싶은 말을 영어로</div>
+      {onBack ? (
+        <div className="talk-head">
+          <button className="back" onClick={onBack} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
+          <div className="talk-head-name">SOS — 하고 싶은 말을 영어로</div>
+        </div>
+      ) : (
+        <div className="sec">SOS — 하고 싶은 말을 영어로</div>
+      )}
       <div className="qcard">
         <textarea className="qdictate" rows={3} value={ko} onChange={e => setKo(e.target.value)}
           placeholder="예: 저 화장실 좀 다녀와도 될까요?" autoCapitalize="none" />
@@ -2631,7 +2937,7 @@ function TalkSOS() {
           </div>
         )}
       </div>
-      <div className="empty-note" style={{ marginTop: 4 }}>대화방·작문 연습·발음 클리닉은 준비 중이에요. 막힐 때 이 SOS부터 써보세요.</div>
+      {!onBack && <div className="empty-note" style={{ marginTop: 4 }}>대화방·작문 연습·발음 클리닉은 준비 중이에요. 막힐 때 이 SOS부터 써보세요.</div>}
     </div>
   );
 }
@@ -2639,9 +2945,11 @@ function TalkSOS() {
 /* ---------- 보관함 탭 ---------- */
 /* 뱃지 컬렉션 — 피크민 블룸식: 한 줄당 한 카테고리(헤더 + 가로 스와이프로 5티어 랭크).
    미획득은 실루엣, 탭하면 상세(밀어서 뒤집기). + 즐겨찾기 단어·내 단어장 바로가기(사전 탭으로 이동).
-   문장 컬렉션·성장 기록은 상위 기능(작문·회화·실 학습 로그)이 아직 없어 준비 중만 표시. */
+   문장은 회화 대화방에서 저장한 FAV_SENTENCES 실동작(2026-07-15). 성장 기록은 학습 로그 인프라가
+   아직 없어 준비 중만 표시. */
 function Vault({ onGoTab }) {
   const [badgeSel, setBadgeSel] = useState(null); // {catKey, tierIdx} | null
+  const [, bump] = useState(0); // 문장 즐겨찾기 해제 리렌더용
   const favCount = allWords().filter(w => FAVS.has(w.word)).length;
 
   return (
@@ -2681,7 +2989,21 @@ function Vault({ onGoTab }) {
 
       <div className="vault-sec">
         <div className="sec">문장</div>
-        <div className="empty-note">작문·회화·학습 카드에서 저장한 문장이 여기 모여요. 아직 준비 중입니다.</div>
+        {FAV_SENTENCES.length === 0 ? (
+          <div className="empty-note">회화 대화방에서 하트를 눌러 저장한 문장이 여기 모여요.</div>
+        ) : FAV_SENTENCES.map((s, i) => (
+          <div key={s.en + i} className="wd-ex" style={{ cursor: "default" }}>
+            <div className="en" style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 8 }}>
+              <span onClick={() => speakText(s.en)} style={{ cursor: "pointer" }}>{s.en}</span>
+              <button className="talk-msg-fav on" style={{ flex: "none" }}
+                      onClick={() => { toggleFavSentence(s.en); bump(v => v + 1); }} aria-label="즐겨찾기 해제">
+                <Icon name="favorite" size={16} />
+              </button>
+            </div>
+            {s.ko && <div className="ko">{s.ko}</div>}
+            {s.source && <div className="talk-msg-ko" style={{ marginTop: 2 }}>{s.source}에서 저장</div>}
+          </div>
+        ))}
       </div>
 
       <div className="vault-sec">
@@ -4096,7 +4418,7 @@ function App() {
             {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => startCustomStudy(pickSession(10), "listen")} />}
             {tab === "dict" && <Dict onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} />}
             {tab === "learn" && <Learn onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} customMode={customMode} onConsumeCustomStudy={() => setCustomStudy(null)} />}
-            {tab === "talk" && <TalkSOS />}
+            {tab === "talk" && <Talk />}
             {tab === "box" && <Vault onGoTab={setTab} />}
           </React.Fragment>
         )}
