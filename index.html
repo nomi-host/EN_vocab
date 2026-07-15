@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.21.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.21.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.21.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.22.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.22.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.22.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.21.0"></script>
+<script src="words.js?v=0.22.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.21.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.21.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.22.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.22.0") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.21.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.21.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.22.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.22.0") format("woff");
 }
 :root{
   --bg:#FAF4E7;            /* 옅은 노트 베이지(2026-07-15, 전체 한 톤 밝게 — 이전 카드색을 배경으로) */
@@ -137,19 +137,20 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* ===== 원형 랭크 메달 (애플워치/피크민 참고) ===== */
 .medal{flex:none;width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .12s;box-shadow:0 2px 7px rgba(33,28,21,.2);}
 .medal:active{transform:scale(.93);}
-.medal-face{width:50px;height:50px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;line-height:1;box-shadow:inset 0 1px 3px rgba(0,0,0,.16);}
+.medal-face{width:50px;height:50px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;line-height:1;}
 .medal .mv{font-size:15px;font-weight:800;letter-spacing:-0.6px;font-variant-numeric:tabular-nums;}
-/* 티어 금속 톤 — 링(conic 그라디언트)+이너 페이스 */
-.medal.bt-bronze{background:conic-gradient(#dca674,#8a5a2b,#eec097,#7a4a20,#dca674);}
-.medal.bt-silver{background:conic-gradient(#ececf2,#9a9aa6,#f6f6fa,#888f9e,#ececf2);}
-.medal.bt-gold{background:conic-gradient(#f6d778,#b8860b,#ffe9a3,#a8760a,#f6d778);}
-.medal.bt-plat{background:conic-gradient(#dfeaf5,#8fb8d8,#f0f7ff,#7aa8cc,#dfeaf5);}
-.medal.bt-master{background:conic-gradient(from 0deg,#ff5e7a,#ffd166,#84d96a,#59b7ff,#c58bff,#ff5e7a);}
-.medal.bt-bronze .medal-face{background:#f7e7d5;color:#6a3f18;}
-.medal.bt-silver .medal-face{background:#f3f4f8;color:#474d59;}
-.medal.bt-gold .medal-face{background:#fdf4d4;color:#795500;}
-.medal.bt-plat .medal-face{background:#eff7ff;color:#376189;}
-.medal.bt-master .medal-face{background:#fff;color:#3a2a4a;}
+/* 티어 톤 — 앱 형광펜 하이어라키(연두<옐로우<핑크<블루)에 랭크를 매핑, 최상위=잉크(블랙 포인트).
+   그라디언트 없이 플랫: 링=형광펜 solid, 이너 페이스=xlight, 텍스트=xdark. */
+.medal.bt-bronze{background:var(--hi-green);}
+.medal.bt-silver{background:var(--hi-yellow);}
+.medal.bt-gold{background:var(--hi-pink);}
+.medal.bt-plat{background:var(--hi-blue);}
+.medal.bt-master{background:var(--accent);}
+.medal.bt-bronze .medal-face{background:var(--hi-green-xlight);color:var(--hi-green-xdark);}
+.medal.bt-silver .medal-face{background:var(--hi-yellow-xlight);color:var(--hi-yellow-xdark);}
+.medal.bt-gold .medal-face{background:var(--hi-pink-xlight);color:var(--hi-pink-xdark);}
+.medal.bt-plat .medal-face{background:var(--hi-blue-xlight);color:var(--hi-blue-xdark);}
+.medal.bt-master .medal-face{background:var(--surface);color:var(--accent-deep);}
 /* 미획득 = 실루엣(그림자 처리) */
 .medal.locked{background:var(--fill);box-shadow:inset 0 2px 6px rgba(33,28,21,.22),0 1px 2px rgba(33,28,21,.06);}
 .medal.locked .medal-face{background:transparent;box-shadow:none;color:var(--muted);}
@@ -608,7 +609,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.21.0";
+const APP_VERSION = "v0.22.0";
 const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
