@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.27.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.27.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.27.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.28.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.28.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.28.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.27.0"></script>
+<script src="words.js?v=0.28.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.27.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.27.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.28.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.28.0") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.27.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.27.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.28.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.28.0") format("woff");
 }
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
@@ -52,6 +52,7 @@
   --accent:#211C15;        /* 포인트 = 잉크 블랙(블랙 버튼 컨셉) */
   --accent-deep:#4A3A20;   /* 흰 배경 위 텍스트 강조 (웜 브라운) */
   --accent-soft:#EDE1C2;   /* 옅은 배경 */
+  --warmgray-fill:#E8E4D9; /* 웜그레이 톤(--accent-soft보다 덜 노랗게 채도 낮춘 버전) — 카드 배경용 */
   --on-accent:#FFFBF1;
   --good:#2F8F5B;
   --good-container:#E3F1E7;
@@ -86,6 +87,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .topbar-right{display:flex;align-items:center;gap:8px;}
 .pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);}
 .pill .dot{width:7px;height:7px;border-radius:50%;background:var(--hi-green-dark);}
+.pill .dot.hl-green{background:var(--hi-green-dark);}
+.pill .dot.hl-yellow{background:var(--hi-yellow-dark);}
+.pill .dot.hl-pink{background:var(--hi-pink-dark);}
+.pill .dot.hl-blue{background:var(--hi-blue-dark);}
+.pill .dot.hl-ink{background:var(--ink);}
 .avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
 
 .update-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 20px 10px;padding:9px 14px;background:var(--hi-yellow-light);border:0.5px solid var(--card-border);border-radius:12px;font-size:13px;font-weight:700;color:var(--ink);flex:none;}
@@ -107,7 +113,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .content{padding:8px 20px calc(28px + var(--kb, 0px));display:flex;flex-direction:column;gap:14px;}
 
 /* 섹션 라벨 */
-.sec{font-size:13px;font-weight:700;color:var(--ink);letter-spacing:-0.2px;margin:6px 2px 0;}
+.sec{font-size:26px;font-weight:800;color:var(--ink);letter-spacing:-0.3px;margin:6px 2px 0;}
 .sec .more{float:right;font-size:12px;color:var(--muted);font-weight:600;}
 
 /* 카드 공통 */
@@ -166,7 +172,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .badge-rows{display:flex;flex-direction:column;gap:16px;}
 .badge-row-t{font-size:13px;font-weight:800;color:var(--ink);margin-bottom:7px;display:flex;align-items:baseline;gap:6px;}
 .badge-row-t .rc{font-size:11px;font-weight:700;color:var(--muted);}
-.medal-strip{display:flex;gap:12px;overflow-x:auto;padding:2px 0 6px;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
+.medal-strip{display:flex;gap:12px;overflow-x:auto;padding:4px 4px 8px;margin:0 -4px;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
 .medal-strip::-webkit-scrollbar{display:none;}
 .medal-cell{flex:none;display:flex;flex-direction:column;align-items:center;gap:5px;width:64px;}
 .medal-cell .mth{font-size:10px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums;}
@@ -323,9 +329,13 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .tag.tier-pink{background:var(--hi-pink);color:var(--hi-pink-xdark);}
 .tag.tier-blue{background:var(--hi-blue);color:var(--hi-blue-xdark);}
 .tag.done{background:var(--hi-green-light);color:var(--hi-green-xdark);}
-.tag.learning{background:var(--hi-yellow-light);color:var(--hi-yellow-xdark);}
+/* 복습 임박도 — 잉크 위계(잔디와 같은 원리): 임박할수록 진한 잉크, 여유 있을수록 옅음 */
+.tag.due-t0{background:rgba(33,28,21,.75);color:#FFFBF1;}
+.tag.due-t1{background:rgba(33,28,21,.5);color:#FFFBF1;}
+.tag.due-t2{background:rgba(33,28,21,.28);color:var(--ink);}
+.tag.due-t3{background:rgba(33,28,21,.14);color:var(--ink-2);}
 .tag.mine{background:var(--hi-blue-light);color:var(--hi-blue-xdark);}
-.tag.sense{background:var(--hi-pink-light);color:var(--hi-pink-xdark);}
+.tag.sensecount{background:var(--hi-pink-light);color:var(--hi-pink-xdark);}
 
 /* 카테고리 선택: 레벨 카드 그리드 · 어근 행 목록 */
 .lv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
@@ -480,7 +490,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    남은 자리가 자연히 빈칸처럼 보임(자모 단위로 나누지 않음). 학습 형식이라 완전히
    맞혀야 다음으로 넘어가므로, 오답 시 칸별 정오만 색으로 표시(정답 문자는 안 보여줌). */
 /* 듣기 카드: 듣기난이도/예문/예문뜻 사이 간격이 너무 컸음 → 카드 gap을 절반으로(사용자 지적) */
-.qcard.dict-card{gap:7px;}
+.qcard.dict-card{gap:7px;position:relative;}
+.dict-countdown-overlay{position:absolute;inset:0;background:rgba(255,253,248,.7);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;z-index:5;transition:opacity .3s ease;}
+.dict-countdown-overlay.out{opacity:0;pointer-events:none;}
 /* 듣기 난이도 뱃지 — 어휘 CEFR과는 별개 지표(연음·문장길이 반영), 기존 상태 색 재사용 */
 .dict-difficulty{display:flex;align-items:center;gap:8px;margin-bottom:2px;}
 /* 난이도 옆 다시듣기(사운드) 버튼 */
@@ -506,7 +518,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .len-row i{width:9px;height:9px;border-radius:2px;background:var(--accent-soft);}
 
 /* 듣기 세션 시작 전 3·2·1 카운트다운 원 */
-.countdown-circle{width:96px;height:96px;border-radius:50%;background:rgba(33,28,21,.5);color:#FFFBF1;display:flex;align-items:center;justify-content:center;font-size:40px;font-weight:800;animation:countpulse .7s ease;}
+.countdown-circle{width:48px;height:48px;border-radius:50%;background:var(--ink);color:#FFFBF1;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;animation:countpulse .7s ease;}
 @keyframes countpulse{from{transform:scale(1.3);opacity:0;}to{transform:scale(1);opacity:1;}}
 @media (prefers-reduced-motion: reduce){.countdown-circle{animation:none;}}
 .dict-result{font-size:17px;font-weight:600;line-height:1.8;display:flex;flex-wrap:wrap;gap:6px 7px;align-items:baseline;}
@@ -517,7 +529,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .dict-note{font-size:12px;font-weight:500;color:var(--ink-2);background:var(--bg);border-radius:10px;padding:9px 11px;line-height:1.5;}
 .dict-note b{color:var(--accent-deep);font-weight:800;}
 .dict-relearn-note{font-size:12px;font-weight:700;color:var(--hi-yellow-xdark);background:var(--hi-yellow-light);border-radius:10px;padding:9px 11px;}
-.qsub{background:var(--accent);color:var(--on-accent);font-weight:700;font-size:15px;padding:14px 20px;border-radius:14px;width:100%;}
+.qsub{background:var(--accent);color:var(--on-accent);font-weight:700;font-size:15px;padding:14px 20px;border-radius:14px;width:100%;display:inline-flex;align-items:center;justify-content:center;gap:6px;}
 .qres{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;}
 .qres.ok{color:var(--good);}
 .qres.no{color:var(--danger);}
@@ -534,7 +546,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qchoice.wrong{background:#fbe9e9;color:#d64545;border-color:#d64545;}
 /* 듣기 세션(딕테이션) */
 .qdictate{width:100%;border:none;border-radius:12px;background:var(--fill);font:inherit;font-weight:600;font-size:16px;line-height:1.5;color:var(--ink);padding:12px 14px;outline:none;resize:none;}
-.qdictate:focus{background:#e9ebef;}
+.qdictate:focus{background:var(--accent-soft);}
 .qdictate-result{font-size:16px;line-height:1.7;}
 .dw-ok{color:var(--ink);}
 .dw-bad{color:#d64545;text-decoration:underline;text-decoration-color:#d6454577;}
@@ -574,10 +586,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lt-chips .lchip.wrong{animation:lt-shake .35s ease;background:var(--danger-container);color:var(--danger);border-color:var(--danger);}
 /* 탭한 칩은 자리를 유지한 채 흐려지기만 — 남은 칩이 당겨지면 다음 탭이 빗나간다 */
 .lt-chips .lchip.picked{opacity:.22;pointer-events:none;}
-.lt-curve-lbl{display:flex;justify-content:space-between;font-size:9px;color:var(--muted);padding:0 4px;margin-top:-6px;}
 .lt-note{font-size:12px;color:var(--ink-2);background:var(--fill);border-radius:10px;padding:10px 12px;line-height:1.5;}
 /* 분석 문장 속 핵심부만 형광펜으로 짚어줌(단순 볼드가 아니라 실제 마커 배경) */
 .lt-note b{background:var(--hi-yellow-light);color:var(--ink);font-weight:800;padding:1px 3px;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+.lt-note b.hl-green{background:var(--hi-green-light);}
+.lt-note b.hl-pink{background:var(--hi-pink-light);}
+.lt-note b.hl-blue{background:var(--hi-blue-light);}
 /* 어휘력/문장구사력 결과 칩(단어 수·상위%)도 밴드 컬러위계를 연하게 반영 */
 .chip.tier-green{background:var(--hi-green-light);color:var(--hi-green-xdark);border-color:transparent;}
 .chip.tier-yellow{background:var(--hi-yellow-light);color:var(--hi-yellow-xdark);border-color:transparent;}
@@ -594,8 +608,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .charrow .cta.free{background:var(--accent);color:var(--on-accent);}
 .charrow .cta.buy{background:var(--ink);color:var(--on-accent);}
 .charrow .cta.locked{background:var(--fill);color:var(--muted);}
-.ptbox{display:flex;align-items:center;justify-content:space-between;background:var(--accent-soft);border-radius:16px;padding:14px 16px;}
-.ptbox .v{font-size:20px;font-weight:800;color:var(--accent-deep);font-variant-numeric:tabular-nums;}
+.ptbox{display:flex;align-items:center;justify-content:space-between;background:var(--warmgray-fill);border-radius:16px;padding:14px 16px;}
+.ptbox .v{font-size:20px;font-weight:800;color:var(--ink-2);font-variant-numeric:tabular-nums;}
 .ptbox .l{font-size:12px;color:var(--ink-2);}
 
 /* 설정 — 일일 목표 스테퍼 · 듣기 속도 프리셋 */
@@ -618,7 +632,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.27.0";
+const APP_VERSION = "v0.28.0";
 const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -644,6 +658,7 @@ const ICONS = {
   settings: "M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z",
   favorite: "M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z",
   replay: "M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z",
+  auto_awesome: "M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z",
 };
 function Icon({ name, size = 24 }) {
   return (
@@ -1019,11 +1034,12 @@ function buildQuiz(n = 10) {
   });
 }
 
-/* **강조** 마크업을 <b>로 렌더 (WHATS_NEW 등 안내 문구 공용 규칙) */
-function renderBold(text) {
+/* **강조** 마크업을 <b>로 렌더 (WHATS_NEW 등 안내 문구 공용 규칙).
+   tier를 주면 <b>에 hl-{tier} 클래스가 붙어 강조색이 하이어라키에 따라 달라짐(기본은 노랑 그대로). */
+function renderBold(text, tier) {
   const parts = (text || "").split(/(\*\*[^*]+\*\*)/g);
   return parts.map((p, i) => p.startsWith("**") && p.endsWith("**")
-    ? <b key={i}>{p.slice(2, -2)}</b>
+    ? <b key={i} className={tier ? "hl-" + tier : undefined}>{p.slice(2, -2)}</b>
     : <React.Fragment key={i}>{p}</React.Fragment>);
 }
 
@@ -1210,6 +1226,19 @@ function normCdf(x) {
 /* 상위 % (1~99로 클램프 — 0%/100%는 표본 없는 추정치로서 부정직) */
 function ltTopPercent(value, dist) {
   return Math.min(99, Math.max(1, Math.round((1 - normCdf((value - dist.mean) / dist.sd)) * 100)));
+}
+
+/* 편집거리(레벤슈타인) — 산출 문항 오타 허용 판정용 */
+function editDistance(a, b) {
+  const m = a.length, n = b.length;
+  const dp = Array.from({ length: m + 1 }, (_, i) => [i, ...Array(n).fill(0)]);
+  for (let j = 0; j <= n; j++) dp[0][j] = j;
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      dp[i][j] = a[i - 1] === b[j - 1] ? dp[i - 1][j - 1] : 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]);
+    }
+  }
+  return dp[m][n];
 }
 
 /* 가짜 단어(허수 방지) — 실단어와 충돌하지 않는 유사 영단어 형태 */
@@ -1414,8 +1443,19 @@ function createLevelTestA() {
     answerProduce(text) {
       if (!cur || cur.kind !== "produce") return;
       snapshot();
-      const ok = (text || "").trim().toLowerCase() === cur._w.word.toLowerCase();
-      produceLog.push({ ok });
+      // 정확히 맞으면 만점, 오타(편집거리 1, 4글자 이상 단어만) 거의 만점, 유의어면 부분점수 —
+      // 완전 정답이 아니어도 "말할 수 있는 단어"가 무조건 0으로 깔리지 않도록.
+      const answer = (text || "").trim().toLowerCase();
+      const target = cur._w.word.toLowerCase();
+      const syns = (cur._w.syn || []).map(s => s.toLowerCase());
+      let score = 0;
+      if (answer) {
+        if (answer === target) score = 1;
+        else if (target.length >= 4 && editDistance(answer, target) <= 1) score = 0.85;
+        else if (syns.includes(answer)) score = 0.7;
+      }
+      const ok = score >= 1;
+      produceLog.push({ ok, score });
       produceDone++;
       nextItem();
     },
@@ -1442,7 +1482,7 @@ function createLevelTestA() {
         vocab += c * (counts[lv] || 0);
       });
       vocab = Math.round(vocab / 10) * 10;
-      const produceRate = produceLog.length ? produceLog.filter(p => p.ok).length / produceLog.length : 0;
+      const produceRate = produceLog.length ? produceLog.reduce((s, p) => s + p.score, 0) / produceLog.length : 0;
       return {
         band12, band: LISTEN_LEVELS[band12],
         vocab, activeVocab: Math.round(vocab * produceRate / 10) * 10,
@@ -1602,6 +1642,13 @@ const BADGE_CATS = [
   { k: "friend", title: "친구 초대", unit: "명", tiers: [1, 3, 5, 10, 20], desc: t => `친구 ${t}명을 초대했어요` },
   { k: "sos", title: "자립 회화", unit: "회", tiers: [1, 5, 15, 40, 100], desc: t => `SOS 없이 회화를 ${t}회 완주했어요` },
 ];
+/* 연속학습일 → 하이어라키 색(뱃지 "연속 학습" 카테고리 임계값 재사용) — 상단 바 점 색상에 씀. */
+function streakHl(streak) {
+  const tiers = BADGE_CATS[0].tiers;
+  let idx = 0;
+  tiers.forEach((t, i) => { if (streak >= t) idx = i; });
+  return ["green", "yellow", "pink", "blue", "ink"][idx];
+}
 /* 더미 진행값 — tier=현재 획득한 최고 티어 인덱스(-1=미획득), dates=각 획득 티어의 달성일. */
 const BADGE_PROGRESS = {
   streak: { tier: 2, dates: ["2026.06.10", "2026.06.20", "2026.07.04"] },
@@ -1668,11 +1715,33 @@ function BadgeDetail({ sel, onClose }) {
   const [baseRot, setBaseRot] = useState(0); // 누적 회전(0=앞, 180=뒤)
   const [live, setLive] = useState(0);        // 드래그 중 추가 각도
   const [anim, setAnim] = useState(false);    // 손 뗀 뒤 정착 애니메이션
+  const [spinning, setSpinning] = useState(false); // 빠르게 스와이프 후 관성으로 계속 도는 중(탭하면 멈춤)
   const drag = useRef(null);
+  const spin = useRef({ angle: 0, vel: 0, raf: null });
 
   const earned = tierIdx <= prog.tier;
   const tier = BADGE_TIERS[tierIdx];
   const val = cat.tiers[tierIdx];
+
+  useEffect(() => () => { if (spin.current.raf) cancelAnimationFrame(spin.current.raf); }, []);
+
+  // 손 떼도 안 멈추고 마찰(감쇠)로 서서히 느려지며 계속 도는 관성 스핀 — 탭하면(stopSpin) 즉시 앞/뒤 중 가까운 쪽에 정착.
+  const tickSpin = () => {
+    const s = spin.current;
+    s.angle += s.vel * 16;
+    s.vel *= 0.985;
+    setBaseRot(s.angle);
+    if (Math.abs(s.vel) < 0.02) { stopSpin(s.angle); return; }
+    s.raf = requestAnimationFrame(tickSpin);
+  };
+  const stopSpin = angleOverride => {
+    if (spin.current.raf) cancelAnimationFrame(spin.current.raf);
+    spin.current.raf = null;
+    setSpinning(false);
+    const angle = angleOverride != null ? angleOverride : spin.current.angle;
+    setAnim(true);
+    setBaseRot(Math.round(angle / 180) * 180); // 가장 가까운 앞/뒤로 정착
+  };
 
   const onDown = e => { drag.current = { x: e.clientX, t: Date.now() }; setAnim(false); try { e.currentTarget.setPointerCapture(e.pointerId); } catch (err) {} };
   const onMove = e => { if (drag.current) setLive((e.clientX - drag.current.x) * 0.7); };
@@ -1681,15 +1750,22 @@ function BadgeDetail({ sel, onClose }) {
     const dx = e.clientX - drag.current.x;
     const v = dx / Math.max(1, Date.now() - drag.current.t); // px/ms
     const dir = dx > 0 ? 1 : -1;
-    let target = baseRot;
-    if (Math.abs(v) > 0.55) target = baseRot + dir * 540;       // 빠르게 = 빙그르르(1.5바퀴, 반대면 착지)
-    else if (Math.abs(dx) > 55) target = baseRot + dir * 180;   // 충분히 밀면 뒤집기
-    setAnim(true); setLive(0); setBaseRot(target); drag.current = null;
+    drag.current = null;
+    if (Math.abs(v) > 0.55) {
+      // 빠르게 = 빙그르르 — 탭해서 멈출 때까지 관성으로 계속 돎
+      spin.current = { angle: baseRot + live, vel: dir * Math.min(Math.abs(v) * 40, 26), raf: null };
+      setLive(0); setAnim(false); setSpinning(true);
+      spin.current.raf = requestAnimationFrame(tickSpin);
+    } else if (Math.abs(dx) > 55) {
+      setAnim(true); setLive(0); setBaseRot(baseRot + dir * 180); // 충분히 밀면 뒤집기
+    } else {
+      setAnim(true); setLive(0); setBaseRot(baseRot);
+    }
   };
 
   return ReactDOM.createPortal(
     <div className="dlg-backdrop" onClick={onClose}>
-      <div className="bd-card" onClick={e => e.stopPropagation()}>
+      <div className="bd-card" onClick={e => { e.stopPropagation(); if (spinning) stopSpin(); }}>
         <div className="bd-inner"
           style={{ transform: `rotateY(${baseRot + live}deg)`, transition: anim ? "transform .55s cubic-bezier(.2,.7,.2,1)" : "none", touchAction: "pan-y" }}
           onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}>
@@ -1898,7 +1974,7 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
             </div>
             <div className="wd-pos" style={{ marginTop: 6 }}>
               <span className={"tag lv tier-" + cefrHl(w.cefr)} style={{ marginRight: 6 }}>{w.cefr}</span>
-              {w.senses && w.senses.length ? <span className="tag sense">뜻 {w.senses.length}개</span> : w.ko}
+              {w.senses && w.senses.length ? <span className="tag sensecount">뜻 {w.senses.length}개</span> : w.ko}
             </div>
             {!(w.senses && w.senses.length) && <div className="wd-en" style={{ marginTop: 4 }}>{w.en}</div>}
           </div>
@@ -2018,6 +2094,11 @@ function cefrHl(lv) {
   return lv === "A1" || lv === "A2" ? "green" : lv === "B1" || lv === "B2" ? "yellow" : lv === "C1" ? "pink" : "blue";
 }
 
+/* 복습까지 남은 일수 → 잉크 위계(잔디 히트맵과 같은 원리) — 긴박할수록(임박할수록) 더 진한 잉크. */
+function dueUrgencyCls(dueIn) {
+  return dueIn <= 0 ? "due-t0" : dueIn <= 2 ? "due-t1" : dueIn <= 5 ? "due-t2" : "due-t3";
+}
+
 function WordRow({ w, onOpen, pickMode, picked, onTogglePick }) {
   const st = wordStatus(w);
   const multi = w.senses && w.senses.length > 1;
@@ -2030,10 +2111,10 @@ function WordRow({ w, onOpen, pickMode, picked, onTogglePick }) {
       </div>
       <div className="meta">
         <span className={"tag lv tier-" + cefrHl(w.cefr)}>{w.cefr}</span>
-        {multi && <span className="tag sense">뜻 {w.senses.length}개</span>}
+        {multi && <span className="tag sensecount">뜻 {w.senses.length}개</span>}
         {w.mine && <span className="tag mine">내 단어</span>}
         {st?.status === "done" && <span className="tag done">완료</span>}
-        {st?.status === "learning" && <span className="tag learning">{st.dueIn === 0 ? "오늘 복습" : st.dueIn + "일 뒤 복습"}</span>}
+        {st?.status === "learning" && <span className={"tag " + dueUrgencyCls(st.dueIn)}>{st.dueIn === 0 ? "오늘 복습" : st.dueIn + "일 뒤 복습"}</span>}
         {!st && !w.mine && <span className="tag">미학습</span>}
       </div>
     </div>
@@ -2431,8 +2512,8 @@ function TalkSOS() {
       <div className="qcard">
         <textarea className="qdictate" rows={3} value={ko} onChange={e => setKo(e.target.value)}
           placeholder="예: 저 화장실 좀 다녀와도 될까요?" autoCapitalize="none" />
-        <button className="primary" disabled={loading || !ko.trim()} onClick={ask}>
-          {loading ? "생각 중…" : "영어로 보기"}
+        <button className="qsub" disabled={loading || !ko.trim()} onClick={ask}>
+          <Icon name="auto_awesome" size={16} /> {loading ? "생각 중…" : "영어로 보기"}
         </button>
         {err && <div className="empty-note" style={{ color: "var(--danger)" }}>{err}</div>}
         {result && (
@@ -2941,22 +3022,6 @@ function wordToTokens(w) {
   return tokens;
 }
 
-/* 듣기 세션 시작 전 3·2·1 카운트다운 — 화면 전환 직후 바로 딕테이션 문장이 재생되면
-   준비할 틈이 없어서, 짧게 마음의 준비 시간을 준다. */
-function ListenCountdown({ onDone }) {
-  const [n, setN] = useState(3);
-  useEffect(() => {
-    if (n <= 0) { onDone(); return; }
-    const t = setTimeout(() => setN(v => v - 1), 700);
-    return () => clearTimeout(t);
-  }, [n]);
-  return (
-    <div className="content" style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "50vh" }}>
-      <div className="countdown-circle" key={n}>{n}</div>
-    </div>
-  );
-}
-
 function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   const [queue, setQueue] = useState(() => initialItems.slice()); // 로컬 사본 — 재생 패널티로 다음 문제를 바꾸거나(교체) 재학습 문제를 뒤에 붙일 수 있어야 함
   const [idx, setIdx] = useState(0);
@@ -2969,6 +3034,10 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   const [replayCount, setReplayCount] = useState(0);
   const [lenHint, setLenHint] = useState(false); // 단어길이 보기
   const [firstHint, setFirstHint] = useState(false); // 앞글자 보기
+  // 세션 시작 전 3·2·1 카운트다운 — 카드가 뒤에 이미 보이는 채로 살짝 딤 오버레이만 얹고,
+  // 끝나면 오버레이가 페이드아웃(카드 자체는 계속 그 자리에 있었음). 첫 문제에서만 1회.
+  const [countdown, setCountdown] = useState(3);
+  const [countdownVisible, setCountdownVisible] = useState(true);
 
   const it = queue[idx];
   // "going to"처럼 구어체 결합 축약형(gonna)이 있는 두 단어는 첫 칸에 comboAlt를 달아둔다 —
@@ -2993,11 +3062,21 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
     setAnswers(new Array(tokens.length).fill("")); setLocked(new Array(tokens.length).fill(false)); inputRefs.current = [];
     setReplayCount(0); setWrongMask(null); setHadWrongAttempt(false); setLenHint(false); setFirstHint(false); // 힌트류는 문제마다 초기화
   }, [idx, tokens.length]);
+  // 세션 첫 문제에서만 3·2·1 카운트다운 — 끝나야 아래 자동재생 효과가 진행됨(idx===0에서만 대기)
+  useEffect(() => {
+    if (countdown > 0) {
+      const t = setTimeout(() => setCountdown(c => c - 1), 700);
+      return () => clearTimeout(t);
+    }
+    const t2 = setTimeout(() => setCountdownVisible(false), 320); // 페이드아웃 끝난 뒤 오버레이 제거
+    return () => clearTimeout(t2);
+  }, [countdown]);
   useEffect(() => {
     if (!it) return;
+    if (idx === 0 && countdown > 0) return; // 첫 문제는 카운트다운 끝난 뒤에 재생
     const t = setTimeout(() => speakSentence(it.ex.en), 300);
     return () => clearTimeout(t);
-  }, [idx]);
+  }, [idx, countdown]);
 
   const speakSentence = text => { speakText(text); }; // 앱 공용 speakText로 통일(프록시 TTS + 연타 에코 방지 공유)
 
@@ -3166,6 +3245,11 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
       </div>
 
       <div className="qcard dict-card">
+        {countdownVisible && (
+          <div className={"dict-countdown-overlay" + (countdown <= 0 ? " out" : "")}>
+            <div className="countdown-circle" key={countdown}>{countdown > 0 ? countdown : ""}</div>
+          </div>
+        )}
         <div className="dict-difficulty">
           <span className={"tag dl" + (diff.tier < 4 ? 1 : diff.tier < 8 ? 2 : 3)}>듣기 난이도 · {diff.label}</span>
           <button className="dict-replay" onClick={replay} aria-label="다시 듣기"><Icon name="volume_up" size={16} /></button>
@@ -3447,6 +3531,8 @@ function LtDistCurve({ pct }) {
   // 극단 백분위(1%·99%)에서 마커·"나" 라벨이 viewBox 밖으로 잘리지 않게 클램프
   const x = Math.max(12, Math.min(248, 4 + (1 - pct / 100) * 252));
   const y = ltCurveY(x);
+  // 초급/평균/고급 라벨을 곡선 바로 위에 얹기(가운데 쏠리게) — 평균은 꼭대기 바로 위, 초급/고급은 그보다 살짝 아래로 곡선을 따라감
+  const lblX = { 초급: 82, 평균: 130, 고급: 178 };
   return (
     <div className="qcard" style={{ padding: "10px 8px 4px" }}>
       <svg width="100%" height="70" viewBox="0 0 260 70">
@@ -3454,8 +3540,10 @@ function LtDistCurve({ pct }) {
         <line x1={x} y1="18" x2={x} y2="64" stroke="var(--ink)" strokeWidth="2" strokeDasharray="3,3" />
         <circle cx={x} cy={y} r="4" fill="var(--ink)" />
         <text x={x} y="11" fontSize="9" fontWeight="800" fill="var(--ink)" textAnchor="middle">나</text>
+        {Object.entries(lblX).map(([label, lx]) => (
+          <text key={label} x={lx} y={Math.max(9, ltCurveY(lx) - 10)} fontSize="9" fontWeight="700" fill="var(--muted)" textAnchor="middle">{label}</text>
+        ))}
       </svg>
-      <div className="lt-curve-lbl"><span>초급</span><span>평균</span><span>고급</span></div>
     </div>
   );
 }
@@ -3468,24 +3556,26 @@ function ltBandHl(label) { return cefrHl((label || "").replace("+", "")); }
 /* 결과 분석 — "어휘 C1, 문장 B1 — 산출 연습" 한 줄보다 우리 앱 기능에 근거한 구체적 진단으로.
    ① 어휘↔문장 격차 방향/크기 ② 수동/능동(활성 어휘 비율) ③ 어순 자동화 속도(spw)를
    각각 짚고, 실제로 켤 수 있는 루틴(단어카드 빈칸·듣기 딕테이션·어순 배열·어원 타고타고)을 지목. */
+/* 노트마다 tier를 붙여 강조색이 하이어라키에 따라 달라지게 함(전부 노란색이던 문제) —
+   green=좋은 결과, pink=보완이 필요한 약점, yellow=중립 정보. */
 function ltAnalysis(A, B) {
   const out = [];
   const activeRatio = A.vocab ? A.activeVocab / A.vocab : 0;
   if (B) {
     const d = A.band12 - B.band12;
-    if (d >= 2) out.push(`읽으면 아는 단어 수준(**${A.band}**)에 비해 문장으로 조립하는 힘(**${B.band}**)이 ${d >= 4 ? "크게 " : ""}뒤처져요. "알지만 말이 안 나오는" 전형적 프로필이에요. **듣기 세션(딕테이션)**으로 문장 리듬을 익히고, **레벨 테스트의 어순 배열**과 **단어카드 빈칸 채우기**로 산출을 끌어올리세요.`);
-    else if (d <= -2) out.push(`문장 구성력(**${B.band}**)은 좋은데 어휘량(**${A.band}**)이 못 받쳐줘요. **단어카드 신규 학습**을 하루 목표까지 채우고, 사전 상세의 **어원·유의어 타고타고**로 어휘 폭을 넓히면 표현이 훨씬 풍부해져요.`);
-    else out.push(`어휘(**${A.band}**)와 문장 구사(**${B.band}**)가 균형을 이뤄요. 지금 루틴(**단어카드 + 듣기 세션**)을 유지하며 난이도를 한 단계씩 올려보세요.`);
+    if (d >= 2) out.push({ tier: "pink", text: `읽으면 아는 단어 수준(**${A.band}**)에 비해 문장으로 조립하는 힘(**${B.band}**)이 ${d >= 4 ? "크게 " : ""}뒤처져요. "알지만 말이 안 나오는" 전형적 프로필이에요. **듣기 세션(딕테이션)**으로 문장 리듬을 익히고, **레벨 테스트의 어순 배열**과 **단어카드 빈칸 채우기**로 산출을 끌어올리세요.` });
+    else if (d <= -2) out.push({ tier: "blue", text: `문장 구성력(**${B.band}**)은 좋은데 어휘량(**${A.band}**)이 못 받쳐줘요. **단어카드 신규 학습**을 하루 목표까지 채우고, 사전 상세의 **어원·유의어 타고타고**로 어휘 폭을 넓히면 표현이 훨씬 풍부해져요.` });
+    else out.push({ tier: "green", text: `어휘(**${A.band}**)와 문장 구사(**${B.band}**)가 균형을 이뤄요. 지금 루틴(**단어카드 + 듣기 세션**)을 유지하며 난이도를 한 단계씩 올려보세요.` });
   } else {
-    out.push(`문장구사력은 아직 측정하지 않았어요. **레벨 테스트의 어순 배열**을 한 번 해보면 어휘와 산출력의 격차를 볼 수 있어요.`);
+    out.push({ tier: "yellow", text: `문장구사력은 아직 측정하지 않았어요. **레벨 테스트의 어순 배열**을 한 번 해보면 어휘와 산출력의 격차를 볼 수 있어요.` });
   }
   if (A.vocab >= 100) {
-    if (activeRatio < 0.5) out.push(`아는 단어 약 **${A.vocab.toLocaleString()}개** 중 실제로 말할 수 있는 건 약 **${A.activeVocab.toLocaleString()}개**(${Math.round(activeRatio * 100)}%)뿐이에요 — 인지는 되지만 산출이 약한 상태. **단어카드의 빈칸(산출) 채우기**와 **듣기 딕테이션**이 능동 어휘 전환에 가장 효과적이에요.`);
-    else out.push(`아는 단어 **${A.vocab.toLocaleString()}개** 중 **${A.activeVocab.toLocaleString()}개**(${Math.round(activeRatio * 100)}%)를 실제로 쓸 수 있어요 — 수동/능동 균형이 좋은 편이에요.`);
+    if (activeRatio < 0.5) out.push({ tier: "pink", text: `아는 단어 약 **${A.vocab.toLocaleString()}개** 중 실제로 말할 수 있는 건 약 **${A.activeVocab.toLocaleString()}개**(${Math.round(activeRatio * 100)}%)뿐이에요 — 인지는 되지만 산출이 약한 상태. **단어카드의 빈칸(산출) 채우기**와 **듣기 딕테이션**이 능동 어휘 전환에 가장 효과적이에요.` });
+    else out.push({ tier: "green", text: `아는 단어 **${A.vocab.toLocaleString()}개** 중 **${A.activeVocab.toLocaleString()}개**(${Math.round(activeRatio * 100)}%)를 실제로 쓸 수 있어요 — 수동/능동 균형이 좋은 편이에요.` });
   }
   if (B && typeof B.spw === "number" && B.spw > 0) {
-    if (B.spw >= 2.2) out.push(`어순을 맞추는 데 단어당 **${B.spw.toFixed(1)}초**가 걸렸어요 — 문장을 "번역하듯" 조립하는 단계예요. **듣기 세션**을 매일 반복하면 통째로 떠올리는 속도가 붙어요.`);
-    else if (B.spw <= 1.0) out.push(`어순 배열이 단어당 **${B.spw.toFixed(1)}초**로 빨라요 — 문장 구조가 거의 자동화돼 있어요.`);
+    if (B.spw >= 2.2) out.push({ tier: "pink", text: `어순을 맞추는 데 단어당 **${B.spw.toFixed(1)}초**가 걸렸어요 — 문장을 "번역하듯" 조립하는 단계예요. **듣기 세션**을 매일 반복하면 통째로 떠올리는 속도가 붙어요.` });
+    else if (B.spw <= 1.0) out.push({ tier: "green", text: `어순 배열이 단어당 **${B.spw.toFixed(1)}초**로 빨라요 — 문장 구조가 거의 자동화돼 있어요.` });
   }
   return out;
 }
@@ -3530,7 +3620,7 @@ function LevelTestResult({ resultA, resultB, onExit, onRetry }) {
       )}
 
       <div className="sec">분석</div>
-      {analysis.map((n, i) => <div key={i} className="lt-note">{renderBold(n)}</div>)}
+      {analysis.map((n, i) => <div key={i} className="lt-note">{renderBold(n.text, n.tier)}</div>)}
 
       <div className="qactions" style={{ marginTop: 4 }}>
         <button className="ghost" onClick={onRetry}>다시 측정</button>
@@ -3568,7 +3658,6 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   const [summary, setSummary] = useState(null);
   const [quiz, setQuiz] = useState(null); // null | questions[] | "done"
   const [quizSummary, setQuizSummary] = useState(null);
-  const [listenReady, setListenReady] = useState(false); // 듣기 세션 3·2·1 카운트다운 통과 여부
   const dueCount = allItems().filter(it => SRS.isDue(it.key)).length;
   const newCount = allItems().filter(it => !SRS.get(it.key)).length;
   const studiedCount = allItems().filter(it => SRS.get(it.key)).length;
@@ -3577,10 +3666,8 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   // (customMode로 카드/듣기 중 어느 세션을 열지 지정 — 홈 "듣기 N문장"이 학습 탭 메뉴만 보여주던 버그 수정)
   useEffect(() => {
     if (customStudy && customStudy.length) {
-      const m = customMode || "card";
-      setMode(m);
+      setMode(customMode || "card");
       setSession(customStudy);
-      if (m === "listen") setListenReady(false);
       onConsumeCustomStudy();
     }
     // eslint-disable-next-line
@@ -3595,11 +3682,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
     if (done) { setSummary({ total: total || session.length, correct }); setSession("done"); }
     else setSession(null);
   };
-  if (session && mode === "listen") {
-    return listenReady
-      ? <DictationSession items={session} onExit={onSessionExit} onOpenWord={onOpenWord} />
-      : <ListenCountdown onDone={() => setListenReady(true)} />;
-  }
+  if (session && mode === "listen") return <DictationSession items={session} onExit={onSessionExit} onOpenWord={onOpenWord} />;
   if (session) return <CardSession items={session} onOpenWord={onOpenWord} onExit={onSessionExit} />;
   if (quiz === "done" && quizSummary) {
     return <Finish total={quizSummary.total} correct={quizSummary.correct}
@@ -3887,7 +3970,7 @@ function App() {
       <div className="topbar">
         <div className="brand" role="button" tabIndex={0} onClick={() => setTab("home")} style={{ cursor: "pointer" }}>No<b>English</b></div>
         <div className="topbar-right">
-          <span className="pill"><span className="dot" />연속 12일</span>
+          <span className="pill"><span className={"dot hl-" + streakHl(12)} />연속 12일</span>
           <button className="avatar-btn" aria-label="설정" onClick={() => setSettingsOpen(true)}><Icon name="settings" size={19} /></button>
         </div>
       </div>
