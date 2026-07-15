@@ -1,0 +1,7 @@
+name = "noenglish-app"
+compatibility_date = "2026-07-15"
+
+# 정적 사이트(index.html·words.js·manifest.json·img/) 배포용.
+# Gemini/TTS 프록시(Worker)는 별도(worker/wrangler.toml, 프로젝트명 noenglish-proxy).
+[assets]
+directory = "."

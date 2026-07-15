@@ -1,0 +1,14 @@
+# Cloudflare Workers 정적 자산 업로드 제외 목록 (wrangler.toml [assets] directory="." 대상)
+# 실제 앱이 쓰는 파일(index.html, words.js, manifest.json, img/)만 배포되도록 나머지는 제외.
+.git
+.gitignore
+.claude
+.assetsignore
+wrangler.toml
+CLAUDE.md
+README.md
+vercel.json
+docs
+pipeline
+worker
+node_modules
