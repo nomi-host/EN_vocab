@@ -11,14 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.28.2">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.28.2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.28.2" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.29.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.29.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.29.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.28.2"></script>
-<style>
+<script src="words.js?v=0.29.0"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -28,17 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.28.2") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.28.2") format("woff");
-}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.29.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.29.0") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.28.2") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.28.2") format("woff");
-}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.29.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.29.0") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -52,7 +49,12 @@
   --accent:#211C15;        /* 포인트 = 잉크 블랙(블랙 버튼 컨셉) */
   --accent-deep:#4A3A20;   /* 흰 배경 위 텍스트 강조 (웜 브라운) */
   --accent-soft:#EDE1C2;   /* 옅은 배경 */
-  --warmgray-fill:#E6E3DD; /* 웜그레이 톤 — 진해질수록 노란기가 아니라 무채색(그레이) 쪽으로 가는 강조 배경. --accent-soft(골드톤)와 짝을 이루는 "강조하되 안 노란" 옵션 */
+  /* 웜그레이 하이어라키 — 진해질수록 노란기가 아니라 무채색(그레이) 쪽으로 가는 강조 배경.
+     --accent-soft(골드톤)와 짝을 이루는 "강조하되 안 노란" 옵션. mid를 보유 포인트 배경·
+     듣기속도 활성값에 공용으로 써서 두 곳이 같은 진하기로 보이게 통일(전엔 서로 다른 톤이었음). */
+  --warmgray-light:#EEEBE3;
+  --warmgray:#D6D1C4;
+  --warmgray-dark:#B3AC98;
   --on-accent:#FFFBF1;
   --good:#2F8F5B;
   --good-container:#E3F1E7;
@@ -68,8 +70,9 @@
   --hi-yellow-xlight:#FFF8DB; --hi-yellow-light:#FFEA9A; --hi-yellow-dark:#BF9700; --hi-yellow-xdark:#5A4700;
   --hi-pink-xlight:#FFEEF6;   --hi-pink-light:#FFD1E4;   --hi-pink-dark:#EF0066;   --hi-pink-xdark:#710030;
   --hi-blue-xlight:#E7F5FF;   --hi-blue-light:#BCE4FF;   --hi-blue-dark:#0083DD;   --hi-blue-xdark:#003E69;
+  --hi-orange:#FFB459;        /* 형광펜 — 오렌지(탭바 5번째 활성색 전용) */
   --card-border:rgba(158,124,58,.4); /* 카드류 소프트 보더(outline-variant) — 얇아진 두께(0.5px) 보완 위해 더 진한 베이지로. 인터랙션 요소는 var(--ink) 풀보더(outline) 사용 */
-  --radius:20px;
+  --radius:0;
   --shadow:0 1px 2px rgba(33,28,21,.05), 0 8px 24px rgba(33,28,21,.06);
   --shadow-sheet:0 -8px 40px rgba(33,28,21,.18);
   font-family:"LINE Seed KR",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;
@@ -93,7 +96,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .pill .dot.hl-blue{background:var(--hi-blue-dark);}
 .avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
 
-.update-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 20px 10px;padding:9px 14px;background:var(--hi-yellow-light);border:0.5px solid var(--card-border);border-radius:12px;font-size:13px;font-weight:700;color:var(--ink);flex:none;}
+.update-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 20px 10px;padding:9px 14px;background:var(--hi-yellow-light);border:0.5px solid var(--card-border);border-radius:0;font-size:13px;font-weight:700;color:var(--ink);flex:none;}
 .update-banner button{background:var(--ink);color:var(--surface);border-radius:999px;padding:5px 13px;font-size:12px;font-weight:800;white-space:nowrap;}
 
 /* 홈 상단 게이미피케이션 지수 스트립 — 항목별로 다른 색, 같은 요소(캐릭터)에 속한 칩은 그 캐릭터의
@@ -121,13 +124,13 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .card.tap:active{transform:scale(.985);}
 
 /* 공용 버튼/화살표 (기존엔 인라인 스타일로만 존재하던 클래스를 정식 규칙으로 승격) */
-.btn{background:var(--accent);color:var(--on-accent);font-weight:700;padding:12px 20px;border-radius:13px;}
+.btn{background:var(--accent);color:var(--on-accent);font-weight:700;padding:12px 20px;border-radius:0;}
 .arrow{color:var(--muted);}
 
 /* 캐릭터 히어로 */
 .hero{display:flex;flex-direction:column;align-items:center;gap:10px;padding:22px 16px 18px;text-align:center;}
-.mascot{width:112px;height:112px;border-radius:26px;background:linear-gradient(160deg,var(--surface),var(--fill));border:1.5px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);line-height:1.5;}
-.sign{display:inline-block;background:var(--ink);color:var(--on-accent);font-weight:800;font-size:13px;letter-spacing:.5px;padding:6px 12px;border-radius:8px;transform:rotate(-3deg);}
+.mascot{width:112px;height:112px;border-radius:0;background:linear-gradient(160deg,var(--surface),var(--fill));border:1.5px dashed var(--line);display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);line-height:1.5;}
+.sign{display:inline-block;background:var(--ink);color:var(--on-accent);font-weight:800;font-size:13px;letter-spacing:.5px;padding:6px 12px;border-radius:0;transform:rotate(-3deg);}
 
 /* 노트 줄공책 배경 — 가로선(파란톤 반복) + 좌측 여백 세로 두줄(빨간톤). 캐릭터가 뛰어다니는 무대(.stage)와
    캐릭터 미선택 카드에 공용 사용. 컴포넌트 자체 background 위에 겹쳐 그림(배경색은 그대로 유지). */
@@ -139,7 +142,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 }
 
 /* 캐릭터 스테이지: 가운데 캐릭터(앞) + 뒤로 뱃지 가로 스크롤 트랙(스와이프해서 봄) */
-.stage{position:relative;height:240px;background-color:var(--surface);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.stage{position:relative;height:240px;background-color:var(--surface);border-radius:var(--radius);border:1.5px solid var(--ink);box-shadow:var(--shadow);overflow:hidden;display:flex;align-items:center;justify-content:center;}
 .badge-track{position:absolute;left:0;right:0;top:44%;transform:translateY(-50%);display:flex;gap:14px;align-items:center;overflow-x:auto;padding:0 42%;scrollbar-width:none;z-index:1;-webkit-overflow-scrolling:touch;}
 .badge-track::-webkit-scrollbar{display:none;}
 /* ===== 원형 랭크 메달 (애플워치/피크민 참고) ===== */
@@ -178,7 +181,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 상세 팝업 — 3D 뒤집기 카드 */
 .bd-card{width:100%;max-width:300px;perspective:1200px;}
 .bd-inner{position:relative;width:100%;min-height:340px;transform-style:preserve-3d;}
-.bd-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--surface);border:0.5px solid var(--card-border);border-radius:24px;box-shadow:0 24px 64px rgba(33,28,21,.3);padding:28px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+.bd-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:0 24px 64px rgba(33,28,21,.3);padding:28px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
 .bd-back{transform:rotateY(180deg);}
 .bd-medal{transform:scale(2.05);margin:34px 0 46px;}
 .bd-title{font-size:20px;font-weight:800;letter-spacing:-0.3px;}
@@ -193,19 +196,19 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .bd-rank.cur .mth{color:var(--ink);font-weight:800;}
 .vault-sec{display:flex;flex-direction:column;gap:10px;margin-top:22px;}
 .vault-sec:first-child{margin-top:0;}
-.vault-link{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;}
+.vault-link{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:0;box-shadow:var(--shadow);padding:14px 16px;}
 .vault-link .n{margin-left:auto;font-size:13px;color:var(--muted);font-weight:600;}
 .hero-char{position:relative;z-index:2;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:9px;}
 .char-face{width:156px;height:156px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;}
 /* CHAR_ART_READY=false일 때 쓰는 최소 플레이스홀더(색상 스와치) */
 .char-swatch-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;}
-.char-swatch{width:56px;height:56px;border-radius:16px;border:2px solid var(--card-border);}
+.char-swatch{width:56px;height:56px;border-radius:0;border:2px solid var(--card-border);}
 .char-swatch.hi-green{background:var(--hi-green);}
 .char-swatch.hi-pink{background:var(--hi-pink);}
 .char-swatch.hi-yellow{background:var(--hi-yellow);}
 .char-swatch.hi-blue{background:var(--hi-blue);}
 .char-swatch-lbl{font-size:12px;font-weight:700;color:var(--muted);}
-.char-swatch-sm{width:28px;height:28px;border-radius:9px;border:0.5px solid var(--card-border);}
+.char-swatch-sm{width:28px;height:28px;border-radius:0;border:0.5px solid var(--card-border);}
 /* 달리는 씬(placeholder). 실제 캐릭터는 Lottie/Rive/스프라이트로 이 슬롯 교체 */
 .hero-char.run .char-face{animation:runbob var(--bob,.5s) ease-in-out infinite alternate;}
 @keyframes runbob{from{transform:translateY(1px) rotate(-1.5deg);}to{transform:translateY(-7px) rotate(1.5deg);}}
@@ -236,18 +239,18 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 뱃지 팝업 */
 .dlg-backdrop{position:fixed;inset:0;background:rgba(33,28,21,.42);display:flex;align-items:center;justify-content:center;z-index:60;padding:32px;animation:fade .15s ease;}
-.dlg{background:var(--surface);border:0.5px solid var(--card-border);border-radius:24px;padding:28px 24px 22px;text-align:center;max-width:300px;width:100%;box-shadow:0 24px 64px rgba(33,28,21,.3);animation:pop .22s cubic-bezier(.2,.9,.3,1.2);}
+.dlg{background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;padding:28px 24px 22px;text-align:center;max-width:300px;width:100%;box-shadow:0 24px 64px rgba(33,28,21,.3);animation:pop .22s cubic-bezier(.2,.9,.3,1.2);}
 @keyframes pop{from{transform:scale(.88);opacity:0}to{transform:scale(1);opacity:1}}
 .dlg-title{font-size:19px;font-weight:800;letter-spacing:-0.3px;}
 .dlg-sub{font-size:14px;color:var(--accent-deep);font-weight:800;margin-top:4px;}
 .dlg-sub.locked{color:var(--muted);}
 .dlg-date{font-size:13px;color:var(--muted);margin-top:8px;font-variant-numeric:tabular-nums;}
-.dlg button{margin-top:20px;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:14px;padding:12px;border-radius:13px;width:100%;}
+.dlg button{margin-top:20px;background:var(--accent);color:var(--on-accent);font-weight:700;font-size:14px;padding:12px;border-radius:0;width:100%;}
 
 /* 레벨 3칸 */
 .level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
 /* 포스트잇 느낌 — 형광색 라이트톤 정사각(카드보다 각짐), 안의 숫자/글자는 .hl 형광펜(진한 톤)로 대비 */
-.stat{border-radius:10px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;background:var(--surface);border:0.5px solid var(--card-border);}
+.stat{border-radius:0;box-shadow:var(--shadow);padding:14px 8px;text-align:center;background:var(--surface);border:1px solid var(--ink);}
 .stat.tier-green{background:var(--hi-green-light);border-color:transparent;}
 .stat.tier-yellow{background:var(--hi-yellow-light);border-color:transparent;}
 .stat.tier-pink{background:var(--hi-pink-light);border-color:transparent;}
@@ -257,7 +260,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .stat .l{font-size:11px;color:var(--muted);margin-top:2px;font-weight:600;}
 
 /* 형광펜 강조 — 텍스트 하단 ~60%만 색 박스, 좌우로 살짝 삐져나옴. 손그림 느낌으로 살짝 기울임 */
-.hl{background-repeat:no-repeat;background-size:100% 58%;background-position:0 66%;padding:0 7px;margin:0 -7px;border-radius:1px;display:inline-block;}
+.hl{background-repeat:no-repeat;background-size:100% 58%;background-position:0 66%;padding:0 7px;margin:0 -7px;border-radius:0;display:inline-block;}
 .hl-green{background-image:linear-gradient(var(--hi-green),var(--hi-green));}
 .hl-pink{background-image:linear-gradient(var(--hi-pink),var(--hi-pink));}
 .hl-yellow{background-image:linear-gradient(var(--hi-yellow),var(--hi-yellow));}
@@ -270,9 +273,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .tier-blue{background:var(--hi-blue-light);color:var(--hi-blue-xdark);}
 
 /* 루틴 스텝 */
-.step{display:flex;align-items:center;gap:13px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;}
+.step{display:flex;align-items:center;gap:13px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:var(--shadow);padding:14px 16px;}
 .step.active{border:1.5px solid var(--ink);}
-.step-ico{width:38px;height:38px;border-radius:12px;background:var(--bg);border:0.5px solid var(--card-border);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--ink-2);flex:none;}
+.step-ico{width:38px;height:38px;border-radius:0;background:var(--bg);border:0.5px solid var(--card-border);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--ink-2);flex:none;}
+/* 홈 "오늘의 루틴"·학습 메뉴(단어카드/듣기세션/레벨테스트) 왼쪽 아이콘 슬롯만 원형으로(테스트 전용) */
+.step-ico.round{border-radius:50%;}
+.step-ico.round.black{background:var(--ink);color:var(--on-accent);border-color:var(--ink);}
 .step.done .step-ico{background:var(--ink);border-color:var(--ink);color:var(--on-accent);}
 .step-body{flex:1;min-width:0;}
 .step-title{font-size:15px;font-weight:700;}
@@ -282,14 +288,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 잔디 */
 .grass{display:grid;grid-template-columns:repeat(17,1fr);gap:3px;}
-.grass i{aspect-ratio:1;border-radius:3px;background-color:var(--fill);}
+.grass i{aspect-ratio:1;border-radius:0;background-color:var(--fill);}
 /* 잉크 톤 단색(스크리블 실험은 되돌림) — 가장 진한 단계도 잉크 60%까지만 */
 .grass i.g1{background-color:var(--ink);opacity:.22;}
 .grass i.g2{background-color:var(--ink);opacity:.4;}
 .grass i.g3{background-color:var(--ink);opacity:.6;}
 
 /* 사전 검색 */
-.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:14px;padding:11px 14px;box-shadow:var(--shadow);}
+.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--ink);border-radius:0;padding:11px 14px;box-shadow:var(--shadow);}
 .search input{flex:1;border:none;outline:none;font-size:15px;background:none;color:var(--ink);}
 .search input::placeholder{color:var(--muted);}
 .search .mag{color:var(--muted);display:flex;align-items:center;}
@@ -306,14 +312,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .listhead b{font-size:17px;letter-spacing:-0.3px;}
 .listhead .cnt{font-size:13px;color:var(--muted);font-weight:600;margin-left:2px;}
 
-.addbar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--accent-soft);border-radius:14px;padding:12px 14px;}
+.addbar{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--accent-soft);border-radius:0;padding:12px 14px;}
 .addbar .t{font-size:13px;color:var(--ink-2);}
 .addbar .t b{color:var(--accent-deep);}
-.addbar button{background:var(--accent);color:var(--on-accent);font-weight:700;font-size:13px;padding:8px 14px;border-radius:10px;}
+.addbar button{background:var(--accent);color:var(--on-accent);font-weight:700;font-size:13px;padding:8px 14px;border-radius:0;}
 
 /* 단어 리스트 행 */
 .wlist{display:flex;flex-direction:column;gap:8px;}
-.wrow{display:flex;align-items:center;gap:10px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
+.wrow{display:flex;align-items:center;gap:10px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
 .wrow:active{transform:scale(.99);}
 .wrow .w{font-size:16px;font-weight:700;}
 .wrow .k{font-size:13px;color:var(--muted);margin-top:1px;}
@@ -322,7 +328,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    통일(2026-07-14). 레벨은 컬러위계(연두<옐로우<핑크<블루)를 그대로 반영.
    예전엔 .tag.lv(specificity 0,2,0)가 .tier-*(0,1,0)를 눌러 위계색이 안 먹었음 → .tag.tier-*를 .tag.lv 뒤에 정의해 복구. */
 .tag{font-size:10px;font-weight:800;padding:3px 7px;border-radius:999px;background:var(--fill);color:var(--ink-2);letter-spacing:.2px;}
-.tag.lv{border-radius:2px;background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
+.tag.lv{border-radius:0;background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
 .tag.tier-green{background:var(--hi-green);color:var(--hi-green-xdark);}
 .tag.tier-yellow{background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
 .tag.tier-pink{background:var(--hi-pink);color:var(--hi-pink-xdark);}
@@ -338,7 +344,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 카테고리 선택: 레벨 카드 그리드 · 어근 행 목록 */
 .lv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
-.lv-card{border-radius:10px;box-shadow:var(--shadow);padding:16px 8px 14px;text-align:center;transition:transform .1s;background:var(--surface);border:0.5px solid var(--card-border);}
+.lv-card{border-radius:0;box-shadow:var(--shadow);padding:16px 8px 14px;text-align:center;transition:transform .1s;background:var(--surface);border:0.5px solid var(--card-border);}
 .lv-card.tier-green{background:var(--hi-green-light);border-color:transparent;}
 .lv-card.tier-yellow{background:var(--hi-yellow-light);border-color:transparent;}
 .lv-card.tier-pink{background:var(--hi-pink-light);border-color:transparent;}
@@ -347,22 +353,22 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lv-card .lv{font-size:21px;font-weight:800;color:var(--accent-deep);letter-spacing:-0.3px;}
 .lv-card .nm{font-size:12px;font-weight:700;color:var(--ink-2);margin-top:2px;}
 .lv-card .n{font-size:11px;color:var(--muted);margin-top:1px;font-weight:600;font-variant-numeric:tabular-nums;}
-.rootrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
+.rootrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
 .rootrow:active{transform:scale(.99);}
 .rootrow .ax{font-size:16px;font-weight:800;color:var(--accent-deep);min-width:62px;}
 .rootrow .gl{flex:1;font-size:13px;color:var(--ink-2);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .rootrow .n{font-size:12px;color:var(--muted);font-weight:600;font-variant-numeric:tabular-nums;flex:none;}
-.more-btn{display:block;width:100%;text-align:center;background:var(--fill);color:var(--ink-2);font-weight:700;font-size:13px;padding:12px;border-radius:13px;}
+.more-btn{display:block;width:100%;text-align:center;background:var(--fill);color:var(--ink-2);font-weight:700;font-size:13px;padding:12px;border-radius:0;}
 
 /* 사전 목록 다중선택(담기) 체크 · 내 단어장(커스텀 리스트) UI */
 .wchk{width:22px;height:22px;border-radius:999px;border:2px solid var(--line);flex:none;display:flex;align-items:center;justify-content:center;color:#fff;}
 .wchk.on{background:var(--accent);border-color:var(--accent);}
 .wl-newrow{display:flex;gap:8px;}
-.wl-newrow input{flex:1;border:1px solid var(--line);border-radius:12px;padding:11px 14px;font-size:14px;background:var(--surface);outline:none;color:var(--ink);}
+.wl-newrow input{flex:1;border:1px solid var(--line);border-radius:0;padding:11px 14px;font-size:14px;background:var(--surface);outline:none;color:var(--ink);}
 .wl-newrow input::placeholder{color:var(--muted);}
-.wl-newrow button{background:var(--accent);color:#fff;font-weight:700;font-size:13px;padding:0 16px;border-radius:12px;white-space:nowrap;flex:none;}
+.wl-newrow button{background:var(--accent);color:#fff;font-weight:700;font-size:13px;padding:0 16px;border-radius:0;white-space:nowrap;flex:none;}
 .wl-actions{display:flex;gap:8px;}
-.wl-actions button{flex:1;padding:11px 6px;border-radius:13px;font-weight:700;font-size:12px;white-space:nowrap;}
+.wl-actions button{flex:1;padding:11px 6px;border-radius:0;font-weight:700;font-size:12px;white-space:nowrap;}
 .wl-actions .primary{flex:1.5;}
 .wl-actions .primary{background:var(--accent);color:#fff;}
 .wl-actions .ghost{background:var(--surface);border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow);}
@@ -376,22 +382,22 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 하단 탭바 (홈 중앙) — 화면 실제 하단에 고정. 키보드가 뜨면(레이아웃 뷰포트 기준 고정이라)
    키보드 뒤로 가려지고, 키보드가 내려가면 다시 보인다. 그만큼 학습카드 쪽 공간이 넉넉해짐.
    아래 마진 제거 + 상단 패딩 축소로 높이 낮춤(2026-07-14). */
-.tabbar{display:flex;align-items:flex-end;justify-content:space-around;background:var(--surface);border-top:1px solid var(--line);padding:6px 8px calc(env(safe-area-inset-bottom));position:relative;z-index:5;overflow:visible;}
-.tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;color:var(--muted);font-size:10px;font-weight:600;padding:1px 0;overflow:visible;}
-.tab.on{color:var(--accent-deep);}
-.tab .ti{width:24px;height:24px;display:flex;align-items:center;justify-content:center;}
-/* 홈: 바 위로 튀어나오는 원형 FAB. 조상 overflow가 자르지 않도록 tabbar를 overflow:visible로 두고
-   음수 마진으로 바 상단선 위로 올린다. .scroll의 뒤 형제라 스크롤 콘텐츠 위에 항상 얹혀 안 잘린다. */
-.tab.home{position:relative;}
-.tab.home .ti{width:54px;height:54px;margin-top:-30px;margin-bottom:2px;border-radius:50%;background:var(--accent);color:var(--on-accent);box-shadow:0 8px 20px rgba(33,28,21,.35);}
-.tab.home.on{color:var(--accent-deep);}
+.tabbar{display:flex;align-items:flex-end;justify-content:space-around;background:var(--ink);border-top:none;padding:6px 8px calc(env(safe-area-inset-bottom));position:relative;z-index:5;overflow:visible;}
+.tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;color:var(--on-accent);font-size:11px;font-weight:600;padding:1px 0;overflow:visible;}
+.tab .ti{width:26px;height:26px;display:flex;align-items:center;justify-content:center;}
+/* 탭별로 다른 형광펜색 — 홈도 다른 탭과 같은 레벨(더 이상 튀어나오는 원형 FAB 아님) */
+.tab.tab-learn.on{color:var(--hi-green);}
+.tab.tab-dict.on{color:var(--hi-yellow);}
+.tab.tab-home.on{color:var(--hi-pink);}
+.tab.tab-talk.on{color:var(--hi-blue);}
+.tab.tab-box.on{color:var(--hi-orange);}
 
 /* 바텀시트 (단어 상세) */
 .sheet-backdrop{position:fixed;inset:0;background:rgba(33,28,21,.32);display:flex;align-items:flex-end;justify-content:center;z-index:50;animation:fade .18s ease;}
-.sheet{width:100%;max-width:520px;background:var(--surface);border:0.5px solid var(--card-border);border-bottom:none;border-radius:24px 24px 0 0;box-shadow:var(--shadow-sheet);max-height:88vh;max-height:88dvh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
+.sheet{width:100%;max-width:520px;background:var(--surface);border:0.5px solid var(--card-border);border-bottom:none;border-radius:0;box-shadow:var(--shadow-sheet);max-height:88vh;max-height:88dvh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 @keyframes slideup{from{transform:translateY(100%)}to{transform:translateY(0)}}
-.sheet-grab{width:38px;height:4px;background:var(--line);border-radius:2px;margin:10px auto 2px;flex:none;}
+.sheet-grab{width:38px;height:4px;background:var(--line);border-radius:0;margin:10px auto 2px;flex:none;}
 .sheet-head{display:flex;align-items:center;gap:10px;padding:6px 18px 10px;flex:none;}
 .sheet-head .back{font-size:20px;color:var(--muted);padding:2px 6px;margin-left:-6px;}
 .sheet-head .sp{flex:1;}
@@ -415,7 +421,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lchip.link:active{background:var(--accent-soft);}
 .lchip.affix{background:var(--ink);color:var(--on-accent);}
 .lchip .g{color:var(--muted);font-weight:500;font-size:11px;margin-left:4px;}
-.wd-ex{background:var(--bg);border-radius:14px;padding:13px 15px;}
+.wd-ex{background:var(--bg);border-radius:0;padding:13px 15px;}
 .wd-ex .en{font-size:14px;font-weight:600;line-height:1.5;}
 .wd-ex .en em{font-style:normal;color:var(--accent-deep);}
 .wd-ex .ko{font-size:12px;color:var(--muted);margin-top:5px;}
@@ -423,7 +429,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .ex-word{color:var(--accent-deep);text-decoration:underline;text-decoration-color:var(--accent-soft);text-underline-offset:2px;}
 
 /* 다의어: 의미(sense) 카드 리스트 */
-.sense{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:13px 15px;transition:border-color .12s;}
+.sense{background:var(--bg);border:1px solid var(--line);border-radius:0;padding:13px 15px;transition:border-color .12s;}
 .sense + .sense{margin-top:8px;}
 .sense.open{background:var(--surface);border:1.5px solid var(--accent);box-shadow:var(--shadow);}
 .s-head{display:flex;align-items:flex-start;gap:8px;}
@@ -432,9 +438,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .s-meta{margin-left:auto;display:flex;gap:4px;flex:none;align-items:center;}
 .s-en{font-size:13px;color:var(--ink-2);font-style:italic;line-height:1.5;margin-top:9px;}
 .sense .wd-ex{margin-top:9px;background:var(--fill);}
-.s-add{display:block;width:100%;margin-top:10px;text-align:center;background:var(--accent-soft);color:var(--accent-deep);font-weight:700;font-size:13px;padding:9px;border-radius:11px;}
+.s-add{display:block;width:100%;margin-top:10px;text-align:center;background:var(--accent-soft);color:var(--accent-deep);font-weight:700;font-size:13px;padding:9px;border-radius:0;}
 .s-add.added{background:var(--fill);color:var(--muted);}
-.s-more{display:block;width:100%;margin-top:6px;text-align:center;background:var(--fill);color:var(--ink-2);font-weight:700;font-size:13px;padding:11px;border-radius:13px;}
+.s-more{display:block;width:100%;margin-top:6px;text-align:center;background:var(--fill);color:var(--ink-2);font-weight:700;font-size:13px;padding:11px;border-radius:0;}
 
 .ext{display:flex;flex-wrap:wrap;gap:7px;}
 .ext a{font-size:12px;font-weight:600;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:6px 12px;text-decoration:none;}
@@ -463,16 +469,16 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qen .fill{color:var(--accent-deep);font-weight:800;border-bottom:2.5px solid var(--accent);padding:0 2px;}
 .qen .fill.bad{color:var(--danger);border-color:var(--danger);text-decoration:line-through;text-decoration-color:color-mix(in srgb, var(--danger) 47%, transparent);}
 .qhint{font-size:12px;color:var(--muted);}
-.qnudge{font-size:12px;color:var(--accent-deep);background:var(--accent-soft);border-radius:10px;padding:8px 10px;line-height:1.4;}
+.qnudge{font-size:12px;color:var(--accent-deep);background:var(--accent-soft);border-radius:0;padding:8px 10px;line-height:1.4;}
 /* 입력창 = 문장 속 빈칸. 회색 솔리드 + 살짝 라운드, 문장 글자 크기 그대로, 네이티브 캐럿이 깜빡임 */
-.qbox{border:none;border-radius:8px;background:var(--fill);font:inherit;font-weight:800;font-size:inherit;line-height:inherit;color:var(--accent-deep);text-align:center;padding:2px 8px;outline:none;vertical-align:baseline;caret-color:var(--accent);min-width:64px;}
+.qbox{border:none;border-radius:0;background:var(--fill);font:inherit;font-weight:800;font-size:inherit;line-height:inherit;color:var(--accent-deep);text-align:center;padding:2px 8px;outline:none;vertical-align:baseline;caret-color:var(--accent);min-width:64px;}
 .qbox:focus{background:#E5D9B8;} /* 포커스 링 없이 톤만 반 단계 — 포커스 표시는 깜빡이는 캐럿이 담당 */
 /* 글자수 힌트: 정답 글자 수만큼 칸(cell)으로 분리 — 같은 회색 솔리드 톤, 다음 입력 칸에 캐럿 깜빡임 */
 .cellrow{display:inline-flex;gap:5px;position:relative;vertical-align:middle;}
-.cell{width:26px;height:36px;border-radius:8px;background:var(--fill);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:var(--accent-deep);text-transform:none;}
+.cell{width:26px;height:36px;border-radius:0;background:var(--fill);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:var(--accent-deep);text-transform:none;}
 .cell.correct{background:var(--accent-soft);color:var(--accent-deep);}
 .cell.wrong{background:var(--fill);color:var(--muted);}
-.cell.cur::after{content:"";width:2px;height:17px;border-radius:1px;background:var(--accent);animation:caretblink 1.06s steps(1) infinite;}
+.cell.cur::after{content:"";width:2px;height:17px;border-radius:0;background:var(--accent);animation:caretblink 1.06s steps(1) infinite;}
 .cell-gap{width:10px;flex:none;} /* 구동사 빈칸의 단어 사이 간격 */
 @keyframes caretblink{50%{opacity:0;}}
 @media (prefers-reduced-motion: reduce){.cell.cur::after{animation:none;}}
@@ -514,7 +520,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 @media (prefers-reduced-motion: reduce){.dict-fixed{animation:none;}}
 /* 단어길이 보기: 정답 글자 수만큼 작은 네모 칸(추측 아님, 정확한 길이) — 단어 아래 표시 */
 .len-row{display:flex;gap:3px;}
-.len-row i{width:9px;height:9px;border-radius:2px;background:var(--accent-soft);}
+.len-row i{width:9px;height:9px;border-radius:0;background:var(--accent-soft);}
 
 /* 듣기 세션 시작 전 3·2·1 카운트다운 원 */
 .countdown-circle{width:48px;height:48px;border-radius:50%;background:var(--ink);color:#FFFBF1;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;animation:countpulse .7s ease;}
@@ -525,10 +531,10 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .dict-rword:disabled{cursor:default;color:var(--muted);text-decoration:none;}
 /* 정답 화면의 발음 해설(연음·축약) — 보조 정보라 낮은 위계로 */
 .dict-notes{display:flex;flex-direction:column;gap:6px;margin-top:2px;}
-.dict-note{font-size:12px;font-weight:500;color:var(--ink-2);background:var(--bg);border-radius:10px;padding:9px 11px;line-height:1.5;}
+.dict-note{font-size:12px;font-weight:500;color:var(--ink-2);background:var(--bg);border-radius:0;padding:9px 11px;line-height:1.5;}
 .dict-note b{color:var(--accent-deep);font-weight:800;}
-.dict-relearn-note{font-size:12px;font-weight:700;color:var(--hi-yellow-xdark);background:var(--hi-yellow-light);border-radius:10px;padding:9px 11px;}
-.qsub{background:var(--accent);color:var(--on-accent);font-weight:700;font-size:15px;padding:14px 20px;border-radius:14px;width:100%;display:inline-flex;align-items:center;justify-content:center;gap:6px;}
+.dict-relearn-note{font-size:12px;font-weight:700;color:var(--hi-yellow-xdark);background:var(--hi-yellow-light);border-radius:0;padding:9px 11px;}
+.qsub{background:var(--accent);color:var(--on-accent);font-weight:700;font-size:15px;padding:14px 20px;border-radius:0;width:100%;display:inline-flex;align-items:center;justify-content:center;gap:6px;}
 .qres{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:800;}
 .qres.ok{color:var(--good);}
 .qres.no{color:var(--danger);}
@@ -540,17 +546,17 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qsyn-chip.link{color:var(--accent-deep);}
 /* 퀴즈: 4지선다 뜻 맞추기 */
 .qchoices{display:flex;flex-direction:column;gap:8px;}
-.qchoice{width:100%;text-align:left;padding:13px 15px;border-radius:13px;background:var(--fill);font-size:15px;font-weight:700;color:var(--ink-2);border:1.5px solid transparent;}
+.qchoice{width:100%;text-align:left;padding:13px 15px;border-radius:0;background:var(--fill);font-size:15px;font-weight:700;color:var(--ink-2);border:1.5px solid transparent;}
 .qchoice.correct{background:var(--accent-soft);color:var(--accent-deep);border-color:var(--accent);}
 .qchoice.wrong{background:#fbe9e9;color:#d64545;border-color:#d64545;}
 /* 듣기 세션(딕테이션) */
-.qdictate{width:100%;border:none;border-radius:12px;background:var(--fill);font:inherit;font-weight:600;font-size:16px;line-height:1.5;color:var(--ink);padding:12px 14px;outline:none;resize:none;}
+.qdictate{width:100%;border:none;border-radius:0;background:var(--fill);font:inherit;font-weight:600;font-size:16px;line-height:1.5;color:var(--ink);padding:12px 14px;outline:none;resize:none;}
 .qdictate:focus{background:var(--accent-soft);}
 .qdictate-result{font-size:16px;line-height:1.7;}
 .dw-ok{color:var(--ink);}
 .dw-bad{color:#d64545;text-decoration:underline;text-decoration-color:#d6454577;}
 .qactions{margin-top:auto;display:flex;gap:8px;}
-.qactions button{flex:1;padding:14px;border-radius:14px;font-weight:700;font-size:15px;}
+.qactions button{flex:1;padding:14px;border-radius:0;font-weight:700;font-size:15px;}
 .qactions .ghost{background:var(--surface);border:1.5px solid var(--ink);color:var(--ink);}
 .qactions .primary{background:var(--accent);color:var(--on-accent);}
 .finish{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:40px 20px;}
@@ -567,7 +573,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lt-qcard{align-items:center;text-align:center;justify-content:center;min-height:150px;}
 .lt-word{font-size:24px;font-weight:800;letter-spacing:-0.3px;}
 .lt-choices{display:flex;flex-direction:column;gap:8px;margin-top:auto;}
-.lt-choice{padding:14px;border-radius:14px;font-weight:700;font-size:15px;background:var(--surface);border:0.5px solid var(--card-border);color:var(--ink);box-shadow:var(--shadow);text-align:center;}
+.lt-choice{padding:14px;border-radius:0;font-weight:700;font-size:15px;background:var(--surface);border:0.5px solid var(--card-border);color:var(--ink);box-shadow:var(--shadow);text-align:center;}
 .lt-choice:active{background:var(--fill);}
 .lt-band{display:inline-flex;align-items:center;font-size:14px;font-weight:800;padding:6px 14px;border-radius:999px;background:var(--accent-deep);color:var(--on-accent);}
 /* 결과 레벨 밴드 — 컬러위계 반영(연두<옐로우<핑크<블루). .lt-band(0,1,0)를 이기려 (0,2,0)로 정의 */
@@ -579,15 +585,15 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 한국어 예시(Part B) — 예전엔 .qcue(12px 회색)라 너무 작았음. 문제문이므로 크게·볼드 */
 .lt-ko{font-size:18px;font-weight:800;text-align:center;line-height:1.45;letter-spacing:-0.2px;margin:4px 0;color:var(--ink);}
 /* 답 칸 — 조립한 답이 쌓이는 곳. 내용이 없거나 늘어나도 크기가 흔들리지 않게 높이 고정 */
-.lt-answer{min-height:66px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px;text-align:center;background:var(--surface);border:0.5px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px;font-size:17px;font-weight:700;line-height:1.5;letter-spacing:.2px;}
+.lt-answer{min-height:66px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px;text-align:center;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:var(--shadow);padding:12px 14px;font-size:17px;font-weight:700;line-height:1.5;letter-spacing:.2px;}
 .lt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;}
 @keyframes lt-shake{0%,100%{transform:translateX(0);}20%{transform:translateX(-4px);}40%{transform:translateX(4px);}60%{transform:translateX(-3px);}80%{transform:translateX(3px);}}
 .lt-chips .lchip.wrong{animation:lt-shake .35s ease;background:var(--danger-container);color:var(--danger);border-color:var(--danger);}
 /* 탭한 칩은 자리를 유지한 채 흐려지기만 — 남은 칩이 당겨지면 다음 탭이 빗나간다 */
 .lt-chips .lchip.picked{opacity:.22;pointer-events:none;}
-.lt-note{font-size:12px;color:var(--ink-2);background:var(--fill);border-radius:10px;padding:10px 12px;line-height:1.5;}
+.lt-note{font-size:12px;color:var(--ink-2);background:var(--fill);border-radius:0;padding:10px 12px;line-height:1.5;}
 /* 분석 문장 속 핵심부만 형광펜으로 짚어줌(단순 볼드가 아니라 실제 마커 배경) */
-.lt-note b{background:var(--hi-yellow-light);color:var(--ink);font-weight:800;padding:1px 3px;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
+.lt-note b{background:var(--hi-yellow-light);color:var(--ink);font-weight:800;padding:1px 3px;border-radius:0;box-decoration-break:clone;-webkit-box-decoration-break:clone;}
 .lt-note b.hl-green{background:var(--hi-green-light);}
 .lt-note b.hl-pink{background:var(--hi-pink-light);}
 .lt-note b.hl-blue{background:var(--hi-blue-light);}
@@ -598,30 +604,30 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .chip.tier-blue{background:var(--hi-blue-light);color:var(--hi-blue-xdark);border-color:transparent;}
 
 /* 설정 화면 (캐릭터 변경 등) — WordSheet와 동일한 바텀시트 패턴 재사용 */
-.charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;}
-.charrow .cf{width:52px;height:52px;border-radius:14px;background:var(--fill);display:flex;align-items:center;justify-content:center;flex:none;overflow:hidden;font-size:9px;color:var(--muted);text-align:center;line-height:1.2;}
+.charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:var(--shadow);padding:12px 14px;}
+.charrow .cf{width:52px;height:52px;border-radius:0;background:var(--fill);display:flex;align-items:center;justify-content:center;flex:none;overflow:hidden;font-size:9px;color:var(--muted);text-align:center;line-height:1.2;}
 .charrow .body{flex:1;min-width:0;}
 .charrow .name{font-size:14px;font-weight:700;}
-.charrow .cta{flex:none;font-size:12px;font-weight:700;padding:9px 12px;border-radius:11px;text-align:center;white-space:nowrap;}
+.charrow .cta{flex:none;font-size:12px;font-weight:700;padding:9px 12px;border-radius:0;text-align:center;white-space:nowrap;}
 .charrow .cta.use{background:var(--accent-soft);color:var(--accent-deep);}
 .charrow .cta.free{background:var(--accent);color:var(--on-accent);}
 .charrow .cta.buy{background:var(--ink);color:var(--on-accent);}
 .charrow .cta.locked{background:var(--fill);color:var(--muted);}
-.ptbox{display:flex;align-items:center;justify-content:space-between;background:var(--warmgray-fill);border-radius:16px;padding:14px 16px;}
+.ptbox{display:flex;align-items:center;justify-content:space-between;background:var(--warmgray);border-radius:0;padding:14px 16px;}
 .ptbox .v{font-size:20px;font-weight:800;color:var(--ink-2);font-variant-numeric:tabular-nums;}
 .ptbox .l{font-size:12px;color:var(--ink-2);}
 
 /* 설정 — 일일 목표 스테퍼 · 듣기 속도 프리셋 */
-.goalrow{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:11px 15px;margin-bottom:8px;}
+.goalrow{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:0;box-shadow:var(--shadow);padding:11px 15px;margin-bottom:8px;}
 .goal-lbl{font-size:14px;font-weight:700;flex:1;}
 .goal-step{width:30px;height:30px;border-radius:999px;background:var(--fill);color:var(--ink-2);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;flex:none;}
 .goal-v{font-size:14px;font-weight:800;color:var(--accent-deep);min-width:44px;text-align:center;font-variant-numeric:tabular-nums;flex:none;}
-.prefrow{display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:12px 15px;text-align:left;}
-.prefrow.on{background:var(--accent-soft);}
+.prefrow{display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:var(--surface);border-radius:0;box-shadow:var(--shadow);padding:12px 15px;text-align:left;}
+.prefrow.on{background:var(--warmgray);}
 .pf-name{font-size:14px;font-weight:700;}
 .prefrow.on .pf-name{color:var(--accent-deep);}
 .pf-sub{font-size:12px;color:var(--muted);}
-.cefrinfo{background:var(--surface);border-radius:14px;box-shadow:var(--shadow);padding:12px 15px;}
+.cefrinfo{background:var(--surface);border-radius:0;box-shadow:var(--shadow);padding:12px 15px;}
 .cefrinfo-row{display:flex;align-items:center;gap:10px;padding:4px 0;}
 .cefrinfo-nm{font-size:13px;color:var(--ink-2);}
 </style>
@@ -631,8 +637,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.28.2";
-const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.29.0";const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -773,6 +778,18 @@ function speakTextWebSpeech(text, lang, rate) {
 const TTS_CACHE = new Map();
 let _activeAudio = null; // 프록시 TTS로 재생 중인 Audio — 연타 시 이전 것부터 끊어야 에코가 안 남
 let _speakGen = 0; // 요청 세대 토큰 — fetch가 늦게 끝난 이전 호출이 나중에 재생을 가로채는(비동기 역전) 것을 방지
+
+/* 모바일(특히 iOS Safari)은 오디오 자동재생을 "사용자 제스처와 직접 이어진" 호출에만 허용.
+   듣기 세션은 3·2·1 카운트다운(setTimeout) 뒤에 문장을 재생하므로 제스처와 끊겨 무음으로
+   실패하고, "다시 듣기" 버튼(직접 클릭 → 즉시 재생)만 소리가 나는 문제가 있었음.
+   앱에서 첫 터치가 발생하는 순간 무음 오디오를 한 번 재생해 이 Audio 엘리먼트를 "언락"해두면,
+   같은 엘리먼트를 재사용하는 이후의 타이머 기반 재생도 계속 허용됨(표준 모바일 언락 패턴). */
+const _sharedAudio = new Audio("data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=");
+function unlockAudio() {
+  try { _sharedAudio.play().then(() => _sharedAudio.pause()).catch(() => {}); } catch (e) {}
+  try { speechSynthesis.speak(new SpeechSynthesisUtterance("")); } catch (e) {}
+}
+document.addEventListener("pointerdown", unlockAudio, { once: true, passive: true });
 function stopSpeaking() {
   _speakGen++; // 진행 중인 speakText 호출이 있다면 자기 세대가 낡았음을 감지하고 재생을 포기하게 함
   try { speechSynthesis.cancel(); } catch (e) {}
@@ -807,9 +824,9 @@ async function speakText(text, rateOverride) {
       }
       // fetch(캐시 없을 때)나 blob 변환 사이 더 최근 호출이 있었으면(myGen이 낡음) 재생하지 않고 조용히 포기
       if (myGen !== _speakGen) return;
-      const audio = new Audio(url);
-      _activeAudio = audio;
-      await audio.play();
+      _sharedAudio.src = url; // 언락된 하나의 엘리먼트를 재사용 — 새 Audio()는 모바일에서 다시 잠겨있음
+      _activeAudio = _sharedAudio;
+      await _sharedAudio.play();
       return;
     } catch (e) { /* 폴백으로 진행 */ }
   }
@@ -1887,7 +1904,7 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
         <div key={s.n}
              className={"step" + (s.state === "active" ? " active" : "") + (s.state === "done" ? " done" : "")}
              onClick={() => (s.direct ? s.start() : onGoTab(s.tab))}>
-          <div className="step-ico">{s.state === "done" ? <Icon name="check" size={20} /> : s.n}</div>
+          <div className="step-ico round">{s.state === "done" ? <Icon name="check" size={20} /> : s.n}</div>
           <div className="step-body">
             <div className="step-title">{s.title}</div>
             <div className="step-sub">{s.sub}</div>
@@ -2176,7 +2193,7 @@ function ListPicker({ words, onClose, onChanged }) {
           <input value={newName} onChange={e => setNewName(e.target.value)} placeholder="새 리스트 이름 (예: 비즈니스용)" autoCapitalize="none" />
           <button onClick={createAndCommit}>만들기</button>
         </div>
-        <button className="ghost" style={{ width: "100%", marginTop: 12, padding: 12, borderRadius: 13, background: "var(--fill)", color: "var(--ink-2)", fontWeight: 700 }} onClick={onClose}>닫기</button>
+        <button className="ghost" style={{ width: "100%", marginTop: 12, padding: 12, borderRadius: 0, background: "var(--fill)", color: "var(--ink-2)", fontWeight: 700 }} onClick={onClose}>닫기</button>
       </div>
     </div>,
     document.body
@@ -2288,7 +2305,7 @@ function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump }) {
         <React.Fragment>
           {MENUS.map(m => (
             <div key={m.k} className="step" onClick={() => setView(m.k)}>
-              <div className="step-ico"><Icon name={m.icon} size={20} /></div>
+              <div className="step-ico round black"><Icon name={m.icon} size={20} /></div>
               <div className="step-body">
                 <div className="step-title">{m.title}</div>
                 <div className="step-sub">{m.sub}</div>
@@ -3702,7 +3719,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   }
 
   const startCard = () => { const items = pickSession(10); if (items.length) { setMode("card"); setSession(items); } };
-  const startListen = () => { const items = pickSession(10); if (items.length) { setMode("listen"); setSession(items); setListenReady(false); } };
+  const startListen = () => { const items = pickSession(10); if (items.length) { setMode("listen"); setSession(items); } };
   const startQuiz = () => {
     const qs = buildQuiz(10);
     if (qs) setQuiz(qs);
@@ -3723,7 +3740,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
       </div>
       {MENU.filter(m => !m.hidden).map(m => (
         <div key={m.k} className={"step" + (m.on ? "" : " soon")} onClick={() => m.on && m.start()}>
-          <div className="step-ico"><Icon name={m.icon} size={20} /></div>
+          <div className="step-ico round black"><Icon name={m.icon} size={20} /></div>
           <div className="step-body">
             <div className="step-title">{m.title}</div>
             <div className="step-sub">{m.sub}</div>
@@ -4005,9 +4022,9 @@ function App() {
       <div className="tabbar">
         {TABS.map(t => (
           <button key={t.k}
-                  className={"tab" + (t.k === "home" ? " home" : "") + (tab === t.k ? " on" : "")}
+                  className={"tab tab-" + t.k + (tab === t.k ? " on" : "")}
                   onClick={() => setTab(t.k)}>
-            <span className="ti"><Icon name={t.icon} size={t.k === "home" ? 26 : 24} /></span>
+            <span className="ti"><Icon name={t.icon} size={26} /></span>
             {t.label}
           </button>
         ))}
