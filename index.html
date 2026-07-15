@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.29.2-square-test">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.29.2-square-test" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.29.2-square-test" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.29.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.29.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.29.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.29.2-square-test"></script>
+<script src="words.js?v=0.29.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.29.2-square-test") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.29.2-square-test") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.29.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.29.0") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.29.2-square-test") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.29.2-square-test") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.29.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.29.0") format("woff");
 }
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
@@ -52,7 +52,12 @@
   --accent:#211C15;        /* 포인트 = 잉크 블랙(블랙 버튼 컨셉) */
   --accent-deep:#4A3A20;   /* 흰 배경 위 텍스트 강조 (웜 브라운) */
   --accent-soft:#EDE1C2;   /* 옅은 배경 */
-  --warmgray-fill:#E6E3DD; /* 웜그레이 톤 — 진해질수록 노란기가 아니라 무채색(그레이) 쪽으로 가는 강조 배경. --accent-soft(골드톤)와 짝을 이루는 "강조하되 안 노란" 옵션 */
+  /* 웜그레이 하이어라키 — 진해질수록 노란기가 아니라 무채색(그레이) 쪽으로 가는 강조 배경.
+     --accent-soft(골드톤)와 짝을 이루는 "강조하되 안 노란" 옵션. mid를 보유 포인트 배경·
+     듣기속도 활성값에 공용으로 써서 두 곳이 같은 진하기로 보이게 통일(전엔 서로 다른 톤이었음). */
+  --warmgray-light:#EEEBE3;
+  --warmgray:#D6D1C4;
+  --warmgray-dark:#B3AC98;
   --on-accent:#FFFBF1;
   --good:#2F8F5B;
   --good-container:#E3F1E7;
@@ -611,7 +616,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .charrow .cta.free{background:var(--accent);color:var(--on-accent);}
 .charrow .cta.buy{background:var(--ink);color:var(--on-accent);}
 .charrow .cta.locked{background:var(--fill);color:var(--muted);}
-.ptbox{display:flex;align-items:center;justify-content:space-between;background:var(--warmgray-fill);border-radius:0;padding:14px 16px;}
+.ptbox{display:flex;align-items:center;justify-content:space-between;background:var(--warmgray);border-radius:0;padding:14px 16px;}
 .ptbox .v{font-size:20px;font-weight:800;color:var(--ink-2);font-variant-numeric:tabular-nums;}
 .ptbox .l{font-size:12px;color:var(--ink-2);}
 
@@ -621,7 +626,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .goal-step{width:30px;height:30px;border-radius:999px;background:var(--fill);color:var(--ink-2);font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;flex:none;}
 .goal-v{font-size:14px;font-weight:800;color:var(--accent-deep);min-width:44px;text-align:center;font-variant-numeric:tabular-nums;flex:none;}
 .prefrow{display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:var(--surface);border-radius:0;box-shadow:var(--shadow);padding:12px 15px;text-align:left;}
-.prefrow.on{background:var(--accent-soft);}
+.prefrow.on{background:var(--warmgray);}
 .pf-name{font-size:14px;font-weight:700;}
 .prefrow.on .pf-name{color:var(--accent-deep);}
 .pf-sub{font-size:12px;color:var(--muted);}
@@ -635,7 +640,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.29.2-square-test";
+const APP_VERSION = "v0.29.0";
 const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -777,6 +782,18 @@ function speakTextWebSpeech(text, lang, rate) {
 const TTS_CACHE = new Map();
 let _activeAudio = null; // 프록시 TTS로 재생 중인 Audio — 연타 시 이전 것부터 끊어야 에코가 안 남
 let _speakGen = 0; // 요청 세대 토큰 — fetch가 늦게 끝난 이전 호출이 나중에 재생을 가로채는(비동기 역전) 것을 방지
+
+/* 모바일(특히 iOS Safari)은 오디오 자동재생을 "사용자 제스처와 직접 이어진" 호출에만 허용.
+   듣기 세션은 3·2·1 카운트다운(setTimeout) 뒤에 문장을 재생하므로 제스처와 끊겨 무음으로
+   실패하고, "다시 듣기" 버튼(직접 클릭 → 즉시 재생)만 소리가 나는 문제가 있었음.
+   앱에서 첫 터치가 발생하는 순간 무음 오디오를 한 번 재생해 이 Audio 엘리먼트를 "언락"해두면,
+   같은 엘리먼트를 재사용하는 이후의 타이머 기반 재생도 계속 허용됨(표준 모바일 언락 패턴). */
+const _sharedAudio = new Audio("data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=");
+function unlockAudio() {
+  try { _sharedAudio.play().then(() => _sharedAudio.pause()).catch(() => {}); } catch (e) {}
+  try { speechSynthesis.speak(new SpeechSynthesisUtterance("")); } catch (e) {}
+}
+document.addEventListener("pointerdown", unlockAudio, { once: true, passive: true });
 function stopSpeaking() {
   _speakGen++; // 진행 중인 speakText 호출이 있다면 자기 세대가 낡았음을 감지하고 재생을 포기하게 함
   try { speechSynthesis.cancel(); } catch (e) {}
@@ -811,9 +828,9 @@ async function speakText(text, rateOverride) {
       }
       // fetch(캐시 없을 때)나 blob 변환 사이 더 최근 호출이 있었으면(myGen이 낡음) 재생하지 않고 조용히 포기
       if (myGen !== _speakGen) return;
-      const audio = new Audio(url);
-      _activeAudio = audio;
-      await audio.play();
+      _sharedAudio.src = url; // 언락된 하나의 엘리먼트를 재사용 — 새 Audio()는 모바일에서 다시 잠겨있음
+      _activeAudio = _sharedAudio;
+      await _sharedAudio.play();
       return;
     } catch (e) { /* 폴백으로 진행 */ }
   }
@@ -2292,7 +2309,7 @@ function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump }) {
         <React.Fragment>
           {MENUS.map(m => (
             <div key={m.k} className="step" onClick={() => setView(m.k)}>
-              <div className="step-ico"><Icon name={m.icon} size={20} /></div>
+              <div className="step-ico round black"><Icon name={m.icon} size={20} /></div>
               <div className="step-body">
                 <div className="step-title">{m.title}</div>
                 <div className="step-sub">{m.sub}</div>
@@ -3706,7 +3723,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   }
 
   const startCard = () => { const items = pickSession(10); if (items.length) { setMode("card"); setSession(items); } };
-  const startListen = () => { const items = pickSession(10); if (items.length) { setMode("listen"); setSession(items); setListenReady(false); } };
+  const startListen = () => { const items = pickSession(10); if (items.length) { setMode("listen"); setSession(items); } };
   const startQuiz = () => {
     const qs = buildQuiz(10);
     if (qs) setQuiz(qs);
@@ -3727,7 +3744,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
       </div>
       {MENU.filter(m => !m.hidden).map(m => (
         <div key={m.k} className={"step" + (m.on ? "" : " soon")} onClick={() => m.on && m.start()}>
-          <div className={"step-ico round" + (m.k === "level" ? " black" : "")}><Icon name={m.icon} size={20} /></div>
+          <div className="step-ico round black"><Icon name={m.icon} size={20} /></div>
           <div className="step-body">
             <div className="step-title">{m.title}</div>
             <div className="step-sub">{m.sub}</div>
