@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.26.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.26.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.26.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.27.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.27.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.27.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.26.0"></script>
+<script src="words.js?v=0.27.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.26.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.26.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.27.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.27.0") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.26.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.26.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.27.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.27.0") format("woff");
 }
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
@@ -618,7 +618,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.26.0";
+const APP_VERSION = "v0.27.0";
 const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -758,10 +758,17 @@ function speakTextWebSpeech(text, lang, rate) {
    실패·타임아웃·미설정 시 항상 브라우저 음성으로 폴백(예외가 사용자에게 보이지 않음). */
 const TTS_CACHE = new Map();
 let _activeAudio = null; // 프록시 TTS로 재생 중인 Audio — 연타 시 이전 것부터 끊어야 에코가 안 남
+let _speakGen = 0; // 요청 세대 토큰 — fetch가 늦게 끝난 이전 호출이 나중에 재생을 가로채는(비동기 역전) 것을 방지
+function stopSpeaking() {
+  _speakGen++; // 진행 중인 speakText 호출이 있다면 자기 세대가 낡았음을 감지하고 재생을 포기하게 함
+  try { speechSynthesis.cancel(); } catch (e) {}
+  if (_activeAudio) { try { _activeAudio.pause(); } catch (e) {} _activeAudio = null; }
+}
 async function speakText(text, rateOverride) {
   const prefs = PREFS.get();
   const accent = ACCENT_PRESETS[prefs.accent];
   const rate = rateOverride || SPEED_PRESETS[prefs.speed].rate;
+  const myGen = ++_speakGen; // 이 호출 이후 speakText/stopSpeaking이 또 불리면 myGen은 낡은 세대가 됨
   // 새로 말하기 전에 이전 재생(프록시 Audio·Web Speech 둘 다) 정지 — 연타 에코 방지
   try { speechSynthesis.cancel(); } catch (e) {}
   if (_activeAudio) { try { _activeAudio.pause(); } catch (e) {} _activeAudio = null; }
@@ -784,12 +791,15 @@ async function speakText(text, rateOverride) {
         url = URL.createObjectURL(blob);
         TTS_CACHE.set(cacheKey, url);
       }
+      // fetch(캐시 없을 때)나 blob 변환 사이 더 최근 호출이 있었으면(myGen이 낡음) 재생하지 않고 조용히 포기
+      if (myGen !== _speakGen) return;
       const audio = new Audio(url);
       _activeAudio = audio;
       await audio.play();
       return;
     } catch (e) { /* 폴백으로 진행 */ }
   }
+  if (myGen !== _speakGen) return;
   speakTextWebSpeech(text, accent.lang, rate);
 }
 
@@ -1040,6 +1050,9 @@ function liaisonPoints(text) {
    조합상 50가지 이상으로 다양화. 한글 근사 발음은 "이렇게 들려요" 수준으로만(과장·IPA 오류 방지). */
 function noteHash(s) { let h = 0; for (const c of s) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h; }
 function pickVariant(arr, seed) { return arr[noteHash(seed) % arr.length]; }
+/* 두 단어를 실제로 이어 말했을 때 들리는 형태를 그 자리에서 만들어 붙이는 근사치
+   (진짜 IPA 변환이 아니라 "한 단어처럼 들려요" 감을 주는 용도) — 예: there's+a → theresa. */
+function mergedSound(a, b) { return (a + b).toLowerCase().replace(/[^a-z]/g, ""); }
 const CONN_V = "aeiou", CONN_C = "bcdfghjklmnpqrstvwxyz";
 function connDetect(aw, bw) {
   const a = aw.toLowerCase().replace(/[^a-z']/g, ""), b = bw.toLowerCase().replace(/[^a-z']/g, "");
@@ -1112,14 +1125,16 @@ function connDetect(aw, bw) {
     `${pair}처럼 모음+모음이면 끊지 않고 미끄러지듯 붙여 발음해요.`,
     `${pair}에서 앞 모음이 뒤 모음으로 넘어가며 사이에 짧은 y/w가 생겨요.`,
   ], a + b);
-  // 14) 자음 + 모음 → 리에종(기본)
-  if (CONN_C.includes(al) && CONN_V.includes(bf)) return pickVariant([
-    `${pair}처럼 자음으로 끝난 뒤 모음이 오면 두 단어가 이어져 한 단어처럼 들려요.`,
-    `${pair}에서 앞 단어의 끝 자음이 뒤 모음으로 넘어가 붙어요 — "an apple"이 "어내플"처럼.`,
-    `${pair}는 끝 자음과 첫 모음이 연결(리에종)돼 경계가 사라져요.`,
-    `${pair}처럼 자음+모음이 만나면 소리가 넘어가 "이어 말하기"가 돼요.`,
-    `${pair}에서 끝소리 ${al}가 다음 모음에 얹혀 한 음절처럼 발음돼요.`,
-  ], a + b);
+  // 14) 자음 + 모음 → 리에종(기본) — 실제 두 단어를 이어 말했을 때 들리는 형태를 그대로 예시로 보여줌
+  if (CONN_C.includes(al) && CONN_V.includes(bf)) {
+    const merged = mergedSound(a, b);
+    return pickVariant([
+      `${pair}처럼 자음으로 끝난 뒤 모음이 오면 두 단어가 이어져 "${merged}"처럼 한 단어같이 들려요.`,
+      `${pair}에서 앞 단어의 끝 자음이 뒤 모음으로 넘어가 붙어요 — "${merged}"처럼 들려요.`,
+      `${pair}는 끝 자음과 첫 모음이 연결(리에종)돼 경계가 사라져 "${merged}"에 가깝게 들려요.`,
+      `${pair}처럼 자음+모음이 만나면 소리가 넘어가 "${merged}"처럼 이어 들려요.`,
+    ], a + b);
+  }
   return null;
 }
 function findLiaisonNotes(text) {
@@ -2512,6 +2527,8 @@ function CardSession({ items, onExit, onOpenWord }) {
   // 이 카드(문맥) 하나에 한정된 유의어 — 사전 상세의 표제어 전체 유의어와는 다름(itemsFromWords 참고)
   const synonyms = useMemo(() => (it && it.syn) || [], [it]);
 
+  useEffect(() => () => stopSpeaking(), []); // 세션 나갈 때(언마운트) 재생 중인 음성 정지
+
   const speak = speakText;
 
   // 정답 판정: 빈칸의 정답 또는 원형 단어와 일치해야 정답. 유의어는 정답으로 인정하지 않음(문장에 안 맞을 수 있어서) —
@@ -2785,6 +2802,8 @@ function QuizSession({ questions, onExit }) {
   const it = q.it;
   const speak = speakText;
 
+  useEffect(() => () => stopSpeaking(), []); // 세션 나갈 때(언마운트) 재생 중인 음성 정지
+
   useEffect(() => {
     if (q.type === "spell") speak(it.word);
     // eslint-disable-next-line
@@ -2882,11 +2901,44 @@ function QuizSession({ questions, onExit }) {
    넘어간다. 오답이면 어느 칸이 틀렸는지만 표시(정답은 안 보여줌)하고 같은 문장을 다시
    시도. 완전히 맞히면 그때 해석·연음 해설이 열리고 다음 문장으로 진행.
    출제 소스는 학습카드와 동일한 pickSession(due→fresh)이라 정답 시 그 단어의 SRS도 같이 오른다. */
-/* 단어 토큰 → 앞 구두점 / 타이핑 대상(알파벳+따옴표) / 뒤 구두점 분리.
-   "others." → pre:"", core:"others", post:"." — core 길이로 빈칸 폭을 정한다. */
-function splitWordToken(w) {
-  const m = w.match(/^([^A-Za-z0-9']*)([A-Za-z0-9']+)([^A-Za-z0-9']*)$/);
-  return m ? { pre: m[1], core: m[2], post: m[3] } : { pre: "", core: w, post: "" };
+/* 단어 앞뒤의 구두점만 떼어낸다. "others." → pre:"", core:"others", post:"."
+   "10-dollar" → pre:"", core:"10-dollar", post:"" (하이픈은 core 안에 그대로 — wordToTokens가 마저 쪼갬). */
+function splitOuterPunct(w) {
+  let i = 0, j = w.length;
+  while (i < j && !/[A-Za-z0-9]/.test(w[i])) i++;
+  while (j > i && !/[A-Za-z0-9]/.test(w[j - 1])) j--;
+  return { pre: w.slice(0, i), core: w.slice(i, j), post: w.slice(j) };
+}
+function splitWordToken(w) { return splitOuterPunct(w); }
+
+/* 흔한 축약 어미 → 원형. 어퍼스트로피 뒤가 이 중 하나면 축약형(s)과 원형(is) 둘 다 정답 처리. */
+const CONTRACTION_ALTS = { s: "is", re: "are", ve: "have", ll: "will", d: "would", m: "am" };
+
+/* 단어 안에 하이픈·어퍼스트로피 같은 기호가 있으면 사용자가 그 기호를 직접 치지 않아도 되도록
+   알파벳/숫자 조각별로 칸을 나누고 기호는 자동으로 붙여 보여준다.
+   "10-dollar" → "10" | "dollar" (하이픈 자동 표시). "we're" → "we" | "re"(정답: re 또는 are).
+   앞 조각을 맞혀야 다음 조각이 열린다(joinPrev). 기호 없는 보통 단어는 기존대로 한 칸. */
+function wordToTokens(w) {
+  const { pre, core, post } = splitOuterPunct(w);
+  const parts = core.split(/([^A-Za-z0-9]+)/).filter(x => x !== "");
+  if (parts.length <= 1) return [{ pre, core, post }];
+  const tokens = [];
+  for (let k = 0; k < parts.length; k += 2) {
+    const chunk = parts[k];
+    const isFirst = k === 0;
+    const isLast = k + 2 >= parts.length;
+    const joinSym = isFirst ? "" : parts[k - 1];
+    const altCore = joinSym === "'" ? CONTRACTION_ALTS[chunk.toLowerCase()] : undefined;
+    tokens.push({
+      pre: isFirst ? pre : "",
+      core: chunk,
+      post: isLast ? post : "",
+      altCore,
+      joinPrev: !isFirst,
+      joinSym,
+    });
+  }
+  return tokens;
 }
 
 /* 듣기 세션 시작 전 3·2·1 카운트다운 — 화면 전환 직후 바로 딕테이션 문장이 재생되면
@@ -2916,15 +2968,30 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   const [correct, setCorrect] = useState(0); // 첫 시도에 맞힌 문장 수
   const [replayCount, setReplayCount] = useState(0);
   const [lenHint, setLenHint] = useState(false); // 단어길이 보기
+  const [firstHint, setFirstHint] = useState(false); // 앞글자 보기
 
   const it = queue[idx];
-  const tokens = useMemo(() => (it ? it.ex.en.trim().split(/\s+/).map(splitWordToken) : []), [it]);
+  // "going to"처럼 구어체 결합 축약형(gonna)이 있는 두 단어는 첫 칸에 comboAlt를 달아둔다 —
+  // 거기에 "gonna"를 치면 이 칸과 다음 칸("to")이 한 번에 정답 처리된다(따로 쳐도 물론 정답).
+  const COMBO_ALTS = [[/^going$/i, /^to$/i, "gonna"]];
+  const tokens = useMemo(() => {
+    if (!it) return [];
+    const t = it.ex.en.trim().split(/\s+/).flatMap(wordToTokens);
+    for (let i = 0; i < t.length - 1; i++) {
+      if (t[i].joinPrev || t[i + 1].joinPrev) continue;
+      const hit = COMBO_ALTS.find(([ra, rb]) => ra.test(t[i].core) && rb.test(t[i + 1].core));
+      if (hit) t[i] = { ...t[i], comboAlt: hit[2], comboNext: i + 1 };
+    }
+    return t;
+  }, [it]);
   const norm = s => (s || "").toLowerCase().replace(/[^a-z0-9']/g, "");
   const inputRefs = React.useRef([]);
 
+  useEffect(() => () => stopSpeaking(), []); // 세션 나갈 때(언마운트) 재생 중인 문장 정지
+
   useEffect(() => {
     setAnswers(new Array(tokens.length).fill("")); setLocked(new Array(tokens.length).fill(false)); inputRefs.current = [];
-    setReplayCount(0); setWrongMask(null); setHadWrongAttempt(false); setLenHint(false); // 단어길이 보기는 문제마다 초기화
+    setReplayCount(0); setWrongMask(null); setHadWrongAttempt(false); setLenHint(false); setFirstHint(false); // 힌트류는 문제마다 초기화
   }, [idx, tokens.length]);
   useEffect(() => {
     if (!it) return;
@@ -2960,13 +3027,28 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
     setWrongMask(null);
     setRes({ dueIn: null, forcedRelearn: true });
   };
-  const replay = () => {
-    speakSentence(it.ex.en);
-    if (res) return; // 완료 화면에서는 그냥 다시 들려주기만(패널티 없음)
+  // 힌트 패널티(다시 듣기·앞글자 보기 공용): 3번째 사용이면 강제 재학습, 그 전엔 다음 문제 다운그레이드
+  const applyHintPenalty = () => {
     setReplayCount(c => {
       const nc = c + 1;
       if (nc >= 3) forceRelearn(); else downgradeNext();
       return nc;
+    });
+  };
+  const replay = () => {
+    speakSentence(it.ex.en);
+    if (res) return; // 완료 화면에서는 그냥 다시 들려주기만(패널티 없음)
+    applyHintPenalty();
+  };
+  // 앞글자 보기: 켜는 순간 아직 안 맞은 칸에 정답 첫 글자를 채워주고, 다시 듣기와 같은 패널티 적용
+  const toggleFirstHint = () => {
+    setFirstHint(v => {
+      const nv = !v;
+      if (nv) {
+        setAnswers(a => a.map((val, i) => (!locked[i] && !val ? tokens[i].core[0] : val)));
+        applyHintPenalty();
+      }
+      return nv;
     });
   };
 
@@ -2985,8 +3067,25 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   /* 타이핑 중 단어가 정답과 일치하는 순간 그 자리에서 고정(입력창 → 텍스트) + 블립,
      다음 미고정 칸으로 포커스 이동. 마지막 단어까지 고정되면 자동 완료. */
   const onTypeWord = (i, v) => {
+    const t = tokens[i];
+    if (locked[i]) { setAnswers(a => { const n = a.slice(); n[i] = v; return n; }); return; }
+    const nv = norm(v);
+    // "gonna" 등 결합 축약형: 이 칸 + 다음 칸("to")을 한 번에 정답 처리
+    if (t.comboAlt && nv === norm(t.comboAlt)) {
+      const nextI = t.comboNext;
+      setAnswers(a => { const n = a.slice(); n[i] = v; n[nextI] = tokens[nextI].core; return n; });
+      const nl = locked.slice(); nl[i] = true; nl[nextI] = true;
+      setLocked(nl);
+      if (nl.every(Boolean)) { complete(!hadWrongAttempt); return; }
+      playDing("word");
+      for (let j = 1; j <= tokens.length; j++) {
+        const k = (nextI + j) % tokens.length;
+        if (!nl[k]) { focusInput(k); break; }
+      }
+      return;
+    }
     setAnswers(a => { const n = a.slice(); n[i] = v; return n; });
-    if (locked[i] || norm(v) !== norm(tokens[i].core)) return;
+    if (nv !== norm(t.core) && (!t.altCore || nv !== norm(t.altCore))) return;
     const nl = locked.slice(); nl[i] = true;
     setLocked(nl);
     if (nl.every(Boolean)) { complete(!hadWrongAttempt); return; }
@@ -3023,6 +3122,41 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   const notes = res ? findLiaisonNotes(it.ex.en) : [];
   const diff = listeningDifficulty(it.ex.en);
 
+  // 토큰 하나(칸)의 입력/고정 UI 렌더 — 일반 단어도, "there's"의 there/'s 두 칸도 동일하게 씀.
+  // 래핑 span 없이 조각만 반환 — 호출부에서 하나의 .dict-word-row로 가로로 묶는다(there's가 세로로 안 쌓이도록).
+  const renderSlot = i => {
+    const t = tokens[i];
+    const waiting = t.joinPrev && !locked[i - 1]; // 다음 조각은 앞 조각을 맞히기 전엔 비활성 + 연결기호 숨김
+    return (
+      <React.Fragment key={i}>
+        {waiting ? "" : (t.joinPrev ? t.joinSym : t.pre)}
+        {locked[i] ? (
+          <span className="dict-fixed">{t.core}</span>
+        ) : (
+          <input ref={el => { inputRefs.current[i] = el; }}
+            className={"qbox dict-box" + (wrongMask && wrongMask[i] ? " wrong" : "")}
+            value={answers[i] || ""} autoFocus={i === 0}
+            disabled={waiting}
+            size={Math.max(2, t.core.length, (t.altCore || "").length, (t.comboAlt || "").length)}
+            onChange={e => onTypeWord(i, e.target.value.replace(/\s/g, ""))}
+            onKeyDown={e => {
+              if (e.key === " " || e.key === "Enter") {
+                e.preventDefault();
+                let moved = false;
+                for (let j = i + 1; j < tokens.length; j++) { if (!locked[j]) { focusInput(j); moved = true; break; } }
+                if (!moved) check();
+              } else if (e.key === "Backspace" && !answers[i] && i > 0) {
+                for (let j = i - 1; j >= 0; j--) { if (!locked[j]) { focusInput(j); break; } }
+              }
+            }}
+            autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+            aria-label={"단어 " + (i + 1)} />
+        )}
+        {t.post}
+      </React.Fragment>
+    );
+  };
+
   return (
     <div className="content study">
       <div className="study-top">
@@ -3039,40 +3173,24 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
         {!res ? (
           <React.Fragment>
             <div className="dict-words">
-              {tokens.map((t, i) => (
-                <span key={i} className="dict-word">
-                  <span className="dict-word-row">
-                    {t.pre}
-                    {locked[i] ? (
-                      <span className="dict-fixed">{t.core}</span>
-                    ) : (
-                      <input ref={el => { inputRefs.current[i] = el; }}
-                        className={"qbox dict-box" + (wrongMask && wrongMask[i] ? " wrong" : "")}
-                        value={answers[i] || ""} autoFocus={i === 0}
-                        size={Math.max(2, t.core.length)}
-                        onChange={e => onTypeWord(i, e.target.value.replace(/\s/g, ""))}
-                        onKeyDown={e => {
-                          if (e.key === " " || e.key === "Enter") {
-                            e.preventDefault();
-                            let moved = false;
-                            for (let j = i + 1; j < tokens.length; j++) { if (!locked[j]) { focusInput(j); moved = true; break; } }
-                            if (!moved) check();
-                          } else if (e.key === "Backspace" && !answers[i] && i > 0) {
-                            for (let j = i - 1; j >= 0; j--) { if (!locked[j]) { focusInput(j); break; } }
-                          }
-                        }}
-                        autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
-                        aria-label={"단어 " + (i + 1)} />
+              {tokens.map((t, i) => {
+                if (t.joinPrev) return null; // 이전 .dict-word 그룹 안에서 이미 렌더됨
+                const groupIdxs = [i]; // there's/10-dollar처럼 기호로 이어진 조각들을 한 단어로 묶기(2개 이상도 지원)
+                let k = i + 1;
+                while (tokens[k] && tokens[k].joinPrev) { groupIdxs.push(k); k++; }
+                return (
+                  <span key={i} className="dict-word">
+                    <span className="dict-word-row">
+                      {groupIdxs.map(gi => renderSlot(gi))}
+                    </span>
+                    {lenHint && !locked[i] && (
+                      <div className="len-row">
+                        {t.core.split("").map((_, kk) => <i key={kk} />)}
+                      </div>
                     )}
-                    {t.post}
                   </span>
-                  {lenHint && !locked[i] && (
-                    <div className="len-row">
-                      {t.core.split("").map((_, k) => <i key={k} />)}
-                    </div>
-                  )}
-                </span>
-              ))}
+                );
+              })}
             </div>
             {wrongMask && (
               <div className="qres no" style={{ marginTop: 10 }}>
@@ -3083,15 +3201,26 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
         ) : (
           <div className="dict-result">
             {tokens.map((t, i) => {
-              // 굴절형도 표제어로 역추적해 연결(Children→child, others→other)
-              const hit = t.core && dictLookup(t.core);
+              if (t.joinPrev) return null; // there's/10-dollar의 이어진 조각은 앞 칸과 한 덩어리로 같이 렌더
+              const groupIdxs = [i];
+              let k = i + 1;
+              while (tokens[k] && tokens[k].joinPrev) { groupIdxs.push(k); k++; }
               return (
                 <span key={i} className="dict-word-row">
-                  {t.pre}
-                  <button type="button" className="dict-rword" disabled={!hit} onClick={() => hit && onOpenWord(hit.word)}>
-                    {t.core}
-                  </button>
-                  {t.post}
+                  {groupIdxs.map(gi => {
+                    const g = tokens[gi];
+                    // 굴절형도 표제어로 역추적해 연결(Children→child, others→other)
+                    const hit = g.core && dictLookup(g.core);
+                    return (
+                      <React.Fragment key={gi}>
+                        {g.joinPrev ? g.joinSym : g.pre}
+                        <button type="button" className="dict-rword" disabled={!hit} onClick={() => hit && onOpenWord(hit.word)}>
+                          {g.core}
+                        </button>
+                        {g.post}
+                      </React.Fragment>
+                    );
+                  })}
                 </span>
               );
             })}
@@ -3100,7 +3229,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
 
         {res && <div className="dict-meaning">{it.ex.ko}</div>}
         {res && res.forcedRelearn && (
-          <div className="dict-relearn-note">다시 듣기를 3번 사용해서 이 문제는 세션 뒤쪽에서 다시 나와요.</div>
+          <div className="dict-relearn-note">힌트를 3번 사용해서 이 문제는 세션 뒤쪽에서 다시 나와요.</div>
         )}
         {res && notes.length > 0 && (
           <div className="dict-notes">
@@ -3119,12 +3248,12 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
         <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: "auto" }}>
           <div className="qhintrow">
             <span className="qhint-lbl">힌트</span>
-            <button className="qhint-btn play" onClick={replay}><Icon name="volume_up" size={15} /> 다시 듣기</button>
+            <button className={"qhint-btn" + (firstHint ? " on" : "")} onClick={toggleFirstHint}>앞글자 보기</button>
             <button className={"qhint-btn" + (lenHint ? " on" : "")} onClick={() => setLenHint(v => !v)}>단어길이 보기</button>
           </div>
           {replayCount > 0 && (
             <div className="qhint">
-              다시 듣기 {replayCount}회 — 다음 문제 난이도가 낮아져요{replayCount >= 2 ? " · 한 번 더 들으면 이 문제를 다시 학습해요" : ""}
+              힌트 {replayCount}회 사용 — 다음 문제 난이도가 낮아져요{replayCount >= 2 ? " · 한 번 더 쓰면 이 문제를 다시 학습해요" : ""}
             </div>
           )}
           <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={check}>확인</button>
@@ -3526,6 +3655,8 @@ function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
   const first = charK === null;
   const lastLt = loadLevelTest();
 
+  useEffect(() => () => stopSpeaking(), []); // 설정 닫힐 때(언마운트) 미리듣기 음성 정지
+
   const handlePick = k => {
     if (k === charK) return;
     if (first) { onChangeChar(k); return; } // 처음 1회는 무료
@@ -3740,6 +3871,15 @@ function App() {
     const onVis = () => { if (document.visibilityState === "visible") check(); };
     document.addEventListener("visibilitychange", onVis);
     return () => { clearInterval(iv); document.removeEventListener("visibilitychange", onVis); };
+  }, []);
+
+  /* 창을 닫거나 백그라운드로 보내도 재생 중이던 음성이 계속 나오던 문제 —
+     탭이 숨겨지거나(다른 앱 전환·화면 끄기) 페이지가 떠날 때 강제로 정지. */
+  useEffect(() => {
+    const onHide = () => { if (document.visibilityState === "hidden") stopSpeaking(); };
+    document.addEventListener("visibilitychange", onHide);
+    window.addEventListener("pagehide", stopSpeaking);
+    return () => { document.removeEventListener("visibilitychange", onHide); window.removeEventListener("pagehide", stopSpeaking); };
   }, []);
 
   return (
