@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.24.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.24.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.24.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.25.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.25.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.25.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.24.0"></script>
+<script src="words.js?v=0.25.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.24.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.24.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.25.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.25.0") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.24.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.24.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.25.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.25.0") format("woff");
 }
 :root{
   --bg:#FAF4E7;            /* 옅은 노트 베이지(2026-07-15, 전체 한 톤 밝게 — 이전 카드색을 배경으로) */
@@ -610,7 +610,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.24.0";
+const APP_VERSION = "v0.25.0";
 const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -725,21 +725,58 @@ const PREFS = (() => {
   return { get: () => p, set(patch) { Object.assign(p, patch); save(); } };
 })();
 
-/* 앱 전체 공용 TTS — 저장된 속도·악센트 설정을 실제 발화에 반영.
-   rateOverride: 카드의 "느리게 듣기"처럼 그 순간만 설정과 무관하게 속도를 강제할 때. */
-function speakText(text, rateOverride) {
+/* Cloudflare Worker 프록시 기본 URL(worker/README.md 참고) — 배포 후 여기 채우면
+   SOS 번역(회화 탭)·고급 TTS가 켜짐. 비워두면 SOS는 "준비 중" 안내, TTS는 지금처럼
+   브라우저 음성(Web Speech)만 사용 — 즉 비워둔 상태에서는 기존 동작과 완전히 동일. */
+const PROXY_BASE = "";
+
+function speakTextWebSpeech(text, lang, rate) {
   try {
     const u = new SpeechSynthesisUtterance(text);
-    const prefs = PREFS.get();
-    const accent = ACCENT_PRESETS[prefs.accent];
-    u.lang = accent.lang;
-    u.rate = rateOverride || SPEED_PRESETS[prefs.speed].rate;
+    u.lang = lang;
+    u.rate = rate;
     const voices = speechSynthesis.getVoices();
-    const voice = voices.find(v => v.lang === accent.lang) || voices.find(v => v.lang && v.lang.startsWith("en"));
+    const voice = voices.find(v => v.lang === lang) || voices.find(v => v.lang && v.lang.startsWith("en"));
     if (voice) u.voice = voice;
     speechSynthesis.cancel();
     speechSynthesis.speak(u);
   } catch (e) {}
+}
+
+/* 앱 전체 공용 TTS — 저장된 속도·악센트 설정을 실제 발화에 반영.
+   rateOverride: 카드의 "느리게 듣기"처럼 그 순간만 설정과 무관하게 속도를 강제할 때.
+   PROXY_BASE가 설정돼 있으면 Google TTS 프록시를 우선 시도(자연스러운 음성) —
+   같은 세션에서 반복 재생하는 문장은 TTS_CACHE(메모리, blob URL)로 재호출 없이 재생.
+   실패·타임아웃·미설정 시 항상 브라우저 음성으로 폴백(예외가 사용자에게 보이지 않음). */
+const TTS_CACHE = new Map();
+async function speakText(text, rateOverride) {
+  const prefs = PREFS.get();
+  const accent = ACCENT_PRESETS[prefs.accent];
+  const rate = rateOverride || SPEED_PRESETS[prefs.speed].rate;
+  if (PROXY_BASE) {
+    const cacheKey = accent.lang + "|" + rate + "|" + text;
+    try {
+      let url = TTS_CACHE.get(cacheKey);
+      if (!url) {
+        const ctrl = new AbortController();
+        const timer = setTimeout(() => ctrl.abort(), 5000);
+        const r = await fetch(PROXY_BASE + "/tts", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text, lang: accent.lang, rate }),
+          signal: ctrl.signal,
+        });
+        clearTimeout(timer);
+        if (!r.ok) throw new Error("tts proxy failed");
+        const blob = await r.blob();
+        url = URL.createObjectURL(blob);
+        TTS_CACHE.set(cacheKey, url);
+      }
+      await new Audio(url).play();
+      return;
+    } catch (e) { /* 폴백으로 진행 */ }
+  }
+  speakTextWebSpeech(text, accent.lang, rate);
 }
 
 /* 굴절형 → 표제어 역추적: children→child, others→other, running→run 등.
@@ -2321,6 +2358,64 @@ function Soon({ title, desc }) {
   );
 }
 
+/* ---------- 회화 탭 — SOS 미니 도구 (PLAN 4.12-5) ----------
+   풀 회화(페르소나·대화방)는 아직 준비 중 — 그중 "막히면 SOS"만 먼저 독립 기능으로 뗌.
+   한국어로 하고 싶은 말을 입력 → Gemini 프록시가 자연스러운 영어 한 문장으로 알려줌.
+   PROXY_BASE 미설정 시 기존 Soon 플레이스홀더와 동일하게 노출(기능 추가로 인한 회귀 없음). */
+function TalkSOS() {
+  const [ko, setKo] = useState("");
+  const [result, setResult] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [err, setErr] = useState(null);
+
+  const ask = async () => {
+    const text = ko.trim();
+    if (!text || loading) return;
+    setLoading(true); setErr(null); setResult(null);
+    try {
+      const prompt = "당신은 한국인 영어 학습자를 돕는 회화 코치입니다. 아래 한국어 문장을 자연스럽고 " +
+        "일상적인 영어 구어체 한 문장으로만 번역하세요. 설명이나 따옴표 없이 번역문 하나만 출력하세요.\n\n한국어: " + text;
+      const r = await fetch(PROXY_BASE + "/gemini", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ prompt }),
+      });
+      if (!r.ok) throw new Error("proxy error");
+      const data = await r.json();
+      setResult((data.text || "").trim());
+    } catch (e) {
+      setErr("지금 연결이 안 돼요. 잠시 후 다시 시도해 주세요.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (!PROXY_BASE) return <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />;
+
+  return (
+    <div className="content">
+      <div className="sec">SOS — 하고 싶은 말을 영어로</div>
+      <div className="qcard">
+        <textarea className="qdictate" rows={3} value={ko} onChange={e => setKo(e.target.value)}
+          placeholder="예: 저 화장실 좀 다녀와도 될까요?" autoCapitalize="none" />
+        <button className="primary" disabled={loading || !ko.trim()} onClick={ask}>
+          {loading ? "생각 중…" : "영어로 보기"}
+        </button>
+        {err && <div className="empty-note" style={{ color: "var(--danger)" }}>{err}</div>}
+        {result && (
+          <div className="qdictate-result">
+            <div style={{ fontWeight: 800, fontSize: 17 }}>{result}</div>
+            <button className="qhint-btn" style={{ marginTop: 10 }} onClick={() => speakText(result)}>
+              <Icon name="volume_up" size={16} /> 들어보기
+            </button>
+          </div>
+        )}
+      </div>
+      <div className="empty-note" style={{ marginTop: 4 }}>대화방·작문 연습·발음 클리닉은 준비 중이에요. 막힐 때 이 SOS부터 써보세요.</div>
+    </div>
+  );
+}
+
 /* ---------- 보관함 탭 ---------- */
 /* 뱃지 컬렉션 — 피크민 블룸식: 한 줄당 한 카테고리(헤더 + 가로 스와이프로 5티어 랭크).
    미획득은 실루엣, 탭하면 상세(밀어서 뒤집기). + 즐겨찾기 단어·내 단어장 바로가기(사전 탭으로 이동).
@@ -3622,7 +3717,7 @@ function App() {
             {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => startCustomStudy(pickSession(10), "listen")} />}
             {tab === "dict" && <Dict onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} />}
             {tab === "learn" && <Learn onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} customMode={customMode} onConsumeCustomStudy={() => setCustomStudy(null)} />}
-            {tab === "talk" && <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />}
+            {tab === "talk" && <TalkSOS />}
             {tab === "box" && <Vault onGoTab={setTab} />}
           </React.Fragment>
         )}

@@ -49,12 +49,25 @@
 
 ---
 
-## 내가(Claude가) 할 일 (키 준비되면)
+## ✅ 완료 — Claude가 한 일 (2026-07-15)
 
-1. `worker/` 에 Cloudflare Worker 프록시 코드 작성 — `/api/gemini`(LLM), `/api/tts`(음성) 엔드포인트. 웹 표준 fetch 핸들러라 나중에 Supabase로도 이식 가능.
-2. 레이트리밋·CORS·간단한 사용량 캡 포함(어뷰징 방지).
-3. 첫 소비 기능 연결(권장: **SOS 한→영 번역** — 회화 탭 미니도구) + 학습카드/듣기의 TTS를 프록시 음성으로 교체(폴백은 Web Speech 유지).
-4. `wrangler.toml` + 배포 가이드 작성.
+1. `worker/src/worker.js` — Cloudflare Worker 프록시. `/gemini`(LLM), `/tts`(음성), `/health` 엔드포인트. 웹 표준 fetch 핸들러라 나중에 Supabase로도 이식 가능.
+2. CORS(오리진 allow-list) + 입력 길이 검증. 사용량 캡·레이트리밋은 P0(개인 규모) 범위라 아직 — PLAN 6.6 P1 이후.
+3. **SOS 한→영 번역** 연결(회화 탭 `TalkSOS` 컴포넌트) + 앱 전체 TTS(`speakText`)를 프록시 음성 우선 + Web Speech 폴백으로 교체.
+4. `worker/wrangler.toml` + `worker/README.md`(배포 가이드, 대시보드/CLI 둘 다) 작성.
+
+**아직 남은 것**: 실제 배포는 사용자가 직접(키를 제가 볼 수 없어서) — 아래 "지금 할 일" 참고.
+
+---
+
+## 🔜 지금 사용자가 할 일 — Worker 배포 + 연결
+
+1. **`worker/README.md`의 "방법 A(대시보드)" 또는 "방법 B(CLI)"** 따라 배포. 요약(방법 A):
+   - Cloudflare 대시보드 → Workers & Pages → Create → Workers → 이름 `noenglish-proxy`
+   - Edit code → `worker/src/worker.js` 내용 그대로 붙여넣기 → Deploy
+   - Settings → Variables and Secrets → `GEMINI_API_KEY`, `GOOGLE_TTS_KEY`(Secret로), `ALLOWED_ORIGINS`(앱 주소, Variable로) 등록
+2. 배포 후 뜨는 URL(`https://noenglish-proxy.<계정>.workers.dev`)을 **저에게 알려주세요** — `index.html`의 `PROXY_BASE`에 넣어서 SOS·고급 TTS를 켜드립니다.
+3. `https://<그 URL>/health` 접속해서 `{"ok":true}` 나오는지 미리 확인해두시면 좋습니다.
 
 ## 키 등록(배포) 방법 — 둘 중 편한 쪽 (그때 같이)
 
@@ -67,7 +80,9 @@
 
 ## 체크리스트
 
-- [ ] Gemini API key 발급 + 안전 보관
-- [ ] Cloudflare 무료 계정 생성
-- [ ] (나중) Google Cloud 프로젝트 + TTS API 사용 설정 + 결제 등록 + TTS API 키
-- [ ] 준비되면 알려주기 → Claude가 프록시 + 첫 기능 구현 → 사용자가 시크릿 등록·배포
+- [x] Gemini API key 발급 + 안전 보관
+- [x] Cloudflare 무료 계정 생성
+- [x] Google Cloud 프로젝트 + TTS API 사용 설정 + 결제 등록 + TTS API 키
+- [x] Claude가 프록시(`worker/`) + SOS·TTS 연결 코드 구현
+- [ ] **사용자**: `worker/README.md` 따라 Worker 배포 + 시크릿 등록
+- [ ] 배포 URL을 Claude에게 전달 → `PROXY_BASE` 반영
