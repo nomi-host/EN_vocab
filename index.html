@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.28.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.28.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.28.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.28.1">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.28.1" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.28.1" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.28.0"></script>
+<script src="words.js?v=0.28.1"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.28.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.28.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.28.1") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.28.1") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.28.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.28.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.28.1") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.28.1") format("woff");
 }
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
@@ -52,7 +52,7 @@
   --accent:#211C15;        /* 포인트 = 잉크 블랙(블랙 버튼 컨셉) */
   --accent-deep:#4A3A20;   /* 흰 배경 위 텍스트 강조 (웜 브라운) */
   --accent-soft:#EDE1C2;   /* 옅은 배경 */
-  --warmgray-fill:#E8E4D9; /* 웜그레이 톤(--accent-soft보다 덜 노랗게 채도 낮춘 버전) — 카드 배경용 */
+  --warmgray-fill:#E6E3DD; /* 웜그레이 톤 — 진해질수록 노란기가 아니라 무채색(그레이) 쪽으로 가는 강조 배경. --accent-soft(골드톤)와 짝을 이루는 "강조하되 안 노란" 옵션 */
   --on-accent:#FFFBF1;
   --good:#2F8F5B;
   --good-container:#E3F1E7;
@@ -91,7 +91,6 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .pill .dot.hl-yellow{background:var(--hi-yellow-dark);}
 .pill .dot.hl-pink{background:var(--hi-pink-dark);}
 .pill .dot.hl-blue{background:var(--hi-blue-dark);}
-.pill .dot.hl-ink{background:var(--ink);}
 .avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
 
 .update-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 20px 10px;padding:9px 14px;background:var(--hi-yellow-light);border:0.5px solid var(--card-border);border-radius:12px;font-size:13px;font-weight:700;color:var(--ink);flex:none;}
@@ -113,7 +112,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .content{padding:8px 20px calc(28px + var(--kb, 0px));display:flex;flex-direction:column;gap:14px;}
 
 /* 섹션 라벨 */
-.sec{font-size:26px;font-weight:800;color:var(--ink);letter-spacing:-0.3px;margin:6px 2px 0;}
+.sec{font-size:17px;font-weight:800;color:var(--ink);letter-spacing:-0.2px;margin:6px 2px 0;}
 .sec .more{float:right;font-size:12px;color:var(--muted);font-weight:600;}
 
 /* 카드 공통 */
@@ -330,10 +329,10 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .tag.tier-blue{background:var(--hi-blue);color:var(--hi-blue-xdark);}
 .tag.done{background:var(--hi-green-light);color:var(--hi-green-xdark);}
 /* 복습 임박도 — 잉크 위계(잔디와 같은 원리): 임박할수록 진한 잉크, 여유 있을수록 옅음 */
-.tag.due-t0{background:rgba(33,28,21,.75);color:#FFFBF1;}
-.tag.due-t1{background:rgba(33,28,21,.5);color:#FFFBF1;}
-.tag.due-t2{background:rgba(33,28,21,.28);color:var(--ink);}
-.tag.due-t3{background:rgba(33,28,21,.14);color:var(--ink-2);}
+.tag.due-t0{background:rgba(33,28,21,.5);color:#FFFBF1;}
+.tag.due-t1{background:rgba(33,28,21,.33);color:var(--ink);}
+.tag.due-t2{background:rgba(33,28,21,.19);color:var(--ink);}
+.tag.due-t3{background:rgba(33,28,21,.09);color:var(--ink-2);}
 .tag.mine{background:var(--hi-blue-light);color:var(--hi-blue-xdark);}
 .tag.sensecount{background:var(--hi-pink-light);color:var(--hi-pink-xdark);}
 
@@ -491,13 +490,13 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    맞혀야 다음으로 넘어가므로, 오답 시 칸별 정오만 색으로 표시(정답 문자는 안 보여줌). */
 /* 듣기 카드: 듣기난이도/예문/예문뜻 사이 간격이 너무 컸음 → 카드 gap을 절반으로(사용자 지적) */
 .qcard.dict-card{gap:7px;position:relative;}
-.dict-countdown-overlay{position:absolute;inset:0;background:rgba(255,253,248,.7);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;z-index:5;transition:opacity .3s ease;}
+.dict-countdown-overlay{position:absolute;inset:0;background:rgba(33,28,21,.1);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;z-index:5;transition:opacity .3s ease;}
 .dict-countdown-overlay.out{opacity:0;pointer-events:none;}
 /* 듣기 난이도 뱃지 — 어휘 CEFR과는 별개 지표(연음·문장길이 반영), 기존 상태 색 재사용 */
 .dict-difficulty{display:flex;align-items:center;gap:8px;margin-bottom:2px;}
 /* 난이도 옆 다시듣기(사운드) 버튼 */
-.dict-replay{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:999px;background:var(--fill);color:var(--ink-2);flex:none;}
-.dict-replay:active{transform:scale(.92);background:var(--accent-soft);color:var(--accent-deep);}
+.dict-replay{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:999px;background:var(--ink);color:var(--on-accent);flex:none;}
+.dict-replay:active{transform:scale(.92);background:var(--ink-2);color:var(--on-accent);}
 /* 예문 뜻 — 예전엔 작은 회색(.qcue)이라 잘 안 보였음 → 크게·볼드로 강조(사용자 요청) */
 .dict-meaning{font-size:16px;font-weight:800;line-height:1.5;letter-spacing:-0.2px;color:var(--ink);}
 .tag.dl1{background:var(--hi-green-light);color:var(--hi-green-xdark);}
@@ -506,7 +505,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .dict-words{display:flex;flex-wrap:wrap;gap:11px 7px;font-size:17px;font-weight:600;line-height:1.65;}
 .dict-word{display:inline-flex;flex-direction:column;align-items:center;gap:4px;}
 .dict-word-row{display:inline-flex;align-items:baseline;}
-.dict-box{min-width:30px;}
+.dict-box{min-width:30px;text-align:left;}
 .dict-box.ok{background:var(--good-container);color:var(--good);}
 .dict-box.wrong{background:var(--danger-container);color:var(--danger);}
 /* 맞게 타이핑한 순간 입력창이 사라지고 텍스트로 고정 — 살짝 튀는 팝 모션 */
@@ -632,7 +631,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.28.0";
+const APP_VERSION = "v0.28.1";
 const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -1076,81 +1075,85 @@ function connDetect(aw, bw) {
   const abare = a.replace(/'/g, ""), bbare = b.replace(/'/g, "");
   const al = abare.slice(-1), a2 = abare.slice(-2, -1), bf = bbare[0];
   const pair = `**${aw} ${bw}**`;
+  const merged = mergedSound(a, b); // 예시가 실제 문장의 이 단어쌍과 무관했던 문제 — 항상 이 쌍 기준으로 생성
   const yq = b === "you" || b === "your" || b === "you're";
   // 1) t + you → ch (구개음화)
   if (al === "t" && yq) return pickVariant([
-    `${pair}에서 t와 you가 부딪혀 "츄(ch)"로 뭉쳐요 — "want you"가 "원츄"처럼.`,
+    `${pair}에서 t와 you가 부딪혀 "츄(ch)"로 뭉쳐요 — "${merged}"처럼 들려요.`,
     `${pair}처럼 -t 뒤에 you가 오면 t+y가 합쳐져 "치/츄" 소리가 돼요.`,
     `${pair}는 두 소리가 구개음화돼 "챠/츄"로 이어 들려요.`,
   ], a + b);
   // 2) d + you → j
   if (al === "d" && yq) return pickVariant([
-    `${pair}에서 d와 you가 합쳐져 "쥬(j)"가 돼요 — "did you"가 "디쥬"처럼.`,
+    `${pair}에서 d와 you가 합쳐져 "쥬(j)"가 돼요 — "${merged}"처럼 들려요.`,
     `${pair}처럼 -d 뒤에 you가 오면 "졔/쥬"로 부드럽게 이어져요.`,
   ], a + b);
   // 3) s/z + you → sh/zh
   if ((al === "s" || al === "z") && yq) return pickVariant([
-    `${pair}에서 s와 you가 만나 "슈(sh)"로 섞여요 — "miss you"가 "미슈"처럼.`,
+    `${pair}에서 s와 you가 만나 "슈(sh)"로 섞여요 — "${merged}"처럼 들려요.`,
     `${pair}는 s+y가 구개음화돼 "쉬/슈" 소리로 이어져요.`,
   ], a + b);
   // 4) 같은 자음 충돌(중첩) — 한 번만 길게
   if (al === bf && CONN_C.includes(al)) return pickVariant([
     `${pair}는 같은 자음(${al})이 겹쳐, 두 번 발음하지 않고 한 번만 길게 이어 붙여요.`,
-    `${pair}처럼 끝소리와 첫소리가 같으면 사이가 사라져 한 덩어리로 들려요 — "burned down"이 "번down"처럼 끊김 없이.`,
+    `${pair}처럼 끝소리와 첫소리가 같으면 사이가 사라져 한 덩어리로 들려요 — "${merged}"처럼 끊김 없이.`,
     `${pair}에서 겹치는 ${al} 소리는 하나로 합쳐져, 두 단어 경계가 안 느껴져요.`,
   ], a + b);
   // 5) 모음 사이 t/d → 플랩(부드러운 ㄹ/ㄷ)
   if ((al === "t" || al === "d") && CONN_V.includes(bf) && CONN_V.includes(a2)) return pickVariant([
-    `${pair}에서 모음 사이 t/d는 부드러운 ㄹ/ㄷ(플랩)으로 바뀌어요 — "get it"이 "게릿"처럼.`,
+    `${pair}에서 모음 사이 t/d는 부드러운 ㄹ/ㄷ(플랩)으로 바뀌어요 — "${merged}"처럼 들려요.`,
     `${pair}처럼 t/d가 모음 사이에 끼면 미국식에선 굴리는 ㄹ로 약해져요.`,
     `${pair}는 t가 또렷한 ㅌ가 아니라 살짝 굴리는 ㄹ/ㄷ로 들려요.`,
   ], a + b);
   // 6) h 탈락(기능어 he/him/her/his/have/has/had)
   if (CONN_C.includes(al) && ["he", "him", "his", "her", "has", "have", "had"].includes(b)) return pickVariant([
-    `${pair}에서 h는 약하게 사라지고 앞 단어에 붙어요 — "tell him"이 "텔림"처럼.`,
+    `${pair}에서 h는 약하게 사라지고 앞 단어에 붙어요 — "${merged}"처럼 들려요.`,
     `${pair}처럼 강세 없는 h-단어는 h가 거의 안 들리고 앞소리에 이어져요.`,
   ], a + b);
   // 7) and → n (기능어 축약)
   if (b === "and" || a === "and") return pickVariant([
-    `**${aw} ${bw}**의 and는 강세가 없어 d가 떨어지고 "은/ㄴ(n)"으로 줄어요 — "rock and roll"이 "락큰롤"처럼.`,
-    `**${aw} ${bw}**에서 and는 빠르게 말하면 "ㄴ"만 남아 앞뒤에 붙어요.`,
+    `${pair}의 and는 강세가 없어 d가 떨어지고 "은/ㄴ(n)"으로 줄어요 — "${merged}"처럼 들려요.`,
+    `${pair}에서 and는 빠르게 말하면 "ㄴ"만 남아 앞뒤에 붙어요.`,
   ], a + b);
   // 8) to 약화
   if (b === "to" && CONN_C.includes(al)) return pickVariant([
-    `${pair}의 to는 약하게 "터/투"로 줄어 앞 단어에 붙어요.`,
+    `${pair}의 to는 약하게 "터/투"로 줄어 앞 단어에 붙어 "${merged}"처럼 들려요.`,
     `${pair}처럼 강세 없는 to는 모음이 흐려져 "러/더"처럼 이어지기도 해요.`,
   ], a + b);
   // 9) of 약화
-  if (b === "of" || a === "of") return `**${aw} ${bw}**의 of는 f가 약해져 "어(v)"로 줄고 앞뒤가 붙어요 — "kind of"가 "카인더"처럼.`;
+  if (b === "of" || a === "of") return pickVariant([
+    `${pair}의 of는 f가 약해져 "어(v)"로 줄고 앞뒤가 붙어 "${merged}"처럼 들려요.`,
+    `${pair}처럼 강세 없는 of는 f 소리가 흐려져 앞뒤 단어에 묻혀요.`,
+  ], a + b);
   // 10) 치경음 + th (the/this/that/them/there)
   if ((al === "n" || al === "t" || al === "d") && /^th/.test(b)) return pickVariant([
-    `${pair}에서 앞 끝소리가 다음 th에 스며들어 부드럽게 이어져요 — "in the"가 "인더"처럼.`,
+    `${pair}에서 앞 끝소리가 다음 th에 스며들어 부드럽게 이어져요 — "${merged}"처럼 들려요.`,
     `${pair}처럼 -n/-t/-d 뒤에 th가 오면 혀 위치가 붙어 한 번에 넘어가요.`,
   ], a + b);
   // 11) n + ㅂ/ㅁ/ㅍ → m (비음 동화)
-  if (al === "n" && "bpm".includes(bf)) return `${pair}에서 앞의 n이 뒤 입술소리에 이끌려 "m"으로 바뀌어요 — "in bed"가 "임베드"처럼.`;
+  if (al === "n" && "bpm".includes(bf)) return pickVariant([
+    `${pair}에서 앞의 n이 뒤 입술소리에 이끌려 "m"으로 바뀌어요 — "${merged}"처럼 들려요.`,
+    `${pair}처럼 n 뒤에 입술소리(b/p/m)가 오면 콧소리가 m으로 옮아가요.`,
+  ], a + b);
   // 12) 파열음 + 자음 → 삼킴(미파열)
   if ("tdpbkg".includes(al) && CONN_C.includes(bf) && al !== bf) return pickVariant([
-    `${pair}에서 앞 단어의 끝 자음(${al})이 완전히 터지지 않고 살짝 삼켜지며 넘어가요 — "next day"처럼.`,
+    `${pair}에서 앞 단어의 끝 자음(${al})이 완전히 터지지 않고 살짝 삼켜지며 넘어가요 — "${merged}"처럼 들려요.`,
     `${pair}처럼 자음이 연달아 오면 앞 자음을 멈춘 채 다음으로 넘어가 거의 안 들려요.`,
     `${pair}는 끝 파열음이 미파열(안 터짐)로, 다음 자음에 바로 이어져요.`,
   ], a + b);
   // 13) 모음 + 모음 → y/w 글라이드
   if (CONN_V.includes(al) && CONN_V.includes(bf)) return pickVariant([
-    `${pair}는 모음이 연달아 와서 사이에 y/w 소리가 살짝 껴 부드럽게 이어져요 — "go on"이 "고won"처럼.`,
+    `${pair}는 모음이 연달아 와서 사이에 y/w 소리가 살짝 껴 부드럽게 이어져요 — "${merged}"처럼 들려요.`,
     `${pair}처럼 모음+모음이면 끊지 않고 미끄러지듯 붙여 발음해요.`,
     `${pair}에서 앞 모음이 뒤 모음으로 넘어가며 사이에 짧은 y/w가 생겨요.`,
   ], a + b);
   // 14) 자음 + 모음 → 리에종(기본) — 실제 두 단어를 이어 말했을 때 들리는 형태를 그대로 예시로 보여줌
-  if (CONN_C.includes(al) && CONN_V.includes(bf)) {
-    const merged = mergedSound(a, b);
-    return pickVariant([
-      `${pair}처럼 자음으로 끝난 뒤 모음이 오면 두 단어가 이어져 "${merged}"처럼 한 단어같이 들려요.`,
-      `${pair}에서 앞 단어의 끝 자음이 뒤 모음으로 넘어가 붙어요 — "${merged}"처럼 들려요.`,
-      `${pair}는 끝 자음과 첫 모음이 연결(리에종)돼 경계가 사라져 "${merged}"에 가깝게 들려요.`,
-      `${pair}처럼 자음+모음이 만나면 소리가 넘어가 "${merged}"처럼 이어 들려요.`,
-    ], a + b);
-  }
+  if (CONN_C.includes(al) && CONN_V.includes(bf)) return pickVariant([
+    `${pair}처럼 자음으로 끝난 뒤 모음이 오면 두 단어가 이어져 "${merged}"처럼 한 단어같이 들려요.`,
+    `${pair}에서 앞 단어의 끝 자음이 뒤 모음으로 넘어가 붙어요 — "${merged}"처럼 들려요.`,
+    `${pair}는 끝 자음과 첫 모음이 연결(리에종)돼 경계가 사라져 "${merged}"에 가깝게 들려요.`,
+    `${pair}처럼 자음+모음이 만나면 소리가 넘어가 "${merged}"처럼 이어 들려요.`,
+  ], a + b);
   return null;
 }
 function findLiaisonNotes(text) {
@@ -1642,12 +1645,13 @@ const BADGE_CATS = [
   { k: "friend", title: "친구 초대", unit: "명", tiers: [1, 3, 5, 10, 20], desc: t => `친구 ${t}명을 초대했어요` },
   { k: "sos", title: "자립 회화", unit: "회", tiers: [1, 5, 15, 40, 100], desc: t => `SOS 없이 회화를 ${t}회 완주했어요` },
 ];
-/* 연속학습일 → 하이어라키 색(뱃지 "연속 학습" 카테고리 임계값 재사용) — 상단 바 점 색상에 씀. */
+/* 연속학습일 → 상태색(뱃지 티어와는 별개, 이 점 전용 의미) — 연두=잘하고있음 · 노랑=보통 ·
+   핑크=위험(스트릭이 아직 짧아 끊기기 쉬움) · 파랑=매우좋음. 상단 바 점 색상에 씀. */
 function streakHl(streak) {
-  const tiers = BADGE_CATS[0].tiers;
-  let idx = 0;
-  tiers.forEach((t, i) => { if (streak >= t) idx = i; });
-  return ["green", "yellow", "pink", "blue", "ink"][idx];
+  if (streak < 3) return "pink";
+  if (streak < 7) return "yellow";
+  if (streak < 30) return "green";
+  return "blue";
 }
 /* 더미 진행값 — tier=현재 획득한 최고 티어 인덱스(-1=미획득), dates=각 획득 티어의 달성일. */
 const BADGE_PROGRESS = {
