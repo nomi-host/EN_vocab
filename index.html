@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.25.2">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.25.2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.25.2" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.25.3">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.25.3" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.25.3" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.25.2"></script>
+<script src="words.js?v=0.25.3"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.25.2") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.25.2") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.25.3") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.25.3") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.25.2") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.25.2") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.25.3") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.25.3") format("woff");
 }
 :root{
   --bg:#FAF4E7;            /* 옅은 노트 베이지(2026-07-15, 전체 한 톤 밝게 — 이전 카드색을 배경으로) */
@@ -610,7 +610,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.25.2";
+const APP_VERSION = "v0.25.3";
 const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -2380,11 +2380,11 @@ function TalkSOS() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),
       });
-      if (!r.ok) throw new Error("proxy error");
-      const data = await r.json();
-      setResult((data.text || "").trim());
+      const data = await r.json().catch(() => null);
+      if (!r.ok) throw new Error((data && data.error) || ("http " + r.status));
+      setResult((data && data.text || "").trim());
     } catch (e) {
-      setErr("지금 연결이 안 돼요. 잠시 후 다시 시도해 주세요.");
+      setErr("지금 연결이 안 돼요. 잠시 후 다시 시도해 주세요. (" + (e && e.message || "error") + ")");
     } finally {
       setLoading(false);
     }
