@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.18.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.18.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.18.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.19.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.19.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.19.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.18.0"></script>
+<script src="words.js?v=0.19.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.18.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.18.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.19.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.19.0") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.18.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.18.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.19.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.19.0") format("woff");
 }
 :root{
   --bg:#F5EEDD;            /* 옅은 노트 베이지 */
@@ -67,7 +67,7 @@
   --hi-yellow-xlight:#FFF8DB; --hi-yellow-light:#FFEA9A; --hi-yellow-dark:#BF9700; --hi-yellow-xdark:#5A4700;
   --hi-pink-xlight:#FFEEF6;   --hi-pink-light:#FFD1E4;   --hi-pink-dark:#EF0066;   --hi-pink-xdark:#710030;
   --hi-blue-xlight:#E7F5FF;   --hi-blue-light:#BCE4FF;   --hi-blue-dark:#0083DD;   --hi-blue-xdark:#003E69;
-  --card-border:rgba(33,28,21,.15); /* 카드류 소프트 잉크 보더(outline-variant) — 인터랙션 요소는 var(--ink) 풀보더(outline) 사용 */
+  --card-border:rgba(158,124,58,.22); /* 카드류 소프트 보더(outline-variant) — 잉크 기반 대신 베이지 톤(그레이하게 보이던 문제 개선). 인터랙션 요소는 var(--ink) 풀보더(outline) 사용 */
   --radius:20px;
   --shadow:0 1px 2px rgba(33,28,21,.05), 0 8px 24px rgba(33,28,21,.06);
   --shadow-sheet:0 -8px 40px rgba(33,28,21,.18);
@@ -84,7 +84,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .brand{font-size:20px;font-weight:800;letter-spacing:-0.4px;}
 .brand b{color:var(--accent);}
 .topbar-right{display:flex;align-items:center;gap:8px;}
-.pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);}
+.pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1px solid var(--card-border);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);}
 .pill .dot{width:7px;height:7px;border-radius:50%;background:var(--hi-green-dark);}
 .avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
 
@@ -108,7 +108,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .sec .more{float:right;font-size:12px;color:var(--muted);font-weight:600;}
 
 /* 카드 공통 */
-.card{background-color:var(--surface);border:1.5px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;}
+.card{background-color:var(--surface);border:1px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;}
 .card.tap{transition:transform .12s ease;}
 .card.tap:active{transform:scale(.985);}
 
@@ -136,7 +136,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .badge-track::-webkit-scrollbar{display:none;}
 .badge{flex:none;width:62px;height:62px;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;text-align:center;line-height:1.15;padding:4px;transition:transform .1s;}
 .badge:active{transform:scale(.94);}
-.badge.earned{border:1.5px solid var(--card-border);}
+.badge.earned{border:1px solid var(--card-border);}
 .badge.earned.hi-green{background:var(--hi-green);color:var(--hi-green-xdark);}
 .badge.earned.hi-pink{background:var(--hi-pink);color:var(--hi-pink-xdark);}
 .badge.earned.hi-yellow{background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
@@ -160,7 +160,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .char-swatch.hi-yellow{background:var(--hi-yellow);}
 .char-swatch.hi-blue{background:var(--hi-blue);}
 .char-swatch-lbl{font-size:12px;font-weight:700;color:var(--muted);}
-.char-swatch-sm{width:28px;height:28px;border-radius:9px;border:1.5px solid var(--card-border);}
+.char-swatch-sm{width:28px;height:28px;border-radius:9px;border:1px solid var(--card-border);}
 /* 달리는 씬(placeholder). 실제 캐릭터는 Lottie/Rive/스프라이트로 이 슬롯 교체 */
 .hero-char.run .char-face{animation:runbob var(--bob,.5s) ease-in-out infinite alternate;}
 @keyframes runbob{from{transform:translateY(1px) rotate(-1.5deg);}to{transform:translateY(-7px) rotate(1.5deg);}}
@@ -191,7 +191,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 뱃지 팝업 */
 .dlg-backdrop{position:fixed;inset:0;background:rgba(33,28,21,.42);display:flex;align-items:center;justify-content:center;z-index:60;padding:32px;animation:fade .15s ease;}
-.dlg{background:var(--surface);border:1.5px solid var(--card-border);border-radius:24px;padding:28px 24px 22px;text-align:center;max-width:300px;width:100%;box-shadow:0 24px 64px rgba(33,28,21,.3);animation:pop .22s cubic-bezier(.2,.9,.3,1.2);}
+.dlg{background:var(--surface);border:1px solid var(--card-border);border-radius:24px;padding:28px 24px 22px;text-align:center;max-width:300px;width:100%;box-shadow:0 24px 64px rgba(33,28,21,.3);animation:pop .22s cubic-bezier(.2,.9,.3,1.2);}
 @keyframes pop{from{transform:scale(.88);opacity:0}to{transform:scale(1);opacity:1}}
 .dlg-badge{width:80px;height:80px;border-radius:4px;margin:0 auto 16px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;}
 .dlg-badge.earned.hi-green{background:var(--hi-green);color:var(--hi-green-xdark);border:2px solid var(--hi-green-dark);}
@@ -207,7 +207,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 레벨 3칸 */
 .level-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
-.stat{background:var(--surface);border:1.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;}
+/* 포스트잇 느낌 — 형광색 라이트톤 정사각(카드보다 각짐), 안의 숫자/글자는 .hl 형광펜(진한 톤)로 대비 */
+.stat{border-radius:10px;box-shadow:var(--shadow);padding:14px 8px;text-align:center;background:var(--hi-yellow-light);}
+.stat.tier-green{background:var(--hi-green-light);}
+.stat.tier-yellow{background:var(--hi-yellow-light);}
+.stat.tier-pink{background:var(--hi-pink-light);}
+.stat.tier-blue{background:var(--hi-blue-light);}
 .stat .v{display:inline-block;font-size:22px;font-weight:800;letter-spacing:-0.5px;font-variant-numeric:tabular-nums;}
 .stat .v.accent{color:var(--accent-deep);}
 .stat .l{font-size:11px;color:var(--muted);margin-top:2px;font-weight:600;}
@@ -226,9 +231,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .tier-blue{background:var(--hi-blue-light);color:var(--hi-blue-xdark);}
 
 /* 루틴 스텝 */
-.step{display:flex;align-items:center;gap:13px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;}
+.step{display:flex;align-items:center;gap:13px;background:var(--surface);border:1px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:14px 16px;}
 .step.active{border:1.5px solid var(--ink);}
-.step-ico{width:38px;height:38px;border-radius:12px;background:var(--bg);border:1.5px solid var(--card-border);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--ink-2);flex:none;}
+.step-ico{width:38px;height:38px;border-radius:12px;background:var(--bg);border:1px solid var(--card-border);display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:var(--ink-2);flex:none;}
 .step.done .step-ico{background:var(--ink);border-color:var(--ink);color:var(--on-accent);}
 .step-body{flex:1;min-width:0;}
 .step-title{font-size:15px;font-weight:700;}
@@ -245,7 +250,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .grass i.g3{background-color:var(--ink);opacity:.6;}
 
 /* 사전 검색 */
-.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:14px;padding:11px 14px;box-shadow:var(--shadow);}
+.search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--card-border);border-radius:14px;padding:11px 14px;box-shadow:var(--shadow);}
 .search input{flex:1;border:none;outline:none;font-size:15px;background:none;color:var(--ink);}
 .search input::placeholder{color:var(--muted);}
 .search .mag{color:var(--muted);display:flex;align-items:center;}
@@ -269,7 +274,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 단어 리스트 행 */
 .wlist{display:flex;flex-direction:column;gap:8px;}
-.wrow{display:flex;align-items:center;gap:10px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
+.wrow{display:flex;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
 .wrow:active{transform:scale(.99);}
 .wrow .w{font-size:16px;font-weight:700;}
 .wrow .k{font-size:13px;color:var(--muted);margin-top:1px;}
@@ -290,12 +295,16 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 카테고리 선택: 레벨 카드 그리드 · 어근 행 목록 */
 .lv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
-.lv-card{background:var(--surface);border:1.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:16px 8px 14px;text-align:center;transition:transform .1s;}
+.lv-card{border-radius:10px;box-shadow:var(--shadow);padding:16px 8px 14px;text-align:center;transition:transform .1s;background:var(--hi-yellow-light);}
+.lv-card.tier-green{background:var(--hi-green-light);}
+.lv-card.tier-yellow{background:var(--hi-yellow-light);}
+.lv-card.tier-pink{background:var(--hi-pink-light);}
+.lv-card.tier-blue{background:var(--hi-blue-light);}
 .lv-card:active{transform:scale(.96);}
 .lv-card .lv{font-size:21px;font-weight:800;color:var(--accent-deep);letter-spacing:-0.3px;}
 .lv-card .nm{font-size:12px;font-weight:700;color:var(--ink-2);margin-top:2px;}
 .lv-card .n{font-size:11px;color:var(--muted);margin-top:1px;font-weight:600;font-variant-numeric:tabular-nums;}
-.rootrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
+.rootrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:13px 15px;transition:transform .1s;}
 .rootrow:active{transform:scale(.99);}
 .rootrow .ax{font-size:16px;font-weight:800;color:var(--accent-deep);min-width:62px;}
 .rootrow .gl{flex:1;font-size:13px;color:var(--ink-2);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
@@ -336,7 +345,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 /* 바텀시트 (단어 상세) */
 .sheet-backdrop{position:fixed;inset:0;background:rgba(33,28,21,.32);display:flex;align-items:flex-end;justify-content:center;z-index:50;animation:fade .18s ease;}
-.sheet{width:100%;max-width:520px;background:var(--surface);border:1.5px solid var(--card-border);border-bottom:none;border-radius:24px 24px 0 0;box-shadow:var(--shadow-sheet);max-height:88vh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
+.sheet{width:100%;max-width:520px;background:var(--surface);border:1px solid var(--card-border);border-bottom:none;border-radius:24px 24px 0 0;box-shadow:var(--shadow-sheet);max-height:88vh;display:flex;flex-direction:column;animation:slideup .24s cubic-bezier(.2,.8,.2,1);}
 @keyframes fade{from{opacity:0}to{opacity:1}}
 @keyframes slideup{from{transform:translateY(100%)}to{transform:translateY(0)}}
 .sheet-grab{width:38px;height:4px;background:var(--line);border-radius:2px;margin:10px auto 2px;flex:none;}
@@ -397,7 +406,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .study-bar{flex:1;height:8px;background:var(--fill);border-radius:999px;overflow:hidden;}
 .study-bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .3s ease;}
 .study-n{font-size:13px;font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;flex:none;}
-.qcard{background:var(--surface);border:1.5px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
+.qcard{background:var(--surface);border:1px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
 .qlvrow{display:flex;align-items:center;margin-bottom:-6px;}
 .qlvrow .tag.lv{margin-left:auto;}
 .qaudio{display:flex;align-items:center;gap:6px;}
@@ -508,7 +517,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lt-qcard{align-items:center;text-align:center;justify-content:center;min-height:150px;}
 .lt-word{font-size:24px;font-weight:800;letter-spacing:-0.3px;}
 .lt-choices{display:flex;flex-direction:column;gap:8px;margin-top:auto;}
-.lt-choice{padding:14px;border-radius:14px;font-weight:700;font-size:15px;background:var(--surface);border:1.5px solid var(--card-border);color:var(--ink);box-shadow:var(--shadow);text-align:center;}
+.lt-choice{padding:14px;border-radius:14px;font-weight:700;font-size:15px;background:var(--surface);border:1px solid var(--card-border);color:var(--ink);box-shadow:var(--shadow);text-align:center;}
 .lt-choice:active{background:var(--fill);}
 .lt-band{display:inline-flex;align-items:center;font-size:14px;font-weight:800;padding:6px 14px;border-radius:999px;background:var(--accent-deep);color:var(--on-accent);}
 /* 결과 레벨 밴드 — 컬러위계 반영(연두<옐로우<핑크<블루). .lt-band(0,1,0)를 이기려 (0,2,0)로 정의 */
@@ -520,7 +529,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 한국어 예시(Part B) — 예전엔 .qcue(12px 회색)라 너무 작았음. 문제문이므로 크게·볼드 */
 .lt-ko{font-size:18px;font-weight:800;text-align:center;line-height:1.45;letter-spacing:-0.2px;margin:4px 0;color:var(--ink);}
 /* 답 칸 — 조립한 답이 쌓이는 곳. 내용이 없거나 늘어나도 크기가 흔들리지 않게 높이 고정 */
-.lt-answer{min-height:66px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px;text-align:center;background:var(--surface);border:1.5px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px;font-size:17px;font-weight:700;line-height:1.5;letter-spacing:.2px;}
+.lt-answer{min-height:66px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:4px;text-align:center;background:var(--surface);border:1px solid var(--card-border);border-radius:14px;box-shadow:var(--shadow);padding:12px 14px;font-size:17px;font-weight:700;line-height:1.5;letter-spacing:.2px;}
 .lt-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;}
 @keyframes lt-shake{0%,100%{transform:translateX(0);}20%{transform:translateX(-4px);}40%{transform:translateX(4px);}60%{transform:translateX(-3px);}80%{transform:translateX(3px);}}
 .lt-chips .lchip.wrong{animation:lt-shake .35s ease;background:var(--danger-container);color:var(--danger);border-color:var(--danger);}
@@ -537,7 +546,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .chip.tier-blue{background:var(--hi-blue-light);color:var(--hi-blue-xdark);border-color:transparent;}
 
 /* 설정 화면 (캐릭터 변경 등) — WordSheet와 동일한 바텀시트 패턴 재사용 */
-.charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:1.5px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;}
+.charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:1px solid var(--card-border);border-radius:16px;box-shadow:var(--shadow);padding:12px 14px;}
 .charrow .cf{width:52px;height:52px;border-radius:14px;background:var(--fill);display:flex;align-items:center;justify-content:center;flex:none;overflow:hidden;font-size:9px;color:var(--muted);text-align:center;line-height:1.2;}
 .charrow .body{flex:1;min-width:0;}
 .charrow .name{font-size:14px;font-weight:700;}
@@ -570,7 +579,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect } = React;
 
-const APP_VERSION = "v0.18.0";
+const APP_VERSION = "v0.19.0";
 const APP_BUILD = "2026-07-14"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -1506,7 +1515,7 @@ function CharDoodle({ shape, accent, size = 120 }) {
   );
 }
 
-function Home({ onGoTab, charK, onOpenSettings, onStartCards }) {
+function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
   const [badge, setBadge] = useState(null);
   const chr = CHARACTERS.find(c => c.k === charK) || null;
   const STREAK = 12;                       // 데모: 실제로는 학습 로그에서
@@ -1514,10 +1523,10 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards }) {
   const speed = { "--bob": (0.64 - stage * 0.06) + "s", "--road": (0.8 - stage * 0.09) + "s" };
 
   const goals = PREFS.get(); // 설정 > 일일 목표(단어·듣기·회화) — 기본 20/20/10
-  // direct: 탭 메뉴를 거치지 않고 바로 그 학습을 시작(단어카드는 세션 즉시 시작, 회화는 페르소나 선택 화면 — 준비되면 연결)
+  // direct: 탭 메뉴를 거치지 않고 바로 그 학습을 시작(단어카드·듣기는 세션 즉시 시작, 회화는 페르소나 선택 화면 — 준비되면 연결)
   const routine = [
-    { n: 1, title: `단어카드 ${goals.goalWords}개`, sub: "신규 12 · 복습 8", state: "done", tab: "learn", direct: true },
-    { n: 2, title: `듣기 ${goals.goalListen}문장`, sub: "6 / 10 진행 중", state: "active", tab: "learn" },
+    { n: 1, title: `단어카드 ${goals.goalWords}개`, sub: "신규 12 · 복습 8", state: "done", tab: "learn", direct: true, start: onStartCards },
+    { n: 2, title: `듣기 ${goals.goalListen}문장`, sub: "6 / 10 진행 중", state: "active", tab: "learn", direct: true, start: onStartListen },
     { n: 3, title: "회화 1세션", sub: "오늘의 상대: Karen (공항)", state: "todo", tab: "talk" },
   ];
   const grass = useMemo(() => {
@@ -1596,16 +1605,16 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards }) {
       <div className="level-row" onClick={() => onGoTab("dict")}>
         {/* 형광펜 색은 cefrHl 하이어라키 규칙 공유: B1=옐로우(중급), 어휘량 4,200은 B1대 수준이라 동일 톤,
             백분위는 상위 구간일수록 상급 색(<=10 블루·<=25 핑크·<=50 옐로우·그외 연두)로 매핑 */}
-        <div className="stat"><div className="v"><span className={"hl hl-" + cefrHl("B1")} style={{ transform: "rotate(-1.5deg)" }}>B1</span></div><div className="l">CEFR 레벨</div></div>
-        <div className="stat"><div className="v"><span className={"hl hl-" + cefrHl("B1")} style={{ transform: "rotate(1deg)" }}>4,200</span></div><div className="l">추정 어휘량</div></div>
-        <div className="stat"><div className="v"><span className="hl hl-pink" style={{ transform: "rotate(-1deg)" }}>상위 18%</span></div><div className="l">백분위</div></div>
+        <div className={"stat tier-" + cefrHl("B1")}><div className="v"><span className={"hl hl-" + cefrHl("B1")} style={{ transform: "rotate(-1.5deg)" }}>B1</span></div><div className="l">CEFR 레벨</div></div>
+        <div className={"stat tier-" + cefrHl("B1")}><div className="v"><span className={"hl hl-" + cefrHl("B1")} style={{ transform: "rotate(1deg)" }}>4,200</span></div><div className="l">추정 어휘량</div></div>
+        <div className="stat tier-pink"><div className="v"><span className="hl hl-pink" style={{ transform: "rotate(-1deg)" }}>상위 18%</span></div><div className="l">백분위</div></div>
       </div>
 
       <div className="sec">오늘의 루틴</div>
       {routine.map(s => (
         <div key={s.n}
              className={"step" + (s.state === "active" ? " active" : "") + (s.state === "done" ? " done" : "")}
-             onClick={() => (s.direct ? onStartCards() : onGoTab(s.tab))}>
+             onClick={() => (s.direct ? s.start() : onGoTab(s.tab))}>
           <div className="step-ico">{s.state === "done" ? <Icon name="check" size={20} /> : s.n}</div>
           <div className="step-body">
             <div className="step-title">{s.title}</div>
@@ -1904,13 +1913,14 @@ function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump }) {
   const [view, setView] = useState(null);      // null=허브 | learned|category|fav|mine|add
   const [catMode, setCatModeState] = useState("cefr"); // cefr | root
   const [catSel, setCatSel] = useState(null);   // 선택된 레벨(A1) 또는 어근(-tion) — null이면 선택 화면
-  const setCatMode = m => { setCatModeState(m); setCatSel(null); };
+  const setCatMode = m => { setCatModeState(m); setCatSel(null); setRootQuery(""); };
   const [, bump] = useState(0);                 // EXTRA·즐겨찾기·내 단어장 변경 리렌더용
   const [listSel, setListSel] = useState(null); // 내 단어장 안에서 연 리스트 id ("__added__"=직접 등록한 단어)
   const [newListName, setNewListName] = useState("");
   const [pickMode, setPickMode] = useState(false); // 단어 목록 다중선택(담기) 모드
   const [picked, setPicked] = useState(() => new Set());
   const [showPicker, setShowPicker] = useState(false); // 리스트 선택 다이얼로그
+  const [rootQuery, setRootQuery] = useState(""); // 카테고리 > 어근별 목록 내 필터(어근·뜻)
 
   // 단어상세의 어근 칩에서 넘어온 경우: 카테고리 > 어근별 > 그 어근 목록으로 바로 진입
   useEffect(() => {
@@ -2112,7 +2122,7 @@ function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump }) {
                 catMode === "cefr" ? (
                   <div className="lv-grid">
                     {CEFR_LEVELS.map(lv => (
-                      <button key={lv} className="lv-card" onClick={() => setCatSel(lv)}>
+                      <button key={lv} className={"lv-card tier-" + cefrHl(lv)} onClick={() => setCatSel(lv)}>
                         <div className={"lv hl hl-" + cefrHl(lv)}>{lv}</div>
                         <div className="nm">{CEFR_NAMES[lv]}</div>
                         <div className="n">{catList(lv).length.toLocaleString()}개</div>
@@ -2120,15 +2130,26 @@ function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump }) {
                     ))}
                   </div>
                 ) : (
-                  <div className="wlist">
-                    {rootIndex.map(([affix, info]) => (
-                      <button key={affix} className="rootrow" onClick={() => setCatSel(affix)}>
-                        <span className="ax">{affix}</span>
-                        <span className="gl">{info.gloss}</span>
-                        <span className="n">{info.ws.length}개 ›</span>
-                      </button>
-                    ))}
-                  </div>
+                  <React.Fragment>
+                    <div className="search" style={{ marginBottom: 10 }}>
+                      <span className="mag"><Icon name="search" size={20} /></span>
+                      <input value={rootQuery} onChange={e => setRootQuery(e.target.value)} placeholder="어근을 검색하세요 (예: tion)" autoCapitalize="none" />
+                    </div>
+                    <div className="wlist">
+                      {rootIndex
+                        .filter(([affix, info]) => {
+                          const q2 = rootQuery.trim().toLowerCase();
+                          return !q2 || affix.toLowerCase().includes(q2) || info.gloss.toLowerCase().includes(q2);
+                        })
+                        .map(([affix, info]) => (
+                          <button key={affix} className="rootrow" onClick={() => setCatSel(affix)}>
+                            <span className="ax">{affix}</span>
+                            <span className="gl">{info.gloss}</span>
+                            <span className="n">{info.ws.length}개 ›</span>
+                          </button>
+                        ))}
+                    </div>
+                  </React.Fragment>
                 )
               ) : (
                 /* 선택한 레벨/어근의 단어 목록 */
@@ -3177,7 +3198,7 @@ function LevelTest({ onExit }) {
 }
 
 /* ---------- 학습 탭 ---------- */
-function Learn({ onOpenWord, onStartLevelTest, customStudy, onConsumeCustomStudy }) {
+function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsumeCustomStudy }) {
   const [session, setSession] = useState(null); // null | items | "done"
   const [mode, setMode] = useState("card");      // "card" | "listen" — session이 어느 세션인지
   const [summary, setSummary] = useState(null);
@@ -3187,9 +3208,11 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, onConsumeCustomStudy
   const newCount = allItems().filter(it => !SRS.get(it.key)).length;
   const studiedCount = allItems().filter(it => SRS.get(it.key)).length;
 
-  // 사전(내 단어장)에서 '이 리스트로 학습'을 눌러 넘어온 경우 곧바로 그 목록으로 세션 시작
+  // 사전(내 단어장)/홈에서 '이 리스트로 학습'을 눌러 넘어온 경우 곧바로 그 목록으로 세션 시작
+  // (customMode로 카드/듣기 중 어느 세션을 열지 지정 — 홈 "듣기 N문장"이 학습 탭 메뉴만 보여주던 버그 수정)
   useEffect(() => {
     if (customStudy && customStudy.length) {
+      setMode(customMode || "card");
       setSession(customStudy);
       onConsumeCustomStudy();
     }
@@ -3426,7 +3449,8 @@ function App() {
   });
   const changeChar = k => { setCharKState(k); try { localStorage.setItem("en_char", k); } catch (e) {} };
   const [customStudy, setCustomStudy] = useState(null); // 사전 > 내 단어장에서 '이 리스트로 학습' 요청
-  const startCustomStudy = items => { setCustomStudy(items); setTab("learn"); };
+  const [customMode, setCustomMode] = useState("card"); // customStudy 진입 시 카드/듣기 중 어느 세션으로 열지
+  const startCustomStudy = (items, mode = "card") => { setCustomStudy(items); setCustomMode(mode); setTab("learn"); };
   const [dictRootJump, setDictRootJump] = useState(null); // 단어상세 > 어근 칩 클릭 → 사전 카테고리(어근)로 이동
   const openRoot = affix => { setDictRootJump(affix); setTab("dict"); closeSheet(); };
   const startLevelTest = () => { setSettingsOpen(false); setLtOpen(true); };
@@ -3474,9 +3498,9 @@ function App() {
           <LevelTest onExit={() => setLtOpen(false)} />
         ) : (
           <React.Fragment>
-            {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} />}
+            {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => startCustomStudy(pickSession(10), "listen")} />}
             {tab === "dict" && <Dict onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} />}
-            {tab === "learn" && <Learn onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} onConsumeCustomStudy={() => setCustomStudy(null)} />}
+            {tab === "learn" && <Learn onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} customMode={customMode} onConsumeCustomStudy={() => setCustomStudy(null)} />}
             {tab === "talk" && <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />}
             {tab === "box" && <Vault onGoTab={setTab} />}
           </React.Fragment>
