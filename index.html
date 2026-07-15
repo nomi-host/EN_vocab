@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.22.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.22.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.22.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.23.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.23.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.23.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.22.0"></script>
+<script src="words.js?v=0.23.0"></script>
 <style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
@@ -28,16 +28,16 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.22.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.22.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.23.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.23.0") format("woff");
 }
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.22.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.22.0") format("woff");
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.23.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.23.0") format("woff");
 }
 :root{
   --bg:#FAF4E7;            /* 옅은 노트 베이지(2026-07-15, 전체 한 톤 밝게 — 이전 카드색을 배경으로) */
@@ -151,11 +151,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .medal.bt-gold .medal-face{background:var(--hi-pink-xlight);color:var(--hi-pink-xdark);}
 .medal.bt-plat .medal-face{background:var(--hi-blue-xlight);color:var(--hi-blue-xdark);}
 .medal.bt-master .medal-face{background:var(--surface);color:var(--accent-deep);}
-/* 미획득 = 실루엣(그림자 처리) */
-.medal.locked{background:var(--fill);box-shadow:inset 0 2px 6px rgba(33,28,21,.22),0 1px 2px rgba(33,28,21,.06);}
-.medal.locked .medal-face{background:transparent;box-shadow:none;color:var(--muted);}
-.medal.locked .mv{opacity:.35;}
+/* 미획득 = 플랫 톤다운(그림자 없이 흐린 베이지 링+면). 획득 메달과 채도로만 구분. */
+.medal.locked{background:var(--line);box-shadow:none;}
+.medal.locked .medal-face{background:var(--fill);box-shadow:none;color:var(--muted);}
+.medal.locked .mv{opacity:.5;}
 .medal.sm{width:40px;height:40px;box-shadow:0 1px 4px rgba(33,28,21,.18);}
+.medal.sm.locked{box-shadow:none;}
 .medal.sm .medal-face{width:31px;height:31px;}
 .medal.sm .mv{font-size:10px;letter-spacing:-0.5px;}
 /* 보관함: 카테고리별 행(헤더 + 가로 스와이프 티어 스트립) */
@@ -609,7 +610,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.22.0";
+const APP_VERSION = "v0.23.0";
 const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
@@ -1514,12 +1515,14 @@ function streakStage(days) { return days < 3 ? 1 : days < 7 ? 2 : days < 14 ? 3 
    지금은 더미 진행값(BADGE_PROGRESS)으로 UI만 구현 — 실제 학습 로그/서버 연결은 백엔드·통계 작업에서.
    TODO(태스크 #19 + PLAN 6장 백엔드): 각 카테고리 트리거를 실제 지표(SRS·스트릭·회화 로그 등)에 연결하고
    진행값을 서버 DB에 저장(기기 간 동기화). */
+/* 5단계 랭크 — 금속 은유 대신 난이도 상승 체계(하이어라키 색과 정렬: 연두<옐로우<핑크<블루<잉크).
+   cls(bt-*)는 CSS 색 클래스 키라 그대로 두고 이름만 재명명. */
 const BADGE_TIERS = [
-  { k: "bronze", name: "브론즈", cls: "bt-bronze" },
-  { k: "silver", name: "실버", cls: "bt-silver" },
-  { k: "gold", name: "골드", cls: "bt-gold" },
-  { k: "plat", name: "플래티넘", cls: "bt-plat" },
-  { k: "master", name: "마스터", cls: "bt-master" },
+  { k: "t1", name: "입문", cls: "bt-bronze" },
+  { k: "t2", name: "초급", cls: "bt-silver" },
+  { k: "t3", name: "중급", cls: "bt-gold" },
+  { k: "t4", name: "고급", cls: "bt-plat" },
+  { k: "t5", name: "마스터", cls: "bt-master" },
 ];
 /* 8~12개 카테고리(현재 9종). tiers=티어별 임계값(레벨은 문자열), desc=획득 설명(임계값 인자). */
 const BADGE_CATS = [
