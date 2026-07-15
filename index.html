@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.29.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.29.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.29.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.30.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.30.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.30.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.29.0"></script><style>
+<script src="words.js?v=0.30.0"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.29.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.29.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.30.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.30.0") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.29.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.29.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.30.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.30.0") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -414,6 +414,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .wd-play{margin-left:auto;background:var(--fill);border-radius:999px;padding:7px 13px;font-size:12px;font-weight:700;color:var(--ink-2);}
 .wd-pos{font-size:13px;color:var(--ink-2);line-height:1.6;}
 .wd-en{font-size:13px;color:var(--muted);line-height:1.55;}
+.wd-lookup{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:10px;}
+.wd-lookup.err{color:var(--danger);}
+.wd-retry{background:var(--ink);color:var(--on-accent);border-radius:999px;padding:5px 12px;font-size:12px;font-weight:700;}
 .wd-sec-t{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:7px;letter-spacing:.2px;}
 .wd-chips{display:flex;flex-wrap:wrap;gap:7px;}
 .lchip{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--fill);color:var(--ink);border:1px solid transparent;}
@@ -637,7 +640,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.29.0";const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.30.0";const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -675,12 +678,75 @@ function Icon({ name, size = 24 }) {
 const SEED = (typeof window !== "undefined" && window.SEED) ? window.SEED : [];
 const byWord = Object.fromEntries(SEED.map(w => [w.word, w]));
 
-/* 사용자가 직접 추가한 단어(내 단어장) — localStorage 보존.
-   v0에선 플레이스홀더 항목 생성만, 뜻·예문 자동 생성(LLM)은 프록시 연동 시. */
+/* 사용자가 직접 추가한 단어(내 단어장) — localStorage 보존. */
 let EXTRA = (() => { try { return JSON.parse(localStorage.getItem("en_mywords") || "{}"); } catch (e) { return {}; } })();
 function saveExtra() { try { localStorage.setItem("en_mywords", JSON.stringify(EXTRA)); } catch (e) {} }
 function wordOf(w) { return byWord[w] || EXTRA[w]; }
 function allWords() { return SEED.concat(Object.values(EXTRA)); }
+
+/* 수동 추가 단어 자동 조회 — 폴백 체인: Free Dictionary(무료 공개 API, 영영 정의·IPA·품사) →
+   Gemini 프록시(한국어 뜻·예문 생성, Free Dictionary가 준 영어 정의가 있으면 그걸 번역 기준으로 사용).
+   WordSheet가 lookupStatus:"pending"인 내 단어를 열 때 호출 — 결과를 EXTRA에 그대로 병합. */
+const _lookupInFlight = new Set();
+async function autoLookupWord(key) {
+  if (_lookupInFlight.has(key)) return;
+  _lookupInFlight.add(key);
+  let ipa = "", pos = [], enDef = "", fallbackEx = "";
+  try {
+    const r = await fetch("https://api.dictionaryapi.dev/api/v2/entries/en/" + encodeURIComponent(key));
+    if (r.ok) {
+      const data = await r.json();
+      const entry = Array.isArray(data) ? data[0] : null;
+      if (entry) {
+        const ph = (entry.phonetics || []).find(p => p.text) || {};
+        ipa = (ph.text || "").replace(/^\/|\/$/g, "");
+        const posSet = new Set();
+        (entry.meanings || []).forEach(m => {
+          if (m.partOfSpeech) posSet.add(m.partOfSpeech);
+          const d0 = m.definitions && m.definitions[0];
+          if (!enDef && d0) { enDef = d0.definition || ""; fallbackEx = d0.example || ""; }
+        });
+        pos = Array.from(posSet);
+      }
+    }
+  } catch (e) { /* Free Dictionary 실패해도 Gemini만으로 계속 진행 */ }
+
+  let ko = "", cefr = "", exEn = fallbackEx, exKo = "";
+  try {
+    const prompt = "영어 단어 \"" + key + "\"" +
+      (enDef ? "(영어 정의: " + enDef + ")" : "") + (fallbackEx ? "(참고 예문: " + fallbackEx + ")" : "") +
+      "에 대해 한국어 학습자용 정보를 아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요.\n" +
+      '{"ko":"간결한 한국어 뜻(품사 표시 없이)","cefr":"A1~C2 중 난이도 추정 한 값","ex_en":"자연스러운 영어 예문 한 문장","ex_ko":"그 예문의 자연스러운 한국어 번역"}';
+    const r = await fetch(PROXY_BASE + "/gemini", {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ prompt }),
+    });
+    const data = await r.json().catch(() => null);
+    if (r.ok && data && data.text) {
+      const cleaned = data.text.replace(/^```json\s*|^```\s*|```\s*$/g, "").trim();
+      const parsed = JSON.parse(cleaned);
+      ko = (parsed.ko || "").trim();
+      cefr = (parsed.cefr || "").trim();
+      exEn = (parsed.ex_en || exEn || "").trim();
+      exKo = (parsed.ex_ko || "").trim();
+    }
+  } catch (e) { /* 파싱 실패 — 아래에서 ko 비어있으면 에러 처리 */ }
+
+  _lookupInFlight.delete(key);
+  const cur = EXTRA[key];
+  if (!cur) return; // 조회 도중 삭제됐으면 무시
+  if (!ko) {
+    cur.lookupStatus = "error";
+  } else {
+    cur.ko = ko;
+    cur.en = enDef || cur.en;
+    cur.ipa = ipa || cur.ipa;
+    if (pos.length) cur.pos = pos;
+    cur.cefr = /^(A1|A2|B1|B2|C1|C2)$/.test(cefr) ? cefr : "B1";
+    if (exEn) cur.ex = [{ en: exEn, ko: exKo }];
+    cur.lookupStatus = "done";
+  }
+  saveExtra();
+}
 
 /* 즐겨찾기 — localStorage 보존(EXTRA·SRS와 동일 패턴). 첫 실행에만 데모 시드. */
 let FAVS = (() => {
@@ -1956,6 +2022,14 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
   const [, bump] = useState(0); // 즐겨찾기·내 단어장 토글 리렌더용
   const [showPicker, setShowPicker] = useState(false);
   useEffect(() => { setSenseOpen(0); setShowAllSenses(false); }, [word]);
+  // 내가 추가한 단어 자동 조회(Free Dictionary → Gemini 폴백) — pending일 때만, word가 바뀔 때 한 번
+  useEffect(() => {
+    if (w && w.mine && w.lookupStatus === "pending") {
+      autoLookupWord(w.word).then(() => bump(v => v + 1));
+    }
+    // eslint-disable-next-line
+  }, [word]);
+  const retryLookup = () => { EXTRA[word].lookupStatus = "pending"; saveExtra(); bump(v => v + 1); autoLookupWord(word).then(() => bump(v => v + 1)); };
   const speak = useCallback(speakText, []);
   const Chip = ({ label }) => (
     wordOf(label)
@@ -1993,14 +2067,25 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
               <span className="wd-ipa">{w.ipa}</span>
               <button className="wd-play" onClick={() => speak(w.word)}><Icon name="volume_up" size={15} /> 발음 듣기</button>
             </div>
-            <div className="wd-pos" style={{ marginTop: 6 }}>
-              <span className={"tag lv tier-" + cefrHl(w.cefr)} style={{ marginRight: 6 }}>{w.cefr}</span>
-              {w.senses && w.senses.length ? <span className="tag sensecount">뜻 {w.senses.length}개</span> : w.ko}
-            </div>
-            {!(w.senses && w.senses.length) && <div className="wd-en" style={{ marginTop: 4 }}>{w.en}</div>}
+            {w.lookupStatus === "pending" ? (
+              <div className="wd-lookup" style={{ marginTop: 6 }}>뜻·예문 불러오는 중…</div>
+            ) : w.lookupStatus === "error" ? (
+              <div className="wd-lookup err" style={{ marginTop: 6 }}>
+                뜻·예문을 불러오지 못했어요.
+                <button className="wd-retry" onClick={retryLookup}>다시 시도</button>
+              </div>
+            ) : (
+              <React.Fragment>
+                <div className="wd-pos" style={{ marginTop: 6 }}>
+                  <span className={"tag lv tier-" + cefrHl(w.cefr)} style={{ marginRight: 6 }}>{w.cefr}</span>
+                  {w.senses && w.senses.length ? <span className="tag sensecount">뜻 {w.senses.length}개</span> : w.ko}
+                </div>
+                {!(w.senses && w.senses.length) && <div className="wd-en" style={{ marginTop: 4 }}>{w.en}</div>}
+              </React.Fragment>
+            )}
           </div>
 
-          {w.senses && w.senses.length ? (
+          {w.lookupStatus === "pending" || w.lookupStatus === "error" ? null : w.senses && w.senses.length ? (
             /* 다의어: 의미별 카드 — 뜻마다 별도 예문·별도 학습 단위.
                뜻이 많은 단어(예: run·set 수십 개 의미)에서 목록이 무한정 길어지지 않도록
                기본 SENSE_CAP개만 보여주고 나머지는 '더보기'로 펼친다. */
@@ -2128,7 +2213,7 @@ function WordRow({ w, onOpen, pickMode, picked, onTogglePick }) {
       {pickMode && <span className={"wchk" + (picked ? " on" : "")}>{picked && <Icon name="check" size={13} />}</span>}
       <div>
         <div className="w">{w.word}</div>
-        <div className="k">{multi ? w.senses[0].ko + " 외 " + (w.senses.length - 1) + "개 뜻" : w.ko}</div>
+        <div className="k">{multi ? w.senses[0].ko + " 외 " + (w.senses.length - 1) + "개 뜻" : w.lookupStatus === "pending" ? "뜻 불러오는 중…" : w.lookupStatus === "error" ? "뜻을 불러오지 못했어요" : w.ko}</div>
       </div>
       <div className="meta">
         <span className={"tag lv tier-" + cefrHl(w.cefr)}>{w.cefr}</span>
@@ -2240,7 +2325,7 @@ function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump }) {
   const addWord = name => {
     const key = name.trim().toLowerCase();
     if (!key || wordOf(key)) return;
-    EXTRA[key] = { word: key, ipa: "", pos: [], cefr: "—", ko: "직접 추가한 단어 · 뜻과 예문은 자동 생성 예정", en: "", syn: [], ant: [], forms: [], roots: [], ex: [], mine: true };
+    EXTRA[key] = { word: key, ipa: "", pos: [], cefr: "—", ko: "", en: "", syn: [], ant: [], forms: [], roots: [], ex: [], mine: true, lookupStatus: "pending" };
     saveExtra(); bump(x => x + 1);
     setQ(""); onOpen(key);
   };
