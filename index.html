@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.31.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.31.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.31.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.32.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.32.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.32.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.31.0"></script><style>
+<script src="words.js?v=0.32.0"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.31.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.31.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.32.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.32.0") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.31.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.31.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.32.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.32.0") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -686,7 +686,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.31.0";const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.32.0";const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -2686,7 +2686,141 @@ function talkFeedback(persona, userEn) {
   return geminiJSON(prompt);
 }
 
-function TalkRooms({ onOpenRoom, onOpenSOS }) {
+/* ---------- 회화 탭 — 작문 첨삭 (PLAN 4.5) ----------
+   MVP 범위(2026-07-15): 장르 선택 → 에디터 → 문장별 첨삭 결과(자연스러움 점수·격식 지수·
+   총평·문장별 코멘트) + 즐겨찾기(회화와 같은 FAV_SENTENCES 공유) + 최근 이력 리스트.
+   미구현: diff 강조 인라인 코멘트 UI(문장 단위 리스트로 대체), 장르별 평균 통계. */
+const WRITING_GENRES = [
+  { id: "email", name: "이메일", prompt: "동료에게 마감 연장을 요청하는 이메일을 써보세요." },
+  { id: "chat", name: "업무 메신저 답장", prompt: "상사가 보낸 \"내일 회의 가능하세요?\"라는 메시지에 답장해보세요." },
+  { id: "diary", name: "일기", prompt: "오늘 있었던 일을 영어 일기로 짧게 써보세요." },
+  { id: "sns", name: "SNS 포스트", prompt: "최근 다녀온 곳에 대해 짧은 SNS 포스트를 써보세요." },
+  { id: "resume", name: "자기소개서", prompt: "본인의 장점을 소개하는 자기소개서 한 단락을 써보세요." },
+];
+let WRITING_HISTORY = (() => { try { return JSON.parse(localStorage.getItem("en_writing_history") || "[]"); } catch (e) { return []; } })();
+function saveWritingHistory() { try { localStorage.setItem("en_writing_history", JSON.stringify(WRITING_HISTORY)); } catch (e) {} }
+function writingFeedback(genre, text) {
+  const prompt = "아래는 한국인 영어 학습자가 \"" + genre.name + "\" 장르(상황: " + genre.prompt + ")로 작성한 영어 글입니다.\n글:\n\"\"\"\n" + text + "\n\"\"\"" +
+    "\n이 글을 문장 단위로 첨삭하세요. 자연스러운 문장은 교정문을 원문과 동일하게 두고, 어색한 문장만 교정하세요." +
+    "\n아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요." +
+    '\n{"natural_pct":0~100 사이 정수,"formality":"적절"또는"너무 캐주얼"또는"너무 격식적","overall_ko":"총평 한국어 한 줄",' +
+    '"sentences":[{"original":"원문 문장","corrected":"교정문(문제 없으면 원문과 동일)","note_ko":"짧은 한국어 코멘트(문제 없으면 빈 문자열)"}]}';
+  return geminiJSON(prompt);
+}
+
+function Writing({ onExit }) {
+  const [genre, setGenre] = useState(null);
+  const [text, setText] = useState("");
+  const [result, setResult] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [err, setErr] = useState(null);
+  const [, bump] = useState(0);
+  const reset = () => { setGenre(null); setResult(null); setText(""); setErr(null); };
+
+  const submit = async () => {
+    if (!text.trim() || loading) return;
+    setLoading(true); setErr(null);
+    try {
+      const r = await writingFeedback(genre, text.trim());
+      setResult(r);
+      WRITING_HISTORY.unshift({ genreId: genre.id, genreName: genre.name, natural_pct: r.natural_pct, at: Date.now() });
+      WRITING_HISTORY = WRITING_HISTORY.slice(0, 30);
+      saveWritingHistory();
+    } catch (e) {
+      setErr("첨삭을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (!genre) {
+    return (
+      <div className="content">
+        <div className="talk-head">
+          <button className="back" onClick={onExit} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
+          <div className="talk-head-name">작문 연습</div>
+        </div>
+        <div className="sec">장르를 골라보세요</div>
+        {WRITING_GENRES.map(g => (
+          <div key={g.id} className="step" onClick={() => setGenre(g)}>
+            <div className="step-ico round black"><Icon name="menu_book" size={20} /></div>
+            <div className="step-body">
+              <div className="step-title">{g.name}</div>
+              <div className="step-sub">{g.prompt}</div>
+            </div>
+            <span className="arrow">›</span>
+          </div>
+        ))}
+        {WRITING_HISTORY.length > 0 && (
+          <React.Fragment>
+            <div className="sec" style={{ marginTop: 18 }}>최근 작문 이력</div>
+            {WRITING_HISTORY.slice(0, 5).map((h, i) => (
+              <div key={i} className="talk-summary-item">
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <span style={{ fontWeight: 700 }}>{h.genreName}</span>
+                  <span style={{ color: "var(--muted)" }}>{h.natural_pct}점</span>
+                </div>
+              </div>
+            ))}
+          </React.Fragment>
+        )}
+      </div>
+    );
+  }
+
+  if (result) {
+    return (
+      <div className="content">
+        <div className="talk-head">
+          <button className="back" onClick={reset} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
+          <div className="talk-head-name">{genre.name} 첨삭 결과</div>
+        </div>
+        <div className="qcard">
+          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+            <span style={{ fontSize: 28, fontWeight: 800 }}>{result.natural_pct}점</span>
+            <span className="tag">{result.formality}</span>
+          </div>
+          <div style={{ fontSize: 13, color: "var(--ink-2)", marginTop: 6 }}>{result.overall_ko}</div>
+        </div>
+        {(result.sentences || []).map((s, i) => {
+          const changed = s.corrected && s.corrected.trim() !== s.original.trim();
+          return (
+            <div key={i} className="wd-ex" style={{ cursor: "default" }}>
+              <div className="en" style={{ display: "flex", justifyContent: "space-between", gap: 8, alignItems: "flex-start" }}>
+                <span>{s.original}</span>
+                <button className={"talk-msg-fav" + (isFavSentence(s.original) ? " on" : "")}
+                        onClick={() => { toggleFavSentence(s.original, s.corrected, genre.name + " 작문"); bump(v => v + 1); }} aria-label="즐겨찾기">
+                  <Icon name="favorite" size={16} />
+                </button>
+              </div>
+              {changed && <div className="ko" style={{ fontWeight: 700, color: "var(--good)" }}>→ {s.corrected}</div>}
+              {s.note_ko && <div className="ko">{s.note_ko}</div>}
+            </div>
+          );
+        })}
+        <button className="qsub" style={{ marginTop: 12 }} onClick={reset}>다른 장르 써보기</button>
+      </div>
+    );
+  }
+
+  return (
+    <div className="content">
+      <div className="talk-head">
+        <button className="back" onClick={() => setGenre(null)} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
+        <div className="talk-head-name">{genre.name}</div>
+      </div>
+      <div className="empty-note">{genre.prompt}</div>
+      <textarea className="qdictate" rows={10} value={text} onChange={e => setText(e.target.value)}
+        placeholder="영어로 자유롭게 써보세요" autoCapitalize="none" />
+      <button className="qsub" style={{ marginTop: 10 }} disabled={loading || !text.trim()} onClick={submit}>
+        {loading ? "첨삭 중…" : "첨삭받기"}
+      </button>
+      {err && <div className="empty-note" style={{ color: "var(--danger)" }}>{err}</div>}
+    </div>
+  );
+}
+
+function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting }) {
   return (
     <div className="content">
       <div className="sec">회화</div>
@@ -2698,12 +2832,13 @@ function TalkRooms({ onOpenRoom, onOpenSOS }) {
         </div>
         <span className="arrow">›</span>
       </div>
-      <div className="step soon">
-        <div className="step-ico round"><Icon name="menu_book" size={20} /></div>
+      <div className="step" onClick={onOpenWriting}>
+        <div className="step-ico round black"><Icon name="menu_book" size={20} /></div>
         <div className="step-body">
           <div className="step-title">작문 연습</div>
-          <div className="step-sub">준비 중</div>
+          <div className="step-sub">이메일·SNS·일기 등 장르별로 써보고 첨삭받기</div>
         </div>
+        <span className="arrow">›</span>
       </div>
       <div className="step soon">
         <div className="step-ico round"><Icon name="volume_up" size={20} /></div>
@@ -2864,14 +2999,15 @@ function TalkRoom({ persona, onExit }) {
 }
 
 function Talk() {
-  const [view, setView] = useState(null); // null=대화방 목록 | "sos" | 페르소나 id
+  const [view, setView] = useState(null); // null=대화방 목록 | "sos" | "writing" | 페르소나 id
   if (!PROXY_BASE) return <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />;
   if (view === "sos") return <TalkSOS onBack={() => setView(null)} />;
+  if (view === "writing") return <Writing onExit={() => setView(null)} />;
   if (view) {
     const persona = PERSONAS.find(p => p.id === view);
     return <TalkRoom persona={persona} onExit={() => setView(null)} />;
   }
-  return <TalkRooms onOpenRoom={setView} onOpenSOS={() => setView("sos")} />;
+  return <TalkRooms onOpenRoom={setView} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} />;
 }
 
 /* ---------- 회화 탭 — SOS 미니 도구 (PLAN 4.12-5) ----------
