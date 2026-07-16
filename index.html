@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.33.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.33.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.33.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.33.1">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.33.1" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.33.1" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.33.0"></script><style>
+<script src="words.js?v=0.33.1"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.33.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.33.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.33.1") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.33.1") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.33.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.33.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.33.1") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.33.1") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -285,19 +285,13 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .step-cta{font-size:13px;font-weight:700;color:var(--accent-deep);flex:none;}
 .step .check{color:var(--good);font-weight:800;}
 
-/* 학습 캘린더 — 잔디(히트맵 스트립) 대신 실제 요일에 맞춘 이번 달 달력(2026-07-16).
-   날짜 숫자가 항상 읽혀야 해서 배경은 opacity가 아니라 rgba로 진하기만 조절
-   (복습뱃지 due-t0~t3와 같은 잉크 rgba 공식 재사용 — 가장 진한 단계도 60%까지만). */
-.cal-dow{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:6px;}
-.cal-dow span{font-size:10px;color:var(--muted);text-align:center;font-weight:700;}
-.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;}
-.cal-cell{aspect-ratio:1;border-radius:0;background:var(--fill);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:var(--ink-2);font-variant-numeric:tabular-nums;}
-.cal-cell.empty{background:transparent;}
-.cal-cell.future{color:var(--line);}
-.cal-cell.g1{background:rgba(33,28,21,.22);color:var(--ink);}
-.cal-cell.g2{background:rgba(33,28,21,.4);color:var(--ink);}
-.cal-cell.g3{background:rgba(33,28,21,.6);color:#FFFBF1;}
-.cal-cell.today{border:1.5px solid var(--ink);font-weight:800;}
+/* 잔디 — 섹션 타이틀만 "학습 캘린더"로(2026-07-16), 시각화(히트맵 스트립) 자체는 유지 */
+.grass{display:grid;grid-template-columns:repeat(17,1fr);gap:3px;}
+.grass i{aspect-ratio:1;border-radius:0;background-color:var(--fill);}
+/* 잉크 톤 단색(스크리블 실험은 되돌림) — 가장 진한 단계도 잉크 60%까지만 */
+.grass i.g1{background-color:var(--ink);opacity:.22;}
+.grass i.g2{background-color:var(--ink);opacity:.4;}
+.grass i.g3{background-color:var(--ink);opacity:.6;}
 
 /* 사전 검색 */
 .search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--ink);border-radius:0;padding:11px 14px;box-shadow:var(--shadow);}
@@ -702,7 +696,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.33.0";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.33.1";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1965,22 +1959,13 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
     { n: 2, title: `듣기 ${goals.goalListen}문장`, sub: "6 / 10 진행 중", state: "active", tab: "learn", direct: true, start: onStartListen },
     { n: 3, title: "회화 1세션", sub: "오늘의 상대: Karen (공항)", state: "todo", tab: "talk" },
   ];
-  // 학습 캘린더 — 이번 달을 실제 요일에 맞춰 배치(잔디 히트맵 대신). 학습량 표시는 아직 더미
-  // (실 학습 로그 연동 전 — PLAN.md "홈 실데이터 전환" 작업에서 교체 예정).
-  const calendar = useMemo(() => {
-    const now = new Date();
-    const y = now.getFullYear(), mo = now.getMonth(), today = now.getDate();
-    const firstDow = new Date(y, mo, 1).getDay(); // 0=일요일
-    const daysInMonth = new Date(y, mo + 1, 0).getDate();
+  const grass = useMemo(() => {
     const cells = [];
-    for (let i = 0; i < firstDow; i++) cells.push(null);
-    for (let d = 1; d <= daysInMonth; d++) {
-      const isFuture = d > today;
-      const r = (d * 7 + 3) % 11;
-      const tier = isFuture ? "" : (r > 8 ? "g3" : r > 6 ? "g2" : r > 3 ? "g1" : "");
-      cells.push({ d, tier, isToday: d === today, isFuture });
+    for (let i = 0; i < 17 * 5; i++) {
+      const r = (i * 7 + 3) % 11;
+      cells.push(r > 8 ? "g3" : r > 6 ? "g2" : r > 3 ? "g1" : "");
     }
-    return { y, mo, cells };
+    return cells;
   }, []);
   const badgesEarned = BADGE_CATS.reduce((s, c) => s + catEarnedCount(c.k), 0);
   const pts = POINTS.get();
@@ -2057,18 +2042,9 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
         </div>
       ))}
 
-      <div className="sec">학습 캘린더 <span className="more">{calendar.y}년 {calendar.mo + 1}월</span></div>
+      <div className="sec">학습 캘린더 <span className="more">최근 17주</span></div>
       <div className="card" style={{ padding: "16px" }}>
-        <div className="cal-dow">{["일", "월", "화", "수", "목", "금", "토"].map(d => <span key={d}>{d}</span>)}</div>
-        <div className="cal-grid">
-          {calendar.cells.map((c, i) => c === null ? (
-            <i key={i} className="cal-cell empty" />
-          ) : (
-            <div key={i} className={"cal-cell" + (c.tier ? " " + c.tier : "") + (c.isToday ? " today" : "") + (c.isFuture ? " future" : "")}>
-              {c.d}
-            </div>
-          ))}
-        </div>
+        <div className="grass">{grass.map((c, i) => <i key={i} className={c} />)}</div>
       </div>
     </div>
   );
