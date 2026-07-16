@@ -24,10 +24,12 @@ async function callGeminiWithFallback(contents, generationConfig, fallbacks) {
   const attempts = [];
   let lastDetail = "";
   for (const model of modelCandidates(fallbacks || MODEL_FALLBACKS)) {
-    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${process.env.GEMINI_API_KEY}`;
+    /* 키는 ?key= 쿼리가 아니라 x-goog-api-key 헤더로 — 신형 "AQ." 키는 쿼리 방식이면
+       401("Expected OAuth 2 access token...")로 거부됨(2026-07-17 실측+웹 서치 확인). */
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
     const upstream = await fetch(apiUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", "x-goog-api-key": process.env.GEMINI_API_KEY },
       body: JSON.stringify({ contents, generationConfig }),
     });
     if (upstream.ok) {
