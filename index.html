@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.34.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.34.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.34.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.34.1">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.34.1" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.34.1" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.34.0"></script><style>
+<script src="words.js?v=0.34.1"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.34.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.34.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.34.1") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.34.1") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.34.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.34.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.34.1") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.34.1") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -695,7 +695,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.34.0";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.34.1";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -895,6 +895,15 @@ function proxyHeaders() { return { "Content-Type": "application/json", "X-App-Se
 const GEMINI_DIRECT_KEY = "";
 function getGeminiKey() { return GEMINI_DIRECT_KEY.trim(); }
 
+/* Vercel 프록시(리전 서울 고정) — Cloudflare Worker는 실행 위치를 고정할 수 없어 Google 무료
+   티어의 위치 검사에 걸리는 문제가 있어(api/gemini.js 상단 주석 참고), Gemini 텍스트·STT 호출만
+   Vercel 서버리스 함수(/api/gemini, /api/stt)로 이전. 여기에 Vercel 배포 URL을 채우면 활성화되고,
+   비어있으면 기존 Cloudflare 프록시(PROXY_BASE) 경유. TTS는 계속 Cloudflare가 담당(위치 문제 없음). */
+const GEMINI_PROXY_BASE = "";
+function geminiEndpoint(kind) {
+  return GEMINI_PROXY_BASE ? GEMINI_PROXY_BASE + "/api/" + kind : PROXY_BASE + "/" + kind;
+}
+
 /* Worker의 MODEL_FALLBACKS와 같은 원리의 후보 체인 — 404/429/위치거부(400 FAILED_PRECONDITION)면
    다음 모델로 자동 전환. 무료 티어는 현세대 Flash 계열만(Pro는 2026-04부터 유료 전용)이라
    3.5/3 Flash가 맨 앞. Gemma는 오디오 입력 미지원이라 STT 후보에서는 제외. */
@@ -923,13 +932,13 @@ async function geminiDirect(contents, generationConfig, models) {
   }
   throw new Error("gemini error [" + attempts.join(", ") + "] last: " + lastDetail.slice(0, 250));
 }
-/* 텍스트 프롬프트 공용 진입점 — 키가 있으면 기기에서 직접, 없으면 Worker 프록시 경유.
-   반환은 항상 응답 텍스트(트림됨), 실패는 throw. */
+/* 텍스트 프롬프트 공용 진입점 — 키가 있으면 기기에서 직접, 없으면 프록시 경유
+   (Vercel 배포 URL이 설정돼 있으면 Vercel, 아니면 Cloudflare). 반환은 항상 응답 텍스트, 실패는 throw. */
 async function geminiText(prompt) {
   if (getGeminiKey()) {
     return await geminiDirect([{ parts: [{ text: prompt }] }], { temperature: 0.4, maxOutputTokens: 300 }, GEMINI_TEXT_MODELS);
   }
-  const r = await fetch(PROXY_BASE + "/gemini", { method: "POST", headers: proxyHeaders(), body: JSON.stringify({ prompt }) });
+  const r = await fetch(geminiEndpoint("gemini"), { method: "POST", headers: proxyHeaders(), body: JSON.stringify({ prompt }) });
   const data = await r.json().catch(() => null);
   if (!r.ok || !data || !data.text) throw new Error((data && data.error) || ("http " + r.status));
   return (data.text || "").trim();
@@ -3099,7 +3108,7 @@ async function transcribeAudio(blob, mimeType) {
       { temperature: 0, maxOutputTokens: 200 },
       GEMINI_AUDIO_MODELS);
   }
-  const r = await fetch(PROXY_BASE + "/stt", {
+  const r = await fetch(geminiEndpoint("stt"), {
     method: "POST", headers: proxyHeaders(),
     body: JSON.stringify({ audio, mimeType }),
   });
