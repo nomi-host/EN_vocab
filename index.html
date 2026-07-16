@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.1">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.1" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.1" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.0"></script><style>
+<script src="words.js?v=0.35.1"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.1") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.1") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.1") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.1") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -148,18 +148,26 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .medal:active{transform:scale(.93);}
 .medal-face{width:50px;height:50px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;line-height:1;}
 .medal .mv{font-size:15px;font-weight:800;letter-spacing:-0.6px;font-variant-numeric:tabular-nums;}
-/* 티어 톤 — 앱 형광펜 하이어라키(연두<옐로우<핑크<블루)에 랭크를 매핑, 최상위=잉크(블랙 포인트).
-   그라디언트 없이 플랫: 링=형광펜 solid, 이너 페이스=xlight, 텍스트=xdark. */
-.medal.bt-bronze{background:var(--hi-green);}
+/* 티어 톤 — 앱이 이미 문서화한 성취 위계(streakHl: 핑크<노랑<초록<파랑)에 랭크를 그대로 매핑하고
+   최상위(마스터)만 골드 포인트로 얹음(2026-07-17 재정렬). 예전엔 초록<노랑<핑크<파랑이라 "위험"
+   의미의 핑크가 중간에 껴서 위계감이 없었음 — 레벨업 뱃지 색이 안 맞는다는 지적의 근본 원인.
+   그라디언트 없이 플랫: 링=형광펜 solid, 이너 페이스=xlight, 텍스트=xdark.
+   cls 키(bt-*)는 CSS 색 클래스라 그대로 두고 매핑 색만 교체(t1↔t3 스왑). */
+.medal.bt-bronze{background:var(--hi-pink);}
 .medal.bt-silver{background:var(--hi-yellow);}
-.medal.bt-gold{background:var(--hi-pink);}
+.medal.bt-gold{background:var(--hi-green);}
 .medal.bt-plat{background:var(--hi-blue);}
 .medal.bt-master{background:var(--accent);}
-.medal.bt-bronze .medal-face{background:var(--hi-green-xlight);color:var(--hi-green-xdark);}
+.medal.bt-bronze .medal-face{background:var(--hi-pink-xlight);color:var(--hi-pink-xdark);}
 .medal.bt-silver .medal-face{background:var(--hi-yellow-xlight);color:var(--hi-yellow-xdark);}
-.medal.bt-gold .medal-face{background:var(--hi-pink-xlight);color:var(--hi-pink-xdark);}
+.medal.bt-gold .medal-face{background:var(--hi-green-xlight);color:var(--hi-green-xdark);}
 .medal.bt-plat .medal-face{background:var(--hi-blue-xlight);color:var(--hi-blue-xdark);}
 .medal.bt-master .medal-face{background:var(--surface);color:var(--accent-deep);}
+/* 상세 팝업 확대용 큰 메달(scale 대신 실측 사이즈 — scale은 레이아웃 박스를 안 넓혀서 타이틀과
+   겹쳐 보이는 문제가 있었음). 팝업 동전 앞면에 이 사이즈로 렌더. */
+.medal.lg{width:132px;height:132px;box-shadow:0 6px 18px rgba(33,28,21,.22);}
+.medal.lg .medal-face{width:104px;height:104px;}
+.medal.lg .mv{font-size:32px;letter-spacing:-1px;}
 /* 미획득 = 플랫 톤다운(그림자 없이 흐린 베이지 링+면). 획득 메달과 채도로만 구분. */
 .medal.locked{background:var(--line);box-shadow:none;}
 .medal.locked .medal-face{background:var(--fill);box-shadow:none;color:var(--muted);}
@@ -176,19 +184,22 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .medal-strip::-webkit-scrollbar{display:none;}
 .medal-cell{flex:none;display:flex;flex-direction:column;align-items:center;gap:5px;width:64px;}
 .medal-cell .mth{font-size:10px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums;}
-/* 상세 팝업 — 3D 뒤집기 카드 */
-.bd-card{width:100%;max-width:300px;perspective:1200px;}
-.bd-inner{position:relative;width:100%;min-height:340px;transform-style:preserve-3d;}
-.bd-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:0 24px 64px rgba(33,28,21,.3);padding:28px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
-.bd-back{transform:rotateY(180deg);}
-.bd-medal{transform:scale(2.05);margin:34px 0 46px;}
+/* 상세 팝업 — 카드는 고정·정지, 동전(메달)만 뒤집힘(2026-07-17 재설계. 예전엔 카드 전체가 3D로
+   뒤집혀서 "팝업이 돈다"는 지적. 이제 카드는 그대로 있고 그 안의 원형 동전만 플립). */
+.bd-card{width:100%;max-width:320px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:0 24px 64px rgba(33,28,21,.3);padding:34px 26px 26px;display:flex;flex-direction:column;align-items:center;text-align:center;}
 .bd-title{font-size:20px;font-weight:800;letter-spacing:-0.3px;}
-.bd-tier{font-size:14px;font-weight:800;margin-top:5px;}
-.bd-hint{font-size:11px;color:var(--muted);margin-top:14px;display:flex;align-items:center;gap:5px;}
-.bd-date{font-size:14px;color:var(--accent-deep);font-weight:800;margin-top:2px;}
-.bd-date.locked{color:var(--muted);}
-.bd-desc{font-size:13px;color:var(--ink-2);line-height:1.55;margin-top:12px;}
-.bd-ranks{display:flex;gap:9px;justify-content:center;margin-top:20px;flex-wrap:wrap;}
+.bd-coin-wrap{margin:28px 0 6px;perspective:900px;width:132px;height:132px;flex:none;}
+.bd-coin{position:relative;width:100%;height:100%;transform-style:preserve-3d;cursor:pointer;}
+.bd-coin-front,.bd-coin-back{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;}
+.bd-coin-front .medal{pointer-events:none;}
+/* 뒷면 = 블랙 원 + 획득일 */
+.bd-coin-back{transform:rotateY(180deg);background:var(--ink);color:var(--on-accent);box-shadow:0 6px 18px rgba(33,28,21,.28);gap:3px;}
+.bd-back-date{font-size:19px;font-weight:800;letter-spacing:-0.3px;font-variant-numeric:tabular-nums;}
+.bd-back-sub{font-size:11px;font-weight:700;color:var(--line);}
+.bd-tier{font-size:15px;font-weight:800;margin-top:14px;}
+.bd-hint{font-size:11px;color:var(--muted);margin-top:12px;}
+.bd-desc{font-size:13px;color:var(--ink-2);line-height:1.55;margin-top:10px;}
+.bd-ranks{display:flex;gap:9px;justify-content:center;margin-top:22px;flex-wrap:wrap;}
 .bd-rank{display:flex;flex-direction:column;align-items:center;gap:4px;}
 .bd-rank .mth{font-size:10px;font-weight:700;color:var(--muted);}
 .bd-rank.cur .mth{color:var(--ink);font-weight:800;}
@@ -711,7 +722,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.0";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.1";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1959,8 +1970,8 @@ function streakStage(days) { return days < 3 ? 1 : days < 7 ? 2 : days < 14 ? 3 
    TODO(태스크 #19 + PLAN 6장 백엔드): 위 미구현 카테고리에 실제 카운터(듣기 세션 완료, 회화 세션
    완료, 어원 상세 열람, 친구 초대, SOS 없는 회화 완주)가 생기면 computeBadgeProgress 안의 해당
    더미 항목만 실측 count로 바꿔 끼우면 된다(진행값을 서버 DB에 저장하는 기기 간 동기화는 별도). */
-/* 5단계 랭크 — 금속 은유 대신 난이도 상승 체계(하이어라키 색과 정렬: 연두<옐로우<핑크<블루<잉크).
-   cls(bt-*)는 CSS 색 클래스 키라 그대로 두고 이름만 재명명. */
+/* 5단계 랭크 — 금속 은유 대신 앱의 성취 위계 색으로 정렬(핑크<옐로우<초록<블루<골드마스터,
+   2026-07-17 재정렬 — streakHl과 같은 순서). cls(bt-*)는 CSS 색 클래스 키라 그대로 두고 색만 교체. */
 const BADGE_TIERS = [
   { k: "t1", name: "입문", cls: "bt-bronze" },
   { k: "t2", name: "초급", cls: "bt-silver" },
@@ -2063,9 +2074,9 @@ function CharDoodle({ shape, accent, size = 120 }) {
 }
 
 /* 원형 랭크 메달 하나(카테고리 c의 tierIdx 티어). earned=색칠, 미획득=실루엣. sm=작은 변형. */
-function BadgeMedal({ cat, tierIdx, earned, sm, onClick }) {
+function BadgeMedal({ cat, tierIdx, earned, sm, lg, onClick }) {
   const tier = BADGE_TIERS[tierIdx];
-  const cls = "medal" + (sm ? " sm" : "") + " " + (earned ? tier.cls : "locked");
+  const cls = "medal" + (sm ? " sm" : "") + (lg ? " lg" : "") + " " + (earned ? tier.cls : "locked");
   return (
     <button className={cls} onClick={onClick} aria-label={`${cat.title} ${tier.name}${earned ? "" : " (미획득)"}`}>
       <span className="medal-face"><span className="mv">{medalLabel(cat.tiers[tierIdx])}</span></span>
@@ -2073,16 +2084,51 @@ function BadgeMedal({ cat, tierIdx, earned, sm, onClick }) {
   );
 }
 
-/* 뱃지 상세 — 크게 확대 + 밀어서 뒤집기(3D flip). 빠르게 밀면 관성으로 빙그르르 한 바퀴 더.
-   앞면=메달+티어, 뒷면=획득일/조건+설명+랭크 스트립(탭해 다른 티어 열람). sel={catKey,tierIdx}. */
+/* 보관함 티어 스트립 — 끊김 없이 계속 도는 벨트(2026-07-17). 티어가 5개뿐이라 화면을 거의
+   채워 스크롤 여지가 거의 없던 것을, 같은 목록을 3벌 복제해 가운데 벌에서 시작하고, 스크롤이
+   양끝 벌로 넘어가면 소리 없이 한 벌 폭만큼 되돌려 무한 루프처럼 보이게 한다. 탭은 그대로 동작. */
+function MedalBelt({ cat, progress, onSelect }) {
+  const ref = useRef(null);
+  const tiers = cat.tiers;
+  const loop = [...tiers, ...tiers, ...tiers];
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const one = () => el.scrollWidth / 3;
+    el.scrollLeft = one(); // 가운데 벌에서 시작
+    const onScroll = () => {
+      const w = one();
+      if (el.scrollLeft < w * 0.5) el.scrollLeft += w;
+      else if (el.scrollLeft > w * 1.5) el.scrollLeft -= w;
+    };
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => el.removeEventListener("scroll", onScroll);
+  }, [cat.k]);
+  return (
+    <div className="medal-strip belt" ref={ref}>
+      {loop.map((tv, i) => {
+        const idx = i % tiers.length;
+        return (
+          <div key={i} className="medal-cell">
+            <BadgeMedal cat={cat} tierIdx={idx} earned={idx <= progress.tier} onClick={() => onSelect(idx)} />
+            <span className="mth">{medalLabel(tv)}{cat.unit}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+/* 뱃지 상세 — 카드는 고정, 동전(메달)만 뒤집기(탭 또는 밀기, 빠르게 밀면 관성으로 빙그르르).
+   앞면=메달, 뒷면=블랙 원+획득일. 아래 랭크 스트립을 탭해 다른 티어 열람. sel={catKey,tierIdx}. */
 function BadgeDetail({ sel, onClose }) {
   const cat = BADGE_CATS.find(c => c.k === sel.catKey);
   const prog = computeBadgeProgress()[sel.catKey];
   const [tierIdx, setTierIdx] = useState(sel.tierIdx);
-  const [baseRot, setBaseRot] = useState(0); // 누적 회전(0=앞, 180=뒤)
+  const [baseRot, setBaseRot] = useState(0); // 누적 회전(짝수*180=앞, 홀수*180=뒤)
   const [live, setLive] = useState(0);        // 드래그 중 추가 각도
   const [anim, setAnim] = useState(false);    // 손 뗀 뒤 정착 애니메이션
-  const [spinning, setSpinning] = useState(false); // 빠르게 스와이프 후 관성으로 계속 도는 중(탭하면 멈춤)
+  const [spinning, setSpinning] = useState(false); // 빠르게 스와이프 후 관성 스핀 중(탭하면 멈춤)
   const drag = useRef(null);
   const spin = useRef({ angle: 0, vel: 0, raf: null });
 
@@ -2092,7 +2138,6 @@ function BadgeDetail({ sel, onClose }) {
 
   useEffect(() => () => { if (spin.current.raf) cancelAnimationFrame(spin.current.raf); }, []);
 
-  // 손 떼도 안 멈추고 마찰(감쇠)로 서서히 느려지며 계속 도는 관성 스핀 — 탭하면(stopSpin) 즉시 앞/뒤 중 가까운 쪽에 정착.
   const tickSpin = () => {
     const s = spin.current;
     s.angle += s.vel * 16;
@@ -2107,24 +2152,26 @@ function BadgeDetail({ sel, onClose }) {
     setSpinning(false);
     const angle = angleOverride != null ? angleOverride : spin.current.angle;
     setAnim(true);
-    setBaseRot(Math.round(angle / 180) * 180); // 가장 가까운 앞/뒤로 정착
+    setBaseRot(Math.round(angle / 180) * 180);
   };
+  const pickTier = i => { setTierIdx(i); setAnim(true); setBaseRot(Math.round(baseRot / 360) * 360); }; // 티어 바꾸면 앞면으로
 
-  const onDown = e => { drag.current = { x: e.clientX, t: Date.now() }; setAnim(false); try { e.currentTarget.setPointerCapture(e.pointerId); } catch (err) {} };
-  const onMove = e => { if (drag.current) setLive((e.clientX - drag.current.x) * 0.7); };
+  const onDown = e => { drag.current = { x: e.clientX, t: Date.now(), moved: false }; setAnim(false); try { e.currentTarget.setPointerCapture(e.pointerId); } catch (err) {} };
+  const onMove = e => { if (drag.current) { const dx = e.clientX - drag.current.x; if (Math.abs(dx) > 4) drag.current.moved = true; setLive(dx * 0.7); } };
   const onUp = e => {
     if (!drag.current) return;
     const dx = e.clientX - drag.current.x;
+    const wasTap = !drag.current.moved;
     const v = dx / Math.max(1, Date.now() - drag.current.t); // px/ms
     const dir = dx > 0 ? 1 : -1;
     drag.current = null;
+    if (wasTap) { setAnim(true); setLive(0); setBaseRot(baseRot + 180); return; } // 탭 = 뒤집기
     if (Math.abs(v) > 0.55) {
-      // 빠르게 = 빙그르르 — 탭해서 멈출 때까지 관성으로 계속 돎
       spin.current = { angle: baseRot + live, vel: dir * Math.min(Math.abs(v) * 40, 26), raf: null };
       setLive(0); setAnim(false); setSpinning(true);
       spin.current.raf = requestAnimationFrame(tickSpin);
-    } else if (Math.abs(dx) > 55) {
-      setAnim(true); setLive(0); setBaseRot(baseRot + dir * 180); // 충분히 밀면 뒤집기
+    } else if (Math.abs(dx) > 40) {
+      setAnim(true); setLive(0); setBaseRot(baseRot + dir * 180);
     } else {
       setAnim(true); setLive(0); setBaseRot(baseRot);
     }
@@ -2133,30 +2180,37 @@ function BadgeDetail({ sel, onClose }) {
   return ReactDOM.createPortal(
     <div className="dlg-backdrop" onClick={onClose}>
       <div className="bd-card" onClick={e => { e.stopPropagation(); if (spinning) stopSpin(); }}>
-        <div className="bd-inner"
-          style={{ transform: `rotateY(${baseRot + live}deg)`, transition: anim ? "transform .55s cubic-bezier(.2,.7,.2,1)" : "none", touchAction: "pan-y" }}
-          onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}>
-          <div className="bd-face">
-            <div className="bd-title">{cat.title}</div>
-            <div className="bd-medal"><BadgeMedal cat={cat} tierIdx={tierIdx} earned={earned} /></div>
-            <div className="bd-tier" style={{ color: earned ? "var(--ink)" : "var(--muted)" }}>{tier.name} · {medalLabel(val)}{cat.unit}</div>
-            <div className="bd-hint"><span>←</span> 밀어서 뒤집기 <span>→</span></div>
-          </div>
-          <div className="bd-face bd-back">
-            <div className="bd-title">{cat.title}</div>
-            {earned
-              ? <div className="bd-date">{prog.dates[tierIdx] ? prog.dates[tierIdx] + " 달성!" : "달성!"}</div>
-              : <div className="bd-date locked">아직 미획득</div>}
-            <div className="bd-desc">{earned ? cat.desc(val) : "조건: " + cat.desc(val)}</div>
-            <div className="bd-ranks">
-              {cat.tiers.map((tv, i) => (
-                <div key={i} className={"bd-rank" + (i === tierIdx ? " cur" : "")}>
-                  <BadgeMedal cat={cat} tierIdx={i} earned={i <= prog.tier} sm onClick={() => setTierIdx(i)} />
-                  <span className="mth">{medalLabel(tv)}{cat.unit}</span>
-                </div>
-              ))}
+        <div className="bd-title">{cat.title}</div>
+        <div className="bd-coin-wrap">
+          <div className="bd-coin"
+            style={{ transform: `rotateY(${baseRot + live}deg)`, transition: anim ? "transform .55s cubic-bezier(.2,.7,.2,1)" : "none", touchAction: "pan-y" }}
+            onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}>
+            <div className="bd-coin-front"><BadgeMedal cat={cat} tierIdx={tierIdx} earned={earned} lg /></div>
+            <div className="bd-coin-back">
+              {earned ? (
+                <React.Fragment>
+                  <div className="bd-back-date">{prog.dates[tierIdx] || "달성"}</div>
+                  <div className="bd-back-sub">달성일</div>
+                </React.Fragment>
+              ) : (
+                <React.Fragment>
+                  <div className="bd-back-date">미획득</div>
+                  <div className="bd-back-sub">{medalLabel(val)}{cat.unit} 목표</div>
+                </React.Fragment>
+              )}
             </div>
           </div>
+        </div>
+        <div className="bd-tier" style={{ color: earned ? "var(--ink)" : "var(--muted)" }}>{tier.name} · {medalLabel(val)}{cat.unit}</div>
+        <div className="bd-desc">{earned ? cat.desc(val) : "조건: " + cat.desc(val)}</div>
+        <div className="bd-hint">뱃지를 탭하거나 밀어서 뒤집기</div>
+        <div className="bd-ranks">
+          {cat.tiers.map((tv, i) => (
+            <div key={i} className={"bd-rank" + (i === tierIdx ? " cur" : "")}>
+              <BadgeMedal cat={cat} tierIdx={i} earned={i <= prog.tier} sm onClick={() => pickTier(i)} />
+              <span className="mth">{medalLabel(tv)}{cat.unit}</span>
+            </div>
+          ))}
         </div>
       </div>
     </div>,
@@ -3458,14 +3512,8 @@ function Vault({ onGoTab }) {
           {BADGE_CATS.map(c => (
             <div key={c.k}>
               <div className="badge-row-t">{c.title} <span className="rc">{catEarnedCount(c.k, badgeProgress)}/{c.tiers.length}</span></div>
-              <div className="medal-strip">
-                {c.tiers.map((tv, i) => (
-                  <div key={i} className="medal-cell">
-                    <BadgeMedal cat={c} tierIdx={i} earned={i <= badgeProgress[c.k].tier} onClick={() => setBadgeSel({ catKey: c.k, tierIdx: i })} />
-                    <span className="mth">{medalLabel(tv)}{c.unit}</span>
-                  </div>
-                ))}
-              </div>
+              <MedalBelt cat={c} progress={badgeProgress[c.k]} onSelect={i => setBadgeSel({ catKey: c.k, tierIdx: i })} />
+
             </div>
           ))}
         </div>
