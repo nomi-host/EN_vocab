@@ -6,7 +6,9 @@ compatibility_date = "2026-07-15"
 # 배포된 앱의 실제 오리진으로 좁혀서 넣을 것(쉼표 구분). 비워두면 전부 허용(초기 테스트용).
 # 예: "https://en-vocab.vercel.app,https://your-domain.com"
 ALLOWED_ORIGINS = ""
-GEMINI_MODEL = "gemini-3-pro-preview"
+# GEMINI_MODEL은 더 이상 여기서 지정하지 않음 — worker.js의 MODEL_FALLBACKS 폴백 체인이
+# 사용 가능한 모델을 자동으로 찾는다(404/429면 다음 후보로). 특정 모델을 강제하고 싶을 때만
+# GEMINI_MODEL을 설정(폴백 체인의 최우선 후보로 끼워짐).
 
 # 시크릿은 여기 넣지 않음 — 아래 명령으로 등록:
 #   wrangler secret put GEMINI_API_KEY
