@@ -102,8 +102,11 @@ async function callGeminiWithFallback(env, contents, generationConfig, fallbacks
     attempts.push(`${model}→${upstream.status}`);
     lastDetail = await upstream.text().catch(() => "");
     // 404(모델 없음/미개방)·429(한도 0 배정 포함)는 모델 단위 문제일 수 있으니 다음 후보 시도.
-    // 그 외(400 잘못된 요청, 401/403 키 문제 등)는 모델을 바꿔도 똑같으므로 즉시 중단.
-    if (upstream.status !== 404 && upstream.status !== 429) break;
+    // 400 중 "User location is not supported"(FAILED_PRECONDITION)도 모델/티어별로 달라서 스킵
+    // (Gemma만 위치 거부되고 Gemini는 통과하는 사례 실제 확인, 2026-07-16).
+    // 그 외(일반 400 잘못된 요청, 401/403 키 문제 등)는 모델을 바꿔도 똑같으므로 즉시 중단.
+    const locationBlocked = upstream.status === 400 && lastDetail.includes("FAILED_PRECONDITION");
+    if (upstream.status !== 404 && upstream.status !== 429 && !locationBlocked) break;
   }
   throw new Error(`gemini upstream error [${attempts.join(", ")}] last: ${lastDetail.slice(0, 250)}`);
 }
