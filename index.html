@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.33.2">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.33.2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.33.2" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.33.3">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.33.3" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.33.3" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.33.2"></script><style>
+<script src="words.js?v=0.33.3"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.33.2") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.33.2") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.33.3") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.33.3") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.33.2") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.33.2") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.33.3") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.33.3") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -696,7 +696,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.33.2";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.33.3";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1036,11 +1036,69 @@ const SRS = (() => {
   try { store = JSON.parse(localStorage.getItem("en_srs") || "null"); } catch (e) {}
   if (!store) {
     const t = Date.now();
-    store = { // 첫 실행 데모 시드(앱이 비어 보이지 않게) — 실제 학습하면 덮어써짐
-      "alert": { box: 4, due: t + 3 * DAY, seen: true },
-      "possibility": { box: 6, due: t + 30 * DAY, seen: true },
-      "interact": { box: 2, due: t - DAY, seen: true },
-      "deadline": { box: 1, due: t + DAY, seen: true },
+    // 첫 실행 데모 시드(앱이 비어 보이지 않게) — 실제 학습하면 덮어써짐.
+    // 가상 페르소나: 어휘력 B2+ · 작문력 B1 · 3개월 정도 띄엄띄엄 학습한 사용자(2026-07-16).
+    store = {
+      "business#0": { box: 6, due: t + 18 * DAY, seen: true },
+      "church#0": { box: 6, due: t + 26 * DAY, seen: true },
+      "corn#0": { box: 6, due: t + 20 * DAY, seen: true },
+      "dish#0": { box: 6, due: t + 39 * DAY, seen: true },
+      "evening#0": { box: 6, due: t + 33 * DAY, seen: true },
+      "fifty#0": { box: 6, due: t + 14 * DAY, seen: true },
+      "fun#0": { box: 6, due: t + 37 * DAY, seen: true },
+      "guy#0": { box: 6, due: t + 31 * DAY, seen: true },
+      "cleaner#0": { box: 6, due: t + 33 * DAY, seen: true },
+      "consist#0": { box: 6, due: t + 26 * DAY, seen: true },
+      "curse#0": { box: 5, due: t + 15 * DAY, seen: true },
+      "director#0": { box: 5, due: t + 13 * DAY, seen: true },
+      "effort#0": { box: 5, due: t + 6 * DAY, seen: true },
+      "expert#0": { box: 5, due: t + 9 * DAY, seen: true },
+      "flea#0": { box: 5, due: t + 7 * DAY, seen: true },
+      "gas#0": { box: 5, due: t + 9 * DAY, seen: true },
+      "harvest#0": { box: 5, due: t + 3 * DAY, seen: true },
+      "inch#0": { box: 5, due: t + 3 * DAY, seen: true },
+      "knock#0": { box: 3, due: t + 2 * DAY, seen: true },
+      "loose#0": { box: 3, due: t + 10 * DAY, seen: true },
+      "composition": { box: 3, due: t - 2 * DAY, seen: true },
+      "council": { box: 3, due: t + 9 * DAY, seen: true },
+      "cycle": { box: 3, due: t + 7 * DAY, seen: true },
+      "delightful": { box: 3, due: t + 1 * DAY, seen: true },
+      "dialog": { box: 3, due: t - 4 * DAY, seen: true },
+      "diving": { box: 3, due: t + 7 * DAY, seen: true },
+      "edition": { box: 3, due: t + 10 * DAY, seen: true },
+      "enjoyment": { box: 3, due: t + 2 * DAY, seen: true },
+      "experienced": { box: 3, due: t + 1 * DAY, seen: true },
+      "fifth": { box: 3, due: t - 1 * DAY, seen: true },
+      "fortnight": { box: 2, due: t - 6 * DAY, seen: true },
+      "generous": { box: 2, due: t - 11 * DAY, seen: true },
+      "graphics": { box: 2, due: t + 1 * DAY, seen: true },
+      "headline": { box: 2, due: t - 8 * DAY, seen: true },
+      "hostel": { box: 2, due: t - 8 * DAY, seen: true },
+      "indirect": { box: 2, due: t + 3 * DAY, seen: true },
+      "intense": { box: 2, due: t - 1 * DAY, seen: true },
+      "justice": { box: 2, due: t - 7 * DAY, seen: true },
+      "lifelong": { box: 2, due: t - 12 * DAY, seen: true },
+      "main": { box: 2, due: t + 2 * DAY, seen: true },
+      "crossly": { box: 2, due: t - 1 * DAY, seen: true },
+      "deck": { box: 2, due: t - 2 * DAY, seen: true },
+      "determined": { box: 1, due: t, seen: true },
+      "disposition": { box: 1, due: t + 4 * DAY, seen: true },
+      "dread": { box: 1, due: t - 2 * DAY, seen: true },
+      "elite": { box: 1, due: t, seen: true },
+      "evacuation": { box: 1, due: t - 3 * DAY, seen: true },
+      "exploit": { box: 1, due: t + 5 * DAY, seen: true },
+      "fighting": { box: 1, due: t + 2 * DAY, seen: true },
+      "formerly": { box: 1, due: t + 4 * DAY, seen: true },
+      "genius": { box: 1, due: t, seen: true },
+      "grip": { box: 1, due: t - 1 * DAY, seen: true },
+      "hint": { box: 1, due: t + 2 * DAY, seen: true },
+      "identical": { box: 1, due: t + 4 * DAY, seen: true },
+      "inanimate": { box: 1, due: t + 4 * DAY, seen: true },
+      "chill": { box: 1, due: t + 3 * DAY, seen: true },
+      "confinement": { box: 1, due: t + 5 * DAY, seen: true },
+      "darkroom": { box: 1, due: t + 3 * DAY, seen: true },
+      "dissection": { box: 1, due: t + 2 * DAY, seen: true },
+      "enviable": { box: 1, due: t + 5 * DAY, seen: true },
     };
   }
   const save = () => { try { localStorage.setItem("en_srs", JSON.stringify(store)); } catch (e) {} };
@@ -1745,7 +1803,19 @@ function createLevelTestB() {
 /* 결과 저장 — 홈/통계에서 읽어 쓸 수 있게 localStorage 보존 */
 const LT_KEY = "en_leveltest_v1";
 function saveLevelTest(res) { try { localStorage.setItem(LT_KEY, JSON.stringify(Object.assign({ at: Date.now() }, res))); } catch (e) {} }
-function loadLevelTest() { try { return JSON.parse(localStorage.getItem(LT_KEY) || "null"); } catch (e) { return null; } }
+function loadLevelTest() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(LT_KEY) || "null");
+    if (saved) return saved;
+  } catch (e) {}
+  // 첫 실행 데모 시드(SRS와 동일한 패턴) — 실제로 레벨 테스트를 보면 saveLevelTest가 덮어씀.
+  // 가상 페르소나: 어휘력 B2+ · 작문력 B1 · 3개월 정도 띄엄띄엄 학습한 사용자(2026-07-16).
+  return {
+    at: Date.now() - 6 * DAY,
+    lex: { band12: 7, band: "B2+", vocab: 7200, activeVocab: 4300, pct: 15, falseAlarm: 0.05, produceRate: 0.6 },
+    flu: { band12: 4, band: "B1", pct: 45, partial: true, spw: 1.6 },
+  };
+}
 
 /* ---------- 홈 탭 ---------- */
 /* 캐릭터 아트(CharDoodle)를 사용자가 "일단 보기 싫다"고 해서 임시로 꺼둔 스위치(2026-07-14).
@@ -1797,15 +1867,16 @@ function streakHl(streak) {
   if (streak < 30) return "green";
   return "blue";
 }
-/* 더미 진행값 — tier=현재 획득한 최고 티어 인덱스(-1=미획득), dates=각 획득 티어의 달성일. */
+/* 더미 진행값 — tier=현재 획득한 최고 티어 인덱스(-1=미획득), dates=각 획득 티어의 달성일.
+   가상 페르소나: 어휘력 B2+ · 작문력 B1 · 3개월 정도(2026-04 중순~) 띄엄띄엄 학습한 사용자(2026-07-16). */
 const BADGE_PROGRESS = {
-  streak: { tier: 2, dates: ["2026.06.10", "2026.06.20", "2026.07.04"] },
-  words: { tier: 3, dates: ["2026.06.11", "2026.06.25", "2026.07.02", "2026.07.09"] },
-  listen: { tier: 1, dates: ["2026.06.13", "2026.07.01"] },
-  talk: { tier: 0, dates: ["2026.06.22"] },
-  level: { tier: 2, dates: ["2026.06.15", "2026.06.28", "2026.07.10"] },
-  roots: { tier: 2, dates: ["2026.06.18", "2026.06.30", "2026.07.08"] },
-  review: { tier: 1, dates: ["2026.06.19", "2026.07.05"] },
+  streak: { tier: 1, dates: ["2026.04.19", "2026.04.23"] },
+  words: { tier: 0, dates: ["2026.05.02"] },
+  listen: { tier: 1, dates: ["2026.04.20", "2026.05.15"] },
+  talk: { tier: 0, dates: ["2026.06.02"] },
+  level: { tier: 3, dates: ["2026.04.18", "2026.04.25", "2026.05.20", "2026.07.10"] },
+  roots: { tier: 1, dates: ["2026.04.22", "2026.06.05"] },
+  review: { tier: 1, dates: ["2026.05.05", "2026.06.28"] },
   friend: { tier: -1, dates: [] },
   sos: { tier: -1, dates: [] },
 };
@@ -1948,7 +2019,7 @@ function BadgeDetail({ sel, onClose }) {
 function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
   const [badgeSel, setBadgeSel] = useState(null); // {catKey, tierIdx} | null
   const chr = CHARACTERS.find(c => c.k === charK) || null;
-  const STREAK = 12;                       // 데모: 실제로는 학습 로그에서
+  const STREAK = 4;                        // 데모: 실제로는 학습 로그에서(3개월 띄엄띄엄 학습 페르소나 — 최근 재개)
   const stage = streakStage(STREAK);       // 1~4
   const speed = { "--bob": (0.64 - stage * 0.06) + "s", "--road": (0.8 - stage * 0.09) + "s" };
 
@@ -2019,11 +2090,12 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
       {badgeSel && <BadgeDetail sel={badgeSel} onClose={() => setBadgeSel(null)} />}
 
       <div className="level-row" onClick={() => onGoTab("dict")}>
-        {/* 형광펜 색은 cefrHl 하이어라키 규칙 공유: B1=옐로우(중급), 어휘량 4,200은 B1대 수준이라 동일 톤,
-            백분위는 상위 구간일수록 상급 색(<=10 블루·<=25 핑크·<=50 옐로우·그외 연두)로 매핑 */}
-        <div className={"stat tier-" + cefrHl("B1")}><div className="v"><span className={"hl hl-" + cefrHl("B1")} style={{ transform: "rotate(-1.5deg)" }}>B1</span></div><div className="l">CEFR 레벨</div></div>
-        <div className={"stat tier-" + cefrHl("B1")}><div className="v"><span className={"hl hl-" + cefrHl("B1")} style={{ transform: "rotate(1deg)" }}>4,200</span></div><div className="l">추정 어휘량</div></div>
-        <div className="stat tier-pink"><div className="v"><span className="hl hl-pink" style={{ transform: "rotate(-1deg)" }}>상위 18%</span></div><div className="l">백분위</div></div>
+        {/* 형광펜 색은 cefrHl 하이어라키 규칙 공유: B2=옐로우(중급), 어휘량 6,800은 B2대 수준이라 동일 톤,
+            백분위는 상위 구간일수록 상급 색(<=10 블루·<=25 핑크·<=50 옐로우·그외 연두)로 매핑.
+            페르소나: 어휘력 B2+ · 작문력 B1 · 3개월 정도 띄엄띄엄 학습(2026-07-16). */}
+        <div className={"stat tier-" + cefrHl("B2")}><div className="v"><span className={"hl hl-" + cefrHl("B2")} style={{ transform: "rotate(-1.5deg)" }}>B2</span></div><div className="l">CEFR 레벨</div></div>
+        <div className={"stat tier-" + cefrHl("B2")}><div className="v"><span className={"hl hl-" + cefrHl("B2")} style={{ transform: "rotate(1deg)" }}>6,800</span></div><div className="l">추정 어휘량</div></div>
+        <div className="stat tier-pink"><div className="v"><span className="hl hl-pink" style={{ transform: "rotate(-1deg)" }}>상위 22%</span></div><div className="l">백분위</div></div>
       </div>
 
       <div className="sec">오늘의 루틴</div>
@@ -4611,7 +4683,7 @@ function App() {
       <div className="topbar">
         <div className="brand" role="button" tabIndex={0} onClick={() => setTab("home")} style={{ cursor: "pointer" }}>No<b>English</b></div>
         <div className="topbar-right">
-          <span className="pill"><span className={"dot hl-" + streakHl(12)} />연속 12일</span>
+          <span className="pill"><span className={"dot hl-" + streakHl(4)} />연속 4일</span>
           <button className="avatar-btn" aria-label="설정" onClick={() => setSettingsOpen(true)}><Icon name="settings" size={19} /></button>
         </div>
       </div>
