@@ -1,0 +1,17 @@
+# Cloudflare Workers 정적 자산(Assets)용 응답 헤더 커스터마이즈.
+# PWA 업데이트가 재시작해도 반영 안 되던 버그(2026-07-16) — index.html의
+# <meta http-equiv="Cache-Control"> 태그는 실제 HTTP 캐시 계층에서 무시되는 경우가
+# 많아(특히 iOS 홈 화면 standalone 앱), 진짜 응답 헤더로 no-cache를 강제해야 함.
+# words.js/manifest.json/폰트 등은 index.html이 ?v= 쿼리로 버전을 못박아 참조하므로
+# 여기서 캐시를 막을 필요 없음 — 새 버전이면 어차피 새 URL이라 자동으로 새로 받아짐.
+/
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/index.html
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/manifest.json
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/version.json
+  Cache-Control: no-cache, no-store, must-revalidate

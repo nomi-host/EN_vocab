@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.33.1">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.33.1" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.33.1" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.33.2">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.33.2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.33.2" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.33.1"></script><style>
+<script src="words.js?v=0.33.2"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.33.1") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.33.1") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.33.2") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.33.2") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.33.1") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.33.1") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.33.2") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.33.2") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -696,7 +696,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.33.1";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.33.2";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -4619,7 +4619,9 @@ function App() {
       {updateAvailable && (
         <div className="update-banner">
           <span>새 버전이 있어요</span>
-          <button onClick={() => window.location.reload()}>새로고침</button>
+          {/* location.reload()는 브라우저가 여전히 캐시에서 서빙할 수 있어(특히 iOS 홈화면
+              standalone 앱) 눌러도 그대로인 경우가 있었음 — 매번 다른 쿼리로 강제 새 요청 */}
+          <button onClick={() => { window.location.href = window.location.pathname + "?_=" + Date.now(); }}>새로고침</button>
         </div>
       )}
 
