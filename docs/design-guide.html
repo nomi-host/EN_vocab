@@ -18,8 +18,9 @@
       url("../img/fonts/LINESeedKR-Bold.woff") format("woff");
 }
 :root{
-  /* index.html :root 토큰과 100% 동일한 값 — 이 파일이 소스가 아니라 인덱스가 소스,
-     여기 값을 고치면 실제 앱에는 반영 안 됨(참고/피그마 대조용). */
+  /* index.html :root 토큰과 100% 동일한 값(하드코딩) — 이 파일이 소스가 아니라 인덱스가 소스,
+     여기 값을 고쳐도 실제 앱에는 반영 안 됨(참고/피그마 대조용). 스크립트 없이도 항상 보이도록
+     모든 스와치·표는 정적 HTML로 직접 써둠(2026-07-16, JS 차단 뷰어에서 안 보이던 문제 수정). */
   --bg:#FFFAF1; --surface:#FFFDF8; --surface-container:#FBF4E3; --surface-container-high:#F1E7CE;
   --ink:#211C15; --ink-2:#4A4234; --muted:#8C8270; --line:#E6DCC3; --fill:#FAF4E7;
   --accent:#211C15; --accent-deep:#4A3A20; --accent-soft:#EDE1C2;
@@ -53,10 +54,11 @@ code{background:var(--fill); border-radius:4px; padding:1px 5px; font-size:.92em
 .grp-lbl{font-size:11px; font-weight:800; color:var(--muted); text-transform:uppercase; letter-spacing:.04em; margin:18px 0 8px;}
 
 /* ---- 타이포 스케일 ---- */
-.type-row{display:flex; align-items:baseline; gap:16px; padding:8px 0; border-bottom:1px solid var(--line);}
+.type-row{display:flex; align-items:baseline; gap:16px; padding:8px 0; border-bottom:1px solid var(--line); flex-wrap:wrap;}
 .type-row .px{width:52px; flex:none; font-size:11px; font-family:monospace; color:var(--muted);}
 .type-row .cls{width:190px; flex:none; font-size:11px; font-family:monospace; color:var(--accent-deep);}
 .type-row .sample{font-weight:700;}
+.type-row .note-inline{font-size:11px; color:var(--muted); margin-left:auto;}
 
 /* ---- 아이콘 사이즈 ---- */
 .icon-row{display:flex; align-items:flex-end; gap:22px; flex-wrap:wrap;}
@@ -102,7 +104,8 @@ code{background:var(--fill); border-radius:4px; padding:1px 5px; font-size:.92em
 
 <h1>NoEnglish 디자인 가이드</h1>
 <div class="sub">index.html의 CSS 토큰을 그대로 옮긴 참고용 페이지 — 여기서 값을 바꿔도 앱에는 반영되지 않습니다.
-피그마에서 이 값들을 기준으로 수정한 뒤 바뀐 부분을 알려주시면 index.html에 반영해드립니다. (2026-07-15)</div>
+피그마에서 이 값들을 기준으로 수정한 뒤 바뀐 부분을 알려주시면 index.html에 반영해드립니다. 스크립트 없이 순수 HTML/CSS로만
+만들어서 어떤 뷰어에서 열어도 그대로 보입니다. (2026-07-16)</div>
 
 <section>
   <h2>컬러</h2>
@@ -110,38 +113,322 @@ code{background:var(--fill); border-radius:4px; padding:1px 5px; font-size:.92em
     형광펜(하이라이터) 5색은 뱃지·태그·탭바 활성색 등에 쓰입니다. 각 색상 하단 라벨이 CSS 변수명입니다.</div>
 
   <div class="grp-lbl">배경 · 잉크</div>
-  <div class="swrow" id="sw-base"></div>
+  <div class="swrow">
+    <div class="sw">
+      <div class="sw-box" style="background:#FFFAF1"><span class="hex">#FFFAF1</span></div>
+      <div class="sw-name">bg</div><div class="sw-var">--bg</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#FFFDF8"><span class="hex">#FFFDF8</span></div>
+      <div class="sw-name">surface</div><div class="sw-var">--surface</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#FBF4E3"><span class="hex">#FBF4E3</span></div>
+      <div class="sw-name">surface-container</div><div class="sw-var">--surface-container</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#F1E7CE"><span class="hex">#F1E7CE</span></div>
+      <div class="sw-name">surface-container-high</div><div class="sw-var">--surface-container-high</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#211C15"><span class="hex">#211C15</span></div>
+      <div class="sw-name">ink</div><div class="sw-var">--ink</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#4A4234"><span class="hex">#4A4234</span></div>
+      <div class="sw-name">ink-2</div><div class="sw-var">--ink-2</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#8C8270"><span class="hex">#8C8270</span></div>
+      <div class="sw-name">muted</div><div class="sw-var">--muted</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#E6DCC3"><span class="hex">#E6DCC3</span></div>
+      <div class="sw-name">line</div><div class="sw-var">--line</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#FAF4E7"><span class="hex">#FAF4E7</span></div>
+      <div class="sw-name">fill</div><div class="sw-var">--fill</div>
+    </div>
+  </div>
 
   <div class="grp-lbl">강조 · 웜그레이</div>
-  <div class="swrow" id="sw-accent"></div>
+  <div class="swrow">
+    <div class="sw">
+      <div class="sw-box" style="background:#211C15"><span class="hex">#211C15</span></div>
+      <div class="sw-name">accent</div><div class="sw-var">--accent</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#4A3A20"><span class="hex">#4A3A20</span></div>
+      <div class="sw-name">accent-deep</div><div class="sw-var">--accent-deep</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#EDE1C2"><span class="hex">#EDE1C2</span></div>
+      <div class="sw-name">accent-soft</div><div class="sw-var">--accent-soft</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#EEEBE3"><span class="hex">#EEEBE3</span></div>
+      <div class="sw-name">warmgray-light</div><div class="sw-var">--warmgray-light</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#D6D1C4"><span class="hex">#D6D1C4</span></div>
+      <div class="sw-name">warmgray (mid)</div><div class="sw-var">--warmgray</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#B3AC98"><span class="hex">#B3AC98</span></div>
+      <div class="sw-name">warmgray-dark</div><div class="sw-var">--warmgray-dark</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#FFFBF1"><span class="hex">#FFFBF1</span></div>
+      <div class="sw-name">on-accent</div><div class="sw-var">--on-accent</div>
+    </div>
+  </div>
 
   <div class="grp-lbl">형광펜 — base(마커·큰 강조 텍스트용)</div>
-  <div class="swrow" id="sw-hi-base"></div>
+  <div class="swrow">
+    <div class="sw">
+      <div class="sw-box" style="background:#D8ED77"><span class="hex">#D8ED77</span></div>
+      <div class="sw-name">green</div><div class="sw-var">--hi-green</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#FFDD5C"><span class="hex">#FFDD5C</span></div>
+      <div class="sw-name">yellow</div><div class="sw-var">--hi-yellow</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#FFB4D4"><span class="hex">#FFB4D4</span></div>
+      <div class="sw-name">pink</div><div class="sw-var">--hi-pink</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#93D3FF"><span class="hex">#93D3FF</span></div>
+      <div class="sw-name">blue</div><div class="sw-var">--hi-blue</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#FFB459"><span class="hex">#FFB459</span></div>
+      <div class="sw-name">orange</div><div class="sw-var">--hi-orange</div>
+    </div>
+  </div>
 
   <div class="grp-lbl">형광펜 — green (xlight/light/dark/xdark)</div>
-  <div class="swrow" id="sw-hi-green"></div>
+  <div class="swrow">
+    <div class="sw">
+      <div class="sw-box" style="background:#F6FBE1"><span class="hex">#F6FBE1</span></div>
+      <div class="sw-name">green xlight</div><div class="sw-var">--hi-green-xlight</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#E7F4AB"><span class="hex">#E7F4AB</span></div>
+      <div class="sw-name">green light</div><div class="sw-var">--hi-green-light</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#92AD17"><span class="hex">#92AD17</span></div>
+      <div class="sw-name">green dark</div><div class="sw-var">--hi-green-dark</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#45520B"><span class="hex">#45520B</span></div>
+      <div class="sw-name">green xdark</div><div class="sw-var">--hi-green-xdark</div>
+    </div>
+  </div>
   <div class="grp-lbl">형광펜 — yellow</div>
-  <div class="swrow" id="sw-hi-yellow"></div>
+  <div class="swrow">
+    <div class="sw">
+      <div class="sw-box" style="background:#FFF8DB"><span class="hex">#FFF8DB</span></div>
+      <div class="sw-name">yellow xlight</div><div class="sw-var">--hi-yellow-xlight</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#FFEA9A"><span class="hex">#FFEA9A</span></div>
+      <div class="sw-name">yellow light</div><div class="sw-var">--hi-yellow-light</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#BF9700"><span class="hex">#BF9700</span></div>
+      <div class="sw-name">yellow dark</div><div class="sw-var">--hi-yellow-dark</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#5A4700"><span class="hex">#5A4700</span></div>
+      <div class="sw-name">yellow xdark</div><div class="sw-var">--hi-yellow-xdark</div>
+    </div>
+  </div>
   <div class="grp-lbl">형광펜 — pink</div>
-  <div class="swrow" id="sw-hi-pink"></div>
+  <div class="swrow">
+    <div class="sw">
+      <div class="sw-box" style="background:#FFEEF6"><span class="hex">#FFEEF6</span></div>
+      <div class="sw-name">pink xlight</div><div class="sw-var">--hi-pink-xlight</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#FFD1E4"><span class="hex">#FFD1E4</span></div>
+      <div class="sw-name">pink light</div><div class="sw-var">--hi-pink-light</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#EF0066"><span class="hex">#EF0066</span></div>
+      <div class="sw-name">pink dark</div><div class="sw-var">--hi-pink-dark</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#710030"><span class="hex">#710030</span></div>
+      <div class="sw-name">pink xdark</div><div class="sw-var">--hi-pink-xdark</div>
+    </div>
+  </div>
   <div class="grp-lbl">형광펜 — blue</div>
-  <div class="swrow" id="sw-hi-blue"></div>
+  <div class="swrow">
+    <div class="sw">
+      <div class="sw-box" style="background:#E7F5FF"><span class="hex">#E7F5FF</span></div>
+      <div class="sw-name">blue xlight</div><div class="sw-var">--hi-blue-xlight</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#BCE4FF"><span class="hex">#BCE4FF</span></div>
+      <div class="sw-name">blue light</div><div class="sw-var">--hi-blue-light</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#0083DD"><span class="hex">#0083DD</span></div>
+      <div class="sw-name">blue dark</div><div class="sw-var">--hi-blue-dark</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#003E69"><span class="hex">#003E69</span></div>
+      <div class="sw-name">blue xdark</div><div class="sw-var">--hi-blue-xdark</div>
+    </div>
+  </div>
 
   <div class="grp-lbl">시맨틱</div>
-  <div class="swrow" id="sw-semantic"></div>
+  <div class="swrow">
+    <div class="sw">
+      <div class="sw-box" style="background:#2F8F5B"><span class="hex">#2F8F5B</span></div>
+      <div class="sw-name">good</div><div class="sw-var">--good</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#E3F1E7"><span class="hex">#E3F1E7</span></div>
+      <div class="sw-name">good-container</div><div class="sw-var">--good-container</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#D9483C"><span class="hex">#D9483C</span></div>
+      <div class="sw-name">danger</div><div class="sw-var">--danger</div>
+    </div>
+    <div class="sw">
+      <div class="sw-box" style="background:#F9E1DD"><span class="hex">#F9E1DD</span></div>
+      <div class="sw-name">danger-container</div><div class="sw-var">--danger-container</div>
+    </div>
+  </div>
 </section>
 
 <section>
   <h2>타이포그래피</h2>
   <div class="note">주요 클래스의 폰트 크기. Bold(700)는 <code>font-weight:800</code>인 굵은 텍스트, 나머지는 400~700 사이.</div>
-  <div id="type-scale"></div>
+  <div class="type-row">
+    <span class="px">9px</span><span class="cls">.cf</span>
+    <span class="sample" style="font-size:9px;">Aa 가나다 9</span>
+    <span class="note-inline">레벨테스트 분포도 눈금</span>
+  </div>
+  <div class="type-row">
+    <span class="px">10px</span><span class="cls">.tag / .mth / .sign-lbl</span>
+    <span class="sample" style="font-size:10px;">Aa 가나다 10</span>
+    <span class="note-inline">가장 작은 태그·라벨</span>
+  </div>
+  <div class="type-row">
+    <span class="px">11px</span><span class="cls">.tab / .l / .n</span>
+    <span class="sample" style="font-size:11px;">Aa 가나다 11</span>
+    <span class="note-inline">탭바 라벨, 보조 텍스트</span>
+  </div>
+  <div class="type-row">
+    <span class="px">12px</span><span class="cls">.wd-sec-t / .step-sub / .qhint</span>
+    <span class="sample" style="font-size:12px;">Aa 가나다 12</span>
+    <span class="note-inline">섹션 소제목, 보조 설명</span>
+  </div>
+  <div class="type-row">
+    <span class="px">13px</span><span class="cls">.chip / .pill / .qhint-btn</span>
+    <span class="sample" style="font-size:13px;">Aa 가나다 13</span>
+    <span class="note-inline">칩·필·버튼 텍스트</span>
+  </div>
+  <div class="type-row">
+    <span class="px">14px</span><span class="cls">.pf-name / .step-title</span>
+    <span class="sample" style="font-size:14px;">Aa 가나다 14</span>
+    <span class="note-inline">리스트 아이템 제목</span>
+  </div>
+  <div class="type-row">
+    <span class="px">15px</span><span class="cls">카드 본문</span>
+    <span class="sample" style="font-size:15px;">Aa 가나다 15</span>
+    <span class="note-inline">예문·본문 텍스트</span>
+  </div>
+  <div class="type-row">
+    <span class="px">16px</span><span class="cls">단어 카드 본문</span>
+    <span class="sample" style="font-size:16px;">Aa 가나다 16</span>
+    
+  </div>
+  <div class="type-row">
+    <span class="px">17px</span><span class="cls">.sec (섹션 타이틀, 800)</span>
+    <span class="sample" style="font-size:17px;">Aa 가나다 17</span>
+    <span class="note-inline">홈/뱃지컬렉션/SOS 섹션 타이틀 — 26px에서 2/3로 축소</span>
+  </div>
+  <div class="type-row">
+    <span class="px">18px</span><span class="cls">단어 상세 표제어(소)</span>
+    <span class="sample" style="font-size:18px;">Aa 가나다 18</span>
+    
+  </div>
+  <div class="type-row">
+    <span class="px">19px</span><span class="cls">레벨테스트 결과 수치</span>
+    <span class="sample" style="font-size:19px;">Aa 가나다 19</span>
+    
+  </div>
+  <div class="type-row">
+    <span class="px">20px</span><span class="cls">.ptbox .v / 아이콘 20px 짝</span>
+    <span class="sample" style="font-size:20px;">Aa 가나다 20</span>
+    <span class="note-inline">포인트 수치</span>
+  </div>
+  <div class="type-row">
+    <span class="px">21px</span><span class="cls">단어 상세 표제어</span>
+    <span class="sample" style="font-size:21px;">Aa 가나다 21</span>
+    
+  </div>
+  <div class="type-row">
+    <span class="px">22px</span><span class="cls">카드 세션 헤더</span>
+    <span class="sample" style="font-size:22px;">Aa 가나다 22</span>
+    
+  </div>
+  <div class="type-row">
+    <span class="px">24px</span><span class="cls">홈 오늘의 루틴 강조 수치</span>
+    <span class="sample" style="font-size:24px;">Aa 가나다 24</span>
+    
+  </div>
+  <div class="type-row">
+    <span class="px">28px</span><span class="cls">레벨테스트 결과 대문자 레벨</span>
+    <span class="sample" style="font-size:28px;">Aa 가나다 28</span>
+    
+  </div>
+  <div class="type-row">
+    <span class="px">40px</span><span class="cls">완료 화면 큰 수치</span>
+    <span class="sample" style="font-size:40px;">Aa 가나다 40</span>
+    
+  </div>
 </section>
 
 <section>
   <h2>아이콘 크기</h2>
   <div class="note"><code>&lt;Icon size={N}&gt;</code>로 쓰이는 실제 크기들(점은 크기 비교용 더미이며 실제 아이콘은 SVG stroke).
     가장 흔한 크기는 20px(리스트 아이콘)이고, 탭바만 26px(기본 24px의 110%).</div>
-  <div class="icon-row" id="icon-sizes"></div>
+  <div class="icon-row">
+    <div class="icon-cell">
+      <div class="icon-dot" style="width:13px;height:13px;"></div><span class="lbl">13px</span>
+    </div>
+    <div class="icon-cell">
+      <div class="icon-dot" style="width:15px;height:15px;"></div><span class="lbl">15px</span>
+    </div>
+    <div class="icon-cell">
+      <div class="icon-dot" style="width:16px;height:16px;"></div><span class="lbl">16px</span>
+    </div>
+    <div class="icon-cell">
+      <div class="icon-dot" style="width:18px;height:18px;"></div><span class="lbl">18px</span>
+    </div>
+    <div class="icon-cell">
+      <div class="icon-dot" style="width:19px;height:19px;"></div><span class="lbl">19px</span>
+    </div>
+    <div class="icon-cell">
+      <div class="icon-dot" style="width:20px;height:20px;"></div><span class="lbl">20px</span>
+    </div>
+    <div class="icon-cell">
+      <div class="icon-dot" style="width:22px;height:22px;"></div><span class="lbl">22px</span>
+    </div>
+    <div class="icon-cell">
+      <div class="icon-dot" style="width:24px;height:24px;"></div><span class="lbl">24px</span>
+    </div>
+    <div class="icon-cell">
+      <div class="icon-dot" style="width:26px;height:26px;"></div><span class="lbl">26px</span>
+    </div>
+  </div>
 </section>
 
 <section>
@@ -193,9 +480,19 @@ code{background:var(--fill); border-radius:4px; padding:1px 5px; font-size:.92em
   <h2>뱃지 · 태그</h2>
   <div class="note">뱃지 티어(브론즈~플래티넘)는 형광펜 4색의 xlight/xdark 조합. 학습상태(due) 태그는 잉크 블랙 위에 opacity 단계로 진하기 조절(가장 진한 것도 50% 캡).</div>
   <div class="grp-lbl">뱃지 메달 티어</div>
-  <div class="medal-row" id="medal-tiers"></div>
+  <div class="medal-row">
+    <div class="medal" style="background:#F6FBE1;color:#45520B;border:1.5px solid #45520B;">브론즈</div>
+    <div class="medal" style="background:#FFF8DB;color:#5A4700;border:1.5px solid #5A4700;">실버</div>
+    <div class="medal" style="background:#FFEEF6;color:#710030;border:1.5px solid #710030;">골드</div>
+    <div class="medal" style="background:#E7F5FF;color:#003E69;border:1.5px solid #003E69;">플래티넘</div>
+  </div>
   <div class="grp-lbl" style="margin-top:20px;">복습 상태 태그 (due-t0 ~ t3, 진할수록 임박)</div>
-  <div id="due-tags"></div>
+  <div>
+  <span class="tag-demo" style="background:rgba(33,28,21,0.5);color:#FFFBF1;">due-t0 (오늘·임박) · 50%</span>
+  <span class="tag-demo" style="background:rgba(33,28,21,0.33);color:#211C15;">due-t1 · 33%</span>
+  <span class="tag-demo" style="background:rgba(33,28,21,0.19);color:#211C15;">due-t2 · 19%</span>
+  <span class="tag-demo" style="background:rgba(33,28,21,0.09);color:#4A4234;">due-t3 (여유) · 9%</span>
+  </div>
 </section>
 
 <section>
@@ -209,93 +506,5 @@ code{background:var(--fill); border-radius:4px; padding:1px 5px; font-size:.92em
   </div>
 </section>
 
-<script>
-function sw(container, name, varName) {
-  const val = getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
-  const el = document.createElement('div');
-  el.className = 'sw';
-  el.innerHTML = `<div class="sw-box" style="background:${val}"><span class="hex">${val}</span></div>
-    <div class="sw-name">${name}</div><div class="sw-var">${varName}</div>`;
-  document.getElementById(container).appendChild(el);
-}
-[["bg","--bg"],["surface","--surface"],["surface-container","--surface-container"],["surface-container-high","--surface-container-high"],
- ["ink","--ink"],["ink-2","--ink-2"],["muted","--muted"],["line","--line"],["fill","--fill"]].forEach(([n,v]) => sw("sw-base", n, v));
-
-[["accent","--accent"],["accent-deep","--accent-deep"],["accent-soft","--accent-soft"],
- ["warmgray-light","--warmgray-light"],["warmgray (mid)","--warmgray"],["warmgray-dark","--warmgray-dark"],
- ["on-accent","--on-accent"]].forEach(([n,v]) => sw("sw-accent", n, v));
-
-[["green","--hi-green"],["yellow","--hi-yellow"],["pink","--hi-pink"],["blue","--hi-blue"],["orange","--hi-orange"]]
-  .forEach(([n,v]) => sw("sw-hi-base", n, v));
-
-["green","yellow","pink","blue"].forEach(c => {
-  ["xlight","light","dark","xdark"].forEach(t => sw("sw-hi-" + c, c + " " + t, `--hi-${c}-${t}`));
-});
-
-[["good","--good"],["good-container","--good-container"],["danger","--danger"],["danger-container","--danger-container"]]
-  .forEach(([n,v]) => sw("sw-semantic", n, v));
-
-// 타이포 스케일
-const typeScale = [
-  [9, ".cf", "레벨테스트 분포도 눈금"],
-  [10, ".tag / .mth / .sign-lbl", "가장 작은 태그·라벨"],
-  [11, ".tab / .l / .n", "탭바 라벨, 보조 텍스트"],
-  [12, ".wd-sec-t / .step-sub / .qhint", "섹션 소제목, 보조 설명"],
-  [13, ".chip / .pill / .qhint-btn", "칩·필·버튼 텍스트"],
-  [14, ".pf-name / .step-title", "리스트 아이템 제목"],
-  [15, "카드 본문", "예문·본문 텍스트"],
-  [16, "단어 카드 본문", ""],
-  [17, ".sec (섹션 타이틀, 800)", "홈/뱃지컬렉션/SOS 섹션 타이틀 — 26px에서 2/3로 축소"],
-  [18, "단어 상세 표제어(소)", ""],
-  [19, "레벨테스트 결과 수치", ""],
-  [20, ".ptbox .v / 아이콘 20px 짝", "포인트 수치"],
-  [21, "단어 상세 표제어", ""],
-  [22, "카드 세션 헤더", ""],
-  [24, "홈 오늘의 루틴 강조 수치", ""],
-  [28, "레벨테스트 결과 대문자 레벨", ""],
-  [40, "완료 화면 큰 수치", ""],
-];
-const typeEl = document.getElementById('type-scale');
-typeScale.forEach(([px, cls, note]) => {
-  const row = document.createElement('div');
-  row.className = 'type-row';
-  row.innerHTML = `<span class="px">${px}px</span><span class="cls">${cls}</span>
-    <span class="sample" style="font-size:${px}px;">Aa 가나다 ${px}</span>`;
-  if (note) row.innerHTML += `<span style="font-size:11px;color:var(--muted);margin-left:auto;">${note}</span>`;
-  typeEl.appendChild(row);
-});
-
-// 아이콘 사이즈
-[13,15,16,18,19,20,22,24,26].forEach(px => {
-  const cell = document.createElement('div');
-  cell.className = 'icon-cell';
-  cell.innerHTML = `<div class="icon-dot" style="width:${px}px;height:${px}px;"></div><span class="lbl">${px}px</span>`;
-  document.getElementById('icon-sizes').appendChild(cell);
-});
-
-// 뱃지 메달 티어
-[["브론즈","--hi-green-xlight","--hi-green-xdark"],["실버","--hi-yellow-xlight","--hi-yellow-xdark"],
- ["골드","--hi-pink-xlight","--hi-pink-xdark"],["플래티넘","--hi-blue-xlight","--hi-blue-xdark"]].forEach(([name, bg, fg]) => {
-  const val_bg = getComputedStyle(document.documentElement).getPropertyValue(bg).trim();
-  const val_fg = getComputedStyle(document.documentElement).getPropertyValue(fg).trim();
-  const el = document.createElement('div');
-  el.className = 'medal';
-  el.style.background = val_bg; el.style.color = val_fg; el.style.border = `1.5px solid ${val_fg}`;
-  el.textContent = name;
-  document.getElementById('medal-tiers').appendChild(el);
-});
-
-// due 태그 (0.09 ~ 0.5 opacity, 가장 진한 게 50% 캡)
-const dueEl = document.getElementById('due-tags');
-[[0.5, "#FFFBF1", "due-t0 (오늘·임박)"], [0.33, "var(--ink)", "due-t1"], [0.19, "var(--ink)", "due-t2"], [0.09, "var(--ink-2)", "due-t3 (여유)"]]
-  .forEach(([op, color, label]) => {
-    const el = document.createElement('span');
-    el.className = 'tag-demo';
-    el.style.background = `rgba(33,28,21,${op})`;
-    el.style.color = color;
-    el.textContent = label + ` · ${Math.round(op*100)}%`;
-    dueEl.appendChild(el);
-  });
-</script>
 </body>
 </html>
