@@ -14,13 +14,11 @@
        직접 두드려 Gemini/TTS 쿼터를 대신 써버릴 수 있음(2026-07-16, 실제로 겪은 문제).
    환경변수(wrangler.toml [vars]):
      ALLOWED_ORIGINS — 쉼표 구분 허용 오리진 목록(비우면 전부 허용 — 배포 후 반드시 좁힐 것)
-     GEMINI_MODEL — 기본 gemini-3-pro-preview. 이 계정(신규 발급 키)에서 2.x 세대 모델은 전부
-       막혀있는 것으로 확인됨(2026-07-16, 순서대로 시도): gemini-2.0-flash는 분당 요청 한도가
-       0/0(Google AI Studio "모델별 비율 제한" 화면 확인), gemini-2.5-flash·gemini-2.5-flash-lite는
-       models.list엔 나오지만 실제 호출 시 둘 다 404 "no longer available to new users" — 즉
-       models.list에 있다고 실제로 호출 가능한 게 아님. models.list에서 gemini-3-pro-preview
-       (최신 세대, generateContent 지원)를 찾아 반영. **같은 증상 재발 시 또 다른 2.x 모델로
-       추측하지 말고 3.x 이상 모델을 먼저 시도할 것.**
+     GEMINI_MODEL — (선택) 설정하면 폴백 체인의 최우선 후보로 끼워짐. 미설정 권장 — 모델 선택은
+       MODEL_FALLBACKS 폴백 체인이 알아서 처리(하나가 404/429로 막혀도 다음 후보로 자동 전환).
+       배경(2026-07-16): 이 계정(신규 발급 키)에서 gemini-2.0-flash는 분당 한도 0/0(429),
+       gemini-2.5-flash·gemini-2.5-flash-lite는 models.list엔 stable로 나오는데 실제 호출은
+       404 "no longer available to new users" — 모델 하나에 거는 구조 자체가 위험해 폴백 체인 도입.
    PLAN.md 6.6 참고: 지금은 P0 단계(사용량 DB 카운트 없음) — 개인용 규모 전제.
 ============================================================================ */
 
@@ -68,6 +66,40 @@ function base64ToBytes(b64) {
   return bytes;
 }
 
+/* Google이 모델을 예고 없이 막거나(404 "no longer available") 한도를 0으로 배정(429)하는 일이
+   실제로 반복돼서(2026-07-16, 2.0-flash→429, 2.5-flash·2.5-flash-lite→404), 모델 하나에 걸지 않고
+   후보 목록을 순서대로 시도한다. 404/429(모델 자체가 안 열린 경우)면 다음 후보로 자동 폴백 —
+   Google이 또 이름을 바꿔도 앱은 계속 동작. env.GEMINI_MODEL이 있으면 최우선 후보로 끼워준다. */
+const MODEL_FALLBACKS = ["gemini-3-pro-preview", "gemini-2.5-flash-lite", "gemini-2.0-flash-001", "gemini-2.0-flash"];
+function modelCandidates(env) {
+  const list = env.GEMINI_MODEL ? [env.GEMINI_MODEL, ...MODEL_FALLBACKS] : MODEL_FALLBACKS.slice();
+  return [...new Set(list)];
+}
+/* 후보를 차례로 시도해 첫 성공 응답의 텍스트를 반환. 전부 실패하면 마지막 에러를 담아 throw. */
+async function callGeminiWithFallback(env, contents, generationConfig) {
+  let lastStatus = 0, lastDetail = "";
+  for (const model of modelCandidates(env)) {
+    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${env.GEMINI_API_KEY}`;
+    const upstream = await fetch(apiUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ contents, generationConfig }),
+    });
+    if (upstream.ok) {
+      const data = await upstream.json();
+      const text = (data.candidates && data.candidates[0] && data.candidates[0].content &&
+        (data.candidates[0].content.parts || []).map(p => p.text || "").join("")) || "";
+      return text.trim();
+    }
+    lastStatus = upstream.status;
+    lastDetail = await upstream.text().catch(() => "");
+    // 404(모델 없음/미개방)·429(한도 0 배정 포함)는 모델 단위 문제일 수 있으니 다음 후보 시도.
+    // 그 외(400 잘못된 요청, 401/403 키 문제 등)는 모델을 바꿔도 똑같으므로 즉시 중단.
+    if (upstream.status !== 404 && upstream.status !== 429) break;
+  }
+  throw new Error(`gemini upstream error (${lastStatus}): ${lastDetail.slice(0, 300)}`);
+}
+
 async function handleGemini(request, env, headers) {
   let body;
   try { body = await request.json(); } catch (e) { return json({ error: "invalid json" }, 400, headers); }
@@ -75,24 +107,14 @@ async function handleGemini(request, env, headers) {
   if (!prompt || prompt.length > 2000) return json({ error: "invalid prompt" }, 400, headers);
   if (!env.GEMINI_API_KEY) return json({ error: "server not configured" }, 500, headers);
 
-  const model = env.GEMINI_MODEL || "gemini-3-pro-preview";
-  const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${env.GEMINI_API_KEY}`;
-  const upstream = await fetch(apiUrl, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: { temperature: 0.4, maxOutputTokens: 300 },
-    }),
-  });
-  if (!upstream.ok) {
-    const detail = await upstream.text().catch(() => "");
-    return json({ error: "gemini upstream error", detail: detail.slice(0, 300) }, 502, headers);
+  try {
+    const text = await callGeminiWithFallback(env,
+      [{ parts: [{ text: prompt }] }],
+      { temperature: 0.4, maxOutputTokens: 300 });
+    return json({ text }, 200, headers);
+  } catch (e) {
+    return json({ error: (e && e.message) || "gemini upstream error" }, 502, headers);
   }
-  const data = await upstream.json();
-  const text = (data.candidates && data.candidates[0] && data.candidates[0].content &&
-    (data.candidates[0].content.parts || []).map(p => p.text || "").join("")) || "";
-  return json({ text: text.trim() }, 200, headers);
 }
 
 /* 음성 입력(STT) — 브라우저 내장 SpeechRecognition은 Safari(특히 iOS)에 아예 없어서,
@@ -106,29 +128,19 @@ async function handleStt(request, env, headers) {
   if (!audio || audio.length > 8000000) return json({ error: "invalid audio" }, 400, headers);
   if (!env.GEMINI_API_KEY) return json({ error: "server not configured" }, 500, headers);
 
-  const model = env.GEMINI_MODEL || "gemini-3-pro-preview";
-  const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${env.GEMINI_API_KEY}`;
-  const upstream = await fetch(apiUrl, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      contents: [{
+  try {
+    const text = await callGeminiWithFallback(env,
+      [{
         parts: [
           { text: "Transcribe the following English speech verbatim as plain text. Output only the transcription itself — no quotes, no commentary, no formatting. If nothing intelligible is said, output nothing." },
           { inline_data: { mime_type: mimeType, data: audio } },
         ],
       }],
-      generationConfig: { temperature: 0, maxOutputTokens: 200 },
-    }),
-  });
-  if (!upstream.ok) {
-    const detail = await upstream.text().catch(() => "");
-    return json({ error: "gemini upstream error", detail: detail.slice(0, 300) }, 502, headers);
+      { temperature: 0, maxOutputTokens: 200 });
+    return json({ text }, 200, headers);
+  } catch (e) {
+    return json({ error: (e && e.message) || "gemini upstream error" }, 502, headers);
   }
-  const data = await upstream.json();
-  const text = (data.candidates && data.candidates[0] && data.candidates[0].content &&
-    (data.candidates[0].content.parts || []).map(p => p.text || "").join("")) || "";
-  return json({ text: text.trim() }, 200, headers);
 }
 
 async function handleTts(request, env, headers) {
