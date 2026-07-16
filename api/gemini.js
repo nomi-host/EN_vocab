@@ -23,13 +23,15 @@ function modelCandidates(fallbacks) {
 async function callGeminiWithFallback(contents, generationConfig, fallbacks) {
   const attempts = [];
   let lastDetail = "";
+  /* 대시보드에서 복사-붙여넣기할 때 앞뒤 공백/줄바꿈이 딸려 들어가면 그것만으로 401이 나므로 trim */
+  const apiKey = (process.env.GEMINI_API_KEY || "").trim();
   for (const model of modelCandidates(fallbacks || MODEL_FALLBACKS)) {
     /* 키는 ?key= 쿼리가 아니라 x-goog-api-key 헤더로 — 신형 "AQ." 키는 쿼리 방식이면
        401("Expected OAuth 2 access token...")로 거부됨(2026-07-17 실측+웹 서치 확인). */
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
     const upstream = await fetch(apiUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json", "x-goog-api-key": process.env.GEMINI_API_KEY },
+      headers: { "Content-Type": "application/json", "x-goog-api-key": apiKey },
       body: JSON.stringify({ contents, generationConfig }),
     });
     if (upstream.ok) {
