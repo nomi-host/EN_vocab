@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.1">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.1" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.1" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.2">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.2" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.1"></script><style>
+<script src="words.js?v=0.35.2"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.1") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.1") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.2") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.2") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.1") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.1") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.2") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.2") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -70,7 +70,8 @@
   --hi-yellow-xlight:#FFF8DB; --hi-yellow-light:#FFEA9A; --hi-yellow-dark:#BF9700; --hi-yellow-xdark:#5A4700;
   --hi-pink-xlight:#FFEEF6;   --hi-pink-light:#FFD1E4;   --hi-pink-dark:#EF0066;   --hi-pink-xdark:#710030;
   --hi-blue-xlight:#E7F5FF;   --hi-blue-light:#BCE4FF;   --hi-blue-dark:#0083DD;   --hi-blue-xdark:#003E69;
-  --hi-orange:#FFB459;        /* 형광펜 — 오렌지(탭바 5번째 활성색 전용) */
+  --hi-orange-xlight:#FFF0DD; --hi-orange-light:#FFDCAF; --hi-orange-dark:#D97A00; --hi-orange-xdark:#6B3800;
+  --hi-orange:#FFB459;        /* 형광펜 — 오렌지(탭바 보관함 활성색 + 뱃지 마스터 티어). xlight/xdark는 다른 4색과 같은 밝기 위계로 파생(2026-07-17). */
   --card-border:rgba(158,124,58,.4); /* 카드류 소프트 보더(outline-variant) — 얇아진 두께(0.5px) 보완 위해 더 진한 베이지로. 인터랙션 요소는 var(--ink) 풀보더(outline) 사용 */
   --radius:0;
   --shadow:0 1px 2px rgba(33,28,21,.05), 0 8px 24px rgba(33,28,21,.06);
@@ -149,7 +150,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .medal-face{width:50px;height:50px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;line-height:1;}
 .medal .mv{font-size:15px;font-weight:800;letter-spacing:-0.6px;font-variant-numeric:tabular-nums;}
 /* 티어 톤 — 앱이 이미 문서화한 성취 위계(streakHl: 핑크<노랑<초록<파랑)에 랭크를 그대로 매핑하고
-   최상위(마스터)만 골드 포인트로 얹음(2026-07-17 재정렬). 예전엔 초록<노랑<핑크<파랑이라 "위험"
+   최상위(마스터)만 오렌지 포인트로 얹음(2026-07-17 재정렬). 예전엔 초록<노랑<핑크<파랑이라 "위험"
    의미의 핑크가 중간에 껴서 위계감이 없었음 — 레벨업 뱃지 색이 안 맞는다는 지적의 근본 원인.
    그라디언트 없이 플랫: 링=형광펜 solid, 이너 페이스=xlight, 텍스트=xdark.
    cls 키(bt-*)는 CSS 색 클래스라 그대로 두고 매핑 색만 교체(t1↔t3 스왑). */
@@ -157,12 +158,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .medal.bt-silver{background:var(--hi-yellow);}
 .medal.bt-gold{background:var(--hi-green);}
 .medal.bt-plat{background:var(--hi-blue);}
-.medal.bt-master{background:var(--accent);}
+.medal.bt-master{background:var(--hi-orange);}
 .medal.bt-bronze .medal-face{background:var(--hi-pink-xlight);color:var(--hi-pink-xdark);}
 .medal.bt-silver .medal-face{background:var(--hi-yellow-xlight);color:var(--hi-yellow-xdark);}
 .medal.bt-gold .medal-face{background:var(--hi-green-xlight);color:var(--hi-green-xdark);}
 .medal.bt-plat .medal-face{background:var(--hi-blue-xlight);color:var(--hi-blue-xdark);}
-.medal.bt-master .medal-face{background:var(--surface);color:var(--accent-deep);}
+.medal.bt-master .medal-face{background:var(--hi-orange-xlight);color:var(--hi-orange-xdark);}
 /* 상세 팝업 확대용 큰 메달(scale 대신 실측 사이즈 — scale은 레이아웃 박스를 안 넓혀서 타이틀과
    겹쳐 보이는 문제가 있었음). 팝업 동전 앞면에 이 사이즈로 렌더. */
 .medal.lg{width:132px;height:132px;box-shadow:0 6px 18px rgba(33,28,21,.22);}
@@ -722,7 +723,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.1";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.2";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1970,7 +1971,7 @@ function streakStage(days) { return days < 3 ? 1 : days < 7 ? 2 : days < 14 ? 3 
    TODO(태스크 #19 + PLAN 6장 백엔드): 위 미구현 카테고리에 실제 카운터(듣기 세션 완료, 회화 세션
    완료, 어원 상세 열람, 친구 초대, SOS 없는 회화 완주)가 생기면 computeBadgeProgress 안의 해당
    더미 항목만 실측 count로 바꿔 끼우면 된다(진행값을 서버 DB에 저장하는 기기 간 동기화는 별도). */
-/* 5단계 랭크 — 금속 은유 대신 앱의 성취 위계 색으로 정렬(핑크<옐로우<초록<블루<골드마스터,
+/* 5단계 랭크 — 금속 은유 대신 앱의 성취 위계 색으로 정렬(핑크<옐로우<초록<블루<오렌지마스터,
    2026-07-17 재정렬 — streakHl과 같은 순서). cls(bt-*)는 CSS 색 클래스 키라 그대로 두고 색만 교체. */
 const BADGE_TIERS = [
   { k: "t1", name: "입문", cls: "bt-bronze" },
