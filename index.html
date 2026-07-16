@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.33.2">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.33.2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.33.2" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.33.5">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.33.5" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.33.5" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.33.2"></script><style>
+<script src="words.js?v=0.33.5"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.33.2") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.33.2") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.33.5") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.33.5") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.33.2") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.33.2") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.33.5") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.33.5") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -696,7 +696,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.33.2";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.33.5";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1036,12 +1036,76 @@ const SRS = (() => {
   try { store = JSON.parse(localStorage.getItem("en_srs") || "null"); } catch (e) {}
   if (!store) {
     const t = Date.now();
-    store = { // 첫 실행 데모 시드(앱이 비어 보이지 않게) — 실제 학습하면 덮어써짐
-      "alert": { box: 4, due: t + 3 * DAY, seen: true },
-      "possibility": { box: 6, due: t + 30 * DAY, seen: true },
-      "interact": { box: 2, due: t - DAY, seen: true },
-      "deadline": { box: 1, due: t + DAY, seen: true },
+    // 첫 실행 데모 시드(앱이 비어 보이지 않게) — 실제 학습하면 덮어써짐.
+    // 가상 페르소나: 어휘력 B2+ · 작문력 B1 · 3개월 정도 띄엄띄엄 학습한 사용자(2026-07-16).
+    store = {
+      "business#0": { box: 6, due: t + 18 * DAY, seen: true },
+      "church#0": { box: 6, due: t + 26 * DAY, seen: true },
+      "corn#0": { box: 6, due: t + 20 * DAY, seen: true },
+      "dish#0": { box: 6, due: t + 39 * DAY, seen: true },
+      "evening#0": { box: 6, due: t + 33 * DAY, seen: true },
+      "fifty#0": { box: 6, due: t + 14 * DAY, seen: true },
+      "fun#0": { box: 6, due: t + 37 * DAY, seen: true },
+      "guy#0": { box: 6, due: t + 31 * DAY, seen: true },
+      "cleaner#0": { box: 6, due: t + 33 * DAY, seen: true },
+      "consist#0": { box: 6, due: t + 26 * DAY, seen: true },
+      "curse#0": { box: 5, due: t + 15 * DAY, seen: true },
+      "director#0": { box: 5, due: t + 13 * DAY, seen: true },
+      "effort#0": { box: 5, due: t + 6 * DAY, seen: true },
+      "expert#0": { box: 5, due: t + 9 * DAY, seen: true },
+      "flea#0": { box: 5, due: t + 7 * DAY, seen: true },
+      "gas#0": { box: 5, due: t + 9 * DAY, seen: true },
+      "harvest#0": { box: 5, due: t + 3 * DAY, seen: true },
+      "inch#0": { box: 5, due: t + 3 * DAY, seen: true },
+      "knock#0": { box: 3, due: t + 2 * DAY, seen: true },
+      "loose#0": { box: 3, due: t + 10 * DAY, seen: true },
+      "composition": { box: 3, due: t - 2 * DAY, seen: true },
+      "council": { box: 3, due: t + 9 * DAY, seen: true },
+      "cycle": { box: 3, due: t + 7 * DAY, seen: true },
+      "delightful": { box: 3, due: t + 1 * DAY, seen: true },
+      "dialog": { box: 3, due: t - 4 * DAY, seen: true },
+      "diving": { box: 3, due: t + 7 * DAY, seen: true },
+      "edition": { box: 3, due: t + 10 * DAY, seen: true },
+      "enjoyment": { box: 3, due: t + 2 * DAY, seen: true },
+      "experienced": { box: 3, due: t + 1 * DAY, seen: true },
+      "fifth": { box: 3, due: t - 1 * DAY, seen: true },
+      "fortnight": { box: 2, due: t - 6 * DAY, seen: true },
+      "generous": { box: 2, due: t - 11 * DAY, seen: true },
+      "graphics": { box: 2, due: t + 1 * DAY, seen: true },
+      "headline": { box: 2, due: t - 8 * DAY, seen: true },
+      "hostel": { box: 2, due: t - 8 * DAY, seen: true },
+      "indirect": { box: 2, due: t + 3 * DAY, seen: true },
+      "intense": { box: 2, due: t - 1 * DAY, seen: true },
+      "justice": { box: 2, due: t - 7 * DAY, seen: true },
+      "lifelong": { box: 2, due: t - 12 * DAY, seen: true },
+      "main": { box: 2, due: t + 2 * DAY, seen: true },
+      "crossly": { box: 2, due: t - 1 * DAY, seen: true },
+      "deck": { box: 2, due: t - 2 * DAY, seen: true },
+      "determined": { box: 1, due: t, seen: true },
+      "disposition": { box: 1, due: t + 4 * DAY, seen: true },
+      "dread": { box: 1, due: t - 2 * DAY, seen: true },
+      "elite": { box: 1, due: t, seen: true },
+      "evacuation": { box: 1, due: t - 3 * DAY, seen: true },
+      "exploit": { box: 1, due: t + 5 * DAY, seen: true },
+      "fighting": { box: 1, due: t + 2 * DAY, seen: true },
+      "formerly": { box: 1, due: t + 4 * DAY, seen: true },
+      "genius": { box: 1, due: t, seen: true },
+      "grip": { box: 1, due: t - 1 * DAY, seen: true },
+      "hint": { box: 1, due: t + 2 * DAY, seen: true },
+      "identical": { box: 1, due: t + 4 * DAY, seen: true },
+      "inanimate": { box: 1, due: t + 4 * DAY, seen: true },
+      "chill": { box: 1, due: t + 3 * DAY, seen: true },
+      "confinement": { box: 1, due: t + 5 * DAY, seen: true },
+      "darkroom": { box: 1, due: t + 3 * DAY, seen: true },
+      "dissection": { box: 1, due: t + 2 * DAY, seen: true },
+      "enviable": { box: 1, due: t + 5 * DAY, seen: true },
     };
+    // 위 항목들은 순전히 "홈 화면이 비어 보이지 않게" 하려는 표시용 더미(스트릭·뱃지·CEFR
+    // 배지 등은 여기 box 값을 근거로 계산됨) — 실제로 학습한 적 없는 단어라 진짜 복습
+    // 큐(pickSession)에 섞이면 안 됨. demo 플래그로 표시해 isDue에서 걸러낸다
+    // (2026-07-16 수정 — 이 플래그가 없어서 가짜 복습 18개가 실제 학습 세션을 계속
+    // 차지하는 바람에 "맨날 같은 단어만 나온다" 버그가 있었음).
+    Object.keys(store).forEach(k => { store[k].demo = true; });
   }
   const save = () => { try { localStorage.setItem("en_srs", JSON.stringify(store)); } catch (e) {} };
   return {
@@ -1050,12 +1114,13 @@ const SRS = (() => {
       const s = store[k]; if (!s) return null;
       return { status: s.box >= 6 ? "done" : "learning", box: s.box, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) };
     },
-    isDue: k => { const s = store[k]; return s && s.seen && s.due <= Date.now(); },
+    isDue: k => { const s = store[k]; return s && s.seen && !s.demo && s.due <= Date.now(); },
     grade(k, ok) {
       const s = store[k] || { box: 0, seen: false };
       s.box = ok ? Math.min(MAX_BOX, s.box + 1) : 1;
       s.seen = true;
       s.due = Date.now() + BOX_INTERVALS[s.box] * DAY;
+      delete s.demo; // 실제로 학습(채점)됐으니 더 이상 더미가 아님 — 이제부터 진짜 복습 큐에 들어감
       store[k] = s; save();
       if (ok) POINTS.add(10); // 꾸준한 학습으로만 쌓이는 포인트 — 캐릭터 변경 잠금 해제에 사용
       return s;
@@ -1745,7 +1810,19 @@ function createLevelTestB() {
 /* 결과 저장 — 홈/통계에서 읽어 쓸 수 있게 localStorage 보존 */
 const LT_KEY = "en_leveltest_v1";
 function saveLevelTest(res) { try { localStorage.setItem(LT_KEY, JSON.stringify(Object.assign({ at: Date.now() }, res))); } catch (e) {} }
-function loadLevelTest() { try { return JSON.parse(localStorage.getItem(LT_KEY) || "null"); } catch (e) { return null; } }
+function loadLevelTest() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(LT_KEY) || "null");
+    if (saved) return saved;
+  } catch (e) {}
+  // 첫 실행 데모 시드(SRS와 동일한 패턴) — 실제로 레벨 테스트를 보면 saveLevelTest가 덮어씀.
+  // 가상 페르소나: 어휘력 B2+ · 작문력 B1 · 3개월 정도 띄엄띄엄 학습한 사용자(2026-07-16).
+  return {
+    at: Date.now() - 6 * DAY,
+    lex: { band12: 7, band: "B2+", vocab: 7200, activeVocab: 4300, pct: 15, falseAlarm: 0.05, produceRate: 0.6 },
+    flu: { band12: 4, band: "B1", pct: 45, partial: true, spw: 1.6 },
+  };
+}
 
 /* ---------- 홈 탭 ---------- */
 /* 캐릭터 아트(CharDoodle)를 사용자가 "일단 보기 싫다"고 해서 임시로 꺼둔 스위치(2026-07-14).
@@ -1765,9 +1842,12 @@ function streakStage(days) { return days < 3 ? 1 : days < 7 ? 2 : days < 14 ? 3 
 /* ===================== 뱃지 시스템 (카테고리 × 랭크 티어) =====================
    레퍼런스: 애플워치 운동 뱃지 + 피크민 블룸. 카테고리별로 누적 지표 임계값마다 랭크가 오른다.
    원형 메달 — 티어별 금속 톤(브론즈<실버<골드<플래티넘<마스터[레인보우]). 미획득은 실루엣(그림자).
-   지금은 더미 진행값(BADGE_PROGRESS)으로 UI만 구현 — 실제 학습 로그/서버 연결은 백엔드·통계 작업에서.
-   TODO(태스크 #19 + PLAN 6장 백엔드): 각 카테고리 트리거를 실제 지표(SRS·스트릭·회화 로그 등)에 연결하고
-   진행값을 서버 DB에 저장(기기 간 동기화). */
+   실측 가능한 카테고리(단어 학습·복습 마스터·레벨 업)는 SRS·레벨테스트 실제 기록에서 계산(아래
+   computeBadgeProgress). 아직 앱에 카운터 자체가 없는 카테고리(연속 학습·듣기·회화·어원 탐험·
+   친구 초대·자립 회화)는 더미 값을 유지 — 서버 없이 로컬 지표만으로는 셀 수 없는 항목들.
+   TODO(태스크 #19 + PLAN 6장 백엔드): 위 미구현 카테고리에 실제 카운터(듣기 세션 완료, 회화 세션
+   완료, 어원 상세 열람, 친구 초대, SOS 없는 회화 완주)가 생기면 computeBadgeProgress 안의 해당
+   더미 항목만 실측 count로 바꿔 끼우면 된다(진행값을 서버 DB에 저장하는 기기 간 동기화는 별도). */
 /* 5단계 랭크 — 금속 은유 대신 난이도 상승 체계(하이어라키 색과 정렬: 연두<옐로우<핑크<블루<잉크).
    cls(bt-*)는 CSS 색 클래스 키라 그대로 두고 이름만 재명명. */
 const BADGE_TIERS = [
@@ -1797,27 +1877,55 @@ function streakHl(streak) {
   if (streak < 30) return "green";
   return "blue";
 }
-/* 더미 진행값 — tier=현재 획득한 최고 티어 인덱스(-1=미획득), dates=각 획득 티어의 달성일. */
-const BADGE_PROGRESS = {
-  streak: { tier: 2, dates: ["2026.06.10", "2026.06.20", "2026.07.04"] },
-  words: { tier: 3, dates: ["2026.06.11", "2026.06.25", "2026.07.02", "2026.07.09"] },
-  listen: { tier: 1, dates: ["2026.06.13", "2026.07.01"] },
-  talk: { tier: 0, dates: ["2026.06.22"] },
-  level: { tier: 2, dates: ["2026.06.15", "2026.06.28", "2026.07.10"] },
-  roots: { tier: 2, dates: ["2026.06.18", "2026.06.30", "2026.07.08"] },
-  review: { tier: 1, dates: ["2026.06.19", "2026.07.05"] },
-  friend: { tier: -1, dates: [] },
-  sos: { tier: -1, dates: [] },
-};
+/* 임계값 배열에서 count가 넘긴 최고 티어 인덱스(-1=미획득) — 뱃지 진행값 계산 공용. */
+function tierFromCount(count, tiers) {
+  let t = -1;
+  for (let i = 0; i < tiers.length; i++) if (count >= tiers[i]) t = i;
+  return t;
+}
+/* 실측 지표 — SRS 기록 기준. 학습한 단어 수(사전 탭 "내가 학습한 단어"와 동일 정의) /
+   복습 끝(box 최고단계)까지 간 단어 수. 새 단어를 공부할수록, 복습을 마칠수록 그대로 올라간다. */
+function srsLearnedCount() { return allWords().filter(w => wordStatus(w)).length; }
+function srsMasteredCount() { return allWords().filter(w => { const s = wordStatus(w); return s && s.status === "done"; }).length; }
+/* 실측 지표 — 레벨 테스트 어휘(lex) 결과의 CEFR 밴드("B2+"→"B2")를 레벨 업 뱃지 티어로 매핑.
+   C2는 뱃지 최고 티어(C1칸)가 이미 최상급 취급이라 마지막 티어로 클램프. */
+function levelBadgeTier() {
+  const lt = loadLevelTest();
+  if (!lt || !lt.lex) return -1;
+  const tiers = BADGE_CATS.find(c => c.k === "level").tiers; // ["A1","A2","B1","B2","C1"]
+  const base = lt.lex.band.replace("+", "");
+  const idx = tiers.indexOf(base);
+  return idx >= 0 ? idx : (base === "C2" ? tiers.length - 1 : -1);
+}
+/* 카테고리별 진행값 — tier=현재 획득한 최고 티어 인덱스(-1=미획득), dates=각 획득 티어의 달성일.
+   words/review/level은 실제 SRS·레벨테스트 기록에서 매번 새로 계산(실시간 반영). 나머지는 아직
+   추적 로그가 없어 더미 값 유지(위 주석 TODO 참고) — 가상 페르소나: 어휘력 B2+ · 작문력 B1 ·
+   3개월 정도(2026-04 중순~) 띄엄띄엄 학습한 사용자(2026-07-16)의 초기 이력으로 채워둠. */
+function computeBadgeProgress() {
+  const wordsCat = BADGE_CATS.find(c => c.k === "words");
+  const reviewCat = BADGE_CATS.find(c => c.k === "review");
+  return {
+    streak: { tier: 1, dates: ["2026.04.19", "2026.04.23"] },
+    words: { tier: tierFromCount(srsLearnedCount(), wordsCat.tiers), dates: ["2026.05.02"] },
+    listen: { tier: 1, dates: ["2026.04.20", "2026.05.15"] },
+    talk: { tier: 0, dates: ["2026.06.02"] },
+    level: { tier: levelBadgeTier(), dates: ["2026.04.18", "2026.04.25", "2026.05.20", "2026.07.10"] },
+    roots: { tier: 1, dates: ["2026.04.22", "2026.06.05"] },
+    review: { tier: tierFromCount(srsMasteredCount(), reviewCat.tiers), dates: ["2026.05.05", "2026.06.28"] },
+    friend: { tier: -1, dates: [] },
+    sos: { tier: -1, dates: [] },
+  };
+}
 /* 메달 중앙 표기 — 큰 임계값은 축약(5000→5K, 1500→1.5K), 레벨은 문자열 그대로. */
 function medalLabel(v) {
   if (typeof v === "string") return v;
   if (v >= 1000) return (v % 1000 === 0 ? v / 1000 : (v / 1000).toFixed(1)) + "K";
   return String(v);
 }
-/* 카테고리 총 획득 개수 / 홈 트랙에 노출할 대표 티어(최고 획득분, 없으면 첫 티어 미리보기) */
-function catEarnedCount(k) { return BADGE_PROGRESS[k].tier + 1; }
-function catDisplayTier(k) { const p = BADGE_PROGRESS[k]; return p.tier >= 0 ? p.tier : 0; }
+/* 카테고리 총 획득 개수 / 홈 트랙에 노출할 대표 티어(최고 획득분, 없으면 첫 티어 미리보기).
+   progress는 컴포넌트에서 한 번 계산한 computeBadgeProgress() 결과를 받는다(중복 계산 방지). */
+function catEarnedCount(k, progress) { return progress[k].tier + 1; }
+function catDisplayTier(k, progress) { const p = progress[k]; return p.tier >= 0 ? p.tier : 0; }
 
 /* 두들 캐릭터 — 원/삼각/사각/꽃 4가지 실루엣. 촘촘히 샘플링한 점(60~144개)에 작은 잡음을 주고
    직선(L)으로 연결 + 약한 이동평균 스무딩 1회 — 벡터 Scribble/Roughen 필터와 동일한 원리로
@@ -1858,7 +1966,7 @@ function BadgeMedal({ cat, tierIdx, earned, sm, onClick }) {
    앞면=메달+티어, 뒷면=획득일/조건+설명+랭크 스트립(탭해 다른 티어 열람). sel={catKey,tierIdx}. */
 function BadgeDetail({ sel, onClose }) {
   const cat = BADGE_CATS.find(c => c.k === sel.catKey);
-  const prog = BADGE_PROGRESS[sel.catKey];
+  const prog = computeBadgeProgress()[sel.catKey];
   const [tierIdx, setTierIdx] = useState(sel.tierIdx);
   const [baseRot, setBaseRot] = useState(0); // 누적 회전(0=앞, 180=뒤)
   const [live, setLive] = useState(0);        // 드래그 중 추가 각도
@@ -1926,7 +2034,7 @@ function BadgeDetail({ sel, onClose }) {
           <div className="bd-face bd-back">
             <div className="bd-title">{cat.title}</div>
             {earned
-              ? <div className="bd-date">{prog.dates[tierIdx]} 달성!</div>
+              ? <div className="bd-date">{prog.dates[tierIdx] ? prog.dates[tierIdx] + " 달성!" : "달성!"}</div>
               : <div className="bd-date locked">아직 미획득</div>}
             <div className="bd-desc">{earned ? cat.desc(val) : "조건: " + cat.desc(val)}</div>
             <div className="bd-ranks">
@@ -1948,7 +2056,7 @@ function BadgeDetail({ sel, onClose }) {
 function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
   const [badgeSel, setBadgeSel] = useState(null); // {catKey, tierIdx} | null
   const chr = CHARACTERS.find(c => c.k === charK) || null;
-  const STREAK = 12;                       // 데모: 실제로는 학습 로그에서
+  const STREAK = 4;                        // 데모: 실제로는 학습 로그에서(3개월 띄엄띄엄 학습 페르소나 — 최근 재개)
   const stage = streakStage(STREAK);       // 1~4
   const speed = { "--bob": (0.64 - stage * 0.06) + "s", "--road": (0.8 - stage * 0.09) + "s" };
 
@@ -1967,8 +2075,10 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
     }
     return cells;
   }, []);
-  const badgesEarned = BADGE_CATS.reduce((s, c) => s + catEarnedCount(c.k), 0);
+  const badgeProgress = computeBadgeProgress();
+  const badgesEarned = BADGE_CATS.reduce((s, c) => s + catEarnedCount(c.k, badgeProgress), 0);
   const pts = POINTS.get();
+  const lastLt = loadLevelTest(); // 레벨 테스트 실제 기록(없으면 loadLevelTest 자체 데모 폴백) — 홈 3칸에 반영
   const gamiRow = (
     <div className="gami-row">
       <span className="gami-chip green">연속 {STREAK}일</span>
@@ -2002,8 +2112,8 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
           {/* 뱃지: 캐릭터 뒤에 가로로 쭉 — 카테고리별 대표 메달(최고 획득 티어). 전체는 보관함의 뱃지 컬렉션. */}
           <div className="badge-track">
             {BADGE_CATS.map(c => {
-              const ti = catDisplayTier(c.k);
-              return <BadgeMedal key={c.k} cat={c} tierIdx={ti} earned={BADGE_PROGRESS[c.k].tier >= 0} onClick={() => setBadgeSel({ catKey: c.k, tierIdx: ti })} />;
+              const ti = catDisplayTier(c.k, badgeProgress);
+              return <BadgeMedal key={c.k} cat={c} tierIdx={ti} earned={badgeProgress[c.k].tier >= 0} onClick={() => setBadgeSel({ catKey: c.k, tierIdx: ti })} />;
             })}
           </div>
           <div className="road" />
@@ -2018,13 +2128,22 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
 
       {badgeSel && <BadgeDetail sel={badgeSel} onClose={() => setBadgeSel(null)} />}
 
-      <div className="level-row" onClick={() => onGoTab("dict")}>
-        {/* 형광펜 색은 cefrHl 하이어라키 규칙 공유: B1=옐로우(중급), 어휘량 4,200은 B1대 수준이라 동일 톤,
-            백분위는 상위 구간일수록 상급 색(<=10 블루·<=25 핑크·<=50 옐로우·그외 연두)로 매핑 */}
-        <div className={"stat tier-" + cefrHl("B1")}><div className="v"><span className={"hl hl-" + cefrHl("B1")} style={{ transform: "rotate(-1.5deg)" }}>B1</span></div><div className="l">CEFR 레벨</div></div>
-        <div className={"stat tier-" + cefrHl("B1")}><div className="v"><span className={"hl hl-" + cefrHl("B1")} style={{ transform: "rotate(1deg)" }}>4,200</span></div><div className="l">추정 어휘량</div></div>
-        <div className="stat tier-pink"><div className="v"><span className="hl hl-pink" style={{ transform: "rotate(-1deg)" }}>상위 18%</span></div><div className="l">백분위</div></div>
-      </div>
+      {(() => {
+        // 레벨 테스트 실제 기록(loadLevelTest, 없으면 자체 데모 폴백)에서 그대로 읽음 — 실제로
+        // 테스트를 다시 보면 이 3칸도 그 결과로 즉시 갱신된다.
+        const lex = lastLt.lex;
+        const lexBase = lex.band.replace("+", "");
+        const pctHl = lex.pct <= 10 ? "blue" : lex.pct <= 25 ? "pink" : lex.pct <= 50 ? "yellow" : "green";
+        return (
+          <div className="level-row" onClick={() => onGoTab("dict")}>
+            {/* 형광펜 색은 cefrHl 하이어라키 규칙 공유(A1·A2=연두, B1·B2=옐로우, C1=핑크, C2=블루),
+                백분위는 상위 구간일수록 상급 색(<=10 블루·<=25 핑크·<=50 옐로우·그외 연두)로 매핑. */}
+            <div className={"stat tier-" + cefrHl(lexBase)}><div className="v"><span className={"hl hl-" + cefrHl(lexBase)} style={{ transform: "rotate(-1.5deg)" }}>{lex.band}</span></div><div className="l">CEFR 레벨</div></div>
+            <div className={"stat tier-" + cefrHl(lexBase)}><div className="v"><span className={"hl hl-" + cefrHl(lexBase)} style={{ transform: "rotate(1deg)" }}>{lex.vocab.toLocaleString()}</span></div><div className="l">추정 어휘량</div></div>
+            <div className={"stat tier-" + pctHl}><div className="v"><span className={"hl hl-" + pctHl} style={{ transform: "rotate(-1deg)" }}>상위 {lex.pct}%</span></div><div className="l">백분위</div></div>
+          </div>
+        );
+      })()}
 
       <div className="sec">오늘의 루틴</div>
       {routine.map(s => (
@@ -3164,6 +3283,7 @@ function Vault({ onGoTab }) {
   const [badgeSel, setBadgeSel] = useState(null); // {catKey, tierIdx} | null
   const [, bump] = useState(0); // 문장 즐겨찾기 해제 리렌더용
   const favCount = allWords().filter(w => FAVS.has(w.word)).length;
+  const badgeProgress = computeBadgeProgress();
 
   return (
     <div className="content">
@@ -3172,11 +3292,11 @@ function Vault({ onGoTab }) {
         <div className="badge-rows">
           {BADGE_CATS.map(c => (
             <div key={c.k}>
-              <div className="badge-row-t">{c.title} <span className="rc">{catEarnedCount(c.k)}/{c.tiers.length}</span></div>
+              <div className="badge-row-t">{c.title} <span className="rc">{catEarnedCount(c.k, badgeProgress)}/{c.tiers.length}</span></div>
               <div className="medal-strip">
                 {c.tiers.map((tv, i) => (
                   <div key={i} className="medal-cell">
-                    <BadgeMedal cat={c} tierIdx={i} earned={i <= BADGE_PROGRESS[c.k].tier} onClick={() => setBadgeSel({ catKey: c.k, tierIdx: i })} />
+                    <BadgeMedal cat={c} tierIdx={i} earned={i <= badgeProgress[c.k].tier} onClick={() => setBadgeSel({ catKey: c.k, tierIdx: i })} />
                     <span className="mth">{medalLabel(tv)}{c.unit}</span>
                   </div>
                 ))}
@@ -4611,7 +4731,7 @@ function App() {
       <div className="topbar">
         <div className="brand" role="button" tabIndex={0} onClick={() => setTab("home")} style={{ cursor: "pointer" }}>No<b>English</b></div>
         <div className="topbar-right">
-          <span className="pill"><span className={"dot hl-" + streakHl(12)} />연속 12일</span>
+          <span className="pill"><span className={"dot hl-" + streakHl(4)} />연속 4일</span>
           <button className="avatar-btn" aria-label="설정" onClick={() => setSettingsOpen(true)}><Icon name="settings" size={19} /></button>
         </div>
       </div>
