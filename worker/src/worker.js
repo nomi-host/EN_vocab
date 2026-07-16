@@ -5,6 +5,7 @@
    엔드포인트:
      POST /gemini  { prompt: string }              -> { text: string }
      POST /tts     { text, lang, rate }             -> audio/mpeg (binary)
+     POST /stt     { audio: base64, mimeType }      -> { text: string }  (Gemini 멀티모달 오디오 전사)
      GET  /health                                    -> { ok: true }
    시크릿(레포에 넣지 않음, wrangler secret 또는 대시보드로 등록):
      GEMINI_API_KEY, GOOGLE_TTS_KEY
@@ -76,6 +77,42 @@ async function handleGemini(request, env, headers) {
   return json({ text: text.trim() }, 200, headers);
 }
 
+/* 음성 입력(STT) — 브라우저 내장 SpeechRecognition은 Safari(특히 iOS)에 아예 없어서,
+   모든 브라우저에서 동작하도록 클라이언트가 녹음한 오디오를 Gemini 멀티모달로 전사.
+   getUserMedia/MediaRecorder는 iOS Safari 14.3+에서도 지원되므로 녹음 자체는 어디서든 가능. */
+async function handleStt(request, env, headers) {
+  let body;
+  try { body = await request.json(); } catch (e) { return json({ error: "invalid json" }, 400, headers); }
+  const audio = (body && body.audio || "").toString();
+  const mimeType = (body && body.mimeType || "audio/webm").toString();
+  if (!audio || audio.length > 8000000) return json({ error: "invalid audio" }, 400, headers);
+  if (!env.GEMINI_API_KEY) return json({ error: "server not configured" }, 500, headers);
+
+  const model = env.GEMINI_MODEL || "gemini-2.0-flash";
+  const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${env.GEMINI_API_KEY}`;
+  const upstream = await fetch(apiUrl, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      contents: [{
+        parts: [
+          { text: "Transcribe the following English speech verbatim as plain text. Output only the transcription itself — no quotes, no commentary, no formatting. If nothing intelligible is said, output nothing." },
+          { inline_data: { mime_type: mimeType, data: audio } },
+        ],
+      }],
+      generationConfig: { temperature: 0, maxOutputTokens: 200 },
+    }),
+  });
+  if (!upstream.ok) {
+    const detail = await upstream.text().catch(() => "");
+    return json({ error: "gemini upstream error", detail: detail.slice(0, 300) }, 502, headers);
+  }
+  const data = await upstream.json();
+  const text = (data.candidates && data.candidates[0] && data.candidates[0].content &&
+    (data.candidates[0].content.parts || []).map(p => p.text || "").join("")) || "";
+  return json({ text: text.trim() }, 200, headers);
+}
+
 async function handleTts(request, env, headers) {
   let body;
   try { body = await request.json(); } catch (e) { return json({ error: "invalid json" }, 400, headers); }
@@ -121,6 +158,7 @@ export default {
     try {
       if (url.pathname === "/gemini" && request.method === "POST") return await handleGemini(request, env, headers);
       if (url.pathname === "/tts" && request.method === "POST") return await handleTts(request, env, headers);
+      if (url.pathname === "/stt" && request.method === "POST") return await handleStt(request, env, headers);
       return json({ error: "not found" }, 404, headers);
     } catch (e) {
       return json({ error: "internal error" }, 500, headers);
