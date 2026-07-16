@@ -24,6 +24,7 @@
 - **상단바 "연속N일" pill과 설정 버튼(`.avatar-btn`)은 검정 스트로크(`border:1px solid var(--ink)`)** — 검색창(`.search`)과 동일한 두께/색으로 통일.
 - **홈 "잔디" 히트맵은 시각화 그대로 유지, 섹션 타이틀만 "학습 캘린더"로.** (2026-07-16 — 한 번 실제 달력 그리드로 통째로 갈아엎었다가 "타이틀만 바꾸라는 거였다"는 지적으로 원복. `grass` useMemo/`.grass` 클래스 그대로 — 요일별 실제 달력이 아니라 최근 17주 히트맵 스트립이 맞는 디자인.)
 - **회화 대화방(`TalkRoom`)은 페이지 배경(`--bg`)보다 밝은 `--surface`에 검정 테두리를 두른 별도 "채팅창"** — 그 안에서만 말풍선이 오가서 카톡/문자 앱처럼 또렷하게 구분되도록(2026-07-16). 봇 말풍선 옆엔 페르소나 색 원형 미니 아바타(`.talk-avatar-sm`). 방 입장 시 Gemini 왕복 없이 `persona.intro`(고정 영문 자기소개)를 즉시 보여주고 그 자리에서 TTS 재생. 인풋은 `autoFocus`로 키보드 자동 표시.
+- **단어 상세(`WordSheet`) 품사 태그**: CEFR-J 원본 `w.pos`(verb/adj/noun/adv 4종 영문 코드)를 `POS_KO` 맵으로 한글 변환해 CEFR 뱃지 옆에 `.tag`로 표시(2026-07-16). 복수 품사(예: access = 명사+동사)는 태그 여러 개 나열. 다의어(senses 있는 단어)는 이미 뜻마다 `s.pos`(한글 12종: 명사·동사·형용사·부사·전치사·접속사·대명사·관사·조동사·수사·감탄사·기타)가 따로 표시되고 있었고, 이번엔 그 위 요약 줄에도 동일하게 노출.
 - **음성 입력(STT)은 브라우저 내장 `SpeechRecognition`이 아니라 `MediaRecorder`+서버 전사.** iOS Safari는 `SpeechRecognition`/`webkitSpeechRecognition` 자체가 없어서 예전 방식은 버튼이 조용히 사라졌었다(2026-07-16 교체). `getUserMedia`+`MediaRecorder`(iOS Safari 14.3+ 지원)로 녹음 → base64로 Worker `/stt`에 전송 → Gemini 멀티모달(`inline_data` 오디오)로 전사한 텍스트를 인풋에 채움. 지원 여부 분기는 `STT_SUPPORTED`(`getUserMedia`+`MediaRecorder` 존재 확인)로, `SpeechRecognitionAPI` 체크가 아님.
 
 ## 오디오
