@@ -75,9 +75,11 @@ function modelCandidates(env) {
   const list = env.GEMINI_MODEL ? [env.GEMINI_MODEL, ...MODEL_FALLBACKS] : MODEL_FALLBACKS.slice();
   return [...new Set(list)];
 }
-/* 후보를 차례로 시도해 첫 성공 응답의 텍스트를 반환. 전부 실패하면 마지막 에러를 담아 throw. */
+/* 후보를 차례로 시도해 첫 성공 응답의 텍스트를 반환. 전부 실패하면 "어떤 모델이 몇 번으로
+   죽었는지" 전체 목록을 담아 throw — 마지막 모델 에러만 보여주면 진단이 안 돼서(2026-07-16). */
 async function callGeminiWithFallback(env, contents, generationConfig) {
-  let lastStatus = 0, lastDetail = "";
+  const attempts = [];
+  let lastDetail = "";
   for (const model of modelCandidates(env)) {
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${env.GEMINI_API_KEY}`;
     const upstream = await fetch(apiUrl, {
@@ -91,13 +93,13 @@ async function callGeminiWithFallback(env, contents, generationConfig) {
         (data.candidates[0].content.parts || []).map(p => p.text || "").join("")) || "";
       return text.trim();
     }
-    lastStatus = upstream.status;
+    attempts.push(`${model}→${upstream.status}`);
     lastDetail = await upstream.text().catch(() => "");
     // 404(모델 없음/미개방)·429(한도 0 배정 포함)는 모델 단위 문제일 수 있으니 다음 후보 시도.
     // 그 외(400 잘못된 요청, 401/403 키 문제 등)는 모델을 바꿔도 똑같으므로 즉시 중단.
     if (upstream.status !== 404 && upstream.status !== 429) break;
   }
-  throw new Error(`gemini upstream error (${lastStatus}): ${lastDetail.slice(0, 300)}`);
+  throw new Error(`gemini upstream error [${attempts.join(", ")}] last: ${lastDetail.slice(0, 250)}`);
 }
 
 async function handleGemini(request, env, headers) {
