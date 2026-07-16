@@ -23,7 +23,7 @@
 - **카운트다운(3·2·1) 오버레이는 카드가 아니라 화면 전체(탭바 포함)를 10% 딤.** `.dict-countdown-overlay`가 `position:fixed`인 이유 — `absolute`로 두면 카드 안에서만 딤돼서 요구사항과 다름.
 - **상단바 "연속N일" pill과 설정 버튼(`.avatar-btn`)은 검정 스트로크(`border:1px solid var(--ink)`)** — 검색창(`.search`)과 동일한 두께/색으로 통일.
 - **홈 "잔디" 히트맵은 시각화 그대로 유지, 섹션 타이틀만 "학습 캘린더"로.** (2026-07-16 — 한 번 실제 달력 그리드로 통째로 갈아엎었다가 "타이틀만 바꾸라는 거였다"는 지적으로 원복. `grass` useMemo/`.grass` 클래스 그대로 — 요일별 실제 달력이 아니라 최근 17주 히트맵 스트립이 맞는 디자인.)
-- **회화 대화방(`TalkRoom`)은 페이지 배경(`--bg`)보다 밝은 `--surface`에 검정 테두리를 두른 별도 "채팅창"** — 그 안에서만 말풍선이 오가서 카톡/문자 앱처럼 또렷하게 구분되도록(2026-07-16). 봇 말풍선 옆엔 페르소나 색 원형 미니 아바타(`.talk-avatar-sm`). 방 입장 시 Gemini 왕복 없이 `persona.intro`(고정 영문 자기소개)를 즉시 보여주고 그 자리에서 TTS 재생. 인풋은 `autoFocus`로 키보드 자동 표시.
+- **회화 대화방(`TalkRoom`)의 `.talk-msgs` 배경은 페이지 배경과 같은 `--bg`(밝은 크림), 별도 테두리 없음.** (2026-07-16 — 처음엔 `--surface`+검정 테두리로 페이지와 분리된 "채팅창"을 만들었는데, "흰색 네모가 부자연스럽다"는 지적으로 페이지와 같은 톤으로 통일. 봇 말풍선(`--fill`)·유저 말풍선(`--ink`)은 그대로라 배경과의 대비로 구분은 유지됨.) 봇 말풍선 옆엔 페르소나 색 원형 미니 아바타(`.talk-avatar-sm`). 방 입장 시 Gemini 왕복 없이 `persona.intro`(고정 영문 자기소개)를 즉시 보여주고 그 자리에서 TTS 재생. 인풋은 `autoFocus`로 키보드 자동 표시.
 - **단어 상세(`WordSheet`) 품사 태그**: CEFR-J 원본 `w.pos`(verb/adj/noun/adv 4종 영문 코드)를 `POS_KO` 맵으로 한글 변환해 CEFR 뱃지 옆에 `.tag`로 표시(2026-07-16). 복수 품사(예: access = 명사+동사)는 태그 여러 개 나열. 다의어(senses 있는 단어)는 이미 뜻마다 `s.pos`(한글 12종: 명사·동사·형용사·부사·전치사·접속사·대명사·관사·조동사·수사·감탄사·기타)가 따로 표시되고 있었고, 이번엔 그 위 요약 줄에도 동일하게 노출.
 - **음성 입력(STT)은 브라우저 내장 `SpeechRecognition`이 아니라 `MediaRecorder`+서버 전사.** iOS Safari는 `SpeechRecognition`/`webkitSpeechRecognition` 자체가 없어서 예전 방식은 버튼이 조용히 사라졌었다(2026-07-16 교체). `getUserMedia`+`MediaRecorder`(iOS Safari 14.3+ 지원)로 녹음 → base64로 Worker `/stt`에 전송 → Gemini 멀티모달(`inline_data` 오디오)로 전사한 텍스트를 인풋에 채움. 지원 여부 분기는 `STT_SUPPORTED`(`getUserMedia`+`MediaRecorder` 존재 확인)로, `SpeechRecognitionAPI` 체크가 아님.
 
@@ -36,8 +36,9 @@
 ## 버전 표기
 - 기능을 수정/배포할 때마다 `index.html`의 `APP_VERSION`을 갱신하고, `<head>`의 `?v=` 캐시 무효화 태그(manifest/words.js/rat_run.js)도 **같은 버전으로 함께** 갱신한다.
 - `APP_BUILD`는 작업 당일 날짜(YYYY-MM-DD).
-- **`version.json`의 `v` 값도 APP_VERSION과 항상 같이 갱신할 것.** PWA는 새로고침 제스처가 없어서, 앱이 이 파일을 캐시 없이 주기적으로 읽어 배포 감지 배너(`.update-banner`)를 띄운다 — 안 올리면 사용자에게 새 버전 알림이 안 감.
-- **`index.html` 안의 `<meta http-equiv="Cache-Control">`은 실제 HTTP 캐시에 안 먹히는 경우가 많음**(특히 iOS 홈화면 standalone 앱) — 진짜 캐시 제어는 배포 루트의 `_headers` 파일(Cloudflare Workers Assets가 읽음)이 담당한다. `index.html`/`manifest.json`/`version.json`은 여기서 `no-cache, no-store, must-revalidate`로 강제 — 이 파일들 캐시 정책을 바꿀 땐 메타 태그가 아니라 `_headers`를 고칠 것. 업데이트 배너의 "새로고침" 버튼도 `location.reload()`가 아니라 `?_=타임스탬프`로 URL을 바꿔 강제 새 요청하도록 되어 있다(2026-07-16, 재시작해도 업데이트가 안 잡히던 버그 수정).
+- **`version.json`의 `v` 값도 APP_VERSION과 항상 같이 갱신할 것.** 앱이 이 파일을 캐시 없이 최초 로드 시 + 포그라운드 복귀 시(PWA를 껐다 켤 때 포함) 확인해서 APP_VERSION과 다르면 **배너/버튼 없이 바로 강제 새로고침**한다 — 안 올리면 사용자가 새 버전을 못 받음.
+- **업데이트 감지는 배너+수동 버튼이 아니라 자동 강제 새로고침(2026-07-16 변경).** 이전엔 `.update-banner`에 "새로고침" 버튼을 띄워 사용자가 직접 눌러야 했는데, "버튼 없애고 PWA 껐다 켜면 강제 새로고침되게" 요청으로 배너를 완전히 제거하고 `App`의 버전 체크 effect가 최초 마운트 시 + `visibilitychange`(visible) 시 자동으로 `location.reload()` 대신 `?_=타임스탬프` URL 강제 이동을 실행하도록 변경. 5분 주기 폴링은 제거(활성 세션 중 갑자기 새로고침되어 입력 중이던 내용이 날아가는 걸 피하기 위해 — 재진입 시점에만 체크).
+- **`index.html` 안의 `<meta http-equiv="Cache-Control">`은 실제 HTTP 캐시에 안 먹히는 경우가 많음**(특히 iOS 홈화면 standalone 앱) — 진짜 캐시 제어는 배포 루트의 `_headers` 파일(Cloudflare Workers Assets가 읽음)이 담당한다. `index.html`/`manifest.json`/`version.json`은 여기서 `no-cache, no-store, must-revalidate`로 강제 — 이 파일들 캐시 정책을 바꿀 땐 메타 태그가 아니라 `_headers`를 고칠 것.
 
 ## 데이터 파이프라인 메모
 - 시드는 `pipeline/`에서 생성 → `pipeline/merge_cefrj.js`가 `words.js`로 병합. `words.js`는 직접 수정 금지(배치/보강 파일 수정 후 재빌드).
