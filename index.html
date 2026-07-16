@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.32.0">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.32.0" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.32.0" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.33.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.33.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.33.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.32.0"></script><style>
+<script src="words.js?v=0.33.0"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.32.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.32.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.33.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.33.0") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.32.0") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.32.0") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.33.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.33.0") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -49,12 +49,11 @@
   --accent:#211C15;        /* 포인트 = 잉크 블랙(블랙 버튼 컨셉) */
   --accent-deep:#4A3A20;   /* 흰 배경 위 텍스트 강조 (웜 브라운) */
   --accent-soft:#EDE1C2;   /* 옅은 배경 */
-  /* 웜그레이 하이어라키 — 진해질수록 노란기가 아니라 무채색(그레이) 쪽으로 가는 강조 배경.
-     --accent-soft(골드톤)와 짝을 이루는 "강조하되 안 노란" 옵션. mid를 보유 포인트 배경·
-     듣기속도 활성값에 공용으로 써서 두 곳이 같은 진하기로 보이게 통일(전엔 서로 다른 톤이었음). */
-  --warmgray-light:#EEEBE3;
-  --warmgray:#D6D1C4;
-  --warmgray-dark:#B3AC98;
+  /* 웜그레이 하이어라키(2026-07-16 재구성) — 새 톤을 3개 더 만드는 대신 이미 있는 배경/텍스트
+     톤(--line, --muted)을 밝은쪽·진한쪽 끝으로 재사용하고 그 사이를 잇는 중간톤 하나(--warmgray)만
+     신설. --accent-soft(골드톤)와 짝을 이루는 "강조하되 안 노란" 옵션. mid를 보유 포인트 배경·
+     듣기속도 활성값에 공용으로 써서 두 곳이 같은 진하기로 보이게 통일. */
+  --warmgray:#B9AF99;
   --on-accent:#FFFBF1;
   --good:#2F8F5B;
   --good-container:#E3F1E7;
@@ -88,13 +87,13 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .brand{font-size:20px;font-weight:800;letter-spacing:-0.4px;}
 .brand b{color:var(--accent);}
 .topbar-right{display:flex;align-items:center;gap:8px;}
-.pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);}
-.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--hi-green-dark);}
-.pill .dot.hl-green{background:var(--hi-green-dark);}
-.pill .dot.hl-yellow{background:var(--hi-yellow-dark);}
-.pill .dot.hl-pink{background:var(--hi-pink-dark);}
-.pill .dot.hl-blue{background:var(--hi-blue-dark);}
-.avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
+.pill{display:inline-flex;align-items:center;gap:5px;background:var(--surface);border:1px solid var(--ink);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:600;box-shadow:var(--shadow);}
+.pill .dot{width:7px;height:7px;border-radius:50%;background:var(--hi-green);}
+.pill .dot.hl-green{background:var(--hi-green);}
+.pill .dot.hl-yellow{background:var(--hi-yellow);}
+.pill .dot.hl-pink{background:var(--hi-pink);}
+.pill .dot.hl-blue{background:var(--hi-blue);}
+.avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--fill);border:1px solid var(--ink);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
 
 .update-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 20px 10px;padding:9px 14px;background:var(--hi-yellow-light);border:0.5px solid var(--card-border);border-radius:0;font-size:13px;font-weight:700;color:var(--ink);flex:none;}
 .update-banner button{background:var(--ink);color:var(--surface);border-radius:999px;padding:5px 13px;font-size:12px;font-weight:800;white-space:nowrap;}
@@ -286,13 +285,19 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .step-cta{font-size:13px;font-weight:700;color:var(--accent-deep);flex:none;}
 .step .check{color:var(--good);font-weight:800;}
 
-/* 잔디 */
-.grass{display:grid;grid-template-columns:repeat(17,1fr);gap:3px;}
-.grass i{aspect-ratio:1;border-radius:0;background-color:var(--fill);}
-/* 잉크 톤 단색(스크리블 실험은 되돌림) — 가장 진한 단계도 잉크 60%까지만 */
-.grass i.g1{background-color:var(--ink);opacity:.22;}
-.grass i.g2{background-color:var(--ink);opacity:.4;}
-.grass i.g3{background-color:var(--ink);opacity:.6;}
+/* 학습 캘린더 — 잔디(히트맵 스트립) 대신 실제 요일에 맞춘 이번 달 달력(2026-07-16).
+   날짜 숫자가 항상 읽혀야 해서 배경은 opacity가 아니라 rgba로 진하기만 조절
+   (복습뱃지 due-t0~t3와 같은 잉크 rgba 공식 재사용 — 가장 진한 단계도 60%까지만). */
+.cal-dow{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:6px;}
+.cal-dow span{font-size:10px;color:var(--muted);text-align:center;font-weight:700;}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;}
+.cal-cell{aspect-ratio:1;border-radius:0;background:var(--fill);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:var(--ink-2);font-variant-numeric:tabular-nums;}
+.cal-cell.empty{background:transparent;}
+.cal-cell.future{color:var(--line);}
+.cal-cell.g1{background:rgba(33,28,21,.22);color:var(--ink);}
+.cal-cell.g2{background:rgba(33,28,21,.4);color:var(--ink);}
+.cal-cell.g3{background:rgba(33,28,21,.6);color:#FFFBF1;}
+.cal-cell.today{border:1.5px solid var(--ink);font-weight:800;}
 
 /* 사전 검색 */
 .search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--ink);border-radius:0;padding:11px 14px;box-shadow:var(--shadow);}
@@ -570,11 +575,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .step.soon{opacity:.5;}
 .talk-room{display:flex;align-items:center;gap:13px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:var(--shadow);padding:14px 16px;margin-bottom:8px;}
 .talk-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex:none;}
-.talk-avatar.hi-green{background:var(--hi-green);color:var(--hi-green-xdark);}
-.talk-avatar.hi-yellow{background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
-.talk-avatar.hi-pink{background:var(--hi-pink);color:var(--hi-pink-xdark);}
-.talk-avatar.hi-blue{background:var(--hi-blue);color:var(--hi-blue-xdark);}
-.talk-avatar.hi-orange{background:var(--hi-orange);color:var(--ink);}
+.talk-avatar-sm{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:10px;flex:none;}
+.talk-avatar.hi-green, .talk-avatar-sm.hi-green{background:var(--hi-green);color:var(--hi-green-xdark);}
+.talk-avatar.hi-yellow, .talk-avatar-sm.hi-yellow{background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
+.talk-avatar.hi-pink, .talk-avatar-sm.hi-pink{background:var(--hi-pink);color:var(--hi-pink-xdark);}
+.talk-avatar.hi-blue, .talk-avatar-sm.hi-blue{background:var(--hi-blue);color:var(--hi-blue-xdark);}
+.talk-avatar.hi-orange, .talk-avatar-sm.hi-orange{background:var(--hi-orange);color:var(--ink);}
 .talk-room-body{flex:1;min-width:0;}
 .talk-room-name{font-size:14px;font-weight:800;}
 .talk-room-sub{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px;}
@@ -587,10 +593,16 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .talk-toggle{font-size:12px;font-weight:700;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:6px 12px;}
 .talk-toggle.on{background:var(--ink);color:var(--on-accent);}
 
-.talk-msgs{display:flex;flex-direction:column;gap:10px;padding-bottom:12px;max-height:calc(100dvh - 320px);overflow-y:auto;}
-.talk-msg{display:flex;flex-direction:column;max-width:82%;gap:3px;}
-.talk-msg.bot{align-self:flex-start;align-items:flex-start;}
-.talk-msg.user{align-self:flex-end;align-items:flex-end;}
+/* 대화방 = 채팅창 느낌(2026-07-16) — 페이지 배경(--bg, 크림)보다 밝은 --surface에 검정 테두리로
+   또렷한 "창" 하나를 만들고, 그 안에서만 말풍선이 오간다(카톡·문자 앱과 같은 레이아웃 관습). */
+.talk-msgs{display:flex;flex-direction:column;gap:10px;padding:12px;background:var(--surface);border:1px solid var(--ink);
+  max-height:calc(100dvh - 330px);overflow-y:auto;}
+.talk-msg-row{display:flex;align-items:flex-end;gap:6px;}
+.talk-msg-row.bot{justify-content:flex-start;}
+.talk-msg-row.user{justify-content:flex-end;}
+.talk-msg{display:flex;flex-direction:column;max-width:78%;gap:3px;}
+.talk-msg.bot{align-items:flex-start;}
+.talk-msg.user{align-items:flex-end;}
 .talk-bubble{padding:10px 13px;font-size:14px;line-height:1.5;font-weight:600;display:flex;align-items:center;gap:8px;}
 .talk-msg.bot .talk-bubble{background:var(--fill);color:var(--ink);}
 .talk-msg.user .talk-bubble{background:var(--ink);color:var(--on-accent);}
@@ -599,16 +611,20 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .talk-msg-fav{color:var(--muted);padding:0 3px;}
 .talk-msg-fav.on{color:var(--hi-pink-dark);}
 
-.talk-fb{border:0.5px solid var(--card-border);background:var(--warmgray-light);padding:11px 13px;font-size:12px;line-height:1.6;color:var(--ink-2);max-width:100%;}
+.talk-fb{border:0.5px solid var(--card-border);background:var(--line);padding:11px 13px;font-size:12px;line-height:1.6;color:var(--ink-2);max-width:100%;}
 .talk-fb.ok{border-color:var(--good);}
 .talk-fb .t{font-weight:800;margin-bottom:3px;color:var(--ink);}
 .talk-fb button{margin-top:8px;background:var(--ink);color:var(--on-accent);border-radius:999px;padding:6px 14px;font-size:12px;font-weight:700;}
 
 .talk-input-row{display:flex;gap:8px;position:sticky;bottom:0;background:var(--bg);padding:8px 0 2px;}
-.talk-input-row input{flex:1;border:0.5px solid var(--card-border);background:var(--surface);border-radius:0;padding:11px 13px;font:inherit;font-size:14px;outline:none;}
+.talk-input-row input{flex:1;min-width:0;border:0.5px solid var(--card-border);background:var(--surface);border-radius:0;padding:11px 13px;font:inherit;font-size:14px;outline:none;}
 .talk-input-row input:disabled{opacity:.5;}
 .talk-input-row button{background:var(--ink);color:var(--on-accent);border-radius:999px;padding:0 18px;font-weight:700;font-size:13px;flex:none;}
 .talk-input-row button:disabled{opacity:.4;}
+.talk-voice-toggle{background:var(--fill) !important;color:var(--ink) !important;border-radius:50% !important;width:42px;height:42px;padding:0 !important;display:flex;align-items:center;justify-content:center;}
+.talk-voice-btn{flex:1;min-width:0;background:var(--fill);color:var(--ink);border:0.5px solid var(--card-border);border-radius:0;padding:11px 13px;font-size:13px;font-weight:700;display:flex;align-items:center;justify-content:center;gap:8px;}
+.talk-voice-btn.listening{background:var(--danger-container);color:var(--danger);border-color:var(--danger);}
+.talk-voice-btn:disabled{opacity:.4;}
 
 .talk-summary-item{border:0.5px solid var(--card-border);background:var(--surface);padding:11px 13px;margin-bottom:8px;font-size:13px;line-height:1.6;}
 .finish .sub{font-size:13px;color:var(--muted);}
@@ -686,7 +702,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.32.0";const APP_BUILD = "2026-07-15"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.33.0";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -712,6 +728,8 @@ const ICONS = {
   favorite: "M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z",
   replay: "M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z",
   auto_awesome: "M19 9l1.25-2.75L23 5l-2.75-1.25L19 1l-1.25 2.75L15 5l2.75 1.25L19 9zm-7.5.5L9 4 6.5 9.5 1 12l5.5 2.5L9 20l2.5-5.5L17 12l-5.5-2.5zM19 15l-1.25 2.75L15 19l2.75 1.25L19 23l1.25-2.75L23 19l-2.75-1.25L19 15z",
+  mic: "M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z",
+  keyboard: "M20 5H4c-1.1 0-1.99.9-1.99 2L2 17c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-9 3h2v2h-2V8zm0 3h2v2h-2v-2zM8 8h2v2H8V8zm0 3h2v2H8v-2zm-1 2H5v-2h2v2zm0-3H5V8h2v2zm9 7H8v-2h8v2zm0-4h-2v-2h2v2zm0-3h-2V8h2v2zm3 3h-2v-2h2v2zm0-3h-2V8h2v2z",
 };
 function Icon({ name, size = 24 }) {
   return (
@@ -894,14 +912,17 @@ let _speakGen = 0; // 요청 세대 토큰 — fetch가 늦게 끝난 이전 호
 /* 모바일(특히 iOS Safari)은 오디오 자동재생을 "사용자 제스처와 직접 이어진" 호출에만 허용.
    듣기 세션은 3·2·1 카운트다운(setTimeout) 뒤에 문장을 재생하므로 제스처와 끊겨 무음으로
    실패하고, "다시 듣기" 버튼(직접 클릭 → 즉시 재생)만 소리가 나는 문제가 있었음.
-   앱에서 첫 터치가 발생하는 순간 무음 오디오를 한 번 재생해 이 Audio 엘리먼트를 "언락"해두면,
-   같은 엘리먼트를 재사용하는 이후의 타이머 기반 재생도 계속 허용됨(표준 모바일 언락 패턴). */
+   오디오·음성합성 엘리먼트를 한 번 재생해 "언락"해두면 같은 엘리먼트를 재사용하는 이후의
+   타이머 기반 재생도 계속 허용됨(표준 모바일 언락 패턴).
+   2026-07-16: 이 언락을 "앱 전체 첫 터치(document 전역 pointerdown)"에서 실행했더니, iOS에서
+   무음이라도 <audio> 재생·음성합성 호출 자체가 백그라운드에서 재생 중이던 다른 앱(음악 등)의
+   오디오 세션을 가로채 정지시키는 부작용이 있었음(홈 화면에서 아무 곳이나 눌러도 발생) —
+   실제로 지연 재생이 필요한 진입점(듣기 세션 시작, 회화 대화방 입장)에서만 명시적으로 호출하도록 축소. */
 const _sharedAudio = new Audio("data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=");
 function unlockAudio() {
   try { _sharedAudio.play().then(() => _sharedAudio.pause()).catch(() => {}); } catch (e) {}
   try { speechSynthesis.speak(new SpeechSynthesisUtterance("")); } catch (e) {}
 }
-document.addEventListener("pointerdown", unlockAudio, { once: true, passive: true });
 function stopSpeaking() {
   _speakGen++; // 진행 중인 speakText 호출이 있다면 자기 세대가 낡았음을 감지하고 재생을 포기하게 함
   try { speechSynthesis.cancel(); } catch (e) {}
@@ -1944,13 +1965,22 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
     { n: 2, title: `듣기 ${goals.goalListen}문장`, sub: "6 / 10 진행 중", state: "active", tab: "learn", direct: true, start: onStartListen },
     { n: 3, title: "회화 1세션", sub: "오늘의 상대: Karen (공항)", state: "todo", tab: "talk" },
   ];
-  const grass = useMemo(() => {
+  // 학습 캘린더 — 이번 달을 실제 요일에 맞춰 배치(잔디 히트맵 대신). 학습량 표시는 아직 더미
+  // (실 학습 로그 연동 전 — PLAN.md "홈 실데이터 전환" 작업에서 교체 예정).
+  const calendar = useMemo(() => {
+    const now = new Date();
+    const y = now.getFullYear(), mo = now.getMonth(), today = now.getDate();
+    const firstDow = new Date(y, mo, 1).getDay(); // 0=일요일
+    const daysInMonth = new Date(y, mo + 1, 0).getDate();
     const cells = [];
-    for (let i = 0; i < 17 * 5; i++) {
-      const r = (i * 7 + 3) % 11;
-      cells.push(r > 8 ? "g3" : r > 6 ? "g2" : r > 3 ? "g1" : "");
+    for (let i = 0; i < firstDow; i++) cells.push(null);
+    for (let d = 1; d <= daysInMonth; d++) {
+      const isFuture = d > today;
+      const r = (d * 7 + 3) % 11;
+      const tier = isFuture ? "" : (r > 8 ? "g3" : r > 6 ? "g2" : r > 3 ? "g1" : "");
+      cells.push({ d, tier, isToday: d === today, isFuture });
     }
-    return cells;
+    return { y, mo, cells };
   }, []);
   const badgesEarned = BADGE_CATS.reduce((s, c) => s + catEarnedCount(c.k), 0);
   const pts = POINTS.get();
@@ -2027,9 +2057,18 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
         </div>
       ))}
 
-      <div className="sec">잔디 <span className="more">최근 17주</span></div>
+      <div className="sec">학습 캘린더 <span className="more">{calendar.y}년 {calendar.mo + 1}월</span></div>
       <div className="card" style={{ padding: "16px" }}>
-        <div className="grass">{grass.map((c, i) => <i key={i} className={c} />)}</div>
+        <div className="cal-dow">{["일", "월", "화", "수", "목", "금", "토"].map(d => <span key={d}>{d}</span>)}</div>
+        <div className="cal-grid">
+          {calendar.cells.map((c, i) => c === null ? (
+            <i key={i} className="cal-cell empty" />
+          ) : (
+            <div key={i} className={"cal-cell" + (c.tier ? " " + c.tier : "") + (c.isToday ? " today" : "") + (c.isFuture ? " future" : "")}>
+              {c.d}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -2625,25 +2664,35 @@ function Soon({ title, desc }) {
    음성 입력·유창성 모드(무중단, 종료 후 일괄 리뷰)·사용자 커스텀 페르소나 생성은 다음 단계로 남김. */
 const PERSONAS = [
   { id: "coworker", name: "직장동료", trait: "IT회사 개발자 · 미국인", accent: "us", rate: 1, avatar: "green", letter: "동",
-    promptDesc: "당신은 사용자와 같은 IT회사에서 일하는 미국인 개발자 동료입니다. 친근하고 캐주얼한 톤으로 업무 잡담을 나눕니다." },
+    promptDesc: "당신은 사용자와 같은 IT회사에서 일하는 미국인 개발자 동료입니다. 친근하고 캐주얼한 톤으로 업무 잡담을 나눕니다.",
+    intro: "Hey! Long day, huh? What's up?", introKo: "안녕! 오늘 힘든 하루였지? 무슨 일 있어?" },
   { id: "partner", name: "3년 사귄 애인", trait: "영국인", accent: "gb", rate: 1, avatar: "pink", letter: "애",
-    promptDesc: "당신은 사용자와 3년째 사귀고 있는 영국인 애인입니다. 다정하고 편안한 톤으로 일상 대화를 나눕니다." },
+    promptDesc: "당신은 사용자와 3년째 사귀고 있는 영국인 애인입니다. 다정하고 편안한 톤으로 일상 대화를 나눕니다.",
+    intro: "Hey babe, I missed you today. How was your day?", introKo: "자기야, 오늘 보고 싶었어. 하루 어땠어?" },
   { id: "traveler", name: "여행지에서 만난 사람", trait: "호주인", accent: "au", rate: 1, avatar: "blue", letter: "여",
-    promptDesc: "당신은 여행지에서 사용자와 방금 처음 만난 호주인입니다. 밝고 스몰토크에 능한 톤으로 대화합니다." },
+    promptDesc: "당신은 여행지에서 사용자와 방금 처음 만난 호주인입니다. 밝고 스몰토크에 능한 톤으로 대화합니다.",
+    intro: "Oh, hi there! Are you traveling alone too?", introKo: "오, 안녕하세요! 혹시 혼자 여행 중이세요?" },
   { id: "cashier", name: "마트 점원", trait: "미국인 · 캐주얼한 말투", accent: "us", rate: 1, avatar: "yellow", letter: "마",
-    promptDesc: "당신은 미국 마트에서 일하는 점원입니다. 캐주얼하고 친근한 구어체로 짧게 응대합니다." },
+    promptDesc: "당신은 미국 마트에서 일하는 점원입니다. 캐주얼하고 친근한 구어체로 짧게 응대합니다.",
+    intro: "Hi, welcome! Did you find everything okay today?", introKo: "안녕하세요, 어서오세요! 오늘 필요한 거 다 찾으셨어요?" },
   { id: "airport", name: "공항 지상직 직원", trait: "영국인 · 사무적", accent: "gb", rate: 1, avatar: "orange", letter: "공",
-    promptDesc: "당신은 공항 지상직 직원입니다. 무례하진 않지만 다소 사무적이고 퉁명스러운 톤으로 응대합니다." },
+    promptDesc: "당신은 공항 지상직 직원입니다. 무례하진 않지만 다소 사무적이고 퉁명스러운 톤으로 응대합니다.",
+    intro: "Next. Passport and boarding pass, please.", introKo: "다음 분. 여권이랑 탑승권 주세요." },
   { id: "doctor", name: "의사", trait: "중장년 남성 · 빠른 말투", accent: "us", rate: 1.2, avatar: "blue", letter: "의",
-    promptDesc: "당신은 중장년 남성 의사입니다. 말이 빠르고 전문적인 톤으로 진료를 진행합니다." },
+    promptDesc: "당신은 중장년 남성 의사입니다. 말이 빠르고 전문적인 톤으로 진료를 진행합니다.",
+    intro: "Hi, come on in. So, what brings you in today?", introKo: "안녕하세요, 들어오세요. 오늘 어떻게 오셨나요?" },
   { id: "barista", name: "카페 직원", trait: "20대 여성 · 빠른 말투", accent: "us", rate: 1.2, avatar: "green", letter: "카",
-    promptDesc: "당신은 20대 여성 카페 직원입니다. 밝고 빠른 톤으로 주문을 받습니다." },
+    promptDesc: "당신은 20대 여성 카페 직원입니다. 밝고 빠른 톤으로 주문을 받습니다.",
+    intro: "Hey there! What can I get started for you today?", introKo: "안녕하세요! 오늘 뭐로 시작해드릴까요?" },
   { id: "stranger", name: "지나가는 행인", trait: "도움이 필요한 상황 · 미국인", accent: "us", rate: 1, avatar: "yellow", letter: "행",
-    promptDesc: "당신은 길에서 도움이 필요한(또는 사용자를 도와줄 수 있는) 미국인 행인입니다." },
+    promptDesc: "당신은 길에서 도움이 필요한(또는 사용자를 도와줄 수 있는) 미국인 행인입니다.",
+    intro: "Excuse me, sorry to bother you — do you have a second?", introKo: "저기요, 죄송한데 잠깐 시간 괜찮으세요?" },
   { id: "tutor", name: "친절한 영어 튜터", trait: "30대 · 뉴욕 발음", accent: "us", rate: 1, avatar: "pink", letter: "튜",
-    promptDesc: "당신은 뉴욕 출신의 친절한 30대 영어 튜터입니다. 격려하는 톤으로 자연스럽게 학습자를 이끕니다." },
+    promptDesc: "당신은 뉴욕 출신의 친절한 30대 영어 튜터입니다. 격려하는 톤으로 자연스럽게 학습자를 이끕니다.",
+    intro: "Hi! Ready for today's lesson? Let's dive right in.", introKo: "안녕하세요! 오늘 수업 준비되셨나요? 바로 시작해봐요." },
   { id: "friend", name: "10년지기 친구", trait: "슬랭 다수 · 미국인", accent: "us", rate: 1, avatar: "orange", letter: "친",
-    promptDesc: "당신은 사용자와 10년지기인 미국인 친구입니다. 편하고 슬랭이 섞인 캐주얼한 톤으로 대화합니다." },
+    promptDesc: "당신은 사용자와 10년지기인 미국인 친구입니다. 편하고 슬랭이 섞인 캐주얼한 톤으로 대화합니다.",
+    intro: "Yo! It's been way too long, man. What's new with you?", introKo: "야! 진짜 오랜만이다. 요즘 뭐 하고 지내?" },
 ];
 
 /* 대화방 상태(페르소나별 메시지 이력) + 즐겨찾기 문장 — 보관함 "문장" 탭과 공유 데이터. */
@@ -2853,7 +2902,7 @@ function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting }) {
         const room = TALK_ROOMS[p.id];
         const last = room && room.messages.length ? room.messages[room.messages.length - 1] : null;
         return (
-          <div key={p.id} className="talk-room" onClick={() => onOpenRoom(p.id)}>
+          <div key={p.id} className="talk-room" onClick={() => { unlockAudio(); onOpenRoom(p.id); }}>
             <div className={"talk-avatar hi-" + p.avatar}>{p.letter}</div>
             <div className="talk-room-body">
               <div className="talk-room-name">{p.name}</div>
@@ -2867,6 +2916,10 @@ function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting }) {
   );
 }
 
+/* 음성 입력 — 브라우저 내장 SpeechRecognition(별도 서버 없이 클라이언트에서 바로 인식).
+   Chrome/Edge/Android는 지원, Safari/Firefox는 미지원인 경우가 많아 있을 때만 버튼 노출. */
+const SpeechRecognitionAPI = typeof window !== "undefined" && (window.SpeechRecognition || window.webkitSpeechRecognition);
+
 function TalkRoom({ persona, onExit }) {
   const saved = TALK_ROOMS[persona.id];
   const [messages, setMessages] = useState((saved && saved.messages) || []);
@@ -2878,11 +2931,16 @@ function TalkRoom({ persona, onExit }) {
   const [loadingFb, setLoadingFb] = useState(false);
   const [err, setErr] = useState(null);
   const [showSummary, setShowSummary] = useState(false);
+  const [voiceMode, setVoiceMode] = useState(false);
+  const [listening, setListening] = useState(false);
   const [, bump] = useState(0);
   const scrollRef = useRef(null);
+  const inputRef = useRef(null);
+  const recogRef = useRef(null);
 
   useEffect(() => { TALK_ROOMS[persona.id] = { messages }; saveTalkRooms(); }, [messages]);
   useEffect(() => { if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight; }, [messages]);
+  useEffect(() => { if (!voiceMode && inputRef.current) inputRef.current.focus(); }, [voiceMode, awaitingAck, loadingBot, loadingFb]); // 키보드 자동 표시
 
   const fetchBotLine = async hist => {
     setLoadingBot(true); setErr(null);
@@ -2899,9 +2957,34 @@ function TalkRoom({ persona, onExit }) {
   };
 
   useEffect(() => {
-    if (messages.length === 0) fetchBotLine([]);
+    // 페르소나별 기본 자기소개 — 네트워크 왕복 없이 즉시 표시(새 대화일 때만, 이어하는 대화는 그대로 유지)
+    if (messages.length === 0) {
+      const introMsg = { role: "bot", en: persona.intro, ko: persona.introKo };
+      setMessages([introMsg]);
+      speakText(introMsg.en, persona.rate, persona.accent);
+    }
     // eslint-disable-next-line
   }, []);
+
+  const startListening = () => {
+    if (!SpeechRecognitionAPI || listening) return;
+    const rec = new SpeechRecognitionAPI();
+    rec.lang = "en-US";
+    rec.interimResults = false;
+    rec.maxAlternatives = 1;
+    rec.onresult = e => {
+      const text = (e.results[0] && e.results[0][0] && e.results[0][0].transcript) || "";
+      if (text) setInput(v => (v ? v + " " : "") + text);
+      setVoiceMode(false); // 인식 결과를 텍스트 입력창에 채우고 검토 후 전송하도록 복귀
+    };
+    rec.onerror = () => { setListening(false); setErr("음성 인식에 실패했어요. 다시 시도해 주세요."); };
+    rec.onend = () => setListening(false);
+    recogRef.current = rec;
+    setListening(true);
+    setErr(null);
+    rec.start();
+  };
+  const stopListening = () => { if (recogRef.current) recogRef.current.stop(); setListening(false); };
 
   const send = async () => {
     const text = input.trim();
@@ -2959,27 +3042,30 @@ function TalkRoom({ persona, onExit }) {
 
       <div className="talk-msgs" ref={scrollRef}>
         {messages.map((m, i) => (
-          <div key={i} className={"talk-msg " + m.role}>
-            <div className="talk-bubble">
-              {m.role === "bot" && !showEn ? "•••" : m.en}
-              {m.role === "bot" && (
-                <button className="talk-play" onClick={() => speakText(m.en, persona.rate, persona.accent)} aria-label="다시 듣기">
-                  <Icon name="volume_up" size={13} />
-                </button>
+          <div key={i} className={"talk-msg-row " + m.role}>
+            {m.role === "bot" && <div className={"talk-avatar-sm hi-" + persona.avatar}>{persona.letter}</div>}
+            <div className={"talk-msg " + m.role}>
+              <div className="talk-bubble">
+                {m.role === "bot" && !showEn ? "•••" : m.en}
+                {m.role === "bot" && (
+                  <button className="talk-play" onClick={() => speakText(m.en, persona.rate, persona.accent)} aria-label="다시 듣기">
+                    <Icon name="volume_up" size={13} />
+                  </button>
+                )}
+              </div>
+              {showKo && m.ko && <div className="talk-msg-ko">{m.ko}</div>}
+              <button className={"talk-msg-fav" + (isFavSentence(m.en) ? " on" : "")} onClick={() => toggleFav(m)} aria-label="문장 즐겨찾기">
+                <Icon name="favorite" size={14} />
+              </button>
+              {m.role === "user" && m.feedback && (
+                <div className={"talk-fb" + (m.feedback.ok ? " ok" : "")}>
+                  <div className="t">{m.feedback.ok ? "좋아요!" : "이렇게 말하면 더 자연스러워요"}</div>
+                  {!m.feedback.ok && m.feedback.corrected && <div>{m.feedback.corrected}</div>}
+                  {m.feedback.note_ko && <div>{m.feedback.note_ko}</div>}
+                  {awaitingAck && i === messages.length - 1 && <button onClick={ackFeedback}>확인</button>}
+                </div>
               )}
             </div>
-            {showKo && m.ko && <div className="talk-msg-ko">{m.ko}</div>}
-            <button className={"talk-msg-fav" + (isFavSentence(m.en) ? " on" : "")} onClick={() => toggleFav(m)} aria-label="문장 즐겨찾기">
-              <Icon name="favorite" size={14} />
-            </button>
-            {m.role === "user" && m.feedback && (
-              <div className={"talk-fb" + (m.feedback.ok ? " ok" : "")}>
-                <div className="t">{m.feedback.ok ? "좋아요!" : "이렇게 말하면 더 자연스러워요"}</div>
-                {!m.feedback.ok && m.feedback.corrected && <div>{m.feedback.corrected}</div>}
-                {m.feedback.note_ko && <div>{m.feedback.note_ko}</div>}
-                {awaitingAck && i === messages.length - 1 && <button onClick={ackFeedback}>확인</button>}
-              </div>
-            )}
           </div>
         ))}
         {loadingBot && <div className="empty-note">상대가 대답을 준비하고 있어요…</div>}
@@ -2988,11 +3074,26 @@ function TalkRoom({ persona, onExit }) {
       </div>
 
       <div className="talk-input-row">
-        <input value={input} onChange={e => setInput(e.target.value)} placeholder="영어로 답해보세요"
-          disabled={awaitingAck || loadingBot || loadingFb}
-          onKeyDown={e => { if (e.key === "Enter") send(); }}
-          autoCapitalize="none" autoComplete="off" autoCorrect="off" />
-        <button onClick={send} disabled={!input.trim() || awaitingAck || loadingBot || loadingFb}>전송</button>
+        {voiceMode ? (
+          <button className={"talk-voice-btn" + (listening ? " listening" : "")}
+                  onClick={listening ? stopListening : startListening}
+                  disabled={awaitingAck || loadingBot || loadingFb}>
+            <Icon name="mic" size={18} />
+            {listening ? "듣고 있어요… 탭해서 멈추기" : "탭해서 말하기"}
+          </button>
+        ) : (
+          <input ref={inputRef} value={input} onChange={e => setInput(e.target.value)} placeholder="영어로 답해보세요"
+            disabled={awaitingAck || loadingBot || loadingFb}
+            onKeyDown={e => { if (e.key === "Enter") send(); }}
+            autoFocus autoCapitalize="none" autoComplete="off" autoCorrect="off" />
+        )}
+        {SpeechRecognitionAPI && (
+          <button className="talk-voice-toggle" onClick={() => { stopListening(); setVoiceMode(v => !v); }}
+                  disabled={awaitingAck || loadingBot || loadingFb} aria-label="입력 방식 전환">
+            <Icon name={voiceMode ? "keyboard" : "mic"} size={18} />
+          </button>
+        )}
+        {!voiceMode && <button onClick={send} disabled={!input.trim() || awaitingAck || loadingBot || loadingFb}>전송</button>}
       </div>
     </div>
   );
@@ -4262,7 +4363,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   }
 
   const startCard = () => { const items = pickSession(10); if (items.length) { setMode("card"); setSession(items); } };
-  const startListen = () => { const items = pickSession(10); if (items.length) { setMode("listen"); setSession(items); } };
+  const startListen = () => { unlockAudio(); const items = pickSession(10); if (items.length) { setMode("listen"); setSession(items); } };
   const startQuiz = () => {
     const qs = buildQuiz(10);
     if (qs) setQuiz(qs);
@@ -4551,7 +4652,7 @@ function App() {
           <LevelTest onExit={() => setLtOpen(false)} />
         ) : (
           <React.Fragment>
-            {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => startCustomStudy(pickSession(10), "listen")} />}
+            {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => { unlockAudio(); startCustomStudy(pickSession(10), "listen"); }} />}
             {tab === "dict" && <Dict onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} />}
             {tab === "learn" && <Learn onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} customMode={customMode} onConsumeCustomStudy={() => setCustomStudy(null)} />}
             {tab === "talk" && <Talk />}
