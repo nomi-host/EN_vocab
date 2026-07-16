@@ -9,6 +9,9 @@
      GET  /health                                    -> { ok: true }
    시크릿(레포에 넣지 않음, wrangler secret 또는 대시보드로 등록):
      GEMINI_API_KEY, GOOGLE_TTS_KEY
+     APP_SHARED_SECRET — 클라이언트(index.html의 PROXY_SECRET)와 반드시 같은 값. 미설정 시 검사
+       생략(로컬 테스트용) — 실서비스는 반드시 설정할 것. 안 하면 URL만 아는 누구나 이 프록시를
+       직접 두드려 Gemini/TTS 쿼터를 대신 써버릴 수 있음(2026-07-16, 실제로 겪은 문제).
    환경변수(wrangler.toml [vars]):
      ALLOWED_ORIGINS — 쉼표 구분 허용 오리진 목록(비우면 전부 허용 — 배포 후 반드시 좁힐 것)
      GEMINI_MODEL — 기본 gemini-2.0-flash
@@ -25,9 +28,18 @@ function corsHeaders(origin, allowed) {
   return {
     "Access-Control-Allow-Origin": allowed ? origin || "*" : "null",
     "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
-    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Headers": "Content-Type, X-App-Secret",
     "Vary": "Origin",
   };
+}
+
+/* CORS의 Origin 헤더는 서버-서버(curl 등) 요청에서 얼마든지 위조 가능해 실질적인 인증이 아님 —
+   앱이 항상 함께 보내는 공유 시크릿(X-App-Secret)을 확인해, URL만 보고 직접 두드리는
+   스캐너/봇이 Gemini·TTS 쿼터를 대신 써버리는 걸 막는다. APP_SHARED_SECRET이 설정 안 돼
+   있으면(로컬 테스트 등) 검사를 건너뛴다. */
+function isSecretValid(request, env) {
+  if (!env.APP_SHARED_SECRET) return true;
+  return request.headers.get("X-App-Secret") === env.APP_SHARED_SECRET;
 }
 
 function isOriginAllowed(origin, env) {
@@ -154,6 +166,7 @@ export default {
     if (request.method === "OPTIONS") return new Response(null, { headers });
     if (url.pathname === "/health") return json({ ok: true }, 200, headers);
     if (!allowed) return json({ error: "origin not allowed" }, 403, headers);
+    if (!isSecretValid(request, env)) return json({ error: "forbidden" }, 403, headers);
 
     try {
       if (url.pathname === "/gemini" && request.method === "POST") return await handleGemini(request, env, headers);
