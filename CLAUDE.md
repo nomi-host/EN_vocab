@@ -47,6 +47,14 @@
 - **업데이트 감지는 배너+수동 버튼이 아니라 자동 강제 새로고침(2026-07-16 변경).** 이전엔 `.update-banner`에 "새로고침" 버튼을 띄워 사용자가 직접 눌러야 했는데, "버튼 없애고 PWA 껐다 켜면 강제 새로고침되게" 요청으로 배너를 완전히 제거하고 `App`의 버전 체크 effect가 최초 마운트 시 + `visibilitychange`(visible) 시 자동으로 `location.reload()` 대신 `?_=타임스탬프` URL 강제 이동을 실행하도록 변경. 5분 주기 폴링은 제거(활성 세션 중 갑자기 새로고침되어 입력 중이던 내용이 날아가는 걸 피하기 위해 — 재진입 시점에만 체크).
 - **`index.html` 안의 `<meta http-equiv="Cache-Control">`은 실제 HTTP 캐시에 안 먹히는 경우가 많음**(특히 iOS 홈화면 standalone 앱) — 진짜 캐시 제어는 배포 루트의 `_headers` 파일(Cloudflare Workers Assets가 읽음)이 담당한다. `index.html`/`manifest.json`/`version.json`은 여기서 `no-cache, no-store, must-revalidate`로 강제 — 이 파일들 캐시 정책을 바꿀 땐 메타 태그가 아니라 `_headers`를 고칠 것.
 
+## 학습/사전 UX 메모
+- **단어카드 유의어 정답 유도(`CardSession`)**: 유의어(예 "on time")를 입력하면 오답 처리하지 않고 넛지("'on time'도 맞아요! 그런데 같은 뜻으로 'p'로 시작하는 단어도 있어요") + 첫글자·글자수 힌트를 자동으로 연다. 데이터엔 언더스코어("on_time")로 저장되는데 사용자는 공백("on time")으로 치므로 비교 시 `normSyn`(공백/언더스코어 통일)로 정규화 필수 — 안 하면 유의어 인식이 안 돼 그냥 오답 처리됨(2026-07-17 수정). 유의어 칩 표시도 `_`→공백.
+- **카드 위 "약한 힌트"(`softHint`)**: 단어를 직접 안 알려주고 사용 결만 옅게 귀띔(CEFR 레벨을 빈도/격식 근사로: A1~A2=기초회화, B1~B2=일상, C1~C2=격식). `.qsofthint`로 CEFR 뱃지 왼쪽에 옅게.
+- **"지금 복습할 카드" 0 방지**: SRS 데모 시드 중 8개(`knock#0` 등)는 `demo` 미표시 + `due` 과거로 둬서 실제 복습 대기 큐로 남긴다 — 대시보드가 0으로 안 비고 홈 "복습 8"과 일치. 나머지 데모는 여전히 `demo`라 `pickSession`엔 안 섞임. 데모 항목에 `at`(학습 날짜, 최근 ~90일 6개씩 클러스터)도 부여.
+- **"내가 학습한 단어 > 날짜별"**: SRS `at`(마지막 학습 시각, `grade`에서 기록)로 그룹핑. `learnedMode`(date/status) 세그먼트 토글, 기본 date.
+- **보관함 즐겨찾기/내 단어장 바로가기**: `dictViewJump`(App)→`Dict`의 `viewJump` effect로 허브 안 거치고 해당 뷰로 바로 진입.
+- **WordRow 뱃지 2줄**: CEFR은 윗줄 단독, 뜻·상태(완료/복습)는 아랫줄에 같이(`.meta-line`).
+
 ## 데이터 파이프라인 메모
 - 시드는 `pipeline/`에서 생성 → `pipeline/merge_cefrj.js`가 `words.js`로 병합. `words.js`는 직접 수정 금지(배치/보강 파일 수정 후 재빌드).
 - 다의어 senses는 `pipeline/senses_parts/*.json`(에이전트별 분할)을 merge가 합침. WordNet 뼈대는 `pipeline/wordnet_senses.json`.
