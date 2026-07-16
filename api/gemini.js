@@ -43,7 +43,9 @@ async function callGeminiWithFallback(contents, generationConfig, fallbacks) {
     const locationBlocked = upstream.status === 400 && lastDetail.includes("FAILED_PRECONDITION");
     if (upstream.status !== 404 && upstream.status !== 429 && !locationBlocked) break;
   }
-  throw new Error(`gemini upstream error [${attempts.join(", ")}] last: ${lastDetail.slice(0, 250)}`);
+  /* "v4" 마커: 이 문자열이 에러에 보이면 x-goog-api-key 헤더 방식의 새 코드가 실제로 배포된 것
+     (Vercel 배포가 옛 코드로 멈춰있는 경우를 에러 메시지만으로 판별하기 위함) */
+  throw new Error(`gemini upstream error v4 [${attempts.join(", ")}] last: ${lastDetail.slice(0, 250)}`);
 }
 
 function setCors(res) {
