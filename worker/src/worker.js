@@ -14,12 +14,13 @@
        직접 두드려 Gemini/TTS 쿼터를 대신 써버릴 수 있음(2026-07-16, 실제로 겪은 문제).
    환경변수(wrangler.toml [vars]):
      ALLOWED_ORIGINS — 쉼표 구분 허용 오리진 목록(비우면 전부 허용 — 배포 후 반드시 좁힐 것)
-     GEMINI_MODEL — 기본 gemini-2.5-flash-lite. gemini-2.0-flash는 이 계정에서 분당 요청 한도 자체가
-       0/0으로 배정돼 있어(2026-07-16, Google AI Studio "모델별 비율 제한" 화면에서 확인 —
-       사용량은 0인데도 첫 호출부터 429가 뜬 원인) 쓸 수 없었고, 그다음 시도한 gemini-2.5-flash는
-       "no longer available to new users"(404)로 아예 막혀있음(신규 발급 키엔 구버전 flash 별칭이
-       할당 안 되는 듯) — models.list API로 실제 사용 가능한 모델을 직접 조회해 확인한 결과
-       gemini-2.5-flash-lite만 generateContent 지원 + stable 상태로 확인됨.
+     GEMINI_MODEL — 기본 gemini-3-pro-preview. 이 계정(신규 발급 키)에서 2.x 세대 모델은 전부
+       막혀있는 것으로 확인됨(2026-07-16, 순서대로 시도): gemini-2.0-flash는 분당 요청 한도가
+       0/0(Google AI Studio "모델별 비율 제한" 화면 확인), gemini-2.5-flash·gemini-2.5-flash-lite는
+       models.list엔 나오지만 실제 호출 시 둘 다 404 "no longer available to new users" — 즉
+       models.list에 있다고 실제로 호출 가능한 게 아님. models.list에서 gemini-3-pro-preview
+       (최신 세대, generateContent 지원)를 찾아 반영. **같은 증상 재발 시 또 다른 2.x 모델로
+       추측하지 말고 3.x 이상 모델을 먼저 시도할 것.**
    PLAN.md 6.6 참고: 지금은 P0 단계(사용량 DB 카운트 없음) — 개인용 규모 전제.
 ============================================================================ */
 
@@ -74,7 +75,7 @@ async function handleGemini(request, env, headers) {
   if (!prompt || prompt.length > 2000) return json({ error: "invalid prompt" }, 400, headers);
   if (!env.GEMINI_API_KEY) return json({ error: "server not configured" }, 500, headers);
 
-  const model = env.GEMINI_MODEL || "gemini-2.5-flash-lite";
+  const model = env.GEMINI_MODEL || "gemini-3-pro-preview";
   const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${env.GEMINI_API_KEY}`;
   const upstream = await fetch(apiUrl, {
     method: "POST",
@@ -105,7 +106,7 @@ async function handleStt(request, env, headers) {
   if (!audio || audio.length > 8000000) return json({ error: "invalid audio" }, 400, headers);
   if (!env.GEMINI_API_KEY) return json({ error: "server not configured" }, 500, headers);
 
-  const model = env.GEMINI_MODEL || "gemini-2.5-flash-lite";
+  const model = env.GEMINI_MODEL || "gemini-3-pro-preview";
   const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${env.GEMINI_API_KEY}`;
   const upstream = await fetch(apiUrl, {
     method: "POST",

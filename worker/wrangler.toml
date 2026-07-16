@@ -6,7 +6,7 @@ compatibility_date = "2026-07-15"
 # 배포된 앱의 실제 오리진으로 좁혀서 넣을 것(쉼표 구분). 비워두면 전부 허용(초기 테스트용).
 # 예: "https://en-vocab.vercel.app,https://your-domain.com"
 ALLOWED_ORIGINS = ""
-GEMINI_MODEL = "gemini-2.5-flash-lite"
+GEMINI_MODEL = "gemini-3-pro-preview"
 
 # 시크릿은 여기 넣지 않음 — 아래 명령으로 등록:
 #   wrangler secret put GEMINI_API_KEY
