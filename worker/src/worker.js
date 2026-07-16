@@ -70,13 +70,15 @@ function base64ToBytes(b64) {
    실제로 반복돼서(2026-07-16, 2.0-flash→429, 2.5-flash·2.5-flash-lite→404), 모델 하나에 걸지 않고
    후보 목록을 순서대로 시도한다. 404/429(모델 자체가 안 열린 경우)면 다음 후보로 자동 폴백 —
    Google이 또 이름을 바꿔도 앱은 계속 동작. env.GEMINI_MODEL이 있으면 최우선 후보로 끼워준다. */
-/* 텍스트용 후보: Gemma(오픈소스 계열)를 맨 앞에 — Gemini와 무료 할당량이 별도라, 이 계정처럼
-   Gemini 쿼터가 전부 0(무료 티어 미배정, 2026-07-16 확인)이어도 Gemma는 열려있을 수 있다.
-   models.list에서 gemma-4-26b-a4b-it가 generateContent 지원으로 확인됨. */
-const MODEL_FALLBACKS = ["gemma-4-26b-a4b-it", "gemini-3-pro-preview", "gemini-2.5-flash-lite", "gemini-2.0-flash-001", "gemini-2.0-flash"];
-/* 오디오(STT)용 후보: Gemma는 오디오 입력을 지원하지 않아 Gemini 계열만 — 즉 Gemini 쿼터가
-   생기기 전까지 STT는 동작하지 않음(텍스트 기능과 별개). */
-const AUDIO_MODEL_FALLBACKS = ["gemini-3-pro-preview", "gemini-2.5-flash-lite", "gemini-2.0-flash-001", "gemini-2.0-flash"];
+/* 텍스트용 후보 — 2026-07 웹 서치로 확인된 사실 기반 순서:
+   · 무료 티어는 "현세대 Flash 계열"만(Pro는 2026-04-01부터 유료 전용) → 3.5/3 Flash를 맨 앞에.
+   · gemini-2.5-flash(-lite)는 공식 종료일(10-16) 전인 2026-07-09부터 신규 사용자에게 조기 404 —
+     전 세계적 사건(포럼 다수 보고), 우리 계정 문제 아님.
+   · Gemma는 무료 할당량이 별도지만 Cloudflare 경유 시 위치 거부(400)될 수 있어 Flash 뒤로.
+   · 결제(선불 포함)가 연결된 프로젝트는 무료 티어가 소멸되므로 키는 결제 미연결 프로젝트 것 사용. */
+const MODEL_FALLBACKS = ["gemini-3.5-flash", "gemini-3-flash", "gemini-3-flash-preview", "gemma-4-26b-a4b-it", "gemini-3-pro-preview", "gemini-2.5-flash-lite", "gemini-2.0-flash"];
+/* 오디오(STT)용 후보: Gemma는 오디오 입력을 지원하지 않아 Gemini 계열만. */
+const AUDIO_MODEL_FALLBACKS = ["gemini-3.5-flash", "gemini-3-flash", "gemini-3-flash-preview", "gemini-3-pro-preview", "gemini-2.5-flash-lite", "gemini-2.0-flash"];
 function modelCandidates(env, fallbacks) {
   const list = env.GEMINI_MODEL ? [env.GEMINI_MODEL, ...fallbacks] : fallbacks.slice();
   return [...new Set(list)];

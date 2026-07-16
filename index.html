@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.33.9">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.33.9" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.33.9" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.34.0">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.34.0" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.34.0" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.33.9"></script><style>
+<script src="words.js?v=0.34.0"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.33.9") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.33.9") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.34.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.34.0") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.33.9") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.33.9") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.34.0") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.34.0") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -695,7 +695,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.33.9";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.34.0";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -774,12 +774,9 @@ async function autoLookupWord(key) {
       (enDef ? "(영어 정의: " + enDef + ")" : "") + (fallbackEx ? "(참고 예문: " + fallbackEx + ")" : "") +
       "에 대해 한국어 학습자용 정보를 아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요.\n" +
       '{"ko":"간결한 한국어 뜻(품사 표시 없이)","cefr":"A1~C2 중 난이도 추정 한 값","ex_en":"자연스러운 영어 예문 한 문장","ex_ko":"그 예문의 자연스러운 한국어 번역"}';
-    const r = await fetch(PROXY_BASE + "/gemini", {
-      method: "POST", headers: proxyHeaders(), body: JSON.stringify({ prompt }),
-    });
-    const data = await r.json().catch(() => null);
-    if (r.ok && data && data.text) {
-      const cleaned = data.text.replace(/^```json\s*|^```\s*|```\s*$/g, "").trim();
+    const resText = await geminiText(prompt);
+    if (resText) {
+      const cleaned = resText.replace(/^```json\s*|^```\s*|```\s*$/g, "").trim();
       const parsed = JSON.parse(cleaned);
       ko = (parsed.ko || "").trim();
       cefr = (parsed.cefr || "").trim();
@@ -886,6 +883,57 @@ const PROXY_BASE = "https://noenglish-proxy.younglee-works.workers.dev";
    Worker 쪽 env.APP_SHARED_SECRET과 반드시 같은 값이어야 함 — worker/README.md 참고. */
 const PROXY_SECRET = "8668c5975ca9252dfa7b6c2306c7f4fb617a3b63aa073cff";
 function proxyHeaders() { return { "Content-Type": "application/json", "X-App-Secret": PROXY_SECRET }; }
+
+/* ---------- Gemini 직접 호출 (기기 → Google, 프록시 미경유) ----------
+   Google 무료 티어는 "호출이 날아온 IP의 위치"로 지원 여부를 판정하는데, Worker 프록시를
+   경유하면 Cloudflare 서버 위치로 찍혀 거부된다(2026-07-16, Gemma가 "User location is not
+   supported"로 거부되는 것 확인 — 한국은 지원 지역이라 각 사용자의 기기에서 직접 쏘면 통과).
+   그래서 무료 키를 앱에 내장해 모든 사용자가 자기 기기에서 직접 호출한다.
+   키가 코드에 노출되지만: 결제 미연결 무료 키라 금전 피해가 불가능하고, 최악도 "일일 무료
+   한도 소진"(키 재발급으로 대응). 수익화 단계에서 유료 키로 바꿀 땐 다시 프록시 뒤로 숨길 것.
+   GEMINI_DIRECT_KEY가 비어있으면 기존 프록시 경유로 동작(이전과 완전히 동일). */
+const GEMINI_DIRECT_KEY = "";
+function getGeminiKey() { return GEMINI_DIRECT_KEY.trim(); }
+
+/* Worker의 MODEL_FALLBACKS와 같은 원리의 후보 체인 — 404/429/위치거부(400 FAILED_PRECONDITION)면
+   다음 모델로 자동 전환. 무료 티어는 현세대 Flash 계열만(Pro는 2026-04부터 유료 전용)이라
+   3.5/3 Flash가 맨 앞. Gemma는 오디오 입력 미지원이라 STT 후보에서는 제외. */
+const GEMINI_TEXT_MODELS = ["gemini-3.5-flash", "gemini-3-flash", "gemini-3-flash-preview", "gemma-4-26b-a4b-it", "gemini-3-pro-preview", "gemini-2.5-flash-lite", "gemini-2.0-flash"];
+const GEMINI_AUDIO_MODELS = ["gemini-3.5-flash", "gemini-3-flash", "gemini-3-flash-preview", "gemini-3-pro-preview", "gemini-2.5-flash-lite", "gemini-2.0-flash"];
+async function geminiDirect(contents, generationConfig, models) {
+  const key = getGeminiKey();
+  const attempts = [];
+  let lastDetail = "";
+  for (const model of models) {
+    const r = await fetch("https://generativelanguage.googleapis.com/v1beta/models/" + model + ":generateContent?key=" + encodeURIComponent(key), {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ contents, generationConfig }),
+    });
+    if (r.ok) {
+      const data = await r.json();
+      const text = (data.candidates && data.candidates[0] && data.candidates[0].content &&
+        (data.candidates[0].content.parts || []).map(p => p.text || "").join("")) || "";
+      return text.trim();
+    }
+    attempts.push(model + "→" + r.status);
+    lastDetail = await r.text().catch(() => "");
+    const locationBlocked = r.status === 400 && lastDetail.includes("FAILED_PRECONDITION");
+    if (r.status !== 404 && r.status !== 429 && !locationBlocked) break;
+  }
+  throw new Error("gemini error [" + attempts.join(", ") + "] last: " + lastDetail.slice(0, 250));
+}
+/* 텍스트 프롬프트 공용 진입점 — 키가 있으면 기기에서 직접, 없으면 Worker 프록시 경유.
+   반환은 항상 응답 텍스트(트림됨), 실패는 throw. */
+async function geminiText(prompt) {
+  if (getGeminiKey()) {
+    return await geminiDirect([{ parts: [{ text: prompt }] }], { temperature: 0.4, maxOutputTokens: 300 }, GEMINI_TEXT_MODELS);
+  }
+  const r = await fetch(PROXY_BASE + "/gemini", { method: "POST", headers: proxyHeaders(), body: JSON.stringify({ prompt }) });
+  const data = await r.json().catch(() => null);
+  if (!r.ok || !data || !data.text) throw new Error((data && data.error) || ("http " + r.status));
+  return (data.text || "").trim();
+}
 
 function speakTextWebSpeech(text, lang, rate) {
   try {
@@ -2817,12 +2865,9 @@ function toggleFavSentence(en, ko, source) {
 
 /* Gemini 프록시에 "JSON만 응답하도록" 프롬프트를 보내고 파싱까지 해주는 공용 헬퍼(회화 기능 전용 호출 3곳이 공유) */
 async function geminiJSON(prompt) {
-  const r = await fetch(PROXY_BASE + "/gemini", {
-    method: "POST", headers: proxyHeaders(), body: JSON.stringify({ prompt }),
-  });
-  const data = await r.json().catch(() => null);
-  if (!r.ok || !data || !data.text) throw new Error((data && data.error) || "gemini failed");
-  const cleaned = data.text.replace(/^```json\s*|^```\s*|```\s*$/g, "").trim();
+  const text = await geminiText(prompt);
+  if (!text) throw new Error("gemini empty response");
+  const cleaned = text.replace(/^```json\s*|^```\s*|```\s*$/g, "").trim();
   return JSON.parse(cleaned);
 }
 function talkNextLine(persona, history) {
@@ -3043,6 +3088,17 @@ function blobToBase64(blob) {
 }
 async function transcribeAudio(blob, mimeType) {
   const audio = await blobToBase64(blob);
+  if (getGeminiKey()) {
+    return await geminiDirect(
+      [{
+        parts: [
+          { text: "Transcribe the following English speech verbatim as plain text. Output only the transcription itself — no quotes, no commentary, no formatting. If nothing intelligible is said, output nothing." },
+          { inline_data: { mime_type: mimeType, data: audio } },
+        ],
+      }],
+      { temperature: 0, maxOutputTokens: 200 },
+      GEMINI_AUDIO_MODELS);
+  }
   const r = await fetch(PROXY_BASE + "/stt", {
     method: "POST", headers: proxyHeaders(),
     body: JSON.stringify({ audio, mimeType }),
@@ -3276,18 +3332,7 @@ function TalkSOS({ onBack }) {
     try {
       const prompt = "당신은 한국인 영어 학습자를 돕는 회화 코치입니다. 아래 한국어 문장을 자연스럽고 " +
         "일상적인 영어 구어체 한 문장으로만 번역하세요. 설명이나 따옴표 없이 번역문 하나만 출력하세요.\n\n한국어: " + text;
-      const r = await fetch(PROXY_BASE + "/gemini", {
-        method: "POST",
-        headers: proxyHeaders(),
-        body: JSON.stringify({ prompt }),
-      });
-      const data = await r.json().catch(() => null);
-      if (!r.ok) {
-        const msg = (data && data.error) || ("http " + r.status);
-        const detail = data && data.detail;
-        throw new Error(detail ? msg + ": " + detail : msg);
-      }
-      setResult((data && data.text || "").trim());
+      setResult(await geminiText(prompt));
     } catch (e) {
       setErr("지금 연결이 안 돼요. 잠시 후 다시 시도해 주세요. (" + (e && e.message || "error") + ")");
     } finally {
