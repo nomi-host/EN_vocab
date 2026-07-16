@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.33.4">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.33.4" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.33.4" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.33.5">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.33.5" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.33.5" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.33.4"></script><style>
+<script src="words.js?v=0.33.5"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.33.4") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.33.4") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.33.5") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.33.5") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.33.4") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.33.4") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.33.5") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.33.5") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -696,7 +696,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.33.4";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.33.5";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1100,6 +1100,12 @@ const SRS = (() => {
       "dissection": { box: 1, due: t + 2 * DAY, seen: true },
       "enviable": { box: 1, due: t + 5 * DAY, seen: true },
     };
+    // 위 항목들은 순전히 "홈 화면이 비어 보이지 않게" 하려는 표시용 더미(스트릭·뱃지·CEFR
+    // 배지 등은 여기 box 값을 근거로 계산됨) — 실제로 학습한 적 없는 단어라 진짜 복습
+    // 큐(pickSession)에 섞이면 안 됨. demo 플래그로 표시해 isDue에서 걸러낸다
+    // (2026-07-16 수정 — 이 플래그가 없어서 가짜 복습 18개가 실제 학습 세션을 계속
+    // 차지하는 바람에 "맨날 같은 단어만 나온다" 버그가 있었음).
+    Object.keys(store).forEach(k => { store[k].demo = true; });
   }
   const save = () => { try { localStorage.setItem("en_srs", JSON.stringify(store)); } catch (e) {} };
   return {
@@ -1108,12 +1114,13 @@ const SRS = (() => {
       const s = store[k]; if (!s) return null;
       return { status: s.box >= 6 ? "done" : "learning", box: s.box, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) };
     },
-    isDue: k => { const s = store[k]; return s && s.seen && s.due <= Date.now(); },
+    isDue: k => { const s = store[k]; return s && s.seen && !s.demo && s.due <= Date.now(); },
     grade(k, ok) {
       const s = store[k] || { box: 0, seen: false };
       s.box = ok ? Math.min(MAX_BOX, s.box + 1) : 1;
       s.seen = true;
       s.due = Date.now() + BOX_INTERVALS[s.box] * DAY;
+      delete s.demo; // 실제로 학습(채점)됐으니 더 이상 더미가 아님 — 이제부터 진짜 복습 큐에 들어감
       store[k] = s; save();
       if (ok) POINTS.add(10); // 꾸준한 학습으로만 쌓이는 포인트 — 캐릭터 변경 잠금 해제에 사용
       return s;
