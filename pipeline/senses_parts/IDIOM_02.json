@@ -1,1718 +1,2120 @@
 {
- "hang out": [
-  {
-   "cue": "친구와 편하게",
-   "ko": "놀다, 어울리다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "spend time relaxing in a place or with friends",
-   "ex": [
-    { "en": "We usually hang out at the coffee shop after class.", "ko": "우리는 보통 수업 후에 카페에서 논다." }
-   ]
-  }
- ],
- "come up": [
-  {
-   "cue": "문제·기회가 갑자기",
-   "ko": "생기다, 발생하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "happen or start to exist, especially unexpectedly",
-   "ex": [
-    { "en": "Something came up at work, so I can't make it tonight.", "ko": "회사에 일이 생겨서 오늘 밤에 못 갈 것 같아." }
-   ]
-  },
-  {
-   "cue": "행사·시험 등 시간이",
-   "ko": "다가오다",
-   "pos": "동사",
-   "lv": 2,
-   "cefr": "B1",
-   "en": "be about to happen soon",
-   "ex": [
-    { "en": "Her exams are coming up next week.", "ko": "그녀의 시험이 다음 주로 다가오고 있다." }
-   ]
-  },
-  {
-   "cue": "대화 중 화제로",
-   "ko": "(화제로) 나오다, 언급되다",
-   "pos": "동사",
-   "lv": 3,
-   "cefr": "B1",
-   "en": "be mentioned or discussed",
-   "ex": [
-    { "en": "Your name came up in the meeting.", "ko": "회의에서 네 이름이 언급됐어." }
-   ]
-  }
- ],
- "carve out": [
-  {
-   "cue": "경력·시간·자리를 노력으로",
-   "ko": "개척해서 만들다, 확보하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "create something, such as a career or a place for yourself, through hard effort",
-   "ex": [
-    { "en": "She carved out a successful career in law.", "ko": "그녀는 노력으로 법조계에서 성공적인 경력을 개척했다." }
-   ]
-  }
- ],
- "squeeze in": [
-  {
-   "cue": "바쁜 일정에 짧게",
-   "ko": "짬을 내다, 끼워 넣다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "manage to fit something into a busy schedule",
-   "ex": [
-    { "en": "The doctor squeezed me in between appointments.", "ko": "의사 선생님이 진료 사이에 나를 짬을 내서 봐주셨다." }
-   ]
-  }
- ],
- "iron out": [
-  {
-   "cue": "문제·의견차를",
-   "ko": "(문제를) 해결하다, 조정하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "resolve a problem or difficulty through discussion",
-   "ex": [
-    { "en": "We need to iron out a few details before signing the contract.", "ko": "계약서에 서명하기 전에 몇 가지 세부사항을 조정해야 한다." }
-   ]
-  }
- ],
- "hash out": [
-  {
-   "cue": "의견 다른 문제를 충분히",
-   "ko": "충분히 논의해서 해결하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "discuss something thoroughly until an agreement is reached",
-   "ex": [
-    { "en": "The two sides hashed out a deal after hours of talks.", "ko": "양측은 몇 시간의 협상 끝에 합의를 이끌어냈다." }
-   ]
-  }
- ],
- "weigh in": [
-  {
-   "cue": "논쟁·토론에 의견으로",
-   "ko": "(논쟁에) 끼어들다, 의견을 내다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "give your opinion in a discussion or argument, especially forcefully",
-   "ex": [
-    { "en": "Several experts weighed in on the debate.", "ko": "여러 전문가들이 그 논쟁에 의견을 냈다." }
-   ]
-  },
-  {
-   "cue": "권투 선수가 경기 전에",
-   "ko": "체중을 재다, 계체하다",
-   "pos": "동사",
-   "lv": 2,
-   "cefr": "B2",
-   "en": "be officially weighed before a sports competition, especially boxing",
-   "ex": [
-    { "en": "The boxers weighed in the day before the fight.", "ko": "복서들은 경기 전날 체중을 쟀다." }
-   ]
-  }
- ],
- "rule out": [
-  {
-   "cue": "가능성·선택지를",
-   "ko": "배제하다, 제외하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "decide that something is not possible or not suitable",
-   "ex": [
-    { "en": "Doctors have ruled out a serious illness.", "ko": "의사들은 심각한 질병 가능성을 배제했다." }
-   ]
-  }
- ],
- "phase out": [
-  {
-   "cue": "제도·제품을 서서히",
-   "ko": "단계적으로 폐지하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "gradually stop using or producing something",
-   "ex": [
-    { "en": "The company plans to phase out plastic packaging by next year.", "ko": "그 회사는 내년까지 플라스틱 포장을 단계적으로 없앨 계획이다." }
-   ]
-  }
- ],
- "roll out": [
-  {
-   "cue": "신제품·서비스를 널리",
-   "ko": "(신제품을) 출시하다, 시행하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "introduce a new product or service, especially to a wide audience",
-   "ex": [
-    { "en": "The company will roll out the update next month.", "ko": "그 회사는 다음 달에 업데이트를 시행할 것이다." }
-   ]
-  }
- ],
- "kick off": [
-  {
-   "cue": "행사·경기를",
-   "ko": "시작하다, 개시하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "begin an event or activity",
-   "ex": [
-    { "en": "The festival kicks off with a live concert.", "ko": "그 축제는 라이브 콘서트로 시작한다." }
-   ]
-  }
- ],
- "wrap up": [
-  {
-   "cue": "일·회의를",
-   "ko": "마무리하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "finish or complete something",
-   "ex": [
-    { "en": "Let's wrap up the meeting in five minutes.", "ko": "5분 안에 회의를 마무리합시다." }
-   ]
-  }
- ],
- "tie up": [
-  {
-   "cue": "일이 많아 여유 없이",
-   "ko": "묶다, (여유 없이) 바쁘게 만들다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "keep someone busy or make something unavailable",
-   "ex": [
-    { "en": "I'm tied up in a meeting until three.", "ko": "나는 3시까지 회의로 꼼짝 못 한다." }
-   ]
-  },
-  {
-   "cue": "남은 세부사항을",
-   "ko": "마무리 짓다",
-   "pos": "동사",
-   "lv": 2,
-   "cefr": "B2",
-   "en": "finish the last remaining details of something",
-   "ex": [
-    { "en": "We just need to tie up a few loose ends.", "ko": "몇 가지 남은 부분만 마무리하면 된다." }
-   ]
-  }
- ],
- "chip in": [
-  {
-   "cue": "돈을 여럿이 나눠",
-   "ko": "(돈을) 갹출하다, 보태다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "give money along with other people to pay for something together",
-   "ex": [
-    { "en": "We all chipped in to buy her a present.", "ko": "우리는 모두 돈을 보태 그녀에게 줄 선물을 샀다." }
-   ]
-  },
-  {
-   "cue": "대화 중에 의견을",
-   "ko": "거들다, 끼어들어 말하다",
-   "pos": "동사",
-   "lv": 2,
-   "cefr": "B1",
-   "en": "add a comment or opinion to a conversation",
-   "ex": [
-    { "en": "He chipped in with a helpful suggestion.", "ko": "그는 도움이 되는 제안을 거들었다." }
-   ]
-  }
- ],
- "cough up": [
-  {
-   "cue": "내키지 않지만 돈을",
-   "ko": "(마지못해) 돈을 내다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "pay money reluctantly",
-   "ex": [
-    { "en": "He finally coughed up the money he owed me.", "ko": "그는 결국 나에게 빚진 돈을 마지못해 냈다." }
-   ]
-  }
- ],
- "hold off": [
-  {
-   "cue": "결정·행동을",
-   "ko": "미루다, 늦추다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "delay doing something",
-   "ex": [
-    { "en": "Let's hold off on making a decision until Monday.", "ko": "월요일까지 결정을 미루자." }
-   ]
-  },
-  {
-   "cue": "공격·적을",
-   "ko": "저지하다, 막다",
-   "pos": "동사",
-   "lv": 2,
-   "cefr": "B2",
-   "en": "prevent someone or something from advancing or succeeding",
-   "ex": [
-    { "en": "The team held off a late rally to win the game.", "ko": "그 팀은 막판 추격을 막아내며 경기에서 이겼다." }
-   ]
-  }
- ],
- "fend off": [
-  {
-   "cue": "공격·질문을",
-   "ko": "막아내다, 물리치다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "defend yourself against an attack, question, or criticism",
-   "ex": [
-    { "en": "She fended off questions about her resignation.", "ko": "그녀는 사임에 관한 질문들을 막아냈다." }
-   ]
-  }
- ],
- "ward off": [
-  {
-   "cue": "위험·질병을 미리",
-   "ko": "막다, 예방하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "prevent something harmful from affecting you",
-   "ex": [
-    { "en": "Vitamin C may help ward off colds.", "ko": "비타민 C는 감기를 예방하는 데 도움이 될 수 있다." }
-   ]
-  }
- ],
- "get by": [
-  {
-   "cue": "돈·능력이 부족해도 그럭저럭",
-   "ko": "그럭저럭 살아가다, 헤쳐나가다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "manage to live or survive with the limited money or resources you have",
-   "ex": [
-    { "en": "They get by on a very small income.", "ko": "그들은 아주 적은 수입으로 그럭저럭 살아간다." }
-   ]
-  }
- ],
- "make do with": [
-  {
-   "cue": "부족한 것으로 임시로",
-   "ko": "~으로 임시변통하다, 그런대로 때우다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "manage using something even though it is not ideal or enough",
-   "ex": [
-    { "en": "We had no chairs, so we made do with boxes.", "ko": "의자가 없어서 우리는 상자로 임시변통했다." }
-   ]
-  }
- ],
- "bank on": [
-  {
-   "cue": "어떤 일이 일어날 것이라고",
-   "ko": "믿다, 기대다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "rely on something happening or being true",
-   "ex": [
-    { "en": "Don't bank on getting a refund.", "ko": "환불받을 거라고 믿지 마." }
-   ]
-  }
- ],
- "fall through": [
-  {
-   "cue": "계획·거래가 성사되지 못하고",
-   "ko": "(계획이) 무산되다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "(of a plan or agreement) fail to happen",
-   "ex": [
-    { "en": "Our vacation plans fell through at the last minute.", "ko": "우리의 휴가 계획이 마지막 순간에 무산됐다." }
-   ]
-  }
- ],
- "come through": [
-  {
-   "cue": "어려운 상황을 이겨내고",
-   "ko": "(위기를) 이겨내다, 헤쳐나가다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "successfully survive a difficult situation",
-   "ex": [
-    { "en": "She came through the surgery well.", "ko": "그녀는 수술을 잘 이겨냈다." }
-   ]
-  },
-  {
-   "cue": "약속한 일을 실제로",
-   "ko": "(약속대로) 해내다, 성과를 내다",
-   "pos": "동사",
-   "lv": 2,
-   "cefr": "B2",
-   "en": "do what you promised or were expected to do, especially when needed",
-   "ex": [
-    { "en": "He always comes through when we need him.", "ko": "그는 우리가 필요할 때 항상 해낸다." }
-   ]
-  }
- ],
- "follow through on": [
-  {
-   "cue": "계획·약속을 끝까지",
-   "ko": "(계획을) 끝까지 이행하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "complete an action or plan that you promised or started",
-   "ex": [
-    { "en": "You need to follow through on your commitments.", "ko": "약속한 것은 끝까지 이행해야 한다." }
-   ]
-  }
- ],
- "stick to": [
-  {
-   "cue": "계획·규칙을 바꾸지 않고",
-   "ko": "고수하다, 지키다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "continue doing or using something without changing it",
-   "ex": [
-    { "en": "I'm trying to stick to my diet.", "ko": "나는 내 식단을 고수하려고 노력 중이다." }
-   ]
-  }
- ],
- "branch out": [
-  {
-   "cue": "사업·활동 범위를 새롭게",
-   "ko": "(사업을) 확장하다, 새 분야로 나아가다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "start doing a new activity that is different from what you usually do",
-   "ex": [
-    { "en": "The bakery decided to branch out into catering.", "ko": "그 빵집은 출장 요리 사업으로 영역을 넓히기로 했다." }
-   ]
-  }
- ],
- "brush up on": [
-  {
-   "cue": "잊었던 지식·실력을 다시",
-   "ko": "(실력을) 다시 익히다, 복습하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "improve your knowledge or skill in something you have not practiced recently",
-   "ex": [
-    { "en": "I need to brush up on my French before the trip.", "ko": "여행 전에 프랑스어 실력을 다시 익혀야 한다." }
-   ]
-  }
- ],
- "touch on": [
-  {
-   "cue": "주제를 짧게",
-   "ko": "간단히 언급하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "mention or discuss a subject briefly",
-   "ex": [
-    { "en": "The lecture touched on several important issues.", "ko": "그 강연은 몇 가지 중요한 문제를 간단히 다뤘다." }
-   ]
-  }
- ],
- "dwell on": [
-  {
-   "cue": "안 좋은 일을 계속",
-   "ko": "곱씹다, 계속 생각하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "think or talk about something, especially something unpleasant, for too long",
-   "ex": [
-    { "en": "Try not to dwell on your mistakes.", "ko": "네 실수를 너무 곱씹지 않으려고 해봐." }
-   ]
-  }
- ],
- "single out": [
-  {
-   "cue": "여럿 중 한 사람을 특별히",
-   "ko": "(칭찬·비판 등으로) 특별히 지목하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "choose one person from a group for special attention, praise, or criticism",
-   "ex": [
-    { "en": "The teacher singled her out for praise.", "ko": "선생님은 그녀를 특별히 지목해 칭찬했다." }
-   ]
-  }
- ],
- "stand up for": [
-  {
-   "cue": "자신·타인의 권리를",
-   "ko": "옹호하다, 지지하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "defend or support someone or something, especially when they are being criticized",
-   "ex": [
-    { "en": "She always stands up for her friends.", "ko": "그녀는 항상 친구들을 옹호한다." }
-   ]
-  }
- ],
- "side with": [
-  {
-   "cue": "논쟁에서 한쪽 편을",
-   "ko": "~의 편을 들다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "support one person or group in an argument",
-   "ex": [
-    { "en": "He always sides with his brother in family arguments.", "ko": "그는 가족 다툼에서 항상 형 편을 든다." }
-   ]
-  }
- ],
- "fall out with": [
-  {
-   "cue": "다툰 뒤 관계가 나빠져",
-   "ko": "~와 사이가 틀어지다, 다투다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "have an argument with someone and stop being friendly",
-   "ex": [
-    { "en": "She fell out with her best friend over money.", "ko": "그녀는 돈 문제로 가장 친한 친구와 사이가 틀어졌다." }
-   ]
-  }
- ],
- "fall for": [
-  {
-   "cue": "누군가에게 갑자기",
-   "ko": "~에게 반하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "suddenly start to love someone",
-   "ex": [
-    { "en": "He fell for her the moment they met.", "ko": "그는 그녀를 만난 순간 반했다." }
-   ]
-  },
-  {
-   "cue": "거짓말·속임수에",
-   "ko": "속아 넘어가다",
-   "pos": "동사",
-   "lv": 2,
-   "cefr": "B2",
-   "en": "be tricked into believing something that is not true",
-   "ex": [
-    { "en": "I can't believe you fell for that prank.", "ko": "네가 그 장난에 속아 넘어갔다니 믿을 수가 없다." }
-   ]
-  }
- ],
- "drift apart": [
-  {
-   "cue": "시간이 지나며 관계가 서서히",
-   "ko": "(관계가) 멀어지다, 소원해지다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "gradually lose the close relationship you once had with someone",
-   "ex": [
-    { "en": "We used to be close, but we've drifted apart over the years.", "ko": "우리는 예전에 가까웠지만 세월이 흐르면서 멀어졌다." }
-   ]
-  }
- ],
- "cave in": [
-  {
-   "cue": "압박에 못 이겨",
-   "ko": "굴복하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "finally agree to something after refusing for a while, because of pressure",
-   "ex": [
-    { "en": "After hours of arguing, he finally caved in.", "ko": "몇 시간의 논쟁 끝에 그는 결국 굴복했다." }
-   ]
-  },
-  {
-   "cue": "천장·바닥 등 구조물이",
-   "ko": "무너지다, 내려앉다",
-   "pos": "동사",
-   "lv": 2,
-   "cefr": "B2",
-   "en": "(of a structure) collapse inward",
-   "ex": [
-    { "en": "The old roof caved in during the storm.", "ko": "낡은 지붕이 폭풍 속에 무너져 내렸다." }
-   ]
-  }
- ],
- "back down": [
-  {
-   "cue": "주장·요구를 포기하고",
-   "ko": "물러서다, 주장을 굽히다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "stop insisting on something or withdraw from a position, especially in an argument",
-   "ex": [
-    { "en": "The government refused to back down on the new tax.", "ko": "정부는 새로운 세금에 대한 입장을 굽히지 않았다." }
-   ]
-  }
- ],
- "back off": [
-  {
-   "cue": "위협·압박에서 물러나",
-   "ko": "물러서다, 그만두다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "stop doing or saying something, especially to avoid conflict",
-   "ex": [
-    { "en": "He told them to back off and leave her alone.", "ko": "그는 그들에게 물러서서 그녀를 내버려두라고 말했다." }
-   ]
-  }
- ],
- "ease off": [
-  {
-   "cue": "통증·비·압박이 점차",
-   "ko": "완화되다, 누그러지다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "become less strong or intense",
-   "ex": [
-    { "en": "The rain finally eased off in the afternoon.", "ko": "비가 오후에야 마침내 누그러졌다." }
-   ]
-  }
- ],
- "let up": [
-  {
-   "cue": "강도·기세가 약해지며",
-   "ko": "누그러지다, 약해지다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "become less strong or stop",
-   "ex": [
-    { "en": "The storm didn't let up all night.", "ko": "폭풍은 밤새 잦아들지 않았다." }
-   ]
-  }
- ],
- "level off": [
-  {
-   "cue": "오르내리던 수치가 안정되어",
-   "ko": "안정되다, 수평을 이루다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "stop rising or falling and stay steady",
-   "ex": [
-    { "en": "Prices are finally leveling off after months of increases.", "ko": "몇 달간의 상승 끝에 가격이 마침내 안정되고 있다." }
-   ]
-  }
- ],
- "level with": [
-  {
-   "cue": "숨기지 않고 솔직하게",
-   "ko": "솔직히 말하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "tell someone the truth honestly, especially about something difficult",
-   "ex": [
-    { "en": "I'll level with you — this project is behind schedule.", "ko": "솔직히 말할게요, 이 프로젝트는 일정보다 늦어지고 있어요." }
-   ]
-  }
- ],
- "own up to": [
-  {
-   "cue": "잘못한 일을 스스로",
-   "ko": "(잘못을) 인정하다, 자백하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "admit that you did something wrong",
-   "ex": [
-    { "en": "He finally owned up to breaking the window.", "ko": "그는 결국 창문을 깬 것을 인정했다." }
-   ]
-  }
- ],
- "come clean": [
-  {
-   "cue": "숨긴 것을 다 털어놓아",
-   "ko": "실토하다, 솔직히 털어놓다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "admit the truth about something you have been hiding",
-   "ex": [
-    { "en": "She decided to come clean about the mistake.", "ko": "그녀는 그 실수에 대해 솔직히 털어놓기로 했다." }
-   ]
-  }
- ],
- "rack up": [
-  {
-   "cue": "점수·빚 등을 계속",
-   "ko": "(점수·빚 등을) 쌓다, 늘리다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "gradually accumulate a large amount of something, such as points, debt, or wins",
-   "ex": [
-    { "en": "The team racked up five wins in a row.", "ko": "그 팀은 5연승을 쌓았다." }
-   ]
-  }
- ],
- "tally up": [
-  {
-   "cue": "숫자·점수를 모두 더해",
-   "ko": "합산하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "add up a total number or amount",
-   "ex": [
-    { "en": "Let's tally up the votes.", "ko": "투표수를 합산해봅시다." }
-   ]
-  }
- ],
- "dish out": [
-  {
-   "cue": "음식·돈을 여러 사람에게 나눠",
-   "ko": "나눠주다, 베풀다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "give out food, money, or something else to a number of people",
-   "ex": [
-    { "en": "Volunteers dished out free meals to the homeless.", "ko": "자원봉사자들이 노숙자들에게 무료 식사를 나눠주었다." }
-   ]
-  },
-  {
-   "cue": "비판·조언을 마구",
-   "ko": "(비판을) 쏟아내다",
-   "pos": "동사",
-   "lv": 2,
-   "cefr": "B2",
-   "en": "give a lot of criticism or advice, often too freely",
-   "ex": [
-    { "en": "He's always dishing out advice nobody asked for.", "ko": "그는 항상 아무도 부탁하지 않은 조언을 마구 쏟아낸다." }
-   ]
-  }
- ],
- "bring forward": [
-  {
-   "cue": "일정을 원래보다 더 이르게",
-   "ko": "앞당기다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "move an event or meeting to an earlier date or time",
-   "ex": [
-    { "en": "They brought the meeting forward to Monday.", "ko": "그들은 회의를 월요일로 앞당겼다." }
-   ]
-  }
- ],
- "push back": [
-  {
-   "cue": "일정을 원래보다 더 늦게",
-   "ko": "미루다, 연기하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "delay an event or meeting to a later date or time",
-   "ex": [
-    { "en": "We had to push back the launch date.", "ko": "우리는 출시일을 미룰 수밖에 없었다." }
-   ]
-  },
-  {
-   "cue": "제안·의견에 반대해",
-   "ko": "반발하다, 반박하다",
-   "pos": "동사",
-   "lv": 2,
-   "cefr": "B2",
-   "en": "resist or argue against a plan or idea",
-   "ex": [
-    { "en": "Employees pushed back against the new policy.", "ko": "직원들은 새 정책에 반발했다." }
-   ]
-  }
- ],
- "scale back": [
-  {
-   "cue": "규모·비용을 줄여서",
-   "ko": "축소하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "reduce the size, amount, or extent of something",
-   "ex": [
-    { "en": "The company had to scale back its expansion plans.", "ko": "그 회사는 확장 계획을 축소해야 했다." }
-   ]
-  }
- ],
- "scale up": [
-  {
-   "cue": "규모·생산을 늘려서",
-   "ko": "확대하다, 늘리다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "increase the size, amount, or extent of something",
-   "ex": [
-    { "en": "They plan to scale up production next year.", "ko": "그들은 내년에 생산을 확대할 계획이다." }
-   ]
-  }
- ],
- "ramp up": [
-  {
-   "cue": "활동·생산을 빠르게",
-   "ko": "늘리다, 강화하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "increase something quickly and significantly",
-   "ex": [
-    { "en": "The factory is ramping up production for the holidays.", "ko": "그 공장은 연휴를 위해 생산을 늘리고 있다." }
-   ]
-  }
- ],
- "gear up for": [
-  {
-   "cue": "큰 행사·일을 앞두고",
-   "ko": "~할 준비를 하다, 대비하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "prepare for something important that is about to happen",
-   "ex": [
-    { "en": "The city is gearing up for the marathon this weekend.", "ko": "그 도시는 이번 주말 마라톤을 위해 준비하고 있다." }
-   ]
-  }
- ],
- "brace for": [
-  {
-   "cue": "충격·나쁜 소식에 미리",
-   "ko": "(충격에) 대비하다, 각오하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "prepare yourself for something difficult or unpleasant",
-   "ex": [
-    { "en": "Residents are bracing for the storm.", "ko": "주민들은 폭풍에 대비하고 있다." }
-   ]
-  }
- ],
- "grapple with": [
-  {
-   "cue": "어려운 문제와 힘겹게",
-   "ko": "씨름하다, 해결하려 애쓰다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "try hard to deal with or understand a difficult problem",
-   "ex": [
-    { "en": "The government is grappling with rising inflation.", "ko": "정부는 치솟는 인플레이션과 씨름하고 있다." }
-   ]
-  }
- ],
- "wrestle with": [
-  {
-   "cue": "결정·문제로 마음속 고심하며",
-   "ko": "(문제로) 고심하다, 씨름하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "struggle mentally to deal with or decide something difficult",
-   "ex": [
-    { "en": "She wrestled with the decision for weeks.", "ko": "그녀는 몇 주 동안 그 결정을 두고 고심했다." }
-   ]
-  }
- ],
- "contend with": [
-  {
-   "cue": "어려운 상황·문제에 맞서",
-   "ko": "대처하다, 맞서다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "deal with a difficult problem or situation",
-   "ex": [
-    { "en": "Farmers have to contend with unpredictable weather.", "ko": "농부들은 예측할 수 없는 날씨에 대처해야 한다." }
-   ]
-  }
- ],
- "take stock of": [
-  {
-   "cue": "현재 상황을 찬찬히",
-   "ko": "(상황을) 점검하다, 되돌아보다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "think carefully about a situation before deciding what to do next",
-   "ex": [
-    { "en": "It's a good time to take stock of your progress.", "ko": "자신의 진행 상황을 점검해보기 좋은 때다." }
-   ]
-  }
- ],
- "account for": [
-  {
-   "cue": "이유·원인을",
-   "ko": "설명하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "give a reason or explanation for something",
-   "ex": [
-    { "en": "How do you account for the missing money?", "ko": "사라진 돈에 대해 어떻게 설명할 건가요?" }
-   ]
-  },
-  {
-   "cue": "전체 중 일정 비율을",
-   "ko": "(비율을) 차지하다",
-   "pos": "동사",
-   "lv": 2,
-   "cefr": "B2",
-   "en": "form a particular amount or part of something",
-   "ex": [
-    { "en": "Tourism accounts for a large part of the economy.", "ko": "관광업은 경제의 큰 부분을 차지한다." }
-   ]
-  }
- ],
- "allow for": [
-  {
-   "cue": "미리 예상해서 여유를",
-   "ko": "감안하다, 고려하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "consider a possibility when making plans",
-   "ex": [
-    { "en": "Allow for delays when planning your trip.", "ko": "여행을 계획할 때 지연 가능성을 감안하세요." }
-   ]
-  }
- ],
- "factor in": [
-  {
-   "cue": "계산·결정에 요소로",
-   "ko": "고려에 넣다, 감안하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "include something as a factor when calculating or planning",
-   "ex": [
-    { "en": "We need to factor in the cost of shipping.", "ko": "배송비를 고려에 넣어야 한다." }
-   ]
-  }
- ],
- "capitalize on": [
-  {
-   "cue": "유리한 상황을 최대한",
-   "ko": "(기회를) 활용하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "take advantage of a situation to gain benefit",
-   "ex": [
-    { "en": "The company capitalized on the growing demand for electric cars.", "ko": "그 회사는 전기차 수요 증가를 활용했다." }
-   ]
-  }
- ],
- "home in on": [
-  {
-   "cue": "목표·문제에 정확하게",
-   "ko": "(정확히) 초점을 맞추다, 겨냥하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "direct all your attention toward one particular thing",
-   "ex": [
-    { "en": "Investigators homed in on the real cause of the fire.", "ko": "수사관들은 화재의 진짜 원인에 초점을 맞췄다." }
-   ]
-  }
- ],
- "zero in on": [
-  {
-   "cue": "목표를 정확히",
-   "ko": "정확히 겨냥하다, 집중하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "focus attention or aim precisely on something",
-   "ex": [
-    { "en": "The report zeroes in on three key problems.", "ko": "그 보고서는 세 가지 핵심 문제에 집중한다." }
-   ]
-  }
- ],
- "play down": [
-  {
-   "cue": "문제·중요성을 실제보다 작게",
-   "ko": "경시하다, 대수롭지 않게 말하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "make something seem less important or serious than it really is",
-   "ex": [
-    { "en": "The company tried to play down the scandal.", "ko": "그 회사는 그 스캔들을 대수롭지 않게 넘기려 했다." }
-   ]
-  }
- ],
- "play up": [
-  {
-   "cue": "장점·성과를 실제보다 크게",
-   "ko": "과장하다, 부각시키다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "make something seem more important than it really is",
-   "ex": [
-    { "en": "The ad plays up the product's health benefits.", "ko": "그 광고는 제품의 건강상 이점을 부각시킨다." }
-   ]
-  }
- ],
- "live up to": [
-  {
-   "cue": "기대·명성에 맞게",
-   "ko": "(기대에) 부응하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "be as good as expected",
-   "ex": [
-    { "en": "The movie didn't live up to the hype.", "ko": "그 영화는 기대만큼은 아니었다." }
-   ]
-  }
- ],
- "make up for": [
-  {
-   "cue": "부족한 부분·잘못을",
-   "ko": "만회하다, 보상하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "do something good to balance something bad or missing",
-   "ex": [
-    { "en": "He bought her flowers to make up for being late.", "ko": "그는 늦은 것을 만회하려고 그녀에게 꽃을 사줬다." }
-   ]
-  }
- ],
- "stem from": [
-  {
-   "cue": "문제의 원인이 어디서",
-   "ko": "~에서 비롯되다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "be caused by or originate from something",
-   "ex": [
-    { "en": "Her fear of dogs stems from a childhood incident.", "ko": "그녀의 개 공포증은 어린 시절의 사건에서 비롯되었다." }
-   ]
-  }
- ],
- "hinge on": [
-  {
-   "cue": "결과가 오직 한 가지에",
-   "ko": "~에 달려 있다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "depend completely on one particular thing",
-   "ex": [
-    { "en": "The success of the plan hinges on good weather.", "ko": "그 계획의 성공은 좋은 날씨에 달려 있다." }
-   ]
-  }
- ],
- "boil down to": [
-  {
-   "cue": "복잡한 상황을 한마디로 요약하면",
-   "ko": "결국 ~로 요약되다, 귀결되다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "be the basic or most important point of a more complicated situation",
-   "ex": [
-    { "en": "It all boils down to a lack of trust.", "ko": "결국 모든 것은 신뢰 부족으로 귀결된다." }
-   ]
-  }
- ],
- "tap into": [
-  {
-   "cue": "숨은 자원·감정을",
-   "ko": "(자원 등을) 활용하다, 접근하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "find a way to use a source of energy, skill, or emotion",
-   "ex": [
-    { "en": "The campaign tapped into people's fear of change.", "ko": "그 캠페인은 변화에 대한 사람들의 두려움을 활용했다." }
-   ]
-  }
- ],
- "opt for": [
-  {
-   "cue": "여러 선택지 중 하나를",
-   "ko": "선택하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "choose one thing rather than another",
-   "ex": [
-    { "en": "She opted for a quiet wedding instead of a big one.", "ko": "그녀는 큰 결혼식 대신 조용한 결혼식을 선택했다." }
-   ]
-  }
- ],
- "opt out of": [
-  {
-   "cue": "참여·계획에서 스스로 빠져",
-   "ko": "(선택적으로) 빠지다, 탈퇴하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "choose not to take part in something",
-   "ex": [
-    { "en": "You can opt out of the newsletter anytime.", "ko": "뉴스레터는 언제든 구독을 취소할 수 있다." }
-   ]
-  }
- ],
- "gloss over": [
-  {
-   "cue": "불편한 사실을 대충 넘겨서",
-   "ko": "(문제를) 얼버무리다, 대충 넘기다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "avoid discussing an unpleasant subject in detail",
-   "ex": [
-    { "en": "The report glosses over the project's failures.", "ko": "그 보고서는 프로젝트의 실패를 얼버무리고 넘어간다." }
-   ]
-  }
- ],
- "delve into": [
-  {
-   "cue": "주제를 깊이 파고들어",
-   "ko": "깊이 파고들다, 탐구하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "research or examine a subject in great detail",
-   "ex": [
-    { "en": "The documentary delves into the history of the city.", "ko": "그 다큐멘터리는 그 도시의 역사를 깊이 파고든다." }
-   ]
-  }
- ],
- "forge ahead": [
-  {
-   "cue": "어려움에도 불구하고 계속",
-   "ko": "앞으로 나아가다, 매진하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "continue to make progress with determination, despite difficulty",
-   "ex": [
-    { "en": "Despite the setbacks, the team forged ahead with the project.", "ko": "차질에도 불구하고 그 팀은 프로젝트를 계속 밀고 나갔다." }
-   ]
-  }
- ],
- "plow through": [
-  {
-   "cue": "양 많고 지루한 일을 꾸준히",
-   "ko": "(힘든 일을) 꾸준히 헤쳐나가다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "work through something difficult or boring slowly and steadily",
-   "ex": [
-    { "en": "She plowed through a stack of paperwork all afternoon.", "ko": "그녀는 오후 내내 서류 더미를 꾸준히 처리했다." }
-   ]
-  }
- ],
- "wade through": [
-  {
-   "cue": "지루하고 방대한 자료를 힘겹게",
-   "ko": "(지루한 일을) 힘겹게 헤쳐나가다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "deal with something tedious or difficult slowly and with effort",
-   "ex": [
-    { "en": "I had to wade through hundreds of emails this morning.", "ko": "나는 오늘 아침 수백 통의 이메일을 힘겹게 처리해야 했다." }
-   ]
-  }
- ],
- "muddle through": [
-  {
-   "cue": "뚜렷한 계획 없이 어떻게든",
-   "ko": "그럭저럭 헤쳐나가다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "manage to do something despite having no clear plan or skill",
-   "ex": [
-    { "en": "We had no experience, but we muddled through somehow.", "ko": "우리는 경험이 없었지만 어떻게든 그럭저럭 헤쳐나갔다." }
-   ]
-  }
- ],
- "bear out": [
-  {
-   "cue": "증거·자료가 주장을",
-   "ko": "(주장을) 뒷받침하다, 확인해주다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "show that something is true or correct",
-   "ex": [
-    { "en": "The results bear out our original theory.", "ko": "그 결과는 우리의 원래 이론을 뒷받침한다." }
-   ]
-  }
- ],
- "flesh out": [
-  {
-   "cue": "아이디어·계획에 세부 내용을",
-   "ko": "구체화하다, 살을 붙이다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "add more details to an idea or plan to make it more complete",
-   "ex": [
-    { "en": "We need to flesh out this proposal before the meeting.", "ko": "회의 전에 이 제안서를 구체화해야 한다." }
-   ]
-  }
- ],
- "spell out": [
-  {
-   "cue": "이해하기 쉽게 자세히",
-   "ko": "자세히 설명하다, 명확히 하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "explain something clearly and in detail",
-   "ex": [
-    { "en": "The contract spells out each party's responsibilities.", "ko": "그 계약서는 각 당사자의 책임을 명확히 설명한다." }
-   ]
-  }
- ],
- "thrash out": [
-  {
-   "cue": "의견 차이를 격렬하게 논의해서",
-   "ko": "철저히 논의하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "discuss a problem thoroughly until you reach an agreement",
-   "ex": [
-    { "en": "The two leaders thrashed out a compromise.", "ko": "두 지도자는 철저한 논의 끝에 타협안을 도출했다." }
-   ]
-  }
- ],
- "tease out": [
-  {
-   "cue": "복잡하게 얽힌 것에서 조금씩",
-   "ko": "(정보를) 조심스레 끌어내다, 가려내다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "discover or separate information that is complicated or hidden",
-   "ex": [
-    { "en": "Researchers tried to tease out the causes of the disease.", "ko": "연구자들은 그 질병의 원인을 조심스레 밝혀내려 했다." }
-   ]
-  }
- ],
- "winnow out": [
-  {
-   "cue": "많은 것 중 불필요한 것을",
-   "ko": "가려내다, 골라내다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "remove things that are not wanted from a larger group",
-   "ex": [
-    { "en": "The committee winnowed out weaker applications.", "ko": "위원회는 부족한 지원서들을 걸러냈다." }
-   ]
-  }
- ],
- "whittle down": [
-  {
-   "cue": "목록·숫자를 점점 줄여서",
-   "ko": "점차 줄이다, 깎아내다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "gradually reduce the size or number of something",
-   "ex": [
-    { "en": "They whittled the list of candidates down to three.", "ko": "그들은 후보 명단을 세 명으로 점차 줄였다." }
-   ]
-  }
- ],
- "pare down": [
-  {
-   "cue": "비용·규모를 최소한으로",
-   "ko": "축소하다, 삭감하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "reduce something to the smallest possible amount",
-   "ex": [
-    { "en": "The budget was pared down to essential spending only.", "ko": "예산은 필수 지출만 남도록 축소되었다." }
-   ]
-  }
- ],
- "encroach on": [
-  {
-   "cue": "권리·영역을 점점 침범해서",
-   "ko": "잠식하다, 침해하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "gradually take away someone's rights, land, or time",
-   "ex": [
-    { "en": "The new schedule is encroaching on my free time.", "ko": "새 일정이 내 자유시간을 잠식하고 있다." }
-   ]
-  }
- ],
- "impinge on": [
-  {
-   "cue": "권리·생활에 부정적 영향을",
-   "ko": "영향을 미치다, 침해하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "have a noticeable negative effect on something",
-   "ex": [
-    { "en": "Noise from the construction impinges on residents' daily life.", "ko": "공사 소음이 주민들의 일상생활에 영향을 미친다." }
-   ]
-  }
- ],
- "defer to": [
-  {
-   "cue": "더 경험 많은 사람의 판단에",
-   "ko": "~에게 맡기다, 따르다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "accept someone else's opinion or decision because you respect them",
-   "ex": [
-    { "en": "On technical matters, I defer to the engineers.", "ko": "기술적인 문제에서는 나는 엔지니어들의 판단을 따른다." }
-   ]
-  }
- ],
- "revert to": [
-  {
-   "cue": "이전 상태·습관으로",
-   "ko": "되돌아가다, 복귀하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "return to a previous state, condition, or habit",
-   "ex": [
-    { "en": "After the holiday, we reverted to our normal routine.", "ko": "휴가가 끝난 뒤 우리는 평소 일상으로 되돌아갔다." }
-   ]
-  }
- ],
- "culminate in": [
-  {
-   "cue": "오랜 과정이 마침내",
-   "ko": "결국 ~로 끝나다, 절정에 이르다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "reach a final result after a series of events",
-   "ex": [
-    { "en": "Years of research culminated in a major breakthrough.", "ko": "수년간의 연구가 마침내 큰 돌파구로 이어졌다." }
-   ]
-  }
- ],
- "hold sway": [
-  {
-   "cue": "권력·영향력을 지배적으로",
-   "ko": "지배력을 가지다, 영향력을 행사하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "have power or influence over people or a situation",
-   "ex": [
-    { "en": "The old traditions still hold sway in that region.", "ko": "그 지역에서는 여전히 옛 전통이 지배력을 갖고 있다." }
-   ]
-  }
- ],
- "hold one's ground": [
-  {
-   "cue": "압박에도 자기 입장을",
-   "ko": "입장을 고수하다, 물러서지 않다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "refuse to change your position or opinion despite pressure",
-   "ex": [
-    { "en": "Despite the criticism, she held her ground.", "ko": "비판에도 불구하고 그녀는 입장을 고수했다." }
-   ]
-  }
- ],
- "gain ground": [
-  {
-   "cue": "경쟁·인기에서 점점 우세해져",
-   "ko": "우세해지다, 입지를 넓히다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "become more accepted, popular, or successful",
-   "ex": [
-    { "en": "Renewable energy is gaining ground worldwide.", "ko": "재생에너지가 전 세계적으로 입지를 넓히고 있다." }
-   ]
-  }
- ],
- "lose ground": [
-  {
-   "cue": "경쟁에서 점점 밀려서",
-   "ko": "입지를 잃다, 밀리다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "become less popular, powerful, or successful compared to others",
-   "ex": [
-    { "en": "The company is losing ground to newer competitors.", "ko": "그 회사는 신생 경쟁사들에게 입지를 잃고 있다." }
-   ]
-  }
- ],
- "make headway": [
-  {
-   "cue": "어려운 일에서 조금씩 진전을",
-   "ko": "진전을 보이다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "make progress, especially with something difficult",
-   "ex": [
-    { "en": "Negotiators are finally making headway.", "ko": "협상가들이 마침내 진전을 보이고 있다." }
-   ]
-  }
- ],
- "take issue with": [
-  {
-   "cue": "의견·주장에 동의하지 않아",
-   "ko": "이의를 제기하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "disagree with something someone has said or done",
-   "ex": [
-    { "en": "I take issue with how the study was conducted.", "ko": "나는 그 연구가 진행된 방식에 이의를 제기한다." }
-   ]
-  }
- ],
- "take exception to": [
-  {
-   "cue": "불쾌해서 강하게",
-   "ko": "반발하다, 이의를 제기하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "feel offended or angry about something and object to it",
-   "ex": [
-    { "en": "She took exception to his rude comment.", "ko": "그녀는 그의 무례한 발언에 반발했다." }
-   ]
-  }
- ],
- "come to terms with": [
-  {
-   "cue": "받아들이기 힘든 현실을 서서히",
-   "ko": "(어려운 상황을) 받아들이다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "gradually accept a difficult or painful situation",
-   "ex": [
-    { "en": "It took years for him to come to terms with the loss.", "ko": "그가 그 상실을 받아들이기까지 수년이 걸렸다." }
-   ]
-  }
- ],
- "weed out": [
-  {
-   "cue": "불필요하거나 부적합한 것을",
-   "ko": "제거하다, 솎아내다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "remove people or things that are not wanted or not good enough",
-   "ex": [
-    { "en": "The interviews help weed out unsuitable candidates.", "ko": "면접은 부적합한 지원자들을 걸러내는 데 도움이 된다." }
-   ]
-  }
- ],
- "stave off": [
-  {
-   "cue": "위험·재앙을 잠시라도",
-   "ko": "저지하다, (잠시) 피하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "prevent something bad from happening, at least for a while",
-   "ex": [
-    { "en": "They took loans to stave off bankruptcy.", "ko": "그들은 파산을 막기 위해 대출을 받았다." }
-   ]
-  }
- ],
- "tide over": [
-  {
-   "cue": "어려운 시기를 잠깐이라도 버티게",
-   "ko": "(어려운 시기를) 넘기게 하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "help someone get through a difficult period, especially by providing what they need",
-   "ex": [
-    { "en": "This loan should tide us over until payday.", "ko": "이 대출이 월급날까지 우리를 버티게 해줄 것이다." }
-   ]
-  }
- ],
- "pitch in": [
-  {
-   "cue": "공동의 일에 힘을 보태",
-   "ko": "협력하다, 힘을 보태다, 거들다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B1",
-   "en": "help with a task, often by joining others",
-   "ex": [
-    { "en": "Everyone pitched in to clean up after the party.", "ko": "파티 후 모두가 힘을 보태 청소했다." }
-   ]
-  }
- ],
- "shell out": [
-  {
-   "cue": "큰돈을 마지못해",
-   "ko": "(많은 돈을) 지불하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "pay a large amount of money for something, often unwillingly",
-   "ex": [
-    { "en": "We had to shell out a lot of money for the repairs.", "ko": "우리는 수리비로 많은 돈을 지불해야 했다." }
-   ]
-  }
- ],
- "extrapolate from": [
-  {
-   "cue": "자료·경향을 바탕으로 예측을",
-   "ko": "(자료로부터) 추론하다, 유추하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "use known facts or data to make predictions about something unknown",
-   "ex": [
-    { "en": "Scientists extrapolated from past data to predict the trend.", "ko": "과학자들은 과거 데이터로부터 추세를 추론했다." }
-   ]
-  }
- ],
- "veer away from": [
-  {
-   "cue": "원래 방향·계획에서 벗어나",
-   "ko": "(방향을) 벗어나다, 회피하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "gradually change direction away from something, or avoid a topic",
-   "ex": [
-    { "en": "The conversation veered away from the original topic.", "ko": "대화는 원래 주제에서 벗어났다." }
-   ]
-  }
- ],
- "wean off": [
-  {
-   "cue": "의존하던 것에서 서서히 끊게",
-   "ko": "(의존을) 서서히 끊게 하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "gradually make someone stop depending on something",
-   "ex": [
-    { "en": "The program helps patients wean off painkillers.", "ko": "그 프로그램은 환자들이 진통제 의존을 서서히 끊도록 돕는다." }
-   ]
-  }
- ],
- "dovetail with": [
-  {
-   "cue": "두 계획·생각이 서로 잘",
-   "ko": "잘 맞아떨어지다, 부합하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "fit together well or match closely with something else",
-   "ex": [
-    { "en": "Her research dovetails with the company's goals.", "ko": "그녀의 연구는 회사의 목표와 잘 맞아떨어진다." }
-   ]
-  }
- ],
- "hive off": [
-  {
-   "cue": "사업 일부를 떼어내어",
-   "ko": "분리하다, 매각하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "separate part of a business or organization and sell it or make it independent",
-   "ex": [
-    { "en": "The company hived off its shipping division.", "ko": "그 회사는 물류 부문을 분리해 매각했다." }
-   ]
-  }
- ],
- "mothball": [
-  {
-   "cue": "계획·시설을 당분간 쓰지 않고",
-   "ko": "(계획을) 보류하다, 동결하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "stop using a plan, project, or piece of equipment for a period of time",
-   "ex": [
-    { "en": "The factory was mothballed during the recession.", "ko": "그 공장은 불황 기간 동안 가동이 중단되었다." }
-   ]
-  }
- ],
- "hunker down": [
-  {
-   "cue": "위기에 대비해 몸을 낮추고 버틸",
-   "ko": "대비 태세를 갖추다, 버티다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "prepare to stay somewhere and wait through a difficult situation",
-   "ex": [
-    { "en": "Residents hunkered down as the hurricane approached.", "ko": "허리케인이 다가오자 주민들은 대비 태세에 들어갔다." }
-   ]
-  },
-  {
-   "cue": "몸을 낮춰 쪼그리고 앉다",
-   "ko": "웅크리다",
-   "pos": "동사",
-   "lv": 2,
-   "cefr": "B2",
-   "en": "crouch or squat close to the ground",
-   "ex": [
-    { "en": "He hunkered down beside the fire.", "ko": "그는 모닥불 옆에 웅크리고 앉았다." }
-   ]
-  }
- ],
- "batten down": [
-  {
-   "cue": "폭풍·위기에 대비해 단단히 고정",
-   "ko": "(위기에 대비해) 단단히 대비하다, 단속하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "prepare thoroughly for a difficult situation by securing everything",
-   "ex": [
-    { "en": "The crew battened down the ship before the storm hit.", "ko": "선원들은 폭풍이 오기 전에 배를 단단히 단속했다." }
-   ]
-  }
- ],
- "ring-fence": [
-  {
-   "cue": "예산·자원을 다른 용도로 못 쓰게",
-   "ko": "(예산 등을) 별도로 보호하다, 용도를 제한하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "protect money or resources so they can only be used for a particular purpose",
-   "ex": [
-    { "en": "The government ring-fenced funding for education.", "ko": "정부는 교육 예산을 별도로 보호했다." }
-   ]
-  }
- ],
- "claw back": [
-  {
-   "cue": "잃었던 돈·손실을 힘겹게",
-   "ko": "(비용·손실을) 만회하다, 되찾다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "gradually get back money or an advantage that was lost, often with difficulty",
-   "ex": [
-    { "en": "The company clawed back some of its losses in the second half.", "ko": "그 회사는 하반기에 손실 일부를 만회했다." }
-   ]
-  }
- ],
- "bandy about": [
-  {
-   "cue": "소문·이름을 근거 없이 함부로",
-   "ko": "(소문·이름 등을) 함부로 퍼뜨리다, 거론하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "mention or discuss something, often carelessly or without enough basis",
-   "ex": [
-    { "en": "Rumors were bandied about the office all week.", "ko": "그 주 내내 사무실에서 소문이 함부로 퍼졌다." }
-   ]
-  }
- ],
- "brush aside": [
-  {
-   "cue": "의견·걱정을 대수롭지 않게",
-   "ko": "일축하다, 무시하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "refuse to consider something seriously; dismiss it",
-   "ex": [
-    { "en": "He brushed aside concerns about the budget.", "ko": "그는 예산에 대한 우려를 일축했다." }
-   ]
-  }
- ],
- "cast aside": [
-  {
-   "cue": "필요 없어진 것을 버리듯",
-   "ko": "저버리다, 버리다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "stop using or thinking about something or someone, as if throwing it away",
-   "ex": [
-    { "en": "She cast aside her doubts and took the job.", "ko": "그녀는 의구심을 떨쳐버리고 그 일자리를 받아들였다." }
-   ]
-  }
- ],
- "hark back to": [
-  {
-   "cue": "옛날 방식·시절을 떠올리게",
-   "ko": "(과거를) 떠올리게 하다, 회고하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "C1",
-   "en": "remind you of something from the past, or refer back to an earlier time",
-   "ex": [
-    { "en": "The design harks back to the fashion of the 1950s.", "ko": "그 디자인은 1950년대 유행을 떠올리게 한다." }
-   ]
-  }
- ],
- "harp on": [
-  {
-   "cue": "같은 불만을 지겹도록 반복해서",
-   "ko": "(같은 말을) 계속 되풀이하다, 잔소리하다",
-   "pos": "동사",
-   "lv": 1,
-   "cefr": "B2",
-   "en": "talk repeatedly and tediously about the same subject, especially a complaint",
-   "ex": [
-    { "en": "He keeps harping on about how things used to be better.", "ko": "그는 예전이 더 나았다며 계속 같은 말을 되풀이한다." }
-   ]
-  }
- ]
+  "hang out": [
+    {
+      "cue": "친구와 편하게",
+      "ko": "놀다, 어울리다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "spend time relaxing in a place or with friends",
+      "ex": [
+        {
+          "en": "We usually hang out at the coffee shop after class.",
+          "ko": "우리는 보통 수업 후에 카페에서 논다."
+        }
+      ]
+    }
+  ],
+  "come up": [
+    {
+      "cue": "문제·기회가 갑자기",
+      "ko": "생기다, 발생하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "happen or start to exist, especially unexpectedly",
+      "ex": [
+        {
+          "en": "Something came up at work, so I can't make it tonight.",
+          "ko": "회사에 일이 생겨서 오늘 밤에 못 갈 것 같아."
+        }
+      ]
+    },
+    {
+      "cue": "행사·시험 등 시간이",
+      "ko": "다가오다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "be about to happen soon",
+      "ex": [
+        {
+          "en": "Her exams are coming up next week.",
+          "ko": "그녀의 시험이 다음 주로 다가오고 있다."
+        }
+      ]
+    },
+    {
+      "cue": "대화 중 화제로",
+      "ko": "(화제로) 나오다, 언급되다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "be mentioned or discussed",
+      "ex": [
+        {
+          "en": "Your name came up in the meeting.",
+          "ko": "회의에서 네 이름이 언급됐어."
+        }
+      ]
+    }
+  ],
+  "carve out": [
+    {
+      "cue": "경력·시간·자리를 노력으로",
+      "ko": "개척해서 만들다, 확보하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "create something, such as a career or a place for yourself, through hard effort",
+      "ex": [
+        {
+          "en": "She carved out a successful career in law.",
+          "ko": "그녀는 노력으로 법조계에서 성공적인 경력을 개척했다."
+        }
+      ]
+    }
+  ],
+  "squeeze in": [
+    {
+      "cue": "바쁜 일정에 짧게",
+      "ko": "짬을 내다, 끼워 넣다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "manage to fit something into a busy schedule",
+      "ex": [
+        {
+          "en": "The doctor squeezed me in between appointments.",
+          "ko": "의사 선생님이 진료 사이에 나를 짬을 내서 봐주셨다."
+        }
+      ]
+    }
+  ],
+  "iron out": [
+    {
+      "cue": "문제·의견차를",
+      "ko": "(문제를) 해결하다, 조정하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "resolve a problem or difficulty through discussion",
+      "ex": [
+        {
+          "en": "We need to iron out a few details before signing the contract.",
+          "ko": "계약서에 서명하기 전에 몇 가지 세부사항을 조정해야 한다."
+        }
+      ]
+    }
+  ],
+  "hash out": [
+    {
+      "cue": "의견 다른 문제를 충분히",
+      "ko": "충분히 논의해서 해결하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "discuss something thoroughly until an agreement is reached",
+      "ex": [
+        {
+          "en": "The two sides hashed out a deal after hours of talks.",
+          "ko": "양측은 몇 시간의 협상 끝에 합의를 이끌어냈다."
+        }
+      ]
+    }
+  ],
+  "weigh in": [
+    {
+      "cue": "논쟁·토론에 의견으로",
+      "ko": "(논쟁에) 끼어들다, 의견을 내다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "give your opinion in a discussion or argument, especially forcefully",
+      "ex": [
+        {
+          "en": "Several experts weighed in on the debate.",
+          "ko": "여러 전문가들이 그 논쟁에 의견을 냈다."
+        }
+      ]
+    },
+    {
+      "cue": "권투 선수가 경기 전에",
+      "ko": "체중을 재다, 계체하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "be officially weighed before a sports competition, especially boxing",
+      "ex": [
+        {
+          "en": "The boxers weighed in the day before the fight.",
+          "ko": "복서들은 경기 전날 체중을 쟀다."
+        }
+      ]
+    }
+  ],
+  "rule out": [
+    {
+      "cue": "가능성·선택지를",
+      "ko": "배제하다, 제외하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "decide that something is not possible or not suitable",
+      "ex": [
+        {
+          "en": "Doctors have ruled out a serious illness.",
+          "ko": "의사들은 심각한 질병 가능성을 배제했다."
+        }
+      ]
+    }
+  ],
+  "phase out": [
+    {
+      "cue": "제도·제품을 서서히",
+      "ko": "단계적으로 폐지하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "gradually stop using or producing something",
+      "ex": [
+        {
+          "en": "The company plans to phase out plastic packaging by next year.",
+          "ko": "그 회사는 내년까지 플라스틱 포장을 단계적으로 없앨 계획이다."
+        }
+      ]
+    }
+  ],
+  "roll out": [
+    {
+      "cue": "신제품·서비스를 널리",
+      "ko": "(신제품을) 출시하다, 시행하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "introduce a new product or service, especially to a wide audience",
+      "ex": [
+        {
+          "en": "The company will roll out the update next month.",
+          "ko": "그 회사는 다음 달에 업데이트를 시행할 것이다."
+        }
+      ]
+    }
+  ],
+  "kick off": [
+    {
+      "cue": "행사·경기를",
+      "ko": "시작하다, 개시하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "begin an event or activity",
+      "ex": [
+        {
+          "en": "The festival kicks off with a live concert.",
+          "ko": "그 축제는 라이브 콘서트로 시작한다."
+        }
+      ]
+    }
+  ],
+  "wrap up": [
+    {
+      "cue": "일·회의를",
+      "ko": "마무리하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "finish or complete something",
+      "ex": [
+        {
+          "en": "Let's wrap up the meeting in five minutes.",
+          "ko": "5분 안에 회의를 마무리합시다."
+        }
+      ]
+    }
+  ],
+  "tie up": [
+    {
+      "cue": "일이 많아 여유 없이",
+      "ko": "묶다, (여유 없이) 바쁘게 만들다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "keep someone busy or make something unavailable",
+      "ex": [
+        {
+          "en": "I'm tied up in a meeting until three.",
+          "ko": "나는 3시까지 회의로 꼼짝 못 한다."
+        }
+      ]
+    },
+    {
+      "cue": "남은 세부사항을",
+      "ko": "마무리 짓다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "finish the last remaining details of something",
+      "ex": [
+        {
+          "en": "We just need to tie up a few loose ends.",
+          "ko": "몇 가지 남은 부분만 마무리하면 된다."
+        }
+      ]
+    }
+  ],
+  "chip in": [
+    {
+      "cue": "돈을 여럿이 나눠",
+      "ko": "(돈을) 갹출하다, 보태다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "give money along with other people to pay for something together",
+      "ex": [
+        {
+          "en": "We all chipped in to buy her a present.",
+          "ko": "우리는 모두 돈을 보태 그녀에게 줄 선물을 샀다."
+        }
+      ]
+    },
+    {
+      "cue": "대화 중에 의견을",
+      "ko": "거들다, 끼어들어 말하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "add a comment or opinion to a conversation",
+      "ex": [
+        {
+          "en": "He chipped in with a helpful suggestion.",
+          "ko": "그는 도움이 되는 제안을 거들었다."
+        }
+      ]
+    }
+  ],
+  "cough up": [
+    {
+      "cue": "내키지 않지만 돈을",
+      "ko": "(마지못해) 돈을 내다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "pay money reluctantly",
+      "ex": [
+        {
+          "en": "He finally coughed up the money he owed me.",
+          "ko": "그는 결국 나에게 빚진 돈을 마지못해 냈다."
+        }
+      ]
+    }
+  ],
+  "hold off": [
+    {
+      "cue": "결정·행동을",
+      "ko": "미루다, 늦추다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "delay doing something",
+      "ex": [
+        {
+          "en": "Let's hold off on making a decision until Monday.",
+          "ko": "월요일까지 결정을 미루자."
+        }
+      ]
+    },
+    {
+      "cue": "공격·적을",
+      "ko": "저지하다, 막다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "prevent someone or something from advancing or succeeding",
+      "ex": [
+        {
+          "en": "The team held off a late rally to win the game.",
+          "ko": "그 팀은 막판 추격을 막아내며 경기에서 이겼다."
+        }
+      ]
+    }
+  ],
+  "fend off": [
+    {
+      "cue": "공격·질문을",
+      "ko": "막아내다, 물리치다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "defend yourself against an attack, question, or criticism",
+      "ex": [
+        {
+          "en": "She fended off questions about her resignation.",
+          "ko": "그녀는 사임에 관한 질문들을 막아냈다."
+        }
+      ]
+    }
+  ],
+  "ward off": [
+    {
+      "cue": "위험·질병을 미리",
+      "ko": "막다, 예방하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "prevent something harmful from affecting you",
+      "ex": [
+        {
+          "en": "Vitamin C may help ward off colds.",
+          "ko": "비타민 C는 감기를 예방하는 데 도움이 될 수 있다."
+        }
+      ]
+    }
+  ],
+  "get by": [
+    {
+      "cue": "돈·능력이 부족해도 그럭저럭",
+      "ko": "그럭저럭 살아가다, 헤쳐나가다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "manage to live or survive with the limited money or resources you have",
+      "ex": [
+        {
+          "en": "They get by on a very small income.",
+          "ko": "그들은 아주 적은 수입으로 그럭저럭 살아간다."
+        }
+      ]
+    }
+  ],
+  "make do with": [
+    {
+      "cue": "부족한 것으로 임시로",
+      "ko": "~으로 임시변통하다, 그런대로 때우다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "manage using something even though it is not ideal or enough",
+      "ex": [
+        {
+          "en": "We had no chairs, so we made do with boxes.",
+          "ko": "의자가 없어서 우리는 상자로 임시변통했다."
+        }
+      ]
+    }
+  ],
+  "bank on": [
+    {
+      "cue": "어떤 일이 일어날 것이라고",
+      "ko": "믿다, 기대다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "rely on something happening or being true",
+      "ex": [
+        {
+          "en": "Don't bank on getting a refund.",
+          "ko": "환불받을 거라고 믿지 마."
+        }
+      ]
+    }
+  ],
+  "fall through": [
+    {
+      "cue": "계획·거래가 성사되지 못하고",
+      "ko": "(계획이) 무산되다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "(of a plan or agreement) fail to happen",
+      "ex": [
+        {
+          "en": "Our vacation plans fell through at the last minute.",
+          "ko": "우리의 휴가 계획이 마지막 순간에 무산됐다."
+        }
+      ]
+    }
+  ],
+  "come through": [
+    {
+      "cue": "어려운 상황을 이겨내고",
+      "ko": "(위기를) 이겨내다, 헤쳐나가다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "successfully survive a difficult situation",
+      "ex": [
+        {
+          "en": "She came through the surgery well.",
+          "ko": "그녀는 수술을 잘 이겨냈다."
+        }
+      ]
+    },
+    {
+      "cue": "약속한 일을 실제로",
+      "ko": "(약속대로) 해내다, 성과를 내다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "do what you promised or were expected to do, especially when needed",
+      "ex": [
+        {
+          "en": "He always comes through when we need him.",
+          "ko": "그는 우리가 필요할 때 항상 해낸다."
+        }
+      ]
+    }
+  ],
+  "follow through on": [
+    {
+      "cue": "계획·약속을 끝까지",
+      "ko": "(계획을) 끝까지 이행하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "complete an action or plan that you promised or started",
+      "ex": [
+        {
+          "en": "You need to follow through on your commitments.",
+          "ko": "약속한 것은 끝까지 이행해야 한다."
+        }
+      ]
+    }
+  ],
+  "stick to": [
+    {
+      "cue": "계획·규칙을 바꾸지 않고",
+      "ko": "고수하다, 지키다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "continue doing or using something without changing it",
+      "ex": [
+        {
+          "en": "I'm trying to stick to my diet.",
+          "ko": "나는 내 식단을 고수하려고 노력 중이다."
+        }
+      ]
+    }
+  ],
+  "branch out": [
+    {
+      "cue": "사업·활동 범위를 새롭게",
+      "ko": "(사업을) 확장하다, 새 분야로 나아가다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "start doing a new activity that is different from what you usually do",
+      "ex": [
+        {
+          "en": "The bakery decided to branch out into catering.",
+          "ko": "그 빵집은 출장 요리 사업으로 영역을 넓히기로 했다."
+        }
+      ]
+    }
+  ],
+  "brush up on": [
+    {
+      "cue": "잊었던 지식·실력을 다시",
+      "ko": "(실력을) 다시 익히다, 복습하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "improve your knowledge or skill in something you have not practiced recently",
+      "ex": [
+        {
+          "en": "I need to brush up on my French before the trip.",
+          "ko": "여행 전에 프랑스어 실력을 다시 익혀야 한다."
+        }
+      ]
+    }
+  ],
+  "touch on": [
+    {
+      "cue": "주제를 짧게",
+      "ko": "간단히 언급하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "mention or discuss a subject briefly",
+      "ex": [
+        {
+          "en": "The lecture touched on several important issues.",
+          "ko": "그 강연은 몇 가지 중요한 문제를 간단히 다뤘다."
+        }
+      ]
+    }
+  ],
+  "dwell on": [
+    {
+      "cue": "안 좋은 일을 계속",
+      "ko": "곱씹다, 계속 생각하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "think or talk about something, especially something unpleasant, for too long",
+      "ex": [
+        {
+          "en": "Try not to dwell on your mistakes.",
+          "ko": "네 실수를 너무 곱씹지 않으려고 해봐."
+        }
+      ]
+    }
+  ],
+  "single out": [
+    {
+      "cue": "여럿 중 한 사람을 특별히",
+      "ko": "(칭찬·비판 등으로) 특별히 지목하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "choose one person from a group for special attention, praise, or criticism",
+      "ex": [
+        {
+          "en": "The teacher singled her out for praise.",
+          "ko": "선생님은 그녀를 특별히 지목해 칭찬했다."
+        }
+      ]
+    }
+  ],
+  "stand up for": [
+    {
+      "cue": "자신·타인의 권리를",
+      "ko": "옹호하다, 지지하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "defend or support someone or something, especially when they are being criticized",
+      "ex": [
+        {
+          "en": "She always stands up for her friends.",
+          "ko": "그녀는 항상 친구들을 옹호한다."
+        }
+      ]
+    }
+  ],
+  "side with": [
+    {
+      "cue": "논쟁에서 한쪽 편을",
+      "ko": "~의 편을 들다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "support one person or group in an argument",
+      "ex": [
+        {
+          "en": "He always sides with his brother in family arguments.",
+          "ko": "그는 가족 다툼에서 항상 형 편을 든다."
+        }
+      ]
+    }
+  ],
+  "fall out with": [
+    {
+      "cue": "다툰 뒤 관계가 나빠져",
+      "ko": "~와 사이가 틀어지다, 다투다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "have an argument with someone and stop being friendly",
+      "ex": [
+        {
+          "en": "She fell out with her best friend over money.",
+          "ko": "그녀는 돈 문제로 가장 친한 친구와 사이가 틀어졌다."
+        }
+      ]
+    }
+  ],
+  "fall for": [
+    {
+      "cue": "누군가에게 갑자기",
+      "ko": "~에게 반하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "suddenly start to love someone",
+      "ex": [
+        {
+          "en": "He fell for her the moment they met.",
+          "ko": "그는 그녀를 만난 순간 반했다."
+        }
+      ]
+    },
+    {
+      "cue": "거짓말·속임수에",
+      "ko": "속아 넘어가다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "be tricked into believing something that is not true",
+      "ex": [
+        {
+          "en": "I can't believe you fell for that prank.",
+          "ko": "네가 그 장난에 속아 넘어갔다니 믿을 수가 없다."
+        }
+      ]
+    }
+  ],
+  "drift apart": [
+    {
+      "cue": "시간이 지나며 관계가 서서히",
+      "ko": "(관계가) 멀어지다, 소원해지다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "gradually lose the close relationship you once had with someone",
+      "ex": [
+        {
+          "en": "We used to be close, but we've drifted apart over the years.",
+          "ko": "우리는 예전에 가까웠지만 세월이 흐르면서 멀어졌다."
+        }
+      ]
+    }
+  ],
+  "cave in": [
+    {
+      "cue": "압박에 못 이겨",
+      "ko": "굴복하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "finally agree to something after refusing for a while, because of pressure",
+      "ex": [
+        {
+          "en": "After hours of arguing, he finally caved in.",
+          "ko": "몇 시간의 논쟁 끝에 그는 결국 굴복했다."
+        }
+      ]
+    },
+    {
+      "cue": "천장·바닥 등 구조물이",
+      "ko": "무너지다, 내려앉다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "(of a structure) collapse inward",
+      "ex": [
+        {
+          "en": "The old roof caved in during the storm.",
+          "ko": "낡은 지붕이 폭풍 속에 무너져 내렸다."
+        }
+      ]
+    }
+  ],
+  "back down": [
+    {
+      "cue": "주장·요구를 포기하고",
+      "ko": "물러서다, 주장을 굽히다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "stop insisting on something or withdraw from a position, especially in an argument",
+      "ex": [
+        {
+          "en": "The government refused to back down on the new tax.",
+          "ko": "정부는 새로운 세금에 대한 입장을 굽히지 않았다."
+        }
+      ]
+    }
+  ],
+  "back off": [
+    {
+      "cue": "위협·압박에서 물러나",
+      "ko": "물러서다, 그만두다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "stop doing or saying something, especially to avoid conflict",
+      "ex": [
+        {
+          "en": "He told them to back off and leave her alone.",
+          "ko": "그는 그들에게 물러서서 그녀를 내버려두라고 말했다."
+        }
+      ]
+    }
+  ],
+  "ease off": [
+    {
+      "cue": "통증·비·압박이 점차",
+      "ko": "완화되다, 누그러지다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "become less strong or intense",
+      "ex": [
+        {
+          "en": "The rain finally eased off in the afternoon.",
+          "ko": "비가 오후에야 마침내 누그러졌다."
+        }
+      ]
+    }
+  ],
+  "let up": [
+    {
+      "cue": "강도·기세가 약해지며",
+      "ko": "누그러지다, 약해지다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "become less strong or stop",
+      "ex": [
+        {
+          "en": "The storm didn't let up all night.",
+          "ko": "폭풍은 밤새 잦아들지 않았다."
+        }
+      ]
+    }
+  ],
+  "level off": [
+    {
+      "cue": "오르내리던 수치가 안정되어",
+      "ko": "안정되다, 수평을 이루다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "stop rising or falling and stay steady",
+      "ex": [
+        {
+          "en": "Prices are finally leveling off after months of increases.",
+          "ko": "몇 달간의 상승 끝에 가격이 마침내 안정되고 있다."
+        }
+      ]
+    }
+  ],
+  "level with": [
+    {
+      "cue": "숨기지 않고 솔직하게",
+      "ko": "솔직히 말하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "tell someone the truth honestly, especially about something difficult",
+      "ex": [
+        {
+          "en": "I'll level with you — this project is behind schedule.",
+          "ko": "솔직히 말할게요, 이 프로젝트는 일정보다 늦어지고 있어요."
+        }
+      ]
+    }
+  ],
+  "own up to": [
+    {
+      "cue": "잘못한 일을 스스로",
+      "ko": "(잘못을) 인정하다, 자백하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "admit that you did something wrong",
+      "ex": [
+        {
+          "en": "He finally owned up to breaking the window.",
+          "ko": "그는 결국 창문을 깬 것을 인정했다."
+        }
+      ]
+    }
+  ],
+  "come clean": [
+    {
+      "cue": "숨긴 것을 다 털어놓아",
+      "ko": "실토하다, 솔직히 털어놓다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "admit the truth about something you have been hiding",
+      "ex": [
+        {
+          "en": "She decided to come clean about the mistake.",
+          "ko": "그녀는 그 실수에 대해 솔직히 털어놓기로 했다."
+        }
+      ]
+    }
+  ],
+  "rack up": [
+    {
+      "cue": "점수·빚 등을 계속",
+      "ko": "(점수·빚 등을) 쌓다, 늘리다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "gradually accumulate a large amount of something, such as points, debt, or wins",
+      "ex": [
+        {
+          "en": "The team racked up five wins in a row.",
+          "ko": "그 팀은 5연승을 쌓았다."
+        }
+      ]
+    }
+  ],
+  "tally up": [
+    {
+      "cue": "숫자·점수를 모두 더해",
+      "ko": "합산하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "add up a total number or amount",
+      "ex": [
+        {
+          "en": "Let's tally up the votes.",
+          "ko": "투표수를 합산해봅시다."
+        }
+      ]
+    }
+  ],
+  "dish out": [
+    {
+      "cue": "음식·돈을 여러 사람에게 나눠",
+      "ko": "나눠주다, 베풀다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "give out food, money, or something else to a number of people",
+      "ex": [
+        {
+          "en": "Volunteers dished out free meals to the homeless.",
+          "ko": "자원봉사자들이 노숙자들에게 무료 식사를 나눠주었다."
+        }
+      ]
+    },
+    {
+      "cue": "비판·조언을 마구",
+      "ko": "(비판을) 쏟아내다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "give a lot of criticism or advice, often too freely",
+      "ex": [
+        {
+          "en": "He's always dishing out advice nobody asked for.",
+          "ko": "그는 항상 아무도 부탁하지 않은 조언을 마구 쏟아낸다."
+        }
+      ]
+    }
+  ],
+  "bring forward": [
+    {
+      "cue": "일정을 원래보다 더 이르게",
+      "ko": "앞당기다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "move an event or meeting to an earlier date or time",
+      "ex": [
+        {
+          "en": "They brought the meeting forward to Monday.",
+          "ko": "그들은 회의를 월요일로 앞당겼다."
+        }
+      ]
+    }
+  ],
+  "push back": [
+    {
+      "cue": "일정을 원래보다 더 늦게",
+      "ko": "미루다, 연기하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "delay an event or meeting to a later date or time",
+      "ex": [
+        {
+          "en": "We had to push back the launch date.",
+          "ko": "우리는 출시일을 미룰 수밖에 없었다."
+        }
+      ]
+    },
+    {
+      "cue": "제안·의견에 반대해",
+      "ko": "반발하다, 반박하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "resist or argue against a plan or idea",
+      "ex": [
+        {
+          "en": "Employees pushed back against the new policy.",
+          "ko": "직원들은 새 정책에 반발했다."
+        }
+      ]
+    }
+  ],
+  "scale back": [
+    {
+      "cue": "규모·비용을 줄여서",
+      "ko": "축소하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "reduce the size, amount, or extent of something",
+      "ex": [
+        {
+          "en": "The company had to scale back its expansion plans.",
+          "ko": "그 회사는 확장 계획을 축소해야 했다."
+        }
+      ]
+    }
+  ],
+  "scale up": [
+    {
+      "cue": "규모·생산을 늘려서",
+      "ko": "확대하다, 늘리다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "increase the size, amount, or extent of something",
+      "ex": [
+        {
+          "en": "They plan to scale up production next year.",
+          "ko": "그들은 내년에 생산을 확대할 계획이다."
+        }
+      ]
+    }
+  ],
+  "ramp up": [
+    {
+      "cue": "활동·생산을 빠르게",
+      "ko": "늘리다, 강화하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "increase something quickly and significantly",
+      "ex": [
+        {
+          "en": "The factory is ramping up production for the holidays.",
+          "ko": "그 공장은 연휴를 위해 생산을 늘리고 있다."
+        }
+      ]
+    }
+  ],
+  "gear up for": [
+    {
+      "cue": "큰 행사·일을 앞두고",
+      "ko": "~할 준비를 하다, 대비하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "prepare for something important that is about to happen",
+      "ex": [
+        {
+          "en": "The city is gearing up for the marathon this weekend.",
+          "ko": "그 도시는 이번 주말 마라톤을 위해 준비하고 있다."
+        }
+      ]
+    }
+  ],
+  "brace for": [
+    {
+      "cue": "충격·나쁜 소식에 미리",
+      "ko": "(충격에) 대비하다, 각오하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "prepare yourself for something difficult or unpleasant",
+      "ex": [
+        {
+          "en": "Residents are bracing for the storm.",
+          "ko": "주민들은 폭풍에 대비하고 있다."
+        }
+      ]
+    }
+  ],
+  "grapple with": [
+    {
+      "cue": "어려운 문제와 힘겹게",
+      "ko": "씨름하다, 해결하려 애쓰다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "try hard to deal with or understand a difficult problem",
+      "ex": [
+        {
+          "en": "The government is grappling with rising inflation.",
+          "ko": "정부는 치솟는 인플레이션과 씨름하고 있다."
+        }
+      ]
+    }
+  ],
+  "wrestle with": [
+    {
+      "cue": "결정·문제로 마음속 고심하며",
+      "ko": "(문제로) 고심하다, 씨름하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "struggle mentally to deal with or decide something difficult",
+      "ex": [
+        {
+          "en": "She wrestled with the decision for weeks.",
+          "ko": "그녀는 몇 주 동안 그 결정을 두고 고심했다."
+        }
+      ]
+    }
+  ],
+  "contend with": [
+    {
+      "cue": "어려운 상황·문제에 맞서",
+      "ko": "대처하다, 맞서다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "deal with a difficult problem or situation",
+      "ex": [
+        {
+          "en": "Farmers have to contend with unpredictable weather.",
+          "ko": "농부들은 예측할 수 없는 날씨에 대처해야 한다."
+        }
+      ]
+    }
+  ],
+  "take stock of": [
+    {
+      "cue": "현재 상황을 찬찬히",
+      "ko": "(상황을) 점검하다, 되돌아보다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "think carefully about a situation before deciding what to do next",
+      "ex": [
+        {
+          "en": "It's a good time to take stock of your progress.",
+          "ko": "자신의 진행 상황을 점검해보기 좋은 때다."
+        }
+      ]
+    }
+  ],
+  "account for": [
+    {
+      "cue": "이유·원인을",
+      "ko": "설명하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "give a reason or explanation for something",
+      "ex": [
+        {
+          "en": "How do you account for the missing money?",
+          "ko": "사라진 돈에 대해 어떻게 설명할 건가요?"
+        }
+      ]
+    },
+    {
+      "cue": "전체 중 일정 비율을",
+      "ko": "(비율을) 차지하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "form a particular amount or part of something",
+      "ex": [
+        {
+          "en": "Tourism accounts for a large part of the economy.",
+          "ko": "관광업은 경제의 큰 부분을 차지한다."
+        }
+      ]
+    }
+  ],
+  "allow for": [
+    {
+      "cue": "미리 예상해서 여유를",
+      "ko": "감안하다, 고려하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "consider a possibility when making plans",
+      "ex": [
+        {
+          "en": "Allow for delays when planning your trip.",
+          "ko": "여행을 계획할 때 지연 가능성을 감안하세요."
+        }
+      ]
+    }
+  ],
+  "factor in": [
+    {
+      "cue": "계산·결정에 요소로",
+      "ko": "고려에 넣다, 감안하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "include something as a factor when calculating or planning",
+      "ex": [
+        {
+          "en": "We need to factor in the cost of shipping.",
+          "ko": "배송비를 고려에 넣어야 한다."
+        }
+      ]
+    }
+  ],
+  "capitalize on": [
+    {
+      "cue": "유리한 상황을 최대한",
+      "ko": "(기회를) 활용하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "take advantage of a situation to gain benefit",
+      "ex": [
+        {
+          "en": "The company capitalized on the growing demand for electric cars.",
+          "ko": "그 회사는 전기차 수요 증가를 활용했다."
+        }
+      ]
+    }
+  ],
+  "home in on": [
+    {
+      "cue": "목표·문제에 정확하게",
+      "ko": "(정확히) 초점을 맞추다, 겨냥하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "direct all your attention toward one particular thing",
+      "ex": [
+        {
+          "en": "Investigators homed in on the real cause of the fire.",
+          "ko": "수사관들은 화재의 진짜 원인에 초점을 맞췄다."
+        }
+      ]
+    }
+  ],
+  "zero in on": [
+    {
+      "cue": "목표를 정확히",
+      "ko": "정확히 겨냥하다, 집중하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "focus attention or aim precisely on something",
+      "ex": [
+        {
+          "en": "The report zeroes in on three key problems.",
+          "ko": "그 보고서는 세 가지 핵심 문제에 집중한다."
+        }
+      ]
+    }
+  ],
+  "play down": [
+    {
+      "cue": "문제·중요성을 실제보다 작게",
+      "ko": "경시하다, 대수롭지 않게 말하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "make something seem less important or serious than it really is",
+      "ex": [
+        {
+          "en": "The company tried to play down the scandal.",
+          "ko": "그 회사는 그 스캔들을 대수롭지 않게 넘기려 했다."
+        }
+      ]
+    }
+  ],
+  "play up": [
+    {
+      "cue": "장점·성과를 실제보다 크게",
+      "ko": "과장하다, 부각시키다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "make something seem more important than it really is",
+      "ex": [
+        {
+          "en": "The ad plays up the product's health benefits.",
+          "ko": "그 광고는 제품의 건강상 이점을 부각시킨다."
+        }
+      ]
+    }
+  ],
+  "live up to": [
+    {
+      "cue": "기대·명성에 맞게",
+      "ko": "(기대에) 부응하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "be as good as expected",
+      "ex": [
+        {
+          "en": "The movie didn't live up to the hype.",
+          "ko": "그 영화는 기대만큼은 아니었다."
+        }
+      ]
+    }
+  ],
+  "make up for": [
+    {
+      "cue": "부족한 부분·잘못을",
+      "ko": "만회하다, 보상하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "do something good to balance something bad or missing",
+      "ex": [
+        {
+          "en": "He bought her flowers to make up for being late.",
+          "ko": "그는 늦은 것을 만회하려고 그녀에게 꽃을 사줬다."
+        }
+      ]
+    }
+  ],
+  "stem from": [
+    {
+      "cue": "문제의 원인이 어디서",
+      "ko": "~에서 비롯되다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "be caused by or originate from something",
+      "ex": [
+        {
+          "en": "Her fear of dogs stems from a childhood incident.",
+          "ko": "그녀의 개 공포증은 어린 시절의 사건에서 비롯되었다."
+        }
+      ]
+    }
+  ],
+  "hinge on": [
+    {
+      "cue": "결과가 오직 한 가지에",
+      "ko": "~에 달려 있다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "depend completely on one particular thing",
+      "ex": [
+        {
+          "en": "The success of the plan hinges on good weather.",
+          "ko": "그 계획의 성공은 좋은 날씨에 달려 있다."
+        }
+      ]
+    }
+  ],
+  "boil down to": [
+    {
+      "cue": "복잡한 상황을 한마디로 요약하면",
+      "ko": "결국 ~로 요약되다, 귀결되다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "be the basic or most important point of a more complicated situation",
+      "ex": [
+        {
+          "en": "It all boils down to a lack of trust.",
+          "ko": "결국 모든 것은 신뢰 부족으로 귀결된다."
+        }
+      ]
+    }
+  ],
+  "tap into": [
+    {
+      "cue": "숨은 자원·감정을",
+      "ko": "(자원 등을) 활용하다, 접근하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "find a way to use a source of energy, skill, or emotion",
+      "ex": [
+        {
+          "en": "The campaign tapped into people's fear of change.",
+          "ko": "그 캠페인은 변화에 대한 사람들의 두려움을 활용했다."
+        }
+      ]
+    }
+  ],
+  "opt for": [
+    {
+      "cue": "여러 선택지 중 하나를",
+      "ko": "선택하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "choose one thing rather than another",
+      "ex": [
+        {
+          "en": "She opted for a quiet wedding instead of a big one.",
+          "ko": "그녀는 큰 결혼식 대신 조용한 결혼식을 선택했다."
+        }
+      ]
+    }
+  ],
+  "opt out of": [
+    {
+      "cue": "참여·계획에서 스스로 빠져",
+      "ko": "(선택적으로) 빠지다, 탈퇴하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "choose not to take part in something",
+      "ex": [
+        {
+          "en": "You can opt out of the newsletter anytime.",
+          "ko": "뉴스레터는 언제든 구독을 취소할 수 있다."
+        }
+      ]
+    }
+  ],
+  "gloss over": [
+    {
+      "cue": "불편한 사실을 대충 넘겨서",
+      "ko": "(문제를) 얼버무리다, 대충 넘기다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "avoid discussing an unpleasant subject in detail",
+      "ex": [
+        {
+          "en": "The report glosses over the project's failures.",
+          "ko": "그 보고서는 프로젝트의 실패를 얼버무리고 넘어간다."
+        }
+      ]
+    }
+  ],
+  "delve into": [
+    {
+      "cue": "주제를 깊이 파고들어",
+      "ko": "깊이 파고들다, 탐구하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "research or examine a subject in great detail",
+      "ex": [
+        {
+          "en": "The documentary delves into the history of the city.",
+          "ko": "그 다큐멘터리는 그 도시의 역사를 깊이 파고든다."
+        }
+      ]
+    }
+  ],
+  "forge ahead": [
+    {
+      "cue": "어려움에도 불구하고 계속",
+      "ko": "앞으로 나아가다, 매진하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "continue to make progress with determination, despite difficulty",
+      "ex": [
+        {
+          "en": "Despite the setbacks, the team forged ahead with the project.",
+          "ko": "차질에도 불구하고 그 팀은 프로젝트를 계속 밀고 나갔다."
+        }
+      ]
+    }
+  ],
+  "plow through": [
+    {
+      "cue": "양 많고 지루한 일을 꾸준히",
+      "ko": "(힘든 일을) 꾸준히 헤쳐나가다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "work through something difficult or boring slowly and steadily",
+      "ex": [
+        {
+          "en": "She plowed through a stack of paperwork all afternoon.",
+          "ko": "그녀는 오후 내내 서류 더미를 꾸준히 처리했다."
+        }
+      ]
+    }
+  ],
+  "wade through": [
+    {
+      "cue": "지루하고 방대한 자료를 힘겹게",
+      "ko": "(지루한 일을) 힘겹게 헤쳐나가다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "deal with something tedious or difficult slowly and with effort",
+      "ex": [
+        {
+          "en": "I had to wade through hundreds of emails this morning.",
+          "ko": "나는 오늘 아침 수백 통의 이메일을 힘겹게 처리해야 했다."
+        }
+      ]
+    }
+  ],
+  "muddle through": [
+    {
+      "cue": "뚜렷한 계획 없이 어떻게든",
+      "ko": "그럭저럭 헤쳐나가다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "manage to do something despite having no clear plan or skill",
+      "ex": [
+        {
+          "en": "We had no experience, but we muddled through somehow.",
+          "ko": "우리는 경험이 없었지만 어떻게든 그럭저럭 헤쳐나갔다."
+        }
+      ]
+    }
+  ],
+  "bear out": [
+    {
+      "cue": "증거·자료가 주장을",
+      "ko": "(주장을) 뒷받침하다, 확인해주다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "show that something is true or correct",
+      "ex": [
+        {
+          "en": "The results bear out our original theory.",
+          "ko": "그 결과는 우리의 원래 이론을 뒷받침한다."
+        }
+      ]
+    }
+  ],
+  "flesh out": [
+    {
+      "cue": "아이디어·계획에 세부 내용을",
+      "ko": "구체화하다, 살을 붙이다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "add more details to an idea or plan to make it more complete",
+      "ex": [
+        {
+          "en": "We need to flesh out this proposal before the meeting.",
+          "ko": "회의 전에 이 제안서를 구체화해야 한다."
+        }
+      ]
+    }
+  ],
+  "spell out": [
+    {
+      "cue": "이해하기 쉽게 자세히",
+      "ko": "자세히 설명하다, 명확히 하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "explain something clearly and in detail",
+      "ex": [
+        {
+          "en": "The contract spells out each party's responsibilities.",
+          "ko": "그 계약서는 각 당사자의 책임을 명확히 설명한다."
+        }
+      ]
+    }
+  ],
+  "thrash out": [
+    {
+      "cue": "의견 차이를 격렬하게 논의해서",
+      "ko": "철저히 논의하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "discuss a problem thoroughly until you reach an agreement",
+      "ex": [
+        {
+          "en": "The two leaders thrashed out a compromise.",
+          "ko": "두 지도자는 철저한 논의 끝에 타협안을 도출했다."
+        }
+      ]
+    }
+  ],
+  "tease out": [
+    {
+      "cue": "복잡하게 얽힌 것에서 조금씩",
+      "ko": "(정보를) 조심스레 끌어내다, 가려내다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "discover or separate information that is complicated or hidden",
+      "ex": [
+        {
+          "en": "Researchers tried to tease out the causes of the disease.",
+          "ko": "연구자들은 그 질병의 원인을 조심스레 밝혀내려 했다."
+        }
+      ]
+    }
+  ],
+  "winnow out": [
+    {
+      "cue": "많은 것 중 불필요한 것을",
+      "ko": "가려내다, 골라내다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "remove things that are not wanted from a larger group",
+      "ex": [
+        {
+          "en": "The committee winnowed out weaker applications.",
+          "ko": "위원회는 부족한 지원서들을 걸러냈다."
+        }
+      ]
+    }
+  ],
+  "whittle down": [
+    {
+      "cue": "목록·숫자를 점점 줄여서",
+      "ko": "점차 줄이다, 깎아내다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "gradually reduce the size or number of something",
+      "ex": [
+        {
+          "en": "We whittled down the choices to two.",
+          "ko": "우리는 선택지를 둘로 점차 줄였어요."
+        }
+      ]
+    }
+  ],
+  "pare down": [
+    {
+      "cue": "비용·규모를 최소한으로",
+      "ko": "축소하다, 삭감하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "reduce something to the smallest possible amount",
+      "ex": [
+        {
+          "en": "The budget was pared down to essential spending only.",
+          "ko": "예산은 필수 지출만 남도록 축소되었다."
+        }
+      ]
+    }
+  ],
+  "encroach on": [
+    {
+      "cue": "권리·영역을 점점 침범해서",
+      "ko": "잠식하다, 침해하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "gradually take away someone's rights, land, or time",
+      "ex": [
+        {
+          "en": "The new schedule is encroaching on my free time.",
+          "ko": "새 일정이 내 자유시간을 잠식하고 있다."
+        }
+      ]
+    }
+  ],
+  "impinge on": [
+    {
+      "cue": "권리·생활에 부정적 영향을",
+      "ko": "영향을 미치다, 침해하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "have a noticeable negative effect on something",
+      "ex": [
+        {
+          "en": "Noise from the construction impinges on residents' daily life.",
+          "ko": "공사 소음이 주민들의 일상생활에 영향을 미친다."
+        }
+      ]
+    }
+  ],
+  "defer to": [
+    {
+      "cue": "더 경험 많은 사람의 판단에",
+      "ko": "~에게 맡기다, 따르다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "accept someone else's opinion or decision because you respect them",
+      "ex": [
+        {
+          "en": "On technical matters, I defer to the engineers.",
+          "ko": "기술적인 문제에서는 나는 엔지니어들의 판단을 따른다."
+        }
+      ]
+    }
+  ],
+  "revert to": [
+    {
+      "cue": "이전 상태·습관으로",
+      "ko": "되돌아가다, 복귀하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "return to a previous state, condition, or habit",
+      "ex": [
+        {
+          "en": "After the holiday, we reverted to our normal routine.",
+          "ko": "휴가가 끝난 뒤 우리는 평소 일상으로 되돌아갔다."
+        }
+      ]
+    }
+  ],
+  "culminate in": [
+    {
+      "cue": "오랜 과정이 마침내",
+      "ko": "결국 ~로 끝나다, 절정에 이르다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "reach a final result after a series of events",
+      "ex": [
+        {
+          "en": "Years of research culminated in a major breakthrough.",
+          "ko": "수년간의 연구가 마침내 큰 돌파구로 이어졌다."
+        }
+      ]
+    }
+  ],
+  "hold sway": [
+    {
+      "cue": "권력·영향력을 지배적으로",
+      "ko": "지배력을 가지다, 영향력을 행사하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "have power or influence over people or a situation",
+      "ex": [
+        {
+          "en": "The old traditions still hold sway in that region.",
+          "ko": "그 지역에서는 여전히 옛 전통이 지배력을 갖고 있다."
+        }
+      ]
+    }
+  ],
+  "hold one's ground": [
+    {
+      "cue": "압박에도 자기 입장을",
+      "ko": "입장을 고수하다, 물러서지 않다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "refuse to change your position or opinion despite pressure",
+      "ex": [
+        {
+          "en": "Despite the criticism, she held her ground.",
+          "ko": "비판에도 불구하고 그녀는 입장을 고수했다."
+        }
+      ]
+    }
+  ],
+  "gain ground": [
+    {
+      "cue": "경쟁·인기에서 점점 우세해져",
+      "ko": "우세해지다, 입지를 넓히다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "become more accepted, popular, or successful",
+      "ex": [
+        {
+          "en": "Renewable energy is gaining ground worldwide.",
+          "ko": "재생에너지가 전 세계적으로 입지를 넓히고 있다."
+        }
+      ]
+    }
+  ],
+  "lose ground": [
+    {
+      "cue": "경쟁에서 점점 밀려서",
+      "ko": "입지를 잃다, 밀리다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "become less popular, powerful, or successful compared to others",
+      "ex": [
+        {
+          "en": "The company is losing ground to newer competitors.",
+          "ko": "그 회사는 신생 경쟁사들에게 입지를 잃고 있다."
+        }
+      ]
+    }
+  ],
+  "make headway": [
+    {
+      "cue": "어려운 일에서 조금씩 진전을",
+      "ko": "진전을 보이다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "make progress, especially with something difficult",
+      "ex": [
+        {
+          "en": "Negotiators are finally making headway.",
+          "ko": "협상가들이 마침내 진전을 보이고 있다."
+        }
+      ]
+    }
+  ],
+  "take issue with": [
+    {
+      "cue": "의견·주장에 동의하지 않아",
+      "ko": "이의를 제기하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "disagree with something someone has said or done",
+      "ex": [
+        {
+          "en": "I take issue with how the study was conducted.",
+          "ko": "나는 그 연구가 진행된 방식에 이의를 제기한다."
+        }
+      ]
+    }
+  ],
+  "take exception to": [
+    {
+      "cue": "불쾌해서 강하게",
+      "ko": "반발하다, 이의를 제기하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "feel offended or angry about something and object to it",
+      "ex": [
+        {
+          "en": "She took exception to his rude comment.",
+          "ko": "그녀는 그의 무례한 발언에 반발했다."
+        }
+      ]
+    }
+  ],
+  "come to terms with": [
+    {
+      "cue": "받아들이기 힘든 현실을 서서히",
+      "ko": "(어려운 상황을) 받아들이다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "gradually accept a difficult or painful situation",
+      "ex": [
+        {
+          "en": "It took years for him to come to terms with the loss.",
+          "ko": "그가 그 상실을 받아들이기까지 수년이 걸렸다."
+        }
+      ]
+    }
+  ],
+  "weed out": [
+    {
+      "cue": "불필요하거나 부적합한 것을",
+      "ko": "제거하다, 솎아내다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "remove people or things that are not wanted or not good enough",
+      "ex": [
+        {
+          "en": "The interviews help weed out unsuitable candidates.",
+          "ko": "면접은 부적합한 지원자들을 걸러내는 데 도움이 된다."
+        }
+      ]
+    }
+  ],
+  "stave off": [
+    {
+      "cue": "위험·재앙을 잠시라도",
+      "ko": "저지하다, (잠시) 피하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "prevent something bad from happening, at least for a while",
+      "ex": [
+        {
+          "en": "They took loans to stave off bankruptcy.",
+          "ko": "그들은 파산을 막기 위해 대출을 받았다."
+        }
+      ]
+    }
+  ],
+  "tide over": [
+    {
+      "cue": "어려운 시기를 잠깐이라도 버티게",
+      "ko": "(어려운 시기를) 넘기게 하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "help someone get through a difficult period, especially by providing what they need",
+      "ex": [
+        {
+          "en": "This loan should tide us over until payday.",
+          "ko": "이 대출이 월급날까지 우리를 버티게 해줄 것이다."
+        }
+      ]
+    }
+  ],
+  "pitch in": [
+    {
+      "cue": "공동의 일에 힘을 보태",
+      "ko": "협력하다, 힘을 보태다, 거들다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "help with a task, often by joining others",
+      "ex": [
+        {
+          "en": "Everyone pitched in to clean up after the party.",
+          "ko": "파티 후 모두가 힘을 보태 청소했다."
+        }
+      ]
+    }
+  ],
+  "shell out": [
+    {
+      "cue": "큰돈을 마지못해",
+      "ko": "(많은 돈을) 지불하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "pay a large amount of money for something, often unwillingly",
+      "ex": [
+        {
+          "en": "We had to shell out a lot of money for the repairs.",
+          "ko": "우리는 수리비로 많은 돈을 지불해야 했다."
+        }
+      ]
+    }
+  ],
+  "extrapolate from": [
+    {
+      "cue": "자료·경향을 바탕으로 예측을",
+      "ko": "(자료로부터) 추론하다, 유추하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "use known facts or data to make predictions about something unknown",
+      "ex": [
+        {
+          "en": "Scientists extrapolated from past data to predict the trend.",
+          "ko": "과학자들은 과거 데이터로부터 추세를 추론했다."
+        }
+      ]
+    }
+  ],
+  "veer away from": [
+    {
+      "cue": "원래 방향·계획에서 벗어나",
+      "ko": "(방향을) 벗어나다, 회피하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "gradually change direction away from something, or avoid a topic",
+      "ex": [
+        {
+          "en": "The conversation veered away from the original topic.",
+          "ko": "대화는 원래 주제에서 벗어났다."
+        }
+      ]
+    }
+  ],
+  "wean off": [
+    {
+      "cue": "의존하던 것에서 서서히 끊게",
+      "ko": "(의존을) 서서히 끊게 하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "gradually make someone stop depending on something",
+      "ex": [
+        {
+          "en": "The program helps patients wean off painkillers.",
+          "ko": "그 프로그램은 환자들이 진통제 의존을 서서히 끊도록 돕는다."
+        }
+      ]
+    }
+  ],
+  "dovetail with": [
+    {
+      "cue": "두 계획·생각이 서로 잘",
+      "ko": "잘 맞아떨어지다, 부합하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "fit together well or match closely with something else",
+      "ex": [
+        {
+          "en": "Her research dovetails with the company's goals.",
+          "ko": "그녀의 연구는 회사의 목표와 잘 맞아떨어진다."
+        }
+      ]
+    }
+  ],
+  "hive off": [
+    {
+      "cue": "사업 일부를 떼어내어",
+      "ko": "분리하다, 매각하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "separate part of a business or organization and sell it or make it independent",
+      "ex": [
+        {
+          "en": "The company hived off its shipping division.",
+          "ko": "그 회사는 물류 부문을 분리해 매각했다."
+        }
+      ]
+    }
+  ],
+  "mothball": [
+    {
+      "cue": "계획·시설을 당분간 쓰지 않고",
+      "ko": "(계획을) 보류하다, 동결하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "stop using a plan, project, or piece of equipment for a period of time",
+      "ex": [
+        {
+          "en": "The factory was mothballed during the recession.",
+          "ko": "그 공장은 불황 기간 동안 가동이 중단되었다."
+        }
+      ]
+    }
+  ],
+  "hunker down": [
+    {
+      "cue": "위기에 대비해 몸을 낮추고 버틸",
+      "ko": "대비 태세를 갖추다, 버티다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "prepare to stay somewhere and wait through a difficult situation",
+      "ex": [
+        {
+          "en": "Residents hunkered down as the hurricane approached.",
+          "ko": "허리케인이 다가오자 주민들은 대비 태세에 들어갔다."
+        }
+      ]
+    },
+    {
+      "cue": "몸을 낮춰 쪼그리고 앉다",
+      "ko": "웅크리다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "crouch or squat close to the ground",
+      "ex": [
+        {
+          "en": "He hunkered down beside the fire.",
+          "ko": "그는 모닥불 옆에 웅크리고 앉았다."
+        }
+      ]
+    }
+  ],
+  "batten down": [
+    {
+      "cue": "폭풍·위기에 대비해 단단히 고정",
+      "ko": "(위기에 대비해) 단단히 대비하다, 단속하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "prepare thoroughly for a difficult situation by securing everything",
+      "ex": [
+        {
+          "en": "The crew battened down the ship before the storm hit.",
+          "ko": "선원들은 폭풍이 오기 전에 배를 단단히 단속했다."
+        }
+      ]
+    }
+  ],
+  "ring-fence": [
+    {
+      "cue": "예산·자원을 다른 용도로 못 쓰게",
+      "ko": "(예산 등을) 별도로 보호하다, 용도를 제한하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "protect money or resources so they can only be used for a particular purpose",
+      "ex": [
+        {
+          "en": "The government ring-fenced funding for education.",
+          "ko": "정부는 교육 예산을 별도로 보호했다."
+        }
+      ]
+    }
+  ],
+  "claw back": [
+    {
+      "cue": "잃었던 돈·손실을 힘겹게",
+      "ko": "(비용·손실을) 만회하다, 되찾다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "gradually get back money or an advantage that was lost, often with difficulty",
+      "ex": [
+        {
+          "en": "The company clawed back some of its losses in the second half.",
+          "ko": "그 회사는 하반기에 손실 일부를 만회했다."
+        }
+      ]
+    }
+  ],
+  "bandy about": [
+    {
+      "cue": "소문·이름을 근거 없이 함부로",
+      "ko": "(소문·이름 등을) 함부로 퍼뜨리다, 거론하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "mention or discuss something, often carelessly or without enough basis",
+      "ex": [
+        {
+          "en": "Rumors were bandied about the office all week.",
+          "ko": "그 주 내내 사무실에서 소문이 함부로 퍼졌다."
+        }
+      ]
+    }
+  ],
+  "brush aside": [
+    {
+      "cue": "의견·걱정을 대수롭지 않게",
+      "ko": "일축하다, 무시하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "refuse to consider something seriously; dismiss it",
+      "ex": [
+        {
+          "en": "He brushed aside concerns about the budget.",
+          "ko": "그는 예산에 대한 우려를 일축했다."
+        }
+      ]
+    }
+  ],
+  "cast aside": [
+    {
+      "cue": "필요 없어진 것을 버리듯",
+      "ko": "저버리다, 버리다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "stop using or thinking about something or someone, as if throwing it away",
+      "ex": [
+        {
+          "en": "She cast aside her doubts and took the job.",
+          "ko": "그녀는 의구심을 떨쳐버리고 그 일자리를 받아들였다."
+        }
+      ]
+    }
+  ],
+  "hark back to": [
+    {
+      "cue": "옛날 방식·시절을 떠올리게",
+      "ko": "(과거를) 떠올리게 하다, 회고하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "remind you of something from the past, or refer back to an earlier time",
+      "ex": [
+        {
+          "en": "The design harks back to the fashion of the 1950s.",
+          "ko": "그 디자인은 1950년대 유행을 떠올리게 한다."
+        }
+      ]
+    }
+  ],
+  "harp on": [
+    {
+      "cue": "같은 불만을 지겹도록 반복해서",
+      "ko": "(같은 말을) 계속 되풀이하다, 잔소리하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "talk repeatedly and tediously about the same subject, especially a complaint",
+      "ex": [
+        {
+          "en": "He keeps harping on about how things used to be better.",
+          "ko": "그는 예전이 더 나았다며 계속 같은 말을 되풀이한다."
+        }
+      ]
+    }
+  ]
 }
