@@ -1,132 +1,1047 @@
 [
-  {"word": "breathless", "ko": "숨이 찬, 숨가쁜", "ex": {"en": "She was breathless after running.", "ko": "그녀는 뛰고 나서 숨이 찼어요."}},
-  {"word": "breed", "ko": "번식시키다, 품종", "ex": {"en": "They breed horses on their farm.", "ko": "그들은 농장에서 말을 번식시켜요."}},
-  {"word": "breeding", "ko": "번식, 사육", "ex": {"en": "The farm specializes in horse breeding.", "ko": "그 농장은 말 사육을 전문으로 해요."}},
-  {"word": "brick", "ko": "벽돌", "ex": {"en": "The house is made of brick.", "ko": "그 집은 벽돌로 지어졌어요."}},
-  {"word": "brief", "ko": "간단한, 짧은", "ex": {"en": "Please give me a brief summary.", "ko": "간단한 요약을 해주세요."}},
-  {"word": "briefly", "ko": "간단히, 잠깐", "ex": {"en": "Let me briefly explain the situation.", "ko": "상황을 간단히 설명해 드릴게요."}},
-  {"word": "brightly", "ko": "밝게", "ex": {"en": "The stars shone brightly last night.", "ko": "어젯밤 별들이 밝게 빛났어요."}},
-  {"word": "broad", "ko": "넓은", "ex": {"en": "He has broad shoulders.", "ko": "그는 넓은 어깨를 가지고 있어요."}},
-  {"word": "broadcast", "ko": "방송", "ex": {"en": "The news broadcast starts at nine.", "ko": "뉴스 방송은 9시에 시작해요."}},
-  {"word": "broccoli", "ko": "브로콜리", "ex": {"en": "I steamed some broccoli for dinner.", "ko": "저는 저녁으로 브로콜리를 쪘어요."}},
-  {"word": "bronze", "ko": "청동", "ex": {"en": "She won a bronze medal.", "ko": "그녀는 동메달을 땄어요."}},
-  {"word": "brotherhood", "ko": "형제애", "ex": {"en": "They share a strong sense of brotherhood.", "ko": "그들은 강한 형제애를 공유해요."}},
-  {"word": "bubble", "ko": "거품", "ex": {"en": "The kids blew bubbles in the yard.", "ko": "아이들이 마당에서 비눗방울을 불었어요."}},
-  {"word": "buddy", "ko": "친구", "ex": {"en": "He is my old college buddy.", "ko": "그는 제 오랜 대학 친구예요."}},
-  {"word": "builder", "ko": "건축업자", "ex": {"en": "The builder finished the house early.", "ko": "그 건축업자는 집을 일찍 완성했어요."}},
-  {"word": "bull", "ko": "황소", "ex": {"en": "The bull ran across the field.", "ko": "황소가 들판을 가로질러 달렸어요."}},
-  {"word": "bullet", "ko": "총알", "ex": {"en": "The bullet hit the wall.", "ko": "총알이 벽에 맞았어요."}},
-  {"word": "bulletin", "ko": "게시, 속보", "ex": {"en": "There is a news bulletin every hour.", "ko": "매시간 뉴스 속보가 있어요."}},
-  {"word": "bump", "ko": "부딪치다", "ex": {"en": "I bumped into an old friend at the store.", "ko": "저는 가게에서 옛 친구와 우연히 마주쳤어요."}},
-  {"word": "bunch", "ko": "다발, 무리", "ex": {"en": "She bought a bunch of flowers.", "ko": "그녀는 꽃 한 다발을 샀어요."}},
-  {"word": "burden", "ko": "부담, 짐", "ex": {"en": "This debt is a heavy burden.", "ko": "이 빚은 무거운 부담이에요."}},
-  {"word": "bureau", "ko": "사무국, 부서", "ex": {"en": "He works at the weather bureau.", "ko": "그는 기상청에서 일해요."}},
-  {"word": "burglar", "ko": "강도, 절도범", "ex": {"en": "A burglar broke into the house last night.", "ko": "어젯밤 강도가 그 집에 침입했어요."}},
-  {"word": "burn", "ko": "태우다", "ex": {"en": "Don't burn the toast.", "ko": "토스트를 태우지 마세요."}},
-  {"word": "burning", "ko": "타는, 긴급한", "ex": {"en": "I smell something burning.", "ko": "뭔가 타는 냄새가 나요."}},
-  {"word": "burst", "ko": "터지다, 폭발하다", "ex": {"en": "The balloon burst suddenly.", "ko": "풍선이 갑자기 터졌어요."}},
-  {"word": "bust", "ko": "부수다, 파산시키다", "ex": {"en": "The company was busted by the recession.", "ko": "그 회사는 불황으로 파산했어요."}},
-  {"word": "but", "ko": "그러나, 하지만", "enOverride": "used to introduce a phrase that contrasts with what has already been said", "ex": {"en": "I like tea, but I love coffee.", "ko": "저는 차를 좋아하지만 커피를 더 좋아해요."}},
-  {"word": "butcher", "ko": "정육점 주인", "ex": {"en": "The butcher cut fresh meat for us.", "ko": "그 정육점 주인은 우리를 위해 신선한 고기를 잘라줬어요."}},
-  {"word": "buyer", "ko": "구매자", "ex": {"en": "We found a buyer for our old house.", "ko": "우리는 오래된 집의 구매자를 찾았어요."}},
-  {"word": "cabbage", "ko": "양배추", "ex": {"en": "She made a salad with cabbage.", "ko": "그녀는 양배추로 샐러드를 만들었어요."}},
-  {"word": "cabin", "ko": "오두막, 선실", "ex": {"en": "We stayed in a cabin in the mountains.", "ko": "우리는 산속 오두막에 머물렀어요."}},
-  {"word": "cage", "ko": "우리, 새장", "ex": {"en": "The bird is in a cage.", "ko": "새가 새장 안에 있어요."}},
-  {"word": "calculate", "ko": "계산하다", "ex": {"en": "Let me calculate the total cost.", "ko": "제가 총 비용을 계산해볼게요."}},
-  {"word": "calculation", "ko": "계산", "ex": {"en": "My calculation shows we need more money.", "ko": "제 계산에 따르면 우리는 돈이 더 필요해요."}},
-  {"word": "calculator", "ko": "계산기", "ex": {"en": "I used a calculator to solve the problem.", "ko": "저는 문제를 풀려고 계산기를 사용했어요."}},
-  {"word": "calf", "ko": "송아지", "ex": {"en": "The cow had a baby calf.", "ko": "그 소는 새끼 송아지를 낳았어요."}},
-  {"word": "caller", "ko": "전화 건 사람, 방문객", "ex": {"en": "The caller left a voicemail.", "ko": "전화를 건 사람이 음성 메시지를 남겼어요."}},
-  {"word": "calm", "ko": "차분한, 침착한", "ex": {"en": "She stayed calm during the emergency.", "ko": "그녀는 응급 상황에서도 침착함을 유지했어요."}},
-  {"word": "calmness", "ko": "차분함, 침착함", "ex": {"en": "His calmness helped everyone relax.", "ko": "그의 침착함은 모두를 안심시켰어요."}},
-  {"word": "camel", "ko": "낙타", "ex": {"en": "We rode a camel in the desert.", "ko": "우리는 사막에서 낙타를 탔어요."}},
-  {"word": "campsite", "ko": "캠핑장", "ex": {"en": "We found a nice campsite by the lake.", "ko": "우리는 호숫가에 좋은 캠핑장을 찾았어요."}},
-  {"word": "canal", "ko": "운하", "ex": {"en": "Boats travel along the canal.", "ko": "배들이 운하를 따라 이동해요."}},
-  {"word": "cancel", "ko": "취소하다", "ex": {"en": "I had to cancel my appointment.", "ko": "저는 예약을 취소해야 했어요."}},
-  {"word": "cancer", "ko": "암", "ex": {"en": "She survived breast cancer.", "ko": "그녀는 유방암을 이겨냈어요."}},
-  {"word": "candle", "ko": "양초", "ex": {"en": "She lit a candle on the cake.", "ko": "그녀는 케이크에 양초를 켰어요."}},
-  {"word": "canned", "ko": "통조림의", "ex": {"en": "We ate canned soup for lunch.", "ko": "우리는 점심으로 통조림 수프를 먹었어요."}},
-  {"word": "canteen", "ko": "구내식당, 물통", "ex": {"en": "Students eat lunch at the canteen.", "ko": "학생들은 구내식당에서 점심을 먹어요."}},
-  {"word": "capable", "ko": "~할 수 있는, 유능한", "ex": {"en": "She is capable of handling this task.", "ko": "그녀는 이 일을 처리할 수 있어요."}},
-  {"word": "capacity", "ko": "용량, 수용력", "ex": {"en": "This stadium has a large capacity.", "ko": "이 경기장은 큰 수용력을 가지고 있어요."}},
-  {"word": "capsule", "ko": "캡슐", "ex": {"en": "Take one capsule twice a day.", "ko": "하루에 두 번 캡슐 하나를 드세요."}},
-  {"word": "capture", "ko": "포획하다, 사로잡다", "ex": {"en": "The police captured the criminal.", "ko": "경찰이 그 범죄자를 붙잡았어요."}},
-  {"word": "care", "ko": "돌보다, 신경 쓰다", "ex": {"en": "She cares about her students.", "ko": "그녀는 학생들을 신경 써요."}},
-  {"word": "career", "ko": "경력, 직업", "ex": {"en": "She has a successful career in medicine.", "ko": "그녀는 의학 분야에서 성공적인 경력을 가지고 있어요."}},
-  {"word": "careless", "ko": "부주의한", "ex": {"en": "That was a careless mistake.", "ko": "그것은 부주의한 실수였어요."}},
-  {"word": "carelessly", "ko": "부주의하게", "ex": {"en": "He carelessly left the door open.", "ko": "그는 부주의하게 문을 열어뒀어요."}},
-  {"word": "carelessness", "ko": "부주의", "ex": {"en": "The accident was caused by carelessness.", "ko": "그 사고는 부주의로 인해 발생했어요."}},
-  {"word": "carpet", "ko": "카펫, 양탄자", "ex": {"en": "We bought a new carpet for the living room.", "ko": "우리는 거실을 위한 새 카펫을 샀어요."}},
-  {"word": "carriage", "ko": "객차, 마차", "ex": {"en": "We sat in the front carriage of the train.", "ko": "우리는 기차 앞 객차에 앉았어요."}},
-  {"word": "carton", "ko": "통, 곽", "ex": {"en": "I bought a carton of milk.", "ko": "저는 우유 한 팩을 샀어요."}},
-  {"word": "cashpoint", "ko": "현금 인출기", "enOverride": "an automatic teller machine used to withdraw cash", "ex": {"en": "I need to find a cashpoint.", "ko": "저는 현금 인출기를 찾아야 해요."}},
-  {"word": "casual", "ko": "격식 없는, 평상시의", "ex": {"en": "You can wear casual clothes to the event.", "ko": "행사에 평상복을 입어도 돼요."}},
-  {"word": "categorize", "ko": "분류하다", "ex": {"en": "We categorized the books by subject.", "ko": "우리는 책을 주제별로 분류했어요."}},
-  {"word": "category", "ko": "범주, 분류", "ex": {"en": "This falls under a different category.", "ko": "이것은 다른 범주에 속해요."}},
-  {"word": "cattle", "ko": "소, 가축", "ex": {"en": "The farmer raises cattle.", "ko": "그 농부는 소를 길러요."}},
-  {"word": "caution", "ko": "주의, 조심", "ex": {"en": "Please proceed with caution.", "ko": "조심해서 진행해 주세요."}},
-  {"word": "cautious", "ko": "조심스러운", "ex": {"en": "Be cautious when driving in the rain.", "ko": "빗속에서 운전할 때는 조심하세요."}},
-  {"word": "cave", "ko": "동굴", "ex": {"en": "We explored a dark cave.", "ko": "우리는 어두운 동굴을 탐험했어요."}},
-  {"word": "CD-ROM", "ko": "CD롬", "ex": {"en": "The software came on a CD-ROM.", "ko": "그 소프트웨어는 CD롬으로 제공되었어요."}},
-  {"word": "celebrity", "ko": "유명인, 연예인", "ex": {"en": "She became a celebrity overnight.", "ko": "그녀는 하룻밤 사이에 유명인이 되었어요."}},
-  {"word": "cell", "ko": "세포, 감방", "ex": {"en": "Every living thing is made of cells.", "ko": "모든 생명체는 세포로 이루어져 있어요."}},
-  {"word": "central", "ko": "중심의, 중앙의", "ex": {"en": "Their office is in a central location.", "ko": "그들의 사무실은 중심가에 위치해 있어요."}},
-  {"word": "central heating", "ko": "중앙난방", "ex": {"en": "Our apartment has central heating.", "ko": "우리 아파트는 중앙난방이 있어요."}},
-  {"word": "ceremony", "ko": "의식, 행사", "ex": {"en": "We attended the graduation ceremony.", "ko": "우리는 졸업식에 참석했어요."}},
-  {"word": "certainty", "ko": "확실성", "ex": {"en": "There is no certainty about the outcome.", "ko": "결과에 대한 확실성이 없어요."}},
-  {"word": "challenging", "ko": "도전적인, 힘든", "ex": {"en": "This job is very challenging.", "ko": "이 일은 아주 도전적이에요."}},
-  {"word": "champion", "ko": "챔피언, 우승자", "ex": {"en": "She is the world champion.", "ko": "그녀는 세계 챔피언이에요."}},
-  {"word": "channel", "ko": "채널", "ex": {"en": "Change the channel, please.", "ko": "채널 좀 바꿔주세요."}},
-  {"word": "chaos", "ko": "혼돈, 혼란", "ex": {"en": "The city was in chaos after the storm.", "ko": "그 도시는 폭풍 후 혼란에 빠졌어요."}},
-  {"word": "characteristic", "ko": "특징", "ex": {"en": "Kindness is one of her characteristics.", "ko": "친절함은 그녀의 특징 중 하나예요."}},
-  {"word": "characterize", "ko": "특징짓다", "ex": {"en": "Honesty characterizes his personality.", "ko": "정직함이 그의 성격을 특징짓습니다."}},
-  {"word": "charge", "ko": "요금을 청구하다, 책임", "ex": {"en": "They charge extra for delivery.", "ko": "그들은 배달에 추가 요금을 청구해요."}},
-  {"word": "chariot", "ko": "전차, 마차", "ex": {"en": "The king rode in a golden chariot.", "ko": "왕은 황금 전차를 타고 갔어요."}},
-  {"word": "charity", "ko": "자선단체, 자선", "ex": {"en": "She donates to charity every year.", "ko": "그녀는 매년 자선단체에 기부해요."}},
-  {"word": "charm", "ko": "매력", "ex": {"en": "He has a natural charm.", "ko": "그는 타고난 매력을 가지고 있어요."}},
-  {"word": "chase", "ko": "추적, 쫓다", "ex": {"en": "The dog loves to chase cats.", "ko": "그 개는 고양이를 쫓는 것을 좋아해요."}},
-  {"word": "chat", "ko": "잡담, 담소", "ex": {"en": "We had a nice chat over coffee.", "ko": "우리는 커피를 마시며 즐거운 담소를 나눴어요."}},
-  {"word": "chat show", "ko": "토크쇼", "ex": {"en": "She appeared on a popular chat show.", "ko": "그녀는 인기 있는 토크쇼에 출연했어요."}},
-  {"word": "check-in counter", "ko": "체크인 카운터", "enOverride": "the desk where passengers check in for a flight", "ex": {"en": "The check-in counter opens two hours before the flight.", "ko": "체크인 카운터는 비행 두 시간 전에 열려요."}},
-  {"word": "check-in desk", "ko": "체크인 데스크", "enOverride": "the desk where passengers or guests check in", "ex": {"en": "Please go to the check-in desk first.", "ko": "먼저 체크인 데스크로 가세요."}},
-  {"word": "checkout", "ko": "계산대, 체크아웃", "ex": {"en": "There was a long line at the checkout.", "ko": "계산대에 긴 줄이 있었어요."}},
-  {"word": "cheerful", "ko": "쾌활한", "ex": {"en": "She always has a cheerful smile.", "ko": "그녀는 항상 쾌활한 미소를 지어요."}},
-  {"word": "chemical", "ko": "화학물질", "ex": {"en": "These chemicals should be handled carefully.", "ko": "이 화학물질은 조심스럽게 다뤄야 해요."}},
-  {"word": "chemist", "ko": "화학자", "ex": {"en": "She works as a chemist in a lab.", "ko": "그녀는 연구실에서 화학자로 일해요."}},
-  {"word": "chemistry", "ko": "화학", "ex": {"en": "He studies chemistry at university.", "ko": "그는 대학교에서 화학을 공부해요."}},
-  {"word": "cherish", "ko": "소중히 여기다", "ex": {"en": "I cherish these memories.", "ko": "저는 이 추억들을 소중히 여겨요."}},
-  {"word": "chest of drawers", "ko": "서랍장", "ex": {"en": "I keep my clothes in the chest of drawers.", "ko": "저는 서랍장에 옷을 보관해요."}},
-  {"word": "chewing gum", "ko": "껌", "ex": {"en": "She chews gum after meals.", "ko": "그녀는 식사 후 껌을 씹어요."}},
-  {"word": "chief", "ko": "주요한, 최고의", "ex": {"en": "He is the chief engineer.", "ko": "그는 수석 엔지니어예요."}},
-  {"word": "choir", "ko": "합창단", "ex": {"en": "She sings in the church choir.", "ko": "그녀는 교회 합창단에서 노래해요."}},
-  {"word": "choke", "ko": "질식하다, 목이 메다", "ex": {"en": "He choked on a piece of food.", "ko": "그는 음식 조각에 목이 메었어요."}},
-  {"word": "Christian", "ko": "기독교의, 기독교인", "ex": {"en": "She grew up in a Christian family.", "ko": "그녀는 기독교 가정에서 자랐어요."}},
-  {"word": "chronological", "ko": "연대순의", "ex": {"en": "The events are listed in chronological order.", "ko": "사건들은 연대순으로 나열되어 있어요."}},
-  {"word": "chuckle", "ko": "낄낄 웃음", "ex": {"en": "He gave a small chuckle at the joke.", "ko": "그는 그 농담에 낄낄 웃었어요."}},
-  {"word": "circle", "ko": "돌다, 원", "ex": {"en": "The plane circled the airport.", "ko": "비행기가 공항 주위를 돌았어요."}},
-  {"word": "circular", "ko": "원형의", "ex": {"en": "The table has a circular shape.", "ko": "그 테이블은 원형이에요."}},
-  {"word": "circus", "ko": "서커스", "ex": {"en": "We took the kids to the circus.", "ko": "우리는 아이들을 서커스에 데려갔어요."}},
-  {"word": "citizenship", "ko": "시민권", "ex": {"en": "She applied for citizenship last year.", "ko": "그녀는 작년에 시민권을 신청했어요."}},
-  {"word": "civil", "ko": "시민의, 민간의", "ex": {"en": "This is a civil matter, not criminal.", "ko": "이것은 형사가 아닌 민사 문제예요."}},
-  {"word": "civilization", "ko": "문명", "ex": {"en": "This is one of the oldest civilizations.", "ko": "이것은 가장 오래된 문명 중 하나예요."}},
-  {"word": "claim", "ko": "주장, 청구", "ex": {"en": "He filed a claim with the insurance company.", "ko": "그는 보험 회사에 청구를 제기했어요."}},
-  {"word": "classical", "ko": "고전의, 클래식의", "ex": {"en": "She prefers classical literature.", "ko": "그녀는 고전 문학을 선호해요."}},
-  {"word": "classify", "ko": "분류하다", "ex": {"en": "Scientists classify animals into groups.", "ko": "과학자들은 동물을 그룹으로 분류해요."}},
-  {"word": "clear", "ko": "치우다, 제거하다", "ex": {"en": "Please clear the table after dinner.", "ko": "저녁 식사 후 테이블을 치워주세요."}},
-  {"word": "click", "ko": "딸깍 소리", "ex": {"en": "I heard a click when the door closed.", "ko": "저는 문이 닫힐 때 딸깍 소리를 들었어요."}},
-  {"word": "cliff", "ko": "절벽", "ex": {"en": "The house sits on a cliff overlooking the sea.", "ko": "그 집은 바다가 내려다보이는 절벽 위에 있어요."}},
-  {"word": "climate", "ko": "기후", "ex": {"en": "The climate here is warm all year.", "ko": "이곳의 기후는 일 년 내내 따뜻해요."}},
-  {"word": "climber", "ko": "등반가, 덩굴 식물", "ex": {"en": "The climber reached the summit safely.", "ko": "그 등반가는 정상에 안전하게 도착했어요."}},
-  {"word": "clinic", "ko": "진료소, 클리닉", "ex": {"en": "I have an appointment at the clinic.", "ko": "저는 진료소에 예약이 있어요."}},
-  {"word": "clip", "ko": "클립, 자르다", "ex": {"en": "She used a clip to hold her hair.", "ko": "그녀는 클립으로 머리를 고정했어요."}},
-  {"word": "closely", "ko": "밀접하게, 자세히", "ex": {"en": "Please read the instructions closely.", "ko": "설명서를 자세히 읽어주세요."}},
-  {"word": "coal", "ko": "석탄", "ex": {"en": "The factory uses coal for energy.", "ko": "그 공장은 에너지로 석탄을 사용해요."}},
-  {"word": "coast", "ko": "미끄러지듯 가다", "ex": {"en": "The car coasted down the hill.", "ko": "그 차는 언덕을 미끄러지듯 내려갔어요."}},
-  {"word": "coastal", "ko": "해안의", "ex": {"en": "We visited a small coastal town.", "ko": "우리는 작은 해안 마을을 방문했어요."}},
-  {"word": "cod", "ko": "대구 (생선)", "enOverride": "a large edible fish found in cold northern seas", "ex": {"en": "We ordered fried cod at the restaurant.", "ko": "우리는 식당에서 튀긴 대구를 주문했어요."}},
-  {"word": "coffin", "ko": "관 (棺)", "ex": {"en": "The coffin was carried by six men.", "ko": "그 관은 여섯 명의 남자가 운반했어요."}},
-  {"word": "collapse", "ko": "붕괴, 쓰러지다", "ex": {"en": "The building collapsed after the earthquake.", "ko": "그 건물은 지진 후 붕괴했어요."}},
-  {"word": "collar", "ko": "옷깃, 목걸이", "ex": {"en": "His shirt collar was too tight.", "ko": "그의 셔츠 옷깃이 너무 조였어요."}},
-  {"word": "columnist", "ko": "칼럼니스트", "ex": {"en": "She is a columnist for the newspaper.", "ko": "그녀는 그 신문의 칼럼니스트예요."}},
-  {"word": "combination", "ko": "조합, 결합", "ex": {"en": "This is a good combination of colors.", "ko": "이것은 좋은 색상 조합이에요."}}
+  {
+    "word": "breathless",
+    "ko": "숨이 찬, 숨가쁜",
+    "ex": {
+      "en": "She was breathless after running.",
+      "ko": "그녀는 뛰고 나서 숨이 찼어요."
+    }
+  },
+  {
+    "word": "breed",
+    "ko": "번식시키다, 품종",
+    "ex": {
+      "en": "They breed horses on their farm.",
+      "ko": "그들은 농장에서 말을 번식시켜요."
+    }
+  },
+  {
+    "word": "breeding",
+    "ko": "번식, 사육",
+    "ex": {
+      "en": "The farm specializes in horse breeding.",
+      "ko": "그 농장은 말 사육을 전문으로 해요."
+    }
+  },
+  {
+    "word": "brick",
+    "ko": "벽돌",
+    "ex": {
+      "en": "The house is made of brick.",
+      "ko": "그 집은 벽돌로 지어졌어요."
+    }
+  },
+  {
+    "word": "brief",
+    "ko": "간단한, 짧은",
+    "ex": {
+      "en": "Please give me a brief summary.",
+      "ko": "간단한 요약을 해주세요."
+    }
+  },
+  {
+    "word": "briefly",
+    "ko": "간단히, 잠깐",
+    "ex": {
+      "en": "Let me briefly explain the situation.",
+      "ko": "상황을 간단히 설명해 드릴게요."
+    }
+  },
+  {
+    "word": "brightly",
+    "ko": "밝게",
+    "ex": {
+      "en": "The stars shone brightly last night.",
+      "ko": "어젯밤 별들이 밝게 빛났어요."
+    }
+  },
+  {
+    "word": "broad",
+    "ko": "넓은",
+    "ex": {
+      "en": "He has broad shoulders.",
+      "ko": "그는 넓은 어깨를 가지고 있어요."
+    }
+  },
+  {
+    "word": "broadcast",
+    "ko": "방송",
+    "ex": {
+      "en": "The news broadcast starts at nine.",
+      "ko": "뉴스 방송은 9시에 시작해요."
+    }
+  },
+  {
+    "word": "broccoli",
+    "ko": "브로콜리",
+    "ex": {
+      "en": "I steamed some broccoli for dinner.",
+      "ko": "저는 저녁으로 브로콜리를 쪘어요."
+    }
+  },
+  {
+    "word": "bronze",
+    "ko": "청동",
+    "ex": {
+      "en": "She won a bronze medal.",
+      "ko": "그녀는 동메달을 땄어요."
+    }
+  },
+  {
+    "word": "brotherhood",
+    "ko": "형제애",
+    "ex": {
+      "en": "They share a strong sense of brotherhood.",
+      "ko": "그들은 강한 형제애를 공유해요."
+    }
+  },
+  {
+    "word": "bubble",
+    "ko": "거품",
+    "ex": {
+      "en": "The kids blew bubbles in the yard.",
+      "ko": "아이들이 마당에서 비눗방울을 불었어요."
+    }
+  },
+  {
+    "word": "buddy",
+    "ko": "친구",
+    "ex": {
+      "en": "He is my old college buddy.",
+      "ko": "그는 제 오랜 대학 친구예요."
+    }
+  },
+  {
+    "word": "builder",
+    "ko": "건축업자",
+    "ex": {
+      "en": "The builder finished the house early.",
+      "ko": "그 건축업자는 집을 일찍 완성했어요."
+    }
+  },
+  {
+    "word": "bull",
+    "ko": "황소",
+    "ex": {
+      "en": "The bull ran across the field.",
+      "ko": "황소가 들판을 가로질러 달렸어요."
+    }
+  },
+  {
+    "word": "bullet",
+    "ko": "총알",
+    "ex": {
+      "en": "The bullet hit the wall.",
+      "ko": "총알이 벽에 맞았어요."
+    }
+  },
+  {
+    "word": "bulletin",
+    "ko": "게시, 속보",
+    "ex": {
+      "en": "There is a news bulletin every hour.",
+      "ko": "매시간 뉴스 속보가 있어요."
+    }
+  },
+  {
+    "word": "bump",
+    "ko": "부딪치다",
+    "ex": {
+      "en": "I bumped into an old friend at the store.",
+      "ko": "저는 가게에서 옛 친구와 우연히 마주쳤어요."
+    }
+  },
+  {
+    "word": "bunch",
+    "ko": "다발, 무리",
+    "ex": {
+      "en": "She bought a bunch of flowers.",
+      "ko": "그녀는 꽃 한 다발을 샀어요."
+    }
+  },
+  {
+    "word": "burden",
+    "ko": "부담, 짐",
+    "ex": {
+      "en": "This debt is a heavy burden.",
+      "ko": "이 빚은 무거운 부담이에요."
+    }
+  },
+  {
+    "word": "bureau",
+    "ko": "사무국, 부서",
+    "ex": {
+      "en": "He works at the weather bureau.",
+      "ko": "그는 기상청에서 일해요."
+    }
+  },
+  {
+    "word": "burglar",
+    "ko": "강도, 절도범",
+    "ex": {
+      "en": "A burglar broke into the house last night.",
+      "ko": "어젯밤 강도가 그 집에 침입했어요."
+    }
+  },
+  {
+    "word": "burn",
+    "ko": "태우다",
+    "ex": {
+      "en": "Don't burn the toast.",
+      "ko": "토스트를 태우지 마세요."
+    }
+  },
+  {
+    "word": "burning",
+    "ko": "타는, 긴급한",
+    "ex": {
+      "en": "I smell something burning.",
+      "ko": "뭔가 타는 냄새가 나요."
+    }
+  },
+  {
+    "word": "burst",
+    "ko": "터지다, 폭발하다",
+    "ex": {
+      "en": "The balloon burst suddenly.",
+      "ko": "풍선이 갑자기 터졌어요."
+    }
+  },
+  {
+    "word": "bust",
+    "ko": "부수다, 파산시키다",
+    "ex": {
+      "en": "The company was busted by the recession.",
+      "ko": "그 회사는 불황으로 파산했어요."
+    }
+  },
+  {
+    "word": "but",
+    "ko": "그러나, 하지만",
+    "enOverride": "used to introduce a phrase that contrasts with what has already been said",
+    "ex": {
+      "en": "I like tea, but I love coffee.",
+      "ko": "저는 차를 좋아하지만 커피를 더 좋아해요."
+    }
+  },
+  {
+    "word": "butcher",
+    "ko": "정육점 주인",
+    "ex": {
+      "en": "The butcher cut fresh meat for us.",
+      "ko": "그 정육점 주인은 우리를 위해 신선한 고기를 잘라줬어요."
+    }
+  },
+  {
+    "word": "buyer",
+    "ko": "구매자",
+    "ex": {
+      "en": "We found a buyer for our old house.",
+      "ko": "우리는 오래된 집의 구매자를 찾았어요."
+    }
+  },
+  {
+    "word": "cabbage",
+    "ko": "양배추",
+    "ex": {
+      "en": "She made a salad with cabbage.",
+      "ko": "그녀는 양배추로 샐러드를 만들었어요."
+    }
+  },
+  {
+    "word": "cabin",
+    "ko": "오두막, 선실",
+    "ex": {
+      "en": "We stayed in a cabin in the mountains.",
+      "ko": "우리는 산속 오두막에 머물렀어요."
+    }
+  },
+  {
+    "word": "cage",
+    "ko": "우리, 새장",
+    "ex": {
+      "en": "The bird is in a cage.",
+      "ko": "새가 새장 안에 있어요."
+    }
+  },
+  {
+    "word": "calculate",
+    "ko": "계산하다",
+    "ex": {
+      "en": "Let me calculate the total cost.",
+      "ko": "제가 총 비용을 계산해볼게요."
+    }
+  },
+  {
+    "word": "calculation",
+    "ko": "계산",
+    "ex": {
+      "en": "My calculation shows we need more money.",
+      "ko": "제 계산에 따르면 우리는 돈이 더 필요해요."
+    }
+  },
+  {
+    "word": "calculator",
+    "ko": "계산기",
+    "ex": {
+      "en": "I used a calculator to solve the problem.",
+      "ko": "저는 문제를 풀려고 계산기를 사용했어요."
+    }
+  },
+  {
+    "word": "calf",
+    "ko": "송아지",
+    "ex": {
+      "en": "The cow had a baby calf.",
+      "ko": "그 소는 새끼 송아지를 낳았어요."
+    }
+  },
+  {
+    "word": "caller",
+    "ko": "전화 건 사람, 방문객",
+    "ex": {
+      "en": "The caller left a voicemail.",
+      "ko": "전화를 건 사람이 음성 메시지를 남겼어요."
+    }
+  },
+  {
+    "word": "calm",
+    "ko": "차분한, 침착한",
+    "ex": {
+      "en": "She stayed calm during the emergency.",
+      "ko": "그녀는 응급 상황에서도 침착함을 유지했어요."
+    }
+  },
+  {
+    "word": "calmness",
+    "ko": "차분함, 침착함",
+    "ex": {
+      "en": "His calmness helped everyone relax.",
+      "ko": "그의 침착함은 모두를 안심시켰어요."
+    }
+  },
+  {
+    "word": "camel",
+    "ko": "낙타",
+    "ex": {
+      "en": "We rode a camel in the desert.",
+      "ko": "우리는 사막에서 낙타를 탔어요."
+    }
+  },
+  {
+    "word": "campsite",
+    "ko": "캠핑장",
+    "ex": {
+      "en": "We found a nice campsite by the lake.",
+      "ko": "우리는 호숫가에 좋은 캠핑장을 찾았어요."
+    }
+  },
+  {
+    "word": "canal",
+    "ko": "운하",
+    "ex": {
+      "en": "Boats travel along the canal.",
+      "ko": "배들이 운하를 따라 이동해요."
+    }
+  },
+  {
+    "word": "cancel",
+    "ko": "취소하다",
+    "ex": {
+      "en": "I had to cancel my appointment.",
+      "ko": "저는 예약을 취소해야 했어요."
+    }
+  },
+  {
+    "word": "cancer",
+    "ko": "암",
+    "ex": {
+      "en": "She survived breast cancer.",
+      "ko": "그녀는 유방암을 이겨냈어요."
+    }
+  },
+  {
+    "word": "candle",
+    "ko": "양초",
+    "ex": {
+      "en": "She lit a candle on the cake.",
+      "ko": "그녀는 케이크에 양초를 켰어요."
+    }
+  },
+  {
+    "word": "canned",
+    "ko": "통조림의",
+    "ex": {
+      "en": "We ate canned soup for lunch.",
+      "ko": "우리는 점심으로 통조림 수프를 먹었어요."
+    }
+  },
+  {
+    "word": "canteen",
+    "ko": "구내식당, 물통",
+    "ex": {
+      "en": "Students eat lunch at the canteen.",
+      "ko": "학생들은 구내식당에서 점심을 먹어요."
+    }
+  },
+  {
+    "word": "capable",
+    "ko": "~할 수 있는, 유능한",
+    "ex": {
+      "en": "She is capable of handling this task.",
+      "ko": "그녀는 이 일을 처리할 수 있어요."
+    }
+  },
+  {
+    "word": "capacity",
+    "ko": "용량, 수용력",
+    "ex": {
+      "en": "This stadium has a large capacity.",
+      "ko": "이 경기장은 큰 수용력을 가지고 있어요."
+    }
+  },
+  {
+    "word": "capsule",
+    "ko": "캡슐",
+    "ex": {
+      "en": "Take one capsule twice a day.",
+      "ko": "하루에 두 번 캡슐 하나를 드세요."
+    }
+  },
+  {
+    "word": "capture",
+    "ko": "포획하다, 사로잡다",
+    "ex": {
+      "en": "The police captured the criminal.",
+      "ko": "경찰이 그 범죄자를 붙잡았어요."
+    }
+  },
+  {
+    "word": "care",
+    "ko": "돌보다, 신경 쓰다",
+    "ex": {
+      "en": "She cares about her students.",
+      "ko": "그녀는 학생들을 신경 써요."
+    }
+  },
+  {
+    "word": "career",
+    "ko": "경력, 직업",
+    "ex": {
+      "en": "She has a successful career in medicine.",
+      "ko": "그녀는 의학 분야에서 성공적인 경력을 가지고 있어요."
+    }
+  },
+  {
+    "word": "careless",
+    "ko": "부주의한",
+    "ex": {
+      "en": "That was a careless mistake.",
+      "ko": "그것은 부주의한 실수였어요."
+    }
+  },
+  {
+    "word": "carelessly",
+    "ko": "부주의하게",
+    "ex": {
+      "en": "He carelessly left the door open.",
+      "ko": "그는 부주의하게 문을 열어뒀어요."
+    }
+  },
+  {
+    "word": "carelessness",
+    "ko": "부주의",
+    "ex": {
+      "en": "The accident was caused by carelessness.",
+      "ko": "그 사고는 부주의로 인해 발생했어요."
+    }
+  },
+  {
+    "word": "carpet",
+    "ko": "카펫, 양탄자",
+    "ex": {
+      "en": "We bought a new carpet for the living room.",
+      "ko": "우리는 거실을 위한 새 카펫을 샀어요."
+    }
+  },
+  {
+    "word": "carriage",
+    "ko": "객차, 마차",
+    "ex": {
+      "en": "We sat in the front carriage of the train.",
+      "ko": "우리는 기차 앞 객차에 앉았어요."
+    }
+  },
+  {
+    "word": "carton",
+    "ko": "통, 곽",
+    "ex": {
+      "en": "I bought a carton of milk.",
+      "ko": "저는 우유 한 팩을 샀어요."
+    }
+  },
+  {
+    "word": "cashpoint",
+    "ko": "현금 인출기",
+    "enOverride": "an automatic teller machine used to withdraw cash",
+    "ex": {
+      "en": "I need to find a cashpoint.",
+      "ko": "저는 현금 인출기를 찾아야 해요."
+    }
+  },
+  {
+    "word": "casual",
+    "ko": "격식 없는, 평상시의",
+    "ex": {
+      "en": "You can wear casual clothes to the event.",
+      "ko": "행사에 평상복을 입어도 돼요."
+    }
+  },
+  {
+    "word": "categorize",
+    "ko": "분류하다",
+    "ex": {
+      "en": "We categorized the books by subject.",
+      "ko": "우리는 책을 주제별로 분류했어요."
+    }
+  },
+  {
+    "word": "category",
+    "ko": "범주, 분류",
+    "ex": {
+      "en": "This falls under a different category.",
+      "ko": "이것은 다른 범주에 속해요."
+    }
+  },
+  {
+    "word": "cattle",
+    "ko": "소, 가축",
+    "ex": {
+      "en": "The farmer raises cattle.",
+      "ko": "그 농부는 소를 길러요."
+    }
+  },
+  {
+    "word": "caution",
+    "ko": "주의, 조심",
+    "ex": {
+      "en": "Please proceed with caution.",
+      "ko": "조심해서 진행해 주세요."
+    }
+  },
+  {
+    "word": "cautious",
+    "ko": "조심스러운",
+    "ex": {
+      "en": "Be cautious when driving in the rain.",
+      "ko": "빗속에서 운전할 때는 조심하세요."
+    }
+  },
+  {
+    "word": "cave",
+    "ko": "동굴",
+    "ex": {
+      "en": "We explored a dark cave.",
+      "ko": "우리는 어두운 동굴을 탐험했어요."
+    }
+  },
+  {
+    "word": "CD-ROM",
+    "ko": "CD롬",
+    "ex": {
+      "en": "The software came on a CD-ROM.",
+      "ko": "그 소프트웨어는 CD롬으로 제공되었어요."
+    }
+  },
+  {
+    "word": "celebrity",
+    "ko": "유명인, 연예인",
+    "ex": {
+      "en": "She became a celebrity overnight.",
+      "ko": "그녀는 하룻밤 사이에 유명인이 되었어요."
+    }
+  },
+  {
+    "word": "cell",
+    "ko": "세포, 감방",
+    "ex": {
+      "en": "Every living thing is made of cells.",
+      "ko": "모든 생명체는 세포로 이루어져 있어요."
+    }
+  },
+  {
+    "word": "central",
+    "ko": "중심의, 중앙의",
+    "ex": {
+      "en": "Their office is in a central location.",
+      "ko": "그들의 사무실은 중심가에 위치해 있어요."
+    }
+  },
+  {
+    "word": "central heating",
+    "ko": "중앙난방",
+    "ex": {
+      "en": "Our apartment has central heating.",
+      "ko": "우리 아파트는 중앙난방이 있어요."
+    }
+  },
+  {
+    "word": "ceremony",
+    "ko": "의식, 행사",
+    "ex": {
+      "en": "We attended the graduation ceremony.",
+      "ko": "우리는 졸업식에 참석했어요."
+    }
+  },
+  {
+    "word": "certainty",
+    "ko": "확실성",
+    "ex": {
+      "en": "There is no certainty about the outcome.",
+      "ko": "결과에 대한 확실성이 없어요."
+    }
+  },
+  {
+    "word": "challenging",
+    "ko": "도전적인, 힘든",
+    "ex": {
+      "en": "This job is very challenging.",
+      "ko": "이 일은 아주 도전적이에요."
+    }
+  },
+  {
+    "word": "champion",
+    "ko": "챔피언, 우승자",
+    "ex": {
+      "en": "She is the world champion.",
+      "ko": "그녀는 세계 챔피언이에요."
+    }
+  },
+  {
+    "word": "channel",
+    "ko": "채널",
+    "ex": {
+      "en": "Change the channel, please.",
+      "ko": "채널 좀 바꿔주세요."
+    }
+  },
+  {
+    "word": "chaos",
+    "ko": "혼돈, 혼란",
+    "ex": {
+      "en": "The city was in chaos after the storm.",
+      "ko": "그 도시는 폭풍 후 혼란에 빠졌어요."
+    }
+  },
+  {
+    "word": "characteristic",
+    "ko": "특징",
+    "ex": {
+      "en": "Kindness is one of her characteristics.",
+      "ko": "친절함은 그녀의 특징 중 하나예요."
+    }
+  },
+  {
+    "word": "characterize",
+    "ko": "특징짓다",
+    "ex": {
+      "en": "Honesty characterizes his personality.",
+      "ko": "정직함이 그의 성격을 특징짓습니다."
+    }
+  },
+  {
+    "word": "charge",
+    "ko": "요금을 청구하다, 책임",
+    "ex": {
+      "en": "They charge extra for delivery.",
+      "ko": "그들은 배달에 추가 요금을 청구해요."
+    }
+  },
+  {
+    "word": "chariot",
+    "ko": "전차, 마차",
+    "ex": {
+      "en": "The king rode in a golden chariot.",
+      "ko": "왕은 황금 전차를 타고 갔어요."
+    }
+  },
+  {
+    "word": "charity",
+    "ko": "자선단체, 자선",
+    "ex": {
+      "en": "She donates to charity every year.",
+      "ko": "그녀는 매년 자선단체에 기부해요."
+    }
+  },
+  {
+    "word": "charm",
+    "ko": "매력",
+    "ex": {
+      "en": "He has a natural charm.",
+      "ko": "그는 타고난 매력을 가지고 있어요."
+    }
+  },
+  {
+    "word": "chase",
+    "ko": "추적, 쫓다",
+    "ex": {
+      "en": "The dog loves to chase cats.",
+      "ko": "그 개는 고양이를 쫓는 것을 좋아해요."
+    }
+  },
+  {
+    "word": "chat",
+    "ko": "잡담, 담소",
+    "ex": {
+      "en": "We had a nice chat over coffee.",
+      "ko": "우리는 커피를 마시며 즐거운 담소를 나눴어요."
+    }
+  },
+  {
+    "word": "chat show",
+    "ko": "토크쇼",
+    "ex": {
+      "en": "She appeared on a popular chat show.",
+      "ko": "그녀는 인기 있는 토크쇼에 출연했어요."
+    }
+  },
+  {
+    "word": "check-in counter",
+    "ko": "체크인 카운터",
+    "enOverride": "the desk where passengers check in for a flight",
+    "ex": {
+      "en": "The check-in counter opens two hours before the flight.",
+      "ko": "체크인 카운터는 비행 두 시간 전에 열려요."
+    }
+  },
+  {
+    "word": "check-in desk",
+    "ko": "체크인 데스크",
+    "enOverride": "the desk where passengers or guests check in",
+    "ex": {
+      "en": "Please go to the check-in desk first.",
+      "ko": "먼저 체크인 데스크로 가세요."
+    }
+  },
+  {
+    "word": "checkout",
+    "ko": "계산대, 체크아웃",
+    "ex": {
+      "en": "There was a long line at the checkout.",
+      "ko": "계산대에 긴 줄이 있었어요."
+    }
+  },
+  {
+    "word": "cheerful",
+    "ko": "쾌활한",
+    "ex": {
+      "en": "She always has a cheerful smile.",
+      "ko": "그녀는 항상 쾌활한 미소를 지어요."
+    }
+  },
+  {
+    "word": "chemical",
+    "ko": "화학물질",
+    "ex": {
+      "en": "These chemicals should be handled carefully.",
+      "ko": "이 화학물질은 조심스럽게 다뤄야 해요."
+    }
+  },
+  {
+    "word": "chemist",
+    "ko": "화학자",
+    "ex": {
+      "en": "She works as a chemist in a lab.",
+      "ko": "그녀는 연구실에서 화학자로 일해요."
+    }
+  },
+  {
+    "word": "chemistry",
+    "ko": "화학",
+    "ex": {
+      "en": "He studies chemistry at university.",
+      "ko": "그는 대학교에서 화학을 공부해요."
+    }
+  },
+  {
+    "word": "cherish",
+    "ko": "소중히 여기다",
+    "ex": {
+      "en": "I cherish these memories.",
+      "ko": "저는 이 추억들을 소중히 여겨요."
+    }
+  },
+  {
+    "word": "chest of drawers",
+    "ko": "서랍장",
+    "ex": {
+      "en": "I keep my clothes in the chest of drawers.",
+      "ko": "저는 서랍장에 옷을 보관해요."
+    }
+  },
+  {
+    "word": "chewing gum",
+    "ko": "껌",
+    "ex": {
+      "en": "She offered me a piece of chewing gum.",
+      "ko": "그녀는 나에게 껌 한 개를 건넸어요."
+    }
+  },
+  {
+    "word": "chief",
+    "ko": "주요한, 최고의",
+    "ex": {
+      "en": "He is the chief engineer.",
+      "ko": "그는 수석 엔지니어예요."
+    }
+  },
+  {
+    "word": "choir",
+    "ko": "합창단",
+    "ex": {
+      "en": "She sings in the church choir.",
+      "ko": "그녀는 교회 합창단에서 노래해요."
+    }
+  },
+  {
+    "word": "choke",
+    "ko": "질식하다, 목이 메다",
+    "ex": {
+      "en": "He choked on a piece of food.",
+      "ko": "그는 음식 조각에 목이 메었어요."
+    }
+  },
+  {
+    "word": "Christian",
+    "ko": "기독교의, 기독교인",
+    "ex": {
+      "en": "She grew up in a Christian family.",
+      "ko": "그녀는 기독교 가정에서 자랐어요."
+    }
+  },
+  {
+    "word": "chronological",
+    "ko": "연대순의",
+    "ex": {
+      "en": "The events are listed in chronological order.",
+      "ko": "사건들은 연대순으로 나열되어 있어요."
+    }
+  },
+  {
+    "word": "chuckle",
+    "ko": "낄낄 웃음",
+    "ex": {
+      "en": "He gave a small chuckle at the joke.",
+      "ko": "그는 그 농담에 낄낄 웃었어요."
+    }
+  },
+  {
+    "word": "circle",
+    "ko": "돌다, 원",
+    "ex": {
+      "en": "The plane circled the airport.",
+      "ko": "비행기가 공항 주위를 돌았어요."
+    }
+  },
+  {
+    "word": "circular",
+    "ko": "원형의",
+    "ex": {
+      "en": "The table has a circular shape.",
+      "ko": "그 테이블은 원형이에요."
+    }
+  },
+  {
+    "word": "circus",
+    "ko": "서커스",
+    "ex": {
+      "en": "We took the kids to the circus.",
+      "ko": "우리는 아이들을 서커스에 데려갔어요."
+    }
+  },
+  {
+    "word": "citizenship",
+    "ko": "시민권",
+    "ex": {
+      "en": "She applied for citizenship last year.",
+      "ko": "그녀는 작년에 시민권을 신청했어요."
+    }
+  },
+  {
+    "word": "civil",
+    "ko": "시민의, 민간의",
+    "ex": {
+      "en": "This is a civil matter, not criminal.",
+      "ko": "이것은 형사가 아닌 민사 문제예요."
+    }
+  },
+  {
+    "word": "civilization",
+    "ko": "문명",
+    "ex": {
+      "en": "This is one of the oldest civilizations.",
+      "ko": "이것은 가장 오래된 문명 중 하나예요."
+    }
+  },
+  {
+    "word": "claim",
+    "ko": "주장, 청구",
+    "ex": {
+      "en": "He filed a claim with the insurance company.",
+      "ko": "그는 보험 회사에 청구를 제기했어요."
+    }
+  },
+  {
+    "word": "classical",
+    "ko": "고전의, 클래식의",
+    "ex": {
+      "en": "She prefers classical literature.",
+      "ko": "그녀는 고전 문학을 선호해요."
+    }
+  },
+  {
+    "word": "classify",
+    "ko": "분류하다",
+    "ex": {
+      "en": "Scientists classify animals into groups.",
+      "ko": "과학자들은 동물을 그룹으로 분류해요."
+    }
+  },
+  {
+    "word": "clear",
+    "ko": "치우다, 제거하다",
+    "ex": {
+      "en": "Please clear the table after dinner.",
+      "ko": "저녁 식사 후 테이블을 치워주세요."
+    }
+  },
+  {
+    "word": "click",
+    "ko": "딸깍 소리",
+    "ex": {
+      "en": "I heard a click when the door closed.",
+      "ko": "저는 문이 닫힐 때 딸깍 소리를 들었어요."
+    }
+  },
+  {
+    "word": "cliff",
+    "ko": "절벽",
+    "ex": {
+      "en": "The house sits on a cliff overlooking the sea.",
+      "ko": "그 집은 바다가 내려다보이는 절벽 위에 있어요."
+    }
+  },
+  {
+    "word": "climate",
+    "ko": "기후",
+    "ex": {
+      "en": "The climate here is warm all year.",
+      "ko": "이곳의 기후는 일 년 내내 따뜻해요."
+    }
+  },
+  {
+    "word": "climber",
+    "ko": "등반가, 덩굴 식물",
+    "ex": {
+      "en": "The climber reached the summit safely.",
+      "ko": "그 등반가는 정상에 안전하게 도착했어요."
+    }
+  },
+  {
+    "word": "clinic",
+    "ko": "진료소, 클리닉",
+    "ex": {
+      "en": "I have an appointment at the clinic.",
+      "ko": "저는 진료소에 예약이 있어요."
+    }
+  },
+  {
+    "word": "clip",
+    "ko": "클립, 자르다",
+    "ex": {
+      "en": "She used a clip to hold her hair.",
+      "ko": "그녀는 클립으로 머리를 고정했어요."
+    }
+  },
+  {
+    "word": "closely",
+    "ko": "밀접하게, 자세히",
+    "ex": {
+      "en": "Please read the instructions closely.",
+      "ko": "설명서를 자세히 읽어주세요."
+    }
+  },
+  {
+    "word": "coal",
+    "ko": "석탄",
+    "ex": {
+      "en": "The factory uses coal for energy.",
+      "ko": "그 공장은 에너지로 석탄을 사용해요."
+    }
+  },
+  {
+    "word": "coast",
+    "ko": "미끄러지듯 가다",
+    "ex": {
+      "en": "The car coasted down the hill.",
+      "ko": "그 차는 언덕을 미끄러지듯 내려갔어요."
+    }
+  },
+  {
+    "word": "coastal",
+    "ko": "해안의",
+    "ex": {
+      "en": "We visited a small coastal town.",
+      "ko": "우리는 작은 해안 마을을 방문했어요."
+    }
+  },
+  {
+    "word": "cod",
+    "ko": "대구 (생선)",
+    "enOverride": "a large edible fish found in cold northern seas",
+    "ex": {
+      "en": "We ordered fried cod at the restaurant.",
+      "ko": "우리는 식당에서 튀긴 대구를 주문했어요."
+    }
+  },
+  {
+    "word": "coffin",
+    "ko": "관 (棺)",
+    "ex": {
+      "en": "The coffin was carried by six men.",
+      "ko": "그 관은 여섯 명의 남자가 운반했어요."
+    }
+  },
+  {
+    "word": "collapse",
+    "ko": "붕괴, 쓰러지다",
+    "ex": {
+      "en": "The building collapsed after the earthquake.",
+      "ko": "그 건물은 지진 후 붕괴했어요."
+    }
+  },
+  {
+    "word": "collar",
+    "ko": "옷깃, 목걸이",
+    "ex": {
+      "en": "His shirt collar was too tight.",
+      "ko": "그의 셔츠 옷깃이 너무 조였어요."
+    }
+  },
+  {
+    "word": "columnist",
+    "ko": "칼럼니스트",
+    "ex": {
+      "en": "She is a columnist for the newspaper.",
+      "ko": "그녀는 그 신문의 칼럼니스트예요."
+    }
+  },
+  {
+    "word": "combination",
+    "ko": "조합, 결합",
+    "ex": {
+      "en": "This is a good combination of colors.",
+      "ko": "이것은 좋은 색상 조합이에요."
+    }
+  }
 ]

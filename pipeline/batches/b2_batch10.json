@@ -1,130 +1,1027 @@
 [
-  {"word": "infect", "ko": "감염시키다", "ex": {"en": "The virus infected many people.", "ko": "그 바이러스는 많은 사람들을 감염시켰어요."}},
-  {"word": "infected", "ko": "감염된", "ex": {"en": "The wound became infected.", "ko": "그 상처는 감염되었어요."}},
-  {"word": "infectious", "ko": "전염성의", "ex": {"en": "This is a highly infectious disease.", "ko": "이것은 전염성이 매우 강한 질병이에요."}},
-  {"word": "infer", "ko": "추론하다", "ex": {"en": "We can infer her feelings from her tone.", "ko": "우리는 그녀의 어조에서 감정을 추론할 수 있어요."}},
-  {"word": "inference", "ko": "추론", "ex": {"en": "That's a reasonable inference.", "ko": "그것은 타당한 추론이에요."}},
-  {"word": "inflammation", "ko": "염증", "ex": {"en": "The doctor treated the inflammation.", "ko": "의사가 염증을 치료했어요."}},
-  {"word": "inflammatory", "ko": "염증성의, 선동적인", "ex": {"en": "He gave an inflammatory speech.", "ko": "그는 선동적인 연설을 했어요."}},
-  {"word": "inflate", "ko": "부풀리다, 팽창시키다", "ex": {"en": "He inflated the balloon.", "ko": "그는 풍선을 부풀렸어요."}},
-  {"word": "inflation", "ko": "인플레이션, 물가상승", "ex": {"en": "Inflation has increased prices this year.", "ko": "인플레이션이 올해 가격을 올렸어요."}},
-  {"word": "influence", "ko": "영향을 미치다", "ex": {"en": "Her teacher influenced her career choice.", "ko": "그녀의 선생님은 그녀의 직업 선택에 영향을 미쳤어요."}},
-  {"word": "influential", "ko": "영향력 있는", "ex": {"en": "She is an influential leader.", "ko": "그녀는 영향력 있는 지도자예요."}},
-  {"word": "influenza", "ko": "독감", "ex": {"en": "He was diagnosed with influenza.", "ko": "그는 독감을 진단받았어요."}},
-  {"word": "informal", "ko": "격식 없는, 비공식적인", "ex": {"en": "It was an informal gathering.", "ko": "그것은 격식 없는 모임이었어요."}},
-  {"word": "infringe", "ko": "침해하다, 위반하다", "ex": {"en": "This design might infringe on the patent.", "ko": "이 디자인은 특허를 침해할 수도 있어요."}},
-  {"word": "infringement", "ko": "침해, 위반", "ex": {"en": "This is a copyright infringement.", "ko": "이것은 저작권 침해예요."}},
-  {"word": "inhabit", "ko": "거주하다, 살다", "ex": {"en": "Many species inhabit this forest.", "ko": "많은 종이 이 숲에 거주해요."}},
-  {"word": "inherit", "ko": "상속받다, 물려받다", "ex": {"en": "She inherited the house from her grandmother.", "ko": "그녀는 할머니로부터 그 집을 상속받았어요."}},
-  {"word": "initial", "ko": "초기의, 처음의", "ex": {"en": "The initial results were promising.", "ko": "초기 결과는 유망했어요."}},
-  {"word": "initiative", "ko": "주도권, 계획", "ex": {"en": "She took the initiative to solve the problem.", "ko": "그녀는 그 문제를 해결하는 데 주도권을 잡았어요."}},
-  {"word": "injection", "ko": "주사, 주입", "ex": {"en": "The nurse gave him an injection.", "ko": "간호사가 그에게 주사를 놓았어요."}},
-  {"word": "injured", "ko": "부상당한", "ex": {"en": "The injured player left the field.", "ko": "부상당한 선수가 경기장을 떠났어요."}},
-  {"word": "innate", "ko": "타고난, 선천적인", "ex": {"en": "She has an innate sense of rhythm.", "ko": "그녀는 타고난 리듬감을 가지고 있어요."}},
-  {"word": "innocently", "ko": "순진하게, 결백하게", "ex": {"en": "He innocently asked about the surprise.", "ko": "그는 순진하게 그 깜짝 이벤트에 대해 물었어요."}},
-  {"word": "innovation", "ko": "혁신", "ex": {"en": "This product represents a major innovation.", "ko": "이 제품은 주요한 혁신을 나타내요."}},
-  {"word": "innovative", "ko": "혁신적인", "ex": {"en": "She has innovative ideas.", "ko": "그녀는 혁신적인 아이디어를 가지고 있어요."}},
-  {"word": "input", "ko": "입력, 조언", "ex": {"en": "We need your input on this plan.", "ko": "우리는 이 계획에 대한 당신의 조언이 필요해요."}},
-  {"word": "inquire", "ko": "문의하다, 묻다", "ex": {"en": "She inquired about the job opening.", "ko": "그녀는 그 채용 공고에 대해 문의했어요."}},
-  {"word": "inseparable", "ko": "떼려야 뗄 수 없는", "ex": {"en": "They have been inseparable since childhood.", "ko": "그들은 어릴 때부터 떼려야 뗄 수 없는 사이였어요."}},
-  {"word": "inside", "ko": "내부, 안쪽", "ex": {"en": "The inside of the box is empty.", "ko": "그 상자의 내부는 비어 있어요."}},
-  {"word": "inspect", "ko": "점검하다, 검사하다", "ex": {"en": "The mechanic inspected the car.", "ko": "정비공이 그 차를 점검했어요."}},
-  {"word": "inspector", "ko": "검사관, 조사관", "ex": {"en": "The inspector checked the building for safety.", "ko": "그 검사관은 건물의 안전을 확인했어요."}},
-  {"word": "inspirational", "ko": "영감을 주는", "ex": {"en": "Her story is truly inspirational.", "ko": "그녀의 이야기는 정말 영감을 줘요."}},
-  {"word": "instantly", "ko": "즉시", "ex": {"en": "She fell asleep instantly.", "ko": "그녀는 즉시 잠들었어요."}},
-  {"word": "instill", "ko": "심어주다, 서서히 주입하다", "ex": {"en": "Parents instill values in their children.", "ko": "부모는 자녀에게 가치관을 심어줘요."}},
-  {"word": "instinct", "ko": "본능", "ex": {"en": "She followed her instinct.", "ko": "그녀는 자신의 본능을 따랐어요."}},
-  {"word": "institution", "ko": "기관, 제도", "ex": {"en": "This is a well-respected institution.", "ko": "이곳은 존경받는 기관이에요."}},
-  {"word": "instruct", "ko": "지시하다, 가르치다", "ex": {"en": "She instructs students in painting.", "ko": "그녀는 학생들에게 그림을 가르쳐요."}},
-  {"word": "insufficient", "ko": "불충분한", "ex": {"en": "The evidence was insufficient.", "ko": "그 증거는 불충분했어요."}},
-  {"word": "insult", "ko": "모욕하다, 모욕", "ex": {"en": "He insulted her in front of others.", "ko": "그는 다른 사람들 앞에서 그녀를 모욕했어요."}},
-  {"word": "integrate", "ko": "통합하다", "ex": {"en": "They integrated the two systems.", "ko": "그들은 두 시스템을 통합했어요."}},
-  {"word": "intellectual", "ko": "지적인, 지식인", "ex": {"en": "She enjoys intellectual conversations.", "ko": "그녀는 지적인 대화를 즐겨요."}},
-  {"word": "intent", "ko": "몰두한, 열중한", "ex": {"en": "He was intent on finishing the project.", "ko": "그는 그 프로젝트를 끝내는 데 몰두했어요."}},
-  {"word": "interactive", "ko": "상호작용하는, 쌍방향의", "ex": {"en": "This is an interactive learning app.", "ko": "이것은 쌍방향 학습 앱이에요."}},
-  {"word": "interfere", "ko": "간섭하다, 방해하다", "ex": {"en": "Please don't interfere with my work.", "ko": "제 일에 간섭하지 마세요."}},
-  {"word": "interior", "ko": "내부", "ex": {"en": "The interior of the house was beautifully designed.", "ko": "그 집의 내부는 아름답게 디자인되었어요."}},
-  {"word": "interpersonal", "ko": "대인관계의", "ex": {"en": "She has good interpersonal skills.", "ko": "그녀는 좋은 대인관계 능력을 가지고 있어요."}},
-  {"word": "interpret", "ko": "해석하다, 통역하다", "ex": {"en": "He interpreted the data differently.", "ko": "그는 그 데이터를 다르게 해석했어요."}},
-  {"word": "interpretation", "ko": "해석", "ex": {"en": "There are many interpretations of this poem.", "ko": "이 시에는 많은 해석이 있어요."}},
-  {"word": "interpreter", "ko": "통역사", "ex": {"en": "She works as an interpreter.", "ko": "그녀는 통역사로 일해요."}},
-  {"word": "interruption", "ko": "중단, 방해", "ex": {"en": "We continued the meeting without interruption.", "ko": "우리는 중단 없이 회의를 계속했어요."}},
-  {"word": "intersection", "ko": "교차로", "ex": {"en": "Turn left at the next intersection.", "ko": "다음 교차로에서 왼쪽으로 도세요."}},
-  {"word": "intimate", "ko": "친밀한", "ex": {"en": "They have an intimate friendship.", "ko": "그들은 친밀한 우정을 가지고 있어요."}},
-  {"word": "intransitive", "ko": "자동사의", "ex": {"en": "\"Sleep\" is an intransitive verb.", "ko": "'sleep'는 자동사예요."}},
-  {"word": "intravenous", "ko": "정맥 주사의", "ex": {"en": "She received an intravenous injection.", "ko": "그녀는 정맥 주사를 받았어요."}},
-  {"word": "intrude", "ko": "침입하다, 방해하다", "ex": {"en": "Sorry to intrude on your privacy.", "ko": "당신의 사생활을 침해해서 죄송해요."}},
-  {"word": "intruder", "ko": "침입자", "ex": {"en": "The alarm went off when the intruder entered.", "ko": "침입자가 들어왔을 때 경보가 울렸어요."}},
-  {"word": "intrusion", "ko": "침입, 침해", "ex": {"en": "This felt like an intrusion into her privacy.", "ko": "이것은 그녀의 사생활에 대한 침해처럼 느껴졌어요."}},
-  {"word": "invariable", "ko": "변함없는, 불변의", "ex": {"en": "His schedule is invariable.", "ko": "그의 일정은 변함없어요."}},
-  {"word": "invariably", "ko": "언제나, 변함없이", "ex": {"en": "She invariably arrives on time.", "ko": "그녀는 언제나 제시간에 도착해요."}},
-  {"word": "inventor", "ko": "발명가", "ex": {"en": "He is the inventor of this device.", "ko": "그는 이 장치의 발명가예요."}},
-  {"word": "inverted commas", "ko": "따옴표", "enOverride": "quotation marks used to enclose direct speech or quotations", "ex": {"en": "Put the quote in inverted commas.", "ko": "인용문을 따옴표 안에 넣으세요."}},
-  {"word": "investigate", "ko": "조사하다", "ex": {"en": "Police are investigating the case.", "ko": "경찰이 그 사건을 조사하고 있어요."}},
-  {"word": "investigator", "ko": "수사관, 조사관", "ex": {"en": "The investigator collected evidence.", "ko": "그 수사관은 증거를 수집했어요."}},
-  {"word": "investment", "ko": "투자", "ex": {"en": "This is a good investment opportunity.", "ko": "이것은 좋은 투자 기회예요."}},
-  {"word": "investor", "ko": "투자자", "ex": {"en": "She is an investor in the startup.", "ko": "그녀는 그 스타트업의 투자자예요."}},
-  {"word": "invisible", "ko": "보이지 않는", "ex": {"en": "The stars are invisible during the day.", "ko": "별들은 낮 동안 보이지 않아요."}},
-  {"word": "invitingly", "ko": "매력적으로, 유혹하듯", "ex": {"en": "The pool looked invitingly cool.", "ko": "그 수영장은 매력적으로 시원해 보였어요."}},
-  {"word": "invoke", "ko": "불러일으키다, 발동하다", "ex": {"en": "The lawyer invoked a special clause.", "ko": "그 변호사는 특별 조항을 발동했어요."}},
-  {"word": "involvement", "ko": "관여, 참여", "ex": {"en": "Her involvement in the project was crucial.", "ko": "그녀의 프로젝트 참여는 중요했어요."}},
-  {"word": "ironically", "ko": "역설적으로, 아이러니하게도", "ex": {"en": "Ironically, the fire station caught fire.", "ko": "아이러니하게도 소방서에 불이 났어요."}},
-  {"word": "irrational", "ko": "비합리적인", "ex": {"en": "That was an irrational fear.", "ko": "그것은 비합리적인 두려움이었어요."}},
-  {"word": "irresistible", "ko": "저항할 수 없는", "ex": {"en": "The cake looked irresistible.", "ko": "그 케이크는 저항할 수 없어 보였어요."}},
-  {"word": "irresistibly", "ko": "거부할 수 없이", "ex": {"en": "She found the offer irresistibly tempting.", "ko": "그녀는 그 제안이 거부할 수 없이 유혹적이라고 느꼈어요."}},
-  {"word": "irresponsible", "ko": "무책임한", "ex": {"en": "It was irresponsible of him to leave.", "ko": "그가 떠난 것은 무책임했어요."}},
-  {"word": "irritated", "ko": "짜증난", "ex": {"en": "She was irritated by the delay.", "ko": "그녀는 지연 때문에 짜증이 났어요."}},
-  {"word": "irritating", "ko": "짜증나게 하는", "ex": {"en": "That sound is really irritating.", "ko": "그 소리는 정말 짜증나게 해요."}},
-  {"word": "irritation", "ko": "짜증, 자극", "ex": {"en": "He couldn't hide his irritation.", "ko": "그는 자신의 짜증을 숨길 수 없었어요."}},
-  {"word": "islander", "ko": "섬 주민", "ex": {"en": "The islanders welcomed the visitors.", "ko": "섬 주민들은 방문객들을 환영했어요."}},
-  {"word": "issue", "ko": "발행하다, 발부하다", "ex": {"en": "The bank issued a new credit card.", "ko": "그 은행은 새 신용카드를 발행했어요."}},
-  {"word": "italicize", "ko": "이탤릭체로 하다", "ex": {"en": "Italicize the book titles.", "ko": "책 제목을 이탤릭체로 하세요."}},
-  {"word": "itch", "ko": "가렵다", "ex": {"en": "My arm itches from the mosquito bite.", "ko": "모기에 물려서 팔이 가려워요."}},
-  {"word": "jam", "ko": "꽉 채우다, 끼이다", "ex": {"en": "The door jammed and wouldn't open.", "ko": "문이 끼어서 열리지 않았어요."}},
-  {"word": "jaw", "ko": "턱", "ex": {"en": "He broke his jaw in the accident.", "ko": "그는 사고로 턱이 부러졌어요."}},
-  {"word": "jealously", "ko": "질투하며", "ex": {"en": "She guarded her secret jealously.", "ko": "그녀는 자신의 비밀을 질투하며 지켰어요."}},
-  {"word": "jeopardize", "ko": "위태롭게 하다", "ex": {"en": "This mistake could jeopardize the deal.", "ko": "이 실수는 그 거래를 위태롭게 할 수 있어요."}},
-  {"word": "jeweler", "ko": "보석상", "ex": {"en": "She bought the ring from a jeweler.", "ko": "그녀는 보석상에서 그 반지를 샀어요."}},
-  {"word": "jog", "ko": "급변, 갑작스러운 방향 전환", "ex": {"en": "There is a jog in the road ahead.", "ko": "앞쪽 도로에 급격한 방향 전환이 있어요."}},
-  {"word": "joint", "ko": "관절", "ex": {"en": "Her joints ache in cold weather.", "ko": "그녀는 추운 날씨에 관절이 아파요."}},
-  {"word": "journalism", "ko": "저널리즘, 언론", "ex": {"en": "She studies journalism at university.", "ko": "그녀는 대학교에서 저널리즘을 공부해요."}},
-  {"word": "judo", "ko": "유도", "ex": {"en": "He has a black belt in judo.", "ko": "그는 유도 검은띠예요."}},
-  {"word": "jump", "ko": "급증, 도약", "ex": {"en": "There was a jump in sales this quarter.", "ko": "이번 분기에 매출 급증이 있었어요."}},
-  {"word": "junk food", "ko": "정크푸드", "ex": {"en": "Eating too much junk food is unhealthy.", "ko": "정크푸드를 너무 많이 먹는 것은 건강에 나빠요."}},
-  {"word": "juror", "ko": "배심원", "ex": {"en": "Twelve jurors decided the case.", "ko": "12명의 배심원이 그 사건을 결정했어요."}},
-  {"word": "jury", "ko": "배심원단", "ex": {"en": "The jury found him guilty.", "ko": "배심원단은 그가 유죄라고 판결했어요."}},
-  {"word": "justify", "ko": "정당화하다", "ex": {"en": "He tried to justify his actions.", "ko": "그는 자신의 행동을 정당화하려고 했어요."}},
-  {"word": "kangaroo", "ko": "캥거루", "ex": {"en": "Kangaroos are native to Australia.", "ko": "캥거루는 호주 토종이에요."}},
-  {"word": "karaoke", "ko": "노래방", "ex": {"en": "We went to karaoke after dinner.", "ko": "우리는 저녁 식사 후 노래방에 갔어요."}},
-  {"word": "keen", "ko": "예리한, 열망하는", "ex": {"en": "She has a keen sense of humor.", "ko": "그녀는 예리한 유머 감각을 가지고 있어요."}},
-  {"word": "keeper", "ko": "관리인, 사육사", "ex": {"en": "The zookeeper fed the animals.", "ko": "그 동물원 사육사가 동물들에게 먹이를 줬어요."}},
-  {"word": "kerosene", "ko": "등유", "ex": {"en": "The lamp burns kerosene.", "ko": "그 램프는 등유를 태워요."}},
-  {"word": "keystroke", "ko": "키 입력, 타건", "ex": {"en": "Every keystroke is recorded.", "ko": "모든 키 입력이 기록돼요."}},
-  {"word": "kneel", "ko": "무릎을 꿇다", "ex": {"en": "He knelt down to tie his shoes.", "ko": "그는 신발끈을 매려고 무릎을 꿇었어요."}},
-  {"word": "knot", "ko": "매듭", "ex": {"en": "She tied a knot in the rope.", "ko": "그녀는 밧줄에 매듭을 묶었어요."}},
-  {"word": "knowingly", "ko": "고의로, 알면서도", "ex": {"en": "He knowingly broke the rule.", "ko": "그는 알면서도 규칙을 어겼어요."}},
-  {"word": "known", "ko": "알려진", "ex": {"en": "This is a well-known fact.", "ko": "이것은 잘 알려진 사실이에요."}},
-  {"word": "label", "ko": "라벨, 표", "ex": {"en": "Check the label for ingredients.", "ko": "성분은 라벨을 확인하세요."}},
-  {"word": "laborer", "ko": "노동자", "ex": {"en": "He works as a construction laborer.", "ko": "그는 건설 노동자로 일해요."}},
-  {"word": "lack", "ko": "부족하다, 없다", "ex": {"en": "This region lacks clean water.", "ko": "이 지역은 깨끗한 물이 부족해요."}},
-  {"word": "lame", "ko": "설득력 없는, 절름발이의", "ex": {"en": "That's a lame excuse.", "ko": "그것은 설득력 없는 변명이에요."}},
-  {"word": "lance", "ko": "창 (무기)", "ex": {"en": "The knight carried a lance.", "ko": "그 기사는 창을 소지하고 있었어요."}},
-  {"word": "landing", "ko": "착륙, 계단참", "ex": {"en": "The plane made a smooth landing.", "ko": "그 비행기는 순조로운 착륙을 했어요."}},
-  {"word": "landlady", "ko": "여자 집주인", "ex": {"en": "My landlady is very kind.", "ko": "제 여자 집주인은 아주 친절해요."}},
-  {"word": "landslide", "ko": "산사태, 압승", "ex": {"en": "A landslide blocked the road.", "ko": "산사태가 도로를 막았어요."}},
-  {"word": "lap", "ko": "무릎, 한 바퀴", "ex": {"en": "The cat sat on her lap.", "ko": "고양이가 그녀의 무릎에 앉았어요."}},
-  {"word": "laptop", "ko": "노트북", "ex": {"en": "She works on her laptop every day.", "ko": "그녀는 매일 노트북으로 일해요."}},
-  {"word": "lark", "ko": "종달새", "ex": {"en": "A lark sang in the morning.", "ko": "종달새 한 마리가 아침에 노래했어요."}},
-  {"word": "laser", "ko": "레이저", "ex": {"en": "The doctor used a laser for the surgery.", "ko": "의사가 수술에 레이저를 사용했어요."}},
-  {"word": "last minute", "ko": "마지막 순간", "ex": {"en": "She finished her homework at the last minute.", "ko": "그녀는 마지막 순간에 숙제를 끝냈어요."}},
-  {"word": "lastly", "ko": "마지막으로", "ex": {"en": "Lastly, let's review the summary.", "ko": "마지막으로 요약을 검토해요."}},
-  {"word": "last-minute", "ko": "막판의, 임박한", "ex": {"en": "We made a last-minute decision.", "ko": "우리는 막판 결정을 내렸어요."}},
-  {"word": "later", "ko": "나중의, 후의", "ex": {"en": "We'll discuss this in a later meeting.", "ko": "이것은 나중 회의에서 논의할 거예요."}},
-  {"word": "latter", "ko": "후자의", "ex": {"en": "Between the two options, I prefer the latter.", "ko": "두 옵션 중 저는 후자를 선호해요."}},
-  {"word": "laundry", "ko": "세탁물, 빨래", "ex": {"en": "I need to do the laundry today.", "ko": "저는 오늘 빨래를 해야 해요."}},
-  {"word": "lava", "ko": "용암", "ex": {"en": "Lava flowed down the volcano.", "ko": "용암이 화산 아래로 흘렀어요."}},
-  {"word": "lawmaker", "ko": "입법자, 국회의원", "ex": {"en": "Lawmakers passed the new bill.", "ko": "국회의원들이 새 법안을 통과시켰어요."}},
-  {"word": "lawn", "ko": "잔디밭", "ex": {"en": "He mowed the lawn on Saturday.", "ko": "그는 토요일에 잔디밭을 깎았어요."}},
-  {"word": "lawsuit", "ko": "소송", "ex": {"en": "She filed a lawsuit against the company.", "ko": "그녀는 그 회사를 상대로 소송을 제기했어요."}},
-  {"word": "layabout", "ko": "게으름뱅이", "ex": {"en": "He is known as a layabout in the neighborhood.", "ko": "그는 동네에서 게으름뱅이로 알려져 있어요."}}
+  {
+    "word": "infect",
+    "ko": "감염시키다",
+    "ex": {
+      "en": "The virus infected many people.",
+      "ko": "그 바이러스는 많은 사람들을 감염시켰어요."
+    }
+  },
+  {
+    "word": "infected",
+    "ko": "감염된",
+    "ex": {
+      "en": "The wound became infected.",
+      "ko": "그 상처는 감염되었어요."
+    }
+  },
+  {
+    "word": "infectious",
+    "ko": "전염성의",
+    "ex": {
+      "en": "This is a highly infectious disease.",
+      "ko": "이것은 전염성이 매우 강한 질병이에요."
+    }
+  },
+  {
+    "word": "infer",
+    "ko": "추론하다",
+    "ex": {
+      "en": "We can infer her feelings from her tone.",
+      "ko": "우리는 그녀의 어조에서 감정을 추론할 수 있어요."
+    }
+  },
+  {
+    "word": "inference",
+    "ko": "추론",
+    "ex": {
+      "en": "That's a reasonable inference.",
+      "ko": "그것은 타당한 추론이에요."
+    }
+  },
+  {
+    "word": "inflammation",
+    "ko": "염증",
+    "ex": {
+      "en": "The doctor treated the inflammation.",
+      "ko": "의사가 염증을 치료했어요."
+    }
+  },
+  {
+    "word": "inflammatory",
+    "ko": "염증성의, 선동적인",
+    "ex": {
+      "en": "He gave an inflammatory speech.",
+      "ko": "그는 선동적인 연설을 했어요."
+    }
+  },
+  {
+    "word": "inflate",
+    "ko": "부풀리다, 팽창시키다",
+    "ex": {
+      "en": "He inflated the balloon.",
+      "ko": "그는 풍선을 부풀렸어요."
+    }
+  },
+  {
+    "word": "inflation",
+    "ko": "인플레이션, 물가상승",
+    "ex": {
+      "en": "Inflation has increased prices this year.",
+      "ko": "인플레이션이 올해 가격을 올렸어요."
+    }
+  },
+  {
+    "word": "influence",
+    "ko": "영향을 미치다",
+    "ex": {
+      "en": "Her teacher influenced her career choice.",
+      "ko": "그녀의 선생님은 그녀의 직업 선택에 영향을 미쳤어요."
+    }
+  },
+  {
+    "word": "influential",
+    "ko": "영향력 있는",
+    "ex": {
+      "en": "She is an influential leader.",
+      "ko": "그녀는 영향력 있는 지도자예요."
+    }
+  },
+  {
+    "word": "influenza",
+    "ko": "독감",
+    "ex": {
+      "en": "He was diagnosed with influenza.",
+      "ko": "그는 독감을 진단받았어요."
+    }
+  },
+  {
+    "word": "informal",
+    "ko": "격식 없는, 비공식적인",
+    "ex": {
+      "en": "It was an informal gathering.",
+      "ko": "그것은 격식 없는 모임이었어요."
+    }
+  },
+  {
+    "word": "infringe",
+    "ko": "침해하다, 위반하다",
+    "ex": {
+      "en": "This design might infringe on the patent.",
+      "ko": "이 디자인은 특허를 침해할 수도 있어요."
+    }
+  },
+  {
+    "word": "infringement",
+    "ko": "침해, 위반",
+    "ex": {
+      "en": "This is a copyright infringement.",
+      "ko": "이것은 저작권 침해예요."
+    }
+  },
+  {
+    "word": "inhabit",
+    "ko": "거주하다, 살다",
+    "ex": {
+      "en": "Many species inhabit this forest.",
+      "ko": "많은 종이 이 숲에 거주해요."
+    }
+  },
+  {
+    "word": "inherit",
+    "ko": "상속받다, 물려받다",
+    "ex": {
+      "en": "She inherited the house from her grandmother.",
+      "ko": "그녀는 할머니로부터 그 집을 상속받았어요."
+    }
+  },
+  {
+    "word": "initial",
+    "ko": "초기의, 처음의",
+    "ex": {
+      "en": "The initial results were promising.",
+      "ko": "초기 결과는 유망했어요."
+    }
+  },
+  {
+    "word": "initiative",
+    "ko": "주도권, 계획",
+    "ex": {
+      "en": "She took the initiative to solve the problem.",
+      "ko": "그녀는 그 문제를 해결하는 데 주도권을 잡았어요."
+    }
+  },
+  {
+    "word": "injection",
+    "ko": "주사, 주입",
+    "ex": {
+      "en": "The nurse gave him an injection.",
+      "ko": "간호사가 그에게 주사를 놓았어요."
+    }
+  },
+  {
+    "word": "injured",
+    "ko": "부상당한",
+    "ex": {
+      "en": "The injured player left the field.",
+      "ko": "부상당한 선수가 경기장을 떠났어요."
+    }
+  },
+  {
+    "word": "innate",
+    "ko": "타고난, 선천적인",
+    "ex": {
+      "en": "She has an innate sense of rhythm.",
+      "ko": "그녀는 타고난 리듬감을 가지고 있어요."
+    }
+  },
+  {
+    "word": "innocently",
+    "ko": "순진하게, 결백하게",
+    "ex": {
+      "en": "He innocently asked about the surprise.",
+      "ko": "그는 순진하게 그 깜짝 이벤트에 대해 물었어요."
+    }
+  },
+  {
+    "word": "innovation",
+    "ko": "혁신",
+    "ex": {
+      "en": "This product represents a major innovation.",
+      "ko": "이 제품은 주요한 혁신을 나타내요."
+    }
+  },
+  {
+    "word": "innovative",
+    "ko": "혁신적인",
+    "ex": {
+      "en": "She has innovative ideas.",
+      "ko": "그녀는 혁신적인 아이디어를 가지고 있어요."
+    }
+  },
+  {
+    "word": "input",
+    "ko": "입력, 조언",
+    "ex": {
+      "en": "We need your input on this plan.",
+      "ko": "우리는 이 계획에 대한 당신의 조언이 필요해요."
+    }
+  },
+  {
+    "word": "inquire",
+    "ko": "문의하다, 묻다",
+    "ex": {
+      "en": "She inquired about the job opening.",
+      "ko": "그녀는 그 채용 공고에 대해 문의했어요."
+    }
+  },
+  {
+    "word": "inseparable",
+    "ko": "떼려야 뗄 수 없는",
+    "ex": {
+      "en": "They have been inseparable since childhood.",
+      "ko": "그들은 어릴 때부터 떼려야 뗄 수 없는 사이였어요."
+    }
+  },
+  {
+    "word": "inside",
+    "ko": "내부, 안쪽",
+    "ex": {
+      "en": "The inside of the box is empty.",
+      "ko": "그 상자의 내부는 비어 있어요."
+    }
+  },
+  {
+    "word": "inspect",
+    "ko": "점검하다, 검사하다",
+    "ex": {
+      "en": "The mechanic inspected the car.",
+      "ko": "정비공이 그 차를 점검했어요."
+    }
+  },
+  {
+    "word": "inspector",
+    "ko": "검사관, 조사관",
+    "ex": {
+      "en": "The inspector checked the building for safety.",
+      "ko": "그 검사관은 건물의 안전을 확인했어요."
+    }
+  },
+  {
+    "word": "inspirational",
+    "ko": "영감을 주는",
+    "ex": {
+      "en": "Her story is truly inspirational.",
+      "ko": "그녀의 이야기는 정말 영감을 줘요."
+    }
+  },
+  {
+    "word": "instantly",
+    "ko": "즉시",
+    "ex": {
+      "en": "She fell asleep instantly.",
+      "ko": "그녀는 즉시 잠들었어요."
+    }
+  },
+  {
+    "word": "instill",
+    "ko": "심어주다, 서서히 주입하다",
+    "ex": {
+      "en": "Parents instill values in their children.",
+      "ko": "부모는 자녀에게 가치관을 심어줘요."
+    }
+  },
+  {
+    "word": "instinct",
+    "ko": "본능",
+    "ex": {
+      "en": "She followed her instinct.",
+      "ko": "그녀는 자신의 본능을 따랐어요."
+    }
+  },
+  {
+    "word": "institution",
+    "ko": "기관, 제도",
+    "ex": {
+      "en": "This is a well-respected institution.",
+      "ko": "이곳은 존경받는 기관이에요."
+    }
+  },
+  {
+    "word": "instruct",
+    "ko": "지시하다, 가르치다",
+    "ex": {
+      "en": "She instructs students in painting.",
+      "ko": "그녀는 학생들에게 그림을 가르쳐요."
+    }
+  },
+  {
+    "word": "insufficient",
+    "ko": "불충분한",
+    "ex": {
+      "en": "The evidence was insufficient.",
+      "ko": "그 증거는 불충분했어요."
+    }
+  },
+  {
+    "word": "insult",
+    "ko": "모욕하다, 모욕",
+    "ex": {
+      "en": "He insulted her in front of others.",
+      "ko": "그는 다른 사람들 앞에서 그녀를 모욕했어요."
+    }
+  },
+  {
+    "word": "integrate",
+    "ko": "통합하다",
+    "ex": {
+      "en": "They integrated the two systems.",
+      "ko": "그들은 두 시스템을 통합했어요."
+    }
+  },
+  {
+    "word": "intellectual",
+    "ko": "지적인, 지식인",
+    "ex": {
+      "en": "She enjoys intellectual conversations.",
+      "ko": "그녀는 지적인 대화를 즐겨요."
+    }
+  },
+  {
+    "word": "intent",
+    "ko": "몰두한, 열중한",
+    "ex": {
+      "en": "He was intent on finishing the project.",
+      "ko": "그는 그 프로젝트를 끝내는 데 몰두했어요."
+    }
+  },
+  {
+    "word": "interactive",
+    "ko": "상호작용하는, 쌍방향의",
+    "ex": {
+      "en": "This is an interactive learning app.",
+      "ko": "이것은 쌍방향 학습 앱이에요."
+    }
+  },
+  {
+    "word": "interfere",
+    "ko": "간섭하다, 방해하다",
+    "ex": {
+      "en": "Please don't interfere with my work.",
+      "ko": "제 일에 간섭하지 마세요."
+    }
+  },
+  {
+    "word": "interior",
+    "ko": "내부",
+    "ex": {
+      "en": "The interior of the house was beautifully designed.",
+      "ko": "그 집의 내부는 아름답게 디자인되었어요."
+    }
+  },
+  {
+    "word": "interpersonal",
+    "ko": "대인관계의",
+    "ex": {
+      "en": "She has good interpersonal skills.",
+      "ko": "그녀는 좋은 대인관계 능력을 가지고 있어요."
+    }
+  },
+  {
+    "word": "interpret",
+    "ko": "해석하다, 통역하다",
+    "ex": {
+      "en": "He interpreted the data differently.",
+      "ko": "그는 그 데이터를 다르게 해석했어요."
+    }
+  },
+  {
+    "word": "interpretation",
+    "ko": "해석",
+    "ex": {
+      "en": "There are many interpretations of this poem.",
+      "ko": "이 시에는 많은 해석이 있어요."
+    }
+  },
+  {
+    "word": "interpreter",
+    "ko": "통역사",
+    "ex": {
+      "en": "She works as an interpreter.",
+      "ko": "그녀는 통역사로 일해요."
+    }
+  },
+  {
+    "word": "interruption",
+    "ko": "중단, 방해",
+    "ex": {
+      "en": "We continued the meeting without interruption.",
+      "ko": "우리는 중단 없이 회의를 계속했어요."
+    }
+  },
+  {
+    "word": "intersection",
+    "ko": "교차로",
+    "ex": {
+      "en": "Turn left at the next intersection.",
+      "ko": "다음 교차로에서 왼쪽으로 도세요."
+    }
+  },
+  {
+    "word": "intimate",
+    "ko": "친밀한",
+    "ex": {
+      "en": "They have an intimate friendship.",
+      "ko": "그들은 친밀한 우정을 가지고 있어요."
+    }
+  },
+  {
+    "word": "intransitive",
+    "ko": "자동사의",
+    "ex": {
+      "en": "\"Sleep\" is an intransitive verb.",
+      "ko": "'sleep'는 자동사예요."
+    }
+  },
+  {
+    "word": "intravenous",
+    "ko": "정맥 주사의",
+    "ex": {
+      "en": "She received an intravenous injection.",
+      "ko": "그녀는 정맥 주사를 받았어요."
+    }
+  },
+  {
+    "word": "intrude",
+    "ko": "침입하다, 방해하다",
+    "ex": {
+      "en": "Sorry to intrude on your privacy.",
+      "ko": "당신의 사생활을 침해해서 죄송해요."
+    }
+  },
+  {
+    "word": "intruder",
+    "ko": "침입자",
+    "ex": {
+      "en": "The alarm went off when the intruder entered.",
+      "ko": "침입자가 들어왔을 때 경보가 울렸어요."
+    }
+  },
+  {
+    "word": "intrusion",
+    "ko": "침입, 침해",
+    "ex": {
+      "en": "This felt like an intrusion into her privacy.",
+      "ko": "이것은 그녀의 사생활에 대한 침해처럼 느껴졌어요."
+    }
+  },
+  {
+    "word": "invariable",
+    "ko": "변함없는, 불변의",
+    "ex": {
+      "en": "His schedule is invariable.",
+      "ko": "그의 일정은 변함없어요."
+    }
+  },
+  {
+    "word": "invariably",
+    "ko": "언제나, 변함없이",
+    "ex": {
+      "en": "She invariably arrives on time.",
+      "ko": "그녀는 언제나 제시간에 도착해요."
+    }
+  },
+  {
+    "word": "inventor",
+    "ko": "발명가",
+    "ex": {
+      "en": "He is the inventor of this device.",
+      "ko": "그는 이 장치의 발명가예요."
+    }
+  },
+  {
+    "word": "inverted commas",
+    "ko": "따옴표",
+    "enOverride": "quotation marks used to enclose direct speech or quotations",
+    "ex": {
+      "en": "Put the quote in inverted commas.",
+      "ko": "인용문을 따옴표 안에 넣으세요."
+    }
+  },
+  {
+    "word": "investigate",
+    "ko": "조사하다",
+    "ex": {
+      "en": "Police are investigating the case.",
+      "ko": "경찰이 그 사건을 조사하고 있어요."
+    }
+  },
+  {
+    "word": "investigator",
+    "ko": "수사관, 조사관",
+    "ex": {
+      "en": "The investigator collected evidence.",
+      "ko": "그 수사관은 증거를 수집했어요."
+    }
+  },
+  {
+    "word": "investment",
+    "ko": "투자",
+    "ex": {
+      "en": "This is a good investment opportunity.",
+      "ko": "이것은 좋은 투자 기회예요."
+    }
+  },
+  {
+    "word": "investor",
+    "ko": "투자자",
+    "ex": {
+      "en": "She is an investor in the startup.",
+      "ko": "그녀는 그 스타트업의 투자자예요."
+    }
+  },
+  {
+    "word": "invisible",
+    "ko": "보이지 않는",
+    "ex": {
+      "en": "The stars are invisible during the day.",
+      "ko": "별들은 낮 동안 보이지 않아요."
+    }
+  },
+  {
+    "word": "invitingly",
+    "ko": "매력적으로, 유혹하듯",
+    "ex": {
+      "en": "The pool looked invitingly cool.",
+      "ko": "그 수영장은 매력적으로 시원해 보였어요."
+    }
+  },
+  {
+    "word": "invoke",
+    "ko": "불러일으키다, 발동하다",
+    "ex": {
+      "en": "The lawyer invoked a special clause.",
+      "ko": "그 변호사는 특별 조항을 발동했어요."
+    }
+  },
+  {
+    "word": "involvement",
+    "ko": "관여, 참여",
+    "ex": {
+      "en": "Her involvement in the project was crucial.",
+      "ko": "그녀의 프로젝트 참여는 중요했어요."
+    }
+  },
+  {
+    "word": "ironically",
+    "ko": "역설적으로, 아이러니하게도",
+    "ex": {
+      "en": "Ironically, the fire station caught fire.",
+      "ko": "아이러니하게도 소방서에 불이 났어요."
+    }
+  },
+  {
+    "word": "irrational",
+    "ko": "비합리적인",
+    "ex": {
+      "en": "That was an irrational fear.",
+      "ko": "그것은 비합리적인 두려움이었어요."
+    }
+  },
+  {
+    "word": "irresistible",
+    "ko": "저항할 수 없는",
+    "ex": {
+      "en": "The cake looked irresistible.",
+      "ko": "그 케이크는 저항할 수 없어 보였어요."
+    }
+  },
+  {
+    "word": "irresistibly",
+    "ko": "거부할 수 없이",
+    "ex": {
+      "en": "She found the offer irresistibly tempting.",
+      "ko": "그녀는 그 제안이 거부할 수 없이 유혹적이라고 느꼈어요."
+    }
+  },
+  {
+    "word": "irresponsible",
+    "ko": "무책임한",
+    "ex": {
+      "en": "It was irresponsible of him to leave.",
+      "ko": "그가 떠난 것은 무책임했어요."
+    }
+  },
+  {
+    "word": "irritated",
+    "ko": "짜증난",
+    "ex": {
+      "en": "She was irritated by the delay.",
+      "ko": "그녀는 지연 때문에 짜증이 났어요."
+    }
+  },
+  {
+    "word": "irritating",
+    "ko": "짜증나게 하는",
+    "ex": {
+      "en": "That sound is really irritating.",
+      "ko": "그 소리는 정말 짜증나게 해요."
+    }
+  },
+  {
+    "word": "irritation",
+    "ko": "짜증, 자극",
+    "ex": {
+      "en": "He couldn't hide his irritation.",
+      "ko": "그는 자신의 짜증을 숨길 수 없었어요."
+    }
+  },
+  {
+    "word": "islander",
+    "ko": "섬 주민",
+    "ex": {
+      "en": "The islanders welcomed the visitors.",
+      "ko": "섬 주민들은 방문객들을 환영했어요."
+    }
+  },
+  {
+    "word": "issue",
+    "ko": "발행하다, 발부하다",
+    "ex": {
+      "en": "The bank issued a new credit card.",
+      "ko": "그 은행은 새 신용카드를 발행했어요."
+    }
+  },
+  {
+    "word": "italicize",
+    "ko": "이탤릭체로 하다",
+    "ex": {
+      "en": "Italicize the book titles.",
+      "ko": "책 제목을 이탤릭체로 하세요."
+    }
+  },
+  {
+    "word": "itch",
+    "ko": "가렵다",
+    "ex": {
+      "en": "My arm itches from the mosquito bite.",
+      "ko": "모기에 물려서 팔이 가려워요."
+    }
+  },
+  {
+    "word": "jam",
+    "ko": "꽉 채우다, 끼이다",
+    "ex": {
+      "en": "The door jammed and wouldn't open.",
+      "ko": "문이 끼어서 열리지 않았어요."
+    }
+  },
+  {
+    "word": "jaw",
+    "ko": "턱",
+    "ex": {
+      "en": "He broke his jaw in the accident.",
+      "ko": "그는 사고로 턱이 부러졌어요."
+    }
+  },
+  {
+    "word": "jealously",
+    "ko": "질투하며",
+    "ex": {
+      "en": "She guarded her secret jealously.",
+      "ko": "그녀는 자신의 비밀을 질투하며 지켰어요."
+    }
+  },
+  {
+    "word": "jeopardize",
+    "ko": "위태롭게 하다",
+    "ex": {
+      "en": "This mistake could jeopardize the deal.",
+      "ko": "이 실수는 그 거래를 위태롭게 할 수 있어요."
+    }
+  },
+  {
+    "word": "jeweler",
+    "ko": "보석상",
+    "ex": {
+      "en": "She bought the ring from a jeweler.",
+      "ko": "그녀는 보석상에서 그 반지를 샀어요."
+    }
+  },
+  {
+    "word": "jog",
+    "ko": "급변, 갑작스러운 방향 전환",
+    "ex": {
+      "en": "There is a jog in the road ahead.",
+      "ko": "앞쪽 도로에 급격한 방향 전환이 있어요."
+    }
+  },
+  {
+    "word": "joint",
+    "ko": "관절",
+    "ex": {
+      "en": "Her joints ache in cold weather.",
+      "ko": "그녀는 추운 날씨에 관절이 아파요."
+    }
+  },
+  {
+    "word": "journalism",
+    "ko": "저널리즘, 언론",
+    "ex": {
+      "en": "She studies journalism at university.",
+      "ko": "그녀는 대학교에서 저널리즘을 공부해요."
+    }
+  },
+  {
+    "word": "judo",
+    "ko": "유도",
+    "ex": {
+      "en": "He has a black belt in judo.",
+      "ko": "그는 유도 검은띠예요."
+    }
+  },
+  {
+    "word": "jump",
+    "ko": "급증, 도약",
+    "ex": {
+      "en": "There was a jump in sales this quarter.",
+      "ko": "이번 분기에 매출 급증이 있었어요."
+    }
+  },
+  {
+    "word": "junk food",
+    "ko": "정크푸드",
+    "ex": {
+      "en": "Eating too much junk food is unhealthy.",
+      "ko": "정크푸드를 너무 많이 먹는 것은 건강에 나빠요."
+    }
+  },
+  {
+    "word": "juror",
+    "ko": "배심원",
+    "ex": {
+      "en": "Twelve jurors decided the case.",
+      "ko": "12명의 배심원이 그 사건을 결정했어요."
+    }
+  },
+  {
+    "word": "jury",
+    "ko": "배심원단",
+    "ex": {
+      "en": "The jury found him guilty.",
+      "ko": "배심원단은 그가 유죄라고 판결했어요."
+    }
+  },
+  {
+    "word": "justify",
+    "ko": "정당화하다",
+    "ex": {
+      "en": "He tried to justify his actions.",
+      "ko": "그는 자신의 행동을 정당화하려고 했어요."
+    }
+  },
+  {
+    "word": "kangaroo",
+    "ko": "캥거루",
+    "ex": {
+      "en": "Kangaroos are native to Australia.",
+      "ko": "캥거루는 호주 토종이에요."
+    }
+  },
+  {
+    "word": "karaoke",
+    "ko": "노래방",
+    "ex": {
+      "en": "We went to karaoke after dinner.",
+      "ko": "우리는 저녁 식사 후 노래방에 갔어요."
+    }
+  },
+  {
+    "word": "keen",
+    "ko": "예리한, 열망하는",
+    "ex": {
+      "en": "She has a keen sense of humor.",
+      "ko": "그녀는 예리한 유머 감각을 가지고 있어요."
+    }
+  },
+  {
+    "word": "keeper",
+    "ko": "관리인, 사육사",
+    "ex": {
+      "en": "The zoo hired a new keeper for the pandas.",
+      "ko": "그 동물원은 판다를 돌볼 새 사육사를 고용했어요."
+    }
+  },
+  {
+    "word": "kerosene",
+    "ko": "등유",
+    "ex": {
+      "en": "The lamp burns kerosene.",
+      "ko": "그 램프는 등유를 태워요."
+    }
+  },
+  {
+    "word": "keystroke",
+    "ko": "키 입력, 타건",
+    "ex": {
+      "en": "Every keystroke is recorded.",
+      "ko": "모든 키 입력이 기록돼요."
+    }
+  },
+  {
+    "word": "kneel",
+    "ko": "무릎을 꿇다",
+    "ex": {
+      "en": "He knelt down to tie his shoes.",
+      "ko": "그는 신발끈을 매려고 무릎을 꿇었어요."
+    }
+  },
+  {
+    "word": "knot",
+    "ko": "매듭",
+    "ex": {
+      "en": "She tied a knot in the rope.",
+      "ko": "그녀는 밧줄에 매듭을 묶었어요."
+    }
+  },
+  {
+    "word": "knowingly",
+    "ko": "고의로, 알면서도",
+    "ex": {
+      "en": "He knowingly broke the rule.",
+      "ko": "그는 알면서도 규칙을 어겼어요."
+    }
+  },
+  {
+    "word": "known",
+    "ko": "알려진",
+    "ex": {
+      "en": "This is a well-known fact.",
+      "ko": "이것은 잘 알려진 사실이에요."
+    }
+  },
+  {
+    "word": "label",
+    "ko": "라벨, 표",
+    "ex": {
+      "en": "Check the label for ingredients.",
+      "ko": "성분은 라벨을 확인하세요."
+    }
+  },
+  {
+    "word": "laborer",
+    "ko": "노동자",
+    "ex": {
+      "en": "He works as a construction laborer.",
+      "ko": "그는 건설 노동자로 일해요."
+    }
+  },
+  {
+    "word": "lack",
+    "ko": "부족하다, 없다",
+    "ex": {
+      "en": "This region lacks clean water.",
+      "ko": "이 지역은 깨끗한 물이 부족해요."
+    }
+  },
+  {
+    "word": "lame",
+    "ko": "설득력 없는, 절름발이의",
+    "ex": {
+      "en": "That's a lame excuse.",
+      "ko": "그것은 설득력 없는 변명이에요."
+    }
+  },
+  {
+    "word": "lance",
+    "ko": "창 (무기)",
+    "ex": {
+      "en": "The knight carried a lance.",
+      "ko": "그 기사는 창을 소지하고 있었어요."
+    }
+  },
+  {
+    "word": "landing",
+    "ko": "착륙, 계단참",
+    "ex": {
+      "en": "The plane made a smooth landing.",
+      "ko": "그 비행기는 순조로운 착륙을 했어요."
+    }
+  },
+  {
+    "word": "landlady",
+    "ko": "여자 집주인",
+    "ex": {
+      "en": "My landlady is very kind.",
+      "ko": "제 여자 집주인은 아주 친절해요."
+    }
+  },
+  {
+    "word": "landslide",
+    "ko": "산사태, 압승",
+    "ex": {
+      "en": "A landslide blocked the road.",
+      "ko": "산사태가 도로를 막았어요."
+    }
+  },
+  {
+    "word": "lap",
+    "ko": "무릎, 한 바퀴",
+    "ex": {
+      "en": "The cat sat on her lap.",
+      "ko": "고양이가 그녀의 무릎에 앉았어요."
+    }
+  },
+  {
+    "word": "laptop",
+    "ko": "노트북",
+    "ex": {
+      "en": "She works on her laptop every day.",
+      "ko": "그녀는 매일 노트북으로 일해요."
+    }
+  },
+  {
+    "word": "lark",
+    "ko": "종달새",
+    "ex": {
+      "en": "A lark sang in the morning.",
+      "ko": "종달새 한 마리가 아침에 노래했어요."
+    }
+  },
+  {
+    "word": "laser",
+    "ko": "레이저",
+    "ex": {
+      "en": "The doctor used a laser for the surgery.",
+      "ko": "의사가 수술에 레이저를 사용했어요."
+    }
+  },
+  {
+    "word": "last minute",
+    "ko": "마지막 순간",
+    "ex": {
+      "en": "She finished her homework at the last minute.",
+      "ko": "그녀는 마지막 순간에 숙제를 끝냈어요."
+    }
+  },
+  {
+    "word": "lastly",
+    "ko": "마지막으로",
+    "ex": {
+      "en": "Lastly, let's review the summary.",
+      "ko": "마지막으로 요약을 검토해요."
+    }
+  },
+  {
+    "word": "last-minute",
+    "ko": "막판의, 임박한",
+    "ex": {
+      "en": "We made a last-minute decision.",
+      "ko": "우리는 막판 결정을 내렸어요."
+    }
+  },
+  {
+    "word": "later",
+    "ko": "나중의, 후의",
+    "ex": {
+      "en": "We'll discuss this in a later meeting.",
+      "ko": "이것은 나중 회의에서 논의할 거예요."
+    }
+  },
+  {
+    "word": "latter",
+    "ko": "후자의",
+    "ex": {
+      "en": "Between the two options, I prefer the latter.",
+      "ko": "두 옵션 중 저는 후자를 선호해요."
+    }
+  },
+  {
+    "word": "laundry",
+    "ko": "세탁물, 빨래",
+    "ex": {
+      "en": "I need to do the laundry today.",
+      "ko": "저는 오늘 빨래를 해야 해요."
+    }
+  },
+  {
+    "word": "lava",
+    "ko": "용암",
+    "ex": {
+      "en": "Lava flowed down the volcano.",
+      "ko": "용암이 화산 아래로 흘렀어요."
+    }
+  },
+  {
+    "word": "lawmaker",
+    "ko": "입법자, 국회의원",
+    "ex": {
+      "en": "Lawmakers passed the new bill.",
+      "ko": "국회의원들이 새 법안을 통과시켰어요."
+    }
+  },
+  {
+    "word": "lawn",
+    "ko": "잔디밭",
+    "ex": {
+      "en": "He mowed the lawn on Saturday.",
+      "ko": "그는 토요일에 잔디밭을 깎았어요."
+    }
+  },
+  {
+    "word": "lawsuit",
+    "ko": "소송",
+    "ex": {
+      "en": "She filed a lawsuit against the company.",
+      "ko": "그녀는 그 회사를 상대로 소송을 제기했어요."
+    }
+  },
+  {
+    "word": "layabout",
+    "ko": "게으름뱅이",
+    "ex": {
+      "en": "He is known as a layabout in the neighborhood.",
+      "ko": "그는 동네에서 게으름뱅이로 알려져 있어요."
+    }
+  }
 ]
