@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.9">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.9" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.9" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.10">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.10" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.10" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.9"></script><style>
+<script src="words.js?v=0.35.10"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.9") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.9") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.10") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.10") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.9") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.9") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.10") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.10") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -748,7 +748,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.9";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.10";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1336,6 +1336,9 @@ function makeBlank(en, word) {
   }
   return null;
 }
+// 단어카드는 무조건 예문 안 빈칸(cloze)만 — 예문에 타깃 단어가 없어 빈칸을 못 만드는
+// 항목(예전 spell 폴백)은 세션 풀에서 제외한다(2026-07-17).
+function canBlank(it) { return !!(it && it.ex && it.ex.en && makeBlank(it.ex.en, it.word)); }
 
 /* 사용자 레벨(레벨테스트 band12, 1~12 반스텝) → CEFR 6단계 인덱스(0=A1 … 5=C2) */
 function userCefrIdx() {
@@ -1351,6 +1354,7 @@ function freshPool(levelShift = 0) {
   const lv = Math.max(0, Math.min(5, userCefrIdx() + levelShift));
   return allItems().filter(it => {
     if (SRS.get(it.key)) return false;
+    if (!canBlank(it)) return false; // 빈칸 못 만드는 항목 제외 — 단어카드는 예문 빈칸만
     const ci = CEFR_LEVELS.indexOf(it.cefr);
     return ci >= 0 && Math.abs(ci - lv) <= 1;
   });
@@ -1362,7 +1366,7 @@ function listenLevelShift() {
 }
 /* 오늘 세션 아이템 선정: 복습 예정(due) 우선 → 신규(내 레벨 범위에서 무작위) 순, 최대 n개 */
 function pickSession(n = 10, levelShift = 0) {
-  const due = allItems().filter(it => SRS.isDue(it.key));
+  const due = allItems().filter(it => SRS.isDue(it.key) && canBlank(it));
   const fresh = freshPool(levelShift);
   for (let i = fresh.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -2968,7 +2972,7 @@ function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump, viewJump, onCo
             const list = WORDLISTS.find(l => l.id === listSel);
             if (!list) return null;
             const listWords = list.words.map(w => wordOf(w)).filter(Boolean);
-            const studyItems = itemsFromWords(listWords);
+            const studyItems = itemsFromWords(listWords).filter(canBlank); // 예문 빈칸 가능한 것만
             return (
               <React.Fragment>
                 <div className="wl-actions">
