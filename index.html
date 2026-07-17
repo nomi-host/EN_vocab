@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.14">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.14" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.14" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.15">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.15" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.15" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.14"></script><style>
+<script src="words.js?v=0.35.15"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.14") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.14") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.15") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.15") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.14") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.14") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.15") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.15") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -210,6 +210,22 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .bd-rank.cur .mth{color:var(--ink);font-weight:800;}
 .vault-sec{display:flex;flex-direction:column;gap:10px;margin-top:22px;}
 .vault-sec:first-child{margin-top:0;}
+/* 성장 기록 */
+.growth-tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
+.growth-tile{background:var(--surface);border:0.5px solid var(--card-border);box-shadow:var(--shadow);padding:12px 4px;text-align:center;display:flex;flex-direction:column;gap:3px;}
+.growth-tile .gv{font-size:22px;font-weight:800;color:var(--accent-deep);font-variant-numeric:tabular-nums;line-height:1;}
+.growth-tile .gl{font-size:10px;font-weight:700;color:var(--muted);}
+.growth-card{background:var(--surface);border:0.5px solid var(--card-border);box-shadow:var(--shadow);padding:14px 14px 10px;display:flex;flex-direction:column;gap:12px;}
+.growth-head{display:flex;align-items:baseline;justify-content:space-between;font-size:13px;font-weight:800;color:var(--ink);}
+.growth-head .gsub{font-size:11px;font-weight:700;color:var(--muted);}
+.growth-bars{display:flex;align-items:flex-end;gap:6px;height:96px;}
+.gbar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;height:100%;}
+.gbar-track{flex:1;width:100%;display:flex;align-items:flex-end;}
+.gbar{width:100%;min-height:3px;background:var(--warmgray);border-radius:0;transition:height .3s ease;}
+.gbar.cur{background:var(--accent);}
+.gbar-lbl{font-size:9px;font-weight:700;color:var(--muted);}
+.growth-pts{display:inline-flex;align-items:center;gap:5px;font-size:13px;color:var(--ink-2);}
+.growth-pts b{color:var(--accent-deep);font-variant-numeric:tabular-nums;}
 /* 내가 학습한 단어: 날짜별/상태별 세그먼트 토글 + 날짜 그룹 헤더 */
 .seg{display:flex;gap:6px;margin-bottom:8px;}
 .seg-b{font-size:12px;font-weight:700;color:var(--ink-2);background:var(--surface);border:1px solid var(--card-border);border-radius:999px;padding:6px 14px;}
@@ -771,7 +787,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.14";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.15";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -3904,11 +3920,55 @@ function TalkSOS({ onBack }) {
   );
 }
 
+/* 성장 기록 — SRS 기록(box·at)에서 학습한 단어·완료·총 학습일·연속일을 실측하고, 마지막 학습
+   시각(at)으로 최근 8주 학습량 막대그래프를 그린다. 데모 시드가 at을 최근 ~90일에 뿌려둬서
+   실제 기록이 없어도 통계가 채워져 보인다(2026-07-17 — "성장 기록 준비 중" 자리 채움). */
+function GrowthRecord() {
+  const now = Date.now();
+  const recs = allItems().map(it => SRS.get(it.key)).filter(Boolean);
+  const learned = recs.length;
+  const mastered = recs.filter(s => s.box >= 6).length;
+  const dset = new Set(recs.map(s => (s.at != null ? Math.floor(s.at / DAY) : null)).filter(x => x != null));
+  // 연속 학습일 = 가장 최근 학습일에서 하루씩 거슬러 끊기지 않고 이어진 날 수(오늘 학습 안 했어도 최근 구간 표시)
+  const sortedDays = [...dset].sort((a, b) => b - a);
+  let streak = 0;
+  if (sortedDays.length) { streak = 1; let prev = sortedDays[0]; for (let k = 1; k < sortedDays.length; k++) { if (sortedDays[k] === prev - 1) { streak++; prev = sortedDays[k]; } else break; } }
+  const thisWeek = recs.filter(s => s.at != null && now - s.at < 7 * DAY).length;
+  const weeks = Array.from({ length: 8 }, () => 0);
+  recs.forEach(s => { if (s.at == null) return; const w = Math.floor((now - s.at) / (7 * DAY)); if (w >= 0 && w < 8) weeks[7 - w]++; });
+  const maxW = Math.max(1, ...weeks);
+  const tiles = [
+    { v: streak, l: "연속 학습일" },
+    { v: learned, l: "학습한 단어" },
+    { v: mastered, l: "완료(마스터)" },
+    { v: dset.size, l: "총 학습일" },
+  ];
+  return (
+    <div className="vault-sec">
+      <div className="sec">성장 기록</div>
+      <div className="growth-tiles">
+        {tiles.map(t => <div key={t.l} className="growth-tile"><div className="gv">{t.v}</div><div className="gl">{t.l}</div></div>)}
+      </div>
+      <div className="growth-card">
+        <div className="growth-head"><span>주간 학습량</span><span className="gsub">최근 8주 · 이번 주 {thisWeek}개</span></div>
+        <div className="growth-bars">
+          {weeks.map((c, i) => (
+            <div key={i} className="gbar-col">
+              <div className="gbar-track"><div className={"gbar" + (i === 7 ? " cur" : "")} style={{ height: Math.round(c / maxW * 100) + "%" }} /></div>
+              <div className="gbar-lbl">{i === 7 ? "이번" : (7 - i) + "주"}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="growth-pts"><Icon name="star" size={15} /> 학습 포인트 <b>{POINTS.get()}</b>점</div>
+    </div>
+  );
+}
+
 /* ---------- 보관함 탭 ---------- */
 /* 뱃지 컬렉션 — 피크민 블룸식: 한 줄당 한 카테고리(헤더 + 가로 스와이프로 5티어 랭크).
    미획득은 실루엣, 탭하면 상세(밀어서 뒤집기). + 즐겨찾기 단어·내 단어장 바로가기(사전 탭으로 이동).
-   문장은 회화 대화방에서 저장한 FAV_SENTENCES 실동작(2026-07-15). 성장 기록은 학습 로그 인프라가
-   아직 없어 준비 중만 표시. */
+   문장은 회화 대화방에서 저장한 FAV_SENTENCES 실동작(2026-07-15). 성장 기록은 SRS 기록 실측(GrowthRecord). */
 function Vault({ onGoTab, onOpenDict }) {
   const [badgeSel, setBadgeSel] = useState(null); // {catKey, tierIdx} | null
   const [allOpen, setAllOpen] = useState(false); // 전체보기 시트
@@ -3959,10 +4019,7 @@ function Vault({ onGoTab, onOpenDict }) {
         ))}
       </div>
 
-      <div className="vault-sec">
-        <div className="sec">성장 기록</div>
-        <div className="empty-note">연속 학습일·학습량 통계가 여기 모여요. 아직 준비 중입니다.</div>
-      </div>
+      <GrowthRecord />
 
       {allOpen && <BadgeCollectionSheet progress={badgeProgress} onSelect={(catKey, tierIdx) => setBadgeSel({ catKey, tierIdx })} onClose={() => setAllOpen(false)} />}
       {badgeSel && <BadgeDetail sel={badgeSel} onClose={() => setBadgeSel(null)} />}
