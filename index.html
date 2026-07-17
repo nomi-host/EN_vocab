@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.20">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.20" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.20" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.21">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.21" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.21" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.20"></script><style>
+<script src="words.js?v=0.35.21"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.20") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.20") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.21") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.21") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.20") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.20") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.21") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.21") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -794,7 +794,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.20";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.21";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -3931,10 +3931,10 @@ function PronunClinic({ onBack }) {
   );
 }
 
-function Talk() {
+function Talk({ onOpenWord }) {
   const [view, setView] = useState(null); // null=대화방 목록 | "sos" | "writing" | "pronun" | 페르소나 id
   if (!PROXY_BASE) return <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />;
-  if (view === "sos") return <TalkSOS onBack={() => setView(null)} />;
+  if (view === "sos") return <TalkSOS onBack={() => setView(null)} onOpenWord={onOpenWord} />;
   if (view === "writing") return <Writing onExit={() => setView(null)} />;
   if (view === "pronun") return <PronunClinic onBack={() => setView(null)} />;
   if (view) {
@@ -3947,10 +3947,11 @@ function Talk() {
 /* ---------- 회화 탭 — SOS 미니 도구 (PLAN 4.12-5) ----------
    한국어로 하고 싶은 말을 입력 → Gemini 프록시가 자연스러운 영어 한 문장으로 알려줌.
    onBack이 있으면(대화방 목록에서 들어온 경우) 뒤로가기 헤더 표시, 없으면(구버전 단독 탭) 기존과 동일. */
-function TalkSOS({ onBack }) {
+function TalkSOS({ onBack, onOpenWord }) {
   const [ko, setKo] = useState("");
   const [result, setResult] = useState(null);
   const [resultKo, setResultKo] = useState(""); // 결과가 나온 시점의 한국어 원문(즐겨찾기에 같이 저장) — 이후 textarea를 수정해도 안 바뀜
+  const [vocab, setVocab] = useState([]); // 결과 문장의 핵심 어휘 [{word, ko}]
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState(null);
   const [, bump] = useState(0); // 즐겨찾기 하트 토글 리렌더용
@@ -3958,17 +3959,38 @@ function TalkSOS({ onBack }) {
   const ask = async () => {
     const text = ko.trim();
     if (!text || loading) return;
-    setLoading(true); setErr(null); setResult(null);
+    setLoading(true); setErr(null); setResult(null); setVocab([]);
     try {
       const prompt = "당신은 한국인 영어 학습자를 돕는 회화 코치입니다. 아래 한국어 문장을 자연스럽고 " +
-        "일상적인 영어 구어체 한 문장으로만 번역하세요. 설명이나 따옴표 없이 번역문 하나만 출력하세요.\n\n한국어: " + text;
-      setResult(await geminiText(prompt));
+        "일상적인 영어 구어체 한 문장으로 번역하세요." +
+        "\n그 영어 문장에 실제로 쓰인 단어 중 학습자가 새로 익히면 좋을 핵심 어휘를 최대 4개까지 뽑으세요." +
+        " 각 단어는 문장에 쓰인 굴절형이 아니라 사전 원형(소문자, 예: 'smells'→'smell', 'loved'→'love')으로 쓰고," +
+        " a/the/is/are/very 같은 아주 기초적인 단어는 제외하세요." +
+        "\n아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요." +
+        '\n{"en":"번역된 영어 문장","vocab":[{"word":"사전 원형","ko":"그 단어의 뜻(1~3단어)"}]}' +
+        "\n\n한국어: " + text;
+      const r = await geminiJSON(prompt);
+      setResult((r.en || "").trim());
+      setVocab(Array.isArray(r.vocab) ? r.vocab.filter(v => v && v.word) : []);
       setResultKo(text);
     } catch (e) {
       setErr("지금 연결이 안 돼요. 잠시 후 다시 시도해 주세요. (" + (e && e.message || "error") + ")");
     } finally {
       setLoading(false);
     }
+  };
+
+  /* 칩으로 뽑힌 핵심 어휘가 사전(SEED/EXTRA)에 아직 없으면, "내 단어장" 새 단어 등록과 같은 방식으로
+     EXTRA에 pending 상태로 만들어두고 연다 — WordSheet가 열리자마자 자동조회(Free Dictionary→Gemini)로
+     채워짐(Dict의 addWord와 동일 패턴, 2026-07-18). */
+  const openVocab = word => {
+    const key = (word || "").trim().toLowerCase();
+    if (!key || !onOpenWord) return;
+    if (!wordOf(key)) {
+      EXTRA[key] = { word: key, ipa: "", pos: [], cefr: "—", ko: "", en: "", syn: [], ant: [], forms: [], roots: [], ex: [], mine: true, lookupStatus: "pending" };
+      saveExtra();
+    }
+    onOpenWord(key);
   };
 
   if (!PROXY_BASE) return <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />;
@@ -4002,6 +4024,18 @@ function TalkSOS({ onBack }) {
             <button className="qhint-btn" style={{ marginTop: 10 }} onClick={() => speakText(result)}>
               <Icon name="volume_up" size={16} /> 들어보기
             </button>
+            {vocab.length > 0 && (
+              <div style={{ marginTop: 12 }}>
+                <div className="talk-msg-ko" style={{ padding: 0, marginBottom: 6 }}>핵심 어휘</div>
+                <div className="qsyn-chips">
+                  {vocab.map((v, i) => (
+                    <button key={i} className="qsyn-chip link" onClick={() => openVocab(v.word)}>
+                      {v.word}{v.ko ? " · " + v.ko : ""}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>
@@ -5580,7 +5614,7 @@ function App() {
             {tab === "home" && <Home key={"home-" + tabResetKey.home} onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => { unlockAudio(); startCustomStudy(pickSession(10, listenLevelShift()), "listen"); }} />}
             {tab === "dict" && <Dict key={"dict-" + tabResetKey.dict} onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} viewJump={dictViewJump} onConsumeViewJump={() => setDictViewJump(null)} />}
             {tab === "learn" && <Learn key={"learn-" + tabResetKey.learn} onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} customMode={customMode} onConsumeCustomStudy={() => setCustomStudy(null)} />}
-            {tab === "talk" && <Talk key={"talk-" + tabResetKey.talk} />}
+            {tab === "talk" && <Talk key={"talk-" + tabResetKey.talk} onOpenWord={openWord} />}
             {tab === "box" && <Vault key={"box-" + tabResetKey.box} onGoTab={setTab} onOpenDict={openDictView} />}
           </React.Fragment>
         )}
