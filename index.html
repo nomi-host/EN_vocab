@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.8">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.8" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.8" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.9">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.9" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.9" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.8"></script><style>
+<script src="words.js?v=0.35.9"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.8") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.8") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.9") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.9") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.8") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.8") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.9") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.9") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -748,7 +748,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.8";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.9";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -3717,6 +3717,7 @@ function CardSession({ items, onExit, onOpenWord }) {
   const [correct, setCorrect] = useState(0);
   const [hintLen, setHintLen] = useState(false);   // 글자수 힌트
   const [hintFirst, setHintFirst] = useState(false); // 첫 글자 힌트
+  const [hintMean, setHintMean] = useState(false);   // 뜻 열기 힌트(cloze 전용)
   const [hintUsed, setHintUsed] = useState(false);   // 이 카드에서 힌트를 썼는지 — 쓰면 이번 세션에 한 번 더 출제
   const [nudgeWord, setNudgeWord] = useState(null);  // 유의어를 입력했을 때 안내 문구에 쓸 단어
   const [retried, setRetried] = useState(false);     // 근접 오답 1회 재시도를 이미 줬는지
@@ -3729,6 +3730,13 @@ function CardSession({ items, onExit, onOpenWord }) {
   const expected = blank ? blank.answer : it && it.word.toLowerCase();
   // 이 카드(문맥) 하나에 한정된 유의어 — 사전 상세의 표제어 전체 유의어와는 다름(itemsFromWords 참고)
   const synonyms = useMemo(() => (it && it.syn) || [], [it]);
+  // 뜻 열기 힌트 문구: 품사(한글) + 단어 뜻. 예: "명사 · 의회, 협의회"
+  const meanText = useMemo(() => {
+    if (!it) return "";
+    const mw = wordOf(it.word);
+    const posKo = (mw && mw.pos) ? mw.pos.map(p => POS_KO[p] || p).filter(Boolean).join("·") : "";
+    return (posKo ? posKo + " · " : "") + (it.ko || "");
+  }, [it]);
 
   useEffect(() => () => stopSpeaking(), []); // 세션 나갈 때(언마운트) 재생 중인 음성 정지
 
@@ -3808,7 +3816,7 @@ function CardSession({ items, onExit, onOpenWord }) {
     if (hintUsed) q = queue.concat([it]); // 힌트를 쓴 단어는 이번 세션에 한 번 더 출제
     if (idx + 1 >= q.length) { onExit(true, correct, q.length); return; }
     if (q !== queue) setQueue(q);
-    setIdx(idx + 1); setVal(""); setRes(null); setHintLen(false); setHintFirst(false); setHintUsed(false); setNudgeWord(null); setRetried(false); setRetryMsg(false);
+    setIdx(idx + 1); setVal(""); setRes(null); setHintLen(false); setHintFirst(false); setHintMean(false); setHintUsed(false); setNudgeWord(null); setRetried(false); setRetryMsg(false);
     focusHidden(); // 다음 카드로 넘어가는 탭 제스처 안에서 즉시 포커스 유지 → 키보드가 안 내려감
   };
 
@@ -3816,6 +3824,9 @@ function CardSession({ items, onExit, onOpenWord }) {
   const focusHidden = () => { if (hiddenRef.current) hiddenRef.current.focus(); };
   // 새 카드로 바뀌면(입력 상태) 포커스를 유지 — 지속 입력이라 키보드가 계속 떠 있게 한다.
   useEffect(() => { if (!res) focusHidden(); }, [idx]);
+
+  // 뜻 열기 힌트: 품사+뜻을 드러냄. 다른 힌트와 마찬가지로 쓰면 이번 세션에 한 번 더 출제.
+  const toggleMean = () => { setHintMean(v => { const nv = !v; if (nv) setHintUsed(true); return nv; }); };
 
   // 첫 글자 힌트: 빈칸 앞(첫 칸)에 정답 첫 글자를 미리 채워 줌
   const toggleFirst = () => {
@@ -3946,7 +3957,7 @@ function CardSession({ items, onExit, onOpenWord }) {
               <button onClick={() => speak(it.ex.en, 0.7)} aria-label="느리게 듣기">0.7x</button>
             </span>
           ) : (
-            <span className="qsofthint">{mode === "cloze" ? it.ko : ""}</span>
+            <span className="qsofthint">{hintMean && mode === "cloze" ? meanText : ""}</span>
           )}
           <span className="tag lv">{it.cefr}</span>
         </div>
@@ -3998,6 +4009,7 @@ function CardSession({ items, onExit, onOpenWord }) {
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             <div className="qhintrow">
               <span className="qhint-lbl">힌트</span>
+              {mode === "cloze" && <button className={"qhint-btn" + (hintMean ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={toggleMean}>뜻</button>}
               <button className={"qhint-btn" + (hintLen ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={toggleLen}>글자수</button>
               <button className={"qhint-btn" + (hintFirst ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={toggleFirst}>첫 글자</button>
             </div>
