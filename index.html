@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.22">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.22" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.22" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.23">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.23" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.23" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.22"></script><style>
+<script src="words.js?v=0.35.23"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.22") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.22") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.23") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.23") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.22") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.22") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.23") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.23") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -67,7 +67,7 @@
   /* 형광펜 5단 톤 스케일(가장연한→가장진한). base(위 4개)는 하이라이터 마커·큰 강조 텍스트용,
      xlight+xdark 조합은 뱃지/태그처럼 "연한 배경 + 진한 텍스트"가 필요한 곳에 사용. */
   --hi-green-xlight:#F6FBE1;  --hi-green-light:#E7F4AB;  --hi-green-dark:#92AD17;  --hi-green-xdark:#45520B;
-  --hi-yellow-xlight:#FFF8DB; --hi-yellow-light:#FFEA9A; --hi-yellow-dark:#BF9700; --hi-yellow-xdark:#5A4700;
+  --hi-yellow-xlight:#FFF8DB; --hi-yellow-light:#FFEA9A; --hi-yellow-dark:#FFCC00; --hi-yellow-xdark:#5A4700;
   --hi-pink-xlight:#FFEEF6;   --hi-pink-light:#FFD1E4;   --hi-pink-dark:#EF0066;   --hi-pink-xdark:#710030;
   --hi-blue-xlight:#E7F5FF;   --hi-blue-light:#BCE4FF;   --hi-blue-dark:#0083DD;   --hi-blue-xdark:#003E69;
   --hi-orange-xlight:#FFF0DD; --hi-orange-light:#FFDCAF; --hi-orange-dark:#D97A00; --hi-orange-xdark:#6B3800;
@@ -323,13 +323,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .step-cta{font-size:13px;font-weight:700;color:var(--accent-deep);flex:none;}
 .step .check{color:var(--good);font-weight:800;}
 
-/* 잔디 — 섹션 타이틀만 "학습 캘린더"로(2026-07-16), 시각화(히트맵 스트립) 자체는 유지 */
+/* 잔디 — 섹션 타이틀만 "학습 캘린더"로(2026-07-16), 시각화(히트맵 스트립) 자체는 유지.
+   2026-07-18: 잉크 1색+불투명도 3단 대신, 달마다 형광펜 색이 바뀌고(피그마 디자인 반영) 옅음/보통/
+   진함은 그 색의 light/base/dark 토큰으로 표현 — 색은 grass 배열에서 인라인 style로 직접 지정(JS,
+   달마다 동적으로 정해지는 색이라 고정 클래스로 못 씀). */
+.grass-months{display:flex;gap:3px;margin-bottom:4px;}
+.grass-months span{font-size:8px;font-weight:800;letter-spacing:.02em;color:var(--muted);text-align:left;}
 .grass{display:grid;grid-template-columns:repeat(17,1fr);gap:3px;}
-.grass i{aspect-ratio:1;border-radius:0;background-color:var(--fill);}
-/* 잉크 톤 단색(스크리블 실험은 되돌림) — 가장 진한 단계도 잉크 60%까지만 */
-.grass i.g1{background-color:var(--ink);opacity:.22;}
-.grass i.g2{background-color:var(--ink);opacity:.4;}
-.grass i.g3{background-color:var(--ink);opacity:.6;}
+.grass i{aspect-ratio:1;border-radius:0;background-color:var(--fill);display:block;}
 
 /* 사전 검색 */
 .search{display:flex;align-items:center;gap:8px;background:var(--surface);border:1px solid var(--ink);border-radius:0;padding:11px 14px;box-shadow:var(--shadow);}
@@ -799,7 +800,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.22";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.23";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -2496,6 +2497,20 @@ function BadgeDetail({ sel, onClose }) {
   );
 }
 
+/* 학습 캘린더(잔디) — 달마다 형광펜 하이어라키 색을 순서대로 배정(2026-07-18, 피그마 디자인 반영).
+   기존엔 잉크 1색 + 불투명도 3단이었는데, 색은 달마다 바뀌고 그 안에서 옅음/보통/진함을 그 색의
+   light/base/dark 토큰으로 표현 — 형광펜 시스템(-light/-base/-dark)이 이미 그 3단을 갖고 있어서
+   그대로 재사용. 순서는 하이어라키 표기 순(연두→옐로우→핑크→블루→오렌지), 5개월 넘게 걸치면 반복. */
+const GRASS_HUES = ["green", "yellow", "pink", "blue", "orange"];
+const GRASS_TOKENS = {
+  green: { light: "var(--hi-green-light)", base: "var(--hi-green)", dark: "var(--hi-green-dark)" },
+  yellow: { light: "var(--hi-yellow-light)", base: "var(--hi-yellow)", dark: "var(--hi-yellow-dark)" },
+  pink: { light: "var(--hi-pink-light)", base: "var(--hi-pink)", dark: "var(--hi-pink-dark)" },
+  blue: { light: "var(--hi-blue-light)", base: "var(--hi-blue)", dark: "var(--hi-blue-dark)" },
+  orange: { light: "var(--hi-orange-light)", base: "var(--hi-orange)", dark: "var(--hi-orange-dark)" },
+};
+const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+
 function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
   const [badgeSel, setBadgeSel] = useState(null); // {catKey, tierIdx} | null
   const chr = CHARACTERS.find(c => c.k === charK) || null;
@@ -2510,26 +2525,57 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
     { n: 2, title: `듣기 ${goals.goalListen}문장`, sub: "6 / 10 진행 중", state: "active", tab: "learn", direct: true, start: onStartListen },
     { n: 3, title: "회화 1세션", sub: "오늘의 상대: Karen (공항)", state: "todo", tab: "talk" },
   ];
+  // 주(열)마다 실제 달력 월을 계산해 형광펜 색을 배정 — 오른쪽 끝(16번째 열)이 이번 주, 왼쪽으로 갈수록 과거.
+  const weekHues = useMemo(() => {
+    const today = new Date();
+    const monthOf = w => {
+      const d = new Date(today);
+      d.setDate(d.getDate() - (16 - w) * 7);
+      return d.getMonth();
+    };
+    const hues = [];
+    const seen = [];
+    for (let w = 0; w < 17; w++) {
+      const m = monthOf(w);
+      let idx = seen.indexOf(m);
+      if (idx === -1) { seen.push(m); idx = seen.length - 1; }
+      hues.push({ month: m, hue: GRASS_HUES[idx % GRASS_HUES.length] });
+    }
+    return hues;
+  }, []);
+  // 월 라벨 구간 — 연속으로 같은 달인 열들을 하나로 묶어 "MARCH" 같은 영문 라벨로 위에 표시.
+  const monthSpans = useMemo(() => {
+    const spans = [];
+    weekHues.forEach(({ month }) => {
+      const last = spans[spans.length - 1];
+      if (last && last.month === month) last.span++;
+      else spans.push({ month, span: 1 });
+    });
+    return spans;
+  }, [weekHues]);
   const grass = useMemo(() => {
     /* 데모 시드(가상 페르소나: 3개월 띄엄띄엄 학습) — 예전 수식 패턴((i*7+3)%11)은 줄무늬처럼
        규칙적으로 보여서, "학습 연속 구간 + 빈 날"이 섞인 현실적인 패턴으로 교체(2026-07-17).
-       고정 시드 PRNG라 리렌더/재방문에도 모양이 안 바뀜. 시작 4주 전은 거의 빈칸(가입 전). */
+       고정 시드 PRNG라 리렌더/재방문에도 모양이 안 바뀜. 시작 4주 전은 거의 빈칸(가입 전).
+       색은 잉크 1색 대신 그 주가 속한 달의 형광펜 색(weekHues)을 쓰고, 옅음/보통/진함은 그 색의
+       light/base/dark 톤으로 표현(2026-07-18, 피그마 디자인 반영 — 형광펜 시스템 그대로 재사용). */
     let s = 20260716; // 고정 시드
     const rnd = () => { s = (s * 1103515245 + 12345) % 2147483648; return s / 2147483648; };
     const cells = [];
     let studying = false; // 연속 학습 구간 상태 머신
     for (let i = 0; i < 17 * 5; i++) {
       const week = i % 17; // 그리드가 행 우선(17열×5행)이라 열(=주)은 i%17
-      if (week < 4) { cells.push(rnd() < 0.06 ? "g1" : ""); continue; } // 학습 시작 전(왼쪽 4주)
+      const tokens = GRASS_TOKENS[weekHues[week].hue];
+      if (week < 4) { cells.push(rnd() < 0.06 ? tokens.light : ""); continue; } // 학습 시작 전(왼쪽 4주)
       if (studying) { if (rnd() < 0.25) studying = false; } // 평균 4일 연속 후 휴식
       else if (rnd() < 0.45) studying = true; // 휴식은 평균 2일쯤
       if (!studying) { cells.push(""); continue; }
       const r = rnd();
-      cells.push(r < 0.25 ? "g3" : r < 0.6 ? "g2" : "g1"); // 강도는 중간이 가장 흔하게
+      cells.push(r < 0.25 ? tokens.dark : r < 0.6 ? tokens.base : tokens.light); // 강도는 중간이 가장 흔하게
     }
-    cells[cells.length - 1] = "g2"; // 오늘(마지막 칸)은 학습한 날로
+    cells[cells.length - 1] = GRASS_TOKENS[weekHues[16].hue].base; // 오늘(마지막 칸)은 학습한 날로
     return cells;
-  }, []);
+  }, [weekHues]);
   const badgeProgress = computeBadgeProgress();
   const badgesEarned = BADGE_CATS.reduce((s, c) => s + catEarnedCount(c.k, badgeProgress), 0);
   const pts = POINTS.get();
@@ -2618,7 +2664,10 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
 
       <div className="sec">학습 캘린더 <span className="more">최근 17주</span></div>
       <div className="card" style={{ padding: "16px" }}>
-        <div className="grass">{grass.map((c, i) => <i key={i} className={c} />)}</div>
+        <div className="grass-months">
+          {monthSpans.map((m, i) => <span key={i} style={{ flex: m.span }}>{MONTH_NAMES_EN[m.month]}</span>)}
+        </div>
+        <div className="grass">{grass.map((c, i) => <i key={i} style={c ? { backgroundColor: c } : undefined} />)}</div>
       </div>
     </div>
   );
