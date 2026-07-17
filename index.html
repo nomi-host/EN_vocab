@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.15">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.15" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.15" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.16">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.16" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.16" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.15"></script><style>
+<script src="words.js?v=0.35.16"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.15") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.15") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.16") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.16") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.15") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.15") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.16") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.16") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -787,7 +787,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.15";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.16";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -986,7 +986,7 @@ function proxyHeaders() { return { "Content-Type": "application/json", "X-App-Se
    GEMINI_DIRECT_KEY가 비어있으면 기존 프록시 경유로 동작(이전과 완전히 동일). */
 /* 키를 통짜 문자열로 넣으면 GitHub 시크릿 스캐너가 push를 차단하므로 분할 저장(런타임에 합침).
    이 키는 의도적으로 공개하는 결제 미연결 무료 키 — 위 주석 참고. */
-const GEMINI_DIRECT_KEY = ["AQ.Ab8RN6LL1Y0GROnJ", "GhkfMlJ1bCmA_-DBIG9mZ1VBDK4SNUMskg"].join("");
+const GEMINI_DIRECT_KEY = ""; // 2026-07-17: 내장 키가 AQ. 계정 버그로 401 고정 — Vercel 프록시(서울 리전 고정, 위치 문제 해결됨)로 완전 전환. 아래 두 줄은 그 시절 기록.
 function getGeminiKey() { return GEMINI_DIRECT_KEY.trim(); }
 
 /* Vercel 프록시(리전 서울 고정) — Cloudflare Worker는 실행 위치를 고정할 수 없어 Google 무료
