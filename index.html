@@ -11,13 +11,16 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.25">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.25" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.25" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.27">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.27" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.27" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.25"></script><style>
+<!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
+     unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
+<script src="img/hero/lottie.min.js?v=0.35.27"></script>
+<script src="words.js?v=0.35.27"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +30,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.25") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.25") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.27") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.27") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.25") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.25") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.27") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.27") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -244,13 +247,13 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .char-face{width:156px;height:156px;display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--muted);text-align:center;line-height:1.4;font-weight:600;}
 /* CHAR_ART_READY=false일 때 쓰는 최소 플레이스홀더(색상 스와치) */
 .char-swatch-wrap{display:flex;flex-direction:column;align-items:center;gap:10px;}
-.char-swatch{width:56px;height:56px;border-radius:0;border:2px solid var(--card-border);}
+.char-swatch{width:56px;height:56px;border-radius:0;border:0;}
 .char-swatch.hi-green{background:var(--hi-green);}
 .char-swatch.hi-pink{background:var(--hi-pink);}
 .char-swatch.hi-yellow{background:var(--hi-yellow);}
 .char-swatch.hi-blue{background:var(--hi-blue);}
 .char-swatch-lbl{font-size:12px;font-weight:700;color:var(--muted);}
-.char-swatch-sm{width:28px;height:28px;border-radius:0;border:0.5px solid var(--card-border);}
+.char-swatch-sm{width:28px;height:28px;border-radius:0;border:0;}
 /* 달리는 씬(placeholder). 실제 캐릭터는 Lottie/Rive/스프라이트로 이 슬롯 교체 */
 .hero-char.run .char-face{animation:runbob var(--bob,.5s) ease-in-out infinite alternate;}
 @keyframes runbob{from{transform:translateY(1px) rotate(-1.5deg);}to{transform:translateY(-7px) rotate(1.5deg);}}
@@ -278,6 +281,33 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .char-picker{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:2px;}
 .char-opt{font-size:12px;font-weight:600;padding:8px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink-2);box-shadow:var(--shadow);}
 .char-opt.on{background:var(--accent);color:var(--on-accent);border-color:var(--accent);}
+
+/* ===== 홈 히어로 씬 (2026-07-17 신설, 구 stage/badge-track/road/mlines 대체) =====
+   노트(줄공책) 위에서 고양이(Lottie)가 걷고, 그 위에 스티커(꾹 눌러 드래그 이동)가 떠 있음.
+   350×220 비율 고정, overflow:hidden으로 마스크(스티커가 밖으로 최대 50px 나가도 안 보임). */
+.hero-scene{position:relative;width:100%;aspect-ratio:350/220;background-color:var(--surface);
+  border:1.5px solid var(--ink);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;
+  touch-action:pan-y;}
+/* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
+.hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
+.hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
+  background-image:url("img/hero/ground.png?v=0.35.27");background-repeat:repeat-x;background-size:50% 100%;
+  animation:heroGround var(--groundDur,7s) linear infinite;}
+@keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+/* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140). */
+.hero-cat{position:absolute;left:26.17%;top:31.73%;width:48%;height:63.64%;z-index:2;pointer-events:none;}
+.hero-cat > svg, .hero-cat > div{width:100%!important;height:100%!important;display:block;}
+/* 스티커: 중심 좌표(%)에 translate(-50%,-50%). 기본은 살짝 부유 + 소프트 그림자(이미지에 베이크). */
+.hero-sticker{position:absolute;transform:translate(-50%,-50%);z-index:3;
+  user-select:none;-webkit-user-select:none;touch-action:none;cursor:grab;
+  will-change:transform;}
+.hero-sticker img, .hero-sticker > svg, .hero-sticker > div{width:100%;height:auto;display:block;pointer-events:none;}
+.hero-sticker.floaty{animation:heroFloat var(--floatDur,3s) ease-in-out infinite;}
+@keyframes heroFloat{0%,100%{transform:translate(-50%,-50%) translateY(0) rotate(0deg);}
+  50%{transform:translate(-50%,-50%) translateY(-2.5px) rotate(var(--floatRot,1.5deg));}}
+.hero-sticker.dragging{cursor:grabbing;z-index:20;animation:none;
+  filter:drop-shadow(0 6px 10px rgba(33,28,21,.28));}
+@media (prefers-reduced-motion: reduce){.hero-ground-track,.hero-sticker.floaty{animation:none!important;}}
 
 /* 뱃지 팝업 */
 .dlg-backdrop{position:fixed;inset:0;background:rgba(33,28,21,.42);display:flex;align-items:center;justify-content:center;z-index:60;padding:32px;animation:fade .15s ease;}
@@ -776,6 +806,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 설정 화면 (캐릭터 변경 등) — WordSheet와 동일한 바텀시트 패턴 재사용 */
 .charrow{display:flex;align-items:center;gap:12px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:var(--shadow);padding:12px 14px;}
 .charrow .cf{width:52px;height:52px;border-radius:0;background:var(--fill);display:flex;align-items:center;justify-content:center;flex:none;overflow:hidden;font-size:9px;color:var(--muted);text-align:center;line-height:1.2;}
+.charrow .cf img{box-sizing:border-box;border:1.5px solid var(--ink);}
 .charrow .body{flex:1;min-width:0;}
 .charrow .name{font-size:14px;font-weight:700;}
 .charrow .cta{flex:none;font-size:12px;font-weight:700;padding:9px 12px;border-radius:0;text-align:center;white-space:nowrap;}
@@ -807,7 +838,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.25";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.27";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -2185,7 +2216,9 @@ function loadLevelTest() {
 const CHAR_ART_READY = false;
 /* 캐릭터 1~4 — 원/삼각/사각/꽃 실루엣 + 형광펜 악센트로 구분(CharDoodle이 렌더) */
 const CHARACTERS = [
-  { k: "char1", label: "캐릭터 1", shape: "circle", accent: "green" },
+  // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
+  // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.27" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -2536,8 +2569,101 @@ const GRASS_TOKENS = {
 };
 const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
 
+/* ===== 홈 히어로 씬 (2026-07-17): 걷는 고양이(Lottie) + 드래그 가능한 스티커 =====
+   구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
+   씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
+   DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
+const HERO_V = "0.35.27";
+// lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
+function LottieBox({ src }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    let anim = null, cancelled = false, poll = null;
+    const mount = () => {
+      if (cancelled || !ref.current || !window.lottie) return;
+      fetch(src).then(r => r.json()).then(data => {
+        if (cancelled || !ref.current) return;
+        anim = window.lottie.loadAnimation({ container: ref.current, renderer: "svg", loop: true, autoplay: true, animationData: data });
+      }).catch(() => {});
+    };
+    if (window.lottie) mount();
+    else { poll = setInterval(() => { if (window.lottie) { clearInterval(poll); poll = null; mount(); } }, 60);
+           setTimeout(() => { if (poll) clearInterval(poll); }, 4000); }
+    return () => { cancelled = true; if (poll) clearInterval(poll); if (anim) { try { anim.destroy(); } catch (e) {} } };
+  }, [src]);
+  return <div ref={ref} />;
+}
+// 기본 스티커 세트 — center=히어로 내 중심 좌표(%), w=너비(히어로 폭 대비 %). 배열 순서=z(뒤→앞,
+// design/hero_example_2.svg 문서 순서 존중). 좌표·크기는 그 파일 350×220 실측. smile만 눈썹 모션이라 Lottie.
+const HERO_STICKERS = [
+  { id: "smile",  type: "lottie", src: "img/hero/smile.json?v=" + HERO_V, cx: 14.34, cy: 28.25, w: 20.7, floatDur: 3.4, rot: 1.4 },
+  { id: "keepup", type: "img", src: "img/hero/sticker_2.png?v=" + HERO_V, cx: 26.97, cy: 24.14, w: 19.1, floatDur: 2.9, rot: -1.6 },
+  { id: "tape",   type: "img", src: "img/hero/sticker_3.png?v=" + HERO_V, cx: 83.04, cy: 32.90, w: 32.0, floatDur: 3.6, rot: 1.0 },
+  { id: "bubble", type: "img", src: "img/hero/sticker_4.png?v=" + HERO_V, cx: 70.53, cy: 16.18, w: 30.7, floatDur: 3.1, rot: 1.2 },
+  { id: "clover", type: "img", src: "img/hero/sticker_5.png?v=" + HERO_V, cx: 7.21,  cy: 52.64, w: 14.1, floatDur: 2.6, rot: 2.2 },
+  { id: "flower", type: "img", src: "img/hero/sticker_6.png?v=" + HERO_V, cx: 85.21, cy: 9.09,  w: 12.2, floatDur: 2.4, rot: 2.6 },
+];
+// 스티커를 꾹 눌러(long-press) 드래그로 이동. 히어로 밖 최대 50px까지만(그 밖은 overflow:hidden 마스크).
+// 위치는 localStorage에 %로 저장(반응형 크기 무관 이식). 빠른 스와이프는 스크롤로 간주해 드래그 안 함.
+function StickerLayer({ heroRef }) {
+  const KEY = "en_hero_stickers_v1";
+  const [pos, setPos] = useState(() => { try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { return {}; } });
+  const [dragId, setDragId] = useState(null);
+  const drag = useRef(null);
+  const centerOf = (s) => { const p = pos[s.id]; return { cx: p ? p.cx : s.cx, cy: p ? p.cy : s.cy }; };
+  const onDown = (e, s) => {
+    const hero = heroRef.current; if (!hero) return;
+    const rect = hero.getBoundingClientRect(); const c = centerOf(s);
+    const target = e.currentTarget; const pid = e.pointerId;
+    try { target.setPointerCapture(pid); } catch (er) {}
+    drag.current = {
+      id: s.id, active: false, startX: e.clientX, startY: e.clientY, baseCx: c.cx, baseCy: c.cy,
+      rectW: rect.width, rectH: rect.height, pid,
+      timer: setTimeout(() => { if (drag.current && drag.current.id === s.id) { drag.current.active = true; setDragId(s.id); } }, 320),
+    };
+  };
+  const onMove = (e) => {
+    const d = drag.current; if (!d) return;
+    const dx = e.clientX - d.startX, dy = e.clientY - d.startY;
+    if (!d.active) { if (Math.abs(dx) > 10 || Math.abs(dy) > 10) { clearTimeout(d.timer); drag.current = null; } return; }
+    e.preventDefault();
+    let ncx = d.baseCx + (dx / d.rectW) * 100, ncy = d.baseCy + (dy / d.rectH) * 100;
+    const mx = (50 / d.rectW) * 100, my = (50 / d.rectH) * 100;
+    ncx = Math.max(-mx, Math.min(100 + mx, ncx)); ncy = Math.max(-my, Math.min(100 + my, ncy));
+    setPos(prev => ({ ...prev, [d.id]: { cx: +ncx.toFixed(2), cy: +ncy.toFixed(2) } }));
+  };
+  const onUp = () => {
+    const d = drag.current; if (!d) return; clearTimeout(d.timer);
+    if (d.active) { setDragId(null); setPos(prev => { try { localStorage.setItem(KEY, JSON.stringify(prev)); } catch (e) {} return prev; }); }
+    drag.current = null;
+  };
+  return (
+    <>
+      {HERO_STICKERS.map(s => {
+        const c = centerOf(s); const dragging = dragId === s.id;
+        return (
+          <div key={s.id} className={"hero-sticker" + (dragging ? " dragging" : " floaty")}
+            style={{ left: c.cx + "%", top: c.cy + "%", width: s.w + "%", "--floatDur": s.floatDur + "s", "--floatRot": s.rot + "deg", aspectRatio: s.type === "lottie" ? "1 / 1" : undefined }}
+            onPointerDown={(e) => onDown(e, s)} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}>
+            {s.type === "lottie" ? <LottieBox src={s.src} /> : <img src={s.src} alt="" draggable={false} />}
+          </div>
+        );
+      })}
+    </>
+  );
+}
+function HeroScene() {
+  const heroRef = useRef(null);
+  return (
+    <div className="hero-scene ruled-paper" ref={heroRef}>
+      <div className="hero-ground"><div className="hero-ground-track" /></div>
+      <div className="hero-cat"><LottieBox src={"img/hero/cat.json?v=" + HERO_V} /></div>
+      <StickerLayer heroRef={heroRef} />
+    </div>
+  );
+}
+
 function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
-  const [badgeSel, setBadgeSel] = useState(null); // {catKey, tierIdx} | null
   const chr = CHARACTERS.find(c => c.k === charK) || null;
   const STREAK = 4;                        // 데모: 실제로는 학습 로그에서(3개월 띄엄띄엄 학습 페르소나 — 최근 재개)
   const stage = streakStage(STREAK);       // 1~4
@@ -2615,44 +2741,8 @@ function Home({ onGoTab, charK, onOpenSettings, onStartCards, onStartListen }) {
   );
   return (
     <div className="content">
-      {!chr ? (
-        <div className="card ruled-paper" style={{ textAlign: "center", padding: "26px 20px" }}>
-          <div className="step-title" style={{ marginBottom: 4 }}>캐릭터를 선택해 주세요</div>
-          <div className="step-sub" style={{ marginBottom: 14 }}>처음 한 번은 무료로 고를 수 있어요</div>
-          <button className="btn" onClick={onOpenSettings}>캐릭터 고르러 가기</button>
-        </div>
-      ) : !CHAR_ART_READY ? (
-        /* 디자인 파일 받기 전 임시 스테이지 — 노트 배경만 남기고 캐릭터/뱃지트랙/road/mlines는
-           숨김(로직은 CHAR_ART_READY 상단 주석 참고, 그대로 보존). 게이미피케이션 칩은 스테이지
-           좌상단에 계속 띄움. */
-        <div className="stage ruled-paper" style={{ ...speed, justifyContent: "center" }}>
-          {gamiRow}
-          <div className="char-swatch-wrap">
-            <div className={"char-swatch hi-" + chr.accent} />
-            <div className="char-swatch-lbl">{chr.label} · 준비 중</div>
-          </div>
-        </div>
-      ) : (
-        <div className="stage ruled-paper" style={speed}>
-          {gamiRow}
-          {/* 뱃지: 캐릭터 뒤에 가로로 쭉 — 카테고리별 대표 메달(최고 획득 티어). 전체는 보관함의 뱃지 컬렉션. */}
-          <div className="badge-track">
-            {BADGE_CATS.map(c => {
-              const ti = catDisplayTier(c.k, badgeProgress);
-              return <BadgeMedal key={c.k} cat={c} tierIdx={ti} earned={badgeProgress[c.k].tier >= 0} onClick={() => setBadgeSel({ catKey: c.k, tierIdx: ti })} />;
-            })}
-          </div>
-          <div className="road" />
-          <div className="mlines"><i /><i /><i /></div>
-          <div className="hero-char run">
-            <div className="char-face">
-              <CharDoodle shape={chr.shape} accent={chr.accent} size={140} />
-            </div>
-          </div>
-        </div>
-      )}
-
-      {badgeSel && <BadgeDetail sel={badgeSel} onClose={() => setBadgeSel(null)} />}
+      {/* 홈 히어로: 항상 걷는 고양이(Lottie) + 드래그 스티커. 캐릭터 선택 여부와 무관하게 표시. */}
+      <HeroScene />
 
       {(() => {
         // 레벨 테스트 실제 기록(loadLevelTest, 없으면 자체 데모 폴백)에서 그대로 읽음 — 실제로
@@ -5840,8 +5930,8 @@ function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
                 return (
                   <div key={c.k} className="charrow">
                     <div className="cf">
-                      {CHAR_ART_READY
-                        ? <CharDoodle shape={c.shape} accent={c.accent} size={44} />
+                      {c.thumb
+                        ? <img src={c.thumb} alt="" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
                         : <div className={"char-swatch char-swatch-sm hi-" + c.accent} />}
                     </div>
                     <div className="body">
