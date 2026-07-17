@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.13">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.13" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.13" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.14">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.14" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.14" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.13"></script><style>
+<script src="words.js?v=0.35.14"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.13") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.13") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.14") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.14") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.13") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.13") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.14") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.14") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -604,6 +604,29 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .finish .big{font-size:40px;font-weight:800;color:var(--accent-deep);font-variant-numeric:tabular-nums;}
 .finish .msg{font-size:15px;font-weight:700;}
 
+/* ---------- 발음 클리닉 ---------- */
+.sub-head{display:flex;align-items:center;gap:8px;}
+.sub-head .back{font-size:24px;color:var(--muted);padding:0 6px 0 0;line-height:1;}
+.pron-prog{font-size:13px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums;}
+.pron-card{background:var(--surface);border:0.5px solid var(--card-border);box-shadow:var(--shadow);padding:18px 16px;display:flex;flex-direction:column;gap:8px;align-items:flex-start;}
+.pron-en{font-size:20px;font-weight:800;line-height:1.4;color:var(--ink);}
+.pron-ko{font-size:14px;color:var(--muted);}
+.pron-play{margin-top:4px;display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:var(--on-accent);font-weight:700;font-size:13px;padding:9px 14px;border-radius:999px;}
+.pron-actions{margin-top:20px;display:flex;flex-direction:column;gap:10px;align-items:center;}
+.pron-mic{width:100%;display:flex;flex-direction:column;align-items:center;gap:8px;background:var(--accent);color:var(--on-accent);font-weight:800;font-size:15px;padding:22px;border-radius:0;}
+.pron-mic.on{background:var(--danger);}
+.pron-mic:disabled{opacity:.6;}
+.pron-result{margin-top:18px;display:flex;flex-direction:column;gap:14px;}
+.pron-score{display:flex;flex-direction:column;align-items:center;gap:2px;}
+.pron-score .pv{font-size:56px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;}
+.pron-score .pl{font-size:12px;font-weight:700;color:var(--muted);}
+.pron-score.good .pv{color:var(--good);} .pron-score.mid .pv{color:var(--accent-deep);} .pron-score.low .pv{color:var(--danger);}
+.pron-words{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;}
+.pron-w{font-size:15px;font-weight:700;padding:5px 10px;border-radius:999px;}
+.pron-w.ok{background:var(--accent-soft);color:var(--accent-deep);}
+.pron-w.no{background:var(--fill);color:var(--muted);text-decoration:underline;text-decoration-style:wavy;text-decoration-color:var(--danger);}
+.pron-tip{font-size:13px;color:var(--ink-2);text-align:center;line-height:1.5;}
+
 /* ---------- 회화 탭 — 대화방 목록 + 채팅 ---------- */
 .step.soon{opacity:.5;}
 .talk-room{display:flex;align-items:center;gap:13px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:var(--shadow);padding:14px 16px;margin-bottom:8px;}
@@ -748,7 +771,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.13";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.14";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -3405,7 +3428,7 @@ function Writing({ onExit }) {
   );
 }
 
-function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting }) {
+function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting, onOpenPronun }) {
   return (
     <div className="content">
       <div className="sec">회화</div>
@@ -3425,12 +3448,13 @@ function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting }) {
         </div>
         <span className="arrow">›</span>
       </div>
-      <div className="step soon">
-        <div className="step-ico round"><Icon name="volume_up" size={20} /></div>
+      <div className="step" onClick={onOpenPronun}>
+        <div className="step-ico round black"><Icon name="volume_up" size={20} /></div>
         <div className="step-body">
           <div className="step-title">발음 클리닉</div>
-          <div className="step-sub">준비 중</div>
+          <div className="step-sub">문장을 듣고 따라 말하면 발음을 채점해드려요</div>
         </div>
+        <span className="arrow">›</span>
       </div>
 
       <div className="sec" style={{ marginTop: 18 }}>대화방</div>
@@ -3688,16 +3712,139 @@ function TalkRoom({ persona, onExit }) {
   );
 }
 
+/* ---------- 발음 클리닉 (회화 탭) ----------
+   짧은 문장을 듣고 따라 말하면 STT(MediaRecorder+Gemini 전사)로 받아쓴 뒤 목표 문장과
+   단어 단위로 대조해 발음 점수·단어별 정오를 보여준다. 마이크가 없거나 STT 미지원이면
+   "데모 채점"으로 같은 결과 UI를 보여줘 프레임이 항상 완성돼 보이게 한다(2026-07-17). */
+const PRONUN_DRILLS = [
+  { en: "I would like a cup of coffee.", ko: "커피 한 잔 주세요.", focus: "would like 연음" },
+  { en: "She thought about the third theory.", ko: "그녀는 세 번째 이론에 대해 생각했다.", focus: "th 발음(θ)" },
+  { en: "The weather is really lovely today.", ko: "오늘 날씨가 정말 좋네요.", focus: "r / l 구분" },
+  { en: "Could you turn it off, please?", ko: "그것 좀 꺼 주시겠어요?", focus: "turn it off 연음" },
+  { en: "I have already finished my work.", ko: "나는 이미 일을 끝냈어요.", focus: "강세·리듬" },
+  { en: "We are going to the airport tomorrow.", ko: "우리는 내일 공항에 가요.", focus: "going to(gonna) 축약" },
+];
+function pronScore(target, said) {
+  const norm = s => (s || "").toLowerCase().replace(/[^a-z' ]/g, " ").split(/\s+/).filter(Boolean);
+  const heard = new Set(norm(said).map(w => w.replace(/'.*$/, "")));
+  const words = norm(target).map(w => ({ w, ok: heard.has(w.replace(/'.*$/, "")) }));
+  const score = words.length ? Math.round(words.filter(x => x.ok).length / words.length * 100) : 0;
+  return { score, words };
+}
+function PronunClinic({ onBack }) {
+  const [idx, setIdx] = useState(0);
+  const [result, setResult] = useState(null); // {score, words, said} | null
+  const [recording, setRecording] = useState(false);
+  const [scoring, setScoring] = useState(false);
+  const [err, setErr] = useState(null);
+  const recRef = useRef(null);
+  const chunksRef = useRef([]);
+  const drill = PRONUN_DRILLS[idx];
+
+  useEffect(() => () => stopSpeaking(), []);
+
+  const play = () => { unlockAudio(); speakText(drill.en); };
+
+  const next = () => { setResult(null); setErr(null); setIdx(i => (i + 1) % PRONUN_DRILLS.length); };
+  const retry = () => { setResult(null); setErr(null); };
+
+  // STT 미지원/오류 시: 목표 문장 기준 데모 채점(마지막 1~2개 단어를 '부정확'으로) — 프레임 완성용
+  const demoScore = () => {
+    const norm = drill.en.toLowerCase().replace(/[^a-z' ]/g, " ").split(/\s+/).filter(Boolean);
+    const weak = new Set(norm.slice(-1).concat(norm.length > 4 ? [norm[1]] : []));
+    const words = norm.map(w => ({ w, ok: !weak.has(w) }));
+    setResult({ score: Math.round(words.filter(x => x.ok).length / words.length * 100), words, demo: true });
+  };
+
+  const startRec = async () => {
+    if (recording || scoring) return;
+    setErr(null); setResult(null);
+    if (!STT_SUPPORTED) { demoScore(); return; }
+    try {
+      unlockAudio();
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mimeType = pickRecorderMimeType();
+      const rec = mimeType ? new MediaRecorder(stream, { mimeType }) : new MediaRecorder(stream);
+      chunksRef.current = [];
+      rec.ondataavailable = e => { if (e.data && e.data.size > 0) chunksRef.current.push(e.data); };
+      rec.onstop = async () => {
+        stream.getTracks().forEach(t => t.stop());
+        setRecording(false);
+        const blob = new Blob(chunksRef.current, { type: rec.mimeType || mimeType || "audio/webm" });
+        if (blob.size < 500) { setErr("녹음이 너무 짧아요. 다시 시도해 주세요."); return; }
+        setScoring(true);
+        try {
+          const said = await transcribeAudio(blob, rec.mimeType || mimeType || "audio/webm");
+          if (said) setResult({ ...pronScore(drill.en, said), said });
+          else setErr("음성을 알아듣지 못했어요. 다시 시도해 주세요.");
+        } catch (e) { setErr("채점에 실패했어요. 잠시 후 다시 시도해 주세요."); }
+        finally { setScoring(false); }
+      };
+      recRef.current = rec; rec.start(); setRecording(true);
+    } catch (e) { setErr("마이크를 사용할 수 없어요. 권한을 확인해 주세요."); }
+  };
+  const stopRec = () => { if (recRef.current && recording) recRef.current.stop(); };
+
+  const scoreClass = s => s >= 85 ? "good" : s >= 60 ? "mid" : "low";
+
+  return (
+    <div className="content">
+      <div className="sub-head">
+        <button className="back" onClick={onBack} aria-label="뒤로">‹</button>
+        <div className="sec" style={{ padding: 0 }}>발음 클리닉</div>
+      </div>
+      <div className="pron-prog">{idx + 1} / {PRONUN_DRILLS.length}</div>
+
+      <div className="pron-card">
+        <span className="tag">{drill.focus}</span>
+        <div className="pron-en">{drill.en}</div>
+        <div className="pron-ko">{drill.ko}</div>
+        <button className="pron-play" onClick={play}><Icon name="volume_up" size={18} /> 들어보기</button>
+      </div>
+
+      {!result ? (
+        <div className="pron-actions">
+          <button className={"pron-mic" + (recording ? " on" : "")} onClick={recording ? stopRec : startRec} disabled={scoring}>
+            <Icon name={recording ? "stop" : "mic"} size={22} />
+            <span>{scoring ? "채점 중…" : recording ? "녹음 중 — 누르면 멈춤" : STT_SUPPORTED ? "눌러서 따라 말하기" : "데모 채점 보기"}</span>
+          </button>
+          {err && <div className="empty-note" style={{ color: "var(--danger)" }}>{err}</div>}
+        </div>
+      ) : (
+        <div className="pron-result">
+          <div className={"pron-score " + scoreClass(result.score)}>
+            <div className="pv">{result.score}</div><div className="pl">발음 점수</div>
+          </div>
+          <div className="pron-words">
+            {result.words.map((x, i) => <span key={i} className={"pron-w" + (x.ok ? " ok" : " no")}>{x.w}</span>)}
+          </div>
+          <div className="pron-tip">
+            {result.score >= 85 ? "아주 좋아요! 자연스러운 발음이에요."
+              : result.score >= 60 ? "좋아요. 회색으로 표시된 단어를 또박또박 다시 발음해 보세요."
+              : "천천히 또박또박 다시 해볼까요? 회색 단어에 집중해 보세요."}
+            {result.demo && " (데모 채점 — 실제 기기에서는 녹음으로 채점돼요.)"}
+          </div>
+          <div className="qactions">
+            <button className="ghost" onClick={retry}>다시 하기</button>
+            <button className="primary" onClick={next}>다음 문장</button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function Talk() {
-  const [view, setView] = useState(null); // null=대화방 목록 | "sos" | "writing" | 페르소나 id
+  const [view, setView] = useState(null); // null=대화방 목록 | "sos" | "writing" | "pronun" | 페르소나 id
   if (!PROXY_BASE) return <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />;
   if (view === "sos") return <TalkSOS onBack={() => setView(null)} />;
   if (view === "writing") return <Writing onExit={() => setView(null)} />;
+  if (view === "pronun") return <PronunClinic onBack={() => setView(null)} />;
   if (view) {
     const persona = PERSONAS.find(p => p.id === view);
     return <TalkRoom persona={persona} onExit={() => setView(null)} />;
   }
-  return <TalkRooms onOpenRoom={setView} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} />;
+  return <TalkRooms onOpenRoom={setView} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} onOpenPronun={() => setView("pronun")} />;
 }
 
 /* ---------- 회화 탭 — SOS 미니 도구 (PLAN 4.12-5) ----------
