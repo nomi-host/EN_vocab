@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.17">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.17" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.17" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.18">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.18" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.18" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.17"></script><style>
+<script src="words.js?v=0.35.18"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.17") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.17") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.18") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.18") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.17") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.17") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.18") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.18") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -683,8 +683,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .talk-msg.user .talk-bubble{background:var(--ink);color:var(--on-accent);}
 /* 말풍선 꼬리 — 봇은 왼쪽 아래(아바타 쪽), 유저는 오른쪽 아래. 피드백(.talk-fb) 카드에는
    꼬리가 없어서 "대화"와 "어드바이스"가 형태로 구분된다(2026-07-17). */
-.talk-msg.bot .talk-bubble::after{content:"";position:absolute;left:-12px;bottom:8px;width:0;height:0;
-  border-top:10px solid transparent;border-bottom:10px solid transparent;border-right:14px solid var(--fill);}
+.talk-msg.bot .talk-bubble::after{content:"";position:absolute;left:-7px;bottom:8px;width:0;height:0;
+  border-top:10px solid transparent;border-bottom:10px solid transparent;border-right:9px solid var(--fill);}
 .talk-msg.user .talk-bubble::after{content:"";position:absolute;right:-12px;bottom:8px;width:0;height:0;
   border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:14px solid var(--ink);}
 .talk-play{color:inherit;opacity:.7;flex:none;}
@@ -787,7 +787,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.17";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.18";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -3293,8 +3293,15 @@ async function geminiJSON(prompt) {
   const cleaned = text.replace(/^```json\s*|^```\s*|```\s*$/g, "").trim();
   return JSON.parse(cleaned);
 }
+function containsKorean(text) { return /[가-힣]/.test(text || ""); }
 function talkNextLine(persona, history) {
-  const histText = history.slice(-8).map(m => (m.role === "bot" ? "상대: " : "나: ") + m.en).join("\n");
+  /* 유저 턴은 원문(m.en, 한국어가 섞였을 수 있음)이 아니라 talkFeedback이 만든 corrected(자연스러운
+     영어)를 우선 사용 — 안 그러면 다음 대사를 만들 때 모델이 한국어 원문을 그대로 대화 맥락에 넣게 돼
+     흐름이 끊길 수 있음(2026-07-17, 한국어 섞어 말하기 지원 추가하며 반영). */
+  const histText = history.slice(-8).map(m => {
+    const text = (m.role === "user" && m.feedback && m.feedback.corrected) ? m.feedback.corrected : m.en;
+    return (m.role === "bot" ? "상대: " : "나: ") + text;
+  }).join("\n");
   const prompt = "역할극을 진행합니다. " + persona.promptDesc +
     "\n지금까지 대화:\n" + (histText || "(대화 시작 전 — 상대가 먼저 자연스럽게 말을 건넵니다)") +
     "\n위 상황에 이어서 당신(상대 역할)이 할 다음 대사를 한두 문장으로 자연스럽게 영어로 말하세요." +
@@ -3302,11 +3309,19 @@ function talkNextLine(persona, history) {
     '\n{"en":"영어 대사","ko":"그 대사의 자연스러운 한국어 번역"}';
   return geminiJSON(prompt);
 }
-function talkFeedback(persona, userEn) {
-  const prompt = "아래는 한국인 영어 학습자가 \"" + persona.name + "\"과의 영어 회화 연습에서 입력한 문장입니다.\n문장: \"" + userEn + "\"" +
-    "\n문법이나 자연스러움에 문제가 있으면 교정하고, 문제가 없으면 그대로 인정하세요." +
+/* 사용자 입력은 순수 영어·순수 한국어·한영 혼용 어느 쪽이든 올 수 있음(2026-07-17, 한국어로
+   말해도 되도록 지원). 세 경우 모두 한 번의 호출로 처리 — 순수 영어는 기존처럼 문법 교정,
+   한국어가 섞여 있으면 corrected에 자연스러운 영어 번역을 대신 채워 "이렇게 말해보세요" 용도로 씀. */
+function talkFeedback(persona, userText) {
+  const prompt = "아래는 한국인 영어 학습자가 \"" + persona.name + "\"과의 영어 회화 연습 중 입력한 문장입니다. " +
+    "순수 영어일 수도, 순수 한국어일 수도, 한국어와 영어가 섞여 있을 수도 있습니다.\n문장: \"" + userText + "\"" +
+    "\n\n판단 기준:" +
+    "\n1. 순수 영어이고 문법·자연스러움에 문제가 없으면 ok:true, corrected는 원문 그대로." +
+    "\n2. 순수 영어인데 문법이나 자연스러움이 어색하면 ok:false, corrected에 자연스럽게 교정한 영어 문장." +
+    "\n3. 한국어 단어가 하나라도 섞여 있으면(전부 한국어 포함) ok:false, corrected에 그 문장 전체 의미를 살려 자연스러운 영어 한 문장으로 번역(이미 영어로 말한 부분은 최대한 그대로 살리고 한국어 부분만 영어로 옮길 것)." +
+    "\nnote_ko는 항상 아주 짧은 한국어 코멘트 한 줄(2번은 무엇이 어색했는지, 3번은 간단히 '이렇게 말해보세요' 정도)." +
     "\n아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요." +
-    '\n{"ok":true 또는 false,"note_ko":"짧은 한국어 코멘트 한 줄","corrected":"교정된 영어 문장(문제 없으면 원문 그대로)"}';
+    '\n{"ok":true 또는 false,"note_ko":"짧은 한국어 코멘트 한 줄","corrected":"교정 또는 번역된 영어 문장"}';
   return geminiJSON(prompt);
 }
 
@@ -3688,7 +3703,7 @@ function TalkRoom({ persona, onExit }) {
               </button>
               {m.role === "user" && m.feedback && (
                 <div className={"talk-fb" + (m.feedback.ok ? " ok" : "")}>
-                  <div className="t">{m.feedback.ok ? "좋아요!" : "이렇게 말하면 더 자연스러워요"}</div>
+                  <div className="t">{m.feedback.ok ? "좋아요!" : containsKorean(m.en) ? "영어로 이렇게 말해보세요" : "이렇게 말하면 더 자연스러워요"}</div>
                   {!m.feedback.ok && m.feedback.corrected && <div>{m.feedback.corrected}</div>}
                   {m.feedback.note_ko && <div>{m.feedback.note_ko}</div>}
                   {awaitingAck && i === messages.length - 1 && <button onClick={ackFeedback}>확인</button>}
@@ -3711,7 +3726,7 @@ function TalkRoom({ persona, onExit }) {
             {transcribing ? "인식하는 중…" : listening ? "듣고 있어요… 탭해서 멈추기" : "탭해서 말하기"}
           </button>
         ) : (
-          <input ref={inputRef} value={input} onChange={e => setInput(e.target.value)} placeholder="영어로 답해보세요"
+          <input ref={inputRef} value={input} onChange={e => setInput(e.target.value)} placeholder="영어로 답해보세요 (막히면 한국어도 괜찮아요)"
             disabled={awaitingAck || loadingBot || loadingFb}
             onKeyDown={e => { if (e.key === "Enter") send(); }}
             autoFocus autoCapitalize="none" autoComplete="off" autoCorrect="off" />
@@ -3869,8 +3884,10 @@ function Talk() {
 function TalkSOS({ onBack }) {
   const [ko, setKo] = useState("");
   const [result, setResult] = useState(null);
+  const [resultKo, setResultKo] = useState(""); // 결과가 나온 시점의 한국어 원문(즐겨찾기에 같이 저장) — 이후 textarea를 수정해도 안 바뀜
   const [loading, setLoading] = useState(false);
   const [err, setErr] = useState(null);
+  const [, bump] = useState(0); // 즐겨찾기 하트 토글 리렌더용
 
   const ask = async () => {
     const text = ko.trim();
@@ -3880,6 +3897,7 @@ function TalkSOS({ onBack }) {
       const prompt = "당신은 한국인 영어 학습자를 돕는 회화 코치입니다. 아래 한국어 문장을 자연스럽고 " +
         "일상적인 영어 구어체 한 문장으로만 번역하세요. 설명이나 따옴표 없이 번역문 하나만 출력하세요.\n\n한국어: " + text;
       setResult(await geminiText(prompt));
+      setResultKo(text);
     } catch (e) {
       setErr("지금 연결이 안 돼요. 잠시 후 다시 시도해 주세요. (" + (e && e.message || "error") + ")");
     } finally {
@@ -3908,7 +3926,13 @@ function TalkSOS({ onBack }) {
         {err && <div className="empty-note" style={{ color: "var(--danger)" }}>{err}</div>}
         {result && (
           <div className="qdictate-result">
-            <div style={{ fontWeight: 800, fontSize: 17 }}>{result}</div>
+            <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 8 }}>
+              <div style={{ fontWeight: 800, fontSize: 17 }}>{result}</div>
+              <button className={"talk-msg-fav" + (isFavSentence(result) ? " on" : "")} style={{ flex: "none" }}
+                      onClick={() => { toggleFavSentence(result, resultKo, "SOS"); bump(v => v + 1); }} aria-label="문장 즐겨찾기">
+                <Icon name="favorite" size={16} />
+              </button>
+            </div>
             <button className="qhint-btn" style={{ marginTop: 10 }} onClick={() => speakText(result)}>
               <Icon name="volume_up" size={16} /> 들어보기
             </button>
