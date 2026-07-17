@@ -69,15 +69,19 @@ module.exports = async (req, res) => {
   if (!process.env.GEMINI_API_KEY) return res.status(500).json({ error: "server not configured" });
 
   const prompt = (req.body && req.body.prompt || "").toString();
-  if (!prompt || prompt.length > 2000) return res.status(400).json({ error: "invalid prompt" });
+  if (!prompt || prompt.length > 4000) return res.status(400).json({ error: "invalid prompt" });
 
   try {
     /* maxOutputTokens는 3.x 세대 Flash의 "thinking" 토큰과 합산 예산 — 300 정도로 짧게
        잡으면 thinking이 대부분을 먹어 실제 답변이 문장 중간에서 끊김(2026-07-17 실측,
-       SOS 번역이 "It was so frustrating because it hasn"처럼 잘려서 나옴). 여유 있게 1024. */
+       SOS 번역이 "It was so frustrating because it hasn"처럼 잘려서 나옴). 1024로 올렸다가,
+       작문 첨삭(문장별 원문+교정문+코멘트가 여러 개 붙는 응답)에서도 같은 증상으로 또 잘려서
+       2048로 재상향(2026-07-18, "첨삭을 불러오지 못했어요" 원인 확인 — geminiJSON이 닫는 괄호
+       없는 잘린 JSON은 정규식 폴백으로도 못 살림). 짧은 SOS/대화 응답엔 여유일 뿐 비용 영향 없음
+       (실제 쓴 토큰만 과금, cap은 상한선일 뿐). */
     const text = await callGeminiWithFallback(
       [{ parts: [{ text: prompt }] }],
-      { temperature: 0.4, maxOutputTokens: 1024 });
+      { temperature: 0.4, maxOutputTokens: 2048 });
     return res.status(200).json({ text });
   } catch (e) {
     return res.status(502).json({ error: (e && e.message) || "gemini upstream error" });
