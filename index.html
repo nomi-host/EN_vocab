@@ -11,16 +11,16 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.28">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.28" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.28" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.29">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.29" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.29" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.28"></script>
-<script src="words.js?v=0.35.28"></script><style>
+<script src="img/hero/lottie.min.js?v=0.35.29"></script>
+<script src="words.js?v=0.35.29"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -30,15 +30,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.28") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.28") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.29") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.29") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.28") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.28") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.29") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.29") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -290,7 +290,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 배경색·외곽선은 피그마(node 3:3185) 실측대로 — 노트 배경은 hero_example_2.svg의 note_BG
    fill(#faf3e5)과 동일 톤, 외곽선은 --ink 굵은 테두리가 아니라 카드류와 같은 옅은 --card-border
    1px(+그림자)로(2026-07-18, 예전엔 진한 잉크 테두리로 잘못 넣었었음). */
-.hero-scene{position:relative;width:100%;aspect-ratio:350/220;background-color:#FAF3E5;
+/* z-index:0을 명시해 새 스태킹 컨텍스트를 만듦 — 안 그러면 내부의 .hero-cat{z-index:100}이
+   이 박스 밖(예: document.body에 포탈되는 모달의 backdrop, z-index:50)까지 뚫고 올라와 보이는
+   버그가 있었음(2026-07-18, "모달 눌렀을 때 고양이가 그 위로 올라옴" 리포트로 발견 — position:relative
+   만으로는 스태킹 컨텍스트가 안 생겨서 자식 z-index가 이 박스 범위를 벗어나 전역과 경쟁했음). */
+.hero-scene{position:relative;z-index:0;width:100%;aspect-ratio:350/220;background-color:#FAF3E5;
   border:1px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;
   touch-action:pan-y;}
 /* 편집하기 알약 — 우측하단, 검정 필+크림 텍스트(피그마 실측: fill #211C15, text #FFFBF1). */
@@ -300,7 +304,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.28");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.29");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140).
@@ -316,14 +320,26 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
   user-select:none;-webkit-user-select:none;touch-action:none;cursor:grab;
   will-change:transform;}
 .hero-sticker img, .hero-sticker > svg, .hero-sticker > div{width:100%;height:auto;display:block;pointer-events:none;}
-/* 롱프레스로 선택된 스티커의 삭제 X 배지 — 우상단 살짝 밖으로.
-   주의: 위 ".hero-sticker > div{pointer-events:none}" 규칙이 이 배지도 자식 div라서 같이
-   먹여버려 클릭이 그대로 통과되던 버그가 있었음(2026-07-18) — 동일 특이도(클래스 2개)로 뒤에서
-   덮어써서 auto로 되돌림. */
-.hero-sticker > .hero-sticker-del{pointer-events:auto;}
-.hero-sticker-del{position:absolute;top:-9px;right:-9px;width:22px;height:22px;border-radius:50%;
-  background:var(--danger);color:#fff;display:flex;align-items:center;justify-content:center;
+/* 뱃지 스티커 — .medal은 원래 64px 고정 픽셀이라, 스티커 폭(%)에 맞춰 채우도록 이 컨테이너
+   안에서만 100%/78%로 재정의(.medal-face 비율은 원래 50/64 그대로 유지). */
+.hero-badge-sticker{width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;}
+.hero-badge-sticker .medal{width:100%;height:100%;}
+.hero-badge-sticker .medal-face{width:78%;height:78%;}
+/* 롱프레스로 선택된 스티커의 삭제 X / 리사이즈 배지 — 각각 모서리에 살짝 밖으로.
+   주의: 위 ".hero-sticker > div{pointer-events:none}" 규칙(specificity 0,1,1)이 이 배지들도
+   자식 div라서 같이 먹여버려 클릭이 그대로 통과되고, 크기 규칙(width:100%;height:auto)까지
+   먹여서 22px짜리 원이 스티커 폭 전체로 늘어난 타원이 돼버리는 버그가 있었음(2026-07-18, 스크린샷
+   으로 실제 확인). 반드시 같거나 더 높은 특이도(".hero-sticker > .클래스", 0,2,0)로 재정의해서
+   pointer-events와 width/height를 둘 다 되돌릴 것 — 하나만 고치면 다른 하나가 남아서 또 깨짐. */
+.hero-sticker > .hero-sticker-del, .hero-sticker > .hero-sticker-resize{
+  pointer-events:auto;width:22px;height:22px;}
+.hero-sticker-del{position:absolute;top:-9px;right:-9px;border-radius:50%;
+  background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;
   box-shadow:0 2px 6px rgba(33,28,21,.3);z-index:2;touch-action:none;cursor:pointer;}
+.hero-sticker-resize{position:absolute;bottom:-9px;right:-9px;border-radius:50%;
+  background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 2px 6px rgba(33,28,21,.3);z-index:2;touch-action:none;cursor:nwse-resize;}
+.hero-sticker-resize .icon{transform:rotate(45deg);}
 .hero-sticker.selected{outline:2px dashed rgba(33,28,21,.35);outline-offset:4px;}
 
 /* ===== '내 노트 꾸미기' 모달 (2026-07-18 신설) — 편집하기 진입, 메뉴 3버튼 + 서브화면 =====
@@ -338,25 +354,39 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .deco-mini-hero{width:100%;aspect-ratio:350/220;border-radius:0;overflow:hidden;position:relative;
   border:1px solid var(--card-border);box-shadow:var(--shadow);pointer-events:none;background-color:#FAF3E5;}
 .deco-mini-hero .hero-cat{pointer-events:none;}
-/* 스티커 꾸미기: 보유(위, 실제 스티커·확대) / 구매가능(아래, 더미 원형) */
+/* 스티커/뱃지 꾸미기 공용 카드(2026-07-18 재정리 — 보유 스티커·구매가능·획득뱃지 전부 같은
+   .deco-owned-cell 카드 레이아웃으로 통일). 배치됨(placed) 표시는 초록 대신 검정 실선(--ink)으로
+   — 초록은 이 앱에서 "좋음/정답" 의미로 이미 쓰여서 여기선 그냥 중립적으로 검정을 씀. */
 .deco-owned-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
 .deco-owned-cell{display:flex;flex-direction:column;align-items:center;gap:5px;background:var(--surface);
   border:0.5px solid var(--card-border);box-shadow:var(--shadow);padding:10px 6px;cursor:pointer;}
 .deco-owned-cell img, .deco-owned-cell .lot{width:100%;aspect-ratio:1/1;object-fit:contain;}
+.deco-owned-cell .medal{margin:6px 0;}
 .deco-owned-cell .lbl{font-size:10px;color:var(--muted);font-weight:600;}
-.deco-owned-cell.placed{outline:1.5px solid var(--good);outline-offset:-1.5px;}
-.deco-shop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px 8px;}
-.deco-shop-cell{display:flex;flex-direction:column;align-items:center;gap:6px;}
-.deco-shop-dot{width:100%;aspect-ratio:1/1;border-radius:50%;box-shadow:var(--shadow);}
+.deco-owned-cell.placed{outline:1.5px solid var(--ink);outline-offset:-1.5px;}
+/* 구매가능 스티커도 같은 카드 안에 — 원은 카드를 꽉 채우지 않고 절반 크기로(2026-07-18, 예전엔
+   카드 없이 원이 화면을 가득 채워 다른 카드류와 안 어울렸음). */
+.deco-shop-dot{width:50%;aspect-ratio:1/1;border-radius:50%;box-shadow:var(--shadow);}
 .deco-shop-price{font-size:11px;font-weight:700;color:var(--ink-2);background:var(--fill);
   border-radius:999px;padding:3px 9px;}
 .deco-lightbox{position:fixed;inset:0;z-index:80;background:rgba(33,28,21,.55);display:flex;
   align-items:center;justify-content:center;padding:40px;}
 .deco-lightbox img, .deco-lightbox .lot{width:min(70vw,320px);height:min(70vw,320px);object-fit:contain;
   filter:drop-shadow(0 12px 30px rgba(0,0,0,.35));}
-.deco-badge-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 8px;}
-.deco-badge-cell{display:flex;flex-direction:column;align-items:center;gap:6px;}
-.deco-badge-cell .cat-t{font-size:11px;font-weight:700;color:var(--ink-2);text-align:center;}
+/* 뱃지 꾸미기: 1행 4개, 스티커 카드와 같은 레이아웃(.deco-owned-cell 재사용) */
+.deco-badge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+/* 뱃지 확대 라이트박스 — 보관함 BadgeDetail의 .bd-coin 3D flip과 같은 원리(다른 이름공간으로 새로
+   선언 — 사이즈가 여기 전용이라 기존 .bd-coin과 섞으면 안 됨). 스와이프하면 뒤집혀 이름이 나옴. */
+.deco-badge-coin-wrap{perspective:900px;width:min(60vw,220px);height:min(60vw,220px);touch-action:pan-y;}
+.deco-badge-coin{position:relative;width:100%;height:100%;transform-style:preserve-3d;
+  transition:transform .5s cubic-bezier(.2,.8,.2,1);}
+.deco-badge-coin.flip{transform:rotateY(180deg);}
+.deco-badge-coin-front, .deco-badge-coin-back{position:absolute;inset:0;backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;display:flex;align-items:center;justify-content:center;border-radius:50%;}
+.deco-badge-coin-front .medal{width:100%;height:100%;}
+.deco-badge-coin-front .medal-face{width:78%;height:78%;}
+.deco-badge-coin-back{transform:rotateY(180deg);background:var(--ink);color:var(--on-accent);
+  box-shadow:0 6px 18px rgba(33,28,21,.28);font-size:15px;font-weight:800;text-align:center;padding:0 16px;}
 .hero-sticker.floaty{animation:heroFloat var(--floatDur,3s) ease-in-out infinite;}
 @keyframes heroFloat{0%,100%{transform:translate(-50%,-50%) translateY(0) rotate(0deg);}
   50%{transform:translate(-50%,-50%) translateY(-2.5px) rotate(var(--floatRot,1.5deg));}}
@@ -895,7 +925,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.28";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.29";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -931,6 +961,7 @@ const ICONS = {
   person: "M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z",
   edit: "M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z",
   lock: "M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm3 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z",
+  resize: "M3 21v-6h2v2.59l4.29-4.3 1.41 1.42L6.41 19H9v2H3zM14.29 9.29 18.59 5H16V3h6v6h-2V6.41l-4.3 4.29z",
 };
 function Icon({ name, size = 24 }) {
   return (
@@ -2277,7 +2308,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.28" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.29" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -2632,7 +2663,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.28";
+const HERO_V = "0.35.29";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -2665,6 +2696,8 @@ const HERO_STICKERS = [
 const HERO_POS_KEY = "en_hero_stickers_v1";
 const HERO_ORDER_KEY = "en_hero_sticker_order_v1";
 const HERO_REMOVED_KEY = "en_hero_sticker_removed_v1";
+const HERO_BADGE_KEY = "en_hero_badge_stickers_v1"; // 노트에 "추가하기"로 붙인 뱃지 카테고리 키 목록
+const STICKER_SCALE_MIN = 0.55, STICKER_SCALE_MAX = 2.2;
 function loadJSON(key, fallback) { try { const v = JSON.parse(localStorage.getItem(key)); return v == null ? fallback : v; } catch (e) { return fallback; } }
 function saveJSON(key, v) { try { localStorage.setItem(key, JSON.stringify(v)); } catch (e) {} }
 // 삭제된(치운) 스티커를 되돌려놓는 헬퍼 — "스티커 꾸미기" 화면에서 보유 스티커를 다시 노트에 놓을 때도 씀.
@@ -2675,27 +2708,63 @@ function removeHeroSticker(id) {
   const cur = loadJSON(HERO_REMOVED_KEY, []);
   if (!cur.includes(id)) saveJSON(HERO_REMOVED_KEY, [...cur, id]);
 }
-// 스티커를 꾹 눌러(long-press) 드래그로 이동, 같은 길게누르기로 삭제 X도 노출. 히어로 밖 최대 50px까지만
-// (그 밖은 overflow:hidden 마스크). 위치·순서·삭제 상태는 localStorage에 저장(반응형 크기 무관 이식).
-// z-index는 order 배열(뒤→앞)에서의 인덱스로 매김 — 집으면 즉시 맨 앞으로 보내서, 스티커를 다른
-// 스티커 위에 올려놔도 다음에 다시 잡을 수 있다(2026-07-18, "한 번만 움직여짐" 버그의 원인이었음:
-// 전부 z-index 고정이라 나중에 그려지는 스티커한테 깔리면 그 자리를 눌러도 엉뚱한 게 반응했음).
+// 획득 뱃지를 스티커로 노트에 추가/제거 — "획득 뱃지로 스티커 꾸미기" 화면에서 사용.
+function addBadgeSticker(catKey) {
+  const cur = loadJSON(HERO_BADGE_KEY, []);
+  if (!cur.includes(catKey)) saveJSON(HERO_BADGE_KEY, [...cur, catKey]);
+}
+function removeBadgeSticker(catKey) {
+  saveJSON(HERO_BADGE_KEY, loadJSON(HERO_BADGE_KEY, []).filter(x => x !== catKey));
+}
+// 스티커를 꾹 눌러(long-press) 드래그로 이동, 같은 길게누르기로 삭제 X·리사이즈 핸들도 노출. 히어로
+// 밖 최대 50px까지만(그 밖은 overflow:hidden 마스크). 위치·크기·순서·삭제 상태는 localStorage에
+// 저장(반응형 크기 무관 이식). z-index는 order 배열(뒤→앞)에서의 인덱스로 매김 — 집으면 즉시 맨
+// 앞으로 보내서, 스티커를 다른 스티커 위에 올려놔도 다음에 다시 잡을 수 있다(2026-07-18,
+// "한 번만 움직여짐" 버그의 원인이었음: 전부 z-index 고정이라 나중에 그려지는 스티커한테 깔리면
+// 그 자리를 눌러도 엉뚱한 게 반응했음).
 function StickerLayer({ heroRef, refreshKey, deselectTick }) {
   const [pos, setPos] = useState(() => loadJSON(HERO_POS_KEY, {}));
-  const [order, setOrder] = useState(() => {
-    const saved = loadJSON(HERO_ORDER_KEY, null);
-    const ids = HERO_STICKERS.map(s => s.id);
-    if (!saved) return ids;
-    // 새로 추가된 스티커(저장된 순서에 없는 것)는 맨 뒤에 자동 편입
-    return [...saved.filter(id => ids.includes(id)), ...ids.filter(id => !saved.includes(id))];
-  });
   const [removed, setRemoved] = useState(() => loadJSON(HERO_REMOVED_KEY, []));
+  const [badgeIds, setBadgeIds] = useState(() => loadJSON(HERO_BADGE_KEY, []));
+  const allStickers = useMemo(() => {
+    const base = HERO_STICKERS.filter(s => !removed.includes(s.id));
+    const progress = badgeIds.length ? computeBadgeProgress() : null;
+    const badges = badgeIds.map((catKey, i) => {
+      const cat = BADGE_CATS.find(c => c.k === catKey);
+      if (!cat) return null;
+      const ti = catDisplayTier(catKey, progress);
+      return {
+        id: "badge:" + catKey, type: "badge", cat, tierIdx: Math.max(0, ti), earned: progress[catKey].tier >= 0,
+        cx: 50 + (i % 3) * 8 - 8, cy: 50 + Math.floor(i / 3) * 10 - 5, w: 15, floatDur: 3 + (i % 3) * 0.3, rot: (i % 2 ? 1 : -1) * 1.8,
+      };
+    }).filter(Boolean);
+    return [...base, ...badges];
+  }, [removed, badgeIds]);
+  const [order, setOrder] = useState(() => loadJSON(HERO_ORDER_KEY, []));
+  useEffect(() => {
+    // 새로 등장한 스티커(저장된 순서에 없는 것)는 맨 뒤에 자동 편입, 사라진 건 순서에서 제외
+    const ids = allStickers.map(s => s.id);
+    setOrder(prev => {
+      const kept = prev.filter(id => ids.includes(id));
+      const next = [...kept, ...ids.filter(id => !kept.includes(id))];
+      if (next.length === prev.length && next.every((v, i) => v === prev[i])) return prev;
+      saveJSON(HERO_ORDER_KEY, next);
+      return next;
+    });
+  }, [allStickers]);
   const [dragId, setDragId] = useState(null);
   const [selectedId, setSelectedId] = useState(null);
   const drag = useRef(null);
-  useEffect(() => { setRemoved(loadJSON(HERO_REMOVED_KEY, [])); }, [refreshKey]); // 노트꾸미기에서 복원 시 홈 복귀하면 반영
-  useEffect(() => { setSelectedId(null); }, [deselectTick]); // 배경 탭하면 선택(삭제X) 해제
-  const centerOf = (s) => { const p = pos[s.id]; return { cx: p ? p.cx : s.cx, cy: p ? p.cy : s.cy }; };
+  const resize = useRef(null);
+  useEffect(() => { // 노트꾸미기에서 치우기/추가하기 시 홈 복귀하면 반영
+    setRemoved(loadJSON(HERO_REMOVED_KEY, []));
+    setBadgeIds(loadJSON(HERO_BADGE_KEY, []));
+  }, [refreshKey]);
+  useEffect(() => { setSelectedId(null); }, [deselectTick]); // 배경 탭하면 선택(삭제X·리사이즈) 해제
+  const centerOf = (s) => {
+    const p = pos[s.id];
+    return { cx: p ? p.cx : s.cx, cy: p ? p.cy : s.cy, scale: p && p.scale ? p.scale : 1 };
+  };
   const bringToFront = (id) => {
     setOrder(prev => { const next = [...prev.filter(x => x !== id), id]; saveJSON(HERO_ORDER_KEY, next); return next; });
   };
@@ -2720,31 +2789,64 @@ function StickerLayer({ heroRef, refreshKey, deselectTick }) {
     let ncx = d.baseCx + (dx / d.rectW) * 100, ncy = d.baseCy + (dy / d.rectH) * 100;
     const mx = (50 / d.rectW) * 100, my = (50 / d.rectH) * 100;
     ncx = Math.max(-mx, Math.min(100 + mx, ncx)); ncy = Math.max(-my, Math.min(100 + my, ncy));
-    setPos(prev => ({ ...prev, [d.id]: { cx: +ncx.toFixed(2), cy: +ncy.toFixed(2) } }));
+    setPos(prev => ({ ...prev, [d.id]: { ...prev[d.id], cx: +ncx.toFixed(2), cy: +ncy.toFixed(2) } }));
   };
   const onUp = () => {
     const d = drag.current; if (!d) return; clearTimeout(d.timer);
     if (d.active) { setDragId(null); setPos(prev => { saveJSON(HERO_POS_KEY, prev); return prev; }); }
     drag.current = null;
   };
-  const onDelete = (e, id) => {
+  const onDelete = (e, s) => {
     e.stopPropagation(); e.preventDefault();
-    removeHeroSticker(id); setRemoved(loadJSON(HERO_REMOVED_KEY, [])); setSelectedId(null);
+    if (s.type === "badge") { removeBadgeSticker(s.cat.k); setBadgeIds(loadJSON(HERO_BADGE_KEY, [])); }
+    else { removeHeroSticker(s.id); setRemoved(loadJSON(HERO_REMOVED_KEY, [])); }
+    setSelectedId(null);
+  };
+  // 리사이즈 핸들 — 스티커 중심에서 포인터까지의 거리 비율로 스케일 계산(대각선 드래그).
+  const onResizeDown = (e, s) => {
+    const hero = heroRef.current; if (!hero) return;
+    e.stopPropagation(); e.preventDefault();
+    const rect = hero.getBoundingClientRect(); const c = centerOf(s);
+    const centerXpx = rect.left + (c.cx / 100) * rect.width, centerYpx = rect.top + (c.cy / 100) * rect.height;
+    const baseDist = Math.max(10, Math.hypot(e.clientX - centerXpx, e.clientY - centerYpx));
+    try { e.currentTarget.setPointerCapture(e.pointerId); } catch (er) {}
+    resize.current = { id: s.id, centerXpx, centerYpx, baseDist, baseScale: c.scale };
+  };
+  const onResizeMove = (e) => {
+    const r = resize.current; if (!r) return;
+    e.preventDefault();
+    const dist = Math.max(10, Math.hypot(e.clientX - r.centerXpx, e.clientY - r.centerYpx));
+    let scale = r.baseScale * (dist / r.baseDist);
+    scale = Math.max(STICKER_SCALE_MIN, Math.min(STICKER_SCALE_MAX, scale));
+    setPos(prev => ({ ...prev, [r.id]: { ...prev[r.id], scale: +scale.toFixed(3) } }));
+  };
+  const onResizeUp = () => {
+    if (!resize.current) return;
+    resize.current = null;
+    setPos(prev => { saveJSON(HERO_POS_KEY, prev); return prev; });
   };
   return (
     <>
-      {HERO_STICKERS.filter(s => !removed.includes(s.id)).map(s => {
+      {allStickers.map(s => {
         const c = centerOf(s); const dragging = dragId === s.id; const selected = selectedId === s.id;
         const z = 3 + order.indexOf(s.id);
+        const w = s.w * c.scale;
         return (
           <div key={s.id} className={"hero-sticker" + (dragging ? " dragging" : " floaty") + (selected ? " selected" : "")}
-            style={{ left: c.cx + "%", top: c.cy + "%", width: s.w + "%", zIndex: z, "--floatDur": s.floatDur + "s", "--floatRot": s.rot + "deg", aspectRatio: s.type === "lottie" ? "1 / 1" : undefined }}
+            style={{ left: c.cx + "%", top: c.cy + "%", width: w + "%", zIndex: z, "--floatDur": s.floatDur + "s", "--floatRot": s.rot + "deg", aspectRatio: s.type !== "img" ? "1 / 1" : undefined }}
             onPointerDown={(e) => onDown(e, s)} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}>
-            {s.type === "lottie" ? <LottieBox src={s.src} /> : <img src={s.src} alt="" draggable={false} />}
+            {s.type === "lottie" ? <LottieBox src={s.src} />
+              : s.type === "badge" ? <div className="hero-badge-sticker"><BadgeMedal cat={s.cat} tierIdx={s.tierIdx} earned={s.earned} /></div>
+              : <img src={s.src} alt="" draggable={false} />}
             {selected && (
-              <div className="hero-sticker-del" onPointerDown={(e) => onDelete(e, s.id)}>
-                <Icon name="close" size={14} />
-              </div>
+              <>
+                <div className="hero-sticker-del" onPointerDown={(e) => onDelete(e, s)}>
+                  <Icon name="close" size={14} />
+                </div>
+                <div className="hero-sticker-resize" onPointerDown={(e) => onResizeDown(e, s)} onPointerMove={onResizeMove} onPointerUp={onResizeUp} onPointerCancel={onResizeUp}>
+                  <Icon name="resize" size={12} />
+                </div>
+              </>
             )}
           </div>
         );
@@ -2831,7 +2933,7 @@ function DecorateStickersView({ onStickersChanged }) {
   return (
     <>
       <div>
-        <div className="wd-sec-t">보유 스티커 · 탭하면 확대, 길게 눌러 노트에 놓거나 치워요</div>
+        <div className="wd-sec-t">보유 스티커 · 탭하면 확대, 아래 버튼으로 노트에 추가/제거해요</div>
         <div className="deco-owned-grid">
           {HERO_STICKERS.map(s => {
             const placed = !removed.includes(s.id);
@@ -2840,7 +2942,7 @@ function DecorateStickersView({ onStickersChanged }) {
                 onClick={() => setZoom(s)}>
                 {s.type === "lottie" ? <div className="lot"><LottieBox src={s.src} /></div> : <img src={s.src} alt="" />}
                 <span className="lbl" onClick={(e) => { e.stopPropagation(); togglePlace(s.id); }}>
-                  {placed ? "놓음 · 치우기" : "치움 · 놓기"}
+                  {placed ? "제거하기" : "추가하기"}
                 </span>
               </div>
             );
@@ -2849,11 +2951,11 @@ function DecorateStickersView({ onStickersChanged }) {
       </div>
       <div>
         <div className="wd-sec-t">구매 가능 스티커 (준비 중)</div>
-        <div className="deco-shop-grid">
+        <div className="deco-owned-grid">
           {shopItems.map((it, i) => (
-            <div key={i} className="deco-shop-cell">
+            <div key={i} className="deco-owned-cell deco-shop-cell">
               <div className="deco-shop-dot" style={{ background: "var(--hi-" + it.hue + ")" }} />
-              <span className="deco-shop-price">{it.price}P</span>
+              <span className="lbl deco-shop-price">{it.price}P</span>
             </div>
           ))}
         </div>
@@ -2866,23 +2968,60 @@ function DecorateStickersView({ onStickersChanged }) {
     </>
   );
 }
-// 획득 뱃지를 스티커처럼 미리보기 — 실제로 노트에 붙이는 기능은 향후 설계(PLAN 5.2.6), 지금은 보관함과
-// 같은 BadgeMedal로 진열만.
-function DecorateBadgesView() {
+// 획득 뱃지를 스티커로 노트에 추가/제거. 확대(라이트박스)에서 스와이프하면 동전처럼 뒤집혀 이름이
+// 뒷면에 나옴(보관함 BadgeDetail의 .bd-coin 3D flip과 같은 원리 재사용).
+function DecorateBadgesView({ onStickersChanged }) {
   const progress = computeBadgeProgress();
+  const [added, setAdded] = useState(() => loadJSON(HERO_BADGE_KEY, []));
+  const [zoom, setZoom] = useState(null); // cat being previewed
+  const [flipped, setFlipped] = useState(false);
+  const toggleAdd = (k) => {
+    if (added.includes(k)) removeBadgeSticker(k); else addBadgeSticker(k);
+    setAdded(loadJSON(HERO_BADGE_KEY, []));
+    onStickersChanged && onStickersChanged();
+  };
+  const swipeStart = useRef(null);
+  const onZoomDown = (e) => { swipeStart.current = e.clientX; };
+  const onZoomUp = (e) => {
+    if (swipeStart.current == null) return;
+    if (Math.abs(e.clientX - swipeStart.current) > 30) setFlipped(f => !f);
+    swipeStart.current = null;
+  };
   return (
-    <div className="deco-badge-grid">
-      {BADGE_CATS.map(c => {
-        const ti = catDisplayTier(c.k, progress);
-        const earned = progress[c.k].tier >= 0;
-        return (
-          <div key={c.k} className="deco-badge-cell">
-            <BadgeMedal cat={c} tierIdx={Math.max(0, ti)} earned={earned} sm />
-            <div className="cat-t">{c.title}</div>
+    <>
+      <div className="wd-sec-t">탭하면 확대(스와이프하면 뒤집혀 이름이 나와요) · 아래 버튼으로 노트에 추가/제거해요</div>
+      <div className="deco-badge-grid">
+        {BADGE_CATS.map(c => {
+          const ti = catDisplayTier(c.k, progress);
+          const earned = progress[c.k].tier >= 0;
+          const placed = added.includes(c.k);
+          return (
+            <div key={c.k} className={"deco-owned-cell" + (placed ? " placed" : "")}
+              onClick={() => { setZoom(c); setFlipped(false); }}>
+              <BadgeMedal cat={c} tierIdx={Math.max(0, ti)} earned={earned} />
+              <span className="lbl" onClick={(e) => { e.stopPropagation(); toggleAdd(c.k); }}>
+                {placed ? "제거하기" : "추가하기"}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+      {zoom && (
+        <div className="deco-lightbox" onClick={() => setZoom(null)}>
+          <div className="deco-badge-coin-wrap" onClick={e => e.stopPropagation()}
+            onPointerDown={onZoomDown} onPointerUp={onZoomUp}>
+            <div className={"deco-badge-coin" + (flipped ? " flip" : "")}>
+              <div className="deco-badge-coin-front">
+                <BadgeMedal cat={zoom} tierIdx={Math.max(0, catDisplayTier(zoom.k, progress))} earned={progress[zoom.k].tier >= 0} lg />
+              </div>
+              <div className="deco-badge-coin-back">
+                <span>{zoom.title}</span>
+              </div>
+            </div>
           </div>
-        );
-      })}
-    </div>
+        </div>
+      )}
+    </>
   );
 }
 function DecorateNoteModal({ charK, onChangeChar, onClose, onStickersChanged }) {
@@ -2917,7 +3056,7 @@ function DecorateNoteModal({ charK, onChangeChar, onClose, onStickersChanged }) 
           )}
           {view === "character" && <DecorateCharacterView charK={charK} onChangeChar={onChangeChar} />}
           {view === "stickers" && <DecorateStickersView onStickersChanged={onStickersChanged} />}
-          {view === "badges" && <DecorateBadgesView />}
+          {view === "badges" && <DecorateBadgesView onStickersChanged={onStickersChanged} />}
         </div>
       </div>
     </div>,
