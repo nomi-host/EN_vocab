@@ -2,6 +2,11 @@
   "github": {
     "silent": true
   },
+  "git": {
+    "deploymentEnabled": {
+      "claude/repo-setup-any-environment-vu7e2h": false
+    }
+  },
   "regions": ["icn1"],
   "headers": [
     {
