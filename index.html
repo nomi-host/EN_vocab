@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.10">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.10" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.10" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.11">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.11" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.11" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.10"></script><style>
+<script src="words.js?v=0.35.11"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.10") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.10") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.11") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.11") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.10") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.10") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.11") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.11") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -748,7 +748,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.10";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.11";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1305,33 +1305,136 @@ function allItems() {
   return itemsFromWords(allWords());
 }
 
-/* 영어 예문에서 타깃 단어를 빈칸으로. 굴절형(saved/delivers)도 어간 매칭. 실패 시 null.
-   구동사·숙어(give up, carve out 등)는 첫 단어만 어간 매칭하고 나머지 단어(불변화사)는
-   그대로 이어지는지 확인 — "She carved out a career"에서 "carved out" 전체를 빈칸으로. */
+/* 굴절형 매칭용 불규칙 동사/명사 표(token→base 역인덱스) + 소유격/재귀 자리. 2026-07-17
+   — 예전 어간 접두 휴리스틱만으로는 apply→applied(y→i), be→was, leaf→leaves, back up→backed me up
+   같은 항목을 놓쳐 spell로 빠졌음. 규칙 굴절(y→i·자음중복·e탈락·복수) + 불규칙표 + 분리형 구동사
+   간격 매칭 + 하이픈 합성어 조각 매칭으로 전부 예문 빈칸(cloze)이 되게 한다. */
+const IRREG = {
+  be:["am","is","are","was","were","been","being"], have:["has","had","having"], do:["does","did","done","doing"],
+  go:["goes","went","gone","going"], become:["becomes","became","become","becoming"], begin:["begins","began","begun","beginning"],
+  bend:["bends","bent","bending"], break:["breaks","broke","broken","breaking"], bring:["brings","brought","bringing"],
+  build:["builds","built","building"], buy:["buys","bought","buying"], catch:["catches","caught","catching"],
+  choose:["chooses","chose","chosen","choosing"], come:["comes","came","come","coming"], cost:["costs","cost","costing"],
+  cut:["cuts","cut","cutting"], deal:["deals","dealt","dealing"], dig:["digs","dug","digging"], draw:["draws","drew","drawn","drawing"],
+  drink:["drinks","drank","drunk","drinking"], drive:["drives","drove","driven","driving"], eat:["eats","ate","eaten","eating"],
+  fall:["falls","fell","fallen","falling"], feed:["feeds","fed","feeding"], feel:["feels","felt","feeling"], fight:["fights","fought","fighting"],
+  find:["finds","found","finding"], flee:["flees","fled","fleeing"], fly:["flies","flew","flown","flying"],
+  forbid:["forbids","forbade","forbidden","forbidding"], forget:["forgets","forgot","forgotten","forgetting"],
+  forgive:["forgives","forgave","forgiven","forgiving"], freeze:["freezes","froze","frozen","freezing"],
+  get:["gets","got","gotten","getting"], give:["gives","gave","given","giving"], grow:["grows","grew","grown","growing"],
+  hang:["hangs","hung","hanging"], hear:["hears","heard","hearing"], hide:["hides","hid","hidden","hiding"], hit:["hits","hit","hitting"],
+  hold:["holds","held","holding"], hurt:["hurts","hurt","hurting"], keep:["keeps","kept","keeping"], know:["knows","knew","known","knowing"],
+  lay:["lays","laid","laying"], lead:["leads","led","leading"], leave:["leaves","left","leaving"], lend:["lends","lent","lending"],
+  let:["lets","let","letting"], lie:["lies","lay","lain","lying"], light:["lights","lit","lighting"], lose:["loses","lost","losing"],
+  make:["makes","made","making"], mean:["means","meant","meaning"], meet:["meets","met","meeting"], pay:["pays","paid","paying"],
+  put:["puts","put","putting"], quit:["quits","quit","quitting"], read:["reads","read","reading"], ride:["rides","rode","ridden","riding"],
+  ring:["rings","rang","rung","ringing"], rise:["rises","rose","risen","rising"], run:["runs","ran","running"], say:["says","said","saying"],
+  see:["sees","saw","seen","seeing"], seek:["seeks","sought","seeking"], sell:["sells","sold","selling"], send:["sends","sent","sending"],
+  set:["sets","set","setting"], shake:["shakes","shook","shaken","shaking"], shine:["shines","shone","shining"], shoot:["shoots","shot","shooting"],
+  show:["shows","showed","shown","showing"], shrink:["shrinks","shrank","shrunk","shrinking"], shut:["shuts","shut","shutting"],
+  sing:["sings","sang","sung","singing"], sink:["sinks","sank","sunk","sinking"], sit:["sits","sat","sitting"], sleep:["sleeps","slept","sleeping"],
+  slide:["slides","slid","sliding"], speak:["speaks","spoke","spoken","speaking"], spend:["spends","spent","spending"], split:["splits","split","splitting"],
+  spread:["spreads","spread","spreading"], spring:["springs","sprang","sprung","springing"], stand:["stands","stood","standing"],
+  steal:["steals","stole","stolen","stealing"], stick:["sticks","stuck","sticking"], strike:["strikes","struck","striking"],
+  swear:["swears","swore","sworn","swearing"], sweep:["sweeps","swept","sweeping"], swim:["swims","swam","swum","swimming"], swing:["swings","swung","swinging"],
+  take:["takes","took","taken","taking"], teach:["teaches","taught","teaching"], tear:["tears","tore","torn","tearing"], tell:["tells","told","telling"],
+  think:["thinks","thought","thinking"], throw:["throws","threw","thrown","throwing"], understand:["understands","understood","understanding"],
+  wake:["wakes","woke","woken","waking"], wear:["wears","wore","worn","wearing"], win:["wins","won","winning"], wind:["winds","wound","winding"],
+  withdraw:["withdraws","withdrew","withdrawn","withdrawing"], write:["writes","wrote","written","writing"], arise:["arises","arose","arisen","arising"],
+  awake:["awakes","awoke","awoken","awaking"], bear:["bears","bore","born","borne","bearing"], beat:["beats","beat","beaten","beating"],
+  bite:["bites","bit","bitten","biting"], bleed:["bleeds","bled","bleeding"], blow:["blows","blew","blown","blowing"], breed:["breeds","bred","breeding"],
+  burst:["bursts","burst","bursting"], cast:["casts","cast","casting"], creep:["creeps","crept","creeping"], dive:["dives","dove","dived","diving"],
+  grind:["grinds","ground","grinding"], kneel:["kneels","knelt","kneeling"], mistake:["mistakes","mistook","mistaken","mistaking"],
+  overcome:["overcomes","overcame","overcome","overcoming"], spill:["spills","spilt","spilled","spilling"], spin:["spins","spun","spinning"],
+  spit:["spits","spat","spitting"], tread:["treads","trod","trodden","treading"], weep:["weeps","wept","weeping"], bandy:["bandies","bandied","bandying"],
+  mislead:["misleads","misled","misleading"], outgrow:["outgrows","outgrew","outgrown","outgrowing"], outshine:["outshines","outshone","outshining"],
+  overtake:["overtakes","overtook","overtaken","overtaking"], rebuild:["rebuilds","rebuilt","rebuilding"], repay:["repays","repaid","repaying"],
+  retell:["retells","retold","retelling"], undergo:["undergoes","underwent","undergone","undergoing"], undertake:["undertakes","undertook","undertaken","undertaking"],
+  withhold:["withholds","withheld","withholding"], foresee:["foresees","foresaw","foreseen","foreseeing"], speed:["speeds","sped","speeding"], stride:["strides","strode","stridden","striding"],
+  leaf:["leaves"], tooth:["teeth"], foot:["feet"], man:["men"], woman:["women"], child:["children"], mouse:["mice"], person:["people","persons"],
+  life:["lives"], knife:["knives"], wife:["wives"], shelf:["shelves"], half:["halves"], loaf:["loaves"], goose:["geese"], wolf:["wolves"], thief:["thieves"],
+  calf:["calves"], scarf:["scarves"], self:["selves"], datum:["data"], phenomenon:["phenomena"], criterion:["criteria"],
+};
+const IRREG_REV = {};
+for (const _b in IRREG) for (const _f of IRREG[_b]) { (IRREG_REV[_f] = IRREG_REV[_f] || []).push(_b); }
+const POSS = new Set(["my","your","his","her","its","our","their","ones","oneself","myself","yourself","himself","herself","itself","ourselves","themselves"]);
+// token을 규칙 역굴절해 나올 수 있는 원형 후보들
+function lemmasOf(t) {
+  const s = new Set([t]); const add = x => { if (x && x.length >= 2) s.add(x); };
+  if (t.endsWith("ies")) { add(t.slice(0, -3) + "y"); add(t.slice(0, -2)); }
+  if (t.endsWith("ied")) add(t.slice(0, -3) + "y");
+  if (t.endsWith("ier")) add(t.slice(0, -3) + "y");
+  if (t.endsWith("iest")) add(t.slice(0, -4) + "y");
+  if (t.endsWith("es")) { add(t.slice(0, -2)); add(t.slice(0, -1)); }
+  if (t.endsWith("s") && !t.endsWith("ss")) add(t.slice(0, -1));
+  if (t.endsWith("ed")) { add(t.slice(0, -2)); add(t.slice(0, -1)); const b = t.slice(0, -2); if (b.length >= 2 && b[b.length - 1] === b[b.length - 2]) add(b.slice(0, -1)); }
+  if (t.endsWith("ing")) { add(t.slice(0, -3)); add(t.slice(0, -3) + "e"); const b = t.slice(0, -3); if (b.length >= 2 && b[b.length - 1] === b[b.length - 2]) add(b.slice(0, -1)); }
+  if (t.endsWith("er")) { add(t.slice(0, -2)); add(t.slice(0, -1)); const b = t.slice(0, -2); if (b.length >= 2 && b[b.length - 1] === b[b.length - 2]) add(b.slice(0, -1)); }
+  if (t.endsWith("est")) { add(t.slice(0, -3)); add(t.slice(0, -2)); const b = t.slice(0, -3); if (b.length >= 2 && b[b.length - 1] === b[b.length - 2]) add(b.slice(0, -1)); }
+  (IRREG_REV[t] || []).forEach(add);
+  return s;
+}
+// token이 base(원형)의 굴절형인가 — 규칙/불규칙/파생접두 어간까지 포괄
+function formsMatch(token, base) {
+  if (!token || !base) return false;
+  if ((base === "ones" || base === "oneself" || base === "one's") && POSS.has(token)) return true;
+  if (token === base) return true;
+  if (lemmasOf(token).has(base)) return true;
+  if ((IRREG[base] || []).includes(token)) return true;
+  const b = base, cand = new Set([b + "s", b + "es", b + "ed", b + "ing", b + "er", b + "est", b + "d", b + "r", b + "st"]);
+  if (/[^aeiou]y$/.test(b)) { const st = b.slice(0, -1); [st + "ies", st + "ied", st + "ier", st + "iest"].forEach(x => cand.add(x)); }
+  if (b.endsWith("e")) { const st = b.slice(0, -1); [st + "ing", st + "ed", st + "es"].forEach(x => cand.add(x)); }
+  const last = b[b.length - 1], p = b[b.length - 2];
+  if (b.length >= 3 && !"aeiou".includes(last) && "aeiou".includes(p)) { [b + last + "ed", b + last + "ing", b + last + "er", b + last + "est"].forEach(x => cand.add(x)); }
+  if (cand.has(token)) return true;
+  const stem = base.replace(/e$/, ""); // 예전 어간 접두 휴리스틱 유지(파생 create→creation 등도 포함, 기존 매칭 보존)
+  return stem.length >= 3 && token.startsWith(stem);
+}
+
+/* 영어 예문에서 타깃 단어를 빈칸으로. 굴절형(saved/delivers/applied/arose/leaves)까지 매칭. 실패 시 null.
+   구동사(give up, back up 등)는 첫 단어를 굴절 매칭하고 나머지는 연속 우선, 안 되면 목적어가 껴 있는
+   분리형("backed me up")도 최대 2단어 간격까지 허용해 그 구간 전체를 빈칸으로. 하이픈 합성어
+   (well-known 등)는 그 조각만 빈칸. */
 function makeBlank(en, word) {
   const parts = en.split(/(\s+)/); // 짝수 인덱스=단어, 홀수=공백(원문 보존)
   const clean = t => t.replace(/[^A-Za-z']/g, "").toLowerCase();
-  const stemOf = w => w.replace(/e$/, "").toLowerCase();
-  const targets = word.toLowerCase().split(/\s+/);
-  const stem = stemOf(targets[0]);
-  const matchHead = t => t && (t === targets[0] || (stem.length >= 3 && t.startsWith(stem)));
-
-  for (let i = 0; i < parts.length; i += 2) {
-    if (!matchHead(clean(parts[i]))) continue;
+  const targets = word.toLowerCase().split(/\s+/).map(w => w.replace(/[^A-Za-z']/g, ""));
+  const wordIdx = []; for (let i = 0; i < parts.length; i += 2) wordIdx.push(i);
+  for (let wi = 0; wi < wordIdx.length; wi++) {
+    const i = wordIdx[wi];
+    if (!formsMatch(clean(parts[i]), targets[0])) continue;
     if (targets.length === 1) {
       return { before: parts.slice(0, i).join(""), answer: clean(parts[i]), after: parts.slice(i + 1).join("") };
     }
-    // 다단어: 뒤따르는 단어들이 순서대로 일치하는지(불변화사는 굴절이 없어 완전 일치)
-    const endIdx = i + (targets.length - 1) * 2;
-    if (endIdx >= parts.length) continue;
-    let ok = true;
+    // 다단어: 연속 매칭 우선
+    let ok = true, endIdx = i;
+    for (let k = 1; k < targets.length; k++) { const pi = i + k * 2; if (pi >= parts.length || !formsMatch(clean(parts[pi]), targets[k])) { ok = false; break; } endIdx = pi; }
+    if (ok) { const ans = []; for (let k = 0; k < targets.length; k++) ans.push(clean(parts[i + k * 2])); return { before: parts.slice(0, i).join(""), answer: ans.join(" "), after: parts.slice(endIdx + 1).join("") }; }
+    // 분리형 구동사: head 뒤에서 남은 target을 순서대로(사이 최대 2단어) 탐색, 구간 전체를 빈칸으로
+    let pos = wi, positions = [i], good = true;
     for (let k = 1; k < targets.length; k++) {
-      if (clean(parts[i + k * 2]) !== targets[k]) { ok = false; break; }
+      let found = -1;
+      for (let j = pos + 1; j < wordIdx.length && j <= pos + 3; j++) { if (formsMatch(clean(parts[wordIdx[j]]), targets[k])) { found = j; break; } }
+      if (found < 0) { good = false; break; }
+      positions.push(wordIdx[found]); pos = found;
     }
-    if (ok) {
-      const answer = [];
-      for (let k = 0; k < targets.length; k++) answer.push(clean(parts[i + k * 2]));
-      return { before: parts.slice(0, i).join(""), answer: answer.join(" "), after: parts.slice(endIdx + 1).join("") };
+    if (good) {
+      const start = positions[0], end = positions[positions.length - 1], spanWords = [];
+      for (let p = start; p <= end; p += 2) spanWords.push(clean(parts[p]));
+      return { before: parts.slice(0, start).join(""), answer: spanWords.join(" "), after: parts.slice(end + 1).join("") };
+    }
+  }
+  // 폴백: 하이픈 합성어(well-known, three-course 등) 안에 타깃이 한 조각으로 들어있으면 그 조각만 빈칸
+  if (targets.length === 1) {
+    for (let wi = 0; wi < wordIdx.length; wi++) {
+      const i = wordIdx[wi], tok = parts[i];
+      if (tok.indexOf("-") < 0) continue;
+      const m = tok.match(/^([^A-Za-z]*)(.*?)([^A-Za-z]*)$/), lead = m[1], core = m[2], trail = m[3], segs = core.split("-");
+      for (let si = 0; si < segs.length; si++) {
+        if (!formsMatch(clean(segs[si]), targets[0])) continue;
+        const pre = segs.slice(0, si).join("-"), suf = segs.slice(si + 1).join("-");
+        return { before: parts.slice(0, i).join("") + lead + (pre ? pre + "-" : ""), answer: clean(segs[si]), after: (suf ? "-" + suf : "") + trail + parts.slice(i + 1).join("") };
+      }
     }
   }
   return null;
