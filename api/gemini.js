@@ -72,9 +72,12 @@ module.exports = async (req, res) => {
   if (!prompt || prompt.length > 2000) return res.status(400).json({ error: "invalid prompt" });
 
   try {
+    /* maxOutputTokens는 3.x 세대 Flash의 "thinking" 토큰과 합산 예산 — 300 정도로 짧게
+       잡으면 thinking이 대부분을 먹어 실제 답변이 문장 중간에서 끊김(2026-07-17 실측,
+       SOS 번역이 "It was so frustrating because it hasn"처럼 잘려서 나옴). 여유 있게 1024. */
     const text = await callGeminiWithFallback(
       [{ parts: [{ text: prompt }] }],
-      { temperature: 0.4, maxOutputTokens: 300 });
+      { temperature: 0.4, maxOutputTokens: 1024 });
     return res.status(200).json({ text });
   } catch (e) {
     return res.status(502).json({ error: (e && e.message) || "gemini upstream error" });

@@ -27,7 +27,7 @@ module.exports = async (req, res) => {
           { inline_data: { mime_type: mimeType, data: audio } },
         ],
       }],
-      { temperature: 0, maxOutputTokens: 200 },
+      { temperature: 0, maxOutputTokens: 500 },
       AUDIO_MODEL_FALLBACKS);
     return res.status(200).json({ text });
   } catch (e) {
