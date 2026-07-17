@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.21">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.21" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.21" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.22">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.22" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.22" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.21"></script><style>
+<script src="words.js?v=0.35.22"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.21") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.21") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.22") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.22") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.21") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.21") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.22") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.22") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -668,7 +668,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 대화방 = 채팅창 느낌(2026-07-16) — 말풍선이 그 안에서만 오가는 스크롤 영역.
    흰 카드+검정 테두리로 페이지와 분리했던 이전 버전이 "흰색 네모"처럼 튀어 보인다는 지적으로,
    페이지 배경(--bg)과 같은 밝은 크림으로 통일하고 별도 테두리도 제거(2026-07-16). */
-.talk-msgs{display:flex;flex-direction:column;gap:10px;padding:12px;background:var(--bg);
+.talk-msgs{display:flex;flex-direction:column;gap:10px;padding:12px 4px;background:var(--bg);
   max-height:calc(100dvh - 330px);overflow-y:auto;}
 .talk-msg-row{display:flex;align-items:flex-end;gap:8px;}
 /* 봇 행: 아바타를 말풍선(위쪽)에 붙이려고 상단 정렬 — 예전엔 flex-end라 아바타가 뜻·하트 아래로
@@ -689,7 +689,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
   border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:14px solid var(--ink);}
 .talk-play{color:inherit;opacity:.7;flex:none;}
 .talk-msg-ko{font-size:11px;color:var(--muted);padding:0 3px;}
-.talk-msg-actions{display:flex;align-items:center;gap:10px;}
+.talk-msg-actions{display:flex;align-items:center;gap:4px;}
 .talk-msg-fav{color:var(--muted);padding:0 3px;}
 .talk-msg-fav.on{color:var(--hi-pink-dark);}
 .talk-msg-del{color:var(--muted);padding:0 3px;}
@@ -707,8 +707,13 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 입력창은 메신저처럼 화면 하단에 고정 — 대화가 짧아도 talk-room-screen이 스크롤 높이를 꽉 채우고
    margin-top:auto가 입력창을 바닥까지 밀어내림. 키보드가 올라오면 sticky bottom이 --kb(키보드 높이,
    App의 visualViewport 리스너)만큼 떠서 키보드 위에 붙는다(2026-07-17). */
-.talk-room-screen{min-height:100%;padding-bottom:calc(14px + var(--kb, 0px));} /* 입력란 아래 여백 절반(28→14, 2026-07-17) */
-.talk-input-row{display:flex;gap:8px;position:sticky;bottom:var(--kb, 0px);background:var(--bg);padding:8px 0 2px;margin-top:auto;}
+.talk-room-screen{min-height:100%;padding-bottom:calc(70px + var(--kb, 0px));padding-left:7px;padding-right:7px;position:relative;} /* 하단 패딩은 이제 absolute .talk-input-row가 덮는 실제 높이만큼(2026-07-18, 28→14→70px). 좌우는 .content의 20px가 너무 넓다는 지적으로 7px로(대략 35%) */
+/* 2026-07-18: sticky는 바깥 .scroll이 페이지 전체를 스크롤할 때 위치가 흔들려서(스크롤 컨테이너가
+   .talk-msgs인지 .scroll인지 모호) absolute로 교체 — 컨테이닝 블록은 position:relative인 .app(최대
+   520px 중앙 정렬)이라 자연히 그 폭에 맞음. 회화 대화방은 이제 항상 몰입 화면(탭바 숨김)이라
+   bottom:10px가 곧 화면 맨 아래에서 10px, 키보드가 뜨면 --kb만큼 그 위로. */
+.talk-input-row{display:flex;gap:8px;position:absolute;left:0;right:0;bottom:calc(var(--kb, 0px) + 10px);
+  background:var(--bg);padding:8px 7px 2px;z-index:2;}
 .talk-input-row input{flex:1;min-width:0;border:0.5px solid var(--card-border);background:var(--surface);border-radius:0;padding:11px 13px;font:inherit;font-size:14px;outline:none;}
 .talk-input-row input:disabled{opacity:.5;}
 .talk-input-row button{background:var(--ink);color:var(--on-accent);border-radius:999px;padding:0 18px;font-weight:700;font-size:13px;flex:none;}
@@ -794,7 +799,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.21";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.22";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -3317,6 +3322,38 @@ function containsKorean(text) { return /[가-힣]/.test(text || ""); }
    1970-01-01로 묶어서 한 덩어리로만 보이게(크래시 방지 목적, 실제 날짜를 알 방법이 없음). */
 function talkDayKey(ts) { const d = new Date(ts || 0); return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); }
 function talkDayLabel(ts) { const d = new Date(ts || 0); return (d.getMonth() + 1) + "월 " + d.getDate() + "일"; }
+/* 회화(SOS·대화방)에서 단어를 탭해 단어 상세로 연결하는 공용 헬퍼(2026-07-18) — 사전(SEED/EXTRA)에
+   없는 단어는 "내 단어장" 새 단어 등록(Dict의 addWord)과 같은 방식으로 EXTRA에 pending 등록해두고
+   여는데, WordSheet가 열리자마자 자동조회(Free Dictionary→Gemini)로 채워준다. */
+function openVocabWord(word, onOpenWord) {
+  const key = (word || "").trim().toLowerCase();
+  if (!key || !onOpenWord) return;
+  if (!wordOf(key)) {
+    EXTRA[key] = { word: key, ipa: "", pos: [], cefr: "—", ko: "", en: "", syn: [], ant: [], forms: [], roots: [], ex: [], mine: true, lookupStatus: "pending" };
+    saveExtra();
+  }
+  onOpenWord(key);
+}
+/* 회화 대화방 상대 말풍선의 모든 단어를 탭 가능하게(2026-07-18) — 사전 예문의 ExampleWords와 달리
+   이미 사전에 있는 단어만이 아니라 전부 링크로 만든다(대화는 사전 밖 단어가 자주 나오므로).
+   탭하면 openVocabWord로 상세(+ 없으면 자동조회) 연결. */
+function ChatBubbleWords({ text, onOpenWord }) {
+  const parts = (text || "").split(/(\s+)/);
+  return parts.map((p, idx) => {
+    if (!p || /^\s+$/.test(p)) return p;
+    const cleanStart = p.search(/[A-Za-z']/);
+    if (cleanStart === -1) return p;
+    const clean = p.replace(/[^A-Za-z']/g, "");
+    if (!clean) return p;
+    const lead = p.slice(0, cleanStart);
+    const trail = p.slice(cleanStart + clean.length);
+    return (
+      <React.Fragment key={idx}>
+        {lead}<span className="ex-word" onClick={ev => { ev.stopPropagation(); openVocabWord(clean.toLowerCase(), onOpenWord); }}>{clean}</span>{trail}
+      </React.Fragment>
+    );
+  });
+}
 function talkNextLine(persona, history) {
   /* 유저 턴은 원문(m.en, 한국어가 섞였을 수 있음)이 아니라 talkFeedback이 만든 corrected(자연스러운
      영어)를 우선 사용 — 안 그러면 다음 대사를 만들 때 모델이 한국어 원문을 그대로 대화 맥락에 넣게 돼
@@ -3343,8 +3380,9 @@ function talkFeedback(persona, userText) {
     "\n2. 순수 영어인데 문법이나 자연스러움이 어색하면 ok:false, corrected에 자연스럽게 교정한 영어 문장." +
     "\n3. 한국어 단어가 하나라도 섞여 있으면(전부 한국어 포함) ok:false, corrected에 그 문장 전체 의미를 살려 자연스러운 영어 한 문장으로 번역(이미 영어로 말한 부분은 최대한 그대로 살리고 한국어 부분만 영어로 옮길 것)." +
     "\nnote_ko는 항상 아주 짧은 한국어 코멘트 한 줄(2번은 무엇이 어색했는지, 3번은 간단히 '이렇게 말해보세요' 정도)." +
+    "\nuser_ko는 사용자가 입력한 원문 그대로의 뜻을 자연스러운 한국어로 옮긴 것(입력이 순수 한국어였으면 빈 문자열)." +
     "\n아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요." +
-    '\n{"ok":true 또는 false,"note_ko":"짧은 한국어 코멘트 한 줄","corrected":"교정 또는 번역된 영어 문장"}';
+    '\n{"ok":true 또는 false,"note_ko":"짧은 한국어 코멘트 한 줄","corrected":"교정 또는 번역된 영어 문장","user_ko":"원문 뜻의 한국어 번역"}';
   return geminiJSON(prompt);
 }
 
@@ -3570,7 +3608,7 @@ async function transcribeAudio(blob, mimeType) {
   return (data.text || "").trim();
 }
 
-function TalkRoom({ persona, onExit }) {
+function TalkRoom({ persona, onExit, onOpenWord }) {
   const saved = TALK_ROOMS[persona.id];
   const [messages, setMessages] = useState((saved && saved.messages) || []);
   const [showEn, setShowEn] = useState(true);
@@ -3665,7 +3703,7 @@ function TalkRoom({ persona, onExit }) {
     setInput(""); setLoadingFb(true); setErr(null);
     try {
       const fb = await talkFeedback(persona, text);
-      setMessages(m => m.map((msg, i) => (i === m.length - 1 ? { ...msg, feedback: fb } : msg)));
+      setMessages(m => m.map((msg, i) => (i === m.length - 1 ? { ...msg, feedback: fb, ko: fb.user_ko || "" } : msg)));
     } catch (e) {
       setMessages(m => m.map((msg, i) => (i === m.length - 1 ? { ...msg, feedback: { ok: true, note_ko: "", corrected: text } } : msg)));
     } finally {
@@ -3740,7 +3778,7 @@ function TalkRoom({ persona, onExit }) {
             {m.role === "bot" && <div className={"talk-avatar-sm hi-" + persona.avatar}>{persona.letter}</div>}
             <div className={"talk-msg " + m.role}>
               <div className="talk-bubble">
-                {m.role === "bot" && !showEn ? "•••" : m.en}
+                {m.role === "bot" && !showEn ? "•••" : m.role === "bot" ? <span><ChatBubbleWords text={m.en} onOpenWord={onOpenWord} /></span> : m.en}
                 {m.role === "bot" && (
                   <button className="talk-play" onClick={() => speakText(m.en, persona.rate, persona.accent)} aria-label="다시 듣기">
                     <Icon name="volume_up" size={13} />
@@ -3754,7 +3792,7 @@ function TalkRoom({ persona, onExit }) {
                 </button>
                 {m.role === "user" && (
                   <button className="talk-msg-del" onClick={() => deleteMsg(i)} aria-label="메시지 삭제">
-                    <Icon name="delete" size={14} />
+                    <Icon name="delete" size={15.4} />
                   </button>
                 )}
               </div>
@@ -3931,15 +3969,22 @@ function PronunClinic({ onBack }) {
   );
 }
 
-function Talk({ onOpenWord }) {
+function Talk({ onOpenWord, setImmersive }) {
   const [view, setView] = useState(null); // null=대화방 목록 | "sos" | "writing" | "pronun" | 페르소나 id
+  /* 대화방·작문·발음클리닉은 몰입 화면이라 탭바를 숨김 — SOS·목록은 잠깐 들르는 도구라 탭바 유지(2026-07-18).
+     cleanup에서 항상 false로 되돌려야 상단 로고로 홈에 갔을 때도 탭바가 안 갇힘. */
+  useEffect(() => {
+    if (!setImmersive) return;
+    setImmersive(!!view && view !== "sos");
+    return () => setImmersive(false);
+  }, [view]); // eslint-disable-line
   if (!PROXY_BASE) return <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />;
   if (view === "sos") return <TalkSOS onBack={() => setView(null)} onOpenWord={onOpenWord} />;
   if (view === "writing") return <Writing onExit={() => setView(null)} />;
   if (view === "pronun") return <PronunClinic onBack={() => setView(null)} />;
   if (view) {
     const persona = PERSONAS.find(p => p.id === view);
-    return <TalkRoom persona={persona} onExit={() => setView(null)} />;
+    return <TalkRoom persona={persona} onExit={() => setView(null)} onOpenWord={onOpenWord} />;
   }
   return <TalkRooms onOpenRoom={setView} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} onOpenPronun={() => setView("pronun")} />;
 }
@@ -3980,18 +4025,7 @@ function TalkSOS({ onBack, onOpenWord }) {
     }
   };
 
-  /* 칩으로 뽑힌 핵심 어휘가 사전(SEED/EXTRA)에 아직 없으면, "내 단어장" 새 단어 등록과 같은 방식으로
-     EXTRA에 pending 상태로 만들어두고 연다 — WordSheet가 열리자마자 자동조회(Free Dictionary→Gemini)로
-     채워짐(Dict의 addWord와 동일 패턴, 2026-07-18). */
-  const openVocab = word => {
-    const key = (word || "").trim().toLowerCase();
-    if (!key || !onOpenWord) return;
-    if (!wordOf(key)) {
-      EXTRA[key] = { word: key, ipa: "", pos: [], cefr: "—", ko: "", en: "", syn: [], ant: [], forms: [], roots: [], ex: [], mine: true, lookupStatus: "pending" };
-      saveExtra();
-    }
-    onOpenWord(key);
-  };
+  const openVocab = word => openVocabWord(word, onOpenWord);
 
   if (!PROXY_BASE) return <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />;
 
@@ -5267,12 +5301,18 @@ function LevelTest({ onExit }) {
 }
 
 /* ---------- 학습 탭 ---------- */
-function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsumeCustomStudy }) {
+function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsumeCustomStudy, setImmersive }) {
   const [session, setSession] = useState(null); // null | items | "done"
   const [mode, setMode] = useState("card");      // "card" | "listen" — session이 어느 세션인지
   const [summary, setSummary] = useState(null);
   const [quiz, setQuiz] = useState(null); // null | questions[] | "done"
   const [quizSummary, setQuizSummary] = useState(null);
+  // 카드/듣기 세션이나 퀴즈 중엔 몰입 화면이라 탭바를 숨김(2026-07-18) — 메뉴로 돌아오면(session/quiz null) 자동 복원.
+  useEffect(() => {
+    if (!setImmersive) return;
+    setImmersive(session !== null || quiz !== null);
+    return () => setImmersive(false);
+  }, [session, quiz]); // eslint-disable-line
   const dueCount = allItems().filter(it => SRS.isDue(it.key)).length;
   /* 신규는 전체 표제어(1만+)가 아니라 내 레벨 ±1 범위 대기 수 — 그중 오늘 목표(goalWords)만큼만 안내 */
   const freshCount = freshPool().length;
@@ -5518,6 +5558,7 @@ function App() {
      탭별로 내부에 깊은 화면(회화 대화방, 사전 상세 등)이 있어도 이 값을 key에 섞어주면 그 탭 컴포넌트가
      통째로 리마운트되어 내부 state가 초기화됨 — 탭을 누른 채 안 바뀌면(setTab) 아무 일도 안 일어나던 문제 해결. */
   const [tabResetKey, setTabResetKey] = useState({ home: 0, dict: 0, learn: 0, talk: 0, box: 0 });
+  const [immersive, setImmersive] = useState(false); // 학습 세션·회화 대화방 등 몰입 화면에서 탭바를 숨김(2026-07-18)
   const [stack, setStack] = useState(null); // 단어 상세 시트 스택
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [ltOpen, setLtOpen] = useState(false); // 레벨 테스트 — 학습 탭 메뉴와 설정 두 곳에서 진입하므로 앱 레벨에서 관리
@@ -5613,8 +5654,8 @@ function App() {
           <React.Fragment>
             {tab === "home" && <Home key={"home-" + tabResetKey.home} onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => { unlockAudio(); startCustomStudy(pickSession(10, listenLevelShift()), "listen"); }} />}
             {tab === "dict" && <Dict key={"dict-" + tabResetKey.dict} onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} viewJump={dictViewJump} onConsumeViewJump={() => setDictViewJump(null)} />}
-            {tab === "learn" && <Learn key={"learn-" + tabResetKey.learn} onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} customMode={customMode} onConsumeCustomStudy={() => setCustomStudy(null)} />}
-            {tab === "talk" && <Talk key={"talk-" + tabResetKey.talk} onOpenWord={openWord} />}
+            {tab === "learn" && <Learn key={"learn-" + tabResetKey.learn} onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} customMode={customMode} onConsumeCustomStudy={() => setCustomStudy(null)} setImmersive={setImmersive} />}
+            {tab === "talk" && <Talk key={"talk-" + tabResetKey.talk} onOpenWord={openWord} setImmersive={setImmersive} />}
             {tab === "box" && <Vault key={"box-" + tabResetKey.box} onGoTab={setTab} onOpenDict={openDictView} />}
           </React.Fragment>
         )}
@@ -5622,7 +5663,7 @@ function App() {
 
       {settingsOpen && <Settings charK={charK} onChangeChar={changeChar} onClose={() => setSettingsOpen(false)} onStartLevelTest={startLevelTest} />}
 
-      <div className="tabbar">
+      {!(immersive || ltOpen) && <div className="tabbar">
         {TABS.map(t => (
           <button key={t.k}
                   className={"tab tab-" + t.k + (tab === t.k ? " on" : "")}
@@ -5639,7 +5680,7 @@ function App() {
             {t.label}
           </button>
         ))}
-      </div>
+      </div>}
 
       {stack && <WordSheet stack={stack} onPush={pushWord} onPop={popWord} onClose={closeSheet} onOpenRoot={openRoot} />}
     </div>
