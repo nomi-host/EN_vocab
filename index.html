@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.18">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.18" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.18" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.19">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.19" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.19" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.18"></script><style>
+<script src="words.js?v=0.35.19"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.18") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.18") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.19") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.19") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.18") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.18") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.19") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.19") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -689,8 +689,15 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
   border-top:10px solid transparent;border-bottom:10px solid transparent;border-left:14px solid var(--ink);}
 .talk-play{color:inherit;opacity:.7;flex:none;}
 .talk-msg-ko{font-size:11px;color:var(--muted);padding:0 3px;}
+.talk-msg-actions{display:flex;align-items:center;gap:10px;}
 .talk-msg-fav{color:var(--muted);padding:0 3px;}
 .talk-msg-fav.on{color:var(--hi-pink-dark);}
+.talk-msg-del{color:var(--muted);padding:0 3px;}
+/* 날짜 알약(2026-07-18) — 좌우로 선이 뻗어나가는 구분선 가운데 알약, 탭하면 그 날짜 메시지 전체를 접고 폄. */
+.talk-daypill-row{display:flex;align-items:center;gap:8px;margin:4px 0;}
+.talk-daypill-row::before, .talk-daypill-row::after{content:"";flex:1;height:1px;background:var(--card-border);}
+.talk-daypill{display:flex;align-items:center;gap:2px;font-size:11px;font-weight:700;color:var(--muted);
+  background:var(--fill);border-radius:999px;padding:4px 10px;white-space:nowrap;flex:none;}
 
 .talk-fb{border:0.5px solid var(--card-border);background:var(--line);padding:11px 13px;font-size:12px;line-height:1.6;color:var(--ink-2);max-width:100%;}
 .talk-fb.ok{border-color:var(--good);}
@@ -787,7 +794,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.18";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.19";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -3286,14 +3293,27 @@ function toggleFavSentence(en, ko, source) {
   saveFavSentences();
 }
 
-/* Gemini 프록시에 "JSON만 응답하도록" 프롬프트를 보내고 파싱까지 해주는 공용 헬퍼(회화 기능 전용 호출 3곳이 공유) */
+/* Gemini 프록시에 "JSON만 응답하도록" 프롬프트를 보내고 파싱까지 해주는 공용 헬퍼(회화 기능 전용 호출 3곳이 공유).
+   모델이 지시를 어기고 JSON 앞뒤에 설명을 덧붙이는 경우가 있어(2026-07-18, "상대의 대답을 불러오지
+   못했어요" 원인 중 하나로 확인) 1차 파싱 실패 시 문자열에서 {...} 블록만 뽑아 재시도 — 그래도 실패하면
+   원문 일부를 에러 메시지에 남겨 다음에 원인을 바로 알 수 있게 한다(막연한 "실패" 대신). */
 async function geminiJSON(prompt) {
   const text = await geminiText(prompt);
   if (!text) throw new Error("gemini empty response");
   const cleaned = text.replace(/^```json\s*|^```\s*|```\s*$/g, "").trim();
-  return JSON.parse(cleaned);
+  try {
+    return JSON.parse(cleaned);
+  } catch (e) {
+    const m = cleaned.match(/\{[\s\S]*\}/);
+    if (m) { try { return JSON.parse(m[0]); } catch (e2) {} }
+    throw new Error("gemini json parse failed: " + cleaned.slice(0, 200));
+  }
 }
 function containsKorean(text) { return /[가-힣]/.test(text || ""); }
+/* 대화방 날짜 구분 알약(2026-07-18) — 저장 시점(m.at)이 없는 옛 메시지(이 기능 이전에 저장된 대화)는
+   1970-01-01로 묶어서 한 덩어리로만 보이게(크래시 방지 목적, 실제 날짜를 알 방법이 없음). */
+function talkDayKey(ts) { const d = new Date(ts || 0); return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); }
+function talkDayLabel(ts) { const d = new Date(ts || 0); return (d.getMonth() + 1) + "월 " + d.getDate() + "일"; }
 function talkNextLine(persona, history) {
   /* 유저 턴은 원문(m.en, 한국어가 섞였을 수 있음)이 아니라 talkFeedback이 만든 corrected(자연스러운
      영어)를 우선 사용 — 안 그러면 다음 대사를 만들 때 모델이 한국어 원문을 그대로 대화 맥락에 넣게 돼
@@ -3557,6 +3577,8 @@ function TalkRoom({ persona, onExit }) {
   const [loadingBot, setLoadingBot] = useState(false);
   const [loadingFb, setLoadingFb] = useState(false);
   const [err, setErr] = useState(null);
+  const [failedHist, setFailedHist] = useState(null); // fetchBotLine 실패 시 재시도용으로 기억해두는 history
+  const [collapsedDays, setCollapsedDays] = useState({}); // 날짜 알약 접기/펼치기 — { "2026-7-17": true }
   const [showSummary, setShowSummary] = useState(false);
   const [voiceMode, setVoiceMode] = useState(false);
   const [listening, setListening] = useState(false);
@@ -3572,14 +3594,17 @@ function TalkRoom({ persona, onExit }) {
   useEffect(() => { if (!voiceMode && inputRef.current) inputRef.current.focus(); }, [voiceMode, awaitingAck, loadingBot, loadingFb]); // 키보드 자동 표시
 
   const fetchBotLine = async hist => {
-    setLoadingBot(true); setErr(null);
+    setLoadingBot(true); setErr(null); setFailedHist(null);
     try {
       const r = await talkNextLine(persona, hist);
-      const msg = { role: "bot", en: (r.en || "").trim(), ko: (r.ko || "").trim() };
+      const msg = { role: "bot", en: (r.en || "").trim(), ko: (r.ko || "").trim(), at: Date.now() };
       setMessages(m => [...m, msg]);
       speakText(msg.en, persona.rate, persona.accent);
     } catch (e) {
-      setErr("상대의 대답을 불러오지 못했어요. 잠시 후 다시 시도해 주세요.");
+      // 원인을 화면에 그대로 노출(2026-07-18) — 예전엔 뭉뚱그린 메시지라 재발 시 원인 파악이 안 됐음.
+      // hist를 기억해뒀다가 "다시 시도"로 같은 요청을 재실행할 수 있게.
+      setErr("상대의 대답을 불러오지 못했어요. (" + (e && e.message || "error") + ")");
+      setFailedHist(hist);
     } finally {
       setLoadingBot(false);
     }
@@ -3588,7 +3613,7 @@ function TalkRoom({ persona, onExit }) {
   useEffect(() => {
     // 페르소나별 기본 자기소개 — 네트워크 왕복 없이 즉시 표시(새 대화일 때만, 이어하는 대화는 그대로 유지)
     if (messages.length === 0) {
-      const introMsg = { role: "bot", en: persona.intro, ko: persona.introKo };
+      const introMsg = { role: "bot", en: persona.intro, ko: persona.introKo, at: Date.now() };
       setMessages([introMsg]);
       speakText(introMsg.en, persona.rate, persona.accent);
     }
@@ -3633,7 +3658,7 @@ function TalkRoom({ persona, onExit }) {
   const send = async () => {
     const text = input.trim();
     if (!text || loadingBot || loadingFb || awaitingAck) return;
-    setMessages(m => [...m, { role: "user", en: text }]);
+    setMessages(m => [...m, { role: "user", en: text, at: Date.now() }]);
     setInput(""); setLoadingFb(true); setErr(null);
     try {
       const fb = await talkFeedback(persona, text);
@@ -3646,6 +3671,11 @@ function TalkRoom({ persona, onExit }) {
   };
   const ackFeedback = () => { setAwaitingAck(false); fetchBotLine(messages); };
   const toggleFav = m => { toggleFavSentence(m.en, m.ko || "", persona.name); bump(v => v + 1); };
+  const deleteMsg = i => {
+    if (!confirm("이 메시지를 삭제할까요?")) return;
+    if (awaitingAck && i === messages.length - 1) setAwaitingAck(false); // 삭제한 메시지가 확인 대기 중이던 마지막 메시지면 대기 해제
+    setMessages(m => m.filter((_, idx) => idx !== i));
+  };
   const corrections = messages.filter(m => m.role === "user" && m.feedback && !m.feedback.ok);
 
   if (showSummary) {
@@ -3685,8 +3715,25 @@ function TalkRoom({ persona, onExit }) {
       </div>
 
       <div className="talk-msgs" ref={scrollRef}>
-        {messages.map((m, i) => (
-          <div key={i} className={"talk-msg-row " + m.role}>
+        {(() => {
+          let lastDay = null;
+          return messages.map((m, i) => {
+            const day = talkDayKey(m.at);
+            const showDivider = day !== lastDay;
+            lastDay = day;
+            const collapsed = !!collapsedDays[day];
+            return (
+              <React.Fragment key={i}>
+                {showDivider && (
+                  <div className="talk-daypill-row">
+                    <button className="talk-daypill" onClick={() => setCollapsedDays(c => ({ ...c, [day]: !c[day] }))}>
+                      {talkDayLabel(m.at)}
+                      <Icon name={collapsed ? "expand_more" : "expand_less"} size={13} />
+                    </button>
+                  </div>
+                )}
+                {!collapsed && (
+          <div className={"talk-msg-row " + m.role}>
             {m.role === "bot" && <div className={"talk-avatar-sm hi-" + persona.avatar}>{persona.letter}</div>}
             <div className={"talk-msg " + m.role}>
               <div className="talk-bubble">
@@ -3698,9 +3745,16 @@ function TalkRoom({ persona, onExit }) {
                 )}
               </div>
               {showKo && m.ko && <div className="talk-msg-ko">{m.ko}</div>}
-              <button className={"talk-msg-fav" + (isFavSentence(m.en) ? " on" : "")} onClick={() => toggleFav(m)} aria-label="문장 즐겨찾기">
-                <Icon name="favorite" size={14} />
-              </button>
+              <div className="talk-msg-actions">
+                <button className={"talk-msg-fav" + (isFavSentence(m.en) ? " on" : "")} onClick={() => toggleFav(m)} aria-label="문장 즐겨찾기">
+                  <Icon name="favorite" size={14} />
+                </button>
+                {m.role === "user" && (
+                  <button className="talk-msg-del" onClick={() => deleteMsg(i)} aria-label="메시지 삭제">
+                    <Icon name="delete_outline" size={14} />
+                  </button>
+                )}
+              </div>
               {m.role === "user" && m.feedback && (
                 <div className={"talk-fb" + (m.feedback.ok ? " ok" : "")}>
                   <div className="t">{m.feedback.ok ? "좋아요!" : containsKorean(m.en) ? "영어로 이렇게 말해보세요" : "이렇게 말하면 더 자연스러워요"}</div>
@@ -3711,10 +3765,19 @@ function TalkRoom({ persona, onExit }) {
               )}
             </div>
           </div>
-        ))}
+                )}
+              </React.Fragment>
+            );
+          });
+        })()}
         {loadingBot && <div className="empty-note">상대가 대답을 준비하고 있어요…</div>}
         {loadingFb && <div className="empty-note">확인하고 있어요…</div>}
-        {err && <div className="empty-note" style={{ color: "var(--danger)" }}>{err}</div>}
+        {err && (
+          <div className="empty-note" style={{ color: "var(--danger)" }}>
+            {err}
+            {failedHist && <button className="qhint-btn" style={{ marginLeft: 8 }} onClick={() => fetchBotLine(failedHist)}>다시 시도</button>}
+          </div>
+        )}
       </div>
 
       <div className="talk-input-row">
@@ -5414,6 +5477,10 @@ const TABS = [
 
 function App() {
   const [tab, setTab] = useState("home");
+  /* 탭 아이콘을 누르면(이미 그 탭이어도) 항상 그 탭의 메인 화면으로 돌아가게 하는 리셋 카운터(2026-07-18).
+     탭별로 내부에 깊은 화면(회화 대화방, 사전 상세 등)이 있어도 이 값을 key에 섞어주면 그 탭 컴포넌트가
+     통째로 리마운트되어 내부 state가 초기화됨 — 탭을 누른 채 안 바뀌면(setTab) 아무 일도 안 일어나던 문제 해결. */
+  const [tabResetKey, setTabResetKey] = useState({ home: 0, dict: 0, learn: 0, talk: 0, box: 0 });
   const [stack, setStack] = useState(null); // 단어 상세 시트 스택
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [ltOpen, setLtOpen] = useState(false); // 레벨 테스트 — 학습 탭 메뉴와 설정 두 곳에서 진입하므로 앱 레벨에서 관리
@@ -5495,7 +5562,7 @@ function App() {
   return (
     <div className="app">
       <div className="topbar">
-        <div className="brand" role="button" tabIndex={0} onClick={() => setTab("home")} style={{ cursor: "pointer" }}>No<b>English</b></div>
+        <div className="brand" role="button" tabIndex={0} onClick={() => { setLtOpen(false); setSettingsOpen(false); closeSheet(); setTab("home"); setTabResetKey(k => ({ ...k, home: k.home + 1 })); }} style={{ cursor: "pointer" }}>No<b>English</b></div>
         <div className="topbar-right">
           <span className="pill"><span className={"dot hl-" + streakHl(4)} />연속 4일</span>
           <button className="avatar-btn" aria-label="설정" onClick={() => setSettingsOpen(true)}><Icon name="settings" size={19} /></button>
@@ -5507,11 +5574,11 @@ function App() {
           <LevelTest onExit={() => setLtOpen(false)} />
         ) : (
           <React.Fragment>
-            {tab === "home" && <Home onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => { unlockAudio(); startCustomStudy(pickSession(10, listenLevelShift()), "listen"); }} />}
-            {tab === "dict" && <Dict onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} viewJump={dictViewJump} onConsumeViewJump={() => setDictViewJump(null)} />}
-            {tab === "learn" && <Learn onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} customMode={customMode} onConsumeCustomStudy={() => setCustomStudy(null)} />}
-            {tab === "talk" && <Talk />}
-            {tab === "box" && <Vault onGoTab={setTab} onOpenDict={openDictView} />}
+            {tab === "home" && <Home key={"home-" + tabResetKey.home} onGoTab={setTab} charK={charK} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => { unlockAudio(); startCustomStudy(pickSession(10, listenLevelShift()), "listen"); }} />}
+            {tab === "dict" && <Dict key={"dict-" + tabResetKey.dict} onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} viewJump={dictViewJump} onConsumeViewJump={() => setDictViewJump(null)} />}
+            {tab === "learn" && <Learn key={"learn-" + tabResetKey.learn} onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} customMode={customMode} onConsumeCustomStudy={() => setCustomStudy(null)} />}
+            {tab === "talk" && <Talk key={"talk-" + tabResetKey.talk} />}
+            {tab === "box" && <Vault key={"box-" + tabResetKey.box} onGoTab={setTab} onOpenDict={openDictView} />}
           </React.Fragment>
         )}
       </div>
@@ -5522,7 +5589,13 @@ function App() {
         {TABS.map(t => (
           <button key={t.k}
                   className={"tab tab-" + t.k + (tab === t.k ? " on" : "")}
-                  onClick={() => { setLtOpen(false); setTab(t.k); }}>
+                  onClick={() => {
+                    // 레벨테스트/설정/단어상세 시트처럼 탭 위를 덮고 있던 화면을 전부 닫고,
+                    // 그 탭을 리마운트해서 항상 메인 화면으로 — 이미 그 탭이어도(재탭) 동작해야 하므로 매번 리셋(2026-07-18).
+                    setLtOpen(false); setSettingsOpen(false); closeSheet();
+                    setTab(t.k);
+                    setTabResetKey(k => ({ ...k, [t.k]: k[t.k] + 1 }));
+                  }}>
             {/* 레벨테스트 중에도 탭 이동이 되도록 ltOpen을 닫음 — 안 닫으면 tab 상태만 바뀌고
                 화면은 테스트가 계속 덮고 있어 "탭 터치가 안 먹는" 것처럼 보였음(2026-07-17) */}
             <span className="ti"><Icon name={t.icon} size={26} /></span>
