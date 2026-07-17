@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.6">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.6" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.6" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.7">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.7" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.7" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.6"></script><style>
+<script src="words.js?v=0.35.7"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.6") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.6") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.7") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.7") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.6") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.6") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.7") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.7") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -95,7 +95,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .pill .dot.hl-yellow{background:var(--hi-yellow);}
 .pill .dot.hl-pink{background:var(--hi-pink);}
 .pill .dot.hl-blue{background:var(--hi-blue);}
-.avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--surface);border:1px solid var(--card-border);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
+.avatar-btn{width:34px;height:34px;border-radius:50%;background:var(--line);border:1px solid var(--card-border);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);}
 
 
 /* 홈 상단 게이미피케이션 지수 스트립 — 항목별로 다른 색, 같은 요소(캐릭터)에 속한 칩은 그 캐릭터의
@@ -178,13 +178,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .medal.sm .medal-face{width:31px;height:31px;}
 .medal.sm .mv{font-size:10px;letter-spacing:-0.5px;}
 /* 보관함: 카테고리별 행(헤더 + 가로 스와이프 티어 스트립) */
+.sec-row{display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.btn-viewall{flex:none;font-size:12px;font-weight:700;color:var(--ink);background:var(--surface);border:1px solid var(--ink);border-radius:999px;padding:5px 13px;}
 .badge-rows{display:flex;flex-direction:column;gap:16px;}
 .badge-row-t{font-size:13px;font-weight:800;color:var(--ink);margin-bottom:7px;display:flex;align-items:baseline;gap:6px;}
 .badge-row-t .rc{font-size:11px;font-weight:700;color:var(--muted);}
 /* 벨트: 좌우 패딩 없이 edge-to-edge(2026-07-17). scroll-snap proximity로 밀었을 때 부드럽게
    가장 가까운 메달에 살짝 정착(반동감). 세로 패딩은 그림자·눌림 여백으로 유지. */
-.medal-strip{display:flex;gap:12px;overflow-x:auto;padding:4px 0 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity;}
-.medal-strip .medal-cell{scroll-snap-align:center;}
+.medal-strip{display:flex;gap:12px;overflow-x:auto;margin:0 -20px;padding:4px 20px 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
 .medal-strip::-webkit-scrollbar{display:none;}
 .medal-cell{flex:none;display:flex;flex-direction:column;align-items:center;gap:5px;width:64px;}
 .medal-cell .mth{font-size:10px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums;}
@@ -738,7 +739,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.6";const APP_BUILD = "2026-07-16"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.7";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -2118,12 +2119,15 @@ function MedalBelt({ cat, progress, onSelect }) {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const one = () => el.scrollWidth / 3;
-    el.scrollLeft = one(); // 가운데 벌에서 시작
+    // 홈(scrollLeft=0)에선 좌측 여백(패딩) 그대로 보이고, 스와이프해서 한 벌을 넘어가면
+    // 소리 없이 한 벌 폭만큼 되돌려 패딩 없이 계속 도는 벨트처럼 보이게 한다.
+    const per = tiers.length;
+    const cells = el.querySelectorAll(".medal-cell");
+    const oneW = () => (cells[per] ? cells[per].offsetLeft - cells[0].offsetLeft : el.scrollWidth / 3);
+    el.scrollLeft = 0; // 홈: 좌측 여백 있는 원래 상태
     const onScroll = () => {
-      const w = one();
-      if (el.scrollLeft < w * 0.5) el.scrollLeft += w;
-      else if (el.scrollLeft > w * 1.5) el.scrollLeft -= w;
+      const w = oneW();
+      if (w > 0 && el.scrollLeft > w * 2) el.scrollLeft -= w;
     };
     el.addEventListener("scroll", onScroll, { passive: true });
     return () => el.removeEventListener("scroll", onScroll);
@@ -2139,6 +2143,71 @@ function MedalBelt({ cat, progress, onSelect }) {
           </div>
         );
       })}
+    </div>
+  );
+}
+
+/* 벨트 무한 루프 훅 — MedalBelt와 동일 로직 재사용. 홈(scrollLeft=0)은 좌측 여백,
+   한 벌 넘어가면 소리 없이 되돌려 패딩 없이 계속 도는 벨트. */
+function useBeltLoop(ref, perLen, dep) {
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const cells = el.querySelectorAll(".medal-cell");
+    const oneW = () => (cells[perLen] ? cells[perLen].offsetLeft - cells[0].offsetLeft : el.scrollWidth / 3);
+    el.scrollLeft = 0;
+    const onScroll = () => {
+      const w = oneW();
+      if (w > 0 && el.scrollLeft > w * 2) el.scrollLeft -= w;
+    };
+    el.addEventListener("scroll", onScroll, { passive: true });
+    return () => el.removeEventListener("scroll", onScroll);
+  }, [dep]);
+}
+
+/* 대표 뱃지 요약 벨트 — 카테고리마다 현재(최고 획득) 티어 메달 하나씩 한 줄로. 벨트처럼 스와이프. */
+function CatSummaryBelt({ progress, onSelect }) {
+  const ref = useRef(null);
+  const cats = BADGE_CATS;
+  const loop = [...cats, ...cats, ...cats];
+  useBeltLoop(ref, cats.length, "summary");
+  return (
+    <div className="medal-strip belt" ref={ref}>
+      {loop.map((c, i) => {
+        const ti = catDisplayTier(c.k, progress);
+        return (
+          <div key={i} className="medal-cell">
+            <BadgeMedal cat={c} tierIdx={ti} earned={progress[c.k].tier >= 0} onClick={() => onSelect(c.k, ti)} />
+            <span className="mth">{c.title}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+/* 전체보기 — 아래에서 올라오는 시트 모달, 전체 카테고리×티어 벨트. */
+function BadgeCollectionSheet({ progress, onSelect, onClose }) {
+  return (
+    <div className="sheet-backdrop" onClick={onClose}>
+      <div className="sheet" onClick={e => e.stopPropagation()}>
+        <div className="sheet-grab" />
+        <div className="sheet-head">
+          <div className="sec" style={{ padding: 0 }}>뱃지 컬렉션</div>
+          <div className="sp" />
+          <button className="back" onClick={onClose} aria-label="닫기">✕</button>
+        </div>
+        <div className="sheet-body">
+          <div className="badge-rows">
+            {BADGE_CATS.map(c => (
+              <div key={c.k}>
+                <div className="badge-row-t">{c.title} <span className="rc">{catEarnedCount(c.k, progress)}/{c.tiers.length}</span></div>
+                <MedalBelt cat={c} progress={progress[c.k]} onSelect={i => onSelect(c.k, i)} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -3569,6 +3638,7 @@ function TalkSOS({ onBack }) {
    아직 없어 준비 중만 표시. */
 function Vault({ onGoTab, onOpenDict }) {
   const [badgeSel, setBadgeSel] = useState(null); // {catKey, tierIdx} | null
+  const [allOpen, setAllOpen] = useState(false); // 전체보기 시트
   const [, bump] = useState(0); // 문장 즐겨찾기 해제 리렌더용
   const favCount = allWords().filter(w => FAVS.has(w.word)).length;
   const badgeProgress = computeBadgeProgress();
@@ -3576,16 +3646,11 @@ function Vault({ onGoTab, onOpenDict }) {
   return (
     <div className="content">
       <div className="vault-sec">
-        <div className="sec">뱃지 컬렉션</div>
-        <div className="badge-rows">
-          {BADGE_CATS.map(c => (
-            <div key={c.k}>
-              <div className="badge-row-t">{c.title} <span className="rc">{catEarnedCount(c.k, badgeProgress)}/{c.tiers.length}</span></div>
-              <MedalBelt cat={c} progress={badgeProgress[c.k]} onSelect={i => setBadgeSel({ catKey: c.k, tierIdx: i })} />
-
-            </div>
-          ))}
+        <div className="sec-row">
+          <div className="sec">뱃지 컬렉션</div>
+          <button className="btn-viewall" onClick={() => setAllOpen(true)}>전체보기</button>
         </div>
+        <CatSummaryBelt progress={badgeProgress} onSelect={(catKey, tierIdx) => setBadgeSel({ catKey, tierIdx })} />
       </div>
 
       <div className="vault-sec">
@@ -3626,6 +3691,7 @@ function Vault({ onGoTab, onOpenDict }) {
         <div className="empty-note">연속 학습일·학습량 통계가 여기 모여요. 아직 준비 중입니다.</div>
       </div>
 
+      {allOpen && <BadgeCollectionSheet progress={badgeProgress} onSelect={(catKey, tierIdx) => setBadgeSel({ catKey, tierIdx })} onClose={() => setAllOpen(false)} />}
       {badgeSel && <BadgeDetail sel={badgeSel} onClose={() => setBadgeSel(null)} />}
     </div>
   );
