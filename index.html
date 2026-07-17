@@ -11,13 +11,13 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.7">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.7" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.7" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.8">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.8" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.8" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
-<script src="words.js?v=0.35.7"></script><style>
+<script src="words.js?v=0.35.8"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -27,15 +27,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.7") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.7") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.8") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.8") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.7") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.7") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.8") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.8") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -511,6 +511,15 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 @keyframes caretblink{50%{opacity:0;}}
 @media (prefers-reduced-motion: reduce){.cell.cur::after{animation:none;}}
 .cell-catch{position:absolute;inset:0;width:100%;height:100%;opacity:0;border:0;padding:0;margin:0;font-size:16px;}
+/* 지속 입력: 표시(셀/박스/정답)는 프리젠테이션, 실제 키 입력은 이 보이지 않는 input이 받음.
+   카드 내내 언마운트 안 돼 정답 후에도 포커스 유지(키보드 안 내려감). */
+.ans-wrap{position:relative;display:inline-flex;align-items:center;vertical-align:middle;}
+.ans-catch{position:absolute;inset:0;width:100%;height:100%;opacity:0;border:0;padding:0;margin:0;font-size:16px;background:transparent;-webkit-appearance:none;caret-color:transparent;}
+.qbox-view{display:inline-flex;align-items:center;justify-content:center;min-width:64px;min-height:34px;background:var(--accent-soft);border-radius:0;font-weight:800;font-size:inherit;color:var(--accent-deep);padding:2px 16px;}
+.qcaret{display:inline-block;width:2px;height:17px;background:var(--accent);margin-left:1px;animation:caretblink 1.06s steps(1) infinite;}
+@media (prefers-reduced-motion: reduce){.qcaret{animation:none;}}
+/* 하단 액션바 — 키보드 위에 붙어 항상 눌리게 */
+.qbottom{margin-top:auto;position:sticky;bottom:var(--kb, 0px);background:var(--bg);padding-top:8px;}
 /* 힌트 버튼 */
 .qhintrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
 .qhint-lbl{font-size:12px;font-weight:700;color:var(--muted);}
@@ -739,7 +748,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.7";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.8";const APP_BUILD = "2026-07-17"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -3700,18 +3709,6 @@ function Vault({ onGoTab, onOpenDict }) {
 /* ---------- 단어카드 세션 ---------- */
 /* 카드 위쪽에 얹는 "약한 힌트" — 단어를 직접 알려주지 않고 품사+사용 결만 옅게 귀띔.
    품사(단어별로 다름)와 CEFR(사용빈도/격식 근사)를 조합해 단어마다 문구가 달라지게(2026-07-17). */
-function softHint(w) {
-  if (!w) return "";
-  const cefr = w.cefr || "";
-  const reg = (cefr[0] === "A") ? "기초 회화에서 자주 쓰는"
-    : (cefr[0] === "B") ? "일상에서 흔히 쓰는"
-    : (cefr[0] === "C") ? "격식 있는 자리에서 쓰는" : "";
-  const posKo = POS_KO[(w.pos && w.pos[0])] || null; // 명사/동사/형용사/부사
-  if (reg && posKo) return `${reg} ${posKo}예요`;
-  if (reg) return `${reg} 표현이에요`;
-  if (posKo) return `${posKo}예요`;
-  return "";
-}
 function CardSession({ items, onExit, onOpenWord }) {
   const [queue, setQueue] = useState(items);
   const [idx, setIdx] = useState(0);
@@ -3812,10 +3809,13 @@ function CardSession({ items, onExit, onOpenWord }) {
     if (idx + 1 >= q.length) { onExit(true, correct, q.length); return; }
     if (q !== queue) setQueue(q);
     setIdx(idx + 1); setVal(""); setRes(null); setHintLen(false); setHintFirst(false); setHintUsed(false); setNudgeWord(null); setRetried(false); setRetryMsg(false);
+    focusHidden(); // 다음 카드로 넘어가는 탭 제스처 안에서 즉시 포커스 유지 → 키보드가 안 내려감
   };
 
   const hiddenRef = React.useRef(null);
   const focusHidden = () => { if (hiddenRef.current) hiddenRef.current.focus(); };
+  // 새 카드로 바뀌면(입력 상태) 포커스를 유지 — 지속 입력이라 키보드가 계속 떠 있게 한다.
+  useEffect(() => { if (!res) focusHidden(); }, [idx]);
 
   // 첫 글자 힌트: 빈칸 앞(첫 칸)에 정답 첫 글자를 미리 채워 줌
   const toggleFirst = () => {
@@ -3845,15 +3845,17 @@ function CardSession({ items, onExit, onOpenWord }) {
     });
   };
 
-  // 입력창: 기본은 박스 하나. 글자수 힌트를 켜면 정답 글자 수만큼 칸(cell)으로 분리하고,
-  // 위치별로 정답과 대조해 맞은 글자는 파랑(correct), 틀린 글자는 회색(wrong)으로 표시.
-  // 구동사(give up 등) 대응: 정답의 공백 위치는 입력 없이 자동 통과되는 간격(cell gap)으로 표시.
-  const boxInput = () => {
+  // 정답 표시(프리젠테이션 전용). 실제 입력은 아래 answerArea의 보이지 않는 input이 받는다.
+  // - 채점 후(res): 정답/오답을 fill로 표시.
+  // - 글자수 힌트: 정답 글자 수만큼 칸(cell)으로 분리, 위치별 정오 색상. 공백 위치는 자동 통과 간격.
+  // - 기본: 지금까지 입력한 글자 + 깜빡이는 캐럿을 박스로.
+  const answerDisplay = () => {
+    if (res) return <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? res.answer : (val.trim() || "—")}</span>;
     if (hintLen && expected) {
       const n = expected.length;
       const curIdx = expected[val.length] === " " ? val.length + 1 : val.length; // 캐럿이 공백 간격에 걸리면 다음 칸에
       return (
-        <span className="cellrow" onMouseDown={e => { e.preventDefault(); focusHidden(); }}>
+        <span className="cellrow">
           {Array.from({ length: n }).map((_, k) => {
             if (expected[k] === " ") return <span key={k} className="cell-gap" />;
             const ch = val[k];
@@ -3861,32 +3863,39 @@ function CardSession({ items, onExit, onOpenWord }) {
             const cls = "cell" + (ch ? (right ? " correct" : " wrong") : "") + (k === curIdx ? " cur" : "");
             return <span key={k} className={cls}>{ch || ""}</span>;
           })}
-          <input key={idx} ref={hiddenRef} className="cell-catch" autoFocus value={val}
-            onChange={e => {
-              // 공백은 정답의 공백 위치에서만 자동 삽입(사용자가 스페이스를 신경 쓸 필요 없게)
-              let raw = e.target.value.replace(/[^A-Za-z']/g, "");
-              let out = "";
-              for (let i = 0, j = 0; j < raw.length && out.length < n; ) {
-                if (expected[out.length] === " ") { out += " "; continue; }
-                out += raw[j++];
-              }
-              handleChange(out);
-            }}
-            onKeyDown={e => e.key === "Enter" && submit()}
-            maxLength={n} autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
-            aria-label="빈칸 입력" />
         </span>
       );
     }
-    return (
-      <input key={idx} ref={hiddenRef} className="qbox" autoFocus value={val}
-        onChange={e => handleChange(e.target.value)}
-        onKeyDown={e => e.key === "Enter" && submit()}
-        size={Math.max(8, val.length + 1)}
-        autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
-        aria-label="빈칸 입력" />
-    );
+    return <span className="qbox qbox-view">{val || "​"}<i className="qcaret" /></span>;
   };
+
+  // 카드 내내 언마운트되지 않는 단일 입력 — 채점 후에도(readOnly 아님) 포커스를 유지해
+  // 모바일 키보드가 안 내려가고, 다음 문제로 넘어가도 이어서 바로 타이핑할 수 있다(2026-07-17).
+  // 화면에 안 보이고(opacity 0) 표시는 answerDisplay가 담당, 이 input은 키 입력만 받는다.
+  const answerArea = () => (
+    <span className="ans-wrap" onMouseDown={e => { e.preventDefault(); focusHidden(); }}>
+      {answerDisplay()}
+      <input ref={hiddenRef} className="ans-catch" value={res ? "" : val}
+        onChange={e => {
+          if (res) { e.target.value = ""; return; } // 채점 후엔 입력 무시(키보드는 유지)
+          let raw = e.target.value.replace(/[^A-Za-z']/g, "");
+          let out = raw;
+          if (hintLen && expected) {
+            // 공백은 정답의 공백 위치에서만 자동 삽입(사용자가 스페이스를 신경 쓸 필요 없게)
+            const n = expected.length; out = "";
+            for (let j = 0; j < raw.length && out.length < n; ) {
+              if (expected[out.length] === " ") { out += " "; continue; }
+              out += raw[j++];
+            }
+          }
+          e.target.value = out; // DOM 값 강제 동기화 — 필터로 값이 안 바뀔 때 iOS 컨트롤드 입력이 얼어 지울 수 없던 버그 방지
+          handleChange(out);
+        }}
+        onKeyDown={e => { if (e.key === "Enter") { e.preventDefault(); res ? next() : submit(); } }}
+        autoFocus inputMode="text" autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+        aria-label="빈칸 입력" />
+    </span>
+  );
 
   if (!it) {
     return (
@@ -3904,9 +3913,7 @@ function CardSession({ items, onExit, onOpenWord }) {
         <React.Fragment>
           <span className="qhint">위 뜻에 해당하는 <b>영어 단어</b>를 입력하세요.</span>
           <div className="qen" style={{ textAlign: "center", marginTop: 4 }}>
-            {res
-              ? <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? res.answer : val.trim() || "—"}</span>
-              : boxInput()}
+            {answerArea()}
           </div>
         </React.Fragment>
       );
@@ -3914,9 +3921,7 @@ function CardSession({ items, onExit, onOpenWord }) {
     return (
       <div className="qen">
         {blank.before}
-        {res
-          ? <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? res.answer : val.trim() || "—"}</span>
-          : boxInput()}
+        {answerArea()}
         {blank.after}
       </div>
     );
@@ -3941,7 +3946,7 @@ function CardSession({ items, onExit, onOpenWord }) {
               <button onClick={() => speak(it.ex.en, 0.7)} aria-label="느리게 듣기">0.7x</button>
             </span>
           ) : (
-            <span className="qsofthint">{softHint(wordOf(it.word))}</span>
+            <span className="qsofthint">{mode === "cloze" ? it.ko : ""}</span>
           )}
           <span className="tag lv">{it.cefr}</span>
         </div>
@@ -3987,21 +3992,24 @@ function CardSession({ items, onExit, onOpenWord }) {
         )}
       </div>
 
-      {!res ? (
-        <div style={{ display: "flex", flexDirection: "column", gap: 12, marginTop: "auto" }}>
-          <div className="qhintrow">
-            <span className="qhint-lbl">힌트</span>
-            <button className={"qhint-btn" + (hintLen ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={toggleLen}>글자수</button>
-            <button className={"qhint-btn" + (hintFirst ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={toggleFirst}>첫 글자</button>
+      {/* 하단 액션바는 키보드가 떠 있어도 그 위에 붙어(sticky bottom:--kb) 항상 눌리게 한다 */}
+      <div className="qbottom">
+        {!res ? (
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            <div className="qhintrow">
+              <span className="qhint-lbl">힌트</span>
+              <button className={"qhint-btn" + (hintLen ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={toggleLen}>글자수</button>
+              <button className={"qhint-btn" + (hintFirst ? " on" : "")} onMouseDown={e => e.preventDefault()} onClick={toggleFirst}>첫 글자</button>
+            </div>
+            <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={() => submit()}>확인</button>
           </div>
-          <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={() => submit()}>확인</button>
-        </div>
-      ) : (
-        <div className="qactions">
-          <button className="ghost" onClick={() => onOpenWord(it.word)}>단어 정보</button>
-          <button className="primary" onClick={next}>{idx + 1 >= hintUsedNextLen ? "학습 완료" : "다음 문제"}</button>
-        </div>
-      )}
+        ) : (
+          <div className="qactions">
+            <button className="ghost" onMouseDown={e => e.preventDefault()} onClick={() => onOpenWord(it.word)}>단어 정보</button>
+            <button className="primary" onMouseDown={e => e.preventDefault()} onClick={next}>{idx + 1 >= hintUsedNextLen ? "학습 완료" : "다음 문제"}</button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
