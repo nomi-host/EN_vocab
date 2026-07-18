@@ -11,22 +11,22 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.33">
-<link rel="icon" href="img/icon-192.png?v=0.35.33" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.33">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.33" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.33" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.34">
+<link rel="icon" href="img/icon-192.png?v=0.35.34" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.34">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.34" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.34" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.33"></script>
+<script src="img/hero/lottie.min.js?v=0.35.34"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.33"></script>
-<script src="words.js?v=0.35.33"></script><style>
+<script src="lib/compromise.min.js?v=0.35.34"></script>
+<script src="words.js?v=0.35.34"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -36,15 +36,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.33") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.33") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.34") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.34") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.33") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.33") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.34") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.34") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -312,7 +312,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.33");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.34");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140).
@@ -969,7 +969,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.33";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.34";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1477,6 +1477,7 @@ const SRS = (() => {
   const save = () => { try { localStorage.setItem("en_srs", JSON.stringify(store)); } catch (e) {} };
   return {
     get: k => store[k],
+    records: () => store, // 전체 SRS 레코드(활동 로그 초기 시딩용)
     status(k) {
       const s = store[k]; if (!s) return null;
       return { status: s.box >= 6 ? "done" : "learning", box: s.box, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) };
@@ -1516,6 +1517,42 @@ const POINTS = (() => {
     get: () => n,
     add(v) { n += v; save(); },
     spend(v) { if (n < v) return false; n -= v; save(); return true; },
+  };
+})();
+
+/* ===================== 학습 활동 로그 (2026-07-18, P0 실데이터화) =====================
+   일자별(dayIndex)로 학습 종류별 횟수를 기록 — 홈 스트릭·잔디, 성장 기록, 뱃지 카운터의
+   단일 소스. 세션/이벤트 완료 지점에서 ACTIVITY.add(kind) 호출. 최초 1회는 SRS 기록(at)에서
+   일자별 활동을 시딩해 데모 사용자도 잔디·스트릭이 학습 이력과 일치하게 한다. localStorage만
+   사용(백엔드 없음) — 기기 간 동기화는 6장 백엔드 범위. */
+const ACTIVITY = (() => {
+  const KEY = "en_activity";
+  let log = {}; // { [dayIndex]: { total, card, listen, talk, write, pronun, level, roots } }
+  try { log = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { log = {}; }
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(log)); } catch (e) {} };
+  if (!Object.keys(log).length) { // 최초 시딩 — SRS at 값에서 일자별 단어학습 활동 복원
+    try {
+      const store = SRS.records();
+      Object.keys(store).forEach(k => {
+        const s = store[k];
+        if (s && s.at) { const d = Math.floor(s.at / DAY); const e = log[d] = log[d] || { total: 0 }; e.total++; e.card = (e.card || 0) + 1; }
+      });
+      save();
+    } catch (e) {}
+  }
+  const dayOf = t => Math.floor((t == null ? Date.now() : t) / DAY);
+  return {
+    add(kind, n = 1) { const d = dayOf(); const e = log[d] = log[d] || { total: 0 }; e.total += n; e[kind] = (e[kind] || 0) + n; save(); },
+    dayCount: d => (log[d] ? log[d].total : 0),
+    kindTotal(kind) { let s = 0; for (const d in log) s += (log[d][kind] || 0); return s; },
+    activeDays: () => Object.keys(log).filter(d => log[d].total > 0).length,
+    streak() { // 가장 최근 활동일부터 끊기지 않고 이어진 날 수(오늘 활동 없어도 최근 구간)
+      const days = Object.keys(log).filter(d => log[d].total > 0).map(Number).sort((a, b) => b - a);
+      if (!days.length) return 0;
+      let n = 1, prev = days[0]; for (let i = 1; i < days.length; i++) { if (days[i] === prev - 1) { n++; prev = days[i]; } else break; }
+      return n;
+    },
+    log: () => log,
   };
 })();
 
@@ -2355,7 +2392,7 @@ function createLevelTestB() {
 
 /* 결과 저장 — 홈/통계에서 읽어 쓸 수 있게 localStorage 보존 */
 const LT_KEY = "en_leveltest_v1";
-function saveLevelTest(res) { try { localStorage.setItem(LT_KEY, JSON.stringify(Object.assign({ at: Date.now() }, res))); } catch (e) {} }
+function saveLevelTest(res) { try { localStorage.setItem(LT_KEY, JSON.stringify(Object.assign({ at: Date.now() }, res))); } catch (e) {} try { ACTIVITY.add("level"); } catch (e) {} }
 function loadLevelTest() {
   try {
     const saved = JSON.parse(localStorage.getItem(LT_KEY) || "null");
@@ -2380,7 +2417,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.33" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.34" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -2450,16 +2487,17 @@ function levelBadgeTier() {
    추적 로그가 없어 더미 값 유지(위 주석 TODO 참고) — 가상 페르소나: 어휘력 B2+ · 작문력 B1 ·
    3개월 정도(2026-04 중순~) 띄엄띄엄 학습한 사용자(2026-07-16)의 초기 이력으로 채워둠. */
 function computeBadgeProgress() {
-  const wordsCat = BADGE_CATS.find(c => c.k === "words");
-  const reviewCat = BADGE_CATS.find(c => c.k === "review");
+  // 실측 전환(2026-07-18): 활동 로그(ACTIVITY) + SRS + 레벨테스트에서 티어 계산.
+  // friend(친구 초대)·sos(자립 회화)는 로컬만으로 셀 수 없어 미획득(-1) 유지 — 백엔드/판정 로직 후속.
+  const tiersOf = k => BADGE_CATS.find(c => c.k === k).tiers;
   return {
-    streak: { tier: 1, dates: ["2026.04.19", "2026.04.23"] },
-    words: { tier: tierFromCount(srsLearnedCount(), wordsCat.tiers), dates: ["2026.05.02"] },
-    listen: { tier: 1, dates: ["2026.04.20", "2026.05.15"] },
-    talk: { tier: 0, dates: ["2026.06.02"] },
-    level: { tier: levelBadgeTier(), dates: ["2026.04.18", "2026.04.25", "2026.05.20", "2026.07.10"] },
-    roots: { tier: 1, dates: ["2026.04.22", "2026.06.05"] },
-    review: { tier: tierFromCount(srsMasteredCount(), reviewCat.tiers), dates: ["2026.05.05", "2026.06.28"] },
+    streak: { tier: tierFromCount(ACTIVITY.streak(), tiersOf("streak")), dates: [] },
+    words: { tier: tierFromCount(srsLearnedCount(), tiersOf("words")), dates: [] },
+    listen: { tier: tierFromCount(ACTIVITY.kindTotal("listen"), tiersOf("listen")), dates: [] },
+    talk: { tier: tierFromCount(ACTIVITY.kindTotal("talk"), tiersOf("talk")), dates: [] },
+    level: { tier: levelBadgeTier(), dates: [] },
+    roots: { tier: tierFromCount(ACTIVITY.kindTotal("roots"), tiersOf("roots")), dates: [] },
+    review: { tier: tierFromCount(srsMasteredCount(), tiersOf("review")), dates: [] },
     friend: { tier: -1, dates: [] },
     sos: { tier: -1, dates: [] },
   };
@@ -2735,7 +2773,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.33";
+const HERO_V = "0.35.34";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -3174,7 +3212,7 @@ function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, on
   const chr = CHARACTERS.find(c => c.k === charK) || null;
   const [decorateOpen, setDecorateOpen] = useState(false);
   const [decorateVersion, setDecorateVersion] = useState(0); // 노트꾸미기에서 스티커 복원 시 홈 목록 새로고침용
-  const STREAK = 4;                        // 데모: 실제로는 학습 로그에서(3개월 띄엄띄엄 학습 페르소나 — 최근 재개)
+  const STREAK = ACTIVITY.streak();        // 실데이터: 학습 활동 로그의 연속일(2026-07-18 실측 전환)
   const stage = streakStage(STREAK);       // 1~4
   const speed = { "--bob": (0.64 - stage * 0.06) + "s", "--road": (0.8 - stage * 0.09) + "s" };
 
@@ -3217,26 +3255,20 @@ function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, on
     return spans;
   }, [weekHues]);
   const grass = useMemo(() => {
-    /* 데모 시드(가상 페르소나: 3개월 띄엄띄엄 학습) — 예전 수식 패턴((i*7+3)%11)은 줄무늬처럼
-       규칙적으로 보여서, "학습 연속 구간 + 빈 날"이 섞인 현실적인 패턴으로 교체(2026-07-17).
-       고정 시드 PRNG라 리렌더/재방문에도 모양이 안 바뀜. 시작 4주 전은 거의 빈칸(가입 전).
-       색은 잉크 1색 대신 그 주가 속한 달의 형광펜 색(weekHues)을 쓰고, 옅음/보통/진함은 그 색의
-       light/base/dark 톤으로 표현(2026-07-18, 피그마 디자인 반영 — 형광펜 시스템 그대로 재사용). */
-    let s = 20260716; // 고정 시드
-    const rnd = () => { s = (s * 1103515245 + 12345) % 2147483648; return s / 2147483648; };
+    /* 실데이터 전환(2026-07-18): 각 칸을 실제 날짜에 매핑해 활동 로그(ACTIVITY)의 그날 학습량으로
+       강도를 정한다. 그리드는 17주(열)×5행 — 열 week(0=가장 과거…16=이번 주), 행 r(0~4). 한 주에서
+       가장 최근 5일을 샘플: day = 오늘 - ((16-week)*7 + (4-r)). 색은 그 주가 속한 달의 형광펜 색
+       (weekHues), 옅음/보통/진함은 그 색의 light/base/dark(활동량 1~2 / 3~5 / 6+). 활동 없는 날은 빈칸. */
+    const T = Math.floor(Date.now() / DAY);
     const cells = [];
-    let studying = false; // 연속 학습 구간 상태 머신
     for (let i = 0; i < 17 * 5; i++) {
-      const week = i % 17; // 그리드가 행 우선(17열×5행)이라 열(=주)은 i%17
+      const week = i % 17, row = Math.floor(i / 17);
+      const day = T - ((16 - week) * 7 + (4 - row));
+      const c = ACTIVITY.dayCount(day);
+      if (c <= 0) { cells.push(""); continue; }
       const tokens = GRASS_TOKENS[weekHues[week].hue];
-      if (week < 4) { cells.push(rnd() < 0.06 ? tokens.light : ""); continue; } // 학습 시작 전(왼쪽 4주)
-      if (studying) { if (rnd() < 0.25) studying = false; } // 평균 4일 연속 후 휴식
-      else if (rnd() < 0.45) studying = true; // 휴식은 평균 2일쯤
-      if (!studying) { cells.push(""); continue; }
-      const r = rnd();
-      cells.push(r < 0.25 ? tokens.dark : r < 0.6 ? tokens.base : tokens.light); // 강도는 중간이 가장 흔하게
+      cells.push(c >= 6 ? tokens.dark : c >= 3 ? tokens.base : tokens.light);
     }
-    cells[cells.length - 1] = GRASS_TOKENS[weekHues[16].hue].base; // 오늘(마지막 칸)은 학습한 날로
     return cells;
   }, [weekHues]);
   const badgeProgress = computeBadgeProgress();
@@ -3632,7 +3664,7 @@ function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump, viewJump, onCo
   // 단어상세의 어근 칩에서 넘어온 경우: 카테고리 > 어근별 > 그 어근 목록으로 바로 진입
   useEffect(() => {
     if (!rootJump) return;
-    setQ(""); setView("category"); setCatModeState("root"); setCatSel(rootJump);
+    setQ(""); setView("category"); setCatModeState("root"); setCatSel(rootJump); ACTIVITY.add("roots");
     onConsumeRootJump();
     // eslint-disable-next-line
   }, [rootJump]);
@@ -3885,7 +3917,7 @@ function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump, viewJump, onCo
                           return !q2 || affix.toLowerCase().includes(q2) || info.gloss.toLowerCase().includes(q2);
                         })
                         .map(([affix, info]) => (
-                          <button key={affix} className="rootrow" onClick={() => setCatSel(affix)}>
+                          <button key={affix} className="rootrow" onClick={() => { setCatSel(affix); ACTIVITY.add("roots"); }}>
                             <span className="ax">{affix}</span>
                             <span className="gl">{info.gloss}</span>
                             <span className="n">{info.ws.length}개 ›</span>
@@ -4422,6 +4454,7 @@ function Writing({ onExit }) {
     try {
       const r = await writingFeedback(genre, activePrompt, text.trim());
       setResult(r);
+      ACTIVITY.add("write");
       WRITING_HISTORY.unshift({ genreId: genre.id, genreName: genre.name, natural_pct: r.natural_pct, at: Date.now() });
       WRITING_HISTORY = WRITING_HISTORY.slice(0, 30);
       saveWritingHistory();
@@ -4713,6 +4746,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
     const histBefore = messages; // 이 턴 이전까지의 히스토리 — 다음 상대 대사 프롬프트용
     setMessages(m => [...m, { role: "user", en: text, at: Date.now() }]);
     setInput(""); setLoadingFb(true); setErr(null);
+    ACTIVITY.add("talk"); // 회화 활동 로그(스트릭·잔디·회화 뱃지)
     pendingBotLineRef.current = null;
     try {
       const r = await talkFeedbackAndNext(persona, histBefore, text);
@@ -4916,6 +4950,7 @@ function PronunClinic({ onBack }) {
     const weak = new Set(norm.slice(-1).concat(norm.length > 4 ? [norm[1]] : []));
     const words = norm.map(w => ({ w, ok: !weak.has(w) }));
     setResult({ score: Math.round(words.filter(x => x.ok).length / words.length * 100), words, demo: true });
+    ACTIVITY.add("pronun");
   };
 
   const startRec = async () => {
@@ -4937,7 +4972,7 @@ function PronunClinic({ onBack }) {
         setScoring(true);
         try {
           const said = await transcribeAudio(blob, rec.mimeType || mimeType || "audio/webm");
-          if (said) setResult({ ...pronScore(drill.en, said), said });
+          if (said) { setResult({ ...pronScore(drill.en, said), said }); ACTIVITY.add("pronun"); }
           else setErr("음성을 알아듣지 못했어요. 다시 시도해 주세요.");
         } catch (e) { setErr("채점에 실패했어요. 잠시 후 다시 시도해 주세요."); }
         finally { setScoring(false); }
@@ -5110,25 +5145,23 @@ function TalkSOS({ onBack, onOpenWord }) {
    시각(at)으로 최근 8주 학습량 막대그래프를 그린다. 데모 시드가 at을 최근 ~90일에 뿌려둬서
    실제 기록이 없어도 통계가 채워져 보인다(2026-07-17 — "성장 기록 준비 중" 자리 채움). */
 function GrowthRecord() {
-  const now = Date.now();
+  // 연속일·활동일·주간 학습량은 활동 로그(ACTIVITY, 모든 학습 종류 합산), 학습한 단어·완료는 SRS 기준.
+  const T = Math.floor(Date.now() / DAY);
   const recs = allItems().map(it => SRS.get(it.key)).filter(Boolean);
   const learned = recs.length;
   const mastered = recs.filter(s => s.box >= 6).length;
-  const dset = new Set(recs.map(s => (s.at != null ? Math.floor(s.at / DAY) : null)).filter(x => x != null));
-  // 연속 학습일 = 가장 최근 학습일에서 하루씩 거슬러 끊기지 않고 이어진 날 수(오늘 학습 안 했어도 최근 구간 표시)
-  const sortedDays = [...dset].sort((a, b) => b - a);
-  let streak = 0;
-  if (sortedDays.length) { streak = 1; let prev = sortedDays[0]; for (let k = 1; k < sortedDays.length; k++) { if (sortedDays[k] === prev - 1) { streak++; prev = sortedDays[k]; } else break; } }
-  const thisWeek = recs.filter(s => s.at != null && now - s.at < 7 * DAY).length;
+  const streak = ACTIVITY.streak();
+  const activeDays = ACTIVITY.activeDays();
+  let thisWeek = 0; for (let d = T - 6; d <= T; d++) thisWeek += ACTIVITY.dayCount(d);
   const weeks = Array.from({ length: 8 }, () => 0);
-  recs.forEach(s => { if (s.at == null) return; const w = Math.floor((now - s.at) / (7 * DAY)); if (w >= 0 && w < 8) weeks[7 - w]++; });
+  for (const key in ACTIVITY.log()) { const d = Number(key); const w = Math.floor((T - d) / 7); if (w >= 0 && w < 8) weeks[7 - w] += ACTIVITY.dayCount(d); }
   const maxW = Math.max(1, ...weeks);
   // 포스트잇 색은 성취 색 하이어라키(핑크<노랑<초록<파랑) 순서로 4칸에 매핑
   const tiles = [
     { v: streak, l: "연속 학습일", hl: "pink" },
     { v: learned, l: "학습한 단어", hl: "yellow" },
     { v: mastered, l: "완료(마스터)", hl: "green" },
-    { v: dset.size, l: "총 학습일", hl: "blue" },
+    { v: activeDays, l: "총 학습일", hl: "blue" },
   ];
   return (
     <div className="vault-sec">
@@ -6370,7 +6403,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
       onExit={() => { setSession(null); setSummary(null); }} />;
   }
   const onSessionExit = (done, correct, total) => {
-    if (done) { setSummary({ total: total || session.length, correct }); setSession("done"); }
+    if (done) { ACTIVITY.add(mode === "listen" ? "listen" : "card"); setSummary({ total: total || session.length, correct }); setSession("done"); }
     else setSession(null);
   };
   if (session && mode === "listen") return <DictationSession items={session} onExit={onSessionExit} onOpenWord={onOpenWord} />;
@@ -6687,7 +6720,7 @@ function App() {
       <div className="topbar">
         <div className="brand" role="button" tabIndex={0} onClick={() => { setLtOpen(false); setSettingsOpen(false); closeSheet(); setTab("home"); setTabResetKey(k => ({ ...k, home: k.home + 1 })); }} style={{ cursor: "pointer" }}>No<b>English</b></div>
         <div className="topbar-right">
-          <span className="pill"><span className={"dot hl-" + streakHl(4)} />연속 4일</span>
+          {(() => { const st = ACTIVITY.streak(); return <span className="pill"><span className={"dot hl-" + streakHl(st)} />연속 {st}일</span>; })()}
           <button className="avatar-btn" aria-label="설정" onClick={() => setSettingsOpen(true)}><Icon name="settings" size={19} /></button>
         </div>
       </div>

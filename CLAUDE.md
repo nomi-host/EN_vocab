@@ -97,6 +97,11 @@
 - **보관함 즐겨찾기/내 단어장 바로가기**: `dictViewJump`(App)→`Dict`의 `viewJump` effect로 허브 안 거치고 해당 뷰로 바로 진입.
 - **WordRow 뱃지 2줄**: CEFR은 윗줄 단독, 뜻·상태(완료/복습)는 아랫줄에 같이(`.meta-line`).
 
+## 실데이터(활동 로그) 메모
+- **홈 스트릭·잔디, 성장 기록, 뱃지 카운터의 단일 소스는 `ACTIVITY`(localStorage `en_activity`, 2026-07-18 P0 실데이터화).** 일자별(dayIndex)로 학습 종류별 횟수를 기록: `card·listen·talk·write·pronun·level·roots`. 세션/이벤트 완료 지점에서 `ACTIVITY.add(kind)` 호출 — 카드/듣기 세션 완료(`onSessionExit`, mode로 분기), 회화 메시지 전송(`send`), 작문 첨삭 성공, 발음 채점(실제+데모), 레벨테스트 저장(`saveLevelTest`), 어근 목록 열람(사전 어근별 선택·단어 어근칩 점프). **최초 1회는 `SRS.records()`의 `at`에서 일자별 card 활동을 시딩**해 데모 사용자도 잔디·스트릭이 학습 이력과 일치(그래서 첫 실행 streak≈3, 활동일≈28). `ACTIVITY.streak()`=가장 최근 활동일부터 이어진 연속일, `kindTotal(kind)`=종류별 누적, `dayCount(d)`, `activeDays()`.
+- **뱃지 실측(`computeBadgeProgress`)**: streak/listen/talk/roots는 `ACTIVITY`, words/review는 SRS, level은 레벨테스트에서 계산. `friend`(친구 초대)·`sos`(자립 회화)만 로컬로 못 세서 `-1`(미획득) 유지 — 백엔드/판정 로직 필요. 실측이라 처음엔 listen/talk/roots가 잠금(0)으로 시작해 실제 사용하면 오른다(더미 아님).
+- **홈 잔디는 각 칸을 실제 날짜에 매핑**(`day = 오늘 - ((16-week)*7 + (4-row))`, 한 주에서 최근 5일 샘플) 후 `ACTIVITY.dayCount(day)`로 강도(빈칸/light/base/dark = 0 / 1~2 / 3~5 / 6+). 색은 그 주 달의 형광펜 hue. 새 학습 활동을 기록하는 경로를 추가하면 이 잔디·스트릭·뱃지에 자동 반영되니 `ACTIVITY.add`만 잊지 말 것.
+
 ## 데이터 파이프라인 메모
 - 시드는 `pipeline/`에서 생성 → `pipeline/merge_cefrj.js`가 `words.js`로 병합. `words.js`는 직접 수정 금지(배치/보강 파일 수정 후 재빌드).
 - 다의어 senses는 `pipeline/senses_parts/*.json`(에이전트별 분할)을 merge가 합침. WordNet 뼈대는 `pipeline/wordnet_senses.json`.
