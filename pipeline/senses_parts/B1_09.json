@@ -1531,24 +1531,24 @@
   ],
   "objective": [
     {
-      "cue": "이루고자 하는 목표",
-      "ko": "목표",
-      "pos": "명사",
-      "lv": 1,
-      "cefr": "B1",
-      "en": "something that you are trying to achieve",
-      "syn": ["goal", "aim"],
-      "ex": [{ "en": "The main objective of the project is to reduce costs.", "ko": "그 프로젝트의 주된 목표는 비용을 줄이는 것이다." }]
-    },
-    {
       "cue": "감정에 치우치지 않고 객관적인",
       "ko": "객관적인",
       "pos": "형용사",
-      "lv": 3,
+      "lv": 1,
       "cefr": "B2",
       "en": "based on facts rather than personal feelings or opinions",
       "syn": [],
       "ex": [{ "en": "Try to give an objective opinion about the situation.", "ko": "그 상황에 대해 객관적인 의견을 내려고 노력해봐." }]
+    },
+    {
+      "cue": "이루고자 하는 목표",
+      "ko": "목표",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "something that you are trying to achieve",
+      "syn": ["goal", "aim"],
+      "ex": [{ "en": "The main objective of the project is to reduce costs.", "ko": "그 프로젝트의 주된 목표는 비용을 줄이는 것이다." }]
     }
   ],
   "observation": [
@@ -1827,10 +1827,20 @@
   ],
   "onstage": [
     {
+      "cue": "무대 위에서 일어나는",
+      "ko": "무대 위의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "happening on the stage, in front of an audience",
+      "syn": [],
+      "ex": [{ "en": "The actors had an onstage argument that surprised everyone.", "ko": "배우들의 무대 위 언쟁은 모두를 놀라게 했다." }]
+    },
+    {
       "cue": "무대 위에서",
       "ko": "무대 위에서",
       "pos": "부사",
-      "lv": 1,
+      "lv": 2,
       "cefr": "B1",
       "en": "on the stage, in front of an audience",
       "syn": [],
