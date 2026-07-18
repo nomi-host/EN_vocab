@@ -1,0 +1,3612 @@
+{
+  "financial": [
+    {
+      "cue": "돈·경제와 관련된",
+      "ko": "재정적인, 금융의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "relating to money or the management of money",
+      "syn": [
+        "fiscal"
+      ],
+      "ex": [
+        {
+          "en": "The company is going through financial difficulties.",
+          "ko": "그 회사는 재정적인 어려움을 겪고 있다."
+        }
+      ]
+    }
+  ],
+  "finding": [
+    {
+      "cue": "조사·연구를 통해 알아낸",
+      "ko": "발견, 조사 결과",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "something discovered or learned through research or investigation",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The study's findings surprised the researchers.",
+          "ko": "그 연구의 결과는 연구자들을 놀라게 했다."
+        }
+      ]
+    }
+  ],
+  "finger": [
+    {
+      "cue": "손에 있는",
+      "ko": "손가락",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "one of the five long parts at the end of the hand",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She pointed at the map with her finger.",
+          "ko": "그녀는 손가락으로 지도를 가리켰다."
+        }
+      ]
+    }
+  ],
+  "fire station": [
+    {
+      "cue": "소방차가 대기하는 곳",
+      "ko": "소방서",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a building where firefighters and fire engines are based",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The fire station is just around the corner.",
+          "ko": "소방서는 바로 모퉁이를 돌면 있다."
+        }
+      ]
+    }
+  ],
+  "firefighter": [
+    {
+      "cue": "불을 끄는 직업",
+      "ko": "소방관",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a person whose job is to put out fires",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The firefighters rescued a cat from the tree.",
+          "ko": "소방관들이 나무에서 고양이를 구조했다."
+        }
+      ]
+    }
+  ],
+  "firework": [
+    {
+      "cue": "밤하늘에 터뜨리는",
+      "ko": "불꽃놀이",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a device that explodes in the sky to produce bright colors and light, used for celebrations",
+      "syn": [],
+      "ex": [
+        {
+          "en": "We watched the fireworks on New Year's Eve.",
+          "ko": "우리는 새해 전야에 불꽃놀이를 봤다."
+        }
+      ]
+    }
+  ],
+  "firm": [
+    {
+      "cue": "태도·믿음이 확고한",
+      "ko": "단단한, 확고한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "having a solid, definite quality; not easily moved or changed",
+      "syn": [
+        "steady"
+      ],
+      "ex": [
+        {
+          "en": "She gave a firm handshake.",
+          "ko": "그녀는 단단하게 악수를 했다."
+        }
+      ]
+    },
+    {
+      "cue": "사업을 하는 단체",
+      "ko": "회사",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a business organization",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He works for a law firm.",
+          "ko": "그는 법률 회사에서 일한다."
+        }
+      ]
+    },
+    {
+      "cue": "근육·시장 등이 팽팽해지다",
+      "ko": "단단해지다, 굳어지다",
+      "pos": "동사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "become or make firm or solid",
+      "syn": [
+        "tauten"
+      ],
+      "ex": [
+        {
+          "en": "Regular exercise helps firm up your muscles.",
+          "ko": "꾸준한 운동은 근육을 단단하게 만드는 데 도움이 된다."
+        }
+      ]
+    }
+  ],
+  "firmly": [
+    {
+      "cue": "태도나 믿음을 확고히",
+      "ko": "단호하게, 확고히",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in a strong and determined way",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He firmly believes in equal rights.",
+          "ko": "그는 평등한 권리를 확고히 믿는다."
+        }
+      ]
+    }
+  ],
+  "first floor": [
+    {
+      "cue": "건물의 지면과 같은 층 (미국식)",
+      "ko": "1층",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "the floor of a building at ground level",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The lobby is on the first floor.",
+          "ko": "로비는 1층에 있다."
+        }
+      ]
+    }
+  ],
+  "first lady": [
+    {
+      "cue": "대통령의 배우자",
+      "ko": "영부인",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the wife of a president or head of state",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The First Lady attended the charity event.",
+          "ko": "영부인이 그 자선 행사에 참석했다."
+        }
+      ]
+    }
+  ],
+  "first-floor": [
+    {
+      "cue": "1층에 있는",
+      "ko": "1층의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "located on the first floor",
+      "syn": [],
+      "ex": [
+        {
+          "en": "We booked a first-floor room with a garden view.",
+          "ko": "우리는 정원이 보이는 1층 객실을 예약했다."
+        }
+      ]
+    }
+  ],
+  "fitness": [
+    {
+      "cue": "몸 상태가 좋은",
+      "ko": "건강, 신체 단련",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the condition of being physically strong and healthy",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She goes to the gym to improve her fitness.",
+          "ko": "그녀는 체력을 기르려고 헬스장에 다닌다."
+        }
+      ]
+    }
+  ],
+  "flash": [
+    {
+      "cue": "빛이 순간적으로",
+      "ko": "번쩍이다, 반짝이다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "produce a sudden brief light",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Lightning flashed across the sky.",
+          "ko": "번개가 하늘을 가로질러 번쩍였다."
+        }
+      ]
+    },
+    {
+      "cue": "순간적으로 번쩍이는 빛",
+      "ko": "섬광, 번쩍임",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "a sudden brief burst of light",
+      "syn": [],
+      "ex": [
+        {
+          "en": "There was a flash of lightning before the thunder.",
+          "ko": "천둥이 치기 전에 번개가 번쩍였다."
+        }
+      ]
+    },
+    {
+      "cue": "사진 찍을 때 터지는 빛",
+      "ko": "(카메라) 플래시",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "A2",
+      "en": "a device that produces a bright light for taking photos",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Don't use the flash indoors, it's too bright.",
+          "ko": "실내에서는 플래시를 쓰지 마세요, 너무 밝아요."
+        }
+      ]
+    },
+    {
+      "cue": "생각·기억이 순간적으로",
+      "ko": "휙 스치다, 퍼뜩 떠오르다",
+      "pos": "동사",
+      "lv": 5,
+      "cefr": "B1",
+      "en": "appear or pass very quickly",
+      "syn": [],
+      "ex": [
+        {
+          "en": "A memory flashed through her mind.",
+          "ko": "어떤 기억이 그녀의 머릿속을 스치고 지나갔다."
+        }
+      ]
+    }
+  ],
+  "flavor": [
+    {
+      "cue": "음식·음료의",
+      "ko": "맛, 풍미",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the specific taste of a food or drink",
+      "syn": [],
+      "ex": [
+        {
+          "en": "This ice cream has a strong vanilla flavor.",
+          "ko": "이 아이스크림은 바닐라 맛이 강하다."
+        }
+      ]
+    },
+    {
+      "cue": "소스·요리에 맛을",
+      "ko": "맛을 내다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "give a particular taste to food or drink",
+      "syn": [
+        "season"
+      ],
+      "ex": [
+        {
+          "en": "The soup was flavored with garlic and thyme.",
+          "ko": "그 수프는 마늘과 타임으로 맛을 냈다."
+        }
+      ]
+    },
+    {
+      "cue": "장소·상황의 독특한",
+      "ko": "특유의 분위기, 느낌",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B1",
+      "en": "a distinctive quality or atmosphere of something",
+      "syn": [
+        "feel"
+      ],
+      "ex": [
+        {
+          "en": "The old town has a unique flavor.",
+          "ko": "그 구시가지는 독특한 분위기를 가지고 있다."
+        }
+      ]
+    }
+  ],
+  "flock": [
+    {
+      "cue": "새·양 등의 무리",
+      "ko": "떼, 무리",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a group of birds or animals such as sheep, that stay or move together",
+      "syn": [],
+      "ex": [
+        {
+          "en": "A flock of birds flew over the field.",
+          "ko": "새 떼가 들판 위로 날아갔다."
+        }
+      ]
+    },
+    {
+      "cue": "사람들이 한곳으로",
+      "ko": "떼지어 모이다, 몰려들다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "gather or move somewhere in a large group",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Tourists flock to the beach in summer.",
+          "ko": "여름이면 관광객들이 그 해변으로 몰려든다."
+        }
+      ]
+    }
+  ],
+  "flow": [
+    {
+      "cue": "물·전기 등이",
+      "ko": "흐르다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "move steadily and continuously in one direction",
+      "syn": [
+        "run"
+      ],
+      "ex": [
+        {
+          "en": "The river flows through the valley.",
+          "ko": "그 강은 계곡을 따라 흐른다."
+        }
+      ]
+    },
+    {
+      "cue": "액체·정보·자금의",
+      "ko": "흐름",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "the continuous movement of something",
+      "syn": [
+        "stream"
+      ],
+      "ex": [
+        {
+          "en": "There was a steady flow of traffic on the highway.",
+          "ko": "고속도로에는 차량 흐름이 꾸준히 이어졌다."
+        }
+      ]
+    }
+  ],
+  "flu": [
+    {
+      "cue": "겨울에 잘 걸리는 병",
+      "ko": "독감",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "an illness like a bad cold that causes fever and body aches",
+      "syn": [
+        "influenza"
+      ],
+      "ex": [
+        {
+          "en": "I caught the flu last week.",
+          "ko": "나는 지난주에 독감에 걸렸다."
+        }
+      ]
+    }
+  ],
+  "fluent": [
+    {
+      "cue": "외국어를 자연스럽게 하는",
+      "ko": "유창한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "able to speak or write a language easily and accurately",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She is fluent in three languages.",
+          "ko": "그녀는 세 개 언어에 유창하다."
+        }
+      ]
+    }
+  ],
+  "fluently": [
+    {
+      "cue": "언어를 능숙하게",
+      "ko": "유창하게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in a way that shows you can speak or write a language easily and well",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He speaks English fluently.",
+          "ko": "그는 영어를 유창하게 말한다."
+        }
+      ]
+    }
+  ],
+  "flunk": [
+    {
+      "cue": "시험·과목에서",
+      "ko": "낙제하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "fail a test, course, or exam",
+      "syn": [
+        "fail"
+      ],
+      "ex": [
+        {
+          "en": "He flunked his math exam.",
+          "ko": "그는 수학 시험에서 낙제했다."
+        }
+      ]
+    }
+  ],
+  "flute": [
+    {
+      "cue": "가늘고 긴 관악기",
+      "ko": "플루트",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a thin metal musical instrument that you play by blowing across a hole",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She practices the flute every afternoon.",
+          "ko": "그녀는 매일 오후 플루트를 연습한다."
+        }
+      ]
+    },
+    {
+      "cue": "샴페인을 따라 마시는 길쭉한 잔",
+      "ko": "샴페인 잔",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B1",
+      "en": "a tall narrow glass used for drinking champagne",
+      "syn": [],
+      "ex": [
+        {
+          "en": "They toasted with champagne flutes.",
+          "ko": "그들은 샴페인 잔으로 건배했다."
+        }
+      ]
+    }
+  ],
+  "fold": [
+    {
+      "cue": "종이·옷을",
+      "ko": "접다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "bend something so that one part covers another part",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She folded the letter and put it in an envelope.",
+          "ko": "그녀는 편지를 접어 봉투에 넣었다."
+        }
+      ]
+    },
+    {
+      "cue": "천·종이가 접혀 생긴",
+      "ko": "주름, 접힌 부분",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "a line or crease made by folding something",
+      "syn": [
+        "crease"
+      ],
+      "ex": [
+        {
+          "en": "There were deep folds in the curtain.",
+          "ko": "그 커튼에는 깊은 주름이 있었다."
+        }
+      ]
+    },
+    {
+      "cue": "사업·회사가 실패해서",
+      "ko": "(사업이) 망하다, 문을 닫다",
+      "pos": "동사",
+      "lv": 6,
+      "cefr": "B2",
+      "en": "(of a business) fail and stop operating",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The small bakery folded after just two years.",
+          "ko": "그 작은 빵집은 겨우 2년 만에 문을 닫았다."
+        }
+      ]
+    }
+  ],
+  "folk": [
+    {
+      "cue": "편하게 부르는 일반 사람들",
+      "ko": "사람들 (구어)",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "people in general, used in an informal way",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Folks around here are very friendly.",
+          "ko": "여기 사람들은 정말 친절하다."
+        }
+      ]
+    },
+    {
+      "cue": "전통 음악·이야기 등",
+      "ko": "민속의, 전통의",
+      "pos": "형용사",
+      "lv": 3,
+      "cefr": "A2",
+      "en": "traditional, relating to the culture and art of ordinary people",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She grew up listening to folk music.",
+          "ko": "그녀는 어릴 때부터 민속 음악을 들으며 자랐다."
+        }
+      ]
+    }
+  ],
+  "fond": [
+    {
+      "cue": "누군가·무언가를 좋아하는",
+      "ko": "좋아하는, 애정을 가진",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "having a liking or affection for someone or something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She is very fond of her grandmother.",
+          "ko": "그녀는 할머니를 매우 좋아한다."
+        }
+      ]
+    }
+  ],
+  "fondness": [
+    {
+      "cue": "누군가·무언가를 좋아하는 마음",
+      "ko": "애정, 좋아함",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a feeling of liking someone or something",
+      "syn": [
+        "affection"
+      ],
+      "ex": [
+        {
+          "en": "He has a fondness for old movies.",
+          "ko": "그는 오래된 영화에 애정을 가지고 있다."
+        }
+      ]
+    }
+  ],
+  "foolish": [
+    {
+      "cue": "생각·행동이 어리석은",
+      "ko": "어리석은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "showing a lack of good sense or judgment",
+      "syn": [],
+      "ex": [
+        {
+          "en": "It was foolish of me to trust him.",
+          "ko": "그를 믿었던 것은 나의 어리석은 짓이었다."
+        }
+      ]
+    }
+  ],
+  "foot": [
+    {
+      "cue": "다리 끝 신체 부위",
+      "ko": "발",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "the part of the body at the end of the leg that you stand on",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She hurt her foot playing soccer.",
+          "ko": "그녀는 축구를 하다가 발을 다쳤다."
+        }
+      ]
+    },
+    {
+      "cue": "길이를 재는 단위",
+      "ko": "피트(길이 단위)",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "a unit of length equal to 12 inches (about 30 cm)",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The room is ten feet wide.",
+          "ko": "그 방은 폭이 10피트다."
+        }
+      ]
+    },
+    {
+      "cue": "청구서·비용을",
+      "ko": "(비용을) 부담하다",
+      "pos": "동사",
+      "lv": 7,
+      "cefr": "B2",
+      "en": "pay for something, especially a bill",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The company agreed to foot the bill for the repairs.",
+          "ko": "그 회사가 수리 비용을 부담하기로 했다."
+        }
+      ]
+    }
+  ],
+  "forbidden": [
+    {
+      "cue": "규칙·법으로 금지된",
+      "ko": "금지된",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "not allowed by rule or law",
+      "syn": [
+        "prohibited"
+      ],
+      "ex": [
+        {
+          "en": "Smoking is forbidden in this building.",
+          "ko": "이 건물 안에서는 흡연이 금지되어 있다."
+        }
+      ]
+    }
+  ],
+  "forecast": [
+    {
+      "cue": "날씨·경제의",
+      "ko": "예보, 예측",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a statement about what is expected to happen in the future, especially the weather",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The forecast says it will rain tomorrow.",
+          "ko": "예보에 따르면 내일 비가 온다고 한다."
+        }
+      ]
+    },
+    {
+      "cue": "미래를 미리 짐작해서",
+      "ko": "예측하다, 예보하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "say what you expect to happen in the future",
+      "syn": [
+        "predict"
+      ],
+      "ex": [
+        {
+          "en": "Experts forecast a rise in prices next year.",
+          "ko": "전문가들은 내년에 물가가 오를 것이라고 예측한다."
+        }
+      ]
+    }
+  ],
+  "forehead": [
+    {
+      "cue": "눈 위 얼굴 부위",
+      "ko": "이마",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the part of the face above the eyes and below the hair",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He wiped the sweat from his forehead.",
+          "ko": "그는 이마의 땀을 닦았다."
+        }
+      ]
+    }
+  ],
+  "forgive": [
+    {
+      "cue": "잘못을 저지른 사람을",
+      "ko": "용서하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "stop feeling angry with someone for something they did wrong",
+      "syn": [],
+      "ex": [
+        {
+          "en": "I forgave him for being late.",
+          "ko": "나는 그가 늦은 것을 용서했다."
+        }
+      ]
+    }
+  ],
+  "formal": [
+    {
+      "cue": "예의·격식을 갖춘",
+      "ko": "공식적인, 격식을 차린",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "following accepted rules and conventions, especially in dress or manner",
+      "syn": [],
+      "ex": [
+        {
+          "en": "You should wear formal clothes to the interview.",
+          "ko": "면접에는 격식을 차린 옷을 입어야 한다."
+        }
+      ]
+    }
+  ],
+  "formally": [
+    {
+      "cue": "공적인 절차를 거쳐",
+      "ko": "공식적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in an official or formal way",
+      "syn": [
+        "officially"
+      ],
+      "ex": [
+        {
+          "en": "The new policy was formally announced yesterday.",
+          "ko": "새 정책이 어제 공식적으로 발표되었다."
+        }
+      ]
+    }
+  ],
+  "format": [
+    {
+      "cue": "글·자료를 정리하는 틀",
+      "ko": "형식, 서식",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the way something is arranged or organized",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The report follows a standard format.",
+          "ko": "그 보고서는 표준 서식을 따르고 있다."
+        }
+      ]
+    },
+    {
+      "cue": "컴퓨터·문서를 정리하는",
+      "ko": "포맷하다, 서식화하다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "arrange text or data according to a specific plan, or prepare a disk for storing data",
+      "syn": [],
+      "ex": [
+        {
+          "en": "You need to format the new hard drive first.",
+          "ko": "먼저 새 하드 드라이브를 포맷해야 한다."
+        }
+      ]
+    }
+  ],
+  "former": [
+    {
+      "cue": "과거에 어떤 지위·역할이었던",
+      "ko": "이전의, 예전의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "having been something in the past but not now",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She is the former president of the company.",
+          "ko": "그녀는 그 회사의 전직 사장이다."
+        }
+      ]
+    },
+    {
+      "cue": "둘 중 먼저 언급한 것을 가리켜",
+      "ko": "전자(의)",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "the first of two things or people just mentioned",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Of the two options, I prefer the former.",
+          "ko": "그 두 선택지 중에서 나는 전자를 선호한다."
+        }
+      ]
+    }
+  ],
+  "formula": [
+    {
+      "cue": "문제를 풀거나 만드는 정해진 방법",
+      "ko": "공식",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a set method or plan for doing or making something, especially in math or science",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Scientists developed a new formula for the vaccine.",
+          "ko": "과학자들은 그 백신을 위한 새로운 공식을 개발했다."
+        }
+      ]
+    },
+    {
+      "cue": "아기에게 먹이는 액체 음식",
+      "ko": "(아기) 분유",
+      "pos": "명사",
+      "lv": 5,
+      "cefr": "B1",
+      "en": "a liquid food given to babies instead of breast milk",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The baby drinks formula every few hours.",
+          "ko": "그 아기는 몇 시간마다 분유를 먹는다."
+        }
+      ]
+    }
+  ],
+  "forth": [
+    {
+      "cue": "시간·순서상 앞으로",
+      "ko": "앞으로, 밖으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "forward or onward in time, place, or order",
+      "syn": [],
+      "ex": [
+        {
+          "en": "From that day forth, everything changed.",
+          "ko": "그날 이후로 모든 것이 바뀌었다."
+        }
+      ]
+    }
+  ],
+  "fortnight": [
+    {
+      "cue": "14일, 두 주",
+      "ko": "2주, 보름",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a period of two weeks",
+      "syn": [
+        "two weeks"
+      ],
+      "ex": [
+        {
+          "en": "We're going on vacation for a fortnight.",
+          "ko": "우리는 보름 동안 휴가를 갈 것이다."
+        }
+      ]
+    }
+  ],
+  "fortunate": [
+    {
+      "cue": "운 좋게 좋은 일이 생긴",
+      "ko": "운이 좋은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "having good luck",
+      "syn": [
+        "lucky"
+      ],
+      "ex": [
+        {
+          "en": "We were fortunate to find a parking spot.",
+          "ko": "우리는 운 좋게 주차할 자리를 찾았다."
+        }
+      ]
+    }
+  ],
+  "foundation": [
+    {
+      "cue": "건물·이론을 떠받치는",
+      "ko": "기초, 토대",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the basic ideas or structure that something is built on or depends on",
+      "syn": [
+        "basis"
+      ],
+      "ex": [
+        {
+          "en": "Hard work is the foundation of success.",
+          "ko": "노력은 성공의 토대다."
+        }
+      ]
+    },
+    {
+      "cue": "자선·연구를 위한 기관",
+      "ko": "재단(기관)",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "an organization that provides money for research, education, or charity",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The foundation supports education projects around the world.",
+          "ko": "그 재단은 전 세계 교육 사업을 지원한다."
+        }
+      ]
+    },
+    {
+      "cue": "피부톤을 정리하는 화장품",
+      "ko": "파운데이션(화장품)",
+      "pos": "명사",
+      "lv": 5,
+      "cefr": "B1",
+      "en": "a makeup product used to even out and cover the skin",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She applied foundation before putting on the rest of her makeup.",
+          "ko": "그녀는 나머지 화장을 하기 전에 파운데이션을 발랐다."
+        }
+      ]
+    }
+  ],
+  "fountain": [
+    {
+      "cue": "물이 뿜어져 나오는 구조물",
+      "ko": "분수",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a structure that shoots water into the air, often as a decoration",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Children threw coins into the fountain.",
+          "ko": "아이들이 분수에 동전을 던졌다."
+        }
+      ]
+    }
+  ],
+  "fragment": [
+    {
+      "cue": "깨지거나 잘린 조각",
+      "ko": "조각, 파편",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a small piece broken off or separated from something bigger",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She stepped on a fragment of broken glass.",
+          "ko": "그녀는 깨진 유리 조각을 밟았다."
+        }
+      ]
+    },
+    {
+      "cue": "산산조각 나다",
+      "ko": "조각내다, 산산조각 나다",
+      "pos": "동사",
+      "lv": 5,
+      "cefr": "B2",
+      "en": "break or separate into small pieces",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The vase fragmented into hundreds of pieces when it fell.",
+          "ko": "그 꽃병은 떨어지면서 수백 개의 조각으로 산산조각 났다."
+        }
+      ]
+    }
+  ],
+  "freely": [
+    {
+      "cue": "제약 없이 자유롭게",
+      "ko": "자유롭게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "without restriction or limits",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Visitors can move freely around the museum.",
+          "ko": "방문객들은 박물관을 자유롭게 돌아다닐 수 있다."
+        }
+      ]
+    }
+  ],
+  "freezer": [
+    {
+      "cue": "음식을 얼려 보관하는",
+      "ko": "냉동고",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a machine or part of a refrigerator that keeps food frozen",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Put the ice cream back in the freezer.",
+          "ko": "아이스크림을 다시 냉동고에 넣어라."
+        }
+      ]
+    }
+  ],
+  "freezing": [
+    {
+      "cue": "날씨·기온이 몹시 추운",
+      "ko": "몹시 추운, 얼어붙는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "extremely cold, at or below the temperature at which water turns to ice",
+      "syn": [],
+      "ex": [
+        {
+          "en": "It's freezing outside, wear a warm coat.",
+          "ko": "밖이 몹시 추우니 따뜻한 코트를 입어라."
+        }
+      ]
+    }
+  ],
+  "frequency": [
+    {
+      "cue": "어떤 일이 일어나는 빈도",
+      "ko": "빈도",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "how often something happens over a period of time",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The frequency of buses increases during rush hour.",
+          "ko": "출퇴근 시간에는 버스 빈도가 늘어난다."
+        }
+      ]
+    },
+    {
+      "cue": "전파·소리의 진동수",
+      "ko": "주파수",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "the rate at which a sound wave or radio signal vibrates",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Radio stations broadcast on different frequencies.",
+          "ko": "라디오 방송국들은 서로 다른 주파수로 방송한다."
+        }
+      ]
+    }
+  ],
+  "frequent": [
+    {
+      "cue": "자주 일어나는",
+      "ko": "빈번한, 잦은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "happening often",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She is a frequent visitor to this cafe.",
+          "ko": "그녀는 이 카페의 단골손님이다."
+        }
+      ]
+    },
+    {
+      "cue": "어떤 장소를 습관적으로",
+      "ko": "자주 다니다, 자주 가다",
+      "pos": "동사",
+      "lv": 5,
+      "cefr": "B2",
+      "en": "visit a place often",
+      "syn": [
+        "haunt"
+      ],
+      "ex": [
+        {
+          "en": "He frequents the local coffee shop every morning.",
+          "ko": "그는 매일 아침 동네 커피숍에 자주 간다."
+        }
+      ]
+    }
+  ],
+  "frequently": [
+    {
+      "cue": "여러 번 자주",
+      "ko": "자주, 빈번히",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "often; many times",
+      "syn": [
+        "often"
+      ],
+      "ex": [
+        {
+          "en": "They frequently argue about small things.",
+          "ko": "그들은 사소한 것으로 자주 다툰다."
+        }
+      ]
+    }
+  ],
+  "freshman": [
+    {
+      "cue": "고등학교·대학교의 1학년",
+      "ko": "신입생, 1학년",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a student in the first year of high school or college",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She just started as a freshman at college.",
+          "ko": "그녀는 대학교 1학년으로 막 입학했다."
+        }
+      ]
+    }
+  ],
+  "friendliness": [
+    {
+      "cue": "다른 사람에게 다정하고 친절한 태도",
+      "ko": "친절함, 다정함",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the quality of being kind and pleasant to other people",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The staff greeted us with great friendliness.",
+          "ko": "직원들은 우리를 아주 친절하게 맞아주었다."
+        }
+      ]
+    }
+  ],
+  "fright": [
+    {
+      "cue": "갑작스러운 공포",
+      "ko": "공포, 두려움",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a sudden strong feeling of fear",
+      "syn": [
+        "fear"
+      ],
+      "ex": [
+        {
+          "en": "The loud noise gave her a real fright.",
+          "ko": "그 큰 소리가 그녀에게 정말로 공포를 안겼다."
+        }
+      ]
+    }
+  ],
+  "frost": [
+    {
+      "cue": "새벽에 풀·창문에 하얗게 앉는",
+      "ko": "서리",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a thin white layer of ice that forms outdoors when it is very cold",
+      "syn": [],
+      "ex": [
+        {
+          "en": "There was frost on the grass this morning.",
+          "ko": "오늘 아침 잔디에 서리가 내려 있었다."
+        }
+      ]
+    },
+    {
+      "cue": "케이크 표면에 크림·설탕을",
+      "ko": "설탕옷을 입히다, 장식하다",
+      "pos": "동사",
+      "lv": 5,
+      "cefr": "B2",
+      "en": "cover a cake with a sweet, creamy coating",
+      "syn": [
+        "ice"
+      ],
+      "ex": [
+        {
+          "en": "She frosted the cake with pink icing.",
+          "ko": "그녀는 케이크에 분홍색 설탕옷을 입혔다."
+        }
+      ]
+    },
+    {
+      "cue": "차 유리·풀잎에 서리가",
+      "ko": "서리로 덮이다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "cover something with a thin layer of frost",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The windshield was frosted over this morning.",
+          "ko": "오늘 아침 자동차 앞유리가 서리로 덮여 있었다."
+        }
+      ]
+    }
+  ],
+  "frozen": [
+    {
+      "cue": "물·강 등이 얼어붙은",
+      "ko": "얼어붙은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "turned into ice, or covered with ice",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The lake was completely frozen in January.",
+          "ko": "1월에 그 호수는 완전히 얼어붙어 있었다."
+        }
+      ]
+    },
+    {
+      "cue": "장기간 보관을 위해 얼린 음식",
+      "ko": "냉동된(음식)",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "(of food) preserved by keeping it very cold",
+      "syn": [],
+      "ex": [
+        {
+          "en": "We had frozen pizza for dinner.",
+          "ko": "우리는 저녁으로 냉동 피자를 먹었다."
+        }
+      ]
+    },
+    {
+      "cue": "공포·충격으로 몸이",
+      "ko": "(두려움 등으로) 얼어붙은, 꼼짝 못 하는",
+      "pos": "형용사",
+      "lv": 5,
+      "cefr": "B1",
+      "en": "unable to move because of fear or shock",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She stood frozen with fear when she saw the snake.",
+          "ko": "그녀는 뱀을 보고 두려움에 얼어붙어 서 있었다."
+        }
+      ]
+    }
+  ],
+  "frustrated": [
+    {
+      "cue": "일이 뜻대로 안 돼 답답한",
+      "ko": "좌절한, 답답한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "feeling annoyed or upset because you cannot achieve or do something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He felt frustrated when the internet kept disconnecting.",
+          "ko": "그는 인터넷이 계속 끊겨서 답답함을 느꼈다."
+        }
+      ]
+    }
+  ],
+  "frustration": [
+    {
+      "cue": "뜻대로 되지 않아 생기는 감정",
+      "ko": "좌절감",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the feeling of being annoyed or upset because you cannot achieve what you want",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She sighed in frustration at the long line.",
+          "ko": "그녀는 긴 줄에 좌절하며 한숨을 쉬었다."
+        }
+      ]
+    }
+  ],
+  "frying pan": [
+    {
+      "cue": "달걀·고기를 부치는 넓적한 팬",
+      "ko": "프라이팬",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a shallow flat pan used for frying food",
+      "syn": [
+        "skillet"
+      ],
+      "ex": [
+        {
+          "en": "He cracked an egg into the frying pan.",
+          "ko": "그는 프라이팬에 달걀을 깨 넣었다."
+        }
+      ]
+    }
+  ],
+  "fuel": [
+    {
+      "cue": "자동차·비행기를 움직이는",
+      "ko": "연료",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a substance such as gas or oil that is burned to produce energy",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The car ran out of fuel on the highway.",
+          "ko": "그 차는 고속도로에서 연료가 떨어졌다."
+        }
+      ]
+    },
+    {
+      "cue": "감정·상황을 부추기다",
+      "ko": "부추기다, 연료를 공급하다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "supply with fuel, or make a feeling or situation stronger",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The scandal fueled public anger.",
+          "ko": "그 스캔들은 대중의 분노를 부추겼다."
+        }
+      ]
+    }
+  ],
+  "full stop": [
+    {
+      "cue": "문장 끝에 찍는 점 (영국식)",
+      "ko": "마침표",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the punctuation mark (.) used at the end of a sentence",
+      "syn": [
+        "period"
+      ],
+      "ex": [
+        {
+          "en": "Don't forget to put a full stop at the end.",
+          "ko": "끝에 마침표 찍는 것 잊지 마세요."
+        }
+      ]
+    }
+  ],
+  "full-time": [
+    {
+      "cue": "하루 전체·정규 근무시간 동안",
+      "ko": "전일제의, 정규직의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "working for the whole of the usual working week, not part of it",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She has a full-time job at the hospital.",
+          "ko": "그녀는 병원에서 정규직으로 일한다."
+        }
+      ]
+    }
+  ],
+  "fund": [
+    {
+      "cue": "특정 목적을 위해 모아둔 돈",
+      "ko": "기금, 자금",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "an amount of money saved or collected for a particular purpose",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The school set up a fund for scholarships.",
+          "ko": "그 학교는 장학금을 위한 기금을 마련했다."
+        }
+      ]
+    },
+    {
+      "cue": "사업·연구에 돈을",
+      "ko": "자금을 대다, 기금을 지원하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "provide money for a project or activity",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The government funds several research programs.",
+          "ko": "정부는 여러 연구 프로그램에 자금을 지원한다."
+        }
+      ]
+    }
+  ],
+  "funeral": [
+    {
+      "cue": "돌아가신 분을 위한 의식",
+      "ko": "장례식",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a ceremony held for a person who has died, usually before burial or cremation",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Many friends and family attended the funeral.",
+          "ko": "많은 친구와 가족들이 장례식에 참석했다."
+        }
+      ]
+    }
+  ],
+  "fur": [
+    {
+      "cue": "동물 몸을 덮은 부드러운 털",
+      "ko": "털, 모피",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the soft thick hair that covers the bodies of some animals",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The cat's fur was soft and warm.",
+          "ko": "그 고양이의 털은 부드럽고 따뜻했다."
+        }
+      ]
+    }
+  ],
+  "furnish": [
+    {
+      "cue": "가구를 비치하다",
+      "ko": "가구를 비치하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "provide a room or house with furniture",
+      "syn": [],
+      "ex": [
+        {
+          "en": "They furnished the apartment with secondhand furniture.",
+          "ko": "그들은 중고 가구로 그 아파트를 꾸몄다."
+        }
+      ]
+    },
+    {
+      "cue": "정보·자료 등을",
+      "ko": "제공하다, 공급하다",
+      "pos": "동사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "supply or provide something that is needed",
+      "syn": [
+        "provide"
+      ],
+      "ex": [
+        {
+          "en": "Please furnish us with the necessary documents.",
+          "ko": "필요한 서류를 저희에게 제공해 주세요."
+        }
+      ]
+    }
+  ],
+  "furthermore": [
+    {
+      "cue": "앞서 한 말에 덧붙여",
+      "ko": "게다가, 더욱이",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in addition to what has already been said",
+      "syn": [
+        "moreover"
+      ],
+      "ex": [
+        {
+          "en": "The plan is expensive; furthermore, it may not even work.",
+          "ko": "그 계획은 비용이 많이 든다. 게다가 효과가 없을 수도 있다."
+        }
+      ]
+    }
+  ],
+  "furthest": [
+    {
+      "cue": "거리·정도가 가장 멀리 (far의 최상급)",
+      "ko": "가장 멀리",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "to the greatest distance or degree (superlative of far)",
+      "syn": [
+        "farthest"
+      ],
+      "ex": [
+        {
+          "en": "Of all the runners, she went the furthest.",
+          "ko": "모든 주자 중에서 그녀가 가장 멀리 갔다."
+        }
+      ]
+    }
+  ],
+  "fuss": [
+    {
+      "cue": "사소한 일에 벌이는",
+      "ko": "야단법석, 소란",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "unnecessary excitement, worry, or complaints about something small",
+      "syn": [],
+      "ex": [
+        {
+          "en": "There's no need to make such a fuss over a small mistake.",
+          "ko": "사소한 실수에 그렇게 야단법석을 떨 필요는 없다."
+        }
+      ]
+    },
+    {
+      "cue": "사소한 일에 유난스럽게",
+      "ko": "야단법석을 떨다, 유난 떨다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "worry or behave in an anxious or excited way about small things",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Stop fussing over such a minor mistake.",
+          "ko": "그런 사소한 실수에 유난 떨지 마."
+        }
+      ]
+    }
+  ],
+  "gain": [
+    {
+      "cue": "노력해서 무언가를",
+      "ko": "얻다, 획득하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "obtain or win something, especially through effort",
+      "syn": [
+        "acquire"
+      ],
+      "ex": [
+        {
+          "en": "She gained valuable experience from the internship.",
+          "ko": "그녀는 그 인턴십을 통해 소중한 경험을 얻었다."
+        }
+      ]
+    },
+    {
+      "cue": "양·가치가 늘어난 것",
+      "ko": "증가, 이득",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "an increase in amount, value, or quality",
+      "syn": [
+        "increase"
+      ],
+      "ex": [
+        {
+          "en": "The company reported a gain in profits this quarter.",
+          "ko": "그 회사는 이번 분기에 이익 증가를 보고했다."
+        }
+      ]
+    },
+    {
+      "cue": "몸무게가 늘다",
+      "ko": "(체중이) 늘다",
+      "pos": "동사",
+      "lv": 4,
+      "cefr": "A2",
+      "en": "increase in weight",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He gained five kilograms over the winter.",
+          "ko": "그는 겨울 동안 5킬로그램이 늘었다."
+        }
+      ]
+    }
+  ],
+  "gall": [
+    {
+      "cue": "염치없이 대담한 태도",
+      "ko": "뻔뻔함, 담대함",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "rude boldness or confidence, especially when doing something inappropriate",
+      "syn": [
+        "nerve"
+      ],
+      "ex": [
+        {
+          "en": "He had the gall to ask for a raise after being late all week.",
+          "ko": "그는 일주일 내내 지각하고도 뻔뻔하게 임금 인상을 요구했다."
+        }
+      ]
+    }
+  ],
+  "gallon": [
+    {
+      "cue": "액체를 재는 단위",
+      "ko": "갤런",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a unit for measuring liquid, equal to about 3.8 liters in the US",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The tank holds ten gallons of gas.",
+          "ko": "그 탱크는 10갤런의 기름을 담을 수 있다."
+        }
+      ]
+    }
+  ],
+  "gap": [
+    {
+      "cue": "물체 사이의 빈 공간",
+      "ko": "틈, 간격",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "an empty space or opening between two things",
+      "syn": [],
+      "ex": [
+        {
+          "en": "There's a gap in the fence where the dog escaped.",
+          "ko": "개가 도망친 울타리 틈이 있다."
+        }
+      ]
+    },
+    {
+      "cue": "수준·의견 등의 차이",
+      "ko": "격차, 차이",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a difference between two situations, amounts, or ideas",
+      "syn": [],
+      "ex": [
+        {
+          "en": "There's a big gap between rich and poor in that country.",
+          "ko": "그 나라에는 빈부 격차가 크다."
+        }
+      ]
+    }
+  ],
+  "gardening": [
+    {
+      "cue": "꽃·채소를 기르는 활동",
+      "ko": "정원 가꾸기",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the activity of growing and taking care of plants in a garden",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She spends every weekend gardening.",
+          "ko": "그녀는 매주 주말마다 정원을 가꾼다."
+        }
+      ]
+    }
+  ],
+  "garment": [
+    {
+      "cue": "입는 옷 한 벌",
+      "ko": "의류, 옷",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a piece of clothing",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Each garment is carefully checked before shipping.",
+          "ko": "각 의류는 배송 전에 꼼꼼히 검사된다."
+        }
+      ]
+    }
+  ],
+  "gay": [
+    {
+      "cue": "동성에게 끌리는",
+      "ko": "동성애자의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "attracted to people of the same sex",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He came out as gay in college.",
+          "ko": "그는 대학 시절 자신이 동성애자임을 밝혔다."
+        }
+      ]
+    },
+    {
+      "cue": "기분이 밝고 즐거운 (옛스러운 표현)",
+      "ko": "명랑한, 쾌활한",
+      "pos": "형용사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "cheerful and full of fun (an older use of the word)",
+      "syn": [
+        "merry"
+      ],
+      "ex": [
+        {
+          "en": "The town had a gay, festive atmosphere during the carnival.",
+          "ko": "그 마을은 축제 기간 동안 명랑하고 흥겨운 분위기였다."
+        }
+      ]
+    }
+  ],
+  "gee": [
+    {
+      "cue": "놀람·감탄을 나타내는 소리",
+      "ko": "이런, 와 (감탄사)",
+      "pos": "감탄사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "used to express surprise, enthusiasm, or mild annoyance",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Gee, I didn't expect to see you here!",
+          "ko": "와, 여기서 널 볼 줄은 몰랐어!"
+        }
+      ]
+    }
+  ],
+  "gene": [
+    {
+      "cue": "부모에게서 자식에게 전달되는",
+      "ko": "유전자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a unit of DNA that determines a particular characteristic passed from parents to children",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Eye color is determined by genes.",
+          "ko": "눈동자 색은 유전자에 의해 결정된다."
+        }
+      ]
+    }
+  ],
+  "general": [
+    {
+      "cue": "특정하지 않고 두루 적용되는",
+      "ko": "일반적인, 보편적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "true or applicable in most cases, not specific",
+      "syn": [],
+      "ex": [
+        {
+          "en": "This is a general rule that applies to most situations.",
+          "ko": "이것은 대부분의 상황에 적용되는 일반적인 규칙이다."
+        }
+      ]
+    },
+    {
+      "cue": "군대의 최고위 장교",
+      "ko": "장군",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "a senior military officer of high rank",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The general led the troops into battle.",
+          "ko": "그 장군은 병사들을 전투로 이끌었다."
+        }
+      ]
+    }
+  ],
+  "generally": [
+    {
+      "cue": "대체로, 보통은",
+      "ko": "일반적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in most cases; usually",
+      "syn": [
+        "usually"
+      ],
+      "ex": [
+        {
+          "en": "People generally prefer to work close to home.",
+          "ko": "사람들은 일반적으로 집 가까이서 일하는 것을 선호한다."
+        }
+      ]
+    }
+  ],
+  "generate": [
+    {
+      "cue": "에너지·수입·아이디어 등을",
+      "ko": "생성하다, 만들어내다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "produce or create something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Solar panels generate electricity from sunlight.",
+          "ko": "태양광 패널은 햇빛으로 전기를 생성한다."
+        }
+      ]
+    }
+  ],
+  "generous": [
+    {
+      "cue": "돈·시간을 아끼지 않고 베푸는",
+      "ko": "관대한, 후한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "willing to give more money, help, or time than is expected",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He is always generous with his time.",
+          "ko": "그는 항상 자신의 시간을 아끼지 않고 베푼다."
+        }
+      ]
+    }
+  ],
+  "genetic": [
+    {
+      "cue": "유전자와 관련된",
+      "ko": "유전의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "relating to genes or heredity",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The disease has a genetic cause.",
+          "ko": "그 질병은 유전적인 원인이 있다."
+        }
+      ]
+    }
+  ],
+  "genetically": [
+    {
+      "cue": "유전자 차원에서",
+      "ko": "유전적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in a way relating to genes or heredity",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The crop was genetically modified to resist disease.",
+          "ko": "그 작물은 병에 저항하도록 유전적으로 변형되었다."
+        }
+      ]
+    }
+  ],
+  "genetics": [
+    {
+      "cue": "유전을 연구하는 학문",
+      "ko": "유전학",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the scientific study of genes and heredity",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She is studying genetics at university.",
+          "ko": "그녀는 대학에서 유전학을 공부하고 있다."
+        }
+      ]
+    }
+  ],
+  "gentleman": [
+    {
+      "cue": "예의바른 남성",
+      "ko": "신사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a polite and well-mannered man",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He behaved like a true gentleman.",
+          "ko": "그는 진정한 신사처럼 행동했다."
+        }
+      ]
+    }
+  ],
+  "geographical": [
+    {
+      "cue": "지리에 관련된",
+      "ko": "지리적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "relating to geography or the physical features of a place",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The two countries are close in geographical terms.",
+          "ko": "그 두 나라는 지리적으로 가깝다."
+        }
+      ]
+    }
+  ],
+  "geography": [
+    {
+      "cue": "지구·지역을 연구하는 과목",
+      "ko": "지리학",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the study of the earth's physical features and how people live in different places",
+      "syn": [],
+      "ex": [
+        {
+          "en": "We are studying the geography of South America.",
+          "ko": "우리는 남아메리카의 지리를 배우고 있다."
+        }
+      ]
+    }
+  ],
+  "geology": [
+    {
+      "cue": "암석·지구 역사를 연구하는 과목",
+      "ko": "지질학",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the scientific study of rocks and the physical structure of the earth",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He majored in geology at college.",
+          "ko": "그는 대학에서 지질학을 전공했다."
+        }
+      ]
+    }
+  ],
+  "gesture": [
+    {
+      "cue": "손·몸으로 표현하는",
+      "ko": "몸짓, 제스처",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a movement of the hands, arms, or head that expresses a meaning or feeling",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He made a gesture for her to come closer.",
+          "ko": "그는 그녀에게 가까이 오라고 몸짓을 했다."
+        }
+      ]
+    },
+    {
+      "cue": "손짓·몸짓으로 표현하다",
+      "ko": "몸짓을 하다, 손짓하다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "make a movement with your hands or head to express something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She gestured toward the door.",
+          "ko": "그녀는 문 쪽으로 손짓했다."
+        }
+      ]
+    },
+    {
+      "cue": "호의·감사의 마음을 나타내는 행동",
+      "ko": "(선의를 나타내는) 표시",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B1",
+      "en": "an action done to show a feeling such as kindness, respect, or gratitude",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Sending flowers was a kind gesture.",
+          "ko": "꽃을 보낸 것은 친절한 마음의 표시였다."
+        }
+      ]
+    }
+  ],
+  "giant": [
+    {
+      "cue": "크기가 매우 큰",
+      "ko": "거대한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "extremely large in size",
+      "syn": [],
+      "ex": [
+        {
+          "en": "A giant billboard stood at the entrance to the city.",
+          "ko": "도시 입구에 거대한 광고판이 서 있었다."
+        }
+      ]
+    },
+    {
+      "cue": "이야기 속의 몸집이 아주 큰 존재",
+      "ko": "거인",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "a person or thing of unusually great size, power, or importance",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He is a giant in the world of technology.",
+          "ko": "그는 기술 업계의 거인이다."
+        }
+      ]
+    }
+  ],
+  "gifted": [
+    {
+      "cue": "타고난 재능이 뛰어난",
+      "ko": "재능 있는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "having a natural ability or talent",
+      "syn": [
+        "talented"
+      ],
+      "ex": [
+        {
+          "en": "She is a gifted musician.",
+          "ko": "그녀는 재능 있는 음악가다."
+        }
+      ]
+    }
+  ],
+  "giggle": [
+    {
+      "cue": "작은 소리로 웃다",
+      "ko": "낄낄 웃다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "laugh quietly in a nervous or silly way",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The girls giggled at the funny video.",
+          "ko": "그 소녀들은 재미있는 영상을 보고 낄낄 웃었다."
+        }
+      ]
+    },
+    {
+      "cue": "그런 웃음소리",
+      "ko": "낄낄거리는 웃음",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "a quiet, nervous, or silly laugh",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She let out a little giggle.",
+          "ko": "그녀는 작은 웃음을 터뜨렸다."
+        }
+      ]
+    }
+  ],
+  "ginger": [
+    {
+      "cue": "매콤한 향의 뿌리채소",
+      "ko": "생강",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a plant root with a spicy taste, used in cooking and medicine",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She added fresh ginger to the tea.",
+          "ko": "그녀는 차에 생강을 넣었다."
+        }
+      ]
+    }
+  ],
+  "giraffe": [
+    {
+      "cue": "목이 아주 긴 동물",
+      "ko": "기린",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a tall African animal with a very long neck",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The giraffe reached up to eat leaves from the tree.",
+          "ko": "그 기린은 나무 잎을 먹으려고 목을 뻗었다."
+        }
+      ]
+    }
+  ],
+  "glance": [
+    {
+      "cue": "재빨리 잠깐 보다",
+      "ko": "힐끗 보다, 흘낏 보다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "look quickly and briefly at something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She glanced at her watch during the meeting.",
+          "ko": "그녀는 회의 중에 시계를 힐끗 봤다."
+        }
+      ]
+    },
+    {
+      "cue": "재빨리 잠깐 보는 것",
+      "ko": "힐끗 봄, 일별",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "a quick, brief look",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He gave her a quick glance and walked away.",
+          "ko": "그는 그녀를 힐끗 보고 걸어갔다."
+        }
+      ]
+    }
+  ],
+  "glide": [
+    {
+      "cue": "부드럽게 미끄러지듯 움직이다",
+      "ko": "미끄러지듯 움직이다, 활공하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "move smoothly and quietly, without effort",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The swan glided across the lake.",
+          "ko": "그 백조는 호수 위를 미끄러지듯 나아갔다."
+        }
+      ]
+    },
+    {
+      "cue": "엔진 없이 부드럽게 나는 비행",
+      "ko": "활공, 활강",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "a smooth flight without engine power",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The plane went into a long glide before landing.",
+          "ko": "그 비행기는 착륙 전 긴 활공에 들어갔다."
+        }
+      ]
+    }
+  ],
+  "glimpse": [
+    {
+      "cue": "짧고 불완전하게 본 것",
+      "ko": "잠깐 봄, 언뜻 봄",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a brief or incomplete view of something",
+      "syn": [
+        "glance"
+      ],
+      "ex": [
+        {
+          "en": "I caught a glimpse of her through the crowd.",
+          "ko": "나는 사람들 사이로 그녀를 잠깐 봤다."
+        }
+      ]
+    },
+    {
+      "cue": "아주 짧은 순간 보다",
+      "ko": "잠깐 보다, 언뜻 보다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "see something for a very short time",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She glimpsed the ocean between the buildings.",
+          "ko": "그녀는 건물 사이로 바다를 언뜻 보았다."
+        }
+      ]
+    }
+  ],
+  "glint": [
+    {
+      "cue": "짧고 작게 빛나는",
+      "ko": "반짝임, 섬광",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a small, brief flash of light",
+      "syn": [],
+      "ex": [
+        {
+          "en": "There was a glint of gold in the sand.",
+          "ko": "모래 속에 금빛 반짝임이 있었다."
+        }
+      ]
+    },
+    {
+      "cue": "빛을 받아 짧게",
+      "ko": "반짝이다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "shine briefly with small flashes of light",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Her eyes glinted with excitement.",
+          "ko": "그녀의 눈이 흥분으로 반짝였다."
+        }
+      ]
+    }
+  ],
+  "global": [
+    {
+      "cue": "전 세계에 걸친",
+      "ko": "세계적인, 지구의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "involving or affecting the whole world",
+      "syn": [
+        "worldwide"
+      ],
+      "ex": [
+        {
+          "en": "Climate change is a global problem.",
+          "ko": "기후 변화는 전 세계적인 문제다."
+        }
+      ]
+    }
+  ],
+  "glorious": [
+    {
+      "cue": "웅장하고 아름다운",
+      "ko": "영광스러운, 화려한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "wonderful, impressive, or beautiful, and deserving admiration",
+      "syn": [
+        "splendid"
+      ],
+      "ex": [
+        {
+          "en": "It was a glorious sunset over the mountains.",
+          "ko": "산 너머로 화려한 노을이 졌다."
+        }
+      ]
+    }
+  ],
+  "glory": [
+    {
+      "cue": "위대한 성취로 얻는",
+      "ko": "영광",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "great honor, praise, or beauty that comes from an important achievement",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The team celebrated their moment of glory.",
+          "ko": "그 팀은 영광의 순간을 축하했다."
+        }
+      ]
+    }
+  ],
+  "goalkeeper": [
+    {
+      "cue": "축구·하키에서 골문을 지키는 선수",
+      "ko": "골키퍼",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the player who stands in the goal and tries to stop the other team from scoring",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The goalkeeper made an amazing save.",
+          "ko": "그 골키퍼는 놀라운 선방을 했다."
+        }
+      ]
+    }
+  ],
+  "goddess": [
+    {
+      "cue": "신화 속 여성 신",
+      "ko": "여신",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a female god in a myth or religion",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Athena was the Greek goddess of wisdom.",
+          "ko": "아테나는 그리스의 지혜의 여신이었다."
+        }
+      ]
+    }
+  ],
+  "golfer": [
+    {
+      "cue": "골프를 치는 사람",
+      "ko": "골프 선수",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a person who plays golf",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She is one of the top golfers in the country.",
+          "ko": "그녀는 그 나라 최고의 골프 선수 중 한 명이다."
+        }
+      ]
+    }
+  ],
+  "goodness": [
+    {
+      "cue": "선하고 착한 성질",
+      "ko": "선함, 미덕",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the quality of being good, kind, or morally right",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She believes in the basic goodness of people.",
+          "ko": "그녀는 사람들의 근본적인 선함을 믿는다."
+        }
+      ]
+    },
+    {
+      "cue": "놀랐을 때 내는 말",
+      "ko": "맙소사, 세상에",
+      "pos": "감탄사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "used to express surprise (as in 'my goodness')",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Goodness, that was fast!",
+          "ko": "세상에, 정말 빠르네!"
+        }
+      ]
+    }
+  ],
+  "goods": [
+    {
+      "cue": "사고파는 물건들",
+      "ko": "상품, 물품",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "things that are made or produced to be sold",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The store sells a wide variety of goods.",
+          "ko": "그 가게는 다양한 상품을 판매한다."
+        }
+      ]
+    }
+  ],
+  "gorgeous": [
+    {
+      "cue": "눈에 띄게 아름다운",
+      "ko": "아름다운, 멋진",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "extremely beautiful or attractive",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She looked gorgeous in that red dress.",
+          "ko": "그녀는 그 빨간 드레스를 입으니 정말 아름다웠다."
+        }
+      ]
+    }
+  ],
+  "gorilla": [
+    {
+      "cue": "덩치 큰 유인원",
+      "ko": "고릴라",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a very large African ape",
+      "syn": [],
+      "ex": [
+        {
+          "en": "We watched the gorillas at the zoo.",
+          "ko": "우리는 동물원에서 고릴라를 봤다."
+        }
+      ]
+    }
+  ],
+  "gossip": [
+    {
+      "cue": "남의 사생활을 이야기하다",
+      "ko": "험담하다, 수다 떨다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "talk about other people's private lives, often unkindly",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She loves gossiping about her coworkers.",
+          "ko": "그녀는 동료들에 대해 험담하는 것을 좋아한다."
+        }
+      ]
+    },
+    {
+      "cue": "남에 대한 이야기",
+      "ko": "험담, 뒷담화",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "casual talk about other people's private affairs",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Don't believe all the gossip you hear.",
+          "ko": "듣는 소문을 다 믿지 마."
+        }
+      ]
+    }
+  ],
+  "govern": [
+    {
+      "cue": "나라·지역을 다스리다",
+      "ko": "통치하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "officially control and lead a country or area",
+      "syn": [
+        "rule"
+      ],
+      "ex": [
+        {
+          "en": "The country is governed by an elected parliament.",
+          "ko": "그 나라는 선출된 의회에 의해 통치된다."
+        }
+      ]
+    }
+  ],
+  "governor": [
+    {
+      "cue": "주(州)의 최고 책임자",
+      "ko": "주지사, 총독",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the person who officially leads a state or region",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The governor announced new safety measures.",
+          "ko": "그 주지사는 새로운 안전 조치를 발표했다."
+        }
+      ]
+    }
+  ],
+  "gown": [
+    {
+      "cue": "격식 있는 자리에서 입는 긴 옷",
+      "ko": "드레스, 가운",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a long, formal dress worn by women, or a loose garment worn for a specific purpose",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She wore an elegant gown to the wedding.",
+          "ko": "그녀는 결혼식에 우아한 드레스를 입고 왔다."
+        }
+      ]
+    }
+  ],
+  "grab": [
+    {
+      "cue": "재빨리 단단히 붙잡다",
+      "ko": "붙잡다, 움켜쥐다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "take hold of something suddenly and firmly",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She grabbed her bag and ran out the door.",
+          "ko": "그녀는 가방을 붙잡고 문 밖으로 뛰어나갔다."
+        }
+      ]
+    },
+    {
+      "cue": "기회·간단한 식사를 재빨리",
+      "ko": "얼른 잡다/하다",
+      "pos": "동사",
+      "lv": 4,
+      "cefr": "B1",
+      "en": "take or get something quickly, especially an opportunity or a quick meal",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Let's grab a coffee before the meeting.",
+          "ko": "회의 전에 커피 한 잔 얼른 마시자."
+        }
+      ]
+    }
+  ],
+  "graceful": [
+    {
+      "cue": "움직임이 부드럽고 우아한",
+      "ko": "우아한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "moving in a smooth and attractive way",
+      "syn": [
+        "elegant"
+      ],
+      "ex": [
+        {
+          "en": "The dancer moved with graceful steps.",
+          "ko": "그 무용수는 우아한 동작으로 움직였다."
+        }
+      ]
+    }
+  ],
+  "graduation": [
+    {
+      "cue": "학교 과정을 마치는 것",
+      "ko": "졸업",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the completion of a course of study, often marked by a ceremony",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Her whole family came to her graduation.",
+          "ko": "그녀의 가족 모두가 졸업식에 왔다."
+        }
+      ]
+    }
+  ],
+  "grant": [
+    {
+      "cue": "정부·기관이 주는 지원 자금",
+      "ko": "지원금, 보조금",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a sum of money given by an organization for a particular purpose",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She received a grant to fund her research.",
+          "ko": "그녀는 연구 자금을 위한 지원금을 받았다."
+        }
+      ]
+    },
+    {
+      "cue": "요청·허가를 들어주다",
+      "ko": "승인하다, 허락하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "agree to give someone what they have asked for",
+      "syn": [
+        "allow"
+      ],
+      "ex": [
+        {
+          "en": "The judge granted the request.",
+          "ko": "그 판사는 그 요청을 승인했다."
+        }
+      ]
+    }
+  ],
+  "graph": [
+    {
+      "cue": "수치를 시각적으로 보여주는",
+      "ko": "그래프",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a diagram showing the relationship between different amounts or numbers",
+      "syn": [
+        "chart"
+      ],
+      "ex": [
+        {
+          "en": "The graph shows sales over the past year.",
+          "ko": "그 그래프는 지난 1년간의 매출을 보여준다."
+        }
+      ]
+    }
+  ],
+  "graphic": [
+    {
+      "cue": "그림·이미지와 관련된",
+      "ko": "그래픽의, 도표의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "relating to visual art, drawings, or computer images",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She works as a graphic designer.",
+          "ko": "그녀는 그래픽 디자이너로 일한다."
+        }
+      ]
+    },
+    {
+      "cue": "묘사·설명이 아주 자세하고 강렬한",
+      "ko": "생생한, 적나라한",
+      "pos": "형용사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "described in vivid, shocking detail",
+      "syn": [
+        "vivid"
+      ],
+      "ex": [
+        {
+          "en": "The book contains graphic descriptions of the war.",
+          "ko": "그 책에는 전쟁에 대한 적나라한 묘사가 담겨 있다."
+        }
+      ]
+    }
+  ],
+  "graphics": [
+    {
+      "cue": "컴퓨터·인쇄물의 시각 이미지",
+      "ko": "그래픽",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "images or visual designs, especially those made by a computer",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The video game has amazing graphics.",
+          "ko": "그 비디오 게임은 그래픽이 놀랍다."
+        }
+      ]
+    }
+  ],
+  "gratitude": [
+    {
+      "cue": "고마운 마음",
+      "ko": "감사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a feeling of thankfulness and appreciation",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She expressed her gratitude for their help.",
+          "ko": "그녀는 그들의 도움에 감사를 표했다."
+        }
+      ]
+    }
+  ],
+  "grave": [
+    {
+      "cue": "시신을 묻는 곳",
+      "ko": "무덤",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a place in the ground where a dead person is buried",
+      "syn": [
+        "tomb"
+      ],
+      "ex": [
+        {
+          "en": "They placed flowers on the grave.",
+          "ko": "그들은 무덤에 꽃을 놓았다."
+        }
+      ]
+    },
+    {
+      "cue": "상황·표정이 아주 심각한",
+      "ko": "심각한, 중대한",
+      "pos": "형용사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "very serious or important, often causing worry",
+      "syn": [
+        "serious"
+      ],
+      "ex": [
+        {
+          "en": "The doctor's expression was grave.",
+          "ko": "의사의 표정이 심각했다."
+        }
+      ]
+    }
+  ],
+  "gravy": [
+    {
+      "cue": "고기 육즙으로 만든 소스",
+      "ko": "그레이비 소스",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a sauce made from the juices of cooked meat",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She poured gravy over the mashed potatoes.",
+          "ko": "그녀는 으깬 감자 위에 그레이비 소스를 부었다."
+        }
+      ]
+    }
+  ],
+  "greenhouse": [
+    {
+      "cue": "식물을 기르는 유리 건물",
+      "ko": "온실",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a glass building used for growing plants",
+      "syn": [
+        "glasshouse"
+      ],
+      "ex": [
+        {
+          "en": "They grow tomatoes in a greenhouse all year round.",
+          "ko": "그들은 온실에서 일 년 내내 토마토를 재배한다."
+        }
+      ]
+    }
+  ],
+  "greeting": [
+    {
+      "cue": "만났을 때 하는 인사말",
+      "ko": "인사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a word or action used when meeting or welcoming someone",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He gave a warm greeting to his guests.",
+          "ko": "그는 손님들에게 따뜻한 인사를 건넸다."
+        }
+      ]
+    }
+  ],
+  "grill": [
+    {
+      "cue": "석쇠에 고기를",
+      "ko": "(석쇠에) 굽다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "cook food on a metal frame over direct heat",
+      "syn": [],
+      "ex": [
+        {
+          "en": "We grilled some steaks for dinner.",
+          "ko": "우리는 저녁으로 스테이크를 구웠다."
+        }
+      ]
+    },
+    {
+      "cue": "고기를 굽는 금속 틀",
+      "ko": "그릴, 석쇠",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "a metal frame used for cooking food over direct heat",
+      "syn": [],
+      "ex": [
+        {
+          "en": "They set up the grill in the backyard.",
+          "ko": "그들은 뒷마당에 그릴을 설치했다."
+        }
+      ]
+    },
+    {
+      "cue": "질문을 세게 몰아붙이며",
+      "ko": "심문하다, 캐묻다",
+      "pos": "동사",
+      "lv": 5,
+      "cefr": "B2",
+      "en": "question someone closely and intensively",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The police grilled the suspect for hours.",
+          "ko": "경찰은 몇 시간 동안 용의자를 심문했다."
+        }
+      ]
+    }
+  ],
+  "groom": [
+    {
+      "cue": "결혼식의 신랑",
+      "ko": "신랑",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a man on the day of his wedding",
+      "syn": [
+        "bridegroom"
+      ],
+      "ex": [
+        {
+          "en": "The groom looked nervous before the ceremony.",
+          "ko": "그 신랑은 식이 시작되기 전에 긴장한 모습이었다."
+        }
+      ]
+    },
+    {
+      "cue": "머리·외모를 깔끔하게",
+      "ko": "(용모를) 손질하다, 단장하다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "take care of your appearance, or take care of an animal's coat",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She spent an hour grooming her hair before the interview.",
+          "ko": "그녀는 면접 전에 한 시간 동안 머리를 손질했다."
+        }
+      ]
+    }
+  ],
+  "ground floor": [
+    {
+      "cue": "건물의 지면과 같은 층 (영국식)",
+      "ko": "1층",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "the floor of a building at ground level",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The reception desk is on the ground floor.",
+          "ko": "안내 데스크는 1층에 있다."
+        }
+      ]
+    }
+  ],
+  "grouping": [
+    {
+      "cue": "비슷한 것들끼리 묶는 것",
+      "ko": "그룹화, 분류",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a set of things or people arranged together into a group",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The students were divided into groupings based on skill level.",
+          "ko": "학생들은 실력 수준에 따라 그룹으로 나뉘었다."
+        }
+      ]
+    }
+  ],
+  "growth": [
+    {
+      "cue": "크기·규모가 커지는 과정",
+      "ko": "성장",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the process of increasing in size, number, value, or importance",
+      "syn": [
+        "increase"
+      ],
+      "ex": [
+        {
+          "en": "The company has seen steady growth over the past year.",
+          "ko": "그 회사는 지난 1년간 꾸준한 성장을 보였다."
+        }
+      ]
+    }
+  ],
+  "guarantee": [
+    {
+      "cue": "반드시 그럴 것이라고",
+      "ko": "보장하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "promise that something will definitely happen or be true",
+      "syn": [
+        "ensure"
+      ],
+      "ex": [
+        {
+          "en": "We can't guarantee the weather will be good.",
+          "ko": "우리는 날씨가 좋을 거라고 보장할 수 없다."
+        }
+      ]
+    },
+    {
+      "cue": "제품이 고장 나면 고쳐준다는 약속",
+      "ko": "보증(서)",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a written promise that a product will be repaired or replaced if faulty",
+      "syn": [
+        "warranty"
+      ],
+      "ex": [
+        {
+          "en": "The product comes with a one-year guarantee.",
+          "ko": "그 제품은 1년 보증이 포함되어 있다."
+        }
+      ]
+    }
+  ],
+  "guidance": [
+    {
+      "cue": "결정을 돕는 조언",
+      "ko": "지도, 안내",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "help or advice that guides someone's decisions or actions",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She gave her students career guidance.",
+          "ko": "그녀는 학생들에게 진로 지도를 해주었다."
+        }
+      ]
+    }
+  ],
+  "guide": [
+    {
+      "cue": "길·방법을 이끌어주다",
+      "ko": "안내하다, 이끌다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "show someone the way or help them do something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The teacher guided the students through the experiment.",
+          "ko": "선생님은 학생들이 실험을 하도록 안내했다."
+        }
+      ]
+    },
+    {
+      "cue": "관광지에서 안내해주는 사람",
+      "ko": "가이드, 안내인",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a person who shows others the way or gives them information",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Our guide took us through the old town.",
+          "ko": "우리 가이드가 구시가지를 안내해줬다."
+        }
+      ]
+    },
+    {
+      "cue": "정보를 알려주는 책자",
+      "ko": "안내서, 가이드북",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B1",
+      "en": "a book that gives instructions or information about a place or subject",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She bought a travel guide for Japan.",
+          "ko": "그녀는 일본 여행 가이드북을 샀다."
+        }
+      ]
+    }
+  ],
+  "guilt": [
+    {
+      "cue": "잘못한 것에 대한 마음의 불편함",
+      "ko": "죄책감",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the uncomfortable feeling of having done something wrong",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He felt guilt over forgetting her birthday.",
+          "ko": "그는 그녀의 생일을 잊은 것에 죄책감을 느꼈다."
+        }
+      ]
+    }
+  ],
+  "guilty": [
+    {
+      "cue": "법적으로 잘못을 저지른",
+      "ko": "유죄의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "having done something legally wrong",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The jury found him guilty of theft.",
+          "ko": "배심원단은 그가 절도죄로 유죄라고 판결했다."
+        }
+      ]
+    },
+    {
+      "cue": "잘못했다고 마음이 불편한",
+      "ko": "죄책감을 느끼는",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "feeling bad because you have done something wrong",
+      "syn": [],
+      "ex": [
+        {
+          "en": "I feel guilty for forgetting her birthday.",
+          "ko": "나는 그녀의 생일을 잊어서 죄책감을 느낀다."
+        }
+      ]
+    }
+  ],
+  "guitarist": [
+    {
+      "cue": "기타를 연주하는 사람",
+      "ko": "기타리스트",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a person who plays the guitar",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He is the lead guitarist in the band.",
+          "ko": "그는 그 밴드의 리드 기타리스트다."
+        }
+      ]
+    }
+  ],
+  "gym": [
+    {
+      "cue": "운동하러 가는 곳",
+      "ko": "체육관, 헬스장",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "a place with equipment for exercise and physical training",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She goes to the gym three times a week.",
+          "ko": "그녀는 일주일에 세 번 헬스장에 간다."
+        }
+      ]
+    }
+  ],
+  "gymnastics": [
+    {
+      "cue": "몸의 균형·유연성을 겨루는 운동",
+      "ko": "체조",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a sport involving exercises that show strength, balance, and flexibility",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She has practiced gymnastics since she was five.",
+          "ko": "그녀는 다섯 살 때부터 체조를 해왔다."
+        }
+      ]
+    }
+  ],
+  "habitat": [
+    {
+      "cue": "동식물이 자연적으로 사는 곳",
+      "ko": "서식지",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the natural environment where an animal or plant normally lives",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Deforestation destroys the habitat of many animals.",
+          "ko": "삼림 벌채는 많은 동물의 서식지를 파괴한다."
+        }
+      ]
+    }
+  ],
+  "hairdresser": [
+    {
+      "cue": "머리를 잘라주고 다듬어주는 사람",
+      "ko": "미용사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a person whose job is to cut and style hair",
+      "syn": [
+        "stylist"
+      ],
+      "ex": [
+        {
+          "en": "I have an appointment with the hairdresser this afternoon.",
+          "ko": "나는 오늘 오후에 미용사와 예약이 있다."
+        }
+      ]
+    }
+  ],
+  "hairdryer": [
+    {
+      "cue": "젖은 머리를 말리는 기기",
+      "ko": "헤어드라이어",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "an electric device used to dry hair by blowing warm air",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She used a hairdryer to dry her hair quickly.",
+          "ko": "그녀는 헤어드라이어로 머리를 빨리 말렸다."
+        }
+      ]
+    }
+  ],
+  "hammer": [
+    {
+      "cue": "못을 박는 도구",
+      "ko": "망치",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a tool with a heavy metal head used for hitting nails",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He used a hammer to fix the shelf.",
+          "ko": "그는 선반을 고치려고 망치를 사용했다."
+        }
+      ]
+    },
+    {
+      "cue": "못을 박기 위해 세게 치다",
+      "ko": "망치질하다, 두드리다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "hit something repeatedly with a hammer or with force",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He hammered the nail into the wall.",
+          "ko": "그는 못을 벽에 망치질해서 박았다."
+        }
+      ]
+    }
+  ],
+  "hand-held": [
+    {
+      "cue": "손에 들고 사용하는",
+      "ko": "휴대용의, 손에 들고 쓰는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "small enough to be held and used in the hand",
+      "syn": [
+        "handheld"
+      ],
+      "ex": [
+        {
+          "en": "She used a hand-held device to scan the tickets.",
+          "ko": "그녀는 티켓을 스캔하는 데 휴대용 기기를 사용했다."
+        }
+      ]
+    }
+  ],
+  "handball": [
+    {
+      "cue": "손으로 공을 던져 겨루는 스포츠",
+      "ko": "핸드볼",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a sport in which two teams throw a ball into the other team's goal using their hands",
+      "syn": [],
+      "ex": [
+        {
+          "en": "They play handball every Friday after school.",
+          "ko": "그들은 매주 금요일 방과 후에 핸드볼을 한다."
+        }
+      ]
+    }
+  ],
+  "handkerchief": [
+    {
+      "cue": "코를 닦는 작은 천",
+      "ko": "손수건",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a small square piece of cloth used to wipe the nose or face",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He offered her a handkerchief to dry her tears.",
+          "ko": "그는 그녀의 눈물을 닦으라고 손수건을 건넸다."
+        }
+      ]
+    }
+  ],
+  "handshake": [
+    {
+      "cue": "인사할 때 손을 맞잡는 것",
+      "ko": "악수",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the act of grasping and shaking someone's hand as a greeting or agreement",
+      "syn": [],
+      "ex": [
+        {
+          "en": "They sealed the deal with a handshake.",
+          "ko": "그들은 악수로 거래를 마무리했다."
+        }
+      ]
+    }
+  ],
+  "handwriting": [
+    {
+      "cue": "손으로 쓴 글씨",
+      "ko": "손글씨, 필체",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "writing done by hand, or the style of a person's writing",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Her handwriting is neat and easy to read.",
+          "ko": "그녀의 필체는 깔끔하고 읽기 쉽다."
+        }
+      ]
+    }
+  ],
+  "handy": [
+    {
+      "cue": "쓰기에 편리하고 유용한",
+      "ko": "편리한, 유용한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "useful, especially for a particular purpose",
+      "syn": [
+        "useful"
+      ],
+      "ex": [
+        {
+          "en": "This tool is handy for small repairs.",
+          "ko": "이 도구는 작은 수리 작업에 편리하다."
+        }
+      ]
+    },
+    {
+      "cue": "필요할 때 바로 쓸 수 있게 가까이",
+      "ko": "가까이에 있는, 손닿는 곳에 있는",
+      "pos": "형용사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "easy to reach or nearby",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Keep a first aid kit handy in the car.",
+          "ko": "차에 구급상자를 가까이 두어라."
+        }
+      ]
+    }
+  ],
+  "hang": [
+    {
+      "cue": "어떤 일의 요령",
+      "ko": "요령, 방법",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the correct way of doing or using something (usually 'get the hang of')",
+      "syn": [],
+      "ex": [
+        {
+          "en": "It took me a while to get the hang of the new software.",
+          "ko": "새 소프트웨어의 요령을 익히는 데 시간이 좀 걸렸다."
+        }
+      ]
+    },
+    {
+      "cue": "물건을 벽·못 등에",
+      "ko": "걸다, 매달다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "attach something so that the lower part is free and it does not touch the ground",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She hung the picture on the wall.",
+          "ko": "그녀는 그림을 벽에 걸었다."
+        }
+      ]
+    },
+    {
+      "cue": "사형으로 목을",
+      "ko": "목매달다, 교수형에 처하다",
+      "pos": "동사",
+      "lv": 6,
+      "cefr": "B2",
+      "en": "kill someone by suspending them by a rope around the neck",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The criminal was sentenced to hang.",
+          "ko": "그 범죄자는 교수형을 선고받았다."
+        }
+      ]
+    }
+  ],
+  "hanging": [
+    {
+      "cue": "벽에 거는 장식품",
+      "ko": "걸린 장식품, 벽걸이",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a decorative piece of cloth or artwork that is hung on a wall",
+      "syn": [],
+      "ex": [
+        {
+          "en": "They bought a colorful wall hanging from the market.",
+          "ko": "그들은 시장에서 화려한 벽걸이 장식을 샀다."
+        }
+      ]
+    },
+    {
+      "cue": "목을 매다는 사형 방법",
+      "ko": "교수형",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "C1",
+      "en": "a method of execution by hanging someone by the neck",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Hanging was once a common form of punishment.",
+          "ko": "교수형은 한때 흔한 형벌이었다."
+        }
+      ]
+    }
+  ],
+  "harbor": [
+    {
+      "cue": "배가 정박하는 곳",
+      "ko": "항구",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a place along the coast where ships can shelter and dock safely",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The boats returned to the harbor before the storm.",
+          "ko": "배들은 폭풍이 오기 전에 항구로 돌아왔다."
+        }
+      ]
+    },
+    {
+      "cue": "의심·원한 등의 감정을",
+      "ko": "(생각·감정을) 품다, 마음에 지니다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "keep a feeling or thought in your mind for a long time",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She harbored doubts about the plan.",
+          "ko": "그녀는 그 계획에 대해 의구심을 품고 있었다."
+        }
+      ]
+    }
+  ],
+  "hard-working": [
+    {
+      "cue": "일을 열심히 하는",
+      "ko": "부지런한, 근면한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "putting a lot of effort and energy into work",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She is one of the most hard-working employees in the office.",
+          "ko": "그녀는 사무실에서 가장 근면한 직원 중 한 명이다."
+        }
+      ]
+    }
+  ],
+  "hardship": [
+    {
+      "cue": "견디기 힘든 어려운 상황",
+      "ko": "고난, 역경",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a difficult or painful situation that is hard to deal with",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The family faced many hardships during the war.",
+          "ko": "그 가족은 전쟁 동안 많은 고난을 겪었다."
+        }
+      ]
+    }
+  ]
+}
