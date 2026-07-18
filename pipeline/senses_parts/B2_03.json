@@ -1,0 +1,509 @@
+{
+ "certificate": [
+  {"cue":"자격·수료를 공식으로 증명하는 문서","ko":"증명서, 수료증","pos":"명사","lv":1,"cefr":"B1","en":"an official document that proves a fact, qualification, or completion of a course","syn":["credential","diploma"],"ex":[{"en":"She received a certificate after completing the training course.","ko":"그녀는 교육 과정을 마친 후 수료증을 받았다."}]},
+  {"cue":"주식·채권 등 금융 자산의","ko":"증권","pos":"명사","lv":4,"cefr":"C1","en":"an official document that proves ownership of stocks, bonds, or other financial assets","syn":["security"],"ex":[{"en":"He kept the old stock certificate in a safe.","ko":"그는 오래된 주식 증권을 금고에 보관했다."}]}
+ ],
+ "certification": [
+  {"cue":"자격·기준 충족을 공식으로","ko":"인증, 자격증명","pos":"명사","lv":1,"cefr":"B1","en":"the act or document confirming that someone or something meets an official standard","syn":["accreditation"],"ex":[{"en":"She got certification in first aid last year.","ko":"그녀는 작년에 응급처치 자격증명을 받았다."}]}
+ ],
+ "certify": [
+  {"cue":"사실·품질이 맞음을 공식으로","ko":"증명하다, 인증하다","pos":"동사","lv":1,"cefr":"B1","en":"officially state that something is true or meets a required standard","syn":["confirm","verify"],"ex":[{"en":"The lab certified that the water was safe to drink.","ko":"그 연구소는 물이 마시기에 안전하다고 증명했다."}]},
+  {"cue":"사람이 특정 자격을 갖췄음을","ko":"자격을 인가하다, 공인하다","pos":"동사","lv":2,"cefr":"B2","en":"officially recognize someone as qualified to do a particular job","syn":["license"],"ex":[{"en":"He was certified as a professional diver last month.","ko":"그는 지난달 전문 다이버 자격을 인가받았다."}]}
+ ],
+ "chancellor": [
+  {"cue":"독일 등 일부 국가의","ko":"총리, 수상","pos":"명사","lv":1,"cefr":"B2","en":"the head of government in certain countries, such as Germany","syn":["premier","prime minister"],"ex":[{"en":"The German chancellor gave a speech about the economy.","ko":"독일 총리는 경제에 관한 연설을 했다."}]},
+  {"cue":"대학교의 명예 수장","ko":"(대학교) 총장","pos":"명사","lv":3,"cefr":"B2","en":"the honorary or ceremonial head of a university","syn":[],"ex":[{"en":"The chancellor handed out diplomas at graduation.","ko":"총장은 졸업식에서 학위증을 나눠주었다."}]}
+ ],
+ "chaotic": [
+  {"cue":"질서 없이 뒤죽박죽인","ko":"혼란스러운, 무질서한","pos":"형용사","lv":1,"cefr":"B1","en":"in a state of complete disorder and confusion","syn":["disorderly","confusing"],"ex":[{"en":"Traffic was chaotic after the accident.","ko":"사고 이후 교통이 혼란스러웠다."}]}
+ ],
+ "charming": [
+  {"cue":"사람이나 장소가 매력적으로 기분 좋은","ko":"매력적인","pos":"형용사","lv":1,"cefr":"B1","en":"very pleasant or attractive","syn":["delightful","lovely"],"ex":[{"en":"She has a charming smile.","ko":"그녀는 매력적인 미소를 가지고 있다."}]}
+ ],
+ "cheat": [
+  {"cue":"시험·게임에서 부정한 방법으로","ko":"부정행위를 하다, 커닝하다","pos":"동사","lv":1,"cefr":"A2","en":"act dishonestly to gain an advantage, especially in a test or game","syn":[],"ex":[{"en":"He was caught cheating on the exam.","ko":"그는 시험에서 부정행위를 하다가 걸렸다."}]},
+  {"cue":"돈·물건을 속여서 빼앗다","ko":"속이다, 사기치다","pos":"동사","lv":2,"cefr":"B1","en":"trick someone in order to get money or something valuable from them","syn":["deceive","trick"],"ex":[{"en":"The salesman cheated her out of her savings.","ko":"그 판매원은 그녀를 속여 저축한 돈을 빼앗았다."}]},
+  {"cue":"배우자·연인 몰래 바람을","ko":"바람피우다, 부정을 저지르다","pos":"동사","lv":5,"cefr":"B2","en":"be sexually unfaithful to your partner","syn":[],"ex":[{"en":"She found out he had been cheating on her.","ko":"그녀는 그가 바람을 피워왔다는 것을 알게 되었다."}]},
+  {"cue":"상습적으로 속이는 사람","ko":"사기꾼, 협잡꾼","pos":"명사","lv":7,"cefr":"B1","en":"a person who behaves dishonestly to gain an advantage","syn":["cheater","trickster"],"ex":[{"en":"Everyone at the club knew he was a cheat.","ko":"클럽의 모두가 그가 사기꾼이라는 것을 알고 있었다."}]}
+ ],
+ "checkpoint": [
+  {"cue":"국경·보안 검사를 위한","ko":"검문소","pos":"명사","lv":1,"cefr":"B1","en":"a place where people or vehicles are stopped and inspected","syn":[],"ex":[{"en":"Soldiers stood guard at the checkpoint.","ko":"군인들이 검문소에서 보초를 섰다."}]}
+ ],
+ "cheeky": [
+  {"cue":"어른에게 예의 없이 뻔뻔한","ko":"건방진, 되바라진","pos":"형용사","lv":1,"cefr":"B1","en":"rude or disrespectful in a bold, often amusing way","syn":["impudent"],"ex":[{"en":"The cheeky kid stuck his tongue out at the teacher.","ko":"그 건방진 아이는 선생님에게 혀를 내밀었다."}]}
+ ],
+ "cheerfully": [
+  {"cue":"밝고 즐거운 태도로","ko":"쾌활하게","pos":"부사","lv":1,"cefr":"A2","en":"in a happy and positive way","syn":[],"ex":[{"en":"She greeted everyone cheerfully at the door.","ko":"그녀는 문 앞에서 모두를 쾌활하게 맞이했다."}]}
+ ],
+ "cheerfulness": [
+  {"cue":"밝고 명랑한 성격·분위기","ko":"쾌활함, 명랑함","pos":"명사","lv":1,"cefr":"A2","en":"the quality of being happy and positive","syn":[],"ex":[{"en":"Her cheerfulness lifted everyone's mood.","ko":"그녀의 쾌활함이 모두의 기분을 좋게 만들었다."}]}
+ ],
+ "chemotherapy": [
+  {"cue":"암 치료에 쓰이는 약물 요법","ko":"화학요법","pos":"명사","lv":1,"cefr":"B2","en":"the treatment of cancer using powerful chemical drugs","syn":[],"ex":[{"en":"She is undergoing chemotherapy for breast cancer.","ko":"그녀는 유방암 화학요법을 받고 있다."}]}
+ ],
+ "cherished": [
+  {"cue":"오랫동안 소중히 여겨 온","ko":"소중히 여겨지는, 애지중지하는","pos":"형용사","lv":1,"cefr":"B1","en":"held very dear or valued deeply","syn":["treasured","precious"],"ex":[{"en":"This ring is a cherished family heirloom.","ko":"이 반지는 소중히 여겨지는 가보이다."}]}
+ ],
+ "cherry": [
+  {"cue":"작고 둥근 빨간 열매","ko":"체리","pos":"명사","lv":1,"cefr":"A2","en":"a small, round, red fruit with a hard stone inside","syn":[],"ex":[{"en":"She bought a bag of fresh cherries.","ko":"그녀는 신선한 체리 한 봉지를 샀다."}]},
+  {"cue":"체리가 열리는 나무","ko":"벚나무","pos":"명사","lv":3,"cefr":"B1","en":"a tree that produces cherries or is grown for its blossoms","syn":[],"ex":[{"en":"Cherry trees bloom beautifully in spring.","ko":"벚나무는 봄에 아름답게 꽃을 피운다."}]}
+ ],
+ "chew": [
+  {"cue":"음식을 이로 잘게","ko":"씹다","pos":"동사","lv":1,"cefr":"A1","en":"crush food with your teeth before swallowing","syn":[],"ex":[{"en":"You should chew your food slowly.","ko":"음식을 천천히 씹어야 한다."}]}
+ ],
+ "childish": [
+  {"cue":"어른답지 못하게 유치한","ko":"유치한, 철없는","pos":"형용사","lv":1,"cefr":"A2","en":"behaving in a silly or immature way, not suitable for an adult","syn":["immature"],"ex":[{"en":"Stop being so childish about losing the game.","ko":"게임에서 진 것 가지고 그렇게 유치하게 굴지 마."}]}
+ ],
+ "chimney": [
+  {"cue":"난로·벽난로에서 연기가 빠지는","ko":"굴뚝","pos":"명사","lv":1,"cefr":"A2","en":"a pipe that carries smoke away from a fire through the roof","syn":[],"ex":[{"en":"Smoke rose from the chimney.","ko":"굴뚝에서 연기가 피어올랐다."}]}
+ ],
+ "chip": [
+  {"cue":"깨져 나온 작은","ko":"조각, 부스러기","pos":"명사","lv":1,"cefr":"A2","en":"a small piece broken off something","syn":[],"ex":[{"en":"There's a chip in this plate.","ko":"이 접시에 조각이 떨어져 나갔다."}]},
+  {"cue":"컴퓨터 안의 반도체","ko":"칩, 반도체","pos":"명사","lv":2,"cefr":"B1","en":"a small electronic device that performs computing functions","syn":["microchip"],"ex":[{"en":"This phone has a powerful new chip inside.","ko":"이 휴대폰에는 강력한 새 칩이 들어 있다."}]},
+  {"cue":"카지노에서 돈 대신 쓰는","ko":"(도박용) 칩","pos":"명사","lv":5,"cefr":"B1","en":"a small disk used to represent money in gambling","syn":[],"ex":[{"en":"He bought a stack of chips at the casino.","ko":"그는 카지노에서 칩 한 무더기를 샀다."}]},
+  {"cue":"물건 표면이 조금 깨지다","ko":"이가 나가다, 살짝 깨지다","pos":"동사","lv":3,"cefr":"A2","en":"break a small piece off the edge of something","syn":[],"ex":[{"en":"Be careful not to chip the wine glasses.","ko":"와인잔이 깨지지 않게 조심해."}]}
+ ],
+ "chop": [
+  {"cue":"칼로 재료를 잘게","ko":"썰다, 다지다","pos":"동사","lv":1,"cefr":"A2","en":"cut something into smaller pieces with a knife or axe","syn":["cut up"],"ex":[{"en":"She chopped the onions for the soup.","ko":"그녀는 수프에 넣을 양파를 썰었다."}]},
+  {"cue":"뼈가 붙은 고기 한 조각","ko":"(고기) 찹, 토막","pos":"명사","lv":4,"cefr":"B1","en":"a small piece of meat, often including part of a rib","syn":[],"ex":[{"en":"We had pork chops for dinner.","ko":"우리는 저녁으로 돼지고기 찹을 먹었다."}]}
+ ],
+ "chunk": [
+  {"cue":"뭉텅 잘려나간 덩어리","ko":"덩어리, 큰 조각","pos":"명사","lv":1,"cefr":"B1","en":"a large, solid piece or amount of something","syn":["lump","piece"],"ex":[{"en":"He cut off a chunk of bread.","ko":"그는 빵을 큰 조각으로 잘라냈다."}]}
+ ],
+ "circuit": [
+  {"cue":"전기가 흐르는 통로","ko":"(전기) 회로","pos":"명사","lv":1,"cefr":"B1","en":"a complete path that an electric current can flow through","syn":[],"ex":[{"en":"A short circuit caused the fire.","ko":"합선(회로 이상)이 화재를 일으켰다."}]},
+  {"cue":"일정한 곳들을 도는 여정","ko":"순회, 순환 경로","pos":"명사","lv":3,"cefr":"B2","en":"a route that goes around a series of places and returns to the start","syn":["tour"],"ex":[{"en":"The band went on a concert circuit across Europe.","ko":"그 밴드는 유럽 전역을 순회하는 공연을 다녔다."}]}
+ ],
+ "circuitry": [
+  {"cue":"기기 안의 전자 회로 전체","ko":"회로, 배선(전체 시스템)","pos":"명사","lv":1,"cefr":"B2","en":"the complete system of electronic circuits inside a device","syn":[],"ex":[{"en":"The engineer repaired the damaged circuitry.","ko":"기술자는 손상된 회로를 수리했다."}]}
+ ],
+ "circumstance": [
+  {"cue":"어떤 일을 둘러싼 상황·형편","ko":"상황, 환경, 정황","pos":"명사","lv":1,"cefr":"B1","en":"a fact or condition connected with an event or situation","syn":["situation","condition"],"ex":[{"en":"Under the circumstances, we had no choice but to cancel.","ko":"그런 상황에서 우리는 취소할 수밖에 없었다."}]}
+ ],
+ "citywide": [
+  {"cue":"도시 전체에 걸쳐 일어나는","ko":"시 전역의","pos":"형용사","lv":1,"cefr":"B2","en":"happening or existing across an entire city","syn":[],"ex":[{"en":"A citywide power outage affected millions of people.","ko":"시 전역의 정전이 수백만 명에게 영향을 미쳤다."}]}
+ ],
+ "clam": [
+  {"cue":"모래·진흙 속에 사는 조개류","ko":"조개","pos":"명사","lv":1,"cefr":"A2","en":"a shellfish with a hard shell that lives in sand or mud","syn":[],"ex":[{"en":"We dug for clams on the beach.","ko":"우리는 해변에서 조개를 캤다."}]}
+ ],
+ "clap": [
+  {"cue":"손바닥을 마주쳐서","ko":"박수치다","pos":"동사","lv":1,"cefr":"A1","en":"hit your hands together to show approval or make a sound","syn":["applaud"],"ex":[{"en":"The audience clapped loudly after the show.","ko":"공연이 끝난 후 관객들이 크게 박수를 쳤다."}]}
+ ],
+ "clarify": [
+  {"cue":"애매한 것을 알기 쉽게","ko":"명확히 하다, 분명히 하다","pos":"동사","lv":1,"cefr":"B1","en":"make something clearer or easier to understand","syn":["explain"],"ex":[{"en":"Could you clarify what you mean by that?","ko":"그게 무슨 뜻인지 명확히 해줄 수 있어?"}]}
+ ],
+ "classification": [
+  {"cue":"종류별로 나누어 분류하는","ko":"분류","pos":"명사","lv":1,"cefr":"B1","en":"the act of arranging things into groups based on shared features","syn":["categorization"],"ex":[{"en":"The classification of animals is based on their characteristics.","ko":"동물의 분류는 그들의 특징을 바탕으로 한다."}]},
+  {"cue":"정부 문서의 기밀 등급","ko":"(문서의) 기밀 등급","pos":"명사","lv":5,"cefr":"C1","en":"an official restriction on documents that limits access to authorized people","syn":[],"ex":[{"en":"The report's classification was changed from secret to public.","ko":"그 보고서의 기밀 등급이 비밀에서 공개로 바뀌었다."}]}
+ ],
+ "clause": [
+  {"cue":"문법에서 주어+동사를 갖춘","ko":"절 (문법)","pos":"명사","lv":1,"cefr":"B1","en":"(grammar) a group of words containing a subject and a verb","syn":[],"ex":[{"en":"This sentence has two clauses joined by 'and'.","ko":"이 문장은 'and'로 연결된 두 개의 절을 가지고 있다."}]},
+  {"cue":"계약서·법률 문서의 개별 조","ko":"조항","pos":"명사","lv":3,"cefr":"B2","en":"a separate section of a legal document such as a contract","syn":["provision"],"ex":[{"en":"Read the contract carefully — there's a cancellation clause.","ko":"계약서를 꼼꼼히 읽어봐 — 해지 조항이 있어."}]}
+ ],
+ "clearness": [
+  {"cue":"이해하기 쉽게 명확한 상태","ko":"명확함, 명료함","pos":"명사","lv":1,"cefr":"B1","en":"the quality of being easy to understand or see through","syn":["clarity"],"ex":[{"en":"He explained the plan with great clearness.","ko":"그는 아주 명료하게 계획을 설명했다."}]}
+ ],
+ "clerical": [
+  {"cue":"사무실에서 하는 문서 업무의","ko":"사무직의, 사무의","pos":"형용사","lv":1,"cefr":"B1","en":"relating to routine office work such as filing and typing","syn":[],"ex":[{"en":"She made a clerical error in the report.","ko":"그녀는 보고서에서 사무적인(문서상의) 실수를 했다."}]},
+  {"cue":"성직자에 관련된","ko":"성직자의","pos":"형용사","lv":5,"cefr":"C1","en":"relating to priests or the clergy","syn":[],"ex":[{"en":"He wore clerical robes during the ceremony.","ko":"그는 의식 동안 성직자 예복을 입었다."}]}
+ ],
+ "client": [
+  {"cue":"서비스·상품을 이용하는","ko":"고객, 의뢰인","pos":"명사","lv":1,"cefr":"A2","en":"a person who pays for goods or services, especially professional advice","syn":["customer"],"ex":[{"en":"The lawyer met with her client this morning.","ko":"변호사는 오늘 아침 의뢰인을 만났다."}]},
+  {"cue":"네트워크에 연결된 컴퓨터","ko":"(컴퓨터) 클라이언트","pos":"명사","lv":5,"cefr":"B2","en":"(computing) a computer or program that requests services from a server","syn":[],"ex":[{"en":"Each client connects to the central server.","ko":"각 클라이언트는 중앙 서버에 접속한다."}]}
+ ],
+ "climate change": [
+  {"cue":"지구 기후가 장기적으로 변하는","ko":"기후 변화","pos":"명사","lv":1,"cefr":"B1","en":"a long-term change in the world's weather patterns, especially due to human activity","syn":["global warming"],"ex":[{"en":"Climate change is affecting sea levels worldwide.","ko":"기후 변화는 전 세계 해수면에 영향을 미치고 있다."}]}
+ ],
+ "clog": [
+  {"cue":"관·통로가 막혀서","ko":"막히다, 막다","pos":"동사","lv":1,"cefr":"B1","en":"become or make something blocked so that nothing can pass through","syn":["block","obstruct"],"ex":[{"en":"Hair often clogs the shower drain.","ko":"머리카락이 자주 샤워 배수구를 막는다."}]}
+ ],
+ "closure": [
+  {"cue":"공장·가게 등의 영구 폐쇄","ko":"폐쇄, 문을 닫음","pos":"명사","lv":1,"cefr":"B1","en":"the permanent shutting down of a business, place, or operation","syn":["shutdown"],"ex":[{"en":"The factory closure left hundreds jobless.","ko":"그 공장 폐쇄로 수백 명이 실직했다."}]},
+  {"cue":"심리적으로 일이 마무리된 느낌","ko":"(심리적) 종결감, 매듭지음","pos":"명사","lv":4,"cefr":"B2","en":"a feeling that a difficult experience has been resolved and can be left behind","syn":["resolution"],"ex":[{"en":"Talking about her loss gave her a sense of closure.","ko":"상실에 대해 이야기하는 것이 그녀에게 마음의 매듭을 지어주었다."}]}
+ ],
+ "clothing": [
+  {"cue":"몸에 입는 옷 전반","ko":"의류, 옷","pos":"명사","lv":1,"cefr":"A1","en":"things that people wear to cover their bodies","syn":["clothes"],"ex":[{"en":"She packed warm clothing for the trip.","ko":"그녀는 여행을 위해 따뜻한 옷을 챙겼다."}]}
+ ],
+ "clumsy": [
+  {"cue":"동작이 어설퍼 자주 넘어지거나 떨어뜨리는","ko":"서투른, 어설픈","pos":"형용사","lv":1,"cefr":"B1","en":"moving or doing things in an awkward way, often dropping or breaking things","syn":["awkward"],"ex":[{"en":"He's a bit clumsy and often trips over his own feet.","ko":"그는 좀 서투른 편이라 자주 자기 발에 걸려 넘어진다."}]}
+ ],
+ "coaching": [
+  {"cue":"운동·업무 능력을 지도해주는","ko":"코칭, 지도","pos":"명사","lv":1,"cefr":"B1","en":"the job or activity of teaching and training someone to improve a skill","syn":["training"],"ex":[{"en":"She offers coaching for new managers.","ko":"그녀는 신임 관리자를 위한 코칭을 제공한다."}]}
+ ],
+ "coalition": [
+  {"cue":"정당·국가들이 목적을 위해 뭉친","ko":"연합, 연립","pos":"명사","lv":1,"cefr":"B2","en":"a temporary alliance formed by different groups or parties working toward a common goal","syn":["alliance"],"ex":[{"en":"The two parties formed a coalition government.","ko":"두 정당은 연립 정부를 구성했다."}]}
+ ],
+ "coarse": [
+  {"cue":"질감이 거칠거칠한","ko":"(질감이) 거친","pos":"형용사","lv":1,"cefr":"B1","en":"rough in texture, not smooth or fine","syn":["rough"],"ex":[{"en":"The sweater was made of coarse wool.","ko":"그 스웨터는 거친 양모로 만들어졌다."}]},
+  {"cue":"말·행동이 저속하고 무례한","ko":"저속한, 상스러운","pos":"형용사","lv":5,"cefr":"B2","en":"rude or vulgar in speech or manner","syn":["vulgar"],"ex":[{"en":"He made a coarse joke that offended everyone.","ko":"그는 모두를 불쾌하게 만드는 저속한 농담을 했다."}]}
+ ],
+ "coastline": [
+  {"cue":"바다와 육지가 만나는 경계선","ko":"해안선","pos":"명사","lv":1,"cefr":"B1","en":"the shape of the land along the edge of the sea","syn":[],"ex":[{"en":"The coastline stretches for miles.","ko":"그 해안선은 수 마일에 걸쳐 뻗어 있다."}]}
+ ],
+ "cocktail": [
+  {"cue":"여러 술을 섞은","ko":"칵테일","pos":"명사","lv":1,"cefr":"A2","en":"a mixed alcoholic drink made from two or more ingredients","syn":[],"ex":[{"en":"She ordered a fruity cocktail at the bar.","ko":"그녀는 바에서 과일향 칵테일을 주문했다."}]},
+  {"cue":"식사 전에 나오는 새우 등 전채","ko":"(식전) 칵테일 요리","pos":"명사","lv":6,"cefr":"B2","en":"a small dish of seafood or fruit served as a starter before a meal","syn":[],"ex":[{"en":"We started with a shrimp cocktail.","ko":"우리는 새우 칵테일로 식사를 시작했다."}]}
+ ],
+ "cocoa": [
+  {"cue":"따뜻하게 마시는 초콜릿 음료","ko":"코코아 (음료)","pos":"명사","lv":1,"cefr":"A2","en":"a hot drink made from cocoa powder, milk, and sugar","syn":["hot chocolate"],"ex":[{"en":"She made a cup of cocoa on a cold night.","ko":"그녀는 추운 밤에 코코아 한 잔을 만들었다."}]}
+ ],
+ "coconut": [
+  {"cue":"열대 야자수 열매","ko":"코코넛","pos":"명사","lv":1,"cefr":"A2","en":"a large brown fruit with a hard shell and white flesh, from a palm tree","syn":[],"ex":[{"en":"He drank fresh coconut water on the beach.","ko":"그는 해변에서 신선한 코코넛 물을 마셨다."}]}
+ ],
+ "coherence": [
+  {"cue":"논리·구조가 앞뒤가 잘 맞는","ko":"일관성, 논리적 연결성","pos":"명사","lv":1,"cefr":"B2","en":"the quality of ideas or a piece of writing fitting together logically","syn":["consistency"],"ex":[{"en":"The essay lacked coherence between paragraphs.","ko":"그 에세이는 문단 간 일관성이 부족했다."}]}
+ ],
+ "coherent": [
+  {"cue":"논리적으로 앞뒤가 맞는","ko":"일관성 있는, 논리 정연한","pos":"형용사","lv":1,"cefr":"B2","en":"logical and well organized, easy to follow","syn":["logical","consistent"],"ex":[{"en":"He gave a coherent explanation of the accident.","ko":"그는 사고에 대해 논리 정연한 설명을 했다."}]}
+ ],
+ "coincide": [
+  {"cue":"두 사건이 동시에","ko":"동시에 일어나다","pos":"동사","lv":1,"cefr":"B1","en":"happen at the same time as something else","syn":[],"ex":[{"en":"Her birthday coincides with the national holiday.","ko":"그녀의 생일은 국경일과 겹친다."}]},
+  {"cue":"의견·생각이 서로","ko":"일치하다","pos":"동사","lv":3,"cefr":"B2","en":"be exactly the same as or agree with something","syn":["match","agree"],"ex":[{"en":"Our opinions on this issue coincide perfectly.","ko":"이 문제에 대한 우리의 의견은 완전히 일치한다."}]}
+ ],
+ "coincidence": [
+  {"cue":"우연히 같은 시점·상황이 겹치는","ko":"우연의 일치","pos":"명사","lv":1,"cefr":"B1","en":"a situation in which two things happen at the same time by chance","syn":[],"ex":[{"en":"What a coincidence to meet you here!","ko":"여기서 널 만나다니 정말 우연의 일치네!"}]}
+ ],
+ "colleague": [
+  {"cue":"같은 직장에서 함께 일하는","ko":"동료","pos":"명사","lv":1,"cefr":"A2","en":"a person you work with, especially in a professional job","syn":["co-worker"],"ex":[{"en":"I had lunch with a colleague from work.","ko":"나는 직장 동료와 점심을 먹었다."}]}
+ ],
+ "collector": [
+  {"cue":"우표·동전 등을 모으는 사람","ko":"수집가","pos":"명사","lv":1,"cefr":"A2","en":"a person who collects things such as stamps or coins as a hobby","syn":[],"ex":[{"en":"He is a passionate art collector.","ko":"그는 열정적인 미술품 수집가이다."}]},
+  {"cue":"세금·요금을 걷는 사람","ko":"징수원, 수금원","pos":"명사","lv":4,"cefr":"B1","en":"a person whose job is to collect money such as taxes or fares","syn":[],"ex":[{"en":"The rent collector came by every month.","ko":"집세 수금원이 매달 찾아왔다."}]}
+ ],
+ "collocation": [
+  {"cue":"습관적으로 함께 쓰이는 단어 조합","ko":"연어, 관용적 단어 조합","pos":"명사","lv":1,"cefr":"C1","en":"a combination of words that are commonly used together, such as 'make a decision'","syn":[],"ex":[{"en":"'Heavy rain' is a common collocation in English.","ko":"'heavy rain'은 영어에서 흔히 쓰이는 연어이다."}]}
+ ],
+ "colon": [
+  {"cue":"목록·설명 앞에 쓰는 문장부호(:)","ko":"콜론 (문장부호)","pos":"명사","lv":1,"cefr":"B1","en":"a punctuation mark (:) used before a list, example, or explanation","syn":[],"ex":[{"en":"Use a colon before listing examples.","ko":"예시를 나열하기 전에 콜론을 사용하세요."}]},
+  {"cue":"소화기관 중 큰창자 부분","ko":"대장, 결장","pos":"명사","lv":4,"cefr":"C1","en":"the main part of the large intestine","syn":[],"ex":[{"en":"The doctor recommended a colon screening.","ko":"의사는 대장 검진을 권했다."}]}
+ ],
+ "colonial": [
+  {"cue":"식민지 시대·지배에 관련된","ko":"식민지의, 식민 시대의","pos":"형용사","lv":1,"cefr":"B2","en":"relating to a colony or the period when a country ruled over colonies","syn":[],"ex":[{"en":"The museum displays colonial-era furniture.","ko":"그 박물관은 식민 시대 가구를 전시한다."}]}
+ ],
+ "coma": [
+  {"cue":"의식을 잃고 깨어나지 못하는","ko":"혼수상태","pos":"명사","lv":1,"cefr":"B2","en":"a deep, prolonged state of unconsciousness, often caused by injury or illness","syn":[],"ex":[{"en":"He was in a coma for two weeks after the accident.","ko":"그는 사고 후 2주 동안 혼수상태였다."}]}
+ ],
+ "comfortably": [
+  {"cue":"몸이나 마음이 편한 상태로","ko":"편안하게","pos":"부사","lv":1,"cefr":"A2","en":"in a way that feels relaxed, physically at ease, or without financial worry","syn":[],"ex":[{"en":"They live comfortably on a modest income.","ko":"그들은 적당한 수입으로도 편안하게 산다."}]}
+ ],
+ "commander": [
+  {"cue":"군대·부대를 이끄는 사람","ko":"지휘관","pos":"명사","lv":1,"cefr":"B1","en":"a person in charge of a military unit or operation","syn":[],"ex":[{"en":"The commander gave orders to the troops.","ko":"지휘관은 부대에 명령을 내렸다."}]}
+ ],
+ "commemorate": [
+  {"cue":"중요한 사건·인물을 기려서","ko":"기념하다","pos":"동사","lv":1,"cefr":"B2","en":"remember and honor an important event or person, often with a ceremony","syn":["honor"],"ex":[{"en":"The statue commemorates the soldiers who died in the war.","ko":"그 동상은 전쟁에서 전사한 군인들을 기념한다."}]}
+ ],
+ "commerce": [
+  {"cue":"상품·서비스를 사고파는 활동 전반","ko":"상업, 무역","pos":"명사","lv":1,"cefr":"B1","en":"the activity of buying and selling goods and services, especially on a large scale","syn":["trade"],"ex":[{"en":"The internet has transformed global commerce.","ko":"인터넷은 전 세계 상업을 변화시켰다."}]}
+ ],
+ "commission": [
+  {"cue":"작품·업무 제작을 맡기다","ko":"의뢰하다, 위임하다","pos":"동사","lv":1,"cefr":"B2","en":"formally ask someone to produce a piece of work for you","syn":[],"ex":[{"en":"The city commissioned an artist to paint a mural.","ko":"시는 한 예술가에게 벽화 제작을 의뢰했다."}]},
+  {"cue":"판매 실적에 따라 받는 돈","ko":"수수료, 커미션","pos":"명사","lv":2,"cefr":"B1","en":"a percentage of money paid to someone for selling something or arranging a deal","syn":[],"ex":[{"en":"She earns a 10% commission on every sale.","ko":"그녀는 판매 건마다 10%의 수수료를 받는다."}]},
+  {"cue":"특정 문제를 조사하는 위원회","ko":"위원회","pos":"명사","lv":4,"cefr":"B2","en":"an official group of people given the task of investigating or overseeing something","syn":["committee"],"ex":[{"en":"The commission investigated the cause of the crash.","ko":"위원회는 그 추락 사고의 원인을 조사했다."}]}
+ ],
+ "commonwealth": [
+  {"cue":"공동의 이익으로 뭉친 국가 연합","ko":"연방, 국가 연합체","pos":"명사","lv":1,"cefr":"B2","en":"a group of independent countries or states associated for mutual benefit","syn":[],"ex":[{"en":"Australia is a member of the Commonwealth.","ko":"호주는 영연방의 일원이다."}]}
+ ],
+ "communicative": [
+  {"cue":"의사소통과 관련된","ko":"의사소통의","pos":"형용사","lv":1,"cefr":"B2","en":"relating to the exchange of information between people","syn":[],"ex":[{"en":"The course focuses on communicative skills in English.","ko":"그 과정은 영어 의사소통 능력에 초점을 맞춘다."}]},
+  {"cue":"말하기를 좋아하고 이야기를 잘 나누는","ko":"대화하기 좋아하는, 사교적인","pos":"형용사","lv":3,"cefr":"B2","en":"willing and able to talk to people easily and share information","syn":["talkative"],"ex":[{"en":"He's usually quiet but very communicative with close friends.","ko":"그는 평소엔 조용하지만 친한 친구들과는 대화를 아주 잘 나눈다."}]}
+ ],
+ "community": [
+  {"cue":"같은 지역에 사는 사람들","ko":"지역사회, 지역 주민","pos":"명사","lv":1,"cefr":"A2","en":"the people who live in a particular area","syn":[],"ex":[{"en":"The whole community came together to clean the park.","ko":"지역사회 전체가 공원을 청소하기 위해 힘을 모았다."}]},
+  {"cue":"공통 관심사·특성을 가진 집단","ko":"공동체 (같은 특성을 가진 집단)","pos":"명사","lv":2,"cefr":"B1","en":"a group of people who share a characteristic, interest, or belief","syn":[],"ex":[{"en":"She is active in the online gaming community.","ko":"그녀는 온라인 게임 커뮤니티에서 활발히 활동한다."}]}
+ ],
+ "commute": [
+  {"cue":"집과 직장을 매일 오가다","ko":"통근하다","pos":"동사","lv":1,"cefr":"B1","en":"travel regularly between home and work","syn":[],"ex":[{"en":"He commutes to the city every day by train.","ko":"그는 매일 기차로 도시까지 통근한다."}]},
+  {"cue":"매일 오가는 출퇴근 거리·시간","ko":"통근 (거리·시간)","pos":"명사","lv":2,"cefr":"B1","en":"the regular journey you make between home and work","syn":[],"ex":[{"en":"Her commute takes about an hour.","ko":"그녀의 통근 시간은 약 한 시간이 걸린다."}]}
+ ],
+ "compassion": [
+  {"cue":"고통받는 사람을 보고 느끼는 마음","ko":"연민, 동정심","pos":"명사","lv":1,"cefr":"B1","en":"a strong feeling of sympathy for someone who is suffering","syn":["sympathy"],"ex":[{"en":"She treated the patients with great compassion.","ko":"그녀는 환자들을 큰 연민으로 대했다."}]}
+ ],
+ "compassionate": [
+  {"cue":"타인의 고통에 마음 아파하는","ko":"동정심 많은, 자비로운","pos":"형용사","lv":1,"cefr":"B1","en":"showing sympathy and concern for people who are suffering","syn":["sympathetic"],"ex":[{"en":"The nurse was compassionate toward every patient.","ko":"그 간호사는 모든 환자에게 동정심을 가지고 대했다."}]}
+ ],
+ "compatible": [
+  {"cue":"기기·소프트웨어가 서로 문제없이","ko":"호환되는","pos":"형용사","lv":1,"cefr":"B1","en":"able to be used together with another device or system without problems","syn":[],"ex":[{"en":"This charger is compatible with most phones.","ko":"이 충전기는 대부분의 휴대폰과 호환된다."}]},
+  {"cue":"성격·가치관이 서로 잘 맞는","ko":"양립할 수 있는, 서로 잘 맞는","pos":"형용사","lv":3,"cefr":"B2","en":"able to exist or work together well with someone or something else","syn":[],"ex":[{"en":"Their personalities are surprisingly compatible.","ko":"그들의 성격은 놀라울 정도로 잘 맞는다."}]}
+ ],
+ "compensate": [
+  {"cue":"손해·피해에 대해 돈으로","ko":"보상하다","pos":"동사","lv":1,"cefr":"B1","en":"pay someone money for a loss, injury, or damage","syn":[],"ex":[{"en":"The airline compensated passengers for the delay.","ko":"항공사는 승객들에게 지연에 대해 보상했다."}]},
+  {"cue":"부족한 점을 다른 것으로","ko":"(부족함을) 메우다, 만회하다","pos":"동사","lv":3,"cefr":"B2","en":"balance out a disadvantage or lack with something positive","syn":["make up for"],"ex":[{"en":"Her enthusiasm compensates for her lack of experience.","ko":"그녀의 열정이 경험 부족을 메운다."}]}
+ ],
+ "compensation": [
+  {"cue":"손해·피해에 대해 지급되는 돈","ko":"보상금, 배상금","pos":"명사","lv":1,"cefr":"B1","en":"money paid to someone because of a loss, injury, or damage","syn":[],"ex":[{"en":"He received compensation for his workplace injury.","ko":"그는 업무상 부상에 대한 보상금을 받았다."}]}
+ ],
+ "competence": [
+  {"cue":"어떤 일을 해낼 능력이 있는","ko":"능력, 역량","pos":"명사","lv":1,"cefr":"B2","en":"the ability to do something well or successfully","syn":["ability"],"ex":[{"en":"His competence in handling crises impressed the board.","ko":"위기 대처 능력이 이사회에 깊은 인상을 남겼다."}]}
+ ],
+ "competent": [
+  {"cue":"주어진 일을 잘 해내는","ko":"유능한","pos":"형용사","lv":1,"cefr":"B1","en":"having the skill and knowledge to do something well","syn":["capable"],"ex":[{"en":"She is a competent and reliable manager.","ko":"그녀는 유능하고 믿음직한 관리자이다."}]}
+ ],
+ "compile": [
+  {"cue":"자료·정보를 모아 정리하다","ko":"편집하다, (자료를) 모으다","pos":"동사","lv":1,"cefr":"B1","en":"collect information from different sources and put it together in one document or list","syn":["gather"],"ex":[{"en":"She compiled a list of useful websites.","ko":"그녀는 유용한 웹사이트 목록을 정리했다."}]},
+  {"cue":"프로그램 코드를 실행 가능한 형태로","ko":"(코드를) 컴파일하다","pos":"동사","lv":5,"cefr":"C1","en":"(computing) translate program code into a form a computer can run","syn":[],"ex":[{"en":"The program failed to compile due to a syntax error.","ko":"그 프로그램은 문법 오류 때문에 컴파일에 실패했다."}]}
+ ],
+ "completion": [
+  {"cue":"일·과정이 다 끝난","ko":"완료, 완성","pos":"명사","lv":1,"cefr":"B1","en":"the act of finishing something completely","syn":["finishing"],"ex":[{"en":"The project is nearing completion.","ko":"그 프로젝트는 완료에 가까워지고 있다."}]}
+ ],
+ "complexion": [
+  {"cue":"얼굴 피부의 색과 상태","ko":"안색, 피부색","pos":"명사","lv":1,"cefr":"B2","en":"the natural color and appearance of the skin on someone's face","syn":[],"ex":[{"en":"She has a clear, healthy complexion.","ko":"그녀는 맑고 건강한 안색을 가지고 있다."}]},
+  {"cue":"상황·문제의 전체적인 양상","ko":"(상황의) 양상, 성격","pos":"명사","lv":6,"cefr":"C1","en":"the general nature or character of a situation","syn":[],"ex":[{"en":"The new evidence changed the complexion of the case.","ko":"새로운 증거가 그 사건의 양상을 바꿔놓았다."}]}
+ ],
+ "complexity": [
+  {"cue":"구조나 문제가 복잡하게 얽힌 정도","ko":"복잡성","pos":"명사","lv":1,"cefr":"B2","en":"the state of having many interconnected parts, making something difficult to understand","syn":[],"ex":[{"en":"The complexity of the tax system confuses many people.","ko":"세금 제도의 복잡성이 많은 사람들을 혼란스럽게 한다."}]}
+ ],
+ "component": [
+  {"cue":"전체를 이루는 개별 부분·부품","ko":"구성요소, 부품","pos":"명사","lv":1,"cefr":"B1","en":"one of the parts that together make up a whole system or object","syn":["part","element"],"ex":[{"en":"Trust is a key component of a good relationship.","ko":"신뢰는 좋은 관계의 핵심 구성요소이다."}]}
+ ],
+ "comprehension": [
+  {"cue":"글이나 말을 이해하는 능력","ko":"이해력","pos":"명사","lv":1,"cefr":"B1","en":"the ability to understand something, especially spoken or written language","syn":["understanding"],"ex":[{"en":"The exam includes a reading comprehension section.","ko":"그 시험에는 독해력(읽기 이해력) 섹션이 포함되어 있다."}]}
+ ],
+ "comprehensive": [
+  {"cue":"빠짐없이 폭넓게 다루는","ko":"포괄적인, 종합적인","pos":"형용사","lv":1,"cefr":"B2","en":"including everything that is necessary or relevant; complete","syn":["thorough"],"ex":[{"en":"The report gives a comprehensive overview of the market.","ko":"그 보고서는 시장에 대한 포괄적인 개요를 제공한다."}]}
+ ],
+ "compress": [
+  {"cue":"상처·통증 부위에 대는 헝겊","ko":"압박붕대, 찜질팩","pos":"명사","lv":1,"cefr":"B2","en":"a pad of cloth pressed against part of the body to reduce pain or swelling","syn":[],"ex":[{"en":"She put a cold compress on the bruise.","ko":"그녀는 멍든 곳에 찬 찜질팩을 댔다."}]},
+  {"cue":"부피·크기를 줄여서 꽉 눌러","ko":"압축하다, 꽉 누르다","pos":"동사","lv":2,"cefr":"B1","en":"press something firmly together to make it smaller or more compact","syn":["squeeze"],"ex":[{"en":"You can compress the file to save space.","ko":"파일을 압축하면 용량을 아낄 수 있다."}]}
+ ],
+ "compression": [
+  {"cue":"부피·데이터 크기를 줄이는","ko":"압축","pos":"명사","lv":1,"cefr":"B2","en":"the process of making something smaller or more compact, including reducing digital file size","syn":[],"ex":[{"en":"This software offers high-quality image compression.","ko":"이 소프트웨어는 고화질 이미지 압축 기능을 제공한다."}]}
+ ],
+ "compulsory": [
+  {"cue":"규칙상 반드시 해야 하는","ko":"의무적인, 필수의","pos":"형용사","lv":1,"cefr":"B1","en":"required by law or rule; must be done","syn":["mandatory","required"],"ex":[{"en":"Wearing a seatbelt is compulsory in this country.","ko":"이 나라에서는 안전벨트 착용이 의무이다."}]}
+ ],
+ "compute": [
+  {"cue":"수치를 이용해 결과를 계산해내다","ko":"계산하다","pos":"동사","lv":1,"cefr":"B1","en":"work out a number or amount using mathematics","syn":["calculate"],"ex":[{"en":"The software computes the total cost automatically.","ko":"그 소프트웨어는 자동으로 총 비용을 계산한다."}]}
+ ],
+ "conceal": [
+  {"cue":"물건이나 감정을 남이 못 보게","ko":"숨기다, 감추다","pos":"동사","lv":1,"cefr":"B1","en":"prevent something from being seen or known","syn":["hide"],"ex":[{"en":"She tried to conceal her disappointment.","ko":"그녀는 실망감을 숨기려 애썼다."}]}
+ ],
+ "concede": [
+  {"cue":"사실이 아니라도 어쩔 수 없이","ko":"(마지못해) 인정하다","pos":"동사","lv":1,"cefr":"B2","en":"admit, often reluctantly, that something is true","syn":["admit"],"ex":[{"en":"She conceded that his plan made sense.","ko":"그녀는 그의 계획이 타당하다는 것을 마지못해 인정했다."}]},
+  {"cue":"선거·경기에서 패배를","ko":"패배를 인정하다","pos":"동사","lv":3,"cefr":"B2","en":"admit that you have lost a contest or election","syn":[],"ex":[{"en":"The candidate conceded the election after the votes were counted.","ko":"그 후보자는 개표 후 패배를 인정했다."}]}
+ ],
+ "conceit": [
+  {"cue":"스스로에 대한 지나친 자부심","ko":"자만심","pos":"명사","lv":1,"cefr":"C1","en":"excessive pride in yourself or your abilities","syn":["vanity"],"ex":[{"en":"His conceit made him unpopular with his coworkers.","ko":"그의 자만심 때문에 그는 동료들 사이에서 인기가 없었다."}]}
+ ],
+ "conceivable": [
+  {"cue":"머릿속으로 그려볼 수 있는","ko":"상상할 수 있는, 있을 법한","pos":"형용사","lv":1,"cefr":"B2","en":"able to be imagined or believed","syn":["imaginable"],"ex":[{"en":"It's conceivable that the plan could fail.","ko":"그 계획이 실패할 가능성도 있을 법하다."}]}
+ ],
+ "conceive": [
+  {"cue":"새로운 아이디어·계획을 떠올리다","ko":"생각해내다, 착상하다","pos":"동사","lv":1,"cefr":"B2","en":"form an idea or plan in your mind","syn":[],"ex":[{"en":"She conceived the idea for the novel while traveling.","ko":"그녀는 여행 중에 그 소설에 대한 아이디어를 떠올렸다."}]},
+  {"cue":"아기를 갖게 되다","ko":"임신하다","pos":"동사","lv":4,"cefr":"B2","en":"become pregnant","syn":[],"ex":[{"en":"They had been trying to conceive for a year.","ko":"그들은 1년 동안 임신하려고 노력해왔다."}]}
+ ],
+ "conception": [
+  {"cue":"머릿속에 그린 생각이나 계획","ko":"개념, 구상","pos":"명사","lv":1,"cefr":"B2","en":"an idea or plan formed in the mind","syn":["concept"],"ex":[{"en":"His conception of a perfect vacation is very different from mine.","ko":"완벽한 휴가에 대한 그의 구상은 나와 매우 다르다."}]}
+ ],
+ "concerning": [
+  {"cue":"어떤 주제·대상에 대하여","ko":"~에 관한, ~에 대하여","pos":"전치사","lv":1,"cefr":"B2","en":"about a particular subject or thing","syn":["about","regarding"],"ex":[{"en":"I have a question concerning your last email.","ko":"당신의 지난 이메일에 관해 질문이 있어요."}]}
+ ],
+ "concession": [
+  {"cue":"상대방을 위해 요구를 굽히고 들어주는","ko":"양보","pos":"명사","lv":1,"cefr":"B2","en":"something you agree to allow or give up in order to end a disagreement","syn":[],"ex":[{"en":"Both sides made concessions to reach an agreement.","ko":"양측 모두 합의에 이르기 위해 양보했다."}]}
+ ],
+ "concrete": [
+  {"cue":"건물·도로를 짓는 단단한 재료","ko":"콘크리트","pos":"명사","lv":1,"cefr":"A2","en":"a hard building material made from sand, gravel, cement, and water","syn":[],"ex":[{"en":"They poured concrete for the new driveway.","ko":"그들은 새 진입로에 콘크리트를 부었다."}]},
+  {"cue":"추상적이지 않고 실제로 보고 만질 수 있는","ko":"구체적인","pos":"형용사","lv":2,"cefr":"B1","en":"specific and real, not abstract or vague","syn":["specific"],"ex":[{"en":"We need concrete evidence, not just guesses.","ko":"우리는 추측이 아니라 구체적인 증거가 필요하다."}]}
+ ],
+ "condemn": [
+  {"cue":"잘못된 행동을 강하게","ko":"비난하다, 규탄하다","pos":"동사","lv":1,"cefr":"B2","en":"express strong disapproval of something, especially publicly","syn":["denounce"],"ex":[{"en":"World leaders condemned the attack.","ko":"세계 각국 지도자들은 그 공격을 규탄했다."}]},
+  {"cue":"건물이 사용하기에 위험하다고 공식으로","ko":"(건물을) 사용 불가로 선언하다","pos":"동사","lv":5,"cefr":"C1","en":"officially declare a building unfit for use","syn":[],"ex":[{"en":"The old bridge was condemned after the inspection.","ko":"그 오래된 다리는 점검 후 사용 불가 판정을 받았다."}]}
+ ],
+ "conductor": [
+  {"cue":"오케스트라를 이끄는 사람","ko":"(오케스트라) 지휘자","pos":"명사","lv":1,"cefr":"B1","en":"a person who directs a group of musicians, especially an orchestra","syn":[],"ex":[{"en":"The conductor raised his baton to begin the symphony.","ko":"지휘자는 교향곡을 시작하기 위해 지휘봉을 들었다."}]},
+  {"cue":"기차·버스에서 표를 확인하는 사람","ko":"(기차·버스) 차장","pos":"명사","lv":3,"cefr":"B1","en":"a person whose job is to check tickets on a train or bus","syn":[],"ex":[{"en":"The conductor checked everyone's ticket.","ko":"차장은 모두의 표를 확인했다."}]},
+  {"cue":"전기·열을 잘 통과시키는 물질","ko":"(물리) 도체","pos":"명사","lv":6,"cefr":"B2","en":"a material that allows electricity or heat to pass through it easily","syn":[],"ex":[{"en":"Copper is an excellent conductor of electricity.","ko":"구리는 뛰어난 전기 도체이다."}]}
+ ],
+ "cone": [
+  {"cue":"밑면이 원이고 끝이 뾰족한 모양","ko":"원뿔(모양)","pos":"명사","lv":1,"cefr":"B1","en":"a shape with a circular base that narrows to a point","syn":[],"ex":[{"en":"The road was blocked off with orange cones.","ko":"그 도로는 주황색 원뿔형 표지로 막혀 있었다."}]},
+  {"cue":"아이스크림을 담는 바삭한 것","ko":"(아이스크림) 콘","pos":"명사","lv":2,"cefr":"A2","en":"a crisp, cone-shaped wafer used to hold ice cream","syn":[],"ex":[{"en":"She ordered a chocolate ice cream cone.","ko":"그녀는 초콜릿 아이스크림 콘을 주문했다."}]}
+ ],
+ "conference": [
+  {"cue":"전문가들이 모여 논의·발표하는 큰 모임","ko":"회의, 학회","pos":"명사","lv":1,"cefr":"B1","en":"a large formal meeting where people discuss ideas or share information on a topic","syn":[],"ex":[{"en":"She presented her research at an international conference.","ko":"그녀는 국제 학회에서 자신의 연구를 발표했다."}]}
+ ],
+ "conferencing": [
+  {"cue":"화면으로 여러 사람과 회의를","ko":"화상회의","pos":"명사","lv":1,"cefr":"B2","en":"the practice of holding a meeting between people in different places using video or audio technology","syn":[],"ex":[{"en":"The team relies on video conferencing for remote meetings.","ko":"그 팀은 원격 회의를 위해 화상회의에 의존한다."}]}
+ ],
+ "confess": [
+  {"cue":"잘못이나 비밀을 털어놓다","ko":"자백하다, 고백하다","pos":"동사","lv":1,"cefr":"B1","en":"admit that you have done something wrong or reveal a secret","syn":["admit"],"ex":[{"en":"He confessed to stealing the money.","ko":"그는 돈을 훔쳤다고 자백했다."}]}
+ ],
+ "confession": [
+  {"cue":"잘못을 인정하는 말이나 문서","ko":"자백, 고백","pos":"명사","lv":1,"cefr":"B1","en":"a statement admitting that you have done something wrong","syn":[],"ex":[{"en":"The suspect signed a written confession.","ko":"용의자는 서면 자백서에 서명했다."}]}
+ ],
+ "confidently": [
+  {"cue":"자신감을 가지고","ko":"자신 있게","pos":"부사","lv":1,"cefr":"B1","en":"in a way that shows belief in your own abilities","syn":[],"ex":[{"en":"She answered the question confidently.","ko":"그녀는 자신 있게 질문에 답했다."}]}
+ ],
+ "confine": [
+  {"cue":"범위·양을 일정 한도 안으로","ko":"제한하다, 국한하다","pos":"동사","lv":1,"cefr":"B2","en":"limit something to a particular range, extent, or amount","syn":["restrict","limit"],"ex":[{"en":"Please confine your comments to the topic at hand.","ko":"발언은 지금 다루는 주제로 제한해 주세요."}]},
+  {"cue":"사람을 좁은 공간에 가두다","ko":"가두다, 감금하다","pos":"동사","lv":3,"cefr":"B2","en":"keep someone shut inside a place and prevent them from leaving","syn":[],"ex":[{"en":"The prisoner was confined to a small cell.","ko":"그 죄수는 작은 감방에 갇혔다."}]}
+ ],
+ "confront": [
+  {"cue":"어려운 문제·상황에 정면으로","ko":"직면하다, 맞서다","pos":"동사","lv":1,"cefr":"B1","en":"deal with a difficult situation or problem directly","syn":["face"],"ex":[{"en":"We must confront this issue before it gets worse.","ko":"이 문제가 더 심각해지기 전에 우리는 맞서야 한다."}]},
+  {"cue":"누군가에게 따지듯 다가가서","ko":"따지다, 맞서서 대하다","pos":"동사","lv":3,"cefr":"B2","en":"approach someone directly and challenge them about something, often angrily","syn":[],"ex":[{"en":"She confronted her coworker about the missing files.","ko":"그녀는 사라진 파일에 대해 동료에게 따졌다."}]}
+ ],
+ "conjunction": [
+  {"cue":"단어·문장을 연결해주는 품사","ko":"접속사 (문법)","pos":"명사","lv":1,"cefr":"B1","en":"(grammar) a word that connects words, phrases, or clauses, such as 'and' or 'but'","syn":[],"ex":[{"en":"'And' and 'but' are common conjunctions.","ko":"'and'와 'but'은 흔히 쓰이는 접속사이다."}]},
+  {"cue":"둘 이상이 함께 작용하는","ko":"결합, 함께 작용함","pos":"명사","lv":3,"cefr":"B2","en":"the combination of two or more things acting together","syn":[],"ex":[{"en":"The medicine works best in conjunction with rest.","ko":"그 약은 휴식과 결합될 때 가장 효과가 좋다."}]}
+ ],
+ "conquest": [
+  {"cue":"땅·나라를 힘으로 차지하는","ko":"정복","pos":"명사","lv":1,"cefr":"B2","en":"the act of taking control of a country or territory by force","syn":[],"ex":[{"en":"The Roman conquest of Britain lasted for centuries.","ko":"로마의 브리튼 정복은 수 세기 동안 이어졌다."}]}
+ ],
+ "conscience": [
+  {"cue":"옳고 그름을 느끼는 마음속 기준","ko":"양심","pos":"명사","lv":1,"cefr":"B1","en":"the inner sense that tells you whether your actions are right or wrong","syn":[],"ex":[{"en":"His conscience wouldn't let him lie.","ko":"그의 양심이 거짓말을 하도록 놔두지 않았다."}]}
+ ],
+ "consciousness": [
+  {"cue":"깨어서 주변을 인식하는 상태","ko":"의식","pos":"명사","lv":1,"cefr":"B1","en":"the state of being awake and aware of your surroundings","syn":["awareness"],"ex":[{"en":"He lost consciousness after the fall.","ko":"그는 넘어진 후 의식을 잃었다."}]}
+ ],
+ "consensus": [
+  {"cue":"여러 사람의 의견이 모아진","ko":"합의, 총의","pos":"명사","lv":1,"cefr":"B1","en":"general agreement among a group of people","syn":["agreement"],"ex":[{"en":"The team reached a consensus on the new plan.","ko":"그 팀은 새 계획에 대해 합의에 이르렀다."}]}
+ ],
+ "consent": [
+  {"cue":"어떤 일을 하도록 허락하는","ko":"동의, 허락","pos":"명사","lv":1,"cefr":"B1","en":"permission for something to happen","syn":["permission"],"ex":[{"en":"The doctor needs your consent before the surgery.","ko":"의사는 수술 전에 당신의 동의가 필요하다."}]}
+ ],
+ "considerably": [
+  {"cue":"정도가 꽤 많이","ko":"상당히, 꽤","pos":"부사","lv":1,"cefr":"B1","en":"by a large amount; to a great degree","syn":["significantly"],"ex":[{"en":"Prices have risen considerably this year.","ko":"올해 물가가 상당히 올랐다."}]}
+ ],
+ "considering": [
+  {"cue":"어떤 사실을 감안하면","ko":"~을 고려하면, ~을 감안하면","pos":"전치사","lv":1,"cefr":"B1","en":"taking a particular fact into account","syn":["given"],"ex":[{"en":"Considering the weather, the trip went well.","ko":"날씨를 감안하면 여행은 잘 진행되었다."}]}
+ ],
+ "consistent": [
+  {"cue":"항상 같은 방식·수준을 유지하는","ko":"일관된, 한결같은","pos":"형용사","lv":1,"cefr":"B1","en":"always behaving or happening in the same way","syn":[],"ex":[{"en":"She has been consistent in her performance all season.","ko":"그녀는 시즌 내내 일관된 활약을 보였다."}]}
+ ],
+ "consolation": [
+  {"cue":"슬프거나 실망했을 때 느끼는 위안","ko":"위안, 위로","pos":"명사","lv":1,"cefr":"B2","en":"a feeling of comfort when you are sad or disappointed","syn":["comfort"],"ex":[{"en":"It was a small consolation that at least no one was hurt.","ko":"적어도 다친 사람이 없다는 게 작은 위안이었다."}]}
+ ],
+ "console": [
+  {"cue":"슬퍼하는 사람을 다독여","ko":"위로하다","pos":"동사","lv":1,"cefr":"B2","en":"give comfort to someone who is sad or disappointed","syn":["comfort"],"ex":[{"en":"She tried to console her friend after the breakup.","ko":"그녀는 이별 후 친구를 위로하려 애썼다."}]},
+  {"cue":"게임기·조작 장치","ko":"(게임) 콘솔, 조작판","pos":"명사","lv":2,"cefr":"A2","en":"a device with controls for playing electronic games or operating a machine","syn":[],"ex":[{"en":"He bought the latest gaming console.","ko":"그는 최신 게임 콘솔을 샀다."}]}
+ ],
+ "constant": [
+  {"cue":"멈추지 않고 계속되는","ko":"끊임없는, 지속적인","pos":"형용사","lv":1,"cefr":"B1","en":"happening continuously without stopping","syn":["continuous"],"ex":[{"en":"She lives with constant pain in her back.","ko":"그녀는 끊임없는 허리 통증을 안고 산다."}]},
+  {"cue":"수학·과학에서 변하지 않는 값","ko":"상수","pos":"명사","lv":4,"cefr":"B2","en":"a value or quantity that does not change","syn":[],"ex":[{"en":"Pi is a mathematical constant.","ko":"파이(π)는 수학 상수이다."}]}
+ ],
+ "consult": [
+  {"cue":"전문가에게 의견을 물어","ko":"상담하다, 조언을 구하다","pos":"동사","lv":1,"cefr":"B1","en":"go to someone, especially an expert, for advice or information","syn":[],"ex":[{"en":"You should consult a doctor about that pain.","ko":"그 통증에 대해 의사와 상담해야 한다."}]},
+  {"cue":"자료·사전을 찾아보다","ko":"(자료를) 참고하다, 찾아보다","pos":"동사","lv":3,"cefr":"B2","en":"look at a book, map, or other source of information","syn":["refer to"],"ex":[{"en":"I consulted the manual before starting the machine.","ko":"나는 기계를 작동하기 전에 설명서를 참고했다."}]}
+ ],
+ "consultant": [
+  {"cue":"전문 지식으로 조언해주는 직업인","ko":"컨설턴트, 자문위원","pos":"명사","lv":1,"cefr":"B1","en":"a person who is paid to give expert advice to an organization or business","syn":["advisor"],"ex":[{"en":"They hired a consultant to improve their marketing strategy.","ko":"그들은 마케팅 전략을 개선하기 위해 컨설턴트를 고용했다."}]}
+ ],
+ "contaminate": [
+  {"cue":"물·공기·음식이 나쁜 물질로","ko":"오염시키다","pos":"동사","lv":1,"cefr":"B2","en":"make something dirty or impure by adding a harmful substance","syn":["pollute"],"ex":[{"en":"The chemical spill contaminated the river.","ko":"그 화학물질 유출이 강을 오염시켰다."}]}
+ ],
+ "contemporary": [
+  {"cue":"지금 이 시대의","ko":"현대의","pos":"형용사","lv":1,"cefr":"B1","en":"belonging to or happening in the present time","syn":["modern"],"ex":[{"en":"The museum focuses on contemporary art.","ko":"그 미술관은 현대 미술에 중점을 둔다."}]},
+  {"cue":"같은 시기에 살았거나 활동한","ko":"동시대의","pos":"형용사","lv":3,"cefr":"B2","en":"living or happening during the same period of time as someone or something else","syn":[],"ex":[{"en":"Shakespeare was contemporary with Cervantes.","ko":"셰익스피어는 세르반테스와 동시대 사람이었다."}]}
+ ],
+ "contempt": [
+  {"cue":"누군가를 무시하고 깔보는 마음","ko":"경멸","pos":"명사","lv":1,"cefr":"B2","en":"a strong feeling that someone or something deserves no respect","syn":["disdain"],"ex":[{"en":"She looked at him with contempt.","ko":"그녀는 경멸의 눈빛으로 그를 바라보았다."}]}
+ ],
+ "contract": [
+  {"cue":"법적 효력이 있는 약정 문서","ko":"계약(서)","pos":"명사","lv":1,"cefr":"B1","en":"a formal written agreement between two or more parties that is legally binding","syn":["agreement"],"ex":[{"en":"They signed a contract to rent the apartment.","ko":"그들은 아파트를 임대하는 계약서에 서명했다."}]},
+  {"cue":"병에 걸리게 되다","ko":"(병에) 걸리다","pos":"동사","lv":4,"cefr":"B2","en":"become infected with an illness","syn":[],"ex":[{"en":"He contracted a serious illness while traveling abroad.","ko":"그는 해외 여행 중 심각한 병에 걸렸다."}]},
+  {"cue":"크기·부피가 줄어들다","ko":"수축하다, 줄어들다","pos":"동사","lv":5,"cefr":"B2","en":"become smaller or draw together","syn":["shrink"],"ex":[{"en":"Metal contracts as it cools.","ko":"금속은 식으면서 수축한다."}]}
+ ],
+ "contradict": [
+  {"cue":"말이나 사실이 서로 어긋나서","ko":"모순되다, 반박하다","pos":"동사","lv":1,"cefr":"B2","en":"say the opposite of what someone else has said, or be inconsistent with it","syn":[],"ex":[{"en":"His actions contradict his words.","ko":"그의 행동은 그의 말과 모순된다."}]}
+ ],
+ "contradiction": [
+  {"cue":"서로 앞뒤가 안 맞는 상태","ko":"모순","pos":"명사","lv":1,"cefr":"B2","en":"a situation in which two facts, ideas, or statements are opposed to each other","syn":[],"ex":[{"en":"There's a contradiction between what he said and what he did.","ko":"그가 말한 것과 행동한 것 사이에 모순이 있다."}]}
+ ],
+ "contradictory": [
+  {"cue":"두 가지가 동시에 참일 수 없는","ko":"모순되는","pos":"형용사","lv":1,"cefr":"B2","en":"containing ideas or statements that disagree with each other","syn":[],"ex":[{"en":"The witnesses gave contradictory accounts of the accident.","ko":"목격자들은 사고에 대해 서로 모순되는 진술을 했다."}]}
+ ],
+ "controversy": [
+  {"cue":"의견이 갈려 논쟁이 되는","ko":"논란","pos":"명사","lv":1,"cefr":"B1","en":"public disagreement or argument about something","syn":[],"ex":[{"en":"The decision caused a lot of controversy.","ko":"그 결정은 많은 논란을 일으켰다."}]}
+ ],
+ "conveniently": [
+  {"cue":"이용하기 편하게","ko":"편리하게","pos":"부사","lv":1,"cefr":"B1","en":"in a way that is easy or suitable for a particular purpose","syn":[],"ex":[{"en":"The hotel is conveniently located near the station.","ko":"그 호텔은 역 근처에 편리하게 위치해 있다."}]}
+ ],
+ "convention": [
+  {"cue":"오랫동안 지켜온 사회적 관습","ko":"관습, 관례","pos":"명사","lv":1,"cefr":"B1","en":"a traditional way of behaving that is widely accepted in a society","syn":["custom"],"ex":[{"en":"It's a social convention to shake hands when meeting someone.","ko":"누군가를 만날 때 악수하는 것은 사회적 관습이다."}]},
+  {"cue":"많은 사람이 모이는 대규모 회의","ko":"총회, 대회","pos":"명사","lv":3,"cefr":"B2","en":"a large formal meeting of people who share the same interest or profession","syn":[],"ex":[{"en":"Thousands attended the annual comic convention.","ko":"수천 명이 연례 코믹 컨벤션에 참석했다."}]}
+ ],
+ "conventional": [
+  {"cue":"기존의 방식·관습을 따르는","ko":"전통적인, 관습적인","pos":"형용사","lv":1,"cefr":"B1","en":"following what is traditional or generally accepted, rather than new or original","syn":["traditional"],"ex":[{"en":"She prefers conventional methods over new technology.","ko":"그녀는 새로운 기술보다 전통적인 방식을 선호한다."}]},
+  {"cue":"핵무기가 아닌 일반적인 무기의","ko":"(무기가) 재래식의","pos":"형용사","lv":5,"cefr":"C1","en":"(of weapons) using regular explosives rather than nuclear power","syn":[],"ex":[{"en":"The two countries agreed to reduce conventional weapons.","ko":"두 나라는 재래식 무기를 줄이기로 합의했다."}]}
+ ],
+ "converse": [
+  {"cue":"어떤 것과 정반대인 것","ko":"정반대(의 것)","pos":"명사","lv":1,"cefr":"C1","en":"the exact opposite of a statement or situation","syn":["opposite"],"ex":[{"en":"The converse of this rule is also true.","ko":"이 규칙의 정반대도 참이다."}]},
+  {"cue":"누군가와 이야기를 나누다","ko":"대화를 나누다","pos":"동사","lv":2,"cefr":"B2","en":"have a conversation with someone","syn":["talk"],"ex":[{"en":"They conversed for hours about politics.","ko":"그들은 몇 시간 동안 정치에 대해 대화를 나눴다."}]}
+ ],
+ "conversely": [
+  {"cue":"앞의 내용과 반대로 말하면","ko":"반대로","pos":"부사","lv":1,"cefr":"B2","en":"used to introduce a statement that is the opposite of what was just said","syn":[],"ex":[{"en":"Some people love spicy food; conversely, others can't handle it at all.","ko":"어떤 사람들은 매운 음식을 좋아하지만, 반대로 어떤 사람들은 전혀 못 먹는다."}]}
+ ],
+ "conversion": [
+  {"cue":"한 형태·상태에서 다른 것으로 바뀌는","ko":"전환, 변환","pos":"명사","lv":1,"cefr":"B1","en":"the process of changing something from one form, use, or unit to another","syn":["change"],"ex":[{"en":"The conversion from Celsius to Fahrenheit requires a formula.","ko":"섭씨에서 화씨로의 변환에는 공식이 필요하다."}]}
+ ],
+ "convert": [
+  {"cue":"한 형태·용도에서 다른 것으로","ko":"전환하다, 바꾸다","pos":"동사","lv":1,"cefr":"B1","en":"change something from one form, use, or system to another","syn":["change","transform"],"ex":[{"en":"They converted the old barn into a house.","ko":"그들은 오래된 헛간을 집으로 개조했다."}]},
+  {"cue":"종교나 믿음을 바꾸다","ko":"개종하다","pos":"동사","lv":4,"cefr":"B2","en":"change your religion or beliefs, or persuade someone else to","syn":[],"ex":[{"en":"He converted to Buddhism in his thirties.","ko":"그는 30대에 불교로 개종했다."}]}
+ ],
+ "convinced": [
+  {"cue":"의심 없이 그렇다고 믿는","ko":"확신하는","pos":"형용사","lv":1,"cefr":"B1","en":"completely sure that something is true","syn":["certain"],"ex":[{"en":"I'm convinced that she's telling the truth.","ko":"나는 그녀가 진실을 말하고 있다고 확신한다."}]}
+ ],
+ "cooperate": [
+  {"cue":"공동의 목표를 위해 함께 일하다","ko":"협력하다","pos":"동사","lv":1,"cefr":"B1","en":"work together with someone to achieve a shared goal","syn":["collaborate"],"ex":[{"en":"The two departments cooperated to finish the project on time.","ko":"두 부서는 프로젝트를 제때 끝내기 위해 협력했다."}]}
+ ],
+ "cooperation": [
+  {"cue":"함께 힘을 모아 돕는","ko":"협력","pos":"명사","lv":1,"cefr":"B1","en":"the act of working together with others toward a shared goal","syn":[],"ex":[{"en":"The project succeeded thanks to close cooperation between teams.","ko":"그 프로젝트는 팀 간의 긴밀한 협력 덕분에 성공했다."}]}
+ ],
+ "cooperative": [
+  {"cue":"기꺼이 도와서 함께 일하려는","ko":"협조적인","pos":"형용사","lv":1,"cefr":"B1","en":"willing to help and work together with others","syn":[],"ex":[{"en":"The staff were very cooperative during the audit.","ko":"직원들은 감사 기간 동안 매우 협조적이었다."}]},
+  {"cue":"조합원들이 함께 소유·운영하는 사업체","ko":"(협동)조합","pos":"명사","lv":5,"cefr":"B2","en":"a business or organization owned and run jointly by its members","syn":["co-op"],"ex":[{"en":"The farmers formed a cooperative to sell their produce.","ko":"농부들은 농산물을 팔기 위해 협동조합을 만들었다."}]}
+ ],
+ "cope": [
+  {"cue":"어려운 상황을 견디고 처리하다","ko":"대처하다, 극복하다","pos":"동사","lv":1,"cefr":"B1","en":"deal successfully with a difficult situation","syn":["manage"],"ex":[{"en":"She struggled to cope with the stress of the new job.","ko":"그녀는 새 직장의 스트레스에 대처하느라 힘들어했다."}]}
+ ],
+ "copper": [
+  {"cue":"붉은빛을 띠는 금속 원소","ko":"구리, 동","pos":"명사","lv":1,"cefr":"B1","en":"a reddish-brown metal that conducts electricity well","syn":[],"ex":[{"en":"Copper wires are used in electrical systems.","ko":"구리 전선은 전기 시스템에 사용된다."}]}
+ ],
+ "coral": [
+  {"cue":"바닷속에 사는 딱딱한 골격의 생물","ko":"산호","pos":"명사","lv":1,"cefr":"B1","en":"a hard structure formed in the sea by the skeletons of small marine animals","syn":[],"ex":[{"en":"They went diving to see the coral reef.","ko":"그들은 산호초를 보러 다이빙을 하러 갔다."}]}
+ ],
+ "core": [
+  {"cue":"사물의 한가운데 부분","ko":"중심부, 핵","pos":"명사","lv":1,"cefr":"B1","en":"the central part of something","syn":["center"],"ex":[{"en":"The earth's core is extremely hot.","ko":"지구의 중심부(핵)는 매우 뜨겁다."}]},
+  {"cue":"생각·문제의 가장 중요한 부분","ko":"핵심, 근본","pos":"명사","lv":2,"cefr":"B1","en":"the most important or essential part of an idea or issue","syn":["essence"],"ex":[{"en":"Honesty is at the core of any good relationship.","ko":"정직함은 어떤 좋은 관계에서든 핵심이다."}]}
+ ],
+ "cornerstone": [
+  {"cue":"어떤 것의 가장 기본이 되는 바탕","ko":"초석, 근본","pos":"명사","lv":1,"cefr":"B2","en":"the basic principle or fact on which something important is built","syn":["foundation"],"ex":[{"en":"Trust is the cornerstone of a strong team.","ko":"신뢰는 강한 팀의 초석이다."}]}
+ ],
+ "cornet": [
+  {"cue":"트럼펫과 비슷한 금관악기","ko":"코넷 (금관악기)","pos":"명사","lv":1,"cefr":"B2","en":"a brass musical instrument similar to a trumpet, with a mellower sound","syn":["trumpet"],"ex":[{"en":"He learned to play the cornet in the school band.","ko":"그는 학교 밴드에서 코넷 연주를 배웠다."}]}
+ ],
+ "corona": [
+  {"cue":"태양을 둘러싼 가장 바깥 대기층","ko":"코로나 (태양의 대기층)","pos":"명사","lv":1,"cefr":"C1","en":"the outer layer of gas surrounding the sun, visible during a solar eclipse","syn":[],"ex":[{"en":"You can see the sun's corona during a total eclipse.","ko":"개기일식 때 태양의 코로나를 볼 수 있다."}]}
+ ],
+ "corporal": [
+  {"cue":"몸에 관련된, 신체적인","ko":"신체의, 육체적인","pos":"형용사","lv":1,"cefr":"B2","en":"relating to the human body, not the mind","syn":["bodily","physical"],"ex":[{"en":"Corporal punishment is banned in most schools now.","ko":"대부분의 학교에서 이제 체벌(신체적 처벌)이 금지되어 있다."}]},
+  {"cue":"군대의 하사 계급","ko":"(군대) 하사, 상병","pos":"명사","lv":4,"cefr":"B2","en":"a low-ranking officer in the army or marines","syn":[],"ex":[{"en":"The corporal led the small patrol unit.","ko":"그 하사는 작은 순찰대를 이끌었다."}]}
+ ],
+ "corporate": [
+  {"cue":"회사·기업과 관련된","ko":"기업의, 법인의","pos":"형용사","lv":1,"cefr":"B1","en":"relating to a large company or business","syn":[],"ex":[{"en":"She works in the corporate finance department.","ko":"그녀는 기업 재무 부서에서 일한다."}]}
+ ],
+ "corporation": [
+  {"cue":"법인으로 등록된 대규모 회사","ko":"기업, 회사(법인)","pos":"명사","lv":1,"cefr":"B1","en":"a large company or group of companies recognized by law as a single unit","syn":["company"],"ex":[{"en":"He works for a multinational corporation.","ko":"그는 다국적 기업에서 일한다."}]}
+ ],
+ "correctness": [
+  {"cue":"사실이나 답이 틀림없이 맞음","ko":"정확성","pos":"명사","lv":1,"cefr":"B1","en":"the quality of being accurate and free from errors","syn":["accuracy"],"ex":[{"en":"Please check the correctness of these figures.","ko":"이 수치들의 정확성을 확인해 주세요."}]}
+ ],
+ "correspond": [
+  {"cue":"두 가지가 서로 들어맞는","ko":"일치하다, 부합하다","pos":"동사","lv":1,"cefr":"B1","en":"match or be similar to something else","syn":["match"],"ex":[{"en":"His story doesn't correspond with what she said.","ko":"그의 이야기는 그녀가 말한 것과 일치하지 않는다."}]},
+  {"cue":"편지·이메일을 주고받으며","ko":"서신을 주고받다","pos":"동사","lv":4,"cefr":"B2","en":"communicate with someone regularly by exchanging letters or emails","syn":[],"ex":[{"en":"They corresponded for years after moving apart.","ko":"그들은 떨어져 산 이후에도 몇 년간 서신을 주고받았다."}]}
+ ],
+ "correspondence": [
+  {"cue":"편지·이메일을 주고받는 것","ko":"서신, 편지 왕래","pos":"명사","lv":1,"cefr":"B1","en":"the exchange of letters or messages with someone","syn":[],"ex":[{"en":"They kept up a correspondence for many years.","ko":"그들은 여러 해 동안 서신을 주고받았다."}]}
+ ],
+ "correspondent": [
+  {"cue":"현지에서 소식을 취재해 보내는 기자","ko":"특파원, 통신원","pos":"명사","lv":1,"cefr":"B1","en":"a journalist who reports news from a particular place, especially abroad","syn":[],"ex":[{"en":"The correspondent reported live from the disaster zone.","ko":"그 특파원은 재난 현장에서 생중계로 보도했다."}]}
+ ],
+ "corresponding": [
+  {"cue":"서로 짝을 이루듯 대응하는","ko":"상응하는, 해당하는","pos":"형용사","lv":1,"cefr":"B1","en":"matching or similar in position or purpose to something else","syn":[],"ex":[{"en":"Each number has a corresponding letter.","ko":"각 숫자에는 상응하는 문자가 있다."}]}
+ ],
+ "corridor": [
+  {"cue":"방들 사이를 잇는 좁고 긴 통로","ko":"복도","pos":"명사","lv":1,"cefr":"A2","en":"a long, narrow passage in a building connecting rooms","syn":["hallway"],"ex":[{"en":"He waited in the corridor outside the office.","ko":"그는 사무실 밖 복도에서 기다렸다."}]}
+ ],
+ "corrupt": [
+  {"cue":"뇌물·비리로 도덕적으로 타락한","ko":"부패한","pos":"형용사","lv":1,"cefr":"B1","en":"willing to act dishonestly, especially in exchange for money or power","syn":["dishonest"],"ex":[{"en":"The corrupt official was arrested for taking bribes.","ko":"그 부패한 공무원은 뇌물을 받은 혐의로 체포되었다."}]},
+  {"cue":"파일·데이터가 손상되어 못 쓰게","ko":"(데이터가) 손상된","pos":"형용사","lv":4,"cefr":"B2","en":"(of a computer file) damaged so that it cannot be used properly","syn":[],"ex":[{"en":"The file was corrupt and wouldn't open.","ko":"그 파일은 손상되어 열리지 않았다."}]}
+ ]
+}
