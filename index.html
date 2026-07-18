@@ -11,16 +11,22 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.29">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.29" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.29" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.31">
+<link rel="icon" href="img/icon-192.png?v=0.35.31" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.31">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.31" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.31" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.29"></script>
-<script src="words.js?v=0.35.29"></script><style>
+<script src="img/hero/lottie.min.js?v=0.35.31"></script>
+<!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
+     wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
+     UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
+<script src="lib/compromise.min.js?v=0.35.31"></script>
+<script src="words.js?v=0.35.31"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -30,15 +36,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.29") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.29") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.31") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.31") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.29") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.29") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.31") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.31") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -304,7 +310,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.29");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.31");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140).
@@ -322,7 +328,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .hero-sticker img, .hero-sticker > svg, .hero-sticker > div{width:100%;height:auto;display:block;pointer-events:none;}
 /* 뱃지 스티커 — .medal은 원래 64px 고정 픽셀이라, 스티커 폭(%)에 맞춰 채우도록 이 컨테이너
    안에서만 100%/78%로 재정의(.medal-face 비율은 원래 50/64 그대로 유지). */
-.hero-badge-sticker{width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;}
+/* 노트에 놓인 뱃지 스티커는 이미지 스티커들처럼 손그림 잉크 외곽선이 없어서 밋밋해 보여 2px
+   잉크 스트로크를 둘러줌(2026-07-18) — border 대신 box-shadow로(레이아웃에 영향 안 주고 원형
+   .medal 모양을 그대로 따라감). */
+.hero-badge-sticker{width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;
+  border-radius:50%;box-shadow:0 0 0 2px var(--ink);}
 .hero-badge-sticker .medal{width:100%;height:100%;}
 .hero-badge-sticker .medal-face{width:78%;height:78%;}
 /* 롱프레스로 선택된 스티커의 삭제 X / 리사이즈 배지 — 각각 모서리에 살짝 밖으로.
@@ -330,14 +340,19 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    자식 div라서 같이 먹여버려 클릭이 그대로 통과되고, 크기 규칙(width:100%;height:auto)까지
    먹여서 22px짜리 원이 스티커 폭 전체로 늘어난 타원이 돼버리는 버그가 있었음(2026-07-18, 스크린샷
    으로 실제 확인). 반드시 같거나 더 높은 특이도(".hero-sticker > .클래스", 0,2,0)로 재정의해서
-   pointer-events와 width/height를 둘 다 되돌릴 것 — 하나만 고치면 다른 하나가 남아서 또 깨짐. */
+   pointer-events와 width/height를 둘 다 되돌릴 것 — 하나만 고치면 다른 하나가 남아서 또 깨짐.
+   display:block도 같은 규칙이 먹여서 아이콘 중앙정렬(flex)이 깨지고 좌상단에 붙는 버그가 있었음
+   (2026-07-18, getBoundingClientRect로 확인) — display:flex도 반드시 같이 재선언할 것. */
 .hero-sticker > .hero-sticker-del, .hero-sticker > .hero-sticker-resize{
-  pointer-events:auto;width:22px;height:22px;}
-.hero-sticker-del{position:absolute;top:-9px;right:-9px;border-radius:50%;
+  pointer-events:auto;width:22px;height:22px;display:flex;}
+/* 위치: 선택 시 점선 아웃라인이 outline-offset:4px만큼 스티커 바깥으로 나가 있으므로, 배지도
+   그 점선의 모서리에 중심이 오도록 -4px(아웃라인 오프셋) - 11px(배지 반지름) = -15px로 맞춤
+   (2026-07-18, 예전엔 -9px라서 점선 모서리와 안 맞고 붕 떠 보였음). */
+.hero-sticker-del{position:absolute;top:-15px;right:-15px;border-radius:50%;
   background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;
   box-shadow:0 2px 6px rgba(33,28,21,.3);z-index:2;touch-action:none;cursor:pointer;}
-.hero-sticker-resize{position:absolute;bottom:-9px;right:-9px;border-radius:50%;
-  background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;
+.hero-sticker-resize{position:absolute;bottom:-15px;right:-15px;border-radius:50%;
+  background:var(--hi-blue-dark);color:#fff;display:flex;align-items:center;justify-content:center;
   box-shadow:0 2px 6px rgba(33,28,21,.3);z-index:2;touch-action:none;cursor:nwse-resize;}
 .hero-sticker-resize .icon{transform:rotate(45deg);}
 .hero-sticker.selected{outline:2px dashed rgba(33,28,21,.35);outline-offset:4px;}
@@ -351,6 +366,13 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .deco-menu-btn .body{flex:1;min-width:0;}
 .deco-menu-btn .t{font-size:15px;font-weight:700;}
 .deco-menu-btn .s{font-size:12px;color:var(--muted);margin-top:2px;}
+/* 노트꾸미기 시트만 60%로 고정(뒤 히어로가 계속 보이게) — 서브화면마다 내용 길이가 달라도
+   같은 위치, 내부 스크롤(.sheet-body는 이미 overflow-y:auto+flex:1이라 높이만 고정하면 됨). */
+.sheet.deco-sheet{height:60vh;height:60dvh;max-height:60vh;max-height:60dvh;}
+/* 초기화하기 — 메뉴 제일 아래, 텍스트 한 줄만, 웜그레이 하이어라키 3단(밝은 --line/중간 --warmgray/
+   진한 --muted) 중 가장 진한 --muted로 — 삭제 색(danger)까지는 아니고 은근하게. */
+.deco-reset-btn{width:100%;text-align:center;padding:12px 0 4px;font-size:13px;font-weight:600;
+  color:var(--muted);}
 .deco-mini-hero{width:100%;aspect-ratio:350/220;border-radius:0;overflow:hidden;position:relative;
   border:1px solid var(--card-border);box-shadow:var(--shadow);pointer-events:none;background-color:#FAF3E5;}
 .deco-mini-hero .hero-cat{pointer-events:none;}
@@ -560,7 +582,13 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 @keyframes slideup{from{transform:translateY(100%)}to{transform:translateY(0)}}
 .sheet-grab{width:38px;height:4px;background:var(--line);border-radius:0;margin:10px auto 2px;flex:none;}
 .sheet-head{display:flex;align-items:center;gap:10px;padding:6px 18px 10px;flex:none;}
-.sheet-head .back{font-size:20px;color:var(--muted);padding:2px 6px;margin-left:-6px;}
+/* 타이틀(<b>)과 아이콘 버튼(뒤로·닫기)이 미묘하게 세로 정렬이 안 맞던 문제(2026-07-18) — 원인은
+   커스텀 폰트(LINE Seed KR Extra Bold)의 기본 line-height가 아이콘 SVG 박스 높이와 안 맞아서
+   flex align-items:center로 박스는 가운데 맞아도 눈에 보이는 글자 자체는 살짝 아래로 처짐.
+   line-height:1 + 아이콘 버튼을 자체 flex 중앙정렬로 바꿔 눈으로 보이는 중심을 맞춤. */
+.sheet-head b{line-height:1;}
+.sheet-head .back{font-size:20px;color:var(--muted);padding:2px 6px;margin-left:-6px;
+  display:inline-flex;align-items:center;justify-content:center;}
 .sheet-head .sp{flex:1;}
 .sheet-head .fav{font-size:13px;font-weight:600;color:var(--muted);}
 .favstar{color:var(--muted);display:flex;padding:2px 4px;}
@@ -622,7 +650,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qcard{background:var(--surface);border:0.5px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
 .qlvrow{display:flex;align-items:center;margin-bottom:-6px;}
 .qlvrow .tag.lv{margin-left:auto;}
-.qsofthint{font-size:12px;font-weight:600;color:var(--muted);opacity:.8;}
+.qsofthint{font-size:12px;font-weight:700;color:var(--hi-blue-dark);}
+.qlen-hint{font-size:12px;font-weight:700;color:var(--hi-pink-dark);}
+.qhint-labels{display:flex;align-items:center;gap:8px;}
 .qaudio{display:flex;align-items:center;gap:6px;}
 .qaudio button{display:flex;align-items:center;gap:3px;color:var(--muted);background:var(--fill);border-radius:999px;padding:5px 10px;font-size:11px;font-weight:700;}
 .study-top .favstar{margin-left:4px;}
@@ -638,13 +668,10 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 입력창 = 문장 속 빈칸. 회색 솔리드 + 살짝 라운드, 문장 글자 크기 그대로, 네이티브 캐럿이 깜빡임 */
 .qbox{border:none;border-radius:0;background:var(--fill);font:inherit;font-weight:800;font-size:inherit;line-height:inherit;color:var(--accent-deep);text-align:center;padding:2px 16px;outline:none;vertical-align:baseline;caret-color:var(--accent);min-width:64px;}
 .qbox:focus{background:var(--accent-soft);} /* 포커스 링 없이 톤만 반 단계(옅은 골드) — 예전 #E5D9B8은 너무 진했음(2026-07-17). 포커스 표시는 깜빡이는 캐럿이 담당 */
-/* 글자수 힌트: 정답 글자 수만큼 칸(cell)으로 분리 — 같은 회색 솔리드 톤, 다음 입력 칸에 캐럿 깜빡임 */
-.cellrow{display:inline-flex;gap:5px;position:relative;vertical-align:middle;}
-.cell{width:26px;height:36px;border-radius:0;background:var(--fill);display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:var(--accent-deep);text-transform:none;}
-.cell.correct{background:var(--accent-soft);color:var(--accent-deep);}
-.cell.wrong{background:var(--fill);color:var(--muted);}
-.cell.cur::after{content:"";width:2px;height:17px;border-radius:0;background:var(--accent);animation:caretblink 1.06s steps(1) infinite;}
-.cell-gap{width:10px;flex:none;} /* 구동사 빈칸의 단어 사이 간격 */
+/* 글자수 힌트: 칸을 나누지 않고, 박스 하나의 길이만 정답 글자 수에 맞춰 늘어남(2026-07-18,
+   예전엔 글자마다 칸을 나눠 위치별 정오까지 표시했는데 요청으로 단일 박스로 단순화) —
+   실제 글자 수는 qlen-hint 라벨(분홍색)로 별도 표시. */
+.qbox-view.lenbox{min-width:0;}
 @keyframes caretblink{50%{opacity:0;}}
 @media (prefers-reduced-motion: reduce){.cell.cur::after{animation:none;}}
 .cell-catch{position:absolute;inset:0;width:100%;height:100%;opacity:0;border:0;padding:0;margin:0;font-size:16px;}
@@ -790,16 +817,19 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    흰 카드+검정 테두리로 페이지와 분리했던 이전 버전이 "흰색 네모"처럼 튀어 보인다는 지적으로,
    페이지 배경(--bg)과 같은 밝은 크림으로 통일하고 별도 테두리도 제거(2026-07-16). */
 .talk-msgs{display:flex;flex-direction:column;gap:10px;padding:12px 4px;background:var(--bg);
-  max-height:calc(100dvh - 330px);overflow-y:auto;}
-.talk-msg-row{display:flex;align-items:flex-end;gap:8px;}
+  flex:1;min-height:0;overflow-y:auto;}
+.talk-msg-row{display:flex;align-items:flex-end;gap:8px;min-width:0;}
 /* 봇 행: 아바타를 말풍선(위쪽)에 붙이려고 상단 정렬 — 예전엔 flex-end라 아바타가 뜻·하트 아래로
    내려가 "말풍선 아래에 떨어져" 보였음(2026-07-17 수정). */
 .talk-msg-row.bot{justify-content:flex-start;align-items:flex-start;}
 .talk-msg-row.user{justify-content:flex-end;}
-.talk-msg{display:flex;flex-direction:column;max-width:78%;gap:3px;}
+/* min-width:0 필수 — flex item 기본값(min-width:auto)이 내용의 자연폭을 하한으로 잡아버려서,
+   긴 영어 문장이 말풍선 안에서 안 줄바꿈되고 max-width:78%를 무시한 채 오른쪽으로 삐져나가
+   화면 전체에 가로스크롤이 생기는 버그가 있었음(2026-07-18, "대화창에 가로스크롤 생김" 리포트). */
+.talk-msg{display:flex;flex-direction:column;max-width:78%;min-width:0;gap:3px;}
 .talk-msg.bot{align-items:flex-start;}
 .talk-msg.user{align-items:flex-end;}
-.talk-bubble{padding:10px 13px;font-size:14px;line-height:1.5;font-weight:600;display:flex;align-items:center;gap:8px;position:relative;}
+.talk-bubble{padding:10px 13px;font-size:14px;line-height:1.5;font-weight:600;display:flex;align-items:center;gap:8px;position:relative;min-width:0;overflow-wrap:break-word;word-break:break-word;}
 .talk-msg.bot .talk-bubble{background:var(--fill);color:var(--ink);}
 .talk-msg.user .talk-bubble{background:var(--ink);color:var(--on-accent);}
 /* 말풍선 꼬리 — 봇은 왼쪽 아래(아바타 쪽), 유저는 오른쪽 아래. 피드백(.talk-fb) 카드에는
@@ -825,10 +855,22 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .talk-fb .t{font-weight:800;margin-bottom:3px;color:var(--ink);}
 .talk-fb button{margin-top:8px;background:var(--ink);color:var(--on-accent);border-radius:999px;padding:6px 14px;font-size:12px;font-weight:700;}
 
-/* 입력창은 메신저처럼 화면 하단에 고정 — 대화가 짧아도 talk-room-screen이 스크롤 높이를 꽉 채우고
-   margin-top:auto가 입력창을 바닥까지 밀어내림. 키보드가 올라오면 sticky bottom이 --kb(키보드 높이,
-   App의 visualViewport 리스너)만큼 떠서 키보드 위에 붙는다(2026-07-17). */
-.talk-room-screen{min-height:100%;padding-bottom:calc(100px + var(--kb, 0px));padding-left:7px;padding-right:7px;position:relative;} /* 하단 패딩은 이제 absolute .talk-input-row가 덮는 실제 높이만큼(2026-07-18, 28→14→70→100px, 입력창 하단 여백이 40px로 늘어난 만큼 같이). 좌우는 .content의 20px가 너무 넓다는 지적으로 7px로(대략 35%) */
+/* 대화가 짧을 때 메시지 영역과 입력창 사이에 큰 빈 여백이 생기던 버그(2026-07-18, "왜 패딩 있음?"
+   리포트) — 원인은 .talk-msgs의 높이를 `calc(100dvh - 330px)` 매직넘버로 잡아뒀던 것. 실제 화면
+   구성(상단바+헤더+토글+입력창 높이)이 그 330px 추정과 안 맞으면 어긋난 만큼 빈 공간이 그대로
+   보였음. min-height:100%도 부모(.content)가 auto-height라 사실상 무효였음(퍼센트 높이는 부모가
+   definite height일 때만 계산됨 — 이 앱의 실제 definite-height 조상은 `.scroll`뿐).
+   고친 법: `.talk-room-screen`(=.content 그 자체, 부모가 .scroll이라 definite height 상속 가능)에
+   height:100%를 줘서 진짜 높이를 확보하고, 아래 .talk-msgs를 flex:1로 바꿔 그 안에서 남는 공간을
+   전부 채우게 함(매직넘버 제거, 화면 크기 달라져도 항상 입력창 바로 위까지 자연스럽게 채워짐). */
+.talk-room-screen{height:100%;display:flex;flex-direction:column;padding-left:7px;padding-right:7px;position:relative;}
+/* 위 padding-bottom을 여기서 별도 선언 — ".scroll.notab .content{padding-bottom:max(40px,...)}"가
+   클래스 3개(.scroll·.notab·.content, 특이도 0,3,0)라 ".talk-room-screen" 단독(0,1,0)은 물론
+   ".content.talk-room-screen"(0,2,0)로 올려도 여전히 못 이겨서 실제 여백이 40px로 깎여있었음
+   (2026-07-18 발견 — flex:1이 그 잘못된 40px 기준으로 채워져서 .talk-msgs가 입력창 밑까지 침범,
+   오히려 마이너스 간격이 남는 걸 실측으로 확인). 클래스 3개(.scroll .content.talk-room-screen)로
+   맞춰서 뒤에서 확실히 덮어씀. */
+.scroll .content.talk-room-screen{padding-bottom:calc(100px + var(--kb, 0px));}
 /* 2026-07-18: sticky는 바깥 .scroll이 페이지 전체를 스크롤할 때 위치가 흔들려서(스크롤 컨테이너가
    .talk-msgs인지 .scroll인지 모호) absolute로 교체 — 컨테이닝 블록은 position:relative인 .app(최대
    520px 중앙 정렬)이라 자연히 그 폭에 맞음. 회화 대화방은 이제 항상 몰입 화면(탭바 숨김)이라
@@ -925,7 +967,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.29";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.31";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -961,7 +1003,9 @@ const ICONS = {
   person: "M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z",
   edit: "M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z",
   lock: "M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm3 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z",
-  resize: "M3 21v-6h2v2.59l4.29-4.3 1.41 1.42L6.41 19H9v2H3zM14.29 9.29 18.59 5H16V3h6v6h-2V6.41l-4.3 4.29z",
+  // 가로 양방향 화살표(한 줄기에 화살촉 두 개, ↔ 모양) — 리사이즈 핸들에서 45도 회전해서 대각선으로 씀
+  // (2026-07-18, 예전엔 서로 안 붙은 네 귀퉁이 화살표(open_in_full)라 회전하면 원 밖으로 삐져나갔음).
+  resize: "M2,12 L7,7 L7,10.2 L17,10.2 L17,7 L22,12 L17,17 L17,13.8 L7,13.8 L7,17 Z",
 };
 function Icon({ name, size = 24 }) {
   return (
@@ -1219,7 +1263,16 @@ let _speakGen = 0; // 요청 세대 토큰 — fetch가 늦게 끝난 이전 호
    실제로 지연 재생이 필요한 진입점(듣기 세션 시작, 회화 대화방 입장)에서만 명시적으로 호출하도록 축소. */
 const _sharedAudio = new Audio("data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQAAAAA=");
 function unlockAudio() {
-  try { _sharedAudio.play().then(() => _sharedAudio.pause()).catch(() => {}); } catch (e) {}
+  // 회화 대화방 입장 직후 "음성이 나오려다 끊김"의 원인이었던 레이스 컨디션 수정(2026-07-18):
+  // unlockAudio가 무음 클립을 play()한 뒤 .then()에서 pause()하는데, 이 .then()이 비동기라
+  // speakText가 그 사이 같은 _sharedAudio의 src를 실제 TTS로 갈아끼우고 재생을 시작해버리면,
+  // 뒤늦게 도착한 이 pause()가 "방금 시작된 진짜 음성"을 멈춰버렸음(TTS fetch가 빠를 때만
+  // 재현돼서 "나올 때도 있음"으로 보였던 것). src가 그대로(=아직 아무도 안 갈아탔을 때)일 때만
+  // pause — 이미 다른 소스로 바뀌었으면 그건 손대지 않는다.
+  try {
+    const unlockSrc = _sharedAudio.src;
+    _sharedAudio.play().then(() => { if (_sharedAudio.src === unlockSrc) _sharedAudio.pause(); }).catch(() => {});
+  } catch (e) {}
   try { speechSynthesis.speak(new SpeechSynthesisUtterance("")); } catch (e) {}
 }
 function stopSpeaking() {
@@ -2308,7 +2361,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.29" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.31" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -2663,7 +2716,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.29";
+const HERO_V = "0.35.31";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -2713,6 +2766,15 @@ function addBadgeSticker(catKey) {
   const cur = loadJSON(HERO_BADGE_KEY, []);
   if (!cur.includes(catKey)) saveJSON(HERO_BADGE_KEY, [...cur, catKey]);
 }
+// '내 노트 꾸미기' 초기화하기 — 위치·크기·순서·치운 스티커·추가한 뱃지 스티커를 전부 기본값으로.
+function resetHeroDecorations() {
+  try {
+    localStorage.removeItem(HERO_POS_KEY);
+    localStorage.removeItem(HERO_ORDER_KEY);
+    localStorage.removeItem(HERO_REMOVED_KEY);
+    localStorage.removeItem(HERO_BADGE_KEY);
+  } catch (e) {}
+}
 function removeBadgeSticker(catKey) {
   saveJSON(HERO_BADGE_KEY, loadJSON(HERO_BADGE_KEY, []).filter(x => x !== catKey));
 }
@@ -2756,7 +2818,12 @@ function StickerLayer({ heroRef, refreshKey, deselectTick }) {
   const [selectedId, setSelectedId] = useState(null);
   const drag = useRef(null);
   const resize = useRef(null);
-  useEffect(() => { // 노트꾸미기에서 치우기/추가하기 시 홈 복귀하면 반영
+  useEffect(() => { // 노트꾸미기에서 치우기/추가하기/초기화 시 홈 복귀하면 반영.
+    // pos·order도 같이 다시 읽어야 "초기화하기"가 실제로 위치·크기·순서를 되돌릴 수 있음 —
+    // 예전엔 이 두 개를 최초 useState 때만 읽고 refreshKey로는 안 갱신해서, localStorage를
+    // 지워도 화면엔 그대로 남아있는 버그가 있었음(2026-07-18).
+    setPos(loadJSON(HERO_POS_KEY, {}));
+    setOrder(loadJSON(HERO_ORDER_KEY, []));
     setRemoved(loadJSON(HERO_REMOVED_KEY, []));
     setBadgeIds(loadJSON(HERO_BADGE_KEY, []));
   }, [refreshKey]);
@@ -2771,6 +2838,10 @@ function StickerLayer({ heroRef, refreshKey, deselectTick }) {
   const onDown = (e, s) => {
     const hero = heroRef.current; if (!hero) return;
     e.stopPropagation();
+    e.preventDefault(); // 터치 시작 시점에도 막아둠(2026-07-18) — onMove에서만 막으면 iOS에서 첫
+    // 제스처가 페이지 스크롤/네이티브 드래그와 경합해 간헐적으로 못 잡히거나 엉뚱한 위치로 튀는
+    // 사례가 보고됨(특정 스티커 위치 재현은 Playwright 마우스 시뮬레이션으론 못 만들었지만, 이
+    // 방어 코드 자체는 안전하고 통상적인 수정 패턴).
     const rect = hero.getBoundingClientRect(); const c = centerOf(s);
     const target = e.currentTarget; const pid = e.pointerId;
     try { target.setPointerCapture(pid); } catch (er) {}
@@ -2784,7 +2855,15 @@ function StickerLayer({ heroRef, refreshKey, deselectTick }) {
   const onMove = (e) => {
     const d = drag.current; if (!d) return;
     const dx = e.clientX - d.startX, dy = e.clientY - d.startY;
-    if (!d.active) { if (Math.abs(dx) > 10 || Math.abs(dy) > 10) { clearTimeout(d.timer); drag.current = null; } return; }
+    if (!d.active) {
+      // 눌러서 320ms 타이머가 끝나기 전에 손가락/마우스가 먼저 움직이면(=보통의 드래그 제스처)
+      // 예전엔 그냥 드래그 자체를 취소해버려서 "위치가 안 옮겨진다"는 버그였음(2026-07-18,
+      // Playwright로 재현: 누르자마자 바로 움직이면 dx>10이 타이머보다 먼저 걸려 drag.current가
+      // null이 됨). 취소 대신 그 자리에서 바로 드래그를 활성화하도록 변경 — 가만히 눌러 기다렸다가
+      // 움직여도(롱프레스 선택), 누르자마자 바로 움직여도(일반 드래그) 둘 다 이동하게 됨.
+      if (Math.abs(dx) > 10 || Math.abs(dy) > 10) { clearTimeout(d.timer); d.active = true; setDragId(d.id); setSelectedId(d.id); }
+      else return;
+    }
     e.preventDefault();
     let ncx = d.baseCx + (dx / d.rectW) * 100, ncy = d.baseCy + (dy / d.rectH) * 100;
     const mx = (50 / d.rectW) * 100, my = (50 / d.rectH) * 100;
@@ -2844,7 +2923,7 @@ function StickerLayer({ heroRef, refreshKey, deselectTick }) {
                   <Icon name="close" size={14} />
                 </div>
                 <div className="hero-sticker-resize" onPointerDown={(e) => onResizeDown(e, s)} onPointerMove={onResizeMove} onPointerUp={onResizeUp} onPointerCancel={onResizeUp}>
-                  <Icon name="resize" size={12} />
+                  <Icon name="resize" size={14} />
                 </div>
               </>
             )}
@@ -3027,9 +3106,16 @@ function DecorateBadgesView({ onStickersChanged }) {
 function DecorateNoteModal({ charK, onChangeChar, onClose, onStickersChanged }) {
   const [view, setView] = useState("menu");
   const titles = { menu: "내 노트 꾸미기", character: "캐릭터 바꾸기", stickers: "스티커 꾸미기", badges: "획득 뱃지로 스티커 꾸미기" };
+  const handleReset = () => {
+    if (!confirm("스티커 배치를 전부 기본값으로 되돌릴까요?")) return;
+    resetHeroDecorations();
+    onStickersChanged && onStickersChanged();
+  };
   return ReactDOM.createPortal(
     <div className="sheet-backdrop" onClick={onClose}>
-      <div className="sheet" onClick={e => e.stopPropagation()}>
+      {/* 노트꾸미기 시트는 화면의 60%만 올라와 뒤 히어로가 계속 보이게(다른 시트와 다르게 고정 높이) —
+          서브화면(캐릭터/스티커/뱃지)마다 내용 길이가 달라도 같은 위치에 고정, 내부는 스크롤(2026-07-18). */}
+      <div className="sheet deco-sheet" onClick={e => e.stopPropagation()}>
         <div className="sheet-grab" />
         <div className="sheet-head">
           {view !== "menu" && <button className="back" onClick={() => setView("menu")} aria-label="뒤로"><Icon name="chevron_left" size={22} /></button>}
@@ -3052,6 +3138,7 @@ function DecorateNoteModal({ charK, onChangeChar, onClose, onStickersChanged }) 
                 <div className="ico"><Icon name="favorite" size={18} /></div>
                 <div className="body"><div className="t">획득 뱃지로 스티커 꾸미기</div><div className="s">모은 뱃지를 노트에 스티커로 붙여요</div></div>
               </button>
+              <button className="deco-reset-btn" onClick={handleReset}>초기화하기</button>
             </>
           )}
           {view === "character" && <DecorateCharacterView charK={charK} onChangeChar={onChangeChar} />}
@@ -3064,7 +3151,7 @@ function DecorateNoteModal({ charK, onChangeChar, onClose, onStickersChanged }) 
   );
 }
 
-function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onStartCards, onStartListen }) {
+function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, onStartCards, onStartListen }) {
   const chr = CHARACTERS.find(c => c.k === charK) || null;
   const [decorateOpen, setDecorateOpen] = useState(false);
   const [decorateVersion, setDecorateVersion] = useState(0); // 노트꾸미기에서 스티커 복원 시 홈 목록 새로고침용
@@ -3162,7 +3249,7 @@ function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onStartCards, onSt
         const lexBase = lex.band.replace("+", "");
         const pctHl = lex.pct <= 10 ? "blue" : lex.pct <= 25 ? "pink" : lex.pct <= 50 ? "yellow" : "green";
         return (
-          <div className="level-row" onClick={() => onGoTab("dict")}>
+          <div className="level-row" onClick={onOpenLtResult}>
             {/* 형광펜 색은 cefrHl 하이어라키 규칙 공유(A1·A2=연두, B1·B2=옐로우, C1=핑크, C2=블루),
                 백분위는 상위 구간일수록 상급 색(<=10 블루·<=25 핑크·<=50 옐로우·그외 연두)로 매핑. */}
             <div className={"stat tier-" + cefrHl(lexBase)}><div className="v"><span className={"hl hl-" + cefrHl(lexBase)} style={{ transform: "rotate(-1.5deg)" }}>{lex.band}</span></div><div className="l">CEFR 레벨</div></div>
@@ -4516,7 +4603,15 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
 
   useEffect(() => { TALK_ROOMS[persona.id] = { messages }; saveTalkRooms(); }, [messages]);
   useEffect(() => { if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight; }, [messages]);
-  useEffect(() => { if (!voiceMode && inputRef.current) inputRef.current.focus(); }, [voiceMode, awaitingAck, loadingBot, loadingFb]); // 키보드 자동 표시
+  // 대화 진행 중(봇 응답 도착·첨삭 완료 등) 자동 포커스는 유지하되, 방에 "처음 들어갈 때"는 자동으로
+  // 키보드가 안 뜨게(2026-07-18) — 예전엔 마운트 직후에도 이 effect가 돌아서 진입하자마자 키보드가
+  // 튀어나오고, 그 과정에서 레이아웃이 한 박자 깨져 보이는 문제가 있었음(스크린샷으로 확인). 이제
+  // 입력창을 직접 탭해야만 키보드가 뜨고, 대화창 빈 곳을 탭하면 내려간다(아래 onPointerDown 참고).
+  const mountedRef = useRef(false);
+  useEffect(() => {
+    if (!mountedRef.current) { mountedRef.current = true; return; }
+    if (!voiceMode && inputRef.current) inputRef.current.focus();
+  }, [voiceMode, awaitingAck, loadingBot, loadingFb]);
 
   const fetchBotLine = async hist => {
     setLoadingBot(true); setErr(null); setFailedHist(null);
@@ -4639,7 +4734,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
         <button className={"talk-toggle" + (showKo ? " on" : "")} onClick={() => setShowKo(v => !v)}>번역 {showKo ? "표시" : "숨김"}</button>
       </div>
 
-      <div className="talk-msgs" ref={scrollRef}>
+      <div className="talk-msgs" ref={scrollRef} onPointerDown={() => { if (inputRef.current) inputRef.current.blur(); }}>
         {(() => {
           let lastDay = null;
           return messages.map((m, i) => {
@@ -4717,7 +4812,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
           <input ref={inputRef} value={input} onChange={e => setInput(e.target.value)} placeholder="영어로 답해보세요 (막히면 한국어도 괜찮아요)"
             disabled={awaitingAck || loadingBot || loadingFb}
             onKeyDown={e => { if (e.key === "Enter") send(); }}
-            autoFocus autoCapitalize="none" autoComplete="off" autoCorrect="off" />
+            autoCapitalize="none" autoComplete="off" autoCorrect="off" />
         )}
         {STT_SUPPORTED && (
           <button className="talk-voice-toggle" onClick={() => { stopListening(); setVoiceMode(v => !v); }}
@@ -5221,22 +5316,14 @@ function CardSession({ items, onExit, onOpenWord }) {
 
   // 정답 표시(프리젠테이션 전용). 실제 입력은 아래 answerArea의 보이지 않는 input이 받는다.
   // - 채점 후(res): 정답/오답을 fill로 표시.
-  // - 글자수 힌트: 정답 글자 수만큼 칸(cell)으로 분리, 위치별 정오 색상. 공백 위치는 자동 통과 간격.
+  // - 글자수 힌트: 칸을 나누지 않고 박스 하나 길이만 정답 글자 수(ch 단위)에 맞춰 늘림.
   // - 기본: 지금까지 입력한 글자 + 깜빡이는 캐럿을 박스로.
   const answerDisplay = () => {
     if (res) return <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? res.answer : (val.trim() || "—")}</span>;
     if (hintLen && expected) {
-      const n = expected.length;
-      const curIdx = expected[val.length] === " " ? val.length + 1 : val.length; // 캐럿이 공백 간격에 걸리면 다음 칸에
       return (
-        <span className="cellrow">
-          {Array.from({ length: n }).map((_, k) => {
-            if (expected[k] === " ") return <span key={k} className="cell-gap" />;
-            const ch = val[k];
-            const right = ch && ch.toLowerCase() === expected[k];
-            const cls = "cell" + (ch ? (right ? " correct" : " wrong") : "") + (k === curIdx ? " cur" : "");
-            return <span key={k} className={cls}>{ch || ""}</span>;
-          })}
+        <span className="qbox qbox-view lenbox" style={{ width: "calc(" + expected.length + "ch + 32px)" }}>
+          {val || "​"}<i className="qcaret" />
         </span>
       );
     }
@@ -5320,7 +5407,10 @@ function CardSession({ items, onExit, onOpenWord }) {
               <button onClick={() => speak(it.ex.en, 0.7)} aria-label="느리게 듣기">0.7x</button>
             </span>
           ) : (
-            <span className="qsofthint">{hintMean && mode === "cloze" ? meanText : ""}</span>
+            <span className="qhint-labels">
+              {hintMean && mode === "cloze" && <span className="qsofthint">{meanText}</span>}
+              {hintLen && expected && <span className="qlen-hint">{expected.length}글자</span>}
+            </span>
           )}
           <span className="tag lv">{it.cefr}</span>
         </div>
@@ -6113,9 +6203,10 @@ function ltAnalysis(A, B) {
   return out;
 }
 
-function LevelTestResult({ resultA, resultB, onExit, onRetry }) {
+function LevelTestResult({ resultA, resultB, onExit, onRetry, viewOnly }) {
   const savedRef = React.useRef(false);
   useEffect(() => {
+    if (viewOnly) return; // 홈 통계 카드에서 "저장된 결과 보기"로 열 때는 재저장(at 갱신) 안 함
     if (savedRef.current) return;
     savedRef.current = true;
     saveLevelTest({ lex: resultA, flu: resultB || null });
@@ -6446,6 +6537,7 @@ function App() {
   const [stack, setStack] = useState(null); // 단어 상세 시트 스택
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [ltOpen, setLtOpen] = useState(false); // 레벨 테스트 — 학습 탭 메뉴와 설정 두 곳에서 진입하므로 앱 레벨에서 관리
+  const [ltResultOpen, setLtResultOpen] = useState(false); // 홈의 레벨/어휘량/백분위 카드 → 저장된 결과 분석표 보기(2026-07-18, 예전엔 이 카드를 눌러도 사전 탭으로 넘어가버렸음)
   // 2026-07-18: 홈 히어로가 캐릭터 선택 여부와 무관하게 항상 고양이유령을 보여주도록 바뀌면서
   // (구 "캐릭터 미선택" 플레이스홀더 폐기), charK를 null로 방치할 이유가 없어져 기본값을 char1로
   // 변경 — "캐릭터 바꾸기" 화면에서도 고양이유령이 처음부터 "사용 중"으로 뜨는 게 자연스러움.
@@ -6534,12 +6626,16 @@ function App() {
         </div>
       </div>
 
-      <div className={"scroll" + (immersive || ltOpen ? " notab" : "")}>
+      <div className={"scroll" + (immersive || ltOpen || ltResultOpen ? " notab" : "")}>
         {ltOpen ? (
           <LevelTest onExit={() => setLtOpen(false)} />
+        ) : ltResultOpen ? (
+          <LevelTestResult resultA={loadLevelTest().lex} resultB={loadLevelTest().flu} viewOnly
+            onExit={() => setLtResultOpen(false)}
+            onRetry={() => { setLtResultOpen(false); startLevelTest(); }} />
         ) : (
           <React.Fragment>
-            {tab === "home" && <Home key={"home-" + tabResetKey.home} onGoTab={setTab} charK={charK} onChangeChar={changeChar} onOpenSettings={() => setSettingsOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => { unlockAudio(); startCustomStudy(pickSession(10, listenLevelShift()), "listen"); }} />}
+            {tab === "home" && <Home key={"home-" + tabResetKey.home} onGoTab={setTab} charK={charK} onChangeChar={changeChar} onOpenSettings={() => setSettingsOpen(true)} onOpenLtResult={() => setLtResultOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => { unlockAudio(); startCustomStudy(pickSession(10, listenLevelShift()), "listen"); }} />}
             {tab === "dict" && <Dict key={"dict-" + tabResetKey.dict} onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} viewJump={dictViewJump} onConsumeViewJump={() => setDictViewJump(null)} />}
             {tab === "learn" && <Learn key={"learn-" + tabResetKey.learn} onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} customMode={customMode} onConsumeCustomStudy={() => setCustomStudy(null)} setImmersive={setImmersive} />}
             {tab === "talk" && <Talk key={"talk-" + tabResetKey.talk} onOpenWord={openWord} setImmersive={setImmersive} />}
@@ -6550,14 +6646,14 @@ function App() {
 
       {settingsOpen && <Settings charK={charK} onChangeChar={changeChar} onClose={() => setSettingsOpen(false)} onStartLevelTest={startLevelTest} />}
 
-      {!(immersive || ltOpen) && <div className="tabbar">
+      {!(immersive || ltOpen || ltResultOpen) && <div className="tabbar">
         {TABS.map(t => (
           <button key={t.k}
                   className={"tab tab-" + t.k + (tab === t.k ? " on" : "")}
                   onClick={() => {
                     // 레벨테스트/설정/단어상세 시트처럼 탭 위를 덮고 있던 화면을 전부 닫고,
                     // 그 탭을 리마운트해서 항상 메인 화면으로 — 이미 그 탭이어도(재탭) 동작해야 하므로 매번 리셋(2026-07-18).
-                    setLtOpen(false); setSettingsOpen(false); closeSheet();
+                    setLtOpen(false); setLtResultOpen(false); setSettingsOpen(false); closeSheet();
                     setTab(t.k);
                     setTabResetKey(k => ({ ...k, [t.k]: k[t.k] + 1 }));
                   }}>

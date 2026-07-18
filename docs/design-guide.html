@@ -67,6 +67,12 @@ code{background:var(--fill); border-radius:4px; padding:1px 5px; font-size:.92em
 .icon-dot{background:var(--ink); border-radius:50%;}
 .icon-cell .lbl{font-size:10px; font-family:monospace; color:var(--muted);}
 
+/* ---- 앱 아이콘 ---- */
+.appicon-row{display:flex; align-items:flex-end; gap:28px; flex-wrap:wrap;}
+.appicon-cell{display:flex; flex-direction:column; align-items:center; gap:8px;}
+.appicon-cell img{display:block; box-shadow:var(--shadow);}
+.appicon-cell .lbl{font-size:10px; font-family:monospace; color:var(--muted); text-align:center;}
+
 /* ---- 형태(shape) 예시 ---- */
 .shape-row{display:flex; gap:20px; flex-wrap:wrap;}
 .shape-cell{width:150px;}
@@ -107,6 +113,27 @@ code{background:var(--fill); border-radius:4px; padding:1px 5px; font-size:.92em
 <div class="sub">index.html의 CSS 토큰을 그대로 옮긴 참고용 페이지 — 여기서 값을 바꿔도 앱에는 반영되지 않습니다.
 피그마에서 이 값들을 기준으로 수정한 뒤 바뀐 부분을 알려주시면 index.html에 반영해드립니다. 스크립트 없이 순수 HTML/CSS로만
 만들어서 어떤 뷰어에서 열어도 그대로 보입니다. (2026-07-16)</div>
+
+<section>
+  <h2>앱 아이콘</h2>
+  <div class="note">아이보리 배경(<code>--bg</code>) 위에 형광펜 연두(<code>--hi-green</code>) 링 + 잉크 블랙 원, 그 안에 흰색
+    "E"를 사선으로 가로지르는 "금지" 심볼 — 앱 이름 "NoEnglish"를 그대로 시각화한 컨셉(2026-07-18 확정).
+    <code>manifest.json</code>과 <code>&lt;link rel="icon"&gt;</code>/<code>apple-touch-icon</code>이 참조.</div>
+  <div class="appicon-row">
+    <div class="appicon-cell">
+      <img src="../img/icon-512.png" width="96" height="96" alt="앱 아이콘 512px">
+      <span class="lbl">img/icon-512.png<br>512×512</span>
+    </div>
+    <div class="appicon-cell">
+      <img src="../img/icon-192.png" width="64" height="64" alt="앱 아이콘 192px">
+      <span class="lbl">img/icon-192.png<br>192×192</span>
+    </div>
+    <div class="appicon-cell">
+      <img src="../img/icon-192.png" width="32" height="32" alt="앱 아이콘 32px 축소 미리보기">
+      <span class="lbl">favicon 크기<br>축소 미리보기</span>
+    </div>
+  </div>
+</section>
 
 <section>
   <h2>컬러</h2>
