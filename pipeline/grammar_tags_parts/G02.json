@@ -1,0 +1,62 @@
+{
+  "infinitive-noun-usage": {
+    "category": "to부정사",
+    "name_kr": "to부정사의 명사적 용법",
+    "desc_kr": "to부정사가 명사처럼 문장의 주어, 목적어, 보어 자리에 들어가 '~하는 것'이라는 뜻을 나타낸다. 주어로 쓰면 문장이 앞부분만 길어져 딱딱해 보이므로, 실제로는 가주어 It을 앞에 세우고 진짜 내용인 to부정사는 문장 뒤로 보내는 경우가 많다. want, decide, hope처럼 아직 일어나지 않은 일을 목적어로 받는 동사 뒤에서 특히 잘 어울리는데, 이는 to부정사 자체가 '앞으로 할 일'을 가리키는 미래지향적 느낌을 갖기 때문이다. 보어로 쓰이면 주어가 무엇을 하려는 것인지를 설명해 주는 역할을 한다.",
+    "example": { "en": "It's important to arrive early on the first day.", "ko": "첫날에는 일찍 도착하는 것이 중요하다." }
+  },
+  "infinitive-adjective-usage": {
+    "category": "to부정사",
+    "name_kr": "to부정사의 형용사적 용법",
+    "desc_kr": "to부정사가 형용사처럼 명사나 대명사 뒤에 붙어 '~할' 또는 '~해야 할'이라는 뜻을 더한다. 일반 형용사와 달리 항상 꾸미는 말 뒤에 온다는 점이 특징이다. 수식받는 명사가 to부정사 안 동사의 목적어이거나 전치사의 목적어일 때는 그 자리를 비워 두고 써야 하는데, 이때 전치사를 빠뜨리면 'a chair to sit'처럼 어색한 문장이 되므로 'a chair to sit on'같이 전치사까지 챙겨야 한다. something to eat, a house to live in처럼 일상 표현에서 자주 쓰인다.",
+    "example": { "en": "She needs a friend to talk to.", "ko": "그녀에게는 마음을 터놓고 얘기할 친구가 필요하다." }
+  },
+  "infinitive-adverb-usage": {
+    "category": "to부정사",
+    "name_kr": "to부정사의 부사적 용법",
+    "desc_kr": "to부정사가 부사처럼 동사·형용사·문장 전체를 꾸며 목적, 원인, 결과, 판단의 근거 등 다양한 의미를 더한다. 가장 흔한 쓰임은 '~하기 위해서'라는 목적으로, 뜻을 분명히 하고 싶으면 in order to나 so as to로 바꿔 쓰기도 한다. 감정을 나타내는 형용사(happy, surprised) 뒤에 오면 '~해서'라는 원인을 나타내고, grow up to be처럼 동작 뒤에 오면 '그 결과 결국 ~하게 되다'라는 결과를 나타내므로 앞뒤 문맥을 보고 어느 의미인지 판단해야 한다.",
+    "example": { "en": "He hurried to the station, only to find the train had already left.", "ko": "그는 서둘러 역으로 갔지만, 결국 기차는 이미 떠난 뒤였다." }
+  },
+  "infinitive-semantic-subject": {
+    "category": "to부정사",
+    "name_kr": "to부정사의 의미상 주어(for/of)",
+    "desc_kr": "to부정사가 나타내는 동작을 실제로 하는 사람이 문장의 주어와 다를 때, to부정사 바로 앞에 'for + 목적격'을 붙여 그 동작의 주체를 밝힌다. 다만 kind, nice, rude, careless처럼 사람의 성격이나 태도를 평가하는 형용사 뒤에서는 예외적으로 'of + 목적격'을 쓰는데, 그 평가가 상황이 아니라 to부정사 행위자의 됨됨이를 향한 것이기 때문이다. 즉 형용사가 사람 성격을 말하는지 상황의 성질을 말하는지에 따라 of와 for가 갈린다는 점이 핵심이다.",
+    "example": { "en": "It was kind of you to help her carry the boxes.", "ko": "그녀가 상자 옮기는 걸 도와주다니 참 친절하시네요." }
+  },
+  "bare-infinitive-causative": {
+    "category": "to부정사",
+    "name_kr": "사역동사 + 원형부정사",
+    "desc_kr": "make, have, let 같은 사역동사는 '목적어가 ~하게 하다'라는 뜻으로 쓰일 때 to 없는 원형부정사를 목적격보어로 취한다. 같은 구조 안에서도 뉘앙스는 다른데, make는 강제성이 강해 '시켜서 하게 만들다', have는 지시나 요청으로 '하게 시키다', let은 허락의 의미로 '하게 놔두다'에 가깝다. 뜻은 비슷하지만 get은 예외적으로 원형이 아니라 to부정사를 목적격보어로 쓴다는 점도 함께 기억해 둘 만하다.",
+    "example": { "en": "My mom made me clean my room before dinner.", "ko": "엄마는 저녁 먹기 전에 나한테 방을 청소하게 시켰다." }
+  },
+  "bare-infinitive-perception": {
+    "category": "to부정사",
+    "name_kr": "지각동사 + 원형부정사",
+    "desc_kr": "see, hear, feel, watch 같은 지각동사는 목적어가 하는 행동을 처음부터 끝까지 그대로 지켜봤다는 뜻일 때 원형부정사를 목적격보어로 쓴다. 동작이 온전히 일어나는 것을 목격했다는 느낌을 주는데, 반대로 동작이 진행 중인 한순간만 목격했다는 뜻을 강조하고 싶으면 원형부정사 대신 현재분사(-ing)를 쓴다. 사역동사 구문과 문장 형태는 같아 보이지만, 동사 종류(지각/사역)에 따라 강조하는 의미가 다르다는 점에 유의해야 한다.",
+    "example": { "en": "I saw him cross the street without looking.", "ko": "나는 그가 좌우도 안 살피고 길을 건너는 걸 봤다." }
+  },
+  "participle-adjective-present": {
+    "category": "분사·분사구문",
+    "name_kr": "현재분사의 형용사 용법",
+    "desc_kr": "현재분사(동사원형+ing)가 형용사처럼 명사를 꾸며 그 명사가 '스스로 ~하고 있는'이라는 능동·진행의 의미를 나타낸다. 분사 혼자면 명사 앞에 오지만(a crying baby), 다른 말이 붙어 길어지면 명사 뒤로 가서 꾸민다(a baby crying in the next room). 감정을 나타내는 동사의 현재분사(interesting, boring 등)는 그 감정을 '일으키는' 대상을 수식한다는 점에서, 그 감정을 '느끼는' 대상을 수식하는 과거분사(interested, bored)와 짝을 이루며 뚜렷이 구분된다.",
+    "example": { "en": "The book sitting on the shelf belongs to my sister.", "ko": "선반에 놓여 있는 그 책은 내 여동생 것이다." }
+  },
+  "participle-adjective-past": {
+    "category": "분사·분사구문",
+    "name_kr": "과거분사의 형용사 용법",
+    "desc_kr": "과거분사가 형용사처럼 명사를 꾸며 그 명사가 '~된, ~당한'이라는 수동의 의미이거나 동작이 이미 끝난 완료의 의미를 나타낸다. 짧으면 명사 앞(broken glass), 다른 말이 붙어 길어지면 명사 뒤(the glass broken during the move)에 온다. 현재분사가 감정을 '일으키는' 능동적 방향이라면, 과거분사는 그 감정을 '느끼게 된' 대상을 가리켜 방향이 정반대라는 점이 두 분사를 가르는 핵심 기준이다.",
+    "example": { "en": "The documents requested by the client are ready.", "ko": "고객이 요청한 서류가 준비됐다." }
+  },
+  "participle-clause-basic": {
+    "category": "분사·분사구문",
+    "name_kr": "분사구문(부사절 축약)",
+    "desc_kr": "때·이유·조건 등을 나타내는 부사절에서 접속사와 주절과 같은 주어를 생략하고 동사를 분사(-ing 또는 p.p.)로 바꾸면 간결한 분사구문이 된다. 접속사를 없앴기 때문에 시간·이유·조건·양보 중 정확히 어느 뜻인지는 문맥으로 유추해야 하는 것이 특징이다. 분사구문의 주어는 반드시 주절의 주어와 같아야 하며, 이 조건이 지켜지지 않으면 뒤에 나오는 독립분사구문 형태를 대신 써야 한다.",
+    "example": { "en": "Feeling tired, she decided to skip the gym.", "ko": "피곤해서, 그녀는 헬스장 가는 걸 건너뛰기로 했다." }
+  },
+  "participle-clause-independent": {
+    "category": "분사·분사구문",
+    "name_kr": "독립분사구문",
+    "desc_kr": "분사구문의 의미상 주어가 주절의 주어와 다를 때는 생략하지 않고 분사 바로 앞에 그대로 남겨 두는데, 이것이 독립분사구문이다. 기본 분사구문과 형태는 비슷하지만 분사 앞에 별도의 주어(명사나 대명사)가 붙어 있다는 점에서 한눈에 구별된다. 이 주어를 빠뜨리면 문법적으로 누가 그 동작을 하는지 불분명해지므로, 주절과 주어가 다른 상황에서는 반드시 명시해야 한다.",
+    "example": { "en": "The weather being nice, we decided to go on a picnic.", "ko": "날씨가 좋아서, 우리는 소풍을 가기로 했다." }
+  }
+}
