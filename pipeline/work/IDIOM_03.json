@@ -1,0 +1,1728 @@
+[
+ {
+  "word": "take on",
+  "ko": "떠맡다, (책임 등을) 맡다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "take on a certain form, attribute, or aspect",
+    "syn": [
+     "assume",
+     "acquire",
+     "adopt",
+     "take"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "take on titles, offices, duties, responsibilities",
+    "syn": [
+     "assume",
+     "adopt",
+     "take over"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "accept as a challenge",
+    "syn": [
+     "undertake",
+     "tackle"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "admit into a group or community",
+    "syn": [
+     "accept",
+     "admit",
+     "take"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "contend against an opponent in a sport, game, or battle",
+    "syn": [
+     "meet",
+     "encounter",
+     "play"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "go down",
+  "ko": "내려가다, (가격 등이) 떨어지다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "move downward and lower, but not necessarily all the way",
+    "syn": [
+     "descend",
+     "fall",
+     "come down"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "go under",
+    "syn": [
+     "sink",
+     "settle",
+     "go under"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "grow smaller",
+    "syn": [
+     "decline",
+     "wane"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "be recorded or remembered",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "be ingested",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "be defeated",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "disappear beyond the horizon",
+    "syn": [
+     "set",
+     "go under"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "stop operating",
+    "syn": [
+     "crash"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "come down",
+  "ko": "내려오다, (가격이) 하락하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "move downward and lower, but not necessarily all the way",
+    "syn": [
+     "descend",
+     "fall",
+     "go down"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "be the essential element",
+    "syn": [
+     "reduce",
+     "boil down"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "fall from clouds",
+    "syn": [
+     "precipitate",
+     "fall"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "get sick",
+    "syn": [
+     "sicken"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "criticize or reprimand harshly",
+    "syn": []
+   }
+  ]
+ },
+ {
+  "word": "go ahead",
+  "ko": "진행하다, 어서 하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "proceed (with a plan of action)",
+    "syn": [
+     "plow ahead"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "go up",
+  "ko": "올라가다, 오르다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "move upward",
+    "syn": [
+     "rise",
+     "lift",
+     "arise",
+     "move up"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "increase in value or to a higher point",
+    "syn": [
+     "rise",
+     "climb"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "move towards",
+    "syn": [
+     "approach",
+     "near",
+     "come on",
+     "draw near"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "be erected, built, or constructed",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "go upward with gradual or continuous progress",
+    "syn": [
+     "climb",
+     "climb up",
+     "mount"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "burn completely",
+    "syn": [
+     "burn down",
+     "burn up"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "travel up",
+    "syn": [
+     "ascend"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "look back",
+  "ko": "돌아보다, 회고하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "look towards one's back",
+    "syn": [
+     "look backward"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "look back upon (a period of time, sequence of events)",
+    "syn": [
+     "review",
+     "retrospect"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "pull out",
+  "ko": "빼내다, 철수하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "move out or away",
+    "syn": [
+     "get out"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "bring, take, or pull out of a container or from under a cover",
+    "syn": [
+     "draw",
+     "pull",
+     "get out",
+     "take out"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "remove, usually with some force or effort",
+    "syn": [
+     "extract",
+     "pull",
+     "pull up",
+     "take out"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "remove oneself from an obligation",
+    "syn": [
+     "chicken out",
+     "back off",
+     "back down",
+     "bow out"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "look down",
+  "ko": "내려다보다, 얕보다",
+  "pos": [
+   "verb"
+  ],
+  "wn": []
+ },
+ {
+  "word": "put up",
+  "ko": "세우다, 게시하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "place so as to be noticed",
+    "syn": [
+     "post"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "mount or put up",
+    "syn": [
+     "provide",
+     "offer"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "construct, build, or erect",
+    "syn": [
+     "raise",
+     "erect",
+     "rear",
+     "set up"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "put up with something or somebody unpleasant",
+    "syn": [
+     "digest",
+     "endure",
+     "stick out",
+     "stomach"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "make available for sale at an auction",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "preserve in a can or tin",
+    "syn": [
+     "can",
+     "tin"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "provide housing for",
+    "syn": [
+     "house",
+     "domiciliate"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "provide",
+    "syn": [
+     "contribute"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "propose as a candidate for some honor",
+    "syn": [
+     "nominate",
+     "put forward"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "look out",
+  "ko": "조심하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "be vigilant, be on the lookout or be careful",
+    "syn": [
+     "watch",
+     "watch out"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "to protect someone's interests",
+    "syn": []
+   }
+  ]
+ },
+ {
+  "word": "bring in",
+  "ko": "들여오다, 도입하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "bring in a new person or object into a familiar environment",
+    "syn": [
+     "introduce"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "earn on some commercial or business transaction",
+    "syn": [
+     "gain",
+     "take in",
+     "clear",
+     "make"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "be sold for a certain price",
+    "syn": [
+     "fetch",
+     "bring"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "submit (a verdict) to a court",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "transmit",
+    "syn": []
+   }
+  ]
+ },
+ {
+  "word": "open up",
+  "ko": "열다, (마음을) 터놓다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "cause to open or to become open",
+    "syn": [
+     "open"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "become available",
+    "syn": [
+     "open"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "make available",
+    "syn": [
+     "open"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "open up an area or prepare a way",
+    "syn": [
+     "pioneer"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "start to operate or function or cause to start operating or functioning",
+    "syn": [
+     "open"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "become open",
+    "syn": [
+     "open"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "talk freely and without inhibition",
+    "syn": []
+   }
+  ]
+ },
+ {
+  "word": "move on",
+  "ko": "넘어가다, 이동하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "move forward, also in the metaphorical sense",
+    "syn": [
+     "advance",
+     "progress",
+     "pass on",
+     "march on"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "put out",
+  "ko": "내놓다, (불을) 끄다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "to cause inconvenience or discomfort to",
+    "syn": [
+     "trouble",
+     "inconvenience",
+     "disoblige",
+     "discommode"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "put out considerable effort",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "deprive of the oxygen necessary for combustion",
+    "syn": [
+     "smother"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "thrust or extend out",
+    "syn": [
+     "exsert",
+     "stretch out",
+     "extend",
+     "hold out"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "put out, as of a candle or a light",
+    "syn": [
+     "douse"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "be sexually active",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "cause to be out on a fielding play",
+    "syn": [
+     "retire"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "retire",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "prepare and issue for public distribution or sale",
+    "syn": [
+     "publish",
+     "bring out",
+     "issue",
+     "release"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "administer an anesthetic drug to",
+    "syn": [
+     "anesthetize",
+     "anaesthetize",
+     "anesthetise",
+     "anaesthetise"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "look around",
+  "ko": "둘러보다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "look about oneself",
+    "syn": []
+   }
+  ]
+ },
+ {
+  "word": "catch up",
+  "ko": "따라잡다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "reach the point where one should be after a delay",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "learn belatedly",
+    "syn": []
+   }
+  ]
+ },
+ {
+  "word": "go in",
+  "ko": "들어가다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "to come or go into",
+    "syn": [
+     "enter",
+     "come in",
+     "get into",
+     "get in"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "keep up",
+  "ko": "유지하다, 뒤처지지 않다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "maintain a required pace or level",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "lengthen or extend in duration or space",
+    "syn": [
+     "prolong",
+     "sustain"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "keep in safety and protect from harm, decay, loss, or destruction",
+    "syn": [
+     "conserve",
+     "preserve",
+     "maintain"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "keep informed",
+    "syn": [
+     "keep abreast",
+     "follow"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "prevent from going to bed at night",
+    "syn": []
+   }
+  ]
+ },
+ {
+  "word": "put down",
+  "ko": "내려놓다, 진압하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "cause to sit or seat or be in a settled position or place",
+    "syn": [
+     "set down",
+     "place down"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "put in a horizontal position",
+    "syn": [
+     "lay",
+     "repose"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "cause to come to the ground",
+    "syn": [
+     "land",
+     "bring down"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "reduce in worth or character, usually verbally",
+    "syn": [
+     "take down",
+     "degrade",
+     "disgrace",
+     "demean"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "remove (cargo, people, etc.) from and leave",
+    "syn": [
+     "drop",
+     "drop off",
+     "set down",
+     "unload"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "put (an animal) to death",
+    "syn": [
+     "destroy"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "put down in writing",
+    "syn": [
+     "write down",
+     "set down",
+     "get down"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "make a record of",
+    "syn": [
+     "record",
+     "enter"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "go off",
+  "ko": "(알람이) 울리다, 발사되다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "run away",
+    "syn": [
+     "abscond",
+     "bolt",
+     "absquatulate",
+     "decamp"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "be discharged or activated",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "go off or discharge",
+    "syn": [
+     "fire",
+     "discharge"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "stop running, functioning, or operating",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "happen in a particular manner",
+    "syn": [
+     "come off",
+     "go over"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "burst inward",
+    "syn": [
+     "implode"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "turn back",
+  "ko": "되돌아가다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "retrace one's course",
+    "syn": [
+     "backtrack",
+     "double back"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "go back to a previous state",
+    "syn": [
+     "revert",
+     "return",
+     "retrovert",
+     "regress"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "force to go away",
+    "syn": [
+     "chase away",
+     "drive out",
+     "drive away",
+     "dispel"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "hold back, as of a danger or an enemy",
+    "syn": [
+     "check",
+     "arrest",
+     "stop",
+     "contain"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "turn inside out or upside down",
+    "syn": [
+     "invert",
+     "reverse"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "pull up",
+  "ko": "멈춰서다, (차를) 세우다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "come to a halt after driving somewhere",
+    "syn": [
+     "draw up",
+     "haul up"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "straighten oneself",
+    "syn": [
+     "draw up",
+     "straighten up"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "cause (a vehicle) to stop",
+    "syn": [
+     "draw up"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "remove, usually with some force or effort",
+    "syn": [
+     "extract",
+     "pull out",
+     "pull",
+     "take out"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "shut down",
+  "ko": "폐쇄하다, 종료하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "cease to operate or cause to cease operating",
+    "syn": [
+     "close up",
+     "close",
+     "fold",
+     "close down"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "turn over",
+  "ko": "뒤집다, 양도하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "place into the hands or custody of",
+    "syn": [
+     "pass",
+     "hand",
+     "reach",
+     "pass on"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "cause to overturn from an upright or normal position",
+    "syn": [
+     "overturn",
+     "tip over",
+     "upset",
+     "knock over"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "move by turning over or rotating",
+    "syn": [
+     "roll"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "turn up, loosen, or remove earth",
+    "syn": [
+     "dig",
+     "delve",
+     "cut into"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "do business worth a certain amount of money",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "cause to move around a center so as to show another side of",
+    "syn": [
+     "turn"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "turn from an upright or normal position",
+    "syn": [
+     "overturn",
+     "tip over",
+     "tump over"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "turn upside down, or throw so as to reverse",
+    "syn": [
+     "flip",
+     "flip over"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "think about carefully",
+    "syn": [
+     "consider",
+     "debate",
+     "moot",
+     "deliberate"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "slow down",
+  "ko": "늦추다, 속도를 줄이다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "lose velocity",
+    "syn": [
+     "decelerate",
+     "slow",
+     "slow up",
+     "retard"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "become slow or slower",
+    "syn": [
+     "slow",
+     "slow up",
+     "slack",
+     "slacken"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "cause to proceed more slowly",
+    "syn": [
+     "slow",
+     "slow up"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "reduce the speed of",
+    "syn": [
+     "decelerate"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "become less tense, rest, or take one's ease",
+    "syn": [
+     "relax",
+     "loosen up",
+     "unbend",
+     "unwind"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "wind up",
+  "ko": "결국 ~하게 되다, 마무리하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "finally be or do something",
+    "syn": [
+     "finish up",
+     "land up",
+     "fetch up",
+     "end up"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "give a preliminary swing to the arm pitching",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "stimulate sexually",
+    "syn": [
+     "arouse",
+     "sex",
+     "excite",
+     "turn on"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "coil the spring of (some mechanical device) by turning a stem",
+    "syn": [
+     "wind"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "line up",
+  "ko": "줄을 서다, 정렬시키다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "form a line",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "get something or somebody for a specific purpose",
+    "syn": [
+     "get hold",
+     "come up",
+     "find"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "form a queue, form a line, stand in line",
+    "syn": [
+     "queue up",
+     "queue"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "place in a line or arrange so as to be parallel or straight",
+    "syn": [
+     "align",
+     "aline",
+     "adjust"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "arrange in ranks",
+    "syn": [
+     "dress"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "take one's position before a kick-off",
+    "syn": []
+   }
+  ]
+ },
+ {
+  "word": "lay out",
+  "ko": "배치하다, 펼쳐놓다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "lay out orderly or logically in a line or as if in a line",
+    "syn": [
+     "range",
+     "array",
+     "set out"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "get ready for a particular purpose or event",
+    "syn": [
+     "set up",
+     "set"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "spend or invest",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "bring forward and present to the mind",
+    "syn": [
+     "present",
+     "represent"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "provide a detailed plan or design",
+    "syn": []
+   }
+  ]
+ },
+ {
+  "word": "go over",
+  "ko": "검토하다, 훑어보다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "hold a review (of troops)",
+    "syn": [
+     "review",
+     "survey"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "happen in a particular manner",
+    "syn": [
+     "go off",
+     "come off"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "examine so as to determine accuracy, quality, or condition",
+    "syn": [
+     "check",
+     "check up on",
+     "look into",
+     "check out"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "fall forward and down",
+    "syn": [
+     "fall over"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "pay off",
+  "ko": "성과를 내다, (빚을) 청산하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "yield a profit or result",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "eliminate by paying off (debts)",
+    "syn": [
+     "liquidate"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "pay off (loans or promissory notes)",
+    "syn": [
+     "redeem"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "do or give something to somebody in return",
+    "syn": [
+     "pay",
+     "make up",
+     "compensate"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "pay someone with influence in order to receive a favor",
+    "syn": [
+     "buy off"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "take vengeance on or get even",
+    "syn": [
+     "pay back",
+     "get",
+     "fix"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "hold out",
+  "ko": "버티다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "thrust or extend out",
+    "syn": [
+     "exsert",
+     "stretch out",
+     "put out",
+     "extend"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "stand up or offer resistance to somebody or something",
+    "syn": [
+     "resist",
+     "withstand",
+     "stand firm"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "last and be usable",
+    "syn": [
+     "wear",
+     "endure"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "wait uncompromisingly for something desirable",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "continue to live and avoid dying",
+    "syn": [
+     "survive",
+     "last",
+     "live",
+     "live on"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "bring out",
+  "ko": "끌어내다, 출시하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "make visible",
+    "syn": [
+     "unveil",
+     "reveal"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "bring out of a specific state",
+    "syn": [
+     "let out"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "prepare and issue for public distribution or sale",
+    "syn": [
+     "publish",
+     "put out",
+     "issue",
+     "release"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "direct attention to, as if by means of contrast",
+    "syn": [
+     "set off"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "bring onto the market or release",
+    "syn": [
+     "produce",
+     "bring on"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "encourage to be less reserved",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "take out of a container or enclosed space",
+    "syn": [
+     "get out"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "bring before the public for the first time, as of an actor, song, etc.",
+    "syn": [
+     "introduce"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "make known to the public information that was previously known only to a few people or that was meant to be kept a secret",
+    "syn": [
+     "unwrap",
+     "disclose",
+     "let on",
+     "reveal"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "pull back",
+  "ko": "후퇴하다, 철회하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "pull back or move away or backward",
+    "syn": [
+     "withdraw",
+     "retreat",
+     "pull away",
+     "draw back"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "use a surgical instrument to hold open (the edges of a wound or an organ)",
+    "syn": [
+     "retract",
+     "draw back"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "move to a rearward position",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "stretch back a bowstring (on an archer's bow)",
+    "syn": [
+     "draw"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "make a retreat from an earlier commitment or activity",
+    "syn": [
+     "retreat",
+     "back out",
+     "back away",
+     "crawfish"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "hang on",
+  "ko": "기다리다, 붙잡다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "fix to",
+    "syn": [
+     "append",
+     "tag on",
+     "tack on",
+     "tack"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "be persistent, refuse to stop",
+    "syn": [
+     "persevere",
+     "persist",
+     "hang in",
+     "hold on"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "hold the phone line open",
+    "syn": [
+     "hold the line",
+     "hold on"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "build up",
+  "ko": "쌓아 올리다, 강화하다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "enlarge, develop, or increase by degrees or in stages",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "form or accumulate steadily",
+    "syn": [
+     "work up",
+     "build",
+     "progress"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "prepare oneself for a military confrontation",
+    "syn": [
+     "arm",
+     "fortify",
+     "gird"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "bolster or strengthen",
+    "syn": [
+     "work up",
+     "build",
+     "ramp up"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "change the use of and make available or usable",
+    "syn": [
+     "develop"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "throw out",
+  "ko": "버리다, 내쫓다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "force to leave or move out",
+    "syn": [
+     "expel",
+     "kick out"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "throw or cast away",
+    "syn": [
+     "discard",
+     "fling",
+     "toss",
+     "toss out"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "remove from a position or office",
+    "syn": [
+     "oust",
+     "drum out",
+     "boot out",
+     "kick out"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "bring forward for consideration or acceptance",
+    "syn": [
+     "advance"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "cease to consider",
+    "syn": [
+     "dismiss"
+    ]
+   }
+  ]
+ },
+ {
+  "word": "get down",
+  "ko": "내려가다, (기운이) 처지다",
+  "pos": [
+   "verb"
+  ],
+  "wn": [
+   {
+    "pos": "동사",
+    "def": "lower (one's body) as by kneeling",
+    "syn": []
+   },
+   {
+    "pos": "동사",
+    "def": "move something or somebody to a lower position",
+    "syn": [
+     "lower",
+     "take down",
+     "let down",
+     "bring down"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "alight from (a horse)",
+    "syn": [
+     "unhorse",
+     "dismount",
+     "light",
+     "get off"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "pass through the esophagus as part of eating or drinking",
+    "syn": [
+     "swallow"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "lower someone's spirits",
+    "syn": [
+     "depress",
+     "deject",
+     "cast down",
+     "dismay"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "put down in writing",
+    "syn": [
+     "write down",
+     "set down",
+     "put down"
+    ]
+   },
+   {
+    "pos": "동사",
+    "def": "take the first step or steps in carrying out an action",
+    "syn": [
+     "begin",
+     "get",
+     "start out",
+     "start"
+    ]
+   }
+  ]
+ }
+]

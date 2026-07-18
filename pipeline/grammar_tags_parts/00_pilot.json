@@ -1,0 +1,20 @@
+{
+  "relative-clause-continuous": {
+    "category": "관계사",
+    "name_kr": "관계대명사의 계속적 용법",
+    "desc_kr": "관계대명사 앞에 콤마(,)를 찍으면 앞 문장 전체를 부연 설명하는 용법이 된다. 한정적 용법(콤마 없음)은 '~하는 사람/것'처럼 명사를 좁혀 꾸미지만, 계속적 용법은 이미 정해진 대상에 대해 '그런데 그 사람은/그것은'처럼 추가 정보를 덧붙인다. 그래서 콤마 앞뒤를 끊어 두 문장으로 풀어도 뜻이 통한다.",
+    "example": { "en": "I gave the ticket to my brother, who lost it immediately.", "ko": "나는 그 표를 형에게 줬는데, 형은 그것을 바로 잃어버렸다." }
+  },
+  "passive-simple": {
+    "category": "수동태",
+    "name_kr": "단순 수동태",
+    "desc_kr": "'be동사 + 과거분사' 형태로, 동작을 하는 주체가 아니라 동작을 당하는 대상을 주어로 내세울 때 쓴다. 누가 했는지보다 무엇이 어떻게 됐는지가 중요하거나, 행위자를 굳이 밝히고 싶지 않을 때 자연스럽다. 행위자를 밝히려면 문장 끝에 'by ~'를 붙인다.",
+    "example": { "en": "The bridge was built in 1932.", "ko": "그 다리는 1932년에 지어졌다." }
+  },
+  "subjunctive-past": {
+    "category": "가정법",
+    "name_kr": "가정법 과거",
+    "desc_kr": "지금 사실과 반대되는 상황을 가정할 때 쓴다. if절에는 동사의 과거형(be동사는 인칭에 상관없이 were)을, 주절에는 'would/could/might + 동사원형'을 쓴다. 형태는 과거지만 뜻은 '현재'에 대한 가정이라는 점이 핵심이다.",
+    "example": { "en": "If I were you, I would apologize first.", "ko": "내가 너라면, 먼저 사과할 텐데." }
+  }
+}

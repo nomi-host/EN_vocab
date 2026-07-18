@@ -1,0 +1,1500 @@
+{
+ "move in": [
+  {
+   "cue": "새 집·사무실로",
+   "ko": "이사 들어오다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "move into a new house, apartment, or office to live or work there",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They just moved in next door.",
+     "ko": "그들은 막 옆집으로 이사 왔다."
+    }
+   ]
+  },
+  {
+   "cue": "경찰·군대가 어떤 곳으로",
+   "ko": "진입하다, 진주하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "enter and take control of or a position in a place",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Police moved in to break up the crowd.",
+     "ko": "경찰이 군중을 해산시키려고 진입했다."
+    }
+   ]
+  }
+ ],
+ "start out": [
+  {
+   "cue": "일·경력을 처음",
+   "ko": "시작하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "begin an action, career, or process",
+   "syn": [
+    "begin",
+    "start"
+   ],
+   "ex": [
+    {
+     "en": "She started out as a waitress before becoming a chef.",
+     "ko": "그녀는 셰프가 되기 전에 웨이트리스로 시작했다."
+    }
+   ]
+  },
+  {
+   "cue": "여행·이동을",
+   "ko": "출발하다, 떠나다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "begin a journey by leaving a place",
+   "syn": [
+    "depart"
+   ],
+   "ex": [
+    {
+     "en": "We started out early to avoid traffic.",
+     "ko": "우리는 교통체증을 피하려고 일찍 출발했다."
+    }
+   ]
+  }
+ ],
+ "call out": [
+  {
+   "cue": "이름·소리를 크게",
+   "ko": "큰소리로 부르다, 외치다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "say something loudly",
+   "syn": [
+    "exclaim",
+    "cry out"
+   ],
+   "ex": [
+    {
+     "en": "He called out her name across the street.",
+     "ko": "그는 길 건너에서 그녀의 이름을 크게 불렀다."
+    }
+   ]
+  },
+  {
+   "cue": "잘못·부당함을 공개적으로",
+   "ko": "공개적으로 지적하다, 비판하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "publicly criticize someone for doing something wrong",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The article called out the company for its false claims.",
+     "ko": "그 기사는 그 회사의 거짓 주장을 공개적으로 지적했다."
+    }
+   ]
+  },
+  {
+   "cue": "이름·번호를 하나씩",
+   "ko": "(이름·번호를) 하나씩 부르다, 호명하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "read out names or numbers one by one",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The teacher called out the students' names for attendance.",
+     "ko": "선생님은 출석을 부르려고 학생들의 이름을 하나씩 불렀다."
+    }
+   ]
+  }
+ ],
+ "sit up": [
+  {
+   "cue": "누워있다가 상체를",
+   "ko": "일어나 앉다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "move from a lying position to a sitting position",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He sat up in bed when he heard the noise.",
+     "ko": "그는 소리를 듣고 침대에서 몸을 일으켜 앉았다."
+    }
+   ]
+  },
+  {
+   "cue": "밤늦게까지 자지 않고",
+   "ko": "늦게까지 안 자다, 밤새다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "stay awake instead of going to bed",
+   "syn": [
+    "stay up"
+   ],
+   "ex": [
+    {
+     "en": "She sat up all night waiting for his call.",
+     "ko": "그녀는 그의 전화를 기다리며 밤새 자지 않았다."
+    }
+   ]
+  }
+ ],
+ "turn down": [
+  {
+   "cue": "제안·부탁을",
+   "ko": "거절하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "refuse to accept an offer, request, or invitation",
+   "syn": [
+    "refuse",
+    "decline",
+    "reject"
+   ],
+   "ex": [
+    {
+     "en": "She turned down the job offer.",
+     "ko": "그녀는 그 일자리 제안을 거절했다."
+    }
+   ]
+  },
+  {
+   "cue": "소리·온도를",
+   "ko": "(소리·온도를) 낮추다, 줄이다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "reduce the volume, heat, or level of something",
+   "syn": [
+    "lower"
+   ],
+   "ex": [
+    {
+     "en": "Please turn down the music, it's too loud.",
+     "ko": "음악 소리 좀 줄여줘, 너무 커."
+    }
+   ]
+  }
+ ],
+ "put back": [
+  {
+   "cue": "쓰던 물건을 원래 자리에",
+   "ko": "제자리에 돌려놓다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "return something to its original place",
+   "syn": [
+    "replace"
+   ],
+   "ex": [
+    {
+     "en": "Please put the book back on the shelf when you're done.",
+     "ko": "다 보면 책을 제자리에 다시 꽂아 놔."
+    }
+   ]
+  },
+  {
+   "cue": "일정·시간을 나중으로",
+   "ko": "(일정을) 연기하다, 미루다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "change something to a later time",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The meeting was put back to next Tuesday.",
+     "ko": "그 회의는 다음 주 화요일로 연기되었다."
+    }
+   ]
+  }
+ ],
+ "send out": [
+  {
+   "cue": "편지·이메일 등을",
+   "ko": "발송하다, 보내다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "cause something to be delivered or transmitted to a place",
+   "syn": [
+    "send"
+   ],
+   "ex": [
+    {
+     "en": "The company sent out invitations to all clients.",
+     "ko": "그 회사는 모든 고객에게 초대장을 발송했다."
+    }
+   ]
+  },
+  {
+   "cue": "빛·열·신호를",
+   "ko": "내다, 내보내다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "give off light, heat, or a signal",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The lighthouse sends out a signal every ten seconds.",
+     "ko": "그 등대는 10초마다 신호를 내보낸다."
+    }
+   ]
+  }
+ ],
+ "blow up": [
+  {
+   "cue": "폭탄 등이",
+   "ko": "폭발하다, 터뜨리다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "explode or destroy something with an explosion",
+   "syn": [
+    "explode",
+    "detonate"
+   ],
+   "ex": [
+    {
+     "en": "The old building was blown up to make way for a new one.",
+     "ko": "그 낡은 건물은 새 건물을 짓기 위해 폭파되었다."
+    }
+   ]
+  },
+  {
+   "cue": "화가 나서 갑자기",
+   "ko": "버럭 화내다, 폭발하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "suddenly become very angry",
+   "syn": [],
+   "ex": [
+    {
+     "en": "My dad blew up when he saw the damage.",
+     "ko": "아빠는 그 피해를 보고 버럭 화를 냈다."
+    }
+   ]
+  },
+  {
+   "cue": "사진·풍선 등을 크게",
+   "ko": "확대하다, 부풀리다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "make something bigger, such as a photo, or fill something with air",
+   "syn": [
+    "enlarge",
+    "inflate"
+   ],
+   "ex": [
+    {
+     "en": "Can you blow up this photo so we can see the details?",
+     "ko": "이 사진을 확대해서 세부사항을 볼 수 있을까?"
+    }
+   ]
+  },
+  {
+   "cue": "이야기를 실제보다 크게",
+   "ko": "과장하다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B2",
+   "en": "describe something as more important or serious than it really is",
+   "syn": [
+    "exaggerate"
+   ],
+   "ex": [
+    {
+     "en": "The media blew up the incident into a huge scandal.",
+     "ko": "언론은 그 사건을 큰 스캔들로 부풀렸다."
+    }
+   ]
+  }
+ ],
+ "keep on": [
+  {
+   "cue": "하던 일을 멈추지 않고",
+   "ko": "계속하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "continue doing something without stopping",
+   "syn": [
+    "continue"
+   ],
+   "ex": [
+    {
+     "en": "She kept on working even though she was tired.",
+     "ko": "그녀는 피곤했지만 계속 일했다."
+    }
+   ]
+  },
+  {
+   "cue": "직원을 계속 고용해",
+   "ko": "계속 데리고 있다, 계속 고용하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "continue to employ or keep someone in a position",
+   "syn": [
+    "retain"
+   ],
+   "ex": [
+    {
+     "en": "The company decided to keep her on despite the budget cuts.",
+     "ko": "회사는 예산 삭감에도 불구하고 그녀를 계속 고용하기로 했다."
+    }
+   ]
+  }
+ ],
+ "make out": [
+  {
+   "cue": "잘 안 보이는 것을 애써서",
+   "ko": "알아보다, 분간하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "manage to see, hear, or understand something with difficulty",
+   "syn": [
+    "recognize",
+    "distinguish"
+   ],
+   "ex": [
+    {
+     "en": "I could barely make out his handwriting.",
+     "ko": "나는 그의 글씨를 거의 알아볼 수 없었다."
+    }
+   ]
+  },
+  {
+   "cue": "수표를 누구 앞으로",
+   "ko": "(수표 등을) 작성하다, 발행하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "write out a check or document",
+   "syn": [
+    "write out",
+    "issue"
+   ],
+   "ex": [
+    {
+     "en": "Please make the check out to John Smith.",
+     "ko": "수표를 존 스미스 앞으로 작성해 주세요."
+    }
+   ]
+  },
+  {
+   "cue": "연인끼리 애정표현 (구어)",
+   "ko": "애정행각을 하다, 진하게 키스하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B2",
+   "en": "kiss and touch someone in a romantic way (informal)",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They were making out on the couch.",
+     "ko": "그들은 소파에서 진하게 애정행각을 벌이고 있었다."
+    }
+   ]
+  },
+  {
+   "cue": "사실이 아닌 것을 그런 척",
+   "ko": "~인 척하다, 주장하다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B2",
+   "en": "claim or pretend that something is true",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He made out that he was too busy to help.",
+     "ko": "그는 도와줄 시간이 없는 척했다."
+    }
+   ]
+  }
+ ],
+ "shut up": [
+  {
+   "cue": "말하는 것을 멈추고 (구어체, 무례할 수 있음)",
+   "ko": "입 다물다, 조용히 하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "stop talking (often used as a rude command)",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Just shut up and listen for a second!",
+     "ko": "잠깐 입 다물고 들어봐!"
+    }
+   ]
+  },
+  {
+   "cue": "누군가를 말 못 하게",
+   "ko": "(남을) 조용히 시키다, 입 다물게 하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "make someone stop talking",
+   "syn": [
+    "silence",
+    "hush"
+   ],
+   "ex": [
+    {
+     "en": "He tried to shut her up before she said too much.",
+     "ko": "그는 그녀가 말을 너무 많이 하기 전에 입을 다물게 하려 했다."
+    }
+   ]
+  }
+ ],
+ "step back": [
+  {
+   "cue": "몸을 뒤로",
+   "ko": "뒤로 물러서다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "move backward physically",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He stepped back to let her pass.",
+     "ko": "그는 그녀가 지나가도록 뒤로 물러섰다."
+    }
+   ]
+  },
+  {
+   "cue": "문제를 잠시 떨어져서",
+   "ko": "한 발짝 물러나 생각하다, 거리를 두고 보다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "stop being closely involved in something so you can think about it clearly",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Let's step back and look at the bigger picture.",
+     "ko": "잠시 한 발짝 물러나서 큰 그림을 보자."
+    }
+   ]
+  }
+ ],
+ "lay down": [
+  {
+   "cue": "들고 있던 것을",
+   "ko": "내려놓다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "put something down, often carefully",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He laid down his weapon and surrendered.",
+     "ko": "그는 무기를 내려놓고 항복했다."
+    }
+   ]
+  },
+  {
+   "cue": "규칙·법을",
+   "ko": "(규칙을) 정하다, 규정하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "state officially what people must do",
+   "syn": [
+    "establish"
+   ],
+   "ex": [
+    {
+     "en": "The school lays down strict rules about uniforms.",
+     "ko": "그 학교는 교복에 대한 엄격한 규칙을 정하고 있다."
+    }
+   ]
+  }
+ ],
+ "bring down": [
+  {
+   "cue": "가격·수치를",
+   "ko": "(가격을) 낮추다, 내리다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "make a price, level, or amount lower",
+   "syn": [
+    "lower",
+    "reduce"
+   ],
+   "ex": [
+    {
+     "en": "The store brought down prices for the sale.",
+     "ko": "그 가게는 세일을 위해 가격을 낮췄다."
+    }
+   ]
+  },
+  {
+   "cue": "정부·정권을",
+   "ko": "무너뜨리다, 실각시키다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B2",
+   "en": "cause a government or person in power to lose their position",
+   "syn": [
+    "overthrow"
+   ],
+   "ex": [
+    {
+     "en": "The scandal brought down the prime minister.",
+     "ko": "그 스캔들은 총리를 실각시켰다."
+    }
+   ]
+  },
+  {
+   "cue": "비행기·새를 쏘아서",
+   "ko": "격추하다, 쓰러뜨리다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "cause a plane, bird, or animal to fall to the ground by shooting it",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The hunter brought down the deer with one shot.",
+     "ko": "그 사냥꾼은 총 한 발로 사슴을 쓰러뜨렸다."
+    }
+   ]
+  }
+ ],
+ "play out": [
+  {
+   "cue": "상황·사건이 어떻게",
+   "ko": "전개되다, 진행되다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "happen or develop in a particular way over time",
+   "syn": [],
+   "ex": [
+    {
+     "en": "No one knew how the crisis would play out.",
+     "ko": "그 위기가 어떻게 전개될지 아무도 몰랐다."
+    }
+   ]
+  },
+  {
+   "cue": "체력·자원을 다 써서",
+   "ko": "고갈되다, 지치다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B2",
+   "en": "become used up or exhausted",
+   "syn": [
+    "exhaust"
+   ],
+   "ex": [
+    {
+     "en": "His enthusiasm for the project soon played out.",
+     "ko": "그 프로젝트에 대한 그의 열정은 곧 고갈되었다."
+    }
+   ]
+  }
+ ],
+ "go around": [
+  {
+   "cue": "음식·자원이 사람 수만큼",
+   "ko": "(수량이) 충분하다, 골고루 돌아가다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "be enough for everyone",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Is there enough food to go around?",
+     "ko": "모두에게 돌아갈 만큼 음식이 충분한가?"
+    }
+   ]
+  },
+  {
+   "cue": "소문·질병이 퍼져서",
+   "ko": "(소문·병이) 퍼지다, 돌다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "spread from person to person",
+   "syn": [
+    "spread",
+    "circulate"
+   ],
+   "ex": [
+    {
+     "en": "There's a nasty cold going around at school.",
+     "ko": "학교에 독한 감기가 돌고 있다."
+    }
+   ]
+  },
+  {
+   "cue": "제자리에서 빙글빙글",
+   "ko": "돌다, 회전하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "turn around a central point",
+   "syn": [
+    "rotate",
+    "revolve"
+   ],
+   "ex": [
+    {
+     "en": "The wheels kept going around even after the car stopped.",
+     "ko": "차가 멈춘 후에도 바퀴는 계속 돌았다."
+    }
+   ]
+  }
+ ],
+ "walk out": [
+  {
+   "cue": "화나서·항의하며 자리를",
+   "ko": "화나서 자리를 뜨다, 나가버리다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "leave a place suddenly, often because you are angry or disagree with something",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She walked out of the meeting in anger.",
+     "ko": "그녀는 화가 나서 회의장을 나가버렸다."
+    }
+   ]
+  },
+  {
+   "cue": "노동자들이 항의하며 일을",
+   "ko": "파업하다, 동맹 파업으로 나가다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B2",
+   "en": "stop working as a protest",
+   "syn": [
+    "strike"
+   ],
+   "ex": [
+    {
+     "en": "Workers walked out over unpaid wages.",
+     "ko": "노동자들은 임금 체불에 항의해 파업했다."
+    }
+   ]
+  }
+ ],
+ "move back": [
+  {
+   "cue": "뒤로 몸을",
+   "ko": "뒤로 물러나다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "move backward or away from a place",
+   "syn": [
+    "withdraw"
+   ],
+   "ex": [
+    {
+     "en": "Please move back so the doors can close.",
+     "ko": "문이 닫힐 수 있도록 뒤로 물러나 주세요."
+    }
+   ]
+  },
+  {
+   "cue": "예전에 살던 곳으로",
+   "ko": "(원래 살던 곳으로) 다시 이사가다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "return to live in a place you lived before",
+   "syn": [],
+   "ex": [
+    {
+     "en": "After college, she moved back to her hometown.",
+     "ko": "대학 졸업 후 그녀는 고향으로 다시 이사갔다."
+    }
+   ]
+  }
+ ],
+ "sit back": [
+  {
+   "cue": "편안하게 등을 기대고",
+   "ko": "편히 앉다, 등을 기대다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "sit in a relaxed, comfortable way",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Sit back and enjoy the show.",
+     "ko": "편히 앉아서 공연을 즐기세요."
+    }
+   ]
+  },
+  {
+   "cue": "나서지 않고 지켜보기만",
+   "ko": "수수방관하다, 가만히 있다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "not get involved and let something happen without taking action",
+   "syn": [
+    "sit by"
+   ],
+   "ex": [
+    {
+     "en": "We can't just sit back while the problem gets worse.",
+     "ko": "문제가 더 심각해지는데 우리가 그냥 가만히 있을 수는 없다."
+    }
+   ]
+  }
+ ],
+ "move up": [
+  {
+   "cue": "직장에서 더 높은 자리로",
+   "ko": "승진하다, 위로 올라가다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "move to a higher position in a job or in society",
+   "syn": [
+    "ascend"
+   ],
+   "ex": [
+    {
+     "en": "He worked hard and moved up to manager.",
+     "ko": "그는 열심히 일해서 매니저로 승진했다."
+    }
+   ]
+  },
+  {
+   "cue": "일정·시간을 더 이르게",
+   "ko": "(일정을) 앞당기다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "change something to an earlier time",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They moved the meeting up to Monday.",
+     "ko": "그들은 회의를 월요일로 앞당겼다."
+    }
+   ]
+  }
+ ],
+ "take down": [
+  {
+   "cue": "걸려있던 것을",
+   "ko": "내리다, 떼다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "remove something from where it is displayed or fixed, such as a sign or decoration",
+   "syn": [
+    "lower"
+   ],
+   "ex": [
+    {
+     "en": "They took down the Christmas decorations in January.",
+     "ko": "그들은 1월에 크리스마스 장식을 내렸다."
+    }
+   ]
+  },
+  {
+   "cue": "말한 내용을 받아",
+   "ko": "받아 적다, 메모하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "write down information as it is said",
+   "syn": [
+    "note"
+   ],
+   "ex": [
+    {
+     "en": "The officer took down her statement.",
+     "ko": "경찰관은 그녀의 진술을 받아 적었다."
+    }
+   ]
+  },
+  {
+   "cue": "건물을 완전히 부수어",
+   "ko": "(건물을) 철거하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "demolish a building completely",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The old factory was taken down last year.",
+     "ko": "그 낡은 공장은 작년에 철거되었다."
+    }
+   ]
+  }
+ ],
+ "hand over": [
+  {
+   "cue": "물건·권한을 다른 사람에게",
+   "ko": "넘겨주다, 인계하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "give something to someone else, especially formally",
+   "syn": [
+    "turn in"
+   ],
+   "ex": [
+    {
+     "en": "The manager handed over his duties to the new employee.",
+     "ko": "그 매니저는 새 직원에게 자신의 업무를 인계했다."
+    }
+   ]
+  }
+ ],
+ "sum up": [
+  {
+   "cue": "말한 내용을 짧게",
+   "ko": "요약하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "briefly state the main points of something",
+   "syn": [
+    "summarize"
+   ],
+   "ex": [
+    {
+     "en": "Let me sum up what we discussed today.",
+     "ko": "오늘 논의한 내용을 요약해 볼게요."
+    }
+   ]
+  },
+  {
+   "cue": "숫자를 다 더해서",
+   "ko": "합계를 내다, 다 더하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "add numbers together to find a total",
+   "syn": [
+    "total"
+   ],
+   "ex": [
+    {
+     "en": "Sum up all the expenses from last month.",
+     "ko": "지난달 지출을 전부 합산해라."
+    }
+   ]
+  }
+ ],
+ "move out": [
+  {
+   "cue": "살던 집·사무실에서",
+   "ko": "이사 나가다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "leave a house or place you have been living or working in",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They're moving out of their apartment next month.",
+     "ko": "그들은 다음 달에 아파트에서 이사 나간다."
+    }
+   ]
+  },
+  {
+   "cue": "세입자·거주자를 강제로",
+   "ko": "(남을) 나가게 하다, 내보내다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "make someone leave a place they were living or staying",
+   "syn": [
+    "remove"
+   ],
+   "ex": [
+    {
+     "en": "The company moved out all the old staff during the merger.",
+     "ko": "그 회사는 합병 과정에서 기존 직원들을 모두 내보냈다."
+    }
+   ]
+  }
+ ],
+ "come off": [
+  {
+   "cue": "붙어 있던 것이",
+   "ko": "떨어지다, 떨어져 나가다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "become detached or separated from something",
+   "syn": [
+    "detach"
+   ],
+   "ex": [
+    {
+     "en": "A button came off my shirt.",
+     "ko": "셔츠 단추 하나가 떨어졌다."
+    }
+   ]
+  },
+  {
+   "cue": "계획·행사가 잘",
+   "ko": "성공하다, 잘 되다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "happen successfully as planned",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The surprise party came off without a hitch.",
+     "ko": "그 깜짝 파티는 아무 문제 없이 잘 진행됐다."
+    }
+   ]
+  }
+ ],
+ "pass on": [
+  {
+   "cue": "정보·메시지를 다른 사람에게",
+   "ko": "전달하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "give information or a message to someone else",
+   "syn": [
+    "pass",
+    "communicate"
+   ],
+   "ex": [
+    {
+     "en": "Could you pass on this message to Sarah?",
+     "ko": "이 메시지 사라에게 좀 전달해 줄래요?"
+    }
+   ]
+  },
+  {
+   "cue": "지식·전통을 다음 세대에",
+   "ko": "물려주다, 전수하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "give knowledge, skills, or property to someone else, especially a younger person",
+   "syn": [
+    "impart"
+   ],
+   "ex": [
+    {
+     "en": "She passed on her love of music to her children.",
+     "ko": "그녀는 음악에 대한 사랑을 자녀들에게 물려주었다."
+    }
+   ]
+  },
+  {
+   "cue": "제안·기회를 사양하고",
+   "ko": "(기회를) 넘기다, 사양하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "decide not to accept an opportunity or offer",
+   "syn": [],
+   "ex": [
+    {
+     "en": "I'll pass on dessert, thanks.",
+     "ko": "디저트는 사양할게요, 고마워요."
+    }
+   ]
+  },
+  {
+   "cue": "사람이 사망한 것을 완곡하게",
+   "ko": "돌아가시다, 세상을 떠나다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B2",
+   "en": "die (used as a polite or gentle way of saying this)",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Her grandfather passed on peacefully last night.",
+     "ko": "그녀의 할아버지는 어젯밤 평온하게 세상을 떠나셨다."
+    }
+   ]
+  }
+ ],
+ "take in": [
+  {
+   "cue": "정보·설명을 이해해서",
+   "ko": "이해하다, 받아들이다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "understand and remember information",
+   "syn": [],
+   "ex": [
+    {
+     "en": "There was too much information to take in at once.",
+     "ko": "한 번에 받아들이기엔 정보가 너무 많았다."
+    }
+   ]
+  },
+  {
+   "cue": "거짓말에 속아서",
+   "ko": "속이다, (수동태로) 속다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B2",
+   "en": "trick or deceive someone",
+   "syn": [
+    "dupe"
+   ],
+   "ex": [
+    {
+     "en": "Don't be taken in by his charming smile.",
+     "ko": "그의 매력적인 미소에 속지 마."
+    }
+   ]
+  },
+  {
+   "cue": "갈 곳 없는 사람을 집에",
+   "ko": "받아들이다, 거두어 주다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "allow someone to stay in your home, especially when they need help",
+   "syn": [
+    "receive"
+   ],
+   "ex": [
+    {
+     "en": "They took in a stray cat last winter.",
+     "ko": "그들은 지난겨울에 길고양이를 거두어 주었다."
+    }
+   ]
+  },
+  {
+   "cue": "옷의 품을 줄여서",
+   "ko": "(옷을) 줄이다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B2",
+   "en": "make a piece of clothing smaller or tighter",
+   "syn": [],
+   "ex": [
+    {
+     "en": "I need to take in this dress at the waist.",
+     "ko": "이 드레스 허리 부분을 좀 줄여야겠어."
+    }
+   ]
+  }
+ ],
+ "set down": [
+  {
+   "cue": "들고 있던 것을 바닥에",
+   "ko": "내려놓다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "put something down, often gently",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She set down her bag and sat on the sofa.",
+     "ko": "그녀는 가방을 내려놓고 소파에 앉았다."
+    }
+   ]
+  },
+  {
+   "cue": "규칙·기준을 공식적으로",
+   "ko": "규정하다, 명시하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "state officially what must be done or followed",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The contract sets down clear rules for both parties.",
+     "ko": "그 계약서는 양측을 위한 명확한 규칙을 규정하고 있다."
+    }
+   ]
+  },
+  {
+   "cue": "승객을 목적지에",
+   "ko": "(승객을) 내려주다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "stop a vehicle to let a passenger get out",
+   "syn": [
+    "drop off"
+   ],
+   "ex": [
+    {
+     "en": "The bus set the passengers down at the station.",
+     "ko": "그 버스는 승객들을 역에서 내려주었다."
+    }
+   ]
+  }
+ ],
+ "follow up": [
+  {
+   "cue": "이전 일에 대해 추가로",
+   "ko": "후속 조치를 하다, 뒤이어 확인하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "take further action related to something that happened before, to check progress or add information",
+   "syn": [],
+   "ex": [
+    {
+     "en": "I'll follow up with you next week about the proposal.",
+     "ko": "다음 주에 제안서 관련해서 다시 연락드릴게요."
+    }
+   ]
+  }
+ ],
+ "come around": [
+  {
+   "cue": "반대하던 사람이 결국",
+   "ko": "마음을 돌리다, 동의하게 되다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "change your opinion and start to agree with something",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He was against the plan at first, but he came around eventually.",
+     "ko": "그는 처음엔 그 계획에 반대했지만 결국 마음을 돌렸다."
+    }
+   ]
+  },
+  {
+   "cue": "기절했다가 다시",
+   "ko": "의식을 되찾다, 정신을 차리다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "become conscious again after fainting or being unconscious",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She came around a few minutes after fainting.",
+     "ko": "그녀는 기절한 지 몇 분 후 의식을 되찾았다."
+    }
+   ]
+  },
+  {
+   "cue": "명절·기념일이 매년 다시",
+   "ko": "(정기적으로) 돌아오다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "happen again as a regular event",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Christmas comes around so fast every year.",
+     "ko": "매년 크리스마스가 왜 이렇게 빨리 돌아오는지."
+    }
+   ]
+  }
+ ],
+ "give out": [
+  {
+   "cue": "여러 사람에게 나누어",
+   "ko": "나눠주다, 배포하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "give something to several people",
+   "syn": [
+    "distribute",
+    "hand out"
+   ],
+   "ex": [
+    {
+     "en": "Volunteers gave out free water at the marathon.",
+     "ko": "자원봉사자들은 마라톤에서 무료로 물을 나눠주었다."
+    }
+   ]
+  },
+  {
+   "cue": "기계·체력이 다 써서",
+   "ko": "다하다, 바닥나다, 고장 나다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "stop working or become used up because there is no more left",
+   "syn": [
+    "fail"
+   ],
+   "ex": [
+    {
+     "en": "His strength finally gave out after the long climb.",
+     "ko": "긴 등반 후 그의 체력은 결국 바닥났다."
+    }
+   ]
+  },
+  {
+   "cue": "빛·열·냄새를",
+   "ko": "(빛·열 등을) 내다, 발산하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "produce and send out light, heat, or a smell",
+   "syn": [
+    "emit"
+   ],
+   "ex": [
+    {
+     "en": "The stove gives out a lot of heat.",
+     "ko": "그 난로는 열을 많이 낸다."
+    }
+   ]
+  }
+ ],
+ "go along": [
+  {
+   "cue": "남의 의견·계획에",
+   "ko": "동의하다, 따르다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "agree to do what someone else wants or suggests",
+   "syn": [
+    "play along"
+   ],
+   "ex": [
+    {
+     "en": "I didn't like the plan, but I went along with it anyway.",
+     "ko": "나는 그 계획이 마음에 안 들었지만 그냥 따랐다."
+    }
+   ]
+  },
+  {
+   "cue": "하던 대로 계속",
+   "ko": "계속 진행하다, 진행되어 가다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "continue happening or being done",
+   "syn": [
+    "continue",
+    "proceed"
+   ],
+   "ex": [
+    {
+     "en": "Things are going along smoothly at work.",
+     "ko": "직장 일이 순조롭게 진행되고 있다."
+    }
+   ]
+  }
+ ],
+ "break off": [
+  {
+   "cue": "말·회의를 중간에 갑자기",
+   "ko": "중단하다, 갑자기 멈추다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "suddenly stop talking or doing something before it is finished",
+   "syn": [
+    "cut short"
+   ],
+   "ex": [
+    {
+     "en": "She broke off in the middle of her sentence.",
+     "ko": "그녀는 문장 중간에 갑자기 말을 멈췄다."
+    }
+   ]
+  },
+  {
+   "cue": "연인·친구 관계를",
+   "ko": "(관계를) 끊다, 결별하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "end a relationship or agreement",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They broke off their engagement last month.",
+     "ko": "그들은 지난달에 약혼을 파기했다."
+    }
+   ]
+  },
+  {
+   "cue": "단단한 것의 일부가",
+   "ko": "(일부가) 부러지다, 떨어져 나가다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "A2",
+   "en": "separate from a larger piece by breaking",
+   "syn": [
+    "snap off",
+    "chip off"
+   ],
+   "ex": [
+    {
+     "en": "A piece of the cliff broke off and fell into the sea.",
+     "ko": "절벽 일부가 부서져 바다로 떨어졌다."
+    }
+   ]
+  }
+ ],
+ "come about": [
+  {
+   "cue": "어떤 일이 어떻게 해서",
+   "ko": "일어나다, 발생하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "happen, especially in a particular way",
+   "syn": [
+    "happen"
+   ],
+   "ex": [
+    {
+     "en": "How did this misunderstanding come about?",
+     "ko": "이 오해가 어떻게 생긴 거야?"
+    }
+   ]
+  }
+ ],
+ "close down": [
+  {
+   "cue": "가게·공장이 영업을 완전히",
+   "ko": "폐업하다, 문을 닫다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "stop operating completely, especially a business",
+   "syn": [
+    "shut down"
+   ],
+   "ex": [
+    {
+     "en": "The factory closed down after the fire.",
+     "ko": "그 공장은 화재 이후 폐업했다."
+    }
+   ]
+  }
+ ],
+ "put in": [
+  {
+   "cue": "시간·노력을",
+   "ko": "(시간·노력을) 들이다, 쏟다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "spend time or effort doing something",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She put in a lot of hours to finish the project.",
+     "ko": "그녀는 그 프로젝트를 끝내려고 많은 시간을 들였다."
+    }
+   ]
+  },
+  {
+   "cue": "신청서·지원서를",
+   "ko": "제출하다, 신청하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "submit a formal request, such as an application",
+   "syn": [
+    "submit"
+   ],
+   "ex": [
+    {
+     "en": "He put in an application for the manager position.",
+     "ko": "그는 매니저 자리에 지원서를 제출했다."
+    }
+   ]
+  },
+  {
+   "cue": "대화 중간에 끼어들어",
+   "ko": "(대화에) 끼어들다, 말참견하다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B2",
+   "en": "interrupt a conversation to say something",
+   "syn": [
+    "chime in",
+    "cut in"
+   ],
+   "ex": [
+    {
+     "en": "Can I put in a suggestion here?",
+     "ko": "여기서 제가 제안 하나 해도 될까요?"
+    }
+   ]
+  },
+  {
+   "cue": "장치·설비를 설치해서",
+   "ko": "설치하다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "install equipment or a system",
+   "syn": [
+    "install"
+   ],
+   "ex": [
+    {
+     "en": "They put in a new heating system last year.",
+     "ko": "그들은 작년에 새 난방 시스템을 설치했다."
+    }
+   ]
+  }
+ ],
+ "set about": [
+  {
+   "cue": "일을 시작하려고 계획을 세워",
+   "ko": "착수하다, 시작하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B2",
+   "en": "begin to do something, especially in an organized way",
+   "syn": [
+    "undertake"
+   ],
+   "ex": [
+    {
+     "en": "She set about organizing the entire event by herself.",
+     "ko": "그녀는 혼자서 그 행사 전체를 조직하는 일에 착수했다."
+    }
+   ]
+  }
+ ]
+}

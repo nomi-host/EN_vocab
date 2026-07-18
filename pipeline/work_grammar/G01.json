@@ -1,0 +1,17 @@
+[
+  { "id": "relative-pronoun-who", "category": "관계사", "name_kr": "관계대명사 who" },
+  { "id": "relative-pronoun-which", "category": "관계사", "name_kr": "관계대명사 which" },
+  { "id": "relative-pronoun-that", "category": "관계사", "name_kr": "관계대명사 that" },
+  { "id": "relative-pronoun-whose", "category": "관계사", "name_kr": "관계대명사 whose" },
+  { "id": "relative-adverb", "category": "관계사", "name_kr": "관계부사(where/when/why/how)" },
+  { "id": "relative-pronoun-omission", "category": "관계사", "name_kr": "관계대명사 생략" },
+  { "id": "passive-progressive", "category": "수동태", "name_kr": "진행형 수동태" },
+  { "id": "passive-perfect", "category": "수동태", "name_kr": "완료형 수동태" },
+  { "id": "passive-by-omission", "category": "수동태", "name_kr": "by 생략 수동태" },
+  { "id": "passive-get", "category": "수동태", "name_kr": "get-수동태" },
+  { "id": "subjunctive-past-perfect", "category": "가정법", "name_kr": "가정법 과거완료" },
+  { "id": "subjunctive-mixed", "category": "가정법", "name_kr": "혼합 가정법" },
+  { "id": "wish-clause", "category": "가정법", "name_kr": "I wish 가정법" },
+  { "id": "as-if-as-though", "category": "가정법", "name_kr": "as if / as though 가정법" },
+  { "id": "if-omission-inversion", "category": "가정법", "name_kr": "if 생략 도치 가정법" }
+]

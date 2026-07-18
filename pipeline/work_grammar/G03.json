@@ -1,0 +1,21 @@
+[
+  { "id": "comparative-basic", "category": "비교 구문", "name_kr": "비교급 기본" },
+  { "id": "superlative-basic", "category": "비교 구문", "name_kr": "최상급 기본" },
+  { "id": "comparative-double", "category": "비교 구문", "name_kr": "the 비교급~, the 비교급~" },
+  { "id": "as-as-original", "category": "비교 구문", "name_kr": "원급 비교(as~as)" },
+  { "id": "as-as-possible", "category": "비교 구문", "name_kr": "as~as possible" },
+  { "id": "comparative-multiplier", "category": "비교 구문", "name_kr": "배수 비교(twice as~as)" },
+  { "id": "present-perfect-basic", "category": "시제", "name_kr": "현재완료 기본(계속·경험·완료·결과)" },
+  { "id": "present-perfect-continuous", "category": "시제", "name_kr": "현재완료진행형" },
+  { "id": "past-perfect", "category": "시제", "name_kr": "과거완료" },
+  { "id": "future-perfect", "category": "시제", "name_kr": "미래완료" },
+  { "id": "perfect-progressive", "category": "시제", "name_kr": "완료진행형" },
+  { "id": "tense-agreement-reported-speech", "category": "시제", "name_kr": "시제 일치와 화법전환" },
+  { "id": "modal-perfect", "category": "조동사", "name_kr": "조동사 + have p.p." },
+  { "id": "modal-idiom-cannot-help", "category": "조동사", "name_kr": "cannot help ~ing 등 조동사 관용표현" },
+  { "id": "modal-obligation-necessity", "category": "조동사", "name_kr": "must/have to의 의무 표현 차이" },
+  { "id": "modal-speculation", "category": "조동사", "name_kr": "must/might/can't have p.p. 추측 표현" },
+  { "id": "cleft-it-that", "category": "강조구문", "name_kr": "It is ~ that 강조구문" },
+  { "id": "do-emphasis", "category": "강조구문", "name_kr": "do/does/did 강조" },
+  { "id": "emphasis-intensifiers", "category": "강조구문", "name_kr": "very/the very 등 강조 표현" }
+]

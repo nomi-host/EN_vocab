@@ -101,4 +101,19 @@
 - 다의어 senses는 `pipeline/senses_parts/*.json`(에이전트별 분할)을 merge가 합침. WordNet 뼈대는 `pipeline/wordnet_senses.json`.
 - **다의어 배치 실행 개수 제한**: 한 세션에서 배치를 **2개 완료하면 자동으로 다음 배치를 이어서 실행하지 말 것.**
   사용자가 "더 해" 등으로 명시적으로 요청하기 전까지는 멈추고 기다린다. (세션 리밋 대비 보수적 실행 원칙과 별개로,
-  배치 개수 자체를 사용자 통제하에 둔다.)
+  배치 개수 자체를 사용자 통제하에 둔다.) **단, 사용자가 "배치작업 이어서 해줘"라고 하면 이 2개 제한을 무시하고
+  세션 토큰이 허락하는 한 계속 이어서 실행**(2026-07-18, 명시적 오버라이드 확인됨) — 아래 세 트랙을 순서대로 소진.
+- **"배치작업 이어서 해줘" = 아래 세 트랙을 이 순서로 확인해서 진행**(2026-07-18 신설):
+  1. **다의어**: `diff <(ls pipeline/work | sed 's/\.json$//') <(ls pipeline/senses_parts | sed 's/\.json$//')`로
+     `pipeline/work/*.json`엔 있는데 `pipeline/senses_parts/*.json`엔 없는 배치를 찾아 `pipeline/AGENT_INSTRUCTIONS.md` 지침대로 처리.
+  2. **구동사·숙어**: `diff <(ls pipeline/work | grep '^IDIOM' | sed 's/\.json$//') <(ls pipeline/senses_parts | grep '^IDIOM' | sed 's/\.json$//')`로 확인.
+     1차(IDIOM_01/02, 251개) 완료 후, **2차(IDIOM_03/04, 74개, 2026-07-18 착수)**가 진행 중 — PHaVE List(Garnier & Schmitt 2015,
+     COCA 빈도 상위 150개 구동사) 기준으로 1차에 빠진 진짜 갭만 추린 것(`pipeline/idiom2_seed.json`은 중간 산출물이라 삭제됨,
+     `pipeline/work/IDIOM_03.json`·`IDIOM_04.json`이 최종 입력). wn 필드는 `wordpos`(npm, `node pipeline/enrich_wordnet.js` 계열
+     스크립트로 실측 추출 — repo에 `package.json`은 없지만 `npm install wordpos --no-save`로 즉석 설치해서 씀, node_modules는 gitignore됨).
+     비즈니스 맥락 구동사 24개(circle back/touch base/loop in 등, 정식 라이선스 데이터셋 없어 ESL 자료 교차 참고로 자체 선정)는
+     아직 큐 미생성 — 사용자가 진행 요청하면 같은 방식으로 IDIOM_05 이후 배치 만들 것.
+  3. **문법 태그**: `diff <(ls pipeline/work_grammar | sed 's/\.json$//') <(ls pipeline/grammar_tags_parts | sed 's/\.json$//')`로
+     `pipeline/work_grammar/*.json`(G01~G04, 총 76항목 + 파일럿 3개 완료)엔 있는데 `pipeline/grammar_tags_parts/*.json`엔 없는 배치를
+     찾아 `pipeline/GRAMMAR_AGENT_INSTRUCTIONS.md` 지침대로 처리(다의어와 별개 트랙, 스키마 다름 — 설계는 `docs/PLAN.md` 2.5절).
+  세 트랙 모두 2개씩 병렬 서브에이전트로 실행 후 커버리지(work의 word/id 목록과 출력 파일 키 diff)를 검증하고 다음 라운드로 넘어가는 방식(2026-07-18 실행 패턴)을 따를 것.

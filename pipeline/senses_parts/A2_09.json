@@ -1,0 +1,1009 @@
+{
+  "wedding": [
+    {
+      "cue": "결혼을 하는 행사",
+      "ko": "결혼식",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "a ceremony at which two people get married",
+      "syn": [
+        "wedding ceremony"
+      ],
+      "ex": [
+        {
+          "en": "They invited over a hundred guests to their wedding.",
+          "ko": "그들은 결혼식에 백 명이 넘는 손님을 초대했다."
+        }
+      ]
+    }
+  ],
+  "weekday": [
+    {
+      "cue": "일요일이 아닌 날",
+      "ko": "평일",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "any day of the week except Saturday and Sunday",
+      "syn": [],
+      "ex": [
+        {
+          "en": "I go to work every weekday.",
+          "ko": "나는 평일마다 출근한다."
+        }
+      ]
+    }
+  ],
+  "weekly": [
+    {
+      "cue": "매주 일어나는",
+      "ko": "매주의, 주간의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "happening or done every week",
+      "syn": [],
+      "ex": [
+        {
+          "en": "We have a weekly meeting on Mondays.",
+          "ko": "우리는 월요일마다 주간 회의를 한다."
+        }
+      ]
+    },
+    {
+      "cue": "매주 한 번씩",
+      "ko": "매주, 주 1회",
+      "pos": "부사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "once every week",
+      "syn": [
+        "every week"
+      ],
+      "ex": [
+        {
+          "en": "The magazine is published weekly.",
+          "ko": "그 잡지는 매주 발행된다."
+        }
+      ]
+    },
+    {
+      "cue": "매주 나오는 인쇄물",
+      "ko": "주간지",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "a magazine or newspaper that is published every week",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She writes for a popular weekly.",
+          "ko": "그녀는 인기 있는 주간지에 글을 쓴다."
+        }
+      ]
+    }
+  ],
+  "weep": [
+    {
+      "cue": "슬픔이나 고통에",
+      "ko": "울다, 흐느끼다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "cry, especially because you are sad",
+      "syn": [
+        "cry"
+      ],
+      "ex": [
+        {
+          "en": "She wept quietly at the funeral.",
+          "ko": "그녀는 장례식에서 조용히 흐느꼈다."
+        }
+      ]
+    }
+  ],
+  "weigh": [
+    {
+      "cue": "무게를 재보면",
+      "ko": "무게가 나가다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "have a particular weight",
+      "syn": [],
+      "ex": [
+        {
+          "en": "This bag weighs about ten kilograms.",
+          "ko": "이 가방은 무게가 약 10킬로그램 나간다."
+        }
+      ]
+    },
+    {
+      "cue": "저울로 무게를",
+      "ko": "무게를 재다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "measure how heavy something is",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The nurse weighed the baby every week.",
+          "ko": "간호사는 매주 아기의 몸무게를 쟀다."
+        }
+      ]
+    },
+    {
+      "cue": "장단점을 따질 때",
+      "ko": "따져보다, 저울질하다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "think carefully about something before making a decision",
+      "syn": [
+        "consider"
+      ],
+      "ex": [
+        {
+          "en": "She weighed the pros and cons carefully before deciding.",
+          "ko": "그녀는 결정하기 전에 장단점을 신중히 따져보았다."
+        }
+      ]
+    },
+    {
+      "cue": "마음을 무겁게",
+      "ko": "짓누르다, 부담을 주다",
+      "pos": "동사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "make someone feel worried or troubled",
+      "syn": [
+        "press"
+      ],
+      "ex": [
+        {
+          "en": "The decision weighed heavily on his mind.",
+          "ko": "그 결정은 그의 마음을 무겁게 짓눌렀다."
+        }
+      ]
+    }
+  ],
+  "weight": [
+    {
+      "cue": "얼마나 무거운지",
+      "ko": "무게, 체중",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "how heavy a person or thing is",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He has lost a lot of weight recently.",
+          "ko": "그는 최근에 체중이 많이 줄었다."
+        }
+      ]
+    },
+    {
+      "cue": "운동할 때 드는 기구",
+      "ko": "역기, 웨이트",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "a heavy object lifted as exercise",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He lifts weights at the gym three times a week.",
+          "ko": "그는 헬스장에서 일주일에 세 번 웨이트를 든다."
+        }
+      ]
+    },
+    {
+      "cue": "판단에서 차지하는 비중",
+      "ko": "중요성, 비중",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "the importance given to something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Her opinion carries a lot of weight in this company.",
+          "ko": "그녀의 의견은 이 회사에서 큰 비중을 차지한다."
+        }
+      ]
+    }
+  ],
+  "well-known": [
+    {
+      "cue": "많은 사람에게 알려진",
+      "ko": "잘 알려진, 유명한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "known by a lot of people",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He is a well-known actor in his country.",
+          "ko": "그는 자기 나라에서 잘 알려진 배우이다."
+        }
+      ]
+    }
+  ],
+  "west": [
+    {
+      "cue": "나침반 방향",
+      "ko": "서쪽",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "the direction you face to see the sun set",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The sun sets in the west.",
+          "ko": "해는 서쪽으로 진다."
+        }
+      ]
+    },
+    {
+      "cue": "서쪽에 있는",
+      "ko": "서쪽의",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "A1",
+      "en": "in or facing the west",
+      "syn": [],
+      "ex": [
+        {
+          "en": "They live on the west side of the city.",
+          "ko": "그들은 도시의 서쪽에 산다."
+        }
+      ]
+    },
+    {
+      "cue": "서쪽 방향으로",
+      "ko": "서쪽으로",
+      "pos": "부사",
+      "lv": 3,
+      "cefr": "A2",
+      "en": "toward the west",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The road runs west from here.",
+          "ko": "그 길은 여기서부터 서쪽으로 뻗어 있다."
+        }
+      ]
+    },
+    {
+      "cue": "유럽·북미 등 문화권",
+      "ko": "서양",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B1",
+      "en": "the countries of Europe and North America, seen as a group",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The idea spread quickly from the West to Asia.",
+          "ko": "그 사상은 서양에서 아시아로 빠르게 퍼졌다."
+        }
+      ]
+    }
+  ],
+  "wet": [
+    {
+      "cue": "물에 젖어 있는",
+      "ko": "젖은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "covered or soaked with water or another liquid",
+      "syn": [],
+      "ex": [
+        {
+          "en": "My shoes are still wet from the rain.",
+          "ko": "내 신발은 비 때문에 아직 젖어 있다."
+        }
+      ]
+    },
+    {
+      "cue": "일부러 물기를 묻히다",
+      "ko": "적시다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "make something wet",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Wet the cloth before you clean the window.",
+          "ko": "창문을 닦기 전에 천을 적셔라."
+        }
+      ]
+    }
+  ],
+  "whatever": [
+    {
+      "cue": "무엇이 됐든",
+      "ko": "무엇이든",
+      "pos": "대명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "any thing or amount, no matter what",
+      "syn": [],
+      "ex": [
+        {
+          "en": "You can choose whatever you like from the menu.",
+          "ko": "메뉴에서 무엇이든 원하는 것을 고를 수 있어."
+        }
+      ]
+    }
+  ],
+  "wheelchair": [
+    {
+      "cue": "바퀴 달린 의자",
+      "ko": "휠체어",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a chair with wheels used by people who cannot walk",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He has used a wheelchair since the accident.",
+          "ko": "그는 사고 이후로 휠체어를 사용해 왔다."
+        }
+      ]
+    }
+  ],
+  "while": [
+    {
+      "cue": "~하는 동안",
+      "ko": "~하는 동안에",
+      "pos": "접속사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "during the time that something else is happening",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She called while I was cooking dinner.",
+          "ko": "내가 저녁을 요리하는 동안 그녀가 전화했다."
+        }
+      ]
+    },
+    {
+      "cue": "짧은 시간",
+      "ko": "잠깐, 얼마 동안",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "a period of time",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Let's stay here for a while.",
+          "ko": "우리 여기서 잠깐 머물자."
+        }
+      ]
+    },
+    {
+      "cue": "두 사실을 대조할 때",
+      "ko": "~인 반면에",
+      "pos": "접속사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "used to contrast two facts",
+      "syn": [],
+      "ex": [
+        {
+          "en": "While I like tea, my sister prefers coffee.",
+          "ko": "나는 차를 좋아하는 반면 내 여동생은 커피를 더 좋아한다."
+        }
+      ]
+    }
+  ],
+  "whole": [
+    {
+      "cue": "빠짐없이 전부인",
+      "ko": "전체의, 온전한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "complete, with no part left out",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She ate the whole cake by herself.",
+          "ko": "그녀는 케이크를 통째로 혼자 다 먹었다."
+        }
+      ]
+    },
+    {
+      "cue": "부분을 합친 전부",
+      "ko": "전체",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "all of something; the entire amount",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The whole of the city was affected by the storm.",
+          "ko": "도시 전체가 폭풍의 영향을 받았다."
+        }
+      ]
+    }
+  ],
+  "whom": [
+    {
+      "cue": "who의 목적격",
+      "ko": "누구를(목적격)",
+      "pos": "대명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "used instead of 'who' as the object of a verb or preposition",
+      "syn": [],
+      "ex": [
+        {
+          "en": "To whom should I address this letter?",
+          "ko": "이 편지를 누구 앞으로 보내야 하나요?"
+        }
+      ]
+    }
+  ],
+  "wide": [
+    {
+      "cue": "폭이 넓은",
+      "ko": "넓은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "measuring a large distance from one side to the other",
+      "syn": [
+        "broad"
+      ],
+      "ex": [
+        {
+          "en": "The river is very wide here.",
+          "ko": "이곳은 강폭이 매우 넓다."
+        }
+      ]
+    },
+    {
+      "cue": "완전히 활짝",
+      "ko": "활짝, 완전히",
+      "pos": "부사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "as far or as much as possible",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She opened the door wide.",
+          "ko": "그녀는 문을 활짝 열었다."
+        }
+      ]
+    }
+  ],
+  "widely": [
+    {
+      "cue": "여러 곳에 널리",
+      "ko": "널리, 폭넓게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "over a large area, or among many people",
+      "syn": [],
+      "ex": [
+        {
+          "en": "This tea is widely grown in Asia.",
+          "ko": "이 차는 아시아 전역에서 널리 재배된다."
+        }
+      ]
+    }
+  ],
+  "wild": [
+    {
+      "cue": "동식물이 자연 그대로",
+      "ko": "야생의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "living or growing in natural conditions, not controlled by people",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Wild flowers grew along the path.",
+          "ko": "길을 따라 야생화가 피어 있었다."
+        }
+      ]
+    },
+    {
+      "cue": "감정·행동이 격한",
+      "ko": "제멋대로인, 흥분한",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "uncontrolled, or full of excitement",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The crowd went wild when the band appeared.",
+          "ko": "밴드가 나타나자 관중이 열광했다."
+        }
+      ]
+    },
+    {
+      "cue": "사람 손이 닿지 않은 곳",
+      "ko": "야생, 자연 상태",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "a natural area or condition not affected by people",
+      "syn": [
+        "wilderness"
+      ],
+      "ex": [
+        {
+          "en": "These animals live in the wild.",
+          "ko": "이 동물들은 야생에서 산다."
+        }
+      ]
+    }
+  ],
+  "windy": [
+    {
+      "cue": "바람이 세게 부는",
+      "ko": "바람이 부는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "with a lot of wind",
+      "syn": [
+        "breezy"
+      ],
+      "ex": [
+        {
+          "en": "It was too windy to go sailing.",
+          "ko": "요트를 타기엔 바람이 너무 심했다."
+        }
+      ]
+    }
+  ],
+  "wine": [
+    {
+      "cue": "포도로 만든 술",
+      "ko": "와인, 포도주",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "an alcoholic drink made from grapes",
+      "syn": [],
+      "ex": [
+        {
+          "en": "They served red wine with dinner.",
+          "ko": "그들은 저녁 식사에 레드 와인을 대접했다."
+        }
+      ]
+    }
+  ],
+  "winner": [
+    {
+      "cue": "시합·경쟁에서 이긴 사람",
+      "ko": "우승자, 승자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the person who wins a competition or game",
+      "syn": [
+        "victor"
+      ],
+      "ex": [
+        {
+          "en": "The winner received a gold medal.",
+          "ko": "우승자는 금메달을 받았다."
+        }
+      ]
+    },
+    {
+      "cue": "성공을 거두는 사람이나 것",
+      "ko": "성공한 것, 성공작",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "someone or something that is very successful",
+      "syn": [
+        "success"
+      ],
+      "ex": [
+        {
+          "en": "This new recipe is a real winner with the kids.",
+          "ko": "이 새 레시피는 아이들에게 정말 인기다."
+        }
+      ]
+    }
+  ],
+  "wisdom": [
+    {
+      "cue": "오랜 경험에서 나온",
+      "ko": "지혜",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the ability to use knowledge and experience to make good decisions",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The elderly often share wisdom with younger generations.",
+          "ko": "노인들은 흔히 젊은 세대에게 지혜를 나눠준다."
+        }
+      ]
+    }
+  ],
+  "wise": [
+    {
+      "cue": "판단력이 뛰어난",
+      "ko": "현명한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "showing good judgment based on knowledge and experience",
+      "syn": [],
+      "ex": [
+        {
+          "en": "It was wise of you to save some money.",
+          "ko": "돈을 좀 저축해둔 건 현명한 일이었다."
+        }
+      ]
+    }
+  ],
+  "within": [
+    {
+      "cue": "특정 범위·시간 안에",
+      "ko": "~이내에, ~안에",
+      "pos": "전치사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "inside a particular period of time, distance, or amount",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The package will arrive within three days.",
+          "ko": "소포는 3일 이내에 도착할 것이다."
+        }
+      ]
+    }
+  ],
+  "without": [
+    {
+      "cue": "무언가가 없이",
+      "ko": "~없이",
+      "pos": "전치사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "not having, using, or accompanied by something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "I can't live without my phone.",
+          "ko": "나는 휴대폰 없이는 살 수 없다."
+        }
+      ]
+    }
+  ],
+  "wonder": [
+    {
+      "cue": "궁금해서 생각하다",
+      "ko": "궁금해하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "want to know something and think about it",
+      "syn": [],
+      "ex": [
+        {
+          "en": "I wonder what she is doing now.",
+          "ko": "그녀가 지금 뭘 하고 있는지 궁금하다."
+        }
+      ]
+    },
+    {
+      "cue": "놀랍고 신기한 느낌",
+      "ko": "경이, 놀라움",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a feeling of surprise and admiration",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The children looked at the fireworks in wonder.",
+          "ko": "아이들은 놀라움에 차서 불꽃놀이를 바라보았다."
+        }
+      ]
+    }
+  ],
+  "wood": [
+    {
+      "cue": "가구·건축 재료",
+      "ko": "나무, 목재",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "the hard material that trees are made of",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The table is made of wood.",
+          "ko": "그 탁자는 나무로 만들어졌다."
+        }
+      ]
+    },
+    {
+      "cue": "나무가 많이 자란 곳",
+      "ko": "숲",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "an area of land covered with trees",
+      "syn": [],
+      "ex": [
+        {
+          "en": "They went for a walk in the woods.",
+          "ko": "그들은 숲으로 산책을 갔다."
+        }
+      ]
+    }
+  ],
+  "wooden": [
+    {
+      "cue": "재료가 나무인",
+      "ko": "나무로 된, 목제의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "made of wood",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She sat on an old wooden chair.",
+          "ko": "그녀는 낡은 나무 의자에 앉았다."
+        }
+      ]
+    }
+  ],
+  "wool": [
+    {
+      "cue": "양털로 만든 실·천",
+      "ko": "양모, 울",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the soft thick hair of sheep, or cloth made from it",
+      "syn": [],
+      "ex": [
+        {
+          "en": "This sweater is made of pure wool.",
+          "ko": "이 스웨터는 순모로 만들어졌다."
+        }
+      ]
+    }
+  ],
+  "worldwide": [
+    {
+      "cue": "전 세계에 걸친",
+      "ko": "전 세계적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "happening or existing in all parts of the world",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The company has offices worldwide.",
+          "ko": "그 회사는 전 세계에 사무소를 두고 있다."
+        }
+      ]
+    },
+    {
+      "cue": "전 세계에서",
+      "ko": "전 세계적으로",
+      "pos": "부사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "in all parts of the world",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The film became popular worldwide.",
+          "ko": "그 영화는 전 세계적으로 인기를 얻었다."
+        }
+      ]
+    }
+  ],
+  "worried": [
+    {
+      "cue": "안 좋은 일이 생길까 봐",
+      "ko": "걱정하는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "feeling anxious about a problem or something that might happen",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She looked worried about the exam results.",
+          "ko": "그녀는 시험 결과를 걱정하는 표정이었다."
+        }
+      ]
+    }
+  ],
+  "worse": [
+    {
+      "cue": "bad의 비교급",
+      "ko": "더 나쁜",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "more bad; the comparative form of 'bad'",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The traffic today is worse than yesterday.",
+          "ko": "오늘 교통 체증이 어제보다 더 심하다."
+        }
+      ]
+    },
+    {
+      "cue": "badly의 비교급",
+      "ko": "더 나쁘게",
+      "pos": "부사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "in a more bad or serious way; the comparative form of 'badly'",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He plays worse than his brother.",
+          "ko": "그는 형보다 더 못한다."
+        }
+      ]
+    }
+  ],
+  "worst": [
+    {
+      "cue": "bad의 최상급",
+      "ko": "가장 나쁜, 최악의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "most bad; the superlative form of 'bad'",
+      "syn": [],
+      "ex": [
+        {
+          "en": "This is the worst movie I've ever seen.",
+          "ko": "이건 내가 본 영화 중 최악이다."
+        }
+      ]
+    },
+    {
+      "cue": "가장 나쁜 상황·것",
+      "ko": "최악",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "the most bad situation or thing",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Prepare for the worst.",
+          "ko": "최악의 상황에 대비해라."
+        }
+      ]
+    },
+    {
+      "cue": "badly의 최상급",
+      "ko": "가장 나쁘게, 최악으로",
+      "pos": "부사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "in the most bad way; the superlative form of 'badly'",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Of all of us, she was affected worst by the news.",
+          "ko": "우리 중에서 그녀가 그 소식에 가장 나쁜 영향을 받았다."
+        }
+      ]
+    }
+  ],
+  "writing": [
+    {
+      "cue": "글을 쓰는 행위·결과물",
+      "ko": "글쓰기, 글",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the activity of writing, or something that has been written",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Her writing has improved a lot this year.",
+          "ko": "그녀의 글쓰기 실력이 올해 많이 늘었다."
+        }
+      ]
+    }
+  ],
+  "yeah": [
+    {
+      "cue": "구어체로 동의할 때",
+      "ko": "응, 그래",
+      "pos": "감탄사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "an informal way of saying 'yes'",
+      "syn": [],
+      "ex": [
+        {
+          "en": "\"Are you coming?\" \"Yeah, sure.\"",
+          "ko": "\"올 거야?\" \"응, 그럼.\""
+        }
+      ]
+    }
+  ],
+  "youth": [
+    {
+      "cue": "나이 어린 시기",
+      "ko": "젊음, 어린 시절",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the period of someone's life when they are young",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He spent his youth in the countryside.",
+          "ko": "그는 어린 시절을 시골에서 보냈다."
+        }
+      ]
+    },
+    {
+      "cue": "젊은 사람 또는 그 집단",
+      "ko": "청소년, 젊은이",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "a young person, or young people in general",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Many youths gathered at the festival.",
+          "ko": "많은 청소년들이 축제에 모였다."
+        }
+      ]
+    }
+  ],
+  "zone": [
+    {
+      "cue": "특정 목적을 위한 구역",
+      "ko": "구역, 지대",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "an area with a particular purpose or feature",
+      "syn": [],
+      "ex": [
+        {
+          "en": "This is a no-parking zone.",
+          "ko": "이곳은 주차 금지 구역이다."
+        }
+      ]
+    }
+  ]
+}

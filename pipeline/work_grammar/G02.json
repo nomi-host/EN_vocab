@@ -1,0 +1,21 @@
+[
+  { "id": "infinitive-noun-usage", "category": "to부정사", "name_kr": "to부정사의 명사적 용법" },
+  { "id": "infinitive-adjective-usage", "category": "to부정사", "name_kr": "to부정사의 형용사적 용법" },
+  { "id": "infinitive-adverb-usage", "category": "to부정사", "name_kr": "to부정사의 부사적 용법" },
+  { "id": "infinitive-semantic-subject", "category": "to부정사", "name_kr": "to부정사의 의미상 주어(for/of)" },
+  { "id": "bare-infinitive-causative", "category": "to부정사", "name_kr": "사역동사 + 원형부정사" },
+  { "id": "bare-infinitive-perception", "category": "to부정사", "name_kr": "지각동사 + 원형부정사" },
+  { "id": "participle-adjective-present", "category": "분사·분사구문", "name_kr": "현재분사의 형용사 용법" },
+  { "id": "participle-adjective-past", "category": "분사·분사구문", "name_kr": "과거분사의 형용사 용법" },
+  { "id": "participle-clause-basic", "category": "분사·분사구문", "name_kr": "분사구문(부사절 축약)" },
+  { "id": "participle-clause-independent", "category": "분사·분사구문", "name_kr": "독립분사구문" },
+  { "id": "participle-with-construction", "category": "분사·분사구문", "name_kr": "with + 분사구문" },
+  { "id": "participle-perfect", "category": "분사·분사구문", "name_kr": "완료형 분사구문(Having p.p.)" },
+  { "id": "gerund-vs-infinitive-meaning-change", "category": "동명사", "name_kr": "동명사·to부정사 목적어에 따라 뜻이 달라지는 동사" },
+  { "id": "gerund-idiom-expressions", "category": "동명사", "name_kr": "동명사 관용표현" },
+  { "id": "gerund-subject-object", "category": "동명사", "name_kr": "동명사의 주어·목적어 역할" },
+  { "id": "gerund-after-preposition", "category": "동명사", "name_kr": "전치사 + 동명사" },
+  { "id": "inversion-negative-adverb", "category": "도치", "name_kr": "부정어 도치" },
+  { "id": "inversion-so-neither", "category": "도치", "name_kr": "so/neither 도치" },
+  { "id": "inversion-place-adverbial", "category": "도치", "name_kr": "장소부사구 도치" }
+]
