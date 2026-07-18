@@ -1,0 +1,116 @@
+{
+  "comparative-basic": {
+    "category": "비교 구문",
+    "name_kr": "비교급 기본",
+    "desc_kr": "두 대상을 견주어 한쪽이 다른 쪽보다 더(또는 덜)하다고 말할 때 쓰는 기본형이다. 짧은 단어는 어미에 -er을 붙이고, 음절이 길거나 -ing/-ed로 끝나는 형용사·부사는 앞에 more를 붙이며, good/bad처럼 형태가 아예 달라지는 불규칙 변화도 있다. 비교 대상은 than 뒤에 밝히는데, 문맥상 뻔하면 than 이하를 생략하기도 한다.",
+    "example": { "en": "This laptop is much lighter than my old one.", "ko": "이 노트북은 예전 것보다 훨씬 가볍다." }
+  },
+  "superlative-basic": {
+    "category": "비교 구문",
+    "name_kr": "최상급 기본",
+    "desc_kr": "셋 이상을 비교해 그중 정도가 가장 심한 하나를 콕 집어 말할 때 쓴다. 비교급처럼 짧은 단어는 -est를, 긴 단어는 most를 붙이지만, 앞에 반드시 the를 붙여 '그중 가장 ~한 것'이라는 유일성을 표시한다는 점이 비교급과 다른 가장 뚜렷한 형태상 차이다. 비교 범위는 흔히 in/of 뒤에 밝힌다(in the class, of the three).",
+    "example": { "en": "She's the most talented singer in our school.", "ko": "그녀는 우리 학교에서 가장 재능 있는 가수다." }
+  },
+  "comparative-double": {
+    "category": "비교 구문",
+    "name_kr": "the 비교급~, the 비교급~",
+    "desc_kr": "\"The 비교급 ~, the 비교급 ~\" 형태로, 앞 절의 정도가 커질수록 뒤 절의 정도도 함께 커진다는 비례 관계를 나타낸다. 두 비교급이 각 절 맨 앞으로 끌어올려져 있어 일반 비교급 문장과 어순이 다르다는 점이 특징이다. \"~하면 할수록 더 ~하다\"는 우리말과 뜻은 그대로 대응되지만, 영어에서는 두 절 모두 비교급이 문두에 고정된다는 형태를 기억해야 한다.",
+    "example": { "en": "The more you practice speaking, the more confident you become.", "ko": "말하기를 연습하면 할수록, 더 자신감이 붙는다." }
+  },
+  "as-as-original": {
+    "category": "비교 구문",
+    "name_kr": "원급 비교(as~as)",
+    "desc_kr": "두 대상의 정도가 서로 같음을 나타낼 때 \"as + 원급(형용사·부사 원형) + as\"로 표현한다. 비교급처럼 한쪽이 더하거나 덜한 것이 아니라 '~만큼 ~하다'는 대등한 비교라는 점이 핵심이다. 부정문에서는 \"not as ~ as\"(~만큼 ~하지 않다)로 정도의 차이를 완곡하게 표현할 때도 자주 쓰인다.",
+    "example": { "en": "My brother is as tall as my father now.", "ko": "내 남동생은 이제 아버지만큼 키가 크다." }
+  },
+  "as-as-possible": {
+    "category": "비교 구문",
+    "name_kr": "as~as possible",
+    "desc_kr": "\"as + 원급 + as possible\"은 '가능한 한 ~하게'라는 뜻으로, 원급 비교 구문에 possible을 붙여 도달 가능한 최대치를 요구하는 표현이다. possible 대신 \"as ~ as + 주어 + can(could)\"으로 바꿔 써도 뜻이 같은데, 이때는 뒤에 완전한 절이 이어진다는 형태 차이가 있다. 부탁이나 지시문에서 '최대한 빨리/많이'처럼 정도의 상한을 요구할 때 자주 쓰인다.",
+    "example": { "en": "Please reply as soon as possible.", "ko": "가능한 한 빨리 답장 부탁드려요." }
+  },
+  "comparative-multiplier": {
+    "category": "비교 구문",
+    "name_kr": "배수 비교(twice as~as)",
+    "desc_kr": "\"배수사 + as + 원급 + as\"로 한쪽이 다른 쪽의 몇 배에 해당하는지를 나타낸다. twice(두 배), three times(세 배)처럼 배수를 나타내는 말을 원급 비교 앞에 붙이는 형태로, 단순 원급 비교가 '같다'는 것만 말하는 데 비해 이 구문은 정확히 몇 배 차이가 나는지 수치까지 짚어준다는 점이 다르다. 절반을 말할 때는 배수사 대신 half를 쓴다.",
+    "example": { "en": "This new phone battery lasts twice as long as the old model.", "ko": "이 새 휴대폰 배터리는 예전 모델보다 두 배 오래간다." }
+  },
+  "present-perfect-basic": {
+    "category": "시제",
+    "name_kr": "현재완료 기본(계속·경험·완료·결과)",
+    "desc_kr": "\"have/has + 과거분사\" 형태로 과거의 한 시점과 현재를 이어주는 시제다. 크게 계속(과거부터 지금까지 이어짐), 경험(지금까지 ~한 적 있음), 완료(방금 막 끝남), 결과(과거 일의 여파가 지금도 남음) 네 가지 의미로 쓰이는데, 어느 쪽이든 과거 사실이 지금 시점에 여전히 의미를 갖는다는 점이 공통이다. 정확히 언제 있었던 일인지 콕 집어 말하는 yesterday, last year 같은 명백한 과거 시점 부사와는 함께 쓰지 않는다.",
+    "example": { "en": "I've lost my keys, so I can't get into the apartment.", "ko": "열쇠를 잃어버려서 집에 못 들어가고 있어." }
+  },
+  "present-perfect-continuous": {
+    "category": "시제",
+    "name_kr": "현재완료진행형",
+    "desc_kr": "\"have/has been + -ing\" 형태로, 과거에 시작된 동작이 최근까지(또는 지금 이 순간까지) 계속 진행되어 왔음을 강조한다. 현재완료 기본형의 '계속' 용법과 비슷해 보이지만, 기본형이 상태의 지속이나 결과에 무게를 둔다면 이 형태는 그 동작이 실제로 얼마나 오래, 얼마나 반복적으로 진행되어 왔는지를 생생하게 부각한다는 차이가 있다. 그래서 방금까지의 흔적(땀, 피곤함 등)을 설명하는 문맥에서 자연스럽다.",
+    "example": { "en": "I've been studying English for three hours straight.", "ko": "나 지금까지 세 시간 내내 영어 공부하고 있었어." }
+  },
+  "past-perfect": {
+    "category": "시제",
+    "name_kr": "과거완료",
+    "desc_kr": "\"had + 과거분사\" 형태로, 과거의 두 사건 중 시간상 더 먼저 일어난 일을 나타낸다. 단순 과거형이 하나의 사건만 말할 때 쓰인다면, 과거완료는 기준이 되는 다른 과거 사건보다 '그 전에' 이미 벌어졌음을 분명히 하기 위해 쓰는 상대 시제라는 점이 핵심이다. 그래서 문장이나 문맥 안에 비교 기준이 되는 또 다른 과거 시점이 함께 있어야 자연스럽다.",
+    "example": { "en": "By the time I arrived at the station, the train had already left.", "ko": "내가 역에 도착했을 때는, 기차가 이미 떠난 뒤였다." }
+  },
+  "future-perfect": {
+    "category": "시제",
+    "name_kr": "미래완료",
+    "desc_kr": "\"will have + 과거분사\" 형태로, 미래의 어느 시점을 기준으로 그때까지는 어떤 일이 이미 끝나 있을 것이라는 예측을 나타낸다. 미래 시제가 단순히 '앞으로 ~할 것이다'를 말한다면, 미래완료는 그 미래 시점에서 뒤돌아봤을 때 이미 완료된 상태일 것임을 짚는다는 점에서 시점이 하나 더 얹힌 시제다. by the time, by + 미래 시점 같은 표현과 자주 짝을 이룬다.",
+    "example": { "en": "By next spring, I will have finished writing my thesis.", "ko": "내년 봄이면, 나는 논문 쓰기를 이미 끝냈을 것이다." }
+  },
+  "perfect-progressive": {
+    "category": "시제",
+    "name_kr": "완료진행형",
+    "desc_kr": "완료 시제와 진행 시제를 겹쳐 \"(조동사+)have been + -ing\" 형태로 쓰며, 기준 시점을 향해 동작이 얼마나 오랫동안 이어져 왔는지(혹은 이어지고 있을지)에 초점을 맞춘다. 기준 시점이 과거면 had been -ing(과거완료진행), 미래면 will have been -ing(미래완료진행)로 형태가 달라지는데, 앞서 본 현재완료진행형이 '기준 시점=현재'인 경우라면 이 항목은 그 기준 시점이 과거나 미래로 옮겨간 확장판이라고 이해하면 된다. 동작이 지속된 '기간'을 for/since와 함께 구체적으로 밝히는 경우가 많다.",
+    "example": { "en": "When she finally got the job offer, she had been job-hunting for over a year.", "ko": "마침내 합격 통보를 받았을 때, 그녀는 일 년 넘게 구직 활동을 하고 있던 참이었다." }
+  },
+  "tense-agreement-reported-speech": {
+    "category": "시제",
+    "name_kr": "시제 일치와 화법전환",
+    "desc_kr": "주절의 동사가 과거형이면, 그 안에 안긴 종속절(특히 다른 사람의 말을 옮기는 화법전환 문장)의 시제도 한 단계 뒤로 물려 맞추는 것이 원칙이다. 직접화법의 현재형은 간접화법에서 과거형으로, 과거형은 과거완료로 물러나며, 인칭대명사와 시간·장소 부사(today→that day, here→there 등)도 화자 기준에 맞게 함께 바뀐다. 다만 변하지 않는 일반적 진리나 지금도 여전히 유효한 사실은 예외적으로 시제를 그대로 유지할 수 있다.",
+    "example": { "en": "She said that she had already sent the email.", "ko": "그녀는 그 이메일을 이미 보냈다고 말했다." }
+  },
+  "modal-perfect": {
+    "category": "조동사",
+    "name_kr": "조동사 + have p.p.",
+    "desc_kr": "\"조동사 + have + 과거분사\" 형태는 조동사의 의미를 과거 시점으로 돌려, 이미 지나간 일에 대한 판단이나 감정을 표현한다. should have p.p.는 '~했어야 했는데(안 함)'라는 후회를, could have p.p.는 '~할 수 있었는데(안 함)'라는 실현되지 않은 가능성을, would have p.p.는 주로 가정법 문장에서 '~했을 텐데'라는 결과를 나타낸다. 조동사만 현재형으로 쓰면 미래나 현재에 대한 이야기가 되지만, have p.p.가 붙는 순간 시선이 과거로 돌아간다는 점이 이 구문 전체를 관통하는 원리다.",
+    "example": { "en": "You should have called me before coming over.", "ko": "오기 전에 나한테 전화했어야지." }
+  },
+  "modal-idiom-cannot-help": {
+    "category": "조동사",
+    "name_kr": "cannot help ~ing 등 조동사 관용표현",
+    "desc_kr": "조동사와 얽힌 표현 중 하나하나 뜯어 분석하기보다 통째로 외워야 자연스러운 관용구들을 묶은 항목이다. cannot help -ing는 '~하지 않을 수 없다'는 뜻으로 감정이나 반응을 억누르지 못했음을 나타내고, would rather는 '차라리 ~하겠다'는 선호를, had better는 '~하는 게 좋을 거야'라는 다소 강한 권고나 경고를 담는다. 형태는 조동사가 낀 구문이지만 뜻은 관용적으로 굳어 있어, must나 should 같은 일반 조동사의 규칙만으로는 의미가 잘 유추되지 않는다는 공통점이 있다.",
+    "example": { "en": "She couldn't help smiling when she saw the puppy.", "ko": "그녀는 그 강아지를 보고 미소 짓지 않을 수 없었다." }
+  },
+  "modal-obligation-necessity": {
+    "category": "조동사",
+    "name_kr": "must/have to의 의무 표현 차이",
+    "desc_kr": "must와 have to는 둘 다 '~해야 한다'로 해석되지만 의무가 어디서 비롯되었는지가 다르다. must는 화자 자신이 필요하다고 판단해서 내리는 주관적이고 강한 의무를, have to는 규칙이나 상황처럼 외부에서 부과된 객관적인 의무를 나타내는 경향이 있다. 부정형에서는 이 차이가 뜻 자체를 바꿔버리는데, mustn't는 '~하면 안 된다'는 금지를 나타내는 반면 don't have to는 '~할 필요가 없다'는 의무의 부재를 나타내므로 서로 바꿔 쓸 수 없다.",
+    "example": { "en": "You don't have to bring anything; I already have snacks.", "ko": "아무것도 안 가져와도 돼. 간식은 이미 준비해뒀어." }
+  },
+  "modal-speculation": {
+    "category": "조동사",
+    "name_kr": "must/might/can't have p.p. 추측 표현",
+    "desc_kr": "\"must/might/can't + have + 과거분사\"는 과거에 있었던 일에 대해 지금 시점에서 추측할 때 쓰며, 어떤 조동사를 고르느냐에 따라 확신의 정도가 달라진다. must have p.p.는 증거로 볼 때 '분명히 ~했을 것이다'라는 강한 확신을, might/may have p.p.는 '~했을 수도 있다'는 절반의 가능성을, can't have p.p.는 '~했을 리 없다'는 강한 부정적 확신을 나타낸다. 같은 형태의 modal-perfect가 후회나 실현되지 않은 가능성을 말한다면, 이 항목은 순전히 과거 사실에 대한 화자의 확신도를 스펙트럼으로 표현한다는 점에서 다르다.",
+    "example": { "en": "He must have missed the bus; he's never this late.", "ko": "걔 분명 버스를 놓쳤나 봐, 이렇게 늦은 적이 없거든." }
+  },
+  "cleft-it-that": {
+    "category": "강조구문",
+    "name_kr": "It is ~ that 강조구문",
+    "desc_kr": "\"It is/was ~ that ...\" 구조 안에 강조하고 싶은 문장 성분(주어, 목적어, 부사구 등)을 끼워 넣어 그 부분에 초점을 맞추는 구문이다. 원래 문장에서 강조할 요소를 통째로 뽑아 It is/was와 that 사이에 놓고 나머지는 that절로 남기는 방식이라, '다른 게 아니라 바로 이것이 ~이다'라는 뉘앙스가 생긴다. 강조되는 대상이 사람이면 that 대신 who를 쓰기도 하지만 뜻에는 차이가 없다.",
+    "example": { "en": "It was Sarah who found the missing wallet.", "ko": "잃어버린 지갑을 찾은 사람은 다름 아닌 사라였다." }
+  },
+  "do-emphasis": {
+    "category": "강조구문",
+    "name_kr": "do/does/did 강조",
+    "desc_kr": "일반동사 앞에 do/does/did를 끼워 넣어 그 동사의 내용을 '정말로, 확실히'라는 뜻으로 강하게 확인하거나 반박할 때 쓴다. 평소 평서문에서는 do/does/did가 겉으로 드러나지 않지만, 강조하고 싶을 때만 이 조동사를 불러와 세게 발음하고 뒤에 오는 본동사는 반드시 원형으로 돌아간다. cleft구문이 문장 구조를 통째로 바꿔 특정 성분을 부각한다면, do강조는 구조는 그대로 두고 동사 자체의 사실 여부를 세게 확인한다는 점이 다르다.",
+    "example": { "en": "I know it doesn't look like it, but I did clean my room.", "ko": "그렇게 안 보이겠지만, 나 진짜로 방 청소했어." }
+  },
+  "emphasis-intensifiers": {
+    "category": "강조구문",
+    "name_kr": "very/the very 등 강조 표현",
+    "desc_kr": "do강조나 cleft구문처럼 문장 구조 자체를 바꾸지 않고, very·the very·so·such·at all 같은 강조어를 덧붙여 뜻을 세게 만드는 어휘적 강조 방법이다. very는 형용사·부사를 그대로 세게 만들지만 the very는 명사 앞에 붙어 '바로 그(사람/것)'처럼 동일성을 강조하고, the very + 최상급(the very best처럼)은 최상급의 정도를 한층 더 끌어올린다. 문장 구조를 바꾸는 앞의 두 강조구문과 달리 단어 하나를 얹기만 하면 되는 가장 간단한 강조 방식이라는 점이 특징이다.",
+    "example": { "en": "You are the very person I wanted to talk to.", "ko": "당신이야말로 내가 이야기하고 싶었던 바로 그 사람이에요." }
+  }
+}
