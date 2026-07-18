@@ -1,0 +1,1232 @@
+{
+  "abandoned": [
+    {
+      "cue": "사람·장소가 버려져서",
+      "ko": "버려진, 유기된",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "left alone and no longer wanted or cared for",
+      "syn": ["deserted", "derelict"],
+      "ex": [
+        { "en": "The old house has been abandoned for years.", "ko": "그 오래된 집은 수년간 버려져 있었다." }
+      ]
+    }
+  ],
+  "abnormally": [
+    {
+      "cue": "정상 범위를 벗어나게",
+      "ko": "비정상적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "in a way that is different from what is normal or usual",
+      "syn": [],
+      "ex": [
+        { "en": "The river levels are abnormally high this year.", "ko": "올해는 강물 수위가 비정상적으로 높다." }
+      ]
+    }
+  ],
+  "abolish": [
+    {
+      "cue": "법·제도를 공식적으로 없애다",
+      "ko": "폐지하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "officially end a law, system, or institution",
+      "syn": ["eliminate", "get rid of"],
+      "ex": [
+        { "en": "The government abolished the old tax law.", "ko": "정부는 그 낡은 세법을 폐지했다." }
+      ]
+    }
+  ],
+  "aboriginal": [
+    {
+      "cue": "그 지역에 원래부터 살던",
+      "ko": "원주민의, 토착의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "relating to the people who were the original inhabitants of a region",
+      "syn": ["native", "indigenous"],
+      "ex": [
+        { "en": "The museum displays aboriginal art from Australia.", "ko": "그 박물관은 호주 원주민 예술품을 전시한다." }
+      ]
+    }
+  ],
+  "abruptly": [
+    {
+      "cue": "예고 없이 갑자기",
+      "ko": "갑자기, 돌연히",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "suddenly and without warning",
+      "syn": ["suddenly"],
+      "ex": [
+        { "en": "The car stopped abruptly.", "ko": "그 차는 갑자기 멈췄다." }
+      ]
+    }
+  ],
+  "absentee": [
+    {
+      "cue": "있어야 할 자리에 없는 사람",
+      "ko": "결석자, 부재자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a person who is not present when expected to be",
+      "syn": [],
+      "ex": [
+        { "en": "The teacher marked the absentees on the list.", "ko": "선생님은 명단에 결석자를 표시했다." }
+      ]
+    }
+  ],
+  "absurd": [
+    {
+      "cue": "말이 안 될 정도로 우스운",
+      "ko": "터무니없는, 부조리한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "completely unreasonable or ridiculous",
+      "syn": ["ridiculous", "ludicrous"],
+      "ex": [
+        { "en": "It's absurd to expect me to finish this in an hour.", "ko": "이걸 한 시간 안에 끝내라는 건 터무니없다." }
+      ]
+    }
+  ],
+  "abuse": [
+    {
+      "cue": "사람·동물을 함부로 대하는",
+      "ko": "학대",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "cruel or violent treatment of a person or animal",
+      "syn": ["maltreatment", "mistreatment"],
+      "ex": [
+        { "en": "The organization protects children from abuse.", "ko": "그 단체는 아동을 학대로부터 보호한다." }
+      ]
+    },
+    {
+      "cue": "권력·약물 등을 잘못",
+      "ko": "남용",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "improper or excessive use of something",
+      "syn": ["misuse"],
+      "ex": [
+        { "en": "Abuse of power is a serious problem in politics.", "ko": "권력 남용은 정치에서 심각한 문제다." }
+      ]
+    },
+    {
+      "cue": "사람을 함부로",
+      "ko": "학대하다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "treat someone with cruelty or violence",
+      "syn": ["mistreat"],
+      "ex": [
+        { "en": "He was arrested for abusing his employees.", "ko": "그는 직원들을 학대한 혐의로 체포되었다." }
+      ]
+    }
+  ],
+  "accessibility": [
+    {
+      "cue": "쉽게 다가가거나 이용할 수 있는 정도",
+      "ko": "접근성",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the quality of being easy to reach, enter, or use",
+      "syn": [],
+      "ex": [
+        { "en": "The new building was designed with accessibility in mind.", "ko": "그 새 건물은 접근성을 고려해 설계되었다." }
+      ]
+    }
+  ],
+  "accommodation": [
+    {
+      "cue": "여행·거주 중 머무는 곳",
+      "ko": "숙박시설, 숙소",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a place where someone can live or stay, especially while traveling",
+      "syn": ["lodging"],
+      "ex": [
+        { "en": "The hotel offers comfortable accommodation for tourists.", "ko": "그 호텔은 여행객들에게 편안한 숙소를 제공한다." }
+      ]
+    }
+  ],
+  "accordingly": [
+    {
+      "cue": "앞의 내용에 맞춰",
+      "ko": "그에 따라, 그러므로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "in a way that is suitable for a particular situation, or as a result of it",
+      "syn": ["consequently"],
+      "ex": [
+        { "en": "The rules changed, so we adjusted our plans accordingly.", "ko": "규칙이 바뀌어서 우리는 그에 따라 계획을 조정했다." }
+      ]
+    }
+  ],
+  "accumulate": [
+    {
+      "cue": "돈·물건·먼지 등이 점점",
+      "ko": "축적하다, 쌓이다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "gradually gather or increase in quantity over time",
+      "syn": ["gather", "build up"],
+      "ex": [
+        { "en": "Dust had accumulated on the shelves.", "ko": "선반 위에 먼지가 쌓여 있었다." }
+      ]
+    }
+  ],
+  "accusation": [
+    {
+      "cue": "누군가 잘못했다고 주장",
+      "ko": "고발, 비난",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a claim that someone has done something wrong or illegal",
+      "syn": ["charge"],
+      "ex": [
+        { "en": "She denied the accusation of theft.", "ko": "그녀는 절도 혐의를 부인했다." }
+      ]
+    }
+  ],
+  "achievable": [
+    {
+      "cue": "노력하면 이룰 수 있는",
+      "ko": "달성 가능한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "possible to achieve or accomplish",
+      "syn": ["attainable"],
+      "ex": [
+        { "en": "Set goals that are realistic and achievable.", "ko": "현실적이고 달성 가능한 목표를 세워라." }
+      ]
+    }
+  ],
+  "acid": [
+    {
+      "cue": "화학 물질, 신맛 나는",
+      "ko": "산",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a chemical substance that can dissolve metal and often has a sour taste",
+      "syn": [],
+      "ex": [
+        { "en": "The acid in lemons gives them a sour taste.", "ko": "레몬의 산이 신맛을 낸다." }
+      ]
+    },
+    {
+      "cue": "말투가 신랄한",
+      "ko": "신랄한, 통렬한",
+      "pos": "형용사",
+      "lv": 4,
+      "cefr": "C1",
+      "en": "harsh or bitter in tone",
+      "syn": ["bitter", "acerbic"],
+      "ex": [
+        { "en": "He made an acid remark about her work.", "ko": "그는 그녀의 작업에 대해 신랄한 말을 했다." }
+      ]
+    }
+  ],
+  "acquisition": [
+    {
+      "cue": "지식·기술을",
+      "ko": "습득",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the process of learning or acquiring a skill or knowledge",
+      "syn": ["learning"],
+      "ex": [
+        { "en": "Language acquisition happens naturally in children.", "ko": "언어 습득은 아이들에게서 자연스럽게 일어난다." }
+      ]
+    },
+    {
+      "cue": "회사·재산을 사들이는",
+      "ko": "인수, 취득",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "the act of buying or obtaining something, such as a company or property",
+      "syn": ["takeover"],
+      "ex": [
+        { "en": "The acquisition of the smaller company doubled their profits.", "ko": "그 작은 회사의 인수로 이익이 두 배가 되었다." }
+      ]
+    }
+  ],
+  "actively": [
+    {
+      "cue": "열심히 참여하며",
+      "ko": "적극적으로, 활발히",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in an energetic or enthusiastic way, taking part in something",
+      "syn": [],
+      "ex": [
+        { "en": "She is actively involved in local politics.", "ko": "그녀는 지역 정치에 적극적으로 참여하고 있다." }
+      ]
+    }
+  ],
+  "actual": [
+    {
+      "cue": "생각·상상이 아닌 진짜",
+      "ko": "실제의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "existing in fact; real",
+      "syn": ["real", "genuine"],
+      "ex": [
+        { "en": "The actual cost was higher than we expected.", "ko": "실제 비용은 우리가 예상한 것보다 높았다." }
+      ]
+    }
+  ],
+  "acute": [
+    {
+      "cue": "질병이 갑자기 심하게",
+      "ko": "급성의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "(of an illness) coming on suddenly and severely",
+      "syn": [],
+      "ex": [
+        { "en": "He was taken to the hospital with acute appendicitis.", "ko": "그는 급성 맹장염으로 병원에 실려갔다." }
+      ]
+    },
+    {
+      "cue": "문제·필요가 매우 심각한",
+      "ko": "심각한, 극심한",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "extremely serious or severe",
+      "syn": ["severe", "critical"],
+      "ex": [
+        { "en": "There is an acute shortage of clean water in the region.", "ko": "그 지역에는 깨끗한 물이 극심하게 부족하다." }
+      ]
+    },
+    {
+      "cue": "감각·판단력이 뛰어난",
+      "ko": "예리한, 예민한",
+      "pos": "형용사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "showing great ability to notice or understand things",
+      "syn": ["keen", "sharp"],
+      "ex": [
+        { "en": "She has an acute sense of hearing.", "ko": "그녀는 예리한 청각을 가지고 있다." }
+      ]
+    }
+  ],
+  "adaptable": [
+    {
+      "cue": "새 환경·상황에 잘 맞추는",
+      "ko": "적응력 있는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "able to change easily to suit new conditions",
+      "syn": ["flexible"],
+      "ex": [
+        { "en": "Cats are highly adaptable animals.", "ko": "고양이는 적응력이 매우 뛰어난 동물이다." }
+      ]
+    }
+  ],
+  "addict": [
+    {
+      "cue": "약물 등에 중독된 사람",
+      "ko": "중독자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a person who cannot stop using a harmful substance, such as drugs",
+      "syn": [],
+      "ex": [
+        { "en": "He became a drug addict in his twenties.", "ko": "그는 20대에 마약 중독자가 되었다." }
+      ]
+    },
+    {
+      "cue": "중독되게 만들다",
+      "ko": "중독시키다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "cause someone to become dependent on something",
+      "syn": [],
+      "ex": [
+        { "en": "Social media is designed to addict its users.", "ko": "소셜미디어는 사용자를 중독시키도록 설계되어 있다." }
+      ]
+    }
+  ],
+  "addicted": [
+    {
+      "cue": "약물·습관에서 벗어나지 못하는",
+      "ko": "중독된",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "unable to stop using or doing something harmful",
+      "syn": [],
+      "ex": [
+        { "en": "He is addicted to caffeine.", "ko": "그는 카페인에 중독되어 있다." }
+      ]
+    }
+  ],
+  "addiction": [
+    {
+      "cue": "약물·행동을 끊지 못하는 상태",
+      "ko": "중독",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a strong physical or mental need to do or have something",
+      "syn": ["dependence"],
+      "ex": [
+        { "en": "She is receiving treatment for her addiction to alcohol.", "ko": "그녀는 알코올 중독 치료를 받고 있다." }
+      ]
+    }
+  ],
+  "additionally": [
+    {
+      "cue": "이미 말한 것에 덧붙여",
+      "ko": "추가로, 게다가",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in addition to what has already been mentioned",
+      "syn": ["furthermore", "moreover"],
+      "ex": [
+        { "en": "Additionally, the hotel offers free breakfast.", "ko": "게다가 그 호텔은 무료 아침 식사를 제공한다." }
+      ]
+    }
+  ],
+  "adequate": [
+    {
+      "cue": "필요한 만큼 충분한",
+      "ko": "충분한, 적절한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "enough or good enough for a particular purpose",
+      "syn": ["sufficient"],
+      "ex": [
+        { "en": "We need adequate time to prepare for the exam.", "ko": "우리는 시험을 준비할 충분한 시간이 필요하다." }
+      ]
+    }
+  ],
+  "adequately": [
+    {
+      "cue": "필요한 만큼 잘",
+      "ko": "충분히, 적절하게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in a way that is enough or good enough",
+      "syn": ["sufficiently"],
+      "ex": [
+        { "en": "The workers were not adequately trained for the job.", "ko": "그 근로자들은 그 일에 충분히 훈련받지 못했다." }
+      ]
+    }
+  ],
+  "adjustment": [
+    {
+      "cue": "상황에 맞게 조금 바꾸는",
+      "ko": "조정, 수정",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a small change made to something to make it work better",
+      "syn": ["modification"],
+      "ex": [
+        { "en": "We made a few adjustments to the schedule.", "ko": "우리는 일정을 조금 조정했다." }
+      ]
+    },
+    {
+      "cue": "새 환경에 익숙해지는",
+      "ko": "적응",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "the process of becoming used to a new situation",
+      "syn": ["adaptation"],
+      "ex": [
+        { "en": "Moving abroad requires a period of adjustment.", "ko": "해외로 이주하는 것은 적응 기간이 필요하다." }
+      ]
+    }
+  ],
+  "administrative": [
+    {
+      "cue": "조직 운영·사무 관련",
+      "ko": "행정의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "relating to the management of a business or organization",
+      "syn": [],
+      "ex": [
+        { "en": "She handles all the administrative tasks in the office.", "ko": "그녀는 사무실의 모든 행정 업무를 처리한다." }
+      ]
+    }
+  ],
+  "admirable": [
+    {
+      "cue": "행동·성품이 훌륭해서",
+      "ko": "존경할 만한, 감탄스러운",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "deserving respect or admiration",
+      "syn": [],
+      "ex": [
+        { "en": "Her courage in the face of danger was admirable.", "ko": "위험 앞에서 보인 그녀의 용기는 존경할 만했다." }
+      ]
+    }
+  ],
+  "admiringly": [
+    {
+      "cue": "감탄하는 태도로",
+      "ko": "감탄하며",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "in a way that shows admiration",
+      "syn": [],
+      "ex": [
+        { "en": "He looked at the painting admiringly.", "ko": "그는 그 그림을 감탄하며 바라보았다." }
+      ]
+    }
+  ],
+  "admittedly": [
+    {
+      "cue": "사실이라고 인정하며",
+      "ko": "인정하건대",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "used to admit that something is true before making another point",
+      "syn": [],
+      "ex": [
+        { "en": "Admittedly, the plan has some risks.", "ko": "인정하건대, 그 계획에는 위험 요소가 좀 있다." }
+      ]
+    }
+  ],
+  "adopted": [
+    {
+      "cue": "친부모가 아닌 다른 부모에게",
+      "ko": "입양된",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "taken into a family as one's own child, though not related by birth",
+      "syn": [],
+      "ex": [
+        { "en": "She grew up as an adopted child.", "ko": "그녀는 입양아로 자랐다." }
+      ]
+    }
+  ],
+  "adoption": [
+    {
+      "cue": "아이를 법적으로 가족으로",
+      "ko": "입양",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the legal process of taking another person's child as your own",
+      "syn": [],
+      "ex": [
+        { "en": "They are planning to go through adoption.", "ko": "그들은 입양 절차를 밟을 계획이다." }
+      ]
+    },
+    {
+      "cue": "새 방법·아이디어를 받아들이는",
+      "ko": "채택",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "the act of choosing to use a new idea, method, or plan",
+      "syn": [],
+      "ex": [
+        { "en": "The adoption of new technology increased productivity.", "ko": "새 기술의 채택으로 생산성이 늘었다." }
+      ]
+    }
+  ],
+  "adore": [
+    {
+      "cue": "누군가를 매우 사랑하는",
+      "ko": "매우 좋아하다, 흠모하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "love or admire someone or something very much",
+      "syn": ["love", "cherish"],
+      "ex": [
+        { "en": "She adores her little nephew.", "ko": "그녀는 어린 조카를 매우 아낀다." }
+      ]
+    }
+  ],
+  "adorn": [
+    {
+      "cue": "아름답게 꾸미기 위해",
+      "ko": "장식하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "make something more attractive by decorating it",
+      "syn": ["decorate", "embellish"],
+      "ex": [
+        { "en": "Flowers adorned the tables at the wedding.", "ko": "결혼식에서 꽃이 테이블을 장식했다." }
+      ]
+    }
+  ],
+  "advancement": [
+    {
+      "cue": "기술·사회가 나아지는",
+      "ko": "발전",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "progress or improvement in something",
+      "syn": ["progress"],
+      "ex": [
+        { "en": "Advancements in medicine have saved many lives.", "ko": "의학의 발전이 많은 생명을 구했다." }
+      ]
+    },
+    {
+      "cue": "직장에서 더 높은 자리로",
+      "ko": "승진",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "a move to a higher position or rank at work",
+      "syn": ["promotion"],
+      "ex": [
+        { "en": "He worked hard to earn a career advancement.", "ko": "그는 승진하기 위해 열심히 일했다." }
+      ]
+    }
+  ],
+  "advent": [
+    {
+      "cue": "새로운 것이 나타남",
+      "ko": "도래, 출현",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the arrival or beginning of something important",
+      "syn": ["arrival"],
+      "ex": [
+        { "en": "The advent of the internet changed how we communicate.", "ko": "인터넷의 도래는 우리의 소통 방식을 바꾸었다." }
+      ]
+    }
+  ],
+  "adventurous": [
+    {
+      "cue": "새롭고 위험한 일을 즐기는",
+      "ko": "모험적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "willing to try new and exciting or risky things",
+      "syn": [],
+      "ex": [
+        { "en": "She has an adventurous spirit and loves to travel.", "ko": "그녀는 모험적인 성격이라 여행을 좋아한다." }
+      ]
+    }
+  ],
+  "adverse": [
+    {
+      "cue": "상황·날씨 등이 안 좋은",
+      "ko": "불리한, 부정적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "unfavorable or harmful to someone or something",
+      "syn": ["unfavorable"],
+      "ex": [
+        { "en": "The flight was delayed due to adverse weather conditions.", "ko": "악천후로 인해 비행이 지연되었다." }
+      ]
+    }
+  ],
+  "adversely": [
+    {
+      "cue": "나쁜 영향을 주는 방식으로",
+      "ko": "불리하게, 부정적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "in a way that has a negative or harmful effect",
+      "syn": [],
+      "ex": [
+        { "en": "The drought adversely affected crop production.", "ko": "가뭄은 농작물 생산에 부정적인 영향을 미쳤다." }
+      ]
+    }
+  ],
+  "adversity": [
+    {
+      "cue": "힘든 상황·어려움",
+      "ko": "역경",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a difficult or unfortunate situation",
+      "syn": ["hardship"],
+      "ex": [
+        { "en": "She showed great strength in the face of adversity.", "ko": "그녀는 역경 속에서도 큰 강인함을 보여주었다." }
+      ]
+    }
+  ],
+  "affectionate": [
+    {
+      "cue": "사랑·애정을 자주 표현하는",
+      "ko": "다정한, 애정 어린",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "showing warmth and love toward someone",
+      "syn": ["loving", "fond"],
+      "ex": [
+        { "en": "He gave his daughter an affectionate hug.", "ko": "그는 딸을 다정하게 안아주었다." }
+      ]
+    }
+  ],
+  "affectionately": [
+    {
+      "cue": "애정을 담아",
+      "ko": "다정하게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in a way that shows love or warmth",
+      "syn": [],
+      "ex": [
+        { "en": "She smiled affectionately at the baby.", "ko": "그녀는 아기를 보며 다정하게 미소 지었다." }
+      ]
+    }
+  ],
+  "affordable": [
+    {
+      "cue": "가격이 부담 없는",
+      "ko": "저렴한, 감당할 수 있는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "not too expensive; that people can afford",
+      "syn": ["cheap", "low-cost"],
+      "ex": [
+        { "en": "The city needs more affordable housing.", "ko": "그 도시는 더 저렴한 주택이 필요하다." }
+      ]
+    }
+  ],
+  "ageless": [
+    {
+      "cue": "시간이 지나도 변치 않는",
+      "ko": "나이를 초월한, 영원한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "never seeming to grow old or go out of style",
+      "syn": ["eternal", "timeless"],
+      "ex": [
+        { "en": "Her beauty seemed ageless.", "ko": "그녀의 아름다움은 나이를 초월한 듯 보였다." }
+      ]
+    }
+  ],
+  "aggressively": [
+    {
+      "cue": "위협적이고 강하게",
+      "ko": "공격적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in a forceful or hostile way",
+      "syn": [],
+      "ex": [
+        { "en": "The dog barked aggressively at the stranger.", "ko": "그 개는 낯선 사람을 향해 공격적으로 짖었다." }
+      ]
+    }
+  ],
+  "agonize": [
+    {
+      "cue": "결정을 앞두고 오래 고민",
+      "ko": "고민하다, 괴로워하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "think anxiously and for a long time about a difficult decision",
+      "syn": [],
+      "ex": [
+        { "en": "She agonized over whether to accept the job offer.", "ko": "그녀는 그 일자리 제안을 받아들일지 오래 고민했다." }
+      ]
+    }
+  ],
+  "agony": [
+    {
+      "cue": "몸이나 마음의 극심한",
+      "ko": "극심한 고통",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "extreme physical or mental pain",
+      "syn": ["torment", "anguish"],
+      "ex": [
+        { "en": "He cried out in agony after the injury.", "ko": "그는 부상 후 극심한 고통에 소리쳤다." }
+      ]
+    }
+  ],
+  "aircraft": [
+    {
+      "cue": "하늘을 나는 탈것",
+      "ko": "항공기",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a vehicle that can fly, such as an airplane or helicopter",
+      "syn": [],
+      "ex": [
+        { "en": "The aircraft landed safely despite the storm.", "ko": "그 항공기는 폭풍에도 안전하게 착륙했다." }
+      ]
+    }
+  ],
+  "aircrew": [
+    {
+      "cue": "비행기 운항을 담당하는 사람들",
+      "ko": "항공 승무원",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the people who operate an aircraft, including pilots and cabin crew",
+      "syn": [],
+      "ex": [
+        { "en": "The aircrew prepared the plane for takeoff.", "ko": "항공 승무원들은 이륙을 위해 비행기를 준비했다." }
+      ]
+    }
+  ],
+  "alcoholism": [
+    {
+      "cue": "술을 끊지 못하는 병",
+      "ko": "알코올 중독",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a medical condition of being unable to control one's drinking of alcohol",
+      "syn": [],
+      "ex": [
+        { "en": "He sought help for his alcoholism.", "ko": "그는 알코올 중독 치료를 위해 도움을 구했다." }
+      ]
+    }
+  ],
+  "alert": [
+    {
+      "cue": "위험을 미리 알려주다",
+      "ko": "알리다, 경고하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "warn someone about a possible danger or problem",
+      "syn": ["warn"],
+      "ex": [
+        { "en": "The security guard alerted the police about the break-in.", "ko": "경비원은 침입에 대해 경찰에 알렸다." }
+      ]
+    },
+    {
+      "cue": "정신이 깨어 있고 주의 깊은",
+      "ko": "기민한, 주의 깊은",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "quick to notice and react to things",
+      "syn": ["watchful"],
+      "ex": [
+        { "en": "Stay alert while driving at night.", "ko": "밤에 운전할 때는 정신을 바짝 차려라." }
+      ]
+    },
+    {
+      "cue": "위험을 알리는 신호",
+      "ko": "경보, 경계경보",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "a warning of danger or a problem",
+      "syn": ["alarm"],
+      "ex": [
+        { "en": "A fire alert went off in the building.", "ko": "건물 안에서 화재 경보가 울렸다." }
+      ]
+    }
+  ],
+  "allegation": [
+    {
+      "cue": "증거 없이 주장하는",
+      "ko": "혐의, 주장",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a claim that someone has done something wrong, without proof yet",
+      "syn": ["accusation"],
+      "ex": [
+        { "en": "The company denied the allegations of fraud.", "ko": "그 회사는 사기 혐의를 부인했다." }
+      ]
+    }
+  ],
+  "alliance": [
+    {
+      "cue": "국가·단체가 서로 협력하는",
+      "ko": "동맹",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a formal agreement between countries or groups to work together",
+      "syn": ["coalition"],
+      "ex": [
+        { "en": "The two countries formed a military alliance.", "ko": "두 나라는 군사 동맹을 맺었다." }
+      ]
+    }
+  ],
+  "ally": [
+    {
+      "cue": "같은 편에서 돕는 나라·사람",
+      "ko": "동맹국, 협력자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a country or person that helps and supports another",
+      "syn": ["partner"],
+      "ex": [
+        { "en": "The United States and the United Kingdom are close allies.", "ko": "미국과 영국은 긴밀한 동맹국이다." }
+      ]
+    },
+    {
+      "cue": "동맹 관계를 맺다",
+      "ko": "동맹을 맺다, 협력하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "join with someone or something for a shared purpose",
+      "syn": [],
+      "ex": [
+        { "en": "The two companies allied to develop new technology.", "ko": "두 회사는 신기술 개발을 위해 협력했다." }
+      ]
+    }
+  ],
+  "alongside": [
+    {
+      "cue": "다른 것과 나란히",
+      "ko": "옆에, 나란히",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "next to or beside something",
+      "syn": [],
+      "ex": [
+        { "en": "The boat pulled up alongside the dock.", "ko": "그 배는 부두 옆에 나란히 정박했다." }
+      ]
+    }
+  ],
+  "alphabetical": [
+    {
+      "cue": "abc 순서대로 정리된",
+      "ko": "알파벳순의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "arranged according to the order of the letters of the alphabet",
+      "syn": [],
+      "ex": [
+        { "en": "The names are listed in alphabetical order.", "ko": "이름들은 알파벳순으로 정렬되어 있다." }
+      ]
+    }
+  ],
+  "altar": [
+    {
+      "cue": "종교 의식을 치르는 단",
+      "ko": "제단",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a raised table or structure used for religious ceremonies",
+      "syn": [],
+      "ex": [
+        { "en": "The couple exchanged vows at the altar.", "ko": "그 커플은 제단에서 서약을 나누었다." }
+      ]
+    }
+  ],
+  "alter": [
+    {
+      "cue": "부분적으로 조금 바꾸다",
+      "ko": "바꾸다, 변경하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "change something, often slightly",
+      "syn": ["change", "modify"],
+      "ex": [
+        { "en": "They altered the plan at the last minute.", "ko": "그들은 마지막 순간에 계획을 변경했다." }
+      ]
+    }
+  ],
+  "alternate": [
+    {
+      "cue": "두 가지를 번갈아 하다",
+      "ko": "번갈아 하다, 교대로 하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "do or use two or more things by turns, one after the other",
+      "syn": ["take turns"],
+      "ex": [
+        { "en": "We alternate cooking dinner between us.", "ko": "우리는 번갈아 가며 저녁을 요리한다." }
+      ]
+    },
+    {
+      "cue": "대신 쓸 수 있는",
+      "ko": "대체의, 대안의",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "used instead of the usual one",
+      "syn": ["alternative"],
+      "ex": [
+        { "en": "Please provide an alternate route in case of traffic.", "ko": "교통 체증에 대비해 대체 경로를 알려주세요." }
+      ]
+    },
+    {
+      "cue": "하나 건너 하나씩의",
+      "ko": "번갈아 나오는, 격일의",
+      "pos": "형용사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "occurring one after the other in a repeated pattern",
+      "syn": [],
+      "ex": [
+        { "en": "She works on alternate weekends.", "ko": "그녀는 격주로 주말 근무를 한다." }
+      ]
+    }
+  ],
+  "alternatively": [
+    {
+      "cue": "다른 선택지를 제시할 때",
+      "ko": "그렇지 않으면, 대안으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "used to introduce another possible option or choice",
+      "syn": ["instead"],
+      "ex": [
+        { "en": "You could take the bus, or alternatively, walk.", "ko": "버스를 타도 되고, 아니면 걸어도 된다." }
+      ]
+    }
+  ],
+  "altitude": [
+    {
+      "cue": "지면·해수면으로부터의 높이",
+      "ko": "고도",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the height of something above sea level or the ground",
+      "syn": ["height"],
+      "ex": [
+        { "en": "The plane cruised at an altitude of 10,000 meters.", "ko": "그 비행기는 고도 1만 미터에서 순항했다." }
+      ]
+    }
+  ],
+  "aluminum": [
+    {
+      "cue": "가볍고 은빛 나는 금속",
+      "ko": "알루미늄",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a light, silver-colored metal used to make cans, foil, and other products",
+      "syn": [],
+      "ex": [
+        { "en": "The can is made of aluminum.", "ko": "그 캔은 알루미늄으로 만들어졌다." }
+      ]
+    }
+  ],
+  "amaze": [
+    {
+      "cue": "매우 놀랍게 만들다",
+      "ko": "놀라게 하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "surprise someone greatly",
+      "syn": ["astonish", "astound"],
+      "ex": [
+        { "en": "Her talent for painting amazed everyone.", "ko": "그녀의 그림 재능은 모두를 놀라게 했다." }
+      ]
+    }
+  ],
+  "amazement": [
+    {
+      "cue": "매우 놀라운 느낌",
+      "ko": "놀라움",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a feeling of great surprise",
+      "syn": ["astonishment"],
+      "ex": [
+        { "en": "She stared in amazement at the magic trick.", "ko": "그녀는 마술을 보며 놀라워했다." }
+      ]
+    }
+  ],
+  "amazingly": [
+    {
+      "cue": "믿기 힘들 정도로",
+      "ko": "놀랍게도",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in a way that is surprising or impressive",
+      "syn": ["surprisingly"],
+      "ex": [
+        { "en": "Amazingly, no one was hurt in the accident.", "ko": "놀랍게도, 그 사고에서 다친 사람은 없었다." }
+      ]
+    }
+  ],
+  "ambassador": [
+    {
+      "cue": "자기 나라를 대표하는 외교관",
+      "ko": "대사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "an official who represents their country in a foreign country",
+      "syn": [],
+      "ex": [
+        { "en": "She was appointed as the ambassador to France.", "ko": "그녀는 주프랑스 대사로 임명되었다." }
+      ]
+    }
+  ],
+  "ambiguity": [
+    {
+      "cue": "뜻이 분명하지 않은 상태",
+      "ko": "모호성",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "the quality of having more than one possible meaning, which causes confusion",
+      "syn": [],
+      "ex": [
+        { "en": "The contract's wording caused a lot of ambiguity.", "ko": "계약서 문구가 많은 모호성을 낳았다." }
+      ]
+    }
+  ],
+  "ambiguous": [
+    {
+      "cue": "뜻을 명확히 알 수 없는",
+      "ko": "모호한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "having more than one possible meaning; not clear",
+      "syn": ["unclear", "vague"],
+      "ex": [
+        { "en": "His answer was deliberately ambiguous.", "ko": "그의 대답은 일부러 모호했다." }
+      ]
+    }
+  ],
+  "ammonia": [
+    {
+      "cue": "강한 냄새의 화학 물질",
+      "ko": "암모니아",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a strong-smelling gas or liquid used in cleaning products and industry",
+      "syn": [],
+      "ex": [
+        { "en": "The cleaner had a strong smell of ammonia.", "ko": "그 세제에서 암모니아 냄새가 강하게 났다." }
+      ]
+    }
+  ],
+  "amongst": [
+    {
+      "cue": "여럿 가운데, 사이에",
+      "ko": "~중에서, ~사이에",
+      "pos": "전치사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "surrounded by or included in a group of people or things (formal form of 'among')",
+      "syn": ["among"],
+      "ex": [
+        { "en": "She felt at home amongst friends.", "ko": "그녀는 친구들 사이에서 편안함을 느꼈다." }
+      ]
+    }
+  ],
+  "ample": [
+    {
+      "cue": "필요 이상으로 넉넉한",
+      "ko": "충분한, 풍부한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "more than enough; plentiful",
+      "syn": ["plentiful", "abundant"],
+      "ex": [
+        { "en": "There was ample food for everyone at the party.", "ko": "파티에는 모두를 위한 충분한 음식이 있었다." }
+      ]
+    }
+  ],
+  "amplifier": [
+    {
+      "cue": "소리·신호를 크게 만드는 장치",
+      "ko": "증폭기, 앰프",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "an electronic device that makes sound or signals louder or stronger",
+      "syn": [],
+      "ex": [
+        { "en": "He connected the guitar to the amplifier.", "ko": "그는 기타를 앰프에 연결했다." }
+      ]
+    }
+  ],
+  "amplify": [
+    {
+      "cue": "소리·효과를 더 크게",
+      "ko": "증폭시키다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "make a sound, signal, or effect stronger or greater",
+      "syn": ["magnify"],
+      "ex": [
+        { "en": "The speakers amplify the singer's voice.", "ko": "그 스피커들은 가수의 목소리를 증폭시킨다." }
+      ]
+    }
+  ],
+  "amuse": [
+    {
+      "cue": "웃음이나 즐거움을 주다",
+      "ko": "즐겁게 하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "make someone laugh or feel entertained",
+      "syn": ["entertain"],
+      "ex": [
+        { "en": "The clown amused the children with his tricks.", "ko": "그 광대는 재주로 아이들을 즐겁게 해주었다." }
+      ]
+    }
+  ]
+}
