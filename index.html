@@ -1022,8 +1022,22 @@ const byWord = Object.fromEntries(SEED.map(w => [w.word, w]));
 
 /* 사용자가 직접 추가한 단어(내 단어장) — localStorage 보존. */
 let EXTRA = (() => { try { return JSON.parse(localStorage.getItem("en_mywords") || "{}"); } catch (e) { return {}; } })();
-function saveExtra() { try { localStorage.setItem("en_mywords", JSON.stringify(EXTRA)); } catch (e) {} }
+function saveExtra() { _byFlat = null; try { localStorage.setItem("en_mywords", JSON.stringify(EXTRA)); } catch (e) {} }
 function wordOf(w) { return byWord[w] || EXTRA[w]; }
+/* 표기 접기 폴백 조회 — "carry-on"·"carryon"으로도 표제어 "carry on"을 찾는다(2026-07-19).
+   wordOf는 정확 키 조회 그대로 두고(EXTRA 키·중복 등록 가드 등 기존 의미 보존), 구분 기호
+   차이만 흡수하고 싶은 자리(dictLookup, 회화 단어 탭)에서 이걸 쓴다. 인덱스는 첫 사용 때 만들고
+   내 단어 추가/삭제(saveExtra) 시 무효화. */
+let _byFlat = null;
+function wordOfFlat(w) {
+  const direct = wordOf(w);
+  if (direct) return direct;
+  if (!_byFlat) {
+    _byFlat = {};
+    allWords().forEach(x => { const k = flatWord(x.word); if (k && !_byFlat[k]) _byFlat[k] = x; });
+  }
+  return _byFlat[flatWord(w)] || null;
+}
 function allWords() { return SEED.concat(Object.values(EXTRA)); }
 
 /* 수동 추가 단어 자동 조회 — 폴백 체인: Free Dictionary(무료 공개 API, 영영 정의·IPA·품사) →
@@ -1341,7 +1355,7 @@ const DICT_IRREGULAR = {
 function dictLookup(raw) {
   const w = (raw || "").toLowerCase().replace(/[^a-z']/g, "");
   if (!w) return null;
-  if (wordOf(w)) return wordOf(w);
+  if (wordOfFlat(w)) return wordOfFlat(w); // 표기 접기 포함 — "carry-on"도 표제어 "carry on"으로(2026-07-19)
   if (DICT_IRREGULAR[w] && wordOf(DICT_IRREGULAR[w])) return wordOf(DICT_IRREGULAR[w]);
   const cands = [];
   if (w.endsWith("ies")) cands.push(w.slice(0, -3) + "y");
@@ -2208,9 +2222,11 @@ function createLevelTestA() {
       const syns = (cur._w.syn || []).map(s => s.toLowerCase());
       let score = 0;
       if (answer) {
-        if (answer === target) score = 1;
+        // flatWord 비교 병행 — "carry-on"↔"carry on"↔"carryon" 같은 표기 차이는 만점,
+        // 유의어도 언더스코어 표기("clog_up")와 사용자 입력("clog up")을 접어서 비교(2026-07-19)
+        if (answer === target || flatWord(answer) === flatWord(target)) score = 1;
         else if (target.length >= 4 && editDistance(answer, target) <= 1) score = 0.85;
-        else if (syns.includes(answer)) score = 0.7;
+        else if (syns.some(s => s === answer || flatWord(s) === flatWord(answer))) score = 0.7;
       }
       const ok = score >= 1;
       produceLog.push({ ok, score });
@@ -3316,16 +3332,22 @@ function ExampleWords({ text, onOpen }) {
   const parts = text.split(/(\s+)/);
   return parts.map((p, idx) => {
     if (!p || /^\s+$/.test(p)) return p;
-    const m = p.match(/[A-Za-z'’]+/);
+    // 하이픈 합성어는 통째로 한 토큰 — 예전 /[A-Za-z'’]+/는 하이픈에서 끊겨 "duty-free"에서
+    // "duty"만 링크가 됐음(2026-07-19). 통째로는 사전에 없으면 첫 조각으로 폴백(기존 동작 보존).
+    const m = p.match(/[A-Za-z'’]+(?:-[A-Za-z'’]+)*/);
     if (!m) return p;
-    const clean = m[0].replace(/[’‘]/g, "'");
-    const w = wordOf(clean.toLowerCase());
+    let tok = m[0];
+    let w = wordOfFlat(tok.replace(/[’‘]/g, "'").toLowerCase());
+    if (!w && tok.indexOf("-") >= 0) {
+      tok = tok.split("-")[0];
+      w = wordOf(tok.replace(/[’‘]/g, "'").toLowerCase());
+    }
     if (!w) return p;
     const lead = p.slice(0, m.index);
-    const trail = p.slice(m.index + m[0].length);
+    const trail = p.slice(m.index + tok.length);
     return (
       <React.Fragment key={idx}>
-        {lead}<span className="ex-word" onClick={ev => { ev.stopPropagation(); onOpen(w.word); }}>{clean}</span>{trail}
+        {lead}<span className="ex-word" onClick={ev => { ev.stopPropagation(); onOpen(w.word); }}>{tok}</span>{trail}
       </React.Fragment>
     );
   });
@@ -3358,10 +3380,12 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
       : <span className="lchip">{label}</span>
   );
   if (!w) return null;
+  // 공백 포함 표제어("carry on")·아포스트로피("driver's license")가 URL에 그대로 들어가 링크가
+  // 깨지지 않도록 인코딩(2026-07-19). Cambridge는 구동사 URL이 하이픈 관례라 공백→하이픈으로.
   const ext = q => [
-    ["네이버", `https://en.dict.naver.com/#/search?query=${q}`],
-    ["Cambridge", `https://dictionary.cambridge.org/dictionary/english/${q}`],
-    ["Etymonline", `https://www.etymonline.com/word/${q}`],
+    ["네이버", `https://en.dict.naver.com/#/search?query=${encodeURIComponent(q)}`],
+    ["Cambridge", `https://dictionary.cambridge.org/dictionary/english/${encodeURIComponent(q.replace(/\s+/g, "-"))}`],
+    ["Etymonline", `https://www.etymonline.com/word/${encodeURIComponent(q)}`],
   ];
   return ReactDOM.createPortal(
     <div className="sheet-backdrop" onClick={onClose}>
@@ -3664,7 +3688,13 @@ function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump, viewJump, onCo
   }, [learned.length]);
 
   const query = q.trim().toLowerCase();
-  const hits = query ? words.filter(w => w.word.toLowerCase().startsWith(query)).sort((a, b) => a.word.localeCompare(b.word)) : [];
+  // flatWord prefix 매칭 병행 — "carry on"·"carryon"으로 "carry-on"을, "duty free"로
+  // "duty-free"를 찾을 수 있게(2026-07-19, 구분 기호가 다르면 검색이 안 되던 문제).
+  const flatQ = flatWord(query);
+  const hits = query ? words.filter(w => {
+    const lw = w.word.toLowerCase();
+    return lw.startsWith(query) || (flatQ && flatWord(lw).startsWith(flatQ));
+  }).sort((a, b) => a.word.localeCompare(b.word)) : [];
   const noHit = query && hits.length === 0;
   // 표제어는 원형만 수록되므로 children/ran 같은 굴절형 검색은 표제어로 역추적해 안내.
   // prefix 일치(ran→range 등)가 있어도, 검색어 자체가 표제어가 아니고 변화형이면 최상단에 안내
@@ -4014,6 +4044,11 @@ async function geminiJSON(prompt) {
   }
 }
 function containsKorean(text) { return /[가-힣]/.test(text || ""); }
+/* 표기 관용 비교용 — 하이픈·공백·언더스코어·아포스트로피 등 구분 기호를 전부 걷어내고
+   글자·숫자만 남김. "carry-on"과 "carry on"과 "carryon", "don't"와 "dont"를 같은 답으로
+   취급하기 위한 공통 헬퍼(2026-07-19). 정답 판정·검색 매칭에서 양쪽 모두에 적용해서 쓸 것 —
+   한쪽만 접으면 "사용자는 맞게 썼는데 오답" 계열 버그가 재발한다. */
+function flatWord(s) { return (s || "").toLowerCase().replace(/[^a-z0-9]/g, ""); }
 /* 대화방 날짜 구분 알약(2026-07-18) — 저장 시점(m.at)이 없는 옛 메시지(이 기능 이전에 저장된 대화)는
    1970-01-01로 묶어서 한 덩어리로만 보이게(크래시 방지 목적, 실제 날짜를 알 방법이 없음). */
 function talkDayKey(ts) { const d = new Date(ts || 0); return d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate(); }
@@ -4024,10 +4059,12 @@ function talkDayLabel(ts) { const d = new Date(ts || 0); return (d.getMonth() + 
 function openVocabWord(word, onOpenWord) {
   const key = (word || "").trim().toLowerCase();
   if (!key || !onOpenWord) return;
-  if (!wordOf(key)) {
-    EXTRA[key] = { word: key, ipa: "", pos: [], cefr: "—", ko: "", en: "", syn: [], ant: [], forms: [], roots: [], ex: [], mine: true, lookupStatus: "pending" };
-    saveExtra();
-  }
+  // 표기 접기 조회 먼저 — "carry-on"을 탭했는데 사전엔 "carry on"으로 있으면 그 표제어를 연다.
+  // 예전엔 정확 키 조회만 해서 이미 있는 단어가 EXTRA에 하이픈 표기로 중복 등록됐음(2026-07-19).
+  const hit = wordOfFlat(key);
+  if (hit) { onOpenWord(hit.word); return; }
+  EXTRA[key] = { word: key, ipa: "", pos: [], cefr: "—", ko: "", en: "", syn: [], ant: [], forms: [], roots: [], ex: [], mine: true, lookupStatus: "pending" };
+  saveExtra();
   onOpenWord(key);
 }
 /* 회화 대화방 상대 말풍선의 모든 단어를 탭 가능하게(2026-07-18) — 사전 예문의 ExampleWords와 달리
@@ -4038,7 +4075,9 @@ function ChatBubbleWords({ text, onOpenWord }) {
   const parts = (text || "").split(/(\s+)/);
   return parts.map((p, idx) => {
     if (!p || /^\s+$/.test(p)) return p;
-    const m = p.match(/[A-Za-z'’]+/);
+    // 하이픈 합성어 통째 토큰화 — ExampleWords와 동일 수정(2026-07-19). "carry-on"을 탭하면
+    // "carry"가 아니라 "carry-on" 전체가 openVocabWord로 넘어가 표제어 "carry on"으로 연결된다.
+    const m = p.match(/[A-Za-z'’]+(?:-[A-Za-z'’]+)*/);
     if (!m) return p;
     const clean = m[0].replace(/[’‘]/g, "'");
     const lead = p.slice(0, m.index);
@@ -5261,10 +5300,14 @@ function CardSession({ items, onExit, onOpenWord }) {
 
   // 정답 판정: 빈칸의 정답 또는 원형 단어와 일치해야 정답. 유의어는 정답으로 인정하지 않음(문장에 안 맞을 수 있어서) —
   // 대신 유의어를 입력하면 아래 useEffect에서 안내 문구를 보여주고 힌트를 열어줌(패널티 없음).
+  // 하이픈·공백·아포스트로피는 flatWord로 접어서 비교 — "carry-on"을 "carry on"/"carryon"으로
+  // 써도, "don't"를 "dont"로 써도 정답(2026-07-19, 표기 구분 기호 때문에 오답 처리되던 버그 수정).
   const isAnswer = raw => {
     const v = raw.trim().toLowerCase();
     if (!v) return false;
-    return v === expected || v === it.word.toLowerCase();
+    if (v === expected || v === it.word.toLowerCase()) return true;
+    const f = flatWord(v);
+    return !!f && (f === flatWord(expected) || f === flatWord(it.word));
   };
 
   // 정답 앞부분과 일치하는 글자 수(근접 오답 판정용)
@@ -5316,6 +5359,11 @@ function CardSession({ items, onExit, onOpenWord }) {
     if (res || !it || !expected) return;
     const v = normSyn(val);
     if (!v) return;
+    // 지금 입력이 정답의 앞부분이면 유의어 안내를 띄우지 않는다 — "back up"의 정답 "backed me up"을
+    // 치는 도중 "back"까지 입력된 순간 유의어 "back"과 일치해버려, 안내가 뜨면서 입력을 첫 글자로
+    // 리셋해 정답 입력을 중간에 빼앗던 버그(2026-07-19 재현·수정). 정답을 향해 가는 입력이 우선.
+    const fv = flatWord(val);
+    if (fv && (flatWord(expected).startsWith(fv) || flatWord(it.word).startsWith(fv))) return;
     const hit = synonyms.find(s => normSyn(s) === v);
     if (hit) {
       setNudgeWord(hit.replace(/_/g, " "));
@@ -5398,15 +5446,24 @@ function CardSession({ items, onExit, onOpenWord }) {
       <input ref={hiddenRef} className="ans-catch" value={res ? "" : val}
         onChange={e => {
           if (res) { e.target.value = ""; return; } // 채점 후엔 입력 무시(키보드는 유지)
-          let raw = e.target.value.replace(/[^A-Za-z']/g, "");
+          let raw = e.target.value.replace(/[^A-Za-z0-9]/g, ""); // 숫자 허용 — 내 단어장에 mp3 같은 단어를 등록할 수 있음
           let out = raw;
-          if (hintLen && expected) {
-            // 공백은 정답의 공백 위치에서만 자동 삽입(사용자가 스페이스를 신경 쓸 필요 없게)
-            const n = expected.length; out = "";
-            for (let j = 0; j < raw.length && out.length < n; ) {
-              if (expected[out.length] === " ") { out += " "; continue; }
+          if (expected) {
+            // 정답의 구분 기호(공백·하이픈·아포스트로피)는 해당 위치에서 자동 삽입 — 사용자는 글자만
+            // 치면 된다. 예전엔 글자수 힌트를 켰을 때만, 그것도 공백만 자동 삽입해서, "backed me up"
+            // 같은 여러 단어 정답은 힌트 없이는 입력 자체가 불가능했고(스페이스가 필터에서 그냥
+            // 사라짐) "ad-lib" 같은 하이픈 표제어는 힌트를 켜도 못 맞혔음(2026-07-19 재현·수정).
+            // 단, 자동 삽입은 입력 글자가 정답과 일치하는 동안만 — 무조건 끼워넣으면 유의어("support")
+            // 같은 다른 입력도 "suppor t"처럼 깨져서 유의어 안내가 안 먹었음(같은 날 재수정).
+            out = "";
+            let j = 0, aligned = true;
+            while (j < raw.length && aligned && out.length < expected.length) {
+              const ec = expected[out.length];
+              if (!/[a-z0-9]/.test(ec)) { out += ec; continue; }
               out += raw[j++];
+              if (out[out.length - 1].toLowerCase() !== ec) aligned = false;
             }
+            out += raw.slice(j); // 정답에서 벗어난 뒤(또는 초과분)는 구분 기호 없이 그대로
           }
           e.target.value = out; // DOM 값 강제 동기화 — 필터로 값이 안 바뀔 때 iOS 컨트롤드 입력이 얼어 지울 수 없던 버그 방지
           handleChange(out);
@@ -5468,7 +5525,7 @@ function CardSession({ items, onExit, onOpenWord }) {
           ) : (
             <span className="qhint-labels">
               {hintMean && mode === "cloze" && <span className="qsofthint">{meanText}</span>}
-              {hintLen && expected && <span className="qlen-hint">{expected.length}글자</span>}
+              {hintLen && expected && <span className="qlen-hint">{flatWord(expected).length}글자{/\s/.test(expected) ? ` · ${expected.split(/\s+/).length}단어` : ""}</span>}
             </span>
           )}
           <span className="tag lv">{it.cefr}</span>
@@ -5584,7 +5641,8 @@ function QuizSession({ questions, onExit }) {
     if (res) return;
     const v = val.trim();
     if (!v) return;
-    const ok = v.toLowerCase() === it.word.toLowerCase();
+    // flatWord 비교 병행 — "carry-on"을 "carry on"으로 쳐도 정답(2026-07-19)
+    const ok = v.toLowerCase() === it.word.toLowerCase() || flatWord(v) === flatWord(it.word);
     if (ok) setCorrect(c => c + 1);
     setRes({ ok });
   };
