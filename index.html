@@ -11,22 +11,22 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.31">
-<link rel="icon" href="img/icon-192.png?v=0.35.31" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.31">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.31" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.31" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.32">
+<link rel="icon" href="img/icon-192.png?v=0.35.32" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.32">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.32" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.32" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.31"></script>
+<script src="img/hero/lottie.min.js?v=0.35.32"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.31"></script>
-<script src="words.js?v=0.35.31"></script><style>
+<script src="lib/compromise.min.js?v=0.35.32"></script>
+<script src="words.js?v=0.35.32"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -36,15 +36,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.31") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.31") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.32") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.32") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.31") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.31") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.32") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.32") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -310,7 +310,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.31");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.32");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140).
@@ -967,7 +967,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.31";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.32";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1540,8 +1540,14 @@ function itemsFromWords(list) {
   });
   return items;
 }
+/* SEED(수천 단어)를 매번 itemsFromWords로 다시 순회·객체화하는 비용이 실측 약 90ms+(데스크톱 기준,
+   저사양 모바일에선 더 큼) — "단어카드 시작" 탭 핸들러 안에서 pickSession()이 이걸 동기로 돌리다 보니
+   포커스(키보드 팝업)까지의 시간이 늘어져 "키보드가 바로 안 올라옴" 원인이 됐음(2026-07-18). SEED는
+   런타임에 안 바뀌므로 그 부분만 한 번 캐시하고, 사용자가 추가한 EXTRA(적은 수)만 매번 재계산해 합침. */
+let _seedItemsCache = null;
 function allItems() {
-  return itemsFromWords(allWords());
+  if (!_seedItemsCache) _seedItemsCache = itemsFromWords(SEED);
+  return _seedItemsCache.concat(itemsFromWords(Object.values(EXTRA)));
 }
 
 /* 굴절형 매칭용 불규칙 동사/명사 표(token→base 역인덱스) + 소유격/재귀 자리. 2026-07-17
@@ -1680,7 +1686,18 @@ function makeBlank(en, word) {
 }
 // 단어카드는 무조건 예문 안 빈칸(cloze)만 — 예문에 타깃 단어가 없어 빈칸을 못 만드는
 // 항목(예전 spell 폴백)은 세션 풀에서 제외한다(2026-07-17).
-function canBlank(it) { return !!(it && it.ex && it.ex.en && makeBlank(it.ex.en, it.word)); }
+// makeBlank가 정규식 기반이라 항목 하나당은 가벼워도, freshPool()이 매번 SEED 전체(약 1만 항목)를
+// 이걸로 훑다 보니 합산 70ms+가 걸려 pickSession() 전체를 블로킹 — "단어카드 시작" 탭 직후 입력창
+// focus()가 늦어지는 원인 중 하나였음(2026-07-18). it.ex.en·it.word가 안 바뀌는 한 결과도 안 바뀌는
+// 순수 함수라 객체 identity 기준(WeakMap)으로 캐시해도 무효화 걱정이 없음.
+const _canBlankCache = new WeakMap();
+function canBlank(it) {
+  if (!it) return false;
+  if (_canBlankCache.has(it)) return _canBlankCache.get(it);
+  const r = !!(it.ex && it.ex.en && makeBlank(it.ex.en, it.word));
+  _canBlankCache.set(it, r);
+  return r;
+}
 
 /* 사용자 레벨(레벨테스트 band12, 1~12 반스텝) → CEFR 6단계 인덱스(0=A1 … 5=C2) */
 function userCefrIdx() {
@@ -2361,7 +2378,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.31" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.32" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -2716,7 +2733,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.31";
+const HERO_V = "0.35.32";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -4048,18 +4065,30 @@ function talkNextLine(persona, history) {
 }
 /* 사용자 입력은 순수 영어·순수 한국어·한영 혼용 어느 쪽이든 올 수 있음(2026-07-17, 한국어로
    말해도 되도록 지원). 세 경우 모두 한 번의 호출로 처리 — 순수 영어는 기존처럼 문법 교정,
-   한국어가 섞여 있으면 corrected에 자연스러운 영어 번역을 대신 채워 "이렇게 말해보세요" 용도로 씀. */
-function talkFeedback(persona, userText) {
-  const prompt = "아래는 한국인 영어 학습자가 \"" + persona.name + "\"과의 영어 회화 연습 중 입력한 문장입니다. " +
+   한국어가 섞여 있으면 corrected에 자연스러운 영어 번역을 대신 채워 "이렇게 말해보세요" 용도로 씀.
+   예전엔 이 피드백 호출 하나 + 사용자가 "확인"을 누른 뒤 talkNextLine 호출 하나, 이렇게 매 턴마다
+   Gemini 왕복이 두 번 순차로 걸려서 "기다리는 시간이 너무 길다"는 불만이 있었음(2026-07-18).
+   피드백과 다음 상대 대사를 한 번의 호출로 같이 받아오도록 합쳐서, "확인"을 눌렀을 때는 이미
+   받아둔 대사를 바로 보여주기만 하면 되게 바꿈(대기 1회로 절반 단축) — send()/ackFeedback() 참고. */
+function talkFeedbackAndNext(persona, history, userText) {
+  const histText = history.slice(-8).map(m => {
+    const text = (m.role === "user" && m.feedback && m.feedback.corrected) ? m.feedback.corrected : m.en;
+    return (m.role === "bot" ? "상대: " : "나: ") + text;
+  }).join("\n");
+  const prompt = "역할극으로 진행하는 영어 회화 연습입니다. " + persona.promptDesc +
+    "\n지금까지 대화:\n" + (histText || "(대화 시작 전 — 상대가 먼저 자연스럽게 말을 건넵니다)") +
+    "\n\n아래는 한국인 영어 학습자가 \"" + persona.name + "\"에게 방금 입력한 문장입니다. " +
     "순수 영어일 수도, 순수 한국어일 수도, 한국어와 영어가 섞여 있을 수도 있습니다.\n문장: \"" + userText + "\"" +
-    "\n\n판단 기준:" +
+    "\n\n다음 두 가지를 한 번에 처리하세요." +
+    "\n[1] 이 문장에 대한 피드백 — 판단 기준:" +
     "\n1. 순수 영어이고 문법·자연스러움에 문제가 없으면 ok:true, corrected는 원문 그대로." +
     "\n2. 순수 영어인데 문법이나 자연스러움이 어색하면 ok:false, corrected에 자연스럽게 교정한 영어 문장." +
     "\n3. 한국어 단어가 하나라도 섞여 있으면(전부 한국어 포함) ok:false, corrected에 그 문장 전체 의미를 살려 자연스러운 영어 한 문장으로 번역(이미 영어로 말한 부분은 최대한 그대로 살리고 한국어 부분만 영어로 옮길 것)." +
     "\nnote_ko는 항상 아주 짧은 한국어 코멘트 한 줄(2번은 무엇이 어색했는지, 3번은 간단히 '이렇게 말해보세요' 정도)." +
     "\nuser_ko는 사용자가 입력한 원문 그대로의 뜻을 자연스러운 한국어로 옮긴 것(입력이 순수 한국어였으면 빈 문자열)." +
-    "\n아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요." +
-    '\n{"ok":true 또는 false,"note_ko":"짧은 한국어 코멘트 한 줄","corrected":"교정 또는 번역된 영어 문장","user_ko":"원문 뜻의 한국어 번역"}';
+    "\n[2] 상대 역할의 다음 대사 — 사용자가 위 corrected 문장으로 말했다고 가정하고, 대화에 자연스럽게 이어서 상대가 할 다음 대사를 한두 문장 영어로(bot_en), 그 자연스러운 한국어 번역도(bot_ko)." +
+    "\n\n아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요." +
+    '\n{"ok":true 또는 false,"note_ko":"짧은 한국어 코멘트 한 줄","corrected":"교정 또는 번역된 영어 문장","user_ko":"원문 뜻의 한국어 번역","bot_en":"상대의 다음 영어 대사","bot_ko":"그 대사의 자연스러운 한국어 번역"}';
   return geminiJSON(prompt);
 }
 
@@ -4590,6 +4619,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   const [loadingFb, setLoadingFb] = useState(false);
   const [err, setErr] = useState(null);
   const [failedHist, setFailedHist] = useState(null); // fetchBotLine 실패 시 재시도용으로 기억해두는 history
+  const pendingBotLineRef = useRef(null); // talkFeedbackAndNext가 미리 받아둔 다음 상대 대사 — "확인" 누르면 왕복 없이 바로 표시
   const [collapsedDays, setCollapsedDays] = useState({}); // 날짜 알약 접기/펼치기 — { "2026-7-17": true }
   const [showSummary, setShowSummary] = useState(false);
   const [voiceMode, setVoiceMode] = useState(false);
@@ -4678,18 +4708,34 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   const send = async () => {
     const text = input.trim();
     if (!text || loadingBot || loadingFb || awaitingAck) return;
+    const histBefore = messages; // 이 턴 이전까지의 히스토리 — 다음 상대 대사 프롬프트용
     setMessages(m => [...m, { role: "user", en: text, at: Date.now() }]);
     setInput(""); setLoadingFb(true); setErr(null);
+    pendingBotLineRef.current = null;
     try {
-      const fb = await talkFeedback(persona, text);
+      const r = await talkFeedbackAndNext(persona, histBefore, text);
+      const fb = { ok: r.ok, note_ko: r.note_ko || "", corrected: r.corrected || text, user_ko: r.user_ko || "" };
       setMessages(m => m.map((msg, i) => (i === m.length - 1 ? { ...msg, feedback: fb, ko: fb.user_ko || "" } : msg)));
+      const botEn = (r.bot_en || "").trim();
+      if (botEn) pendingBotLineRef.current = { en: botEn, ko: (r.bot_ko || "").trim() };
     } catch (e) {
       setMessages(m => m.map((msg, i) => (i === m.length - 1 ? { ...msg, feedback: { ok: true, note_ko: "", corrected: text } } : msg)));
     } finally {
       setLoadingFb(false); setAwaitingAck(true);
     }
   };
-  const ackFeedback = () => { setAwaitingAck(false); fetchBotLine(messages); };
+  const ackFeedback = () => {
+    setAwaitingAck(false);
+    const pending = pendingBotLineRef.current;
+    if (pending) {
+      pendingBotLineRef.current = null;
+      const msg = { role: "bot", en: pending.en, ko: pending.ko, at: Date.now() };
+      setMessages(m => [...m, msg]);
+      speakText(msg.en, persona.rate, persona.accent);
+    } else {
+      fetchBotLine(messages); // talkFeedbackAndNext가 대사를 못 받아왔을 때(에러 등)만 예전 방식으로 폴백
+    }
+  };
   const toggleFav = m => { toggleFavSentence(m.en, m.ko || "", persona.name); bump(v => v + 1); };
   const deleteMsg = i => {
     if (!confirm("이 메시지를 삭제할까요?")) return;
@@ -6558,6 +6604,13 @@ function App() {
   const pushWord = w => setStack(s => [...s, w]);
   const popWord = () => setStack(s => (s.length > 1 ? s.slice(0, -1) : s));
   const closeSheet = () => setStack(null);
+
+  // allItems()의 SEED 캐시 + canBlank()의 항목별 캐시를 앱 마운트 직후(첫 페인트 뒤, 사용자가
+  // 아직 아무것도 탭하기 전) 미리 데워둠 — 이 캐시들이 비어있는 상태로 "단어카드 시작"을 탭하면
+  // pickSession()이 그 안에서 처음으로 채우느라 동기 블로킹이 생겨 뒤이은 입력창 focus()가
+  // 늦어짐(2026-07-18). freshPool(0)이 내부에서 canBlank를 SEED 전체에 대해 한 번씩 호출하므로
+  // 이거 한 번으로 두 캐시가 다 데워짐(부작용 없는 순수 조회라 RECENT_KEYS 등 상태는 안 건드림).
+  useEffect(() => { freshPool(0); }, []);
 
   useEffect(() => {
     if (!stack) return;
