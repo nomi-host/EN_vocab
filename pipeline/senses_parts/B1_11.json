@@ -3001,5 +3001,891 @@
         }
       ]
     }
+  ],
+  "responsible": [
+    {
+      "cue": "일·역할에 대해",
+      "ko": "책임이 있는, 책임을 진",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "having a duty to deal with or take care of something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She is responsible for the whole project.",
+          "ko": "그녀는 그 프로젝트 전체를 책임지고 있다."
+        }
+      ]
+    },
+    {
+      "cue": "사고·결과의 원인이",
+      "ko": "원인이 되는",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "being the cause of something, especially something bad",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The storm was responsible for the power outage.",
+          "ko": "그 폭풍이 정전의 원인이었다."
+        }
+      ]
+    }
+  ],
+  "rest": [
+    {
+      "cue": "일을 멈추고 얻는",
+      "ko": "휴식",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "a period of relaxing or sleeping after activity",
+      "syn": [],
+      "ex": [
+        {
+          "en": "You need some rest after that long trip.",
+          "ko": "그 긴 여행 후에는 좀 쉬어야 해."
+        }
+      ]
+    },
+    {
+      "cue": "몸을 편히 하려고",
+      "ko": "쉬다, 휴식을 취하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "A1",
+      "en": "stop doing something in order to relax or sleep",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Let's rest here for a few minutes.",
+          "ko": "여기서 잠깐 쉬자."
+        }
+      ]
+    },
+    {
+      "cue": "전체 중 남은 부분",
+      "ko": "나머지",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "A2",
+      "en": "the part of something that is left after the rest has been dealt with",
+      "syn": [
+        "remainder",
+        "balance"
+      ],
+      "ex": [
+        {
+          "en": "I'll read the rest of the book tonight.",
+          "ko": "나머지 책은 오늘 밤에 읽을 거야."
+        }
+      ]
+    }
+  ],
+  "restore": [
+    {
+      "cue": "낡은 건물·그림을 원래대로",
+      "ko": "복원하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "return something, such as an old building or artwork, to its original condition",
+      "syn": [],
+      "ex": [
+        {
+          "en": "They restored the old castle to its former glory.",
+          "ko": "그들은 그 오래된 성을 예전 모습으로 복원했다."
+        }
+      ]
+    },
+    {
+      "cue": "질서·건강·신뢰 등을 다시",
+      "ko": "회복시키다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "bring back a situation, feeling, or condition that existed before",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The new policy restored public confidence in the government.",
+          "ko": "그 새 정책은 정부에 대한 국민의 신뢰를 회복시켰다."
+        }
+      ]
+    }
+  ],
+  "restrict": [
+    {
+      "cue": "행동·양·범위를",
+      "ko": "제한하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "keep something within a limited amount, range, or extent",
+      "syn": [
+        "limit",
+        "curb"
+      ],
+      "ex": [
+        {
+          "en": "The doctor restricted his diet because of his blood pressure.",
+          "ko": "의사는 그의 혈압 때문에 식단을 제한했다."
+        }
+      ]
+    }
+  ],
+  "retail": [
+    {
+      "cue": "소비자에게 직접 파는 방식",
+      "ko": "소매",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the selling of goods directly to customers, usually in shops, as opposed to in bulk",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The company makes most of its profit from retail, not wholesale.",
+          "ko": "그 회사는 도매가 아니라 소매에서 대부분의 이익을 낸다."
+        }
+      ]
+    },
+    {
+      "cue": "물건을 소매가로",
+      "ko": "소매로 팔다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "sell goods directly to consumers, often at a stated price",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The jacket retails for about eighty dollars.",
+          "ko": "그 재킷은 소매가로 약 80달러에 팔린다."
+        }
+      ]
+    }
+  ],
+  "retain": [
+    {
+      "cue": "권리·자격 등을 잃지 않고",
+      "ko": "유지하다, 보유하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "continue to have or keep something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She managed to retain her title as champion.",
+          "ko": "그녀는 챔피언 타이틀을 지켜냈다."
+        }
+      ]
+    },
+    {
+      "cue": "정보를 기억 속에",
+      "ko": "기억하다, 기억해 두다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "keep information in your memory",
+      "syn": [],
+      "ex": [
+        {
+          "en": "It's hard to retain so many new words at once.",
+          "ko": "한꺼번에 그렇게 많은 새 단어를 기억하기는 어렵다."
+        }
+      ]
+    }
+  ],
+  "retell": [
+    {
+      "cue": "이야기·사건을 다시",
+      "ko": "다시 이야기하다, 재구성하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "tell a story again, often in a different way",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The movie retells the story of Cinderella in a modern setting.",
+          "ko": "그 영화는 신데렐라 이야기를 현대적 배경으로 다시 들려준다."
+        }
+      ]
+    }
+  ],
+  "retrospect": [
+    {
+      "cue": "지난 일을 지금 돌이켜 볼 때",
+      "ko": "회고, 돌이켜봄",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a look back at or review of past events, often used in the phrase 'in retrospect'",
+      "syn": [],
+      "ex": [
+        {
+          "en": "In retrospect, quitting that job was the right decision.",
+          "ko": "돌이켜보면, 그 일을 그만둔 것은 옳은 결정이었다."
+        }
+      ]
+    }
+  ],
+  "reunification": [
+    {
+      "cue": "분단된 나라·조직이 다시 하나로",
+      "ko": "재통일",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the process of bringing separated parts of a country or group back together as one",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Many still hope for the reunification of the two Koreas.",
+          "ko": "많은 사람들이 여전히 남북한의 재통일을 바란다."
+        }
+      ]
+    }
+  ],
+  "reunify": [
+    {
+      "cue": "분단된 나라를 다시 하나로",
+      "ko": "재통일하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "bring separated parts of a country or group back together as one",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The two nations worked for decades to reunify.",
+          "ko": "그 두 나라는 재통일을 위해 수십 년간 노력했다."
+        }
+      ]
+    }
+  ],
+  "revise": [
+    {
+      "cue": "글·계획을 고쳐서",
+      "ko": "수정하다, 개정하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "change something, especially a piece of writing or a plan, in order to improve or correct it",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She revised her essay before submitting it.",
+          "ko": "그녀는 에세이를 제출하기 전에 수정했다."
+        }
+      ]
+    },
+    {
+      "cue": "시험 준비로 배운 것을 다시 (영국식)",
+      "ko": "복습하다 (영국식)",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "study material you have already learned again, especially to prepare for an exam (British English)",
+      "syn": [],
+      "ex": [
+        {
+          "en": "I need to revise for my chemistry exam this weekend.",
+          "ko": "이번 주말에 화학 시험 공부(복습)를 해야 해."
+        }
+      ]
+    }
+  ],
+  "revision": [
+    {
+      "cue": "글·계획을 고친 것",
+      "ko": "수정, 개정",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a change made to something, especially a text or plan, to improve or correct it",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The final revision of the report was submitted on Friday.",
+          "ko": "보고서의 최종 수정본이 금요일에 제출되었다."
+        }
+      ]
+    },
+    {
+      "cue": "시험 준비로 배운 내용을 다시 봄 (영국식)",
+      "ko": "복습 (영국식)",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "the process of studying something again to prepare for an exam (British English)",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She spent the weekend doing revision for her exams.",
+          "ko": "그녀는 주말 내내 시험 복습을 하며 보냈다."
+        }
+      ]
+    }
+  ],
+  "reward": [
+    {
+      "cue": "노력·행동에 대해 답례로",
+      "ko": "보상하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "give something to someone in return for good behavior, hard work, or achievement",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The company rewarded her hard work with a promotion.",
+          "ko": "그 회사는 그녀의 노고를 승진으로 보상했다."
+        }
+      ]
+    },
+    {
+      "cue": "잘한 일에 대한 대가",
+      "ko": "보상, 상",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "something given in return for good behavior, hard work, or achievement",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Getting the job was the reward for months of preparation.",
+          "ko": "그 일자리를 얻은 것은 몇 달간의 준비에 대한 보상이었다."
+        }
+      ]
+    }
+  ],
+  "rewrite": [
+    {
+      "cue": "글을 고쳐서 다시",
+      "ko": "다시 쓰다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "write something again in a different or better way",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He rewrote the introduction to make it clearer.",
+          "ko": "그는 서론을 더 명확하게 만들려고 다시 썼다."
+        }
+      ]
+    }
+  ],
+  "rid": [
+    {
+      "cue": "원치 않는 것을 없애다 (주로 get rid of)",
+      "ko": "없애다, 제거하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "free someone or something of an unwanted thing, especially in the phrase 'get rid of'",
+      "syn": [],
+      "ex": [
+        {
+          "en": "We finally got rid of the old furniture.",
+          "ko": "우리는 마침내 낡은 가구를 없앴다."
+        }
+      ]
+    }
+  ],
+  "riddle": [
+    {
+      "cue": "답을 추리해야 하는 질문",
+      "ko": "수수께끼",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a puzzling question or statement that has a clever or funny answer",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She asked me a riddle about a clock.",
+          "ko": "그녀는 나에게 시계에 관한 수수께끼를 냈다."
+        }
+      ]
+    },
+    {
+      "cue": "이해하기 어려운 문제·존재",
+      "ko": "난제, 수수께끼 같은 것",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "something that is very difficult to understand or explain",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The disappearance remains a riddle to this day.",
+          "ko": "그 실종 사건은 오늘날까지도 수수께끼로 남아 있다."
+        }
+      ]
+    }
+  ],
+  "ridiculous": [
+    {
+      "cue": "말도 안 되게 이상하거나 웃긴",
+      "ko": "터무니없는, 우스꽝스러운",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "deserving to be laughed at because it is very silly or unreasonable",
+      "syn": [
+        "absurd",
+        "silly"
+      ],
+      "ex": [
+        {
+          "en": "It's ridiculous to expect me to finish this in one day.",
+          "ko": "이걸 하루 만에 끝내라는 건 터무니없다."
+        }
+      ]
+    }
+  ],
+  "ripe": [
+    {
+      "cue": "과일·곡물이 다 자라 먹을 만큼",
+      "ko": "익은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "(of fruit or crops) fully grown and ready to eat",
+      "syn": [],
+      "ex": [
+        {
+          "en": "These bananas are perfectly ripe.",
+          "ko": "이 바나나들은 딱 알맞게 익었다."
+        }
+      ]
+    },
+    {
+      "cue": "때·시기가 무르익어",
+      "ko": "무르익은, ~하기에 알맞은",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "at the right stage or time for something to happen",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The moment seemed ripe for a change in strategy.",
+          "ko": "전략을 바꾸기에 딱 알맞은 시점인 것 같았다."
+        }
+      ]
+    }
+  ],
+  "rise": [
+    {
+      "cue": "위로 올라가다",
+      "ko": "오르다, 상승하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "move upward",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Smoke rose from the chimney.",
+          "ko": "굴뚝에서 연기가 피어올랐다."
+        }
+      ]
+    },
+    {
+      "cue": "가격·수치가 늘어",
+      "ko": "(가격·수치가) 오르다, 증가하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "increase in amount, number, or value",
+      "syn": [],
+      "ex": [
+        {
+          "en": "House prices have risen sharply this year.",
+          "ko": "올해 집값이 급격히 올랐다."
+        }
+      ]
+    },
+    {
+      "cue": "눕거나 앉아 있다가 몸을 일으켜",
+      "ko": "일어서다, 일어나다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "A2",
+      "en": "get up from a sitting, kneeling, or lying position",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He rose from his chair to greet the guests.",
+          "ko": "그는 손님들을 맞이하러 의자에서 일어났다."
+        }
+      ]
+    },
+    {
+      "cue": "가격·급여 등의 증가분",
+      "ko": "상승, 인상",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B1",
+      "en": "an increase in amount, number, or level",
+      "syn": [
+        "increase"
+      ],
+      "ex": [
+        {
+          "en": "There was a sudden rise in temperature.",
+          "ko": "기온이 갑자기 상승했다."
+        }
+      ]
+    }
+  ],
+  "risk": [
+    {
+      "cue": "손해·위험할 가능성을 알면서도",
+      "ko": "위험을 무릅쓰다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "do something even though it might result in something bad or dangerous",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She risked her career by speaking out against the policy.",
+          "ko": "그녀는 그 정책에 반대 목소리를 내면서 자신의 경력을 위험에 빠뜨렸다."
+        }
+      ]
+    },
+    {
+      "cue": "안 좋은 일이 일어날 가능성",
+      "ko": "위험",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "the possibility that something bad or dangerous might happen",
+      "syn": [
+        "hazard",
+        "danger"
+      ],
+      "ex": [
+        {
+          "en": "Smoking increases the risk of heart disease.",
+          "ko": "흡연은 심장병 위험을 높인다."
+        }
+      ]
+    }
+  ],
+  "roadside": [
+    {
+      "cue": "도로 옆의 공간",
+      "ko": "길가",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the strip of land along the edge of a road",
+      "syn": [],
+      "ex": [
+        {
+          "en": "They stopped to rest at the roadside.",
+          "ko": "그들은 길가에 멈춰 쉬었다."
+        }
+      ]
+    }
+  ],
+  "robot": [
+    {
+      "cue": "사람 대신 일하는 기계",
+      "ko": "로봇",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "a machine that can perform tasks automatically, often controlled by a computer",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The factory uses robots to assemble cars.",
+          "ko": "그 공장은 자동차 조립에 로봇을 사용한다."
+        }
+      ]
+    }
+  ],
+  "rolling": [
+    {
+      "cue": "바퀴·공이 계속 굴러가는",
+      "ko": "구르는, 굴러가는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "moving by turning over and over, like a wheel or a ball",
+      "syn": [],
+      "ex": [
+        {
+          "en": "A rolling stone gathers no moss.",
+          "ko": "구르는 돌에는 이끼가 끼지 않는다."
+        }
+      ]
+    },
+    {
+      "cue": "언덕이 완만하게 이어지는",
+      "ko": "완만하게 물결치는 (언덕 등이)",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "(of land) rising and falling gently in a series of smooth slopes",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The rolling hills stretched for miles.",
+          "ko": "완만하게 물결치는 언덕이 몇 마일이나 이어졌다."
+        }
+      ]
+    }
+  ],
+  "rotten": [
+    {
+      "cue": "음식·나무가 부패해서",
+      "ko": "썩은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "decayed and no longer fit to eat or use",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The apples at the bottom of the bag were rotten.",
+          "ko": "가방 맨 아래에 있던 사과들은 썩어 있었다."
+        }
+      ]
+    },
+    {
+      "cue": "상황·기분이 아주 안 좋은 (구어)",
+      "ko": "형편없는, 끔찍한",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "very bad or unpleasant (informal)",
+      "syn": [],
+      "ex": [
+        {
+          "en": "I've had a rotten day at work.",
+          "ko": "오늘 회사에서 끔찍한 하루를 보냈다."
+        }
+      ]
+    }
+  ],
+  "rough": [
+    {
+      "cue": "표면이 매끄럽지 않은",
+      "ko": "거친",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "having an uneven or bumpy surface; not smooth",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The rough path made walking difficult.",
+          "ko": "그 거친 길은 걷기 힘들게 만들었다."
+        }
+      ]
+    },
+    {
+      "cue": "말·행동이 부드럽지 않고",
+      "ko": "거친, 난폭한",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "not gentle or careful in behavior; harsh",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He can be a bit rough with his younger brother.",
+          "ko": "그는 남동생에게 좀 거칠게 대할 때가 있다."
+        }
+      ]
+    },
+    {
+      "cue": "정확하지 않은 대략적인",
+      "ko": "대략적인",
+      "pos": "형용사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "not exact or detailed; approximate",
+      "syn": [
+        "approximate"
+      ],
+      "ex": [
+        {
+          "en": "Can you give me a rough estimate of the cost?",
+          "ko": "비용에 대해 대략적인 견적을 줄 수 있어?"
+        }
+      ]
+    },
+    {
+      "cue": "상황·시기가 힘든",
+      "ko": "힘든, 어려운",
+      "pos": "형용사",
+      "lv": 4,
+      "cefr": "B1",
+      "en": "difficult or unpleasant to deal with",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She's been through a rough time lately.",
+          "ko": "그녀는 요즘 힘든 시기를 겪고 있다."
+        }
+      ]
+    }
+  ],
+  "routine": [
+    {
+      "cue": "매일 반복하는 일과",
+      "ko": "일상, 루틴",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the usual series of things you do at a particular time",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Exercising every morning is part of his daily routine.",
+          "ko": "매일 아침 운동하는 것은 그의 일상의 일부다."
+        }
+      ]
+    },
+    {
+      "cue": "늘 그렇듯 특별할 것 없는",
+      "ko": "일상적인, 정례적인",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "done regularly as a normal part of a process; not unusual or special",
+      "syn": [],
+      "ex": [
+        {
+          "en": "It was just a routine check-up at the doctor's.",
+          "ko": "그건 그냥 병원에서의 정기 검진일 뿐이었다."
+        }
+      ]
+    }
+  ],
+  "rubber": [
+    {
+      "cue": "탄력 있는 소재",
+      "ko": "고무",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "a strong, elastic material used to make tires, shoes, and other products",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The soles of these shoes are made of rubber.",
+          "ko": "이 신발의 밑창은 고무로 만들어졌다."
+        }
+      ]
+    },
+    {
+      "cue": "연필 자국을 지우는 도구 (영국식)",
+      "ko": "지우개 (영국식)",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "a small piece of rubber used to remove pencil marks (British English)",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Can I borrow your rubber to fix this mistake?",
+          "ko": "이 실수 고치게 지우개 좀 빌려줄래?"
+        }
+      ]
+    }
+  ],
+  "rubbish": [
+    {
+      "cue": "버려야 할 것들 (영국식)",
+      "ko": "쓰레기 (영국식)",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "waste material that is thrown away (British English)",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Please put the rubbish in the bin.",
+          "ko": "쓰레기는 쓰레기통에 넣어 주세요."
+        }
+      ]
+    },
+    {
+      "cue": "말도 안 되는 이야기",
+      "ko": "허튼소리, 말도 안 되는 것",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "nonsense; something that is not true or sensible",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Don't talk rubbish — of course I remember your birthday.",
+          "ko": "허튼소리 하지 마, 당연히 네 생일 기억하지."
+        }
+      ]
+    }
+  ],
+  "rudely": [
+    {
+      "cue": "예의 없이 행동해서",
+      "ko": "무례하게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in a way that is not polite",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He rudely interrupted her while she was speaking.",
+          "ko": "그는 그녀가 말하는 도중에 무례하게 끼어들었다."
+        }
+      ]
+    }
+  ],
+  "runaway": [
+    {
+      "cue": "집·시설에서 도망친 사람",
+      "ko": "가출자, 도망자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a person, especially a young one, who has left home or an institution without permission",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The shelter helps runaways find a safe place to stay.",
+          "ko": "그 보호소는 가출 청소년들이 안전한 곳을 찾도록 돕는다."
+        }
+      ]
+    },
+    {
+      "cue": "통제 불능으로 치닫는",
+      "ko": "통제 불능의, 걷잡을 수 없는",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "increasing or moving quickly in a way that cannot be controlled",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The government struggled to deal with runaway inflation.",
+          "ko": "정부는 걷잡을 수 없는 인플레이션에 대처하느라 애를 먹었다."
+        }
+      ]
+    }
   ]
 }
