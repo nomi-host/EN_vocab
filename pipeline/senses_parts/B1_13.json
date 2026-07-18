@@ -3255,5 +3255,761 @@
     }
    ]
   }
+ ],
+ "theft": [
+  {
+   "cue": "남의 물건을 몰래 훔치는 행위",
+   "ko": "절도",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "the crime of stealing something",
+   "syn": [
+    "stealing"
+   ],
+   "ex": [
+    {
+     "en": "He was arrested for theft.",
+     "ko": "그는 절도 혐의로 체포되었다."
+    }
+   ]
+  }
+ ],
+ "theory": [
+  {
+   "cue": "과학적으로 입증된 설명",
+   "ko": "이론",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "an idea or set of ideas that explains facts or events",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Darwin's theory of evolution changed science.",
+     "ko": "다윈의 진화론은 과학을 변화시켰다."
+    }
+   ]
+  },
+  {
+   "cue": "확실하지 않은 개인적 추측",
+   "ko": "추측, 가설",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "an idea that has not been proven but might explain something",
+   "syn": [
+    "hypothesis"
+   ],
+   "ex": [
+    {
+     "en": "I have a theory about why he left early.",
+     "ko": "나는 그가 왜 일찍 떠났는지에 대한 추측이 있다."
+    }
+   ]
+  }
+ ],
+ "thirst": [
+  {
+   "cue": "물을 마시고 싶은 느낌",
+   "ko": "갈증, 목마름",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "the feeling of wanting or needing to drink",
+   "syn": [],
+   "ex": [
+    {
+     "en": "After the run, she felt an intense thirst.",
+     "ko": "달리기 후 그녀는 심한 갈증을 느꼈다."
+    }
+   ]
+  },
+  {
+   "cue": "무언가를 간절히 원하는 마음",
+   "ko": "갈망, 열망",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "B2",
+   "en": "a strong desire for something",
+   "syn": [
+    "craving"
+   ],
+   "ex": [
+    {
+     "en": "He has a thirst for knowledge.",
+     "ko": "그는 지식에 대한 갈망이 있다."
+    }
+   ]
+  }
+ ],
+ "thorough": [
+  {
+   "cue": "세세한 부분까지 꼼꼼한",
+   "ko": "철저한, 꼼꼼한",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "done carefully and completely, with attention to every detail",
+   "syn": [
+    "meticulous"
+   ],
+   "ex": [
+    {
+     "en": "She did a thorough check of the report before sending it.",
+     "ko": "그녀는 보고서를 보내기 전에 철저히 확인했다."
+    }
+   ]
+  }
+ ],
+ "threat": [
+  {
+   "cue": "위험을 일으킬 수 있는 것",
+   "ko": "위협, 위험 요소",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "something that could cause harm or danger",
+   "syn": [
+    "danger"
+   ],
+   "ex": [
+    {
+     "en": "Climate change is a major threat to the planet.",
+     "ko": "기후 변화는 지구에 큰 위협이다."
+    }
+   ]
+  },
+  {
+   "cue": "해치겠다는 말·경고",
+   "ko": "협박, 위협의 말",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "a statement that you will hurt someone if they don't do what you want",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He received a threat over the phone.",
+     "ko": "그는 전화로 협박을 받았다."
+    }
+   ]
+  }
+ ],
+ "threatening": [
+  {
+   "cue": "해를 끼칠 것처럼 보이는",
+   "ko": "위협적인",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "making you feel that something bad might happen",
+   "syn": [
+    "menacing"
+   ],
+   "ex": [
+    {
+     "en": "He used a threatening tone during the argument.",
+     "ko": "그는 말싸움 중에 위협적인 어조를 사용했다."
+    }
+   ]
+  }
+ ],
+ "thriller": [
+  {
+   "cue": "긴장감 넘치는 소설·영화",
+   "ko": "스릴러",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "a book, movie, or play with an exciting and suspenseful story",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She loves reading crime thrillers.",
+     "ko": "그녀는 범죄 스릴러 읽는 것을 좋아한다."
+    }
+   ]
+  }
+ ],
+ "throughout": [
+  {
+   "cue": "어떤 기간 동안 계속",
+   "ko": "~ 내내",
+   "pos": "전치사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "during the whole of a period of time",
+   "syn": [],
+   "ex": [
+    {
+     "en": "It rained throughout the weekend.",
+     "ko": "주말 내내 비가 왔다."
+    }
+   ]
+  },
+  {
+   "cue": "어떤 장소 전체에",
+   "ko": "도처에, 전체에 걸쳐",
+   "pos": "전치사",
+   "lv": 2,
+   "cefr": "B1",
+   "en": "in every part of a place",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The news spread throughout the country.",
+     "ko": "그 소식은 나라 전역에 퍼졌다."
+    }
+   ]
+  }
+ ],
+ "thumb": [
+  {
+   "cue": "손의 가장 굵은 손가락",
+   "ko": "엄지손가락",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "the short thick finger on the side of your hand",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He hurt his thumb while closing the door.",
+     "ko": "그는 문을 닫다가 엄지손가락을 다쳤다."
+    }
+   ]
+  }
+ ],
+ "thump": [
+  {
+   "cue": "무겁게 부딪히거나 두드리다",
+   "ko": "쿵 치다, 쾅 부딪히다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "hit something heavily, making a dull sound",
+   "syn": [
+    "pound"
+   ],
+   "ex": [
+    {
+     "en": "He thumped the table in frustration.",
+     "ko": "그는 답답한 마음에 탁자를 쿵 쳤다."
+    }
+   ]
+  },
+  {
+   "cue": "둔탁하게 울리는 소리",
+   "ko": "쿵 하는 소리",
+   "pos": "명사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "a dull heavy sound made by something hitting a surface",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She heard a loud thump from upstairs.",
+     "ko": "그녀는 위층에서 쿵 하는 큰 소리를 들었다."
+    }
+   ]
+  }
+ ],
+ "thunder": [
+  {
+   "cue": "번개 뒤에 나는 큰 소리",
+   "ko": "천둥",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "the loud noise that follows a flash of lightning in a storm",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The thunder scared the little kids.",
+     "ko": "천둥소리는 어린 아이들을 놀라게 했다."
+    }
+   ]
+  },
+  {
+   "cue": "천둥이 치다·큰 소리를 내다",
+   "ko": "천둥이 치다, 우르릉거리다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "make a loud deep rumbling sound like thunder",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The sky thundered as the storm approached.",
+     "ko": "폭풍이 다가오면서 하늘에서 천둥이 쳤다."
+    }
+   ]
+  }
+ ],
+ "thunderous": [
+  {
+   "cue": "소리가 매우 크고 우렁찬",
+   "ko": "천둥 같은, 우렁찬",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "extremely loud, like thunder",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The crowd gave a thunderous applause.",
+     "ko": "관중들은 우렁찬 박수를 보냈다."
+    }
+   ]
+  }
+ ],
+ "thus": [
+  {
+   "cue": "논리적 결론을 이끌 때",
+   "ko": "따라서, 그러므로",
+   "pos": "부사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "as a result of this; therefore",
+   "syn": [
+    "therefore"
+   ],
+   "ex": [
+    {
+     "en": "The bridge was closed, thus causing traffic delays.",
+     "ko": "다리가 폐쇄되어 교통 지연이 발생했다."
+    }
+   ]
+  }
+ ],
+ "tick": [
+  {
+   "cue": "맞다는 표시로 그리는 부호",
+   "ko": "체크 표시",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a small mark used to show that something is correct or has been done",
+   "syn": [
+    "check mark"
+   ],
+   "ex": [
+    {
+     "en": "Put a tick next to the tasks you've finished.",
+     "ko": "끝낸 일 옆에 체크 표시를 해라."
+    }
+   ]
+  },
+  {
+   "cue": "시계가 소리를 내다",
+   "ko": "(시계가) 째깍거리다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "make a regular clicking sound like a clock",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The clock ticked loudly in the quiet room.",
+     "ko": "조용한 방 안에서 시계가 크게 째깍거렸다."
+    }
+   ]
+  }
+ ],
+ "tide": [
+  {
+   "cue": "바닷물이 오르내리는 현상",
+   "ko": "조수, 밀물과 썰물",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "the regular rise and fall of the sea's level",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The tide was coming in quickly.",
+     "ko": "밀물이 빠르게 밀려오고 있었다."
+    }
+   ]
+  }
+ ],
+ "tighten": [
+  {
+   "cue": "나사·끈 등을 더 단단히",
+   "ko": "조이다, 단단히 하다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "make something tighter",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He tightened the bolts with a wrench.",
+     "ko": "그는 렌치로 볼트를 조였다."
+    }
+   ]
+  },
+  {
+   "cue": "규칙·통제를 강화하다",
+   "ko": "(규제 등을) 강화하다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B2",
+   "en": "make a rule, control, or restriction stricter",
+   "syn": [
+    "strengthen"
+   ],
+   "ex": [
+    {
+     "en": "The airport tightened its security after the incident.",
+     "ko": "그 사건 이후 공항은 보안을 강화했다."
+    }
+   ]
+  }
+ ],
+ "tightly": [
+  {
+   "cue": "세게 꽉 조인 상태로",
+   "ko": "단단히, 꽉",
+   "pos": "부사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "in a firm, tight way",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She held the baby tightly in her arms.",
+     "ko": "그녀는 아기를 팔에 꽉 안았다."
+    }
+   ]
+  }
+ ],
+ "tile": [
+  {
+   "cue": "바닥·벽에 붙이는 얇은 판",
+   "ko": "타일",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a thin flat piece of material used to cover floors, walls, or roofs",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The bathroom floor is covered with white tiles.",
+     "ko": "욕실 바닥은 흰색 타일로 덮여 있다."
+    }
+   ]
+  }
+ ],
+ "timely": [
+  {
+   "cue": "적절한 때에 일어난",
+   "ko": "시기적절한",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "happening at exactly the right time",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Her timely advice saved the project.",
+     "ko": "그녀의 시기적절한 조언이 그 프로젝트를 살렸다."
+    }
+   ]
+  }
+ ],
+ "tin": [
+  {
+   "cue": "음식을 담는 금속 용기",
+   "ko": "깡통, 통조림 캔",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a metal container used to keep food or other things",
+   "syn": [
+    "can"
+   ],
+   "ex": [
+    {
+     "en": "She opened a tin of beans for dinner.",
+     "ko": "그녀는 저녁으로 콩 통조림 캔을 땄다."
+    }
+   ]
+  },
+  {
+   "cue": "은백색의 부드러운 금속",
+   "ko": "주석 (금속)",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "B2",
+   "en": "a soft silvery-white metal",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Tin is often mixed with other metals to make alloys.",
+     "ko": "주석은 종종 다른 금속과 섞여 합금을 만드는 데 쓰인다."
+    }
+   ]
+  }
+ ],
+ "tiny": [
+  {
+   "cue": "크기가 매우 작은",
+   "ko": "아주 작은",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "extremely small",
+   "syn": [
+    "minuscule"
+   ],
+   "ex": [
+    {
+     "en": "The apartment has a tiny kitchen.",
+     "ko": "그 아파트는 부엌이 아주 작다."
+    }
+   ]
+  }
+ ],
+ "tire": [
+  {
+   "cue": "오래 해서 지치다",
+   "ko": "지치다, 피곤해지다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "become tired or make someone tired",
+   "syn": [
+    "exhaust"
+   ],
+   "ex": [
+    {
+     "en": "Long meetings tire me out quickly.",
+     "ko": "긴 회의는 나를 금방 지치게 한다."
+    }
+   ]
+  },
+  {
+   "cue": "자동차 바퀴에 끼우는 고무",
+   "ko": "타이어",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "a rubber covering around a wheel",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He checked the tire pressure before the trip.",
+     "ko": "그는 여행 전에 타이어 공기압을 확인했다."
+    }
+   ]
+  }
+ ],
+ "tiring": [
+  {
+   "cue": "피곤함을 느끼게 만드는",
+   "ko": "피곤하게 하는, 지치게 하는",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "making you feel tired",
+   "syn": [
+    "exhausting"
+   ],
+   "ex": [
+    {
+     "en": "It was a long and tiring day at work.",
+     "ko": "직장에서 길고 피곤한 하루였다."
+    }
+   ]
+  }
+ ],
+ "tissue": [
+  {
+   "cue": "코를 풀거나 닦는 종이",
+   "ko": "휴지, 티슈",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "a soft thin piece of paper used for cleaning your nose or face",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She grabbed a tissue to wipe her tears.",
+     "ko": "그녀는 눈물을 닦으려고 휴지를 집었다."
+    }
+   ]
+  },
+  {
+   "cue": "몸을 이루는 세포 집합",
+   "ko": "(인체) 조직",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "B2",
+   "en": "a group of similar cells that form a part of a living body",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Muscle tissue helps the body move.",
+     "ko": "근육 조직은 몸이 움직이는 것을 돕는다."
+    }
+   ]
+  }
+ ],
+ "tobacco": [
+  {
+   "cue": "담배를 만드는 식물 잎",
+   "ko": "담배 (잎, 원료)",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "the dried leaves used to make cigarettes",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Farmers in the region grow tobacco.",
+     "ko": "그 지역 농부들은 담배를 재배한다."
+    }
+   ]
+  }
+ ],
+ "tongue": [
+  {
+   "cue": "입안에서 맛을 느끼는 기관",
+   "ko": "혀",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "the soft movable part inside your mouth used for tasting and speaking",
+   "syn": [],
+   "ex": [
+    {
+     "en": "She burned her tongue on the hot soup.",
+     "ko": "그녀는 뜨거운 수프에 혀를 데었다."
+    }
+   ]
+  },
+  {
+   "cue": "사람들이 쓰는 언어",
+   "ko": "언어",
+   "pos": "명사",
+   "lv": 5,
+   "cefr": "B2",
+   "en": "a language spoken by a group of people",
+   "syn": [
+    "language"
+   ],
+   "ex": [
+    {
+     "en": "English is not her mother tongue.",
+     "ko": "영어는 그녀의 모국어가 아니다."
+    }
+   ]
+  }
+ ],
+ "toothpaste": [
+  {
+   "cue": "이를 닦을 때 쓰는 것",
+   "ko": "치약",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "a substance used with a toothbrush to clean your teeth",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Don't forget to buy toothpaste at the store.",
+     "ko": "가게에서 치약 사는 거 잊지 마."
+    }
+   ]
+  }
+ ],
+ "tornado": [
+  {
+   "cue": "강력하게 회전하는 폭풍",
+   "ko": "토네이도, 회오리바람",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "a violent storm with strong spinning winds shaped like a funnel",
+   "syn": [],
+   "ex": [
+    {
+     "en": "The tornado destroyed several houses in the town.",
+     "ko": "그 토네이도는 마을의 여러 집을 파괴했다."
+    }
+   ]
+  }
+ ],
+ "toss": [
+  {
+   "cue": "가볍게 휙 던지다",
+   "ko": "던지다, 휙 던지다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "B1",
+   "en": "throw something lightly or carelessly",
+   "syn": [
+    "throw"
+   ],
+   "ex": [
+    {
+     "en": "He tossed the ball to his friend.",
+     "ko": "그는 친구에게 공을 던졌다."
+    }
+   ]
+  },
+  {
+   "cue": "동전을 던져 앞뒤를 정하다",
+   "ko": "동전을 던지다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "throw a coin in the air to decide something by chance",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Let's toss a coin to decide who goes first.",
+     "ko": "누가 먼저 할지 동전 던지기로 정하자."
+    }
+   ]
+  }
+ ],
+ "total": [
+  {
+   "cue": "전체를 다 합한",
+   "ko": "총, 전체의",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "A2",
+   "en": "complete; including everything",
+   "syn": [
+    "overall"
+   ],
+   "ex": [
+    {
+     "en": "The total cost of the trip was $500.",
+     "ko": "그 여행의 총 비용은 500달러였다."
+    }
+   ]
+  },
+  {
+   "cue": "모두 더한 값",
+   "ko": "합계, 총액",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A2",
+   "en": "the whole amount you get by adding numbers together",
+   "syn": [
+    "sum"
+   ],
+   "ex": [
+    {
+     "en": "Add up these numbers to get the total.",
+     "ko": "이 숫자들을 더해서 합계를 구해라."
+    }
+   ]
+  }
  ]
 }
