@@ -58,5 +58,59 @@
     "name_kr": "독립분사구문",
     "desc_kr": "분사구문의 의미상 주어가 주절의 주어와 다를 때는 생략하지 않고 분사 바로 앞에 그대로 남겨 두는데, 이것이 독립분사구문이다. 기본 분사구문과 형태는 비슷하지만 분사 앞에 별도의 주어(명사나 대명사)가 붙어 있다는 점에서 한눈에 구별된다. 이 주어를 빠뜨리면 문법적으로 누가 그 동작을 하는지 불분명해지므로, 주절과 주어가 다른 상황에서는 반드시 명시해야 한다.",
     "example": { "en": "The weather being nice, we decided to go on a picnic.", "ko": "날씨가 좋아서, 우리는 소풍을 가기로 했다." }
+  },
+  "participle-with-construction": {
+    "category": "분사·분사구문",
+    "name_kr": "with + 분사구문",
+    "desc_kr": "'with + 명사 + 분사(또는 형용사·전치사구)' 형태로, 주절의 동작이 일어나는 동안 동시에 벌어지는 부수적인 상황이나 자세를 덧붙일 때 쓴다. 명사가 분사가 나타내는 동작을 스스로 하고 있으면 현재분사를, 그 명사가 동작을 당하는 쪽이면 과거분사를 골라 쓴다. 독립분사구문과 구조는 비슷해 보이지만 with가 붙어 '그런 상태를 곁들인 채로'라는 배경 묘사에 가깝고, 문장 앞이 아니라 주로 문장 뒤에 붙는다는 차이가 있다.",
+    "example": { "en": "He was reading with his legs crossed.", "ko": "그는 다리를 꼰 채로 책을 읽고 있었다." }
+  },
+  "participle-perfect": {
+    "category": "분사·분사구문",
+    "name_kr": "완료형 분사구문(Having p.p.)",
+    "desc_kr": "분사구문의 동작이 주절의 동작보다 먼저 일어났음을 분명히 밝히고 싶을 때 'Having + 과거분사' 형태의 완료형 분사구문을 쓴다. 기본 분사구문(-ing)은 두 동작의 시간차가 뚜렷하지 않거나 거의 동시에 일어난 일에 쓰는 반면, having p.p.는 먼저 끝난 일이 원인이나 배경이 되어 다음 동작으로 이어진다는 시간 순서를 명확히 드러낸다. 수동의 의미까지 더하고 싶으면 Having been p.p. 형태로 쓴다.",
+    "example": { "en": "Having finished her homework, she went out to play.", "ko": "숙제를 끝낸 뒤에, 그녀는 놀러 나갔다." }
+  },
+  "gerund-vs-infinitive-meaning-change": {
+    "category": "동명사",
+    "name_kr": "동명사·to부정사 목적어에 따라 뜻이 달라지는 동사",
+    "desc_kr": "remember, forget, try, stop 같은 동사는 뒤에 동명사가 오는지 to부정사가 오는지에 따라 뜻이 크게 달라진다. 동명사는 '이미 일어났거나 하고 있던 일'을 가리키는 반면, to부정사는 '아직 하지 않은, 앞으로 할 일'을 가리킨다는 방향성의 차이에서 비롯된다. 예를 들어 remember -ing는 '(과거에) ~한 것을 기억하다'이고 remember to do는 '(앞으로) ~할 것을 잊지 않고 하다'로 시제 감각이 정반대로 갈리며, stop -ing는 하던 일을 그만두는 것이고 stop to do는 다른 일을 하려고 하던 일을 잠시 멈추는 것이라는 점도 함께 익혀 둘 만하다.",
+    "example": { "en": "She stopped to check her phone in the middle of the meeting.", "ko": "그녀는 회의 도중에 휴대폰을 확인하려고 하던 일을 멈췄다." }
+  },
+  "gerund-idiom-expressions": {
+    "category": "동명사",
+    "name_kr": "동명사 관용표현",
+    "desc_kr": "동명사는 몇몇 동사·전치사와 결합해 통째로 외워 두어야 자연스러운 관용표현을 만든다. be busy -ing(~하느라 바쁘다), cannot help -ing(~하지 않을 수 없다), on -ing(~하자마자), spend/waste 시간·돈 -ing(~하는 데 시간·돈을 쓰다), look forward to -ing(~하기를 고대하다) 등이 대표적이다. 이런 표현은 규칙을 하나하나 따지기보다 문장째로 외워 두는 편이 실용적이며, 특히 look forward to는 to가 전치사라 그 뒤에 동사원형이 아니라 동명사가 와야 한다는 점에서 자주 틀리는 지점이다.",
+    "example": { "en": "I couldn't help laughing when he tripped over his own shoelaces.", "ko": "그가 자기 신발끈에 걸려 넘어졌을 때 나는 웃지 않을 수 없었다." }
+  },
+  "gerund-subject-object": {
+    "category": "동명사",
+    "name_kr": "동명사의 주어·목적어 역할",
+    "desc_kr": "동명사는 동사에 -ing를 붙인 형태지만 문장 안에서는 명사처럼 주어나 목적어 자리에 그대로 들어갈 수 있다. 주어로 쓰이면 단수 취급해 동사도 단수형으로 맞추고, enjoy, finish, avoid, consider처럼 이미 하고 있거나 습관적으로 반복되는 일을 목적어로 받는 동사들과 특히 잘 어울린다. 동사에서 나온 말이라 뒤에 목적어나 부사를 그대로 거느릴 수 있다는 점에서 순수한 명사와는 다르다.",
+    "example": { "en": "Learning a new language takes consistent practice.", "ko": "새로운 언어를 배우는 것은 꾸준한 연습을 필요로 한다." }
+  },
+  "gerund-after-preposition": {
+    "category": "동명사",
+    "name_kr": "전치사 + 동명사",
+    "desc_kr": "전치사 바로 뒤에 동사를 이어 쓰고 싶을 때는 to부정사가 아니라 반드시 동명사를 쓴다. 전치사 뒤에는 원래 명사(구)가 와야 하는데, 동사를 명사 자리에 넣을 수 있는 형태가 동명사이기 때문이다. interested in, good at, afraid of, instead of처럼 전치사가 관용적으로 붙는 표현 뒤에서 특히 자주 나타나며, to가 전치사로 쓰인 look forward to, be used to 같은 표현에도 이 규칙이 그대로 적용돼 동사원형을 쓰면 틀린다.",
+    "example": { "en": "She's really good at solving puzzles.", "ko": "그녀는 퍼즐 푸는 데 정말 소질이 있다." }
+  },
+  "inversion-negative-adverb": {
+    "category": "도치",
+    "name_kr": "부정어 도치",
+    "desc_kr": "Never, Little, Rarely, Not only처럼 부정이나 제한의 뜻을 가진 부사(구)가 강조를 위해 문장 맨 앞으로 나가면, 그 뒤는 평서문 어순이 아니라 의문문처럼 '조동사+주어' 순서로 도치된다. 일반동사만 있는 문장은 do/does/did를 새로 끌어와 도치를 만든다. 부정어가 앞으로 나온 것 자체가 이미 문장에 강한 감정과 격식을 싣기 때문에, 어순까지 뒤집어 그 강조를 시각적으로도 드러내는 장치라고 이해하면 된다.",
+    "example": { "en": "Never have I seen such a beautiful sunset.", "ko": "이렇게 아름다운 노을은 처음 본다." }
+  },
+  "inversion-so-neither": {
+    "category": "도치",
+    "name_kr": "so/neither 도치",
+    "desc_kr": "상대방의 말에 '나도 그래'라고 맞장구칠 때, 앞 문장이 긍정이면 So를, 부정이면 Neither(또는 Nor)를 문장 맨 앞에 놓고 '조동사+주어' 순서로 도치해 짧게 답한다. 이때 조동사는 앞 문장의 동사 종류에 맞춰 be/do/have/조동사 중에서 그대로 가져와 골라야 한다. So am I나 Neither did he처럼 짧게 끝나는 대답체 표현이라 실제 대화에서 자주 쓰이며, 강조나 격식을 위한 다른 도치와 달리 상대 말에 대한 동의라는 뚜렷한 기능을 갖는다.",
+    "example": { "en": "\"I love spicy food.\" \"So do I.\"", "ko": "\"나는 매운 음식을 좋아해.\" \"나도 그래.\"" }
+  },
+  "inversion-place-adverbial": {
+    "category": "도치",
+    "name_kr": "장소부사구 도치",
+    "desc_kr": "장소나 방향을 나타내는 부사구가 강조나 묘사 효과를 위해 문장 맨 앞에 나오면, 뒤따르는 주어와 동사의 순서가 바뀌어 '부사구+동사+주어'가 된다. 주로 존재나 이동을 나타내는 자동사(come, go, stand, sit, lie 등)와 함께 쓰이며, 눈앞의 장면을 순서대로 그려내듯 묘사하는 효과를 낸다. 다만 주어가 대명사(he, she, it 등)일 때는 도치하지 않고 원래 어순을 유지한다는 예외를 함께 알아 두어야 한다.",
+    "example": { "en": "Down the hill rolled the old wooden barrel.", "ko": "언덕 아래로 낡은 나무통이 굴러 내려갔다." }
   }
 }
