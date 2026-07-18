@@ -11,22 +11,22 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.32">
-<link rel="icon" href="img/icon-192.png?v=0.35.32" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.32">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.32" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.32" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.33">
+<link rel="icon" href="img/icon-192.png?v=0.35.33" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.33">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.33" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.33" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.32"></script>
+<script src="img/hero/lottie.min.js?v=0.35.33"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.32"></script>
-<script src="words.js?v=0.35.32"></script><style>
+<script src="lib/compromise.min.js?v=0.35.33"></script>
+<script src="words.js?v=0.35.33"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -36,15 +36,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.32") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.32") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.33") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.33") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.32") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.32") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.33") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.33") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -224,19 +224,21 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .bd-rank.cur .mth{color:var(--ink);font-weight:800;}
 .vault-sec{display:flex;flex-direction:column;gap:10px;margin-top:22px;}
 .vault-sec:first-child{margin-top:0;}
-/* 성장 기록 */
+/* 성장 기록 — 통계는 포스트잇(.stat.tier-*), 주간 막대는 잔디 크림톤 위계(g1~g3) */
 .growth-tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
-.growth-tile{background:var(--surface);border:0.5px solid var(--card-border);box-shadow:var(--shadow);padding:12px 4px;text-align:center;display:flex;flex-direction:column;gap:3px;}
-.growth-tile .gv{font-size:22px;font-weight:800;color:var(--accent-deep);font-variant-numeric:tabular-nums;line-height:1;}
-.growth-tile .gl{font-size:10px;font-weight:700;color:var(--muted);}
+.growth-tiles .stat{padding:13px 4px;}
+.growth-tiles .stat .v{font-size:21px;}
+.growth-tiles .stat .l{font-size:10px;}
 .growth-card{background:var(--surface);border:0.5px solid var(--card-border);box-shadow:var(--shadow);padding:14px 14px 10px;display:flex;flex-direction:column;gap:12px;}
 .growth-head{display:flex;align-items:baseline;justify-content:space-between;font-size:13px;font-weight:800;color:var(--ink);}
 .growth-head .gsub{font-size:11px;font-weight:700;color:var(--muted);}
 .growth-bars{display:flex;align-items:flex-end;gap:6px;height:96px;}
 .gbar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:5px;height:100%;}
 .gbar-track{flex:1;width:100%;display:flex;align-items:flex-end;}
-.gbar{width:100%;min-height:3px;background:var(--warmgray);border-radius:0;transition:height .3s ease;}
-.gbar.cur{background:var(--accent);}
+.gbar{width:100%;min-height:3px;border-radius:0;background-color:var(--fill);transition:height .3s ease;}
+.gbar.g1{background-color:var(--ink);opacity:.22;}
+.gbar.g2{background-color:var(--ink);opacity:.4;}
+.gbar.g3{background-color:var(--ink);opacity:.6;}
 .gbar-lbl{font-size:9px;font-weight:700;color:var(--muted);}
 .growth-pts{display:inline-flex;align-items:center;gap:5px;font-size:13px;color:var(--ink-2);}
 .growth-pts b{color:var(--accent-deep);font-variant-numeric:tabular-nums;}
@@ -310,7 +312,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.32");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.33");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140).
@@ -776,19 +778,19 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .pron-en{font-size:20px;font-weight:800;line-height:1.4;color:var(--ink);}
 .pron-ko{font-size:14px;color:var(--muted);}
 .pron-play{margin-top:4px;display:inline-flex;align-items:center;gap:6px;background:var(--ink);color:var(--on-accent);font-weight:700;font-size:13px;padding:9px 14px;border-radius:999px;}
-.pron-actions{margin-top:20px;display:flex;flex-direction:column;gap:10px;align-items:center;}
-.pron-mic{width:100%;display:flex;flex-direction:column;align-items:center;gap:8px;background:var(--accent);color:var(--on-accent);font-weight:800;font-size:15px;padding:22px;border-radius:0;}
+.pron-actions{margin-top:18px;display:flex;flex-direction:column;gap:10px;align-items:center;}
+/* 마이크 버튼 — 아이콘+글자 한 줄, 얇게 */
+.pron-mic{width:100%;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:var(--on-accent);font-weight:800;font-size:15px;padding:13px;border-radius:0;}
 .pron-mic.on{background:var(--danger);}
 .pron-mic:disabled{opacity:.6;}
-.pron-result{margin-top:18px;display:flex;flex-direction:column;gap:14px;}
-.pron-score{display:flex;flex-direction:column;align-items:center;gap:2px;}
-.pron-score .pv{font-size:56px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums;}
+.pron-result{margin-top:18px;display:flex;flex-direction:column;gap:16px;}
+.pron-score{display:flex;flex-direction:column;align-items:center;gap:6px;}
+.pron-score .pv{font-size:52px;font-weight:800;line-height:1.15;font-variant-numeric:tabular-nums;color:var(--ink);}
 .pron-score .pl{font-size:12px;font-weight:700;color:var(--muted);}
-.pron-score.good .pv{color:var(--good);} .pron-score.mid .pv{color:var(--accent-deep);} .pron-score.low .pv{color:var(--danger);}
 .pron-words{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;}
 .pron-w{font-size:15px;font-weight:700;padding:5px 10px;border-radius:999px;}
-.pron-w.ok{background:var(--accent-soft);color:var(--accent-deep);}
-.pron-w.no{background:var(--fill);color:var(--muted);text-decoration:underline;text-decoration-style:wavy;text-decoration-color:var(--danger);}
+.pron-w.ok{background:var(--hi-green-light);color:var(--hi-green-xdark);} /* 맞게 발음 = 연두 */
+.pron-w.no{background:var(--warmgray);color:var(--ink);} /* 부정확 = 진한 웜그레이(더 잘 보이게) */
 .pron-tip{font-size:13px;color:var(--ink-2);text-align:center;line-height:1.5;}
 
 /* ---------- 회화 탭 — 대화방 목록 + 채팅 ---------- */
@@ -967,7 +969,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.32";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.33";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -2378,7 +2380,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.32" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.33" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -2733,7 +2735,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.32";
+const HERO_V = "0.35.33";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -4945,7 +4947,8 @@ function PronunClinic({ onBack }) {
   };
   const stopRec = () => { if (recRef.current && recording) recRef.current.stop(); };
 
-  const scoreClass = s => s >= 85 ? "good" : s >= 60 ? "mid" : "low";
+  // 점수 하이어라키(핑크<노랑<초록<파랑) — 형광펜 색
+  const scoreHl = s => s >= 90 ? "blue" : s >= 75 ? "green" : s >= 60 ? "yellow" : "pink";
 
   return (
     <div className="content">
@@ -4972,8 +4975,8 @@ function PronunClinic({ onBack }) {
         </div>
       ) : (
         <div className="pron-result">
-          <div className={"pron-score " + scoreClass(result.score)}>
-            <div className="pv">{result.score}</div><div className="pl">발음 점수</div>
+          <div className="pron-score">
+            <span className={"pv hl hl-" + scoreHl(result.score)}>{result.score}</span><div className="pl">발음 점수</div>
           </div>
           <div className="pron-words">
             {result.words.map((x, i) => <span key={i} className={"pron-w" + (x.ok ? " ok" : " no")}>{x.w}</span>)}
@@ -5120,27 +5123,37 @@ function GrowthRecord() {
   const weeks = Array.from({ length: 8 }, () => 0);
   recs.forEach(s => { if (s.at == null) return; const w = Math.floor((now - s.at) / (7 * DAY)); if (w >= 0 && w < 8) weeks[7 - w]++; });
   const maxW = Math.max(1, ...weeks);
+  // 포스트잇 색은 성취 색 하이어라키(핑크<노랑<초록<파랑) 순서로 4칸에 매핑
   const tiles = [
-    { v: streak, l: "연속 학습일" },
-    { v: learned, l: "학습한 단어" },
-    { v: mastered, l: "완료(마스터)" },
-    { v: dset.size, l: "총 학습일" },
+    { v: streak, l: "연속 학습일", hl: "pink" },
+    { v: learned, l: "학습한 단어", hl: "yellow" },
+    { v: mastered, l: "완료(마스터)", hl: "green" },
+    { v: dset.size, l: "총 학습일", hl: "blue" },
   ];
   return (
     <div className="vault-sec">
       <div className="sec">성장 기록</div>
       <div className="growth-tiles">
-        {tiles.map(t => <div key={t.l} className="growth-tile"><div className="gv">{t.v}</div><div className="gl">{t.l}</div></div>)}
+        {tiles.map((t, i) => (
+          <div key={t.l} className={"stat tier-" + t.hl}>
+            <div className="v"><span className={"hl hl-" + t.hl} style={{ transform: "rotate(" + (i % 2 ? 1 : -1.3) + "deg)" }}>{t.v}</span></div>
+            <div className="l">{t.l}</div>
+          </div>
+        ))}
       </div>
       <div className="growth-card">
         <div className="growth-head"><span>주간 학습량</span><span className="gsub">최근 8주 · 이번 주 {thisWeek}개</span></div>
         <div className="growth-bars">
-          {weeks.map((c, i) => (
-            <div key={i} className="gbar-col">
-              <div className="gbar-track"><div className={"gbar" + (i === 7 ? " cur" : "")} style={{ height: Math.round(c / maxW * 100) + "%" }} /></div>
-              <div className="gbar-lbl">{i === 7 ? "이번" : (7 - i) + "주"}</div>
-            </div>
-          ))}
+          {weeks.map((c, i) => {
+            const r = c / maxW; // 잔디와 같은 크림톤 강도 위계(빈칸/g1/g2/g3)
+            const lvl = c === 0 ? "g0" : r < 0.4 ? "g1" : r < 0.7 ? "g2" : "g3";
+            return (
+              <div key={i} className="gbar-col">
+                <div className="gbar-track"><div className={"gbar " + lvl} style={{ height: (c === 0 ? 4 : Math.round(r * 100)) + "%" }} /></div>
+                <div className="gbar-lbl">{i === 7 ? "이번" : (7 - i) + "주"}</div>
+              </div>
+            );
+          })}
         </div>
       </div>
       <div className="growth-pts"><Icon name="star" size={15} /> 학습 포인트 <b>{POINTS.get()}</b>점</div>
