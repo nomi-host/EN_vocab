@@ -11,22 +11,22 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.34">
-<link rel="icon" href="img/icon-192.png?v=0.35.34" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.34">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.34" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.34" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.35">
+<link rel="icon" href="img/icon-192.png?v=0.35.35" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.35">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.35" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.35" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.34"></script>
+<script src="img/hero/lottie.min.js?v=0.35.35"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.34"></script>
-<script src="words.js?v=0.35.34"></script><style>
+<script src="lib/compromise.min.js?v=0.35.35"></script>
+<script src="words.js?v=0.35.35"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -36,15 +36,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.34") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.34") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.35") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.35") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.34") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.34") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.35") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.35") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -312,7 +312,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.34");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.35");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140).
@@ -969,7 +969,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.34";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.35";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -2436,7 +2436,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.34" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.35" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -2795,7 +2795,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.34";
+const HERO_V = "0.35.35";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -3281,26 +3281,31 @@ function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, on
     return spans;
   }, [weekHues]);
   const grass = useMemo(() => {
-    /* 데모 시드(가상 페르소나: 3개월 띄엄띄엄 학습) — 예전 수식 패턴((i*7+3)%11)은 줄무늬처럼
-       규칙적으로 보여서, "학습 연속 구간 + 빈 날"이 섞인 현실적인 패턴으로 교체(2026-07-17).
-       고정 시드 PRNG라 리렌더/재방문에도 모양이 안 바뀜. 시작 4주 전은 거의 빈칸(가입 전).
-       색은 잉크 1색 대신 그 주가 속한 달의 형광펜 색(weekHues)을 쓰고, 옅음/보통/진함은 그 색의
-       light/base/dark 톤으로 표현(2026-07-18, 피그마 디자인 반영 — 형광펜 시스템 그대로 재사용). */
-    let s = 20260716; // 고정 시드
-    const rnd = () => { s = (s * 1103515245 + 12345) % 2147483648; return s / 2147483648; };
+    /* 실데이터(2026-07-19, 구 PRNG 데모 시드 대체) — ACT.studiedDates()의 실제 학습일을 17주 히트맵에
+       반영. 요일별 1:1 달력이 아니라 "최근 17주 히트맵 스트립"이 맞는 디자인이므로(CLAUDE.md), 각 열(주)의
+       학습일 수(0~7)를 집계해 그 열의 5칸을 아래에서부터 채우고, 강도(light/base/dark)는 그 주 학습일 수로,
+       색은 그 주가 속한 달의 형광펜 색(weekHues)으로 표현. 학습 없는 주는 빈칸. */
+    const studied = ACT.studiedDates();
+    const today = new Date();
+    const DAYMS = 86400000;
+    const weekCount = new Array(17).fill(0); // 열별(주별) 학습일 수 — 열 16=이번 주, 왼쪽으로 과거
+    studied.forEach(k => {
+      const [y, m, d] = k.split("-").map(Number);
+      const diff = Math.floor((today - new Date(y, m - 1, d)) / DAYMS);
+      if (diff < 0) return;
+      const col = 16 - Math.floor(diff / 7);
+      if (col >= 0 && col < 17) weekCount[col]++;
+    });
     const cells = [];
-    let studying = false; // 연속 학습 구간 상태 머신
     for (let i = 0; i < 17 * 5; i++) {
-      const week = i % 17; // 그리드가 행 우선(17열×5행)이라 열(=주)은 i%17
-      const tokens = GRASS_TOKENS[weekHues[week].hue];
-      if (week < 4) { cells.push(rnd() < 0.06 ? tokens.light : ""); continue; } // 학습 시작 전(왼쪽 4주)
-      if (studying) { if (rnd() < 0.25) studying = false; } // 평균 4일 연속 후 휴식
-      else if (rnd() < 0.45) studying = true; // 휴식은 평균 2일쯤
-      if (!studying) { cells.push(""); continue; }
-      const r = rnd();
-      cells.push(r < 0.25 ? tokens.dark : r < 0.6 ? tokens.base : tokens.light); // 강도는 중간이 가장 흔하게
+      const col = i % 17, row = Math.floor(i / 17); // 그리드 행 우선(17열×5행)
+      const cnt = weekCount[col];
+      const filled = Math.min(5, Math.round(cnt * 5 / 7)); // 그 주 학습일 수 → 채울 칸 수(아래부터)
+      if (cnt > 0 && row >= 5 - filled) {
+        const tokens = GRASS_TOKENS[weekHues[col].hue];
+        cells.push(cnt >= 5 ? tokens.dark : cnt >= 3 ? tokens.base : tokens.light);
+      } else cells.push("");
     }
-    cells[cells.length - 1] = GRASS_TOKENS[weekHues[16].hue].base; // 오늘(마지막 칸)은 학습한 날로
     return cells;
   }, [weekHues]);
   const badgeProgress = computeBadgeProgress();
