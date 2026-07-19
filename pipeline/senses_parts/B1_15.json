@@ -1,0 +1,918 @@
+{
+  "whenever": [
+    {
+      "cue": "시간에 상관없이",
+      "ko": "~할 때는 언제나, 언제든지",
+      "pos": "접속사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "at any time that; no matter when",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Call me whenever you need help.",
+          "ko": "도움이 필요할 때는 언제든 전화해."
+        }
+      ]
+    }
+  ],
+  "wherever": [
+    {
+      "cue": "장소에 상관없이",
+      "ko": "어디든지, ~하는 곳은 어디나",
+      "pos": "접속사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "in or to any place that; no matter where",
+      "syn": [],
+      "ex": [
+        {
+          "en": "You can sit wherever you like.",
+          "ko": "원하는 곳 어디든 앉아도 돼."
+        }
+      ]
+    }
+  ],
+  "whether": [
+    {
+      "cue": "두 가지 가능성 중 불확실함을 나타낼 때",
+      "ko": "~인지 (아닌지)",
+      "pos": "접속사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "used to express a doubt or choice between two possibilities",
+      "syn": [
+        "if"
+      ],
+      "ex": [
+        {
+          "en": "I don't know whether she will come.",
+          "ko": "그녀가 올지 안 올지 모르겠다."
+        }
+      ]
+    }
+  ],
+  "whichever": [
+    {
+      "cue": "여럿 중 어느 것이든",
+      "ko": "어느 것이든, ~하는 것은 어느 것이나",
+      "pos": "대명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "any one that you choose, no matter which",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Take whichever seat you want.",
+          "ko": "원하는 좌석 아무거나 골라."
+        }
+      ]
+    }
+  ],
+  "whisper": [
+    {
+      "cue": "작은 소리로 조용히 말하다",
+      "ko": "속삭이다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "speak very softly using your breath, without vibrating your vocal cords",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She whispered the secret in my ear.",
+          "ko": "그녀는 내 귀에 대고 비밀을 속삭였다."
+        }
+      ]
+    },
+    {
+      "cue": "속삭이는 소리(명사)",
+      "ko": "속삭임",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "a soft, quiet way of speaking",
+      "syn": [],
+      "ex": [
+        {
+          "en": "I heard a whisper from the next room.",
+          "ko": "옆방에서 속삭임이 들렸다."
+        }
+      ]
+    }
+  ],
+  "whistle": [
+    {
+      "cue": "입으로 소리를 내다",
+      "ko": "휘파람을 불다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "make a clear musical sound by forcing breath through your lips",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He whistled a happy tune.",
+          "ko": "그는 즐거운 곡조로 휘파람을 불었다."
+        }
+      ]
+    },
+    {
+      "cue": "불어서 소리 내는 도구",
+      "ko": "호루라기",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "a small device you blow into to make a loud, sharp sound",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The referee blew his whistle.",
+          "ko": "심판이 호루라기를 불었다."
+        }
+      ]
+    }
+  ],
+  "whoever": [
+    {
+      "cue": "사람에 상관없이",
+      "ko": "누구든지, ~하는 사람은 누구나",
+      "pos": "대명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "any person that; no matter who",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Whoever finishes first wins a prize.",
+          "ko": "누구든 먼저 끝내는 사람이 상을 받는다."
+        }
+      ]
+    }
+  ],
+  "widespread": [
+    {
+      "cue": "많은 곳·사람들에게 퍼진",
+      "ko": "널리 퍼진, 광범위한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "existing or happening in many places or among many people",
+      "syn": [
+        "common",
+        "extensive"
+      ],
+      "ex": [
+        {
+          "en": "There is widespread support for the new law.",
+          "ko": "그 새로운 법에 대한 지지가 널리 퍼져 있다."
+        }
+      ]
+    }
+  ],
+  "wildlife": [
+    {
+      "cue": "자연에서 사는 동물들",
+      "ko": "야생동물",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "animals living in their natural environment, not kept by people",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The park protects local wildlife.",
+          "ko": "그 공원은 지역 야생동물을 보호한다."
+        }
+      ]
+    }
+  ],
+  "wildly": [
+    {
+      "cue": "통제 없이 격하게 움직일 때",
+      "ko": "격렬하게, 마구",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in an uncontrolled, excited, or violent manner",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The crowd cheered wildly when the team scored.",
+          "ko": "팀이 득점하자 관중들은 격렬하게 환호했다."
+        }
+      ]
+    },
+    {
+      "cue": "정도가 매우 심함을 강조할 때",
+      "ko": "굉장히, 몹시",
+      "pos": "부사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "to an extreme degree",
+      "syn": [
+        "extremely"
+      ],
+      "ex": [
+        {
+          "en": "The movie was wildly popular.",
+          "ko": "그 영화는 굉장히 인기가 많았다."
+        }
+      ]
+    }
+  ],
+  "willingness": [
+    {
+      "cue": "기꺼이 하려는 마음가짐",
+      "ko": "기꺼이 하려는 마음, 자발성",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the state of being ready or eager to do something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She showed a willingness to help.",
+          "ko": "그녀는 기꺼이 도우려는 마음을 보였다."
+        }
+      ]
+    }
+  ],
+  "windscreen": [
+    {
+      "cue": "자동차 앞 유리(영국식)",
+      "ko": "(자동차) 앞유리",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the window at the front of a car (British English)",
+      "syn": [
+        "windshield"
+      ],
+      "ex": [
+        {
+          "en": "A stone cracked the windscreen.",
+          "ko": "돌이 튀어 앞유리에 금이 갔다."
+        }
+      ]
+    }
+  ],
+  "windsurfing": [
+    {
+      "cue": "파도 위에서 돛단 보드를 타는 운동",
+      "ko": "윈드서핑",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a water sport in which you stand on a board with a sail and are moved by the wind",
+      "syn": [],
+      "ex": [
+        {
+          "en": "They went windsurfing on the lake.",
+          "ko": "그들은 호수에서 윈드서핑을 즐겼다."
+        }
+      ]
+    }
+  ],
+  "wing": [
+    {
+      "cue": "새·곤충·비행기가 나는 부위",
+      "ko": "날개",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "one of the parts of a bird, insect, or plane that is used for flying",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The eagle spread its wings.",
+          "ko": "독수리가 날개를 펼쳤다."
+        }
+      ]
+    },
+    {
+      "cue": "건물의 한쪽에 딸린 부분",
+      "ko": "(건물의) 부속 동, 별관",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a part of a building that sticks out from the main part",
+      "syn": [
+        "annex"
+      ],
+      "ex": [
+        {
+          "en": "The hospital built a new wing for children.",
+          "ko": "병원은 어린이를 위한 새 별관을 지었다."
+        }
+      ]
+    },
+    {
+      "cue": "정당·단체 안의 한 집단",
+      "ko": "(정당 등의) ~파, 계파",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "a group within an organization that has particular views",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He belongs to the liberal wing of the party.",
+          "ko": "그는 그 정당의 진보파에 속한다."
+        }
+      ]
+    }
+  ],
+  "wire": [
+    {
+      "cue": "전기 배선을 연결할 때",
+      "ko": "배선하다, 전선을 연결하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "connect something using electrical wires",
+      "syn": [],
+      "ex": [
+        {
+          "en": "An electrician wired the new house.",
+          "ko": "전기 기술자가 새 집에 배선을 했다."
+        }
+      ]
+    },
+    {
+      "cue": "전기가 흐르는 가는 금속줄",
+      "ko": "전선, 철사",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "a thin piece of metal used to carry electricity or to fasten things",
+      "syn": [
+        "cable"
+      ],
+      "ex": [
+        {
+          "en": "The wire was hidden behind the wall.",
+          "ko": "그 전선은 벽 뒤에 숨겨져 있었다."
+        }
+      ]
+    }
+  ],
+  "wither": [
+    {
+      "cue": "식물이 물기를 잃고",
+      "ko": "시들다, 말라 죽다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "(of a plant) become dry and shrink, usually because it is dying",
+      "syn": [
+        "shrivel",
+        "wilt"
+      ],
+      "ex": [
+        {
+          "en": "The flowers withered in the heat.",
+          "ko": "꽃들이 더위에 시들었다."
+        }
+      ]
+    }
+  ],
+  "witness": [
+    {
+      "cue": "사건을 직접 본 사람",
+      "ko": "목격자, 증인",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a person who sees something happen and can describe it",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Police are looking for witnesses to the accident.",
+          "ko": "경찰이 그 사고의 목격자를 찾고 있다."
+        }
+      ]
+    },
+    {
+      "cue": "어떤 일을 직접 보다",
+      "ko": "목격하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "see something happen",
+      "syn": [
+        "see",
+        "observe"
+      ],
+      "ex": [
+        {
+          "en": "She witnessed the whole event.",
+          "ko": "그녀는 그 사건 전체를 목격했다."
+        }
+      ]
+    }
+  ],
+  "wizard": [
+    {
+      "cue": "마법을 쓰는 사람(이야기 속)",
+      "ko": "마법사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a person, especially in stories, who has magic powers",
+      "syn": [
+        "sorcerer",
+        "magician"
+      ],
+      "ex": [
+        {
+          "en": "The wizard cast a powerful spell.",
+          "ko": "그 마법사는 강력한 주문을 걸었다."
+        }
+      ]
+    },
+    {
+      "cue": "어떤 분야에 매우 뛰어난 사람",
+      "ko": "~의 달인, 귀재",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "someone who is extremely skilled at something",
+      "syn": [
+        "expert",
+        "genius"
+      ],
+      "ex": [
+        {
+          "en": "She's a wizard with numbers.",
+          "ko": "그녀는 숫자에 있어서는 귀재다."
+        }
+      ]
+    }
+  ],
+  "working": [
+    {
+      "cue": "일을 하고 있는 상태",
+      "ko": "일하는, 근무하는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "having a job; actively doing paid work",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Most working adults commute every day.",
+          "ko": "대부분의 일하는 성인들은 매일 통근한다."
+        }
+      ]
+    },
+    {
+      "cue": "기계 등이 제대로 작동하는",
+      "ko": "작동하는, 가동되는",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "(of a machine) operating correctly",
+      "syn": [
+        "functioning"
+      ],
+      "ex": [
+        {
+          "en": "We finally found a working printer.",
+          "ko": "우리는 마침내 작동하는 프린터를 찾았다."
+        }
+      ]
+    },
+    {
+      "cue": "실제로 쓸 수 있을 정도의(지식·관계 등)",
+      "ko": "실용적인, 실무에 쓸 수 있는",
+      "pos": "형용사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "good enough to be useful in a practical way",
+      "syn": [],
+      "ex": [
+        {
+          "en": "I have a working knowledge of Spanish.",
+          "ko": "나는 스페인어를 실무에 쓸 수 있는 정도로 안다."
+        }
+      ]
+    }
+  ],
+  "workout": [
+    {
+      "cue": "몸을 단련하는 운동",
+      "ko": "운동, 워크아웃",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a period of physical exercise to keep fit",
+      "syn": [
+        "exercise"
+      ],
+      "ex": [
+        {
+          "en": "I do a workout every morning.",
+          "ko": "나는 매일 아침 운동을 한다."
+        }
+      ]
+    }
+  ],
+  "workplace": [
+    {
+      "cue": "일을 하는 장소",
+      "ko": "직장, 일터",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a place where people work",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Safety is important in every workplace.",
+          "ko": "모든 직장에서 안전은 중요하다."
+        }
+      ]
+    }
+  ],
+  "workshop": [
+    {
+      "cue": "물건을 만들거나 수리하는 곳",
+      "ko": "작업장, 공방",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a place where things are made or repaired, often by hand",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He fixes bikes in his workshop.",
+          "ko": "그는 자신의 작업장에서 자전거를 수리한다."
+        }
+      ]
+    },
+    {
+      "cue": "함께 배우고 연습하는 짧은 모임",
+      "ko": "워크숍, 연수회",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a meeting where people learn about or practice a subject together",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She attended a writing workshop last weekend.",
+          "ko": "그녀는 지난 주말 글쓰기 워크숍에 참석했다."
+        }
+      ]
+    }
+  ],
+  "worn": [
+    {
+      "cue": "오래 써서 낡은",
+      "ko": "닳은, 해진",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "damaged or thin because of long use",
+      "syn": [
+        "worn-out"
+      ],
+      "ex": [
+        {
+          "en": "He wore a pair of worn jeans.",
+          "ko": "그는 닳은 청바지를 입고 있었다."
+        }
+      ]
+    },
+    {
+      "cue": "지치고 초췌해 보이는 얼굴",
+      "ko": "초췌한, 지친",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "looking tired because of hard work, worry, or illness",
+      "syn": [
+        "haggard",
+        "weary"
+      ],
+      "ex": [
+        {
+          "en": "Her face looked worn after the long journey.",
+          "ko": "긴 여행 후 그녀의 얼굴은 초췌해 보였다."
+        }
+      ]
+    }
+  ],
+  "worth": [
+    {
+      "cue": "~할 가치가 있는(행동)",
+      "ko": "~할 가치가 있는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "deserving your time, money, or effort",
+      "syn": [],
+      "ex": [
+        {
+          "en": "This museum is definitely worth visiting.",
+          "ko": "이 박물관은 분명 방문할 가치가 있다."
+        }
+      ]
+    },
+    {
+      "cue": "금전적 가치가 얼마인지",
+      "ko": "~의 가치[값어치]가 있는",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "having a particular value, especially in money",
+      "syn": [],
+      "ex": [
+        {
+          "en": "This painting is worth a million dollars.",
+          "ko": "이 그림은 백만 달러의 가치가 있다."
+        }
+      ]
+    },
+    {
+      "cue": "물건·사람이 지닌 가치(명사)",
+      "ko": "가치",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "the importance or value of something or someone",
+      "syn": [
+        "value"
+      ],
+      "ex": [
+        {
+          "en": "She proved her worth to the team.",
+          "ko": "그녀는 팀에게 자신의 가치를 증명했다."
+        }
+      ]
+    }
+  ],
+  "worthwhile": [
+    {
+      "cue": "시간·노력을 들일 가치가 있는",
+      "ko": "가치 있는, 보람 있는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "important, useful, or good enough to be worth the time or effort spent",
+      "syn": [
+        "rewarding"
+      ],
+      "ex": [
+        {
+          "en": "Learning a new language is worthwhile.",
+          "ko": "새로운 언어를 배우는 것은 보람 있는 일이다."
+        }
+      ]
+    }
+  ],
+  "worthy": [
+    {
+      "cue": "존중·주목을 받을 만한",
+      "ko": "~할 만한 가치가 있는, 훌륭한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "good enough to deserve attention, respect, or a particular title",
+      "syn": [
+        "deserving"
+      ],
+      "ex": [
+        {
+          "en": "It was a worthy effort even though they lost.",
+          "ko": "비록 졌지만 그것은 훌륭한 노력이었다."
+        }
+      ]
+    }
+  ],
+  "wound": [
+    {
+      "cue": "몸에 상처를 내다",
+      "ko": "상처를 입히다, 부상을 입히다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "injure someone's body, often by cutting or breaking the skin",
+      "syn": [
+        "injure"
+      ],
+      "ex": [
+        {
+          "en": "The soldier was wounded in the leg.",
+          "ko": "그 병사는 다리에 부상을 입었다."
+        }
+      ]
+    },
+    {
+      "cue": "칼에 베이거나 다친 상처(명사)",
+      "ko": "상처, 부상",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "an injury to the body, especially one with a cut or break in the skin",
+      "syn": [
+        "injury"
+      ],
+      "ex": [
+        {
+          "en": "The nurse cleaned the wound carefully.",
+          "ko": "간호사는 그 상처를 조심스럽게 소독했다."
+        }
+      ]
+    },
+    {
+      "cue": "마음에 입은 상처(비유)",
+      "ko": "(마음의) 상처",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "a painful emotional experience that has a lasting effect",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The insult left a deep wound on her pride.",
+          "ko": "그 모욕은 그녀의 자존심에 깊은 상처를 남겼다."
+        }
+      ]
+    }
+  ],
+  "wrap": [
+    {
+      "cue": "물건을 종이·천으로 감싸다",
+      "ko": "포장하다, 감싸다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "cover something by folding paper, cloth, or other material around it",
+      "syn": [
+        "cover",
+        "enclose"
+      ],
+      "ex": [
+        {
+          "en": "She wrapped the gift in colorful paper.",
+          "ko": "그녀는 선물을 화려한 종이로 포장했다."
+        }
+      ]
+    },
+    {
+      "cue": "토르티야에 만 샌드위치",
+      "ko": "랩(또띠아에 만 음식)",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a type of sandwich made by rolling food in a soft flatbread",
+      "syn": [],
+      "ex": [
+        {
+          "en": "I had a chicken wrap for lunch.",
+          "ko": "나는 점심으로 치킨 랩을 먹었다."
+        }
+      ]
+    },
+    {
+      "cue": "두르는 겉옷·숄",
+      "ko": "랩, 두르는 겉옷",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "a piece of clothing, such as a shawl, wrapped around the body",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She put a warm wrap over her shoulders.",
+          "ko": "그녀는 어깨에 따뜻한 랩을 둘렀다."
+        }
+      ]
+    }
+  ],
+  "wrapping": [
+    {
+      "cue": "선물·물건을 감싸는 종이 등",
+      "ko": "포장지, 포장재",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the paper or material used to cover and protect something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He tore off the wrapping excitedly.",
+          "ko": "그는 신이 나서 포장지를 뜯었다."
+        }
+      ]
+    }
+  ],
+  "wrist": [
+    {
+      "cue": "손과 팔이 연결되는 부위",
+      "ko": "손목",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "the joint connecting the hand to the arm",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She wore a bracelet on her wrist.",
+          "ko": "그녀는 손목에 팔찌를 차고 있었다."
+        }
+      ]
+    }
+  ],
+  "wristwatch": [
+    {
+      "cue": "손목에 차는 시계",
+      "ko": "손목시계",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "a watch worn on a strap around the wrist",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He checked the time on his wristwatch.",
+          "ko": "그는 손목시계로 시간을 확인했다."
+        }
+      ]
+    }
+  ],
+  "written": [
+    {
+      "cue": "말이 아니라 글로 된",
+      "ko": "글로 쓰인, 서면의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "expressed in writing rather than spoken",
+      "syn": [],
+      "ex": [
+        {
+          "en": "You must submit a written request.",
+          "ko": "서면으로 된 요청서를 제출해야 한다."
+        }
+      ]
+    }
+  ],
+  "yell": [
+    {
+      "cue": "크게 소리 지르다",
+      "ko": "소리치다, 고함치다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "shout loudly, especially because you are angry, excited, or in pain",
+      "syn": [
+        "shout",
+        "scream"
+      ],
+      "ex": [
+        {
+          "en": "He yelled at the driver to stop.",
+          "ko": "그는 운전자에게 멈추라고 소리쳤다."
+        }
+      ]
+    },
+    {
+      "cue": "큰 외침, 고함 소리",
+      "ko": "고함, 외침",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "a loud shout",
+      "syn": [
+        "shout",
+        "cry"
+      ],
+      "ex": [
+        {
+          "en": "She let out a yell of excitement.",
+          "ko": "그녀는 신이 나서 고함을 질렀다."
+        }
+      ]
+    }
+  ],
+  "yoga": [
+    {
+      "cue": "몸과 마음을 수련하는 운동",
+      "ko": "요가",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a system of exercises for the body and mind, often including breathing and meditation",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She practices yoga every morning.",
+          "ko": "그녀는 매일 아침 요가를 한다."
+        }
+      ]
+    }
+  ]
+}

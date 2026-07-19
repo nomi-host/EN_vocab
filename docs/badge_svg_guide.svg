@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 1102">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #4a4234;
+      }
+
+      .st0, .st1, .st2, .st3, .st4, .st5 {
+        font-family: LINESeedSansKR-Bold, 'LINE Seed Sans KR';
+        font-weight: 700;
+        isolation: isolate;
+      }
+
+      .st0, .st3 {
+        font-size: 14px;
+      }
+
+      .st6 {
+        fill: #d8ed77;
+      }
+
+      .st6, .st7, .st8, .st9, .st10, .st11, .st12 {
+        stroke: #211c15;
+      }
+
+      .st6, .st8, .st10, .st11, .st12 {
+        stroke-width: 2px;
+      }
+
+      .st7 {
+        fill: #e6dcc3;
+        stroke-width: 3px;
+      }
+
+      .st8 {
+        fill: #ffb459;
+      }
+
+      .st13 {
+        fill: none;
+        stroke: #8c8270;
+        stroke-dasharray: 5 5;
+      }
+
+      .st13, .st9 {
+        stroke-width: 1.5px;
+      }
+
+      .st1 {
+        font-size: 12px;
+      }
+
+      .st1, .st2 {
+        fill: #8c8270;
+      }
+
+      .st9 {
+        fill: #fffdf8;
+      }
+
+      .st2 {
+        font-size: 11px;
+      }
+
+      .st10 {
+        fill: #93d3ff;
+      }
+
+      .st11 {
+        fill: #ffb4d4;
+      }
+
+      .st3, .st4, .st5 {
+        fill: #211c15;
+      }
+
+      .st12 {
+        fill: #ffdd5c;
+      }
+
+      .st14 {
+        fill: #fffaf1;
+      }
+
+      .st4 {
+        font-size: 28px;
+      }
+
+      .st5 {
+        font-size: 17px;
+      }
+    </style>
+  </defs>
+  <rect class="st14" width="800" height="1102"/>
+  <text class="st4" transform="translate(40 56)"><tspan x="0" y="0">NoEnglish 뱃지 제작 가이드</tspan></text>
+  <text class="st0" transform="translate(40 92)"><tspan x="0" y="0">• 제작 방식(권장): 카테고리별 심볼 1개씩 = 9개. 티어(5단계) 색은 코드가 자동으로 입힙니다.</tspan></text>
+  <text class="st0" transform="translate(40 116)"><tspan x="0" y="0">• 캔버스: 150×150 (원형 메달). 심볼은 가운데 점선 원(지름 96) 안에 맞춰 그리세요.</tspan></text>
+  <text class="st0" transform="translate(40 140)"><tspan x="0" y="0">• 스타일: 두꺼운 잉크 아웃라인(약 3px) + 단색 채움. 이모지 금지. 손그림 러프닝 OK.</tspan></text>
+  <text class="st0" transform="translate(40 164)"><tspan x="0" y="0">• 심볼은 단색(잉크)으로 — 앱이 티어 색조(xdark 톤)로 자동 착색합니다. 다색 금지.</tspan></text>
+  <text class="st0" transform="translate(40 188)"><tspan x="0" y="0">• 파일: 카테고리 key로 저장(예: streak.svg). viewBox 0 0 150 150, 배경 투명.</tspan></text>
+  <text class="st3" transform="translate(40 226)"><tspan x="0" y="0">티어 색(코드가 자동 적용):</tspan></text>
+  <circle class="st11" cx="284" cy="221" r="13"/>
+  <text class="st2" transform="translate(278.5 248)"><tspan x="0" y="0">입문</tspan></text>
+  <circle class="st12" cx="374" cy="221" r="13"/>
+  <text class="st2" transform="translate(368.5 248)"><tspan x="0" y="0">초급</tspan></text>
+  <circle class="st6" cx="464" cy="221" r="13"/>
+  <text class="st2" transform="translate(458.5 248)"><tspan x="0" y="0">중급</tspan></text>
+  <circle class="st10" cx="554" cy="221" r="13"/>
+  <text class="st2" transform="translate(548.5 248)"><tspan x="0" y="0">고급</tspan></text>
+  <circle class="st8" cx="644" cy="221" r="13"/>
+  <text class="st2" transform="translate(635.75 248)"><tspan x="0" y="0">마스터</tspan></text>
+  <circle class="st7" cx="160" cy="340" r="75"/>
+  <circle class="st9" cx="160" cy="340" r="58"/>
+  <circle class="st13" cx="160" cy="340" r="48"/>
+  <text class="st1" transform="translate(138.15 345)"><tspan x="0" y="0">심볼 영역</tspan></text>
+  <text class="st5" transform="translate(123.33 445)"><tspan x="0" y="0">연속 학습</tspan></text>
+  <text class="st1" transform="translate(97.24 465)"><tspan x="0" y="0">streak · 불꽃 / 달력</tspan></text>
+  <circle class="st7" cx="400" cy="340" r="75"/>
+  <circle class="st9" cx="400" cy="340" r="58"/>
+  <circle class="st13" cx="400" cy="340" r="48"/>
+  <text class="st1" transform="translate(378.15 345)"><tspan x="0" y="0">심볼 영역</tspan></text>
+  <text class="st5" transform="translate(363.33 445)"><tspan x="0" y="0">단어 학습</tspan></text>
+  <text class="st1" transform="translate(347.08 465)"><tspan x="0" y="0">words · 책 / 낱말</tspan></text>
+  <circle class="st7" cx="640" cy="340" r="75"/>
+  <circle class="st9" cx="640" cy="340" r="58"/>
+  <circle class="st13" cx="640" cy="340" r="48"/>
+  <text class="st1" transform="translate(618.15 345)"><tspan x="0" y="0">심볼 영역</tspan></text>
+  <text class="st5" transform="translate(603.33 445)"><tspan x="0" y="0">듣기 세션</tspan></text>
+  <text class="st1" transform="translate(574.84 465)"><tspan x="0" y="0">listen · 이어폰 / 음파</tspan></text>
+  <circle class="st7" cx="160" cy="604" r="75"/>
+  <circle class="st9" cx="160" cy="604" r="58"/>
+  <circle class="st13" cx="160" cy="604" r="48"/>
+  <text class="st1" transform="translate(138.15 609)"><tspan x="0" y="0">심볼 영역</tspan></text>
+  <text class="st5" transform="translate(150.49 709)"><tspan x="0" y="0">회화</tspan></text>
+  <text class="st1" transform="translate(130.19 729)"><tspan x="0" y="0">talk · 말풍선</tspan></text>
+  <circle class="st7" cx="400" cy="604" r="75"/>
+  <circle class="st9" cx="400" cy="604" r="58"/>
+  <circle class="st13" cx="400" cy="604" r="48"/>
+  <text class="st1" transform="translate(378.15 609)"><tspan x="0" y="0">심볼 영역</tspan></text>
+  <text class="st5" transform="translate(375.09 709)"><tspan x="0" y="0">레벨 업</tspan></text>
+  <text class="st1" transform="translate(320.42 729)"><tspan x="0" y="0">level · 상승 화살표 / 계단</tspan></text>
+  <circle class="st7" cx="640" cy="604" r="75"/>
+  <circle class="st9" cx="640" cy="604" r="58"/>
+  <circle class="st13" cx="640" cy="604" r="48"/>
+  <text class="st1" transform="translate(618.15 609)"><tspan x="0" y="0">심볼 영역</tspan></text>
+  <text class="st5" transform="translate(603.33 709)"><tspan x="0" y="0">어원 탐험</tspan></text>
+  <text class="st1" transform="translate(571.21 729)"><tspan x="0" y="0">roots · 뿌리 / 나무</tspan></text>
+  <circle class="st7" cx="160" cy="868" r="75"/>
+  <circle class="st9" cx="160" cy="868" r="58"/>
+  <circle class="st13" cx="160" cy="868" r="48"/>
+  <text class="st1" transform="translate(138.15 873)"><tspan x="0" y="0">심볼 영역</tspan></text>
+  <text class="st5" transform="translate(111.58 973)"><tspan x="0" y="0">복습 마스터</tspan></text>
+  <text class="st1" transform="translate(68.79 993)"><tspan x="0" y="0">review · 체크 / 회전 화살표</tspan></text>
+  <circle class="st7" cx="400" cy="868" r="75"/>
+  <circle class="st9" cx="400" cy="868" r="58"/>
+  <circle class="st13" cx="400" cy="868" r="48"/>
+  <text class="st1" transform="translate(378.15 873)"><tspan x="0" y="0">심볼 영역</tspan></text>
+  <text class="st5" transform="translate(363.33 973)"><tspan x="0" y="0">친구 초대</tspan></text>
+  <text class="st1" transform="translate(346.13 993)"><tspan x="0" y="0">friend · 사람들 / 하트</tspan></text>
+  <circle class="st7" cx="640" cy="868" r="75"/>
+  <circle class="st9" cx="640" cy="868" r="58"/>
+  <circle class="st13" cx="640" cy="868" r="48"/>
+  <text class="st1" transform="translate(618.15 873)"><tspan x="0" y="0">심볼 영역</tspan></text>
+  <text class="st5" transform="translate(606.32 973)"><tspan x="0" y="0">자립 회화</tspan></text>
+  <text class="st1" transform="translate(606.38 993)"><tspan x="0" y="0">sos · 별 / 독립</tspan></text>
+</svg>

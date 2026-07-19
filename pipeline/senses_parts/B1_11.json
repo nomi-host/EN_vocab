@@ -1,0 +1,495 @@
+{
+  "proud": [
+    {"cue":"성취·가족이","ko":"자랑스러운","pos":"형용사","lv":1,"cefr":"A2","en":"feeling pleased and satisfied about something you or someone close to you has done","syn":[],"ex":[{"en":"She felt proud of her son's achievement.","ko":"그녀는 아들의 성취가 자랑스러웠다."}]}
+  ],
+  "prove": [
+    {"cue":"사실·주장을","ko":"증명하다","pos":"동사","lv":1,"cefr":"A2","en":"show that something is true by using evidence or argument","syn":["demonstrate","show"],"ex":[{"en":"She proved her theory with new data.","ko":"그녀는 새로운 자료로 자신의 이론을 증명했다."}]},
+    {"cue":"결과적으로 ~임이","ko":"(~로) 판명되다, 드러나다","pos":"동사","lv":2,"cefr":"B1","en":"be found or shown to be a particular thing over time","syn":["turn out"],"ex":[{"en":"The plan proved to be a success.","ko":"그 계획은 성공적인 것으로 판명되었다."}]}
+  ],
+  "proverb": [
+    {"cue":"오래전부터 전해지는 격언","ko":"속담","pos":"명사","lv":1,"cefr":"B1","en":"a short well-known saying that expresses a general truth or piece of advice","syn":[],"ex":[{"en":"'Practice makes perfect' is a common proverb.","ko":"'연습이 완벽을 만든다'는 흔한 속담이다."}]}
+  ],
+  "provided": [
+    {"cue":"조건을 달아","ko":"~라는 조건으로, 만약 ~이면","pos":"접속사","lv":1,"cefr":"B1","en":"used to say that something will happen only if something else happens first","syn":["providing"],"ex":[{"en":"You can go out, provided you finish your homework.","ko":"숙제를 끝낸다는 조건으로 나가도 돼."}]}
+  ],
+  "psychological": [
+    {"cue":"마음·정신과 관련된","ko":"심리적인","pos":"형용사","lv":1,"cefr":"B1","en":"relating to the mind or to the way people think and feel","syn":["mental"],"ex":[{"en":"The stress had a serious psychological effect on her.","ko":"그 스트레스는 그녀에게 심각한 심리적 영향을 미쳤다."}]}
+  ],
+  "pub": [
+    {"cue":"영국식 동네 술집","ko":"술집, 펍","pos":"명사","lv":1,"cefr":"A2","en":"a place, especially in Britain, where people go to drink and meet friends","syn":[],"ex":[{"en":"We had a drink at the local pub.","ko":"우리는 동네 펍에서 술을 한잔했다."}]}
+  ],
+  "public transport": [
+    {"cue":"버스·지하철 등","ko":"대중교통","pos":"명사","lv":1,"cefr":"A2","en":"buses, trains, and other vehicles that anyone can use to travel","syn":[],"ex":[{"en":"She takes public transport to work every day.","ko":"그녀는 매일 대중교통을 타고 출근한다."}]}
+  ],
+  "publicly": [
+    {"cue":"모두가 볼 수 있게","ko":"공개적으로","pos":"부사","lv":1,"cefr":"B1","en":"in a way that is open for everyone to see or know about","syn":["openly"],"ex":[{"en":"He publicly apologized for the mistake.","ko":"그는 그 실수에 대해 공개적으로 사과했다."}]}
+  ],
+  "publisher": [
+    {"cue":"책·잡지를 펴내는 회사","ko":"출판사","pos":"명사","lv":1,"cefr":"B1","en":"a company or person that prepares and sells books, magazines, or music","syn":[],"ex":[{"en":"The publisher released her new novel this month.","ko":"그 출판사는 이번 달에 그녀의 새 소설을 출간했다."}]}
+  ],
+  "pullover": [
+    {"cue":"머리부터 입는 옷","ko":"스웨터","pos":"명사","lv":1,"cefr":"A2","en":"a sweater that you put on by pulling it over your head","syn":["sweater"],"ex":[{"en":"He wore a warm pullover in winter.","ko":"그는 겨울에 따뜻한 스웨터를 입었다."}]}
+  ],
+  "pump": [
+    {"cue":"물·공기를 밀어내는 기계","ko":"펌프","pos":"명사","lv":1,"cefr":"A2","en":"a machine that pushes liquid or gas from one place to another","syn":[],"ex":[{"en":"They used a pump to get water out of the basement.","ko":"그들은 지하실의 물을 빼내기 위해 펌프를 사용했다."}]},
+    {"cue":"액체·기체를","ko":"퍼 올리다, 주입하다","pos":"동사","lv":2,"cefr":"B1","en":"move liquid or gas somewhere using a pump","syn":[],"ex":[{"en":"Workers pumped oil through the pipeline.","ko":"작업자들은 송유관을 통해 석유를 퍼 올렸다."}]}
+  ],
+  "punish": [
+    {"cue":"잘못한 사람을","ko":"처벌하다","pos":"동사","lv":1,"cefr":"A2","en":"make someone suffer because they have done something wrong","syn":[],"ex":[{"en":"The teacher punished the students for cheating.","ko":"선생님은 부정행위를 한 학생들을 처벌했다."}]}
+  ],
+  "punishment": [
+    {"cue":"잘못에 대한 대가","ko":"처벌","pos":"명사","lv":1,"cefr":"A2","en":"a penalty given to someone for doing something wrong","syn":["penalty"],"ex":[{"en":"He received a harsh punishment for the crime.","ko":"그는 그 범죄에 대해 가혹한 처벌을 받았다."}]}
+  ],
+  "pupil": [
+    {"cue":"학교의 어린 학생 (영국식)","ko":"학생","pos":"명사","lv":1,"cefr":"A2","en":"a child who is being taught, especially in school","syn":["student"],"ex":[{"en":"The teacher praised her pupil for the essay.","ko":"선생님은 그 학생의 에세이를 칭찬했다."}]},
+    {"cue":"눈 안의 검은 부분","ko":"눈동자","pos":"명사","lv":2,"cefr":"B1","en":"the small black circular opening in the center of the eye","syn":[],"ex":[{"en":"The doctor checked the size of his pupil.","ko":"의사는 그의 눈동자 크기를 확인했다."}]}
+  ],
+  "puppy": [
+    {"cue":"어린 개","ko":"강아지","pos":"명사","lv":1,"cefr":"A1","en":"a young dog","syn":[],"ex":[{"en":"They adopted a puppy from the shelter.","ko":"그들은 보호소에서 강아지를 입양했다."}]}
+  ],
+  "pure": [
+    {"cue":"물질에 다른 게 섞이지 않은","ko":"순수한, 불순물 없는","pos":"형용사","lv":1,"cefr":"B1","en":"not mixed with anything else","syn":[],"ex":[{"en":"The bottle contains pure orange juice.","ko":"그 병에는 순수한 오렌지 주스가 들어 있다."}]},
+    {"cue":"강조할 때, 순전히","ko":"순전한, 완전한","pos":"형용사","lv":2,"cefr":"B2","en":"complete or total, used to emphasize something","syn":["sheer"],"ex":[{"en":"It was pure luck that we won.","ko":"우리가 이긴 건 순전히 운이었다."}]}
+  ],
+  "purify": [
+    {"cue":"불순물을 제거해 깨끗하게","ko":"정화하다","pos":"동사","lv":1,"cefr":"B1","en":"remove dirty or harmful substances from something to make it clean","syn":[],"ex":[{"en":"The machine purifies the water before it reaches the tap.","ko":"그 기계는 물이 수도꼭지에 닿기 전에 정화한다."}]}
+  ],
+  "purse": [
+    {"cue":"돈·소지품을 넣는 (여성용)","ko":"지갑, 핸드백","pos":"명사","lv":1,"cefr":"A2","en":"a small bag used for carrying money and personal items, especially by women","syn":["handbag"],"ex":[{"en":"She kept her keys in her purse.","ko":"그녀는 열쇠를 지갑에 넣어 두었다."}]}
+  ],
+  "puzzle": [
+    {"cue":"이해가 안 돼 헷갈리게","ko":"당혹하게 하다, 어리둥절하게 만들다","pos":"동사","lv":1,"cefr":"B1","en":"make someone feel confused because they cannot understand something","syn":["confuse"],"ex":[{"en":"Her strange behavior puzzled everyone.","ko":"그녀의 이상한 행동은 모두를 당혹하게 했다."}]},
+    {"cue":"맞추거나 푸는 게임","ko":"퍼즐, 수수께끼","pos":"명사","lv":2,"cefr":"A2","en":"a game or problem that tests your thinking skills","syn":[],"ex":[{"en":"He solved the puzzle in ten minutes.","ko":"그는 10분 만에 퍼즐을 풀었다."}]}
+  ],
+  "quake": [
+    {"cue":"땅이 흔들리는 현상 (지진의 줄임말)","ko":"지진","pos":"명사","lv":1,"cefr":"B1","en":"a sudden shaking of the ground, short for earthquake","syn":["tremor"],"ex":[{"en":"The quake shook buildings across the city.","ko":"그 지진은 도시 전역의 건물을 흔들었다."}]}
+  ],
+  "qualified": [
+    {"cue":"교육·훈련을 마쳐 능력을 인정받은","ko":"자격이 있는, 자격을 갖춘","pos":"형용사","lv":1,"cefr":"B1","en":"having the necessary skills, knowledge, or experience for a job or task","syn":[],"ex":[{"en":"She is a qualified doctor.","ko":"그녀는 자격을 갖춘 의사이다."}]},
+    {"cue":"완전하지 않은, 조건이 붙은","ko":"제한적인, 조건부의","pos":"형용사","lv":2,"cefr":"B2","en":"limited or restricted in some way, not complete","syn":[],"ex":[{"en":"He gave the plan only qualified support.","ko":"그는 그 계획을 조건부로만 지지했다."}]}
+  ],
+  "qualify": [
+    {"cue":"시험·조건을 통과해","ko":"자격을 얻다","pos":"동사","lv":1,"cefr":"B1","en":"reach the standard or meet the conditions needed to do or get something","syn":[],"ex":[{"en":"She qualified for the final round.","ko":"그녀는 결승전에 진출할 자격을 얻었다."}]}
+  ],
+  "quantity": [
+    {"cue":"물건의 많고 적음","ko":"양, 수량","pos":"명사","lv":1,"cefr":"A2","en":"an amount of something that can be counted or measured","syn":["amount"],"ex":[{"en":"They bought a large quantity of rice.","ko":"그들은 많은 양의 쌀을 샀다."}]}
+  ],
+  "question mark": [
+    {"cue":"문장 끝의 물음표 부호","ko":"물음표","pos":"명사","lv":1,"cefr":"A1","en":"the punctuation mark (?) used at the end of a question","syn":[],"ex":[{"en":"Don't forget the question mark at the end.","ko":"끝에 물음표 넣는 거 잊지 마."}]}
+  ],
+  "questionnaire": [
+    {"cue":"조사용 질문 목록","ko":"설문지","pos":"명사","lv":1,"cefr":"B1","en":"a written set of questions used to collect information from people","syn":[],"ex":[{"en":"Please fill out this questionnaire.","ko":"이 설문지를 작성해 주세요."}]}
+  ],
+  "queue": [
+    {"cue":"차례를 기다리며","ko":"줄을 서다","pos":"동사","lv":1,"cefr":"A2","en":"stand in a line waiting for something","syn":["line up"],"ex":[{"en":"We queued for an hour to get tickets.","ko":"우리는 표를 사려고 한 시간 동안 줄을 섰다."}]},
+    {"cue":"기다리는 사람들의 줄","ko":"줄, 대기열","pos":"명사","lv":2,"cefr":"A2","en":"a line of people or vehicles waiting for something","syn":["line"],"ex":[{"en":"There was a long queue outside the store.","ko":"가게 밖에 긴 줄이 있었다."}]}
+  ],
+  "race": [
+    {"cue":"누가 더 빠른지 겨루는","ko":"경주","pos":"명사","lv":1,"cefr":"A1","en":"a competition to see who is the fastest","syn":[],"ex":[{"en":"He won the race easily.","ko":"그는 쉽게 그 경주에서 이겼다."}]},
+    {"cue":"피부색 등으로 나뉘는 사람들의 집단","ko":"인종","pos":"명사","lv":2,"cefr":"B1","en":"a group of people who share the same ancestry or physical characteristics","syn":[],"ex":[{"en":"People of every race attended the festival.","ko":"모든 인종의 사람들이 그 축제에 참여했다."}]},
+    {"cue":"매우 빠르게 달리다","ko":"경주하다, 질주하다","pos":"동사","lv":3,"cefr":"A2","en":"move or compete at high speed","syn":["dash"],"ex":[{"en":"The kids raced each other to the gate.","ko":"아이들은 문까지 서로 경주했다."}]}
+  ],
+  "racial": [
+    {"cue":"인종과 관련된","ko":"인종의","pos":"형용사","lv":1,"cefr":"B1","en":"relating to a person's race","syn":[],"ex":[{"en":"The company has a strict policy against racial discrimination.","ko":"그 회사는 인종 차별에 반대하는 엄격한 정책을 두고 있다."}]}
+  ],
+  "radiation": [
+    {"cue":"핵·태양에서 나오는 에너지","ko":"방사선","pos":"명사","lv":1,"cefr":"B1","en":"energy that is sent out in the form of waves or particles, sometimes harmful","syn":[],"ex":[{"en":"The workers wore suits to protect them from radiation.","ko":"작업자들은 방사선으로부터 보호하기 위해 보호복을 입었다."}]}
+  ],
+  "rage": [
+    {"cue":"매우 강한 화","ko":"격노, 분노","pos":"명사","lv":1,"cefr":"B1","en":"a strong feeling of extreme anger","syn":["fury"],"ex":[{"en":"He shouted in a fit of rage.","ko":"그는 격노해서 소리를 질렀다."}]}
+  ],
+  "rail": [
+    {"cue":"손으로 잡는 가로 막대","ko":"난간","pos":"명사","lv":1,"cefr":"B1","en":"a bar fixed along or around something for people to hold onto","syn":["railing"],"ex":[{"en":"Hold the rail as you go down the stairs.","ko":"계단을 내려갈 때 난간을 잡으세요."}]},
+    {"cue":"기차가 다니는 선로","ko":"레일, 철로","pos":"명사","lv":2,"cefr":"B1","en":"a metal bar that forms the track for a train","syn":["track"],"ex":[{"en":"The train runs smoothly along the rails.","ko":"기차는 레일을 따라 부드럽게 달린다."}]}
+  ],
+  "railroad": [
+    {"cue":"기차가 다니는 (미국식)","ko":"철도","pos":"명사","lv":1,"cefr":"A2","en":"a system of tracks that trains travel on, especially in American English","syn":["railway"],"ex":[{"en":"The railroad connects the two cities.","ko":"그 철도는 두 도시를 연결한다."}]}
+  ],
+  "railway": [
+    {"cue":"기차가 다니는 (영국식)","ko":"철도","pos":"명사","lv":1,"cefr":"A2","en":"a system of tracks that trains travel on, especially in British English","syn":["railroad"],"ex":[{"en":"They traveled by railway across Europe.","ko":"그들은 철도로 유럽을 횡단했다."}]}
+  ],
+  "rainfall": [
+    {"cue":"내린 비의 양","ko":"강우량","pos":"명사","lv":1,"cefr":"B1","en":"the amount of rain that falls in a particular place and time","syn":[],"ex":[{"en":"This region gets heavy rainfall in summer.","ko":"이 지역은 여름에 강우량이 많다."}]}
+  ],
+  "rainforest": [
+    {"cue":"비가 많이 오는 밀림","ko":"열대우림","pos":"명사","lv":1,"cefr":"A2","en":"a thick forest found in hot, wet parts of the world","syn":[],"ex":[{"en":"The Amazon rainforest is home to many species.","ko":"아마존 열대우림에는 많은 종이 살고 있다."}]}
+  ],
+  "rank": [
+    {"cue":"조직·군대 내 서열","ko":"계급, 지위","pos":"명사","lv":1,"cefr":"B1","en":"a position or level in an organization, such as the army","syn":[],"ex":[{"en":"He rose to the rank of captain.","ko":"그는 대위 계급까지 올랐다."}]},
+    {"cue":"순위·등급을 매기다","ko":"(순위상) ~에 위치하다","pos":"동사","lv":2,"cefr":"B1","en":"give something a position on a scale compared with others","syn":[],"ex":[{"en":"The team ranks first in the league.","ko":"그 팀은 리그에서 1위를 차지하고 있다."}]}
+  ],
+  "rapid": [
+    {"cue":"짧은 시간에 일어나는","ko":"빠른, 신속한","pos":"형용사","lv":1,"cefr":"B1","en":"happening quickly or in a short time","syn":["quick"],"ex":[{"en":"The company has seen rapid growth this year.","ko":"그 회사는 올해 급속한 성장을 보였다."}]}
+  ],
+  "rapidly": [
+    {"cue":"속도가 빠르게","ko":"빠르게","pos":"부사","lv":1,"cefr":"B1","en":"in a fast way","syn":["quickly"],"ex":[{"en":"Prices rose rapidly last month.","ko":"지난달 물가가 빠르게 올랐다."}]}
+  ],
+  "rare": [
+    {"cue":"흔하지 않은","ko":"드문, 희귀한","pos":"형용사","lv":1,"cefr":"A2","en":"not happening or existing often","syn":["uncommon"],"ex":[{"en":"It's rare to see snow here.","ko":"여기서 눈을 보는 건 드문 일이다."}]},
+    {"cue":"스테이크 굽기 정도","ko":"(고기가) 덜 익힌, 레어의","pos":"형용사","lv":2,"cefr":"B1","en":"(of meat) cooked for only a short time so it is still red inside","syn":[],"ex":[{"en":"He ordered his steak rare.","ko":"그는 스테이크를 레어로 주문했다."}]}
+  ],
+  "rarely": [
+    {"cue":"자주 있지 않은","ko":"드물게, 좀처럼 ~않는","pos":"부사","lv":1,"cefr":"A2","en":"not often","syn":["seldom"],"ex":[{"en":"She rarely eats fast food.","ko":"그녀는 좀처럼 패스트푸드를 먹지 않는다."}]}
+  ],
+  "raspberry": [
+    {"cue":"작고 빨간 베리류 과일","ko":"라즈베리, 산딸기","pos":"명사","lv":1,"cefr":"A2","en":"a small soft red fruit that grows on a bush","syn":[],"ex":[{"en":"She made jam with fresh raspberries.","ko":"그녀는 신선한 라즈베리로 잼을 만들었다."}]}
+  ],
+  "ration": [
+    {"cue":"부족할 때 나눠주는 정해진 양","ko":"배급, 배급량","pos":"명사","lv":1,"cefr":"B1","en":"a fixed amount of food or goods given to each person, especially when supplies are limited","syn":[],"ex":[{"en":"Soldiers received a daily ration of food.","ko":"군인들은 매일 정해진 배급 식량을 받았다."}]}
+  ],
+  "rational": [
+    {"cue":"이치에 맞게 생각하는","ko":"합리적인, 이성적인","pos":"형용사","lv":1,"cefr":"B1","en":"based on clear thinking and reason rather than emotion","syn":["reasonable"],"ex":[{"en":"We need to make a rational decision.","ko":"우리는 이성적인 결정을 내려야 한다."}]}
+  ],
+  "razor": [
+    {"cue":"수염을 미는 도구","ko":"면도기, 면도날","pos":"명사","lv":1,"cefr":"A2","en":"a tool with a sharp blade used for shaving hair off the skin","syn":[],"ex":[{"en":"He shaved with a razor every morning.","ko":"그는 매일 아침 면도기로 면도했다."}]}
+  ],
+  "react": [
+    {"cue":"어떤 일에 대해","ko":"반응하다","pos":"동사","lv":1,"cefr":"A2","en":"behave or respond in a particular way because of something that happens","syn":["respond"],"ex":[{"en":"She reacted calmly to the bad news.","ko":"그녀는 그 나쁜 소식에 침착하게 반응했다."}]}
+  ],
+  "realistic": [
+    {"cue":"실제 가능성을 고려한","ko":"현실적인","pos":"형용사","lv":1,"cefr":"B1","en":"seeing things as they really are and being sensible about what can be achieved","syn":[],"ex":[{"en":"We need a realistic plan for the budget.","ko":"우리는 예산에 대한 현실적인 계획이 필요하다."}]}
+  ],
+  "reality": [
+    {"cue":"실제로 일어나는 상황","ko":"현실","pos":"명사","lv":1,"cefr":"B1","en":"the way things actually are, not how they are imagined","syn":[],"ex":[{"en":"The dream finally became reality.","ko":"그 꿈은 마침내 현실이 되었다."}]}
+  ],
+  "rearrange": [
+    {"cue":"물건·순서를 다시","ko":"재배열하다","pos":"동사","lv":1,"cefr":"B1","en":"change the order or position of things","syn":[],"ex":[{"en":"She rearranged the furniture in her room.","ko":"그녀는 방 안 가구를 재배열했다."}]}
+  ],
+  "reasonable": [
+    {"cue":"이치에 맞는 생각·행동","ko":"합리적인, 타당한","pos":"형용사","lv":1,"cefr":"B1","en":"fair and sensible","syn":["sensible"],"ex":[{"en":"That sounds like a reasonable explanation.","ko":"그건 합리적인 설명처럼 들린다."}]},
+    {"cue":"값이 너무 비싸지 않은","ko":"(가격이) 적당한","pos":"형용사","lv":2,"cefr":"A2","en":"(of a price) fair and not too expensive","syn":["fair"],"ex":[{"en":"The hotel offers rooms at a reasonable price.","ko":"그 호텔은 적당한 가격에 방을 제공한다."}]}
+  ],
+  "rebuild": [
+    {"cue":"부서진 것을 다시 짓다","ko":"재건하다","pos":"동사","lv":1,"cefr":"B1","en":"build something again after it has been damaged or destroyed","syn":["reconstruct"],"ex":[{"en":"They rebuilt the house after the fire.","ko":"그들은 화재 이후 그 집을 재건했다."}]}
+  ],
+  "recall": [
+    {"cue":"결함 있는 제품·군대를","ko":"회수, 소환","pos":"명사","lv":1,"cefr":"B2","en":"an official request to return a faulty product or to bring back military forces","syn":[],"ex":[{"en":"The car company issued a recall of the model.","ko":"그 자동차 회사는 그 모델에 대한 회수를 발표했다."}]},
+    {"cue":"과거 일을","ko":"기억해내다, 상기하다","pos":"동사","lv":2,"cefr":"B1","en":"remember something from the past","syn":["remember"],"ex":[{"en":"I can't recall her name right now.","ko":"지금은 그녀의 이름이 기억나지 않는다."}]}
+  ],
+  "reception": [
+    {"cue":"사람들이 보이는 반응","ko":"환영, 반응","pos":"명사","lv":1,"cefr":"B1","en":"the way people respond to something, especially the way they welcome it","syn":[],"ex":[{"en":"The new policy got a mixed reception.","ko":"그 새 정책은 엇갈린 반응을 받았다."}]},
+    {"cue":"호텔·회사 안내 데스크","ko":"접수처","pos":"명사","lv":2,"cefr":"A2","en":"the place in a hotel or office where visitors are greeted","syn":[],"ex":[{"en":"Please leave your bag at reception.","ko":"가방은 접수처에 맡겨 주세요."}]}
+  ],
+  "recite": [
+    {"cue":"외운 것을 소리내어","ko":"암송하다, 낭독하다","pos":"동사","lv":1,"cefr":"B1","en":"say a poem or piece of writing aloud from memory","syn":[],"ex":[{"en":"The student recited the poem perfectly.","ko":"그 학생은 시를 완벽하게 암송했다."}]}
+  ],
+  "reclaim": [
+    {"cue":"원래 자기 것을","ko":"되찾다, 회수하다","pos":"동사","lv":1,"cefr":"B1","en":"get something back that was taken away or lost","syn":["recover"],"ex":[{"en":"She reclaimed her luggage at the airport.","ko":"그녀는 공항에서 자신의 짐을 되찾았다."}]}
+  ],
+  "recognize": [
+    {"cue":"전에 본 사람·것을","ko":"알아보다","pos":"동사","lv":1,"cefr":"A2","en":"know someone or something because you have seen or experienced them before","syn":[],"ex":[{"en":"I almost didn't recognize you with short hair.","ko":"짧은 머리라서 하마터면 못 알아볼 뻔했어."}]},
+    {"cue":"사실·자격을","ko":"인정하다","pos":"동사","lv":2,"cefr":"B1","en":"officially accept that something is true or valid","syn":["acknowledge"],"ex":[{"en":"The company recognized her hard work.","ko":"그 회사는 그녀의 노고를 인정했다."}]}
+  ],
+  "recommend": [
+    {"cue":"좋다고 생각해서 권하다","ko":"추천하다","pos":"동사","lv":1,"cefr":"A2","en":"suggest that someone should do something or use something because it is good","syn":["suggest"],"ex":[{"en":"My friend recommended this restaurant.","ko":"내 친구가 이 식당을 추천했다."}]}
+  ],
+  "recording": [
+    {"cue":"소리·영상을 기록한 것","ko":"녹음, 녹화","pos":"명사","lv":1,"cefr":"A2","en":"a piece of music, sound, or video that has been recorded","syn":[],"ex":[{"en":"They listened to a recording of the interview.","ko":"그들은 그 인터뷰 녹음을 들었다."}]}
+  ],
+  "recover": [
+    {"cue":"병·충격에서","ko":"회복하다","pos":"동사","lv":1,"cefr":"A2","en":"become well again after being ill or hurt","syn":[],"ex":[{"en":"It took weeks for him to recover from the flu.","ko":"그가 독감에서 회복하는 데 몇 주가 걸렸다."}]},
+    {"cue":"잃어버린 것을","ko":"되찾다","pos":"동사","lv":2,"cefr":"B1","en":"get back something that was lost or taken away","syn":["retrieve"],"ex":[{"en":"Police recovered the stolen car.","ko":"경찰은 도난당한 차를 되찾았다."}]}
+  ],
+  "recovery": [
+    {"cue":"병·경제가 다시 좋아짐","ko":"회복","pos":"명사","lv":1,"cefr":"B1","en":"the process of becoming well or normal again after being sick or damaged","syn":[],"ex":[{"en":"She made a full recovery after the surgery.","ko":"그녀는 수술 후 완전히 회복했다."}]}
+  ],
+  "recycled": [
+    {"cue":"다시 사용하도록 처리된","ko":"재활용된","pos":"형용사","lv":1,"cefr":"A2","en":"made from materials that have been used before and processed for reuse","syn":[],"ex":[{"en":"This notebook is made of recycled paper.","ko":"이 공책은 재활용 종이로 만들어졌다."}]}
+  ],
+  "recycling": [
+    {"cue":"쓰레기를 다시 자원으로","ko":"재활용","pos":"명사","lv":1,"cefr":"A2","en":"the process of turning waste into something that can be used again","syn":[],"ex":[{"en":"Our town has a good recycling program.","ko":"우리 동네는 재활용 프로그램이 잘 되어 있다."}]}
+  ],
+  "reduce": [
+    {"cue":"양·크기·정도를","ko":"줄이다, 감소시키다","pos":"동사","lv":1,"cefr":"A2","en":"make something smaller in size, amount, or degree","syn":["cut down"],"ex":[{"en":"The company reduced its prices by 20 percent.","ko":"그 회사는 가격을 20퍼센트 줄였다."}]}
+  ],
+  "reduction": [
+    {"cue":"양이 줄어드는 것","ko":"감소, 축소","pos":"명사","lv":1,"cefr":"B1","en":"the act of making something smaller or less in amount","syn":["decrease"],"ex":[{"en":"There was a big reduction in traffic accidents.","ko":"교통사고가 크게 감소했다."}]}
+  ],
+  "reef": [
+    {"cue":"바다 속 바위·산호 무리","ko":"암초, 산호초","pos":"명사","lv":1,"cefr":"B1","en":"a long line of rocks or coral lying just below the surface of the sea","syn":[],"ex":[{"en":"Divers explored the coral reef.","ko":"잠수부들은 산호초를 탐험했다."}]}
+  ],
+  "referee": [
+    {"cue":"경기 규칙을 지켜보는 사람","ko":"심판","pos":"명사","lv":1,"cefr":"A2","en":"the official who makes sure players follow the rules in a sports game","syn":[],"ex":[{"en":"The referee blew the whistle for a foul.","ko":"심판은 반칙에 대해 휘슬을 불었다."}]}
+  ],
+  "reflection": [
+    {"cue":"거울·물에 비친 모습","ko":"반사, (거울·물에 비친) 상","pos":"명사","lv":1,"cefr":"A2","en":"an image of something seen in a mirror, glass, or water","syn":[],"ex":[{"en":"She looked at her reflection in the mirror.","ko":"그녀는 거울에 비친 자신의 모습을 봤다."}]},
+    {"cue":"차분히 깊이 생각함","ko":"성찰, 사색","pos":"명사","lv":2,"cefr":"B1","en":"careful thought about something","syn":[],"ex":[{"en":"After some reflection, he changed his mind.","ko":"곰곰이 생각한 끝에 그는 마음을 바꿨다."}]}
+  ],
+  "refreshments": [
+    {"cue":"행사에서 제공되는 간식·음료","ko":"다과, 간단한 음식과 음료","pos":"명사","lv":1,"cefr":"B1","en":"small amounts of food and drink offered at an event","syn":[],"ex":[{"en":"Refreshments will be served after the meeting.","ko":"회의 후 다과가 제공될 예정이다."}]}
+  ],
+  "refund": [
+    {"cue":"낸 돈을 다시 돌려받음","ko":"환불","pos":"명사","lv":1,"cefr":"A2","en":"an amount of money given back to you, for example because you returned a product","syn":[],"ex":[{"en":"She asked for a refund on the broken item.","ko":"그녀는 고장난 물건에 대해 환불을 요청했다."}]}
+  ],
+  "refusal": [
+    {"cue":"요청·제안을 받아들이지 않음","ko":"거절","pos":"명사","lv":1,"cefr":"B1","en":"an act of saying no to something offered or requested","syn":[],"ex":[{"en":"His refusal to apologize made things worse.","ko":"그가 사과를 거절해서 상황이 더 나빠졌다."}]}
+  ],
+  "refuse": [
+    {"cue":"요청·제안을 받아들이지 않고","ko":"거절하다","pos":"동사","lv":1,"cefr":"A2","en":"say that you will not do, accept, or allow something","syn":["decline"],"ex":[{"en":"He refused to answer the question.","ko":"그는 그 질문에 답하기를 거절했다."}]}
+  ],
+  "regain": [
+    {"cue":"잃었던 것을 다시","ko":"되찾다, 회복하다","pos":"동사","lv":1,"cefr":"B1","en":"get something back that you had before, such as strength or control","syn":["recover"],"ex":[{"en":"She slowly regained her strength after the illness.","ko":"그녀는 병을 앓고 나서 서서히 체력을 되찾았다."}]}
+  ],
+  "regard": [
+    {"cue":"어떤 점에서","ko":"점, 측면","pos":"명사","lv":1,"cefr":"B2","en":"a particular aspect or detail of something","syn":[],"ex":[{"en":"In this regard, the new policy is a big improvement.","ko":"이 점에서, 새 정책은 큰 개선이다."}]},
+    {"cue":"어떤 존재로","ko":"여기다, 간주하다","pos":"동사","lv":2,"cefr":"B1","en":"think of someone or something in a particular way","syn":["consider"],"ex":[{"en":"She is regarded as one of the best writers.","ko":"그녀는 최고의 작가 중 한 명으로 여겨진다."}]}
+  ],
+  "regarding": [
+    {"cue":"어떤 주제에 대해 말할 때","ko":"~에 관하여","pos":"전치사","lv":1,"cefr":"B1","en":"about or concerning a particular subject","syn":["about"],"ex":[{"en":"I have a question regarding the schedule.","ko":"일정에 관하여 질문이 있다."}]}
+  ],
+  "region": [
+    {"cue":"넓은 지리적 구역","ko":"지역","pos":"명사","lv":1,"cefr":"A2","en":"a large area of a country or the world","syn":["area"],"ex":[{"en":"This region is known for its wine.","ko":"이 지역은 와인으로 유명하다."}]}
+  ],
+  "regional": [
+    {"cue":"특정 지역과 관련된","ko":"지역의","pos":"형용사","lv":1,"cefr":"B1","en":"relating to a particular region","syn":[],"ex":[{"en":"The festival features regional food and music.","ko":"그 축제는 지역 음식과 음악을 선보인다."}]}
+  ],
+  "register": [
+    {"cue":"공식 명단에 이름을","ko":"등록하다","pos":"동사","lv":1,"cefr":"A2","en":"put your name on an official list for a course, event, or service","syn":["enroll"],"ex":[{"en":"Students must register for classes online.","ko":"학생들은 온라인으로 수업에 등록해야 한다."}]},
+    {"cue":"이름·정보를 적어둔 기록","ko":"등록부, 명부","pos":"명사","lv":2,"cefr":"B1","en":"an official list or book of names or information","syn":[],"ex":[{"en":"The teacher checked the class register.","ko":"선생님은 출석부를 확인했다."}]}
+  ],
+  "registration": [
+    {"cue":"공식 명단에 이름을 올리는 절차","ko":"등록","pos":"명사","lv":1,"cefr":"B1","en":"the act of putting your name on an official list","syn":[],"ex":[{"en":"Registration for the course closes on Friday.","ko":"그 강좌 등록은 금요일에 마감된다."}]}
+  ],
+  "regulation": [
+    {"cue":"지켜야 하는 공식 규칙","ko":"규정, 규제","pos":"명사","lv":1,"cefr":"B1","en":"an official rule that controls how something is done","syn":["rule"],"ex":[{"en":"The factory must follow safety regulations.","ko":"그 공장은 안전 규정을 따라야 한다."}]}
+  ],
+  "reject": [
+    {"cue":"제안·요청·지원서를","ko":"거절하다, 거부하다","pos":"동사","lv":1,"cefr":"A2","en":"refuse to accept, believe, or agree with something","syn":["refuse"],"ex":[{"en":"The bank rejected his loan application.","ko":"은행은 그의 대출 신청을 거절했다."}]}
+  ],
+  "relate": [
+    {"cue":"두 가지를 서로","ko":"관련시키다, 연결짓다","pos":"동사","lv":1,"cefr":"B1","en":"connect one thing with another","syn":["connect"],"ex":[{"en":"This chart relates income to education level.","ko":"이 도표는 소득을 교육 수준과 연관 짓는다."}]},
+    {"cue":"다른 사람의 상황·감정에","ko":"공감하다","pos":"동사","lv":2,"cefr":"B1","en":"understand and feel sympathy for someone's feelings or situation","syn":[],"ex":[{"en":"I really relate to what she went through.","ko":"나는 그녀가 겪은 일에 정말 공감이 된다."}]}
+  ],
+  "relation": [
+    {"cue":"두 대상 사이의 연결","ko":"관계, 연관","pos":"명사","lv":1,"cefr":"B1","en":"the way in which two or more things are connected","syn":[],"ex":[{"en":"There is a close relation between diet and health.","ko":"식습관과 건강 사이에는 밀접한 관계가 있다."}]}
+  ],
+  "relationship": [
+    {"cue":"사람·집단 사이의 관계","ko":"관계","pos":"명사","lv":1,"cefr":"A2","en":"the way two or more people or groups feel about and behave towards each other","syn":[],"ex":[{"en":"They have a strong relationship built on trust.","ko":"그들은 신뢰를 바탕으로 한 끈끈한 관계를 맺고 있다."}]}
+  ],
+  "relative": [
+    {"cue":"가족·혈연 관계인 사람","ko":"친척","pos":"명사","lv":1,"cefr":"A2","en":"a member of your family","syn":["relation"],"ex":[{"en":"We invited all our relatives to the wedding.","ko":"우리는 모든 친척을 결혼식에 초대했다."}]},
+    {"cue":"다른 것과 비교했을 때","ko":"상대적인","pos":"형용사","lv":2,"cefr":"B1","en":"considered in comparison with something else","syn":[],"ex":[{"en":"The two cities are similar in relative size.","ko":"두 도시는 상대적인 크기가 비슷하다."}]}
+  ],
+  "relatively": [
+    {"cue":"다른 것과 비교해서","ko":"상대적으로","pos":"부사","lv":1,"cefr":"B1","en":"to a fairly noticeable degree, especially in comparison to something else","syn":["comparatively"],"ex":[{"en":"The exam was relatively easy this year.","ko":"올해 시험은 상대적으로 쉬웠다."}]}
+  ],
+  "relaxing": [
+    {"cue":"몸과 마음을 쉬게 해주는","ko":"편안하게 해주는","pos":"형용사","lv":1,"cefr":"A2","en":"making you feel calm and free from stress","syn":["restful"],"ex":[{"en":"We had a relaxing weekend at the beach.","ko":"우리는 해변에서 편안한 주말을 보냈다."}]}
+  ],
+  "reliable": [
+    {"cue":"항상 기대한 대로 해주는","ko":"믿을 수 있는","pos":"형용사","lv":1,"cefr":"B1","en":"able to be trusted to do what is expected","syn":["dependable"],"ex":[{"en":"He is a reliable friend who never lets me down.","ko":"그는 나를 실망시킨 적 없는 믿을 수 있는 친구다."}]}
+  ],
+  "religion": [
+    {"cue":"신을 믿는 체계·신앙","ko":"종교","pos":"명사","lv":1,"cefr":"A2","en":"a belief in a god or gods, or a system of belief and worship","syn":[],"ex":[{"en":"They studied different religions at school.","ko":"그들은 학교에서 다양한 종교를 공부했다."}]}
+  ],
+  "religious": [
+    {"cue":"종교와 관련된","ko":"종교적인","pos":"형용사","lv":1,"cefr":"A2","en":"relating to religion or belief in a god","syn":[],"ex":[{"en":"She comes from a religious family.","ko":"그녀는 종교적인 가정 출신이다."}]}
+  ],
+  "rely": [
+    {"cue":"믿고 기대다","ko":"의존하다","pos":"동사","lv":1,"cefr":"B1","en":"depend on someone or something for help or support","syn":["depend"],"ex":[{"en":"You can rely on him to finish the job.","ko":"그가 그 일을 끝내리라고 믿어도 된다."}]}
+  ],
+  "remainder": [
+    {"cue":"남은 부분","ko":"나머지","pos":"명사","lv":1,"cefr":"B1","en":"the part of something that is left after the rest has gone","syn":["rest"],"ex":[{"en":"She spent the remainder of the day reading.","ko":"그녀는 남은 하루를 독서하며 보냈다."}]}
+  ],
+  "remark": [
+    {"cue":"짧게 하는 말","ko":"발언, 논평","pos":"명사","lv":1,"cefr":"B1","en":"a short comment or opinion about something","syn":["comment"],"ex":[{"en":"He made a rude remark about her cooking.","ko":"그는 그녀의 요리에 대해 무례한 발언을 했다."}]},
+    {"cue":"짧게 의견을","ko":"언급하다, 말하다","pos":"동사","lv":2,"cefr":"B1","en":"say something as a comment","syn":[],"ex":[{"en":"She remarked that the movie was too long.","ko":"그녀는 그 영화가 너무 길다고 언급했다."}]}
+  ],
+  "remarkable": [
+    {"cue":"특별히 인상적인","ko":"놀라운, 주목할 만한","pos":"형용사","lv":1,"cefr":"B1","en":"unusual or impressive enough to be noticed","syn":["notable"],"ex":[{"en":"She made remarkable progress in just a month.","ko":"그녀는 단 한 달 만에 놀라운 발전을 이루었다."}]}
+  ],
+  "remedy": [
+    {"cue":"병이나 문제를 고치는 방법","ko":"치료법, 해결책","pos":"명사","lv":1,"cefr":"B1","en":"something that cures an illness or solves a problem","syn":["cure"],"ex":[{"en":"Honey and tea is a common remedy for a sore throat.","ko":"꿀차는 목 아플 때 흔히 쓰는 치료법이다."}]}
+  ],
+  "remembrance": [
+    {"cue":"세상을 떠난 사람·일을 기림","ko":"기억, 추모","pos":"명사","lv":1,"cefr":"B1","en":"the act of remembering and honoring someone or something, especially the dead","syn":[],"ex":[{"en":"They held a moment of silence in remembrance of the victims.","ko":"그들은 희생자들을 추모하며 묵념의 시간을 가졌다."}]}
+  ],
+  "remote control": [
+    {"cue":"멀리서 기기를 조작하는 장치","ko":"리모컨","pos":"명사","lv":1,"cefr":"A1","en":"a device used to operate a machine, such as a TV, from a distance","syn":[],"ex":[{"en":"Where did I put the remote control?","ko":"리모컨을 어디에 뒀지?"}]}
+  ],
+  "remove": [
+    {"cue":"물건·문제를 있던 자리에서","ko":"제거하다, 없애다","pos":"동사","lv":1,"cefr":"A2","en":"take something away from a place or get rid of it","syn":["take away"],"ex":[{"en":"She removed the stain from the shirt.","ko":"그녀는 셔츠의 얼룩을 제거했다."}]}
+  ],
+  "renew": [
+    {"cue":"계약·면허 기간을 연장","ko":"갱신하다","pos":"동사","lv":1,"cefr":"B1","en":"make an agreement or license valid for a further period of time","syn":[],"ex":[{"en":"I need to renew my passport next year.","ko":"나는 내년에 여권을 갱신해야 한다."}]}
+  ],
+  "repay": [
+    {"cue":"빌린 돈을","ko":"갚다, 상환하다","pos":"동사","lv":1,"cefr":"B1","en":"pay back money that you owe someone","syn":["pay back"],"ex":[{"en":"He repaid the loan within a year.","ko":"그는 1년 안에 대출금을 갚았다."}]}
+  ],
+  "repeatedly": [
+    {"cue":"여러 번 계속해서","ko":"반복해서","pos":"부사","lv":1,"cefr":"B1","en":"many times, over and over again","syn":[],"ex":[{"en":"She repeatedly asked him the same question.","ko":"그녀는 그에게 같은 질문을 반복해서 물었다."}]}
+  ],
+  "representative": [
+    {"cue":"단체·사람들을 대신하는 사람","ko":"대표자","pos":"명사","lv":1,"cefr":"B1","en":"a person chosen to speak or act on behalf of others","syn":[],"ex":[{"en":"A representative from the company attended the meeting.","ko":"그 회사의 대표자가 회의에 참석했다."}]}
+  ],
+  "reproduce": [
+    {"cue":"똑같이 만들어내다","ko":"복제하다, 재현하다","pos":"동사","lv":1,"cefr":"B1","en":"make a copy of something or produce it again","syn":[],"ex":[{"en":"The artist reproduced the painting in smaller size.","ko":"그 화가는 그 그림을 더 작은 크기로 복제했다."}]},
+    {"cue":"생물이 새끼·자손을","ko":"번식하다","pos":"동사","lv":2,"cefr":"B1","en":"produce offspring, as animals or plants do","syn":[],"ex":[{"en":"Rabbits reproduce very quickly.","ko":"토끼는 매우 빠르게 번식한다."}]}
+  ],
+  "republic": [
+    {"cue":"국민이 선출한 대표가 다스리는 나라","ko":"공화국","pos":"명사","lv":1,"cefr":"B1","en":"a country governed by elected representatives rather than a king or queen","syn":[],"ex":[{"en":"France became a republic after the revolution.","ko":"프랑스는 혁명 이후 공화국이 되었다."}]}
+  ],
+  "reputation": [
+    {"cue":"사람들이 갖는 평가","ko":"명성, 평판","pos":"명사","lv":1,"cefr":"B1","en":"the general opinion that people have about someone or something","syn":[],"ex":[{"en":"The restaurant has a good reputation for its food.","ko":"그 식당은 음식으로 좋은 평판을 가지고 있다."}]}
+  ],
+  "require": [
+    {"cue":"규칙·상황이","ko":"요구하다, 필요로 하다","pos":"동사","lv":1,"cefr":"A2","en":"need something or make something necessary","syn":["need"],"ex":[{"en":"The job requires good communication skills.","ko":"그 일은 좋은 의사소통 능력을 필요로 한다."}]}
+  ],
+  "requirement": [
+    {"cue":"충족해야 하는 조건","ko":"요구사항, 필요조건","pos":"명사","lv":1,"cefr":"B1","en":"something that is needed or demanded","syn":[],"ex":[{"en":"A university degree is a requirement for this job.","ko":"이 직업은 대학 학위가 필요조건이다."}]}
+  ],
+  "rescue": [
+    {"cue":"위험에서 사람·동물을","ko":"구하다, 구조하다","pos":"동사","lv":1,"cefr":"A2","en":"save someone or something from a dangerous situation","syn":["save"],"ex":[{"en":"Firefighters rescued the cat from the tree.","ko":"소방관들은 나무에서 고양이를 구조했다."}]},
+    {"cue":"위험에서 구해내는 행위","ko":"구조","pos":"명사","lv":2,"cefr":"A2","en":"an act of saving someone from danger","syn":[],"ex":[{"en":"The rescue took three hours.","ko":"그 구조 작업은 세 시간이 걸렸다."}]}
+  ],
+  "researcher": [
+    {"cue":"연구를 직업으로 하는 사람","ko":"연구원","pos":"명사","lv":1,"cefr":"B1","en":"a person who studies a subject in order to discover new information","syn":[],"ex":[{"en":"Researchers are studying the effects of the new drug.","ko":"연구원들은 그 신약의 효과를 연구하고 있다."}]}
+  ],
+  "resemble": [
+    {"cue":"모습·성격이 서로","ko":"닮다, 비슷하다","pos":"동사","lv":1,"cefr":"B1","en":"look or be like someone or something else","syn":["look like"],"ex":[{"en":"She resembles her mother a lot.","ko":"그녀는 어머니를 많이 닮았다."}]}
+  ],
+  "reservation": [
+    {"cue":"자리·방을 미리 잡아둠","ko":"예약","pos":"명사","lv":1,"cefr":"A2","en":"an arrangement to have a room, table, or seat kept for you","syn":["booking"],"ex":[{"en":"I made a reservation at the restaurant for two.","ko":"나는 그 식당에 두 명 예약을 했다."}]},
+    {"cue":"확신이 서지 않는 마음","ko":"의구심, 거리낌","pos":"명사","lv":2,"cefr":"B2","en":"a feeling of doubt about a plan or idea","syn":["doubt"],"ex":[{"en":"He had some reservations about the new plan.","ko":"그는 그 새 계획에 대해 다소 의구심이 있었다."}]}
+  ],
+  "reserve": [
+    {"cue":"자리·좌석을 미리","ko":"예약하다","pos":"동사","lv":1,"cefr":"A2","en":"arrange to have something kept for you in advance","syn":["book"],"ex":[{"en":"We reserved a table for dinner.","ko":"우리는 저녁 식사를 위해 테이블을 예약했다."}]},
+    {"cue":"나중을 위해 남겨두다","ko":"비축하다, 아껴두다","pos":"동사","lv":2,"cefr":"B1","en":"keep something for later use instead of using it now","syn":[],"ex":[{"en":"They reserved some food for the winter.","ko":"그들은 겨울을 위해 음식을 좀 비축해 두었다."}]}
+  ],
+  "resident": [
+    {"cue":"특정 장소에 사는 사람","ko":"거주자","pos":"명사","lv":1,"cefr":"B1","en":"a person who lives in a particular place","syn":[],"ex":[{"en":"Local residents complained about the noise.","ko":"지역 거주자들은 소음에 대해 불평했다."}]},
+    {"cue":"그곳에 살고 있는","ko":"거주하는, 상주하는","pos":"형용사","lv":2,"cefr":"B2","en":"living in a particular place","syn":[],"ex":[{"en":"The resident population of the island is small.","ko":"그 섬에 거주하는 인구는 적다."}]}
+  ],
+  "residential": [
+    {"cue":"사람들이 사는 지역·용도의","ko":"주거의","pos":"형용사","lv":1,"cefr":"B1","en":"used for or relating to houses rather than offices or shops","syn":[],"ex":[{"en":"They live in a quiet residential area.","ko":"그들은 조용한 주거 지역에 산다."}]}
+  ],
+  "resist": [
+    {"cue":"힘·유혹에 맞서 버티다","ko":"저항하다, 참다","pos":"동사","lv":1,"cefr":"B1","en":"refuse to accept something or stop yourself from doing something you want to do","syn":[],"ex":[{"en":"She couldn't resist buying the shoes.","ko":"그녀는 그 신발을 사고 싶은 마음을 참을 수 없었다."}]}
+  ],
+  "resolve": [
+    {"cue":"문제·갈등을","ko":"해결하다","pos":"동사","lv":1,"cefr":"B1","en":"find a solution to a problem or disagreement","syn":["settle"],"ex":[{"en":"They managed to resolve the conflict peacefully.","ko":"그들은 그 갈등을 평화롭게 해결했다."}]},
+    {"cue":"무언가를 하기로 굳게","ko":"결심하다","pos":"동사","lv":2,"cefr":"B2","en":"make a firm decision to do something","syn":[],"ex":[{"en":"She resolved to exercise every morning.","ko":"그녀는 매일 아침 운동하기로 결심했다."}]}
+  ],
+  "resort": [
+    {"cue":"다른 방법이 없어 어쩔 수 없이","ko":"의지하다, 호소하다","pos":"동사","lv":1,"cefr":"B2","en":"turn to a difficult or extreme action because there is no other choice","syn":[],"ex":[{"en":"They resorted to violence when talks failed.","ko":"대화가 실패하자 그들은 폭력에 의지했다."}]},
+    {"cue":"휴가를 보내는 곳","ko":"휴양지, 리조트","pos":"명사","lv":2,"cefr":"A2","en":"a place where people go on vacation","syn":[],"ex":[{"en":"We stayed at a beach resort last summer.","ko":"우리는 지난여름 해변 리조트에 머물렀다."}]}
+  ],
+  "resource": [
+    {"cue":"쓸 수 있는 물자·재료","ko":"자원","pos":"명사","lv":1,"cefr":"A2","en":"a supply of something, such as money, materials, or energy, that can be used","syn":[],"ex":[{"en":"Water is a valuable natural resource.","ko":"물은 소중한 천연 자원이다."}]}
+  ],
+  "respect": [
+    {"cue":"누군가를 높이 평가하는 마음","ko":"존중, 존경","pos":"명사","lv":1,"cefr":"A2","en":"a feeling of admiration for someone because of their qualities or achievements","syn":[],"ex":[{"en":"She has great respect for her teacher.","ko":"그녀는 선생님을 매우 존경한다."}]},
+    {"cue":"의견·사람을","ko":"존중하다, 존경하다","pos":"동사","lv":2,"cefr":"A2","en":"admire someone or treat them with consideration","syn":[],"ex":[{"en":"You should respect other people's opinions.","ko":"다른 사람의 의견을 존중해야 한다."}]}
+  ],
+  "respectable": [
+    {"cue":"도덕적으로 흠 없는","ko":"존경할 만한, 훌륭한","pos":"형용사","lv":1,"cefr":"B1","en":"considered to be honest, good, and deserving respect","syn":[],"ex":[{"en":"He comes from a respectable family.","ko":"그는 존경할 만한 가문 출신이다."}]}
+  ],
+  "respond": [
+    {"cue":"질문·상황에 대해","ko":"응답하다, 반응하다","pos":"동사","lv":1,"cefr":"A2","en":"say or do something as a reply or reaction","syn":["reply"],"ex":[{"en":"He didn't respond to my email.","ko":"그는 내 이메일에 응답하지 않았다."}]}
+  ],
+  "responsibility": [
+    {"cue":"맡아서 해야 할 일","ko":"책임","pos":"명사","lv":1,"cefr":"B1","en":"a duty to deal with or take care of something","syn":["duty"],"ex":[{"en":"Taking care of the dog is my responsibility.","ko":"개를 돌보는 것은 내 책임이다."}]}
+  ],
+  "responsible": [
+    {"cue":"어떤 일에 대해 책임을 지는","ko":"책임 있는","pos":"형용사","lv":1,"cefr":"A2","en":"having a duty to deal with or take care of something, or being the cause of something","syn":[],"ex":[{"en":"She is responsible for the whole project.","ko":"그녀는 그 프로젝트 전체에 대해 책임이 있다."}]}
+  ],
+  "rest": [
+    {"cue":"몸과 마음을 쉬는 것","ko":"휴식","pos":"명사","lv":1,"cefr":"A1","en":"a period of relaxing or sleeping","syn":[],"ex":[{"en":"You need some rest after the long trip.","ko":"긴 여행 후에는 좀 쉬어야 한다."}]},
+    {"cue":"일을 멈추고","ko":"쉬다, 휴식을 취하다","pos":"동사","lv":2,"cefr":"A1","en":"stop working or being active in order to relax","syn":[],"ex":[{"en":"He rested for an hour before dinner.","ko":"그는 저녁 식사 전에 한 시간 쉬었다."}]},
+    {"cue":"남은 부분","ko":"나머지","pos":"명사","lv":3,"cefr":"A2","en":"the part of something that remains","syn":["remainder"],"ex":[{"en":"I'll finish the rest of the work tomorrow.","ko":"나머지 일은 내일 끝낼 것이다."}]}
+  ],
+  "restore": [
+    {"cue":"원래 상태로 되돌리다","ko":"복원하다, 회복시키다","pos":"동사","lv":1,"cefr":"B1","en":"bring something back to its original condition","syn":[],"ex":[{"en":"The museum restored the old painting.","ko":"그 박물관은 오래된 그림을 복원했다."}]}
+  ],
+  "restrict": [
+    {"cue":"양·범위·자유를","ko":"제한하다","pos":"동사","lv":1,"cefr":"B1","en":"limit the amount, size, or range of something","syn":["limit"],"ex":[{"en":"The new law restricts the use of plastic bags.","ko":"그 새 법은 비닐봉지 사용을 제한한다."}]}
+  ],
+  "retail": [
+    {"cue":"소비자에게 직접 판매하는 것","ko":"소매","pos":"명사","lv":1,"cefr":"B1","en":"the selling of goods to customers in stores, not in large quantities to businesses","syn":[],"ex":[{"en":"He works in retail at a clothing store.","ko":"그는 옷가게에서 소매업에 종사한다."}]}
+  ],
+  "retain": [
+    {"cue":"가지고 있던 것을 계속","ko":"유지하다, 보유하다","pos":"동사","lv":1,"cefr":"B1","en":"continue to have or keep something","syn":["keep"],"ex":[{"en":"The company managed to retain its best employees.","ko":"그 회사는 최고의 직원들을 계속 붙잡아 두었다."}]}
+  ],
+  "retell": [
+    {"cue":"들었던 이야기를 다시","ko":"다시 이야기하다","pos":"동사","lv":1,"cefr":"B1","en":"tell a story again, sometimes in a different way","syn":[],"ex":[{"en":"She retold the story to her grandchildren.","ko":"그녀는 손주들에게 그 이야기를 다시 들려주었다."}]}
+  ],
+  "retrospect": [
+    {"cue":"지난 일을 돌아볼 때 (in retrospect)","ko":"회고, 돌이켜봄","pos":"명사","lv":1,"cefr":"B2","en":"a look back at something that happened in the past","syn":[],"ex":[{"en":"In retrospect, moving abroad was the right choice.","ko":"돌이켜보면, 해외로 이주한 것은 옳은 선택이었다."}]}
+  ],
+  "reunification": [
+    {"cue":"분단된 나라가 다시 하나로","ko":"재통일","pos":"명사","lv":1,"cefr":"B2","en":"the process of bringing separated parts of a country back together","syn":[],"ex":[{"en":"They hoped for the reunification of the two countries.","ko":"그들은 두 나라의 재통일을 바랐다."}]}
+  ],
+  "reunify": [
+    {"cue":"분단된 나라를 다시 하나로","ko":"재통일하다","pos":"동사","lv":1,"cefr":"B2","en":"bring separated parts of a country back together","syn":[],"ex":[{"en":"Germany was reunified in 1990.","ko":"독일은 1990년에 재통일되었다."}]}
+  ],
+  "revise": [
+    {"cue":"글·계획을 고쳐서 더 좋게","ko":"수정하다, 개정하다","pos":"동사","lv":1,"cefr":"B1","en":"change something, such as a piece of writing or a plan, to improve or correct it","syn":[],"ex":[{"en":"She revised her essay before submitting it.","ko":"그녀는 제출하기 전에 에세이를 수정했다."}]},
+    {"cue":"시험을 앞두고 다시 공부 (영국식)","ko":"(영국식) 시험공부하다, 복습하다","pos":"동사","lv":2,"cefr":"B1","en":"(British English) study material again in preparation for an exam","syn":[],"ex":[{"en":"He is revising for his final exams.","ko":"그는 기말고사를 위해 복습하고 있다."}]}
+  ],
+  "revision": [
+    {"cue":"글·계획을 고친 것","ko":"수정, 개정","pos":"명사","lv":1,"cefr":"B1","en":"a change made to improve or correct something","syn":[],"ex":[{"en":"The contract needs a few revisions.","ko":"그 계약서는 몇 가지 수정이 필요하다."}]},
+    {"cue":"시험 준비로 다시 공부함 (영국식)","ko":"(영국식) 복습","pos":"명사","lv":2,"cefr":"B1","en":"(British English) the process of studying material again before an exam","syn":[],"ex":[{"en":"She spent the weekend on revision.","ko":"그녀는 주말 동안 시험 복습을 했다."}]}
+  ],
+  "reward": [
+    {"cue":"잘한 일에 대해 받는 것","ko":"보상","pos":"명사","lv":1,"cefr":"B1","en":"something given in return for good behavior or hard work","syn":[],"ex":[{"en":"Getting the job was a reward for her hard work.","ko":"그 일자리를 얻은 것은 그녀의 노력에 대한 보상이었다."}]},
+    {"cue":"잘한 일에 대해 갚아주다","ko":"보상하다","pos":"동사","lv":2,"cefr":"B1","en":"give something in return for good behavior or achievement","syn":[],"ex":[{"en":"The teacher rewarded the students with extra credit.","ko":"선생님은 학생들에게 추가 점수로 보상했다."}]}
+  ],
+  "rewrite": [
+    {"cue":"이미 쓴 글을 고쳐 다시","ko":"다시 쓰다","pos":"동사","lv":1,"cefr":"B1","en":"write something again in a different or better way","syn":[],"ex":[{"en":"He had to rewrite the whole report.","ko":"그는 보고서 전체를 다시 써야 했다."}]}
+  ],
+  "rid": [
+    {"cue":"원치 않는 것을 치우다 (get rid of)","ko":"없애다, 제거하다","pos":"동사","lv":1,"cefr":"A2","en":"make something free of an unwanted thing","syn":[],"ex":[{"en":"We need to get rid of these old boxes.","ko":"우리는 이 낡은 상자들을 없애야 한다."}]}
+  ],
+  "riddle": [
+    {"cue":"답을 알아맞히는 질문","ko":"수수께끼, 난제","pos":"명사","lv":1,"cefr":"B1","en":"a puzzling question that has a clever or funny answer","syn":[],"ex":[{"en":"He asked me a tricky riddle.","ko":"그는 나에게 까다로운 수수께끼를 냈다."}]}
+  ],
+  "ridiculous": [
+    {"cue":"말도 안 되게 어리석은","ko":"터무니없는, 우스꽝스러운","pos":"형용사","lv":1,"cefr":"B1","en":"very silly or unreasonable","syn":["absurd"],"ex":[{"en":"That's a ridiculous excuse.","ko":"그건 터무니없는 변명이다."}]}
+  ],
+  "ripe": [
+    {"cue":"과일·곡식이 다 자라","ko":"익은","pos":"형용사","lv":1,"cefr":"A2","en":"(of fruit) fully grown and ready to eat","syn":[],"ex":[{"en":"These bananas are perfectly ripe.","ko":"이 바나나들은 완벽하게 익었다."}]}
+  ],
+  "rise": [
+    {"cue":"수치·수준이 높아지다","ko":"오르다, 상승하다","pos":"동사","lv":1,"cefr":"A2","en":"increase in amount, number, or level","syn":["increase"],"ex":[{"en":"Prices have risen sharply this year.","ko":"올해 물가가 급격히 올랐다."}]},
+    {"cue":"양·수준이 늘어남","ko":"상승, 증가","pos":"명사","lv":2,"cefr":"B1","en":"an increase in amount or level","syn":["increase"],"ex":[{"en":"There was a rise in the number of visitors.","ko":"방문객 수가 증가했다."}]}
+  ],
+  "risk": [
+    {"cue":"손실을 감수하면서","ko":"위험을 무릅쓰다","pos":"동사","lv":1,"cefr":"B1","en":"do something that might cause harm or loss","syn":[],"ex":[{"en":"He risked his life to save the child.","ko":"그는 아이를 구하기 위해 목숨을 걸었다."}]},
+    {"cue":"안 좋은 일이 생길 가능성","ko":"위험, 위험 요소","pos":"명사","lv":2,"cefr":"A2","en":"the possibility that something bad might happen","syn":["danger"],"ex":[{"en":"Smoking increases the risk of heart disease.","ko":"흡연은 심장병 위험을 높인다."}]}
+  ],
+  "roadside": [
+    {"cue":"도로 옆 공간","ko":"길가","pos":"명사","lv":1,"cefr":"B1","en":"the edge of a road","syn":[],"ex":[{"en":"They stopped to rest at the roadside.","ko":"그들은 길가에 멈춰서 쉬었다."}]}
+  ],
+  "robot": [
+    {"cue":"자동으로 움직이는 기계","ko":"로봇","pos":"명사","lv":1,"cefr":"A1","en":"a machine that can move and perform tasks automatically","syn":[],"ex":[{"en":"The factory uses robots to assemble cars.","ko":"그 공장은 자동차를 조립하는 데 로봇을 사용한다."}]}
+  ],
+  "rolling": [
+    {"cue":"바퀴가 구르거나 언덕이 완만히 이어지는","ko":"구르는, 굴러가는","pos":"형용사","lv":1,"cefr":"B1","en":"moving on wheels, or (of land) rising and falling gently","syn":[],"ex":[{"en":"The road wound through rolling hills.","ko":"그 길은 완만하게 이어지는 언덕들 사이로 구불구불 나 있었다."}]}
+  ],
+  "rotten": [
+    {"cue":"음식·나무가 부패한","ko":"썩은","pos":"형용사","lv":1,"cefr":"A2","en":"decayed and no longer fit to eat or use","syn":[],"ex":[{"en":"The smell came from a rotten egg.","ko":"그 냄새는 썩은 달걀에서 났다."}]},
+    {"cue":"기분·상황이 아주 나쁜 (구어)","ko":"(구어) 형편없는, 끔찍한","pos":"형용사","lv":2,"cefr":"B1","en":"very bad or unpleasant (informal)","syn":[],"ex":[{"en":"I've had a rotten day at work.","ko":"나는 오늘 직장에서 끔찍한 하루를 보냈다."}]}
+  ],
+  "rough": [
+    {"cue":"표면이 매끄럽지 않은","ko":"거친","pos":"형용사","lv":1,"cefr":"A2","en":"having an uneven or bumpy surface, not smooth","syn":[],"ex":[{"en":"The rock had a rough surface.","ko":"그 바위는 거친 표면을 가지고 있었다."}]},
+    {"cue":"정확하지 않은 어림잡은","ko":"대략적인, 대충의","pos":"형용사","lv":2,"cefr":"B1","en":"not exact or precise, only approximate","syn":["approximate"],"ex":[{"en":"Can you give me a rough estimate of the cost?","ko":"비용을 대략적으로 알려줄 수 있나요?"}]}
+  ],
+  "routine": [
+    {"cue":"매일 반복하는 생활 방식","ko":"일상, 루틴","pos":"명사","lv":1,"cefr":"B1","en":"the usual set of things you do regularly, especially every day","syn":[],"ex":[{"en":"Exercise is part of her daily routine.","ko":"운동은 그녀의 일상 루틴의 일부다."}]}
+  ],
+  "rubber": [
+    {"cue":"탄력 있는 소재","ko":"고무","pos":"명사","lv":1,"cefr":"A2","en":"a strong elastic material used to make tires, boots, and other products","syn":[],"ex":[{"en":"The tires are made of rubber.","ko":"그 타이어는 고무로 만들어졌다."}]},
+    {"cue":"연필 글씨를 지우는 것 (영국식)","ko":"(영국식) 지우개","pos":"명사","lv":2,"cefr":"A2","en":"(British English) a small piece of rubber used to remove pencil marks","syn":["eraser"],"ex":[{"en":"Can I borrow your rubber?","ko":"네 지우개 좀 빌려줄래?"}]}
+  ],
+  "rubbish": [
+    {"cue":"버리는 물건","ko":"쓰레기","pos":"명사","lv":1,"cefr":"A1","en":"unwanted material that is thrown away","syn":["trash"],"ex":[{"en":"Please put the rubbish in the bin.","ko":"쓰레기는 쓰레기통에 넣어 주세요."}]},
+    {"cue":"말도 안 되는 이야기 (구어)","ko":"(구어) 허튼소리","pos":"명사","lv":2,"cefr":"B1","en":"(informal) nonsense or something that is not true","syn":["nonsense"],"ex":[{"en":"Don't talk rubbish, that's not what happened.","ko":"허튼소리 하지 마, 그런 일 없었어."}]}
+  ],
+  "rudely": [
+    {"cue":"예의 없이","ko":"무례하게","pos":"부사","lv":1,"cefr":"B1","en":"in a way that is not polite","syn":["impolitely"],"ex":[{"en":"He rudely interrupted her speech.","ko":"그는 그녀의 연설을 무례하게 끊었다."}]}
+  ],
+  "runaway": [
+    {"cue":"집·상황에서 도망친 사람","ko":"가출자, 도망자","pos":"명사","lv":1,"cefr":"B1","en":"a person, especially a young one, who has left home or a difficult situation","syn":[],"ex":[{"en":"The shelter helps runaways find a safe place to stay.","ko":"그 보호소는 가출자들이 안전하게 머물 곳을 찾도록 돕는다."}]},
+    {"cue":"멈출 수 없이 계속되는","ko":"통제 불능의, 걷잡을 수 없는","pos":"형용사","lv":2,"cefr":"B2","en":"out of control and impossible to stop","syn":[],"ex":[{"en":"The country is struggling with runaway inflation.","ko":"그 나라는 걷잡을 수 없는 인플레이션으로 어려움을 겪고 있다."}]}
+  ]
+}

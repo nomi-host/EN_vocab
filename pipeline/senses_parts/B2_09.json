@@ -1,0 +1,2201 @@
+{
+  "lengthen": [
+    {
+      "cue": "옷·물건 등을 더 길게",
+      "ko": "길게 하다, 늘이다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "make something longer, or become longer",
+      "ex": [{"en":"She asked the tailor to lengthen the skirt.","ko":"그녀는 재단사에게 치마를 더 길게 늘여 달라고 부탁했다."}]
+    }
+  ],
+  "lengthy": [
+    {
+      "cue": "시간이 오래 걸리는",
+      "ko": "긴, 장황한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "continuing for a long time, often longer than necessary",
+      "ex": [{"en":"The meeting turned into a lengthy discussion.","ko":"그 회의는 장황한 논의로 이어졌다."}]
+    }
+  ],
+  "leopard": [
+    {
+      "cue": "표범 무늬가 있는 동물",
+      "ko": "표범",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a large wild cat with a spotted coat, found in Africa and Asia",
+      "ex": [{"en":"The leopard moved silently through the grass.","ko":"표범이 소리 없이 풀숲을 지나갔다."}]
+    }
+  ],
+  "lest": [
+    {
+      "cue": "나쁜 일이 일어나지 않도록",
+      "ko": "~하지 않도록, ~할까 봐",
+      "pos": "접속사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "used to say what you want to avoid or prevent from happening",
+      "ex": [{"en":"She spoke quietly lest anyone should hear.","ko":"그녀는 누가 들을까 봐 조용히 말했다."}]
+    }
+  ],
+  "liberal": [
+    {
+      "cue": "정치 성향이 진보적인",
+      "ko": "진보적인, 자유주의의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "supporting social and political change and individual freedom",
+      "ex": [{"en":"Her parents have fairly liberal views on education.","ko":"그녀의 부모님은 교육에 대해 꽤 진보적인 견해를 가지고 있다."}]
+    },
+    {
+      "cue": "양·정도가 넉넉한",
+      "ko": "후한, 넉넉한",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "given in a large or generous amount",
+      "ex": [{"en":"He added a liberal amount of butter to the pan.","ko":"그는 팬에 버터를 넉넉하게 넣었다."}]
+    }
+  ],
+  "lick": [
+    {
+      "cue": "혀로 표면을",
+      "ko": "핥다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "move your tongue across something",
+      "ex": [{"en":"The dog licked her hand.","ko":"그 개는 그녀의 손을 핥았다."}]
+    }
+  ],
+  "lid": [
+    {
+      "cue": "병·상자를 덮는",
+      "ko": "뚜껑",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a cover for a container such as a box, pot, or jar",
+      "ex": [{"en":"Put the lid back on the jar.","ko":"병에 뚜껑을 다시 닫아라."}]
+    }
+  ],
+  "lifeless": [
+    {
+      "cue": "생명이 없는, 죽은",
+      "ko": "생명이 없는, 죽은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "having no life; dead",
+      "ex": [{"en":"They found his lifeless body on the floor.","ko":"그들은 바닥에서 그의 생명 없는 몸을 발견했다."}]
+    },
+    {
+      "cue": "활기·생동감이 없는",
+      "ko": "활기 없는, 생기 없는",
+      "pos": "형용사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "lacking energy, excitement, or activity",
+      "ex": [{"en":"The party felt strangely lifeless.","ko":"그 파티는 이상하게 활기가 없었다."}]
+    }
+  ],
+  "lifetime": [
+    {
+      "cue": "태어나서 죽을 때까지",
+      "ko": "일생, 평생",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the length of time that someone lives or something lasts",
+      "ex": [{"en":"He worked at the same company for his entire lifetime.","ko":"그는 평생 같은 회사에서 일했다."}]
+    }
+  ],
+  "lighten": [
+    {
+      "cue": "색깔·분위기를 밝게",
+      "ko": "밝게 하다, 밝아지다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "make something brighter or lighter in color, or become brighter",
+      "ex": [{"en":"She lightened her hair for the summer.","ko":"그녀는 여름을 맞아 머리 색을 밝게 했다."}]
+    },
+    {
+      "cue": "짐·부담을 줄여서",
+      "ko": "가볍게 하다, 덜어주다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "reduce the weight or difficulty of something, such as a load or worry",
+      "ex": [{"en":"Talking to a friend helped lighten her worries.","ko":"친구와 이야기하니 그녀의 걱정이 좀 덜어졌다."}]
+    }
+  ],
+  "lighting": [
+    {
+      "cue": "공간을 밝히는 조명 전체",
+      "ko": "조명",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the equipment or arrangement that provides light in a place",
+      "ex": [{"en":"The restaurant has warm, soft lighting.","ko":"그 식당은 따뜻하고 부드러운 조명을 갖추고 있다."}]
+    }
+  ],
+  "likewise": [
+    {
+      "cue": "앞의 내용과 마찬가지로",
+      "ko": "마찬가지로, 똑같이",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in the same way as something already mentioned",
+      "ex": [{"en":"He enjoyed the movie, and I did likewise.","ko":"그는 그 영화를 재미있게 봤고, 나도 마찬가지였다."}]
+    }
+  ],
+  "limb": [
+    {
+      "cue": "사람·동물의 팔이나 다리",
+      "ko": "팔다리, 사지",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "an arm or leg of a person or animal",
+      "ex": [{"en":"He broke a limb while skiing.","ko":"그는 스키를 타다가 팔다리 하나가 부러졌다."}]
+    },
+    {
+      "cue": "나무의 큰 가지",
+      "ko": "(나무의) 큰 가지",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "a large branch of a tree",
+      "ex": [{"en":"A heavy limb fell from the old oak tree.","ko":"오래된 참나무에서 굵은 가지 하나가 떨어졌다."}]
+    }
+  ],
+  "linen": [
+    {
+      "cue": "아마 섬유로 짠 천",
+      "ko": "리넨, 아마포",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a type of cloth made from the flax plant",
+      "ex": [{"en":"She wore a light linen dress in the summer heat.","ko":"그녀는 여름 더위에 얇은 리넨 원피스를 입었다."}]
+    },
+    {
+      "cue": "침대시트·식탁보 등을 통틀어",
+      "ko": "침구, 식탁보류",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "sheets, tablecloths, and other cloth items used in a house, especially in a hotel",
+      "ex": [{"en":"The hotel changes the linens every day.","ko":"그 호텔은 매일 침구를 갈아준다."}]
+    }
+  ],
+  "liner": [
+    {
+      "cue": "승객을 태우는 대형 선박",
+      "ko": "여객선, 정기선",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a large ship that carries passengers on a regular route",
+      "ex": [{"en":"They sailed across the Atlantic on a luxury liner.","ko":"그들은 호화 여객선을 타고 대서양을 건넜다."}]
+    },
+    {
+      "cue": "안쪽에 덧대는 얇은 막",
+      "ko": "안감, 라이너",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "a piece of material used to line the inside of something",
+      "ex": [{"en":"Put a plastic liner inside the trash can.","ko":"쓰레기통 안에 비닐 라이너를 씌워라."}]
+    }
+  ],
+  "ling": [
+    {
+      "cue": "북유럽 바다에 사는 대구 종류 물고기",
+      "ko": "링(대구과 물고기)",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a long thin sea fish related to cod, found in northern Europe",
+      "ex": [{"en":"Ling is a common fish in Norwegian cuisine.","ko":"링은 노르웨이 요리에서 흔히 쓰이는 생선이다."}]
+    }
+  ],
+  "linger": [
+    {
+      "cue": "자리를 뜨지 않고 계속",
+      "ko": "(자리에) 오래 머무르다, 서성이다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "stay somewhere longer than necessary, often because you don't want to leave",
+      "ex": [{"en":"We lingered at the café, talking for hours.","ko":"우리는 카페에 오래 머무르며 몇 시간이나 이야기했다."}]
+    },
+    {
+      "cue": "냄새·기억 등이 쉽게 사라지지 않고",
+      "ko": "(냄새·기억 등이) 남아 있다, 지속되다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "continue to exist for a long time, even though it is fading",
+      "ex": [{"en":"The smell of smoke lingered in the room.","ko":"연기 냄새가 방 안에 남아 있었다."}]
+    }
+  ],
+  "listener": [
+    {
+      "cue": "라디오·이야기를 듣는 사람",
+      "ko": "청취자, 듣는 사람",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a person who listens to something, such as the radio or someone speaking",
+      "ex": [{"en":"She's a good listener and always gives helpful advice.","ko":"그녀는 남의 말을 잘 들어주고 항상 도움되는 조언을 해준다."}]
+    }
+  ],
+  "literal": [
+    {
+      "cue": "단어 그대로의 뜻으로",
+      "ko": "문자 그대로의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "following the exact or usual meaning of a word, without exaggeration",
+      "ex": [{"en":"This is a literal translation of the poem.","ko":"이것은 그 시를 문자 그대로 번역한 것이다."}]
+    }
+  ],
+  "literally": [
+    {
+      "cue": "문자 그대로의 의미로",
+      "ko": "말 그대로, 문자 그대로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "in the exact or basic meaning of a word, without exaggeration",
+      "ex": [{"en":"The word 'philosophy' literally means 'love of wisdom'.","ko":"'philosophy'라는 단어는 말 그대로 '지혜에 대한 사랑'을 의미한다."}]
+    },
+    {
+      "cue": "강조할 때 (구어체)",
+      "ko": "정말로, 완전히 (강조)",
+      "pos": "부사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "used to emphasize a statement, even when it is not literally true",
+      "ex": [{"en":"I was literally starving after the hike.","ko":"등산 후에 나는 정말 굶어 죽을 것 같았다."}]
+    }
+  ],
+  "litter": [
+    {
+      "cue": "길거리에 버려진 쓰레기",
+      "ko": "쓰레기",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "rubbish left lying in a public place",
+      "ex": [{"en":"There was litter all over the park.","ko":"공원 곳곳에 쓰레기가 널려 있었다."}]
+    },
+    {
+      "cue": "쓰레기를 버려서 어지럽히다",
+      "ko": "어지르다, 함부로 버리다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "drop rubbish carelessly in a public place",
+      "ex": [{"en":"Please don't litter in the park.","ko":"공원에 쓰레기를 함부로 버리지 마세요."}]
+    },
+    {
+      "cue": "동물이 한 번에 낳은 새끼들",
+      "ko": "(동물의) 한 배 새끼",
+      "pos": "명사",
+      "lv": 5,
+      "cefr": "B2",
+      "en": "a group of baby animals born to the same mother at the same time",
+      "ex": [{"en":"The dog gave birth to a litter of six puppies.","ko":"그 개는 강아지 여섯 마리를 한 배에 낳았다."}]
+    }
+  ],
+  "loan": [
+    {
+      "cue": "은행에서 빌리는 돈",
+      "ko": "대출, 융자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "an amount of money that you borrow, usually from a bank",
+      "ex": [{"en":"They took out a loan to buy a car.","ko":"그들은 차를 사려고 대출을 받았다."}]
+    },
+    {
+      "cue": "돈·물건을 빌려주다",
+      "ko": "빌려주다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "give someone money or something else to use for a period of time",
+      "ex": [{"en":"Could you loan me some money until Friday?","ko":"금요일까지 돈 좀 빌려줄 수 있어?"}]
+    }
+  ],
+  "lobby": [
+    {
+      "cue": "건물 입구의 넓은 공간",
+      "ko": "로비, 대기실",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a large entrance hall or waiting area in a building",
+      "ex": [{"en":"We waited for him in the hotel lobby.","ko":"우리는 호텔 로비에서 그를 기다렸다."}]
+    },
+    {
+      "cue": "정치인에게 영향력을 행사하다",
+      "ko": "(정치적으로) 로비하다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "C1",
+      "en": "try to persuade politicians or officials to support a particular cause",
+      "ex": [{"en":"The group is lobbying for stricter environmental laws.","ko":"그 단체는 더 엄격한 환경법을 위해 로비하고 있다."}]
+    }
+  ],
+  "loneliness": [
+    {
+      "cue": "혼자라서 슬픈 감정",
+      "ko": "외로움",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the feeling of being unhappy because you are alone",
+      "ex": [{"en":"He felt a deep sense of loneliness after moving to a new city.","ko":"그는 새로운 도시로 이사한 후 깊은 외로움을 느꼈다."}]
+    }
+  ],
+  "long-distance": [
+    {
+      "cue": "거리가 먼 이동·통화",
+      "ko": "장거리의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "travelling or communicating over a long distance",
+      "ex": [{"en":"She's in a long-distance relationship with someone abroad.","ko":"그녀는 해외에 있는 사람과 장거리 연애를 하고 있다."}]
+    }
+  ],
+  "long-term": [
+    {
+      "cue": "오랜 기간에 걸친",
+      "ko": "장기적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "relating to a long period of time in the future",
+      "ex": [{"en":"They are planning for long-term growth.","ko":"그들은 장기적인 성장을 계획하고 있다."}]
+    }
+  ],
+  "loosely": [
+    {
+      "cue": "단단히 고정되지 않고",
+      "ko": "느슨하게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "in a way that is not tight or firmly fixed",
+      "ex": [{"en":"The rope was tied loosely around the post.","ko":"그 밧줄은 기둥에 느슨하게 묶여 있었다."}]
+    },
+    {
+      "cue": "정확하지 않고 대략적으로",
+      "ko": "대략적으로, 느슨하게(막연히)",
+      "pos": "부사",
+      "lv": 3,
+      "cefr": "C1",
+      "en": "without being exact or strict about details",
+      "ex": [{"en":"The film is loosely based on a true story.","ko":"그 영화는 실화를 대략적으로 바탕으로 하고 있다."}]
+    }
+  ],
+  "lousy": [
+    {
+      "cue": "질이 매우 나쁜 (구어)",
+      "ko": "형편없는, 엉망인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "very bad or of poor quality (informal)",
+      "ex": [{"en":"The weather was lousy all weekend.","ko":"주말 내내 날씨가 형편없었다."}]
+    }
+  ],
+  "lower": [
+    {
+      "cue": "높이·수준을 아래로",
+      "ko": "낮추다, 내리다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "move something down, or make something less in amount or level",
+      "ex": [{"en":"Please lower your voice in the library.","ko":"도서관에서는 목소리를 낮춰 주세요."}]
+    },
+    {
+      "cue": "위치·순위가 더 아래인",
+      "ko": "더 낮은, 아래의",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "below another thing or lower in rank or position",
+      "ex": [{"en":"The gym is on the lower floor.","ko":"체육관은 아래층에 있다."}]
+    }
+  ],
+  "lowland": [
+    {
+      "cue": "해발고도가 낮은 지역",
+      "ko": "저지대",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "an area of land that is low and flat",
+      "ex": [{"en":"The river flows through a wide lowland.","ko":"그 강은 넓은 저지대를 흐른다."}]
+    }
+  ],
+  "lucrative": [
+    {
+      "cue": "돈을 많이 벌게 해주는",
+      "ko": "수익성이 좋은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "producing a lot of money or profit",
+      "ex": [{"en":"She left teaching for a more lucrative career in finance.","ko":"그녀는 더 수익성이 좋은 금융 업계로 가려고 교직을 그만두었다."}]
+    }
+  ],
+  "lush": [
+    {
+      "cue": "식물이 풍성하게 우거진",
+      "ko": "무성한, 우거진",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "(of plants) growing thickly and healthily",
+      "ex": [{"en":"The valley was covered in lush green forest.","ko":"그 골짜기는 무성한 초록빛 숲으로 덮여 있었다."}]
+    }
+  ],
+  "luxurious": [
+    {
+      "cue": "매우 편안하고 고급스러운",
+      "ko": "호화로운",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "extremely comfortable and expensive",
+      "ex": [{"en":"They stayed in a luxurious hotel by the beach.","ko":"그들은 해변에 있는 호화로운 호텔에 묵었다."}]
+    }
+  ],
+  "lyrics": [
+    {
+      "cue": "노래의 가사말",
+      "ko": "가사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the words of a song",
+      "ex": [{"en":"I don't understand the lyrics of this song.","ko":"나는 이 노래의 가사를 이해하지 못하겠다."}]
+    }
+  ],
+  "madam": [
+    {
+      "cue": "여성을 정중하게 부르는 말",
+      "ko": "부인, 여사님",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a polite way to address a woman, especially one you don't know",
+      "ex": [{"en":"Excuse me, madam, is this seat taken?","ko":"실례합니다, 부인, 이 자리 주인 있나요?"}]
+    }
+  ],
+  "madame": [
+    {
+      "cue": "프랑스에서 결혼한 여성을 부르는 호칭",
+      "ko": "마담 (프랑스어 여성 호칭)",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a title used for a married French woman, similar to 'Mrs.'",
+      "ex": [{"en":"Good evening, Madame Dubois.","ko":"안녕하세요, 뒤부아 부인."}]
+    }
+  ],
+  "madness": [
+    {
+      "cue": "정신이 이상해진 상태",
+      "ko": "광기, 정신이상",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the state of being seriously mentally ill",
+      "ex": [{"en":"His behavior bordered on madness.","ko":"그의 행동은 거의 광기에 가까웠다."}]
+    },
+    {
+      "cue": "터무니없이 어리석은 행동",
+      "ko": "미친 짓, 터무니없음",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "extremely foolish or irrational behavior",
+      "ex": [{"en":"It would be madness to drive in this storm.","ko":"이 폭풍 속에 운전하는 것은 미친 짓일 것이다."}]
+    }
+  ],
+  "maestro": [
+    {
+      "cue": "음악을 지휘하거나 뛰어난 대가",
+      "ko": "거장, 명인",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a person, especially a musician, who is a master of their art",
+      "ex": [{"en":"The orchestra was led by a famous maestro.","ko":"그 오케스트라는 유명한 거장이 지휘했다."}]
+    }
+  ],
+  "magnify": [
+    {
+      "cue": "렌즈로 크게 보이게",
+      "ko": "확대하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "make something look bigger than it really is, especially using a lens",
+      "ex": [{"en":"The microscope magnifies cells hundreds of times.","ko":"그 현미경은 세포를 수백 배 확대해서 보여준다."}]
+    },
+    {
+      "cue": "문제·상황을 실제보다 크게",
+      "ko": "과장하다, 확대하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "make a problem or feeling seem greater than it really is",
+      "ex": [{"en":"Don't magnify the problem more than it already is.","ko":"문제를 실제보다 더 크게 과장하지 마."}]
+    }
+  ],
+  "malady": [
+    {
+      "cue": "사회·개인의 병폐, 질환 (격식체)",
+      "ko": "질병, 병폐",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a disease or a serious problem (formal)",
+      "ex": [{"en":"Corruption is a malady that affects many governments.","ko":"부패는 많은 정부를 병들게 하는 병폐이다."}]
+    }
+  ],
+  "malaria": [
+    {
+      "cue": "모기가 옮기는 열대 질병",
+      "ko": "말라리아",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a serious disease spread by mosquitoes, common in tropical areas",
+      "ex": [{"en":"He caught malaria while traveling in Africa.","ko":"그는 아프리카를 여행하다가 말라리아에 걸렸다."}]
+    }
+  ],
+  "mama": [
+    {
+      "cue": "엄마를 부르는 다정한 말",
+      "ko": "엄마",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "an informal or childish word for mother",
+      "ex": [{"en":"The little girl ran to her mama.","ko":"어린 소녀는 엄마에게 달려갔다."}]
+    }
+  ],
+  "mango": [
+    {
+      "cue": "열대과일, 노랗고 달콤한",
+      "ko": "망고",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a sweet tropical fruit with yellow or orange flesh",
+      "ex": [{"en":"She sliced a ripe mango for breakfast.","ko":"그녀는 아침으로 잘 익은 망고를 잘랐다."}]
+    }
+  ],
+  "manipulate": [
+    {
+      "cue": "사람의 마음·행동을 교묘히",
+      "ko": "조종하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "control or influence someone unfairly for your own advantage",
+      "ex": [{"en":"He tried to manipulate her into giving him money.","ko":"그는 그녀를 조종해서 돈을 받아내려 했다."}]
+    },
+    {
+      "cue": "수치·정보를 조작하다",
+      "ko": "조작하다, 다루다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "handle or control data, images, or objects, sometimes dishonestly",
+      "ex": [{"en":"The company was accused of manipulating its financial records.","ko":"그 회사는 재무 기록을 조작했다는 혐의를 받았다."}]
+    }
+  ],
+  "mansion": [
+    {
+      "cue": "매우 크고 화려한 집",
+      "ko": "대저택",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a very large and impressive house",
+      "ex": [{"en":"The millionaire lives in a huge mansion.","ko":"그 백만장자는 거대한 대저택에 산다."}]
+    }
+  ],
+  "manual": [
+    {
+      "cue": "사용법을 설명한 책자",
+      "ko": "설명서, 안내서",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a book that gives instructions on how to use or do something",
+      "ex": [{"en":"Read the manual before assembling the furniture.","ko":"가구를 조립하기 전에 설명서를 읽어라."}]
+    },
+    {
+      "cue": "기계가 아니라 손으로 하는",
+      "ko": "수동의, 손으로 하는",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "done with the hands, or operated by hand rather than automatically",
+      "ex": [{"en":"This car has a manual transmission.","ko":"이 차는 수동 변속기를 가지고 있다."}]
+    }
+  ],
+  "manufacture": [
+    {
+      "cue": "공장에서 제품을 만들다",
+      "ko": "제조하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "make goods in large quantities, usually in a factory",
+      "ex": [{"en":"The factory manufactures electronic parts.","ko":"그 공장은 전자 부품을 제조한다."}]
+    },
+    {
+      "cue": "공장에서의 제작 과정 전체",
+      "ko": "제조, 생산",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "the process of making goods in large quantities",
+      "ex": [{"en":"The manufacture of this product takes several weeks.","ko":"이 제품의 제조는 몇 주가 걸린다."}]
+    }
+  ],
+  "manufacturer": [
+    {
+      "cue": "제품을 만드는 회사",
+      "ko": "제조업체, 제조사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a company that makes goods in large quantities",
+      "ex": [{"en":"The car manufacturer recalled thousands of vehicles.","ko":"그 자동차 제조사는 수천 대의 차량을 리콜했다."}]
+    }
+  ],
+  "manufacturing": [
+    {
+      "cue": "제품을 대량 생산하는 산업",
+      "ko": "제조업",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the business or industry of making goods in large quantities",
+      "ex": [{"en":"The country's economy relies heavily on manufacturing.","ko":"그 나라의 경제는 제조업에 크게 의존한다."}]
+    }
+  ],
+  "marathon": [
+    {
+      "cue": "42.195km를 달리는 경주",
+      "ko": "마라톤",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a long-distance running race, usually 42 kilometers",
+      "ex": [{"en":"She trained for months to run the marathon.","ko":"그녀는 마라톤을 뛰기 위해 몇 달 동안 훈련했다."}]
+    },
+    {
+      "cue": "오래 걸리고 힘든 일 (비유)",
+      "ko": "장시간의 힘든 일",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "a long and difficult task or event",
+      "ex": [{"en":"The negotiations turned into a marathon that lasted all night.","ko":"그 협상은 밤새 이어지는 힘든 마라톤이 되었다."}]
+    }
+  ],
+  "margin": [
+    {
+      "cue": "종이 가장자리의 빈 공간",
+      "ko": "여백",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the empty space at the edge of a page",
+      "ex": [{"en":"He wrote notes in the margin of the book.","ko":"그는 책 여백에 메모를 적었다."}]
+    },
+    {
+      "cue": "판매 이익의 폭",
+      "ko": "마진, 이윤",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "the difference between the cost of something and the price it is sold for",
+      "ex": [{"en":"The company operates on a very thin profit margin.","ko":"그 회사는 매우 박한 이윤 마진으로 운영된다."}]
+    },
+    {
+      "cue": "득표·점수 등의 차이",
+      "ko": "차이, 격차",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "an amount by which one thing is more or less than another",
+      "ex": [{"en":"She won the election by a narrow margin.","ko":"그녀는 근소한 차이로 선거에서 이겼다."}]
+    }
+  ],
+  "marketing": [
+    {
+      "cue": "상품을 홍보하고 파는 활동",
+      "ko": "마케팅",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the activity of promoting and selling products or services",
+      "ex": [{"en":"She works in the marketing department.","ko":"그녀는 마케팅 부서에서 일한다."}]
+    }
+  ],
+  "martial art": [
+    {
+      "cue": "태권도·유도 같은 무술 전반",
+      "ko": "무술",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a traditional sport or skill of fighting and self-defense, such as karate or taekwondo",
+      "ex": [{"en":"He has practiced martial arts since he was a child.","ko":"그는 어릴 때부터 무술을 연습해 왔다."}]
+    }
+  ],
+  "mask": [
+    {
+      "cue": "얼굴을 가리는 물건",
+      "ko": "가면, 마스크",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a covering worn over the face to hide or protect it",
+      "ex": [{"en":"She wore a mask to the costume party.","ko":"그녀는 코스튬 파티에 가면을 쓰고 갔다."}]
+    },
+    {
+      "cue": "감정·사실을 드러나지 않게",
+      "ko": "감추다, 숨기다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "hide a feeling or fact so that it cannot be noticed",
+      "ex": [{"en":"He smiled to mask his disappointment.","ko":"그는 실망감을 감추려고 미소 지었다."}]
+    }
+  ],
+  "massacre": [
+    {
+      "cue": "많은 사람을 잔인하게 죽이는 일",
+      "ko": "대학살",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "the cruel killing of a large number of people",
+      "ex": [{"en":"The war led to a terrible massacre of civilians.","ko":"그 전쟁은 끔찍한 민간인 대학살로 이어졌다."}]
+    },
+    {
+      "cue": "많은 사람을 무참히 죽이다",
+      "ko": "대학살하다, 몰살시키다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "kill a large number of people in a cruel way",
+      "ex": [{"en":"Soldiers massacred the entire village.","ko":"군인들이 마을 전체를 몰살시켰다."}]
+    }
+  ],
+  "massage": [
+    {
+      "cue": "몸을 주물러 풀어주는 것",
+      "ko": "마사지",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the act of rubbing and pressing a person's body to relax their muscles",
+      "ex": [{"en":"She booked a massage after her long flight.","ko":"그녀는 긴 비행 후 마사지를 예약했다."}]
+    },
+    {
+      "cue": "몸을 주물러 풀어주다",
+      "ko": "마사지하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "rub and press someone's body to relax their muscles",
+      "ex": [{"en":"He massaged her shoulders after work.","ko":"그는 퇴근 후 그녀의 어깨를 마사지해 주었다."}]
+    }
+  ],
+  "masseur": [
+    {
+      "cue": "마사지를 직업으로 하는 남자",
+      "ko": "남자 마사지사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a man whose job is giving massages",
+      "ex": [{"en":"The masseur worked on his sore back.","ko":"그 마사지사는 그의 결린 등을 풀어주었다."}]
+    }
+  ],
+  "master": [
+    {
+      "cue": "기술·언어를 완전히 익히다",
+      "ko": "숙달하다, 통달하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "learn to do something completely and skillfully",
+      "ex": [{"en":"It took years to master the violin.","ko":"바이올린을 완전히 익히는 데 몇 년이 걸렸다."}]
+    },
+    {
+      "cue": "어떤 분야에 뛰어난 사람",
+      "ko": "달인, 명수",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "a person who is highly skilled in something",
+      "ex": [{"en":"He is a true master of chess.","ko":"그는 진정한 체스의 달인이다."}]
+    },
+    {
+      "cue": "다른 사람을 지배하는 사람",
+      "ko": "주인, 지배자",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "a person who has control over other people or things",
+      "ex": [{"en":"The dog obeyed its master.","ko":"그 개는 주인의 말을 따랐다."}]
+    }
+  ],
+  "masterpiece": [
+    {
+      "cue": "예술가의 가장 뛰어난 작품",
+      "ko": "걸작",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "an extremely good work of art or craft",
+      "ex": [{"en":"The painting is considered a masterpiece.","ko":"그 그림은 걸작으로 여겨진다."}]
+    }
+  ],
+  "mastery": [
+    {
+      "cue": "어떤 분야를 완전히 잘 아는 것",
+      "ko": "숙달, 통달",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "complete knowledge or skill in something",
+      "ex": [{"en":"She has an impressive mastery of French.","ko":"그녀는 프랑스어에 대한 인상적인 숙달을 갖고 있다."}]
+    }
+  ],
+  "mate": [
+    {
+      "cue": "친한 친구를 부르는 말 (영국식)",
+      "ko": "친구, 동료",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a friend, especially in British English",
+      "ex": [{"en":"He went to the pub with his mates.","ko":"그는 친구들과 함께 술집에 갔다."}]
+    },
+    {
+      "cue": "동물의 짝, 배우자",
+      "ko": "짝, 배우자",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "one of a pair of animals, or a person's husband or wife",
+      "ex": [{"en":"The bird searched for a mate.","ko":"그 새는 짝을 찾고 있었다."}]
+    },
+    {
+      "cue": "동물이 새끼를 낳으려고 짝을 짓다",
+      "ko": "짝짓기하다",
+      "pos": "동사",
+      "lv": 5,
+      "cefr": "B2",
+      "en": "(of animals) come together to produce young",
+      "ex": [{"en":"Many birds mate for life.","ko":"많은 새들이 평생 한 짝과 짝짓기를 한다."}]
+    }
+  ],
+  "mathematical": [
+    {
+      "cue": "수학과 관련된",
+      "ko": "수학적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "relating to mathematics",
+      "ex": [{"en":"She has a strong mathematical mind.","ko":"그녀는 수학적 사고력이 뛰어나다."}]
+    }
+  ],
+  "mature": [
+    {
+      "cue": "생각·행동이 어른스러운",
+      "ko": "성숙한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "behaving in a sensible, adult way",
+      "ex": [{"en":"She's very mature for her age.","ko":"그녀는 나이에 비해 매우 성숙하다."}]
+    },
+    {
+      "cue": "충분히 자라거나 익은",
+      "ko": "다 자란, 익은",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "fully grown or developed",
+      "ex": [{"en":"A mature tree can take decades to grow.","ko":"다 자란 나무가 되기까지 수십 년이 걸릴 수 있다."}]
+    },
+    {
+      "cue": "시간이 지나며 성숙해지다",
+      "ko": "성숙해지다, 다 자라다",
+      "pos": "동사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "become fully grown or developed over time",
+      "ex": [{"en":"He matured a lot after moving abroad.","ko":"그는 해외로 이주한 후 많이 성숙해졌다."}]
+    }
+  ],
+  "mausoleum": [
+    {
+      "cue": "지상에 세운 큰 무덤 건축물",
+      "ko": "영묘, 대형 무덤",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a large impressive building where a dead person, often someone important, is buried",
+      "ex": [{"en":"Tourists visit the ancient mausoleum every year.","ko":"관광객들은 매년 그 고대 영묘를 방문한다."}]
+    }
+  ],
+  "means": [
+    {
+      "cue": "목표를 이루기 위한 방법",
+      "ko": "수단, 방법",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a method or way of doing something",
+      "ex": [{"en":"Email is a fast means of communication.","ko":"이메일은 빠른 의사소통 수단이다."}]
+    },
+    {
+      "cue": "쓸 수 있는 돈, 재력",
+      "ko": "재력, 자금",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "the money someone has available to spend",
+      "ex": [{"en":"They live well beyond their means.","ko":"그들은 자신의 재력에 비해 과소비하며 산다."}]
+    }
+  ],
+  "mechanize": [
+    {
+      "cue": "사람 손 대신 기계로 작업하게",
+      "ko": "기계화하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "change a process so that it is done by machines instead of people",
+      "ex": [{"en":"The farm mechanized its harvesting process.","ko":"그 농장은 수확 과정을 기계화했다."}]
+    }
+  ],
+  "media": [
+    {
+      "cue": "신문·TV·인터넷 등을 통틀어",
+      "ko": "매체, 언론",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "television, newspapers, and the internet, considered as a group that provides information",
+      "ex": [{"en":"The story was covered widely by the media.","ko":"그 사건은 언론에 널리 보도되었다."}]
+    }
+  ],
+  "medication": [
+    {
+      "cue": "병을 치료하려고 먹는 약",
+      "ko": "약물, 약",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a drug used to treat or prevent illness",
+      "ex": [{"en":"She takes medication for her allergies.","ko":"그녀는 알레르기 때문에 약을 복용한다."}]
+    }
+  ],
+  "medieval": [
+    {
+      "cue": "중세 시대와 관련된",
+      "ko": "중세의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "relating to the Middle Ages (roughly 5th to 15th century)",
+      "ex": [{"en":"They visited a medieval castle in France.","ko":"그들은 프랑스에 있는 중세 성을 방문했다."}]
+    }
+  ],
+  "mediocre": [
+    {
+      "cue": "좋지도 나쁘지도 않은 그저 그런",
+      "ko": "평범한, 그저 그런",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "not very good; of average or poor quality",
+      "ex": [{"en":"The food at the restaurant was mediocre.","ko":"그 식당의 음식은 그저 그랬다."}]
+    }
+  ],
+  "melody": [
+    {
+      "cue": "노래의 음의 흐름",
+      "ko": "선율, 멜로디",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a series of musical notes that form a pleasant tune",
+      "ex": [{"en":"The song has a beautiful melody.","ko":"그 노래는 아름다운 선율을 가지고 있다."}]
+    }
+  ],
+  "memorial": [
+    {
+      "cue": "사람이나 사건을 기리는 구조물",
+      "ko": "기념비, 기념관",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a structure built to remember an important person or event",
+      "ex": [{"en":"They built a memorial for the soldiers who died in the war.","ko":"그들은 전쟁에서 죽은 병사들을 위한 기념비를 세웠다."}]
+    },
+    {
+      "cue": "죽은 사람을 추모하는",
+      "ko": "추모의",
+      "pos": "형용사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "done or built in order to remember someone who has died",
+      "ex": [{"en":"They held a memorial service for her grandmother.","ko":"그들은 그녀의 할머니를 위한 추모식을 열었다."}]
+    }
+  ],
+  "mentor": [
+    {
+      "cue": "경험을 나눠주는 믿을 만한 조언자",
+      "ko": "멘토, 조언자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a more experienced person who gives advice and guidance to someone less experienced",
+      "ex": [{"en":"Her mentor helped her plan her career.","ko":"그녀의 멘토는 그녀가 진로를 계획하는 데 도움을 주었다."}]
+    },
+    {
+      "cue": "경험 없는 사람을 지도하다",
+      "ko": "멘토가 되어주다, 지도하다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "help and advise someone with less experience",
+      "ex": [{"en":"She mentors new employees at the company.","ko":"그녀는 회사에서 신입 직원들을 지도해 준다."}]
+    }
+  ],
+  "merchandise": [
+    {
+      "cue": "판매되는 물건들",
+      "ko": "상품",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "goods that are bought and sold",
+      "ex": [{"en":"The store displays its merchandise in the window.","ko":"그 가게는 진열창에 상품을 전시한다."}]
+    }
+  ],
+  "mercy": [
+    {
+      "cue": "벌하지 않고 용서하는 마음",
+      "ko": "자비",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "kindness shown to someone you have the power to punish or harm",
+      "ex": [{"en":"The judge showed mercy and reduced his sentence.","ko":"판사는 자비를 베풀어 그의 형량을 줄여주었다."}]
+    }
+  ],
+  "merge": [
+    {
+      "cue": "두 회사·개념이 하나로",
+      "ko": "합병하다, 합쳐지다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "combine or join together to form one thing",
+      "ex": [{"en":"The two companies merged last year.","ko":"그 두 회사는 작년에 합병했다."}]
+    }
+  ],
+  "merger": [
+    {
+      "cue": "두 회사가 하나로 합쳐지는 일",
+      "ko": "합병",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the combining of two or more companies into one",
+      "ex": [{"en":"The merger created the largest bank in the country.","ko":"그 합병으로 그 나라 최대 은행이 탄생했다."}]
+    }
+  ],
+  "messenger": [
+    {
+      "cue": "메시지를 전달하는 사람",
+      "ko": "메신저, 전달자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a person who carries and delivers a message",
+      "ex": [{"en":"A messenger delivered the package to the office.","ko":"전달자가 사무실로 소포를 배달했다."}]
+    }
+  ],
+  "metaphor": [
+    {
+      "cue": "직접 비유하지 않고 빗대어 표현",
+      "ko": "은유",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a way of describing something by referring to it as something else with similar qualities",
+      "ex": [{"en":"'Time is money' is a common metaphor.","ko":"'시간은 돈이다'는 흔한 은유다."}]
+    }
+  ],
+  "metric": [
+    {
+      "cue": "미터를 기준으로 하는 단위 체계",
+      "ko": "미터법의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "based on the meter as the standard unit of measurement",
+      "ex": [{"en":"Most countries use the metric system.","ko":"대부분의 나라는 미터법을 사용한다."}]
+    },
+    {
+      "cue": "성과를 측정하는 기준",
+      "ko": "측정 기준, 지표",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "C1",
+      "en": "a standard used to measure or evaluate something",
+      "ex": [{"en":"The company tracks several performance metrics.","ko":"그 회사는 여러 성과 지표를 추적한다."}]
+    }
+  ],
+  "micro": [
+    {
+      "cue": "규모나 범위가 아주 작은",
+      "ko": "아주 작은, 마이크로",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "extremely small in size or scope",
+      "ex": [{"en":"The company focuses on micro businesses.","ko":"그 회사는 아주 작은 규모의 사업체에 주력한다."}]
+    }
+  ],
+  "microbe": [
+    {
+      "cue": "눈에 안 보이는 아주 작은 생명체",
+      "ko": "미생물",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a very small living thing that can only be seen with a microscope, such as a bacterium",
+      "ex": [{"en":"Microbes can cause disease.","ko":"미생물은 질병을 일으킬 수 있다."}]
+    }
+  ],
+  "microcomputer": [
+    {
+      "cue": "개인이 쓰는 소형 컴퓨터",
+      "ko": "마이크로컴퓨터",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a small computer designed for one person to use, such as a personal computer",
+      "ex": [{"en":"Early microcomputers were much slower than today's computers.","ko":"초기 마이크로컴퓨터는 오늘날의 컴퓨터보다 훨씬 느렸다."}]
+    }
+  ],
+  "micrometer": [
+    {
+      "cue": "백만분의 1미터 단위",
+      "ko": "마이크로미터",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a unit of length equal to one millionth of a meter",
+      "ex": [{"en":"The wire is only a few micrometers thick.","ko":"그 철사는 두께가 겨우 몇 마이크로미터에 불과하다."}]
+    },
+    {
+      "cue": "아주 작은 길이를 재는 도구",
+      "ko": "정밀측정기, 마이크로미터 게이지",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "C1",
+      "en": "a tool used for measuring very small distances precisely",
+      "ex": [{"en":"He measured the thickness with a micrometer.","ko":"그는 마이크로미터 게이지로 두께를 측정했다."}]
+    }
+  ],
+  "microorganism": [
+    {
+      "cue": "현미경으로만 보이는 작은 생물",
+      "ko": "미생물",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a very small living organism that can only be seen with a microscope",
+      "ex": [{"en":"Microorganisms play a key role in decomposition.","ko":"미생물은 분해 과정에서 중요한 역할을 한다."}]
+    }
+  ],
+  "microphone": [
+    {
+      "cue": "소리를 크게 전달하는 기계",
+      "ko": "마이크",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a device that picks up sound and makes it louder or records it",
+      "ex": [{"en":"She spoke into the microphone.","ko":"그녀는 마이크에 대고 말했다."}]
+    }
+  ],
+  "microscope": [
+    {
+      "cue": "아주 작은 것을 확대해서 보는 기구",
+      "ko": "현미경",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "an instrument used to look at very small objects by making them appear larger",
+      "ex": [{"en":"Students examined the cells under a microscope.","ko":"학생들은 현미경으로 세포를 관찰했다."}]
+    }
+  ],
+  "microscopic": [
+    {
+      "cue": "너무 작아서 현미경 없이는 안 보이는",
+      "ko": "미세한, 눈에 안 보일 정도로 작은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "so small that it can only be seen with a microscope",
+      "ex": [{"en":"The virus is microscopic in size.","ko":"그 바이러스는 눈에 안 보일 정도로 작다."}]
+    },
+    {
+      "cue": "아주 세밀하게 살피는",
+      "ko": "극도로 세밀한, 정밀한",
+      "pos": "형용사",
+      "lv": 4,
+      "cefr": "C1",
+      "en": "paying extreme attention to small details",
+      "ex": [{"en":"He examined the contract in microscopic detail.","ko":"그는 그 계약서를 극도로 세밀하게 검토했다."}]
+    }
+  ],
+  "microscopy": [
+    {
+      "cue": "현미경을 이용한 연구·관찰법",
+      "ko": "현미경 검사법",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "the scientific study of objects using a microscope",
+      "ex": [{"en":"Electron microscopy allows scientists to see individual atoms.","ko":"전자 현미경 검사법으로 과학자들은 개별 원자를 볼 수 있다."}]
+    }
+  ],
+  "microwave": [
+    {
+      "cue": "음식을 데우는 가전제품",
+      "ko": "전자레인지",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a kitchen appliance that cooks or heats food quickly using electromagnetic waves",
+      "ex": [{"en":"Just heat the soup in the microwave.","ko":"그냥 전자레인지에 수프를 데워."}]
+    },
+    {
+      "cue": "전자레인지로 데우다",
+      "ko": "전자레인지에 데우다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "heat or cook food using a microwave oven",
+      "ex": [{"en":"She microwaved the leftovers for dinner.","ko":"그녀는 저녁으로 남은 음식을 전자레인지에 데웠다."}]
+    }
+  ],
+  "midst": [
+    {
+      "cue": "어떤 상황·무리의 한가운데",
+      "ko": "한가운데, 도중",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the middle part of a situation, place, or group of people",
+      "ex": [{"en":"They found themselves in the midst of a crisis.","ko":"그들은 위기의 한가운데에 놓여 있었다."}]
+    }
+  ],
+  "mighty": [
+    {
+      "cue": "힘이나 세력이 아주 강한",
+      "ko": "강력한, 힘센",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "having great power, strength, or force",
+      "ex": [{"en":"The mighty river carved out the canyon over millions of years.","ko":"그 강력한 강은 수백만 년에 걸쳐 협곡을 깎아냈다."}]
+    }
+  ],
+  "migration": [
+    {
+      "cue": "사람들이 다른 나라·지역으로 옮겨감",
+      "ko": "이주",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the movement of people from one country or place to live in another",
+      "ex": [{"en":"The city has seen large-scale migration from rural areas.","ko":"그 도시는 농촌 지역에서 대규모 이주를 겪었다."}]
+    },
+    {
+      "cue": "철새 등 동물이 계절에 따라 이동",
+      "ko": "(동물의) 이동",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "the regular seasonal movement of animals, such as birds, from one region to another",
+      "ex": [{"en":"Scientists study the migration of monarch butterflies.","ko":"과학자들은 제왕나비의 이동을 연구한다."}]
+    }
+  ],
+  "mill": [
+    {
+      "cue": "제품을 만드는 큰 공장",
+      "ko": "공장",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a building or factory where a product is manufactured",
+      "ex": [{"en":"He works at the steel mill.","ko":"그는 제철 공장에서 일한다."}]
+    },
+    {
+      "cue": "곡식을 가는 방앗간",
+      "ko": "방앗간, 제분소",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "a building with machinery for grinding grain into flour",
+      "ex": [{"en":"The old mill by the river is now a museum.","ko":"강가의 그 오래된 방앗간은 지금은 박물관이다."}]
+    },
+    {
+      "cue": "기계로 곡식·후추 등을 갈다",
+      "ko": "갈다, 빻다",
+      "pos": "동사",
+      "lv": 5,
+      "cefr": "B2",
+      "en": "crush grain or other material into powder using a machine",
+      "ex": [{"en":"The wheat is milled into flour.","ko":"밀은 갈려서 밀가루가 된다."}]
+    }
+  ],
+  "millimeter": [
+    {
+      "cue": "1000분의 1미터 단위",
+      "ko": "밀리미터",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a unit of length equal to one thousandth of a meter",
+      "ex": [{"en":"The screw is only two millimeters wide.","ko":"그 나사는 폭이 겨우 2밀리미터이다."}]
+    }
+  ],
+  "millionaire": [
+    {
+      "cue": "돈이 백만 달러 이상 있는 사람",
+      "ko": "백만장자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a person who has money or property worth at least a million dollars",
+      "ex": [{"en":"He became a millionaire before turning thirty.","ko":"그는 서른이 되기 전에 백만장자가 되었다."}]
+    }
+  ],
+  "mimic": [
+    {
+      "cue": "다른 사람의 말투·행동을 따라하다",
+      "ko": "흉내내다, 모방하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "copy the way someone speaks or behaves, often to make people laugh",
+      "ex": [{"en":"She can mimic her teacher's voice perfectly.","ko":"그녀는 선생님의 목소리를 완벽하게 흉내낼 수 있다."}]
+    },
+    {
+      "cue": "다른 사람을 잘 따라하는 사람",
+      "ko": "흉내내는 사람, 성대모사꾼",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "a person who is good at imitating others, especially for entertainment",
+      "ex": [{"en":"The comedian is a talented mimic.","ko":"그 코미디언은 재능 있는 흉내내는 사람이다."}]
+    }
+  ],
+  "miniature": [
+    {
+      "cue": "실제보다 훨씬 작게 만든",
+      "ko": "축소된, 소형의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "very small, especially a small copy of something",
+      "ex": [{"en":"He collects miniature model cars.","ko":"그는 소형 모형 자동차를 수집한다."}]
+    },
+    {
+      "cue": "작게 축소해 만든 모형",
+      "ko": "축소 모형",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "a very small copy or model of something",
+      "ex": [{"en":"The museum has a miniature of the entire city.","ko":"그 박물관에는 도시 전체를 축소한 모형이 있다."}]
+    }
+  ],
+  "minister": [
+    {
+      "cue": "정부 부처의 책임자",
+      "ko": "장관",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a senior member of a government in charge of a particular department",
+      "ex": [{"en":"The Minister of Education announced new school policies.","ko":"교육부 장관이 새로운 학교 정책을 발표했다."}]
+    },
+    {
+      "cue": "교회에서 예배를 이끄는 사람",
+      "ko": "성직자, 목사",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "a person authorized to lead religious services, especially in a Christian church",
+      "ex": [{"en":"The minister gave a moving sermon.","ko":"그 목사는 감동적인 설교를 했다."}]
+    }
+  ],
+  "mint": [
+    {
+      "cue": "향이 상쾌한 허브·사탕",
+      "ko": "박하",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a plant with a fresh, strong smell used in cooking and candy",
+      "ex": [{"en":"She added fresh mint to the tea.","ko":"그녀는 차에 신선한 박하를 넣었다."}]
+    },
+    {
+      "cue": "동전·화폐를 만드는 곳",
+      "ko": "조폐국",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "C1",
+      "en": "a place where a country's coins are officially made",
+      "ex": [{"en":"The coins are produced at the national mint.","ko":"그 동전들은 국립 조폐국에서 만들어진다."}]
+    }
+  ],
+  "misconception": [
+    {
+      "cue": "사실과 다른 잘못된 생각",
+      "ko": "오해, 잘못된 인식",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a belief or idea that is not correct",
+      "ex": [{"en":"It's a common misconception that bats are blind.","ko":"박쥐가 눈이 멀었다는 것은 흔한 오해이다."}]
+    }
+  ],
+  "misfortune": [
+    {
+      "cue": "나쁜 운으로 겪는 어려움",
+      "ko": "불운, 재난",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "bad luck, or an unfortunate event",
+      "ex": [{"en":"He had the misfortune of losing his job twice in one year.","ko":"그는 일 년에 두 번이나 직장을 잃는 불운을 겪었다."}]
+    }
+  ],
+  "misleading": [
+    {
+      "cue": "사실과 다르게 오해하게 만드는",
+      "ko": "오해의 소지가 있는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "giving a false or wrong idea about something",
+      "ex": [{"en":"The advertisement was misleading about the product's price.","ko":"그 광고는 제품 가격에 대해 오해의 소지가 있었다."}]
+    }
+  ],
+  "missile": [
+    {
+      "cue": "목표물을 향해 날아가는 무기",
+      "ko": "미사일",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a weapon that is fired or launched at a target",
+      "ex": [{"en":"The country tested a new long-range missile.","ko":"그 나라는 새로운 장거리 미사일을 시험 발사했다."}]
+    }
+  ],
+  "mist": [
+    {
+      "cue": "땅 가까이 낀 옅은 안개",
+      "ko": "안개",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a thin fog made of tiny drops of water in the air",
+      "ex": [{"en":"Mist covered the valley in the early morning.","ko":"이른 아침 안개가 계곡을 덮었다."}]
+    },
+    {
+      "cue": "눈물·김으로 뿌옇게 되다",
+      "ko": "뿌옇게 흐려지다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "become covered with a thin layer of water drops, making it hard to see through",
+      "ex": [{"en":"Her eyes misted with tears.","ko":"그녀의 눈이 눈물로 뿌옇게 흐려졌다."}]
+    }
+  ],
+  "mistreat": [
+    {
+      "cue": "사람·동물을 함부로 대하다",
+      "ko": "학대하다, 함부로 대하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "treat a person or animal badly or cruelly",
+      "ex": [{"en":"The workers claimed they had been mistreated by management.","ko":"근로자들은 경영진에게 함부로 대우받았다고 주장했다."}]
+    }
+  ],
+  "mistrustful": [
+    {
+      "cue": "다른 사람을 믿지 못하는",
+      "ko": "불신하는, 의심하는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "not trusting someone or something",
+      "ex": [{"en":"She grew mistrustful of strangers after the incident.","ko":"그 사건 이후 그녀는 낯선 사람들을 불신하게 되었다."}]
+    }
+  ],
+  "misunderstand": [
+    {
+      "cue": "말·의도를 잘못 이해하다",
+      "ko": "오해하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "fail to understand something or someone correctly",
+      "ex": [{"en":"I think you misunderstood what I meant.","ko":"내가 말하려던 것을 네가 오해한 것 같아."}]
+    }
+  ],
+  "mixture": [
+    {
+      "cue": "여러 가지가 섞인 것",
+      "ko": "혼합물",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a combination of different things or substances",
+      "ex": [{"en":"Pour the mixture into the baking pan.","ko":"그 혼합물을 베이킹 팬에 부어라."}]
+    }
+  ],
+  "mobility": [
+    {
+      "cue": "자유롭게 움직일 수 있는 능력",
+      "ko": "이동성, 활동성",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the ability to move or be moved freely and easily",
+      "ex": [{"en":"The surgery greatly improved her mobility.","ko":"그 수술은 그녀의 활동성을 크게 향상시켰다."}]
+    }
+  ],
+  "mock": [
+    {
+      "cue": "남을 놀리거나 비웃다",
+      "ko": "놀리다, 조롱하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "make fun of someone or something in an unkind way",
+      "ex": [{"en":"The other kids mocked his accent.","ko":"다른 아이들이 그의 억양을 놀렸다."}]
+    },
+    {
+      "cue": "진짜가 아닌 연습용, 모의의",
+      "ko": "모의의, 가짜의",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "not real, but done as a practice or imitation",
+      "ex": [{"en":"We took a mock exam before the real test.","ko":"우리는 실제 시험 전에 모의고사를 봤다."}]
+    }
+  ],
+  "modernization": [
+    {
+      "cue": "낡은 것을 현대식으로 바꾸는 일",
+      "ko": "현대화",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the process of making something more modern",
+      "ex": [{"en":"The city invested heavily in modernization of its transport system.","ko":"그 도시는 교통 시스템 현대화에 많은 투자를 했다."}]
+    }
+  ],
+  "modernize": [
+    {
+      "cue": "낡은 시설·방식을 현대식으로 바꾸다",
+      "ko": "현대화하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "make something more modern, especially by using new methods or equipment",
+      "ex": [{"en":"The factory was modernized with new machinery.","ko":"그 공장은 새 기계로 현대화되었다."}]
+    }
+  ],
+  "modest": [
+    {
+      "cue": "자기 자랑을 하지 않는 겸손한",
+      "ko": "겸손한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "not talking too much about your own abilities or achievements",
+      "ex": [{"en":"Despite her success, she remains modest.","ko":"성공했음에도 불구하고 그녀는 여전히 겸손하다."}]
+    },
+    {
+      "cue": "크지도 화려하지도 않은 적당한 정도",
+      "ko": "적당한, 그리 크지 않은",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "not very large in size or amount",
+      "ex": [{"en":"They live in a modest house near the beach.","ko":"그들은 해변 근처의 그리 크지 않은 집에서 산다."}]
+    }
+  ],
+  "modification": [
+    {
+      "cue": "조금씩 바꾸거나 고치는 것",
+      "ko": "수정, 변경",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a small change made to something",
+      "ex": [{"en":"The design needs a few modifications before production.","ko":"그 디자인은 생산 전에 몇 가지 수정이 필요하다."}]
+    }
+  ],
+  "mogul": [
+    {
+      "cue": "큰 영향력을 가진 사업가",
+      "ko": "거물, 유력자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a very powerful and successful businessperson",
+      "ex": [{"en":"He is a media mogul who owns several TV networks.","ko":"그는 여러 방송사를 소유한 미디어 거물이다."}]
+    }
+  ],
+  "mold": [
+    {
+      "cue": "축축한 곳에 생기는 곰팡이",
+      "ko": "곰팡이",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a soft green or gray substance that grows on old food or in damp places",
+      "ex": [{"en":"There was mold growing on the bread.","ko":"빵에 곰팡이가 피어 있었다."}]
+    },
+    {
+      "cue": "모양을 만드는 틀",
+      "ko": "틀, 거푸집",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "a hollow container used to give shape to a liquid substance as it hardens",
+      "ex": [{"en":"She poured the melted chocolate into a mold.","ko":"그녀는 녹인 초콜릿을 틀에 부었다."}]
+    },
+    {
+      "cue": "사람의 성격·미래를 형성하다",
+      "ko": "형성하다, 만들다",
+      "pos": "동사",
+      "lv": 5,
+      "cefr": "B2",
+      "en": "shape or influence someone's character or development",
+      "ex": [{"en":"Her parents molded her into a confident person.","ko":"그녀의 부모는 그녀를 자신감 있는 사람으로 만들었다."}]
+    }
+  ],
+  "momentarily": [
+    {
+      "cue": "아주 짧은 순간 동안",
+      "ko": "잠깐, 순간적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "for a very short time",
+      "ex": [{"en":"She paused momentarily before answering.","ko":"그녀는 대답하기 전에 잠깐 멈췄다."}]
+    },
+    {
+      "cue": "아주 곧, 금방 (미국식)",
+      "ko": "곧, 금방",
+      "pos": "부사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "very soon (American English)",
+      "ex": [{"en":"The doctor will be with you momentarily.","ko":"의사 선생님이 곧 오실 거예요."}]
+    }
+  ],
+  "momentary": [
+    {
+      "cue": "아주 잠깐 지속되는",
+      "ko": "순간적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "lasting for only a very short time",
+      "ex": [{"en":"He felt a momentary sense of panic.","ko":"그는 순간적인 공포감을 느꼈다."}]
+    }
+  ],
+  "monastery": [
+    {
+      "cue": "수도승들이 함께 생활하는 곳",
+      "ko": "수도원",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a building where monks live and pray together",
+      "ex": [{"en":"The monks have lived in this monastery for centuries.","ko":"수도승들은 수 세기 동안 이 수도원에서 살아왔다."}]
+    }
+  ],
+  "moody": [
+    {
+      "cue": "기분이 자주 바뀌는",
+      "ko": "변덕스러운, 침울한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "often changing mood, especially becoming easily unhappy or angry",
+      "ex": [{"en":"Teenagers can be quite moody sometimes.","ko":"십 대들은 가끔 꽤 변덕스러울 수 있다."}]
+    }
+  ],
+  "moonlight": [
+    {
+      "cue": "밤에 달이 비추는 빛",
+      "ko": "달빛",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the light that comes from the moon at night",
+      "ex": [{"en":"They took a walk in the moonlight.","ko":"그들은 달빛 아래에서 산책을 했다."}]
+    },
+    {
+      "cue": "본업 외에 몰래 다른 일을",
+      "ko": "부업을 하다",
+      "pos": "동사",
+      "lv": 4,
+      "cefr": "C1",
+      "en": "have a second job, often secretly, in addition to your main job",
+      "ex": [{"en":"He moonlights as a taxi driver on weekends.","ko":"그는 주말에 택시 기사로 부업을 한다."}]
+    }
+  ],
+  "moonscape": [
+    {
+      "cue": "달 표면처럼 황량한 풍경",
+      "ko": "달 표면 같은 풍경",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a bare, rocky landscape that looks like the surface of the moon",
+      "ex": [{"en":"After the eruption, the area looked like a moonscape.","ko":"화산 폭발 후 그 지역은 달 표면 같은 풍경이 되었다."}]
+    }
+  ],
+  "morality": [
+    {
+      "cue": "옳고 그름에 대한 판단 기준",
+      "ko": "도덕성",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "beliefs about what is right and wrong behavior",
+      "ex": [{"en":"The book raises questions about morality and justice.","ko":"그 책은 도덕성과 정의에 관한 질문을 제기한다."}]
+    }
+  ],
+  "morally": [
+    {
+      "cue": "도덕적 기준으로 볼 때",
+      "ko": "도덕적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "in a way that relates to what is right or wrong",
+      "ex": [{"en":"Lying to your friends is morally wrong.","ko":"친구들에게 거짓말하는 것은 도덕적으로 옳지 않다."}]
+    }
+  ],
+  "mortal": [
+    {
+      "cue": "언젠가는 반드시 죽는 존재",
+      "ko": "죽을 운명의, 언젠가는 죽는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "certain to die at some point, as all living things are",
+      "ex": [{"en":"All humans are mortal.","ko":"모든 인간은 죽을 운명이다."}]
+    },
+    {
+      "cue": "목숨을 앗아갈 정도로 심각한",
+      "ko": "치명적인",
+      "pos": "형용사",
+      "lv": 3,
+      "cefr": "C1",
+      "en": "causing or able to cause death",
+      "ex": [{"en":"He suffered a mortal wound in the battle.","ko":"그는 전투에서 치명적인 부상을 입었다."}]
+    }
+  ],
+  "mortar": [
+    {
+      "cue": "벽돌 사이를 붙이는 반죽",
+      "ko": "회반죽, 모르타르",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a mixture of cement, sand, and water used to hold bricks or stones together",
+      "ex": [{"en":"The bricklayer spread mortar between the bricks.","ko":"벽돌공이 벽돌 사이에 회반죽을 발랐다."}]
+    },
+    {
+      "cue": "포탄을 높은 각도로 쏘는 무기",
+      "ko": "박격포",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "C1",
+      "en": "a short cannon that fires shells high into the air over a short distance",
+      "ex": [{"en":"The soldiers fired mortars at the enemy position.","ko":"병사들은 적진을 향해 박격포를 쐈다."}]
+    }
+  ],
+  "mortgage": [
+    {
+      "cue": "집을 담보로 받는 대출",
+      "ko": "주택담보대출",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a loan used to buy a house or apartment, using the property as security",
+      "ex": [{"en":"They took out a 30-year mortgage on their home.","ko":"그들은 집을 사려고 30년 만기 주택담보대출을 받았다."}]
+    }
+  ],
+  "mortify": [
+    {
+      "cue": "매우 부끄럽고 창피하게 만들다",
+      "ko": "굴욕감을 주다, 몹시 당황하게 하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "make someone feel very embarrassed or ashamed",
+      "ex": [{"en":"She was mortified when she tripped in front of everyone.","ko":"그녀는 모두 앞에서 넘어져서 몹시 창피했다."}]
+    }
+  ],
+  "mother-in-law": [
+    {
+      "cue": "배우자의 어머니",
+      "ko": "장모, 시어머니",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the mother of your husband or wife",
+      "ex": [{"en":"My mother-in-law is visiting us this weekend.","ko":"이번 주말에 시어머니가 우리 집에 오신다."}]
+    }
+  ],
+  "motion": [
+    {
+      "cue": "물체나 몸이 움직이는 것",
+      "ko": "움직임, 동작",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the act or process of moving",
+      "ex": [{"en":"The sudden motion of the boat made her feel sick.","ko":"배의 갑작스러운 움직임에 그녀는 속이 안 좋아졌다."}]
+    },
+    {
+      "cue": "회의에서 정식으로 내는 제안",
+      "ko": "(회의의) 동의, 발의",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "C1",
+      "en": "a formal proposal put forward for discussion and a vote at a meeting",
+      "ex": [{"en":"The committee approved the motion unanimously.","ko":"위원회는 그 발의를 만장일치로 승인했다."}]
+    },
+    {
+      "cue": "손이나 몸으로 신호를 보내다",
+      "ko": "손짓하다, 몸짓으로 신호를 보내다",
+      "pos": "동사",
+      "lv": 5,
+      "cefr": "B2",
+      "en": "make a hand or body movement to signal something to someone",
+      "ex": [{"en":"She motioned for him to sit down.","ko":"그녀는 그에게 앉으라고 손짓했다."}]
+    }
+  ],
+  "motivated": [
+    {
+      "cue": "목표를 위해 열심히 하려는 의욕이 있는",
+      "ko": "동기부여된, 의욕적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "having a strong reason or desire to do something",
+      "ex": [{"en":"She's highly motivated to finish the project early.","ko":"그녀는 프로젝트를 일찍 끝내려는 의욕이 매우 높다."}]
+    }
+  ],
+  "motorbike": [
+    {
+      "cue": "엔진이 달린 두 바퀴 탈것",
+      "ko": "모터바이크, 오토바이",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a two-wheeled vehicle with an engine",
+      "ex": [{"en":"He rides his motorbike to work every day.","ko":"그는 매일 오토바이를 타고 출근한다."}]
+    }
+  ],
+  "motorist": [
+    {
+      "cue": "자동차를 운전하는 사람",
+      "ko": "운전자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a person who drives a car",
+      "ex": [{"en":"Motorists were warned about the icy roads.","ko":"운전자들은 빙판길에 대해 경고를 받았다."}]
+    }
+  ],
+  "mournful": [
+    {
+      "cue": "슬픔이 느껴지는 표정·소리",
+      "ko": "슬픈, 애처로운",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "showing or expressing sadness",
+      "ex": [{"en":"She gave a mournful look as she said goodbye.","ko":"그녀는 작별 인사를 하며 슬픈 표정을 지었다."}]
+    }
+  ],
+  "mover": [
+    {
+      "cue": "이삿짐을 옮겨주는 직업인",
+      "ko": "이삿짐 운반원",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a person or company whose job is to move furniture and belongings to a new home",
+      "ex": [{"en":"We hired movers to help with the move.","ko":"우리는 이사를 도와줄 이삿짐 운반원을 고용했다."}]
+    }
+  ],
+  "moving": [
+    {
+      "cue": "마음을 뭉클하게 하는",
+      "ko": "감동적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "causing strong feelings, especially sadness or sympathy",
+      "ex": [{"en":"It was a moving speech about her father.","ko":"그녀의 아버지에 대한 감동적인 연설이었다."}]
+    },
+    {
+      "cue": "멈추지 않고 움직이고 있는",
+      "ko": "움직이는, 이동하는",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "in motion; not staying still",
+      "ex": [{"en":"Never jump off a moving train.","ko":"움직이는 기차에서는 절대 뛰어내리지 마."}]
+    }
+  ],
+  "muddy": [
+    {
+      "cue": "진흙이 잔뜩 묻은",
+      "ko": "진흙투성이의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "covered in or full of mud",
+      "ex": [{"en":"His boots were muddy after the hike.","ko":"등산 후 그의 부츠는 진흙투성이였다."}]
+    },
+    {
+      "cue": "상황·논점을 흐리게 만들다",
+      "ko": "흐리게 하다, 복잡하게 만들다",
+      "pos": "동사",
+      "lv": 4,
+      "cefr": "C1",
+      "en": "make a situation or issue confusing or unclear",
+      "ex": [{"en":"His comments only muddied the debate further.","ko":"그의 발언은 논쟁을 더욱 흐리게 만들 뿐이었다."}]
+    }
+  ],
+  "multiple": [
+    {
+      "cue": "하나가 아니라 여러 개인",
+      "ko": "다수의, 여러 개의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "more than one; many",
+      "ex": [{"en":"She has received multiple job offers.","ko":"그녀는 여러 개의 취업 제안을 받았다."}]
+    }
+  ],
+  "multiply": [
+    {
+      "cue": "수학에서 곱셈을 하다",
+      "ko": "곱하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "add a number to itself a certain number of times using multiplication",
+      "ex": [{"en":"Multiply six by seven to get forty-two.","ko":"6에 7을 곱하면 42가 된다."}]
+    },
+    {
+      "cue": "수·양이 급격히 늘어나다",
+      "ko": "크게 늘다, 증가시키다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "increase greatly in number or amount",
+      "ex": [{"en":"The rabbits multiplied quickly in the field.","ko":"토끼들이 들판에서 빠르게 늘어났다."}]
+    }
+  ],
+  "mumble": [
+    {
+      "cue": "입 안에서 우물거리며 말하다",
+      "ko": "중얼거리다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "speak quietly and unclearly, so that words are hard to understand",
+      "ex": [{"en":"He mumbled an apology and left.","ko":"그는 우물우물 사과하고 자리를 떴다."}]
+    }
+  ],
+  "murmur": [
+    {
+      "cue": "낮고 부드럽게 웅얼거리는 소리",
+      "ko": "중얼거림, 웅성거림",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a soft, low, continuous sound, such as quiet talking",
+      "ex": [{"en":"A murmur of agreement passed through the crowd.","ko":"군중 사이로 동의하는 웅성거림이 퍼졌다."}]
+    },
+    {
+      "cue": "낮고 조용하게 말하다",
+      "ko": "중얼거리다, 소곤거리다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "say something in a soft, quiet voice",
+      "ex": [{"en":"She murmured a few words of comfort.","ko":"그녀는 위로의 말 몇 마디를 소곤거렸다."}]
+    }
+  ],
+  "muse": [
+    {
+      "cue": "어떤 생각을 깊이 곱씹다",
+      "ko": "숙고하다, 곰곰이 생각하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "think about something carefully and quietly",
+      "ex": [{"en":"She mused about her future while staring out the window.","ko":"그녀는 창밖을 바라보며 자신의 미래에 대해 곰곰이 생각했다."}]
+    },
+    {
+      "cue": "예술가에게 영감을 주는 사람",
+      "ko": "뮤즈, 영감의 원천",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "C1",
+      "en": "a person or thing that inspires an artist",
+      "ex": [{"en":"His wife was the muse behind many of his paintings.","ko":"그의 아내는 그의 많은 그림 뒤에 있는 영감의 원천이었다."}]
+    }
+  ],
+  "mustache": [
+    {
+      "cue": "윗입술 위에 기른 수염",
+      "ko": "콧수염",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "hair that grows above a man's upper lip",
+      "ex": [{"en":"He grew a mustache over the winter.","ko":"그는 겨울 동안 콧수염을 길렀다."}]
+    }
+  ],
+  "mutability": [
+    {
+      "cue": "쉽게 변할 수 있는 성질",
+      "ko": "가변성",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "the quality of being likely to change",
+      "ex": [{"en":"The mutability of fashion trends makes them hard to predict.","ko":"유행의 가변성 때문에 그것을 예측하기 어렵다."}]
+    }
+  ],
+  "mutable": [
+    {
+      "cue": "쉽게 변하는 성질의",
+      "ko": "변하기 쉬운",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "likely or able to change",
+      "ex": [{"en":"Human memory is surprisingly mutable.","ko":"인간의 기억은 놀랍도록 변하기 쉽다."}]
+    }
+  ],
+  "mutter": [
+    {
+      "cue": "불만스럽게 낮은 목소리로 말하다",
+      "ko": "투덜거리다, 중얼거리다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "say something in a low voice, often because you are annoyed",
+      "ex": [{"en":"He muttered something under his breath and walked away.","ko":"그는 뭔가를 투덜거리며 걸어갔다."}]
+    }
+  ],
+  "mutton": [
+    {
+      "cue": "다 자란 양의 고기",
+      "ko": "양고기",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "meat from an adult sheep",
+      "ex": [{"en":"The stew was made with mutton and vegetables.","ko":"그 스튜는 양고기와 채소로 만들어졌다."}]
+    }
+  ],
+  "mystify": [
+    {
+      "cue": "이해할 수 없게 어리둥절하게 만들다",
+      "ko": "어리둥절하게 하다, 신비롭게 하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "confuse someone completely so that they cannot understand something",
+      "ex": [{"en":"The ending of the movie mystified the audience.","ko":"그 영화의 결말은 관객들을 어리둥절하게 만들었다."}]
+    }
+  ],
+  "nano": [
+    {
+      "cue": "10억분의 1 크기를 나타내는 접두어",
+      "ko": "나노, 아주 작은",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "an extremely small unit or scale, often used as a prefix meaning one billionth",
+      "ex": [{"en":"Nanotechnology is used to build incredibly small devices.","ko":"나노 기술은 믿을 수 없을 만큼 작은 장치를 만드는 데 사용된다."}]
+    }
+  ]
+}

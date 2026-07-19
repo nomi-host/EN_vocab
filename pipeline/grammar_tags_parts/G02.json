@@ -1,0 +1,116 @@
+{
+  "infinitive-noun-usage": {
+    "category": "to부정사",
+    "name_kr": "to부정사의 명사적 용법",
+    "desc_kr": "to부정사가 문장에서 명사처럼 주어·목적어·보어 자리에 들어가는 용법으로, '~하는 것'으로 해석하면 자연스럽다. 주어 자리에 그대로 쓰면 문장이 앞으로 늘어져 어색하므로 실제로는 가주어 it을 문장 맨 앞에 세우고 진짜 주어인 to부정사는 뒤로 보내는 경우가 많다. want, decide, hope처럼 아직 하지 않은 일을 향하는 동사 뒤 목적어 자리, be동사 뒤 보어 자리에도 같은 원리로 쓰인다.",
+    "example": { "en": "It is important to finish this project by Friday.", "ko": "이 프로젝트를 금요일까지 끝내는 것이 중요하다." }
+  },
+  "infinitive-adjective-usage": {
+    "category": "to부정사",
+    "name_kr": "to부정사의 형용사적 용법",
+    "desc_kr": "to부정사가 명사 바로 뒤에서 그 명사를 꾸며주는 용법으로, '~할', '~하는'으로 해석된다. something, anything, nothing 같은 부정대명사 뒤에 특히 자주 붙는다. 수식받는 명사가 to부정사 동사의 목적어 역할을 하면서 원래 전치사가 필요한 동사라면, 그 전치사를 끝까지 살려서 써야 한다는 점이 실수하기 쉬운 부분이다.",
+    "example": { "en": "I need a pen to write with.", "ko": "나는 (그것으로) 쓸 펜이 필요하다." }
+  },
+  "infinitive-adverb-usage": {
+    "category": "to부정사",
+    "name_kr": "to부정사의 부사적 용법",
+    "desc_kr": "to부정사가 동사·형용사·문장 전체를 꾸며 목적, 결과, 원인, 판단의 근거 등 다양한 의미를 더하는 용법이다. 목적('~하기 위해')으로 가장 많이 배우지만, 감정 형용사 뒤에서는 원인('~해서 기쁘다')으로, grow up to be처럼 문맥에 따라서는 결과('그 결과 ~하게 되다')로 해석이 달라진다. 그래서 무조건 '~하기 위해'로만 외우면 결과·원인 용법에서 오히려 어색한 번역이 나온다.",
+    "example": { "en": "I was surprised to see him there.", "ko": "나는 그를 거기서 보고 놀랐다." }
+  },
+  "infinitive-semantic-subject": {
+    "category": "to부정사",
+    "name_kr": "to부정사의 의미상 주어(for/of)",
+    "desc_kr": "to부정사가 나타내는 동작을 실제로 하는 주체가 문장의 주어와 다를 때, 그 주체를 밝혀주는 장치다. 대부분은 'for + 목적격'을 쓰지만, kind, nice, careless, foolish처럼 사람의 성격이나 태도를 평가하는 형용사가 앞에 오면 예외적으로 'of + 목적격'을 쓴다. 이 for/of 선택이 형용사의 종류에 달려 있다는 점이 학습자들이 자주 헷갈리는 지점이다.",
+    "example": { "en": "It was kind of you to help me.", "ko": "도와주다니 너 참 친절했다." }
+  },
+  "bare-infinitive-causative": {
+    "category": "to부정사",
+    "name_kr": "사역동사 + 원형부정사",
+    "desc_kr": "make, have, let 같은 사역동사는 목적어 뒤에 to 없는 원형부정사를 써서 '목적어가 ~하게 시키다/하도록 하다'라는 뜻을 나타낸다. 같은 사역이라도 make는 강제성이 강하고, have는 부탁이나 지시에 가까우며, let은 허락의 뉘앙스라는 차이가 있다. get만은 예외적으로 'get + 목적어 + to부정사' 형태를 쓴다는 점도 함께 기억해 둘 필요가 있다.",
+    "example": { "en": "My mom made me clean my room.", "ko": "엄마가 나한테 방 청소를 시켰다." }
+  },
+  "bare-infinitive-perception": {
+    "category": "to부정사",
+    "name_kr": "지각동사 + 원형부정사",
+    "desc_kr": "see, hear, feel, watch 같은 지각동사는 목적어의 동작을 있는 그대로 지각했을 때 목적어 뒤에 원형부정사를 쓴다. 같은 자리에 현재분사(-ing)를 쓸 수도 있는데, 원형부정사는 동작을 처음부터 끝까지 지켜본 느낌이고 -ing는 한창 진행 중인 한 장면을 본 느낌이라는 차이가 있다. 사역동사 구문과 형태는 똑같아 보여도, 지각동사는 '시키는 것'이 아니라 '있는 그대로를 느낀 것'이라는 의미 차이가 핵심이다.",
+    "example": { "en": "I saw him cross the street.", "ko": "나는 그가 길을 건너는 것을 봤다." }
+  },
+  "participle-adjective-present": {
+    "category": "분사·분사구문",
+    "name_kr": "현재분사의 형용사 용법",
+    "desc_kr": "동사에 -ing를 붙인 현재분사가 명사를 꾸며 '~하는, ~하게 만드는'이라는 능동·진행의 뜻을 더하는 용법이다. 수식받는 명사가 그 동작을 스스로 하고 있거나, 그런 감정을 남에게 일으키는 원인일 때 -ing형을 쓴다. 그래서 boring, interesting처럼 감정을 유발하는 동사는 그 감정의 원인이 되는 대상 앞에서 늘 -ing형으로 쓰인다.",
+    "example": { "en": "The boring lecture put everyone to sleep.", "ko": "그 지루한 강의는 모두를 졸게 만들었다." }
+  },
+  "participle-adjective-past": {
+    "category": "분사·분사구문",
+    "name_kr": "과거분사의 형용사 용법",
+    "desc_kr": "동사의 과거분사형이 명사를 꾸며 '~된, ~당한'이라는 수동·완료의 뜻을 더하는 용법이다. 수식받는 명사가 동작을 스스로 하는 게 아니라 그 동작을 당하거나 그 감정을 느끼는 쪽일 때 과거분사를 쓴다. 위의 현재분사 용법과 능동-수동으로 정확히 짝을 이루는 관계라서(지루하게 만드는 강의=boring, 지루함을 느끼는 학생=bored) 둘을 나란히 놓고 구분하면 헷갈리지 않는다.",
+    "example": { "en": "The bored students stared out the window.", "ko": "지루해하는 학생들은 창밖을 바라보았다." }
+  },
+  "participle-clause-basic": {
+    "category": "분사·분사구문",
+    "name_kr": "분사구문(부사절 축약)",
+    "desc_kr": "접속사가 있는 부사절(시간, 이유, 조건 등)에서 부사절의 주어가 주절의 주어와 같을 때, 접속사와 주어를 생략하고 동사를 -ing형으로 바꿔 문장을 간결하게 줄인 형태다. 접속사를 없앤 대신 원래 어떤 의미(때, 이유, 동시동작 등)였는지는 앞뒤 문맥으로 짐작해야 한다는 점이 이 용법의 핵심 특징이다.",
+    "example": { "en": "Walking down the street, I saw an old friend.", "ko": "길을 걷다가 나는 오랜 친구를 만났다." }
+  },
+  "participle-clause-independent": {
+    "category": "분사·분사구문",
+    "name_kr": "독립분사구문",
+    "desc_kr": "분사구문에서 분사가 나타내는 동작의 주체(의미상 주어)가 주절의 주어와 다를 때, 그 주어를 생략하지 않고 분사 앞에 그대로 남겨 둔 형태다. 일반 분사구문은 주절과 주어가 같아서 생략되지만, 이 경우는 한 문장 안에 서로 다른 두 주어가 나란히 등장한다는 점이 뚜렷한 구분점이다.",
+    "example": { "en": "The weather being nice, we decided to go on a picnic.", "ko": "날씨가 좋아서 우리는 소풍을 가기로 했다." }
+  },
+  "participle-with-construction": {
+    "category": "분사·분사구문",
+    "name_kr": "with + 분사구문",
+    "desc_kr": "'with + 명사 + 분사' 형태로 주된 동작과 동시에 벌어지는 부수적인 상태나 동작(부대상황)을 묘사할 때 쓴다. 명사가 분사의 동작을 스스로 하는 쪽이면 현재분사, 그 동작을 당하는 쪽이면 과거분사를 쓴다. 독립분사구문처럼 명사(의미상 주어)가 따로 드러난다는 점은 같지만, with가 붙어 '~한 채로'라는 배경 묘사의 느낌이 강하다는 차이가 있다.",
+    "example": { "en": "She was reading with her legs crossed.", "ko": "그녀는 다리를 꼰 채로 책을 읽고 있었다." }
+  },
+  "participle-perfect": {
+    "category": "분사·분사구문",
+    "name_kr": "완료형 분사구문(Having p.p.)",
+    "desc_kr": "분사구문이 나타내는 시점이 주절보다 앞선 과거일 때 'Having + 과거분사' 형태를 써서 시간차를 드러낸다. 단순 분사구문(-ing)은 주절과 같은 시점의 일이라 순서가 잘 드러나지 않지만, 이 형태는 '먼저 ~한 후에, ~했기 때문에'처럼 두 동작 사이의 선후 관계가 분명해진다는 점이 다르다.",
+    "example": { "en": "Having finished his homework, he went out to play.", "ko": "그는 숙제를 끝낸 후에 놀러 나갔다." }
+  },
+  "gerund-vs-infinitive-meaning-change": {
+    "category": "동명사",
+    "name_kr": "동명사·to부정사 목적어에 따라 뜻이 달라지는 동사",
+    "desc_kr": "remember, forget, try, stop 같은 동사는 뒤에 동명사가 오는지 to부정사가 오는지에 따라 뜻이 완전히 달라진다. 동명사는 이미 하고 있거나 이미 일어난 일(과거지향), to부정사는 아직 하지 않은 앞으로의 일(미래지향)을 가리킨다는 감각으로 구분하면 두 형태를 헷갈리지 않는다. 예를 들어 stop -ing는 '~하던 것을 멈추다'이고 stop to부정사는 '~하려고 (다른 일을) 멈추다'로, 무엇을 멈춘 것인지가 완전히 달라진다.",
+    "example": { "en": "He stopped to check his phone.", "ko": "그는 휴대폰을 확인하려고 하던 일을 멈췄다." }
+  },
+  "gerund-idiom-expressions": {
+    "category": "동명사",
+    "name_kr": "동명사 관용표현",
+    "desc_kr": "cannot help -ing, be busy -ing, look forward to -ing처럼 동명사가 들어가는 자리가 굳어진 관용 표현들이다. 대부분 뜻을 통째로 외워야 하고, 특히 look forward to에서 to가 부정사의 to가 아니라 전치사로 쓰인 것이라 뒤에 동사원형이 아니라 동명사가 와야 한다는 점이 실수하기 쉬운 대목이다.",
+    "example": { "en": "I'm looking forward to seeing you again.", "ko": "다시 만날 날을 기대하고 있어요." }
+  },
+  "gerund-subject-object": {
+    "category": "동명사",
+    "name_kr": "동명사의 주어·목적어 역할",
+    "desc_kr": "동명사는 '~하는 것, ~하기'라는 뜻으로 문장에서 명사처럼 주어, 목적어, 보어 자리에 들어간다. enjoy, finish, avoid처럼 실제로 일어나고 있거나 이미 하고 있는 일을 목적어로 받는 동사들은 동명사를 취하는 경향이 강하다. to부정사의 명사적 용법과 뜻이 겹칠 때도 있지만, 동명사 쪽은 일반적·습관적인 행위를 가리키는 느낌이 더 강하다는 차이가 있다.",
+    "example": { "en": "Swimming every morning keeps me energetic.", "ko": "매일 아침 수영하는 것은 나를 활기차게 해준다." }
+  },
+  "gerund-after-preposition": {
+    "category": "동명사",
+    "name_kr": "전치사 + 동명사",
+    "desc_kr": "전치사 뒤에는 동사원형이나 to부정사가 아니라 반드시 동명사가 온다. 전치사는 원래 명사(구)를 목적어로 받는 품사인데, 동사를 명사 자리에 넣으려면 동명사로 바꿔야 하기 때문이다. before, after, without, by처럼 흔히 쓰는 전치사 뒤에 동사를 넣고 싶을 때 실수로 원형이나 to부정사를 쓰기 쉬우니 주의가 필요하다.",
+    "example": { "en": "She left without saying goodbye.", "ko": "그녀는 작별 인사도 없이 떠났다." }
+  },
+  "inversion-negative-adverb": {
+    "category": "도치",
+    "name_kr": "부정어 도치",
+    "desc_kr": "never, hardly, little, not only처럼 부정의 뜻을 가진 부사(구)가 강조를 위해 문장 맨 앞으로 나오면, 그 뒤의 주어와 동사가 의문문처럼 도치된다. 일반동사가 쓰인 문장이면 do/does/did를 주어 앞으로 끌어오고, 조동사나 be동사가 있으면 그것을 그대로 주어 앞으로 옮긴다. 부정어를 문장 맨 앞으로 뺀 만큼 그 내용을 강하게 강조하려는 의도가 담긴 어순이라는 점이 핵심이다.",
+    "example": { "en": "Never have I seen such a beautiful sunset.", "ko": "이렇게 아름다운 노을은 본 적이 없다." }
+  },
+  "inversion-so-neither": {
+    "category": "도치",
+    "name_kr": "so/neither 도치",
+    "desc_kr": "상대의 말에 '나도 그래(긍정 동의)' 또는 '나도 아니야(부정 동의)'라고 맞장구칠 때 쓰는 도치 구문이다. 앞 문장이 긍정문이면 'So + 동사 + 주어', 부정문이면 'Neither/Nor + 동사 + 주어' 순서가 된다. 앞 문장이 일반동사문이면 do/does/did를 끌어와 도치시킨다는 점에서 부정어 도치와 같은 원리를 공유하지만, 여기서는 동의를 표현하는 대화체 표현이라는 점이 다르다.",
+    "example": { "en": "\"I don't like coffee.\" \"Neither do I.\"", "ko": "\"나는 커피를 안 좋아해.\" \"나도 그래.\"" }
+  },
+  "inversion-place-adverbial": {
+    "category": "도치",
+    "name_kr": "장소부사구 도치",
+    "desc_kr": "here, there나 장소를 나타내는 부사구가 문장 맨 앞에 나오면 주어와 동사의 자리가 바뀌어 '동사 + 주어' 순서가 되는 경우가 많다. 이때는 do/does/did를 끌어오지 않고 본동사 자체를 주어 앞으로 옮긴다는 점이 부정어 도치와 다르다. 다만 주어가 대명사(he, she, it 등)일 때는 도치하지 않고 원래 어순(주어+동사)을 그대로 유지하는 예외가 있다.",
+    "example": { "en": "Here comes the bus.", "ko": "저기 버스가 온다." }
+  }
+}

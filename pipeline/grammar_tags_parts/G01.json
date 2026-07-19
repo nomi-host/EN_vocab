@@ -1,0 +1,92 @@
+{
+  "relative-pronoun-who": {
+    "category": "관계사",
+    "name_kr": "관계대명사 who",
+    "desc_kr": "who는 선행사가 사람일 때 쓰는 관계대명사로, 관계사절 안에서 그 사람이 하는 동작을 나타내는 주어 역할(주격)을 한다. 목적어 자리에서는 원래 whom을 써야 문법적으로 정확하지만, 실제 회화나 편한 글에서는 목적격 자리에도 who를 그대로 쓰는 경우가 훨씬 많다. 즉 who는 선행사가 '사람'이라는 것을 알려줄 뿐이고, 문장 안에서 주어인지 목적어인지는 뒤에 이어지는 동사와의 관계로 판단하면 된다.",
+    "example": { "en": "The woman who called you yesterday is my aunt.", "ko": "어제 너한테 전화한 여자분이 우리 이모야." }
+  },
+  "relative-pronoun-which": {
+    "category": "관계사",
+    "name_kr": "관계대명사 which",
+    "desc_kr": "which는 선행사가 사물이나 동물일 때 쓰는 관계대명사로, who의 사물 버전이라고 생각하면 된다. 콤마 없이 쓰면 명사를 좁혀 꾸미는 한정적 용법이 되고, 콤마를 찍으면 이미 정해진 대상이나 앞 절 전체에 대한 추가 설명을 덧붙이는 계속적 용법이 된다. that과 달리 콤마 뒤(계속적 용법)에서도 쓸 수 있고 전치사 바로 뒤에도 올 수 있다는 점이 that과 실질적으로 갈리는 부분이다.",
+    "example": { "en": "She bought a laptop, which turned out to be too heavy to carry.", "ko": "그녀는 노트북을 샀는데, 그게 들고 다니기엔 너무 무거운 걸로 밝혀졌다." }
+  },
+  "relative-pronoun-that": {
+    "category": "관계사",
+    "name_kr": "관계대명사 that",
+    "desc_kr": "that은 선행사가 사람이든 사물이든 상관없이 한정적 용법에서 who나 which 대신 쓸 수 있는 관계대명사다. 다만 콤마 뒤에 오는 계속적 용법에는 쓸 수 없고, 전치사 바로 뒤(전치사+관계대명사)에도 올 수 없다는 제약이 있어 그 자리에선 who/which로 되돌려야 한다. 그래서 that은 '바로 이 사람/이것'을 딱 좁혀 지목하는 자리에서만 쓸 수 있는, who/which의 캐주얼한 대체어라고 이해하면 된다.",
+    "example": { "en": "This is the book that changed my life.", "ko": "이게 바로 내 인생을 바꾼 책이야." }
+  },
+  "relative-pronoun-whose": {
+    "category": "관계사",
+    "name_kr": "관계대명사 whose",
+    "desc_kr": "whose는 '누구의'라는 소유의 의미를 나타내는 관계대명사로, 뒤에 오는 명사를 선행사의 소유물로 이어준다. 원래 두 문장에서 소유격(his/her/its/their)으로 쓰이던 자리를 관계대명사절로 합칠 때 whose로 바꾼다고 생각하면 이 낯선 형태가 이해된다. 선행사가 사람이든 사물이든 모두 쓸 수 있다는 점에서 사람에만 한정되는 who와 다르다.",
+    "example": { "en": "I met a man whose dog followed him everywhere.", "ko": "나는 자기 개가 어디든 따라다니는 남자를 만났다." }
+  },
+  "relative-adverb": {
+    "category": "관계사",
+    "name_kr": "관계부사(where/when/why/how)",
+    "desc_kr": "관계부사는 '전치사+관계대명사'를 하나로 압축한 표현으로, 관계사절 안에서 장소·시간·이유·방법을 나타내는 부사 역할을 한다. where는 장소(in/at which), when은 시간(in/on which), why는 이유(for which)에 해당하며, 관계대명사와 달리 뒤에 오는 절은 주어와 목적어가 다 갖춰진 완전한 문장이라는 점이 핵심 구분 포인트다. how는 특이하게 선행사 the way와 함께 쓰지 않고 둘 중 하나만 남기는 규칙이 있다.",
+    "example": { "en": "This is the restaurant where we had our first date.", "ko": "여기가 우리가 첫 데이트를 했던 그 식당이야." }
+  },
+  "relative-pronoun-omission": {
+    "category": "관계사",
+    "name_kr": "관계대명사 생략",
+    "desc_kr": "관계사절 안에서 관계대명사가 목적어 역할(목적격)을 할 때는 생략할 수 있다. 관계사절에 이미 주어와 동사가 갖춰져 있고 관계대명사는 그 뒤 목적어 자리만 채우는 역할이라, 굳이 밝히지 않아도 문맥상 무엇을 가리키는지 통하기 때문이다. 반면 관계사절 안에서 주어 역할을 하는 주격 관계대명사는 생략하면 문장 자체가 성립하지 않으므로 생략할 수 없다.",
+    "example": { "en": "The movie I watched last night was amazing.", "ko": "내가 어젯밤에 본 영화 진짜 좋았어." }
+  },
+  "passive-progressive": {
+    "category": "수동태",
+    "name_kr": "진행형 수동태",
+    "desc_kr": "'be동사+being+과거분사' 형태로, 단순 수동태에 '지금 그 일이 진행 중'이라는 진행형의 의미를 더한 것이다. 단순 수동태가 동작의 결과나 상태에 초점을 둔다면, 진행형 수동태는 그 동작이 바로 지금(또는 그 시점에) 실제로 벌어지고 있음을 강조한다. be동사 뒤에 being과 과거분사가 겹쳐 나오는 낯선 형태지만, 능동태의 진행형(be+~ing)에서 목적어를 주어 자리로 끌어올린 것뿐이라고 생각하면 형태가 이해된다.",
+    "example": { "en": "The road is being repaired this week.", "ko": "그 도로는 이번 주에 보수 공사 중이다." }
+  },
+  "passive-perfect": {
+    "category": "수동태",
+    "name_kr": "완료형 수동태",
+    "desc_kr": "'have been+과거분사' 형태로, 완료시제가 갖는 계속·경험·완료·결과의 의미를 수동태에 얹은 것이다. 단순 수동태가 특정 시점의 동작 자체를 나타낸다면, 완료형 수동태는 그 동작이 과거 어느 시점부터 지금까지 영향을 미치고 있거나 이미 끝났다는 시간의 폭을 함께 전달한다. 능동태의 완료형(have+과거분사)에서 목적어를 주어 자리로 올리면서 뒤에 과거분사가 하나 더 붙는 구조로 이해하면 된다.",
+    "example": { "en": "The report has been finished ahead of schedule.", "ko": "그 보고서는 예정보다 일찍 완성됐다." }
+  },
+  "passive-by-omission": {
+    "category": "수동태",
+    "name_kr": "by 생략 수동태",
+    "desc_kr": "수동태에서 'by+행위자'는 필수가 아니라 선택이며, 실제 영어에서는 행위자를 굳이 밝히지 않고 통째로 생략하는 경우가 훨씬 많다. 행위자가 일반 사람들이라 콕 집을 필요가 없거나, 누가 했는지 너무 뻔해서 말할 필요가 없거나, 반대로 누군지 모르거나 밝히고 싶지 않을 때 이런 생략이 자연스럽다. 그래서 문법책의 'by+행위자' 공식만 외우면 실제 문장 대부분에서 by가 안 보이는 이유를 놓치게 된다.",
+    "example": { "en": "My wallet was stolen on the subway.", "ko": "지하철에서 내 지갑을 도둑맞았다." }
+  },
+  "passive-get": {
+    "category": "수동태",
+    "name_kr": "get-수동태",
+    "desc_kr": "'get+과거분사'는 be동사 대신 get을 쓰는 수동태로, 격식을 덜 차린 구어체에서 특히 잘 쓰인다. be-수동태가 차분한 상태 묘사에 가깝다면, get-수동태는 갑작스러운 변화나 예상치 못한 일(주로 사고나 곤란한 상황)이 벌어졌다는 느낌을 더 강하게 준다. 그래서 다치거나 해고당하거나 걸리는 것처럼 좋지 않은 일이 갑자기 일어났을 때 원어민이 be동사보다 get을 즐겨 쓰는 경향이 있다.",
+    "example": { "en": "He got fired for being late all the time.", "ko": "그는 계속 지각해서 결국 잘렸다." }
+  },
+  "subjunctive-past-perfect": {
+    "category": "가정법",
+    "name_kr": "가정법 과거완료",
+    "desc_kr": "이미 지나가버린 과거 사실과 반대되는 상황을 가정할 때 쓴다. if절에는 'had+과거분사'를, 주절에는 'would/could/might+have+과거분사'를 써서 '그때 그랬다면 (그때) 그랬을 텐데'라는 뜻을 나타낸다. 가정법 과거가 현재에 대한 상상이나 아쉬움이라면, 가정법 과거완료는 이미 끝나버려 되돌릴 수 없는 과거에 대한 후회라는 점이 핵심 차이다.",
+    "example": { "en": "If I had studied harder, I would have passed the exam.", "ko": "내가 더 열심히 공부했더라면, 시험에 합격했을 텐데." }
+  },
+  "subjunctive-mixed": {
+    "category": "가정법",
+    "name_kr": "혼합 가정법",
+    "desc_kr": "if절과 주절이 가리키는 시점이 서로 다를 때 두 가정법을 섞어 쓰는 것을 혼합 가정법이라 한다. if절은 과거 사실을 반대로 가정(had+과거분사, 가정법 과거완료)하면서, 그 결과가 지금 현재까지 이어진다고 볼 때 주절은 가정법 과거 형태(would+동사원형)를 쓴다. '그때 그랬다면 (지금) 이럴 텐데'처럼 과거의 원인과 현재의 결과가 이어지는 문장에서 이런 시제 불일치가 자연스럽게 나타난다.",
+    "example": { "en": "If I hadn't missed the flight, I would be at the conference right now.", "ko": "그때 비행기를 놓치지 않았더라면, 지금쯤 학회장에 있을 텐데." }
+  },
+  "wish-clause": {
+    "category": "가정법",
+    "name_kr": "I wish 가정법",
+    "desc_kr": "I wish 뒤에 가정법을 쓰면 현실과 다른 것을 바라는 아쉬움이나 소망을 나타낸다. 현재 사실과 반대되는 소망이면 wish 뒤에 과거형(가정법 과거, be동사는 인칭에 상관없이 were)을 쓰고, 과거 사실과 반대되는 후회면 'had+과거분사'(가정법 과거완료)를 쓴다. if절 없이 wish 하나만으로 '~라면 좋을 텐데'나 '~했더라면 좋았을 텐데'라는 아쉬움을 표현한다는 점이 if 가정법과 형태상 다르다.",
+    "example": { "en": "I wish I had brought an umbrella.", "ko": "우산을 가져왔더라면 좋았을 텐데." }
+  },
+  "as-if-as-though": {
+    "category": "가정법",
+    "name_kr": "as if / as though 가정법",
+    "desc_kr": "as if(as though)는 '마치 ~인 것처럼'이라는 뜻으로, 실제로는 그렇지 않은 상황을 비유적으로 빗대어 말할 때 가정법을 함께 쓴다. 주절과 같은 시점을 반대로 가정할 때는 과거형을, 주절보다 앞선 시점을 반대로 가정할 때는 'had+과거분사'를 써서 시제 차이로 '언제'에 대한 반사실을 구분한다. 다만 화자가 어느 정도 그럴듯하다고 여기는 추측일 때는 직설법을 그대로 쓰기도 해서, 형태만 보고도 화자가 얼마나 확신 없이 비유하는지 짐작할 수 있다.",
+    "example": { "en": "He talks as if he knew everything about it.", "ko": "그는 마치 그것에 대해 모든 걸 아는 것처럼 말한다." }
+  },
+  "if-omission-inversion": {
+    "category": "가정법",
+    "name_kr": "if 생략 도치 가정법",
+    "desc_kr": "가정법 문장에서 if를 생략하면 그 빈자리를 표시하려고 주어와 (조)동사의 순서를 바꾸는 도치가 일어난다. 가정법 과거에서 if절에 were가 있으면 'Were+주어', 가정법 과거완료에서 had가 있으면 'Had+주어', 미래에 대한 약한 가정에서 should가 있으면 'Should+주어' 형태로 문장이 시작된다. 이런 도치 형태는 문어체나 격식 있는 글에서 즐겨 쓰이며, if가 보이지 않아도 조동사가 문장 맨 앞에 나온 순간 가정법임을 알아챌 수 있다.",
+    "example": { "en": "Had I known about the traffic, I would have left earlier.", "ko": "그 교통 체증을 알았더라면, 더 일찍 출발했을 텐데." }
+  }
+}

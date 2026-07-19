@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 862 1254">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9, .st10, .st11, .st12, .st13, .st14, .st15, .st16, .st17, .st18, .st19, .st20, .st21, .st22, .st23, .st24, .st25, .st26, .st27, .st28, .st29, .st30, .st31, .st32, .st33, .st34, .st35, .st36, .st37, .st38, .st39, .st40, .st41 {
+        stroke: #211c15;
+      }
+
+      .st0, .st42 {
+        fill: #fffaf1;
+      }
+
+      .st1 {
+        fill: #d9483c;
+      }
+
+      .st2 {
+        fill: #fc0;
+      }
+
+      .st3 {
+        fill: #fffdf8;
+      }
+
+      .st4 {
+        fill: #e6dcc3;
+      }
+
+      .st5 {
+        fill: #ef0066;
+      }
+
+      .st6 {
+        fill: #2f8f5b;
+      }
+
+      .st7, .st43 {
+        fill: #8c8270;
+      }
+
+      .st8 {
+        fill: #f9e1dd;
+      }
+
+      .st9 {
+        fill: #faf4e7;
+      }
+
+      .st10 {
+        fill: #ffeef6;
+      }
+
+      .st11 {
+        fill: #e3f1e7;
+      }
+
+      .st12 {
+        fill: #4a3a20;
+      }
+
+      .st13 {
+        fill: #e7f5ff;
+      }
+
+      .st14 {
+        fill: #fff8db;
+      }
+
+      .st15 {
+        fill: #d8ed77;
+      }
+
+      .st16 {
+        fill: #ffea9a;
+      }
+
+      .st17 {
+        fill: #0083dd;
+      }
+
+      .st18 {
+        fill: #ffdcaf;
+      }
+
+      .st19 {
+        fill: #fbf4e3;
+      }
+
+      .st44, .st45, .st43, .st46, .st47, .st48, .st49 {
+        font-family: LINESeedSansKR-Bold, 'LINE Seed Sans KR';
+        font-weight: 700;
+        isolation: isolate;
+      }
+
+      .st44, .st30, .st48 {
+        fill: #fffbf1;
+      }
+
+      .st44, .st47 {
+        font-size: 12px;
+      }
+
+      .st20 {
+        fill: #d97a00;
+      }
+
+      .st21 {
+        fill: #cfc7b5;
+      }
+
+      .st22 {
+        fill: #6b3800;
+      }
+
+      .st23, .st45, .st46, .st47, .st49 {
+        fill: #211c15;
+      }
+
+      .st24 {
+        fill: #003e69;
+      }
+
+      .st25 {
+        fill: #f1e7ce;
+      }
+
+      .st26 {
+        fill: #ffd1e4;
+      }
+
+      .st27 {
+        fill: #ffb4d4;
+      }
+
+      .st28 {
+        fill: #bce4ff;
+      }
+
+      .st45 {
+        font-size: 16px;
+      }
+
+      .st29 {
+        fill: #5a4700;
+      }
+
+      .st31 {
+        fill: #4a4234;
+      }
+
+      .st43 {
+        font-size: 14px;
+      }
+
+      .st32 {
+        fill: #45520b;
+      }
+
+      .st46, .st48 {
+        font-size: 11px;
+      }
+
+      .st33 {
+        fill: #e7f4ab;
+      }
+
+      .st34 {
+        fill: #f6fbe1;
+      }
+
+      .st35 {
+        fill: #ffb459;
+      }
+
+      .st36 {
+        fill: #fff0dd;
+      }
+
+      .st37 {
+        fill: #710030;
+      }
+
+      .st38 {
+        fill: #ede1c2;
+      }
+
+      .st39 {
+        fill: #93d3ff;
+      }
+
+      .st49 {
+        font-size: 28px;
+      }
+
+      .st40 {
+        fill: #ffdd5c;
+      }
+
+      .st41 {
+        fill: #92ad17;
+      }
+    </style>
+  </defs>
+  <rect class="st42" width="862" height="1254"/>
+  <text class="st49" transform="translate(40 56)"><tspan x="0" y="0">NoEnglish 컬러 팔레트</tspan></text>
+  <text class="st43" transform="translate(40 86)"><tspan x="0" y="0">index.html :root 토큰 기준. 형광펜 5색 × 5톤(xlight/light/base/dark/xdark) + 배경·잉크 위계 + 의미색.</tspan></text>
+  <text class="st45" transform="translate(40 196)"><tspan x="0" y="0">배경 · 서피스 · 잉크 (뉴트럴)</tspan></text>
+  <g>
+    <rect class="st0" x="40" y="210" width="150" height="88"/>
+    <text class="st47" transform="translate(50 272)"><tspan x="0" y="0">--bg</tspan></text>
+    <text class="st46" transform="translate(50 288)"><tspan x="0" y="0">#FFFAF1</tspan></text>
+  </g>
+  <g>
+    <rect class="st3" x="198" y="210" width="150" height="88"/>
+    <text class="st47" transform="translate(208 272)"><tspan x="0" y="0">--surface</tspan></text>
+    <text class="st46" transform="translate(208 288)"><tspan x="0" y="0">#FFFDF8</tspan></text>
+  </g>
+  <g>
+    <rect class="st19" x="356" y="210" width="150" height="88"/>
+    <text class="st47" transform="translate(366 272)"><tspan x="0" y="0">--surface-container</tspan></text>
+    <text class="st46" transform="translate(366 288)"><tspan x="0" y="0">#FBF4E3</tspan></text>
+  </g>
+  <g>
+    <rect class="st25" x="514" y="210" width="150" height="88"/>
+    <text class="st47" transform="translate(524 272)"><tspan x="0" y="0">--surface-container-high</tspan></text>
+    <text class="st46" transform="translate(524 288)"><tspan x="0" y="0">#F1E7CE</tspan></text>
+  </g>
+  <g>
+    <rect class="st9" x="672" y="210" width="150" height="88"/>
+    <text class="st47" transform="translate(682 272)"><tspan x="0" y="0">--fill</tspan></text>
+    <text class="st46" transform="translate(682 288)"><tspan x="0" y="0">#FAF4E7</tspan></text>
+  </g>
+  <g>
+    <rect class="st38" x="40" y="306" width="150" height="88"/>
+    <text class="st47" transform="translate(50 368)"><tspan x="0" y="0">--accent-soft</tspan></text>
+    <text class="st46" transform="translate(50 384)"><tspan x="0" y="0">#EDE1C2</tspan></text>
+  </g>
+  <g>
+    <rect class="st4" x="198" y="306" width="150" height="88"/>
+    <text class="st47" transform="translate(208 368)"><tspan x="0" y="0">--line</tspan></text>
+    <text class="st46" transform="translate(208 384)"><tspan x="0" y="0">#E6DCC3</tspan></text>
+  </g>
+  <g>
+    <rect class="st21" x="356" y="306" width="150" height="88"/>
+    <text class="st47" transform="translate(366 368)"><tspan x="0" y="0">--warmgray</tspan></text>
+    <text class="st46" transform="translate(366 384)"><tspan x="0" y="0">#CFC7B5</tspan></text>
+  </g>
+  <g>
+    <rect class="st7" x="514" y="306" width="150" height="88"/>
+    <text class="st44" transform="translate(524 368)"><tspan x="0" y="0">--muted</tspan></text>
+    <text class="st48" transform="translate(524 384)"><tspan x="0" y="0">#8C8270</tspan></text>
+  </g>
+  <g>
+    <rect class="st12" x="672" y="306" width="150" height="88"/>
+    <text class="st44" transform="translate(682 368)"><tspan x="0" y="0">--accent-deep</tspan></text>
+    <text class="st48" transform="translate(682 384)"><tspan x="0" y="0">#4A3A20</tspan></text>
+  </g>
+  <g>
+    <rect class="st31" x="40" y="402" width="150" height="88"/>
+    <text class="st44" transform="translate(50 464)"><tspan x="0" y="0">--ink-2</tspan></text>
+    <text class="st48" transform="translate(50 480)"><tspan x="0" y="0">#4A4234</tspan></text>
+  </g>
+  <g>
+    <rect class="st23" x="198" y="402" width="150" height="88"/>
+    <text class="st44" transform="translate(208 464)"><tspan x="0" y="0">--ink</tspan></text>
+    <text class="st48" transform="translate(208 480)"><tspan x="0" y="0">#211C15</tspan></text>
+  </g>
+  <g>
+    <rect class="st30" x="356" y="402" width="150" height="88"/>
+    <text class="st47" transform="translate(366 464)"><tspan x="0" y="0">--on-accent</tspan></text>
+    <text class="st46" transform="translate(366 480)"><tspan x="0" y="0">#FFFBF1</tspan></text>
+  </g>
+  <text class="st45" transform="translate(40 530)"><tspan x="0" y="0">형광펜 (하이라이터) 5색 × 5톤</tspan></text>
+  <g>
+    <rect class="st34" x="40" y="544" width="150" height="88"/>
+    <text class="st47" transform="translate(50 606)"><tspan x="0" y="0">--hi-green-xlight</tspan></text>
+    <text class="st46" transform="translate(50 622)"><tspan x="0" y="0">#F6FBE1</tspan></text>
+  </g>
+  <g>
+    <rect class="st33" x="198" y="544" width="150" height="88"/>
+    <text class="st47" transform="translate(208 606)"><tspan x="0" y="0">--hi-green-light</tspan></text>
+    <text class="st46" transform="translate(208 622)"><tspan x="0" y="0">#E7F4AB</tspan></text>
+  </g>
+  <g>
+    <rect class="st15" x="356" y="544" width="150" height="88"/>
+    <text class="st47" transform="translate(366 606)"><tspan x="0" y="0">--hi-green</tspan></text>
+    <text class="st46" transform="translate(366 622)"><tspan x="0" y="0">#D8ED77</tspan></text>
+  </g>
+  <g>
+    <rect class="st41" x="514" y="544" width="150" height="88"/>
+    <text class="st47" transform="translate(524 606)"><tspan x="0" y="0">--hi-green-dark</tspan></text>
+    <text class="st46" transform="translate(524 622)"><tspan x="0" y="0">#92AD17</tspan></text>
+  </g>
+  <g>
+    <rect class="st32" x="672" y="544" width="150" height="88"/>
+    <text class="st44" transform="translate(682 606)"><tspan x="0" y="0">--hi-green-xdark</tspan></text>
+    <text class="st48" transform="translate(682 622)"><tspan x="0" y="0">#45520B</tspan></text>
+  </g>
+  <g>
+    <rect class="st14" x="40" y="640" width="150" height="88"/>
+    <text class="st47" transform="translate(50 702)"><tspan x="0" y="0">--hi-yellow-xlight</tspan></text>
+    <text class="st46" transform="translate(50 718)"><tspan x="0" y="0">#FFF8DB</tspan></text>
+  </g>
+  <g>
+    <rect class="st16" x="198" y="640" width="150" height="88"/>
+    <text class="st47" transform="translate(208 702)"><tspan x="0" y="0">--hi-yellow-light</tspan></text>
+    <text class="st46" transform="translate(208 718)"><tspan x="0" y="0">#FFEA9A</tspan></text>
+  </g>
+  <g>
+    <rect class="st40" x="356" y="640" width="150" height="88"/>
+    <text class="st47" transform="translate(366 702)"><tspan x="0" y="0">--hi-yellow</tspan></text>
+    <text class="st46" transform="translate(366 718)"><tspan x="0" y="0">#FFDD5C</tspan></text>
+  </g>
+  <g>
+    <rect class="st2" x="514" y="640" width="150" height="88"/>
+    <text class="st47" transform="translate(524 702)"><tspan x="0" y="0">--hi-yellow-dark</tspan></text>
+    <text class="st46" transform="translate(524 718)"><tspan x="0" y="0">#FFCC00</tspan></text>
+  </g>
+  <g>
+    <rect class="st29" x="672" y="640" width="150" height="88"/>
+    <text class="st44" transform="translate(682 702)"><tspan x="0" y="0">--hi-yellow-xdark</tspan></text>
+    <text class="st48" transform="translate(682 718)"><tspan x="0" y="0">#5A4700</tspan></text>
+  </g>
+  <g>
+    <rect class="st10" x="40" y="736" width="150" height="88"/>
+    <text class="st47" transform="translate(50 798)"><tspan x="0" y="0">--hi-pink-xlight</tspan></text>
+    <text class="st46" transform="translate(50 814)"><tspan x="0" y="0">#FFEEF6</tspan></text>
+  </g>
+  <g>
+    <rect class="st26" x="198" y="736" width="150" height="88"/>
+    <text class="st47" transform="translate(208 798)"><tspan x="0" y="0">--hi-pink-light</tspan></text>
+    <text class="st46" transform="translate(208 814)"><tspan x="0" y="0">#FFD1E4</tspan></text>
+  </g>
+  <g>
+    <rect class="st27" x="356" y="736" width="150" height="88"/>
+    <text class="st47" transform="translate(366 798)"><tspan x="0" y="0">--hi-pink</tspan></text>
+    <text class="st46" transform="translate(366 814)"><tspan x="0" y="0">#FFB4D4</tspan></text>
+  </g>
+  <g>
+    <rect class="st5" x="514" y="736" width="150" height="88"/>
+    <text class="st44" transform="translate(524 798)"><tspan x="0" y="0">--hi-pink-dark</tspan></text>
+    <text class="st48" transform="translate(524 814)"><tspan x="0" y="0">#EF0066</tspan></text>
+  </g>
+  <g>
+    <rect class="st37" x="672" y="736" width="150" height="88"/>
+    <text class="st44" transform="translate(682 798)"><tspan x="0" y="0">--hi-pink-xdark</tspan></text>
+    <text class="st48" transform="translate(682 814)"><tspan x="0" y="0">#710030</tspan></text>
+  </g>
+  <g>
+    <rect class="st13" x="40" y="832" width="150" height="88"/>
+    <text class="st47" transform="translate(50 894)"><tspan x="0" y="0">--hi-blue-xlight</tspan></text>
+    <text class="st46" transform="translate(50 910)"><tspan x="0" y="0">#E7F5FF</tspan></text>
+  </g>
+  <g>
+    <rect class="st28" x="198" y="832" width="150" height="88"/>
+    <text class="st47" transform="translate(208 894)"><tspan x="0" y="0">--hi-blue-light</tspan></text>
+    <text class="st46" transform="translate(208 910)"><tspan x="0" y="0">#BCE4FF</tspan></text>
+  </g>
+  <g>
+    <rect class="st39" x="356" y="832" width="150" height="88"/>
+    <text class="st47" transform="translate(366 894)"><tspan x="0" y="0">--hi-blue</tspan></text>
+    <text class="st46" transform="translate(366 910)"><tspan x="0" y="0">#93D3FF</tspan></text>
+  </g>
+  <g>
+    <rect class="st17" x="514" y="832" width="150" height="88"/>
+    <text class="st44" transform="translate(524 894)"><tspan x="0" y="0">--hi-blue-dark</tspan></text>
+    <text class="st48" transform="translate(524 910)"><tspan x="0" y="0">#0083DD</tspan></text>
+  </g>
+  <g>
+    <rect class="st24" x="672" y="832" width="150" height="88"/>
+    <text class="st44" transform="translate(682 894)"><tspan x="0" y="0">--hi-blue-xdark</tspan></text>
+    <text class="st48" transform="translate(682 910)"><tspan x="0" y="0">#003E69</tspan></text>
+  </g>
+  <g>
+    <rect class="st36" x="40" y="928" width="150" height="88"/>
+    <text class="st47" transform="translate(50 990)"><tspan x="0" y="0">--hi-orange-xlight</tspan></text>
+    <text class="st46" transform="translate(50 1006)"><tspan x="0" y="0">#FFF0DD</tspan></text>
+  </g>
+  <g>
+    <rect class="st18" x="198" y="928" width="150" height="88"/>
+    <text class="st47" transform="translate(208 990)"><tspan x="0" y="0">--hi-orange-light</tspan></text>
+    <text class="st46" transform="translate(208 1006)"><tspan x="0" y="0">#FFDCAF</tspan></text>
+  </g>
+  <g>
+    <rect class="st35" x="356" y="928" width="150" height="88"/>
+    <text class="st47" transform="translate(366 990)"><tspan x="0" y="0">--hi-orange</tspan></text>
+    <text class="st46" transform="translate(366 1006)"><tspan x="0" y="0">#FFB459</tspan></text>
+  </g>
+  <g>
+    <rect class="st20" x="514" y="928" width="150" height="88"/>
+    <text class="st44" transform="translate(524 990)"><tspan x="0" y="0">--hi-orange-dark</tspan></text>
+    <text class="st48" transform="translate(524 1006)"><tspan x="0" y="0">#D97A00</tspan></text>
+  </g>
+  <g>
+    <rect class="st22" x="672" y="928" width="150" height="88"/>
+    <text class="st44" transform="translate(682 990)"><tspan x="0" y="0">--hi-orange-xdark</tspan></text>
+    <text class="st48" transform="translate(682 1006)"><tspan x="0" y="0">#6B3800</tspan></text>
+  </g>
+  <text class="st45" transform="translate(40 1056)"><tspan x="0" y="0">의미색 (정답/오답)</tspan></text>
+  <g>
+    <rect class="st6" x="40" y="1070" width="150" height="88"/>
+    <text class="st44" transform="translate(50 1132)"><tspan x="0" y="0">--good</tspan></text>
+    <text class="st48" transform="translate(50 1148)"><tspan x="0" y="0">#2F8F5B</tspan></text>
+  </g>
+  <g>
+    <rect class="st11" x="198" y="1070" width="150" height="88"/>
+    <text class="st47" transform="translate(208 1132)"><tspan x="0" y="0">--good-container</tspan></text>
+    <text class="st46" transform="translate(208 1148)"><tspan x="0" y="0">#E3F1E7</tspan></text>
+  </g>
+  <g>
+    <rect class="st1" x="356" y="1070" width="150" height="88"/>
+    <text class="st44" transform="translate(366 1132)"><tspan x="0" y="0">--danger</tspan></text>
+    <text class="st48" transform="translate(366 1148)"><tspan x="0" y="0">#D9483C</tspan></text>
+  </g>
+  <g>
+    <rect class="st8" x="514" y="1070" width="150" height="88"/>
+    <text class="st47" transform="translate(524 1132)"><tspan x="0" y="0">--danger-container</tspan></text>
+    <text class="st46" transform="translate(524 1148)"><tspan x="0" y="0">#F9E1DD</tspan></text>
+  </g>
+</svg>

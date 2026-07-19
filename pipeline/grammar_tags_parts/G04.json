@@ -1,0 +1,140 @@
+{
+  "ellipsis-repeated-verb": {
+    "category": "생략",
+    "name_kr": "반복 동사(구) 생략",
+    "desc_kr": "앞 절에서 이미 나온 동사(구)를 뒤 절에서 똑같이 반복하면 어색하므로, 앞에서 쓴 동사를 통째로 빼고 조동사나 do/does/did만 남기는 용법이다. 무엇이 생략됐는지는 앞 절을 보면 바로 복원되기 때문에 의미 손실 없이 문장이 간결해진다. 특히 비교 대상이나 대조되는 두 절을 이어줄 때(A는 ~하고 B도 그렇다/아니다) 자주 쓰인다. 생략된 자리에 아무것도 안 남기지 않고 대동사(do/be/조동사)를 남긴다는 점이 핵심이다.",
+    "example": { "en": "She likes coffee, and I do too.", "ko": "그녀는 커피를 좋아하고, 나도 그렇다." }
+  },
+  "ellipsis-conjunction-clause": {
+    "category": "생략",
+    "name_kr": "접속사절에서의 주어+be동사 생략",
+    "desc_kr": "when/while/if/though 등이 이끄는 부사절의 주어가 주절 주어와 같을 때, 그 주어와 be동사를 함께 생략하고 분사나 형용사만 남기는 용법이다. 주어가 같다는 게 뻔한데 그대로 두면 문장이 늘어지고 중복되므로, 접속사 바로 뒤에 남은 분사·형용사·전치사구만으로 뜻을 전달한다. 주절과 주어가 다르면 이 생략을 쓸 수 없고 주어를 반드시 밝혀야 한다는 점이 실수하기 쉬운 부분이다.",
+    "example": { "en": "While studying abroad, she learned to live independently.", "ko": "유학하는 동안 그녀는 독립적으로 사는 법을 배웠다." }
+  },
+  "ellipsis-comparative": {
+    "category": "생략",
+    "name_kr": "비교구문에서의 생략",
+    "desc_kr": "than이나 as 뒤에 앞 절과 겹치는 동사나 명사를 그대로 반복하지 않고 빼버리는 용법이다. 비교 대상이 무엇인지는 앞 절 구조로 유추되므로, 생략하지 않으면 오히려 불필요하게 장황해 보인다. 이때 남는 것은 흔히 주어나 목적어 같은 비교의 핵심 요소뿐이고, 비교 대상을 헷갈리지 않게 격을 맞추는 것이 중요하다(예: him이 아니라 he).",
+    "example": { "en": "My sister is taller than I (am).", "ko": "내 여동생은 나보다 키가 크다." }
+  },
+  "noun-clause-that": {
+    "category": "명사절",
+    "name_kr": "that 명사절",
+    "desc_kr": "접속사 that이 이끄는 절이 문장 안에서 주어, 목적어, 보어 자리에 들어가 하나의 명사처럼 쓰이는 용법이다. that절 자체는 '~라는 것'으로 해석되며, 완전한 문장 형태를 그대로 유지한 채 통째로 명사 역할을 한다는 점이 의문사 명사절과 다르다. 목적어로 쓰일 때는 that이 흔히 생략되지만, 주어로 쓰일 때는 생략하지 않는 것이 원칙이다.",
+    "example": { "en": "I believe that she will succeed.", "ko": "나는 그녀가 성공할 거라고 믿는다." }
+  },
+  "noun-clause-whether-if": {
+    "category": "명사절",
+    "name_kr": "whether/if 명사절",
+    "desc_kr": "'~인지 아닌지'라는 불확실한 사실을 나타낼 때 whether나 if로 시작하는 절을 명사처럼 쓰는 용법이다. that절이 확정된 사실을 진술하는 것과 달리, 이 절은 둘 중 어느 쪽인지 모르는 상태를 표현한다는 점이 핵심 차이다. whether는 주어 자리나 to부정사 앞, 전치사 뒤에도 쓸 수 있지만 if는 주로 목적어 자리에만 쓰인다는 제약이 있다.",
+    "example": { "en": "I'm not sure whether he will come to the party.", "ko": "그가 파티에 올지 안 올지 잘 모르겠다." }
+  },
+  "noun-clause-wh-question": {
+    "category": "명사절",
+    "name_kr": "의문사 명사절(간접의문문)",
+    "desc_kr": "what/who/where/when/why/how 같은 의문사가 이끄는 절이 문장 속에 통째로 들어가 명사 역할을 하는 용법으로, 흔히 '간접의문문'이라 부른다. 직접 의문문과 달리 어순이 '의문사+주어+동사'로 평서문 어순을 유지한다는 점이 가장 큰 특징이자 실수하기 쉬운 부분이다(Do you know where is he? 처럼 도치하면 틀림). that절이 사실을 그대로 진술하는 것과 달리, 의문사절은 그 의문사에 해당하는 정보 자체를 담는다.",
+    "example": { "en": "Could you tell me where the nearest station is?", "ko": "가장 가까운 역이 어디인지 알려주시겠어요?" }
+  },
+  "noun-clause-apposition": {
+    "category": "명사절",
+    "name_kr": "동격의 that",
+    "desc_kr": "fact, idea, news, rumor 같은 특정 추상명사 바로 뒤에 that절을 붙여 그 명사의 구체적인 내용을 설명하는 용법이다. 관계대명사 that과 헷갈리기 쉬운데, 관계대명사 that절은 앞의 명사를 대신할 목적어나 주어 자리가 절 안에 비어 있는 반면 동격의 that절은 완전한 문장 구조를 그대로 갖춘다는 점이 결정적 차이다. 즉 that 뒤에 문장 성분이 하나도 안 빠진 완전한 절이 오면 동격, 하나가 비어 있으면 관계대명사다.",
+    "example": { "en": "I heard the rumor that she is quitting her job.", "ko": "나는 그녀가 회사를 그만둔다는 소문을 들었다." }
+  },
+  "parallelism-coordinating-conjunction": {
+    "category": "병렬구조",
+    "name_kr": "등위접속사 병렬구조",
+    "desc_kr": "and, but, or 같은 등위접속사로 두 개 이상의 단어·구·절을 연결할 때는 앞뒤 요소가 같은 문법적 형태를 갖춰야 한다는 원칙이다. 예를 들어 앞에 동명사가 왔으면 뒤에도 동명사가 와야 하고, 앞이 to부정사면 뒤도 to부정사여야 자연스럽다. 형태를 맞추지 않으면 문법적으로 틀리진 않아도 균형이 깨져 어색하게 읽히므로, 영어 글쓰기에서 특히 중요하게 다뤄지는 원칙이다.",
+    "example": { "en": "She enjoys reading, writing, and traveling.", "ko": "그녀는 독서, 글쓰기, 여행하는 것을 즐긴다." }
+  },
+  "correlative-conjunction": {
+    "category": "병렬구조",
+    "name_kr": "상관접속사(not only~but also 등)",
+    "desc_kr": "not only~but also, either~or, neither~nor, both~and처럼 두 단어가 짝을 이뤄 대등한 두 요소를 연결하는 접속사다. 등위접속사 병렬구조와 마찬가지로 두 짝 뒤에 오는 요소는 문법적으로 같은 형태여야 한다는 원칙이 그대로 적용되지만, 상관접속사는 짝의 앞부분이 무엇을 연결하는지에 따라 그 뒤에 이어지는 요소의 형태가 자동으로 정해진다는 점이 다르다. not only가 문두에 오면 주어와 동사가 도치된다는 점도 함께 알아둬야 하는 포인트다.",
+    "example": { "en": "He is not only smart but also hardworking.", "ko": "그는 똑똑할 뿐만 아니라 성실하기도 하다." }
+  },
+  "parallelism-gerund-infinitive-consistency": {
+    "category": "병렬구조",
+    "name_kr": "동명사·to부정사 병렬 일치",
+    "desc_kr": "한 문장 안에서 여러 동사를 나열할 때 동명사와 to부정사를 섞어 쓰지 않고 한 가지 형태로 통일해야 한다는 원칙이다. 단순히 접속사로 연결된 병렬구조 전반의 규칙을 동명사/to부정사라는 구체적인 형태 하나에 좁혀 적용한 것으로, like, enjoy, prefer처럼 목적어로 둘 다 취할 수 있는 동사 뒤에서 특히 자주 실수가 나온다. 형태를 섞으면 문법 오류로 지적받는 대표적인 지점이라 영작문에서 꼭 점검해야 하는 부분이다.",
+    "example": { "en": "I like to swim and to hike, not to swim and hiking.", "ko": "나는 수영하는 것과 등산하는 것을 좋아하는데, 이때 형태를 섞어 쓰면 안 된다." }
+  },
+  "double-negative": {
+    "category": "부정 표현",
+    "name_kr": "이중부정",
+    "desc_kr": "부정어(not, no, never 등)를 한 문장 안에 두 번 겹쳐 써서 오히려 강한 긍정의 뜻을 만드는 용법이다. 표준 영어에서는 not ~ without처럼 의도적으로 짝을 이룬 이중부정만 인정되고, I don't have no money처럼 부정어를 단순히 겹쳐 부정을 강조하는 것은 비표준·구어체로 취급된다는 점을 한국 학습자는 특히 주의해야 한다. 핵심은 '부정×부정=긍정'이라는 논리이므로, 두 부정어를 없애고 긍정문으로 바꿔도 같은 뜻이 나와야 제대로 쓴 것이다.",
+    "example": { "en": "There is not a day that goes by without me thinking of you.", "ko": "너를 생각하지 않고 지나가는 날이 하루도 없다." }
+  },
+  "partial-negation-not-all": {
+    "category": "부정 표현",
+    "name_kr": "부분부정(not all/every)",
+    "desc_kr": "all, every, both처럼 '전체'를 뜻하는 말 앞에 not을 붙이면 전체를 통째로 부정하는 것이 아니라 '전부는 아니다'라는 뜻이 된다는 용법이다. 즉 not all students은 '학생이 한 명도 아니다'가 아니라 '학생 중 일부만 그렇다'는 뜻으로, 전체부정(no student, none)과 반드시 구별해야 한다. 이 차이를 놓치면 문장의 논리적 의미가 정반대로 오독될 수 있어 독해에서 자주 함정으로 나온다.",
+    "example": { "en": "Not all of the students passed the exam.", "ko": "학생들 전부가 시험에 통과한 것은 아니다." }
+  },
+  "partial-negation-not-always": {
+    "category": "부정 표현",
+    "name_kr": "부분부정(not always/necessarily)",
+    "desc_kr": "always, necessarily처럼 '항상·반드시'를 뜻하는 부사 앞에 not을 붙여 '항상 그런 건 아니다'라는 뜻을 만드는 용법이다. not all이 대상의 '수량'(전부/일부)에 대한 부분부정이라면, 이쪽은 빈도나 필연성에 대한 부분부정이라는 점에서 성격이 다르다. '전혀 아니다(never)'와 혼동하지 않도록, '그런 경우도 있고 아닌 경우도 있다'는 뉘앙스로 읽어야 한다.",
+    "example": { "en": "Expensive things are not always the best.", "ko": "비싼 것이 항상 가장 좋은 것은 아니다." }
+  },
+  "concession-although-while": {
+    "category": "접속사·접속부사",
+    "name_kr": "양보의 접속사(although/while)",
+    "desc_kr": "although, though, even though, while 등은 뒤에 이어지는 내용과 반대되거나 예상 밖인 사실을 주절에서 말할 것임을 미리 알리는 접속사다. '~에도 불구하고'로 해석되며, 원인-결과를 나타내는 접속사와 달리 앞뒤 내용이 논리적으로 충돌한다는 점이 핵심이다. while은 '~인 반면'이라는 대조의 뜻으로도 쓰이는데, 이때는 시간(~하는 동안)의 의미와 헷갈리지 않도록 문맥으로 구분해야 한다.",
+    "example": { "en": "Although it was raining, we went out for a walk.", "ko": "비가 오는데도 우리는 산책을 나갔다." }
+  },
+  "reason-since-as-because": {
+    "category": "접속사·접속부사",
+    "name_kr": "이유의 접속사(since/as/because)",
+    "desc_kr": "because, since, as는 모두 '~때문에'로 원인을 나타내지만 강조점이 조금씩 다르다. because는 원인 그 자체가 문장의 핵심 정보일 때 쓰이는 반면, since와 as는 듣는 사람도 이미 알 만한 배경 이유를 가볍게 덧붙일 때 자주 쓰인다. since는 '~한 이래로'라는 시간의 뜻도 있어 문맥상 이유인지 시간인지 구별해야 하는 점이 학습자들이 자주 헷갈리는 부분이다.",
+    "example": { "en": "Since it was already late, we decided to stay home.", "ko": "이미 시간이 늦었으니 우리는 집에 있기로 했다." }
+  },
+  "condition-unless-provided": {
+    "category": "접속사·접속부사",
+    "name_kr": "조건의 접속사(unless/provided that)",
+    "desc_kr": "unless는 '만약 ~하지 않는다면'이라는 뜻으로 if ~ not과 같은 의미를 한 단어로 압축한 접속사이고, provided (that)/providing (that)은 '~라는 조건 하에서만'이라는 뜻으로 특정 조건이 반드시 충족되어야 함을 강조하는 접속사다. unless가 '부정적 예외 상황'을 짚는 느낌이라면, provided that은 계약이나 규정처럼 '조건 충족'을 못 박는 격식체 표현에 더 잘 어울린다. 둘 다 조건절이므로 if절과 마찬가지로 미래의 일이라도 현재시제로 쓴다는 점을 잊지 말아야 한다.",
+    "example": { "en": "You can join the club unless you are under twelve.", "ko": "열두 살 미만이 아니라면 그 동아리에 가입할 수 있다." }
+  },
+  "contrast-however-conjunctive-adverb": {
+    "category": "접속사·접속부사",
+    "name_kr": "대조의 접속부사(however 등)",
+    "desc_kr": "however, nevertheless, on the other hand 같은 접속부사는 although와 달리 두 절을 문법적으로 하나로 묶어주는 접속사가 아니라 독립된 두 문장 사이에서 대조 관계를 이어주는 부사다. 그래서 접속부사 앞에는 마침표나 세미콜론이 와야 하고, 콤마만 찍어 두 문장을 잇는 것(콤마 스플라이스)은 문법 오류로 취급된다는 점이 although/though와의 결정적 차이다. 뜻은 '그러나·그럼에도'로 비슷해 보여도 품사와 문장 연결 방식이 다르다는 것이 핵심이다.",
+    "example": { "en": "The plan was risky; however, it eventually paid off.", "ko": "그 계획은 위험했지만, 결국에는 성과를 거두었다." }
+  },
+  "purpose-so-that-in-order-that": {
+    "category": "접속사·접속부사",
+    "name_kr": "목적의 접속사(so that/in order that)",
+    "desc_kr": "so that과 in order that은 '~하기 위해서, ~하도록'이라는 목적을 나타내는 절을 이끄는 접속사로, 절 안에는 흔히 can/could, will/would 같은 조동사가 함께 쓰인다. in order that은 격식을 갖춘 문어체에서 주로 쓰이고 so that은 구어에서도 자유롭게 쓰인다는 격식 차이가 있다. to부정사로도 같은 목적을 나타낼 수 있지만, 주절과 목적절의 주어가 다를 때는 to부정사 대신 이 접속사절을 써야 한다는 점이 실질적인 구분 기준이다.",
+    "example": { "en": "She spoke slowly so that everyone could understand.", "ko": "그녀는 모두가 이해할 수 있도록 천천히 말했다." }
+  },
+  "too-to": {
+    "category": "준동사 관용 표현",
+    "name_kr": "too ~ to",
+    "desc_kr": "'too+형용사/부사+to부정사'는 '너무 ~해서 …할 수 없다'는 부정적 결과를 나타내는 관용 표현이다. 형태만 보면 긍정문처럼 생겼지만 의미상 부정(할 수 없다)이 숨어 있다는 점이 핵심이며, so ~ that 구문의 결과절을 not을 따로 안 쓰고도 부정적으로 압축한 것으로 이해하면 편하다. 반대로 '충분히 ~해서 …할 수 있다'는 긍정적 결과를 나타내려면 enough to 구문을 써야 한다는 점에서 대비된다.",
+    "example": { "en": "The coffee was too hot to drink.", "ko": "그 커피는 너무 뜨거워서 마실 수가 없었다." }
+  },
+  "enough-to": {
+    "category": "준동사 관용 표현",
+    "name_kr": "형용사/부사 + enough to",
+    "desc_kr": "'형용사/부사+enough+to부정사'는 '~할 만큼 충분히 …하다'는 긍정적 결과를 나타내는 관용 표현이다. enough는 형용사나 부사 뒤에 놓인다는 어순이 특징이며(enough smart가 아니라 smart enough), too ~ to가 부정적 결과(할 수 없음)를 담는 것과 정반대로 이쪽은 결과가 충족되어 가능해졌다는 뜻을 담는다. 명사를 수식할 때는 enough가 명사 앞에 온다는 점(enough time)도 형용사/부사 수식과 어순이 다르다는 걸 함께 알아둘 만하다.",
+    "example": { "en": "He is old enough to drive a car.", "ko": "그는 차를 운전할 수 있을 만큼 나이가 충분히 들었다." }
+  },
+  "so-that-such-that": {
+    "category": "준동사 관용 표현",
+    "name_kr": "so ~ that / such ~ that",
+    "desc_kr": "'so+형용사/부사+that'과 'such+(a/an)+형용사+명사+that'은 둘 다 '너무 ~해서 …하다'는 정도와 그 결과를 함께 설명하는 구문이지만, so는 형용사·부사를 바로 수식하고 such는 명사(구)를 수식한다는 점에서 붙는 위치가 다르다. too ~ to가 to부정사로 결과를 짧게 압축하는 반면, 이 구문은 that절로 결과를 온전한 문장 형태로 풀어서 더 구체적으로 설명할 수 있다는 차이가 있다. such 뒤에 단수 가산명사가 오면 관사 a/an을 반드시 챙겨야 한다는 점도 실수하기 쉬운 부분이다.",
+    "example": { "en": "It was such an exciting movie that I watched it twice.", "ko": "그 영화가 너무 재미있어서 나는 두 번이나 봤다." }
+  },
+  "parenthetical-comma-insertion": {
+    "category": "삽입구문",
+    "name_kr": "콤마 삽입절",
+    "desc_kr": "문장 중간에 콤마로 부가 설명이나 화자의 생각을 끼워 넣는 용법으로, 삽입된 부분을 통째로 빼도 문장의 골격(주어+동사+목적어 등)은 그대로 완전하게 남는다는 것이 특징이다. 관계대명사의 계속적 용법이 앞 명사에 대한 추가 정보를 붙이는 것과 달리, 이 삽입구문은 명사 하나에 얽매이지 않고 문장 전체에 대한 보충 설명(예: 동격어구, 부사구, 화자의 의견)을 자유롭게 끼워 넣을 수 있다는 점이 다르다. 읽을 때는 콤마와 콤마 사이를 잠깐 끊어 읽으면 자연스럽다.",
+    "example": { "en": "My father, a retired teacher, still enjoys reading every day.", "ko": "은퇴한 선생님인 우리 아버지는 지금도 매일 독서를 즐기신다." }
+  },
+  "embedded-i-think-relative-clause": {
+    "category": "삽입구문",
+    "name_kr": "관계사절 안의 I think류 삽입절",
+    "desc_kr": "관계대명사절 안에 I think, I believe, they say 같은 짧은 절이 끼어들어, 마치 원래 있던 절인 것처럼 자연스럽게 녹아드는 용법이다. 이 I think 등은 문법적으로 필수 성분이 아니라 화자의 판단이나 추측을 살짝 덧붙이는 삽입절이므로 통째로 빼도 관계사절의 문법 구조는 완전하게 성립한다. 일반 콤마 삽입절과 달리 콤마 없이 관계대명사 바로 뒤에 바짝 붙어서, 마치 관계사절의 동사를 수식하는 것처럼 보이는 형태로 나타난다는 점이 구별 포인트다.",
+    "example": { "en": "She is the kind of person who I think will succeed no matter what.", "ko": "그녀는 내 생각엔 무슨 일이 있어도 성공할 사람이다." }
+  }
+}
