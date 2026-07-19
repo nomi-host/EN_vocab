@@ -1,0 +1,2865 @@
+{
+  "passionate": [
+    {
+      "cue": "일·취미에 열정을 가진",
+      "ko": "열정적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "feeling or showing strong enthusiasm for something",
+      "ex": [
+        { "en": "She is passionate about music.", "ko": "그녀는 음악에 열정적이다." }
+      ]
+    },
+    {
+      "cue": "감정·애정이 격렬한",
+      "ko": "격정적인, 열렬한",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "showing very strong feelings, especially of love or anger",
+      "ex": [
+        { "en": "They shared a passionate kiss at the airport.", "ko": "그들은 공항에서 격정적인 키스를 나눴다." }
+      ]
+    }
+  ],
+  "passionately": [
+    {
+      "cue": "감정·의견을 강하게",
+      "ko": "열정적으로, 격렬하게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "with strong feeling or enthusiasm",
+      "ex": [
+        { "en": "She spoke passionately about human rights.", "ko": "그녀는 인권에 대해 열정적으로 이야기했다." }
+      ]
+    }
+  ],
+  "pastor": [
+    {
+      "cue": "교회를 이끄는 성직자",
+      "ko": "목사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a religious leader in charge of a church, especially in Protestant Christianity",
+      "ex": [
+        { "en": "The pastor gave an inspiring sermon on Sunday.", "ko": "목사님은 일요일에 감동적인 설교를 했다." }
+      ]
+    }
+  ],
+  "pastoral": [
+    {
+      "cue": "시골·전원 생활이 이상적으로",
+      "ko": "목가적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "relating to a peaceful and idealized version of country life",
+      "ex": [
+        { "en": "The village has a pastoral charm with green fields and grazing sheep.", "ko": "그 마을은 초록 들판과 풀을 뜯는 양들이 있는 목가적인 매력을 지니고 있다." }
+      ]
+    },
+    {
+      "cue": "목사·성직자의 직무",
+      "ko": "목사의, 성직자의",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "relating to the spiritual duties and care given by a pastor or priest",
+      "ex": [
+        { "en": "The bishop offered pastoral care to the sick.", "ko": "주교는 병자들에게 목회적 돌봄을 제공했다." }
+      ]
+    }
+  ],
+  "patch": [
+    {
+      "cue": "구멍·해진 곳을 덮는 헝겊",
+      "ko": "헝겊 조각, 패치",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a small piece of material used to cover a hole or repair something",
+      "ex": [
+        { "en": "She sewed a patch onto the torn jeans.", "ko": "그녀는 찢어진 청바지에 헝겊 조각을 꿰맸다." }
+      ]
+    },
+    {
+      "cue": "구멍 난 곳을",
+      "ko": "때우다, 깁다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "mend something by covering a hole or damaged area",
+      "ex": [
+        { "en": "He patched the hole in the roof.", "ko": "그는 지붕에 난 구멍을 때웠다." }
+      ]
+    },
+    {
+      "cue": "작은 땅·구역",
+      "ko": "작은 땅, 지대",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "a small area of land, especially one used for growing something",
+      "ex": [
+        { "en": "They grow vegetables in a small patch behind the house.", "ko": "그들은 집 뒤편 작은 땅에서 채소를 기른다." }
+      ]
+    },
+    {
+      "cue": "프로그램 오류를 고치는",
+      "ko": "패치 (프로그램 수정)",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "a small piece of software code used to fix or update a computer program",
+      "ex": [
+        { "en": "The company released a patch to fix the security bug.", "ko": "그 회사는 보안 결함을 고치는 패치를 배포했다." }
+      ]
+    },
+    {
+      "cue": "안 좋은 시기를 지나는",
+      "ko": "(안 좋은) 시기, 기간",
+      "pos": "명사",
+      "lv": 5,
+      "cefr": "B2",
+      "en": "a period of time, especially a difficult one",
+      "ex": [
+        { "en": "The team is going through a rough patch this season.", "ko": "그 팀은 이번 시즌 힘든 시기를 겪고 있다." }
+      ]
+    }
+  ],
+  "patiently": [
+    {
+      "cue": "서두르지 않고 기다리며",
+      "ko": "참을성 있게, 인내심을 갖고",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "in a patient way, without becoming annoyed while waiting",
+      "ex": [
+        { "en": "She waited patiently for the bus.", "ko": "그녀는 참을성 있게 버스를 기다렸다." }
+      ]
+    }
+  ],
+  "patriot": [
+    {
+      "cue": "나라를 사랑하고 지키는 사람",
+      "ko": "애국자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a person who loves and strongly supports their country",
+      "ex": [
+        { "en": "He fought for his country like a true patriot.", "ko": "그는 진정한 애국자처럼 조국을 위해 싸웠다." }
+      ]
+    }
+  ],
+  "patriotic": [
+    {
+      "cue": "나라 사랑이 드러나는",
+      "ko": "애국적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "showing love and support for your country",
+      "ex": [
+        { "en": "They sang patriotic songs on Independence Day.", "ko": "그들은 독립기념일에 애국적인 노래를 불렀다." }
+      ]
+    }
+  ],
+  "patriotism": [
+    {
+      "cue": "나라를 사랑하는 마음",
+      "ko": "애국심",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "love and devotion to one's country",
+      "ex": [
+        { "en": "The soldiers showed great patriotism during the war.", "ko": "군인들은 전쟁 중에 큰 애국심을 보여주었다." }
+      ]
+    }
+  ],
+  "patron": [
+    {
+      "cue": "가게·식당의 단골",
+      "ko": "단골손님",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a regular customer of a shop, restaurant, or other business",
+      "ex": [
+        { "en": "The restaurant thanked its loyal patrons for years of support.", "ko": "그 식당은 오랜 세월 지지해준 단골손님들에게 감사를 전했다." }
+      ]
+    },
+    {
+      "cue": "예술·활동을 지원하는",
+      "ko": "후원자",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "a person who gives financial or other support to a person, cause, or organization",
+      "ex": [
+        { "en": "The museum relies on wealthy patrons for funding.", "ko": "그 박물관은 자금을 위해 부유한 후원자들에게 의존한다." }
+      ]
+    }
+  ],
+  "pave": [
+    {
+      "cue": "도로를 돌·콘크리트로",
+      "ko": "포장하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "cover a road or path with a hard surface such as stone or concrete",
+      "ex": [
+        { "en": "Workers paved the new road last month.", "ko": "인부들은 지난달 새 도로를 포장했다." }
+      ]
+    },
+    {
+      "cue": "미래의 길을",
+      "ko": "(길을) 닦다, 가능하게 하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "(pave the way) make it possible or easier for something to happen later",
+      "ex": [
+        { "en": "Her research paved the way for new treatments.", "ko": "그녀의 연구는 새로운 치료법을 위한 길을 닦았다." }
+      ]
+    }
+  ],
+  "pavement": [
+    {
+      "cue": "차도 옆 보행자 길 (영국식)",
+      "ko": "인도, 보도",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a paved path beside a road for people to walk on",
+      "ex": [
+        { "en": "Children were riding bikes on the pavement.", "ko": "아이들이 인도에서 자전거를 타고 있었다." }
+      ]
+    },
+    {
+      "cue": "도로의 포장된 표면",
+      "ko": "포장(도로) 표면",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "the hard surface of a road or path",
+      "ex": [
+        { "en": "The pavement was cracked after the earthquake.", "ko": "지진 이후 도로 표면이 갈라졌다." }
+      ]
+    }
+  ],
+  "paw": [
+    {
+      "cue": "동물의 발",
+      "ko": "(동물의) 발",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the foot of an animal that has claws, such as a dog or cat",
+      "ex": [
+        { "en": "The dog scratched at the door with its paw.", "ko": "그 개는 발로 문을 긁었다." }
+      ]
+    },
+    {
+      "cue": "발로 긁거나 서투르게 만지다",
+      "ko": "발로 긁다, 서투르게 만지다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "touch or scrape something with a paw, or clumsily with the hands",
+      "ex": [
+        { "en": "The cat pawed at the toy on the floor.", "ko": "고양이가 바닥에 있는 장난감을 발로 건드렸다." }
+      ]
+    }
+  ],
+  "pawnbroker": [
+    {
+      "cue": "돈을 빌려주고 물건을 담보로 잡는 사람",
+      "ko": "전당포 주인",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a person who lends money in exchange for personal items left as security",
+      "ex": [
+        { "en": "He took his watch to the pawnbroker for a quick loan.", "ko": "그는 급전을 빌리려고 시계를 전당포 주인에게 맡겼다." }
+      ]
+    }
+  ],
+  "pawnshop": [
+    {
+      "cue": "물건을 맡기고 돈을 빌리는 가게",
+      "ko": "전당포",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a shop where you can borrow money by leaving an item as security",
+      "ex": [
+        { "en": "She sold her ring to a pawnshop for cash.", "ko": "그녀는 현금을 마련하려고 전당포에 반지를 팔았다." }
+      ]
+    }
+  ],
+  "payment": [
+    {
+      "cue": "돈을 내는 행위/낸 돈",
+      "ko": "지불, 결제(금)",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "an amount of money that is paid, or the act of paying it",
+      "ex": [
+        { "en": "The final payment is due next week.", "ko": "최종 결제는 다음 주까지다." }
+      ]
+    }
+  ],
+  "peacefully": [
+    {
+      "cue": "평화롭고 조용하게",
+      "ko": "평화롭게, 평온하게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "in a calm and peaceful way, without violence or disturbance",
+      "ex": [
+        { "en": "The old man died peacefully in his sleep.", "ko": "그 노인은 잠결에 평온하게 세상을 떠났다." }
+      ]
+    }
+  ],
+  "peach": [
+    {
+      "cue": "달콤하고 솜털 있는 과일",
+      "ko": "복숭아",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "a soft, round, juicy fruit with a fuzzy skin",
+      "ex": [
+        { "en": "I bought some fresh peaches at the market.", "ko": "나는 시장에서 신선한 복숭아를 좀 샀다." }
+      ]
+    },
+    {
+      "cue": "분홍빛이 도는 노란색",
+      "ko": "복숭아색",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a pale pinkish-orange color",
+      "ex": [
+        { "en": "She painted the wall a soft peach color.", "ko": "그녀는 벽을 부드러운 복숭아색으로 칠했다." }
+      ]
+    }
+  ],
+  "peak": [
+    {
+      "cue": "산의 뾰족한 꼭대기",
+      "ko": "봉우리, 정상",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the pointed top of a mountain",
+      "ex": [
+        { "en": "They reached the peak of the mountain at sunset.", "ko": "그들은 해질녘에 산 정상에 도달했다." }
+      ]
+    },
+    {
+      "cue": "가장 높은 수준·최고조",
+      "ko": "정점, 최고조",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "the highest point or greatest amount of something",
+      "ex": [
+        { "en": "Traffic reaches its peak around 6 p.m.", "ko": "교통량은 오후 6시쯤 최고조에 달한다." }
+      ]
+    },
+    {
+      "cue": "수치·인기가 최고조에",
+      "ko": "정점에 달하다, 최고조에 이르다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "reach the highest point or greatest value",
+      "ex": [
+        { "en": "Sales peaked in December.", "ko": "매출은 12월에 정점에 달했다." }
+      ]
+    }
+  ],
+  "pearl": [
+    {
+      "cue": "조개 안에서 생기는 보석",
+      "ko": "진주",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a small, hard, shiny white ball formed inside the shell of an oyster, used in jewelry",
+      "ex": [
+        { "en": "She wore a necklace of pearls.", "ko": "그녀는 진주 목걸이를 착용했다." }
+      ]
+    }
+  ],
+  "pebble": [
+    {
+      "cue": "작고 둥근 돌",
+      "ko": "조약돌",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a small smooth stone, especially one found on a beach or riverbed",
+      "ex": [
+        { "en": "The children threw pebbles into the lake.", "ko": "아이들이 호수에 조약돌을 던졌다." }
+      ]
+    }
+  ],
+  "pedal": [
+    {
+      "cue": "자전거·차의 발판",
+      "ko": "페달",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a flat part that you press with your foot to make a machine, such as a bicycle or car, work",
+      "ex": [
+        { "en": "He pressed the brake pedal suddenly.", "ko": "그는 갑자기 브레이크 페달을 밟았다." }
+      ]
+    },
+    {
+      "cue": "발로 페달을",
+      "ko": "페달을 밟다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "press the pedals of a bicycle or machine with your feet",
+      "ex": [
+        { "en": "She pedaled hard up the hill.", "ko": "그녀는 언덕을 오르며 힘껏 페달을 밟았다." }
+      ]
+    }
+  ],
+  "pedantic": [
+    {
+      "cue": "사소한 규칙·세부사항에 집착하는",
+      "ko": "현학적인, 지나치게 까다로운",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "too concerned with small details or formal rules, especially in a way that seems boring",
+      "ex": [
+        { "en": "His pedantic corrections annoyed everyone in the meeting.", "ko": "그의 현학적인 지적은 회의에 있던 모두를 짜증나게 했다." }
+      ]
+    }
+  ],
+  "pedestrian": [
+    {
+      "cue": "걸어 다니는 사람",
+      "ko": "보행자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a person who is walking, especially in a street or town",
+      "ex": [
+        { "en": "Drivers must yield to pedestrians at the crosswalk.", "ko": "운전자는 횡단보도에서 보행자에게 양보해야 한다." }
+      ]
+    },
+    {
+      "cue": "평범하고 상상력 없는",
+      "ko": "평범한, 따분한",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "lacking imagination or excitement; dull",
+      "ex": [
+        { "en": "The movie had a pedestrian plot with no surprises.", "ko": "그 영화는 놀랄 것 없는 평범한 줄거리였다." }
+      ]
+    }
+  ],
+  "pee": [
+    {
+      "cue": "소변을 보다 (구어)",
+      "ko": "소변보다, 오줌 싸다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "(informal) urinate",
+      "ex": [
+        { "en": "The dog needs to go outside to pee.", "ko": "그 개는 밖에 나가서 소변을 봐야 한다." }
+      ]
+    },
+    {
+      "cue": "소변 그 자체",
+      "ko": "소변, 오줌",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "(informal) urine, or the act of urinating",
+      "ex": [
+        { "en": "I need to take a pee before we leave.", "ko": "출발하기 전에 소변을 봐야겠다." }
+      ]
+    }
+  ],
+  "peel": [
+    {
+      "cue": "과일·채소 껍질을",
+      "ko": "(껍질을) 벗기다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "remove the skin or outer covering from a fruit or vegetable",
+      "ex": [
+        { "en": "She peeled an apple for her son.", "ko": "그녀는 아들을 위해 사과 껍질을 벗겼다." }
+      ]
+    },
+    {
+      "cue": "과일·채소의 껍질",
+      "ko": "껍질",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "the skin or outer covering of a fruit or vegetable",
+      "ex": [
+        { "en": "Don't throw away the potato peel.", "ko": "감자 껍질을 버리지 마." }
+      ]
+    },
+    {
+      "cue": "페인트·피부가 벗겨지다",
+      "ko": "벗겨지다, 벗겨져 떨어지다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "(of skin, paint, etc.) come off in thin pieces",
+      "ex": [
+        { "en": "The paint on the wall is starting to peel.", "ko": "벽에 칠한 페인트가 벗겨지기 시작하고 있다." }
+      ]
+    }
+  ],
+  "peep": [
+    {
+      "cue": "몰래 살짝 보다",
+      "ko": "엿보다, 살짝 보다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "look quickly and secretly at something",
+      "ex": [
+        { "en": "He peeped through the curtains to see who was outside.", "ko": "그는 밖에 누가 있는지 커튼 틈으로 엿보았다." }
+      ]
+    },
+    {
+      "cue": "몰래 보는 행위",
+      "ko": "엿보기, 살짝 봄",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a quick secret look at something",
+      "ex": [
+        { "en": "She took a peep at the surprise gift.", "ko": "그녀는 깜짝 선물을 살짝 들여다보았다." }
+      ]
+    }
+  ],
+  "peer": [
+    {
+      "cue": "나이·지위가 같은 사람",
+      "ko": "또래, 동료",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a person who is the same age, status, or ability as you",
+      "ex": [
+        { "en": "Teenagers often care what their peers think.", "ko": "십대들은 종종 또래들이 어떻게 생각하는지 신경 쓴다." }
+      ]
+    },
+    {
+      "cue": "잘 안 보여서 자세히",
+      "ko": "유심히 보다, 응시하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "look closely or carefully, especially because something is hard to see",
+      "ex": [
+        { "en": "She peered into the dark room.", "ko": "그녀는 어두운 방 안을 유심히 들여다보았다." }
+      ]
+    }
+  ],
+  "peg": [
+    {
+      "cue": "옷·수건을 거는 못이나 집게",
+      "ko": "걸이못, 빨래집게",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a small hook or clip used for hanging things such as coats or clothes",
+      "ex": [
+        { "en": "Hang your coat on the peg by the door.", "ko": "문 옆 걸이못에 코트를 걸어 둬." }
+      ]
+    },
+    {
+      "cue": "환율·가격을 다른 기준에",
+      "ko": "(환율·가격을) 고정하다, 연동하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "fix the value of a currency or price at a specific rate",
+      "ex": [
+        { "en": "The country pegged its currency to the US dollar.", "ko": "그 나라는 자국 통화를 미국 달러에 연동시켰다." }
+      ]
+    }
+  ],
+  "penalize": [
+    {
+      "cue": "규칙 위반에 대해",
+      "ko": "처벌하다, 불이익을 주다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "punish someone or put them at a disadvantage for breaking a rule",
+      "ex": [
+        { "en": "Students will be penalized for late submissions.", "ko": "학생들은 늦게 제출하면 불이익을 받을 것이다." }
+      ]
+    }
+  ],
+  "penalty": [
+    {
+      "cue": "규칙 위반에 대한 처벌",
+      "ko": "처벌, 벌금",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a punishment for breaking a law, rule, or contract",
+      "ex": [
+        { "en": "There is a penalty for parking illegally.", "ko": "불법 주차에는 벌금이 부과된다." }
+      ]
+    },
+    {
+      "cue": "스포츠에서 반칙에 주어지는",
+      "ko": "(스포츠) 페널티, 벌칙",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a disadvantage given to a team or player for breaking the rules of a game",
+      "ex": [
+        { "en": "The referee awarded a penalty kick after the foul.", "ko": "심판은 반칙 후 페널티킥을 선언했다." }
+      ]
+    }
+  ],
+  "penetrate": [
+    {
+      "cue": "물체·표면을",
+      "ko": "관통하다, 뚫고 들어가다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "go into or through something, often overcoming resistance",
+      "ex": [
+        { "en": "The bullet penetrated the wall.", "ko": "총알이 벽을 관통했다." }
+      ]
+    },
+    {
+      "cue": "시장·조직에",
+      "ko": "(시장·조직에) 침투하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "succeed in entering or gaining influence in a market, organization, or group",
+      "ex": [
+        { "en": "The company is trying to penetrate the Asian market.", "ko": "그 회사는 아시아 시장에 침투하려 하고 있다." }
+      ]
+    }
+  ],
+  "penguin": [
+    {
+      "cue": "남극에 사는 날지 못하는 새",
+      "ko": "펭귄",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "a black-and-white sea bird that cannot fly and lives mainly in cold Antarctic regions",
+      "ex": [
+        { "en": "Penguins waddled across the ice.", "ko": "펭귄들이 뒤뚱거리며 얼음 위를 걸었다." }
+      ]
+    }
+  ],
+  "penicillin": [
+    {
+      "cue": "곰팡이에서 얻는 항생제",
+      "ko": "페니실린",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "an antibiotic medicine used to treat bacterial infections",
+      "ex": [
+        { "en": "The doctor prescribed penicillin for the infection.", "ko": "의사는 감염 치료를 위해 페니실린을 처방했다." }
+      ]
+    }
+  ],
+  "pension": [
+    {
+      "cue": "은퇴 후 받는 돈",
+      "ko": "연금",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a regular payment made to someone, usually after they retire from work",
+      "ex": [
+        { "en": "She receives a pension from her former employer.", "ko": "그녀는 예전 직장에서 연금을 받는다." }
+      ]
+    }
+  ],
+  "pentagon": [
+    {
+      "cue": "변이 다섯 개인 도형",
+      "ko": "오각형",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a flat shape with five straight sides",
+      "ex": [
+        { "en": "A stop sign is shaped differently from a pentagon.", "ko": "정지 표지판은 오각형과는 다른 모양이다." }
+      ]
+    },
+    {
+      "cue": "미국 국방부 건물",
+      "ko": "펜타곤, 미국 국방부",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "the headquarters building of the US Department of Defense, or the US military leadership itself",
+      "ex": [
+        { "en": "The Pentagon announced new defense plans.", "ko": "미국 국방부는 새로운 방위 계획을 발표했다." }
+      ]
+    }
+  ],
+  "perceive": [
+    {
+      "cue": "감각·경험으로 알아차리다",
+      "ko": "인지하다, 알아차리다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "become aware of something through the senses or the mind",
+      "ex": [
+        { "en": "She perceived a change in his tone of voice.", "ko": "그녀는 그의 말투에서 변화를 알아차렸다." }
+      ]
+    },
+    {
+      "cue": "어떤 존재·의미로 여기다",
+      "ko": "~로 여기다, 인식하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "think of someone or something in a particular way",
+      "ex": [
+        { "en": "The plan was perceived as too risky.", "ko": "그 계획은 너무 위험한 것으로 여겨졌다." }
+      ]
+    }
+  ],
+  "percentage": [
+    {
+      "cue": "전체에 대한 비율",
+      "ko": "비율, 백분율",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "an amount or proportion of something, expressed as part of a hundred",
+      "ex": [
+        { "en": "What percentage of students passed the exam?", "ko": "학생들 중 몇 퍼센트가 시험에 합격했나요?" }
+      ]
+    }
+  ],
+  "perception": [
+    {
+      "cue": "사물·상황을 보는 방식",
+      "ko": "인식, 견해",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the way someone understands or thinks about something",
+      "ex": [
+        { "en": "Public perception of the issue has changed.", "ko": "그 사안에 대한 대중의 인식이 바뀌었다." }
+      ]
+    },
+    {
+      "cue": "감각으로 알아차리는 능력",
+      "ko": "지각(력)",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "the ability to notice or understand something through the senses",
+      "ex": [
+        { "en": "Alcohol can affect your perception of time.", "ko": "술은 시간에 대한 지각에 영향을 줄 수 있다." }
+      ]
+    }
+  ],
+  "permanence": [
+    {
+      "cue": "영원히 지속되는 성질",
+      "ko": "영속성, 불변성",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "the quality of lasting or existing forever, or for a long time",
+      "ex": [
+        { "en": "Nothing in life has true permanence.", "ko": "삶에서 진정으로 영속적인 것은 없다." }
+      ]
+    }
+  ],
+  "permeate": [
+    {
+      "cue": "냄새·감정 등이 전체에",
+      "ko": "스며들다, 퍼지다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "spread through and be present in every part of something",
+      "ex": [
+        { "en": "The smell of coffee permeated the whole house.", "ko": "커피 향이 집 안 전체에 스며들었다." }
+      ]
+    }
+  ],
+  "perseverance": [
+    {
+      "cue": "포기하지 않고 계속 노력하는 태도",
+      "ko": "인내, 끈기",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "continued effort to do or achieve something despite difficulties",
+      "ex": [
+        { "en": "Success in this field requires patience and perseverance.", "ko": "이 분야에서 성공하려면 인내와 끈기가 필요하다." }
+      ]
+    }
+  ],
+  "persist": [
+    {
+      "cue": "문제·상황이 계속되다",
+      "ko": "지속되다, 계속되다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "continue to exist or happen, especially for longer than expected",
+      "ex": [
+        { "en": "If the pain persists, see a doctor.", "ko": "통증이 계속되면 의사에게 진료를 받아라." }
+      ]
+    },
+    {
+      "cue": "포기하지 않고 계속하다",
+      "ko": "끈질기게 계속하다, 고집하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "continue doing something despite difficulty or opposition",
+      "ex": [
+        { "en": "She persisted with her studies despite the setbacks.", "ko": "그녀는 좌절에도 불구하고 공부를 계속 밀고 나갔다." }
+      ]
+    }
+  ],
+  "persistence": [
+    {
+      "cue": "포기하지 않고 계속하는 성질",
+      "ko": "끈기, 집요함",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the quality of continuing firmly despite difficulty or opposition",
+      "ex": [
+        { "en": "Her persistence finally paid off when she got the job.", "ko": "그녀의 끈기는 결국 취업이라는 결실을 맺었다." }
+      ]
+    }
+  ],
+  "persistent": [
+    {
+      "cue": "문제·상태가 계속되는",
+      "ko": "지속적인, 끊임없는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "continuing to happen or exist for a long time, without stopping",
+      "ex": [
+        { "en": "He has a persistent cough that won't go away.", "ko": "그는 낫지 않는 지속적인 기침을 앓고 있다." }
+      ]
+    },
+    {
+      "cue": "사람이 포기하지 않는",
+      "ko": "끈질긴, 집요한",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "(of a person) continuing firmly despite difficulty or opposition",
+      "ex": [
+        { "en": "She was persistent in asking for a refund.", "ko": "그녀는 환불을 요구하며 끈질기게 매달렸다." }
+      ]
+    }
+  ],
+  "personification": [
+    {
+      "cue": "추상적 특성을 완벽히 대표하는 사람",
+      "ko": "화신, 전형",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a person who is a perfect example of a particular quality",
+      "ex": [
+        { "en": "He is the personification of patience.", "ko": "그는 인내심의 화신이다." }
+      ]
+    },
+    {
+      "cue": "무생물·개념을 사람처럼 표현",
+      "ko": "의인화",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "(in literature) giving human qualities to an object or idea",
+      "ex": [
+        { "en": "The poem uses personification to describe the wind as a person.", "ko": "그 시는 바람을 사람처럼 묘사하는 의인화를 사용한다." }
+      ]
+    }
+  ],
+  "personify": [
+    {
+      "cue": "특성을 완벽히 대표하다",
+      "ko": "구현하다, ~의 화신이다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "be a perfect example of a particular quality",
+      "ex": [
+        { "en": "She personifies elegance and grace.", "ko": "그녀는 우아함과 기품 그 자체다." }
+      ]
+    },
+    {
+      "cue": "사물·개념을 사람처럼 표현하다",
+      "ko": "의인화하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "represent an object, quality, or idea as having human characteristics",
+      "ex": [
+        { "en": "The novel personifies death as an old man.", "ko": "그 소설은 죽음을 노인으로 의인화한다." }
+      ]
+    }
+  ],
+  "personnel": [
+    {
+      "cue": "조직·회사의 직원들",
+      "ko": "인원, 직원",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the people who work for an organization or business, considered as a group",
+      "ex": [
+        { "en": "The company is hiring additional personnel for the new project.", "ko": "그 회사는 새 프로젝트를 위해 추가 인원을 채용하고 있다." }
+      ]
+    },
+    {
+      "cue": "인사 업무를 담당하는 부서",
+      "ko": "인사부(서)",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "the department in a company responsible for hiring and managing employees",
+      "ex": [
+        { "en": "Contact personnel for questions about your benefits.", "ko": "복지 혜택에 관한 질문은 인사부에 문의하세요." }
+      ]
+    }
+  ],
+  "perspective": [
+    {
+      "cue": "사물·상황을 보는 방식",
+      "ko": "관점, 시각",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a particular way of thinking about or looking at something",
+      "ex": [
+        { "en": "Try to see the problem from her perspective.", "ko": "그녀의 관점에서 그 문제를 보려고 노력해봐." }
+      ]
+    },
+    {
+      "cue": "그림에서 원근감을 표현하는 기법",
+      "ko": "원근법",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "the technique of drawing objects so they appear to have depth and distance",
+      "ex": [
+        { "en": "The artist used perspective to make the road look long.", "ko": "그 화가는 원근법을 사용해 길이 길어 보이게 그렸다." }
+      ]
+    }
+  ],
+  "perspiration": [
+    {
+      "cue": "운동·더위로 나는 땀",
+      "ko": "땀",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the salty liquid that comes out through your skin, especially when you are hot or exercising",
+      "ex": [
+        { "en": "His shirt was soaked with perspiration after the run.", "ko": "달리기를 마친 후 그의 셔츠는 땀에 흠뻑 젖었다." }
+      ]
+    }
+  ],
+  "persuasion": [
+    {
+      "cue": "다른 사람의 마음을 바꾸도록",
+      "ko": "설득",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the act of persuading someone to do or believe something",
+      "ex": [
+        { "en": "It took a lot of persuasion to get him to agree.", "ko": "그를 동의시키는 데는 많은 설득이 필요했다." }
+      ]
+    }
+  ],
+  "pessimist": [
+    {
+      "cue": "나쁜 결과를 예상하는 사람",
+      "ko": "비관주의자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a person who always expects the worst possible outcome",
+      "ex": [
+        { "en": "He's such a pessimist that he never expects good news.", "ko": "그는 워낙 비관주의자라 좋은 소식을 기대하는 법이 없다." }
+      ]
+    }
+  ],
+  "pessimistic": [
+    {
+      "cue": "나쁜 결과를 예상하는",
+      "ko": "비관적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "expecting the worst possible outcome in a situation",
+      "ex": [
+        { "en": "She feels pessimistic about the company's future.", "ko": "그녀는 회사의 미래에 대해 비관적으로 느낀다." }
+      ]
+    }
+  ],
+  "petrified": [
+    {
+      "cue": "너무 무서워서 몸이 굳은",
+      "ko": "겁에 질린, 얼어붙은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "so frightened that you cannot move or think",
+      "ex": [
+        { "en": "She was petrified when she saw the spider.", "ko": "그녀는 거미를 보고 겁에 질렸다." }
+      ]
+    },
+    {
+      "cue": "돌처럼 화석이 된",
+      "ko": "화석화된",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "(of wood or another organic substance) turned into stone over a very long time",
+      "ex": [
+        { "en": "They found a piece of petrified wood in the desert.", "ko": "그들은 사막에서 화석화된 나무 조각을 발견했다." }
+      ]
+    }
+  ],
+  "petty": [
+    {
+      "cue": "중요하지 않고 사소한",
+      "ko": "사소한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "small and unimportant",
+      "ex": [
+        { "en": "Let's not argue over petty details.", "ko": "사소한 것들로 다투지 말자." }
+      ]
+    },
+    {
+      "cue": "속이 좁고 쩨쩨한",
+      "ko": "옹졸한, 쩨쩨한",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "showing that you care too much about small, unimportant things, especially in an unkind way",
+      "ex": [
+        { "en": "It was petty of him to complain about who got the bigger slice.", "ko": "누가 더 큰 조각을 받았는지 불평하다니 그는 참 옹졸했다." }
+      ]
+    }
+  ],
+  "pH": [
+    {
+      "cue": "산성·염기성을 나타내는 수치",
+      "ko": "수소 이온 농도, pH",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a scale used to measure how acidic or alkaline a substance is",
+      "ex": [
+        { "en": "The pH of pure water is 7.", "ko": "순수한 물의 pH는 7이다." }
+      ]
+    }
+  ],
+  "pharmacist": [
+    {
+      "cue": "약국에서 약을 조제하는 전문가",
+      "ko": "약사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a person who is trained to prepare and sell medicines",
+      "ex": [
+        { "en": "Ask the pharmacist if you have questions about the medication.", "ko": "약에 대해 궁금한 점이 있으면 약사에게 물어보세요." }
+      ]
+    }
+  ],
+  "phase": [
+    {
+      "cue": "일이 진행되는 단계",
+      "ko": "단계, 국면",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a stage in a process of change or development",
+      "ex": [
+        { "en": "The project is entering its final phase.", "ko": "그 프로젝트는 마지막 단계에 접어들고 있다." }
+      ]
+    },
+    {
+      "cue": "달의 모양이 변하는 단계",
+      "ko": "(달의) 위상",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "one of the recurring shapes of the visible part of the moon",
+      "ex": [
+        { "en": "The phases of the moon include the full moon and new moon.", "ko": "달의 위상에는 보름달과 초승달이 포함된다." }
+      ]
+    }
+  ],
+  "philosophical": [
+    {
+      "cue": "철학과 관련된",
+      "ko": "철학적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "relating to philosophy or the study of ideas about knowledge and existence",
+      "ex": [
+        { "en": "They had a philosophical discussion about the meaning of life.", "ko": "그들은 삶의 의미에 대해 철학적인 대화를 나눴다." }
+      ]
+    },
+    {
+      "cue": "힘든 상황을 차분히 받아들이는",
+      "ko": "차분히 받아들이는, 달관한",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "calmly accepting a difficult situation rather than being upset by it",
+      "ex": [
+        { "en": "He was philosophical about losing his job.", "ko": "그는 실직에 대해 담담하게 받아들였다." }
+      ]
+    }
+  ],
+  "physician": [
+    {
+      "cue": "의료 면허를 가진 의사",
+      "ko": "의사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a medical doctor, especially one who treats illnesses rather than performing surgery",
+      "ex": [
+        { "en": "You should see a physician about that cough.", "ko": "그 기침 때문에 의사에게 가봐야 해." }
+      ]
+    }
+  ],
+  "pi": [
+    {
+      "cue": "원주와 지름의 비율",
+      "ko": "파이 (원주율)",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the mathematical constant representing the ratio of a circle's circumference to its diameter, approximately 3.14",
+      "ex": [
+        { "en": "The value of pi is roughly 3.14159.", "ko": "파이의 값은 대략 3.14159이다." }
+      ]
+    }
+  ],
+  "pickle": [
+    {
+      "cue": "식초·소금물에 절인 채소",
+      "ko": "피클, 절임",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a vegetable, especially a cucumber, preserved in vinegar or salty water",
+      "ex": [
+        { "en": "He added a pickle to his sandwich.", "ko": "그는 샌드위치에 피클을 곁들였다." }
+      ]
+    },
+    {
+      "cue": "곤란한 상황 (관용구)",
+      "ko": "곤경, 궁지",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "(informal, in a pickle) a difficult or awkward situation",
+      "ex": [
+        { "en": "We're in a real pickle if the car won't start.", "ko": "차 시동이 안 걸리면 우리는 정말 곤경에 처하게 된다." }
+      ]
+    }
+  ],
+  "picky": [
+    {
+      "cue": "음식·기준에 까다로운",
+      "ko": "까다로운, 가리는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "choosing or accepting only what you like; hard to please",
+      "ex": [
+        { "en": "My little brother is a picky eater.", "ko": "내 남동생은 음식을 가리는 까다로운 아이다." }
+      ]
+    }
+  ],
+  "picturesque": [
+    {
+      "cue": "풍경이 그림처럼 아름다운",
+      "ko": "그림 같은, 경치가 아름다운",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "(of a place) attractive in a charming or quaint way, like in a painting",
+      "ex": [
+        { "en": "The village is famous for its picturesque streets.", "ko": "그 마을은 그림 같은 거리로 유명하다." }
+      ]
+    }
+  ],
+  "pillowcase": [
+    {
+      "cue": "베개를 감싸는 천",
+      "ko": "베갯잇",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a cloth cover that fits over a pillow",
+      "ex": [
+        { "en": "She changed the pillowcase before her guests arrived.", "ko": "그녀는 손님이 오기 전에 베갯잇을 갈았다." }
+      ]
+    }
+  ],
+  "pine": [
+    {
+      "cue": "사시사철 푸른 침엽수",
+      "ko": "소나무",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "an evergreen tree with thin, sharp leaves called needles",
+      "ex": [
+        { "en": "The forest was full of tall pine trees.", "ko": "그 숲은 키 큰 소나무로 가득했다." }
+      ]
+    },
+    {
+      "cue": "몹시 그리워하다",
+      "ko": "그리워하다, 애타게 바라다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "(pine for) feel a strong, sad longing for someone or something",
+      "ex": [
+        { "en": "She pined for her hometown after moving abroad.", "ko": "그녀는 해외로 이주한 후 고향을 애타게 그리워했다." }
+      ]
+    }
+  ],
+  "pint": [
+    {
+      "cue": "맥주 등을 재는 액량 단위",
+      "ko": "파인트 (약 0.47~0.57리터)",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a unit for measuring liquid, often used for beer or milk (about 0.47–0.57 liters)",
+      "ex": [
+        { "en": "He ordered a pint of beer at the pub.", "ko": "그는 술집에서 맥주 한 파인트를 주문했다." }
+      ]
+    }
+  ],
+  "piracy": [
+    {
+      "cue": "바다에서 배를 습격하는 행위",
+      "ko": "해적 행위",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the crime of attacking and robbing ships at sea",
+      "ex": [
+        { "en": "Piracy has increased near this coastline in recent years.", "ko": "최근 이 해안 근처에서 해적 행위가 늘었다." }
+      ]
+    },
+    {
+      "cue": "저작물을 무단으로 복제·배포하는 행위",
+      "ko": "저작권 침해, 불법 복제",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "the illegal copying or use of someone else's creative work, such as music or software",
+      "ex": [
+        { "en": "The film industry loses billions of dollars to piracy.", "ko": "영화 산업은 불법 복제로 수십억 달러의 손실을 본다." }
+      ]
+    }
+  ],
+  "pirate": [
+    {
+      "cue": "바다에서 배를 습격하는 사람",
+      "ko": "해적",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a person who attacks and robs ships at sea",
+      "ex": [
+        { "en": "The pirates attacked the merchant ship.", "ko": "해적들이 상선을 공격했다." }
+      ]
+    },
+    {
+      "cue": "저작물을 불법으로",
+      "ko": "불법 복제하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "illegally copy or use someone's creative work without permission",
+      "ex": [
+        { "en": "It's illegal to pirate movies and music online.", "ko": "온라인에서 영화와 음악을 불법 복제하는 것은 불법이다." }
+      ]
+    }
+  ],
+  "pitch": [
+    {
+      "cue": "소리의 높낮이",
+      "ko": "음높이, 음정",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "how high or low a sound is",
+      "ex": [
+        { "en": "She sang the note at the wrong pitch.", "ko": "그녀는 틀린 음정으로 그 음을 불렀다." }
+      ]
+    },
+    {
+      "cue": "공을 던지다",
+      "ko": "(공을) 던지다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "throw a ball, especially in baseball or cricket",
+      "ex": [
+        { "en": "He pitched the ball straight to the batter.", "ko": "그는 타자에게 공을 곧장 던졌다." }
+      ]
+    },
+    {
+      "cue": "축구 등을 하는 경기장",
+      "ko": "(축구) 경기장",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "a marked area of ground used for playing sports such as soccer",
+      "ex": [
+        { "en": "The players ran onto the pitch.", "ko": "선수들이 경기장으로 뛰어 들어왔다." }
+      ]
+    },
+    {
+      "cue": "제품·아이디어를 홍보하는 발표",
+      "ko": "(제품·사업) 홍보 발표",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "a talk in which someone tries to persuade others to buy something or support an idea",
+      "ex": [
+        { "en": "The startup gave a sales pitch to investors.", "ko": "그 스타트업은 투자자들에게 홍보 발표를 했다." }
+      ]
+    },
+    {
+      "cue": "몸이 앞으로 갑자기 기울다",
+      "ko": "앞으로 기울다, 곤두박질치다",
+      "pos": "동사",
+      "lv": 5,
+      "cefr": "C1",
+      "en": "fall or move forward suddenly and steeply",
+      "ex": [
+        { "en": "The boat pitched forward in the storm.", "ko": "폭풍 속에서 배가 앞으로 심하게 기울었다." }
+      ]
+    }
+  ],
+  "plague": [
+    {
+      "cue": "빠르게 번지는 치명적 질병",
+      "ko": "전염병, 역병",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a deadly disease that spreads quickly to a large number of people",
+      "ex": [
+        { "en": "The plague killed millions of people in medieval Europe.", "ko": "역병은 중세 유럽에서 수백만 명의 목숨을 앗아갔다." }
+      ]
+    },
+    {
+      "cue": "문제·질병이 계속 괴롭히다",
+      "ko": "괴롭히다, 시달리게 하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "cause someone continual trouble or suffering",
+      "ex": [
+        { "en": "He has been plagued by health problems for years.", "ko": "그는 수년간 건강 문제에 시달려 왔다." }
+      ]
+    },
+    {
+      "cue": "해충 등이 떼로 몰려드는 것",
+      "ko": "(해충 등의) 떼, 창궐",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "C1",
+      "en": "a large number of insects or pests that cause damage",
+      "ex": [
+        { "en": "A plague of locusts destroyed the crops.", "ko": "메뚜기 떼가 농작물을 초토화시켰다." }
+      ]
+    }
+  ],
+  "planning": [
+    {
+      "cue": "미리 계획을 세우는 일",
+      "ko": "계획, 기획",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "the process of deciding in detail how to do something in the future",
+      "ex": [
+        { "en": "Good planning is essential for a successful event.", "ko": "성공적인 행사를 위해서는 좋은 기획이 필수적이다." }
+      ]
+    }
+  ],
+  "playmate": [
+    {
+      "cue": "함께 노는 친구",
+      "ko": "놀이 친구",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a friend, especially a child, that you play with",
+      "ex": [
+        { "en": "The two boys have been playmates since kindergarten.", "ko": "그 두 소년은 유치원 때부터 놀이 친구였다." }
+      ]
+    }
+  ],
+  "playwright": [
+    {
+      "cue": "연극 대본을 쓰는 사람",
+      "ko": "극작가",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a person who writes plays",
+      "ex": [
+        { "en": "Shakespeare is the most famous English playwright.", "ko": "셰익스피어는 가장 유명한 영국 극작가다." }
+      ]
+    }
+  ],
+  "plead": [
+    {
+      "cue": "간절히 부탁하다",
+      "ko": "간청하다, 애원하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "ask for something in a very serious and emotional way",
+      "ex": [
+        { "en": "She pleaded with the judge for mercy.", "ko": "그녀는 판사에게 선처를 간청했다." }
+      ]
+    },
+    {
+      "cue": "법정에서 유죄·무죄를",
+      "ko": "(유죄·무죄를) 주장하다, 답변하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "formally state in court whether you are guilty or not guilty of a crime",
+      "ex": [
+        { "en": "The defendant pleaded not guilty to the charges.", "ko": "피고인은 혐의에 대해 무죄를 주장했다." }
+      ]
+    }
+  ],
+  "plot": [
+    {
+      "cue": "이야기의 줄거리",
+      "ko": "줄거리",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the main events of a story in a book, film, or play",
+      "ex": [
+        { "en": "The plot of the novel is full of twists.", "ko": "그 소설의 줄거리는 반전으로 가득하다." }
+      ]
+    },
+    {
+      "cue": "비밀리에 나쁜 일을 꾸미는 계획",
+      "ko": "음모",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "a secret plan made by a group of people to do something illegal or harmful",
+      "ex": [
+        { "en": "The police uncovered a plot to rob the bank.", "ko": "경찰은 은행을 털려는 음모를 적발했다." }
+      ]
+    },
+    {
+      "cue": "몰래 나쁜 일을",
+      "ko": "음모를 꾸미다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "plan secretly with others to do something illegal or harmful",
+      "ex": [
+        { "en": "They plotted to overthrow the government.", "ko": "그들은 정부를 전복하려는 음모를 꾸몄다." }
+      ]
+    },
+    {
+      "cue": "집을 지을 작은 땅",
+      "ko": "작은 부지, 터",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "B1",
+      "en": "a small piece of land, especially one marked out for a purpose",
+      "ex": [
+        { "en": "They bought a plot of land to build a house.", "ko": "그들은 집을 지으려고 작은 땅을 샀다." }
+      ]
+    },
+    {
+      "cue": "데이터를 그래프에",
+      "ko": "(그래프를) 표시하다, 그리다",
+      "pos": "동사",
+      "lv": 5,
+      "cefr": "B2",
+      "en": "mark points or a line on a graph or chart to show data",
+      "ex": [
+        { "en": "She plotted the results on a graph.", "ko": "그녀는 결과를 그래프에 표시했다." }
+      ]
+    }
+  ],
+  "pluck": [
+    {
+      "cue": "깃털·털을 뽑다",
+      "ko": "(털·깃털을) 뽑다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "pull feathers or hairs out of something",
+      "ex": [
+        { "en": "She plucked the chicken before cooking it.", "ko": "그녀는 요리하기 전에 닭의 털을 뽑았다." }
+      ]
+    },
+    {
+      "cue": "현악기 줄을 손가락으로",
+      "ko": "(현악기 줄을) 뜯다, 튕기다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "pull and release the strings of a musical instrument with your fingers",
+      "ex": [
+        { "en": "He gently plucked the guitar strings.", "ko": "그는 기타 줄을 부드럽게 뜯었다." }
+      ]
+    },
+    {
+      "cue": "위험 앞에서도 용감하게 (구어)",
+      "ko": "용기, 배짱",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "C1",
+      "en": "(informal) courage and determination in a difficult situation",
+      "ex": [
+        { "en": "It took a lot of pluck to speak up in front of everyone.", "ko": "모두 앞에서 목소리를 내는 데는 상당한 배짱이 필요했다." }
+      ]
+    }
+  ],
+  "plum": [
+    {
+      "cue": "달콤한 자주색 과일",
+      "ko": "자두",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a small, round, juicy fruit with smooth purple or red skin",
+      "ex": [
+        { "en": "She picked ripe plums from the tree.", "ko": "그녀는 나무에서 잘 익은 자두를 땄다." }
+      ]
+    },
+    {
+      "cue": "매우 탐나는 자리·기회",
+      "ko": "탐나는, 최고의 (자리·기회)",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "(of a job or position) highly desirable",
+      "ex": [
+        { "en": "He landed a plum job at a top law firm.", "ko": "그는 최고 로펌에서 탐나는 자리를 얻었다." }
+      ]
+    }
+  ],
+  "plumber": [
+    {
+      "cue": "배관·수도를 고치는 사람",
+      "ko": "배관공",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a person whose job is to install and repair water pipes and fixtures",
+      "ex": [
+        { "en": "We called a plumber to fix the leaking sink.", "ko": "우리는 물이 새는 싱크대를 고치려고 배관공을 불렀다." }
+      ]
+    }
+  ],
+  "pneumonia": [
+    {
+      "cue": "폐에 염증이 생기는 질병",
+      "ko": "폐렴",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a serious illness in which the lungs become infected and inflamed",
+      "ex": [
+        { "en": "He was hospitalized with pneumonia.", "ko": "그는 폐렴으로 입원했다." }
+      ]
+    }
+  ],
+  "point of view": [
+    {
+      "cue": "어떤 일을 바라보는 입장",
+      "ko": "관점, 견해",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a particular way of considering or judging a situation",
+      "ex": [
+        { "en": "From my point of view, the plan makes sense.", "ko": "내 관점에서는 그 계획이 타당해 보인다." }
+      ]
+    }
+  ],
+  "pointless": [
+    {
+      "cue": "해봤자 의미 없는",
+      "ko": "무의미한, 쓸데없는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "having no purpose or use",
+      "ex": [
+        { "en": "It's pointless to argue about something we can't change.", "ko": "우리가 바꿀 수 없는 일로 논쟁하는 것은 무의미하다." }
+      ]
+    }
+  ],
+  "polar bear": [
+    {
+      "cue": "북극에 사는 흰 곰",
+      "ko": "북극곰",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A1",
+      "en": "a large white bear that lives in the Arctic",
+      "ex": [
+        { "en": "Polar bears hunt seals on the ice.", "ko": "북극곰은 얼음 위에서 물개를 사냥한다." }
+      ]
+    }
+  ],
+  "polio": [
+    {
+      "cue": "신경을 침범해 마비를 일으키는 질병",
+      "ko": "소아마비",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a serious disease caused by a virus that can lead to paralysis, especially in children",
+      "ex": [
+        { "en": "The polio vaccine has saved millions of lives.", "ko": "소아마비 백신은 수백만 명의 목숨을 구했다." }
+      ]
+    }
+  ],
+  "polish": [
+    {
+      "cue": "표면을 문질러 윤이 나게",
+      "ko": "광이 나게 닦다, 윤을 내다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "rub something to make it smooth and shiny",
+      "ex": [
+        { "en": "He polished his shoes before the interview.", "ko": "그는 면접 전에 구두를 광이 나게 닦았다." }
+      ]
+    },
+    {
+      "cue": "매끄럽고 광택 있는 상태/제품",
+      "ko": "광택, 윤(내는 제품)",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a smooth, shiny surface, or a substance used to produce it",
+      "ex": [
+        { "en": "The table has a beautiful polish.", "ko": "그 탁자는 아름다운 광택을 지니고 있다." }
+      ]
+    },
+    {
+      "cue": "글·기술을 다듬어 완성도를",
+      "ko": "다듬다, 완성도를 높이다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "improve something by making small changes and corrections",
+      "ex": [
+        { "en": "She polished her essay before submitting it.", "ko": "그녀는 제출하기 전에 에세이를 다듬었다." }
+      ]
+    }
+  ],
+  "politeness": [
+    {
+      "cue": "예의 바르게 행동하는 태도",
+      "ko": "공손함, 예의바름",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "polite behavior that shows respect for others",
+      "ex": [
+        { "en": "He greeted everyone with great politeness.", "ko": "그는 모든 사람을 매우 공손하게 맞이했다." }
+      ]
+    }
+  ],
+  "politically": [
+    {
+      "cue": "정치와 관련하여",
+      "ko": "정치적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in a way that relates to government or politics",
+      "ex": [
+        { "en": "The country is politically unstable right now.", "ko": "그 나라는 지금 정치적으로 불안정하다." }
+      ]
+    }
+  ],
+  "polity": [
+    {
+      "cue": "한 사회의 정치 조직·체제",
+      "ko": "정치 체제, 통치 형태",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "the political organization or form of government of a society or state",
+      "ex": [
+        { "en": "Ancient Athens had a democratic polity.", "ko": "고대 아테네는 민주적인 정치 체제를 갖고 있었다." }
+      ]
+    }
+  ],
+  "polo": [
+    {
+      "cue": "말을 타고 하는 스포츠",
+      "ko": "폴로 (마상 구기 종목)",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a game played on horseback in which players use long mallets to hit a ball",
+      "ex": [
+        { "en": "The prince enjoys playing polo on weekends.", "ko": "왕자는 주말마다 폴로 경기를 즐긴다." }
+      ]
+    },
+    {
+      "cue": "카라가 있는 짧은 소매 셔츠 (구어)",
+      "ko": "폴로셔츠 (구어 줄임말)",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "(informal, short for polo shirt) a casual shirt with a collar and short sleeves",
+      "ex": [
+        { "en": "He wore a blue polo and khaki pants.", "ko": "그는 파란 폴로셔츠와 카키색 바지를 입었다." }
+      ]
+    }
+  ],
+  "ponder": [
+    {
+      "cue": "깊이 곰곰이 생각하다",
+      "ko": "곰곰이 생각하다, 숙고하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "think carefully about something for a period of time",
+      "ex": [
+        { "en": "She pondered the question before answering.", "ko": "그녀는 대답하기 전에 그 질문을 곰곰이 생각했다." }
+      ]
+    }
+  ],
+  "popularity": [
+    {
+      "cue": "널리 사랑받고 인기 있는 정도",
+      "ko": "인기",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the quality of being liked or admired by many people",
+      "ex": [
+        { "en": "The band's popularity grew rapidly after the concert.", "ko": "그 밴드의 인기는 콘서트 이후 빠르게 높아졌다." }
+      ]
+    }
+  ],
+  "popularize": [
+    {
+      "cue": "일반 대중에게 널리 알려지도록",
+      "ko": "대중화하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "make something widely known, understood, or liked by ordinary people",
+      "ex": [
+        { "en": "The internet helped popularize online shopping.", "ko": "인터넷은 온라인 쇼핑을 대중화하는 데 기여했다." }
+      ]
+    }
+  ],
+  "porch": [
+    {
+      "cue": "집 현관 앞 지붕 있는 공간",
+      "ko": "현관, 베란다",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a covered structure at the entrance of a house",
+      "ex": [
+        { "en": "They sat on the porch and watched the sunset.", "ko": "그들은 현관에 앉아 노을을 바라보았다." }
+      ]
+    }
+  ],
+  "portion": [
+    {
+      "cue": "전체 중 한 부분·몫",
+      "ko": "부분, 몫",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a part of something larger, especially a share given to someone",
+      "ex": [
+        { "en": "Each employee received a portion of the profits.", "ko": "각 직원은 이익의 일부를 받았다." }
+      ]
+    },
+    {
+      "cue": "음식의 1인분",
+      "ko": "(음식) 1인분",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "an amount of food served to one person",
+      "ex": [
+        { "en": "The restaurant serves generous portions.", "ko": "그 식당은 넉넉한 양의 1인분을 제공한다." }
+      ]
+    }
+  ],
+  "pose": [
+    {
+      "cue": "사진·그림을 위해 자세를",
+      "ko": "자세를 취하다, 포즈를 취하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "hold a particular position of the body, especially for a photograph or painting",
+      "ex": [
+        { "en": "They posed for a photo in front of the museum.", "ko": "그들은 박물관 앞에서 사진을 찍기 위해 포즈를 취했다." }
+      ]
+    },
+    {
+      "cue": "문제·위협을 일으키다",
+      "ko": "(문제·위협을) 제기하다, 일으키다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "create or present a problem, question, or threat",
+      "ex": [
+        { "en": "Climate change poses a serious threat to the planet.", "ko": "기후 변화는 지구에 심각한 위협을 제기한다." }
+      ]
+    },
+    {
+      "cue": "다른 사람인 척하다",
+      "ko": "~인 척하다, 가장하다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "(pose as) pretend to be someone else in order to deceive people",
+      "ex": [
+        { "en": "The thief posed as a police officer to enter the house.", "ko": "그 도둑은 경찰인 척하며 집에 들어갔다." }
+      ]
+    }
+  ],
+  "posh": [
+    {
+      "cue": "부유하고 고급스러운 (구어)",
+      "ko": "고급스러운, 세련된",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "(informal, especially British) expensive, fashionable, and associated with the upper class",
+      "ex": [
+        { "en": "They stayed at a posh hotel in London.", "ko": "그들은 런던의 고급스러운 호텔에 묵었다." }
+      ]
+    }
+  ],
+  "possessed": [
+    {
+      "cue": "강한 감정에 완전히 사로잡힌",
+      "ko": "(감정에) 사로잡힌, 홀린",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "completely controlled by a strong feeling or desire",
+      "ex": [
+        { "en": "He acted like a man possessed, working day and night.", "ko": "그는 밤낮으로 일하며 마치 무언가에 홀린 사람처럼 행동했다." }
+      ]
+    },
+    {
+      "cue": "귀신·악령에 지배당한",
+      "ko": "귀신 들린",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "controlled by an evil spirit",
+      "ex": [
+        { "en": "In the movie, the house was possessed by a ghost.", "ko": "그 영화에서 그 집은 귀신에 들려 있었다." }
+      ]
+    }
+  ],
+  "postal": [
+    {
+      "cue": "우편 제도와 관련된",
+      "ko": "우편의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "relating to the system of collecting and delivering mail",
+      "ex": [
+        { "en": "Please check the postal code before sending the letter.", "ko": "편지를 보내기 전에 우편번호를 확인하세요." }
+      ]
+    }
+  ],
+  "postpone": [
+    {
+      "cue": "나중으로 미루다",
+      "ko": "연기하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "change an event to a later time or date",
+      "ex": [
+        { "en": "The meeting was postponed until next week.", "ko": "회의는 다음 주로 연기되었다." }
+      ]
+    }
+  ],
+  "potent": [
+    {
+      "cue": "효과·영향력이 매우 강한",
+      "ko": "강력한, 효능이 강한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "having a strong effect or influence",
+      "ex": [
+        { "en": "The medicine is a potent painkiller.", "ko": "그 약은 효능이 강한 진통제다." }
+      ]
+    },
+    {
+      "cue": "논리·주장이 강력한",
+      "ko": "설득력 있는, 강력한(논리)",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "very convincing or effective, especially in an argument",
+      "ex": [
+        { "en": "She made a potent argument for the new policy.", "ko": "그녀는 새 정책에 대해 설득력 있는 주장을 펼쳤다." }
+      ]
+    }
+  ],
+  "potentially": [
+    {
+      "cue": "실제로는 아니지만 가능성상",
+      "ko": "잠재적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "possibly, but not yet certainly or actually",
+      "ex": [
+        { "en": "The chemical is potentially dangerous if inhaled.", "ko": "그 화학 물질은 흡입하면 잠재적으로 위험할 수 있다." }
+      ]
+    }
+  ],
+  "powerfully": [
+    {
+      "cue": "힘 있게, 강한 영향으로",
+      "ko": "강력하게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "in a way that has great strength, force, or effect",
+      "ex": [
+        { "en": "The speech powerfully moved the entire audience.", "ko": "그 연설은 청중 전체를 강력하게 감동시켰다." }
+      ]
+    }
+  ],
+  "practicality": [
+    {
+      "cue": "실제로 쓸모 있는 정도",
+      "ko": "실용성",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the quality of being useful or sensible in a real situation",
+      "ex": [
+        { "en": "We need to consider the practicality of this plan.", "ko": "우리는 이 계획의 실용성을 고려해야 한다." }
+      ]
+    }
+  ],
+  "practically": [
+    {
+      "cue": "거의 다, 사실상",
+      "ko": "거의",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "almost, or very nearly",
+      "ex": [
+        { "en": "The project is practically finished.", "ko": "그 프로젝트는 거의 다 끝났다." }
+      ]
+    },
+    {
+      "cue": "실용적인 방식으로",
+      "ko": "실질적으로, 실용적으로",
+      "pos": "부사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "in a sensible and realistic way",
+      "ex": [
+        { "en": "We need to approach this problem practically.", "ko": "우리는 이 문제에 실용적으로 접근해야 한다." }
+      ]
+    }
+  ],
+  "prance": [
+    {
+      "cue": "의기양양하게 뽐내며 걷다",
+      "ko": "활보하다, 뽐내며 걷다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "walk or move in a proud, lively way, often to attract attention",
+      "ex": [
+        { "en": "The model pranced down the runway.", "ko": "그 모델은 런웨이를 뽐내듯 걸었다." }
+      ]
+    }
+  ],
+  "prawn": [
+    {
+      "cue": "식용 새우 (영국식)",
+      "ko": "새우",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a small edible sea creature with a shell, similar to a shrimp but usually larger",
+      "ex": [
+        { "en": "We ordered grilled prawns for dinner.", "ko": "우리는 저녁으로 구운 새우를 주문했다." }
+      ]
+    }
+  ],
+  "precede": [
+    {
+      "cue": "시간·순서상 앞서 오다",
+      "ko": "선행하다, 앞서다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "happen or exist before something else in time or order",
+      "ex": [
+        { "en": "A loud noise preceded the explosion.", "ko": "큰 소리가 폭발보다 먼저 있었다." }
+      ]
+    }
+  ],
+  "precisely": [
+    {
+      "cue": "정확하고 엄밀하게",
+      "ko": "정확히",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "exactly, with no error or variation",
+      "ex": [
+        { "en": "The train arrived at precisely 9 a.m.", "ko": "기차는 정확히 오전 9시에 도착했다." }
+      ]
+    }
+  ],
+  "predicament": [
+    {
+      "cue": "빠져나오기 어려운 곤란한 상황",
+      "ko": "곤경, 궁지",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a difficult or unpleasant situation that is hard to escape",
+      "ex": [
+        { "en": "Losing his passport put him in a difficult predicament.", "ko": "여권을 잃어버려서 그는 곤란한 상황에 처했다." }
+      ]
+    }
+  ],
+  "predicate": [
+    {
+      "cue": "문장에서 주어를 서술하는 부분",
+      "ko": "서술어",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "(grammar) the part of a sentence that says something about the subject, usually containing the verb",
+      "ex": [
+        { "en": "In the sentence \"She sings beautifully,\" the predicate is \"sings beautifully.\"", "ko": "\"She sings beautifully\"라는 문장에서 서술어는 \"sings beautifully\"이다." }
+      ]
+    },
+    {
+      "cue": "어떤 사실·믿음에 기초를 두다",
+      "ko": "~에 기초하다, 근거하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "(predicated on) base something on a particular fact or belief",
+      "ex": [
+        { "en": "The plan is predicated on strong sales growth.", "ko": "그 계획은 강한 매출 성장에 근거하고 있다." }
+      ]
+    }
+  ],
+  "predicative": [
+    {
+      "cue": "형용사가 주어를 서술하는 위치에",
+      "ko": "서술적인 (문법 용어)",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "(grammar) describing an adjective used after a verb like 'be', rather than directly before a noun",
+      "ex": [
+        { "en": "In \"The soup is hot,\" 'hot' is used predicatively.", "ko": "\"The soup is hot\"에서 'hot'은 서술적으로 쓰였다." }
+      ]
+    }
+  ],
+  "predictable": [
+    {
+      "cue": "미리 알 수 있는",
+      "ko": "예측 가능한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "able to be known or guessed in advance",
+      "ex": [
+        { "en": "The ending of the movie was very predictable.", "ko": "그 영화의 결말은 매우 예측 가능했다." }
+      ]
+    }
+  ],
+  "predictive": [
+    {
+      "cue": "미래를 예측하는 데 관련된",
+      "ko": "예측하는, 예측의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "relating to predicting future events",
+      "ex": [
+        { "en": "The software uses predictive text to suggest words.", "ko": "그 소프트웨어는 단어를 제안하는 데 예측 텍스트 기능을 사용한다." }
+      ]
+    }
+  ],
+  "predictor": [
+    {
+      "cue": "미래를 예측하는 사람",
+      "ko": "예측하는 사람, 예언자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a person who predicts future events",
+      "ex": [
+        { "en": "Weather predictors are not always accurate.", "ko": "날씨를 예측하는 사람들이 항상 정확한 것은 아니다." }
+      ]
+    },
+    {
+      "cue": "결과를 예측하게 해주는 요인",
+      "ko": "예측 변수, 예측 요인",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "a factor or piece of information that helps forecast a future outcome",
+      "ex": [
+        { "en": "Education level is a strong predictor of income.", "ko": "교육 수준은 소득을 예측하는 강력한 요인이다." }
+      ]
+    }
+  ],
+  "prefect": [
+    {
+      "cue": "고대·일부 국가의 고위 행정관",
+      "ko": "행정 장관, 지사",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a chief official or magistrate in certain countries or historical periods",
+      "ex": [
+        { "en": "The prefect was responsible for governing the province.", "ko": "그 지사는 그 지방을 다스릴 책임이 있었다." }
+      ]
+    },
+    {
+      "cue": "학교에서 규율을 감독하는 학생 (영국식)",
+      "ko": "학생회 임원, 반장",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "(in British schools) an older student given some authority to help supervise younger students",
+      "ex": [
+        { "en": "As a prefect, she helped keep order in the hallways.", "ko": "학생회 임원으로서 그녀는 복도 질서를 유지하는 것을 도왔다." }
+      ]
+    }
+  ],
+  "preferable": [
+    {
+      "cue": "다른 것보다 더 나은",
+      "ko": "더 나은, 선호되는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "more desirable or suitable than another option",
+      "ex": [
+        { "en": "A quiet evening at home is preferable to a crowded party.", "ko": "붐비는 파티보다 집에서 보내는 조용한 저녁이 더 낫다." }
+      ]
+    }
+  ],
+  "preferably": [
+    {
+      "cue": "가능하다면 원하는 방식으로",
+      "ko": "가급적, 되도록",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "used to say what you would like to happen if it is possible",
+      "ex": [
+        { "en": "Send the report by email, preferably before noon.", "ko": "가급적 정오 전까지 이메일로 보고서를 보내주세요." }
+      ]
+    }
+  ],
+  "prehistoric": [
+    {
+      "cue": "기록된 역사 이전 시대의",
+      "ko": "선사시대의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "belonging to the time before written history began",
+      "ex": [
+        { "en": "They found prehistoric cave paintings.", "ko": "그들은 선사시대 동굴 벽화를 발견했다." }
+      ]
+    },
+    {
+      "cue": "매우 낡고 구식인 (구어)",
+      "ko": "아주 구식인, 낡아빠진 (구어)",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "(informal) extremely old-fashioned",
+      "ex": [
+        { "en": "This computer is practically prehistoric.", "ko": "이 컴퓨터는 거의 구닥다리 수준이다." }
+      ]
+    }
+  ],
+  "prehuman": [
+    {
+      "cue": "인류가 나타나기 이전의",
+      "ko": "인류 이전의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "existing or happening before humans appeared on Earth",
+      "ex": [
+        { "en": "Scientists study prehuman species to understand evolution.", "ko": "과학자들은 진화를 이해하기 위해 인류 이전 종들을 연구한다." }
+      ]
+    }
+  ],
+  "preindustrial": [
+    {
+      "cue": "산업화가 이루어지기 전의",
+      "ko": "산업화 이전의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "relating to the time before industry and factories became widespread",
+      "ex": [
+        { "en": "Preindustrial societies relied mainly on farming.", "ko": "산업화 이전 사회는 주로 농업에 의존했다." }
+      ]
+    }
+  ],
+  "prejudge": [
+    {
+      "cue": "증거 없이 미리 판단하다",
+      "ko": "예단하다, 미리 판단하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "judge someone or something before having enough information or evidence",
+      "ex": [
+        { "en": "Try not to prejudge the situation before hearing both sides.", "ko": "양쪽 이야기를 듣기 전에 상황을 예단하지 않도록 해라." }
+      ]
+    }
+  ],
+  "preliminary": [
+    {
+      "cue": "본격적인 일 전에 이루어지는",
+      "ko": "예비의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "happening before or in preparation for something more important",
+      "ex": [
+        { "en": "We conducted a preliminary study before the main experiment.", "ko": "우리는 본 실험 전에 예비 연구를 진행했다." }
+      ]
+    },
+    {
+      "cue": "본 경기·행사 전 예선",
+      "ko": "예선, 예비 행사",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "an event that happens before and prepares for a more important one",
+      "ex": [
+        { "en": "The preliminaries will determine who advances to the finals.", "ko": "예선에서 누가 결승에 진출할지 결정된다." }
+      ]
+    }
+  ],
+  "preoccupy": [
+    {
+      "cue": "어떤 생각에 정신이 팔려",
+      "ko": "몰두하게 하다, ~생각에 빠지게 하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "fill someone's mind so much that they cannot think about anything else",
+      "ex": [
+        { "en": "Worries about the exam preoccupied her all week.", "ko": "시험에 대한 걱정이 일주일 내내 그녀의 머릿속을 채웠다." }
+      ]
+    }
+  ],
+  "prescribe": [
+    {
+      "cue": "의사가 약·치료를",
+      "ko": "처방하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "(of a doctor) officially recommend the use of a medicine or treatment",
+      "ex": [
+        { "en": "The doctor prescribed antibiotics for the infection.", "ko": "의사는 감염 치료를 위해 항생제를 처방했다." }
+      ]
+    },
+    {
+      "cue": "규칙·법이 명시하다",
+      "ko": "규정하다, 명시하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "(formal) state officially that something must be done or is required",
+      "ex": [
+        { "en": "The law prescribes strict penalties for fraud.", "ko": "그 법은 사기에 대해 엄격한 처벌을 규정하고 있다." }
+      ]
+    }
+  ],
+  "presenter": [
+    {
+      "cue": "발표를 하는 사람",
+      "ko": "발표자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a person who gives a talk or presentation to an audience",
+      "ex": [
+        { "en": "The presenter explained the new marketing strategy.", "ko": "발표자는 새로운 마케팅 전략을 설명했다." }
+      ]
+    },
+    {
+      "cue": "TV·라디오 프로그램 진행자",
+      "ko": "(방송) 진행자",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a person who introduces and hosts a television or radio program",
+      "ex": [
+        { "en": "She has been a news presenter for ten years.", "ko": "그녀는 10년째 뉴스 진행자로 일하고 있다." }
+      ]
+    }
+  ],
+  "presidency": [
+    {
+      "cue": "대통령으로 재임하는 직위·기간",
+      "ko": "대통령직, 재임 기간",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the position or period of time of being president",
+      "ex": [
+        { "en": "He served two terms as president during his presidency.", "ko": "그는 대통령 재임 중 두 번의 임기를 지냈다." }
+      ]
+    }
+  ],
+  "presidential": [
+    {
+      "cue": "대통령과 관련된",
+      "ko": "대통령의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "relating to a president or the office of president",
+      "ex": [
+        { "en": "The presidential election will take place in November.", "ko": "대통령 선거는 11월에 치러질 것이다." }
+      ]
+    }
+  ],
+  "prestige": [
+    {
+      "cue": "성공·영향력으로 얻는 명성",
+      "ko": "명성, 위신",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a high level of respect that comes from success, influence, or wealth",
+      "ex": [
+        { "en": "The university has great academic prestige.", "ko": "그 대학은 뛰어난 학문적 명성을 지니고 있다." }
+      ]
+    }
+  ],
+  "prestigious": [
+    {
+      "cue": "명망 있고 존경받는",
+      "ko": "명망 있는, 권위 있는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "respected and admired as very important or of high quality",
+      "ex": [
+        { "en": "She won a prestigious award for her research.", "ko": "그녀는 자신의 연구로 권위 있는 상을 받았다." }
+      ]
+    }
+  ],
+  "presumably": [
+    {
+      "cue": "확실친 않지만 그럴 것 같다",
+      "ko": "아마도, 추측하건대",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "used to say that you think something is probably true, based on the information you have",
+      "ex": [
+        { "en": "Presumably, he forgot about the meeting.", "ko": "아마도 그는 회의를 잊어버린 것 같다." }
+      ]
+    }
+  ],
+  "prevail": [
+    {
+      "cue": "결국 이기다, 승리하다",
+      "ko": "승리하다, 이기다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "prove more powerful or successful than opposition",
+      "ex": [
+        { "en": "Justice prevailed in the end.", "ko": "결국 정의가 승리했다." }
+      ]
+    },
+    {
+      "cue": "널리 존재하다, 지배적이다",
+      "ko": "만연하다, 널리 퍼져 있다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "exist widely or be the most common situation at a particular time",
+      "ex": [
+        { "en": "Calm weather prevailed throughout the weekend.", "ko": "주말 내내 잔잔한 날씨가 이어졌다." }
+      ]
+    }
+  ],
+  "prevention": [
+    {
+      "cue": "미리 막는 것",
+      "ko": "예방",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the act of stopping something bad from happening",
+      "ex": [
+        { "en": "Prevention is better than cure.", "ko": "예방이 치료보다 낫다." }
+      ]
+    }
+  ],
+  "preventive": [
+    {
+      "cue": "문제·질병을 미리 막는",
+      "ko": "예방적인, 예방을 위한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "intended to stop something bad from happening, especially illness",
+      "ex": [
+        { "en": "Regular exercise is a good preventive measure against heart disease.", "ko": "규칙적인 운동은 심장병을 막는 좋은 예방책이다." }
+      ]
+    }
+  ],
+  "previously": [
+    {
+      "cue": "지금보다 앞선 때에",
+      "ko": "이전에",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "at an earlier time; before now or before a particular time",
+      "ex": [
+        { "en": "She had previously worked as a teacher.", "ko": "그녀는 이전에 교사로 일했었다." }
+      ]
+    }
+  ],
+  "priceless": [
+    {
+      "cue": "돈으로 값을 매길 수 없을 만큼 귀한",
+      "ko": "값을 매길 수 없는, 매우 귀중한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "so valuable that its worth cannot be measured in money",
+      "ex": [
+        { "en": "The museum displays priceless works of art.", "ko": "그 박물관은 값을 매길 수 없는 귀중한 예술 작품들을 전시한다." }
+      ]
+    }
+  ],
+  "prick": [
+    {
+      "cue": "바늘 등으로 살짝 찌르다",
+      "ko": "(바늘로) 찌르다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "make a small hole in something with a sharp point, such as a needle",
+      "ex": [
+        { "en": "She pricked her finger while sewing.", "ko": "그녀는 바느질을 하다가 손가락을 찔렸다." }
+      ]
+    },
+    {
+      "cue": "따끔거리는 통증",
+      "ko": "따끔한 통증, 찔림",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "a sharp, small pain caused by something pointed",
+      "ex": [
+        { "en": "He felt a sudden prick on his arm.", "ko": "그는 팔에 갑자기 따끔한 통증을 느꼈다." }
+      ]
+    }
+  ],
+  "primary": [
+    {
+      "cue": "가장 중요한, 주된",
+      "ko": "주요한, 주된",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "main or most important",
+      "ex": [
+        { "en": "Her primary concern is her children's safety.", "ko": "그녀의 가장 큰 관심사는 아이들의 안전이다." }
+      ]
+    },
+    {
+      "cue": "가장 기본적인, 최초 단계의",
+      "ko": "1차의, 기초의",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "basic, or being the first stage",
+      "ex": [
+        { "en": "Reading and writing are taught in primary school.", "ko": "읽기와 쓰기는 초등학교에서 가르친다." }
+      ]
+    },
+    {
+      "cue": "정당 후보를 뽑는 예비선거 (미국)",
+      "ko": "예비선거",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "(US) an election in which voters choose a candidate to represent a political party",
+      "ex": [
+        { "en": "He won the Democratic primary in his state.", "ko": "그는 자신의 주에서 민주당 예비선거에 승리했다." }
+      ]
+    }
+  ],
+  "prime": [
+    {
+      "cue": "가장 중요하거나 훌륭한",
+      "ko": "주된, 최고의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "main, most important, or of the best quality",
+      "ex": [
+        { "en": "This is a prime example of good design.", "ko": "이것은 훌륭한 디자인의 주된 예시다." }
+      ]
+    },
+    {
+      "cue": "1과 자기 자신으로만 나누어지는 수",
+      "ko": "소수 (수학)",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "(mathematics) a number that can only be divided evenly by 1 and itself",
+      "ex": [
+        { "en": "Seven is a prime number.", "ko": "7은 소수이다." }
+      ]
+    },
+    {
+      "cue": "인생에서 가장 좋은 시기",
+      "ko": "전성기",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "the period when someone is at their strongest, most successful, or most attractive",
+      "ex": [
+        { "en": "The athlete is now in the prime of his career.", "ko": "그 선수는 지금 커리어의 전성기를 맞고 있다." }
+      ]
+    }
+  ],
+  "prime minister": [
+    {
+      "cue": "정부를 이끄는 최고 행정 수반",
+      "ko": "총리",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the leader of the government in many countries",
+      "ex": [
+        { "en": "The Prime Minister announced new economic reforms.", "ko": "총리는 새로운 경제 개혁을 발표했다." }
+      ]
+    }
+  ],
+  "prior": [
+    {
+      "cue": "시간상 앞선, 사전의",
+      "ko": "이전의, 사전의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "existing or happening before something else, or before a particular time",
+      "ex": [
+        { "en": "She has no prior experience in this field.", "ko": "그녀는 이 분야에서 사전 경험이 없다." }
+      ]
+    }
+  ],
+  "priority": [
+    {
+      "cue": "가장 먼저 처리해야 할 중요한 것",
+      "ko": "우선순위",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "something that is more important than other things and should be dealt with first",
+      "ex": [
+        { "en": "Safety is our top priority.", "ko": "안전이 우리의 최우선 순위다." }
+      ]
+    }
+  ],
+  "privately": [
+    {
+      "cue": "남들 모르게, 사적으로",
+      "ko": "개인적으로, 사적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "without other people knowing or being present; not publicly",
+      "ex": [
+        { "en": "She told me privately that she was leaving the company.", "ko": "그녀는 나에게 회사를 떠날 것이라고 개인적으로 말했다." }
+      ]
+    },
+    {
+      "cue": "개인·민간이 소유·운영하는",
+      "ko": "민간이, 사기업으로",
+      "pos": "부사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "by a private person, company, or organization rather than the government",
+      "ex": [
+        { "en": "The hospital is privately funded.", "ko": "그 병원은 민간이 자금을 지원한다." }
+      ]
+    }
+  ],
+  "privilege": [
+    {
+      "cue": "일부만 누리는 특별한 권리·혜택",
+      "ko": "특권",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a special right or advantage that only some people have",
+      "ex": [
+        { "en": "Education is a privilege many people take for granted.", "ko": "교육은 많은 사람들이 당연하게 여기는 특권이다." }
+      ]
+    }
+  ],
+  "probable": [
+    {
+      "cue": "실제로 일어날 가능성이 큰",
+      "ko": "있음직한, 가능성이 큰",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "likely to happen or be true, though not certain",
+      "ex": [
+        { "en": "A recession seems probable this year.", "ko": "올해는 경기 침체가 있을 가능성이 커 보인다." }
+      ]
+    }
+  ],
+  "probe": [
+    {
+      "cue": "철저히 캐묻다, 조사하다",
+      "ko": "캐묻다, 조사하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "ask questions or examine something closely to find out the truth",
+      "ex": [
+        { "en": "Reporters probed the politician about the scandal.", "ko": "기자들은 그 정치인에게 스캔들에 대해 캐물었다." }
+      ]
+    },
+    {
+      "cue": "공식적인 조사",
+      "ko": "조사, 수사",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "a thorough investigation into something",
+      "ex": [
+        { "en": "The police launched a probe into the company's finances.", "ko": "경찰은 그 회사의 재정에 대한 조사에 착수했다." }
+      ]
+    },
+    {
+      "cue": "우주를 탐사하는 무인 기기",
+      "ko": "(우주) 탐사선",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "an unmanned spacecraft sent to explore and gather information about space",
+      "ex": [
+        { "en": "The space probe sent images back from Mars.", "ko": "그 우주 탐사선은 화성에서 이미지를 전송했다." }
+      ]
+    }
+  ],
+  "procedure": [
+    {
+      "cue": "어떤 일을 하는 정해진 절차",
+      "ko": "절차, 방법",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a series of actions done in a particular order to complete a task",
+      "ex": [
+        { "en": "Please follow the correct procedure for submitting your application.", "ko": "지원서 제출을 위한 올바른 절차를 따라주세요." }
+      ]
+    },
+    {
+      "cue": "의료 시술·수술",
+      "ko": "(의료) 시술, 수술",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "a medical operation or treatment",
+      "ex": [
+        { "en": "The surgical procedure took about two hours.", "ko": "그 수술은 약 두 시간이 걸렸다." }
+      ]
+    }
+  ],
+  "profile": [
+    {
+      "cue": "얼굴을 옆에서 본 윤곽",
+      "ko": "옆모습, 옆얼굴",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "the outline of a person's face when seen from the side",
+      "ex": [
+        { "en": "She has a striking profile.", "ko": "그녀는 인상적인 옆모습을 가지고 있다." }
+      ]
+    },
+    {
+      "cue": "인물·회사에 대한 간략한 소개",
+      "ko": "프로필, 인물 소개",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "a short description of a person's or organization's background and characteristics",
+      "ex": [
+        { "en": "Fill out your profile on the app before you start.", "ko": "시작하기 전에 앱에 프로필을 작성하세요." }
+      ]
+    },
+    {
+      "cue": "대중에게 알려지는 정도",
+      "ko": "(대중의) 주목도, 인지도",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "C1",
+      "en": "(keep/have a low/high profile) the level of public attention someone or something receives",
+      "ex": [
+        { "en": "The company has kept a low profile since the scandal.", "ko": "그 회사는 스캔들 이후 주목받지 않으려 조용히 지내고 있다." }
+      ]
+    }
+  ],
+  "profit": [
+    {
+      "cue": "사업에서 남는 이익",
+      "ko": "이익, 수익",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "money that is gained in business after costs have been paid",
+      "ex": [
+        { "en": "The company made a huge profit last year.", "ko": "그 회사는 작년에 큰 수익을 냈다." }
+      ]
+    },
+    {
+      "cue": "무언가로부터 득을 보다",
+      "ko": "이익을 얻다, 득을 보다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "gain an advantage or benefit from something",
+      "ex": [
+        { "en": "You can profit from learning a new skill.", "ko": "새로운 기술을 배우면 득을 볼 수 있다." }
+      ]
+    }
+  ],
+  "profitable": [
+    {
+      "cue": "돈을 벌어들이는",
+      "ko": "수익성 있는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "producing a profit or financial gain",
+      "ex": [
+        { "en": "The new business quickly became profitable.", "ko": "그 신규 사업은 빠르게 수익성 있게 되었다." }
+      ]
+    }
+  ],
+  "programmer": [
+    {
+      "cue": "컴퓨터 프로그램을 만드는 사람",
+      "ko": "프로그래머",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a person who writes and tests computer programs",
+      "ex": [
+        { "en": "She works as a software programmer at a tech company.", "ko": "그녀는 기술 회사에서 소프트웨어 프로그래머로 일한다." }
+      ]
+    }
+  ]
+}
