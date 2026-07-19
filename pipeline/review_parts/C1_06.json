@@ -1,5 +1,17 @@
 {
   "staccato": "음악 전문 용어 — 학습자용으로 음악적 의미 1개만 채택, 비유적 확장 사용(끊어지는 리듬 묘사 등)은 생략함.",
   "stimuli": "stimulus의 복수형 표제어로 WordNet 근거(wn)가 비어 있어 정의를 자체 작성함.",
-  "staple": "WordNet에 원자재(raw material)·천연섬유·못(nail) 등 니치한 의미가 더 있으나 학습자 빈도상 2개(주식/스테이플러 심)만 채택."
+  "staple": "WordNet에 원자재(raw material)·천연섬유·못(nail) 등 니치한 의미가 더 있으나 학습자 빈도상 2개(주식/스테이플러 심)만 채택.",
+  "stressfully": "wn이 비어 있어 stressful의 파생 부사로 정의를 자체 작성함.",
+  "stuffily": "wn 근거는 'stodgily' 하나뿐. 실제로는 물리적(환기 안됨)·태도적(고루함) 두 뜻 다 쓰이는데 부사형은 후자가 더 흔해 그것만 채택 — 확신도 중간.",
+  "succulently": "wn이 비어 있어 succulent의 파생 부사로 정의를 자체 작성함.",
+  "suitor": "두 번째 의미(기업 인수 후보)는 WordNet에 없고 경제 기사에서의 실제 사용 빈도를 근거로 자체 추가함.",
+  "sustainably": "wn이 비어 있어 sustainable/sustainably의 파생 부사로 정의를 자체 작성함.",
+  "swap": "WordNet의 컴퓨터과학(메모리 스와핑) 전문 의미는 생략, 일반 교환 의미(동사/명사)만 채택.",
+  "unenviably": "wn이 비어 있어 unenviable의 파생 부사로 정의를 자체 작성함.",
+  "unscathing": "표준 영어에서는 보통 'unscathed'(형용사) 형태가 쓰이고 'unscathing'은 흔치 않은 변형/오타로 보임. wn도 비어 있어 배치에 주어진 표제어와 ko 뜻을 그대로 따라 정의를 작성함 — 원어 표기 재확인 필요.",
+  "unsettling": "wn이 비어 있어 unsettle의 파생 형용사로 정의를 자체 작성함.",
+  "unsustainable": "wn이 비어 있어 sustainable의 반의어로 정의를 자체 작성함.",
+  "unsustainably": "wn이 비어 있어 unsustainable의 파생 부사로 정의를 자체 작성함.",
+  "wares": "wn이 비어 있어 ware의 복수형 격식체 단어로 정의를 자체 작성함."
 }
