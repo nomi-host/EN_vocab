@@ -1,0 +1,373 @@
+{
+  "wayside": [
+    {
+      "cue": "도로의 가장자리",
+      "ko": "길가",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the edge or side of a road",
+      "syn": ["roadside"],
+      "ex": [
+        {
+          "en": "They stopped to rest by the wayside.",
+          "ko": "그들은 길가에 멈춰 쉬었다."
+        }
+      ]
+    }
+  ],
+  "whilst": [
+    {
+      "cue": "영국식 문어체, while 대신",
+      "ko": "~하는 동안, ~인 반면에",
+      "pos": "접속사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "during the time that something else is happening (a formal British word for 'while')",
+      "syn": [],
+      "ex": [
+        {
+          "en": "She took notes whilst the professor was speaking.",
+          "ko": "그녀는 교수님이 말씀하시는 동안 필기를 했다."
+        }
+      ]
+    }
+  ],
+  "wicked": [
+    {
+      "cue": "도덕적으로 사악한",
+      "ko": "사악한, 못된",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "morally bad or evil",
+      "syn": ["sinful"],
+      "ex": [
+        {
+          "en": "He was known as a wicked ruler who terrorized his people.",
+          "ko": "그는 백성들을 공포에 떨게 한 사악한 통치자로 알려졌다."
+        }
+      ]
+    },
+    {
+      "cue": "장난스럽게 짓궂은",
+      "ko": "짓궂은, 장난기 있는",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "naughty or mischievous in a playful, not serious way",
+      "syn": ["mischievous", "impish"],
+      "ex": [
+        {
+          "en": "She gave a wicked grin before hiding my keys.",
+          "ko": "그녀는 짓궂은 미소를 짓고는 내 열쇠를 숨겼다."
+        }
+      ]
+    },
+    {
+      "cue": "정도가 지독하게 심한 (구어)",
+      "ko": "지독한, 극심한",
+      "pos": "형용사",
+      "lv": 3,
+      "cefr": "C1",
+      "en": "very great in degree or intensity (informal)",
+      "syn": ["terrible"],
+      "ex": [
+        {
+          "en": "I've got a wicked headache today.",
+          "ko": "오늘 지독한 두통이 있다."
+        }
+      ]
+    }
+  ],
+  "wickedly": [
+    {
+      "cue": "나쁜 의도로",
+      "ko": "사악하게, 못되게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "in a wicked or evil manner",
+      "syn": ["evilly"],
+      "ex": [
+        {
+          "en": "He smiled wickedly before revealing his plan.",
+          "ko": "그는 사악하게 미소 지은 뒤 자신의 계획을 밝혔다."
+        }
+      ]
+    }
+  ],
+  "withdrawn": [
+    {
+      "cue": "사람들과 잘 어울리지 않고",
+      "ko": "내성적인, 말수가 적은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "quiet and not wanting to talk to or be with other people",
+      "syn": ["indrawn"],
+      "ex": [
+        {
+          "en": "He became withdrawn after his father's death.",
+          "ko": "그는 아버지가 돌아가신 후 내성적으로 변했다."
+        }
+      ]
+    },
+    {
+      "cue": "사회와의 접촉을 끊고",
+      "ko": "은둔한, 세상과 담쌓은",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "having withdrawn from contact with other people",
+      "syn": ["reclusive"],
+      "ex": [
+        {
+          "en": "She lived a withdrawn life in a remote cabin.",
+          "ko": "그녀는 외딴 오두막에서 은둔한 삶을 살았다."
+        }
+      ]
+    }
+  ],
+  "wizened": [
+    {
+      "cue": "나이·병으로 살갗이 쭈그러든",
+      "ko": "쭈글쭈글한, 시든",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "thin and wrinkled, especially because of old age",
+      "syn": ["shriveled", "withered"],
+      "ex": [
+        {
+          "en": "The wizened old man sat quietly by the fire.",
+          "ko": "쭈글쭈글한 노인이 난롯가에 조용히 앉아 있었다."
+        }
+      ]
+    }
+  ],
+  "woo": [
+    {
+      "cue": "표·인기·지지를 얻으려",
+      "ko": "환심을 사다, 얻으려 하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "try to gain someone's support or favor",
+      "syn": ["court"],
+      "ex": [
+        {
+          "en": "The candidate tried to woo young voters.",
+          "ko": "그 후보는 젊은 유권자들의 환심을 사려 했다."
+        }
+      ]
+    },
+    {
+      "cue": "이성의 사랑을 얻으려",
+      "ko": "구애하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "try to attract someone romantically",
+      "syn": ["court", "romance"],
+      "ex": [
+        {
+          "en": "He spent months wooing her before she agreed to a date.",
+          "ko": "그는 그녀가 데이트에 응할 때까지 몇 달 동안 구애했다."
+        }
+      ]
+    }
+  ],
+  "wooded": [
+    {
+      "cue": "나무가 빽빽하게 자란",
+      "ko": "숲이 우거진, 나무가 많은",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "covered with growing trees",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The trail winds through a wooded hillside.",
+          "ko": "그 산책로는 숲이 우거진 언덕을 지나 구불구불 이어진다."
+        }
+      ]
+    }
+  ],
+  "wrangle": [
+    {
+      "cue": "시끄럽게 언쟁을",
+      "ko": "언쟁하다, 다투다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "argue noisily or angrily, often for a long time",
+      "syn": ["brawl"],
+      "ex": [
+        {
+          "en": "The two lawyers wrangled over the contract terms for hours.",
+          "ko": "두 변호사는 계약 조건을 두고 몇 시간 동안 언쟁을 벌였다."
+        }
+      ]
+    },
+    {
+      "cue": "격한 말다툼",
+      "ko": "언쟁, 다툼",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "a long, angry argument or dispute",
+      "syn": ["quarrel", "row"],
+      "ex": [
+        {
+          "en": "There was a wrangle over who should pay the bill.",
+          "ko": "누가 계산할지를 두고 다툼이 있었다."
+        }
+      ]
+    },
+    {
+      "cue": "(미국 서부에서) 가축을",
+      "ko": "(가축을) 몰다, 다루다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "C2",
+      "en": "round up, herd, or take care of livestock such as horses or cattle",
+      "syn": [],
+      "ex": [
+        {
+          "en": "He worked on a ranch, wrangling horses all summer.",
+          "ko": "그는 목장에서 여름 내내 말을 몰며 일했다."
+        }
+      ]
+    }
+  ],
+  "wrench": [
+    {
+      "cue": "너트·볼트를 조이는 공구",
+      "ko": "렌치, 스패너",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a hand tool used to hold or turn nuts and bolts",
+      "syn": ["spanner"],
+      "ex": [
+        {
+          "en": "He tightened the pipe with a wrench.",
+          "ko": "그는 렌치로 파이프를 조였다."
+        }
+      ]
+    },
+    {
+      "cue": "세게 비틀어 잡아당기다",
+      "ko": "확 비틀다, 잡아 뽑다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "twist or pull something suddenly and violently",
+      "syn": ["twist"],
+      "ex": [
+        {
+          "en": "She wrenched the door open.",
+          "ko": "그녀는 문을 확 비틀어 열었다."
+        }
+      ]
+    },
+    {
+      "cue": "발목 등을 갑자기 접질려",
+      "ko": "삐다, 접질리다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "twist a joint suddenly and injure it",
+      "syn": ["sprain", "twist"],
+      "ex": [
+        {
+          "en": "He wrenched his ankle while running.",
+          "ko": "그는 달리다가 발목을 삐었다."
+        }
+      ]
+    },
+    {
+      "cue": "떠날 때 느끼는 마음의 아픔",
+      "ko": "(가슴 아픈) 이별, 고통",
+      "pos": "명사",
+      "lv": 4,
+      "cefr": "C1",
+      "en": "a sudden feeling of sadness caused by having to leave someone or something",
+      "syn": [],
+      "ex": [
+        {
+          "en": "Leaving her hometown was a real wrench.",
+          "ko": "고향을 떠나는 것은 정말 가슴 아픈 일이었다."
+        }
+      ]
+    }
+  ],
+  "wry": [
+    {
+      "cue": "말·표정이 비꼬는 유머의",
+      "ko": "비꼬는, 씁쓸한 유머의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "showing dry, ironic humor, especially in a slightly disapproving way",
+      "syn": ["ironic"],
+      "ex": [
+        {
+          "en": "He gave a wry smile and shook his head.",
+          "ko": "그는 씁쓸한 미소를 지으며 고개를 저었다."
+        }
+      ]
+    },
+    {
+      "cue": "얼굴·목이 한쪽으로 뒤틀린",
+      "ko": "비뚤어진, 일그러진",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C2",
+      "en": "bent or twisted to one side",
+      "syn": [],
+      "ex": [
+        {
+          "en": "The injury left him with a wry neck.",
+          "ko": "그 부상으로 그는 목이 한쪽으로 비뚤어졌다."
+        }
+      ]
+    }
+  ],
+  "wryly": [
+    {
+      "cue": "씁쓸한 유머를 담아",
+      "ko": "씁쓸하게, 비꼬며",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "in a way that shows dry, ironic humor",
+      "syn": [],
+      "ex": [
+        {
+          "en": "\"That went well,\" she said wryly.",
+          "ko": "\"잘 됐네,\" 그녀가 비꼬듯 말했다."
+        }
+      ]
+    }
+  ],
+  "zany": [
+    {
+      "cue": "행동·유머가 엉뚱하고 우스운",
+      "ko": "우스꽝스러운, 엉뚱한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "funny in a strange, unusual, and slightly crazy way",
+      "syn": ["goofy", "wacky"],
+      "ex": [
+        {
+          "en": "The show is known for its zany humor.",
+          "ko": "그 쇼는 엉뚱한 유머로 유명하다."
+        }
+      ]
+    }
+  ]
+}
