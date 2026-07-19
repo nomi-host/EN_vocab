@@ -1,0 +1,414 @@
+{
+  "worrying": [
+    {
+      "cue": "상황이 걱정을 불러일으키는",
+      "ko": "걱정스러운",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "causing you to feel worried or anxious",
+      "syn": ["distressing", "disturbing", "troubling"],
+      "ex": [{ "en": "The rising number of cases is worrying.", "ko": "증가하는 확진자 수가 걱정스럽다." }]
+    }
+  ],
+  "worsen": [
+    {
+      "cue": "상황이 저절로 더 나쁘게",
+      "ko": "악화되다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "become worse",
+      "syn": ["decline", "deteriorate"],
+      "ex": [{ "en": "Her condition worsened overnight.", "ko": "그녀의 상태는 밤사이 악화되었다." }]
+    },
+    {
+      "cue": "상황을 더 나쁘게 만들어",
+      "ko": "악화시키다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "make a bad situation even worse",
+      "syn": ["aggravate", "exacerbate"],
+      "ex": [{ "en": "The drought worsened the food shortage.", "ko": "가뭄이 식량 부족을 악화시켰다." }]
+    }
+  ],
+  "worship": [
+    {
+      "cue": "신을 향한 종교 의식",
+      "ko": "예배",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a religious ceremony in which people show love and respect for a god",
+      "syn": [],
+      "ex": [{ "en": "Sunday worship begins at ten o'clock.", "ko": "일요일 예배는 10시에 시작한다." }]
+    },
+    {
+      "cue": "기도하며 신을 경배하다",
+      "ko": "경배하다, 예배드리다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "pray to and show love and respect for a god",
+      "syn": [],
+      "ex": [{ "en": "They gather every week to worship together.", "ko": "그들은 매주 함께 예배드리기 위해 모인다." }]
+    },
+    {
+      "cue": "사람을 지나치게 떠받들어",
+      "ko": "떠받들다, 우상시하다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "admire and love someone so much that you treat them as perfect",
+      "syn": ["idolize", "adore"],
+      "ex": [{ "en": "He worshipped his older brother as a child.", "ko": "그는 어릴 때 형을 우상처럼 떠받들었다." }]
+    }
+  ],
+  "worthless": [
+    {
+      "cue": "돈·물건으로서 가치가 없는",
+      "ko": "가치 없는, 쓸모없는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "having no real value or usefulness",
+      "syn": ["useless"],
+      "ex": [{ "en": "The old coins turned out to be worthless.", "ko": "그 오래된 동전들은 알고 보니 가치가 없었다." }]
+    },
+    {
+      "cue": "사람의 행실·인격을 비난하며",
+      "ko": "쓸모없는, 형편없는(사람)",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "(of a person) deserving no respect because of bad behavior or qualities",
+      "syn": ["despicable"],
+      "ex": [{ "en": "His constant criticism made her feel worthless.", "ko": "그의 끊임없는 비난은 그녀를 스스로 쓸모없다고 느끼게 만들었다." }]
+    }
+  ],
+  "wreck": [
+    {
+      "cue": "바다에서 파손된 배",
+      "ko": "난파선",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a ship that has been destroyed or badly damaged at sea",
+      "syn": ["shipwreck"],
+      "ex": [{ "en": "Divers explored the wreck of the sunken ship.", "ko": "잠수부들은 침몰한 배의 난파선을 탐사했다." }]
+    },
+    {
+      "cue": "차량이 심하게 부서진 사고 잔해",
+      "ko": "(차량) 충돌 사고, 잔해",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "a vehicle that has been badly damaged in a serious accident",
+      "syn": ["crash"],
+      "ex": [{ "en": "The car was a total wreck after the crash.", "ko": "그 차는 충돌 후 완전히 부서진 잔해가 되었다." }]
+    },
+    {
+      "cue": "몸과 마음이 완전히 지친 사람",
+      "ko": "만신창이가 된 사람",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "a person who is in very bad physical or mental condition",
+      "syn": [],
+      "ex": [{ "en": "After the divorce, he was an emotional wreck.", "ko": "이혼 후 그는 정서적으로 만신창이가 되었다." }]
+    },
+    {
+      "cue": "물건·계획 등을 심하게 망가뜨리다",
+      "ko": "파괴하다, 망치다",
+      "pos": "동사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "destroy or badly damage something",
+      "syn": ["destroy", "ruin"],
+      "ex": [{ "en": "The storm wrecked several boats in the harbor.", "ko": "그 폭풍은 항구에 있던 여러 배를 파괴했다." }]
+    }
+  ],
+  "wrongly": [
+    {
+      "cue": "부당하게, 억울하게 비난받아",
+      "ko": "부당하게, 억울하게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "in a way that is unfair or unjust",
+      "syn": ["unfairly", "unjustly"],
+      "ex": [{ "en": "She was wrongly blamed for the mistake.", "ko": "그녀는 그 실수에 대해 부당하게 비난받았다." }]
+    },
+    {
+      "cue": "사실과 다르게, 정확하지 않게",
+      "ko": "잘못, 틀리게",
+      "pos": "부사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "in an incorrect or mistaken way",
+      "syn": ["incorrectly"],
+      "ex": [{ "en": "His name was wrongly spelled on the certificate.", "ko": "그의 이름이 증명서에 잘못 표기되었다." }]
+    }
+  ],
+  "x-ray": [
+    {
+      "cue": "몸속을 찍은 사진",
+      "ko": "엑스레이(사진)",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a photograph of the inside of your body made using a special kind of radiation",
+      "syn": [],
+      "ex": [{ "en": "The doctor took an X-ray of her broken arm.", "ko": "의사는 그녀의 부러진 팔을 엑스레이로 찍었다." }]
+    },
+    {
+      "cue": "엑스레이로 몸을 촬영하다",
+      "ko": "엑스레이를 찍다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "examine part of someone's body by taking an X-ray photograph of it",
+      "syn": [],
+      "ex": [{ "en": "They X-rayed his chest to check for pneumonia.", "ko": "그들은 폐렴 여부를 확인하려고 그의 가슴을 엑스레이로 찍었다." }]
+    },
+    {
+      "cue": "물체를 투과하는 방사선 자체",
+      "ko": "엑스선, 방사선",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "a form of radiation that can pass through solid objects and is used to see inside things",
+      "syn": [],
+      "ex": [{ "en": "X-rays can pass through skin but not bone.", "ko": "엑스선은 피부는 통과하지만 뼈는 통과하지 못한다." }]
+    }
+  ],
+  "yacht": [
+    {
+      "cue": "돛이나 엔진으로 항해하는 고급 배",
+      "ko": "요트",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "a boat with sails or an engine, used for racing or pleasure trips",
+      "syn": [],
+      "ex": [{ "en": "They spent the weekend sailing on a yacht.", "ko": "그들은 요트를 타고 주말을 보냈다." }]
+    }
+  ],
+  "yawn": [
+    {
+      "cue": "졸리거나 지루할 때 입을 벌리는 행동",
+      "ko": "하품",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "an act of opening your mouth wide and breathing in deeply, usually when tired or bored",
+      "syn": [],
+      "ex": [{ "en": "She let out a big yawn during the meeting.", "ko": "그녀는 회의 중에 크게 하품을 했다." }]
+    },
+    {
+      "cue": "졸리거나 지루해서 하품하다",
+      "ko": "하품하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "open your mouth wide and breathe in deeply because you are tired or bored",
+      "syn": [],
+      "ex": [{ "en": "He yawned loudly in the middle of the lecture.", "ko": "그는 강의 중간에 크게 하품을 했다." }]
+    },
+    {
+      "cue": "틈·구멍이 입을 벌리듯 크게 벌어진",
+      "ko": "(입을 벌리듯) 쩍 벌어지다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "C1",
+      "en": "(of a gap or opening) be wide open, in a way that seems ready to swallow something",
+      "syn": [],
+      "ex": [{ "en": "A dark chasm yawned before them.", "ko": "어두운 협곡이 그들 앞에 쩍 벌어져 있었다." }]
+    }
+  ],
+  "yearn": [
+    {
+      "cue": "이루기 힘든 무언가를 간절히",
+      "ko": "갈망하다, 열망하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "want something very much, especially something that is hard to have",
+      "syn": ["long", "crave"],
+      "ex": [{ "en": "She yearned for a quieter life in the countryside.", "ko": "그녀는 시골에서의 더 조용한 삶을 갈망했다." }]
+    },
+    {
+      "cue": "곁에 없는 사람·고향을 사무치게",
+      "ko": "그리워하다, 사무치게 그리다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "feel a strong sense of longing for someone or something that is not present",
+      "syn": ["miss", "pine for"],
+      "ex": [{ "en": "He yearned for his hometown after years abroad.", "ko": "그는 몇 년간 해외에 있으면서 고향을 사무치게 그리워했다." }]
+    }
+  ],
+  "yield": [
+    {
+      "cue": "농작물·생산의 산출량",
+      "ko": "산출량, 수확량",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the amount of a crop or product that is produced",
+      "syn": ["output"],
+      "ex": [{ "en": "Farmers reported a higher crop yield this year.", "ko": "농부들은 올해 더 높은 수확량을 보고했다." }]
+    },
+    {
+      "cue": "실험·노력이 결과를",
+      "ko": "산출하다, 내다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "produce or provide a result, product, or profit",
+      "syn": ["produce", "generate"],
+      "ex": [{ "en": "The experiment yielded surprising results.", "ko": "그 실험은 놀라운 결과를 산출했다." }]
+    },
+    {
+      "cue": "투자에서 얻는 수익의 비율",
+      "ko": "수익률",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "C1",
+      "en": "the profit or income produced by an investment, shown as a percentage",
+      "syn": [],
+      "ex": [{ "en": "The bond offers a yield of five percent.", "ko": "그 채권은 5퍼센트의 수익률을 제공한다." }]
+    },
+    {
+      "cue": "요구·압력에 못 이겨",
+      "ko": "굴복하다, 양보하다",
+      "pos": "동사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "stop resisting and agree to what someone wants",
+      "syn": ["give in", "surrender"],
+      "ex": [{ "en": "The government refused to yield to the protesters' demands.", "ko": "정부는 시위대의 요구에 굴복하기를 거부했다." }]
+    },
+    {
+      "cue": "교차로에서 다른 차량에게",
+      "ko": "(차량이) 양보하다",
+      "pos": "동사",
+      "lv": 5,
+      "cefr": "B1",
+      "en": "allow another vehicle to go first at a road junction",
+      "syn": [],
+      "ex": [{ "en": "Drivers must yield to pedestrians at the crosswalk.", "ko": "운전자는 횡단보도에서 보행자에게 양보해야 한다." }]
+    }
+  ],
+  "youthful": [
+    {
+      "cue": "나이에 비해 젊고 활기차 보이는",
+      "ko": "젊어 보이는, 젊음이 넘치는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "looking or seeming young and full of energy",
+      "syn": ["young"],
+      "ex": [{ "en": "Despite being sixty, she has a youthful energy.", "ko": "그녀는 예순 살임에도 젊음이 넘치는 활기를 지녔다." }]
+    }
+  ],
+  "yummy": [
+    {
+      "cue": "음식이 아주 맛있어서(구어체)",
+      "ko": "아주 맛있는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "very pleasant to eat (informal)",
+      "syn": ["delicious"],
+      "ex": [{ "en": "This cake is so yummy!", "ko": "이 케이크 정말 맛있다!" }]
+    }
+  ],
+  "zebra": [
+    {
+      "cue": "검은색과 흰색 줄무늬가 있는 아프리카 동물",
+      "ko": "얼룩말",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "an African wild animal like a horse, with black and white stripes",
+      "syn": [],
+      "ex": [{ "en": "Zebras live in large herds on the African plains.", "ko": "얼룩말은 아프리카 초원에서 큰 무리를 지어 산다." }]
+    }
+  ],
+  "zip": [
+    {
+      "cue": "옷·가방에 달린 잠그는 장치",
+      "ko": "지퍼",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "A2",
+      "en": "a fastener with two rows of teeth that lock together, used to close clothes or bags",
+      "syn": ["zipper"],
+      "ex": [{ "en": "Her jacket has a broken zip.", "ko": "그녀의 재킷은 지퍼가 고장 났다." }]
+    },
+    {
+      "cue": "지퍼로 옷·가방을 잠그다",
+      "ko": "지퍼를 잠그다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "A2",
+      "en": "close something using a zip",
+      "syn": [],
+      "ex": [{ "en": "He zipped up his coat before going outside.", "ko": "그는 밖에 나가기 전에 코트 지퍼를 잠갔다." }]
+    },
+    {
+      "cue": "사람·팀에 넘치는 활력(구어)",
+      "ko": "활기, 생기",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "energy and enthusiasm (informal)",
+      "syn": ["energy", "vigor"],
+      "ex": [{ "en": "The new coach brought some zip to the team.", "ko": "새 코치는 팀에 활기를 불어넣었다." }]
+    },
+    {
+      "cue": "차량 등이 매우 빠르게(구어)",
+      "ko": "쌩 하고 가다",
+      "pos": "동사",
+      "lv": 4,
+      "cefr": "B2",
+      "en": "move very quickly (informal)",
+      "syn": ["speed", "whizz"],
+      "ex": [{ "en": "Cars zipped past on the highway.", "ko": "차들이 고속도로 위를 쌩 하고 지나갔다." }]
+    }
+  ],
+  "zoom": [
+    {
+      "cue": "수치·인기가 갑자기 가파르게 오르는 것",
+      "ko": "급상승",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a sudden, steep rise, especially upward into the air",
+      "syn": [],
+      "ex": [{ "en": "The small plane pulled into a steep zoom to avoid the hill.", "ko": "그 소형 비행기는 언덕을 피하려고 가파르게 급상승했다." }]
+    },
+    {
+      "cue": "카메라·화면을 확대·축소하다",
+      "ko": "확대하다, 줌하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B1",
+      "en": "make an image on a camera or screen look bigger or closer, or smaller and farther away",
+      "syn": [],
+      "ex": [{ "en": "She zoomed in on his face in the photo.", "ko": "그녀는 사진 속 그의 얼굴을 확대했다." }]
+    },
+    {
+      "cue": "자동차 등이 매우 빠르게 지나가다",
+      "ko": "쌩 하고 질주하다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "B1",
+      "en": "move very fast, especially with a loud noise",
+      "syn": ["speed", "whizz"],
+      "ex": [{ "en": "The motorcycle zoomed past us on the highway.", "ko": "그 오토바이가 고속도로에서 우리 옆을 쌩 하고 지나갔다." }]
+    }
+  ]
+}
