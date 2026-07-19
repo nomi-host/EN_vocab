@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.49">
-<link rel="icon" href="img/icon-192.png?v=0.35.49" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.49">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.49" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.49" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.52">
+<link rel="icon" href="img/icon-192.png?v=0.35.51" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.51">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.51" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.51" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.49"></script>
+<script src="img/hero/lottie.min.js?v=0.35.51"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.49"></script>
+<script src="lib/compromise.min.js?v=0.35.51"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.49"></script>
-<script src="words.js?v=0.35.49"></script>
+<script src="lib/supabase.min.js?v=0.35.51"></script>
+<script src="words.js?v=0.35.52"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.49"></script><style>
+<script src="grammar_tags.js?v=0.35.51"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -41,15 +41,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.49") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.49") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.51") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.51") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.49") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.49") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.51") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.51") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -317,7 +317,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.49");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.52");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -994,6 +994,12 @@ textarea.pc-input{resize:none;line-height:1.5;}
 .charrow .cta.free{background:var(--accent);color:var(--on-accent);}
 .charrow .cta.buy{background:var(--ink);color:var(--on-accent);}
 .charrow .cta.locked{background:var(--fill);color:var(--muted);}
+/* 설정 > 계정(로그인/동기화, 2026-07-19 PLAN 6.6.0) — ptbox와 같은 톤(웜그레이 박스) */
+.acct-row{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--warmgray);border-radius:0;padding:14px 16px;}
+.acct-info{min-width:0;}
+.acct-email{font-size:14px;font-weight:800;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.acct-sub{font-size:12px;color:var(--ink-2);}
+.acct-actions{display:flex;gap:6px;flex:none;}
 .ptbox{display:flex;align-items:center;justify-content:space-between;background:var(--warmgray);border-radius:0;padding:14px 16px;}
 .ptbox .v{font-size:20px;font-weight:800;color:var(--ink-2);font-variant-numeric:tabular-nums;}
 .ptbox .l{font-size:12px;color:var(--ink-2);}
@@ -1018,7 +1024,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.49";const APP_BUILD = "2026-07-19"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.52";const APP_BUILD = "2026-07-19"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1266,6 +1272,76 @@ const SUPABASE_ANON_KEY = "sb_publishable_s4C8mg3QafZgea9wvvA7vw_8pvNnPjr";
 const SB = (SUPABASE_URL && SUPABASE_ANON_KEY && typeof window !== "undefined" && window.supabase)
   ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
   : null;
+
+/* 서버 동기화 대상 localStorage 키 전체(2026-07-19, PLAN 6.6.0 베타 스코프) — 세부 테이블로
+   안 쪼개고 이 키들을 통째로 하나의 jsonb(learning_state.data)에 담아 올리고 내린다.
+   앱에 새 localStorage 키를 추가하면 이 목록에도 반드시 같이 추가할 것 — 안 하면 그 데이터는
+   로그인해도 기기 간에 안 넘어간다(조용히 누락되는 버그라 알아채기 어려움). */
+const SYNC_KEYS = [
+  "en_srs", "en_activity_v1", "en_points", "en_prefs", "en_char", "en_leveltest_v1",
+  "en_custom_personas", "en_talk_rooms", "en_fav_sentences", "en_favs", "en_mywords",
+  "en_wordlists", "en_writing_history", "en_writing_recent",
+  "en_hero_stickers_v1", "en_hero_sticker_order_v1", "en_hero_sticker_removed_v1", "en_hero_badge_stickers_v1",
+];
+function collectSyncState() {
+  const out = {};
+  SYNC_KEYS.forEach(k => { const v = localStorage.getItem(k); if (v != null) out[k] = v; });
+  return out;
+}
+function applySyncState(data) {
+  if (!data) return;
+  Object.entries(data).forEach(([k, v]) => { if (SYNC_KEYS.includes(k) && typeof v === "string") localStorage.setItem(k, v); });
+}
+
+/* 로그인·동기화 공용 헬퍼 — 베타 스코프대로 단순화(PLAN 6.6.0): 양방향 병합 없음, 로그인
+   시점에 "서버에 이미 데이터가 있으면 그걸 내려받아 이 기기에 덮어쓰고, 없으면(첫 로그인)
+   이 기기의 게스트 데이터를 그대로 올린다". 그 이후 실시간 동기화는 없고 "지금 동기화"
+   수동 버튼으로만(설정 화면) — 자동 양방향 병합은 이후 단계(P1)로 미룸. */
+const AUTH = (() => {
+  let user = null;
+  const listeners = new Set();
+  const notify = () => listeners.forEach(cb => cb(user));
+  async function syncOnLogin() {
+    if (!SB || !user) return;
+    try {
+      const { data, error } = await SB.from("learning_state").select("data").eq("user_id", user.id).maybeSingle();
+      if (error) throw error;
+      const serverData = data && data.data;
+      if (serverData && Object.keys(serverData).length > 0) {
+        applySyncState(serverData); // 서버가 진실의 원천 — 이 기기(게스트 상태 포함)를 덮어씀
+        location.reload(); // 이미 메모리에 로드된 state가 많아 새로고침이 가장 안전
+      } else {
+        await SB.from("learning_state").upsert({ user_id: user.id, data: collectSyncState(), updated_at: new Date().toISOString() });
+      }
+    } catch (e) { console.error("초기 동기화 실패", e); }
+  }
+  if (SB) {
+    SB.auth.getSession().then(({ data }) => { user = data.session ? data.session.user : null; notify(); });
+    SB.auth.onAuthStateChange((event, session) => {
+      const prevId = user && user.id;
+      user = session ? session.user : null;
+      notify();
+      if (event === "SIGNED_IN" && user && user.id !== prevId) syncOnLogin();
+    });
+  }
+  return {
+    getUser: () => user,
+    onChange(cb) { listeners.add(cb); return () => listeners.delete(cb); },
+    signInWithGoogle() {
+      if (!SB) return;
+      SB.auth.signInWithOAuth({ provider: "google", options: { redirectTo: location.origin + location.pathname } });
+    },
+    signOut() { return SB ? SB.auth.signOut() : Promise.resolve(); },
+    async syncNow() {
+      if (!SB || !user) return { ok: false, error: "로그인 필요" };
+      try {
+        const { error } = await SB.from("learning_state").upsert({ user_id: user.id, data: collectSyncState(), updated_at: new Date().toISOString() });
+        if (error) throw error;
+        return { ok: true };
+      } catch (e) { return { ok: false, error: e.message }; }
+    },
+  };
+})();
 
 /* Worker의 MODEL_FALLBACKS와 같은 원리의 후보 체인 — 404/429/위치거부(400 FAILED_PRECONDITION)면
    다음 모델로 자동 전환. 무료 티어는 현세대 Flash 계열만(Pro는 2026-04부터 유료 전용)이라
@@ -2699,7 +2775,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.49" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.51" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -3058,7 +3134,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.49";
+const HERO_V = "0.35.52";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -3325,8 +3401,9 @@ function HeroScene({ onOpenDecorate, decorateVersion, stage }) {
   if (stage >= 3) {
     // top 1%→3.7%: 그림자(발밑 먼지가 아니라 프레임에 박힌 낙하 그림자)가 땅 라인 위에 떠 보인다는
     // 지적으로 내림 — 그림자 자체는 프레임마다 native 좌표가 고정(x73~105,y180~192)이라 그 하단이
-    // 땅 라인(scene y≈89.4%)에 오도록 역산(2026-07-19).
-    catBoxStyle = { left: "26.13%", top: "3.7%", width: "56%", height: "89.1%" };
+    // 땅 라인(scene y≈89.4%)에 오도록 역산(2026-07-19). 이후 "전체 위치를 아래 15px·왼쪽 10px"
+    // 추가 지적으로 top 3.7→10.52%(+15px/220), left 26.13→23.27%(-10px/350).
+    catBoxStyle = { left: "23.27%", top: "10.52%", width: "56%", height: "89.1%" };
     catContent = <FlyCat onIntroEnd={() => setFlyGroundPhase("ramp")} />;
   } else if (stage >= 2) {
     // 달리기 포즈는 실루엣 비율이 걷기와 달라(다리를 더 벌린 역동적 포즈) 레퍼런스 실측 박스도 다름.
@@ -7083,6 +7160,30 @@ function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
   const first = charK === null;
   const lastLt = loadLevelTest();
 
+  const [authUser, setAuthUser] = useState(() => AUTH.getUser());
+  const [syncMsg, setSyncMsg] = useState("");
+  useEffect(() => AUTH.onChange(setAuthUser), []);
+  const doSyncNow = async () => {
+    setSyncMsg("동기화 중…");
+    const r = await AUTH.syncNow();
+    setSyncMsg(r.ok ? "방금 동기화됐어요" : "동기화 실패: " + (r.error || "알 수 없는 오류"));
+  };
+
+  const [bugMsg, setBugMsg] = useState("");
+  const [bugSending, setBugSending] = useState(false);
+  const [bugSent, setBugSent] = useState(false);
+  const submitBug = async () => {
+    if (!SB || !bugMsg.trim() || bugSending) return;
+    setBugSending(true);
+    try {
+      await SB.from("bug_reports").insert({
+        message: bugMsg.trim(), page: "settings", app_version: APP_VERSION,
+        user_id: authUser ? authUser.id : null,
+      });
+      setBugSent(true); setBugMsg("");
+    } catch (e) { setSyncMsg(""); } finally { setBugSending(false); }
+  };
+
   useEffect(() => () => stopSpeaking(), []); // 설정 닫힐 때(언마운트) 미리듣기 음성 정지
 
   const handlePick = k => {
@@ -7112,6 +7213,32 @@ function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
           <button className="back" onClick={onClose} aria-label="닫기"><Icon name="close" size={20} /></button>
         </div>
         <div className="sheet-body">
+          {SB && (
+            <div>
+              <div className="wd-sec-t">계정</div>
+              {authUser ? (
+                <div className="acct-row">
+                  <div className="acct-info">
+                    <div className="acct-email">{authUser.email}</div>
+                    <div className="acct-sub">로그인됨 · 기기를 바꿔도 학습 기록이 유지돼요</div>
+                  </div>
+                  <div className="acct-actions">
+                    <button className="qhint-btn" onClick={doSyncNow}>지금 동기화</button>
+                    <button className="qhint-btn" onClick={() => AUTH.signOut()}>로그아웃</button>
+                  </div>
+                </div>
+              ) : (
+                <div className="acct-row">
+                  <div className="acct-info">
+                    <div className="acct-sub">로그인하면 기기를 바꿔도 학습 기록이 유지돼요</div>
+                  </div>
+                  <button className="qsub" style={{ flex: "none", padding: "10px 16px" }} onClick={() => AUTH.signInWithGoogle()}>구글로 로그인</button>
+                </div>
+              )}
+              {syncMsg && <div className="acct-sub" style={{ marginTop: 6 }}>{syncMsg}</div>}
+            </div>
+          )}
+
           <div className="ptbox">
             <div>
               <div className="l">보유 포인트</div>
@@ -7222,6 +7349,18 @@ function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
               <div className="empty-note" style={{ marginTop: 6 }}>유럽 공통 언어 기준(CEFR)의 6단계 척도예요. 단어·의미마다 이 레벨이 매겨져 있고, 낮을수록 더 쉽고 흔한 뜻이에요.</div>
             </div>
           </div>
+
+          {SB && (
+            <div>
+              <div className="wd-sec-t">버그 제보</div>
+              <textarea className="qdictate" rows={3} value={bugMsg} onChange={e => { setBugMsg(e.target.value); setBugSent(false); }}
+                placeholder="어떤 문제가 있었는지 알려주세요" />
+              <button className="qsub" style={{ marginTop: 8 }} disabled={!bugMsg.trim() || bugSending} onClick={submitBug}>
+                {bugSending ? "보내는 중…" : "제보하기"}
+              </button>
+              {bugSent && <div className="acct-sub" style={{ marginTop: 6 }}>제보 감사합니다!</div>}
+            </div>
+          )}
 
           <div className="empty-note" style={{ textAlign: "center", marginTop: 4 }}>{APP_VERSION} · {APP_BUILD}</div>
         </div>
@@ -7340,7 +7479,7 @@ function App() {
   return (
     <div className="app">
       <div className="topbar">
-        <div className="brand" role="button" tabIndex={0} onClick={() => { setLtOpen(false); setSettingsOpen(false); closeSheet(); setTab("home"); setTabResetKey(k => ({ ...k, home: k.home + 1 })); }} style={{ cursor: "pointer" }}>No<b>English</b></div>
+        <div className="brand" role="button" tabIndex={0} onClick={() => { setLtOpen(false); setSettingsOpen(false); closeSheet(); setTab("home"); setTabResetKey(k => ({ ...k, home: k.home + 1 })); }} style={{ cursor: "pointer" }}><img src={"img/logo.svg?v=" + APP_VERSION} alt="NoEnglish" style={{ width: "120px", height: "auto", display: "block" }} /></div>
         <div className="topbar-right">
           <span className="pill"><span className={"dot hl-" + streakHl(homeStreak)} />연속 {homeStreak}일</span>
           <button className="avatar-btn" aria-label="설정" onClick={() => setSettingsOpen(true)}><Icon name="settings" size={19} /></button>
