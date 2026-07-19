@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NoEnglish 히어로 영역 가이드</title>
+<style>
+@font-face{
+  font-family:"LINE Seed KR";
+  font-weight:400; font-style:normal; font-display:swap;
+  src:url("../img/fonts/LINESeedKR-Regular.woff2") format("woff2"),
+      url("../img/fonts/LINESeedKR-Regular.woff") format("woff");
+}
+@font-face{
+  font-family:"LINE Seed KR";
+  font-weight:700; font-style:normal; font-display:swap;
+  src:url("../img/fonts/LINESeedKR-Bold.woff2") format("woff2"),
+      url("../img/fonts/LINESeedKR-Bold.woff") format("woff");
+}
+:root{
+  --bg:#FFFAF1; --surface:#FFFDF8; --ink:#211C15; --ink-2:#4A4234; --muted:#8C8270;
+  --line:#E6DCC3; --fill:#FAF4E7; --accent-soft:#EDE1C2; --on-accent:#FFFBF1;
+  --hi-green:#D8ED77; --hi-green-dark:#92AD17; --hi-pink:#FFB4D4; --hi-pink-dark:#EF0066;
+  --hi-yellow:#FFDD5C; --hi-blue:#93D3FF; --card-border:rgba(158,124,58,.4);
+  --shadow:0 1px 2px rgba(33,28,21,.05), 0 8px 24px rgba(33,28,21,.06);
+}
+*{box-sizing:border-box;}
+body{margin:0; padding:32px 24px 80px; background:var(--bg); color:var(--ink);
+  font-family:"LINE Seed KR",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",system-ui,sans-serif;}
+h1{font-size:26px; font-weight:800; margin:0 0 4px;}
+.sub{color:var(--muted); font-size:13px; margin-bottom:36px; max-width:720px; line-height:1.6;}
+section{margin-bottom:44px;}
+h2{font-size:17px; font-weight:800; margin:0 0 4px; letter-spacing:-.2px;}
+h3{font-size:14px; font-weight:800; margin:20px 0 6px;}
+.note{font-size:12px; color:var(--muted); margin-bottom:14px; line-height:1.65; max-width:760px;}
+code{background:var(--fill); border-radius:4px; padding:1px 5px; font-size:.92em;}
+a{color:var(--ink); text-decoration-color:var(--card-border);}
+table{border-collapse:collapse; font-size:12.5px; max-width:100%; margin-bottom:10px;}
+th,td{border:1px solid var(--card-border); padding:6px 10px; text-align:left; vertical-align:top;}
+th{background:var(--fill); font-weight:800; font-size:11px; color:var(--ink-2);}
+.overflow{overflow-x:auto;}
+.warn{background:var(--accent-soft); border:1px solid var(--card-border); padding:10px 14px; font-size:12.5px; line-height:1.6; margin:10px 0;}
+.warn b{color:var(--ink);}
+
+/* ---- 스테이지 다이어그램 ---- */
+.stage-demo{position:relative; width:350px; max-width:100%; aspect-ratio:350/220; background:#FAF3E5;
+  border:0.5px solid var(--card-border); margin:10px 0 6px; overflow:hidden;}
+.stage-demo .ground{position:absolute; left:0; right:0; top:84.09%; height:13.64%; background:repeating-linear-gradient(90deg,var(--ink) 0 6px,transparent 6px 16px); opacity:.5;}
+.stage-demo .box{position:absolute; border:1.5px dashed var(--ink-2); display:flex; align-items:center; justify-content:center; font-size:11px; font-weight:700; text-align:center; color:var(--ink-2); background:rgba(216,237,119,.25);}
+.stage-row{display:flex; gap:18px; flex-wrap:wrap; margin-bottom:6px;}
+.stage-col{width:280px;}
+.stage-lbl{font-size:12px; font-weight:800; margin:8px 0 2px;}
+.stage-sub{font-size:11px; color:var(--muted); margin-bottom:4px;}
+
+/* ---- z-index 스택 ---- */
+.zstack{display:flex; flex-direction:column-reverse; gap:4px; max-width:640px;}
+.zrow{font-size:12.5px; line-height:1.6; padding:8px 12px; background:var(--surface); border:1px solid var(--card-border);}
+.zrow .zn{font-family:monospace; font-weight:800; color:var(--ink-2); background:var(--fill); padding:1px 7px; margin-right:8px;}
+
+/* ---- 팝업 미니 데모 ---- */
+.popup-demo{position:relative; width:260px; height:160px; background:#FAF3E5; border:0.5px solid var(--card-border); margin:10px 0;}
+.popup-demo .dim{position:absolute; inset:0; background:rgba(33,28,21,.35); display:flex; align-items:center; justify-content:center; padding:14px;}
+.popup-demo .card{background:var(--surface); border:1px solid var(--ink); padding:10px 12px; font-size:11px; font-weight:700; text-align:center; box-shadow:var(--shadow);}
+</style>
+</head>
+<body>
+
+<h1>NoEnglish 히어로 영역 가이드</h1>
+<div class="sub">홈 화면 상단 히어로 섹션(캐릭터+노트 배경+스티커)의 현재 구현 스펙 — <code>index.html</code>의 실제 코드 기준
+(2026-07-20 최신화). 이 문서는 <b>거동/치수 레퍼런스</b>용이고, 캐릭터 아트 자체의 제작 파이프라인은
+<a href="../design/hero_cat_lottie/README.md">design/hero_cat_lottie/README.md</a>(Lottie 제작 과정)와
+<a href="./stage-pixel-spec.svg">stage-pixel-spec.svg</a>(char2~4 정지 포즈 배치 블루프린트)가 정본입니다.
+값을 바꿔도 이 페이지엔 반영 안 됨(참고용) — 실제로 바뀌면 <code>index.html</code>의 <code>HeroScene</code>을 고치고
+이 문서도 같이 갱신할 것.</div>
+
+<section>
+  <h2>전체 구조 &amp; 레이어 순서</h2>
+  <div class="note">히어로 박스는 <code>.hero-scene</code> — <code>width:100%; aspect-ratio:350/220</code>,
+    배경 <code>#FAF3E5</code> + <code>var(--card-border)</code> 1px 외곽선(노트 줄공책 느낌은 <code>.ruled-paper</code>가 별도 담당).
+    <code>position:relative; z-index:0</code>으로 독립 스태킹 컨텍스트를 만들어서, 그 안의 자식 z-index는
+    전체 화면 모달(<code>.dlg-backdrop</code> 등, z-index:60)과 절대 충돌하지 않음 — 서로 다른 스태킹 컨텍스트라
+    숫자만 보고 비교하면 안 됨.</div>
+  <div class="zstack">
+    <div class="zrow"><span class="zn">150</span>캐릭터 탭 안내 팝업(<code>.hero-dim</code>/<code>.hero-popup-card</code>) — 뜰 때만</div>
+    <div class="zrow"><span class="zn">100</span>캐릭터(<code>.hero-cat</code>) — 항상 최상위 고정(스티커에 절대 안 가려짐)</div>
+    <div class="zrow"><span class="zn">10</span>편집하기 알약 버튼(<code>.hero-edit-btn</code>)</div>
+    <div class="zrow"><span class="zn">20(드래그중)</span>스티커(<code>.hero-sticker</code>) — 평소엔 z-index 없음(DOM 순서), 드래그 중이거나 집으면 order 배열로 앞으로</div>
+    <div class="zrow"><span class="zn">1</span>땅(<code>.hero-ground</code>) — 무한 스크롤 스트립</div>
+    <div class="zrow"><span class="zn">0</span>배경(<code>.hero-scene</code> 자체, <code>#FAF3E5</code>)</div>
+  </div>
+</section>
+
+<section>
+  <h2>연속 학습일 → 3단계 성장(캐릭터+땅 속도 연동)</h2>
+  <div class="note"><code>streakStage(days){ return days&lt;3?1:days&lt;7?2:days&lt;14?3:4 }</code> — 3/7/14일 경계,
+    0단계 구분 없음(2026-07-19 사용자가 명시적으로 이 값으로 확정, 다른 경계값 재제안은 반려됨).
+    <b>3·4단계는 전용 아트가 아직 없어 둘 다 "날기" 애니메이션을 공유</b>한다.</div>
+  <table>
+    <tr><th>단계</th><th>조건</th><th>Lottie 소스</th><th>캐릭터 루프</th><th>땅 스크롤 속도</th></tr>
+    <tr><td>1 · 걷기</td><td>연속 &lt; 3일</td><td><code>img/hero/cat.json</code></td><td>1s/loop</td><td>기본(정지 배경, 애니메이션 없음)</td></tr>
+    <tr><td>2 · 달리기</td><td>3 ≤ 연속 &lt; 7일</td><td><code>img/hero/cat_run.json</code></td><td>0.6s/loop(≈1.67배)</td><td>기본의 <b>1.5배</b>(<code>RUN_GROUND_DUR = 7/1.5s</code>)</td></tr>
+    <tr><td>3·4 · 날기</td><td>연속 ≥ 7일</td><td><code>cat_fly_intro.json</code>(1회) → <code>cat_fly_loop.json</code>(무한)</td><td>루프 0.6s, 인트로 0.4s(1회만)</td><td>달리기의 <b>3배</b>(<code>FLY_GROUND_DUR = RUN_GROUND_DUR/3</code>)</td></tr>
+  </table>
+  <div class="note">날기 단계는 땅이 <b>정지(인트로 동안)→서서히 가속(ease-in 램프, 0.6s)→정속 무한루프</b> 3단 상태머신
+    (<code>flyGroundPhase</code>: stopped→ramp→steady)으로 인트로 점프와 타이밍을 맞춤 — 램프↔정속 전환은
+    <code>animation-delay</code> 음수 트릭으로 이음매 없이 이어붙임(<code>FLY_RAMP_DIST=20%</code>, <code>FLY_RAMP_DUR=0.6s</code>).</div>
+</section>
+
+<section>
+  <h2>캐릭터 박스 위치/크기 (스테이지별 다름 — 실측 좌표)</h2>
+  <div class="warn"><b>함정</b>: Lottie comp(정사각 200×200)는 캐릭터 실루엣 자체보다 훨씬 크게(내부 여백 포함)
+    렌더되므로, "이 %만큼 크게 보이면 좋겠다"는 목표 실루엣 비율을 박스 치수에 그대로 넣으면 안 된다.
+    실제 렌더를 픽셀 단위로 실측(연결요소 분석)한 뒤 comp 여백을 역산해서 박스 %를 정해야 함 — 자세한 계산
+    과정은 <a href="../design/hero_cat_lottie/README.md">hero_cat_lottie/README.md</a> "박스 재계산" 절 참고.
+    포즈(걷기/달리기/날기)마다 실루엣 비율이 달라 박스 값도 전부 다름.</div>
+  <div class="stage-row">
+    <div class="stage-col">
+      <div class="stage-lbl">1단계 · 걷기(기본 CSS, <code>.hero-cat</code>)</div>
+      <div class="stage-demo"><div class="ground"></div>
+        <div class="box" style="left:16.85%;top:11.2%;width:56%;height:88.8%">걷기<br>16.85 / 11.2 / 56 / 88.8%</div>
+      </div>
+    </div>
+    <div class="stage-col">
+      <div class="stage-lbl">2단계 · 달리기(인라인 오버라이드)</div>
+      <div class="stage-demo"><div class="ground"></div>
+        <div class="box" style="left:20.16%;top:10.5%;width:55.7%;height:88.6%">달리기<br>20.16 / 10.5 / 55.7 / 88.6%</div>
+      </div>
+    </div>
+    <div class="stage-col">
+      <div class="stage-lbl">3·4단계 · 날기(인라인 오버라이드)</div>
+      <div class="stage-demo"><div class="ground"></div>
+        <div class="box" style="left:23.27%;top:10.52%;width:56%;height:89.1%">날기<br>23.27 / 10.52 / 56 / 89.1%</div>
+      </div>
+    </div>
+  </div>
+  <div class="note">※ <code>docs/PLAN.md</code> 5.2.6절 서술 중 날기 좌표가 "left:26.13%;top:1%"로 적혀 있는 부분은
+    이후 미세조정을 반영 못 한 stale 값 — 위 표(코드 실측, 2026-07-20)가 정확한 현재 값. 좌표를 다시 조정하면
+    PLAN.md 대신 이 표를 갱신할 것(이 문서가 픽셀 스펙의 단일 진실 소스).</div>
+</section>
+
+<section>
+  <h2>캐릭터 탭 안내 팝업 (2026-07-20 신설)</h2>
+  <div class="note">캐릭터(<code>.hero-cat-hit</code>)를 탭하면 <b>히어로 영역만</b>(화면 전체 아님) 살짝 딤되고
+    안내 카드가 뜬다: <i>"연속학습을 이어가서 다른 포즈의 캐릭터를 만나보세요!"</i> 배경(딤 영역) 탭하면 닫힘, 카드
+    자체를 탭하면 안 닫힘(이벤트 버블링 차단).</div>
+  <div class="popup-demo">
+    <div class="dim"><div class="card">연속학습을 이어가서<br>다른 포즈의 캐릭터를<br>만나보세요!</div></div>
+  </div>
+  <div class="warn"><b>구현 메모</b>: <code>.hero-cat</code> 자체는 <code>pointer-events:none</code>이라(스티커·바닥과의
+    인터랙션을 방해하지 않기 위한 기존 설계) 직접 탭 핸들러를 못 단다 — 안쪽에 <code>pointer-events:auto</code>인
+    <code>.hero-cat-hit</code> 래퍼를 하나 더 감싸 그 안에서만 탭을 받는다. 새로운 히어로 하위 인터랙션을 추가할 때도
+    이 패턴(부모는 pointer-events:none 유지, 실제로 반응해야 할 자식만 auto로 재활성화)을 따를 것.</div>
+</section>
+
+<section>
+  <h2>스티커 레이어</h2>
+  <div class="note">기본 6종(스마일·KEEP IT UP·Yes English 말풍선·Well begun 마테·클로버·꽃) — 정적 이미지 +
+    CSS 부유(<code>floaty</code>, <code>prefers-reduced-motion</code>이면 정지) + 소프트 그림자(베이크됨). 스마일만
+    눈썹 좌우 다른 타이밍으로 들썩이는 개별 Lottie.</div>
+  <table>
+    <tr><th>동작</th><th>구현</th></tr>
+    <tr><td>이동</td><td>꾹 눌러(long-press 320ms) 드래그. 히어로 밖 최대 50px까지만 — <code>overflow:hidden</code> 마스크로 그 밖은 안 보임. 위치는 localStorage.</td></tr>
+    <tr><td>겹침 순서</td><td>고정 z-index 대신 <code>order</code> 배열(집으면 맨 앞으로) — localStorage 저장. 캐릭터(z-index:100)보다는 항상 아래.</td></tr>
+    <tr><td>삭제("치움")</td><td>같은 롱프레스로 우상단 X 배지 노출 → 탭하면 "치움" 처리(완전 삭제 아님, <code>en_hero_sticker_removed_v1</code>에 보관 — 스티커 꾸미기 화면에서 다시 놓을 수 있음).</td></tr>
+    <tr><td>선택 해제</td><td>히어로 배경(빈 곳) 탭.</td></tr>
+  </table>
+  <div class="note">스티커 구매(진열장, <code>decoShopItems()</code>, 150~500P 랜덤가)는 <b>UI만 있고 실제 구매 로직 없음</b>
+    ("준비 중" — PLAN.md 5.2.6 참고). 뱃지→스티커 실제 연결(획득 뱃지를 진짜로 노트에 붙이기)도 아직 진열만.</div>
+</section>
+
+<section>
+  <h2>스플래시 화면 (앱 첫 진입 시, 히어로 아님 — 별개 화면)</h2>
+  <div class="note">홈 히어로와는 다른 화면이지만 최근에 추가돼 자주 혼동될 수 있어 포인터만 남김: 앱 첫 마운트 시
+    전체화면(<code>#211C15</code>) 로고 슬롯머신 스플래시(<code>SplashScreen</code> 컴포넌트, <code>img/splash/splash.json</code>).
+    Lottie <code>complete</code> 이벤트로 언마운트되며, <b>2026-07-20에 안전장치 추가</b> — 애니메이션이 로드는 됐는데
+    어떤 이유로(예: 백그라운드 복귀 직후 rAF 정지) <code>complete</code>가 영영 안 오면 스플래시가 화면과 클릭을
+    영구히 가리는 사고가 실제로 재현된 바 있어, 5초 안전 타임아웃으로 강제 해제하도록 함. 상세 설계·함정은
+    <code>design/splash/README.md</code>가 정본.</div>
+</section>
+
+</body>
+</html>
