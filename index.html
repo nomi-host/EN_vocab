@@ -11,7 +11,7 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.41">
+<link rel="manifest" href="manifest.json?v=0.35.47">
 <link rel="icon" href="img/icon-192.png?v=0.35.41" type="image/png">
 <link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.41">
 <link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.41" as="font" type="font/woff2" crossorigin>
@@ -26,7 +26,7 @@
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
 <script src="lib/compromise.min.js?v=0.35.41"></script>
-<script src="words.js?v=0.35.41"></script>
+<script src="words.js?v=0.35.47"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
 <script src="grammar_tags.js?v=0.35.41"></script><style>
 /* ============================================================================
@@ -317,10 +317,15 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
   background-image:url("img/hero/ground.png?v=0.35.41");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-/* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140).
+/* 고양이 Lottie 슬롯 — 2026-07-19 사용자가 준 실제 레퍼런스 스크린샷 2장(걷기/달리기)에서 캐릭터
+   실루엣을 직접 픽셀 실측(연결요소 분석) 후, Lottie comp(200×200, 캐릭터 잉크는 그 안 일부만 차지 —
+   내부 여백까지 감안해 comp 전체가 이 박스에 맞춰짐)을 역산해 크기·위치 재조정. 걷기 기준값
+   (아래) + 달리기는 포즈 실루엣 비율이 달라 `HeroScene`에서 stage>=2일 때 별도 값으로 인라인
+   오버라이드(design/hero_cat_lottie/README.md "박스 재계산" 참고). 이전 28.1/26.8/41.2/67.1%는
+   캐릭터 잉크 자체의 목표 비율이었을 뿐 comp 여백을 못 담아 실제로는 훨씬 작게 나왔던 값.
    z-index는 스티커의 동적 z(최대 10+개수)보다 항상 높게 고정 — "캐릭터는 항상 최상위" 요구사항
    (2026-07-18). */
-.hero-cat{position:absolute;left:26.17%;top:31.73%;width:48%;height:63.64%;z-index:100;pointer-events:none;}
+.hero-cat{position:absolute;left:16.85%;top:11.2%;width:56%;height:88.8%;z-index:100;pointer-events:none;}
 .hero-cat > svg, .hero-cat > div{width:100%!important;height:100%!important;display:block;}
 /* 스티커: 중심 좌표(%)에 translate(-50%,-50%). 기본은 살짝 부유 + 소프트 그림자(이미지에 베이크).
    z-index는 고정값이 아니라 JS에서 order 배열 기준으로 인라인 style에 매김(집으면 맨 앞으로) —
@@ -1006,7 +1011,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.41";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.47";const APP_BUILD = "2026-07-19"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -3034,7 +3039,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.41";
+const HERO_V = "0.35.47";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -3251,13 +3256,21 @@ function StickerLayer({ heroRef, refreshKey, deselectTick }) {
     </>
   );
 }
-function HeroScene({ onOpenDecorate, decorateVersion }) {
+function HeroScene({ onOpenDecorate, decorateVersion, stage }) {
   const heroRef = useRef(null);
   const [deselectTick, setDeselectTick] = useState(0);
+  // 연속학습일 성장 단계(streakStage, 1~4) — 1단계는 걷기, 2단계부터는 달리기(PLAN 5.2).
+  const catSrc = stage >= 2 ? "img/hero/cat_run.json" : "img/hero/cat.json";
+  // 달리기(2단계 이상)는 땅 스크롤도 1.5배 빠르게(2026-07-19 요청) — 기본 7s에서 나눔.
+  const groundStyle = stage >= 2 ? { "--groundDur": (7 / 1.5) + "s" } : undefined;
+  // 달리기 포즈는 실루엣 비율이 걷기와 달라(다리를 더 벌린 역동적 포즈) 레퍼런스 실측 박스도 다름 —
+  // .hero-cat 기본값(걷기 기준)을 stage>=2일 때만 이 값으로 오버라이드.
+  // left 24.45%→20.16%: 우측으로 쏠려 보인다는 지적으로 15px(350px 기준 4.29%p) 좌측 이동(2026-07-19).
+  const catBoxStyle = stage >= 2 ? { left: "20.16%", top: "10.5%", width: "55.7%", height: "88.6%" } : undefined;
   return (
     <div className="hero-scene ruled-paper" ref={heroRef} onPointerDown={(e) => { if (e.target === e.currentTarget) setDeselectTick(t => t + 1); }}>
-      <div className="hero-ground"><div className="hero-ground-track" /></div>
-      <div className="hero-cat"><LottieBox src={"img/hero/cat.json?v=" + HERO_V} /></div>
+      <div className="hero-ground"><div className="hero-ground-track" style={groundStyle} /></div>
+      <div className="hero-cat" style={catBoxStyle}><LottieBox src={catSrc + "?v=" + HERO_V} /></div>
       <StickerLayer heroRef={heroRef} refreshKey={decorateVersion} deselectTick={deselectTick} />
       <button className="hero-edit-btn" onClick={onOpenDecorate}><Icon name="edit" size={15} />편집하기</button>
     </div>
@@ -3474,7 +3487,9 @@ function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, on
   const [decorateOpen, setDecorateOpen] = useState(false);
   const [decorateVersion, setDecorateVersion] = useState(0); // 노트꾸미기에서 스티커 복원 시 홈 목록 새로고침용
   const STREAK = ACT.streak();             // 실데이터: 연속 학습일(2026-07-19, 구 데모 상수 4 대체)
-  const stage = streakStage(STREAK);       // 1~4
+  // TEMP DEBUG(2026-07-19, 히어로 단계 미리보기용 — 확인 끝나면 제거할 것): ?previewStage=0~4로 강제 오버라이드.
+  const previewStage = Number(new URLSearchParams(location.search).get("previewStage"));
+  const stage = previewStage ? previewStage : streakStage(STREAK);       // 1~4
   const speed = { "--bob": (0.64 - stage * 0.06) + "s", "--road": (0.8 - stage * 0.09) + "s" };
 
   const goals = PREFS.get(); // 설정 > 일일 목표(단어·듣기·회화) — 기본 20/20/10
@@ -3562,7 +3577,7 @@ function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, on
   return (
     <div className="content">
       {/* 홈 히어로: 항상 걷는 고양이(Lottie) + 드래그 스티커. 캐릭터 선택 여부와 무관하게 표시. */}
-      <HeroScene onOpenDecorate={() => setDecorateOpen(true)} decorateVersion={decorateVersion} />
+      <HeroScene onOpenDecorate={() => setDecorateOpen(true)} decorateVersion={decorateVersion} stage={stage} />
       {decorateOpen && (
         <DecorateNoteModal charK={charK} onChangeChar={onChangeChar}
           onClose={() => setDecorateOpen(false)}
