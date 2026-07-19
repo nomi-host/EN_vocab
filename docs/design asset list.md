@@ -21,13 +21,15 @@
 - **의미 상태**: `--good`(정답/완료), `--danger`(오답) — 형광펜 4색과 분리해 혼동 방지
 - **폰트**: LINE Seed KR (Regular/Bold, SIL OFL 1.1 라이선스) — `img/fonts/`에 자체 호스팅, 라이선스 파일 동봉
 
-### PWA 앱 아이콘 (2026-07-18 반영)
+### PWA 앱 아이콘 (2026-07-18 반영, 2026-07-19 디자인 교체)
 
 `img/app icon/app icon_small.png`(192×192), `app icon_big.png`(512×512)로 전달받아 `img/icon-192.png`,
 `img/icon-512.png`로 배치, `manifest.json`이 정상적으로 참조. `index.html` `<head>`에 `<link rel="icon">`·
 `<link rel="apple-touch-icon">`도 새로 추가(전에는 매니페스트만 있고 파비콘/iOS 홈 화면 아이콘 링크 자체가
-없었음). 디자인: `--bg` 아이보리 배경 위에 원형 연두(`--hi-green`) 링 + 잉크 블랙 원 안에 흰색 "E"를 사선으로
-가로지르는 "금지" 심볼 — "NoEnglish"를 시각적으로 직역한 컨셉.
+없었음). **2026-07-19: `img/app icon/WIP_app icon_small_N.png`·`WIP_app icon_big_N.png`(같은 192/512
+사이즈)로 교체** — 배경을 아이보리에서 형광펜 연두(`--hi-green`)로 꽉 채우고, 링·사선을 아이보리, "E"를
+연두로 반전한 대비 강한 버전. 원형 연두 링 + 잉크 블랙 원 안에 "E"를 사선으로 가로지르는 "금지" 심볼
+컨셉("NoEnglish"를 시각적으로 직역)은 유지.
 
 ### 홈 화면 · 학습 카드 등 전반 UI 리스킨
 
