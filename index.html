@@ -11,24 +11,24 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.37">
-<link rel="icon" href="img/icon-192.png?v=0.35.37" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.37">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.37" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.37" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.38">
+<link rel="icon" href="img/icon-192.png?v=0.35.38" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.38">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.38" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.38" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.37"></script>
+<script src="img/hero/lottie.min.js?v=0.35.38"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.37"></script>
-<script src="words.js?v=0.35.37"></script>
+<script src="lib/compromise.min.js?v=0.35.38"></script>
+<script src="words.js?v=0.35.38"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.37"></script><style>
+<script src="grammar_tags.js?v=0.35.38"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -38,15 +38,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.37") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.37") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.38") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.38") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.37") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.37") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.38") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.38") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -314,7 +314,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.37");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.38");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140).
@@ -762,6 +762,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qchoice{width:100%;text-align:left;padding:13px 15px;border-radius:0;background:var(--fill);font-size:15px;font-weight:700;color:var(--ink-2);border:1.5px solid transparent;}
 .qchoice.correct{background:var(--accent-soft);color:var(--accent-deep);border-color:var(--accent);}
 .qchoice.wrong{background:#fbe9e9;color:#d64545;border-color:#d64545;}
+/* 문장 퀴즈 — 어순 배열(2026-07-19): 위 조립 영역(쌓인 조각) + 아래 보관함(남은 조각) */
+.qorder-built{min-height:44px;display:flex;flex-wrap:wrap;gap:6px;padding:10px;background:var(--fill);border:1px dashed var(--card-border);}
+.qorder-built .ph{font-size:13px;color:var(--muted);}
+.qorder-pool{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
+.qorder-chip{font-size:15px;font-weight:700;color:var(--ink);background:var(--surface);border:1.5px solid var(--card-border);border-radius:999px;padding:8px 14px;}
+.qorder-chip.placed{background:var(--accent-soft);color:var(--accent-deep);border-color:var(--accent);}
 /* 듣기 세션(딕테이션) */
 /* 입력칸은 다른 인풋(.search 등)과 동일한 밝은 서피스+보더 문법 — 노란 크림(--fill) 면 + 골드
    포커스는 "입력하는 곳"으로 안 읽힌다는 지적으로 교체(2026-07-17). */
@@ -999,7 +1005,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.37";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.38";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1832,15 +1838,15 @@ function pickSession(n = 10, levelShift = 0) {
 }
 
 /* 퀴즈 문제 구성: 이미 학습(SRS 기록 있음)한 단어 중에서만 출제 — 카드로 한 번도
-   안 본 단어가 나오면 실질적으로 풀 수 없는 문제라 대상에서 제외. 뜻 4지선다와
-   스펠링을 절반씩 섞음. 학습한 단어가 4개 미만이면 문제 구성 불가(null). */
+   안 본 단어가 나오면 실질적으로 풀 수 없는 문제라 대상에서 제외. 뜻 4지선다·스펠링·
+   문장 어순 배열(2026-07-19, PLAN 4.4 "문장 퀴즈")을 고르게 섞음(i%3). 학습한 단어가
+   4개 미만이면 문제 구성 불가(null). SRS 복습 간격에는 영향 없는 순수 보조 훈련. */
 function buildQuiz(n = 10) {
   const studied = allItems().filter(it => SRS.get(it.key));
   if (studied.length < 4) return null;
   const shuffled = [...studied].sort(() => Math.random() - 0.5).slice(0, n);
   const distractorPool = allItems();
-  return shuffled.map((it, i) => {
-    if (i % 2 === 1) return { type: "spell", it };
+  const buildChoice = it => {
     const pool = [...distractorPool].sort(() => Math.random() - 0.5);
     const distractors = [];
     for (const p of pool) {
@@ -1852,6 +1858,26 @@ function buildQuiz(n = 10) {
     const choices = [it.ko, ...distractors.map(d => d.ko)];
     for (let a = choices.length - 1; a > 0; a--) { const b = Math.floor(Math.random() * (a + 1));[choices[a], choices[b]] = [choices[b], choices[a]]; }
     return { type: "choice", it, choices };
+  };
+  // 어순 배열: 예문을 토큰(공백 기준)으로 쪼개 섞음 — 3~10단어 문장만 대상(너무 짧으면 자명,
+  // 너무 길면 모바일에서 조각이 다 안 보임). 범위 밖이면 그 자리는 4지선다로 대체.
+  const buildOrder = it => {
+    // 주의: allItems()가 반환하는 item의 it.ex는 이미 단일 예문 객체로 풀려있음(w.ex[0]이
+    // itemsFromWords에서 미리 대입됨) — it.ex[0]으로 다시 접근하면 undefined가 되어 항상
+    // choice로 폴백하는 조용한 버그가 있었음(2026-07-19, buildQuiz(3) 반복 실행으로 재현·수정).
+    const ex = it.ex;
+    const en = (ex && ex.en || "").trim();
+    const tokens = en.split(/\s+/).filter(Boolean);
+    if (tokens.length < 3 || tokens.length > 10) return buildChoice(it);
+    let sh = tokens.map((t, idx) => ({ t, idx })).sort(() => Math.random() - 0.5);
+    if (sh.every((x, k) => x.idx === k)) { const tmp = sh[0]; sh[0] = sh[1]; sh[1] = tmp; } // 우연히 원래 순서면 강제로 섞기
+    return { type: "order", it, tokens, shuffled: sh, ko: ex.ko };
+  };
+  return shuffled.map((it, i) => {
+    const slot = i % 3;
+    if (slot === 1) return { type: "spell", it };
+    if (slot === 2) return buildOrder(it);
+    return buildChoice(it);
   });
 }
 
@@ -2648,7 +2674,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.37" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.38" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -3007,7 +3033,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.37";
+const HERO_V = "0.35.38";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -6016,6 +6042,7 @@ function QuizSession({ questions, onExit }) {
   const [correct, setCorrect] = useState(0);
   const [picked, setPicked] = useState(null); // 4지선다에서 고른 인덱스
   const [val, setVal] = useState("");         // 스펠링 입력값
+  const [picks, setPicks] = useState([]);     // 어순 배열 — 탭한 순서대로 쌓인 shuffled 인덱스
   const [res, setRes] = useState(null);       // null | {ok}
 
   const q = questions[idx];
@@ -6047,9 +6074,22 @@ function QuizSession({ questions, onExit }) {
     setRes({ ok });
   };
 
+  // 어순 배열 — 조각을 원래 위치(idx) 순서대로 놓았는지로 채점(단어가 중복돼도 텍스트 비교보다 안전).
+  const pickOrderChip = si => {
+    if (res) return;
+    const np = [...picks, si];
+    setPicks(np);
+    if (np.length === q.tokens.length) {
+      const ok = np.every((p, i) => q.shuffled[p].idx === i);
+      if (ok) setCorrect(c => c + 1);
+      setRes({ ok });
+    }
+  };
+  const unpickOrderChip = i => { if (!res) setPicks(picks.filter((_, k) => k !== i)); };
+
   const next = () => {
     if (idx + 1 >= questions.length) { onExit(true, correct, questions.length); return; }
-    setIdx(idx + 1); setPicked(null); setVal(""); setRes(null);
+    setIdx(idx + 1); setPicked(null); setVal(""); setPicks([]); setRes(null);
   };
 
   return (
@@ -6067,9 +6107,31 @@ function QuizSession({ questions, onExit }) {
               <button onClick={() => speak(it.word)} aria-label="다시 듣기"><Icon name="replay" size={16} /></button>
             </span>
           )}
+          {q.type === "order" && (
+            <span className="qaudio">
+              <button onClick={() => speak(it.ex.en)} aria-label="문장 듣기"><Icon name="replay" size={16} /></button>
+            </span>
+          )}
           <span className="tag lv">{it.cefr}</span>
         </div>
-        {q.type === "choice" ? (
+        {q.type === "order" ? (
+          <React.Fragment>
+            <span className="qhint">아래 조각을 순서대로 탭해 문장을 완성하세요.</span>
+            <div className="qko" style={{ textAlign: "center" }}>{q.ko}</div>
+            <div className="qdiv" />
+            <div className="qorder-built">
+              {picks.length === 0 && <span className="ph">여기에 순서대로 쌓여요</span>}
+              {picks.map((si, i) => (
+                <button key={i} className="qorder-chip placed" disabled={!!res} onClick={() => unpickOrderChip(i)}>{q.shuffled[si].t}</button>
+              ))}
+            </div>
+            <div className="qorder-pool">
+              {q.shuffled.map((tok, si) => !picks.includes(si) && (
+                <button key={si} className="qorder-chip" disabled={!!res} onClick={() => pickOrderChip(si)}>{tok.t}</button>
+              ))}
+            </div>
+          </React.Fragment>
+        ) : q.type === "choice" ? (
           <React.Fragment>
             <span className="qhint">다음 <b>영어 단어</b>의 뜻을 고르세요.</span>
             <div className="qko" style={{ textAlign: "center" }}>{it.word}</div>
@@ -6100,7 +6162,11 @@ function QuizSession({ questions, onExit }) {
         {res && (
           <div className={"qres " + (res.ok ? "ok" : "no")}>
             {res.ok ? <Icon name="check" size={18} /> : <Icon name="close" size={18} />}
-            {res.ok ? "정답!" : <span>정답: <b>{it.word}</b> — {it.ko}</span>}
+            {res.ok
+              ? "정답!"
+              : q.type === "order"
+                ? <span>정답: <b>{q.tokens.join(" ")}</b></span>
+                : <span>정답: <b>{it.word}</b> — {it.ko}</span>}
           </div>
         )}
       </div>
@@ -6860,7 +6926,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   const MENU = [
     { k: "card", icon: "school", title: "단어카드", sub: `복습 ${dueCount} · 오늘 신규 목표 ${newGoal}개`, on: true, start: startCard },
     { k: "listen", icon: "volume_up", title: "듣기 세션 (딕테이션)", sub: "듣고 그대로 타이핑", on: true, start: startListen },
-    { k: "quiz", icon: "grid_view", title: "퀴즈", sub: studiedCount >= 4 ? "뜻 4지선다 · 스펠링" : "먼저 단어카드로 학습해 보세요", on: studiedCount >= 4, start: startQuiz, hidden: true }, // 2026-07-15 메뉴에서만 숨김(코드는 보존 — hidden 지우면 복원)
+    { k: "quiz", icon: "grid_view", title: "퀴즈", sub: studiedCount >= 4 ? "뜻 4지선다 · 스펠링 · 어순 배열" : "먼저 단어카드로 학습해 보세요", on: studiedCount >= 4, start: startQuiz }, // 2026-07-19 문장 퀴즈(어순 배열) 추가로 복원(2026-07-15 숨김 해제)
     { k: "level", icon: "add", title: "레벨 테스트", sub: "어휘 + 문장구사력", on: true, start: onStartLevelTest },
   ];
 
