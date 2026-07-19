@@ -11,22 +11,24 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.36">
-<link rel="icon" href="img/icon-192.png?v=0.35.36" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.36">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.36" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.36" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.37">
+<link rel="icon" href="img/icon-192.png?v=0.35.37" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.37">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.37" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.37" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.36"></script>
+<script src="img/hero/lottie.min.js?v=0.35.37"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.36"></script>
-<script src="words.js?v=0.35.36"></script><style>
+<script src="lib/compromise.min.js?v=0.35.37"></script>
+<script src="words.js?v=0.35.37"></script>
+<!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
+<script src="grammar_tags.js?v=0.35.37"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -36,15 +38,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.36") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.36") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.37") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.37") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.36") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.36") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.37") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.37") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -312,7 +314,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.36");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.37");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140).
@@ -620,6 +622,13 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .wd-ex .en em{font-style:normal;color:var(--accent-deep);}
 .wd-ex .ko{font-size:12px;color:var(--muted);margin-top:5px;}
 .wd-ex + .wd-ex{margin-top:8px;}
+/* 문법 태그 칩(2026-07-19, docs/PLAN.md 2.5) — 예문 아래에 탭 가능한 알약, 탭하면 설명 시트 */
+.gram-chips{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;}
+.gram-chip{font-size:11px;font-weight:700;color:var(--accent-deep);background:var(--accent-soft);border-radius:999px;padding:4px 10px;}
+.gram-chip:active{background:var(--warmgray);}
+.gram-sheet-cat{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:-10px;}
+.gram-sheet-name{font-size:19px;font-weight:800;color:var(--ink);}
+.gram-sheet-desc{font-size:14px;line-height:1.6;color:var(--ink-2);}
 .ex-word{color:var(--accent-deep);text-decoration:underline;text-decoration-color:var(--accent-soft);text-underline-offset:2px;}
 
 /* 다의어: 의미(sense) 카드 리스트 */
@@ -990,7 +999,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.36";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.37";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1040,6 +1049,7 @@ function Icon({ name, size = 24 }) {
 
 const SEED = (typeof window !== "undefined" && window.SEED) ? window.SEED : [];
 const byWord = Object.fromEntries(SEED.map(w => [w.word, w]));
+const GRAMMAR_TAGS = (typeof window !== "undefined" && window.GRAMMAR_TAGS) ? window.GRAMMAR_TAGS : {};
 
 /* 사용자가 직접 추가한 단어(내 단어장) — localStorage 보존. */
 let EXTRA = (() => { try { return JSON.parse(localStorage.getItem("en_mywords") || "{}"); } catch (e) { return {}; } })();
@@ -2008,6 +2018,187 @@ function sentenceCefrLevel(text) {
   return maxIdx >= 0 ? CEFR_LEVELS[maxIdx] : null;
 }
 
+/* ===================== 문장 단위 문법 태그 탐지 (docs/PLAN.md 2.5) =====================
+   detectGrammar(sentence) → tagId[] — 사전 예문·회화 대화·작문 첨삭·딕테이션 전부가 재사용하는
+   단일 공용 함수(openVocabWord처럼 화면마다 재구현 금지 원칙). GRAMMAR_TAGS(grammar_tags.js,
+   79개 항목)의 id를 반환. 규칙 우선(compromise #Passive 태그 + 정규식/구조 규칙), LLM 폴백은
+   문장당 왕복이 생겨 회화 대기시간 문제를 재현하므로 v1에서는 넣지 않음(순수 동기 연산) — 애매한
+   케이스는 규칙이 놓치더라도 "태그 없음"으로 안전하게 폴백(오탐보다 미탐이 낫다는 원칙).
+   각 정규식은 완벽한 파서가 아니라 근사 휴리스틱 — 특히 to부정사 3용법·병렬구조·생략류는 위치/문맥
+   기반 근사치임을 염두에 둘 것(재현 실패 시 이 섹션부터 볼 것). */
+const GRAMMAR_IRREG_PARTICIPLES = new Set(Object.keys(IRREG_REV)); // 굴절형 전체(과거분사 근사 판정용)
+function looksLikeParticiple(w) {
+  const t = (w || "").toLowerCase();
+  return /^[a-z]+(ed|en)$/.test(t) || GRAMMAR_IRREG_PARTICIPLES.has(t);
+}
+const GRAMMAR_RULES = [
+  // ---- 관계사 ----
+  { id: "relative-clause-continuous", re: /,\s*(who|whom|which|whose|where|when)\b/i },
+  { id: "relative-pronoun-whose", re: /\bwhose\b/i, notQuestion: true },
+  { id: "relative-adverb", re: /\b(the\s+(reason|place|time|way)\s+(why|where|when|how))|(,\s*(where|when|why|how)\b)/i },
+  { id: "relative-adverb", re: /\b(where|when|why|how)\b/i, notQuestion: true, notStart: true },
+  { id: "relative-pronoun-omission", re: /\b(the|a|an|this|that|my|his|her|their|our|its)\s+[a-z]+\s+(i|you|he|she|we|they|it)\s+[a-z]+(ed|s)?\b/i },
+  // ---- 수동태(get-수동태만 정규식, 나머지는 compromise 아래 별도 처리) ----
+  { id: "passive-get", re: /\b(get|gets|got|gotten|getting)\s+[a-z]+(ed|en)\b/i },
+  // ---- 가정법 ----
+  { id: "as-if-as-though", re: /\bas\s+(if|though)\b/i },
+  { id: "if-omission-inversion", re: /^(had|were|should)\s+[a-z]+/i },
+  // ---- to부정사 ----
+  { id: "infinitive-noun-usage", re: /(^to\s+[a-z]+)|(\bit\s+(is|was)\s+[a-z]+\s+to\s+[a-z]+)|\b(want|wants|wanted|need|needs|needed|decide|decides|decided|plan|plans|planned|hope|hopes|hoped|try|tries|tried|expect|expects|expected|refuse|refuses|refused|agree|agrees|agreed|promise|promises|promised|manage|manages|managed|afford|affords|afforded)\s+to\s+[a-z]+/i },
+  { id: "infinitive-adjective-usage", re: /\b(the|a|an)\s+[a-z]+\s+to\s+[a-z]+/i },
+  { id: "infinitive-adverb-usage", re: /,?\s+to\s+[a-z]+([a-z\s]*)?[.!]?$/i },
+  { id: "infinitive-semantic-subject", re: /\b(for|of)\s+[a-z]+\s+to\s+[a-z]+/i },
+  // bare-infinitive-causative/perception는 규칙 배열이 아니라 아래 compromise POS 체크로 처리
+  // (정규식만으로는 "made us fresh cocktails"의 fresh를 동사로 오인해 오탐 — #Verb 태그로 검증).
+  // ---- 분사·분사구문 ----
+  // "the meeting after"처럼 -ing가 뒤 전치사/조동사 앞이면 그 자체가 명사(동명사화)일 뿐 뒤 명사를
+  // 꾸미는 형용사 용법이 아니므로, 흔한 기능어가 바로 뒤에 오면 제외(negative lookahead).
+  { id: "participle-adjective-present", re: /\b(the|a|an)\s+[a-z]+ing\s+(?!(after|before|during|since|until|for|with|without|about|of|in|on|at|by|from|to|is|was|are|were|and|or|but)\b)[a-z]+\b/i },
+  { id: "participle-adjective-past", re: /\b(the|a|an)\s+[a-z]+(ed|en)\s+(?!(after|before|during|since|until|for|with|without|about|of|in|on|at|by|from|to|is|was|are|were|and|or|but)\b)[a-z]+\b/i },
+  { id: "participle-clause-basic", re: /^[a-z]+ing\b[^,]*,/i },
+  { id: "participle-clause-independent", re: /^(?!(i|we|he|she|they|you|it)\b)[a-z]+(\s+[a-z]+)?\s+[a-z]+ing\b[^,]*,/i },
+  { id: "participle-with-construction", re: /\bwith\s+[a-z]+(\s+[a-z]+)?\s+([a-z]+ing|[a-z]+(ed|en))\b/i },
+  { id: "participle-perfect", re: /^having\s+[a-z]+/i },
+  // ---- 동명사 ----
+  { id: "gerund-vs-infinitive-meaning-change", re: /\b(remember|remembers|remembered|forget|forgets|forgot|stop|stops|stopped|try|tries|tried|regret|regrets|regretted)\s+([a-z]+ing|to\s+[a-z]+)\b/i },
+  { id: "gerund-idiom-expressions", re: /\b(cannot help|can't help|couldn't help|be worth|is worth|was worth|spend time|spent time|feel like|felt like|look forward to|looks forward to|looked forward to|looking forward to|be used to|is used to|was used to|be busy|is busy|was busy)\s+[a-z]*ing\b/i },
+  { id: "gerund-subject-object", re: /^[a-z]+ing\b(?:\s+[a-z]+){0,4}\s+(is|are|was|were|keeps|keep|makes|make|helps|help|requires|require|takes|take|means|mean|involves|involve|feels|feel|sounds|sound)\b/i },
+  { id: "gerund-after-preposition", re: /\b(in|on|at|for|about|by|of|without|before|after)\s+[a-z]+ing\b/i },
+  // ---- 도치 ----
+  { id: "inversion-negative-adverb", re: /^(never|rarely|seldom|hardly|scarcely|little|not\s+only|no\s+sooner)\b[^,]*\b(do|does|did|has|have|had|is|are|was|were|can|could|will|would|should)\s+[a-z]+/i },
+  { id: "inversion-so-neither", re: /(^|["'“\s])(so|neither|nor)\s+(do|does|did|is|are|was|were|has|have|had|can|could|will|would)\s+[a-z]+/i },
+  { id: "inversion-place-adverbial", re: /^(here|there|down|up|away|off)\s+(comes|come|goes|go|is|are|was|were)\b/i },
+  // ---- 비교 구문 ----
+  { id: "comparative-multiplier", re: /\b(twice|three\s+times|half)\s+as\s+[a-z]+\s+as\b/i },
+  { id: "as-as-possible", re: /\bas\s+[a-z]+\s+as\s+possible\b/i },
+  { id: "as-as-original", re: /\bas\s+[a-z]+\s+as\b/i },
+  { id: "comparative-double", re: /\bthe\s+(more|less|\w+er)\b[^,]*,\s*the\s+(more|less|\w+er)\b/i },
+  { id: "comparative-basic", re: /(\b[a-z]+er\s+than\b)|(\bmore\s+[a-z]+\s+than\b)/i },
+  { id: "superlative-basic", re: /(\bthe\s+[a-z]+est\b)|(\bthe\s+most\s+[a-z]+\b)/i },
+  // ---- 조동사 ----
+  { id: "modal-speculation", re: /\b(must|might|may|could|can't|cannot)\s+have\s+[a-z]+(ed|en)\b/i },
+  { id: "modal-perfect", re: /\b(should|could|would|might|must|may|can)\s+have\s+[a-z]+(ed|en)\b/i },
+  { id: "modal-idiom-cannot-help", re: /\b(cannot|can't|couldn't|could\s+not)\s+help\s+[a-z]+ing\b/i },
+  { id: "modal-obligation-necessity", re: /\b(must|have\s+to|has\s+to|had\s+to)\b/i },
+  // ---- 강조구문 ----
+  { id: "cleft-it-that", re: /\bit\s+(is|was)\s+[a-z]+.*\b(that|who|which)\b/i },
+  { id: "do-emphasis", re: /\b(do|does|did)\s+[a-z]+\b/i, notStart: true, notQuestion: true },
+  { id: "emphasis-intensifiers", re: /\b(the\s+very|such\s+a|such\s+an|absolutely|really)\b/i },
+  // ---- 생략 ----
+  { id: "ellipsis-repeated-verb", re: /\b(so\s+(can|will|does|do|did|is|am|are|was|were|has|have)\s+[a-z]+)|(,\s*and\s+[a-z]+\s+(can|will|does|do|did|is|am|are|was|were|has|have)\s*(too|as\s+well)?\s*\.?$)/i },
+  { id: "ellipsis-conjunction-clause", re: /\b(while|when|if|though|although|unless)\s+([a-z]+ing\b|young\b|a\s+child\b|possible\b|necessary\b)/i },
+  { id: "ellipsis-comparative", re: /\bthan\s+(i|he|she|we|they|you)\b(?!\s+(am|is|are|was|were|do|does|did|have|has|had|would|could|will|can))/i },
+  // ---- 명사절 ----
+  { id: "noun-clause-apposition", re: /\bthe\s+(fact|idea|belief|news|rumor|possibility|hope)\s+that\b/i },
+  { id: "noun-clause-whether-if", re: /\bwhether\s+[a-z]+\s+(will|is|are|was|were|can|could|should|would|to)\b|\b(not\s+sure|unsure|unclear|wonder|wonders|wondered|ask|asks|asked|know|knows|knew|decide|decides|decided|doubt|doubts|doubted|matters?|mattered)\s+(whether|if)\b/i },
+  { id: "noun-clause-wh-question", re: /\b(know|knows|knew|wonder|wonders|wondered|ask|asks|asked|tell|tells|told|understand|understands|understood|explain|explains|explained|remember|remembers|remembered|forget|forgets|forgot)\s+(?:(?:me|you|him|her|us|them)\s+)?(what|who|where|when|why|how|which)\s+[a-z]+/i },
+  { id: "noun-clause-that", re: /\b(know|knows|knew|think|thinks|thought|believe|believes|believed|say|says|said|hope|hopes|hoped|feel|feels|felt|notice|notices|noticed|realize|realizes|realized|mean|means|meant|hear|hears|heard|wish|wishes|wished|suggest|suggests|suggested|argue|argues|argued|show|shows|showed|prove|proves|proved|find|finds|found)\s+(that\s+)?[a-z]+\s+(is|are|was|were|will|would|can|could|has|have|had)\b/i },
+  // ---- 병렬구조 ----
+  { id: "correlative-conjunction", re: /\b(not\s+only|either|neither|both)\b[^.!?]*\b(but\s+also|or|nor|and)\b/i },
+  { id: "parallelism-gerund-infinitive-consistency", re: /(\bto\s+[a-z]+\b[^.!?]*\band\s+[a-z]+ing\b)|(\b[a-z]+ing\b[^.!?]*\band\s+to\s+[a-z]+\b)/i },
+  { id: "parallelism-coordinating-conjunction", re: /(\b[a-z]+ing\b[^.!?]*\band\b[^.!?]*\b[a-z]+ing\b)|(\bto\s+[a-z]+\b[^.!?]*\band\s+to\s+[a-z]+\b)/i },
+  // ---- 부정 표현 ----
+  { id: "partial-negation-not-all", re: /\bnot\s+(all|every|everyone|everything|everybody)\b/i },
+  { id: "partial-negation-not-always", re: /\bnot\s+(always|necessarily)\b/i },
+  { id: "double-negative", re: /\b(don't|doesn't|didn't|can't|cannot|won't|isn't|aren't|wasn't|weren't|never|not)\b[^.!?]*\b(no|none|nothing|nobody|nowhere|neither|never|without)\b/i },
+  // ---- 접속사·접속부사 ----
+  { id: "purpose-so-that-in-order-that", re: /\b(so\s+that|in\s+order\s+that)\b/i },
+  { id: "condition-unless-provided", re: /\b(unless|provided\s+that|providing\s+that|as\s+long\s+as)\b/i },
+  { id: "contrast-however-conjunctive-adverb", re: /\b(however|nevertheless|nonetheless|on\s+the\s+other\s+hand|in\s+contrast)\b/i },
+  { id: "concession-although-while", re: /\b(although|though|even\s+though|while)\b/i },
+  { id: "reason-since-as-because", re: /(\bbecause\b)|(\bsince\b)|(^as\s+[a-z]+[^,]*,)|(,\s*as\s+[a-z]+)/i },
+  // ---- 준동사 관용 표현 ----
+  { id: "too-to", re: /\btoo\s+[a-z]+\s+to\s+[a-z]+/i },
+  { id: "enough-to", re: /\b[a-z]+\s+enough\s+to\s+[a-z]+/i },
+  { id: "so-that-such-that", re: /(\bso\s+[a-z]+\s+that\b)|(\bsuch\s+(a|an\s+)?[a-z]+(\s+[a-z]+){0,2}\s+that\b)/i },
+  // ---- 삽입구문 ----
+  { id: "parenthetical-comma-insertion", re: /,\s*(i\s+think|i\s+believe|i\s+guess|in\s+fact|of\s+course|for\s+example|as\s+a\s+result|by\s+the\s+way)\s*,|,\s*(a|an|the)\s+[a-z]+(\s+[a-z]+)?\s*,/i },
+  { id: "embedded-i-think-relative-clause", re: /\b(who|which)\s+(i\s+think|i\s+believe|they\s+say|people\s+say)\b/i },
+];
+function detectGrammar(sentence) {
+  const s = (sentence || "").trim();
+  if (!s) return [];
+  const found = [];
+  const isQuestion = /\?\s*$/.test(s);
+  // 수동태 — compromise #Passive로 전체 판정 후, 조동사 체인으로 하위분류(진행/완료/by생략).
+  // get-수동태는 compromise가 안 잡는 경우가 많아 위 GRAMMAR_RULES 정규식으로 별도 처리.
+  try {
+    if (typeof window !== "undefined" && window.nlp) {
+      const doc = window.nlp(s);
+      const isPassive = doc.match("#Passive").found;
+      if (isPassive) {
+        if (/\b(is|are|was|were)\s+being\s+[a-z]+/i.test(s)) found.push("passive-progressive");
+        else if (/\b(has|have|had)\s+been\s+[a-z]+/i.test(s)) found.push("passive-perfect");
+        else found.push("passive-simple");
+        if (!/\bby\s+[a-z]+/i.test(s)) found.push("passive-by-omission");
+      }
+      // 사역·지각동사 + 원형부정사 — 목적어 뒤 단어가 실제 동사(#Verb)인지 compromise로 확인해야
+      // "made us fresh cocktails"(fresh=형용사)를 사역구문으로 오인하지 않는다(정규식만으론 불가능).
+      // "Let's"(=let us)는 문법적으론 형태가 같지만 독립 관용표현으로 가르치는 게 자연스러워 제외.
+      if (!/\blet's\b/i.test(s) && doc.match("(make|makes|made|let|lets|have|has|had) (him|her|me|us|them|it) #Verb").found) found.push("bare-infinitive-causative");
+      if (doc.match("(see|sees|saw|watch|watches|watched|hear|hears|heard|feel|feels|felt|notice|notices|noticed|observe|observes|observed) (him|her|me|us|them|it) #Verb").found) found.push("bare-infinitive-perception");
+    }
+  } catch (e) {}
+  // 관계대명사 who/which/that — 의문문(who/which로 시작)과 구별, that은 인지·발화 동사 뒤(명사절)와 구별.
+  if (/\bwho\b/i.test(s) && !isQuestion && !/^who\b/i.test(s)) found.push("relative-pronoun-who");
+  if (/\bwhich\b/i.test(s) && !isQuestion && !/^which\b/i.test(s)) found.push("relative-pronoun-which");
+  {
+    const m = s.match(/([a-z]+)\s+that\s+[a-z]+/i);
+    const cogVerbs = new Set(["think", "thinks", "thought", "know", "knew", "knows", "say", "says", "said", "believe", "believes", "believed", "hope", "hopes", "hoped", "feel", "feels", "felt", "notice", "noticed", "realize", "realized", "mean", "means", "meant", "hear", "heard", "wish", "wished", "so", "such", "now", "in"]);
+    if (m && !cogVerbs.has(m[1].toLowerCase())) found.push("relative-pronoun-that");
+  }
+  // 가정법 과거/과거완료/혼합 — if절과 주절을 콤마 기준으로 대략 분리해 판정.
+  // "hadn't"는 \bhad\b가 단어 경계 문제로 못 잡아서 (had|hadn't) 명시.
+  {
+    const m = s.match(/\bif\b([^,]*),?\s*(.*)/i);
+    if (m) {
+      const ifClause = m[1] || "", main = m[2] || "";
+      const ifHasHad = /\b(had|hadn't|had\s+not)\b/i.test(ifClause);
+      const ifHasWere = /\bwere\b/i.test(ifClause);
+      const mainHasWouldHave = /\b(would|could|might|should)\s+have\b/i.test(main);
+      const mainHasWouldBase = /\b(would|could|might|should)\s+(?!have\b)[a-z]+/i.test(main);
+      if (ifHasHad && mainHasWouldHave) found.push("subjunctive-past-perfect");
+      else if (ifHasHad && mainHasWouldBase) found.push("subjunctive-mixed");
+      else if ((ifHasWere || /\b[a-z]+ed\b/i.test(ifClause)) && (mainHasWouldBase || mainHasWouldHave)) found.push("subjunctive-past");
+    }
+    if (/\bwish(ed)?\b.*\b(were|had|would|could)\b/i.test(s)) found.push("wish-clause");
+  }
+  // 시제 — 완료·진행 조동사 체인. 과거분사 판정은 -ed/-en 접미사 대신 looksLikeParticiple로
+  // (lost/left/found 같은 불규칙형은 접미사 정규식에 안 걸림 — IRREG_REV 기반).
+  {
+    // 축약형('ve/'s/'d)도 원형처럼 취급 — I've/He's/I'd를 have/has/had로 정규화한 토큰 배열을 훑는다.
+    const expandContraction = w => {
+      const m = w.match(/^(.*)'(ve|s|d)$/i);
+      if (!m) return w;
+      return { ve: "have", s: "has", d: "had" }[m[2].toLowerCase()];
+    };
+    const words = s.replace(/[.,!?;:"]/g, "").split(/\s+/).map(expandContraction);
+    // 조동사(auxRe) 뒤 최대 2단어 이내(부사 하나 끼어도 됨, 예: had already left)에 과거분사가 오면 인정.
+    const auxParticiple = (auxRe) => words.some((w, i) =>
+      auxRe.test(w) && [words[i + 1], words[i + 2]].some(nw => nw && looksLikeParticiple(nw)));
+    const hasBeenIng = /\b([a-z]+'ve|have|has|had|will\s+have)\s+been\s+[a-z]+ing\b/i.test(s);
+    if (hasBeenIng) {
+      if (/\b([a-z]+'ve|have|has)\s+been\s+[a-z]+ing\b/i.test(s)) found.push("present-perfect-continuous");
+      if (/\bhad\s+been\s+[a-z]+ing\b/i.test(s) || /\bwill\s+have\s+been\s+[a-z]+ing\b/i.test(s)) found.push("perfect-progressive");
+    } else if (/\bwill\s+have\s+[a-z]+\b/i.test(s) && auxParticiple(/^have$/i)) {
+      found.push("future-perfect");
+    } else if (auxParticiple(/^had$/i)) {
+      found.push("past-perfect");
+    } else if (auxParticiple(/^(have|has)$/i)) {
+      found.push("present-perfect-basic");
+    }
+    if (/\b(said|told|asked|replied|explained)\s+(that\s+)?[a-z]+\s+(was|were|had|would|could)\b/i.test(s)) found.push("tense-agreement-reported-speech");
+  }
+  GRAMMAR_RULES.forEach(r => {
+    if (r.notQuestion && isQuestion) return;
+    const m = s.match(r.re);
+    if (!m) return;
+    if (r.notStart && m.index === 0) return; // 문장 맨 앞 매치는 제외(의문문/도치 등과 겹치는 오탐 방지)
+    found.push(r.id);
+  });
+  return Array.from(new Set(found)).filter(id => GRAMMAR_TAGS[id]);
+}
+
 /* 레벨테스트(4.3)와 같은 12단계 스케일 — CEFR 6밴드를 각각 base/+ 로 나눔.
    지금은 듣기 난이도 표시·판정 전용(words.js의 cefr 필드 자체는 6단계 그대로). */
 const LISTEN_LEVELS = ["A1", "A1+", "A2", "A2+", "B1", "B1+", "B2", "B2+", "C1", "C1+", "C2", "C2+"];
@@ -2457,7 +2648,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.36" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.37" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -2816,7 +3007,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.36";
+const HERO_V = "0.35.37";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -3395,6 +3586,50 @@ function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, on
   );
 }
 
+/* 문법 태그 칩(2026-07-19, docs/PLAN.md 2.5) — 예문 하나에 detectGrammar()를 1회 호출해 매칭된
+   태그를 알약으로. openVocabWord처럼 화면마다 재구현하지 않는 공용 컴포넌트 — 사전 예문(이 파일의
+   첫 적용처)뿐 아니라 회화·작문·딕테이션 예문에도 그대로 재사용할 것. */
+function GrammarChips({ text, onTap }) {
+  const tags = useMemo(() => (text ? detectGrammar(text) : []), [text]);
+  if (!tags.length) return null;
+  return (
+    <div className="gram-chips">
+      {tags.map(id => (
+        <button key={id} className="gram-chip" onClick={e => { e.stopPropagation(); onTap(id); }}>
+          {GRAMMAR_TAGS[id].name_kr}
+        </button>
+      ))}
+    </div>
+  );
+}
+/* 문법 태그 설명 시트 — 탭한 칩의 desc_kr+예문. 기존 sheet-backdrop/sheet 패턴 재사용(새 모달 계층 안 만듦). */
+function GrammarTagSheet({ tagId, onClose }) {
+  const g = GRAMMAR_TAGS[tagId];
+  if (!g) return null;
+  return ReactDOM.createPortal(
+    <div className="sheet-backdrop" onClick={onClose}>
+      <div className="sheet" onClick={e => e.stopPropagation()}>
+        <div className="sheet-grab" />
+        <div className="sheet-head">
+          <b>문법 포인트</b>
+          <span className="sp" />
+          <button className="back" onClick={onClose} aria-label="닫기"><Icon name="close" size={20} /></button>
+        </div>
+        <div className="sheet-body">
+          <div className="gram-sheet-cat">{g.category}</div>
+          <div className="gram-sheet-name">{g.name_kr}</div>
+          <div className="gram-sheet-desc">{g.desc_kr}</div>
+          <div className="wd-ex" onClick={() => speakText(g.example.en)}>
+            <div className="en">{g.example.en}</div>
+            <div className="ko">{g.example.ko}</div>
+          </div>
+        </div>
+      </div>
+    </div>,
+    document.body
+  );
+}
+
 /* 예문 속 단어를 개별 칩으로 — 사전에 있는 단어만 탭하면 그 단어 상세로 스택 진입(타고타고).
    문장 클릭(발음 재생)과 겹치므로 단어 클릭은 stopPropagation.
    단어 부분은 정규식 match()로 한 번에 찾아서(위치+길이를 그 매치 자체에서 가져옴) lead/trail을
@@ -3438,6 +3673,7 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
   const [showAllSenses, setShowAllSenses] = useState(false);
   const [, bump] = useState(0); // 즐겨찾기·내 단어장 토글 리렌더용
   const [showPicker, setShowPicker] = useState(false);
+  const [grammarSheet, setGrammarSheet] = useState(null); // 탭한 문법 태그 id — 설명 시트 오픈
   useEffect(() => { setSenseOpen(0); setShowAllSenses(false); }, [word]);
   // 어원 탐험 뱃지(roots) 실데이터 — 이 단어의 어근(affix)을 열람한 것으로 기록(단어 바뀔 때마다).
   useEffect(() => { if (w && w.roots) w.roots.forEach(r => r && r.affix && ACT.addRoot(r.affix)); }, [word]);
@@ -3535,6 +3771,7 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
                         <div className="wd-ex" key={j} onClick={ev => { ev.stopPropagation(); speak(e.en); }}>
                           <div className="en"><ExampleWords text={e.en} onOpen={onPush} /></div>
                           <div className="ko">{e.ko}</div>
+                          <GrammarChips text={e.en} onTap={id => setGrammarSheet(id)} />
                         </div>
                       ))}
                       <button className={"s-add" + (SRS.get(w.word + "#" + i) ? " added" : "")}
@@ -3558,10 +3795,12 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
                 <div className="wd-ex" key={i} onClick={() => speak(e.en)}>
                   <div className="en"><ExampleWords text={e.en} onOpen={onPush} /></div>
                   <div className="ko">{e.ko}</div>
+                  <GrammarChips text={e.en} onTap={id => setGrammarSheet(id)} />
                 </div>
               ))}
             </div>
           )}
+          {grammarSheet && <GrammarTagSheet tagId={grammarSheet} onClose={() => setGrammarSheet(null)} />}
 
           {(w.syn.length > 0 || w.ant.length > 0) && (
             <div>
