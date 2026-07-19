@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.65">
-<link rel="icon" href="img/icon-192.png?v=0.35.65" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.65">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.65" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.65" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.66">
+<link rel="icon" href="img/icon-192.png?v=0.35.66" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.66">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.66" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.66" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.65"></script>
+<script src="img/hero/lottie.min.js?v=0.35.66"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.65"></script>
+<script src="lib/compromise.min.js?v=0.35.66"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.65"></script>
-<script src="words.js?v=0.35.65"></script>
+<script src="lib/supabase.min.js?v=0.35.66"></script>
+<script src="words.js?v=0.35.66"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.65"></script><style>
+<script src="grammar_tags.js?v=0.35.66"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -41,15 +41,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.65") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.65") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.66") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.66") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.65") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.65") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.66") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.66") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -371,7 +371,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.65");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.66");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -647,7 +647,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    아래 마진 제거 + 상단 패딩 축소로 높이 낮춤(2026-07-14). */
 .tabbar{display:flex;align-items:flex-end;justify-content:space-around;background:var(--ink);border-top:none;padding:6px 8px calc(env(safe-area-inset-bottom));position:relative;z-index:5;overflow:visible;}
 .tab{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;color:var(--on-accent);font-size:11px;font-weight:600;padding:1px 0;overflow:visible;}
-.tab .ti{width:26px;height:26px;display:flex;align-items:center;justify-content:center;}
+.tab .ti{width:26px;height:26px;display:flex;align-items:center;justify-content:center;position:relative;}
+.tab-n-dot{position:absolute;top:0;right:1px;width:8px;height:8px;border-radius:50%;background:var(--hi-pink);border:1.5px solid var(--ink);}
 /* 탭별로 다른 형광펜색 — 홈도 다른 탭과 같은 레벨(더 이상 튀어나오는 원형 FAB 아님) */
 .tab.tab-learn.on{color:var(--hi-green);}
 .tab.tab-dict.on{color:var(--hi-yellow);}
@@ -888,6 +889,10 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .step.soon{opacity:.5;}
 .talk-room{display:flex;align-items:center;gap:13px;background:var(--surface);border:0.5px solid var(--card-border);border-radius:0;box-shadow:var(--shadow);padding:14px 16px;margin-bottom:8px;}
 .talk-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex:none;}
+/* 하루 한 명 랜덤 말걸기 N뱃지(2026-07-20) */
+.talk-avatar-wrap{position:relative;flex:none;}
+.talk-n-badge{position:absolute;top:-3px;right:-3px;width:16px;height:16px;border-radius:50%;background:var(--hi-pink-dark);color:#fff;font-size:9px;font-weight:800;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--surface);}
+.talk-n-note{font-size:10.5px;font-weight:700;color:var(--hi-pink-dark);flex:none;}
 .talk-avatar-sm{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:17px;flex:none;}
 .talk-avatar.hi-green, .talk-avatar-sm.hi-green{background:var(--hi-green);color:var(--hi-green-xdark);}
 .talk-avatar.hi-yellow, .talk-avatar-sm.hi-yellow{background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
@@ -1090,7 +1095,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.65";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.66";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
    전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
@@ -2905,7 +2910,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.65" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.66" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -3274,7 +3279,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.65";
+const HERO_V = "0.35.66";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -4722,6 +4727,32 @@ const PERSONAS = [
 let CUSTOM_PERSONAS = (() => { try { return JSON.parse(localStorage.getItem("en_custom_personas") || "[]"); } catch (e) { return []; } })();
 function saveCustomPersonas() { try { localStorage.setItem("en_custom_personas", JSON.stringify(CUSTOM_PERSONAS)); } catch (e) {} }
 function allPersonas() { return PERSONAS.concat(CUSTOM_PERSONAS); }
+
+/* 하루 한 명, 랜덤 페르소나가 먼저 말 거는 느낌을 주는 일일 알림(2026-07-20) — 실제로 대사를
+   미리 생성해두진 않는다(그 방값 자체가 이미 방에 들어가는 순간 상대가 먼저 말을 거는 구조라
+   불필요한 API 호출). 그날의 "당첨" 페르소나만 골라 방 목록에 N 뱃지로 표시하고, 그 방을 열면
+   당일치 알림은 사라진다(다음날 다시 새로 뽑음). */
+const DAILY_TALK_KEY = "en_daily_talk_v1";
+function todaysTalkPick() {
+  let saved = null;
+  try { saved = JSON.parse(localStorage.getItem(DAILY_TALK_KEY) || "null"); } catch (e) {}
+  const today = ACT.todayKey();
+  if (saved && saved.date === today) return saved;
+  const pool = allPersonas();
+  if (!pool.length) return null;
+  const pick = { date: today, personaId: pool[Math.floor(Math.random() * pool.length)].id, seen: false };
+  try { localStorage.setItem(DAILY_TALK_KEY, JSON.stringify(pick)); } catch (e) {}
+  return pick;
+}
+function markDailyTalkSeen(personaId) {
+  try {
+    const saved = JSON.parse(localStorage.getItem(DAILY_TALK_KEY) || "null");
+    if (saved && saved.personaId === personaId && !saved.seen) {
+      saved.seen = true;
+      localStorage.setItem(DAILY_TALK_KEY, JSON.stringify(saved));
+    }
+  } catch (e) {}
+}
 function addCustomPersona(p) { CUSTOM_PERSONAS = CUSTOM_PERSONAS.concat([p]); saveCustomPersonas(); }
 function removeCustomPersona(id) {
   CUSTOM_PERSONAS = CUSTOM_PERSONAS.filter(p => p.id !== id); saveCustomPersonas();
@@ -5286,6 +5317,7 @@ function Writing({ onExit }) {
 }
 
 function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting, onOpenPronun, onCreate, onDeletePersona }) {
+  const daily = todaysTalkPick(); // 오늘의 랜덤 말걸기 대상(2026-07-20)
   return (
     <div className="content">
       <div className="sec">회화</div>
@@ -5320,11 +5352,15 @@ function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting, onOpenPronun, onCreat
         const last = room && room.messages.length ? room.messages[room.messages.length - 1] : null;
         return (
           <div key={p.id} className="talk-room" onClick={() => { unlockAudio(); onOpenRoom(p.id); }}>
-            <div className={"talk-avatar hi-" + p.avatar}>{p.letter}</div>
+            <div className="talk-avatar-wrap">
+              <div className={"talk-avatar hi-" + p.avatar}>{p.letter}</div>
+              {daily && daily.personaId === p.id && !daily.seen && <span className="talk-n-badge">N</span>}
+            </div>
             <div className="talk-room-body">
               <div className="talk-room-name-row">
                 <span className="talk-room-name">{p.name}</span>
                 <span className="talk-room-trait">{p.trait}</span>
+                {daily && daily.personaId === p.id && !daily.seen && <span className="talk-n-note">오늘 말 걸어요</span>}
               </div>
               <div className="talk-room-sub">{last ? (last.role === "bot" ? last.en : "나: " + last.en) : "대화를 시작해보세요"}</div>
             </div>
@@ -5822,6 +5858,7 @@ function Talk({ onOpenWord, setImmersive }) {
     setImmersive(!!view && view !== "sos");
     return () => setImmersive(false);
   }, [view]); // eslint-disable-line
+  const openRoom = id => { markDailyTalkSeen(id); setView(id); }; // 오늘의 랜덤 말걸기 대상이면 뱃지 해제(2026-07-20)
   if (!PROXY_BASE) return <Soon title="회화 탭은 준비 중입니다" desc="메신저형 대화방 · 작문 연습 · 발음 클리닉" />;
   if (view === "sos") return <TalkSOS onBack={() => setView(null)} onOpenWord={onOpenWord} />;
   if (view === "writing") return <Writing onExit={() => setView(null)} />;
@@ -5829,10 +5866,10 @@ function Talk({ onOpenWord, setImmersive }) {
   if (view === "create") return <PersonaCreate onDone={id => setView(id)} onCancel={() => setView(null)} />;
   if (view) {
     const persona = allPersonas().find(p => p.id === view);
-    if (!persona) return <TalkRooms onOpenRoom={setView} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} onOpenPronun={() => setView("pronun")} onCreate={() => setView("create")} onDeletePersona={id => { removeCustomPersona(id); bumpP(v => v + 1); }} />;
+    if (!persona) return <TalkRooms onOpenRoom={openRoom} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} onOpenPronun={() => setView("pronun")} onCreate={() => setView("create")} onDeletePersona={id => { removeCustomPersona(id); bumpP(v => v + 1); }} />;
     return <TalkRoom persona={persona} onExit={() => setView(null)} onOpenWord={onOpenWord} />;
   }
-  return <TalkRooms onOpenRoom={setView} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} onOpenPronun={() => setView("pronun")} onCreate={() => setView("create")} onDeletePersona={id => { removeCustomPersona(id); bumpP(v => v + 1); }} />;
+  return <TalkRooms onOpenRoom={openRoom} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} onOpenPronun={() => setView("pronun")} onCreate={() => setView("create")} onDeletePersona={id => { removeCustomPersona(id); bumpP(v => v + 1); }} />;
 }
 
 /* 커스텀 대화 상대 만들기 — 이름·성격/상황·상세 설명·억양·아바타색을 받아 페르소나를 만든다.
@@ -7895,7 +7932,7 @@ function cmpVer(a, b) {
   return 0;
 }
 const WHATS_NEW = {
-  "v0.35.65": [
+  "v0.35.66": [
     "**구글 로그인**으로 기기를 바꿔도 학습 기록이 유지돼요.",
     "회화 대화방 목소리가 캐릭터 성별에 맞게, 속도도 원어민 대화 빠르기로 자연스러워졌어요.",
     "듣기 세션에서 틀린 문장은 **오답 노트**에 모여서 다시 복습할 수 있어요.",
@@ -8061,6 +8098,7 @@ function App() {
   }
 
   const homeStreak = ACT.streak(); // 상단바 "연속 N일" 실데이터(2026-07-19, 구 하드코딩 4 대체). tab 전환마다 App 리렌더로 갱신.
+  const dailyTalk = todaysTalkPick(); // 오늘의 랜덤 말걸기 대상(2026-07-20) — 탭바 알림 점에 사용
   return (
     <div className="app">
       <div className="topbar">
@@ -8106,7 +8144,10 @@ function App() {
                   }}>
             {/* 레벨테스트 중에도 탭 이동이 되도록 ltOpen을 닫음 — 안 닫으면 tab 상태만 바뀌고
                 화면은 테스트가 계속 덮고 있어 "탭 터치가 안 먹는" 것처럼 보였음(2026-07-17) */}
-            <span className="ti"><Icon name={t.icon} size={26} /></span>
+            <span className="ti">
+              <Icon name={t.icon} size={26} />
+              {t.k === "talk" && dailyTalk && !dailyTalk.seen && <span className="tab-n-dot" />}
+            </span>
             {t.label}
           </button>
         ))}
