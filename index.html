@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.63">
-<link rel="icon" href="img/icon-192.png?v=0.35.63" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.63">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.63" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.63" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.64">
+<link rel="icon" href="img/icon-192.png?v=0.35.64" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.64">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.64" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.64" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.63"></script>
+<script src="img/hero/lottie.min.js?v=0.35.64"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.63"></script>
+<script src="lib/compromise.min.js?v=0.35.64"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.63"></script>
-<script src="words.js?v=0.35.63"></script>
+<script src="lib/supabase.min.js?v=0.35.64"></script>
+<script src="words.js?v=0.35.64"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.63"></script><style>
+<script src="grammar_tags.js?v=0.35.64"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -41,15 +41,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.63") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.63") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.64") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.64") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.63") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.63") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.64") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.64") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -118,6 +118,35 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .install-later{border:none;background:transparent;color:var(--muted);font-size:12px;font-weight:600;padding:7px 8px;cursor:pointer;white-space:nowrap;}
 .install-do{border:none;background:var(--ink);color:var(--on-accent);font-size:13px;font-weight:700;padding:8px 16px;border-radius:999px;cursor:pointer;white-space:nowrap;}
 .install-help{margin-top:8px;font-size:12px;color:var(--ink-2);line-height:1.5;background:var(--surface);border-radius:0;padding:9px 11px;word-break:keep-all;}
+
+/* ===== 온보딩(환영 화면) — JP_vocab_pcm 이식, 앱 팔레트로 재스킨(2026-07-20) ===== */
+.onb{flex:1;min-height:0;background:var(--ink);display:flex;align-items:center;justify-content:center;padding:24px 20px;overflow-y:auto;}
+.onb-inner{width:100%;max-width:420px;margin:0 auto;text-align:center;}
+.onb-brand{font-size:15px;font-weight:800;letter-spacing:.02em;color:var(--hi-green);margin-bottom:18px;}
+.onb-title{font-size:26px;font-weight:800;color:var(--on-accent);line-height:1.35;letter-spacing:-.4px;margin:0 0 12px;word-break:keep-all;}
+.onb-sub{font-size:14px;color:rgba(255,251,241,.72);line-height:1.6;margin:0 0 26px;word-break:keep-all;}
+.onb-points{display:flex;flex-direction:column;gap:10px;text-align:left;margin-bottom:32px;}
+.onb-point{display:flex;align-items:center;gap:10px;background:rgba(255,251,241,.08);color:var(--on-accent);font-size:13px;font-weight:600;padding:12px 14px;}
+.onb-point-ico{flex:none;display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--hi-green);color:var(--ink);}
+.onb-start{width:100%;height:48px;border:none;border-radius:999px;background:var(--hi-green);color:var(--ink);font-size:16px;font-weight:800;cursor:pointer;}
+
+/* ===== 첫 사용자 가이드 · 업데이트 안내 공용 셸(JP_vocab_pcm 이식, 2026-07-20) ===== */
+.guide-overlay{position:fixed;inset:0;z-index:60;background:rgba(33,28,21,.42);display:flex;align-items:center;justify-content:center;padding:20px;animation:fade .15s ease;}
+.guide-modal{background:var(--surface);width:100%;max-width:380px;padding:24px 22px 22px;max-height:calc(100dvh - 40px);overflow-y:auto;box-shadow:var(--shadow-sheet, var(--shadow));animation:pop .22s cubic-bezier(.2,.8,.2,1);text-align:center;}
+.guide-title{font-size:18px;font-weight:800;color:var(--ink);margin:0 0 18px;}
+.guide-list{display:flex;flex-direction:column;gap:13px;text-align:left;margin-bottom:18px;}
+.guide-item{display:flex;align-items:center;gap:13px;}
+.guide-icon{flex-shrink:0;width:40px;height:40px;border-radius:50%;background:var(--ink);color:var(--on-accent);display:flex;align-items:center;justify-content:center;}
+.guide-item-text{display:flex;flex-direction:column;gap:2px;}
+.guide-item-text b{font-size:14px;color:var(--ink);}
+.guide-item-text span{font-size:12.5px;color:var(--ink-2);line-height:1.45;word-break:keep-all;}
+.guide-footnote{font-size:12px;color:var(--ink-2);text-align:center;margin:0 0 16px;word-break:keep-all;}
+.guide-start{width:100%;height:48px;border:none;border-radius:999px;background:var(--ink);color:var(--on-accent);font-size:16px;font-weight:800;cursor:pointer;}
+.whatsnew-badge{display:inline-block;background:var(--fill);color:var(--ink-2);font-size:12px;font-weight:700;padding:4px 12px;border-radius:999px;margin-bottom:16px;}
+.whatsnew-list{text-align:left;margin:0 0 20px;padding:0;list-style:none;display:flex;flex-direction:column;gap:11px;}
+.whatsnew-list li{font-size:13.5px;color:var(--ink);line-height:1.5;padding-left:16px;position:relative;word-break:keep-all;}
+.whatsnew-list li::before{content:"•";position:absolute;left:0;color:var(--ink-2);font-weight:800;}
+.whatsnew-btn{background:var(--fill);color:var(--ink);}
 .brand{font-size:20px;font-weight:800;letter-spacing:-0.4px;}
 .brand b{color:var(--accent);}
 .topbar-right{display:flex;align-items:center;gap:8px;}
@@ -335,7 +364,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.63");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.64");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -1054,7 +1083,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.63";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.64";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
    전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
@@ -2852,7 +2881,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.63" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.64" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -3221,7 +3250,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.63";
+const HERO_V = "0.35.64";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -7353,7 +7382,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
 }
 
 /* ---------- 설정 (캐릭터 변경 · 일일 목표 · 듣기 속도/악센트) ---------- */
-function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
+function Settings({ charK, onChangeChar, onClose, onStartLevelTest, onOpenGuide }) {
   const [pts, setPts] = useState(POINTS.get());
   const [prefs, setPrefsState] = useState(PREFS.get());
   const first = charK === null;
@@ -7459,6 +7488,18 @@ function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
                 </div>
               </div>
               <div className="step-cta">시작</div>
+            </div>
+          </div>
+
+          <div>
+            <div className="wd-sec-t">도움말</div>
+            <div className="step" onClick={onOpenGuide}>
+              <div className="step-ico"><Icon name="auto_awesome" size={20} /></div>
+              <div className="step-body">
+                <div className="step-title">사용법 다시보기</div>
+                <div className="step-sub">앱 주요 기능 안내를 다시 확인해요</div>
+              </div>
+              <span className="arrow">›</span>
             </div>
           </div>
 
@@ -7641,8 +7682,138 @@ function InstallBanner() {
   );
 }
 
+/* ===================== 온보딩 · 첫 사용자 가이드 · 업데이트 안내 (JP_vocab_pcm 이식, 2026-07-20) =====================
+   PCM은 온보딩에서 JLPT 레벨을 직접 고르지만, 이 앱은 이미 별도의 레벨 테스트(4.3)가 있으므로
+   온보딩은 "환영 화면 1장 + 시작하기"로 단순화 — 레벨 테스트는 홈의 안내 카드(이미 구현됨)에서
+   원하는 시점에 받도록 유도한다(둘 다 강제 안 하는 게 진입장벽을 낮춘다는 PLAN 4.3 원칙과 일치). */
+const ONBOARD_KEY = "en_onboard_v1";
+function loadOnboard() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(ONBOARD_KEY) || "null");
+    if (saved) return saved;
+    // 마이그레이션: 이 온보딩 기능이 생기기 전부터 이미 써온 사용자(en_srs에 실제 채점 기록이 있음
+    // — SRS.grade()가 처음 호출될 때만 저장되므로 이게 있다는 건 최소 한 번 이상 학습했다는 뜻)는
+    // "신규"가 아니므로 환영 화면을 다시 보여주지 않고 곧바로 온보딩 완료로 간주(2026-07-20).
+    if (localStorage.getItem("en_srs") !== null) { const o = { done: true }; saveOnboard(o); return o; }
+    return null;
+  } catch (e) { return null; }
+}
+function saveOnboard(o) { try { localStorage.setItem(ONBOARD_KEY, JSON.stringify(o || {})); } catch (e) {} }
+function OnboardingView({ onDone }) {
+  return (
+    <div className="onb">
+      <div className="onb-inner">
+        <div className="onb-brand">NoEnglish</div>
+        <h1 className="onb-title">영어 때문에<br />도망치지 마세요</h1>
+        <p className="onb-sub">단어카드·듣기·회화로 매일 조금씩 —<br />망각곡선에 맞춰 복습까지 알아서 챙겨드려요.</p>
+        <div className="onb-points">
+          <div className="onb-point"><span className="onb-point-ico"><Icon name="school" size={18} /></span>예문 빈칸으로 외우는 단어카드</div>
+          <div className="onb-point"><span className="onb-point-ico"><Icon name="volume_up" size={18} /></span>듣고 그대로 받아쓰는 딕테이션</div>
+          <div className="onb-point"><span className="onb-point-ico"><Icon name="forum" size={18} /></span>페르소나와 나누는 영어 대화</div>
+        </div>
+        <button className="onb-start" onClick={onDone}>시작하기</button>
+      </div>
+    </div>
+  );
+}
+
+const GUIDE_KEY = "en_guide_v1";
+function loadGuideSeen() { try { return !!localStorage.getItem(GUIDE_KEY); } catch (e) { return true; } }
+const GUIDE_STEPS = [
+  { icon: "school", title: "매일 학습 + 자동 복습", desc: "오늘 분량을 배우면 망각곡선에 맞춰 복습이 돌아와요." },
+  { icon: "volume_up", title: "듣기 세션으로 받아쓰기", desc: "문장을 듣고 그대로 타이핑 — 놓친 문장은 오답 노트에 쌓여요." },
+  { icon: "forum", title: "회화 탭에서 페르소나와 대화", desc: "직장동료·애인·의사 등 다양한 상대와 텍스트·음성으로 대화 연습." },
+  { icon: "menu_book", title: "사전에서 아무 단어나 눌러보세요", desc: "뜻·예문·유의어·어원까지, 탭하면 계속 타고 들어갈 수 있어요." },
+  { icon: "bookmark", title: "보관함에서 뱃지·성장 기록 확인", desc: "즐겨찾기·내 단어장과 함께 학습 기록이 쌓여요." },
+];
+function FirstRunGuide({ onClose, firstTime }) {
+  const finish = () => { try { localStorage.setItem(GUIDE_KEY, "1"); } catch (e) {} onClose(); };
+  return (
+    <div className="guide-overlay" onClick={finish}>
+      <div className="guide-modal" onClick={e => e.stopPropagation()}>
+        {firstTime && <div className="guide-title">사용법 한눈에 보기</div>}
+        <div className="guide-list">
+          {GUIDE_STEPS.map((s, i) => (
+            <div className="guide-item" key={i}>
+              <span className="guide-icon"><Icon name={s.icon} size={20} /></span>
+              <div className="guide-item-text"><b>{s.title}</b><span>{s.desc}</span></div>
+            </div>
+          ))}
+        </div>
+        <div className="guide-footnote"><b>이 안내는 설정에서 언제든 다시 볼 수 있어요.</b></div>
+        <button className="guide-start" onClick={finish}>{firstTime ? "시작하기" : "닫기"}</button>
+      </div>
+    </div>
+  );
+}
+
+/* 업데이트 안내 — 버전 키마다 항목 배열, **볼드** 마크업은 기존 renderBold() 재사용.
+   마이너 버전(A.B.x) 단위로 누적 — 같은 A.B의 패치를 여러 번 올려도 최신 패치 키 하나에 모아 적을 것. */
+const WHATSNEW_KEY = "en_whatsnew_seen";
+function loadWhatsNewSeen() { try { return localStorage.getItem(WHATSNEW_KEY); } catch (e) { return APP_VERSION; } }
+function saveWhatsNewSeen(v) { try { localStorage.setItem(WHATSNEW_KEY, v); } catch (e) {} }
+function cmpVer(a, b) {
+  const p = v => String(v || "").replace(/^v/, "").split(".").map(n => parseInt(n, 10) || 0);
+  const x = p(a), y = p(b);
+  for (let i = 0; i < Math.max(x.length, y.length); i++) { const d = (x[i] || 0) - (y[i] || 0); if (d) return d < 0 ? -1 : 1; }
+  return 0;
+}
+const WHATS_NEW = {
+  "v0.35.64": [
+    "**구글 로그인**으로 기기를 바꿔도 학습 기록이 유지돼요.",
+    "회화 대화방 목소리가 캐릭터 성별에 맞게, 속도도 원어민 대화 빠르기로 자연스러워졌어요.",
+    "듣기 세션에서 틀린 문장은 **오답 노트**에 모여서 다시 복습할 수 있어요.",
+    "홈 캐릭터를 탭하면 성장 안내를 볼 수 있어요.",
+    "그 밖에 화면 곳곳의 자잘한 버그를 다수 수정했어요.",
+  ],
+};
+function pendingWhatsNew(seen) {
+  let best = null;
+  for (const v in WHATS_NEW) {
+    const notes = WHATS_NEW[v];
+    if (!notes || !notes.length) continue;
+    if (cmpVer(v, APP_VERSION) > 0) continue;
+    if (cmpVer(v, seen) <= 0) continue;
+    if (!best || cmpVer(v, best) > 0) best = v;
+  }
+  return best;
+}
+function WhatsNewModal({ ver, notes, onClose }) {
+  return (
+    <div className="guide-overlay" onClick={onClose}>
+      <div className="guide-modal whatsnew-modal" onClick={e => e.stopPropagation()}>
+        <div className="whatsnew-badge">업데이트 안내 · {ver}</div>
+        <ul className="whatsnew-list">{notes.map((n, i) => <li key={i}>{renderBold(n)}</li>)}</ul>
+        <button className="guide-start whatsnew-btn" onClick={onClose}>확인</button>
+      </div>
+    </div>
+  );
+}
+
 function App() {
   const [showSplash, setShowSplash] = useState(true); // 앱 첫 진입 시 로고 슬롯머신 스플래시(2026-07-19)
+  const [onboard, setOnboard] = useState(loadOnboard); // {done:true} | null(미완료) — 2026-07-20
+  const [showGuide, setShowGuide] = useState(false);
+  const [showWhatsNew, setShowWhatsNew] = useState(false);
+  const [whatsNewVer, setWhatsNewVer] = useState(null);
+  // 이번 세션이 시작될 때 이미 온보딩을 마친 상태였는가 — 방금 이번 세션에서 막 온보딩을 마친
+  // 신규 사용자에게는 첫 가이드 다음에 곧바로 업데이트 안내까지 겹쳐 뜨지 않게 구분(PCM과 동일 패턴).
+  const wasExistingUserRef = useRef(!!(onboard && onboard.done));
+  useEffect(() => {
+    if (!onboard || !onboard.done) return;
+    if (!loadGuideSeen()) { const t = setTimeout(() => setShowGuide(true), 450); return () => clearTimeout(t); }
+  }, [onboard && onboard.done]); // eslint-disable-line
+  useEffect(() => {
+    if (!onboard || !onboard.done) return;
+    if (!wasExistingUserRef.current) return; // 방금 온보딩 마친 신규 사용자는 이번 세션엔 제외(가이드로 충분)
+    const seen = loadWhatsNewSeen();
+    if (seen === APP_VERSION) return;
+    const ver = pendingWhatsNew(seen);
+    if (!ver) { saveWhatsNewSeen(APP_VERSION); return; }
+    setWhatsNewVer(ver);
+    const t = setTimeout(() => setShowWhatsNew(true), 500);
+    return () => clearTimeout(t);
+  }, [onboard && onboard.done]); // eslint-disable-line
   const [tab, setTab] = useState("home");
   /* 탭 아이콘을 누르면(이미 그 탭이어도) 항상 그 탭의 메인 화면으로 돌아가게 하는 리셋 카운터(2026-07-18).
      탭별로 내부에 깊은 화면(회화 대화방, 사전 상세 등)이 있어도 이 값을 key에 섞어주면 그 탭 컴포넌트가
@@ -7742,6 +7913,16 @@ function App() {
     return () => { document.removeEventListener("visibilitychange", onHide); window.removeEventListener("pagehide", stopSpeaking); };
   }, []);
 
+  // 온보딩 미완료(최초 실행) — 스플래시는 그대로 위에 겹쳐 재생하고, 끝나면 그 아래 온보딩이 드러남.
+  if (!onboard || !onboard.done) {
+    return (
+      <div className="app">
+        <OnboardingView onDone={() => { const o = { done: true }; saveOnboard(o); setOnboard(o); }} />
+        {showSplash && <SplashScreen onDone={() => setShowSplash(false)} />}
+      </div>
+    );
+  }
+
   const homeStreak = ACT.streak(); // 상단바 "연속 N일" 실데이터(2026-07-19, 구 하드코딩 4 대체). tab 전환마다 App 리렌더로 갱신.
   return (
     <div className="app">
@@ -7773,7 +7954,7 @@ function App() {
         )}
       </div>
 
-      {settingsOpen && <Settings charK={charK} onChangeChar={changeChar} onClose={() => setSettingsOpen(false)} onStartLevelTest={startLevelTest} />}
+      {settingsOpen && <Settings charK={charK} onChangeChar={changeChar} onClose={() => setSettingsOpen(false)} onStartLevelTest={startLevelTest} onOpenGuide={() => { setSettingsOpen(false); setShowGuide(true); }} />}
 
       {!(immersive || ltOpen || ltResultOpen) && <div className="tabbar">
         {TABS.map(t => (
@@ -7796,6 +7977,11 @@ function App() {
 
       {stack && <WordSheet stack={stack} onPush={pushWord} onPop={popWord} onClose={closeSheet} onOpenRoot={openRoot} />}
       {showSplash && <SplashScreen onDone={() => setShowSplash(false)} />}
+      {showGuide && <FirstRunGuide firstTime={!loadGuideSeen()} onClose={() => setShowGuide(false)} />}
+      {!showGuide && showWhatsNew && whatsNewVer && (
+        <WhatsNewModal ver={whatsNewVer} notes={WHATS_NEW[whatsNewVer]}
+          onClose={() => { saveWhatsNewSeen(APP_VERSION); setShowWhatsNew(false); }} />
+      )}
     </div>
   );
 }
