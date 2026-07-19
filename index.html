@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.58">
-<link rel="icon" href="img/icon-192.png?v=0.35.57" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.57">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.57" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.57" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.59">
+<link rel="icon" href="img/icon-192.png?v=0.35.59" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.59">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.59" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.59" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.57"></script>
+<script src="img/hero/lottie.min.js?v=0.35.59"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.57"></script>
+<script src="lib/compromise.min.js?v=0.35.59"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.57"></script>
-<script src="words.js?v=0.35.58"></script>
+<script src="lib/supabase.min.js?v=0.35.59"></script>
+<script src="words.js?v=0.35.59"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.57"></script><style>
+<script src="grammar_tags.js?v=0.35.59"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -41,15 +41,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.57") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.57") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.59") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.59") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.57") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.57") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.59") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.59") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -324,7 +324,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.58");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.59");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -1012,11 +1012,11 @@ textarea.pc-input{resize:none;line-height:1.5;}
 .acct-row{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--line);border-radius:0;padding:14px 16px;}
 .acct-info{min-width:0;}
 .acct-email{font-size:14px;font-weight:800;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-.acct-sub{font-size:12px;color:var(--ink-2);}
+.acct-sub{font-size:12px;color:var(--ink-2);word-break:keep-all;}
 .acct-actions{display:flex;gap:6px;flex:none;}
 .ptbox{display:flex;align-items:center;justify-content:space-between;background:var(--warmgray);border-radius:0;padding:14px 16px;}
 .ptbox .v{font-size:20px;font-weight:800;color:var(--ink-2);font-variant-numeric:tabular-nums;}
-.ptbox .l{font-size:12px;color:var(--ink-2);}
+.ptbox .l{font-size:12px;color:var(--ink-2);word-break:keep-all;}
 
 /* 설정 — 일일 목표 스테퍼 · 듣기 속도 프리셋 */
 .goalrow{display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:0;box-shadow:var(--shadow);padding:11px 15px;margin-bottom:8px;}
@@ -1038,7 +1038,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.58";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.59";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1676,7 +1676,8 @@ const SRS = (() => {
 /* ===================== 포인트 엔진 =====================
    캐릭터는 처음 1회는 무료로 선택하고, 이후 변경하려면 학습으로 쌓은 포인트가 필요(소모형).
    포인트는 카드 정답 시에만 적립 — "일정 학습량 유지"를 계량하는 유일한 지표. */
-const CHAR_CHANGE_COST = 300;
+const CHAR_CHANGE_COST = 3000;
+const STICKER_COST = 300; // 스티커 상점(decoShopItems) 대표 참고가 — 실제 구매 로직 없는 진열장(설계 필요, PLAN 5.2.6)이라 안내 문구에만 사용
 const POINTS = (() => {
   let n = 0;
   try { n = parseInt(localStorage.getItem("en_points") || "0", 10) || 0; } catch (e) {}
@@ -2792,10 +2793,10 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.57" },
-  { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
-  { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
-  { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.59" },
+  { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
+  { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
+  { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
 ];
 /* 연속 학습일 → 성장 4단계 + 달리기 속도 */
 function streakStage(days) { return days < 3 ? 1 : days < 7 ? 2 : days < 14 ? 3 : 4; }
@@ -3161,7 +3162,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.58";
+const HERO_V = "0.35.59";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -3530,7 +3531,9 @@ function DecorateCharacterView({ charK, onChangeChar }) {
                 : <div className={"char-swatch char-swatch-sm hi-" + c.accent} />}
             </div>
             <div className="body"><div className="name">{c.label}</div></div>
-            {isCur ? (
+            {c.comingSoon ? (
+              <div className="cta locked">Coming Soon!</div>
+            ) : isCur ? (
               <div className="cta use">사용 중</div>
             ) : first ? (
               <button className="cta free" onClick={() => handlePick(c.k)}>선택하기</button>
@@ -4557,34 +4560,34 @@ function Soon({ title, desc }) {
    MVP 범위(2026-07-15): 텍스트 대화 + 정확성 모드(피드백마다 확인 눌러야 진행)만 우선 구현.
    음성 입력·유창성 모드(무중단, 종료 후 일괄 리뷰)·사용자 커스텀 페르소나 생성은 다음 단계로 남김. */
 const PERSONAS = [
-  { id: "coworker", name: "직장동료", trait: "IT회사 개발자 · 미국인", accent: "us", rate: 1, avatar: "green", letter: "동",
+  { id: "coworker", name: "직장동료", trait: "IT회사 개발자 · 미국인", accent: "us", avatar: "green", letter: "동",
     promptDesc: "당신은 사용자와 같은 IT회사에서 일하는 미국인 개발자 동료입니다. 친근하고 캐주얼한 톤으로 업무 잡담을 나눕니다.",
     intro: "Hey! Long day, huh? What's up?", introKo: "안녕! 오늘 힘든 하루였지? 무슨 일 있어?" },
-  { id: "partner", name: "3년 사귄 애인", trait: "영국인", accent: "gb", rate: 1, avatar: "pink", letter: "애",
+  { id: "partner", name: "3년 사귄 애인", trait: "영국인", accent: "gb", avatar: "pink", letter: "애",
     promptDesc: "당신은 사용자와 3년째 사귀고 있는 영국인 애인입니다. 다정하고 편안한 톤으로 일상 대화를 나눕니다.",
     intro: "Hey babe, I missed you today. How was your day?", introKo: "자기야, 오늘 보고 싶었어. 하루 어땠어?" },
-  { id: "traveler", name: "여행지에서 만난 사람", trait: "호주인", accent: "au", rate: 1, avatar: "blue", letter: "여",
+  { id: "traveler", name: "여행지에서 만난 사람", trait: "호주인", accent: "au", avatar: "blue", letter: "여",
     promptDesc: "당신은 여행지에서 사용자와 방금 처음 만난 호주인입니다. 밝고 스몰토크에 능한 톤으로 대화합니다.",
     intro: "Oh, hi there! Are you traveling alone too?", introKo: "오, 안녕하세요! 혹시 혼자 여행 중이세요?" },
-  { id: "cashier", name: "마트 점원", trait: "미국인 · 캐주얼한 말투", accent: "us", rate: 1, avatar: "yellow", letter: "마",
+  { id: "cashier", name: "마트 점원", trait: "미국인 · 캐주얼한 말투", accent: "us", avatar: "yellow", letter: "마",
     promptDesc: "당신은 미국 마트에서 일하는 점원입니다. 캐주얼하고 친근한 구어체로 짧게 응대합니다.",
     intro: "Hi, welcome! Did you find everything okay today?", introKo: "안녕하세요, 어서오세요! 오늘 필요한 거 다 찾으셨어요?" },
-  { id: "airport", name: "공항 지상직 직원", trait: "영국인 · 사무적", accent: "gb", rate: 1, avatar: "orange", letter: "공",
+  { id: "airport", name: "공항 지상직 직원", trait: "영국인 · 사무적", accent: "gb", avatar: "orange", letter: "공",
     promptDesc: "당신은 공항 지상직 직원입니다. 무례하진 않지만 다소 사무적이고 퉁명스러운 톤으로 응대합니다.",
     intro: "Next. Passport and boarding pass, please.", introKo: "다음 분. 여권이랑 탑승권 주세요." },
-  { id: "doctor", name: "의사", trait: "중장년 남성 · 빠른 말투", accent: "us", rate: 1.2, avatar: "blue", letter: "의",
+  { id: "doctor", name: "의사", trait: "중장년 남성 · 빠른 말투", accent: "us", avatar: "blue", letter: "의",
     promptDesc: "당신은 중장년 남성 의사입니다. 말이 빠르고 전문적인 톤으로 진료를 진행합니다.",
     intro: "Hi, come on in. So, what brings you in today?", introKo: "안녕하세요, 들어오세요. 오늘 어떻게 오셨나요?" },
-  { id: "barista", name: "카페 직원", trait: "20대 여성 · 빠른 말투", accent: "us", rate: 1.2, avatar: "green", letter: "카",
+  { id: "barista", name: "카페 직원", trait: "20대 여성 · 빠른 말투", accent: "us", avatar: "green", letter: "카",
     promptDesc: "당신은 20대 여성 카페 직원입니다. 밝고 빠른 톤으로 주문을 받습니다.",
     intro: "Hey there! What can I get started for you today?", introKo: "안녕하세요! 오늘 뭐로 시작해드릴까요?" },
-  { id: "stranger", name: "지나가는 행인", trait: "도움이 필요한 상황 · 미국인", accent: "us", rate: 1, avatar: "yellow", letter: "행",
+  { id: "stranger", name: "지나가는 행인", trait: "도움이 필요한 상황 · 미국인", accent: "us", avatar: "yellow", letter: "행",
     promptDesc: "당신은 길에서 도움이 필요한(또는 사용자를 도와줄 수 있는) 미국인 행인입니다.",
     intro: "Excuse me, sorry to bother you — do you have a second?", introKo: "저기요, 죄송한데 잠깐 시간 괜찮으세요?" },
-  { id: "tutor", name: "친절한 영어 튜터", trait: "30대 · 뉴욕 발음", accent: "us", rate: 1, avatar: "pink", letter: "튜",
+  { id: "tutor", name: "친절한 영어 튜터", trait: "30대 · 뉴욕 발음", accent: "us", avatar: "pink", letter: "튜",
     promptDesc: "당신은 뉴욕 출신의 친절한 30대 영어 튜터입니다. 격려하는 톤으로 자연스럽게 학습자를 이끕니다.",
     intro: "Hi! Ready for today's lesson? Let's dive right in.", introKo: "안녕하세요! 오늘 수업 준비되셨나요? 바로 시작해봐요." },
-  { id: "friend", name: "10년지기 친구", trait: "슬랭 다수 · 미국인", accent: "us", rate: 1, avatar: "orange", letter: "친",
+  { id: "friend", name: "10년지기 친구", trait: "슬랭 다수 · 미국인", accent: "us", avatar: "orange", letter: "친",
     promptDesc: "당신은 사용자와 10년지기인 미국인 친구입니다. 편하고 슬랭이 섞인 캐주얼한 톤으로 대화합니다.",
     intro: "Yo! It's been way too long, man. What's new with you?", introKo: "야! 진짜 오랜만이다. 요즘 뭐 하고 지내?" },
 ];
@@ -5298,7 +5301,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
       const r = await talkNextLine(persona, hist);
       const msg = { role: "bot", en: (r.en || "").trim(), ko: (r.ko || "").trim(), at: Date.now() };
       setMessages(m => [...m, msg]);
-      speakText(msg.en, persona.rate, persona.accent);
+      speakText(msg.en, null, persona.accent);
     } catch (e) {
       // 원인을 화면에 그대로 노출(2026-07-18) — 예전엔 뭉뚱그린 메시지라 재발 시 원인 파악이 안 됐음.
       // hist를 기억해뒀다가 "다시 시도"로 같은 요청을 재실행할 수 있게.
@@ -5316,7 +5319,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
       if (persona.intro) {
         const introMsg = { role: "bot", en: persona.intro, ko: persona.introKo, at: Date.now() };
         setMessages([introMsg]);
-        speakText(introMsg.en, persona.rate, persona.accent);
+        speakText(introMsg.en, null, persona.accent);
       } else {
         fetchBotLine([]);
       }
@@ -5401,7 +5404,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
       pendingBotLineRef.current = null;
       const msg = { role: "bot", en: pending.en, ko: pending.ko, at: Date.now() };
       setMessages(m => [...m, msg]);
-      speakText(msg.en, persona.rate, persona.accent);
+      speakText(msg.en, null, persona.accent);
     } else {
       fetchBotLine(messages); // talkFeedbackAndNext가 대사를 못 받아왔을 때(에러 등)만 예전 방식으로 폴백
     }
@@ -5491,7 +5494,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
               <div className="talk-bubble">
                 {m.role === "bot" && !showEn ? "•••" : m.role === "bot" ? <span><ChatBubbleWords text={m.en} onOpenWord={onOpenWord} /></span> : m.en}
                 {m.role === "bot" && (
-                  <button className="talk-play" onClick={() => speakText(m.en, persona.rate, persona.accent)} aria-label="다시 듣기">
+                  <button className="talk-play" onClick={() => speakText(m.en, null, persona.accent)} aria-label="다시 듣기">
                     <Icon name="volume_up" size={13} />
                   </button>
                 )}
@@ -5720,7 +5723,7 @@ function PersonaCreate({ onDone, onCancel }) {
     if (!canSave) return;
     const nm = name.trim(), tr = trait.trim(), dt = detail.trim();
     const persona = {
-      id: "custom_" + Date.now(), name: nm, trait: tr, accent, rate: 1, avatar: color,
+      id: "custom_" + Date.now(), name: nm, trait: tr, accent, avatar: color,
       letter: Array.from(nm)[0] || "?", custom: true,
       promptDesc: `역할극 상대 설정: 당신은 "${nm}"입니다. ${tr}.` + (dt ? ` ${dt}.` : "") +
         " 이 설정에 맞는 성격·말투·태도로 사용자와 영어로 자연스럽게 대화하세요. 항상 상대 역할만 연기하고 설명은 하지 마세요.",
@@ -7315,7 +7318,7 @@ function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
               <div className="l">보유 포인트</div>
               <div className="v">{pts}P</div>
             </div>
-            <div className="l" style={{ textAlign: "right", maxWidth: 160 }}>단어카드 정답마다 10P 적립 · 캐릭터 변경에 {CHAR_CHANGE_COST}P 필요</div>
+            <div className="l" style={{ textAlign: "right", maxWidth: 160 }}>단어카드 정답마다 10P 적립 · 캐릭터 변경 {CHAR_CHANGE_COST}P · 스티커 {STICKER_COST}P~</div>
           </div>
 
           <div>
@@ -7350,7 +7353,9 @@ function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
                     <div className="body">
                       <div className="name">{c.label}</div>
                     </div>
-                    {isCur ? (
+                    {c.comingSoon ? (
+                      <div className="cta locked">Coming Soon!</div>
+                    ) : isCur ? (
                       <div className="cta use">사용 중</div>
                     ) : first ? (
                       <button className="cta free" onClick={() => handlePick(c.k)}>선택하기</button>
