@@ -4,7 +4,7 @@
    목적: Gemini/TTS API 키를 클라이언트에 노출하지 않고 서버(Worker)에서 대신 호출.
    엔드포인트:
      POST /gemini  { prompt: string }              -> { text: string }
-     POST /tts     { text, lang, rate }             -> audio/mpeg (binary)
+     POST /tts     { text, lang, rate, gender }      -> audio/mpeg (binary)
      POST /stt     { audio: base64, mimeType }      -> { text: string }  (Gemini 멀티모달 오디오 전사)
      GET  /health                                    -> { ok: true }
    시크릿(레포에 넣지 않음, wrangler secret 또는 대시보드로 등록):
@@ -22,10 +22,13 @@
    PLAN.md 6.6 참고: 지금은 P0 단계(사용량 DB 카운트 없음) — 개인용 규모 전제.
 ============================================================================ */
 
+/* 예전엔 lang당 목소리 1개(전부 여성 Neural2)라, 회화 페르소나가 "중장년 남성 의사"라고 설정해도
+   실제로는 여성 목소리로 나오는 버그가 있었음(2026-07-20 발견) — 성별별로 나눔.
+   gender 미지정 시 기존 동작 유지를 위해 female을 기본값으로 유지(하위 호환). */
 const TTS_VOICES = {
-  "en-US": "en-US-Neural2-C",
-  "en-GB": "en-GB-Neural2-A",
-  "en-AU": "en-AU-Neural2-A",
+  "en-US": { female: "en-US-Neural2-C", male: "en-US-Neural2-D" },
+  "en-GB": { female: "en-GB-Neural2-A", male: "en-GB-Neural2-B" },
+  "en-AU": { female: "en-AU-Neural2-A", male: "en-AU-Neural2-B" },
 };
 
 function corsHeaders(origin, allowed) {
@@ -165,7 +168,8 @@ async function handleTts(request, env, headers) {
   if (!env.GOOGLE_TTS_KEY) return json({ error: "server not configured" }, 500, headers);
 
   const lang = TTS_VOICES[body && body.lang] ? body.lang : "en-US";
-  const voiceName = TTS_VOICES[lang];
+  const gender = (body && body.gender) === "male" ? "male" : "female";
+  const voiceName = TTS_VOICES[lang][gender];
   const speakingRate = Math.max(0.25, Math.min(4.0, Number(body && body.rate) || 1.0));
 
   const apiUrl = `https://texttospeech.googleapis.com/v1/text:synthesize?key=${env.GOOGLE_TTS_KEY}`;

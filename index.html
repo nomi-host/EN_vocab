@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.60">
-<link rel="icon" href="img/icon-192.png?v=0.35.60" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.60">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.60" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.60" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.62">
+<link rel="icon" href="img/icon-192.png?v=0.35.62" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.62">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.62" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.62" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.60"></script>
+<script src="img/hero/lottie.min.js?v=0.35.62"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.60"></script>
+<script src="lib/compromise.min.js?v=0.35.62"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.60"></script>
-<script src="words.js?v=0.35.60"></script>
+<script src="lib/supabase.min.js?v=0.35.62"></script>
+<script src="words.js?v=0.35.62"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.60"></script><style>
+<script src="grammar_tags.js?v=0.35.62"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -41,15 +41,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.60") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.60") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.62") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.62") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.60") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.60") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.62") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.62") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -324,7 +324,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.60");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.62");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -340,8 +340,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    z-index는 스티커의 동적 z(최대 10+개수)보다 항상 높게 고정 — "캐릭터는 항상 최상위" 요구사항
    (2026-07-18). */
 .hero-cat{position:absolute;left:16.85%;top:11.2%;width:56%;height:88.8%;z-index:100;pointer-events:none;}
-.hero-cat > svg, .hero-cat > div{width:100%!important;height:100%!important;display:block;}
-.hero-cat-hit{width:100%;height:100%;pointer-events:auto;cursor:pointer;}
+/* 2026-07-20: 캐릭터 탭 팝업(.hero-cat-hit) 추가로 실제 Lottie/svg 콘텐츠가 .hero-cat의 직계 자식이
+   아니라 .hero-cat-hit의 자식으로 한 단계 더 들어감 — 셀렉터를 안 옮기면 이 !important가 .hero-cat-hit
+   자체에 걸려 아래 .hero-cat-hit{inset:10px}가 의도한 만큼 안 줄어들고 부모와 같은 크기로 강제됨. */
+.hero-cat-hit > svg, .hero-cat-hit > div{width:100%!important;height:100%!important;display:block;}
+.hero-cat-hit{position:absolute;inset:10px;pointer-events:auto;cursor:pointer;}
 /* 캐릭터 탭 안내 팝업 — 화면 전체가 아니라 히어로 영역만 딤(2026-07-20). hero-scene이 이미
    position:relative + 독립 스태킹 컨텍스트(z-index:0)라 여기 z-index는 그 안에서만 비교되면 됨 —
    캐릭터(100)·스티커보다 위에 있으면 충분. */
@@ -845,7 +848,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .talk-avatar.hi-blue, .talk-avatar-sm.hi-blue{background:var(--hi-blue);color:var(--hi-blue-xdark);}
 .talk-avatar.hi-orange, .talk-avatar-sm.hi-orange{background:var(--hi-orange);color:var(--ink);}
 .talk-room-body{flex:1;min-width:0;}
-.talk-room-name{font-size:14px;font-weight:800;}
+.talk-room-name-row{display:flex;align-items:baseline;gap:6px;min-width:0;}
+.talk-room-name{font-size:14px;font-weight:800;flex:none;}
+.talk-room-trait{font-size:11px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;}
 .talk-room-sub{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px;}
 /* 커스텀 대화 상대 — 삭제 버튼 + "만들기" 추가 행 (2026-07-19) */
 .talk-room-del{flex:none;color:var(--muted);display:flex;align-items:center;justify-content:center;padding:6px;}
@@ -1038,7 +1043,21 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.60";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.62";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+
+/* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
+   전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
+   가짜 기록을 안고 시작했음(BETA_PLAN.md "미결 결정" 항목). ?tester=1로 접속하면 en_is_tester가
+   localStorage에 저장되고(이후 파라미터 없이 재접속해도 유지), ?tester=0으로 끄기 전까지 계속 데모
+   시드가 적용된 상태로 개발/시연용 앱을 볼 수 있다. 실사용자는 절대 이 파라미터를 안 붙이므로 기본값 false. */
+const IS_TESTER = (() => {
+  try {
+    const p = new URLSearchParams(location.search).get("tester");
+    if (p === "1") { localStorage.setItem("en_is_tester", "1"); return true; }
+    if (p === "0") { localStorage.removeItem("en_is_tester"); return false; }
+    return localStorage.getItem("en_is_tester") === "1";
+  } catch (e) { return false; }
+})();
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1171,13 +1190,13 @@ async function autoLookupWord(key) {
   saveExtra();
 }
 
-/* 즐겨찾기 — localStorage 보존(EXTRA·SRS와 동일 패턴). 첫 실행에만 데모 시드. */
+/* 즐겨찾기 — localStorage 보존(EXTRA·SRS와 동일 패턴). 첫 실행 데모 시드는 tester 전용(2026-07-20). */
 let FAVS = (() => {
   try {
     const raw = localStorage.getItem("en_favs");
-    if (raw === null) return new Set(["alert", "idiomatic"]);
+    if (raw === null) return IS_TESTER ? new Set(["alert", "idiomatic"]) : new Set();
     return new Set(JSON.parse(raw));
-  } catch (e) { return new Set(["alert", "idiomatic"]); }
+  } catch (e) { return new Set(); }
 })();
 function saveFavs() { try { localStorage.setItem("en_favs", JSON.stringify([...FAVS])); } catch (e) {} }
 function toggleFav(word) { if (FAVS.has(word)) FAVS.delete(word); else FAVS.add(word); saveFavs(); }
@@ -1458,16 +1477,17 @@ function stopSpeaking() {
    설정을 완전히 덮어써서 회화모드에서만 속도 설정이 안 먹혔었고, 그 다음엔 반대로 persona.rate를
    아예 없애 캐릭터 간 속도차가 사라졌었음 — 이번이 최종 방식.) */
 function personaSpeakRate(persona) { return (persona.rate || 1) * SPEED_PRESETS[PREFS.get().speed].rate; }
-async function speakText(text, rateOverride, accentOverride) {
+async function speakText(text, rateOverride, accentOverride, genderOverride) {
   const prefs = PREFS.get();
   const accent = ACCENT_PRESETS[accentOverride] || ACCENT_PRESETS[prefs.accent];
   const rate = rateOverride || SPEED_PRESETS[prefs.speed].rate;
+  const gender = genderOverride === "male" ? "male" : "female"; // 회화 페르소나별 성별(2026-07-20) — 미지정(단어카드 등)은 기존처럼 female
   const myGen = ++_speakGen; // 이 호출 이후 speakText/stopSpeaking이 또 불리면 myGen은 낡은 세대가 됨
   // 새로 말하기 전에 이전 재생(프록시 Audio·Web Speech 둘 다) 정지 — 연타 에코 방지
   try { speechSynthesis.cancel(); } catch (e) {}
   if (_activeAudio) { try { _activeAudio.pause(); } catch (e) {} _activeAudio = null; }
   if (PROXY_BASE) {
-    const cacheKey = accent.lang + "|" + rate + "|" + text;
+    const cacheKey = accent.lang + "|" + rate + "|" + gender + "|" + text;
     try {
       let url = TTS_CACHE.get(cacheKey);
       if (!url) {
@@ -1476,7 +1496,7 @@ async function speakText(text, rateOverride, accentOverride) {
         const r = await fetch(geminiEndpoint("tts"), {
           method: "POST",
           headers: proxyHeaders(),
-          body: JSON.stringify({ text, lang: accent.lang, rate }),
+          body: JSON.stringify({ text, lang: accent.lang, rate, gender }),
           signal: ctrl.signal,
         });
         clearTimeout(timer);
@@ -1570,9 +1590,11 @@ const DAY = 86400000;
 const SRS = (() => {
   let store;
   try { store = JSON.parse(localStorage.getItem("en_srs") || "null"); } catch (e) {}
+  if (!store && !IS_TESTER) store = {};
   if (!store) {
     const t = Date.now();
-    // 첫 실행 데모 시드(앱이 비어 보이지 않게) — 실제 학습하면 덮어써짐.
+    // 첫 실행 데모 시드(앱이 비어 보이지 않게) — 실제 학습하면 덮어써짐. tester 전용(2026-07-20,
+    // IS_TESTER=false면 위에서 이미 빈 store로 반환돼 이 블록 자체를 안 탐 — 실사용자는 진짜 빈 상태로 시작).
     // 가상 페르소나: 어휘력 B2+ · 작문력 B1 · 3개월 정도 띄엄띄엄 학습한 사용자(2026-07-16).
     store = {
       "business#0": { box: 6, due: t + 18 * DAY, seen: true },
@@ -1679,6 +1701,24 @@ const SRS = (() => {
     },
   };
 })();
+
+/* ===================== 오답 노트 (듣기 세션) =====================
+   딕테이션에서 첫 시도에 못 맞힌(재시도 끝에 맞혔거나 강제 재학습된) 문장을 모아둔다 —
+   SRS 자체는 "복습 주기"만 관리하고 "무엇을 유독 틀렸는지"는 안 남기므로 별도 목록(2026-07-20).
+   같은 항목을 여러 번 틀리면 count만 올리고 최근 시각(at)을 갱신 — 목록 정렬에 사용. */
+const WRONG_NOTE_KEY = "en_wrong_notes_v1";
+function loadWrongNotes() {
+  try { return JSON.parse(localStorage.getItem(WRONG_NOTE_KEY) || "[]"); } catch (e) { return []; }
+}
+function saveWrongNotes(list) { try { localStorage.setItem(WRONG_NOTE_KEY, JSON.stringify(list)); } catch (e) {} }
+function addWrongNote(key, source) {
+  const list = loadWrongNotes();
+  const hit = list.find(n => n.key === key);
+  if (hit) { hit.count = (hit.count || 1) + 1; hit.at = Date.now(); }
+  else list.unshift({ key, source, at: Date.now(), count: 1 });
+  saveWrongNotes(list.slice(0, 200)); // 무한 누적 방지 — 최근 200개만
+}
+function removeWrongNote(key) { saveWrongNotes(loadWrongNotes().filter(n => n.key !== key)); }
 
 /* ===================== 포인트 엔진 =====================
    캐릭터는 처음 1회는 무료로 선택하고, 이후 변경하려면 학습으로 쌓은 포인트가 필요(소모형).
@@ -2781,7 +2821,8 @@ function loadLevelTest() {
     const saved = JSON.parse(localStorage.getItem(LT_KEY) || "null");
     if (saved) return saved;
   } catch (e) {}
-  // 첫 실행 데모 시드(SRS와 동일한 패턴) — 실제로 레벨 테스트를 보면 saveLevelTest가 덮어씀.
+  if (!IS_TESTER) return null; // 실사용자는 실제로 레벨테스트를 봐야만 결과가 생김(2026-07-20) — 데모 시드 없음
+  // 첫 실행 데모 시드(SRS와 동일한 패턴, tester 전용) — 실제로 레벨 테스트를 보면 saveLevelTest가 덮어씀.
   // 가상 페르소나: 어휘력 B2+ · 작문력 B1 · 3개월 정도 띄엄띄엄 학습한 사용자(2026-07-16).
   return {
     at: Date.now() - 6 * DAY,
@@ -2800,7 +2841,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.60" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.62" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -3169,7 +3210,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.60";
+const HERO_V = "0.35.62";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -3720,7 +3761,7 @@ function DecorateNoteModal({ charK, onChangeChar, onClose, onStickersChanged }) 
   );
 }
 
-function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, onStartCards, onStartListen }) {
+function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, onStartLevelTest, onStartCards, onStartListen }) {
   const chr = CHARACTERS.find(c => c.k === charK) || null;
   const [decorateOpen, setDecorateOpen] = useState(false);
   const [decorateVersion, setDecorateVersion] = useState(0); // 노트꾸미기에서 스티커 복원 시 홈 목록 새로고침용
@@ -3803,7 +3844,7 @@ function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, on
   const badgeProgress = computeBadgeProgress();
   const badgesEarned = BADGE_CATS.reduce((s, c) => s + catEarnedCount(c.k, badgeProgress), 0);
   const pts = POINTS.get();
-  const lastLt = loadLevelTest(); // 레벨 테스트 실제 기록(없으면 loadLevelTest 자체 데모 폴백) — 홈 3칸에 반영
+  const lastLt = loadLevelTest(); // 레벨 테스트 실제 기록(실사용자가 미실시면 null, 2026-07-20) — 홈 3칸에 반영
   const gamiRow = (
     <div className="gami-row">
       <span className="gami-chip green">연속 {STREAK}일</span>
@@ -3822,9 +3863,8 @@ function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, on
           onStickersChanged={() => setDecorateVersion(v => v + 1)} />
       )}
 
-      {(() => {
-        // 레벨 테스트 실제 기록(loadLevelTest, 없으면 자체 데모 폴백)에서 그대로 읽음 — 실제로
-        // 테스트를 다시 보면 이 3칸도 그 결과로 즉시 갱신된다.
+      {lastLt ? (() => {
+        // 레벨 테스트 실제 기록에서 그대로 읽음 — 실제로 테스트를 다시 보면 이 3칸도 그 결과로 즉시 갱신된다.
         const lex = lastLt.lex;
         const lexBase = lex.band.replace("+", "");
         const pctHl = lex.pct <= 10 ? "blue" : lex.pct <= 25 ? "pink" : lex.pct <= 50 ? "yellow" : "green";
@@ -3837,7 +3877,14 @@ function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, on
             <div className={"stat tier-" + pctHl}><div className="v"><span className={"hl hl-" + pctHl} style={{ transform: "rotate(-1deg)" }}>상위 {lex.pct}%</span></div><div className="l">백분위</div></div>
           </div>
         );
-      })()}
+      })() : (
+        // 레벨테스트 미실시(실사용자 기본 상태, 2026-07-20 데모 폴백 제거) — 결과 대신 시작 유도.
+        <div className="level-row level-empty" onClick={onStartLevelTest}>
+          <div className="stat" style={{ gridColumn: "1 / -1", padding: "18px 14px" }}>
+            <div className="l" style={{ fontSize: 13, fontWeight: 700 }}>레벨 테스트를 보면 내 CEFR 레벨·어휘량·백분위가 여기 표시돼요</div>
+          </div>
+        </div>
+      )}
 
       <div className="sec">오늘의 루틴</div>
       {routine.map(s => (
@@ -4566,35 +4613,41 @@ function Soon({ title, desc }) {
 /* ---------- 회화 탭 — 페르소나 대화방 (PLAN 4.6) ----------
    MVP 범위(2026-07-15): 텍스트 대화 + 정확성 모드(피드백마다 확인 눌러야 진행)만 우선 구현.
    음성 입력·유창성 모드(무중단, 종료 후 일괄 리뷰)·사용자 커스텀 페르소나 생성은 다음 단계로 남김. */
+/* 성별(gender)·기본속도(rate) 재조정(2026-07-20):
+   - gender: TTS 목소리가 실제 캐릭터 성별과 맞도록(예전엔 lang당 목소리가 1개뿐이라 "중장년 남성
+     의사"가 여성 목소리로 나오는 버그가 있었음 — api/tts.js·worker/src/worker.js 둘 다 수정).
+   - rate: 튜터(교육 목적, 명확한 발화)만 기본(1) 유지하고 나머지 전부 "원어민 대화" 빠르기(1.3)를
+     기본값으로 — 의사·카페 직원처럼 원래도 "말 빠름"으로 설정된 캐릭터는 그보다 더 빠르게(1.5).
+     실제 최종 속도는 personaSpeakRate()가 여기에 사용자의 듣기속도 설정을 다시 곱해서 정함. */
 const PERSONAS = [
-  { id: "coworker", name: "직장동료", trait: "IT회사 개발자 · 미국인", accent: "us", avatar: "green", letter: "동",
+  { id: "coworker", name: "직장동료", trait: "IT회사 개발자 · 미국인", accent: "us", gender: "male", rate: 1.3, avatar: "green", letter: "동",
     promptDesc: "당신은 사용자와 같은 IT회사에서 일하는 미국인 개발자 동료입니다. 친근하고 캐주얼한 톤으로 업무 잡담을 나눕니다.",
     intro: "Hey! Long day, huh? What's up?", introKo: "안녕! 오늘 힘든 하루였지? 무슨 일 있어?" },
-  { id: "partner", name: "3년 사귄 애인", trait: "영국인", accent: "gb", avatar: "pink", letter: "애",
+  { id: "partner", name: "3년 사귄 애인", trait: "영국인", accent: "gb", gender: "female", rate: 1.3, avatar: "pink", letter: "애",
     promptDesc: "당신은 사용자와 3년째 사귀고 있는 영국인 애인입니다. 다정하고 편안한 톤으로 일상 대화를 나눕니다.",
     intro: "Hey babe, I missed you today. How was your day?", introKo: "자기야, 오늘 보고 싶었어. 하루 어땠어?" },
-  { id: "traveler", name: "여행지에서 만난 사람", trait: "호주인", accent: "au", avatar: "blue", letter: "여",
+  { id: "traveler", name: "여행지에서 만난 사람", trait: "호주인", accent: "au", gender: "female", rate: 1.3, avatar: "blue", letter: "여",
     promptDesc: "당신은 여행지에서 사용자와 방금 처음 만난 호주인입니다. 밝고 스몰토크에 능한 톤으로 대화합니다.",
     intro: "Oh, hi there! Are you traveling alone too?", introKo: "오, 안녕하세요! 혹시 혼자 여행 중이세요?" },
-  { id: "cashier", name: "마트 점원", trait: "미국인 · 캐주얼한 말투", accent: "us", avatar: "yellow", letter: "마",
+  { id: "cashier", name: "마트 점원", trait: "미국인 · 캐주얼한 말투", accent: "us", gender: "male", rate: 1.3, avatar: "yellow", letter: "마",
     promptDesc: "당신은 미국 마트에서 일하는 점원입니다. 캐주얼하고 친근한 구어체로 짧게 응대합니다.",
     intro: "Hi, welcome! Did you find everything okay today?", introKo: "안녕하세요, 어서오세요! 오늘 필요한 거 다 찾으셨어요?" },
-  { id: "airport", name: "공항 지상직 직원", trait: "영국인 · 사무적", accent: "gb", avatar: "orange", letter: "공",
+  { id: "airport", name: "공항 지상직 직원", trait: "영국인 · 사무적", accent: "gb", gender: "female", rate: 1.3, avatar: "orange", letter: "공",
     promptDesc: "당신은 공항 지상직 직원입니다. 무례하진 않지만 다소 사무적이고 퉁명스러운 톤으로 응대합니다.",
     intro: "Next. Passport and boarding pass, please.", introKo: "다음 분. 여권이랑 탑승권 주세요." },
-  { id: "doctor", name: "의사", trait: "중장년 남성 · 빠른 말투", accent: "us", rate: 1.2, avatar: "blue", letter: "의",
+  { id: "doctor", name: "의사", trait: "중장년 남성 · 빠른 말투", accent: "us", gender: "male", rate: 1.5, avatar: "blue", letter: "의",
     promptDesc: "당신은 중장년 남성 의사입니다. 말이 빠르고 전문적인 톤으로 진료를 진행합니다.",
     intro: "Hi, come on in. So, what brings you in today?", introKo: "안녕하세요, 들어오세요. 오늘 어떻게 오셨나요?" },
-  { id: "barista", name: "카페 직원", trait: "20대 여성 · 빠른 말투", accent: "us", rate: 1.2, avatar: "green", letter: "카",
+  { id: "barista", name: "카페 직원", trait: "20대 여성 · 빠른 말투", accent: "us", gender: "female", rate: 1.5, avatar: "green", letter: "카",
     promptDesc: "당신은 20대 여성 카페 직원입니다. 밝고 빠른 톤으로 주문을 받습니다.",
     intro: "Hey there! What can I get started for you today?", introKo: "안녕하세요! 오늘 뭐로 시작해드릴까요?" },
-  { id: "stranger", name: "지나가는 행인", trait: "도움이 필요한 상황 · 미국인", accent: "us", avatar: "yellow", letter: "행",
+  { id: "stranger", name: "지나가는 행인", trait: "도움이 필요한 상황 · 미국인", accent: "us", gender: "male", rate: 1.3, avatar: "yellow", letter: "행",
     promptDesc: "당신은 길에서 도움이 필요한(또는 사용자를 도와줄 수 있는) 미국인 행인입니다.",
     intro: "Excuse me, sorry to bother you — do you have a second?", introKo: "저기요, 죄송한데 잠깐 시간 괜찮으세요?" },
-  { id: "tutor", name: "친절한 영어 튜터", trait: "30대 · 뉴욕 발음", accent: "us", avatar: "pink", letter: "튜",
+  { id: "tutor", name: "친절한 영어 튜터", trait: "30대 · 뉴욕 발음", accent: "us", gender: "female", avatar: "pink", letter: "튜",
     promptDesc: "당신은 뉴욕 출신의 친절한 30대 영어 튜터입니다. 격려하는 톤으로 자연스럽게 학습자를 이끕니다.",
     intro: "Hi! Ready for today's lesson? Let's dive right in.", introKo: "안녕하세요! 오늘 수업 준비되셨나요? 바로 시작해봐요." },
-  { id: "friend", name: "10년지기 친구", trait: "슬랭 다수 · 미국인", accent: "us", avatar: "orange", letter: "친",
+  { id: "friend", name: "10년지기 친구", trait: "슬랭 다수 · 미국인", accent: "us", gender: "male", rate: 1.3, avatar: "orange", letter: "친",
     promptDesc: "당신은 사용자와 10년지기인 미국인 친구입니다. 편하고 슬랭이 섞인 캐주얼한 톤으로 대화합니다.",
     intro: "Yo! It's been way too long, man. What's new with you?", introKo: "야! 진짜 오랜만이다. 요즘 뭐 하고 지내?" },
 ];
@@ -5205,8 +5258,11 @@ function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting, onOpenPronun, onCreat
           <div key={p.id} className="talk-room" onClick={() => { unlockAudio(); onOpenRoom(p.id); }}>
             <div className={"talk-avatar hi-" + p.avatar}>{p.letter}</div>
             <div className="talk-room-body">
-              <div className="talk-room-name">{p.name}</div>
-              <div className="talk-room-sub">{last ? (last.role === "bot" ? last.en : "나: " + last.en) : p.trait}</div>
+              <div className="talk-room-name-row">
+                <span className="talk-room-name">{p.name}</span>
+                <span className="talk-room-trait">{p.trait}</span>
+              </div>
+              <div className="talk-room-sub">{last ? (last.role === "bot" ? last.en : "나: " + last.en) : "대화를 시작해보세요"}</div>
             </div>
             {p.custom && (
               <button className="talk-room-del" aria-label="삭제" onClick={e => { e.stopPropagation(); if (confirm(`'${p.name}' 대화 상대를 삭제할까요? 대화 내용도 함께 지워져요.`)) onDeletePersona(p.id); }}>
@@ -5308,7 +5364,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
       const r = await talkNextLine(persona, hist);
       const msg = { role: "bot", en: (r.en || "").trim(), ko: (r.ko || "").trim(), at: Date.now() };
       setMessages(m => [...m, msg]);
-      speakText(msg.en, personaSpeakRate(persona), persona.accent);
+      speakText(msg.en, personaSpeakRate(persona), persona.accent, persona.gender);
     } catch (e) {
       // 원인을 화면에 그대로 노출(2026-07-18) — 예전엔 뭉뚱그린 메시지라 재발 시 원인 파악이 안 됐음.
       // hist를 기억해뒀다가 "다시 시도"로 같은 요청을 재실행할 수 있게.
@@ -5326,7 +5382,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
       if (persona.intro) {
         const introMsg = { role: "bot", en: persona.intro, ko: persona.introKo, at: Date.now() };
         setMessages([introMsg]);
-        speakText(introMsg.en, personaSpeakRate(persona), persona.accent);
+        speakText(introMsg.en, personaSpeakRate(persona), persona.accent, persona.gender);
       } else {
         fetchBotLine([]);
       }
@@ -5411,7 +5467,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
       pendingBotLineRef.current = null;
       const msg = { role: "bot", en: pending.en, ko: pending.ko, at: Date.now() };
       setMessages(m => [...m, msg]);
-      speakText(msg.en, personaSpeakRate(persona), persona.accent);
+      speakText(msg.en, personaSpeakRate(persona), persona.accent, persona.gender);
     } else {
       fetchBotLine(messages); // talkFeedbackAndNext가 대사를 못 받아왔을 때(에러 등)만 예전 방식으로 폴백
     }
@@ -5501,7 +5557,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
               <div className="talk-bubble">
                 {m.role === "bot" && !showEn ? "•••" : m.role === "bot" ? <span><ChatBubbleWords text={m.en} onOpenWord={onOpenWord} /></span> : m.en}
                 {m.role === "bot" && (
-                  <button className="talk-play" onClick={() => speakText(m.en, personaSpeakRate(persona), persona.accent)} aria-label="다시 듣기">
+                  <button className="talk-play" onClick={() => speakText(m.en, personaSpeakRate(persona), persona.accent, persona.gender)} aria-label="다시 듣기">
                     <Icon name="volume_up" size={13} />
                   </button>
                 )}
@@ -5722,15 +5778,17 @@ function PersonaCreate({ onDone, onCancel }) {
   const [trait, setTrait] = useState("");
   const [detail, setDetail] = useState("");
   const [accent, setAccent] = useState("us");
+  const [gender, setGender] = useState("female");
   const [color, setColor] = useState("green");
   const COLORS = ["green", "yellow", "pink", "blue", "orange"];
   const ACCENTS = [{ k: "us", label: "미국" }, { k: "gb", label: "영국" }, { k: "au", label: "호주" }];
+  const GENDERS = [{ k: "female", label: "여성" }, { k: "male", label: "남성" }];
   const canSave = name.trim() && trait.trim();
   const save = () => {
     if (!canSave) return;
     const nm = name.trim(), tr = trait.trim(), dt = detail.trim();
     const persona = {
-      id: "custom_" + Date.now(), name: nm, trait: tr, accent, avatar: color,
+      id: "custom_" + Date.now(), name: nm, trait: tr, accent, gender, rate: 1.3, avatar: color,
       letter: Array.from(nm)[0] || "?", custom: true,
       promptDesc: `역할극 상대 설정: 당신은 "${nm}"입니다. ${tr}.` + (dt ? ` ${dt}.` : "") +
         " 이 설정에 맞는 성격·말투·태도로 사용자와 영어로 자연스럽게 대화하세요. 항상 상대 역할만 연기하고 설명은 하지 마세요.",
@@ -5754,6 +5812,10 @@ function PersonaCreate({ onDone, onCancel }) {
         <label className="pc-label">억양</label>
         <div className="pc-chips">
           {ACCENTS.map(a => <button key={a.k} className={"pc-chip" + (accent === a.k ? " on" : "")} onClick={() => setAccent(a.k)}>{a.label}</button>)}
+        </div>
+        <label className="pc-label">목소리</label>
+        <div className="pc-chips">
+          {GENDERS.map(g => <button key={g.k} className={"pc-chip" + (gender === g.k ? " on" : "")} onClick={() => setGender(g.k)}>{g.label}</button>)}
         </div>
         <label className="pc-label">아바타 색</label>
         <div className="pc-colors">
@@ -6591,6 +6653,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   };
   const forceRelearn = () => {
     SRS.grade(it.key, false);
+    addWrongNote(it.key, "listen"); // 오답 노트(2026-07-20) — 3번째 힌트/재생까지 못 맞힌 문장
     setQueue(q => q.concat([it]));
     setWrongMask(null);
     setRes({ dueIn: null, forcedRelearn: true });
@@ -6624,7 +6687,8 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   const complete = wasClean => {
     if (res) return;
     const s = SRS.grade(it.key, wasClean);
-    if (wasClean) setCorrect(c => c + 1);
+    if (wasClean) { setCorrect(c => c + 1); removeWrongNote(it.key); } // 이번엔 깨끗하게 맞혔으니 오답 노트에서 빠짐(2026-07-20)
+    else addWrongNote(it.key, "listen"); // 재시도 끝에 맞혔어도(오답 채점) 오답 노트엔 남김
     setWrongMask(null);
     setRes({ dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) });
     playDing("done");
@@ -7141,6 +7205,44 @@ function LevelTest({ onExit }) {
     onRetry={() => { setResultA(null); setResultB(null); setPhase("a"); }} />;
 }
 
+/* 오답 노트(듣기 세션) — DictationSession에서 첫 시도에 못 맞힌 문장이 addWrongNote로 쌓인다.
+   목록에서 다시 듣거나, 통째로 "이 문장들로 복습하기"를 눌러 그 항목들만으로 듣기 세션을 시작할 수 있다.
+   깨끗하게(재시도 없이) 맞히면 removeWrongNote가 자동으로 빼줌(DictationSession.complete 참고) — 여기선
+   수동 제거 버튼만 추가로 제공(2026-07-20). */
+function WrongNotesView({ onExit, onOpenWord, onStudy }) {
+  const [, bump] = useState(0);
+  const notes = loadWrongNotes();
+  const items = notes.map(n => allItems().find(it => it.key === n.key)).filter(Boolean);
+  const remove = key => { removeWrongNote(key); bump(v => v + 1); };
+  return (
+    <div className="content">
+      <div className="talk-head">
+        <button className="back" onClick={onExit} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
+        <div className="talk-head-name">오답 노트</div>
+      </div>
+      {items.length === 0 ? (
+        <div className="empty-note">아직 틀린 문장이 없어요. 듣기 세션에서 틀리면 여기 모여요.</div>
+      ) : (
+        <>
+          <button className="qsub" style={{ marginBottom: 14 }} onClick={() => onStudy(items)}>이 문장들로 복습하기 ({items.length}개)</button>
+          {items.map(it => (
+            <div key={it.key} className="wd-ex" style={{ marginBottom: 8 }}>
+              <div className="en" style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 8 }}>
+                <span onClick={() => speakText(it.ex.en)} style={{ cursor: "pointer" }}>{it.ex.en}</span>
+                <button className="talk-msg-del" style={{ flex: "none" }} onClick={() => remove(it.key)} aria-label="오답 노트에서 제거">
+                  <Icon name="delete" size={15} />
+                </button>
+              </div>
+              {it.ex.ko && <div className="ko">{it.ex.ko}</div>}
+              <div style={{ fontSize: 11, color: "var(--muted)", marginTop: 4, cursor: "pointer" }} onClick={() => onOpenWord(it.word)}>{it.word} · {it.ko}</div>
+            </div>
+          ))}
+        </>
+      )}
+    </div>
+  );
+}
+
 /* ---------- 학습 탭 ---------- */
 function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsumeCustomStudy, setImmersive }) {
   const [session, setSession] = useState(null); // null | items | "done"
@@ -7148,6 +7250,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   const [summary, setSummary] = useState(null);
   const [quiz, setQuiz] = useState(null); // null | questions[] | "done"
   const [quizSummary, setQuizSummary] = useState(null);
+  const [wrongView, setWrongView] = useState(false); // 오답 노트 목록 화면(2026-07-20)
   // 카드/듣기 세션이나 퀴즈 중엔 몰입 화면이라 탭바를 숨김(2026-07-18) — 메뉴로 돌아오면(session/quiz null) 자동 복원.
   useEffect(() => {
     if (!setImmersive) return;
@@ -7186,6 +7289,8 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   };
   if (session && mode === "listen") return <DictationSession items={session} onExit={onSessionExit} onOpenWord={onOpenWord} />;
   if (session) return <CardSession items={session} onOpenWord={onOpenWord} onExit={onSessionExit} />;
+  if (wrongView) return <WrongNotesView onExit={() => setWrongView(false)} onOpenWord={onOpenWord}
+    onStudy={items => { setWrongView(false); setMode("listen"); setSession(items); }} />;
   if (quiz === "done" && quizSummary) {
     return <Finish total={quizSummary.total} correct={quizSummary.correct}
       title="퀴즈 완료" sub="정답 여부는 SRS 복습 일정에는 영향을 주지 않아요."
@@ -7206,10 +7311,12 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
     if (qs) setQuiz(qs);
   };
 
+  const wrongCount = loadWrongNotes().length;
   const MENU = [
     { k: "card", icon: "school", title: "단어카드", sub: `복습 ${dueCount} · 오늘 신규 목표 ${newGoal}개`, on: true, start: startCard },
     { k: "listen", icon: "volume_up", title: "듣기 세션 (딕테이션)", sub: "듣고 그대로 타이핑", on: true, start: startListen },
     { k: "quiz", icon: "grid_view", title: "퀴즈", sub: studiedCount >= 4 ? "뜻 4지선다 · 스펠링 · 어순 배열" : "먼저 단어카드로 학습해 보세요", on: studiedCount >= 4, start: startQuiz }, // 2026-07-19 문장 퀴즈(어순 배열) 추가로 복원(2026-07-15 숨김 해제)
+    { k: "wrong", icon: "replay", title: "오답 노트", sub: wrongCount ? `듣기에서 틀렸던 문장 ${wrongCount}개` : "아직 틀린 문장이 없어요", on: wrongCount > 0, start: () => setWrongView(true) }, // 2026-07-20
     { k: "level", icon: "add", title: "레벨 테스트", sub: "어휘 + 문장구사력", on: true, start: onStartLevelTest },
   ];
 
@@ -7577,13 +7684,13 @@ function App() {
       <div className={"scroll" + (immersive || ltOpen || ltResultOpen ? " notab" : "")}>
         {ltOpen ? (
           <LevelTest onExit={() => setLtOpen(false)} />
-        ) : ltResultOpen ? (
+        ) : ltResultOpen && loadLevelTest() ? (
           <LevelTestResult resultA={loadLevelTest().lex} resultB={loadLevelTest().flu} viewOnly
             onExit={() => setLtResultOpen(false)}
             onRetry={() => { setLtResultOpen(false); startLevelTest(); }} />
         ) : (
           <React.Fragment>
-            {tab === "home" && <Home key={"home-" + tabResetKey.home} onGoTab={setTab} charK={charK} onChangeChar={changeChar} onOpenSettings={() => setSettingsOpen(true)} onOpenLtResult={() => setLtResultOpen(true)} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => { unlockAudio(); startCustomStudy(pickSession(10, listenLevelShift()), "listen"); }} />}
+            {tab === "home" && <Home key={"home-" + tabResetKey.home} onGoTab={setTab} charK={charK} onChangeChar={changeChar} onOpenSettings={() => setSettingsOpen(true)} onOpenLtResult={() => setLtResultOpen(true)} onStartLevelTest={startLevelTest} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => { unlockAudio(); startCustomStudy(pickSession(10, listenLevelShift()), "listen"); }} />}
             {tab === "dict" && <Dict key={"dict-" + tabResetKey.dict} onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} viewJump={dictViewJump} onConsumeViewJump={() => setDictViewJump(null)} />}
             {tab === "learn" && <Learn key={"learn-" + tabResetKey.learn} onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} customMode={customMode} onConsumeCustomStudy={() => setCustomStudy(null)} setImmersive={setImmersive} />}
             {tab === "talk" && <Talk key={"talk-" + tabResetKey.talk} onOpenWord={openWord} setImmersive={setImmersive} />}
