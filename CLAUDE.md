@@ -88,6 +88,10 @@
 ## 문구 규칙
 - 안내(업데이트 안내 등) 문구는 핵심/중요 부분을 볼드로 강조한다. (`WHATS_NEW`는 `**중요부분**` 마크업, `renderBold`가 `<b>`로 렌더.)
 
+## 계정 삭제 — 배포 전 필요한 설정 (2026-07-20)
+- **`api/delete-account.js` 코드는 작성 완료됐지만 아직 실제로 동작 안 함 — `SUPABASE_SERVICE_ROLE_KEY`를 Vercel 환경변수에 등록해야 함.** auth.users 행 삭제는 Supabase 관리자 API 권한(service_role)이 있어야만 가능해서 클라이언트에서 직접 못 하고, 이 시크릿은 절대 레포/클라이언트 코드에 넣으면 안 되므로(민영님이 직접 Supabase 대시보드 > Settings > API에서 복사해 Vercel 대시보드 > 프로젝트 > Settings > Environment Variables에 `SUPABASE_SERVICE_ROLE_KEY`로 등록) 이 등록만은 대신 해줄 수 없음. 등록 전까지는 설정 화면의 "계정 삭제" 버튼이 "server not configured" 에러를 반환함(안전한 실패 — 삭제가 부분적으로 진행되진 않음).
+- 등록되면: `profiles`/`learning_state`는 `auth.users` 삭제 시 `on delete cascade`로 자동 삭제, `bug_reports.user_id`는 `on delete set null`로 제보 내용은 남되 개인 식별만 끊김(`pipeline/supabase_beta_schema.sql` 참고).
+
 ## 버전 표기
 - 기능을 수정/배포할 때마다 `index.html`의 `APP_VERSION`을 갱신하고, `<head>`의 `?v=` 캐시 무효화 태그(manifest/words.js/rat_run.js)도 **같은 버전으로 함께** 갱신한다.
 - `APP_BUILD`는 작업 당일 날짜(YYYY-MM-DD).
