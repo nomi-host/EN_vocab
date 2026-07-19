@@ -11,24 +11,24 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.38">
-<link rel="icon" href="img/icon-192.png?v=0.35.38" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.38">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.38" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.38" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.39">
+<link rel="icon" href="img/icon-192.png?v=0.35.39" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.39">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.39" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.39" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.38"></script>
+<script src="img/hero/lottie.min.js?v=0.35.39"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.38"></script>
-<script src="words.js?v=0.35.38"></script>
+<script src="lib/compromise.min.js?v=0.35.39"></script>
+<script src="words.js?v=0.35.39"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.38"></script><style>
+<script src="grammar_tags.js?v=0.35.39"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -38,15 +38,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.38") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.38") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.39") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.39") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.38") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.38") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.39") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.39") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -314,7 +314,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.38");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.39");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140).
@@ -927,6 +927,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 .talk-voice-btn:disabled{opacity:.4;}
 
 .talk-summary-item{border:0.5px solid var(--card-border);background:var(--surface);padding:11px 13px;margin-bottom:8px;font-size:13px;line-height:1.6;}
+.talk-summary-item.good{border-color:var(--good);background:var(--good-container);}
 .finish .sub{font-size:13px;color:var(--muted);}
 .finish .mascot{width:96px;height:96px;margin-bottom:6px;}
 
@@ -1005,7 +1006,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.38";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.39";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -2674,7 +2675,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.38" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.39" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -3033,7 +3034,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.38";
+const HERO_V = "0.35.39";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -5022,6 +5023,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   const [loadingFb, setLoadingFb] = useState(false);
   const [err, setErr] = useState(null);
   const [failedHist, setFailedHist] = useState(null); // fetchBotLine 실패 시 재시도용으로 기억해두는 history
+  const [failedSend, setFailedSend] = useState(null); // talkFeedbackAndNext 실패 시 재시도용 { text, histBefore, msgIndex }
   const pendingBotLineRef = useRef(null); // talkFeedbackAndNext가 미리 받아둔 다음 상대 대사 — "확인" 누르면 왕복 없이 바로 표시
   const talkCountedRef = useRef(false); // 이 방 진입에서 회화 세션(뱃지 talk)을 이미 셌는지
   const [collapsedDays, setCollapsedDays] = useState({}); // 날짜 알약 접기/펼치기 — { "2026-7-17": true }
@@ -5114,6 +5116,28 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   };
   const stopListening = () => { if (mediaRecorderRef.current && listening) mediaRecorderRef.current.stop(); };
 
+  // send()에서 분리(2026-07-19) — 실패 시 재시도가 필요해서 별도 함수로. msgIndex는 이 발화가
+  // messages 배열의 몇 번째인지(재시도 시 같은 메시지의 feedback을 갱신하기 위함).
+  const requestFeedback = async (text, histBefore, msgIndex) => {
+    setLoadingFb(true); setErr(null); setFailedSend(null);
+    pendingBotLineRef.current = null;
+    try {
+      const r = await talkFeedbackAndNext(persona, histBefore, text);
+      const fb = { ok: r.ok, note_ko: r.note_ko || "", corrected: r.corrected || text, user_ko: r.user_ko || "" };
+      setMessages(m => m.map((msg, i) => (i === msgIndex ? { ...msg, feedback: fb, ko: fb.user_ko || "" } : msg)));
+      const botEn = (r.bot_en || "").trim();
+      if (botEn) pendingBotLineRef.current = { en: botEn, ko: (r.bot_ko || "").trim() };
+      setAwaitingAck(true);
+    } catch (e) {
+      // 예전엔 실패해도 조용히 { ok:true }로 덮어써서 "좋아요!"가 뜨고 넘어갔음 — 실제 문법 오류가
+      // 있어도 사용자가 피드백을 전혀 못 받는 버그였음(2026-07-19, Gemini 강제 실패로 재현 확인).
+      // 이제 에러를 노출하고 같은 문장으로 재시도할 수 있게(fetchBotLine의 다시 시도 패턴과 통일).
+      setErr("첨삭을 받아오지 못했어요. (" + (e && e.message || "error") + ")");
+      setFailedSend({ text, histBefore, msgIndex });
+    } finally {
+      setLoadingFb(false);
+    }
+  };
   const send = async () => {
     const text = input.trim();
     if (!text || loadingBot || loadingFb || awaitingAck) return;
@@ -5124,19 +5148,8 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
       talkCountedRef.current = true; ACT.addTalk();
     }
     setMessages(m => [...m, { role: "user", en: text, at: Date.now() }]);
-    setInput(""); setLoadingFb(true); setErr(null);
-    pendingBotLineRef.current = null;
-    try {
-      const r = await talkFeedbackAndNext(persona, histBefore, text);
-      const fb = { ok: r.ok, note_ko: r.note_ko || "", corrected: r.corrected || text, user_ko: r.user_ko || "" };
-      setMessages(m => m.map((msg, i) => (i === m.length - 1 ? { ...msg, feedback: fb, ko: fb.user_ko || "" } : msg)));
-      const botEn = (r.bot_en || "").trim();
-      if (botEn) pendingBotLineRef.current = { en: botEn, ko: (r.bot_ko || "").trim() };
-    } catch (e) {
-      setMessages(m => m.map((msg, i) => (i === m.length - 1 ? { ...msg, feedback: { ok: true, note_ko: "", corrected: text } } : msg)));
-    } finally {
-      setLoadingFb(false); setAwaitingAck(true);
-    }
+    setInput("");
+    requestFeedback(text, histBefore, histBefore.length);
   };
   const ackFeedback = () => {
     setAwaitingAck(false);
@@ -5150,13 +5163,20 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
       fetchBotLine(messages); // talkFeedbackAndNext가 대사를 못 받아왔을 때(에러 등)만 예전 방식으로 폴백
     }
   };
-  const toggleFav = m => { toggleFavSentence(m.en, m.ko || "", persona.name); bump(v => v + 1); };
+  // 유저 발화 즐겨찾기는 원문이 아니라 교정문 우선(2026-07-19) — 오타·문법오류 원문 그대로
+  // 저장되면 학습 자료로서 오히려 해가 됨. isFavSentence 표시(하트 채움)도 같은 텍스트 기준으로.
+  const favTextOf = m => (m.role === "user" && m.feedback && m.feedback.corrected) ? m.feedback.corrected : m.en;
+  const toggleFav = m => { toggleFavSentence(favTextOf(m), m.ko || "", persona.name); bump(v => v + 1); };
   const deleteMsg = i => {
     if (!confirm("이 메시지를 삭제할까요?")) return;
     if (awaitingAck && i === messages.length - 1) setAwaitingAck(false); // 삭제한 메시지가 확인 대기 중이던 마지막 메시지면 대기 해제
     setMessages(m => m.filter((_, idx) => idx !== i));
   };
   const corrections = messages.filter(m => m.role === "user" && m.feedback && !m.feedback.ok);
+  // 잘한 표현(2026-07-19, PLAN 4.6 "대화 종료 시 요약(잘한 표현/교정 목록)" — 교정 목록만
+  // 있고 잘한 표현은 없던 누락분). 한국어 섞인 입력을 자연스럽게 고쳐준 것과는 성격이 다르므로,
+  // 순수 영어를 그 자체로 잘 쓴 경우만("한국어 없이 맞음") 여기 포함.
+  const goodOnes = messages.filter(m => m.role === "user" && m.feedback && m.feedback.ok && !containsKorean(m.en));
 
   if (showSummary) {
     return (
@@ -5165,6 +5185,15 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
           <button className="back" onClick={() => setShowSummary(false)} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
           <div className="talk-head-name">대화 요약 · {persona.name}</div>
         </div>
+        {goodOnes.length > 0 && (
+          <React.Fragment>
+            <div className="sec">잘한 표현 ({goodOnes.length})</div>
+            {goodOnes.map((m, i) => (
+              <div key={i} className="talk-summary-item good">{m.en}</div>
+            ))}
+          </React.Fragment>
+        )}
+        <div className="sec">교정 ({corrections.length})</div>
         {corrections.length === 0 ? (
           <div className="empty-note">이번 대화에서는 교정할 부분이 없었어요. 잘하고 있어요.</div>
         ) : corrections.map((m, i) => (
@@ -5226,7 +5255,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
               </div>
               {showKo && m.ko && <div className="talk-msg-ko">{m.ko}</div>}
               <div className="talk-msg-actions">
-                <button className={"talk-msg-fav" + (isFavSentence(m.en) ? " on" : "")} onClick={() => toggleFav(m)} aria-label="문장 즐겨찾기">
+                <button className={"talk-msg-fav" + (isFavSentence(favTextOf(m)) ? " on" : "")} onClick={() => toggleFav(m)} aria-label="문장 즐겨찾기">
                   <Icon name="favorite" size={14} />
                 </button>
                 {m.role === "user" && (
@@ -5256,6 +5285,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
           <div className="empty-note" style={{ color: "var(--danger)" }}>
             {err}
             {failedHist && <button className="qhint-btn" style={{ marginLeft: 8 }} onClick={() => fetchBotLine(failedHist)}>다시 시도</button>}
+            {failedSend && <button className="qhint-btn" style={{ marginLeft: 8 }} onClick={() => requestFeedback(failedSend.text, failedSend.histBefore, failedSend.msgIndex)}>다시 시도</button>}
           </div>
         )}
       </div>
