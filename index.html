@@ -11,22 +11,22 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.33">
-<link rel="icon" href="img/icon-192.png?v=0.35.33" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.33">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.33" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.33" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.34">
+<link rel="icon" href="img/icon-192.png?v=0.35.34" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.34">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.34" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.34" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.33"></script>
+<script src="img/hero/lottie.min.js?v=0.35.34"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.33"></script>
-<script src="words.js?v=0.35.33"></script><style>
+<script src="lib/compromise.min.js?v=0.35.34"></script>
+<script src="words.js?v=0.35.34"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -36,15 +36,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.33") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.33") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.34") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.34") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.33") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.33") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.34") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.34") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -312,7 +312,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.33");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.34");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140).
@@ -969,7 +969,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.33";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.34";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1530,6 +1530,46 @@ const POINTS = (() => {
     get: () => n,
     add(v) { n += v; save(); },
     spend(v) { if (n < v) return false; n -= v; save(); return true; },
+  };
+})();
+
+/* 활동 로그 — 뱃지·스트릭·홈 루틴·잔디를 하드코딩 더미가 아니라 실제 사용 기록에서 계산하기 위한
+   로컬 저장소(2026-07-19 신설, 구 BADGE_PROGRESS/STREAK 더미 대체). 날짜별 학습량(단어카드 개수·
+   듣기 문장/세션·회화 세션) + 열람한 어원(affix) 집합. 기기 간 동기화는 백엔드(P1, PLAN 6.6) 몫 —
+   지금은 localStorage. 세션 완료·어원 열람 지점에서 아래 add* 를 호출해 누적한다. */
+const ACT = (() => {
+  const KEY = "en_activity_v1";
+  let store;
+  try { store = JSON.parse(localStorage.getItem(KEY) || "null"); } catch (e) {}
+  if (!store || typeof store !== "object") store = {};
+  if (!store.days || typeof store.days !== "object") store.days = {};
+  if (!Array.isArray(store.roots)) store.roots = [];
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} };
+  const keyOf = (d) => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  const todayKey = () => keyOf(new Date());
+  const day = (k) => (store.days[k] = store.days[k] || { c: 0, li: 0, ls: 0, t: 0 });
+  const active = (d) => !!d && ((d.c || 0) + (d.li || 0) + (d.t || 0)) > 0;
+  const hasDay = (k) => active(store.days[k]);
+  return {
+    todayKey, keyOf,
+    today() { return { ...day(todayKey()) }; },
+    addCards(n) { day(todayKey()).c += (n || 0); save(); },
+    addListen(items) { const d = day(todayKey()); d.li += (items || 0); d.ls += 1; save(); },
+    addTalk() { day(todayKey()).t += 1; save(); },
+    addRoot(affix) { if (affix && !store.roots.includes(affix)) { store.roots.push(affix); save(); } },
+    rootsCount() { return store.roots.length; },
+    listenSessions() { return Object.values(store.days).reduce((s, d) => s + (d.ls || 0), 0); },
+    talkSessions() { return Object.values(store.days).reduce((s, d) => s + (d.t || 0), 0); },
+    hasDay,
+    studiedDates() { return Object.keys(store.days).filter(hasDay); },
+    /* 오늘(오늘 아직 학습 전이면 어제)부터 거꾸로 연속으로 활동 있는 날 수 = 연속 학습일. */
+    streak() {
+      const d = new Date();
+      if (!hasDay(keyOf(d))) d.setDate(d.getDate() - 1);
+      let n = 0;
+      while (hasDay(keyOf(d))) { n++; d.setDate(d.getDate() - 1); }
+      return n;
+    },
   };
 })();
 
@@ -2396,7 +2436,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.33" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.34" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -2466,16 +2506,20 @@ function levelBadgeTier() {
    추적 로그가 없어 더미 값 유지(위 주석 TODO 참고) — 가상 페르소나: 어휘력 B2+ · 작문력 B1 ·
    3개월 정도(2026-04 중순~) 띄엄띄엄 학습한 사용자(2026-07-16)의 초기 이력으로 채워둠. */
 function computeBadgeProgress() {
-  const wordsCat = BADGE_CATS.find(c => c.k === "words");
-  const reviewCat = BADGE_CATS.find(c => c.k === "review");
+  const tiersOf = k => BADGE_CATS.find(c => c.k === k).tiers;
+  // 실측 지표(2026-07-19, 구 더미 대체) — 전부 로컬 실기록에서 계산:
+  //   streak=연속 학습일(ACT), words/review=SRS, listen/talk=세션 수(ACT), roots=열람 어원(ACT), level=레벨테스트.
+  //   friend(친구 초대)만 서버(P2 소셜) 의존이라 아직 미획득 고정. sos(자립 회화)는 방 안 SOS 사용 추적이
+  //   아직 없어 보류(미획득) — SOS-in-room 기능 생기면 ACT에 카운터 추가.
+  // dates는 과거 티어 달성일 실기록이 없으므로 비움(BadgeDetail에서 있을 때만 표시).
   return {
-    streak: { tier: 1, dates: ["2026.04.19", "2026.04.23"] },
-    words: { tier: tierFromCount(srsLearnedCount(), wordsCat.tiers), dates: ["2026.05.02"] },
-    listen: { tier: 1, dates: ["2026.04.20", "2026.05.15"] },
-    talk: { tier: 0, dates: ["2026.06.02"] },
-    level: { tier: levelBadgeTier(), dates: ["2026.04.18", "2026.04.25", "2026.05.20", "2026.07.10"] },
-    roots: { tier: 1, dates: ["2026.04.22", "2026.06.05"] },
-    review: { tier: tierFromCount(srsMasteredCount(), reviewCat.tiers), dates: ["2026.05.05", "2026.06.28"] },
+    streak: { tier: tierFromCount(ACT.streak(), tiersOf("streak")), dates: [] },
+    words: { tier: tierFromCount(srsLearnedCount(), tiersOf("words")), dates: [] },
+    listen: { tier: tierFromCount(ACT.listenSessions(), tiersOf("listen")), dates: [] },
+    talk: { tier: tierFromCount(ACT.talkSessions(), tiersOf("talk")), dates: [] },
+    level: { tier: levelBadgeTier(), dates: [] },
+    roots: { tier: tierFromCount(ACT.rootsCount(), tiersOf("roots")), dates: [] },
+    review: { tier: tierFromCount(srsMasteredCount(), tiersOf("review")), dates: [] },
     friend: { tier: -1, dates: [] },
     sos: { tier: -1, dates: [] },
   };
@@ -2751,7 +2795,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.33";
+const HERO_V = "0.35.34";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -3190,16 +3234,20 @@ function Home({ onGoTab, charK, onChangeChar, onOpenSettings, onOpenLtResult, on
   const chr = CHARACTERS.find(c => c.k === charK) || null;
   const [decorateOpen, setDecorateOpen] = useState(false);
   const [decorateVersion, setDecorateVersion] = useState(0); // 노트꾸미기에서 스티커 복원 시 홈 목록 새로고침용
-  const STREAK = 4;                        // 데모: 실제로는 학습 로그에서(3개월 띄엄띄엄 학습 페르소나 — 최근 재개)
+  const STREAK = ACT.streak();             // 실데이터: 연속 학습일(2026-07-19, 구 데모 상수 4 대체)
   const stage = streakStage(STREAK);       // 1~4
   const speed = { "--bob": (0.64 - stage * 0.06) + "s", "--road": (0.8 - stage * 0.09) + "s" };
 
   const goals = PREFS.get(); // 설정 > 일일 목표(단어·듣기·회화) — 기본 20/20/10
-  // direct: 탭 메뉴를 거치지 않고 바로 그 학습을 시작(단어카드·듣기는 세션 즉시 시작, 회화는 페르소나 선택 화면 — 준비되면 연결)
+  // 오늘의 루틴 진행 = 오늘 실제 학습량(ACT.today) 대 목표. state: 목표달성=done · 진행중=active · 미시작=todo.
+  const td = ACT.today(); // { c:단어카드, li:듣기문장, ls:듣기세션, t:회화세션 }
+  const rState = (cur, goal) => (cur >= goal ? "done" : cur > 0 ? "active" : "todo");
+  const rSub = (cur, goal, unit) => (cur >= goal ? "오늘 목표 달성" : `${cur} / ${goal}${unit}`);
+  // direct: 탭 메뉴를 거치지 않고 바로 그 학습을 시작(단어카드·듣기는 세션 즉시 시작, 회화는 페르소나 선택 화면)
   const routine = [
-    { n: 1, title: `단어카드 ${goals.goalWords}개`, sub: "신규 12 · 복습 8", state: "done", tab: "learn", direct: true, start: onStartCards },
-    { n: 2, title: `듣기 ${goals.goalListen}문장`, sub: "6 / 10 진행 중", state: "active", tab: "learn", direct: true, start: onStartListen },
-    { n: 3, title: "회화 1세션", sub: "오늘의 상대: Karen (공항)", state: "todo", tab: "talk" },
+    { n: 1, title: `단어카드 ${goals.goalWords}개`, sub: rSub(td.c, goals.goalWords, "개"), state: rState(td.c, goals.goalWords), tab: "learn", direct: true, start: onStartCards },
+    { n: 2, title: `듣기 ${goals.goalListen}문장`, sub: rSub(td.li, goals.goalListen, "문장"), state: rState(td.li, goals.goalListen), tab: "learn", direct: true, start: onStartListen },
+    { n: 3, title: "회화 1세션", sub: td.t >= 1 ? "오늘 목표 달성" : "오늘 1세션 목표", state: rState(td.t, 1), tab: "talk" },
   ];
   // 주(열)마다 실제 달력 월을 계산해 형광펜 색을 배정 — 오른쪽 끝(16번째 열)이 이번 주, 왼쪽으로 갈수록 과거.
   const weekHues = useMemo(() => {
@@ -3365,6 +3413,8 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
   const [, bump] = useState(0); // 즐겨찾기·내 단어장 토글 리렌더용
   const [showPicker, setShowPicker] = useState(false);
   useEffect(() => { setSenseOpen(0); setShowAllSenses(false); }, [word]);
+  // 어원 탐험 뱃지(roots) 실데이터 — 이 단어의 어근(affix)을 열람한 것으로 기록(단어 바뀔 때마다).
+  useEffect(() => { if (w && w.roots) w.roots.forEach(r => r && r.affix && ACT.addRoot(r.affix)); }, [word]);
   // 내가 추가한 단어 자동 조회(Free Dictionary → Gemini 폴백) — pending일 때만, word가 바뀔 때 한 번
   useEffect(() => {
     if (w && w.mine && w.lookupStatus === "pending") {
@@ -4661,6 +4711,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   const [err, setErr] = useState(null);
   const [failedHist, setFailedHist] = useState(null); // fetchBotLine 실패 시 재시도용으로 기억해두는 history
   const pendingBotLineRef = useRef(null); // talkFeedbackAndNext가 미리 받아둔 다음 상대 대사 — "확인" 누르면 왕복 없이 바로 표시
+  const talkCountedRef = useRef(false); // 이 방 진입에서 회화 세션(뱃지 talk)을 이미 셌는지
   const [collapsedDays, setCollapsedDays] = useState({}); // 날짜 알약 접기/펼치기 — { "2026-7-17": true }
   const [showSummary, setShowSummary] = useState(false);
   const [voiceMode, setVoiceMode] = useState(false);
@@ -4750,6 +4801,11 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
     const text = input.trim();
     if (!text || loadingBot || loadingFb || awaitingAck) return;
     const histBefore = messages; // 이 턴 이전까지의 히스토리 — 다음 상대 대사 프롬프트용
+    // 회화 세션 카운트(뱃지 talk) — 실제 대화로 진입한 방만 1회. 사용자 2번째 발화 시점에 기록해
+    // "열자마자 닫음"은 안 세고, 한 방을 여러 번 드나들어도 mount당 한 번만(talkCountedRef).
+    if (!talkCountedRef.current && histBefore.filter(m => m.role === "user").length >= 1) {
+      talkCountedRef.current = true; ACT.addTalk();
+    }
     setMessages(m => [...m, { role: "user", en: text, at: Date.now() }]);
     setInput(""); setLoadingFb(true); setErr(null);
     pendingBotLineRef.current = null;
@@ -6428,7 +6484,11 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
       onExit={() => { setSession(null); setSummary(null); }} />;
   }
   const onSessionExit = (done, correct, total) => {
-    if (done) { setSummary({ total: total || session.length, correct }); setSession("done"); }
+    if (done) {
+      const n = total || session.length;
+      if (mode === "listen") ACT.addListen(n); else ACT.addCards(n); // 활동 로그(뱃지·스트릭·루틴 실데이터)
+      setSummary({ total: n, correct }); setSession("done");
+    }
     else setSession(null);
   };
   if (session && mode === "listen") return <DictationSession items={session} onExit={onSessionExit} onOpenWord={onOpenWord} />;
@@ -6740,12 +6800,13 @@ function App() {
     return () => { document.removeEventListener("visibilitychange", onHide); window.removeEventListener("pagehide", stopSpeaking); };
   }, []);
 
+  const homeStreak = ACT.streak(); // 상단바 "연속 N일" 실데이터(2026-07-19, 구 하드코딩 4 대체). tab 전환마다 App 리렌더로 갱신.
   return (
     <div className="app">
       <div className="topbar">
         <div className="brand" role="button" tabIndex={0} onClick={() => { setLtOpen(false); setSettingsOpen(false); closeSheet(); setTab("home"); setTabResetKey(k => ({ ...k, home: k.home + 1 })); }} style={{ cursor: "pointer" }}>No<b>English</b></div>
         <div className="topbar-right">
-          <span className="pill"><span className={"dot hl-" + streakHl(4)} />연속 4일</span>
+          <span className="pill"><span className={"dot hl-" + streakHl(homeStreak)} />연속 {homeStreak}일</span>
           <button className="avatar-btn" aria-label="설정" onClick={() => setSettingsOpen(true)}><Icon name="settings" size={19} /></button>
         </div>
       </div>
