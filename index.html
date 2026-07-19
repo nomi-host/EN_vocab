@@ -11,7 +11,7 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.57">
+<link rel="manifest" href="manifest.json?v=0.35.58">
 <link rel="icon" href="img/icon-192.png?v=0.35.57" type="image/png">
 <link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.57">
 <link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.57" as="font" type="font/woff2" crossorigin>
@@ -29,7 +29,7 @@
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
 <script src="lib/supabase.min.js?v=0.35.57"></script>
-<script src="words.js?v=0.35.57"></script>
+<script src="words.js?v=0.35.58"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
 <script src="grammar_tags.js?v=0.35.57"></script><style>
 /* ============================================================================
@@ -324,7 +324,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.57");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.58");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -341,6 +341,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    (2026-07-18). */
 .hero-cat{position:absolute;left:16.85%;top:11.2%;width:56%;height:88.8%;z-index:100;pointer-events:none;}
 .hero-cat > svg, .hero-cat > div{width:100%!important;height:100%!important;display:block;}
+.hero-cat-hit{width:100%;height:100%;pointer-events:auto;cursor:pointer;}
+/* 캐릭터 탭 안내 팝업 — 화면 전체가 아니라 히어로 영역만 딤(2026-07-20). hero-scene이 이미
+   position:relative + 독립 스태킹 컨텍스트(z-index:0)라 여기 z-index는 그 안에서만 비교되면 됨 —
+   캐릭터(100)·스티커보다 위에 있으면 충분. */
+.hero-dim{position:absolute;inset:0;background:rgba(33,28,21,.35);z-index:150;display:flex;align-items:center;justify-content:center;padding:20px;animation:fade .15s ease;}
+.hero-popup-card{background:var(--surface);border:1px solid var(--ink);padding:16px 20px;max-width:82%;text-align:center;font-size:14px;font-weight:700;color:var(--ink);line-height:1.5;box-shadow:var(--shadow);animation:pop .22s cubic-bezier(.2,.9,.3,1.2);}
 /* 스티커: 중심 좌표(%)에 translate(-50%,-50%). 기본은 살짝 부유 + 소프트 그림자(이미지에 베이크).
    z-index는 고정값이 아니라 JS에서 order 배열 기준으로 인라인 style에 매김(집으면 맨 앞으로) —
    전에는 전부 z-index:3 고정이라 스티커를 옮기면 뒤에 그려지는(배열상 나중) 다른 스티커에 깔려서
@@ -1032,7 +1038,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.57";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.58";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -3155,7 +3161,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.57";
+const HERO_V = "0.35.58";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -3445,6 +3451,7 @@ const FLY_RAMP_DUR = 0.6;  // s — 위 가속 구간 길이
 function HeroScene({ onOpenDecorate, decorateVersion, stage }) {
   const heroRef = useRef(null);
   const [deselectTick, setDeselectTick] = useState(0);
+  const [charPopup, setCharPopup] = useState(false); // 캐릭터 탭 안내 팝업(2026-07-20)
   // 3단계(날기) 전용 땅 상태머신 — stopped(점프 인트로 동안 정지) → ramp(서서히 가속) → steady(목표
   // 속도로 무한루프). FlyCat의 인트로 종료 콜백이 stopped→ramp로 넘겨주고, ramp의 CSS animationend가
   // ramp→steady로 넘김(2026-07-19). stage가 3단계로 새로 진입할 때마다 stopped로 리셋.
@@ -3482,9 +3489,18 @@ function HeroScene({ onOpenDecorate, decorateVersion, stage }) {
   return (
     <div className="hero-scene ruled-paper" ref={heroRef} onPointerDown={(e) => { if (e.target === e.currentTarget) setDeselectTick(t => t + 1); }}>
       <div className="hero-ground"><div className="hero-ground-track" style={groundStyle} onAnimationEnd={onGroundRampEnd} /></div>
-      <div className="hero-cat" style={catBoxStyle}>{catContent}</div>
+      <div className="hero-cat" style={catBoxStyle}>
+        <div className="hero-cat-hit" onClick={() => setCharPopup(true)}>{catContent}</div>
+      </div>
       <StickerLayer heroRef={heroRef} refreshKey={decorateVersion} deselectTick={deselectTick} />
       <button className="hero-edit-btn" onClick={onOpenDecorate}><Icon name="edit" size={15} />편집하기</button>
+      {charPopup && (
+        <div className="hero-dim" onClick={() => setCharPopup(false)}>
+          <div className="hero-popup-card" onClick={e => e.stopPropagation()}>
+            연속학습을 이어가서 다른 포즈의 캐릭터를 만나보세요!
+          </div>
+        </div>
+      )}
     </div>
   );
 }
