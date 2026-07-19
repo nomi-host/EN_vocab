@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.55">
-<link rel="icon" href="img/icon-192.png?v=0.35.55" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.55">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.55" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.55" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.57">
+<link rel="icon" href="img/icon-192.png?v=0.35.57" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.57">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.57" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.57" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.55"></script>
+<script src="img/hero/lottie.min.js?v=0.35.57"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.55"></script>
+<script src="lib/compromise.min.js?v=0.35.57"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.55"></script>
-<script src="words.js?v=0.35.55"></script>
+<script src="lib/supabase.min.js?v=0.35.57"></script>
+<script src="words.js?v=0.35.57"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.55"></script><style>
+<script src="grammar_tags.js?v=0.35.57"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -41,15 +41,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.55") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.55") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.57") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.57") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.55") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.55") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.57") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.57") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -58,7 +58,7 @@
   --ink:#211C15;           /* 노트 잉크 블랙 (웜톤) — 텍스트 + 블랙 버튼 */
   --ink-2:#4A4234;
   --muted:#8C8270;
-  --line:#E6DCC3;
+  --line:#E6DCC3;          /* = "light 웜그레이"(2026-07-20 명명) — 계정/로그인 박스 배경 등 */
   --fill:#FAF4E7;          /* 박스강조 크림 — 이전 배경색을 재활용 */
   --accent:#211C15;        /* 포인트 = 잉크 블랙(블랙 버튼 컨셉) */
   --accent-deep:#4A3A20;   /* 흰 배경 위 텍스트 강조 (웜 브라운) */
@@ -324,7 +324,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.55");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.57");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -1003,7 +1003,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 .charrow .cta.buy{background:var(--ink);color:var(--on-accent);}
 .charrow .cta.locked{background:var(--fill);color:var(--muted);}
 /* 설정 > 계정(로그인/동기화, 2026-07-19 PLAN 6.6.0) — ptbox와 같은 톤(웜그레이 박스) */
-.acct-row{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--warmgray);border-radius:0;padding:14px 16px;}
+.acct-row{display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--line);border-radius:0;padding:14px 16px;}
 .acct-info{min-width:0;}
 .acct-email{font-size:14px;font-weight:800;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .acct-sub{font-size:12px;color:var(--ink-2);}
@@ -1032,7 +1032,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.55";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.57";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -2786,7 +2786,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.55" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.57" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -3155,7 +3155,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.55";
+const HERO_V = "0.35.57";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -7287,7 +7287,7 @@ function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
                   <div className="acct-info">
                     <div className="acct-sub">로그인하면 기기를 바꿔도 학습 기록이 유지돼요</div>
                   </div>
-                  <button className="qsub" style={{ flex: "none", width: "auto", padding: "10px 16px", background: "#E6DCC3", color: "var(--ink)" }} onClick={() => AUTH.signInWithGoogle()}>구글로 로그인</button>
+                  <button className="qsub" style={{ flex: "none", width: "auto", padding: "10px 16px", background: "var(--ink)", color: "var(--on-accent)" }} onClick={() => AUTH.signInWithGoogle()}>구글로 로그인</button>
                 </div>
               )}
               {syncMsg && <div className="acct-sub" style={{ marginTop: 6 }}>{syncMsg}</div>}
