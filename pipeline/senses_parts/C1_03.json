@@ -1,0 +1,580 @@
+{
+  "exuberant": [
+    {
+      "cue": "감정·태도가 활기차게",
+      "ko": "활기 넘치는, 열정적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "full of energy, high spirits, and enthusiasm",
+      "syn": ["ebullient", "high-spirited"],
+      "ex": [
+        { "en": "She gave an exuberant welcome to the guests.", "ko": "그녀는 손님들을 활기차게 반갑게 맞이했다." }
+      ]
+    },
+    {
+      "cue": "식물이 무성하게",
+      "ko": "무성한, 왕성하게 자라는",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C2",
+      "en": "(of plants) growing thickly and healthily in great abundance",
+      "syn": ["lush", "luxuriant"],
+      "ex": [
+        { "en": "Exuberant vines covered the old garden wall.", "ko": "무성한 덩굴이 오래된 정원 담을 뒤덮었다." }
+      ]
+    }
+  ],
+  "exuberantly": [
+    {
+      "cue": "감정을 활기차게 드러내며",
+      "ko": "활기차게, 열정적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "in a way that shows great energy, enthusiasm, or happiness",
+      "syn": [],
+      "ex": [
+        { "en": "The crowd cheered exuberantly when the team won.", "ko": "팀이 이겼을 때 관중들은 열정적으로 환호했다." }
+      ]
+    }
+  ],
+  "fabulously": [
+    {
+      "cue": "정도가 매우 심하다는 강조",
+      "ko": "엄청나게, 굉장히",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "to an extremely great degree",
+      "syn": ["incredibly", "fantastically"],
+      "ex": [
+        { "en": "The family is fabulously wealthy.", "ko": "그 가족은 엄청나게 부유하다." }
+      ]
+    }
+  ],
+  "facial": [
+    {
+      "cue": "얼굴과 관련된",
+      "ko": "얼굴의",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "relating to the face",
+      "syn": [],
+      "ex": [
+        { "en": "He has a distinctive facial expression when he's thinking.", "ko": "그는 생각할 때 독특한 얼굴 표정을 짓는다." }
+      ]
+    },
+    {
+      "cue": "피부관리샵에서 받는",
+      "ko": "얼굴 마사지, 페이셜",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "a beauty treatment for the face involving cleansing and massage",
+      "syn": [],
+      "ex": [
+        { "en": "She treated herself to a facial at the spa.", "ko": "그녀는 스파에서 얼굴 마사지를 받으며 자신에게 선물을 주었다." }
+      ]
+    }
+  ],
+  "facilitation": [
+    {
+      "cue": "일이 쉽게 진행되도록 돕는",
+      "ko": "촉진, 원활화",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "the act of making a process or activity easier or helping it progress smoothly",
+      "syn": [],
+      "ex": [
+        { "en": "The workshop focused on the facilitation of team communication.", "ko": "그 워크숍은 팀 소통 촉진에 초점을 맞췄다." }
+      ]
+    }
+  ],
+  "faction": [
+    {
+      "cue": "조직 내 의견이 다른 무리",
+      "ko": "파벌, 분파",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a smaller group within a larger organization or party that has different opinions from the rest",
+      "syn": ["clique"],
+      "ex": [
+        { "en": "The party split into rival factions over the new policy.", "ko": "그 정당은 새 정책을 둘러싸고 대립하는 파벌로 갈라졌다." }
+      ]
+    }
+  ],
+  "fanatic": [
+    {
+      "cue": "무언가에 지나치게 열광하는 사람",
+      "ko": "광신자, 열혈팬",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a person with extreme and uncritical enthusiasm for something",
+      "syn": ["fiend"],
+      "ex": [
+        { "en": "He's a total fitness fanatic.", "ko": "그는 완전히 헬스광이다." }
+      ]
+    },
+    {
+      "cue": "지나치게 열광적인 태도",
+      "ko": "광신적인, 열광적인",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "showing extreme and uncritical enthusiasm or devotion",
+      "syn": ["fanatical"],
+      "ex": [
+        { "en": "Her fanatic devotion to the cause surprised everyone.", "ko": "그 대의에 대한 그녀의 광신적인 헌신은 모두를 놀라게 했다." }
+      ]
+    }
+  ],
+  "fanatically": [
+    {
+      "cue": "지나치게 열정적으로",
+      "ko": "광적으로, 열광적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "in a way that shows extreme and uncritical enthusiasm",
+      "syn": [],
+      "ex": [
+        { "en": "He supports his team fanatically.", "ko": "그는 광적으로 자신의 팀을 응원한다." }
+      ]
+    }
+  ],
+  "fanciful": [
+    {
+      "cue": "현실성 없이 상상에 치우친",
+      "ko": "공상적인, 비현실적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "based on imagination rather than fact or reason",
+      "syn": ["imaginary"],
+      "ex": [
+        { "en": "The plan was dismissed as fanciful and impractical.", "ko": "그 계획은 비현실적이고 실현 불가능하다고 여겨져 기각되었다." }
+      ]
+    },
+    {
+      "cue": "장식·디자인이 기발하고 화려한",
+      "ko": "기발한, 화려하게 장식된",
+      "pos": "형용사",
+      "lv": 3,
+      "cefr": "C2",
+      "en": "elaborately or curiously decorated, showing a lot of imagination",
+      "syn": [],
+      "ex": [
+        { "en": "The building has a fanciful facade with intricate carvings.", "ko": "그 건물은 정교한 조각이 있는 기발한 외관을 하고 있다." }
+      ]
+    }
+  ],
+  "farce": [
+    {
+      "cue": "말도 안 되게 우스꽝스러운 상황",
+      "ko": "웃음거리, 엉터리",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a ridiculous and absurd situation, especially one that is meant to be taken seriously",
+      "syn": [],
+      "ex": [
+        { "en": "The trial turned into a complete farce.", "ko": "그 재판은 완전히 웃음거리가 되어버렸다." }
+      ]
+    },
+    {
+      "cue": "우스꽝스러운 상황의 코미디 연극",
+      "ko": "소극 (희극 장르)",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "a comic play full of ridiculous and exaggerated situations",
+      "syn": [],
+      "ex": [
+        { "en": "The theater is putting on a classic French farce.", "ko": "그 극장은 고전 프랑스 소극을 공연하고 있다." }
+      ]
+    }
+  ],
+  "fatality": [
+    {
+      "cue": "사고·재해로 인한",
+      "ko": "사망자, 사망 사고",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a death caused by an accident, disaster, or violence",
+      "syn": [],
+      "ex": [
+        { "en": "The car crash resulted in three fatalities.", "ko": "그 자동차 사고로 세 명이 사망했다." }
+      ]
+    },
+    {
+      "cue": "병·사고가 치명적일 가능성",
+      "ko": "치사율, 치명성",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "C2",
+      "en": "the quality of being likely to cause death",
+      "syn": [],
+      "ex": [
+        { "en": "The fatality rate of the disease has dropped sharply.", "ko": "그 질병의 치사율이 급격히 떨어졌다." }
+      ]
+    }
+  ],
+  "fatigue": [
+    {
+      "cue": "몸이 힘들어 지치는",
+      "ko": "피로, 피곤함",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "extreme tiredness resulting from hard physical or mental effort",
+      "syn": ["weariness", "tiredness"],
+      "ex": [
+        { "en": "She felt a wave of fatigue after the long flight.", "ko": "그녀는 긴 비행 후 극심한 피로를 느꼈다." }
+      ]
+    },
+    {
+      "cue": "지치게 만들다",
+      "ko": "지치게 하다, 피로하게 만들다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "make someone feel very tired",
+      "syn": ["tire", "exhaust"],
+      "ex": [
+        { "en": "The long hike fatigued the entire group.", "ko": "그 긴 등산은 일행 전체를 지치게 했다." }
+      ]
+    },
+    {
+      "cue": "금속 등 재료가 반복된 스트레스로 약해짐",
+      "ko": "(금속의) 피로, 약화",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "C2",
+      "en": "weakening of a material caused by repeated stress over time",
+      "syn": [],
+      "ex": [
+        { "en": "Metal fatigue was the cause of the bridge's collapse.", "ko": "금속 피로가 그 다리 붕괴의 원인이었다." }
+      ]
+    }
+  ],
+  "favorably": [
+    {
+      "cue": "좋게 평가하거나 반응하며",
+      "ko": "호의적으로, 긍정적으로",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "in a way that shows approval or a positive opinion",
+      "syn": [],
+      "ex": [
+        { "en": "The critics reviewed the film favorably.", "ko": "평론가들은 그 영화를 호의적으로 평가했다." }
+      ]
+    }
+  ],
+  "ferocious": [
+    {
+      "cue": "동물·공격이 사납고 난폭한",
+      "ko": "사나운, 흉포한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "extremely fierce or violent",
+      "syn": ["fierce", "savage"],
+      "ex": [
+        { "en": "The ferocious storm destroyed several houses.", "ko": "그 사나운 폭풍이 집 여러 채를 파괴했다." }
+      ]
+    },
+    {
+      "cue": "경쟁·비판 등이 매우 치열한",
+      "ko": "매우 치열한, 맹렬한",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C2",
+      "en": "very intense in effort, determination, or criticism",
+      "syn": [],
+      "ex": [
+        { "en": "Competition among the top firms is ferocious.", "ko": "최고 기업들 간의 경쟁은 매우 치열하다." }
+      ]
+    }
+  ],
+  "ferociously": [
+    {
+      "cue": "매우 사납고 격렬하게",
+      "ko": "사납게, 맹렬하게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "in an extremely fierce or violent manner",
+      "syn": ["fiercely"],
+      "ex": [
+        { "en": "The dog barked ferociously at the stranger.", "ko": "그 개는 낯선 사람에게 사납게 짖었다." }
+      ]
+    }
+  ],
+  "fiddle": [
+    {
+      "cue": "구어체로 부르는 바이올린",
+      "ko": "바이올린 (구어)",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "an informal word for a violin, especially in folk music",
+      "syn": ["violin"],
+      "ex": [
+        { "en": "He picked up his fiddle and started playing a folk tune.", "ko": "그는 바이올린을 집어 들고 민요를 연주하기 시작했다." }
+      ]
+    },
+    {
+      "cue": "손으로 초조하게 만지작거리다",
+      "ko": "만지작거리다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "touch or move something repeatedly with your hands, often out of nervousness",
+      "syn": [],
+      "ex": [
+        { "en": "She fiddled with her pen during the meeting.", "ko": "그녀는 회의 중에 펜을 만지작거렸다." }
+      ]
+    },
+    {
+      "cue": "장부·기록을 부정하게",
+      "ko": "조작하다, 부정 조작하다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "C2",
+      "en": "change something dishonestly in order to gain an advantage, especially financial records",
+      "syn": ["tamper"],
+      "ex": [
+        { "en": "He was accused of fiddling the accounts.", "ko": "그는 장부를 조작한 혐의를 받았다." }
+      ]
+    }
+  ],
+  "fiddler": [
+    {
+      "cue": "바이올린을 연주하는 사람",
+      "ko": "바이올린 연주자",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a person who plays the violin, especially folk music",
+      "syn": ["violinist"],
+      "ex": [
+        { "en": "The fiddler played a lively tune at the wedding.", "ko": "그 바이올린 연주자는 결혼식에서 흥겨운 곡을 연주했다." }
+      ]
+    }
+  ],
+  "fiddly": [
+    {
+      "cue": "손으로 다루기에 작고 까다로운",
+      "ko": "손대기 까다로운, 세밀한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "difficult to do or handle because it involves small or delicate parts",
+      "syn": [],
+      "ex": [
+        { "en": "Assembling the model was a fiddly task.", "ko": "그 모형을 조립하는 일은 손이 많이 가는 까다로운 작업이었다." }
+      ]
+    }
+  ],
+  "fiend": [
+    {
+      "cue": "매우 잔인하고 사악한 사람",
+      "ko": "악마 같은 사람, 악당",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a cruel or wicked person",
+      "syn": ["devil", "demon"],
+      "ex": [
+        { "en": "The tabloids called the killer a fiend.", "ko": "타블로이드지는 그 살인범을 악마 같은 자라고 불렀다." }
+      ]
+    },
+    {
+      "cue": "무언가에 지나치게 몰두하는 사람 (구어)",
+      "ko": "~광, 마니아 (구어)",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "(informal) a person who is very enthusiastic about something",
+      "syn": ["fanatic"],
+      "ex": [
+        { "en": "My roommate is a total coffee fiend.", "ko": "내 룸메이트는 완전히 커피광이다." }
+      ]
+    }
+  ],
+  "fiendish": [
+    {
+      "cue": "행동·계획이 극도로 사악한",
+      "ko": "악랄한, 극도로 사악한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "extremely cruel or wicked",
+      "syn": ["diabolical"],
+      "ex": [
+        { "en": "The villain devised a fiendish plot.", "ko": "그 악당은 극도로 사악한 계획을 꾸몄다." }
+      ]
+    },
+    {
+      "cue": "문제·퍼즐이 매우 어려운",
+      "ko": "지독히 어려운, 매우 까다로운",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C2",
+      "en": "extremely difficult or complicated",
+      "syn": [],
+      "ex": [
+        { "en": "It was a fiendish puzzle to solve.", "ko": "그것은 풀기에 지독히 어려운 퍼즐이었다." }
+      ]
+    }
+  ],
+  "fiendishly": [
+    {
+      "cue": "매우 사악하게",
+      "ko": "악랄하게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "in an extremely cruel or wicked way",
+      "syn": ["diabolically"],
+      "ex": [
+        { "en": "He smiled fiendishly before revealing his plan.", "ko": "그는 계획을 밝히기 전에 악랄하게 미소지었다." }
+      ]
+    },
+    {
+      "cue": "정도가 지독히 심하다는 강조",
+      "ko": "지독히, 매우",
+      "pos": "부사",
+      "lv": 2,
+      "cefr": "C2",
+      "en": "to an extremely great or difficult degree",
+      "syn": [],
+      "ex": [
+        { "en": "The exam was fiendishly hard.", "ko": "그 시험은 지독히 어려웠다." }
+      ]
+    }
+  ],
+  "fiercely": [
+    {
+      "cue": "힘·공격이 매우 격렬하게",
+      "ko": "맹렬하게, 사납게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "in a very strong, violent, or intense way",
+      "syn": ["ferociously"],
+      "ex": [
+        { "en": "The wind blew fiercely all night.", "ko": "밤새 바람이 맹렬하게 불었다." }
+      ]
+    },
+    {
+      "cue": "감정·의지가 강렬하게",
+      "ko": "강렬하게, 대단히",
+      "pos": "부사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "with strong feeling, determination, or loyalty",
+      "syn": [],
+      "ex": [
+        { "en": "She is fiercely loyal to her friends.", "ko": "그녀는 친구들에게 대단히 의리가 있다." }
+      ]
+    }
+  ],
+  "firewall": [
+    {
+      "cue": "컴퓨터 네트워크 보안",
+      "ko": "(컴퓨터) 방화벽",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a system that protects a computer network from unauthorized access",
+      "syn": [],
+      "ex": [
+        { "en": "The company installed a firewall to block hackers.", "ko": "그 회사는 해커를 막기 위해 방화벽을 설치했다." }
+      ]
+    },
+    {
+      "cue": "건물에서 화재 확산을 막는 벽",
+      "ko": "(건축) 방화벽",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "C2",
+      "en": "a fireproof wall built to stop fire from spreading through a building",
+      "syn": [],
+      "ex": [
+        { "en": "The firewall between the units slowed the fire's spread.", "ko": "그 유닛들 사이의 방화벽이 화재 확산을 늦췄다." }
+      ]
+    }
+  ],
+  "fissure": [
+    {
+      "cue": "표면·바위에 생긴 긴 틈",
+      "ko": "갈라진 틈, 균열",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a long, narrow crack or opening in something, especially rock or ground",
+      "syn": ["crack", "crevice"],
+      "ex": [
+        { "en": "Hot gases escaped through a fissure in the volcano.", "ko": "화산의 갈라진 틈에서 뜨거운 가스가 새어 나왔다." }
+      ]
+    },
+    {
+      "cue": "의견·관계에 생긴 균열 (비유)",
+      "ko": "(관계·의견의) 균열, 분열",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "C2",
+      "en": "a difference or disagreement that divides people who used to be united",
+      "syn": [],
+      "ex": [
+        { "en": "A deep fissure has opened up within the party.", "ko": "그 정당 내부에 깊은 균열이 생겼다." }
+      ]
+    }
+  ],
+  "fixture": [
+    {
+      "cue": "집 안에 고정된 설비",
+      "ko": "붙박이 설비, 고정 시설물",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "a piece of equipment or furniture that is fixed in place, especially in a house",
+      "syn": [],
+      "ex": [
+        { "en": "The light fixtures in the kitchen need replacing.", "ko": "부엌의 조명 설비를 교체해야 한다." }
+      ]
+    },
+    {
+      "cue": "특정 장소·행사에 늘 있는 사람·것",
+      "ko": "단골, 붙박이 같은 존재",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "C2",
+      "en": "a person or thing that has been present in a particular place or role for so long that it seems permanent",
+      "syn": [],
+      "ex": [
+        { "en": "He has become a fixture at the local coffee shop.", "ko": "그는 동네 커피숍의 단골이 되었다." }
+      ]
+    },
+    {
+      "cue": "스포츠 경기 일정 (영국식)",
+      "ko": "(스포츠) 경기 일정",
+      "pos": "명사",
+      "lv": 3,
+      "cefr": "B2",
+      "en": "(British) a sports match arranged for a particular date",
+      "syn": [],
+      "ex": [
+        { "en": "Saturday's fixture was postponed due to rain.", "ko": "토요일 경기 일정은 비로 인해 연기되었다." }
+      ]
+    }
+  ]
+}
