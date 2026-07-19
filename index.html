@@ -11,22 +11,22 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.35">
-<link rel="icon" href="img/icon-192.png?v=0.35.35" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.35">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.35" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.35" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.36">
+<link rel="icon" href="img/icon-192.png?v=0.35.36" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.36">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.36" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.36" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.35"></script>
+<script src="img/hero/lottie.min.js?v=0.35.36"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.35"></script>
-<script src="words.js?v=0.35.35"></script><style>
+<script src="lib/compromise.min.js?v=0.35.36"></script>
+<script src="words.js?v=0.35.36"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -36,15 +36,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.35") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.35") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.36") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.36") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.35") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.35") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.36") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.36") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -312,7 +312,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.35");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.36");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 고양이 Lottie 슬롯 — hero_example_2의 character 위치/크기 실측 매핑(offset 91.6,69.8 / 168×140).
@@ -806,6 +806,27 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .talk-room-body{flex:1;min-width:0;}
 .talk-room-name{font-size:14px;font-weight:800;}
 .talk-room-sub{font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px;}
+/* 커스텀 대화 상대 — 삭제 버튼 + "만들기" 추가 행 (2026-07-19) */
+.talk-room-del{flex:none;color:var(--muted);display:flex;align-items:center;justify-content:center;padding:6px;}
+.talk-room-add{width:100%;text-align:left;cursor:pointer;background:var(--fill);border:1px dashed var(--card-border);box-shadow:none;}
+.talk-avatar-add{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none;background:var(--ink);color:var(--on-accent);}
+/* 대화 상대 만들기 폼 */
+.pc-form{display:flex;flex-direction:column;}
+.pc-label{font-size:13px;font-weight:800;color:var(--ink);margin:14px 0 6px;}
+.pc-input{width:100%;border:0.5px solid var(--card-border);border-radius:0;background:var(--surface);font:inherit;font-size:15px;color:var(--ink);padding:11px 13px;outline:none;}
+.pc-input:focus{background:var(--accent-soft);}
+textarea.pc-input{resize:none;line-height:1.5;}
+.pc-chips{display:flex;gap:8px;}
+.pc-chip{font-size:13px;font-weight:700;color:var(--ink);background:var(--surface);border:1px solid var(--ink);border-radius:999px;padding:8px 16px;}
+.pc-chip.on{background:var(--accent);color:var(--on-accent);}
+.pc-colors{display:flex;gap:10px;}
+.pc-color{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px;border:2px solid transparent;}
+.pc-color.on{border-color:var(--ink);}
+.pc-color.hi-green{background:var(--hi-green);color:var(--hi-green-xdark);}
+.pc-color.hi-yellow{background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
+.pc-color.hi-pink{background:var(--hi-pink);color:var(--hi-pink-xdark);}
+.pc-color.hi-blue{background:var(--hi-blue);color:var(--hi-blue-xdark);}
+.pc-color.hi-orange{background:var(--hi-orange);color:var(--ink);}
 
 .talk-head{display:flex;align-items:center;gap:10px;padding:4px 2px 10px;}
 .talk-head-name{font-weight:800;font-size:16px;}
@@ -969,7 +990,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.35";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.36";const APP_BUILD = "2026-07-18"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -2436,7 +2457,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.35" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.36" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -2795,7 +2816,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.35";
+const HERO_V = "0.35.36";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -4059,6 +4080,18 @@ const PERSONAS = [
     intro: "Yo! It's been way too long, man. What's new with you?", introKo: "야! 진짜 오랜만이다. 요즘 뭐 하고 지내?" },
 ];
 
+/* 사용자가 직접 만든 커스텀 대화 상대(2026-07-19, PLAN 4.6 "커스텀 페르소나 생성" 구현) — 기본
+   PERSONAS와 같은 스키마({id,name,trait,accent,rate,avatar,letter,promptDesc})에 custom:true.
+   intro는 없음 — TalkRoom이 첫 진입 시 talkNextLine으로 상대의 첫 대사를 생성해 채운다. */
+let CUSTOM_PERSONAS = (() => { try { return JSON.parse(localStorage.getItem("en_custom_personas") || "[]"); } catch (e) { return []; } })();
+function saveCustomPersonas() { try { localStorage.setItem("en_custom_personas", JSON.stringify(CUSTOM_PERSONAS)); } catch (e) {} }
+function allPersonas() { return PERSONAS.concat(CUSTOM_PERSONAS); }
+function addCustomPersona(p) { CUSTOM_PERSONAS = CUSTOM_PERSONAS.concat([p]); saveCustomPersonas(); }
+function removeCustomPersona(id) {
+  CUSTOM_PERSONAS = CUSTOM_PERSONAS.filter(p => p.id !== id); saveCustomPersonas();
+  try { if (TALK_ROOMS[id]) { delete TALK_ROOMS[id]; saveTalkRooms(); } } catch (e) {}
+}
+
 /* 대화방 상태(페르소나별 메시지 이력) + 즐겨찾기 문장 — 보관함 "문장" 탭과 공유 데이터. */
 let TALK_ROOMS = (() => { try { return JSON.parse(localStorage.getItem("en_talk_rooms") || "{}"); } catch (e) { return {}; } })();
 function saveTalkRooms() { try { localStorage.setItem("en_talk_rooms", JSON.stringify(TALK_ROOMS)); } catch (e) {} }
@@ -4616,7 +4649,7 @@ function Writing({ onExit }) {
   );
 }
 
-function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting, onOpenPronun }) {
+function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting, onOpenPronun, onCreate, onDeletePersona }) {
   return (
     <div className="content">
       <div className="sec">회화</div>
@@ -4646,7 +4679,7 @@ function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting, onOpenPronun }) {
       </div>
 
       <div className="sec" style={{ marginTop: 18 }}>대화방</div>
-      {PERSONAS.map(p => {
+      {allPersonas().map(p => {
         const room = TALK_ROOMS[p.id];
         const last = room && room.messages.length ? room.messages[room.messages.length - 1] : null;
         return (
@@ -4656,10 +4689,19 @@ function TalkRooms({ onOpenRoom, onOpenSOS, onOpenWriting, onOpenPronun }) {
               <div className="talk-room-name">{p.name}</div>
               <div className="talk-room-sub">{last ? (last.role === "bot" ? last.en : "나: " + last.en) : p.trait}</div>
             </div>
-            {!last && <span className="tag" style={{ flex: "none" }}>시작 전</span>}
+            {p.custom && (
+              <button className="talk-room-del" aria-label="삭제" onClick={e => { e.stopPropagation(); if (confirm(`'${p.name}' 대화 상대를 삭제할까요? 대화 내용도 함께 지워져요.`)) onDeletePersona(p.id); }}>
+                <Icon name="delete" size={16} />
+              </button>
+            )}
+            {!last && !p.custom && <span className="tag" style={{ flex: "none" }}>시작 전</span>}
           </div>
         );
       })}
+      <button className="talk-room talk-room-add" onClick={onCreate}>
+        <div className="talk-avatar talk-avatar-add"><Icon name="add" size={20} /></div>
+        <div className="talk-room-body"><div className="talk-room-name">새 대화 상대 만들기</div><div className="talk-room-sub">원하는 성격·상황의 상대를 직접 추가</div></div>
+      </button>
     </div>
   );
 }
@@ -4758,11 +4800,16 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   };
 
   useEffect(() => {
-    // 페르소나별 기본 자기소개 — 네트워크 왕복 없이 즉시 표시(새 대화일 때만, 이어하는 대화는 그대로 유지)
+    // 첫 진입(새 대화)일 때만 상대의 첫 대사. 기본 페르소나는 고정 intro를 네트워크 왕복 없이 즉시,
+    // 커스텀 페르소나(intro 없음)는 talkNextLine으로 설정에 맞는 첫 대사를 생성(2026-07-19).
     if (messages.length === 0) {
-      const introMsg = { role: "bot", en: persona.intro, ko: persona.introKo, at: Date.now() };
-      setMessages([introMsg]);
-      speakText(introMsg.en, persona.rate, persona.accent);
+      if (persona.intro) {
+        const introMsg = { role: "bot", en: persona.intro, ko: persona.introKo, at: Date.now() };
+        setMessages([introMsg]);
+        speakText(introMsg.en, persona.rate, persona.accent);
+      } else {
+        fetchBotLine([]);
+      }
     }
     // eslint-disable-next-line
   }, []);
@@ -5098,8 +5145,9 @@ function PronunClinic({ onBack }) {
 }
 
 function Talk({ onOpenWord, setImmersive }) {
-  const [view, setView] = useState(null); // null=대화방 목록 | "sos" | "writing" | "pronun" | 페르소나 id
-  /* 대화방·작문·발음클리닉은 몰입 화면이라 탭바를 숨김 — SOS·목록은 잠깐 들르는 도구라 탭바 유지(2026-07-18).
+  const [view, setView] = useState(null); // null=대화방 목록 | "sos" | "writing" | "pronun" | "create" | 페르소나 id
+  const [, bumpP] = useState(0); // 커스텀 페르소나 추가/삭제 시 목록 리렌더
+  /* 대화방·작문·발음클리닉·페르소나 생성은 몰입 화면이라 탭바를 숨김 — SOS·목록은 잠깐 들르는 도구라 탭바 유지.
      cleanup에서 항상 false로 되돌려야 상단 로고로 홈에 갔을 때도 탭바가 안 갇힘. */
   useEffect(() => {
     if (!setImmersive) return;
@@ -5110,11 +5158,63 @@ function Talk({ onOpenWord, setImmersive }) {
   if (view === "sos") return <TalkSOS onBack={() => setView(null)} onOpenWord={onOpenWord} />;
   if (view === "writing") return <Writing onExit={() => setView(null)} />;
   if (view === "pronun") return <PronunClinic onBack={() => setView(null)} />;
+  if (view === "create") return <PersonaCreate onDone={id => setView(id)} onCancel={() => setView(null)} />;
   if (view) {
-    const persona = PERSONAS.find(p => p.id === view);
+    const persona = allPersonas().find(p => p.id === view);
+    if (!persona) return <TalkRooms onOpenRoom={setView} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} onOpenPronun={() => setView("pronun")} onCreate={() => setView("create")} onDeletePersona={id => { removeCustomPersona(id); bumpP(v => v + 1); }} />;
     return <TalkRoom persona={persona} onExit={() => setView(null)} onOpenWord={onOpenWord} />;
   }
-  return <TalkRooms onOpenRoom={setView} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} onOpenPronun={() => setView("pronun")} />;
+  return <TalkRooms onOpenRoom={setView} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} onOpenPronun={() => setView("pronun")} onCreate={() => setView("create")} onDeletePersona={id => { removeCustomPersona(id); bumpP(v => v + 1); }} />;
+}
+
+/* 커스텀 대화 상대 만들기 — 이름·성격/상황·상세 설명·억양·아바타색을 받아 페르소나를 만든다.
+   promptDesc는 입력을 조합해 생성하고, intro는 안 넣음(TalkRoom이 첫 대사를 Gemini로 생성). */
+function PersonaCreate({ onDone, onCancel }) {
+  const [name, setName] = useState("");
+  const [trait, setTrait] = useState("");
+  const [detail, setDetail] = useState("");
+  const [accent, setAccent] = useState("us");
+  const [color, setColor] = useState("green");
+  const COLORS = ["green", "yellow", "pink", "blue", "orange"];
+  const ACCENTS = [{ k: "us", label: "미국" }, { k: "gb", label: "영국" }, { k: "au", label: "호주" }];
+  const canSave = name.trim() && trait.trim();
+  const save = () => {
+    if (!canSave) return;
+    const nm = name.trim(), tr = trait.trim(), dt = detail.trim();
+    const persona = {
+      id: "custom_" + Date.now(), name: nm, trait: tr, accent, rate: 1, avatar: color,
+      letter: Array.from(nm)[0] || "?", custom: true,
+      promptDesc: `역할극 상대 설정: 당신은 "${nm}"입니다. ${tr}.` + (dt ? ` ${dt}.` : "") +
+        " 이 설정에 맞는 성격·말투·태도로 사용자와 영어로 자연스럽게 대화하세요. 항상 상대 역할만 연기하고 설명은 하지 마세요.",
+    };
+    addCustomPersona(persona);
+    onDone(persona.id);
+  };
+  return (
+    <div className="content">
+      <div className="talk-head">
+        <button className="back" onClick={onCancel} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
+        <div className="talk-head-name">대화 상대 만들기</div>
+      </div>
+      <div className="pc-form">
+        <label className="pc-label">이름</label>
+        <input className="pc-input" value={name} onChange={e => setName(e.target.value)} placeholder="예: 깐깐한 면접관" maxLength={20} />
+        <label className="pc-label">성격 · 상황 (한 줄)</label>
+        <input className="pc-input" value={trait} onChange={e => setTrait(e.target.value)} placeholder="예: IT 대기업 · 압박 면접 · 미국인" maxLength={40} />
+        <label className="pc-label">상세 설정 <span style={{ color: "var(--muted)", fontWeight: 400 }}>(선택)</span></label>
+        <textarea className="pc-input" rows={3} value={detail} onChange={e => setDetail(e.target.value)} placeholder="말투·태도·대화 상황을 더 자세히 적으면 더 잘 맞춰줘요" maxLength={200} />
+        <label className="pc-label">억양</label>
+        <div className="pc-chips">
+          {ACCENTS.map(a => <button key={a.k} className={"pc-chip" + (accent === a.k ? " on" : "")} onClick={() => setAccent(a.k)}>{a.label}</button>)}
+        </div>
+        <label className="pc-label">아바타 색</label>
+        <div className="pc-colors">
+          {COLORS.map(c => <button key={c} className={"pc-color hi-" + c + (color === c ? " on" : "")} onClick={() => setColor(c)} aria-label={c}>{color === c ? Array.from(name.trim())[0] || "" : ""}</button>)}
+        </div>
+        <button className="qsub" style={{ marginTop: 18 }} disabled={!canSave} onClick={save}>만들고 대화 시작</button>
+      </div>
+    </div>
+  );
 }
 
 /* ---------- 회화 탭 — SOS 미니 도구 (PLAN 4.12-5) ----------
