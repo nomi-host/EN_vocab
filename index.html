@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.54">
-<link rel="icon" href="img/icon-192.png?v=0.35.54" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.54">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.54" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.54" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.55">
+<link rel="icon" href="img/icon-192.png?v=0.35.55" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.55">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.55" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.55" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.54"></script>
+<script src="img/hero/lottie.min.js?v=0.35.55"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.54"></script>
+<script src="lib/compromise.min.js?v=0.35.55"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.54"></script>
-<script src="words.js?v=0.35.54"></script>
+<script src="lib/supabase.min.js?v=0.35.55"></script>
+<script src="words.js?v=0.35.55"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.54"></script><style>
+<script src="grammar_tags.js?v=0.35.55"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -41,15 +41,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.54") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.54") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.55") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.55") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.54") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.54") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.55") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.55") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -99,6 +99,13 @@ body{color:var(--ink);}
 button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 
 .app{height:100vh;height:100dvh;display:flex;flex-direction:column;background:var(--bg);max-width:520px;margin:0 auto;position:relative;}
+/* 로고 슬롯머신 스플래시(2026-07-19, text-to-lottie 스킬 제작) — .app과 같은 max-width로 데스크톱에서도
+   앱 폭과 일치. 배경(#211C15)은 Lottie 안에 이미 도형 레이어로 포함(마지막 프레임에 같이 페이드아웃)
+   이라 이 wrapper 배경은 로드 완료 전 잠깐의 깜빡임 방지용 폴백일 뿐 — 애니메이션 종료(complete
+   이벤트)와 동시에 컴포넌트 자체를 언마운트하므로 별도 CSS 트랜지션 불필요. */
+.splash-screen{position:fixed;inset:0;max-width:520px;margin:0 auto;z-index:9999;background:#211C15;}
+.splash-screen .splash-lottie{width:100%;height:100%;}
+.splash-screen .splash-lottie > svg{width:100%!important;height:100%!important;display:block;}
 .topbar{padding:calc(env(safe-area-inset-top) + 12px) 20px 8px;display:flex;align-items:center;justify-content:space-between;}
 .brand{font-size:20px;font-weight:800;letter-spacing:-0.4px;}
 .brand b{color:var(--accent);}
@@ -317,7 +324,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.54");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.55");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -460,6 +467,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .hl-pink{background-image:linear-gradient(var(--hi-pink),var(--hi-pink));}
 .hl-yellow{background-image:linear-gradient(var(--hi-yellow),var(--hi-yellow));}
 .hl-blue{background-image:linear-gradient(var(--hi-blue),var(--hi-blue));}
+.hl-cream{background-image:linear-gradient(var(--accent-soft),var(--accent-soft));} /* 하이어라키 "보통" 단계 전용 — 형광펜 색 대신 진한 크림톤(2026-07-20, 홈 "지금 복습할 카드") */
 
 /* 하이어라키 뱃지 — 연한 배경 + 가장진한 텍스트(.tag/.badge 등 이미 배경 있는 요소용) */
 .tier-green{background:var(--hi-green-light);color:var(--hi-green-xdark);}
@@ -1024,7 +1032,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.54";const APP_BUILD = "2026-07-19"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.55";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* Leitner 박스별 다음 복습 간격(일) — JP 앱과 동일 */
 const BOX_INTERVALS = [0, 1, 2, 4, 8, 16, 32];
@@ -1301,12 +1309,15 @@ const AUTH = (() => {
   let user = null;
   const listeners = new Set();
   const notify = () => listeners.forEach(cb => cb(user));
+  const SYNCED_UID_KEY = "en_auth_synced_uid";
   async function syncOnLogin() {
     if (!SB || !user) return;
+    if (localStorage.getItem(SYNCED_UID_KEY) === user.id) return; // 세션 복원(재부팅)일 뿐 새 로그인이 아님 — 재동기화·재로드 금지
     try {
       const { data, error } = await SB.from("learning_state").select("data").eq("user_id", user.id).maybeSingle();
       if (error) throw error;
       const serverData = data && data.data;
+      localStorage.setItem(SYNCED_UID_KEY, user.id); // reload 이전에 먼저 기록 — 재부팅 시 같은 분기를 다시 안 타도록
       if (serverData && Object.keys(serverData).length > 0) {
         applySyncState(serverData); // 서버가 진실의 원천 — 이 기기(게스트 상태 포함)를 덮어씀
         location.reload(); // 이미 메모리에 로드된 state가 많아 새로고침이 가장 안전
@@ -1331,7 +1342,7 @@ const AUTH = (() => {
       if (!SB) return;
       SB.auth.signInWithOAuth({ provider: "google", options: { redirectTo: location.origin + location.pathname } });
     },
-    signOut() { return SB ? SB.auth.signOut() : Promise.resolve(); },
+    signOut() { localStorage.removeItem(SYNCED_UID_KEY); return SB ? SB.auth.signOut() : Promise.resolve(); },
     async syncNow() {
       if (!SB || !user) return { ok: false, error: "로그인 필요" };
       try {
@@ -2775,7 +2786,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.54" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.55" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink" },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow" },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue" },
@@ -2819,6 +2830,16 @@ function streakHl(streak) {
   if (streak < 7) return "yellow";
   if (streak < 30) return "green";
   return "blue";
+}
+/* 지금 복습할 카드 수 → 형광펜 하이어라키(2026-07-20, 홈/학습 메뉴 "지금 복습할 카드").
+   많이 밀릴수록 하이어라키를 타고 올라감(연두<옐로우<핑크<블루) — 다른 색 하이어라키(streakHl 등)
+   와 같은 순서. 보통(하루 목표 20개 안쪽)은 형광펜 색 대신 진한 크림톤(hl-cream)만. */
+function dueCardHl(n) {
+  if (n >= 200) return "blue";
+  if (n >= 100) return "pink";
+  if (n >= 50) return "yellow";
+  if (n >= 20) return "green";
+  return "cream";
 }
 /* 임계값 배열에서 count가 넘긴 최고 티어 인덱스(-1=미획득) — 뱃지 진행값 계산 공용. */
 function tierFromCount(count, tiers) {
@@ -3134,7 +3155,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.54";
+const HERO_V = "0.35.55";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -3186,6 +3207,39 @@ function FlyCat({ onIntroEnd }) {
     };
   }, []);
   return <div ref={ref} />;
+}
+// 로고 슬롯머신 스플래시(2026-07-19) — 흰 "No" 자리에서 oH/No/Yes가 슬롯머신처럼 빠르게 돌다
+// 점점 느려지며 "No"(크림색, 로고와 동일)에 안착해 "NoEnglish" 완성 → 전체 페이드아웃. Figma
+// (node 20:406) 레이아웃 실측 기반, text-to-lottie 스킬로 제작(design/splash/README.md 참고).
+// 1회만 재생(loop:false) — 끝나면(complete) onDone 호출, App이 그 시점에 이 컴포넌트를 언마운트.
+function SplashScreen({ onDone }) {
+  const ref = useRef(null);
+  useEffect(() => {
+    let anim = null, cancelled = false, poll = null, timeout = null, safety = null;
+    const done = () => { if (cancelled) return; cancelled = true; if (safety) clearTimeout(safety); onDone(); };
+    const mount = () => {
+      if (cancelled || !ref.current || !window.lottie) return;
+      fetch("img/splash/splash.json?v=" + APP_VERSION).then(r => r.json()).then(data => {
+        if (cancelled || !ref.current) return;
+        anim = window.lottie.loadAnimation({ container: ref.current, renderer: "svg", loop: false, autoplay: true, animationData: data });
+        anim.addEventListener("complete", done);
+        // 애니메이션이 로드는 됐지만(예: 백그라운드 복귀 직후 rAF가 멈춰서) complete가 영영 안 오는 경우
+        // 스플래시가 화면(과 클릭)을 영구히 가리는 사고를 막는 안전장치(2026-07-20, 실제로 이 상태가
+        // 재현됨 — window.lottie는 있고 SVG도 그려졌는데 애니메이션이 frame 0에서 paused로 멈춰있었음).
+        safety = setTimeout(done, 5000);
+      }).catch(done); // 로드 실패해도 앱 진입은 막지 않음
+    };
+    if (window.lottie) mount();
+    else {
+      poll = setInterval(() => { if (window.lottie) { clearInterval(poll); poll = null; mount(); } }, 60);
+      timeout = setTimeout(() => { if (poll) { clearInterval(poll); poll = null; done(); } }, 4000);
+    }
+    return () => {
+      cancelled = true; if (poll) clearInterval(poll); if (timeout) clearTimeout(timeout); if (safety) clearTimeout(safety);
+      if (anim) { try { anim.destroy(); } catch (e) {} }
+    };
+  }, []);
+  return <div className="splash-screen"><div ref={ref} className="splash-lottie" /></div>;
 }
 // 기본 스티커 세트 — center=히어로 내 중심 좌표(%), w=너비(히어로 폭 대비 %). 배열 순서=z(뒤→앞,
 // design/hero_example_2.svg 문서 순서 존중). 좌표·크기는 그 파일 350×220 실측. smile만 눈썹 모션이라 Lottie.
@@ -7133,10 +7187,11 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
     { k: "level", icon: "add", title: "레벨 테스트", sub: "어휘 + 문장구사력", on: true, start: onStartLevelTest },
   ];
 
+  const dueHl = dueCardHl(dueCount);
   return (
     <div className="content learnmenu">
-      <div className="stat" style={{ padding: "18px 8px", marginBottom: 2 }}>
-        <div className="v accent">{dueCount}</div>
+      <div className={"stat" + (dueHl !== "cream" ? " tier-" + dueHl : "")} style={{ padding: "18px 8px", marginBottom: 2, cursor: "pointer" }} onClick={startCard}>
+        <div className="v"><span className={"hl hl-" + dueHl} style={{ fontSize: 30 }}>{dueCount}</span></div>
         <div className="l">지금 복습할 카드</div>
       </div>
       {MENU.filter(m => !m.hidden).map(m => (
@@ -7224,7 +7279,7 @@ function Settings({ charK, onChangeChar, onClose, onStartLevelTest }) {
                   </div>
                   <div className="acct-actions">
                     <button className="qhint-btn" onClick={doSyncNow}>지금 동기화</button>
-                    <button className="qhint-btn" onClick={() => AUTH.signOut()}>로그아웃</button>
+                    <button className="qhint-btn" style={{ background: "var(--ink)", color: "var(--on-accent)", borderColor: "var(--ink)" }} onClick={() => AUTH.signOut()}>로그아웃</button>
                   </div>
                 </div>
               ) : (
@@ -7380,6 +7435,7 @@ const TABS = [
 ];
 
 function App() {
+  const [showSplash, setShowSplash] = useState(true); // 앱 첫 진입 시 로고 슬롯머신 스플래시(2026-07-19)
   const [tab, setTab] = useState("home");
   /* 탭 아이콘을 누르면(이미 그 탭이어도) 항상 그 탭의 메인 화면으로 돌아가게 하는 리셋 카운터(2026-07-18).
      탭별로 내부에 깊은 화면(회화 대화방, 사전 상세 등)이 있어도 이 값을 key에 섞어주면 그 탭 컴포넌트가
@@ -7444,18 +7500,22 @@ function App() {
   /* 새 버전 배포 감지: 앱을 열 때(최초 로드)와 백그라운드에서 돌아올 때(PWA를 껐다 켤 때 포함)
      version.json을 캐시 없이 확인해서 APP_VERSION과 다르면 배너 없이 바로 강제 새로고침.
      location.reload()는 캐시에서 그대로 서빙될 수 있어(특히 iOS 홈화면 standalone 앱)
-     ?_=타임스탬프로 URL을 바꿔 강제 새 요청한다. 새로고침해도 같은 버전 문자열이 또 감지되면
-     (배포 사고 등으로 version.json과 실제 코드가 어긋난 경우) sessionStorage로 재시도를 막아
-     무한 새로고침 루프를 방지한다. */
+     ?_=타임스탬프로 URL을 바꿔 강제 새 요청한다. 세션당(sessionStorage) 자동 새로고침은 값과
+     무관하게 최대 1회로 제한 — 두 세션이 겹쳐 커밋하는 동안 version.json과 APP_VERSION이
+     일시적으로 계속 어긋나거나(배포 레이스 컨디션) CDN 엣지 캐시가 값을 왔다갔다 서빙해도,
+     "버전 문자열별 1회"였던 예전 가드는 값이 계속 바뀌면 매번 새 키로 인식해 무한 새로고침
+     루프가 될 수 있었음(2026-07-20, 실제 사용자 PWA에서 재부팅해도 계속 깜빡이는 증상으로 발견 —
+     세션당 고정 키 1개로 바꿔 근본적으로 봉쇄). */
   useEffect(() => {
+    const RELOAD_GUARD_KEY = "en_version_reload_attempted";
     const check = () => {
+      if (sessionStorage.getItem(RELOAD_GUARD_KEY)) return;
       fetch("version.json?t=" + Date.now(), { cache: "no-store" })
         .then(r => (r.ok ? r.json() : null))
         .then(data => {
           if (!data || !data.v || data.v === APP_VERSION) return;
-          const key = "en_reload_for_" + data.v;
-          if (sessionStorage.getItem(key)) return;
-          sessionStorage.setItem(key, "1");
+          if (sessionStorage.getItem(RELOAD_GUARD_KEY)) return;
+          sessionStorage.setItem(RELOAD_GUARD_KEY, "1");
           window.location.href = window.location.pathname + "?_=" + Date.now();
         })
         .catch(() => {});
@@ -7526,6 +7586,7 @@ function App() {
       </div>}
 
       {stack && <WordSheet stack={stack} onPush={pushWord} onPop={popWord} onClose={closeSheet} onOpenRoot={openRoot} />}
+      {showSplash && <SplashScreen onDone={() => setShowSplash(false)} />}
     </div>
   );
 }
