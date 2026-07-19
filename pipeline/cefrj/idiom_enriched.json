@@ -3326,5 +3326,1425 @@
   "cefr": "B2",
   "en": "talk repeatedly and tediously about the same subject, especially a complaint",
   "syn": []
+ },
+ {
+  "word": "take on",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "agree to accept a responsibility, task, or duty",
+  "syn": [
+   "assume",
+   "undertake",
+   "accept",
+   "meet",
+   "acquire",
+   "adopt",
+   "tackle",
+   "admit"
+  ]
+ },
+ {
+  "word": "go down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "move from a higher place to a lower one",
+  "syn": [
+   "descend",
+   "sink",
+   "decline",
+   "set",
+   "crash",
+   "fall",
+   "settle",
+   "wane"
+  ]
+ },
+ {
+  "word": "come down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "move from a higher place to a lower one, toward the speaker",
+  "syn": [
+   "descend",
+   "reduce",
+   "precipitate",
+   "sicken",
+   "fall",
+   "boil down",
+   "go down"
+  ]
+ },
+ {
+  "word": "go ahead",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "used to give someone permission to do something",
+  "syn": [
+   "plow ahead"
+  ]
+ },
+ {
+  "word": "go up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "en": "move from a lower place to a higher one",
+  "syn": [
+   "rise",
+   "approach",
+   "climb",
+   "burn down",
+   "ascend",
+   "lift",
+   "near",
+   "climb up"
+  ]
+ },
+ {
+  "word": "look back",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "turn your head to look behind you",
+  "syn": [
+   "look backward",
+   "review",
+   "retrospect"
+  ]
+ },
+ {
+  "word": "pull out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "take something out of a container or from inside somewhere",
+  "syn": [
+   "get out",
+   "draw",
+   "extract",
+   "chicken out",
+   "pull",
+   "back off",
+   "pull up",
+   "back down"
+  ]
+ },
+ {
+  "word": "look down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "look toward something below you",
+  "syn": []
+ },
+ {
+  "word": "put up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "place a notice or sign so people can see it",
+  "syn": [
+   "post",
+   "provide",
+   "raise",
+   "digest",
+   "can",
+   "house",
+   "contribute",
+   "nominate"
+  ]
+ },
+ {
+  "word": "look out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "be careful, especially of danger",
+  "syn": [
+   "watch",
+   "watch out"
+  ]
+ },
+ {
+  "word": "bring in",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "introduce something new, or bring a new person into a situation",
+  "syn": [
+   "introduce",
+   "gain",
+   "fetch",
+   "take in",
+   "bring",
+   "clear",
+   "make"
+  ]
+ },
+ {
+  "word": "open up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "unlock or make something open",
+  "syn": [
+   "open",
+   "pioneer"
+  ]
+ },
+ {
+  "word": "move on",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "start doing or discussing something new after finishing the previous one",
+  "syn": [
+   "advance",
+   "progress",
+   "pass on",
+   "march on"
+  ]
+ },
+ {
+  "word": "put out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "make a fire or light stop burning",
+  "syn": [
+   "trouble",
+   "smother",
+   "exsert",
+   "douse",
+   "retire",
+   "publish",
+   "anesthetize",
+   "inconvenience"
+  ]
+ },
+ {
+  "word": "look around",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "look at different parts of a place or turn to see what is nearby",
+  "syn": []
+ },
+ {
+  "word": "catch up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "reach the same level or position as someone or something ahead",
+  "syn": []
+ },
+ {
+  "word": "go in",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "en": "enter a place",
+  "syn": [
+   "enter",
+   "come in",
+   "get into",
+   "get in"
+  ]
+ },
+ {
+  "word": "keep up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "stay at the same speed or level as someone or something else",
+  "syn": [
+   "prolong",
+   "conserve",
+   "keep abreast",
+   "sustain",
+   "preserve",
+   "follow",
+   "maintain"
+  ]
+ },
+ {
+  "word": "put down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A1",
+  "en": "place something you are holding onto a surface",
+  "syn": [
+   "set down",
+   "lay",
+   "land",
+   "take down",
+   "drop",
+   "destroy",
+   "write down",
+   "record"
+  ]
+ },
+ {
+  "word": "go off",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "(of an alarm or bell) make a sudden loud noise",
+  "syn": [
+   "abscond",
+   "fire",
+   "come off",
+   "implode",
+   "bolt",
+   "discharge",
+   "go over",
+   "absquatulate"
+  ]
+ },
+ {
+  "word": "turn back",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "go back the way you came",
+  "syn": [
+   "backtrack",
+   "revert",
+   "chase away",
+   "check",
+   "invert",
+   "double back",
+   "return",
+   "drive out"
+  ]
+ },
+ {
+  "word": "pull up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "(of a vehicle or its driver) stop",
+  "syn": [
+   "draw up",
+   "extract",
+   "haul up",
+   "straighten up",
+   "pull out",
+   "pull",
+   "take out"
+  ]
+ },
+ {
+  "word": "shut down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "stop a business or factory from operating, permanently or for a time",
+  "syn": [
+   "close up",
+   "close",
+   "fold",
+   "close down"
+  ]
+ },
+ {
+  "word": "turn over",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "roll from one side to the other",
+  "syn": [
+   "pass",
+   "overturn",
+   "roll",
+   "dig",
+   "turn",
+   "flip",
+   "consider",
+   "hand"
+  ]
+ },
+ {
+  "word": "slow down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "reduce speed, or become slower",
+  "syn": [
+   "decelerate",
+   "slow",
+   "relax",
+   "slow up",
+   "loosen up",
+   "slack",
+   "unbend",
+   "retard"
+  ]
+ },
+ {
+  "word": "wind up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "finally reach a particular state or situation, especially unintentionally",
+  "syn": [
+   "finish up",
+   "arouse",
+   "wind",
+   "land up",
+   "sex",
+   "fetch up",
+   "excite",
+   "end up"
+  ]
+ },
+ {
+  "word": "line up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "form a line, one behind another",
+  "syn": [
+   "get hold",
+   "queue up",
+   "align",
+   "dress",
+   "come up",
+   "queue",
+   "aline",
+   "find"
+  ]
+ },
+ {
+  "word": "lay out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "arrange things in an organized way over a surface",
+  "syn": [
+   "range",
+   "set up",
+   "present",
+   "array",
+   "set",
+   "represent",
+   "set out"
+  ]
+ },
+ {
+  "word": "go over",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "examine or review something carefully",
+  "syn": [
+   "review",
+   "go off",
+   "check",
+   "fall over",
+   "survey",
+   "come off",
+   "check up on",
+   "look into"
+  ]
+ },
+ {
+  "word": "pay off",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "result in success after effort or risk",
+  "syn": [
+   "liquidate",
+   "redeem",
+   "pay",
+   "buy off",
+   "pay back",
+   "make up",
+   "get",
+   "compensate"
+  ]
+ },
+ {
+  "word": "hold out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "continue to survive or resist under difficult conditions",
+  "syn": [
+   "exsert",
+   "resist",
+   "wear",
+   "survive",
+   "stretch out",
+   "withstand",
+   "endure",
+   "last"
+  ]
+ },
+ {
+  "word": "bring out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "produce and release something new for sale",
+  "syn": [
+   "unveil",
+   "let out",
+   "publish",
+   "set off",
+   "produce",
+   "get out",
+   "introduce",
+   "unwrap"
+  ]
+ },
+ {
+  "word": "pull back",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "move back from a position, especially in a military context",
+  "syn": [
+   "withdraw",
+   "retract",
+   "draw",
+   "retreat",
+   "draw back",
+   "back out",
+   "pull away",
+   "back away"
+  ]
+ },
+ {
+  "word": "hang on",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "wait for a short time",
+  "syn": [
+   "append",
+   "persevere",
+   "hold the line",
+   "tag on",
+   "persist",
+   "hold on",
+   "tack on",
+   "hang in"
+  ]
+ },
+ {
+  "word": "build up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "gradually increase or accumulate",
+  "syn": [
+   "work up",
+   "arm",
+   "develop",
+   "build",
+   "fortify",
+   "progress",
+   "gird",
+   "ramp up"
+  ]
+ },
+ {
+  "word": "throw out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "get rid of something you no longer want",
+  "syn": [
+   "expel",
+   "discard",
+   "oust",
+   "advance",
+   "dismiss",
+   "kick out",
+   "fling",
+   "drum out"
+  ]
+ },
+ {
+  "word": "get down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "move your body to a lower position",
+  "syn": [
+   "lower",
+   "unhorse",
+   "swallow",
+   "depress",
+   "write down",
+   "begin",
+   "take down",
+   "dismount"
+  ]
+ },
+ {
+  "word": "move in",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "move into a new house, apartment, or office to live or work there",
+  "syn": [
+   "pull in",
+   "get in",
+   "draw in"
+  ]
+ },
+ {
+  "word": "start out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "begin an action, career, or process",
+  "syn": [
+   "get down",
+   "depart",
+   "begin",
+   "part",
+   "get",
+   "start",
+   "set forth"
+  ]
+ },
+ {
+  "word": "call out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "say something loudly",
+  "syn": [
+   "exclaim",
+   "cry",
+   "cry out",
+   "outcry"
+  ]
+ },
+ {
+  "word": "sit up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "move from a lying position to a sitting position",
+  "syn": [
+   "stay up"
+  ]
+ },
+ {
+  "word": "turn down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "refuse to accept an offer, request, or invitation",
+  "syn": [
+   "refuse",
+   "reject",
+   "lower",
+   "turn away",
+   "spurn",
+   "lour",
+   "pass up",
+   "freeze off"
+  ]
+ },
+ {
+  "word": "put back",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "return something to its original place",
+  "syn": [
+   "replace",
+   "set back",
+   "knock back"
+  ]
+ },
+ {
+  "word": "send out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "cause something to be delivered or transmitted to a place",
+  "syn": [
+   "send"
+  ]
+ },
+ {
+  "word": "blow up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "explode or destroy something with an explosion",
+  "syn": [
+   "explode",
+   "enlarge",
+   "flip one's lid",
+   "embroider",
+   "detonate",
+   "inflate",
+   "puff",
+   "magnify"
+  ]
+ },
+ {
+  "word": "keep on",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "continue doing something without stopping",
+  "syn": [
+   "retain",
+   "continue",
+   "keep"
+  ]
+ },
+ {
+  "word": "make out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "manage to see, hear, or understand something with difficulty",
+  "syn": [
+   "spot",
+   "write out",
+   "do",
+   "cope",
+   "sleep together",
+   "neck",
+   "complete",
+   "recognize"
+  ]
+ },
+ {
+  "word": "shut up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "stop talking (often used as a rude command)",
+  "syn": [
+   "close up",
+   "lock in",
+   "hush",
+   "pent",
+   "clam up",
+   "lock away",
+   "quieten",
+   "shut up(p)"
+  ]
+ },
+ {
+  "word": "step back",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "move backward physically",
+  "syn": []
+ },
+ {
+  "word": "lay down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "put something down, often carefully",
+  "syn": [
+   "establish",
+   "make"
+  ]
+ },
+ {
+  "word": "bring down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "make a price, level, or amount lower",
+  "syn": [
+   "lower",
+   "overthrow",
+   "inflict",
+   "land",
+   "reduce",
+   "take down",
+   "subvert",
+   "visit"
+  ]
+ },
+ {
+  "word": "play out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "happen or develop in a particular way over time",
+  "syn": [
+   "run down",
+   "exhaust",
+   "sap",
+   "tire"
+  ]
+ },
+ {
+  "word": "go around",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "be enough for everyone",
+  "syn": [
+   "spread",
+   "outflank",
+   "revolve",
+   "bypass",
+   "circulate",
+   "rotate",
+   "short-circuit",
+   "get around"
+  ]
+ },
+ {
+  "word": "walk out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "leave a place suddenly, often because you are angry or disagree with something",
+  "syn": [
+   "strike"
+  ]
+ },
+ {
+  "word": "move back",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "move backward or away from a place",
+  "syn": [
+   "withdraw",
+   "retreat",
+   "pull away",
+   "draw back"
+  ]
+ },
+ {
+  "word": "sit back",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "sit in a relaxed, comfortable way",
+  "syn": [
+   "take it easy",
+   "sit by"
+  ]
+ },
+ {
+  "word": "move up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "move to a higher position in a job or in society",
+  "syn": [
+   "ascend",
+   "rise",
+   "lift",
+   "arise",
+   "go up"
+  ]
+ },
+ {
+  "word": "take down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "remove something from where it is displayed or fixed, such as a sign or decoration",
+  "syn": [
+   "lower",
+   "degrade",
+   "level",
+   "note",
+   "let down",
+   "disgrace",
+   "raze",
+   "get down"
+  ]
+ },
+ {
+  "word": "hand over",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "give something to someone else, especially formally",
+  "syn": [
+   "fork over",
+   "fork out",
+   "fork up",
+   "turn in"
+  ]
+ },
+ {
+  "word": "sum up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "briefly state the main points of something",
+  "syn": [
+   "summarize",
+   "total",
+   "summarise",
+   "tot",
+   "resume",
+   "sum",
+   "tot up"
+  ]
+ },
+ {
+  "word": "move out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "leave a house or place you have been living or working in",
+  "syn": [
+   "take out",
+   "remove"
+  ]
+ },
+ {
+  "word": "come off",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "become detached or separated from something",
+  "syn": [
+   "detach",
+   "go off",
+   "chip",
+   "come away",
+   "go over",
+   "chip off",
+   "break away",
+   "break off"
+  ]
+ },
+ {
+  "word": "pass on",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "give information or a message to someone else",
+  "syn": [
+   "pass",
+   "impart",
+   "advance",
+   "relegate",
+   "circulate",
+   "communicate",
+   "hand",
+   "leave"
+  ]
+ },
+ {
+  "word": "take in",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "understand and remember information",
+  "syn": [
+   "gull",
+   "absorb",
+   "collect",
+   "watch",
+   "receive",
+   "gather in",
+   "gain",
+   "catch"
+  ]
+ },
+ {
+  "word": "set down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "put something down, often gently",
+  "syn": [
+   "write down",
+   "land",
+   "put down",
+   "disembark",
+   "drop",
+   "get down",
+   "place down",
+   "debark"
+  ]
+ },
+ {
+  "word": "follow up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "take further action related to something that happened before, to check progress or add information",
+  "syn": [
+   "follow through",
+   "follow out",
+   "carry out",
+   "implement"
+  ]
+ },
+ {
+  "word": "come around",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "change your opinion and start to agree with something",
+  "syn": [
+   "come round",
+   "roll around"
+  ]
+ },
+ {
+  "word": "give out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "A2",
+  "en": "give something to several people",
+  "syn": [
+   "emit",
+   "distribute",
+   "fail",
+   "give off",
+   "hand out",
+   "run out",
+   "go bad",
+   "pass out"
+  ]
+ },
+ {
+  "word": "go along",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "agree to do what someone else wants or suggests",
+  "syn": [
+   "play along",
+   "continue",
+   "elapse",
+   "go on",
+   "lapse",
+   "proceed",
+   "pass",
+   "keep"
+  ]
+ },
+ {
+  "word": "break off",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "suddenly stop talking or doing something before it is finished",
+  "syn": [
+   "cut short",
+   "break",
+   "chip",
+   "break short",
+   "discontinue",
+   "chip off",
+   "snap off",
+   "knap"
+  ]
+ },
+ {
+  "word": "come about",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "happen, especially in a particular way",
+  "syn": [
+   "happen",
+   "hap",
+   "go on",
+   "pass off"
+  ]
+ },
+ {
+  "word": "close down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "stop operating completely, especially a business",
+  "syn": [
+   "close up",
+   "close",
+   "fold",
+   "shut down"
+  ]
+ },
+ {
+  "word": "put in",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "spend time or effort doing something",
+  "syn": [
+   "insert",
+   "store",
+   "chime in",
+   "install",
+   "submit",
+   "interject",
+   "enclose",
+   "hive away"
+  ]
+ },
+ {
+  "word": "set about",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "begin to do something, especially in an organized way",
+  "syn": [
+   "go about",
+   "undertake",
+   "get down",
+   "approach",
+   "attempt",
+   "begin",
+   "get",
+   "start out"
+  ]
+ },
+ {
+  "word": "circle back",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "return to a topic or task again at a later time",
+  "syn": []
+ },
+ {
+  "word": "touch base",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "make brief contact with someone to share updates or check in",
+  "syn": [
+   "get in touch",
+   "connect"
+  ]
+ },
+ {
+  "word": "loop in",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "include someone in an email thread or discussion so they stay informed",
+  "syn": []
+ },
+ {
+  "word": "sign off",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "formally approve something, especially before it can proceed",
+  "syn": []
+ },
+ {
+  "word": "drill down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "examine something in much greater detail",
+  "syn": []
+ },
+ {
+  "word": "spin off",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "separate part of a company into a new, independent business",
+  "syn": []
+ },
+ {
+  "word": "buy in",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "come to accept and support a plan, idea, or decision",
+  "syn": [
+   "stock",
+   "stock up"
+  ]
+ },
+ {
+  "word": "staff up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "hire more employees to meet an increased workload",
+  "syn": []
+ },
+ {
+  "word": "cash out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "convert an investment, asset, or account balance into cash",
+  "syn": []
+ },
+ {
+  "word": "bottom out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "reach the lowest point before starting to improve",
+  "syn": []
+ },
+ {
+  "word": "level up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "improve your skills, performance, or quality to a higher standard",
+  "syn": []
+ },
+ {
+  "word": "close out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "finish and finalize something such as a project, account, or fiscal period",
+  "syn": [
+   "preclude",
+   "rule out"
+  ]
+ },
+ {
+  "word": "firm up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "make plans or details more definite and settled",
+  "syn": []
+ },
+ {
+  "word": "gear up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B1",
+  "en": "prepare actively for an upcoming event or challenge",
+  "syn": [
+   "fix",
+   "prepare",
+   "set up",
+   "ready"
+  ]
+ },
+ {
+  "word": "lock in",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "secure a price, rate, or deal so that it cannot be changed later",
+  "syn": [
+   "seal in",
+   "lock away",
+   "lock",
+   "put away"
+  ]
+ },
+ {
+  "word": "map out",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "plan something in careful, detailed steps",
+  "syn": [
+   "map"
+  ]
+ },
+ {
+  "word": "nail down",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "reach a final, clear agreement on something, especially the details",
+  "syn": [
+   "pin down",
+   "finalize",
+   "nail",
+   "peg down",
+   "finalise",
+   "peg",
+   "settle",
+   "narrow down"
+  ]
+ },
+ {
+  "word": "pencil in",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "schedule something provisionally, knowing the plan may still change",
+  "syn": []
+ },
+ {
+  "word": "pull together",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "gather people, resources, or information into an organized whole",
+  "syn": [
+   "gather",
+   "garner",
+   "collect"
+  ]
+ },
+ {
+  "word": "shore up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "strengthen something, such as a business or finances, that is weak or under pressure",
+  "syn": [
+   "prop up",
+   "prop",
+   "shore"
+  ]
+ },
+ {
+  "word": "size up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "quickly assess a situation, person, or problem",
+  "syn": [
+   "take stock",
+   "scrutinize",
+   "scrutinise"
+  ]
+ },
+ {
+  "word": "sync up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "coordinate with someone to make sure schedules or understanding are aligned",
+  "syn": []
+ },
+ {
+  "word": "walk through",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "explain or demonstrate something step by step",
+  "syn": []
+ },
+ {
+  "word": "flag up",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "bring a problem or concern to someone's attention",
+  "syn": []
  }
 ]

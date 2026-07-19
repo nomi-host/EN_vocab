@@ -1,0 +1,425 @@
+{
+  "circle back": [
+    {
+      "cue": "논의를 나중에 다시",
+      "ko": "나중에 다시 논의하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "return to a topic or task again at a later time",
+      "syn": ["come back to", "follow up on"],
+      "ex": [
+        {
+          "en": "Let's circle back to the budget question after lunch.",
+          "ko": "점심 이후에 예산 문제로 다시 돌아가서 논의합시다."
+        }
+      ]
+    }
+  ],
+  "touch base": [
+    {
+      "cue": "짧게 안부·근황을",
+      "ko": "짧게 연락하다, 근황을 나누다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "make brief contact with someone to share updates or check in",
+      "syn": ["check in", "get in touch"],
+      "ex": [
+        {
+          "en": "I just wanted to touch base before tomorrow's client call.",
+          "ko": "내일 고객 통화 전에 잠깐 연락드리고 싶었어요."
+        }
+      ]
+    }
+  ],
+  "loop in": [
+    {
+      "cue": "이메일·논의에 누군가를",
+      "ko": "참조·논의에 포함시키다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "include someone in an email thread or discussion so they stay informed",
+      "syn": ["cc", "bring in"],
+      "ex": [
+        {
+          "en": "Can you loop in the design team on this thread?",
+          "ko": "이 이메일에 디자인팀도 참조로 넣어 주시겠어요?"
+        }
+      ]
+    }
+  ],
+  "sign off": [
+    {
+      "cue": "상사·담당자가 최종",
+      "ko": "승인하다, 결재하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "formally approve something, especially before it can proceed",
+      "syn": ["approve", "authorize"],
+      "ex": [
+        {
+          "en": "The director still needs to sign off on the final budget.",
+          "ko": "이사님이 아직 최종 예산을 승인해야 합니다."
+        }
+      ]
+    }
+  ],
+  "drill down": [
+    {
+      "cue": "데이터·문제를 더 깊이",
+      "ko": "세부적으로 파고들다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "examine something in much greater detail",
+      "syn": ["dig into", "look closer at"],
+      "ex": [
+        {
+          "en": "Let's drill down into the Q3 sales numbers.",
+          "ko": "3분기 매출 수치를 좀 더 자세히 파고들어 봅시다."
+        }
+      ]
+    }
+  ],
+  "spin off": [
+    {
+      "cue": "회사·부서를 분리해 새 법인으로",
+      "ko": "분사시키다, 파생시키다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "separate part of a company into a new, independent business",
+      "syn": ["separate out", "carve out"],
+      "ex": [
+        {
+          "en": "The company decided to spin off its software division.",
+          "ko": "그 회사는 소프트웨어 사업부를 분사시키기로 결정했다."
+        }
+      ]
+    }
+  ],
+  "buy in": [
+    {
+      "cue": "새 계획·아이디어에 다 같이",
+      "ko": "지지하다, 동의하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "come to accept and support a plan, idea, or decision",
+      "syn": ["get on board", "support"],
+      "ex": [
+        {
+          "en": "We need the whole team to buy in before we launch this.",
+          "ko": "이 프로젝트를 시작하기 전에 팀 전체의 동의를 얻어야 한다."
+        }
+      ]
+    }
+  ],
+  "staff up": [
+    {
+      "cue": "인력이 부족해 채용을 늘려",
+      "ko": "인력을 충원하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "hire more employees to meet an increased workload",
+      "syn": ["hire more", "add headcount"],
+      "ex": [
+        {
+          "en": "We're staffing up ahead of the holiday season.",
+          "ko": "연휴 시즌을 앞두고 인력을 충원하고 있다."
+        }
+      ]
+    }
+  ],
+  "cash out": [
+    {
+      "cue": "투자·지분을 현금으로",
+      "ko": "현금화하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "convert an investment, asset, or account balance into cash",
+      "syn": ["liquidate", "sell off"],
+      "ex": [
+        {
+          "en": "He cashed out his stock options after the IPO.",
+          "ko": "그는 상장 이후 스톡옵션을 현금화했다."
+        }
+      ]
+    }
+  ],
+  "bottom out": [
+    {
+      "cue": "가격·경기가 최저점을 찍고",
+      "ko": "바닥을 치다, 최저점을 찍다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "reach the lowest point before starting to improve",
+      "syn": ["hit bottom", "reach the low point"],
+      "ex": [
+        {
+          "en": "Analysts believe the market has finally bottomed out.",
+          "ko": "분석가들은 시장이 마침내 바닥을 쳤다고 본다."
+        }
+      ]
+    }
+  ],
+  "level up": [
+    {
+      "cue": "역량·품질을 한 단계",
+      "ko": "역량·수준을 끌어올리다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "improve your skills, performance, or quality to a higher standard",
+      "syn": ["step up", "upgrade"],
+      "ex": [
+        {
+          "en": "This training program will help the team level up their presentation skills.",
+          "ko": "이 교육 프로그램은 팀이 발표 역량을 한 단계 끌어올리는 데 도움이 될 것이다."
+        }
+      ]
+    }
+  ],
+  "close out": [
+    {
+      "cue": "프로젝트·계정을 마무리해",
+      "ko": "마감하다, 종료하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "finish and finalize something such as a project, account, or fiscal period",
+      "syn": ["finalize", "wrap up"],
+      "ex": [
+        {
+          "en": "We need to close out this quarter's accounts by Friday.",
+          "ko": "금요일까지 이번 분기 회계를 마감해야 한다."
+        }
+      ]
+    },
+    {
+      "cue": "재고를 할인해 정리 판매하는",
+      "ko": "재고를 정리 판매하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "sell off remaining stock, usually at a discount, to clear inventory",
+      "syn": ["clear out", "liquidate"],
+      "ex": [
+        {
+          "en": "The store is closing out its winter inventory at 50% off.",
+          "ko": "그 매장은 겨울 재고를 50% 할인해 정리 판매하고 있다."
+        }
+      ]
+    }
+  ],
+  "firm up": [
+    {
+      "cue": "계획·일정을 최종적으로",
+      "ko": "확정하다, 굳히다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "make plans or details more definite and settled",
+      "syn": ["finalize", "solidify"],
+      "ex": [
+        {
+          "en": "Let's firm up the meeting agenda before we send it out.",
+          "ko": "발송하기 전에 회의 안건을 확정합시다."
+        }
+      ]
+    }
+  ],
+  "gear up": [
+    {
+      "cue": "행사·출시를 앞두고 준비를",
+      "ko": "준비 태세를 갖추다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B1",
+      "en": "prepare actively for an upcoming event or challenge",
+      "syn": ["prepare", "get ready"],
+      "ex": [
+        {
+          "en": "The team is gearing up for the product launch next month.",
+          "ko": "팀은 다음 달 제품 출시를 앞두고 준비 태세를 갖추고 있다."
+        }
+      ]
+    }
+  ],
+  "lock in": [
+    {
+      "cue": "가격·조건을 미리 확정해",
+      "ko": "확정 짓다, 고정하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "secure a price, rate, or deal so that it cannot be changed later",
+      "syn": ["secure", "fix"],
+      "ex": [
+        {
+          "en": "We locked in a lower interest rate before the increase.",
+          "ko": "우리는 금리 인상 전에 더 낮은 이자율을 확정 지었다."
+        }
+      ]
+    }
+  ],
+  "map out": [
+    {
+      "cue": "일정·전략을 세밀하게",
+      "ko": "계획을 세밀히 짜다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "plan something in careful, detailed steps",
+      "syn": ["plan out", "lay out"],
+      "ex": [
+        {
+          "en": "She mapped out the entire project timeline for the team.",
+          "ko": "그녀는 팀을 위해 전체 프로젝트 일정을 세밀하게 짰다."
+        }
+      ]
+    }
+  ],
+  "nail down": [
+    {
+      "cue": "세부사항·계약 조건을 확실히",
+      "ko": "확정하다, 구체화하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "reach a final, clear agreement on something, especially the details",
+      "syn": ["finalize", "pin down"],
+      "ex": [
+        {
+          "en": "We still need to nail down the delivery date with the vendor.",
+          "ko": "우리는 아직 공급업체와 배송 날짜를 확정해야 한다."
+        }
+      ]
+    }
+  ],
+  "pencil in": [
+    {
+      "cue": "일정을 잠정적으로 우선",
+      "ko": "잠정적으로 일정을 잡다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "schedule something provisionally, knowing the plan may still change",
+      "syn": ["tentatively schedule", "provisionally book"],
+      "ex": [
+        {
+          "en": "Let's pencil in next Tuesday for the follow-up meeting.",
+          "ko": "일단 다음 주 화요일로 후속 회의 일정을 잠정적으로 잡아 둡시다."
+        }
+      ]
+    }
+  ],
+  "pull together": [
+    {
+      "cue": "자료·팀원을 한데 모아",
+      "ko": "자료·팀을 한데 모으다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "gather people, resources, or information into an organized whole",
+      "syn": ["gather", "compile"],
+      "ex": [
+        {
+          "en": "Can you pull together a summary of last month's sales?",
+          "ko": "지난달 매출 요약 자료를 좀 정리해 줄래요?"
+        }
+      ]
+    }
+  ],
+  "shore up": [
+    {
+      "cue": "약해진 재무·입지를",
+      "ko": "강화하다, 보강하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "strengthen something, such as a business or finances, that is weak or under pressure",
+      "syn": ["strengthen", "reinforce"],
+      "ex": [
+        {
+          "en": "The company is raising capital to shore up its finances.",
+          "ko": "그 회사는 재무 상태를 강화하기 위해 자금을 조달하고 있다."
+        }
+      ]
+    }
+  ],
+  "size up": [
+    {
+      "cue": "상황·상대를 재빨리",
+      "ko": "평가하다, 가늠하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "quickly assess a situation, person, or problem",
+      "syn": ["assess", "evaluate"],
+      "ex": [
+        {
+          "en": "She sized up the competition before finalizing the pricing strategy.",
+          "ko": "그녀는 가격 전략을 확정하기 전에 경쟁사 상황을 가늠해 보았다."
+        }
+      ]
+    }
+  ],
+  "sync up": [
+    {
+      "cue": "일정·이해를 서로 맞춰",
+      "ko": "조율하다, 맞추다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "coordinate with someone to make sure schedules or understanding are aligned",
+      "syn": ["coordinate", "align"],
+      "ex": [
+        {
+          "en": "Let's sync up before the client meeting to make sure we're on the same page.",
+          "ko": "고객 미팅 전에 서로 내용을 맞춰서 같은 입장인지 확인합시다."
+        }
+      ]
+    }
+  ],
+  "walk through": [
+    {
+      "cue": "절차·자료를 처음부터 차근차근",
+      "ko": "단계별로 설명하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "explain or demonstrate something step by step",
+      "syn": ["go through", "take through"],
+      "ex": [
+        {
+          "en": "Let me walk you through the new onboarding process.",
+          "ko": "새로운 온보딩 절차를 단계별로 설명해 드릴게요."
+        }
+      ]
+    }
+  ],
+  "flag up": [
+    {
+      "cue": "문제·우려사항을 담당자에게",
+      "ko": "문제를 제기하다, 알리다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "bring a problem or concern to someone's attention",
+      "syn": ["raise", "highlight"],
+      "ex": [
+        {
+          "en": "I want to flag up a potential issue with the timeline.",
+          "ko": "일정과 관련해 우려되는 부분이 있어 말씀드리고 싶습니다."
+        }
+      ]
+    }
+  ]
+}
