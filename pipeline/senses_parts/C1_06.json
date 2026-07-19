@@ -1,0 +1,598 @@
+{
+  "spartan": [
+    {
+      "cue": "안락함 없이 검소하고 엄격한",
+      "ko": "검소한, 극기적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "very plain, simple, and lacking comfort or luxury, showing great self-discipline",
+      "ex": [
+        {
+          "en": "The soldiers lived in spartan conditions with only a bed and a chair.",
+          "ko": "병사들은 침대와 의자만 있는 검소한 환경에서 생활했다."
+        }
+      ]
+    }
+  ],
+  "specification": [
+    {
+      "cue": "제품·설계의 상세 기준",
+      "ko": "사양, 명세서",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a detailed description of what is needed or how something should be designed or made",
+      "ex": [
+        {
+          "en": "The engineer checked the specifications before building the prototype.",
+          "ko": "엔지니어는 시제품을 제작하기 전에 사양을 확인했다."
+        }
+      ]
+    },
+    {
+      "cue": "계약·요구에서 꼭 지켜야 할 조건 (주로 복수형)",
+      "ko": "요구 조건, 규격",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "a requirement that must be met, especially as stated in an agreement",
+      "ex": [
+        {
+          "en": "The building must meet strict safety specifications.",
+          "ko": "그 건물은 엄격한 안전 규격을 충족해야 한다."
+        }
+      ]
+    }
+  ],
+  "specimen": [
+    {
+      "cue": "특정 종류를 대표하는 예",
+      "ko": "표본, 견본",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "an example of something that shows the typical features of its type",
+      "ex": [
+        {
+          "en": "This fossil is a rare specimen of an early bird.",
+          "ko": "이 화석은 초기 조류의 희귀한 표본이다."
+        }
+      ]
+    },
+    {
+      "cue": "검사를 위해 채취한 조직·혈액 등",
+      "ko": "(검사용) 시료, 검체",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "a small sample of tissue, blood, or urine taken for medical testing",
+      "ex": [
+        {
+          "en": "The nurse collected a blood specimen for testing.",
+          "ko": "간호사는 검사를 위해 혈액 검체를 채취했다."
+        }
+      ]
+    }
+  ],
+  "speculate": [
+    {
+      "cue": "확실한 근거 없이",
+      "ko": "추측하다, 짐작하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "form an opinion about something without having definite information",
+      "ex": [
+        {
+          "en": "Analysts speculate that the company may be sold soon.",
+          "ko": "분석가들은 그 회사가 곧 매각될 수도 있다고 추측한다."
+        }
+      ]
+    },
+    {
+      "cue": "돈을 걸고 위험을 감수해",
+      "ko": "투기하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "invest money in something risky in the hope of making a large profit",
+      "ex": [
+        {
+          "en": "He speculated in real estate during the boom.",
+          "ko": "그는 호황기에 부동산에 투기했다."
+        }
+      ]
+    }
+  ],
+  "speculation": [
+    {
+      "cue": "근거가 부족한 상태에서의",
+      "ko": "추측, 짐작",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "an opinion or theory formed without firm evidence",
+      "ex": [
+        {
+          "en": "There has been a lot of speculation about who will win.",
+          "ko": "누가 이길지에 대해 많은 추측이 있었다."
+        }
+      ]
+    },
+    {
+      "cue": "큰 이익을 노리고 하는 위험한 투자",
+      "ko": "투기",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "risky financial investment made in the hope of large profit",
+      "ex": [
+        {
+          "en": "Speculation in the housing market drove prices up.",
+          "ko": "주택 시장에서의 투기가 가격을 끌어올렸다."
+        }
+      ]
+    }
+  ],
+  "speculative": [
+    {
+      "cue": "사실이 아니라 추측에 근거한",
+      "ko": "추측성의, 사변적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "based on guessing rather than on facts or evidence",
+      "ex": [
+        {
+          "en": "His theory is purely speculative at this stage.",
+          "ko": "그의 이론은 이 단계에서 순전히 추측에 불과하다."
+        }
+      ]
+    },
+    {
+      "cue": "이익을 노리고 위험을 감수하는 투자",
+      "ko": "투기적인",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "involving financial risk in the hope of a large profit",
+      "ex": [
+        {
+          "en": "They made a speculative investment in a new startup.",
+          "ko": "그들은 신생 스타트업에 투기적인 투자를 했다."
+        }
+      ]
+    }
+  ],
+  "sponsorship": [
+    {
+      "cue": "기업·단체가 행사·사람을 재정적으로",
+      "ko": "후원, 협찬",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "financial or other support given to a person, event, or organization",
+      "ex": [
+        {
+          "en": "The tournament relies heavily on corporate sponsorship.",
+          "ko": "그 대회는 기업 후원에 크게 의존한다."
+        }
+      ]
+    }
+  ],
+  "spontaneous": [
+    {
+      "cue": "미리 계획하지 않고 순간적으로 하는",
+      "ko": "즉흥적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "done or said without any planning in advance",
+      "ex": [
+        {
+          "en": "We took a spontaneous trip to the beach.",
+          "ko": "우리는 즉흥적으로 해변으로 여행을 떠났다."
+        }
+      ]
+    },
+    {
+      "cue": "외부 원인 없이 저절로 일어나는",
+      "ko": "자연 발생적인, 자발적인",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "happening naturally without an obvious outside cause",
+      "ex": [
+        {
+          "en": "The chemical reaction was spontaneous and needed no trigger.",
+          "ko": "그 화학 반응은 자연 발생적이어서 별도의 촉발 요인이 필요 없었다."
+        }
+      ]
+    }
+  ],
+  "spontaneously": [
+    {
+      "cue": "계획 없이 순간적으로, 저절로",
+      "ko": "즉흥적으로, 자연스럽게",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "without planning in advance; in a natural, unforced way",
+      "ex": [
+        {
+          "en": "The crowd began cheering spontaneously.",
+          "ko": "관중들은 저절로 환호하기 시작했다."
+        }
+      ]
+    }
+  ],
+  "sprawl": [
+    {
+      "cue": "팔다리를 아무렇게나 뻗고",
+      "ko": "큰대자로 눕다/앉다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "sit or lie with your arms and legs spread out in a careless way",
+      "ex": [
+        {
+          "en": "He sprawled on the sofa after work.",
+          "ko": "그는 퇴근 후 소파에 큰대자로 드러누웠다."
+        }
+      ]
+    },
+    {
+      "cue": "도시가 무계획하게 넓게 퍼진 것",
+      "ko": "(도시의) 무질서한 확산",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "the uncontrolled spreading of a city into surrounding areas",
+      "ex": [
+        {
+          "en": "Urban sprawl has swallowed up the farmland nearby.",
+          "ko": "도시의 무질서한 확산이 인근 농지를 집어삼켰다."
+        }
+      ]
+    }
+  ],
+  "sprout": [
+    {
+      "cue": "씨앗·식물에서 싹이",
+      "ko": "싹이 트다, 자라나다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "begin to grow from a seed or produce new shoots",
+      "ex": [
+        {
+          "en": "The seeds sprouted after a week of rain.",
+          "ko": "일주일간 비가 온 후 씨앗에서 싹이 텄다."
+        }
+      ]
+    },
+    {
+      "cue": "막 자라난 어린 싹",
+      "ko": "새싹",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "a young shoot growing from a seed or plant",
+      "ex": [
+        {
+          "en": "She added bean sprouts to the salad.",
+          "ko": "그녀는 샐러드에 콩나물(새싹)을 넣었다."
+        }
+      ]
+    }
+  ],
+  "squander": [
+    {
+      "cue": "돈·시간·기회를 헛되이",
+      "ko": "낭비하다, 탕진하다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "waste money, time, or an opportunity carelessly",
+      "ex": [
+        {
+          "en": "He squandered his inheritance on gambling.",
+          "ko": "그는 도박으로 유산을 탕진했다."
+        }
+      ]
+    }
+  ],
+  "staccato": [
+    {
+      "cue": "음악에서 음을 하나씩 끊어",
+      "ko": "스타카토로, 음을 끊어서 연주하는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C2",
+      "en": "(in music) with each note played short and separated from the others",
+      "ex": [
+        {
+          "en": "The pianist played the passage staccato.",
+          "ko": "피아니스트는 그 부분을 스타카토로 연주했다."
+        }
+      ]
+    }
+  ],
+  "staggering": [
+    {
+      "cue": "믿기 힘들 정도로 큰 규모·정도",
+      "ko": "엄청난, 어마어마한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "so great or surprising that it is hard to believe",
+      "ex": [
+        {
+          "en": "The company reported staggering losses this year.",
+          "ko": "그 회사는 올해 어마어마한 손실을 보고했다."
+        }
+      ]
+    }
+  ],
+  "stamina": [
+    {
+      "cue": "오래 버틸 수 있는 힘",
+      "ko": "지구력, 체력",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "the physical or mental strength to keep doing something difficult for a long time",
+      "ex": [
+        {
+          "en": "Marathon runners need great stamina.",
+          "ko": "마라톤 선수들은 뛰어난 지구력이 필요하다."
+        }
+      ]
+    }
+  ],
+  "staple": [
+    {
+      "cue": "식생활에서 빠질 수 없는 기본 식품·재료",
+      "ko": "주식, 기본 식료품",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a food or product that is used or eaten regularly and is a basic part of daily life",
+      "ex": [
+        {
+          "en": "Rice is a staple in many Asian countries.",
+          "ko": "쌀은 많은 아시아 국가에서 주식이다."
+        }
+      ]
+    },
+    {
+      "cue": "종이를 고정하는 작은 U자 모양 철심",
+      "ko": "스테이플러 심",
+      "pos": "명사",
+      "lv": 2,
+      "cefr": "B2",
+      "en": "a small piece of bent wire used to fasten papers together",
+      "ex": [
+        {
+          "en": "The stapler ran out of staples.",
+          "ko": "스테이플러에 심이 다 떨어졌다."
+        }
+      ]
+    }
+  ],
+  "startling": [
+    {
+      "cue": "예상치 못해 순간 놀라게 하는",
+      "ko": "깜짝 놀랄, 충격적인",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "so surprising or unexpected that it shocks you for a moment",
+      "ex": [
+        {
+          "en": "The results were startling to everyone.",
+          "ko": "그 결과는 모두에게 충격적이었다."
+        }
+      ]
+    }
+  ],
+  "startlingly": [
+    {
+      "cue": "놀라울 정도로",
+      "ko": "놀랍게도, 깜짝 놀랄 만큼",
+      "pos": "부사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "in a way that is surprising or shocking",
+      "ex": [
+        {
+          "en": "The two paintings are startlingly similar.",
+          "ko": "그 두 그림은 놀라울 정도로 비슷하다."
+        }
+      ]
+    }
+  ],
+  "stately": [
+    {
+      "cue": "규모·자태가 위엄 있고 격조 있는",
+      "ko": "위풍당당한, 장엄한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "impressively dignified or grand in appearance or manner",
+      "ex": [
+        {
+          "en": "The mansion had a stately entrance with tall columns.",
+          "ko": "그 저택은 높은 기둥이 있는 위풍당당한 입구를 갖고 있었다."
+        }
+      ]
+    }
+  ],
+  "stiffen": [
+    {
+      "cue": "몸·근육·재료가 굳어지거나 굳게 만들다",
+      "ko": "뻣뻣해지다, 굳어지다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "become or make something stiff, rigid, or less flexible",
+      "ex": [
+        {
+          "en": "Her muscles stiffened after the long hike.",
+          "ko": "긴 하이킹 후 그녀의 근육이 뻣뻣해졌다."
+        }
+      ]
+    },
+    {
+      "cue": "규제·태도를 더 엄격하게",
+      "ko": "강화하다, 엄격하게 하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "make rules, resistance, or attitudes stronger or more severe",
+      "ex": [
+        {
+          "en": "The government stiffened penalties for drunk driving.",
+          "ko": "정부는 음주 운전에 대한 처벌을 강화했다."
+        }
+      ]
+    }
+  ],
+  "stimuli": [
+    {
+      "cue": "반응을 일으키는 외부 요인들 (stimulus의 복수형)",
+      "ko": "자극들",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "things that cause a reaction or response in a person or organism (plural of stimulus)",
+      "ex": [
+        {
+          "en": "Babies respond to visual stimuli from an early age.",
+          "ko": "아기들은 어릴 때부터 시각적 자극에 반응한다."
+        }
+      ]
+    }
+  ],
+  "stoke": [
+    {
+      "cue": "난로·화로에 연료를 넣어 불을",
+      "ko": "(불을) 지피다, 때다",
+      "pos": "동사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "add fuel to a fire to keep it burning",
+      "ex": [
+        {
+          "en": "He stoked the fire before going to bed.",
+          "ko": "그는 잠자리에 들기 전에 불을 지폈다."
+        }
+      ]
+    },
+    {
+      "cue": "감정·갈등·논쟁을 더 크게",
+      "ko": "부추기다, 부채질하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "encourage a strong feeling or difficult situation to become more intense",
+      "ex": [
+        {
+          "en": "The rumors stoked fear among residents.",
+          "ko": "그 소문은 주민들 사이에 두려움을 부추겼다."
+        }
+      ]
+    }
+  ],
+  "strap": [
+    {
+      "cue": "가방·시계 등에 달린 끈",
+      "ko": "끈, 줄, 스트랩",
+      "pos": "명사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "a narrow strip of leather or fabric used to fasten, carry, or hold something",
+      "ex": [
+        {
+          "en": "She adjusted the strap on her bag.",
+          "ko": "그녀는 가방 끈을 조절했다."
+        }
+      ]
+    },
+    {
+      "cue": "끈으로 단단히 고정해",
+      "ko": "끈으로 묶다, 고정하다",
+      "pos": "동사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "fasten or secure something with a strap",
+      "ex": [
+        {
+          "en": "He strapped the suitcase to the roof rack.",
+          "ko": "그는 여행 가방을 지붕 짐칸에 끈으로 고정했다."
+        }
+      ]
+    }
+  ],
+  "strapping": [
+    {
+      "cue": "체격이 크고 건장한",
+      "ko": "체격이 건장한",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "C1",
+      "en": "(especially of a young person) tall, strong, and healthy-looking",
+      "ex": [
+        {
+          "en": "Their son grew into a strapping young man.",
+          "ko": "그들의 아들은 체격 건장한 청년으로 자랐다."
+        }
+      ]
+    }
+  ],
+  "stray": [
+    {
+      "cue": "집 없이 떠도는 동물",
+      "ko": "(동물이) 길 잃은, 주인 없는",
+      "pos": "형용사",
+      "lv": 1,
+      "cefr": "B2",
+      "en": "(of an animal) having wandered away from home or having no home",
+      "ex": [
+        {
+          "en": "They adopted a stray cat from the street.",
+          "ko": "그들은 길에서 유기묘를 입양했다."
+        }
+      ]
+    },
+    {
+      "cue": "무리에서 벗어나 따로 있는",
+      "ko": "따로 떨어진, 이따금의",
+      "pos": "형용사",
+      "lv": 2,
+      "cefr": "C1",
+      "en": "not part of a group; occurring in isolated or scattered instances",
+      "ex": [
+        {
+          "en": "A stray bullet shattered the window.",
+          "ko": "빗나간 총알이 창문을 산산조각 냈다."
+        }
+      ]
+    },
+    {
+      "cue": "정해진 길·주제에서 벗어나",
+      "ko": "벗어나다, 옆길로 새다",
+      "pos": "동사",
+      "lv": 3,
+      "cefr": "C1",
+      "en": "move away from the correct path, place, or subject",
+      "ex": [
+        {
+          "en": "The conversation strayed from the main topic.",
+          "ko": "대화가 본론에서 벗어났다."
+        }
+      ]
+    }
+  ]
+}
