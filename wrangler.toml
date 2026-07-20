@@ -1,4 +1,4 @@
-name = "noenglish-app"
+name = "no-english"
 compatibility_date = "2026-07-15"
 
 # 정적 사이트(index.html·words.js·manifest.json·img/) 배포용.
