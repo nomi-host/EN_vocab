@@ -43,7 +43,11 @@ async function callGeminiWithFallback(contents, generationConfig, fallbacks) {
     attempts.push(`${model}→${upstream.status}`);
     lastDetail = await upstream.text().catch(() => "");
     const locationBlocked = upstream.status === 400 && lastDetail.includes("FAILED_PRECONDITION");
-    if (upstream.status !== 404 && upstream.status !== 429 && !locationBlocked) break;
+    /* 503(UNAVAILABLE, "high demand")·500/502/504도 다음 후보로 폴백(2026-07-20) — 예전엔 404/429/
+       위치거부만 넘어가고 503은 즉시 중단해서, gemini-3.5-flash가 과부하일 때 뒤 후보를 시도조차
+       안 하고 사용자에게 에러가 그대로 노출됐음("첨삭을 받아오지 못했어요 …→503", 실사용 리포트). */
+    const retryableServer = upstream.status === 500 || upstream.status === 502 || upstream.status === 503 || upstream.status === 504;
+    if (upstream.status !== 404 && upstream.status !== 429 && !locationBlocked && !retryableServer) break;
   }
   /* "v4" 마커: 이 문자열이 에러에 보이면 x-goog-api-key 헤더 방식의 새 코드가 실제로 배포된 것
      (Vercel 배포가 옛 코드로 멈춰있는 경우를 에러 메시지만으로 판별하기 위함) */
