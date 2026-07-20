@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.74">
-<link rel="icon" href="img/icon-192.png?v=0.35.74" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.74">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.74" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.74" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.75">
+<link rel="icon" href="img/icon-192.png?v=0.35.75" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.75">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.75" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.75" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.74"></script>
+<script src="img/hero/lottie.min.js?v=0.35.75"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.74"></script>
+<script src="lib/compromise.min.js?v=0.35.75"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.74"></script>
-<script src="words.js?v=0.35.74"></script>
+<script src="lib/supabase.min.js?v=0.35.75"></script>
+<script src="words.js?v=0.35.75"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.74"></script><style>
+<script src="grammar_tags.js?v=0.35.75"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -41,15 +41,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.74") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.74") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.75") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.75") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.74") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.74") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.75") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.75") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -373,7 +373,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.74");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.75");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -629,9 +629,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .wchk{width:22px;height:22px;border-radius:999px;border:2px solid var(--line);flex:none;display:flex;align-items:center;justify-content:center;color:#fff;}
 .wchk.on{background:var(--accent);border-color:var(--accent);}
 .wl-newrow{display:flex;gap:8px;}
-.wl-newrow input{flex:1;border:1px solid var(--line);border-radius:0;padding:11px 14px;font-size:14px;background:var(--surface);outline:none;color:var(--ink);}
+.wl-newrow input{flex:1;min-width:0;border:1px solid var(--line);border-radius:0;padding:11px 14px;font-size:14px;background:var(--surface);outline:none;color:var(--ink);}
 .wl-newrow input::placeholder{color:var(--muted);}
-.wl-newrow button{background:var(--accent);color:#fff;font-weight:700;font-size:13px;padding:0 16px;border-radius:0;white-space:nowrap;flex:none;}
+.wl-newrow button{background:var(--accent);color:#fff;font-weight:700;font-size:13px;padding:0 16px;border-radius:0;white-space:nowrap;flex:none;width:auto;margin-top:0;}
 .wl-actions{display:flex;gap:8px;}
 .wl-actions button{flex:1;padding:11px 6px;border-radius:0;font-weight:700;font-size:12px;white-space:nowrap;}
 .wl-actions .primary{flex:1.5;}
@@ -673,7 +673,8 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .sheet-head .back{font-size:20px;color:var(--muted);padding:2px 6px;margin-left:-6px;
   display:inline-flex;align-items:center;justify-content:center;}
 .sheet-head .sp{flex:1;}
-.sheet-head .fav{font-size:13px;font-weight:600;color:var(--muted);}
+.sheet-head .fav{font-size:13px;font-weight:600;color:var(--muted);text-align:right;max-width:150px;}
+.sheet-head .fav.saved{color:var(--accent-deep);}
 .favstar{color:var(--muted);display:flex;padding:2px 4px;}
 .favstar.on{color:var(--accent);}
 .favstar:active{transform:scale(.9);}
@@ -777,7 +778,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qcaret{display:inline-block;width:2px;height:17px;background:var(--accent);margin-left:1px;animation:caretblink 1.06s steps(1) infinite;}
 @media (prefers-reduced-motion: reduce){.qcaret{animation:none;}}
 /* 하단 액션바 — 키보드 위에 붙어 항상 눌리게 */
-.qbottom{margin-top:auto;position:sticky;bottom:max(40px, var(--kb, 0px));background:var(--bg);padding-top:8px;}
+.qbottom{margin-top:auto;position:sticky;bottom:max(40px, var(--kb, 0px));background:transparent;padding-top:8px;}
 /* 힌트 버튼 */
 .qhintrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
 .qhint-lbl{font-size:12px;font-weight:700;color:var(--muted);}
@@ -863,9 +864,14 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .dw-ok{color:var(--ink);}
 .dw-bad{color:#d64545;text-decoration:underline;text-decoration-color:#d6454577;}
 .qactions{margin-top:auto;display:flex;gap:8px;}
-.qactions button{flex:1;padding:14px;border-radius:0;font-weight:700;font-size:15px;}
+.qactions button{flex:1;height:48px;padding:14px;border-radius:0;font-weight:700;font-size:15px;}
 .qactions .ghost{background:var(--surface);border:1.5px solid var(--ink);color:var(--ink);}
 .qactions .primary{background:var(--accent);color:var(--on-accent);}
+/* 단어카드 하단 액션바(모르겠어요/확인 + 음성 아이콘) 높이 정렬(2026-07-20) — .talk-voice-toggle
+   기본 42px가 .qactions 버튼(48px, padding 14px 기준)보다 낮아 나란히 두면 높이가 안 맞았음. */
+.qactions-row{display:flex;gap:8px;align-items:center;}
+.qactions-row .talk-voice-toggle{width:48px;height:48px;}
+.qactions-row .talk-voice-btn{height:48px;}
 .finish{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:40px 20px;}
 .finish .big{font-size:40px;font-weight:800;color:var(--accent-deep);font-variant-numeric:tabular-nums;}
 .finish .msg{font-size:15px;font-weight:700;}
@@ -1116,7 +1122,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.74";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.75";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
    전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
@@ -1845,13 +1851,19 @@ const SRS = (() => {
       return { status: s.box >= 6 ? "done" : "learning", box: s.box, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) };
     },
     isDue: k => { const s = store[k]; return s && s.seen && !s.demo && s.due <= Date.now(); },
-    // confident(2026-07-20 추가) — 힌트 없이 재시도도 없이 한 번에 맞힌 "깨끗한 정답"이면 한 박스가
-    // 아니라 두 박스를 건너뛴다. 힌트를 쓰거나 근접 오답 재시도를 거친 정답은 여전히 한 박스만
-    // 올라감(덜 확실한 기억이라 촘촘한 간격으로 한 번 더 확인) — "힌트 안 쓰고 한 번에 맞췄는데도
-    // 복습이 너무 자주 온다"는 지적으로, 확신도에 따라 그래프 곡선 자체를 다르게 타도록 재설계.
-    grade(k, ok, confident) {
+    // 복습 간격 재설계(2026-07-20, 망각곡선 기준):
+    // ① 오답/모르겠어요 — box=1(1일 뒤). 지금까지와 동일.
+    // ② 힌트 없이 첫 시도에 한 번에 맞춤(hintCount=0) — 이 단어를 처음 채점하는 거라면(box=0, 이전
+    //    기록 없음) 바로 box=MAX_BOX(2달 뒤)로 건너뛰어 "준완료" 취급. 반대로 예전에 틀렸거나 힌트를
+    //    썼던 적이 있어 이미 box가 있는 상태라면(재학습 중) 그 기억이 아직 완전하지 않다는 뜻이므로
+    //    한 박스씩만 올려 3일→7일→16일→35일→60일로 차차 늘린다(BOX_INTERVALS 그대로 재사용).
+    // ③ 힌트를 써서 맞춤 — 이번 시도의 확신도가 낮으므로 이전 box와 무관하게 고정 티어로 재설정:
+    //    힌트 1개면 3일(box=2), 2개 이상이면 1일(box=1) — 힌트를 많이 쓸수록 더 촘촘하게 재확인.
+    grade(k, ok, hintCount = 0) {
       const s = store[k] || { box: 0, seen: false };
-      s.box = ok ? Math.min(MAX_BOX, s.box + (confident ? 2 : 1)) : 1;
+      if (!ok) s.box = 1;
+      else if (hintCount === 0) s.box = s.box === 0 ? MAX_BOX : Math.min(MAX_BOX, s.box + 1);
+      else s.box = hintCount >= 2 ? 1 : 2;
       s.seen = true;
       s.due = Date.now() + BOX_INTERVALS[s.box] * DAY;
       s.at = Date.now(); // 마지막 학습 시각 — "내가 학습한 단어 > 날짜별" 그룹핑에 사용
@@ -1965,9 +1977,9 @@ function itemsFromWords(list) {
   const items = [];
   list.forEach(w => {
     if (w.senses && w.senses.length) {
-      w.senses.forEach((s, i) => { if ((s.ex || []).length) items.push({ key: w.word + "#" + i, word: w.word, ko: s.ko, cue: s.cue, ex: s.ex[0], cefr: s.cefr || w.cefr, syn: s.syn || [] }); });
+      w.senses.forEach((s, i) => { if ((s.ex || []).length) items.push({ key: w.word + "#" + i, word: w.word, ko: s.ko, cue: s.cue, ex: s.ex[0], cefr: s.cefr || w.cefr, syn: s.syn || [], mine: !!w.mine }); });
     } else if ((w.ex || []).length) {
-      items.push({ key: w.word, word: w.word, ko: w.ko, cue: null, ex: w.ex[0], cefr: w.cefr, syn: w.syn || [] });
+      items.push({ key: w.word, word: w.word, ko: w.ko, cue: null, ex: w.ex[0], cefr: w.cefr, syn: w.syn || [], mine: !!w.mine });
     }
   });
   return items;
@@ -2146,6 +2158,7 @@ function freshPool(levelShift = 0) {
   return allItems().filter(it => {
     if (SRS.get(it.key)) return false;
     if (!canBlank(it)) return false; // 빈칸 못 만드는 항목 제외 — 단어카드는 예문 빈칸만
+    if (it.mine) return true; // 내가 등록한 단어는 우선학습 대상 — 레벨 범위 제한과 무관하게 포함(2026-07-20)
     const ci = CEFR_LEVELS.indexOf(it.cefr);
     return ci >= 0 && Math.abs(ci - lv) <= 1;
   });
@@ -2170,7 +2183,11 @@ function pickSession(n = 10, levelShift = 0) {
     const j = Math.floor(Math.random() * (i + 1));
     [fresh[i], fresh[j]] = [fresh[j], fresh[i]];
   }
-  const pool = due.concat(fresh);
+  // 신규(fresh) 중에서는 내가 등록한 단어를 다른 신규 단어보다 먼저 — 복습 예정(due)은
+  // 망각곡선상 더 급하므로 그대로 최우선 유지(2026-07-20, "내가 등록한 단어 우선학습" 요청).
+  const freshMine = fresh.filter(it => it.mine);
+  const freshOther = fresh.filter(it => !it.mine);
+  const pool = due.concat(freshMine, freshOther);
   const picked = pool.filter(it => !recent.has(it.key)).concat(pool.filter(it => recent.has(it.key))).slice(0, n);
   RECENT_KEYS = RECENT_KEYS.concat(picked.map(it => it.key)).slice(-RECENT_CAP);
   return picked;
@@ -3052,7 +3069,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.74" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.75" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -3421,7 +3438,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.74";
+const HERO_V = "0.35.75";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -4237,6 +4254,11 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
       : <span className="lchip">{label}</span>
   );
   if (!w) return null;
+  // 이 단어가 이미 담긴 내 단어장 목록 — 있으면 헤더 버튼에 리스트명을 노출(2026-07-20).
+  const inLists = WORDLISTS.filter(l => l.words.includes(w.word));
+  const favLabel = inLists.length === 0 ? "내 단어장"
+    : inLists.length === 1 ? `${inLists[0].name}에 담긴 단어`
+    : `${inLists[0].name} 외 ${inLists.length - 1}개에 담긴 단어`;
   // 공백 포함 표제어("carry on")·아포스트로피("driver's license")가 URL에 그대로 들어가 링크가
   // 깨지지 않도록 인코딩(2026-07-19). Cambridge는 구동사 URL이 하이픈 관례라 공백→하이픈으로.
   const ext = q => [
@@ -4253,7 +4275,7 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
             ? <button className="back" onClick={onPop} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
             : <span style={{ width: 8 }} />}
           <span className="sp" />
-          <button className="fav" onClick={() => setShowPicker(true)}>내 단어장</button>
+          <button className={"fav" + (inLists.length ? " saved" : "")} onClick={() => setShowPicker(true)}>{favLabel}</button>
           <button className={"favstar" + (FAVS.has(w.word) ? " on" : "")} onClick={() => { toggleFav(w.word); bump(v => v + 1); }} aria-label="즐겨찾기">
             <Icon name="star" size={22} />
           </button>
@@ -6407,8 +6429,9 @@ function CardSession({ items, onExit, onOpenWord }) {
         return; // 채점하지 않음
       }
     }
-    // confident = 힌트를 하나도 안 쓰고 첫 시도에 바로 맞힘 — SRS.grade가 이럴 때 복습 간격을 더 크게 건너뜀.
-    const s = SRS.grade(it.key, ok, ok && !hintUsed);
+    // 이번 카드에서 실제로 쓴 힌트 개수(뜻·글자수·첫 글자 + 근접오답 재시도) — SRS.grade의 간격 산정에 사용.
+    const hintCount = [hintMean, hintLen, hintFirst].filter(Boolean).length;
+    const s = SRS.grade(it.key, ok, hintCount);
     if (ok) setCorrect(c => c + 1);
     // 힌트를 쓰고도 결국 못 맞히면(2026-07-20) 사용자의 미완성 입력 대신 빈칸에 정답 자체를 채워서
     // 보여준다 — "힌트를 다 쓰고도 모르겠으면 확인 눌러서 정답 보고 넘어가기"가 자연스러운 흐름이라,
@@ -6590,6 +6613,7 @@ function CardSession({ items, onExit, onOpenWord }) {
         }}
         onKeyDown={e => { if (e.key === "Enter") { e.preventDefault(); res ? next() : submit(); } }}
         autoFocus inputMode="text" lang="en" autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+        name="vocab-blank" id="vocab-blank" data-lpignore="true"
         aria-label="빈칸 입력" />
     </span>
   );
@@ -6715,7 +6739,7 @@ function CardSession({ items, onExit, onOpenWord }) {
             </div>
             {voiceErr && <div className="qnudge" style={{ margin: 0 }}>{voiceErr}</div>}
             {voiceMode ? (
-              <div style={{ display: "flex", gap: 8 }}>
+              <div className="qactions-row">
                 <button className={"talk-voice-btn" + (listening ? " listening" : "")}
                         onMouseDown={e => e.preventDefault()}
                         onClick={listening ? stopListening : startListening} disabled={transcribing}>
@@ -6728,7 +6752,7 @@ function CardSession({ items, onExit, onOpenWord }) {
                 </button>
               </div>
             ) : (
-              <div style={{ display: "flex", gap: 8 }}>
+              <div className="qactions-row">
                 <div className="qactions" style={{ flex: 1, margin: 0 }}>
                   <button className="ghost" onMouseDown={e => e.preventDefault()} onClick={giveUp}>모르겠어요</button>
                   <button className="primary" onMouseDown={e => e.preventDefault()} onClick={() => submit()}>확인</button>
@@ -6887,7 +6911,8 @@ function QuizSession({ questions, onExit }) {
                 : <input className="qbox" autoFocus value={val} onChange={e => setVal(e.target.value)}
                     onKeyDown={e => e.key === "Enter" && submitSpell()}
                     size={Math.max(8, val.length + 1)}
-                    lang="en" autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false} aria-label="정답 입력" />}
+                    lang="en" autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+                    name="vocab-spell" id="vocab-spell" data-lpignore="true" aria-label="정답 입력" />}
             </div>
           </React.Fragment>
         )}
@@ -7073,8 +7098,9 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   /* 문장 완성(모든 단어 고정) — 확인 버튼 없이 자동으로 정답 처리 + 띠링 */
   const complete = wasClean => {
     if (res) return;
-    // wasClean 자체가 "오탭·힌트 없이 한 번에 완성"이라 확신도(confident)와 동의어 — 그대로 넘김(2026-07-20).
-    const s = SRS.grade(it.key, wasClean, wasClean);
+    // wasClean=false면 오답 확정(hintCount는 안 씀). wasClean=true면 다시 듣기·앞글자 보기 사용
+    // 횟수(replayCount, 0~2 — 3회째는 forceRelearn으로 별도 처리)를 힌트 개수로 그대로 넘김(2026-07-20).
+    const s = SRS.grade(it.key, wasClean, replayCount);
     if (wasClean) { setCorrect(c => c + 1); removeWrongNote(it.key); } // 이번엔 깨끗하게 맞혔으니 오답 노트에서 빠짐(2026-07-20)
     else addWrongNote(it.key, "listen"); // 재시도 끝에 맞혔어도(오답 채점) 오답 노트엔 남김
     setWrongMask(null);
@@ -7170,6 +7196,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
               }
             }}
             lang="en" autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+            name={"vocab-dict-" + i} id={"vocab-dict-" + i} data-lpignore="true"
             aria-label={"단어 " + (i + 1)} />
         )}
         {t.post}
@@ -7364,6 +7391,7 @@ function LevelTestPartA({ onExit, onDone }) {
                 onKeyDown={e => e.key === "Enter" && submitProduce()}
                 size={Math.max(8, val.length + 1)}
                 lang="en" autoCapitalize="none" autoComplete="off" autoCorrect="off" spellCheck={false}
+                name="vocab-lt-produce" id="vocab-lt-produce" data-lpignore="true"
                 aria-label="영단어 입력" />
             </div>
             <div className="qhint">{cur.len}글자</div>
@@ -8343,7 +8371,7 @@ function cmpVer(a, b) {
 // 업데이트 안내 팝업 노출 대상(2026-07-20) — 정식 배포 전까지 개발 계정에서만 확인.
 const WHATS_NEW_TESTER_EMAIL = "younglee.works@gmail.com";
 const WHATS_NEW = {
-  "v0.35.74": [
+  "v0.35.75": [
     "**구글 로그인**으로 기기를 바꿔도 학습 기록이 유지돼요.",
     "회화 대화방 목소리가 캐릭터 성별에 맞게, 속도도 원어민 대화 빠르기로 자연스러워졌어요.",
     "듣기 세션에서 틀린 문장은 **오답 노트**에 모여서 다시 복습할 수 있어요.",
@@ -8361,6 +8389,15 @@ const WHATS_NEW = {
     "회화에서 첨삭해준 문장을 다시 들을 수 있어요.",
     "구글 로그인 후 설정에서 **닉네임**을 정할 수 있어요 — 앱에서 'OO님'이라고 불러드려요.",
     "그 밖에 화면 곳곳의 자잘한 버그를 다수 수정했어요.",
+  ],
+  "v0.35.75": [
+    "**내가 등록한 단어**가 단어카드에 먼저 나오도록 우선순위를 조정했어요.",
+    "단어 상세에서 '리스트에 담기'를 누르면 버튼이 화면 밖으로 밀려나던 버그를 고쳤고, 이미 담긴 단어면 **'OO단어장에 담긴 단어'**로 표시돼요.",
+    "**복습 간격을 망각곡선에 맞게 재설계**했어요 — 힌트 없이 한 번에 맞추면 2달 뒤(준완료), 힌트를 쓰면 힌트 개수에 따라 1~3일 뒤, 모르겠어요는 1일 뒤, 예전에 틀렸던 단어를 다시 맞히면 3일→7일→16일로 차차 늘어나요.",
+    "예문을 듣는 도중 다른 탭으로 이동해도 소리가 안 끊기던 문제를 고쳤어요.",
+    "다른 앱에 갔다 돌아오면 스플래시 화면이 또 뜨던 문제를 줄였어요.",
+    "단어카드 하단의 모르겠어요·확인·음성 버튼 높이가 안 맞던 걸 정렬했어요.",
+    "힌트 영역 배경 때문에 카드 그림자가 부자연스럽게 끊겨 보이던 문제를 고쳤어요.",
   ],
 };
 function pendingWhatsNew(seen) {
@@ -8386,8 +8423,24 @@ function WhatsNewModal({ ver, notes, onClose }) {
   );
 }
 
+/* 다른 앱에 갔다가 돌아왔을 때 스플래시가 또 뜨는 문제(2026-07-20) — iOS는 백그라운드로 간 PWA/탭을
+   메모리 확보를 위해 그냥 죽였다가 복귀 시 페이지를 통째로 새로 로드하는 경우가 있어(OS 동작이라
+   JS로 막을 수 없음), 그때마다 App이 새로 마운트되며 showSplash 초기값 true로 재생됨. 실제 "새로
+   실행"인지 "잠깐 다른 앱 갔다온 재로드"인지는 코드로 구분할 수 없지만, localStorage에 마지막으로
+   스플래시를 본 시각을 남겨두면 최소한 "SPLASH_GATE_MS 이내에 이미 봤으면 생략"은 가능하다.
+   앱을 열 때마다(스플래시를 실제로 보여줬는지와 무관하게) 시각을 갱신 — 짧은 간격으로 왔다갔다 하는
+   동안은 계속 생략되고, 30분 넘게 정말 안 쓰다 돌아오면 다시 재생된다. */
+const SPLASH_GATE_KEY = "en_splash_last_open";
+const SPLASH_GATE_MS = 30 * 60 * 1000;
+function shouldShowSplash() {
+  try {
+    const last = parseInt(localStorage.getItem(SPLASH_GATE_KEY) || "0", 10);
+    return !(last && Date.now() - last < SPLASH_GATE_MS);
+  } catch (e) { return true; }
+}
 function App() {
-  const [showSplash, setShowSplash] = useState(true); // 앱 첫 진입 시 로고 슬롯머신 스플래시(2026-07-19)
+  const [showSplash, setShowSplash] = useState(shouldShowSplash); // 앱 첫 진입 시 로고 슬롯머신 스플래시(2026-07-19)
+  useEffect(() => { try { localStorage.setItem(SPLASH_GATE_KEY, String(Date.now())); } catch (e) {} }, []);
   const [onboard, setOnboard] = useState(loadOnboard); // {done:true} | null(미완료) — 2026-07-20
   const [showGuide, setShowGuide] = useState(false);
   const [showWhatsNew, setShowWhatsNew] = useState(false);
@@ -8445,8 +8498,10 @@ function App() {
 
   const openWord = w => setStack([w]);
   const pushWord = w => setStack(s => [...s, w]);
-  const popWord = () => setStack(s => (s.length > 1 ? s.slice(0, -1) : s));
-  const closeSheet = () => setStack(null);
+  // 단어 상세(예문 발음 듣기 등)에서 재생 중이던 음성이 뒤로가기/닫기 후에도 안 끊기던
+  // 문제(2026-07-20) — 시트를 벗어나는 모든 경로(popWord·closeSheet)에서 정지.
+  const popWord = () => { stopSpeaking(); setStack(s => (s.length > 1 ? s.slice(0, -1) : s)); };
+  const closeSheet = () => { stopSpeaking(); setStack(null); };
 
   // allItems()의 SEED 캐시 + canBlank()의 항목별 캐시를 앱 마운트 직후(첫 페인트 뒤, 사용자가
   // 아직 아무것도 탭하기 전) 미리 데워둠 — 이 캐시들이 비어있는 상태로 "단어카드 시작"을 탭하면
@@ -8531,7 +8586,7 @@ function App() {
   return (
     <div className="app">
       <div className="topbar">
-        <div className="brand" role="button" tabIndex={0} onClick={() => { setLtOpen(false); setSettingsOpen(false); closeSheet(); setTab("home"); setTabResetKey(k => ({ ...k, home: k.home + 1 })); }} style={{ cursor: "pointer" }}><img src={"img/logo.svg?v=" + APP_VERSION} alt="NoEnglish" style={{ width: "120px", height: "auto", display: "block" }} /></div>
+        <div className="brand" role="button" tabIndex={0} onClick={() => { stopSpeaking(); setLtOpen(false); setSettingsOpen(false); closeSheet(); setTab("home"); setTabResetKey(k => ({ ...k, home: k.home + 1 })); }} style={{ cursor: "pointer" }}><img src={"img/logo.svg?v=" + APP_VERSION} alt="NoEnglish" style={{ width: "120px", height: "auto", display: "block" }} /></div>
         <div className="topbar-right">
           <span className="pill"><span className={"dot hl-" + streakHl(homeStreak)} />연속 {homeStreak}일</span>
           <button className="avatar-btn" aria-label="설정" onClick={() => setSettingsOpen(true)}><Icon name="settings" size={19} /></button>
@@ -8574,6 +8629,9 @@ function App() {
                   onClick={() => {
                     // 레벨테스트/설정/단어상세 시트처럼 탭 위를 덮고 있던 화면을 전부 닫고,
                     // 그 탭을 리마운트해서 항상 메인 화면으로 — 이미 그 탭이어도(재탭) 동작해야 하므로 매번 리셋(2026-07-18).
+                    // 예문 등 재생 중이던 음성이 탭을 넘어가도 안 끊기던 버그(2026-07-20) — 탭 이동은
+                    // 항상 화면이 통째로 바뀌므로 여기서 무조건 정지.
+                    stopSpeaking();
                     setLtOpen(false); setLtResultOpen(false); setSettingsOpen(false); closeSheet();
                     setTab(t.k);
                     setTabResetKey(k => ({ ...k, [t.k]: k[t.k] + 1 }));
