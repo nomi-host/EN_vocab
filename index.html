@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.87">
-<link rel="icon" href="img/icon-192.png?v=0.35.87" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.87">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.87" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.87" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.88">
+<link rel="icon" href="img/icon-192.png?v=0.35.88" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.88">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.88" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.88" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.87"></script>
+<script src="img/hero/lottie.min.js?v=0.35.88"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.87"></script>
+<script src="lib/compromise.min.js?v=0.35.88"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.87"></script>
-<script src="words.js?v=0.35.87"></script>
+<script src="lib/supabase.min.js?v=0.35.88"></script>
+<script src="words.js?v=0.35.88"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.87"></script><style>
+<script src="grammar_tags.js?v=0.35.88"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -43,27 +43,27 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.87") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.87") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.88") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.88") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.87") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.87") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.88") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.88") format("woff");}
 @font-face{
   font-family:"Luckiest Guy";
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LuckiestGuy-Regular.woff2?v=0.35.87") format("woff2");}
+  src:url("img/fonts/LuckiestGuy-Regular.woff2?v=0.35.88") format("woff2");}
 @font-face{
   font-family:"Pacifico";
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/Pacifico-Regular.woff2?v=0.35.87") format("woff2");}
+  src:url("img/fonts/Pacifico-Regular.woff2?v=0.35.88") format("woff2");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -240,10 +240,10 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 뱃지 중앙 표기 폰트를 Luckiest Guy로(2026-07-20, 사용자 요청) — 라벨은 숫자/레벨 문자열(라틴)
    뿐이라 latin 서브셋으로 충분. Luckiest Guy는 400 단일 웨이트의 원래 두꺼운 디스플레이 폰트라
    faux-bold(800) 합성이 오히려 뭉개져 400으로 둔다. */
-/* 폰트 2배 확대(2026-07-20, 사용자 요청: 15→30/32→64/10→20). Luckiest Guy는 어센더 위주 메트릭이라
-   flex 수직 중앙에서 글리프가 위로 떠 보임 — canvas 실측 기반 translateY 보정(아래 값은 숫자·K·레벨
-   문자열 실측 평균, 렌더 검증함). */
-.medal .mv{font-family:"Luckiest Guy",cursive;font-size:30px;font-weight:400;letter-spacing:0;font-variant-numeric:tabular-nums;transform:translateY(0.09em);}
+/* 폰트 2배 확대(2026-07-20, 15→30/32→64/10→20) 후 80% 사이즈로 재조정(2026-07-20, 24/51.2/16) —
+   Luckiest Guy는 어센더 위주 메트릭이라 flex 수직 중앙에서 글리프가 위로 떠 보임 — canvas 실측
+   기반 translateY 보정(아래 값은 숫자·K·레벨 문자열 실측 평균, 렌더 검증함). */
+.medal .mv{font-family:"Luckiest Guy",cursive;font-size:24px;font-weight:400;letter-spacing:0;font-variant-numeric:tabular-nums;transform:translateY(0.09em);}
 /* 티어 톤 — 앱이 이미 문서화한 성취 위계(streakHl: 핑크<노랑<초록<파랑)에 랭크를 그대로 매핑하고
    최상위(마스터)만 오렌지 포인트로 얹음(2026-07-17 재정렬). 예전엔 초록<노랑<핑크<파랑이라 "위험"
    의미의 핑크가 중간에 껴서 위계감이 없었음 — 레벨업 뱃지 색이 안 맞는다는 지적의 근본 원인.
@@ -263,7 +263,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    겹쳐 보이는 문제가 있었음). 팝업 동전 앞면에 이 사이즈로 렌더. */
 .medal.lg{width:132px;height:132px;box-shadow:0 6px 18px rgba(33,28,21,.22);}
 .medal.lg .medal-face{width:104px;height:104px;}
-.medal.lg .mv{font-size:64px;letter-spacing:-1px;}
+.medal.lg .mv{font-size:51.2px;letter-spacing:-1px;}
 /* 미획득 = 플랫 톤다운(그림자 없이 흐린 베이지 링+면). 획득 메달과 채도로만 구분. */
 .medal.locked{background:var(--line);box-shadow:none;}
 .medal.locked .medal-face{background:var(--fill);box-shadow:none;color:var(--muted);}
@@ -271,7 +271,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .medal.sm{width:40px;height:40px;box-shadow:0 1px 4px rgba(33,28,21,.18);}
 .medal.sm.locked{box-shadow:none;}
 .medal.sm .medal-face{width:31px;height:31px;}
-.medal.sm .mv{font-size:20px;letter-spacing:-0.5px;}
+.medal.sm .mv{font-size:16px;letter-spacing:-0.5px;}
 /* 보관함: 카테고리별 행(헤더 + 가로 스와이프 티어 스트립) */
 .sec-row{display:flex;align-items:center;justify-content:space-between;gap:10px;}
 .btn-viewall{flex:none;font-size:12px;font-weight:700;color:var(--ink);background:var(--surface);border:1px solid var(--ink);border-radius:999px;padding:5px 13px;}
@@ -391,11 +391,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
   padding:7px 13px 7px 11px;border-radius:999px;background:var(--ink);color:var(--on-accent);
   font-size:13px;font-weight:600;box-shadow:var(--shadow);border:none;cursor:pointer;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
-/* top 84.09%→77.27%(2026-07-20): 땅 라인을 1·2·3단계 공통으로 15px(=15/220=6.82%p) 위로 — 사용자 요청.
-   이 밴드 하나를 모든 단계가 공유하므로 여기 한 줄이 걷기/달리기/날기 전부에 적용됨. */
-.hero-ground{position:absolute;left:0;right:0;top:77.27%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
+/* top 84.09%→77.27%→79.55%(2026-07-20): 땅 라인을 1·2·3단계 공통으로 15px 위로 올렸다가,
+   다시 5px(=5/220=2.27%p) 아래로 — 사용자 요청. 이 밴드 하나를 모든 단계가 공유하므로
+   여기 한 줄이 걷기/달리기/날기 전부에 적용됨. */
+.hero-ground{position:absolute;left:0;right:0;top:79.55%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.87");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.88");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -966,8 +967,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qorder-built{min-height:44px;display:flex;flex-wrap:wrap;gap:6px;padding:10px;background:var(--fill);border:1px dashed var(--card-border);}
 .qorder-built .ph{font-size:13px;color:var(--muted);}
 .qorder-pool{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;}
-.qorder-chip{font-size:15px;font-weight:700;color:var(--ink);background:var(--surface);border:1.5px solid var(--card-border);border-radius:999px;padding:8px 14px;}
+.qorder-chip{font-size:15px;font-weight:700;color:var(--ink);background:var(--surface);border:1.5px solid var(--card-border);border-radius:999px;padding:8px 14px;transition:transform .12s;}
 .qorder-chip.placed{background:var(--accent-soft);color:var(--accent-deep);border-color:var(--accent);}
+/* 이미 놓은 조각을 다시 탭해 "집어든" 상태(2026-07-20) — 위치 이동(swap) 대상으로 선택됐다는 표시.
+   다른 조각을 이어서 탭하면 두 조각이 자리를 맞바꾼다(같은 조각을 다시 탭하면 원래대로 pool로 되돌림). */
+.qorder-chip.lifted{background:var(--ink);color:var(--on-accent);border-color:var(--ink);transform:translateY(-3px);}
 /* 듣기 세션(딕테이션) */
 /* 입력칸은 다른 인풋(.search 등)과 동일한 밝은 서피스+보더 문법 — 노란 크림(--fill) 면 + 골드
    포커스는 "입력하는 곳"으로 안 읽힌다는 지적으로 교체(2026-07-17). */
@@ -1057,7 +1061,9 @@ textarea.pc-input{resize:none;line-height:1.5;}
 .talk-head{display:flex;align-items:center;gap:10px;padding:4px 2px 6px;}
 .talk-head-name{font-weight:800;font-size:16px;}
 .talk-head-trait{font-size:12px;color:var(--muted);}
-.talk-end-btn{margin-left:auto;font-size:12px;font-weight:700;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:7px 12px;flex:none;}
+.talk-head-actions{margin-left:auto;display:flex;align-items:center;gap:6px;flex:none;}
+.talk-end-btn{font-size:12px;font-weight:700;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:7px 12px;flex:none;white-space:nowrap;}
+.talk-end-btn.on{background:var(--ink);color:var(--on-accent);}
 .talk-toggles{display:flex;gap:8px;margin-bottom:6px;}
 .talk-toggle{font-size:12px;font-weight:700;color:var(--ink-2);background:var(--fill);border-radius:999px;padding:6px 12px;}
 .talk-toggle.on{background:var(--ink);color:var(--on-accent);}
@@ -1240,7 +1246,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.87";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.88";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
    전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
@@ -1800,7 +1806,9 @@ async function geminiText(prompt) {
   return (data.text || "").trim();
 }
 
-function speakTextWebSpeech(text, lang, rate) {
+/* onEnd: 발화가 끝나면(정상 종료·에러 모두) 정확히 한 번 호출 — "오늘 대화 통째로 듣기"(순차 재생)가
+   다음 문장으로 넘어갈 타이밍을 알아야 해서 2026-07-20 추가. 기존 호출부(onEnd 생략)는 그대로 동작. */
+function speakTextWebSpeech(text, lang, rate, onEnd) {
   try {
     const u = new SpeechSynthesisUtterance(text);
     u.lang = lang;
@@ -1808,9 +1816,10 @@ function speakTextWebSpeech(text, lang, rate) {
     const voices = speechSynthesis.getVoices();
     const voice = voices.find(v => v.lang === lang) || voices.find(v => v.lang && v.lang.startsWith("en"));
     if (voice) u.voice = voice;
+    if (onEnd) { u.onend = onEnd; u.onerror = onEnd; }
     speechSynthesis.cancel();
     speechSynthesis.speak(u);
-  } catch (e) {}
+  } catch (e) { if (onEnd) onEnd(); }
 }
 
 /* 앱 전체 공용 TTS — 저장된 속도·악센트 설정을 실제 발화에 반영.
@@ -1821,6 +1830,10 @@ function speakTextWebSpeech(text, lang, rate) {
 const TTS_CACHE = new Map();
 let _activeAudio = null; // 프록시 TTS로 재생 중인 Audio — 연타 시 이전 것부터 끊어야 에코가 안 남
 let _speakGen = 0; // 요청 세대 토큰 — fetch가 늦게 끝난 이전 호출이 나중에 재생을 가로채는(비동기 역전) 것을 방지
+// 현재 재생 중인 speakText 호출이 "끝나길" 기다리는 대기자(순차 재생 기능용, 2026-07-20) — 슬롯 하나뿐인 이유는
+// _activeAudio/speechSynthesis 큐가 애초에 한 번에 하나만 재생하는 싱글턴이라 대기자도 항상 최대 1명.
+let _pendingSpeakDone = null;
+function _resolvePendingSpeak() { if (_pendingSpeakDone) { const fn = _pendingSpeakDone; _pendingSpeakDone = null; fn(); } }
 
 /* 모바일(특히 iOS Safari)은 오디오 자동재생을 "사용자 제스처와 직접 이어진" 호출에만 허용.
    듣기 세션은 3·2·1 카운트다운(setTimeout) 뒤에 문장을 재생하므로 제스처와 끊겨 무음으로
@@ -1849,6 +1862,7 @@ function stopSpeaking() {
   _speakGen++; // 진행 중인 speakText 호출이 있다면 자기 세대가 낡았음을 감지하고 재생을 포기하게 함
   try { speechSynthesis.cancel(); } catch (e) {}
   if (_activeAudio) { try { _activeAudio.pause(); } catch (e) {} _activeAudio = null; }
+  _resolvePendingSpeak(); // speakText의 "재생 끝날 때까지" 대기자가 있으면 여기서 풀어줌(순차 재생 중 정지 버튼 대응)
 }
 /* 회화 캐릭터별 "기본 속도"(persona.rate, 기본 1 — 의사/카페 직원처럼 원래 말이 빠른 설정만 1.2 등)에
    사용자의 듣기속도 설정(SPEED_PRESETS[prefs.speed].rate)을 곱연산으로 얹는다(2026-07-20 재설계).
@@ -1890,7 +1904,11 @@ function primeKeyboardGesture() {
     setTimeout(cleanup, 2000);
   } catch (e) {}
 }
-async function speakText(text, rateOverride, accentOverride, genderOverride) {
+// waitEnd:true면 실제 재생이 "끝날 때"(정상 종료·중간에 다른 speakText/stopSpeaking에 의해
+// 가로채짐 모두 포함) 반환되는 프로미스를 준다 — "오늘 대화 통째로 듣기"의 순차 재생 전용
+// 옵션(2026-07-20). 기존 호출부는 이 옵션 없이 그대로 fire-and-forget으로 쓰면 됨(재생 "시작"
+// 시점에 대부분 resolve되던 예전과 동일하게 동작).
+async function speakText(text, rateOverride, accentOverride, genderOverride, waitEnd) {
   // 앱이 백그라운드로 나간 뒤 도착한 비동기 응답(회화 봇 대사, 지연 에코 등)이 홈 화면에서
   // 소리를 새로 시작하는 것을 차단 — visibilitychange의 stopSpeaking은 "재생 중이던 것"만
   // 멈출 수 있고, hidden 이후에 "새로 시작"되는 재생은 여기서 막아야 함(2026-07-20).
@@ -1903,6 +1921,7 @@ async function speakText(text, rateOverride, accentOverride, genderOverride) {
   // 새로 말하기 전에 이전 재생(프록시 Audio·Web Speech 둘 다) 정지 — 연타 에코 방지
   try { speechSynthesis.cancel(); } catch (e) {}
   if (_activeAudio) { try { _activeAudio.pause(); } catch (e) {} _activeAudio = null; }
+  _resolvePendingSpeak(); // 이 호출이 이전 재생을 가로챘으므로, 그 이전 호출이 waitEnd로 기다리고 있었다면 여기서 풀어줌
   if (PROXY_BASE) {
     const cacheKey = accent.lang + "|" + rate + "|" + gender + "|" + text;
     try {
@@ -1927,11 +1946,26 @@ async function speakText(text, rateOverride, accentOverride, genderOverride) {
       _sharedAudio.src = url; // 언락된 하나의 엘리먼트를 재사용 — 새 Audio()는 모바일에서 다시 잠겨있음
       _activeAudio = _sharedAudio;
       await _sharedAudio.play();
+      if (waitEnd) {
+        await new Promise(resolve => {
+          const finish = () => { _sharedAudio.removeEventListener("ended", finish); if (_pendingSpeakDone === finish) _pendingSpeakDone = null; resolve(); };
+          _pendingSpeakDone = finish;
+          _sharedAudio.addEventListener("ended", finish);
+        });
+      }
       return;
     } catch (e) { /* 폴백으로 진행 */ }
   }
   if (myGen !== _speakGen) return;
-  speakTextWebSpeech(text, accent.lang, rate);
+  if (waitEnd) {
+    await new Promise(resolve => {
+      const finish = () => { if (_pendingSpeakDone === finish) _pendingSpeakDone = null; resolve(); };
+      _pendingSpeakDone = finish;
+      speakTextWebSpeech(text, accent.lang, rate, finish);
+    });
+  } else {
+    speakTextWebSpeech(text, accent.lang, rate);
+  }
 }
 
 /* 굴절형 → 표제어 역추적: children→child, others→other, running→run 등.
@@ -1978,8 +2012,10 @@ function dictLookup(raw) {
   return null;
 }
 
-/* 정답 효과음 — 에셋 없이 Web Audio 사인톤. word=짧은 블립(단어 하나 고정될 때),
-   done=띠링 2음(문장 전체 정답). 오디오 컨텍스트는 첫 사용자 입력 후 생성되므로 자동재생 제약 없음. */
+/* 정답/오답 효과음 — 에셋 없이 Web Audio 사인톤. word=짧은 블립(단어 하나 고정될 때),
+   done=띠링 2음 상승(문장 전체 정답), wrong=띠- 2음 하강(오답, 2026-07-20 추가 — 모든 학습에서
+   정답/오답 시 공용으로 재생하도록 CardSession·DictationSession·QuizSession에서 호출).
+   오디오 컨텍스트는 첫 사용자 입력 후 생성되므로 자동재생 제약 없음. */
 let dingCtx = null;
 function playDing(kind) {
   try {
@@ -1987,12 +2023,15 @@ function playDing(kind) {
     const ctx = dingCtx;
     if (ctx.state === "suspended") ctx.resume();
     const t0 = ctx.currentTime;
-    const notes = kind === "done" ? [[880, 0, 0.1], [1318.5, 0.09, 0.28]] : [[1174.7, 0, 0.09]];
+    const notes = kind === "done" ? [[880, 0, 0.1], [1318.5, 0.09, 0.28]]
+      : kind === "wrong" ? [[392, 0, 0.1], [311.1, 0.09, 0.24]] // 하강 2음(G4→Eb4) — "띠-" 느낌
+      : [[1174.7, 0, 0.09]];
+    const peak = kind === "done" ? 0.16 : kind === "wrong" ? 0.14 : 0.1;
     notes.forEach(([f, dt, dur]) => {
       const o = ctx.createOscillator(), g = ctx.createGain();
       o.type = "sine"; o.frequency.value = f;
       g.gain.setValueAtTime(0.0001, t0 + dt);
-      g.gain.exponentialRampToValueAtTime(kind === "done" ? 0.16 : 0.1, t0 + dt + 0.012);
+      g.gain.exponentialRampToValueAtTime(peak, t0 + dt + 0.012);
       g.gain.exponentialRampToValueAtTime(0.0001, t0 + dt + dur);
       o.connect(g); g.connect(ctx.destination);
       o.start(t0 + dt); o.stop(t0 + dt + dur + 0.03);
@@ -2469,17 +2508,37 @@ function pickSession(n = 10, levelShift = 0) {
    안 본 단어가 나오면 실질적으로 풀 수 없는 문제라 대상에서 제외. 뜻 4지선다·스펠링·
    문장 어순 배열(2026-07-19, PLAN 4.4 "문장 퀴즈")을 고르게 섞음(i%3). 학습한 단어가
    4개 미만이면 문제 구성 불가(null). SRS 복습 간격에는 영향 없는 순수 보조 훈련. */
+// 퀴즈 항목(단어 전체 또는 다의어 sense 하나)의 품사 — sense가 있으면 그 sense의 한글 품사,
+// 없으면(단의어) 표제어 pos[0](영문 코드)를 POS_KO로 변환. 레벨테스트 4지선다(ltPos)와 같은
+// 원칙을 퀴즈에도 적용(2026-07-20, 사용자 요청: 보기 품사 일치 + 유사정답으로 난이도 상향).
+function quizItemPos(it) {
+  const w = wordOf(it.word);
+  if (!w) return null;
+  const m = /#(\d+)$/.exec(it.key);
+  if (m && w.senses && w.senses[+m[1]]) return w.senses[+m[1]].pos || null;
+  return (w.pos && w.pos[0]) ? (POS_KO[w.pos[0]] || w.pos[0]) : null;
+}
 function buildQuiz(n = 10) {
   const studied = allItems().filter(it => SRS.get(it.key));
   if (studied.length < 4) return null;
   const shuffled = [...studied].sort(() => Math.random() - 0.5).slice(0, n);
   const distractorPool = allItems();
   const buildChoice = it => {
-    const pool = [...distractorPool].sort(() => Math.random() - 0.5);
+    const myPos = quizItemPos(it);
+    // 품사 통일(2026-07-20) — 오답 보기가 정답과 다른 품사면(예: 정답은 동사인데 보기에 명사가 섞임)
+    // 뜻을 몰라도 품사만으로 소거가 가능해 너무 쉬워짐. 같은 품사 후보가 3개 미만이면(희귀 품사)
+    // 전체 풀로 폴백해 문제 자체가 깨지지 않게 한다.
+    const samePos = distractorPool.filter(p => p.key !== it.key && p.ko !== it.ko && (!myPos || quizItemPos(p) === myPos));
+    const pool = [...(samePos.length >= 3 ? samePos : distractorPool.filter(p => p.key !== it.key && p.ko !== it.ko))].sort(() => Math.random() - 0.5);
+    // 유의어 오답 1개 우선 배치(2026-07-20) — 정답과 실제 뜻이 가까운 단어를 하나 넣어 소거법으로
+    // 정답을 맞히는 걸 막는다(레벨테스트 4지선다와 같은 원칙). it.syn(정방향)과 SYN_INDEX(역방향)를 합침.
+    const synWords = new Set([...(it.syn || []), ...(SYN_INDEX[it.word.toLowerCase()] || [])].map(s => s.toLowerCase()));
     const distractors = [];
+    const synPick = pool.find(p => synWords.has(p.word.toLowerCase()));
+    if (synPick) distractors.push(synPick);
     for (const p of pool) {
       if (distractors.length >= 3) break;
-      if (p.key === it.key || p.ko === it.ko) continue;
+      if (p === synPick || p.ko === it.ko) continue;
       if (distractors.some(d => d.ko === p.ko)) continue;
       distractors.push(p);
     }
@@ -3409,7 +3468,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.87" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.88" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -5534,38 +5593,40 @@ function Soon({ title, desc }) {
 /* 성별(gender)·기본속도(rate) 재조정(2026-07-20):
    - gender: TTS 목소리가 실제 캐릭터 성별과 맞도록(예전엔 lang당 목소리가 1개뿐이라 "중장년 남성
      의사"가 여성 목소리로 나오는 버그가 있었음 — api/tts.js·worker/src/worker.js 둘 다 수정).
-   - rate: 튜터(교육 목적, 명확한 발화)만 기본(1) 유지하고 나머지 전부 "원어민 대화" 빠르기(1.3)를
-     기본값으로 — 의사·카페 직원처럼 원래도 "말 빠름"으로 설정된 캐릭터는 그보다 더 빠르게(1.5).
+   - rate: 전부 "원어민 대화" 빠르기(1.3, 빠른 캐릭터는 1.5)를 기본값으로 뒀더니 실제로는
+     "빨리감기한 것처럼" 너무 빨라 다시 조정(2026-07-20 2차) — 기본은 사용자의 듣기속도 설정
+     그대로(배수 없음, rate 생략=1) 가되, 튜터만 교육 목적으로 더 느리게(0.7), 의사·직장동료만
+     원래 캐릭터 특성(빠른 말투)을 살려 살짝 빠르게(1.1). 나머지 페르소나는 전부 배수 없음.
      실제 최종 속도는 personaSpeakRate()가 여기에 사용자의 듣기속도 설정을 다시 곱해서 정함. */
 const PERSONAS = [
-  { id: "coworker", name: "직장동료", trait: "IT회사 개발자 · 미국인", accent: "us", gender: "male", rate: 1.3, avatar: "green", letter: "동",
+  { id: "coworker", name: "직장동료", trait: "IT회사 개발자 · 미국인", accent: "us", gender: "male", rate: 1.1, avatar: "green", letter: "동",
     promptDesc: "당신은 사용자와 같은 IT회사에서 일하는 미국인 개발자 동료입니다. 친근하고 캐주얼한 톤으로 업무 잡담을 나눕니다.",
     intro: "Hey! Long day, huh? What's up?", introKo: "안녕! 오늘 힘든 하루였지? 무슨 일 있어?" },
-  { id: "partner", name: "3년 사귄 애인", trait: "영국인", accent: "gb", gender: "female", rate: 1.3, avatar: "pink", letter: "애",
+  { id: "partner", name: "3년 사귄 애인", trait: "영국인", accent: "gb", gender: "female", avatar: "pink", letter: "애",
     promptDesc: "당신은 사용자와 3년째 사귀고 있는 영국인 애인입니다. 다정하고 편안한 톤으로 일상 대화를 나눕니다.",
     intro: "Hey babe, I missed you today. How was your day?", introKo: "자기야, 오늘 보고 싶었어. 하루 어땠어?" },
-  { id: "traveler", name: "여행지에서 만난 사람", trait: "호주인", accent: "au", gender: "female", rate: 1.3, avatar: "blue", letter: "여",
+  { id: "traveler", name: "여행지에서 만난 사람", trait: "호주인", accent: "au", gender: "female", avatar: "blue", letter: "여",
     promptDesc: "당신은 여행지에서 사용자와 방금 처음 만난 호주인입니다. 밝고 스몰토크에 능한 톤으로 대화합니다.",
     intro: "Oh, hi there! Are you traveling alone too?", introKo: "오, 안녕하세요! 혹시 혼자 여행 중이세요?" },
-  { id: "cashier", name: "마트 점원", trait: "미국인 · 캐주얼한 말투", accent: "us", gender: "male", rate: 1.3, avatar: "yellow", letter: "마",
+  { id: "cashier", name: "마트 점원", trait: "미국인 · 캐주얼한 말투", accent: "us", gender: "male", avatar: "yellow", letter: "마",
     promptDesc: "당신은 미국 마트에서 일하는 점원입니다. 캐주얼하고 친근한 구어체로 짧게 응대합니다.",
     intro: "Hi, welcome! Did you find everything okay today?", introKo: "안녕하세요, 어서오세요! 오늘 필요한 거 다 찾으셨어요?" },
-  { id: "airport", name: "공항 지상직 직원", trait: "영국인 · 사무적", accent: "gb", gender: "female", rate: 1.3, avatar: "orange", letter: "공",
+  { id: "airport", name: "공항 지상직 직원", trait: "영국인 · 사무적", accent: "gb", gender: "female", avatar: "orange", letter: "공",
     promptDesc: "당신은 공항 지상직 직원입니다. 무례하진 않지만 다소 사무적이고 퉁명스러운 톤으로 응대합니다.",
     intro: "Next. Passport and boarding pass, please.", introKo: "다음 분. 여권이랑 탑승권 주세요." },
-  { id: "doctor", name: "의사", trait: "중장년 남성 · 빠른 말투", accent: "us", gender: "male", rate: 1.5, avatar: "blue", letter: "의",
+  { id: "doctor", name: "의사", trait: "중장년 남성 · 빠른 말투", accent: "us", gender: "male", rate: 1.1, avatar: "blue", letter: "의",
     promptDesc: "당신은 중장년 남성 의사입니다. 말이 빠르고 전문적인 톤으로 진료를 진행합니다.",
     intro: "Hi, come on in. So, what brings you in today?", introKo: "안녕하세요, 들어오세요. 오늘 어떻게 오셨나요?" },
-  { id: "barista", name: "카페 직원", trait: "20대 여성 · 빠른 말투", accent: "us", gender: "female", rate: 1.5, avatar: "green", letter: "카",
+  { id: "barista", name: "카페 직원", trait: "20대 여성 · 빠른 말투", accent: "us", gender: "female", avatar: "green", letter: "카",
     promptDesc: "당신은 20대 여성 카페 직원입니다. 밝고 빠른 톤으로 주문을 받습니다.",
     intro: "Hey there! What can I get started for you today?", introKo: "안녕하세요! 오늘 뭐로 시작해드릴까요?" },
-  { id: "stranger", name: "지나가는 행인", trait: "도움이 필요한 상황 · 미국인", accent: "us", gender: "male", rate: 1.3, avatar: "yellow", letter: "행",
+  { id: "stranger", name: "지나가는 행인", trait: "도움이 필요한 상황 · 미국인", accent: "us", gender: "male", avatar: "yellow", letter: "행",
     promptDesc: "당신은 길에서 도움이 필요한(또는 사용자를 도와줄 수 있는) 미국인 행인입니다.",
     intro: "Excuse me, sorry to bother you — do you have a second?", introKo: "저기요, 죄송한데 잠깐 시간 괜찮으세요?" },
-  { id: "tutor", name: "친절한 영어 튜터", trait: "30대 · 뉴욕 발음", accent: "us", gender: "female", avatar: "pink", letter: "튜",
+  { id: "tutor", name: "친절한 영어 튜터", trait: "30대 · 뉴욕 발음", accent: "us", gender: "female", rate: 0.7, avatar: "pink", letter: "튜",
     promptDesc: "당신은 뉴욕 출신의 친절한 30대 영어 튜터입니다. 격려하는 톤으로 자연스럽게 학습자를 이끕니다.",
     intro: "Hi! Ready for today's lesson? Let's dive right in.", introKo: "안녕하세요! 오늘 수업 준비되셨나요? 바로 시작해봐요." },
-  { id: "friend", name: "10년지기 친구", trait: "슬랭 다수 · 미국인", accent: "us", gender: "male", rate: 1.3, avatar: "orange", letter: "친",
+  { id: "friend", name: "10년지기 친구", trait: "슬랭 다수 · 미국인", accent: "us", gender: "male", avatar: "orange", letter: "친",
     promptDesc: "당신은 사용자와 10년지기인 미국인 친구입니다. 편하고 슬랭이 섞인 캐주얼한 톤으로 대화합니다.",
     intro: "Yo! It's been way too long, man. What's new with you?", introKo: "야! 진짜 오랜만이다. 요즘 뭐 하고 지내?" },
 ];
@@ -6295,6 +6356,8 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   const talkCountedRef = useRef(false); // 이 방 진입에서 회화 세션(뱃지 talk)을 이미 셌는지
   const [collapsedDays, setCollapsedDays] = useState({}); // 날짜 알약 접기/펼치기 — { "2026-7-17": true }
   const [showSummary, setShowSummary] = useState(false);
+  const [playingAll, setPlayingAll] = useState(false); // "오늘 대화 통째로 듣기" 재생 중 여부(2026-07-20)
+  const playAllStopRef = useRef(false); // 재생 도중 정지 버튼을 누르면 다음 문장으로 안 넘어가고 순차 재생 루프를 끝냄
   const [voiceMode, setVoiceMode] = useState(false);
   const [listening, setListening] = useState(false);
   const [transcribing, setTranscribing] = useState(false);
@@ -6315,6 +6378,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   // 마이크가 계속 점유돼 iOS 상단 주황 표시등이 꺼지지 않는 프라이버시 체감 버그.
   useEffect(() => () => {
     aliveRef.current = false;
+    playAllStopRef.current = true;
     stopSpeaking();
     try { if (mediaRecorderRef.current && mediaRecorderRef.current.state !== "inactive") mediaRecorderRef.current.stop(); } catch (e) {}
     try { if (streamRef.current) streamRef.current.getTracks().forEach(t => t.stop()); } catch (e) {}
@@ -6452,7 +6516,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   // 안전하게 최신 send·상태를 참조하기 위한 미러.
   const send = async (overrideText) => {
     const text = (overrideText != null ? overrideText : input).trim();
-    if (!text || loadingBot || loadingFb || awaitingAck) return;
+    if (!text || loadingBot || loadingFb || awaitingAck || playingAll) return;
     const histBefore = messages; // 이 턴 이전까지의 히스토리 — 다음 상대 대사 프롬프트용
     // 회화 세션 카운트(뱃지 talk) — 실제 대화로 진입한 방만 1회. 사용자 2번째 발화 시점에 기록해
     // "열자마자 닫음"은 안 세고, 한 방을 여러 번 드나들어도 mount당 한 번만(talkCountedRef).
@@ -6466,7 +6530,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   const sendRef = useRef(send);
   sendRef.current = send;
   const sendBlockedRef = useRef(false);
-  sendBlockedRef.current = loadingBot || loadingFb || awaitingAck;
+  sendBlockedRef.current = loadingBot || loadingFb || awaitingAck || playingAll;
   const ackFeedback = () => {
     setAwaitingAck(false);
     const pending = pendingBotLineRef.current;
@@ -6497,6 +6561,25 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   // 있고 잘한 표현은 없던 누락분). 한국어 섞인 입력을 자연스럽게 고쳐준 것과는 성격이 다르므로,
   // 순수 영어를 그 자체로 잘 쓴 경우만("한국어 없이 맞음") 여기 포함.
   const goodOnes = messages.filter(m => m.role === "user" && m.feedback && m.feedback.ok && !containsKorean(m.en));
+
+  // "오늘 한 회화세션 통째로 듣기"(2026-07-20) — 오늘 날짜(talkDayKey)로 나눈 메시지만 순서대로
+  // TTS로 이어 재생. 봇 대사는 페르소나 속도/억양/성별 그대로, 유저 발화는 다른 말풍선들처럼
+  // 원문 대신 교정문(favTextOf)을 기본 설정으로 읽어준다(기존 "첨삭 문장 듣기"와 같은 방식).
+  const todayKey = talkDayKey(Date.now());
+  const todaysMsgs = messages.filter(m => m.en && talkDayKey(m.at) === todayKey);
+  const playTodayAll = async () => {
+    if (playingAll) { playAllStopRef.current = true; stopSpeaking(); setPlayingAll(false); return; }
+    if (!todaysMsgs.length) return;
+    unlockAudio(); // 클릭 핸들러 안에서 직접 호출 — 이후 순차 재생 전부가 이 제스처로 언락됨
+    playAllStopRef.current = false;
+    setPlayingAll(true);
+    for (const m of todaysMsgs) {
+      if (playAllStopRef.current || !aliveRef.current || document.visibilityState === "hidden") break;
+      if (m.role === "bot") await speakText(m.en, personaSpeakRate(persona), persona.accent, persona.gender, true);
+      else await speakText(favTextOf(m), undefined, undefined, undefined, true);
+    }
+    if (aliveRef.current) setPlayingAll(false);
+  };
 
   if (showSummary) {
     return (
@@ -6536,7 +6619,12 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
           <div className="talk-head-name">{persona.name}</div>
           <div className="talk-head-trait">{persona.trait}</div>
         </div>
-        {messages.length > 1 && <button className="talk-end-btn" onClick={() => setShowSummary(true)}>대화 요약</button>}
+        <div className="talk-head-actions">
+          {(playingAll || todaysMsgs.length > 0) && (
+            <button className={"talk-end-btn" + (playingAll ? " on" : "")} onClick={playTodayAll}>{playingAll ? "정지" : "오늘 대화 듣기"}</button>
+          )}
+          {messages.length > 1 && <button className="talk-end-btn" onClick={() => setShowSummary(true)}>대화 요약</button>}
+        </div>
       </div>
       <div className="talk-toggles">
         <button className={"talk-toggle" + (showEn ? " on" : "")} onClick={() => setShowEn(v => !v)}>대사 {showEn ? "표시" : "숨김"}</button>
@@ -6805,7 +6893,7 @@ function Talk({ onOpenWord, setImmersive }) {
   if (view) {
     const persona = allPersonas().find(p => p.id === view);
     if (!persona) return <TalkRooms onOpenRoom={openRoom} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} onOpenPronun={() => setView("pronun")} onCreate={() => setView("create")} onDeletePersona={id => { removeCustomPersona(id); bumpP(v => v + 1); }} />;
-    return <TalkRoom persona={persona} onExit={() => setView(null)} onOpenWord={onOpenWord} />;
+    return <TalkRoom key={persona.id} persona={persona} onExit={() => setView(null)} onOpenWord={onOpenWord} />;
   }
   return <TalkRooms onOpenRoom={openRoom} onOpenSOS={() => setView("sos")} onOpenWriting={() => setView("writing")} onOpenPronun={() => setView("pronun")} onCreate={() => setView("create")} onDeletePersona={id => { removeCustomPersona(id); bumpP(v => v + 1); }} />;
 }
@@ -6827,7 +6915,7 @@ function PersonaCreate({ onDone, onCancel }) {
     if (!canSave) return;
     const nm = name.trim(), tr = trait.trim(), dt = detail.trim();
     const persona = {
-      id: "custom_" + Date.now(), name: nm, trait: tr, accent, gender, rate: 1.3, avatar: color,
+      id: "custom_" + Date.now(), name: nm, trait: tr, accent, gender, avatar: color,
       letter: Array.from(nm)[0] || "?", custom: true,
       promptDesc: `역할극 상대 설정: 당신은 "${nm}"입니다. ${tr}.` + (dt ? ` ${dt}.` : "") +
         " 이 설정에 맞는 성격·말투·태도로 사용자와 영어로 자연스럽게 대화하세요. 항상 상대 역할만 연기하고 설명은 하지 마세요.",
@@ -7205,7 +7293,7 @@ function CardSession({ items, onExit, onOpenWord }) {
     // 힌트를 안 쓴 일반 오답은 그대로 사용자 입력을 보여줌(기존 동작 유지).
     else if (hintUsed) setVal(expected);
     setRes({ ok, answer: expected, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) });
-    if (ok) playDing("done"); // 정답 띠링(2026-07-20) — 듣기 세션엔 있는데 단어카드엔 빠져있었음
+    playDing(ok ? "done" : "wrong"); // 정답 띠링·오답 띠-(2026-07-20, 모든 학습에 공용 적용)
     speak(it.ex.en);
     blurHidden(); // 정답 화면은 입력폼이 아니므로 키보드를 내림(2026-07-20) — 다음 카드로 넘어갈 때 next()가 다시 포커스
   };
@@ -7222,6 +7310,7 @@ function CardSession({ items, onExit, onOpenWord }) {
     const s = SRS.grade(it.key, false);
     ACT.addCard();
     setRes({ ok: false, answer: expected, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) });
+    playDing("wrong");
     speak(it.ex.en);
     blurHidden();
   };
@@ -7625,6 +7714,7 @@ function QuizSession({ questions, onExit }) {
   const [picked, setPicked] = useState(null); // 4지선다에서 고른 인덱스
   const [val, setVal] = useState("");         // 스펠링 입력값
   const [picks, setPicks] = useState([]);     // 어순 배열 — 탭한 순서대로 쌓인 shuffled 인덱스
+  const [lifted, setLifted] = useState(null); // 어순 배열: 위치 이동을 위해 "집어든" placed 칸의 인덱스(2026-07-20)
   const [res, setRes] = useState(null);       // null | {ok}
 
   const q = questions[idx];
@@ -7644,6 +7734,7 @@ function QuizSession({ questions, onExit }) {
     setPicked(ci);
     if (ok) setCorrect(c => c + 1);
     setRes({ ok });
+    playDing(ok ? "done" : "wrong"); // 정답/오답 효과음(2026-07-20) — 퀴즈에도 카드/듣기와 동일하게 적용
   };
 
   const submitSpell = () => {
@@ -7654,24 +7745,39 @@ function QuizSession({ questions, onExit }) {
     const ok = v.toLowerCase() === it.word.toLowerCase() || flatWord(v) === flatWord(it.word);
     if (ok) setCorrect(c => c + 1);
     setRes({ ok });
+    playDing(ok ? "done" : "wrong");
   };
 
-  // 어순 배열 — 조각을 원래 위치(idx) 순서대로 놓았는지로 채점(단어가 중복돼도 텍스트 비교보다 안전).
+  // 어순 배열 — 조각을 다 놓아도(2026-07-20 변경) 바로 채점하지 않고 "확인"을 눌러야 채점한다.
+  // 예전엔 마지막 조각을 놓는 순간 자동 채점돼서, 다 놓은 뒤 순서를 바로잡을 틈이 없었음(사용자
+  // 지적: "하다가 위치 이동할 수 있도록") — 이제 다 놓인 뒤에도 확인 전까지는 계속 자리를 바꿀 수 있다.
   const pickOrderChip = si => {
     if (res) return;
-    const np = [...picks, si];
-    setPicks(np);
-    if (np.length === q.tokens.length) {
-      const ok = np.every((p, i) => q.shuffled[p].idx === i);
-      if (ok) setCorrect(c => c + 1);
-      setRes({ ok });
-    }
+    setLifted(null); // pool에서 새로 고르면 자리 이동 선택 상태는 취소(2026-07-20)
+    setPicks(p => [...p, si]);
   };
-  const unpickOrderChip = i => { if (!res) setPicks(picks.filter((_, k) => k !== i)); };
+  const submitOrder = () => {
+    if (res || picks.length !== q.tokens.length) return;
+    const ok = picks.every((p, i) => q.shuffled[p].idx === i);
+    if (ok) setCorrect(c => c + 1);
+    setRes({ ok });
+    playDing(ok ? "done" : "wrong");
+  };
+  // 이미 놓은 조각 탭(2026-07-20 재설계) — 처음 탭하면 "집어들고"(lifted), 그 상태에서 다른 놓인
+  // 조각을 탭하면 두 자리를 맞바꿔 위치를 이동시킨다(사용자 요청: 하다가 위치 이동 가능하게) — 조각을
+  // 다 놓아 "확인" 버튼이 뜬 뒤에도 확인을 누르기 전까지는 계속 이 방식으로 자리를 바꿀 수 있다.
+  // 집어든 조각을 다시 탭하면(같은 자리) 기존처럼 pool로 되돌린다 — 제거 기능은 그대로 유지.
+  const tapPlacedChip = i => {
+    if (res) return;
+    if (lifted === null) { setLifted(i); return; }
+    if (lifted === i) { setLifted(null); setPicks(p => p.filter((_, k) => k !== i)); return; }
+    setPicks(p => { const np = p.slice(); const tmp = np[lifted]; np[lifted] = np[i]; np[i] = tmp; return np; });
+    setLifted(null);
+  };
 
   const next = () => {
     if (idx + 1 >= questions.length) { onExit(true, correct, questions.length); return; }
-    setIdx(idx + 1); setPicked(null); setVal(""); setPicks([]); setRes(null);
+    setIdx(idx + 1); setPicked(null); setVal(""); setPicks([]); setRes(null); setLifted(null);
   };
 
   return (
@@ -7698,13 +7804,13 @@ function QuizSession({ questions, onExit }) {
         </div>
         {q.type === "order" ? (
           <React.Fragment>
-            <span className="qhint">아래 조각을 순서대로 탭해 문장을 완성하세요.</span>
+            <span className="qhint">아래 조각을 순서대로 탭해 문장을 완성하세요. 놓은 조각을 탭하면 다른 자리와 맞바꿀 수 있어요.</span>
             <div className="qko" style={{ textAlign: "center" }}>{q.ko}</div>
             <div className="qdiv" />
             <div className="qorder-built">
               {picks.length === 0 && <span className="ph">여기에 순서대로 쌓여요</span>}
               {picks.map((si, i) => (
-                <button key={i} className="qorder-chip placed" disabled={!!res} onClick={() => unpickOrderChip(i)}>{q.shuffled[si].t}</button>
+                <button key={i} className={"qorder-chip placed" + (lifted === i ? " lifted" : "")} disabled={!!res} onClick={() => tapPlacedChip(i)}>{q.shuffled[si].t}</button>
               ))}
             </div>
             <div className="qorder-pool">
@@ -7756,6 +7862,9 @@ function QuizSession({ questions, onExit }) {
 
       {q.type === "spell" && !res && (
         <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={submitSpell}>확인</button>
+      )}
+      {q.type === "order" && !res && picks.length === q.tokens.length && (
+        <button className="qsub" onMouseDown={e => e.preventDefault()} onClick={submitOrder}>확인</button>
       )}
       {res && (
         <div className="qactions">
@@ -7929,6 +8038,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
     setQueue(q => q.concat([it]));
     setWrongMask(null);
     setRes({ dueIn: null, forcedRelearn: true });
+    playDing("wrong"); // 오답 띠-(2026-07-20) — 3번째 힌트까지 써도 못 맞혀 강제 재학습되는 시점
   };
   // 힌트 패널티(다시 듣기·앞글자 보기 공용): 3번째 사용이면 강제 재학습, 그 전엔 다음 문제 다운그레이드
   const applyHintPenalty = () => {
@@ -9330,6 +9440,15 @@ const WHATS_NEW = {
   ],
   "v0.35.84": [
     "**커스텀 스티커 만들기**가 생겼어요 — 문구를 적어 폰트·프레임(네모/원형/자유형)·색을 골라 나만의 스티커를 만들어 노트에 붙여보세요.",
+  ],
+  "v0.35.88": [
+    "회화 대화방에서 다른 대화 상대로 넘어가도 이전 대화가 겹쳐 보이던 버그를 고쳤어요.",
+    "회화 속도를 다시 조정했어요 — 튜터는 더 천천히, 의사·직장동료는 살짝 빠르게, 나머지는 설정 그대로.",
+    "**오늘 나눈 회화를 통째로 이어 들을 수 있는 기능**이 생겼어요.",
+    "퀴즈 문장 조각 맞추기에서 다 놓은 뒤에도 확인을 누르기 전까진 자리를 자유롭게 바꿀 수 있어요.",
+    "단어카드·듣기·퀴즈에서 정답/오답 효과음이 나와요.",
+    "퀴즈 4지선다 오답 보기가 정답과 품사가 맞고, 헷갈리는 유의어도 하나 섞여 난이도가 올라갔어요.",
+    "히어로 캐릭터 아래 땅 라인 위치와 뱃지 메달 숫자 크기를 미세 조정했어요.",
   ],
 };
 function pendingWhatsNew(seen) {
