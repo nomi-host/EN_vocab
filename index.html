@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.86">
-<link rel="icon" href="img/icon-192.png?v=0.35.86" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.86">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.86" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.86" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.87">
+<link rel="icon" href="img/icon-192.png?v=0.35.87" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.87">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.87" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.87" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.86"></script>
+<script src="img/hero/lottie.min.js?v=0.35.87"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.86"></script>
+<script src="lib/compromise.min.js?v=0.35.87"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.86"></script>
-<script src="words.js?v=0.35.86"></script>
+<script src="lib/supabase.min.js?v=0.35.87"></script>
+<script src="words.js?v=0.35.87"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.86"></script><style>
+<script src="grammar_tags.js?v=0.35.87"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -43,27 +43,27 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.86") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.86") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.87") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.87") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.86") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.86") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.87") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.87") format("woff");}
 @font-face{
   font-family:"Luckiest Guy";
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LuckiestGuy-Regular.woff2?v=0.35.86") format("woff2");}
+  src:url("img/fonts/LuckiestGuy-Regular.woff2?v=0.35.87") format("woff2");}
 @font-face{
   font-family:"Pacifico";
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/Pacifico-Regular.woff2?v=0.35.86") format("woff2");}
+  src:url("img/fonts/Pacifico-Regular.woff2?v=0.35.87") format("woff2");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -240,7 +240,10 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 뱃지 중앙 표기 폰트를 Luckiest Guy로(2026-07-20, 사용자 요청) — 라벨은 숫자/레벨 문자열(라틴)
    뿐이라 latin 서브셋으로 충분. Luckiest Guy는 400 단일 웨이트의 원래 두꺼운 디스플레이 폰트라
    faux-bold(800) 합성이 오히려 뭉개져 400으로 둔다. */
-.medal .mv{font-family:"Luckiest Guy",cursive;font-size:15px;font-weight:400;letter-spacing:0;font-variant-numeric:tabular-nums;}
+/* 폰트 2배 확대(2026-07-20, 사용자 요청: 15→30/32→64/10→20). Luckiest Guy는 어센더 위주 메트릭이라
+   flex 수직 중앙에서 글리프가 위로 떠 보임 — canvas 실측 기반 translateY 보정(아래 값은 숫자·K·레벨
+   문자열 실측 평균, 렌더 검증함). */
+.medal .mv{font-family:"Luckiest Guy",cursive;font-size:30px;font-weight:400;letter-spacing:0;font-variant-numeric:tabular-nums;transform:translateY(0.09em);}
 /* 티어 톤 — 앱이 이미 문서화한 성취 위계(streakHl: 핑크<노랑<초록<파랑)에 랭크를 그대로 매핑하고
    최상위(마스터)만 오렌지 포인트로 얹음(2026-07-17 재정렬). 예전엔 초록<노랑<핑크<파랑이라 "위험"
    의미의 핑크가 중간에 껴서 위계감이 없었음 — 레벨업 뱃지 색이 안 맞는다는 지적의 근본 원인.
@@ -260,7 +263,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    겹쳐 보이는 문제가 있었음). 팝업 동전 앞면에 이 사이즈로 렌더. */
 .medal.lg{width:132px;height:132px;box-shadow:0 6px 18px rgba(33,28,21,.22);}
 .medal.lg .medal-face{width:104px;height:104px;}
-.medal.lg .mv{font-size:32px;letter-spacing:-1px;}
+.medal.lg .mv{font-size:64px;letter-spacing:-1px;}
 /* 미획득 = 플랫 톤다운(그림자 없이 흐린 베이지 링+면). 획득 메달과 채도로만 구분. */
 .medal.locked{background:var(--line);box-shadow:none;}
 .medal.locked .medal-face{background:var(--fill);box-shadow:none;color:var(--muted);}
@@ -268,7 +271,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .medal.sm{width:40px;height:40px;box-shadow:0 1px 4px rgba(33,28,21,.18);}
 .medal.sm.locked{box-shadow:none;}
 .medal.sm .medal-face{width:31px;height:31px;}
-.medal.sm .mv{font-size:10px;letter-spacing:-0.5px;}
+.medal.sm .mv{font-size:20px;letter-spacing:-0.5px;}
 /* 보관함: 카테고리별 행(헤더 + 가로 스와이프 티어 스트립) */
 .sec-row{display:flex;align-items:center;justify-content:space-between;gap:10px;}
 .btn-viewall{flex:none;font-size:12px;font-weight:700;color:var(--ink);background:var(--surface);border:1px solid var(--ink);border-radius:999px;padding:5px 13px;}
@@ -388,9 +391,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
   padding:7px 13px 7px 11px;border-radius:999px;background:var(--ink);color:var(--on-accent);
   font-size:13px;font-weight:600;box-shadow:var(--shadow);border:none;cursor:pointer;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
-.hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
+/* top 84.09%→77.27%(2026-07-20): 땅 라인을 1·2·3단계 공통으로 15px(=15/220=6.82%p) 위로 — 사용자 요청.
+   이 밴드 하나를 모든 단계가 공유하므로 여기 한 줄이 걷기/달리기/날기 전부에 적용됨. */
+.hero-ground{position:absolute;left:0;right:0;top:77.27%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.86");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.87");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -823,9 +828,15 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .qlvrow .tag.lv{margin-left:auto;flex:none;}
 /* 뜻 힌트가 다의어라 길어져도 줄바꿈 대신 말줄임(2026-07-20, CEFR 배지 옆 한 줄로 되돌리면서) —
    글자수 힌트(qlen-hint)는 항상 짧으니 안 줄고, 뜻 힌트(qsofthint) 쪽이 필요하면 잘리게 함. */
+/* 품사/다른뜻은 회색톤으로 분리해 파란 "뜻"이 도드라지게(2026-07-20, 사용자 요청). 내용 자체를
+   줄였으므로(뜻 2항목·다른뜻 1개) ellipsis는 극단 케이스 안전망으로만 남음. */
 .qsofthint{font-size:12px;font-weight:700;color:var(--hi-blue-dark);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.qsofthint-pos{color:var(--muted);font-weight:800;}
+.qsofthint-extra{color:var(--muted);font-weight:600;}
 .qlen-hint{font-size:12px;font-weight:700;color:var(--hi-pink-dark);flex:none;white-space:nowrap;}
-.qhint-labels{display:flex;align-items:center;gap:8px;flex:1;min-width:0;overflow:hidden;}
+/* padding-right 10px(2026-07-20) — 뜻힌트가 길어 컨테이너가 꽉 차면 글자수 힌트("5글자")가 CEFR
+   뱃지에 딱 붙어 보이던 문제. margin-left:auto인 뱃지와의 최소 간격을 상수로 확보. */
+.qhint-labels{display:flex;align-items:center;gap:8px;flex:1;min-width:0;overflow:hidden;padding-right:10px;}
 .qaudio{display:flex;align-items:center;gap:6px;}
 .qaudio button{display:flex;align-items:center;gap:3px;color:var(--muted);background:var(--fill);border-radius:999px;padding:5px 10px;font-size:11px;font-weight:700;}
 .study-top .favstar{margin-left:4px;}
@@ -1229,7 +1240,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.86";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.87";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
    전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
@@ -3398,7 +3409,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.86" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.87" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -7111,22 +7122,25 @@ function CardSession({ items, onExit, onOpenWord }) {
   // 데이터상 한 sense의 ko는 그 자체가 "버리다, 포기하다"처럼 같은 의미의 동의어 여러 개를 콤마로
   // 이어붙인 문자열이라, 그 중 첫 글자만 대표로 남기면 "비슷한 의미당 1개씩"이 자연히 된다. 다른
   // sense 자체가 여러 개(드묾)여도 최대 2개까지만 보여주고 나머지는 "등"으로 축약.
-  const meanText = useMemo(() => {
-    if (!it) return "";
+  // 2026-07-20 재정리(사용자 요청): "…" 말줄임에 기대지 말고 내용 자체를 줄인다 — 뜻은 콤마 항목
+  // 최대 2개까지만, 다른 뜻은 가장 대표적인 것(첫 sense의 첫 항목) 딱 하나만("등"도 제거).
+  // 품사/뜻/다른뜻을 색으로 구분해 렌더할 수 있게 문자열 대신 parts 객체로 반환.
+  const meanParts = useMemo(() => {
+    if (!it) return null;
     const mw = wordOf(it.word);
     const posKo = (mw && mw.pos) ? mw.pos.map(p => POS_KO[p] || p).filter(Boolean).join("·") : "";
+    const main = (it.ko || "").split(",").slice(0, 2).map(s => s.trim()).filter(Boolean).join(", ");
     let extra = "";
     if (mw && mw.senses && mw.senses.length > 1) {
       const m = /#(\d+)$/.exec(it.key);
       const curIdx = m ? parseInt(m[1], 10) : 0;
-      const others = mw.senses
+      const other = mw.senses
         .filter((s, i) => i !== curIdx && s.ko && s.ko !== it.ko)
         .map(s => (s.ko.split(",")[0] || "").trim())
-        .filter(Boolean);
-      const uniq = [...new Set(others)];
-      if (uniq.length) extra = ` (다른 뜻: ${uniq.slice(0, 2).join(", ")}${uniq.length > 2 ? " 등" : ""})`;
+        .filter(Boolean)[0];
+      if (other) extra = `(다른 뜻: ${other})`;
     }
-    return (posKo ? posKo + " · " : "") + (it.ko || "") + extra;
+    return { pos: posKo, main, extra };
   }, [it]);
 
   useEffect(() => () => stopSpeaking(), []); // 세션 나갈 때(언마운트) 재생 중인 음성 정지
@@ -7474,7 +7488,13 @@ function CardSession({ items, onExit, onOpenWord }) {
             </span>
           ) : (
             <span className="qhint-labels">
-              {hintMean && mode === "cloze" && <span className="qsofthint">{meanText}</span>}
+              {hintMean && mode === "cloze" && meanParts && (
+                <span className="qsofthint">
+                  {meanParts.pos && <span className="qsofthint-pos">{meanParts.pos} </span>}
+                  {meanParts.main}
+                  {meanParts.extra && <span className="qsofthint-extra"> {meanParts.extra}</span>}
+                </span>
+              )}
               {hintLen && expected && <span className="qlen-hint">{flatWord(expected).length}글자{/\s/.test(expected) ? ` · ${expected.split(/\s+/).length}단어` : ""}</span>}
             </span>
           )}
