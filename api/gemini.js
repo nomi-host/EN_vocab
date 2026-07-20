@@ -20,12 +20,25 @@ function modelCandidates(fallbacks) {
   return [...new Set(list)];
 }
 
+/* 마지막으로 성공한 모델을 웜 인스턴스(모듈 스코프)에 잠깐 기억(2026-07-20) — 폴백 체인 앞쪽
+   모델이 404/429로 죽어 있으면 매 요청마다 죽은 모델들을 순서대로 다시 두드리고 나서야 살아있는
+   모델에 도달해, 회화·첨삭 응답이 매번 수 초씩 느려졌음("회화가 느리다" 원인 중 하나).
+   성공 모델을 5분간 최우선 후보로 올려 웜 요청은 곧장 살아있는 모델부터 시도한다.
+   (콜드 스타트면 기억이 없어 원래 체인 그대로 — 정확성엔 영향 없음, 순서 최적화일 뿐.) */
+let _lastGoodModel = null;
+let _lastGoodAt = 0;
+const LAST_GOOD_TTL = 5 * 60 * 1000;
+
 async function callGeminiWithFallback(contents, generationConfig, fallbacks) {
   const attempts = [];
   let lastDetail = "";
   /* 대시보드에서 복사-붙여넣기할 때 앞뒤 공백/줄바꿈이 딸려 들어가면 그것만으로 401이 나므로 trim */
   const apiKey = (process.env.GEMINI_API_KEY || "").trim();
-  for (const model of modelCandidates(fallbacks || MODEL_FALLBACKS)) {
+  let candidates = modelCandidates(fallbacks || MODEL_FALLBACKS);
+  if (_lastGoodModel && Date.now() - _lastGoodAt < LAST_GOOD_TTL && candidates.includes(_lastGoodModel)) {
+    candidates = [_lastGoodModel, ...candidates.filter(m => m !== _lastGoodModel)];
+  }
+  for (const model of candidates) {
     /* 키는 ?key= 쿼리가 아니라 x-goog-api-key 헤더로 — 신형 "AQ." 키는 쿼리 방식이면
        401("Expected OAuth 2 access token...")로 거부됨(2026-07-17 실측+웹 서치 확인). */
     const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`;
@@ -38,6 +51,7 @@ async function callGeminiWithFallback(contents, generationConfig, fallbacks) {
       const data = await upstream.json();
       const text = (data.candidates && data.candidates[0] && data.candidates[0].content &&
         (data.candidates[0].content.parts || []).map(p => p.text || "").join("")) || "";
+      _lastGoodModel = model; _lastGoodAt = Date.now();
       return text.trim();
     }
     attempts.push(`${model}→${upstream.status}`);
@@ -57,7 +71,10 @@ async function callGeminiWithFallback(contents, generationConfig, fallbacks) {
 function setCors(res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, X-App-Secret");
+  /* Authorization 추가(2026-07-20) — api/delete-account.js가 세션 토큰을 Authorization 헤더로
+     받는데, 이 허용 목록에 없으면 브라우저가 프리플라이트(OPTIONS) 단계에서 요청 자체를 막아
+     "계정 삭제" 버튼이 크로스오리진(앱은 Cloudflare, API는 Vercel)에서 무조건 실패했음. */
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, X-App-Secret, Authorization");
 }
 
 function isSecretValid(req) {
