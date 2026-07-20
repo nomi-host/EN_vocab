@@ -1,6 +1,12 @@
 Copyright 2020-2022 LINE Corporation All Rights Reserved.
 
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
+Copyright (c) 2011, Astigmatic (www.astigmatic.com), with Reserved Font Name
+"Luckiest Guy".
+
+Copyright (c) 2011, Vernon Adams (vern@newtypography.co.uk), with Reserved
+Font Name "Pacifico".
+
+All fonts above are licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
 https://scripts.sil.org/OFL
 
