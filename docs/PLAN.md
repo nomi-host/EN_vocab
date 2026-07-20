@@ -777,7 +777,7 @@ v2 추가 기능 배치: **발음 진단(Azure)·사용자 페르소나 → 3주
 
 | 테이블 | 핵심 컬럼 | 비고 |
 |---|---|---|
-| `profiles` | id(=auth.uid), display_name, avatar_char, created_at | auth.users와 1:1. **`display_name`은 2026-07-20까지 스키마에만 있고 클라이언트가 안 씀 — 같은 날 "닉네임" 기능(구글 로그인 후 설정 시트에서 한글/영어만 10자 이내로 편집, `AUTH.updateNickname`)으로 실제 연결됨. 로컬 캐시 키 `en_nickname`, 레벨테스트 결과 화면 제목("OO님의 레벨테스트 실력")에 사용.** |
+| `profiles` | id(=auth.uid), display_name, avatar_char, created_at | auth.users와 1:1. **`display_name`은 2026-07-20까지 스키마에만 있고 클라이언트가 안 씀 — 같은 날 "닉네임" 기능(구글 로그인 후 설정 시트에서 한글/영어만 10자 이내로 편집, `AUTH.updateNickname`)으로 실제 연결됨. 로컬 캐시 키 `en_nickname`, 레벨테스트 결과 화면 제목("OO님의 레벨테스트 실력")에 사용. 설정 화면의 닉네임 편집 UI는 처음엔 계정(이메일·동기화·로그아웃) 박스와 별도 박스였는데, 같은 날 "한 박스로 합쳐달라"는 요청으로 병합 — 닉네임(또는 미설정 시 "닉네임 설정")이 `.acct-email` 자리(굵은 1번째 줄)를 대신 차지하고 이메일은 `.acct-sub`(보조 2번째 줄)로 내려감, 편집 모드 진입 시 그 자리가 입력창+취소/저장으로 바뀌고 동기화/로그아웃 버튼은 잠시 숨김. "로그인됨 · 기기를 바꿔도 학습 기록이 유지돼요" 같은 설명 문구는 불필요 판단으로 제거.** |
 | `learning_state` | user_id, srs(jsonb), streak, points, level_test(jsonb), updated_at | 기기 간 동기화 본체 |
 | `badges` | user_id, cat_key, tier, dates(jsonb) | 카테고리별 진행값(현재 `BADGE_PROGRESS`의 서버판) |
 | `friends` | user_id, friend_id, status(pending/accepted), created_at | 양방향 엣지 · 초대 상태 |
