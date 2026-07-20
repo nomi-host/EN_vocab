@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.80">
-<link rel="icon" href="img/icon-192.png?v=0.35.80" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.80">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.80" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.80" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.83">
+<link rel="icon" href="img/icon-192.png?v=0.35.83" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.83">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.83" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.83" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.80"></script>
+<script src="img/hero/lottie.min.js?v=0.35.83"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.80"></script>
+<script src="lib/compromise.min.js?v=0.35.83"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.80"></script>
-<script src="words.js?v=0.35.80"></script>
+<script src="lib/supabase.min.js?v=0.35.83"></script>
+<script src="words.js?v=0.35.83"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.80"></script><style>
+<script src="grammar_tags.js?v=0.35.83"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -41,15 +41,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.80") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.80") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.83") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.83") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.80") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.80") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.83") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.83") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -373,7 +373,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.80");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.83");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -751,10 +751,12 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 @keyframes cardIn{from{opacity:.35;transform:translateY(5px);}to{opacity:1;transform:translateY(0);}}
 @media (prefers-reduced-motion: reduce){.qcard-anim{animation:none;}}
 .qlvrow{display:flex;align-items:center;margin-bottom:-6px;}
-.qlvrow .tag.lv{margin-left:auto;}
-.qsofthint{font-size:12px;font-weight:700;color:var(--hi-blue-dark);}
-.qlen-hint{font-size:12px;font-weight:700;color:var(--hi-pink-dark);}
-.qhint-labels{display:flex;align-items:center;gap:8px;}
+.qlvrow .tag.lv{margin-left:auto;flex:none;}
+/* 뜻 힌트가 다의어라 길어져도 줄바꿈 대신 말줄임(2026-07-20, CEFR 배지 옆 한 줄로 되돌리면서) —
+   글자수 힌트(qlen-hint)는 항상 짧으니 안 줄고, 뜻 힌트(qsofthint) 쪽이 필요하면 잘리게 함. */
+.qsofthint{font-size:12px;font-weight:700;color:var(--hi-blue-dark);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.qlen-hint{font-size:12px;font-weight:700;color:var(--hi-pink-dark);flex:none;white-space:nowrap;}
+.qhint-labels{display:flex;align-items:center;gap:8px;flex:1;min-width:0;overflow:hidden;}
 .qaudio{display:flex;align-items:center;gap:6px;}
 .qaudio button{display:flex;align-items:center;gap:3px;color:var(--muted);background:var(--fill);border-radius:999px;padding:5px 10px;font-size:11px;font-weight:700;}
 .study-top .favstar{margin-left:4px;}
@@ -802,7 +804,9 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    박스 높이(min-height 34px, 문장 줄높이보다 큼) 안에서 글자를 수직 중앙에 두다 보니 문장 베이스라인과
    어긋나 보였음. baseline 정렬로 바꾸고 박스 높이도 줄높이에 더 가깝게 낮춤. */
 .qbox-view{display:inline-flex;align-items:baseline;justify-content:center;min-width:64px;min-height:30px;background:var(--accent-soft);border-radius:0;font-weight:800;font-size:inherit;color:var(--accent-deep);padding:2px 16px;vertical-align:baseline;}
-.qcaret{display:inline-block;width:2px;height:17px;background:var(--accent);margin-left:1px;animation:caretblink 1.06s steps(1) infinite;}
+/* 커서는 박스 세로 중앙에 고정, 글씨는 그대로 baseline 정렬 유지(2026-07-20) — align-items:baseline인
+   부모 안에서 캐럿만 align-self:center로 예외를 둬 텍스트 정렬과 독립적으로 세로 중앙에 오게 함. */
+.qcaret{display:inline-block;width:2px;height:17px;background:var(--accent);margin-left:1px;align-self:center;animation:caretblink 1.06s steps(1) infinite;}
 @media (prefers-reduced-motion: reduce){.qcaret{animation:none;}}
 /* 하단 액션바 — 키보드 위에 붙어 항상 눌리게 */
 .qbottom{margin-top:auto;position:sticky;bottom:max(40px, var(--kb, 0px));background:transparent;padding-top:8px;}
@@ -1152,7 +1156,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.80";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.83";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
    전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
@@ -1978,8 +1982,15 @@ const ACT = (() => {
   return {
     todayKey, keyOf,
     today() { return { ...day(todayKey()) }; },
-    addCards(n) { day(todayKey()).c += (n || 0); save(); },
-    addListen(items) { const d = day(todayKey()); d.li += (items || 0); d.ls += 1; save(); },
+    // 카드/문장 단위 실시간 기록(2026-07-20) — 예전엔 세션이 끝까지 완주돼야만(onSessionExit) 한꺼번에
+    // 기록돼서, 힌트·근접오답 재시도로 세션이 길어지거나 중간에 X로 나가면 이미 SRS.grade()로
+    // 채점되고 성장기록·포인트엔 반영된 문항들이 홈 "오늘의 루틴"·학습 캘린더·학습 탭 진행량에는
+    // 전혀 안 잡히는 불일치가 있었음(보관함은 쌓이는데 홈엔 반영 안 된다는 지적) — SRS.grade()가
+    // 호출되는 바로 그 자리(CardSession.submit/giveUp, DictationSession.complete)에서 1개씩 실시간 기록.
+    addCard() { day(todayKey()).c += 1; save(); },
+    addListenSentence() { day(todayKey()).li += 1; save(); },
+    // 세션을 끝까지 완주했을 때만(뱃지 티어용 "듣기 세션 수" — 문장 수 li와는 별개 지표).
+    addListenSessionDone() { day(todayKey()).ls += 1; save(); },
     addTalk() { day(todayKey()).t += 1; save(); },
     addRoot(affix) { if (affix && !store.roots.includes(affix)) { store.roots.push(affix); save(); } },
     rootsCount() { return store.roots.length; },
@@ -3178,7 +3189,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.80" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.83" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -3547,7 +3558,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.80";
+const HERO_V = "0.35.83";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -6517,6 +6528,11 @@ function CardSession({ items, onExit, onOpenWord }) {
   // 다의어는 지금 카드가 다루는 의미 말고 다른 뜻도 있다는 걸 같이 알려준다(2026-07-20) — 예전엔
   // "대신 사용할 수 있는 단어" 칩에 다른 뜻(pedestrian#1 형용사 카드에 명사 "보행자"의 유의어)이
   // 잘못 섞여 나왔는데, 그건 정답 취급이라 문제였고, 이건 그냥 참고 정보라 힌트로 옮기는 게 안전.
+  // **레이아웃 재정리(2026-07-20)**: 글자수 힌트와 따로 한 줄 전체를 차지하던 걸 다시 CEFR 배지 옆
+  // 한 줄로 되돌리되(2줄로 나뉘는 게 최악이라는 지적), 다른 뜻 목록이 길어지지 않도록 요약한다 —
+  // 데이터상 한 sense의 ko는 그 자체가 "버리다, 포기하다"처럼 같은 의미의 동의어 여러 개를 콤마로
+  // 이어붙인 문자열이라, 그 중 첫 글자만 대표로 남기면 "비슷한 의미당 1개씩"이 자연히 된다. 다른
+  // sense 자체가 여러 개(드묾)여도 최대 2개까지만 보여주고 나머지는 "등"으로 축약.
   const meanText = useMemo(() => {
     if (!it) return "";
     const mw = wordOf(it.word);
@@ -6525,8 +6541,12 @@ function CardSession({ items, onExit, onOpenWord }) {
     if (mw && mw.senses && mw.senses.length > 1) {
       const m = /#(\d+)$/.exec(it.key);
       const curIdx = m ? parseInt(m[1], 10) : 0;
-      const others = mw.senses.filter((s, i) => i !== curIdx && s.ko && s.ko !== it.ko).map(s => s.ko);
-      if (others.length) extra = ` (이런 뜻도 있어요: ${others.join(", ")})`;
+      const others = mw.senses
+        .filter((s, i) => i !== curIdx && s.ko && s.ko !== it.ko)
+        .map(s => (s.ko.split(",")[0] || "").trim())
+        .filter(Boolean);
+      const uniq = [...new Set(others)];
+      if (uniq.length) extra = ` (다른 뜻: ${uniq.slice(0, 2).join(", ")}${uniq.length > 2 ? " 등" : ""})`;
     }
     return (posKo ? posKo + " · " : "") + (it.ko || "") + extra;
   }, [it]);
@@ -6585,6 +6605,7 @@ function CardSession({ items, onExit, onOpenWord }) {
     // 이번 카드에서 실제로 쓴 힌트 개수(뜻·글자수·첫 글자 + 근접오답 재시도) — SRS.grade의 간격 산정에 사용.
     const hintCount = [hintMean, hintLen, hintFirst].filter(Boolean).length;
     const s = SRS.grade(it.key, ok, hintCount);
+    ACT.addCard(); // 홈 "오늘의 루틴"·학습 캘린더가 실시간으로 반영되도록(2026-07-20, 세션 완주 대기 없이 문항마다 기록)
     if (ok) setCorrect(c => c + 1);
     // 힌트를 쓰고도 결국 못 맞히면(2026-07-20) 사용자의 미완성 입력 대신 빈칸에 정답 자체를 채워서
     // 보여준다 — "힌트를 다 쓰고도 모르겠으면 확인 눌러서 정답 보고 넘어가기"가 자연스러운 흐름이라,
@@ -6607,6 +6628,7 @@ function CardSession({ items, onExit, onOpenWord }) {
     setHintUsed(true);
     setVal(expected);
     const s = SRS.grade(it.key, false);
+    ACT.addCard();
     setRes({ ok: false, answer: expected, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) });
     speak(it.ex.en);
     blurHidden();
@@ -6858,14 +6880,12 @@ function CardSession({ items, onExit, onOpenWord }) {
             </span>
           ) : (
             <span className="qhint-labels">
+              {hintMean && mode === "cloze" && <span className="qsofthint">{meanText}</span>}
               {hintLen && expected && <span className="qlen-hint">{flatWord(expected).length}글자{/\s/.test(expected) ? ` · ${expected.split(/\s+/).length}단어` : ""}</span>}
             </span>
           )}
           <span className="tag lv">{it.cefr}</span>
         </div>
-        {/* 뜻 힌트(qsofthint)는 다의어일 때 "이런 뜻도 있어요: ..."까지 붙어 길어질 수 있어(2026-07-20)
-            CEFR 태그·글자수 힌트와 한 줄을 다투면 둘 다 세로로 짓눌려 보였음 — 따로 한 줄 전체로. */}
-        {!res && hintMean && mode === "cloze" && <div className="qsofthint">{meanText}</div>}
         {mode === "cloze" ? (
           <React.Fragment>
             {/* 빈칸 문제: 위에는 '문장의 한국어 뜻'을 제시(단어 뜻을 직접 주면 답을 알려주는 셈) */}
@@ -7284,6 +7304,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   };
   const forceRelearn = () => {
     SRS.grade(it.key, false);
+    ACT.addListenSentence(); // 홈 "오늘의 루틴"·학습 캘린더 실시간 반영(2026-07-20)
     addWrongNote(it.key, "listen"); // 오답 노트(2026-07-20) — 3번째 힌트/재생까지 못 맞힌 문장
     setQueue(q => q.concat([it]));
     setWrongMask(null);
@@ -7320,6 +7341,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
     // wasClean=false면 오답 확정(hintCount는 안 씀). wasClean=true면 다시 듣기·앞글자 보기 사용
     // 횟수(replayCount, 0~2 — 3회째는 forceRelearn으로 별도 처리)를 힌트 개수로 그대로 넘김(2026-07-20).
     const s = SRS.grade(it.key, wasClean, replayCount);
+    ACT.addListenSentence(); // 홈 "오늘의 루틴"·학습 캘린더 실시간 반영(2026-07-20)
     if (wasClean) { setCorrect(c => c + 1); removeWrongNote(it.key); } // 이번엔 깨끗하게 맞혔으니 오답 노트에서 빠짐(2026-07-20)
     else addWrongNote(it.key, "listen"); // 재시도 끝에 맞혔어도(오답 채점) 오답 노트엔 남김
     setWrongMask(null);
@@ -7978,7 +8000,10 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   const onSessionExit = (done, correct, total) => {
     if (done) {
       const n = total || session.length;
-      if (mode === "listen") ACT.addListen(n); else ACT.addCards(n); // 활동 로그(뱃지·스트릭·루틴 실데이터)
+      // 카드 수(c)·듣기 문장 수(li)는 이미 CardSession/DictationSession이 문항마다 실시간으로
+      // 기록해뒀으므로(2026-07-20) 여기서 또 더하면 중복 집계 — 듣기는 "세션을 완주했다"는
+      // 뱃지용 카운트(ls)만 별도로 채운다. 카드는 세션 단위 카운트 자체가 없어 여기서 할 일이 없음.
+      if (mode === "listen") ACT.addListenSessionDone();
       setSummary({ total: n, correct }); setSession("done");
     }
     else setSession(null);
@@ -8619,7 +8644,7 @@ const WHATS_NEW = {
     "단어카드 하단의 모르겠어요·확인·음성 버튼 높이가 안 맞던 걸 정렬했어요.",
     "힌트 영역 배경 때문에 카드 그림자가 부자연스럽게 끊겨 보이던 문제를 고쳤어요.",
   ],
-  "v0.35.80": [
+  "v0.35.79": [
     "단어카드 힌트 버튼(뜻/글자수/첫 글자)을 누르거나 정답 화면이 뜨면 키보드가 자동으로 내려가 가려졌던 안내 문구가 보여요.",
     "단어상세에서 어근 칩을 누르면 학습카드 세션이 끊기던 버그를 고쳤어요 — 이제 사전 탭으로 안 튕기고 그 자리에서 어근 단어 목록을 볼 수 있어요.",
     "유의어·반의어 칩의 언더바(_)를 띄어쓰기로 보여주고, 사전에 없는 단어는 외부링크 아이콘을 달아 네이버 사전으로 연결했어요.",
@@ -8631,6 +8656,16 @@ const WHATS_NEW = {
     "듣기 세션에서 어퍼스트로피(')·하이픈(-)으로 이어진 단어를 입력할 때 키보드가 내려가던 버그를 고쳤어요.",
     "**듣기 난이도가 순서 없이 들쭉날쭉하던 문제**를 고쳐 쉬운 문장부터 점점 어려워지도록 정리했어요.",
     "연음 해설 문구를 더 구체적으로 다듬었어요 — 실제 발음에 가까운 한글 표기, 정확히 어떤 소리가 안 들리는지 짚어줘요.",
+  ],
+  "v0.35.81": [
+    "단어카드·듣기 세션의 학습 기록이 홈/학습 탭에 실시간으로 반영되도록 고쳤어요 — 예전엔 세션을 끝까지 마쳐야만 오늘의 루틴·학습 캘린더에 기록됐는데, 이제 문제를 풀 때마다 즉시 쌓여서 중간에 나가도 그때까지 학습한 만큼은 남아요.",
+  ],
+  "v0.35.82": [
+    "단어카드 힌트(뜻·글자수)가 2줄로 나뉘어 보이던 걸 CEFR 배지 옆 한 줄로 되돌리고, 다의어 뜻이 길 때는 대표 뜻 위주로 줄여서 보여줘요.",
+    "단어카드 입력 커서가 박스 세로 중앙에 오도록 정리했어요.",
+  ],
+  "v0.35.83": [
+    "회화 대화방에서 봇 음성이 재생되는 도중 '뒤로' 버튼으로 방을 나가도 음성이 계속 재생되던 문제를 고쳤어요.",
   ],
 };
 function pendingWhatsNew(seen) {
