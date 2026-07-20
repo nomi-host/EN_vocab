@@ -11,27 +11,30 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.90">
-<link rel="icon" href="img/icon-192.png?v=0.35.90" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.90">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.90" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.90" as="font" type="font/woff2" crossorigin>
-<script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
-<script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
+<link rel="manifest" href="manifest.json?v=0.35.91">
+<link rel="icon" href="img/icon-192.png?v=0.35.91" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.91">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.91" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.91" as="font" type="font/woff2" crossorigin>
+<!-- React/ReactDOM/Babel 자체 호스팅(2026-07-20) — 예전엔 unpkg CDN 직결이라 unpkg 장애·차단
+     환경(일부 회사망·국가망 포함)에서 앱이 통째로 안 떴음(root 렌더 0, 실측 재현). lottie/compromise/
+     supabase와 동일한 "unpkg 의존 없이 lib/에 번들 복사" 원칙으로 통일. -->
+<script src="lib/react.production.min.js?v=0.35.91"></script>
+<script src="lib/react-dom.production.min.js?v=0.35.91"></script>
+<script src="lib/babel.min.js?v=0.35.91"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.90"></script>
+<script src="img/hero/lottie.min.js?v=0.35.91"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.90"></script>
+<script src="lib/compromise.min.js?v=0.35.91"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.90"></script>
-<script src="words.js?v=0.35.90"></script>
+<script src="lib/supabase.min.js?v=0.35.91"></script>
+<script src="words.js?v=0.35.91"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.90"></script><style>
+<script src="grammar_tags.js?v=0.35.91"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -43,27 +46,27 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.90") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.90") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.91") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.91") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.90") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.90") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.91") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.91") format("woff");}
 @font-face{
   font-family:"Luckiest Guy";
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LuckiestGuy-Regular.woff2?v=0.35.90") format("woff2");}
+  src:url("img/fonts/LuckiestGuy-Regular.woff2?v=0.35.91") format("woff2");}
 @font-face{
   font-family:"Pacifico";
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/Pacifico-Regular.woff2?v=0.35.90") format("woff2");}
+  src:url("img/fonts/Pacifico-Regular.woff2?v=0.35.91") format("woff2");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -396,7 +399,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    여기 한 줄이 걷기/달리기/날기 전부에 적용됨. */
 .hero-ground{position:absolute;left:0;right:0;top:79.55%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.90");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.91");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -1246,7 +1249,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.90";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.91";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
    전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
@@ -1705,6 +1708,10 @@ const AUTH = (() => {
       try { localStorage.removeItem(SYNC_STAMP_KEY); } catch (e) {}
       saveNicknameLocal("");
       SYNC_KEYS.forEach(k => { try { localStorage.removeItem(k); } catch (e) {} });
+      // en_srs_bak(SRS 로컬 백업)도 반드시 함께 삭제(2026-07-20) — 안 지우면 다음 부팅 때 SRS 초기화
+      // 로직이 "en_srs가 비었네? 백업에서 복원"을 타서 방금 로그아웃한 사용자의 학습 기록이 되살아나고,
+      // 공용 기기에서 다른 계정으로 로그인하면 첫 업로드 때 그 데이터가 새 계정 서버로 혼입된다.
+      try { localStorage.removeItem("en_srs_bak"); } catch (e) {}
       try { if (SB) await SB.auth.signOut(); } catch (e) {}
       location.reload(); // 메모리에 로드된 이전 사용자 state까지 확실히 비움
     },
@@ -1747,7 +1754,14 @@ const AUTH = (() => {
         if (!token) return { ok: false, error: "세션 확인 실패" };
         const r = await fetch(geminiEndpoint("delete-account"), { method: "POST", headers: { ...proxyHeaders(), Authorization: "Bearer " + token } });
         if (!r.ok) { const body = await r.json().catch(() => ({})); return { ok: false, error: body.error || "삭제 실패" }; }
+        // 서버 삭제 성공 — 이 기기의 학습 데이터도 게스트 상태로 완전히 되돌린다(2026-07-20).
+        // 예전엔 마커만 지워서 "계정은 지웠는데 기기엔 기록이 그대로"인 어중간한 상태였음
+        // (개인정보 관점에서도 삭제 요청인데 로컬에 남는 건 부적절). signOut과 같은 범위로 정리.
         localStorage.removeItem(SYNCED_UID_KEY);
+        try { localStorage.removeItem(SYNC_STAMP_KEY); } catch (e) {}
+        saveNicknameLocal("");
+        SYNC_KEYS.forEach(k => { try { localStorage.removeItem(k); } catch (e) {} });
+        try { localStorage.removeItem("en_srs_bak"); } catch (e) {}
         await SB.auth.signOut();
         return { ok: true };
       } catch (e) { return { ok: false, error: e.message }; }
@@ -3564,7 +3578,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.90" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.91" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -6821,7 +6835,11 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
             <Icon name={voiceMode ? "keyboard" : "mic"} size={18} />
           </button>
         )}
-        {!voiceMode && <button onClick={send} disabled={!input.trim() || awaitingAck || loadingBot || loadingFb}>전송</button>}
+        {/* onClick={send}로 직접 넘기면 클릭 이벤트 객체가 overrideText 인자로 들어가 event.trim()
+            크래시 — 전송 버튼 탭이 100% 실패했던 치명 버그(2026-07-20, STT 자동전송 개편 때 시그니처가
+            바뀌며 유입. Enter 키는 send() 인자 없이 불러 정상이라 데스크톱에선 안 잡혔음). 인자를 받는
+            함수를 이벤트 핸들러에 레퍼런스로 직접 넘기지 말 것. */}
+        {!voiceMode && <button onClick={() => send()} disabled={!input.trim() || awaitingAck || loadingBot || loadingFb}>전송</button>}
       </div>
     </div>
   );
@@ -9547,7 +9565,7 @@ const WHATS_NEW = {
   "v0.35.84": [
     "**커스텀 스티커 만들기**가 생겼어요 — 문구를 적어 폰트·프레임(네모/원형/자유형)·색을 골라 나만의 스티커를 만들어 노트에 붙여보세요.",
   ],
-  "v0.35.90": [
+  "v0.35.91": [
     "회화 대화방에서 다른 대화 상대로 넘어가도 이전 대화가 겹쳐 보이던 버그를 고쳤어요.",
     "회화 속도를 다시 조정했어요 — 튜터는 더 천천히, 의사·직장동료는 살짝 빠르게, 나머지는 설정 그대로.",
     "**오늘 나눈 회화를 통째로 이어 들을 수 있는 기능**이 생겼어요.",
