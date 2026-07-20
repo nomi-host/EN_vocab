@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.78">
-<link rel="icon" href="img/icon-192.png?v=0.35.78" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.78">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.78" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.78" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.79">
+<link rel="icon" href="img/icon-192.png?v=0.35.79" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.79">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.79" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.79" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.78"></script>
+<script src="img/hero/lottie.min.js?v=0.35.79"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.78"></script>
+<script src="lib/compromise.min.js?v=0.35.79"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.78"></script>
-<script src="words.js?v=0.35.78"></script>
+<script src="lib/supabase.min.js?v=0.35.79"></script>
+<script src="words.js?v=0.35.79"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.78"></script><style>
+<script src="grammar_tags.js?v=0.35.79"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -41,15 +41,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.78") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.78") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.79") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.79") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.78") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.78") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.79") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.79") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -373,7 +373,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.78");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.79");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -696,10 +696,16 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .lchip.link{background:var(--surface);border-color:var(--line);}
 .lchip.link:active{background:var(--accent-soft);}
 .lchip.affix{background:var(--ink);color:var(--on-accent);}
+.lchip.ext{display:inline-flex;align-items:center;gap:4px;text-decoration:none;}
 .lchip .g{color:var(--muted);font-weight:500;font-size:11px;margin-left:4px;}
 .wd-ex{background:var(--surface-container);border-radius:0;padding:13px 15px;}
-.wd-ex .en{font-size:14px;font-weight:600;line-height:1.5;}
+.wd-ex .en-row{display:flex;align-items:flex-start;gap:8px;}
+.wd-ex .en{font-size:14px;font-weight:600;line-height:1.5;flex:1;}
 .wd-ex .en em{font-style:normal;color:var(--accent-deep);}
+/* 예문 우측 발음 아이콘(2026-07-20) — 박스 전체가 이미 탭 가능(예문 발음 재생)했지만 그걸 알려주는
+   시각 단서가 없었음. 아이콘 자체엔 별도 onClick을 안 달고 부모 .wd-ex의 기존 핸들러(다의어 카드
+   토글과의 stopPropagation 처리 포함)에 그대로 얹혀가게 함. */
+.wd-ex-play{flex:none;display:flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:999px;background:var(--fill);color:var(--ink-2);margin-top:1px;}
 .wd-ex .ko{font-size:12px;color:var(--muted);margin-top:5px;}
 .wd-ex + .wd-ex{margin-top:8px;}
 /* 문법 태그 칩(2026-07-19, docs/PLAN.md 2.5) — 예문 아래에 탭 가능한 알약, 탭하면 설명 시트 */
@@ -739,6 +745,11 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .study-bar i{display:block;height:100%;background:var(--accent);border-radius:999px;transition:width .3s ease;}
 .study-n{font-size:13px;font-weight:700;color:var(--ink-2);font-variant-numeric:tabular-nums;flex:none;}
 .qcard{background:var(--surface);border:0.5px solid var(--card-border);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px 18px;display:flex;flex-direction:column;gap:14px;}
+/* 문제 전환이 너무 갑작스럽다는 지적(2026-07-20) — 카드(와 안의 지속 입력)는 리마운트하지 않고
+   idx가 바뀔 때마다 이 클래스만 재시작해서 살짝 옅게+아래에서 올라오며 전환. */
+.qcard-anim{animation:cardIn .22s ease;}
+@keyframes cardIn{from{opacity:.35;transform:translateY(5px);}to{opacity:1;transform:translateY(0);}}
+@media (prefers-reduced-motion: reduce){.qcard-anim{animation:none;}}
 .qlvrow{display:flex;align-items:center;margin-bottom:-6px;}
 .qlvrow .tag.lv{margin-left:auto;}
 .qsofthint{font-size:12px;font-weight:700;color:var(--hi-blue-dark);}
@@ -772,13 +783,25 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .cell-catch{position:absolute;inset:0;width:100%;height:100%;opacity:0;border:0;padding:0;margin:0;font-size:16px;}
 /* 지속 입력: 표시(셀/박스/정답)는 프리젠테이션, 실제 키 입력은 이 보이지 않는 input이 받음.
    카드 내내 언마운트 안 돼 정답 후에도 포커스 유지(키보드 안 내려감). */
-.ans-wrap{position:relative;display:inline-flex;align-items:center;vertical-align:middle;}
+/* display:inline(플렉스 아님)로 — 구동사처럼 칸이 여러 개일 때 이 래퍼 자체가 하나의 원자 단위로
+   취급돼 통째로 다음 줄에 밀려나던 문제 방지(2026-07-20). 칸 하나뿐인 경우도 각 qbox-view가
+   자체적으로 inline-flex + baseline 정렬을 갖고 있어 이 래퍼는 플렉스가 아니어도 정렬이 유지된다. */
+.ans-wrap{position:relative;display:inline;vertical-align:baseline;}
+/* 여러 칸(구동사 등)이 한 덩어리로 다음 줄로 통째로 밀려나던 문제(2026-07-20) — .qbox-multi가
+   flex 컨테이너면 그 자체가 하나의 원자 단위로 취급돼 줄바꿈이 이상해짐. display:inline인 순수
+   그룹핑 래퍼로 바꾸고, 칸 사이 간격은 gap 대신 margin으로 — 문장의 다른 단어들과 똑같이 낱개로
+   줄바꿈된다(칸 하나가 "the" 같은 일반 단어와 동등하게 취급됨). */
+.qbox-multi{display:inline;}
+.qbox-multi .qbox-view{margin-right:6px;}
 .ans-catch{position:absolute;inset:0;width:100%;height:100%;opacity:0;border:0;padding:0;margin:0;font-size:16px;background:transparent;-webkit-appearance:none;caret-color:transparent;}
 /* 제스처 앵커(primeKeyboardGesture 참고) — 화면 밖에 늘 떠 있는 진짜 입력 필드(readOnly 아님,
    키보드가 실제로 뜨려면 편집 가능해야 함). 화면엔 절대 안 보이지만 레이아웃에 영향 안 주게
    1px 크기 + fixed. */
 .kb-anchor{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;border:0;padding:0;margin:0;font-size:16px;background:transparent;pointer-events:none;}
-.qbox-view{display:inline-flex;align-items:center;justify-content:center;min-width:64px;min-height:34px;background:var(--accent-soft);border-radius:0;font-weight:800;font-size:inherit;color:var(--accent-deep);padding:2px 16px;}
+/* 정답 박스 안 글씨가 양옆 예문 텍스트와 바텀라인이 안 맞던 문제(2026-07-20) — align-items:center가
+   박스 높이(min-height 34px, 문장 줄높이보다 큼) 안에서 글자를 수직 중앙에 두다 보니 문장 베이스라인과
+   어긋나 보였음. baseline 정렬로 바꾸고 박스 높이도 줄높이에 더 가깝게 낮춤. */
+.qbox-view{display:inline-flex;align-items:baseline;justify-content:center;min-width:64px;min-height:30px;background:var(--accent-soft);border-radius:0;font-weight:800;font-size:inherit;color:var(--accent-deep);padding:2px 16px;vertical-align:baseline;}
 .qcaret{display:inline-block;width:2px;height:17px;background:var(--accent);margin-left:1px;animation:caretblink 1.06s steps(1) infinite;}
 @media (prefers-reduced-motion: reduce){.qcaret{animation:none;}}
 /* 하단 액션바 — 키보드 위에 붙어 항상 눌리게 */
@@ -812,7 +835,10 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .dict-words{display:flex;flex-wrap:wrap;gap:11px 7px;font-size:17px;font-weight:600;line-height:1.65;}
 .dict-word{display:inline-flex;flex-direction:column;align-items:center;gap:4px;}
 .dict-word-row{display:inline-flex;align-items:baseline;}
-.dict-box{min-width:30px;text-align:left;}
+/* 좌우 패딩이 너무 넓어 긴 단어가 칸 안에서 잘려 보이던 문제(2026-07-20) — .qbox 기본 16px의 1/4인 4px로.
+   배경색도 --fill(#FAF4E7, 페이지 배경과 거의 구분 안 됨)에서 단어카드 빈칸과 같은 --accent-soft로
+   맞춤 — 같은 "아직 안 채운 빈칸" 개념인데 화면마다 색이 달랐던 불일치 수정. */
+.dict-box{min-width:30px;text-align:left;padding-left:4px;padding-right:4px;background:var(--accent-soft);}
 .dict-box.ok{background:var(--good-container);color:var(--good);}
 .dict-box.wrong{background:var(--danger-container);color:var(--danger);}
 /* 맞게 타이핑한 순간 입력창이 사라지고 텍스트로 고정 — 살짝 튀는 팝 모션 */
@@ -1126,7 +1152,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.78";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.79";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
    전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
@@ -1223,6 +1249,17 @@ function wordOfFlat(w) {
   return _byFlat[flatWord(w)] || null;
 }
 function allWords() { return SEED.concat(Object.values(EXTRA)); }
+/* 특정 어근(affix)을 가진 단어 목록 — 단어상세의 어근 칩에서 "타고타고" 모달 스택 안으로
+   바로 목록을 펼치는 데 사용(2026-07-20, 예전엔 사전 탭으로 강제 이동해 학습카드 세션이 끊겼음). */
+function wordsByRoot(affix) {
+  let gloss = "";
+  const ws = allWords().filter(w => (w.roots || []).some(r => {
+    if (r.affix !== affix) return false;
+    if (!gloss) gloss = r.gloss;
+    return true;
+  })).sort((a, b) => a.word.localeCompare(b.word));
+  return { gloss, ws };
+}
 
 /* 수동 추가 단어 자동 조회 — 폴백 체인: Free Dictionary(무료 공개 API, 영영 정의·IPA·품사) →
    Gemini 프록시(한국어 뜻·예문 생성, Free Dictionary가 준 영어 정의가 있으면 그걸 번역 기준으로 사용).
@@ -2298,6 +2335,59 @@ function pickVariant(arr, seed) { return arr[noteHash(seed) % arr.length]; }
 /* 두 단어를 실제로 이어 말했을 때 들리는 형태를 그 자리에서 만들어 붙이는 근사치
    (진짜 IPA 변환이 아니라 "한 단어처럼 들려요" 감을 주는 용도) — 예: there's+a → theresa. */
 function mergedSound(a, b) { return (a + b).toLowerCase().replace(/[^a-z]/g, ""); }
+/* "team of"가 영문 그대로 이어붙은 "teamof"로만 보이던 문제(2026-07-20, "of는 f가 약해져 …로 줄고"
+   설명인데 정작 예시는 영문 철자 뭉침이라 실제 발음 감이 안 왔다는 지적) — words.js에 이미 있는
+   CMUdict 기반 실제 IPA(w.ipa)를 이용해 "team"처럼 단순한 1음절(자음+모음+자음) 단어만 안전하게
+   한글로 근사 변환하고, of의 약화형(스트레스 없는 /əv/)은 그 앞 단어의 받침을 뒤 음절로 재음절화해
+   붙인다(연음 그대로) — 예: team → 팀 → of 앞에서 "티머" + v 힌트로 "ㅂ" 붙여 "티머ㅂ". 한국어엔
+   /v/ 음소가 없어 관용적으로 ㅂ으로 근사. 2음절 이상이거나 자음군이 복잡해 안전하게 변환 못 하는
+   단어는 null을 돌려줘 호출부가 기존 영문 이어붙이기로 폴백하게 한다(틀린 한글보다 모르는 게 낫다).*/
+const IPA_ONSET_KO = { p: "ㅍ", b: "ㅂ", t: "ㅌ", d: "ㄷ", k: "ㅋ", "ɡ": "ㄱ", g: "ㄱ", m: "ㅁ", n: "ㄴ", f: "ㅍ", v: "ㅂ", s: "ㅅ", z: "ㅈ", "θ": "ㅆ", "ð": "ㄷ", "ʃ": "ㅅ", "ʒ": "ㅈ", h: "ㅎ", l: "ㄹ", r: "ㄹ", w: "ㅇ", j: "ㅇ" };
+const IPA_CODA_KO = { p: "ㅂ", b: "ㅂ", t: "ㅅ", d: "ㅅ", k: "ㄱ", "ɡ": "ㄱ", g: "ㄱ", m: "ㅁ", n: "ㄴ", "ŋ": "ㅇ", l: "ㄹ", f: "ㅂ", v: "ㅂ", s: "ㅅ", z: "ㅈ" };
+const IPA_VOWEL_KO = { i: "ㅣ", "ɪ": "ㅣ", e: "ㅔ", "ɛ": "ㅔ", "æ": "ㅐ", a: "ㅏ", "ɑ": "ㅏ", "ʌ": "ㅓ", "ə": "ㅓ", "ɚ": "ㅓ", "ɝ": "ㅓ", "ɔ": "ㅗ", o: "ㅗ", "ʊ": "ㅜ", u: "ㅜ" };
+const HG_ONSET = ["ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
+const HG_VOWEL = ["ㅏ", "ㅐ", "ㅑ", "ㅒ", "ㅓ", "ㅔ", "ㅕ", "ㅖ", "ㅗ", "ㅘ", "ㅙ", "ㅚ", "ㅛ", "ㅜ", "ㅝ", "ㅞ", "ㅟ", "ㅠ", "ㅡ", "ㅢ", "ㅣ"];
+const HG_CODA = ["", "ㄱ", "ㄲ", "ㄳ", "ㄴ", "ㄵ", "ㄶ", "ㄷ", "ㄹ", "ㄺ", "ㄻ", "ㄼ", "ㄽ", "ㄾ", "ㄿ", "ㅀ", "ㅁ", "ㅂ", "ㅄ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ"];
+function hgSyllable(onset, vowel, coda) {
+  const oi = HG_ONSET.indexOf(onset || "ㅇ"), vi = HG_VOWEL.indexOf(vowel), ci = HG_CODA.indexOf(coda || "");
+  if (oi < 0 || vi < 0 || ci < 0) return null;
+  return String.fromCharCode(0xAC00 + (oi * 21 + vi) * 28 + ci);
+}
+/* 단순 1음절(자음(들)+모음+자음(들)) 단어만 {onsetKo, vowelKo, codaKo}로 분해 — 2음절 이상(모음이
+   둘 이상)이거나 인식 못 하는 음소가 섞이면 null(호출부가 폴백). */
+function monosyllableIpa(ipa) {
+  if (!ipa) return null;
+  const phones = ipa.replace(/ˈ|ˌ/g, "").match(/aɪ|aʊ|eɪ|oʊ|ɔɪ|ɡ|[a-zθðŋɑɔəɚɛɝɪʃʊʌʒ]/g);
+  if (!phones) return null;
+  const vi = phones.findIndex(p => IPA_VOWEL_KO[p] || /^(aɪ|aʊ|eɪ|oʊ|ɔɪ)$/.test(p));
+  if (vi < 0) return null;
+  const lastVi = phones.length - 1 - [...phones].reverse().findIndex(p => IPA_VOWEL_KO[p] || /^(aɪ|aʊ|eɪ|oʊ|ɔɪ)$/.test(p));
+  if (vi !== lastVi) return null; // 모음이 둘 이상 → 다음절, 안전하게 포기
+  const onset = phones.slice(0, vi), vowelP = phones[vi], coda = phones.slice(vi + 1);
+  if (onset.length > 1 || coda.length > 1) return null; // 자음군은 근사 정확도가 떨어져 포기
+  if (/^(aɪ|aʊ|eɪ|oʊ|ɔɪ)$/.test(vowelP)) return null; // 이중모음은 음절 분해가 더 복잡해 포기
+  const onsetKo = onset[0] ? IPA_ONSET_KO[onset[0]] : null;
+  if (onset[0] && !onsetKo) return null;
+  const vowelKo = IPA_VOWEL_KO[vowelP];
+  if (!vowelKo) return null;
+  const codaKo = coda[0] ? IPA_CODA_KO[coda[0]] : null;
+  if (coda[0] && !codaKo) return null;
+  return { onsetKo, vowelKo, codaKo, codaPhone: coda[0] || null };
+}
+/* "[단순 1음절 단어] of" 전용 근사 — of의 약화형(/əv/)을 앞 단어 받침과 재음절화해 붙인다.
+   받침이 없으면(모음으로 끝나면) 그냥 뒤에 "어(v)"만 잇는다. 받침이 t/d면 모음 사이 플랩 규칙(5번
+   규칙과 동일 현상)이 적용돼 ㄹ에 가깝게 들리므로 그걸로("lot of"≈라러ㅂ). 실패하면 null. */
+function ofMergeKorean(aWord) {
+  const info = wordOf(aWord);
+  const syl = info && monosyllableIpa(info.ipa);
+  if (!syl) return null;
+  if (!syl.codaKo) return hgSyllable(syl.onsetKo, syl.vowelKo, "") + "어ㅂ";
+  const first = hgSyllable(syl.onsetKo, syl.vowelKo, "");
+  const flap = syl.codaPhone === "t" || syl.codaPhone === "d";
+  const second = hgSyllable(flap ? "ㄹ" : IPA_ONSET_KO[syl.codaPhone] || syl.codaKo, "ㅓ", "");
+  if (!first || !second) return null;
+  return first + second + "ㅂ";
+}
 const CONN_V = "aeiou", CONN_C = "bcdfghjklmnpqrstvwxyz";
 function connDetect(aw, bw) {
   const a = aw.toLowerCase().replace(/[^a-z']/g, ""), b = bw.toLowerCase().replace(/[^a-z']/g, "");
@@ -2352,11 +2442,15 @@ function connDetect(aw, bw) {
     `${pair}의 to는 약하게 "터/투"로 줄어 앞 단어에 붙어 "${merged}"처럼 들려요.`,
     `${pair}처럼 강세 없는 to는 모음이 흐려져 "러/더"처럼 이어지기도 해요.`,
   ], a + b);
-  // 9) of 약화
-  if (b === "of" || a === "of") return pickVariant([
-    `${pair}의 of는 f가 약해져 "어(v)"로 줄고 앞뒤가 붙어 "${merged}"처럼 들려요.`,
-    `${pair}처럼 강세 없는 of는 f 소리가 흐려져 앞뒤 단어에 묻혀요.`,
-  ], a + b);
+  // 9) of 약화 — 가능하면 실제 IPA 기반 한글 근사(ofMergeKorean)를, 안 되면 기존 영문 이어붙이기로.
+  if (b === "of" || a === "of") {
+    const koMerge = b === "of" ? ofMergeKorean(aw) : null;
+    const shown = koMerge || merged;
+    return pickVariant([
+      `${pair}의 of는 f가 약해져 "어(v)"로 줄고 앞뒤가 붙어 "${shown}"처럼 들려요.`,
+      `${pair}처럼 강세 없는 of는 f 소리가 흐려져 앞뒤 단어에 묻혀요.`,
+    ], a + b);
+  }
   // 10) 치경음 + th (the/this/that/them/there)
   if ((al === "n" || al === "t" || al === "d") && /^th/.test(b)) return pickVariant([
     `${pair}에서 앞 끝소리가 다음 th에 스며들어 부드럽게 이어져요 — "${merged}"처럼 들려요.`,
@@ -2367,11 +2461,12 @@ function connDetect(aw, bw) {
     `${pair}에서 앞의 n이 뒤 입술소리에 이끌려 "m"으로 바뀌어요 — "${merged}"처럼 들려요.`,
     `${pair}처럼 n 뒤에 입술소리(b/p/m)가 오면 콧소리가 m으로 옮아가요.`,
   ], a + b);
-  // 12) 파열음 + 자음 → 삼킴(미파열)
+  // 12) 파열음 + 자음 → 삼킴(미파열) — "자음이 연달아 오면… 거의 안 들려요"처럼 뭉뚱그리지 않고
+  // 실제로 안 들리는 소리가 뭔지(al) 콕 짚어서 설명(2026-07-20, "무슨 소린지 모르겠다"는 지적).
   if ("tdpbkg".includes(al) && CONN_C.includes(bf) && al !== bf) return pickVariant([
-    `${pair}에서 앞 단어의 끝 자음(${al})이 완전히 터지지 않고 살짝 삼켜지며 넘어가요 — "${merged}"처럼 들려요.`,
-    `${pair}처럼 자음이 연달아 오면 앞 자음을 멈춘 채 다음으로 넘어가 거의 안 들려요.`,
-    `${pair}는 끝 파열음이 미파열(안 터짐)로, 다음 자음에 바로 이어져요.`,
+    `${pair}에서 앞 단어의 끝소리 "${al}"가 완전히 터지지 않고 살짝 삼켜지며 넘어가요 — "${merged}"처럼 들려요.`,
+    `${pair}처럼 자음이 연달아 오면 앞의 "${al}" 소리를 멈춘 채로만 두고 다음으로 넘어가 "${al}"가 거의 안 들려요.`,
+    `${pair}는 끝소리 "${al}"가 미파열(안 터짐)로 끊겨, 다음 자음에 바로 이어져요.`,
   ], a + b);
   // 13) 모음 + 모음 → y/w 글라이드
   if (CONN_V.includes(al) && CONN_V.includes(bf)) return pickVariant([
@@ -2611,6 +2706,16 @@ function listeningDifficulty(text) {
   const score = lexIdx + liaisonCount * 1.2 + Math.max(0, words.length - 8) * 0.3;
   const tier = Math.min(LISTEN_LEVELS.length - 1, Math.max(0, Math.round(score / 0.75)));
   return { tier, label: LISTEN_LEVELS[tier] };
+}
+/* 듣기 세션 문제 순서 정리(2026-07-20) — pickSession()은 단어 CEFR 밴드로만 고르고 순서는 사실상
+   무작위라, 화면에 뜨는 "듣기 난이도"(listeningDifficulty — 어휘와 별개로 연음·문장길이도 반영)가
+   A2 다음 C1+ 같은 식으로 들쭉날쭉해 보였다("체계적으로 수정" 요청). 선택 자체(SRS 우선순위·레벨
+   범위)는 그대로 두고, 세션에 뽑힌 문항만 난이도 오름차순으로 재정렬 — 쉬운 문장부터 점점
+   어려워지는 자연스러운 진행이 되도록.*/
+function sortByListenDifficulty(items) {
+  return items.map(it => ({ it, tier: listeningDifficulty(it.ex.en).tier }))
+    .sort((a, b) => a.tier - b.tier)
+    .map(x => x.it);
 }
 
 /* ===================== 레벨 테스트 엔진 (4.3) =====================
@@ -3073,7 +3178,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.78" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.79" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -3442,7 +3547,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.78";
+const HERO_V = "0.35.79";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -4232,9 +4337,14 @@ function ExampleWords({ text, onOpen }) {
 /* 다의어 상한선: 실사전은 뜻이 수십 개인 단어(run, set 등)가 있어 기본 노출을 제한 */
 const SENSE_CAP = 6;
 
-function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
-  const word = stack[stack.length - 1];
-  const w = wordOf(word);
+function WordSheet({ stack, onPush, onPop, onClose }) {
+  const top = stack[stack.length - 1];
+  // 어근 칩("타고타고")은 사전 탭으로 이동하는 대신 이 모달 스택 안에 목록 패널을 하나 더 쌓는다
+  // (2026-07-20) — 예전엔 탭을 강제 전환해서, 학습카드 세션 중 어근 칩을 누르면 세션이 통째로
+  // 중단됐음(learn 탭이 unmount됨). 스택 항목은 단어(문자열) 또는 {root:affix}(어근 목록) 둘 중 하나.
+  const isRootView = top && typeof top === "object" && top.root;
+  const word = isRootView ? null : top;
+  const w = word ? wordOf(word) : null;
   const [senseOpen, setSenseOpen] = useState(0); // 다의어: 첫 의미 펼침
   const [showAllSenses, setShowAllSenses] = useState(false);
   const [, bump] = useState(0); // 즐겨찾기·내 단어장 토글 리렌더용
@@ -4252,11 +4362,46 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
   }, [word]);
   const retryLookup = () => { EXTRA[word].lookupStatus = "pending"; saveExtra(); bump(v => v + 1); autoLookupWord(word).then(() => bump(v => v + 1)); };
   const speak = useCallback(speakText, []);
-  const Chip = ({ label }) => (
-    wordOf(label)
-      ? <button className="lchip link" onClick={() => onPush(label)}>{label}</button>
-      : <span className="lchip">{label}</span>
-  );
+  // 유의어/반의어 칩(2026-07-20 정비): 데이터엔 "on_time"처럼 언더스코어로 저장되지만 표시는
+  // 공백으로("on time") — CardSession의 qsyn 칩과 동일 규칙. 우리 사전에 없는 단어는 비활성 칩
+  // 색(.lchip 기본, .link 아님)은 그대로 두되 외부링크 아이콘을 달아 네이버 사전으로 연결한다
+  // (아예 안 눌리는 죽은 버튼이었던 것 개선).
+  const Chip = ({ label }) => {
+    const shown = label.replace(/_/g, " ");
+    if (wordOf(label)) return <button className="lchip link" onClick={() => onPush(label)}>{shown}</button>;
+    return (
+      <a className="lchip ext" target="_blank" rel="noopener noreferrer"
+         href={"https://en.dict.naver.com/#/search?query=" + encodeURIComponent(shown)}>
+        {shown}<Icon name="open_in_new" size={11} />
+      </a>
+    );
+  };
+  if (isRootView) {
+    const { gloss, ws } = wordsByRoot(top.root);
+    return ReactDOM.createPortal(
+      <div className="sheet-backdrop" onClick={onClose}>
+        <div className="sheet" onClick={e => e.stopPropagation()}>
+          <div className="sheet-grab" />
+          <div className="sheet-head">
+            {stack.length > 1
+              ? <button className="back" onClick={onPop} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
+              : <span style={{ width: 8 }} />}
+            <span className="sp" />
+            <button className="back" onClick={onClose} style={{ marginLeft: 4 }} aria-label="닫기"><Icon name="close" size={20} /></button>
+          </div>
+          <div className="sheet-body">
+            <div className="wd-top">
+              <span className="wd-word">{top.root}</span>
+              {gloss && <span className="wd-ipa">{gloss}</span>}
+            </div>
+            <div className="wd-sec-t">이 어근을 포함한 단어 {ws.length}개</div>
+            <WList list={ws} onOpen={onPush} />
+          </div>
+        </div>
+      </div>,
+      document.body
+    );
+  }
   if (!w) return null;
   // 이 단어가 이미 담긴 내 단어장 목록 — 있으면 헤더 버튼에 리스트명을 노출(2026-07-20).
   const inLists = WORDLISTS.filter(l => l.words.includes(w.word));
@@ -4340,7 +4485,10 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
                       <div className="s-en">{s.en}</div>
                       {(s.ex || []).map((e, j) => (
                         <div className="wd-ex" key={j} onClick={ev => { ev.stopPropagation(); speak(e.en); }}>
-                          <div className="en"><ExampleWords text={e.en} onOpen={onPush} /></div>
+                          <div className="en-row">
+                            <div className="en"><ExampleWords text={e.en} onOpen={onPush} /></div>
+                            <span className="wd-ex-play" aria-label="예문 발음 듣기"><Icon name="volume_up" size={14} /></span>
+                          </div>
                           <div className="ko">{e.ko}</div>
                           <GrammarChips text={e.en} onTap={id => setGrammarSheet(id)} />
                         </div>
@@ -4364,7 +4512,10 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
               <div className="wd-sec-t">예문</div>
               {w.ex.map((e, i) => (
                 <div className="wd-ex" key={i} onClick={() => speak(e.en)}>
-                  <div className="en"><ExampleWords text={e.en} onOpen={onPush} /></div>
+                  <div className="en-row">
+                    <div className="en"><ExampleWords text={e.en} onOpen={onPush} /></div>
+                    <span className="wd-ex-play" aria-label="예문 발음 듣기"><Icon name="volume_up" size={14} /></span>
+                  </div>
                   <div className="ko">{e.ko}</div>
                   <GrammarChips text={e.en} onTap={id => setGrammarSheet(id)} />
                 </div>
@@ -4401,7 +4552,7 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
               <div className="wd-sec-t">어근 · 접사</div>
               <div className="wd-chips">
                 {w.roots.map(r => (
-                  <button key={r.affix} className="lchip affix" onClick={() => onOpenRoot(r.affix)}>
+                  <button key={r.affix} className="lchip affix" onClick={() => onPush({ root: r.affix })}>
                     {r.affix}<span className="g" style={{ color: "rgba(255,251,241,.62)" }}>{r.gloss}</span>
                   </button>
                 ))}
@@ -4528,7 +4679,7 @@ function ListPicker({ words, onClose, onChanged }) {
 
 const CEFR_NAMES = { A1: "입문", A2: "초급", B1: "중급", B2: "중상급", C1: "고급", C2: "최상급" };
 
-function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump, viewJump, onConsumeViewJump }) {
+function Dict({ onOpen, onStudyList, viewJump, onConsumeViewJump }) {
   const [q, setQ] = useState("");
   const [view, setView] = useState(null);      // null=허브 | learned|category|fav|mine|add
   const [catMode, setCatModeState] = useState("cefr"); // cefr | root
@@ -4543,13 +4694,6 @@ function Dict({ onOpen, onStudyList, rootJump, onConsumeRootJump, viewJump, onCo
   const [rootQuery, setRootQuery] = useState(""); // 카테고리 > 어근별 목록 내 필터(어근·뜻)
   const [learnedMode, setLearnedMode] = useState("date"); // 내가 학습한 단어: date(날짜별) | status(상태별)
 
-  // 단어상세의 어근 칩에서 넘어온 경우: 카테고리 > 어근별 > 그 어근 목록으로 바로 진입
-  useEffect(() => {
-    if (!rootJump) return;
-    setQ(""); setView("category"); setCatModeState("root"); setCatSel(rootJump);
-    onConsumeRootJump();
-    // eslint-disable-next-line
-  }, [rootJump]);
   // 보관함에서 즐겨찾기/내 단어장 바로가기로 넘어온 경우: 허브를 거치지 않고 해당 뷰로 바로 진입
   useEffect(() => {
     if (!viewJump) return;
@@ -6430,6 +6574,7 @@ function CardSession({ items, onExit, onOpenWord }) {
           setRetryMsg(true);
         }
         setNudgeWord(null);
+        blurHidden(); // 안내 문구가 키보드에 가려 안 보이던 문제(2026-07-20)
         return; // 채점하지 않음
       }
     }
@@ -6443,7 +6588,9 @@ function CardSession({ items, onExit, onOpenWord }) {
     // 힌트를 안 쓴 일반 오답은 그대로 사용자 입력을 보여줌(기존 동작 유지).
     else if (hintUsed) setVal(expected);
     setRes({ ok, answer: expected, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) });
+    if (ok) playDing("done"); // 정답 띠링(2026-07-20) — 듣기 세션엔 있는데 단어카드엔 빠져있었음
     speak(it.ex.en);
+    blurHidden(); // 정답 화면은 입력폼이 아니므로 키보드를 내림(2026-07-20) — 다음 카드로 넘어갈 때 next()가 다시 포커스
   };
 
   // "모르겠어요"(2026-07-20) — 굳이 아무거나 찍어 오답을 유도할 필요 없이, 모르겠으면 바로 정답과
@@ -6458,6 +6605,7 @@ function CardSession({ items, onExit, onOpenWord }) {
     const s = SRS.grade(it.key, false);
     setRes({ ok: false, answer: expected, dueIn: Math.max(0, Math.round((s.due - Date.now()) / DAY)) });
     speak(it.ex.en);
+    blurHidden();
   };
 
   // 입력이 정답과 일치하면 '확인'을 누르지 않아도 채점되지만, 마지막 글자를 치자마자
@@ -6538,6 +6686,7 @@ function CardSession({ items, onExit, onOpenWord }) {
       setHintFirst(true);
       setHintLen(true);
       setVal(expected[0]);
+      blurHidden(); // 안내 문구가 키보드에 가려 안 보이던 문제(2026-07-20) — 키보드를 내려 보이게 하고, 이어서 입력하려면 다시 탭
     }
     // eslint-disable-next-line
   }, [val]);
@@ -6555,8 +6704,23 @@ function CardSession({ items, onExit, onOpenWord }) {
 
   const hiddenRef = React.useRef(null);
   const focusHidden = () => { if (hiddenRef.current) hiddenRef.current.focus(); };
+  // 입력폼이 실제로 필요한 순간(다음 카드로 넘어갈 때)에만 키보드가 뜨도록 — 정답 화면·안내 문구
+  // 노출 시점엔 blurHidden()으로 내려서 가려졌던 내용이 보이게 한다(2026-07-20).
+  const blurHidden = () => { if (hiddenRef.current) hiddenRef.current.blur(); };
   // 새 카드로 바뀌면(입력 상태) 포커스를 유지 — 지속 입력이라 키보드가 계속 떠 있게 한다.
   useEffect(() => { if (!res) focusHidden(); }, [idx]);
+
+  // 카드 전환이 너무 갑작스럽다는 지적(2026-07-20) — 카드 자체(와 그 안의 지속 입력)는 리마운트하지
+  // 않으면서(포커스·키보드 유지가 깨지면 안 되므로) 문제가 바뀔 때마다 CSS 애니메이션만 다시 재생.
+  // 클래스를 껐다 켜는 것만으론 이미 붙어있으면 무시되므로, 제거→강제 리플로우→재추가로 재시작.
+  const qcardRef = React.useRef(null);
+  useEffect(() => {
+    const el = qcardRef.current;
+    if (!el) return;
+    el.classList.remove("qcard-anim");
+    void el.offsetWidth;
+    el.classList.add("qcard-anim");
+  }, [idx]);
 
   // 힌트 3종은 전부 일회성 스위치(2026-07-20) — 한 번 켜면 끌 수 없다. 예전엔 다시 눌러 끌 수 있는
   // 토글이었는데, 정작 페널티(hintUsed→이번 세션에 한 번 더 출제)는 껐다 켜도 절대 취소되지 않아서,
@@ -6587,13 +6751,31 @@ function CardSession({ items, onExit, onOpenWord }) {
 
   // 정답 표시(프리젠테이션 전용). 실제 입력은 아래 answerArea의 보이지 않는 input이 받는다.
   // - 채점 후(res): 정답/오답을 fill로 표시.
-  // - 글자수 힌트: 칸을 나누지 않고 박스 하나 길이만 정답 글자 수(ch 단위)에 맞춰 늘림.
+  // - 구동사·숙어처럼 정답이 여러 단어면(2026-07-20) "put down"→칸 2개, 세 단어면 칸 3개로 단어별로
+  //   나눠 보여준다 — formatCardInput이 타이핑 중 정답의 공백을 그 위치에 그대로 끼워 넣어주므로
+  //   val을 공백으로 나누면 각 칸에 채워진 글자가 그대로 대응된다.
+  // - 글자수 힌트: 칸(들) 길이를 정답 글자 수(ch 단위)에 맞춰 늘림.
   // - 기본: 지금까지 입력한 글자 + 깜빡이는 캐럿을 박스로.
+  const expectedWords = expected ? expected.split(/\s+/) : [];
   const answerDisplay = () => {
     if (res) return <span className={"fill" + (res.ok ? "" : " bad")}>{res.ok ? res.answer : (val.trim() || "—")}</span>;
+    if (expectedWords.length > 1) {
+      const valWords = val.split(/\s+/);
+      const curI = Math.max(0, valWords.length - 1);
+      return (
+        <span className="qbox-multi">
+          {expectedWords.map((ew, i) => (
+            <span key={i} className={"qbox qbox-view" + (hintLen ? " lenbox" : "")}
+              style={hintLen ? { width: "min(calc(" + ew.length + "ch + 20px), 100%)" } : undefined}>
+              {valWords[i] || "​"}{i === curI && <i className="qcaret" />}
+            </span>
+          ))}
+        </span>
+      );
+    }
     if (hintLen && expected) {
       return (
-        <span className="qbox qbox-view lenbox" style={{ width: "calc(" + expected.length + "ch + 32px)" }}>
+        <span className="qbox qbox-view lenbox" style={{ width: "min(calc(" + expected.length + "ch + 32px), 100%)" }}>
           {val || "​"}<i className="qcaret" />
         </span>
       );
@@ -6663,7 +6845,7 @@ function CardSession({ items, onExit, onOpenWord }) {
         </button>
       </div>
 
-      <div className="qcard">
+      <div className="qcard" ref={qcardRef}>
         <div className="qlvrow">
           {res ? (
             <span className="qaudio">
@@ -6672,12 +6854,14 @@ function CardSession({ items, onExit, onOpenWord }) {
             </span>
           ) : (
             <span className="qhint-labels">
-              {hintMean && mode === "cloze" && <span className="qsofthint">{meanText}</span>}
               {hintLen && expected && <span className="qlen-hint">{flatWord(expected).length}글자{/\s/.test(expected) ? ` · ${expected.split(/\s+/).length}단어` : ""}</span>}
             </span>
           )}
           <span className="tag lv">{it.cefr}</span>
         </div>
+        {/* 뜻 힌트(qsofthint)는 다의어일 때 "이런 뜻도 있어요: ..."까지 붙어 길어질 수 있어(2026-07-20)
+            CEFR 태그·글자수 힌트와 한 줄을 다투면 둘 다 세로로 짓눌려 보였음 — 따로 한 줄 전체로. */}
+        {!res && hintMean && mode === "cloze" && <div className="qsofthint">{meanText}</div>}
         {mode === "cloze" ? (
           <React.Fragment>
             {/* 빈칸 문제: 위에는 '문장의 한국어 뜻'을 제시(단어 뜻을 직접 주면 답을 알려주는 셈) */}
@@ -7022,6 +7206,16 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   }, [it]);
   const norm = s => (s || "").toLowerCase().replace(/[^a-z0-9']/g, "");
   const inputRefs = React.useRef([]);
+  // 문제 전환이 너무 갑작스럽다는 지적(2026-07-20, 카드와 동일) — 리마운트 없이 idx가 바뀔 때마다
+  // CSS 애니메이션만 재시작.
+  const qcardRef = React.useRef(null);
+  useEffect(() => {
+    const el = qcardRef.current;
+    if (!el) return;
+    el.classList.remove("qcard-anim");
+    void el.offsetWidth;
+    el.classList.add("qcard-anim");
+  }, [idx]);
 
   useEffect(() => () => stopSpeaking(), []); // 세션 나갈 때(언마운트) 재생 중인 문장 정지
 
@@ -7048,6 +7242,23 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
   const speakSentence = text => { speakText(text); }; // 앱 공용 speakText로 통일(프록시 TTS + 연타 에코 방지 공유)
 
   const focusInput = i => { const el = inputRefs.current[i]; if (el) el.focus(); };
+
+  // 어퍼스트로피·하이픈으로 이어진 칸(예: don' t)은 앞 칸을 맞히기 전까지 disabled인데,
+  // onTypeWord 안에서 앞 칸을 잠그자마자 동기로 다음 칸에 focus()를 걸면 그 시점 DOM엔 아직
+  // 재렌더 전이라 다음 칸이 여전히 disabled 상태라 focus()가 조용히 씹힌다 — 그 사이 아무 입력도
+  // 포커스를 못 받은 채 앞 칸이 언마운트되면서 키보드가 내려가던 버그(2026-07-20). locked가 실제로
+  // 반영된 뒤(재렌더 완료 후) 다시 한 번 포커스를 보정하는 효과를 별도로 둬서, 보통 단어 전환은
+  // onTypeWord의 즉시 focus()가 처리하고 이 결합 칸 케이스는 이 효과가 안전망 역할을 한다.
+  const prevLockedRef = React.useRef(null);
+  useEffect(() => {
+    if (res) return;
+    const prev = prevLockedRef.current;
+    prevLockedRef.current = locked;
+    if (!prev || prev.length !== locked.length) return; // 문제 전환/초기화는 autoFocus가 처리하므로 스킵
+    if (!locked.some((v, i) => v && !prev[i])) return; // 방금 새로 잠긴 칸이 없으면(=락 변화 아님) 스킵
+    const k = locked.findIndex(v => !v);
+    if (k >= 0) focusInput(k);
+  }, [locked]);
 
   /* 다시 듣기 패널티: 매 재생마다 다음 문제를 한 단계 쉬운 문장으로 교체.
      난이도는 어휘 CEFR이 아니라 듣기 난이도(listeningDifficulty — 연음·문장길이 포함)로
@@ -7217,7 +7428,7 @@ function DictationSession({ items: initialItems, onExit, onOpenWord }) {
         <span className="study-n">{idx + 1} / {queue.length}</span>
       </div>
 
-      <div className="qcard dict-card">
+      <div className="qcard dict-card" ref={qcardRef}>
         {countdownVisible && (
           <div className={"dict-countdown-overlay" + (countdown <= 0 ? " out" : "")}>
             <div className="countdown-circle" key={countdown}>{countdown > 0 ? countdown : ""}</div>
@@ -7786,7 +7997,7 @@ function Learn({ onOpenWord, onStartLevelTest, customStudy, customMode, onConsum
   }
 
   const startCard = () => { const items = pickSession(10); if (items.length) { setMode("card"); setSession(items); } };
-  const startListen = () => { unlockAudio(); const items = pickSession(10, listenLevelShift()); if (items.length) { setMode("listen"); setSession(items); } };
+  const startListen = () => { unlockAudio(); const items = sortByListenDifficulty(pickSession(10, listenLevelShift())); if (items.length) { setMode("listen"); setSession(items); } };
   const startQuiz = () => {
     const qs = buildQuiz(10);
     if (qs) setQuiz(qs);
@@ -8376,7 +8587,7 @@ function cmpVer(a, b) {
 // 업데이트 안내 팝업 노출 대상(2026-07-20) — 정식 배포 전까지 개발 계정에서만 확인.
 const WHATS_NEW_TESTER_EMAIL = "younglee.works@gmail.com";
 const WHATS_NEW = {
-  "v0.35.78": [
+  "v0.35.74": [
     "**구글 로그인**으로 기기를 바꿔도 학습 기록이 유지돼요.",
     "회화 대화방 목소리가 캐릭터 성별에 맞게, 속도도 원어민 대화 빠르기로 자연스러워졌어요.",
     "듣기 세션에서 틀린 문장은 **오답 노트**에 모여서 다시 복습할 수 있어요.",
@@ -8395,7 +8606,7 @@ const WHATS_NEW = {
     "구글 로그인 후 설정에서 **닉네임**을 정할 수 있어요 — 앱에서 'OO님'이라고 불러드려요.",
     "그 밖에 화면 곳곳의 자잘한 버그를 다수 수정했어요.",
   ],
-  "v0.35.78": [
+  "v0.35.75": [
     "**내가 등록한 단어**가 단어카드에 먼저 나오도록 우선순위를 조정했어요.",
     "단어 상세에서 '리스트에 담기'를 누르면 버튼이 화면 밖으로 밀려나던 버그를 고쳤고, 이미 담긴 단어면 **'OO단어장에 담긴 단어'**로 표시돼요.",
     "**복습 간격을 망각곡선에 맞게 재설계**했어요 — 힌트 없이 한 번에 맞추면 2달 뒤(준완료), 힌트를 쓰면 힌트 개수에 따라 1~3일 뒤, 모르겠어요는 1일 뒤, 예전에 틀렸던 단어를 다시 맞히면 3일→7일→16일로 차차 늘어나요.",
@@ -8403,6 +8614,19 @@ const WHATS_NEW = {
     "다른 앱에 갔다 돌아오면 스플래시 화면이 또 뜨던 문제를 줄였어요.",
     "단어카드 하단의 모르겠어요·확인·음성 버튼 높이가 안 맞던 걸 정렬했어요.",
     "힌트 영역 배경 때문에 카드 그림자가 부자연스럽게 끊겨 보이던 문제를 고쳤어요.",
+  ],
+  "v0.35.79": [
+    "단어카드 힌트 버튼(뜻/글자수/첫 글자)을 누르거나 정답 화면이 뜨면 키보드가 자동으로 내려가 가려졌던 안내 문구가 보여요.",
+    "단어상세에서 어근 칩을 누르면 학습카드 세션이 끊기던 버그를 고쳤어요 — 이제 사전 탭으로 안 튕기고 그 자리에서 어근 단어 목록을 볼 수 있어요.",
+    "유의어·반의어 칩의 언더바(_)를 띄어쓰기로 보여주고, 사전에 없는 단어는 외부링크 아이콘을 달아 네이버 사전으로 연결했어요.",
+    "정답 입력 박스와 예문 텍스트의 줄바닥이 안 맞던 문제, 글자수 힌트가 길 때 레이아웃이 깨지던 문제를 고쳤어요.",
+    "단어상세 예문에 발음을 들을 수 있는 아이콘을 추가했어요.",
+    "**put down**처럼 여러 단어로 된 구동사·숙어는 단어카드에서 단어 수만큼 칸을 나눠 보여줘요.",
+    "단어카드 정답 시 사라졌던 '띠링' 소리를 되살리고, 카드·듣기 세션 모두 문제 전환이 부드러워졌어요.",
+    "듣기 세션 입력칸 좌우 여백을 줄이고, 카드와 다르던 빈칸 색을 통일했어요.",
+    "듣기 세션에서 어퍼스트로피(')·하이픈(-)으로 이어진 단어를 입력할 때 키보드가 내려가던 버그를 고쳤어요.",
+    "**듣기 난이도가 순서 없이 들쭉날쭉하던 문제**를 고쳐 쉬운 문장부터 점점 어려워지도록 정리했어요.",
+    "연음 해설 문구를 더 구체적으로 다듬었어요 — 실제 발음에 가까운 한글 표기, 정확히 어떤 소리가 안 들리는지 짚어줘요.",
   ],
 };
 function pendingWhatsNew(seen) {
@@ -8495,8 +8719,6 @@ function App() {
     if (mode === "card") primeKeyboardGesture(); // 카드 세션은 진입 즉시 입력을 받으므로 미리 키보드 프라이밍(듣기 세션은 오디오라 불필요)
     setCustomStudy(items); setCustomMode(mode); setTab("learn");
   };
-  const [dictRootJump, setDictRootJump] = useState(null); // 단어상세 > 어근 칩 클릭 → 사전 카테고리(어근)로 이동
-  const openRoot = affix => { setDictRootJump(affix); setTab("dict"); closeSheet(); };
   const [dictViewJump, setDictViewJump] = useState(null); // 보관함 > 즐겨찾기/내 단어장 → 사전의 해당 뷰로 바로 진입
   const openDictView = v => { setDictViewJump(v); setTab("dict"); };
   const startLevelTest = () => { setSettingsOpen(false); setLtOpen(true); };
@@ -8616,8 +8838,8 @@ function App() {
             onRetry={() => { setLtResultOpen(false); startLevelTest(); }} />
         ) : (
           <React.Fragment>
-            {tab === "home" && <Home key={"home-" + tabResetKey.home} onGoTab={setTab} charK={charK} onChangeChar={changeChar} onOpenSettings={() => setSettingsOpen(true)} onOpenLtResult={() => setLtResultOpen(true)} onStartLevelTest={startLevelTest} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => { unlockAudio(); startCustomStudy(pickSession(10, listenLevelShift()), "listen"); }} />}
-            {tab === "dict" && <Dict key={"dict-" + tabResetKey.dict} onOpen={openWord} onStudyList={startCustomStudy} rootJump={dictRootJump} onConsumeRootJump={() => setDictRootJump(null)} viewJump={dictViewJump} onConsumeViewJump={() => setDictViewJump(null)} />}
+            {tab === "home" && <Home key={"home-" + tabResetKey.home} onGoTab={setTab} charK={charK} onChangeChar={changeChar} onOpenSettings={() => setSettingsOpen(true)} onOpenLtResult={() => setLtResultOpen(true)} onStartLevelTest={startLevelTest} onStartCards={() => startCustomStudy(pickSession(10))} onStartListen={() => { unlockAudio(); startCustomStudy(sortByListenDifficulty(pickSession(10, listenLevelShift())), "listen"); }} />}
+            {tab === "dict" && <Dict key={"dict-" + tabResetKey.dict} onOpen={openWord} onStudyList={startCustomStudy} viewJump={dictViewJump} onConsumeViewJump={() => setDictViewJump(null)} />}
             {tab === "learn" && <Learn key={"learn-" + tabResetKey.learn} onOpenWord={openWord} onStartLevelTest={startLevelTest} customStudy={customStudy} customMode={customMode} onConsumeCustomStudy={() => setCustomStudy(null)} setImmersive={setImmersive} />}
             {tab === "talk" && <Talk key={"talk-" + tabResetKey.talk} onOpenWord={openWord} setImmersive={setImmersive} />}
             {tab === "box" && <Vault key={"box-" + tabResetKey.box} onGoTab={setTab} onOpenDict={openDictView} />}
@@ -8652,7 +8874,7 @@ function App() {
         ))}
       </div>}
 
-      {stack && <WordSheet stack={stack} onPush={pushWord} onPop={popWord} onClose={closeSheet} onOpenRoot={openRoot} />}
+      {stack && <WordSheet stack={stack} onPush={pushWord} onPop={popWord} onClose={closeSheet} />}
       {showSplash && <SplashScreen onDone={() => setShowSplash(false)} />}
       {showGuide && <FirstRunGuide firstTime={!loadGuideSeen()} onClose={() => setShowGuide(false)} />}
       {!showGuide && showWhatsNew && whatsNewVer && isWhatsNewTester && (
