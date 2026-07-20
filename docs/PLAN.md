@@ -777,7 +777,7 @@ v2 추가 기능 배치: **발음 진단(Azure)·사용자 페르소나 → 3주
 
 | 테이블 | 핵심 컬럼 | 비고 |
 |---|---|---|
-| `profiles` | id(=auth.uid), display_name, avatar_char, created_at | auth.users와 1:1 |
+| `profiles` | id(=auth.uid), display_name, avatar_char, created_at | auth.users와 1:1. **`display_name`은 2026-07-20까지 스키마에만 있고 클라이언트가 안 씀 — 같은 날 "닉네임" 기능(구글 로그인 후 설정 시트에서 한글/영어만 10자 이내로 편집, `AUTH.updateNickname`)으로 실제 연결됨. 로컬 캐시 키 `en_nickname`, 레벨테스트 결과 화면 제목("OO님의 레벨테스트 실력")에 사용.** |
 | `learning_state` | user_id, srs(jsonb), streak, points, level_test(jsonb), updated_at | 기기 간 동기화 본체 |
 | `badges` | user_id, cat_key, tier, dates(jsonb) | 카테고리별 진행값(현재 `BADGE_PROGRESS`의 서버판) |
 | `friends` | user_id, friend_id, status(pending/accepted), created_at | 양방향 엣지 · 초대 상태 |
