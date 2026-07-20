@@ -11,27 +11,27 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.67">
-<link rel="icon" href="img/icon-192.png?v=0.35.67" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.67">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.67" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.67" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.68">
+<link rel="icon" href="img/icon-192.png?v=0.35.68" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.68">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.68" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.68" as="font" type="font/woff2" crossorigin>
 <script crossorigin src="https://unpkg.com/react@18.3.1/umd/react.production.min.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
 <script src="https://unpkg.com/@babel/standalone@7.25.6/babel.min.js"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.67"></script>
+<script src="img/hero/lottie.min.js?v=0.35.68"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.67"></script>
+<script src="lib/compromise.min.js?v=0.35.68"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.67"></script>
-<script src="words.js?v=0.35.67"></script>
+<script src="lib/supabase.min.js?v=0.35.68"></script>
+<script src="words.js?v=0.35.68"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.67"></script><style>
+<script src="grammar_tags.js?v=0.35.68"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -41,15 +41,15 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.67") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.67") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.68") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.68") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.67") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.67") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.68") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.68") format("woff");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -371,7 +371,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 /* 땅: 하단 밴드에서 좌우로 무한 스크롤(전진 착각). 두 벌 타일을 translateX로 흘려 이음매 없음. */
 .hero-ground{position:absolute;left:0;right:0;top:84.09%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.67");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.68");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -586,7 +586,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
 .wrow .meta{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex:none;}
 .wrow .meta-line{display:flex;gap:4px;align-items:center;justify-content:flex-end;}
 /* 뱃지 — CEFR 레벨(.tag.lv)만 형광펜 느낌(라운드 없는 납작한 색칠 조각)으로 구분, 나머지는 알약형
-   통일(2026-07-14). 레벨은 컬러위계(연두<옐로우<핑크<블루)를 그대로 반영.
+   통일(2026-07-14). 레벨은 컬러위계(핑크<옐로우<초록<블루, 2026-07-20 재정렬)를 그대로 반영.
    예전엔 .tag.lv(specificity 0,2,0)가 .tier-*(0,1,0)를 눌러 위계색이 안 먹었음 → .tag.tier-*를 .tag.lv 뒤에 정의해 복구. */
 .tag{font-size:10px;font-weight:800;padding:3px 7px;border-radius:999px;background:var(--fill);color:var(--ink-2);letter-spacing:.2px;}
 .tag.lv{border-radius:0;background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
@@ -1025,7 +1025,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 .lt-choice{padding:14px;border-radius:0;font-weight:700;font-size:15px;background:var(--surface);border:0.5px solid var(--card-border);color:var(--ink);box-shadow:var(--shadow);text-align:center;}
 .lt-choice:active{background:var(--fill);}
 .lt-band{display:inline-flex;align-items:center;font-size:14px;font-weight:800;padding:6px 14px;border-radius:999px;background:var(--accent-deep);color:var(--on-accent);}
-/* 결과 레벨 밴드 — 컬러위계 반영(연두<옐로우<핑크<블루). .lt-band(0,1,0)를 이기려 (0,2,0)로 정의 */
+/* 결과 레벨 밴드 — 컬러위계 반영(핑크<옐로우<초록<블루, 2026-07-20 재정렬). .lt-band(0,1,0)를 이기려 (0,2,0)로 정의 */
 .lt-band.tier-green{background:var(--hi-green);color:var(--hi-green-xdark);}
 .lt-band.tier-yellow{background:var(--hi-yellow);color:var(--hi-yellow-xdark);}
 .lt-band.tier-pink{background:var(--hi-pink);color:var(--hi-pink-xdark);}
@@ -1095,7 +1095,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.67";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.68";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
    전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
@@ -1160,6 +1160,13 @@ function Icon({ name, size = 24 }) {
 const SEED = (typeof window !== "undefined" && window.SEED) ? window.SEED : [];
 const byWord = Object.fromEntries(SEED.map(w => [w.word, w]));
 const GRAMMAR_TAGS = (typeof window !== "undefined" && window.GRAMMAR_TAGS) ? window.GRAMMAR_TAGS : {};
+/* 유의어 역인덱스(2026-07-20, 레벨테스트 4지선다 유의어 오답용) — w.syn은 "이 단어의 유의어" 방향만
+   있어서, 반대로 "어떤 단어들이 이 단어를 유의어로 꼽았는지"는 역으로 뒤져야 함. 한 번만 만들어 재사용. */
+const SYN_INDEX = {};
+SEED.forEach(w => (w.syn || []).forEach(s => {
+  const k = s.toLowerCase();
+  (SYN_INDEX[k] || (SYN_INDEX[k] = [])).push(w.word);
+}));
 
 /* 사용자가 직접 추가한 단어(내 단어장) — localStorage 보존. */
 let EXTRA = (() => { try { return JSON.parse(localStorage.getItem("en_mywords") || "{}"); } catch (e) { return {}; } })();
@@ -2554,6 +2561,19 @@ function lcsLen(a, b) {
 function firstSoundClass(c) { return ({ k: "c", q: "c", f: "p", v: "b", z: "j", x: "s" })[c] || c; }
 /* 순우리말인데 음차와 우연히 겹쳐 오검되는 단어(수동 보정) */
 const LOAN_FALSE_POS = new Set(["harmful", "bandage"]);
+/* 알고리즘이 놓친 명백한 음차(2026-07-20, "elevator" 사례로 발견) — 로마자화 비교는 영어 "철자"와
+   실제 발음이 크게 갈리는 단어(묵음/모음 삽입 "elevator→엘리베이터", v→b·f→p 치환 "coffee→커피" 등)
+   에서 과소검출됨. SEED 8987개 전체를 완화한 임계값으로 재검사해 후보를 뽑고, 오탐(예: background→
+   배경·signal→신호·transitive→타동사의처럼 실제로는 순우리말/한자어 뜻인데 우연히 음절이 겹친 경우)은
+   걸러낸 뒤 남은 것만 수동 확정 — isPureLoanword가 알고리즘 판정과 무관하게 항상 음차로 취급한다. */
+const LOAN_EXTRA_WORDS = new Set([
+  "elevator", "escalator", "taxi", "bus", "coffee",
+  "barbecue", "beagle", "bonus", "butter", "capsule", "cassette", "cheese", "cocktail", "concrete",
+  "cornet", "cricket", "digital", "documentary", "dollar", "energy", "frying pan", "hip hop",
+  "kangaroo", "micrometer", "olympic", "online", "orange", "pancake", "plastic", "program",
+  "remote control", "rugby", "skateboard", "sketchbook", "sportsmanship", "sunglasses", "teaspoon",
+  "transistor", "trumpet", "yogurt",
+]);
 /* 뜻 조각 하나가 영단어의 음차인가 */
 function isLoanSeg(eng, seg) {
   seg = (seg || "").replace(/\(.*?\)/g, "").trim();
@@ -2569,6 +2589,7 @@ function ltGlossSegs(ko) { return (ko || "").split(/[,;/]/).map(s => s.trim()).f
 /* 모든 뜻 조각이 음차 = 순수 외래어(레벨테스트 풀에서 제외) */
 function isPureLoanword(w) {
   if (LOAN_FALSE_POS.has(w.word)) return false;
+  if (LOAN_EXTRA_WORDS.has(w.word)) return true;
   const segs = ltGlossSegs(w.ko);
   return segs.length > 0 && segs.every(s => isLoanSeg(w.word, s));
 }
@@ -2673,11 +2694,21 @@ function createLevelTestA() {
       const w = pendingMeaning;
       const myKo = ltAnchor(w).ko;
       const myPos = ltPos(w);
-      // 오답도 같은 품사로(품사가 섞이면 소거법으로 너무 쉬워짐) — 같은 품사 풀이 부족하면 밴드 전체로 폴백
-      const basePool = ltBandPool(CEFR_LEVELS.indexOf(w.cefr)).filter(x => x.word !== w.word && ltAnchor(x).ko !== myKo);
-      const posPool = myPos ? basePool.filter(x => ltPos(x) === myPos) : [];
-      const wrongPool = posPool.length >= 8 ? posPool : basePool;
-      const wrongs = ltPick(wrongPool, 3, new Set([w.word]));
+      // 오답 품사 통일(2026-07-20 재작성) — 예전엔 같은 밴드에 같은 품사가 8개 미만이면 밴드 전체
+      // (품사 무관)로 폴백해 오답 품사가 섞이는 경우가 있었음. 밴드를 안 가리고 SEED 전체에서 같은
+      // 품사만 모으면 왠만한 품사는 충분히 채워지므로, 품사를 모르는 극히 드문 경우에만 밴드 폴백.
+      const basePool = myPos
+        ? SEED.filter(x => x.word !== w.word && x.ko && ltPos(x) === myPos && !isPureLoanword(x) && ltAnchor(x).ko !== myKo)
+        : ltBandPool(CEFR_LEVELS.indexOf(w.cefr)).filter(x => x.word !== w.word && ltAnchor(x).ko !== myKo);
+      // 유의어 오답 1개(2026-07-20) — 정답과 실제 뜻이 가까운 단어를 하나 우선 넣어 소거법을 막는다
+      // (오답 3개가 전부 무관한 단어면 뜻을 몰라도 "그럴듯한 것" 하나만 골라 맞힐 수 있다는 지적).
+      // w.syn(정방향)과 SYN_INDEX(역방향, "누가 나를 유의어로 꼽았는지")를 합쳐 같은 품사 풀 안에서 탐색.
+      const synWords = new Set([...(w.syn || []), ...(SYN_INDEX[w.word.toLowerCase()] || [])].map(s => s.toLowerCase()));
+      const synPool = basePool.filter(x => synWords.has(x.word.toLowerCase()));
+      const usedWrong = new Set([w.word]);
+      const wrongs = [];
+      if (synPool.length) { const pick = synPool[Math.floor(Math.random() * synPool.length)]; wrongs.push(pick); usedWrong.add(pick.word); }
+      wrongs.push(...ltPick(basePool, 3 - wrongs.length, usedWrong));
       const choices = wrongs.map(x => ltAnchor(x).ko);
       const answerIdx = Math.floor(Math.random() * (choices.length + 1));
       choices.splice(answerIdx, 0, myKo);
@@ -2865,8 +2896,13 @@ function createLevelTestB() {
     answer(log) { // {ok, errors, seconds}
       if (!cur) return;
       logs.push({ band6: cur.band6, ok: !!log.ok, errors: log.errors || 0, seconds: log.seconds || 0, nWords: cur.words.length });
-      // 적응: 오탭 1개 이하로 완성 → 한 단계 위, 아니면 한 단계 아래
-      band = Math.max(0, Math.min(CEFR_LEVELS.length - 1, band + (log.ok && (log.errors || 0) <= 1 ? 1 : -1)));
+      // 적응 3단계(2026-07-20 재조정) — 오탭 0~1개(한 번에 맞춤·한 번 틀림)는 한 단계 위, 오탭 2개
+      // (두 번 틀림)는 같은 단계 유지, 오탭 3개 이상(세 번 틀림)은 한 단계 강등. 예전엔 오탭 2개 이상이
+      // 전부 "-1"로 뭉뚱그려져 있어서, 한 번만 크게 삐끗해도 다음 문장이 계속 쉬운 레벨에 머무는 것처럼
+      // 느껴진다는 지적이 있었음 — "두 번까지는 봐주고, 세 번째부터 강등"으로 완충 구간을 둠.
+      const errN = log.errors || 0;
+      const delta = !log.ok ? -1 : errN <= 1 ? 1 : errN === 2 ? 0 : -1;
+      band = Math.max(0, Math.min(CEFR_LEVELS.length - 1, band + delta));
       cur = logs.length >= LT_B_N ? null : pickSentence();
     },
     report() {
@@ -2910,7 +2946,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.67" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.68" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -3279,7 +3315,7 @@ const MONTH_NAMES_EN = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", 
    구 stage/badge-track(캐릭터 뒤 뱃지 롤링)/road/mlines/CharDoodle 폐기(PLAN 5.2.6).
    씬 전체를 하나의 Lottie로 굽지 않고 — 고양이+먼지 / 스마일(눈썹 모션)만 Lottie, 나머지 스티커는
    DOM 이미지 — 스티커를 개별로 드래그·교체·획득할 수 있어야 하므로. */
-const HERO_V = "0.35.67";
+const HERO_V = "0.35.68";
 // lottie-web(전역 window.lottie, img/hero/lottie.min.js)로 JSON을 컨테이너에 마운트.
 function LottieBox({ src }) {
   const ref = useRef(null);
@@ -3490,7 +3526,10 @@ function StickerLayer({ heroRef, refreshKey, deselectTick }) {
       // Playwright로 재현: 누르자마자 바로 움직이면 dx>10이 타이머보다 먼저 걸려 drag.current가
       // null이 됨). 취소 대신 그 자리에서 바로 드래그를 활성화하도록 변경 — 가만히 눌러 기다렸다가
       // 움직여도(롱프레스 선택), 누르자마자 바로 움직여도(일반 드래그) 둘 다 이동하게 됨.
-      if (Math.abs(dx) > 10 || Math.abs(dy) > 10) { clearTimeout(d.timer); d.active = true; setDragId(d.id); setSelectedId(d.id); }
+      // 임계값 10→18px(2026-07-20) — 터치스크린은 가만히 탭해도 손끝이 몇 px씩 미세하게 흔들리는데,
+      // 10px는 그 흔들림도 "드래그 시작"으로 잡아버려 탭을 하려다 자꾸 스티커가 살짝 밀리는(그리고
+      // 그 순간 드래그 모드로 빠져 탭 선택은 못 하는) 원인이었음(사용자 지적 "자꾸 드래그됨").
+      if (Math.abs(dx) > 18 || Math.abs(dy) > 18) { clearTimeout(d.timer); d.active = true; setDragId(d.id); setSelectedId(d.id); }
       else return;
     }
     e.preventDefault();
@@ -3502,6 +3541,10 @@ function StickerLayer({ heroRef, refreshKey, deselectTick }) {
   const onUp = () => {
     const d = drag.current; if (!d) return; clearTimeout(d.timer);
     if (d.active) { setDragId(null); setPos(prev => { saveJSON(HERO_POS_KEY, prev); return prev; }); }
+    // 드래그로 안 이어진 짧은 탭(=클릭) — 예전엔 여기서 아무 것도 안 해서, 살짝만 눌렀다 떼면
+    // (320ms 타이머가 끝나기 전에 손을 뗀 보통의 탭) 선택(삭제·리사이즈 핸들 노출)이 전혀 안 되는
+    // 버그였음(2026-07-20, "클릭이 잘 안 된다"는 지적). 탭이면 선택만 해준다.
+    else { setSelectedId(d.id); }
     drag.current = null;
   };
   const onDelete = (e, s) => {
@@ -4253,10 +4296,14 @@ function WordSheet({ stack, onPush, onPop, onClose, onOpenRoot }) {
 /* 진입 시 목록을 쏟아내지 않고 허브(메뉴)에서 선택해 들어가는 구조.
    검색은 어느 화면에서든 최상단 — 입력을 시작하면 즉시 검색 결과로 전환. */
 const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1", "C2"];
-/* 형광펜 하이어라키 규칙(낮음→높음): 연두(A1·A2, 입문) → 옐로우(B1·B2, 중급) → 핑크(C1, 고급) → 블루(C2, 최상급).
+/* 형광펜 하이어라키 규칙(낮음→높음, 2026-07-20 재정렬): 핑크(A1·A2, 입문) → 옐로우(B1·B2, 중급) →
+   초록(C1, 고급) → 블루(C2, 최상급) — 앱 전체가 공유하는 성취 위계(streakHl·dueCardHl·scoreHl·뱃지
+   티어와 같은 순서: 핑크<옐로우<초록<블루)에 맞춘 것. 예전엔 연두<옐로우<핑크<블루라는 별도 순서를
+   써서, 레벨테스트 결과 화면처럼 이 위계(CEFR 밴드 칩)와 다른 위계(분석 텍스트의 좋음/나쁨 tier)가
+   같은 화면에 같이 뜰 때 같은 색(예: 핑크)이 서로 반대 의미로 쓰여 "임의로 칠해진 것처럼" 보였음.
    뱃지·레벨 강조·카테고리 카드 등 "레벨/난이도"를 표시하는 곳은 전부 이 규칙을 공유한다. */
 function cefrHl(lv) {
-  return lv === "A1" || lv === "A2" ? "green" : lv === "B1" || lv === "B2" ? "yellow" : lv === "C1" ? "pink" : "blue";
+  return lv === "A1" || lv === "A2" ? "pink" : lv === "B1" || lv === "B2" ? "yellow" : lv === "C1" ? "green" : "blue";
 }
 
 /* 복습까지 남은 일수 → 잉크 위계(잔디 히트맵과 같은 원리) — 긴박할수록(임박할수록) 더 진한 잉크. */
@@ -7174,29 +7221,62 @@ function LevelTestPartB({ onExit, onDone }) {
   );
 }
 
-/* 결과 분포 곡선 — 실제 정규분포를 그리지 않고, SVG 베지어 곡선
-   (M4,62 C60,62 80,8 130,8 C180,8 200,62 256,62) 위에 마커를 얹는 시각적 근사.
-   마커 x = 좌측여백(4) + (1 - pct/100) * 곡선폭(252) — pct(상위%)가 낮을수록(고급일수록) 오른쪽. */
+/* 결과 분포 곡선(2026-07-20 재설계) — 예전엔 얇은 윤곽선 하나만 그리고 그 위에 "초급/평균/고급"
+   라벨과 "나" 마커를 같이 얹어서, 마커가 라벨과 같은 자리에 겹쳐 글자가 뭉개져 보인다는 지적(스크린샷
+   으로 확인)이 있었음. 실제 가우시안 곡선을 그리고 ±1시그마 경계로 3영역을 채워 칠한 뒤(하이어라키
+   색 순서는 cefrHl과 동일: 핑크(초급)<옐로우(평균)<초록(고급)), 영역 라벨은 곡선 "아래"(x축 밑)에,
+   "나" 위치는 곡선 "위"의 알약 칩 + 연결선으로 완전히 분리해 항상 겹치지 않게 배치를 나눴다. */
+const LT_X0 = 4, LT_X1 = 256, LT_MEAN = 130, LT_SIGMA = 42, LT_BASE = 80, LT_AMP = 58;
 function ltCurveY(x) {
-  const t = Math.exp(-Math.pow(x - 130, 2) / (2 * 55 * 55));
-  return 62 - 54 * t;
+  const t = Math.exp(-Math.pow(x - LT_MEAN, 2) / (2 * LT_SIGMA * LT_SIGMA));
+  return LT_BASE - LT_AMP * t;
+}
+// pct(상위 %) → x좌표 — pct가 낮을수록(고급일수록) 오른쪽. 극단 백분위에서 마커·칩이 viewBox
+// 밖으로 잘리지 않게 클램프.
+function ltPctX(pct) { return Math.max(16, Math.min(244, LT_X0 + (1 - pct / 100) * (LT_X1 - LT_X0))); }
+function ltAreaPath(xa, xb) {
+  const steps = 20;
+  let d = `M${xa.toFixed(1)},${LT_BASE}`;
+  for (let i = 0; i <= steps; i++) {
+    const x = xa + (xb - xa) * (i / steps);
+    d += ` L${x.toFixed(1)},${ltCurveY(x).toFixed(1)}`;
+  }
+  return d + ` L${xb.toFixed(1)},${LT_BASE} Z`;
+}
+function ltOutlinePath() {
+  const steps = 40;
+  let d = "";
+  for (let i = 0; i <= steps; i++) {
+    const x = LT_X0 + (LT_X1 - LT_X0) * (i / steps);
+    d += (i === 0 ? "M" : " L") + `${x.toFixed(1)},${ltCurveY(x).toFixed(1)}`;
+  }
+  return d;
 }
 function LtDistCurve({ pct }) {
-  // 극단 백분위(1%·99%)에서 마커·"나" 라벨이 viewBox 밖으로 잘리지 않게 클램프
-  const x = Math.max(12, Math.min(248, 4 + (1 - pct / 100) * 252));
+  const x = ltPctX(pct);
   const y = ltCurveY(x);
-  // 초급/평균/고급 라벨을 곡선 바로 위에 얹기(가운데 쏠리게) — 평균은 꼭대기 바로 위, 초급/고급은 그보다 살짝 아래로 곡선을 따라감
-  const lblX = { 초급: 82, 평균: 130, 고급: 178 };
+  const b1 = ltPctX(84), b2 = ltPctX(16); // 하위 16%/상위 16% 경계(±1시그마 근사) — 3영역으로 나눔
+  // "나" 칩은 곡선 위쪽 8~58 구간에 고정해 아래 축 라벨(y=92)과는 항상 떨어지게 함
+  const pinY = Math.max(8, Math.min(58, y - 16));
   return (
-    <div className="qcard" style={{ padding: "10px 8px 4px" }}>
-      <svg width="100%" height="70" viewBox="0 0 260 70">
-        <path d="M4,62 C60,62 80,8 130,8 C180,8 200,62 256,62" fill="none" stroke="var(--accent)" strokeWidth="2" />
-        <line x1={x} y1="18" x2={x} y2="64" stroke="var(--ink)" strokeWidth="2" strokeDasharray="3,3" />
-        <circle cx={x} cy={y} r="4" fill="var(--ink)" />
-        <text x={x} y="11" fontSize="9" fontWeight="800" fill="var(--ink)" textAnchor="middle">나</text>
-        {Object.entries(lblX).map(([label, lx]) => (
-          <text key={label} x={lx} y={Math.max(9, ltCurveY(lx) - 10)} fontSize="9" fontWeight="700" fill="var(--muted)" textAnchor="middle">{label}</text>
-        ))}
+    <div className="qcard" style={{ padding: "10px 8px 6px" }}>
+      <svg width="100%" height="92" viewBox="0 0 260 92">
+        <path d={ltAreaPath(LT_X0, b1)} fill="var(--hi-pink-light)" />
+        <path d={ltAreaPath(b1, b2)} fill="var(--hi-yellow-light)" />
+        <path d={ltAreaPath(b2, LT_X1)} fill="var(--hi-green-light)" />
+        <line x1={LT_X0} y1={LT_BASE} x2={LT_X1} y2={LT_BASE} stroke="var(--card-border)" strokeWidth="1" />
+        <line x1={b1} y1={ltCurveY(b1)} x2={b1} y2={LT_BASE} stroke="var(--ink-2)" strokeWidth="1" strokeDasharray="2,2" opacity=".5" />
+        <line x1={b2} y1={ltCurveY(b2)} x2={b2} y2={LT_BASE} stroke="var(--ink-2)" strokeWidth="1" strokeDasharray="2,2" opacity=".5" />
+        <path d={ltOutlinePath()} fill="none" stroke="var(--ink)" strokeWidth="1.6" />
+        <text x={(LT_X0 + b1) / 2} y={LT_BASE + 12} fontSize="9.5" fontWeight="800" fill="var(--hi-pink-dark)" textAnchor="middle">초급</text>
+        <text x={(b1 + b2) / 2} y={LT_BASE + 12} fontSize="9.5" fontWeight="800" fill="var(--hi-yellow-dark)" textAnchor="middle">평균</text>
+        <text x={(b2 + LT_X1) / 2} y={LT_BASE + 12} fontSize="9.5" fontWeight="800" fill="var(--hi-green-dark)" textAnchor="middle">고급</text>
+        <line x1={x} y1={pinY + 9} x2={x} y2={y} stroke="var(--ink)" strokeWidth="1.6" strokeDasharray="2,2" />
+        <circle cx={x} cy={y} r="3.6" fill="var(--ink)" stroke="var(--bg)" strokeWidth="1.3" />
+        <g transform={`translate(${x},${pinY})`}>
+          <rect x="-13" y="-8" width="26" height="16" rx="8" fill="var(--ink)" />
+          <text x="0" y="0.5" fontSize="10" fontWeight="800" fill="var(--on-accent)" textAnchor="middle" dominantBaseline="middle">나</text>
+        </g>
       </svg>
     </div>
   );
@@ -7957,12 +8037,15 @@ function cmpVer(a, b) {
   return 0;
 }
 const WHATS_NEW = {
-  "v0.35.67": [
+  "v0.35.68": [
     "**구글 로그인**으로 기기를 바꿔도 학습 기록이 유지돼요.",
     "회화 대화방 목소리가 캐릭터 성별에 맞게, 속도도 원어민 대화 빠르기로 자연스러워졌어요.",
     "듣기 세션에서 틀린 문장은 **오답 노트**에 모여서 다시 복습할 수 있어요.",
     "홈 캐릭터를 탭하면 성장 안내를 볼 수 있어요.",
     "설정에서 **개인정보처리방침·이용약관·오픈소스 및 데이터 출처 확인**, **계정 삭제**가 가능해졌어요.",
+    "레벨 테스트 문제와 채점이 더 정확해졌어요 — 발음만으로 뜻이 드러나는 문제를 줄이고, 4지선다 오답 난이도를 높였어요.",
+    "레벨 테스트 결과의 분포 그래프가 더 보기 좋게 바뀌었어요.",
+    "홈 화면 스티커를 탭해서 고르기가 더 쉬워졌어요.",
     "그 밖에 화면 곳곳의 자잘한 버그를 다수 수정했어요.",
   ],
 };
