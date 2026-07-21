@@ -11,30 +11,30 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.92">
-<link rel="icon" href="img/icon-192.png?v=0.35.92" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.92">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.92" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.92" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.93">
+<link rel="icon" href="img/icon-192.png?v=0.35.93" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.93">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.93" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.93" as="font" type="font/woff2" crossorigin>
 <!-- React/ReactDOM/Babel 자체 호스팅(2026-07-20) — 예전엔 unpkg CDN 직결이라 unpkg 장애·차단
      환경(일부 회사망·국가망 포함)에서 앱이 통째로 안 떴음(root 렌더 0, 실측 재현). lottie/compromise/
      supabase와 동일한 "unpkg 의존 없이 lib/에 번들 복사" 원칙으로 통일. -->
-<script src="lib/react.production.min.js?v=0.35.92"></script>
-<script src="lib/react-dom.production.min.js?v=0.35.92"></script>
-<script src="lib/babel.min.js?v=0.35.92"></script>
+<script src="lib/react.production.min.js?v=0.35.93"></script>
+<script src="lib/react-dom.production.min.js?v=0.35.93"></script>
+<script src="lib/babel.min.js?v=0.35.93"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.92"></script>
+<script src="img/hero/lottie.min.js?v=0.35.93"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.92"></script>
+<script src="lib/compromise.min.js?v=0.35.93"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.92"></script>
-<script src="words.js?v=0.35.92"></script>
+<script src="lib/supabase.min.js?v=0.35.93"></script>
+<script src="words.js?v=0.35.93"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.92"></script><style>
+<script src="grammar_tags.js?v=0.35.93"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -46,27 +46,27 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.92") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.92") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.93") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.93") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.92") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.92") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.93") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.93") format("woff");}
 @font-face{
   font-family:"Luckiest Guy";
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LuckiestGuy-Regular.woff2?v=0.35.92") format("woff2");}
+  src:url("img/fonts/LuckiestGuy-Regular.woff2?v=0.35.93") format("woff2");}
 @font-face{
   font-family:"Pacifico";
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/Pacifico-Regular.woff2?v=0.35.92") format("woff2");}
+  src:url("img/fonts/Pacifico-Regular.woff2?v=0.35.93") format("woff2");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -399,7 +399,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    여기 한 줄이 걷기/달리기/날기 전부에 적용됨. */
 .hero-ground{position:absolute;left:0;right:0;top:79.55%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.92");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.93");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -1143,22 +1143,23 @@ textarea.pc-input{resize:none;line-height:1.5;}
    오히려 마이너스 간격이 남는 걸 실측으로 확인). 클래스 3개(.scroll .content.talk-room-screen)로
    맞춰서 뒤에서 확실히 덮어씀. */
 /* 입력창(absolute)이 문서 흐름에서 빠지므로 .talk-msgs가 입력창 밑까지 침범하지 않도록 그만큼
-   바닥 여백을 확보 — 입력창 위치(위 .talk-input-row)와 짝을 맞춰 키보드 유무별로 분기(2026-07-21). */
-.scroll .content.talk-room-screen{padding-bottom:calc(72px + env(safe-area-inset-bottom, 0px));}
-.scroll .content.talk-room-screen.kb{padding-bottom:calc(64px + var(--kb, 0px));}
+   바닥 여백을 확보 — 입력창 위치(아래 .talk-input-row)와 항상 짝이 맞도록 같은 --kb 기반 공식으로
+   계산(2026-07-21). max()로 "평소 100px 고정 / 키보드 뜨면 그 위로 자연 증가" 두 구간이 kb=38px
+   지점에서 이어짐(끊김·역전 없음). */
+.scroll .content.talk-room-screen{padding-bottom:max(100px, calc(var(--kb, 0px) + 62px));}
 /* 2026-07-18: sticky는 바깥 .scroll이 페이지 전체를 스크롤할 때 위치가 흔들려서(스크롤 컨테이너가
    .talk-msgs인지 .scroll인지 모호) absolute로 교체 — 컨테이닝 블록은 position:relative인 .app(최대
    520px 중앙 정렬)이라 자연히 그 폭에 맞음. 회화 대화방은 이제 항상 몰입 화면(탭바 숨김)이라
-   bottom이 곧 화면 맨 아래 기준. 키보드 없을 때는 40px 고정(홈 인디케이터·둥근 모서리 R값 대응,
-   2026-07-18) — 있을 때는 키보드 위 10px(kb가 40px보다 커지는 순간부터 kb+10이 40을 넘어서므로
-   max()로 자연히 전환됨). */
-/* 2026-07-21: 입력창과 키보드 사이 여백이 과하다는 지적(스크린샷) — 예전엔 bottom을 키보드 유무와
-   무관하게 max(40px, …)로 고정해, 키보드가 떠도 40px+ 위로 떠서 큰 빈 틈이 생겼음. 이제 입력창
-   포커스 여부(부모 .talk-room-screen.kb 클래스)로 분기: 키보드 없을 땐 홈 인디케이터 위 안전여백,
-   키보드 뜨면 키보드 바로 위 8px(요청대로 기존의 약 1/5). --kb는 오버레이형(구형 iOS) 대응 폴백. */
-.talk-input-row{display:flex;gap:8px;position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom, 0px) + 12px);
+   bottom이 곧 화면 맨 아래 기준. */
+/* 2026-07-21 두 차례 수정 — ① 키보드-입력창 여백이 과하다는 지적으로 kb+10px→kb+2px로 줄임(요청한
+   "1/5 수준"). ② 처음엔 이 분기를 React state(입력창 onFocus/onBlur로 클래스 토글)로 구현했는데,
+   "전송" 버튼을 탭하면 그 클릭이 입력창의 blur를 유발해 클릭 도중에 레이아웃이 바로 움직이는
+   경합이 생겼음(포인터를 누른 시점과 뗀 시점 사이에 버튼이 위로 튀어 탭이 씹힐 수 있음 — 헤드리스
+   브라우저 자동클릭으로 실제 재현). 순수 CSS의 --kb(App의 visualViewport 리스너가 키보드 애니메이션에
+   맞춰 비동기로 갱신 — 클릭 이벤트와 무관)만으로 되돌려 이 경합 자체를 원천 차단. 평소(kb=0)엔
+   40px 하한, 키보드가 뜨면 그 위 2px로 자연 전환(React state·별도 클래스 불필요). */
+.talk-input-row{display:flex;gap:8px;position:absolute;left:0;right:0;bottom:max(40px, calc(var(--kb, 0px) + 2px));
   background:var(--bg);padding:8px 7px 2px;z-index:2;}
-.talk-room-screen.kb .talk-input-row{bottom:max(8px, calc(var(--kb, 0px) + 8px));}
 .talk-input-row input{flex:1;min-width:0;border:0.5px solid var(--card-border);background:var(--surface);border-radius:0;padding:11px 13px;font:inherit;font-size:14px;outline:none;}
 .talk-input-row input:disabled{opacity:.5;}
 .talk-input-row button{background:var(--ink);color:var(--on-accent);border-radius:999px;padding:0 18px;font-weight:700;font-size:13px;flex:none;}
@@ -1261,7 +1262,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.92";const APP_BUILD = "2026-07-21"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.93";const APP_BUILD = "2026-07-21"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
    전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
@@ -1403,7 +1404,7 @@ async function autoLookupWord(key) {
       (enDef ? "(영어 정의: " + enDef + ")" : "") + (fallbackEx ? "(참고 예문: " + fallbackEx + ")" : "") +
       "에 대해 한국어 학습자용 정보를 아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요.\n" +
       '{"ko":"간결한 한국어 뜻(품사 표시 없이)","cefr":"A1~C2 중 난이도 추정 한 값","ex_en":"자연스러운 영어 예문 한 문장","ex_ko":"그 예문의 자연스러운 한국어 번역"}';
-    const resText = await geminiText(prompt);
+    const resText = await geminiText(prompt, 1024); // 짧은 4필드 응답 — 회화와 동일한 지연 단축 조치(2026-07-21)
     if (resText) {
       const cleaned = resText.replace(/^```json\s*|^```\s*|```\s*$/g, "").trim();
       const parsed = JSON.parse(cleaned);
@@ -1811,10 +1812,13 @@ async function geminiDirect(contents, generationConfig, models) {
   throw new Error("gemini error [" + attempts.join(", ") + "] last: " + lastDetail.slice(0, 250));
 }
 /* 텍스트 프롬프트 공용 진입점 — 키가 있으면 기기에서 직접, 없으면 프록시 경유
-   (Vercel 배포 URL이 설정돼 있으면 Vercel, 아니면 Cloudflare). 반환은 항상 응답 텍스트, 실패는 throw. */
-async function geminiText(prompt) {
+   (Vercel 배포 URL이 설정돼 있으면 Vercel, 아니면 Cloudflare). 반환은 항상 응답 텍스트, 실패는 throw.
+   maxTokens(2026-07-21): thinking 모델은 maxOutputTokens 예산이 클수록 지연시간도 늘어나는 경향이
+   있어(api/gemini.js 주석 참고), 짧은 응답이면 이 값을 낮춰서 넘기면 응답이 더 빨라짐 — 생략하면
+   서버 기본값(2048, 작문 첨삭처럼 긴 응답 기준)을 그대로 씀. */
+async function geminiText(prompt, maxTokens) {
   if (getGeminiKey()) {
-    return await geminiDirect([{ parts: [{ text: prompt }] }], { temperature: 0.4, maxOutputTokens: 1024 }, GEMINI_TEXT_MODELS);
+    return await geminiDirect([{ parts: [{ text: prompt }] }], { temperature: 0.4, maxOutputTokens: maxTokens || 1024 }, GEMINI_TEXT_MODELS);
   }
   // 30초 타임아웃(2026-07-20) — 모바일 망 전환 등으로 프록시 응답이 스톨하면 브라우저 자체
   // 타임아웃(수십 초~수 분)까지 loadingBot/loadingFb가 유지돼 회화 입력이 통째로 잠겨 보였음.
@@ -1823,7 +1827,9 @@ async function geminiText(prompt) {
   const timer = setTimeout(() => ctrl.abort(), 30000);
   let r;
   try {
-    r = await fetch(geminiEndpoint("gemini"), { method: "POST", headers: proxyHeaders(), body: JSON.stringify({ prompt }), signal: ctrl.signal });
+    const body = { prompt };
+    if (maxTokens) body.maxTokens = maxTokens;
+    r = await fetch(geminiEndpoint("gemini"), { method: "POST", headers: proxyHeaders(), body: JSON.stringify(body), signal: ctrl.signal });
   } catch (e) {
     throw new Error(e && e.name === "AbortError" ? "응답 시간 초과 — 네트워크 확인 후 다시 시도해주세요" : (e && e.message) || "network error");
   } finally { clearTimeout(timer); }
@@ -3590,7 +3596,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.92" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.93" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -5814,8 +5820,8 @@ function toggleFavSentence(en, ko, source) {
    2) 안 되면 기존처럼 통짜 텍스트를 정리해 직접 파싱.
    3) 그래도 안 되면 텍스트에서 {...} 블록만 정규식으로 뽑아 재시도.
    그래도 실패하면 원문 일부를 에러 메시지에 남겨 다음에 원인을 바로 알 수 있게 한다(막연한 "실패" 대신). */
-async function geminiJSON(prompt) {
-  const text = await geminiText(prompt);
+async function geminiJSON(prompt, maxTokens) {
+  const text = await geminiText(prompt, maxTokens);
   if (!text) throw new Error("gemini empty response");
   const fences = [...text.matchAll(/```(?:json)?\s*([\s\S]*?)```/g)];
   if (fences.length) {
@@ -5889,7 +5895,9 @@ function talkNextLine(persona, history) {
     "\n위 상황에 이어서 당신(상대 역할)이 할 다음 대사를 한두 문장으로 자연스럽게 영어로 말하세요." +
     "\n아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요." +
     '\n{"en":"영어 대사","ko":"그 대사의 자연스러운 한국어 번역"}';
-  return geminiJSON(prompt);
+  // maxTokens 1024(2026-07-21) — en/ko 2개 짧은 필드뿐이라 서버 기본 2048보다 낮춰서 응답속도 개선
+  // (과거 SOS/회화 응답에 1024가 안전하다고 이미 검증된 값 — api/gemini.js 주석 참고).
+  return geminiJSON(prompt, 1024);
 }
 /* 사용자 입력은 순수 영어·순수 한국어·한영 혼용 어느 쪽이든 올 수 있음(2026-07-17, 한국어로
    말해도 되도록 지원). 세 경우 모두 한 번의 호출로 처리 — 순수 영어는 기존처럼 문법 교정,
@@ -5917,7 +5925,10 @@ function talkFeedbackAndNext(persona, history, userText) {
     "\n[2] 상대 역할의 다음 대사 — 사용자가 위 corrected 문장으로 말했다고 가정하고, 대화에 자연스럽게 이어서 상대가 할 다음 대사를 한두 문장 영어로(bot_en), 그 자연스러운 한국어 번역도(bot_ko)." +
     "\n\n아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요." +
     '\n{"ok":true 또는 false,"note_ko":"짧은 한국어 코멘트 한 줄","corrected":"교정 또는 번역된 영어 문장","user_ko":"원문 뜻의 한국어 번역","bot_en":"상대의 다음 영어 대사","bot_ko":"그 대사의 자연스러운 한국어 번역"}';
-  return geminiJSON(prompt);
+  // maxTokens 1024(2026-07-21) — 필드 5개 다 짧은 문장급이라 서버 기본 2048은 과함. thinking 모델은
+  // 예산이 클수록 더 오래 "생각"하는 경향이 있어(과금은 실사용량만 되지만 지연시간은 예산에 비례),
+  // 회화 첨삭 응답이 6초 이상 걸리던 원인 중 하나 — 과거 이미 안전 검증된 1024로 낮춰 단축.
+  return geminiJSON(prompt, 1024);
 }
 
 /* ---------- 회화 탭 — 작문 첨삭 (PLAN 4.5) ----------
@@ -6483,7 +6494,6 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   const [voiceMode, setVoiceMode] = useState(false);
   const [listening, setListening] = useState(false);
   const [transcribing, setTranscribing] = useState(false);
-  const [kbUp, setKbUp] = useState(false); // 입력창 포커스(=키보드 표시) 여부 — 입력창 하단 여백을 분기(2026-07-21)
   const [, bump] = useState(0);
   const scrollRef = useRef(null);
   const inputRef = useRef(null);
@@ -6742,7 +6752,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   }
 
   return (
-    <div className={"content talk-room-screen" + (kbUp ? " kb" : "")}>
+    <div className="content talk-room-screen">
       <div className="talk-head">
         <button className="back" onClick={onExit} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
         <div style={{ flex: 1 }}>
@@ -6845,7 +6855,6 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
         ) : (
           <input ref={inputRef} value={input} onChange={e => setInput(e.target.value)} placeholder="영어로 답해보세요 (막히면 한국어도 괜찮아요)"
             disabled={awaitingAck || loadingBot || loadingFb}
-            onFocus={() => setKbUp(true)} onBlur={() => setKbUp(false)}
             onKeyDown={e => { if (e.key === "Enter") send(); }}
             autoCapitalize="none" autoComplete="off" autoCorrect="off" />
         )}
@@ -7113,7 +7122,7 @@ function TalkSOS({ onBack, onOpenWord }) {
         "\n아래 JSON 형식으로만 응답하세요. 다른 설명 없이 JSON 객체 하나만 출력하세요." +
         '\n{"en":"번역된 영어 문장","vocab":[{"word":"사전 원형","ko":"그 단어의 뜻(1~3단어)"}]}' +
         "\n\n한국어: " + text;
-      const r = await geminiJSON(prompt);
+      const r = await geminiJSON(prompt, 1024); // 짧은 응답이라 1024로 낮춰 지연 단축(2026-07-21, 회화 지연 개선과 동일 조치)
       setResult((r.en || "").trim());
       setVocab(Array.isArray(r.vocab) ? r.vocab.filter(v => v && v.word) : []);
       setResultKo(text);
@@ -9585,7 +9594,7 @@ const WHATS_NEW = {
   "v0.35.84": [
     "**커스텀 스티커 만들기**가 생겼어요 — 문구를 적어 폰트·프레임(네모/원형/자유형)·색을 골라 나만의 스티커를 만들어 노트에 붙여보세요.",
   ],
-  "v0.35.92": [
+  "v0.35.93": [
     "회화 대화방에서 다른 대화 상대로 넘어가도 이전 대화가 겹쳐 보이던 버그를 고쳤어요.",
     "회화 속도를 다시 조정했어요 — 튜터는 더 천천히, 의사·직장동료는 살짝 빠르게, 나머지는 설정 그대로.",
     "**오늘 나눈 회화를 통째로 이어 들을 수 있는 기능**이 생겼어요.",
