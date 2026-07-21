@@ -11,30 +11,30 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.91">
-<link rel="icon" href="img/icon-192.png?v=0.35.91" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.91">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.91" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.91" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.92">
+<link rel="icon" href="img/icon-192.png?v=0.35.92" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.92">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.92" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.92" as="font" type="font/woff2" crossorigin>
 <!-- React/ReactDOM/Babel 자체 호스팅(2026-07-20) — 예전엔 unpkg CDN 직결이라 unpkg 장애·차단
      환경(일부 회사망·국가망 포함)에서 앱이 통째로 안 떴음(root 렌더 0, 실측 재현). lottie/compromise/
      supabase와 동일한 "unpkg 의존 없이 lib/에 번들 복사" 원칙으로 통일. -->
-<script src="lib/react.production.min.js?v=0.35.91"></script>
-<script src="lib/react-dom.production.min.js?v=0.35.91"></script>
-<script src="lib/babel.min.js?v=0.35.91"></script>
+<script src="lib/react.production.min.js?v=0.35.92"></script>
+<script src="lib/react-dom.production.min.js?v=0.35.92"></script>
+<script src="lib/babel.min.js?v=0.35.92"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.91"></script>
+<script src="img/hero/lottie.min.js?v=0.35.92"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.91"></script>
+<script src="lib/compromise.min.js?v=0.35.92"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.91"></script>
-<script src="words.js?v=0.35.91"></script>
+<script src="lib/supabase.min.js?v=0.35.92"></script>
+<script src="words.js?v=0.35.92"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.91"></script><style>
+<script src="grammar_tags.js?v=0.35.92"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -46,27 +46,27 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.91") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.91") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.92") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.92") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.91") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.91") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.92") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.92") format("woff");}
 @font-face{
   font-family:"Luckiest Guy";
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LuckiestGuy-Regular.woff2?v=0.35.91") format("woff2");}
+  src:url("img/fonts/LuckiestGuy-Regular.woff2?v=0.35.92") format("woff2");}
 @font-face{
   font-family:"Pacifico";
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/Pacifico-Regular.woff2?v=0.35.91") format("woff2");}
+  src:url("img/fonts/Pacifico-Regular.woff2?v=0.35.92") format("woff2");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -399,7 +399,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    여기 한 줄이 걷기/달리기/날기 전부에 적용됨. */
 .hero-ground{position:absolute;left:0;right:0;top:79.55%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.91");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.92");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -1077,7 +1077,11 @@ textarea.pc-input{resize:none;line-height:1.5;}
 /* overflow-x:hidden(2026-07-20) — 첨삭 실패 에러 문구(프록시 JSON이 통째로 붙는 긴 문자열) 등
    어떤 자식이 삐져나와도 대화창에 가로스크롤이 생기지 않게 하드 컷. 아래 .empty-note 줄바꿈
    보호와 이중 방어. */
-.talk-msgs{display:flex;flex-direction:column;gap:10px;padding:6px 4px;background:var(--bg);
+/* 좌우 패딩 4px→14px(2026-07-21) — 유저 말풍선 꼬리(::after, right:-12px로 12px 튀어나옴)와 봇
+   말풍선 꼬리(left:-7px)가, 가로스크롤 방지용 overflow-x:hidden에 잘려 "말풍선 우측이 짤려 보이던"
+   버그의 원인. 꼬리가 튀어나오는 폭(12px)보다 패딩을 크게 줘서 클립 영역 안쪽에 들어오게 함
+   (padding-box 안이면 안 잘림). 가로스크롤 하드컷은 그대로 유지. */
+.talk-msgs{display:flex;flex-direction:column;gap:10px;padding:6px 14px;background:var(--bg);
   flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;}
 .talk-msgs .empty-note{word-break:break-word;overflow-wrap:anywhere;min-width:0;}
 .talk-msg-row{display:flex;align-items:flex-end;gap:8px;min-width:0;}
@@ -1138,15 +1142,23 @@ textarea.pc-input{resize:none;line-height:1.5;}
    (2026-07-18 발견 — flex:1이 그 잘못된 40px 기준으로 채워져서 .talk-msgs가 입력창 밑까지 침범,
    오히려 마이너스 간격이 남는 걸 실측으로 확인). 클래스 3개(.scroll .content.talk-room-screen)로
    맞춰서 뒤에서 확실히 덮어씀. */
-.scroll .content.talk-room-screen{padding-bottom:calc(100px + var(--kb, 0px));}
+/* 입력창(absolute)이 문서 흐름에서 빠지므로 .talk-msgs가 입력창 밑까지 침범하지 않도록 그만큼
+   바닥 여백을 확보 — 입력창 위치(위 .talk-input-row)와 짝을 맞춰 키보드 유무별로 분기(2026-07-21). */
+.scroll .content.talk-room-screen{padding-bottom:calc(72px + env(safe-area-inset-bottom, 0px));}
+.scroll .content.talk-room-screen.kb{padding-bottom:calc(64px + var(--kb, 0px));}
 /* 2026-07-18: sticky는 바깥 .scroll이 페이지 전체를 스크롤할 때 위치가 흔들려서(스크롤 컨테이너가
    .talk-msgs인지 .scroll인지 모호) absolute로 교체 — 컨테이닝 블록은 position:relative인 .app(최대
    520px 중앙 정렬)이라 자연히 그 폭에 맞음. 회화 대화방은 이제 항상 몰입 화면(탭바 숨김)이라
    bottom이 곧 화면 맨 아래 기준. 키보드 없을 때는 40px 고정(홈 인디케이터·둥근 모서리 R값 대응,
    2026-07-18) — 있을 때는 키보드 위 10px(kb가 40px보다 커지는 순간부터 kb+10이 40을 넘어서므로
    max()로 자연히 전환됨). */
-.talk-input-row{display:flex;gap:8px;position:absolute;left:0;right:0;bottom:max(40px, calc(var(--kb, 0px) + 10px));
+/* 2026-07-21: 입력창과 키보드 사이 여백이 과하다는 지적(스크린샷) — 예전엔 bottom을 키보드 유무와
+   무관하게 max(40px, …)로 고정해, 키보드가 떠도 40px+ 위로 떠서 큰 빈 틈이 생겼음. 이제 입력창
+   포커스 여부(부모 .talk-room-screen.kb 클래스)로 분기: 키보드 없을 땐 홈 인디케이터 위 안전여백,
+   키보드 뜨면 키보드 바로 위 8px(요청대로 기존의 약 1/5). --kb는 오버레이형(구형 iOS) 대응 폴백. */
+.talk-input-row{display:flex;gap:8px;position:absolute;left:0;right:0;bottom:calc(env(safe-area-inset-bottom, 0px) + 12px);
   background:var(--bg);padding:8px 7px 2px;z-index:2;}
+.talk-room-screen.kb .talk-input-row{bottom:max(8px, calc(var(--kb, 0px) + 8px));}
 .talk-input-row input{flex:1;min-width:0;border:0.5px solid var(--card-border);background:var(--surface);border-radius:0;padding:11px 13px;font:inherit;font-size:14px;outline:none;}
 .talk-input-row input:disabled{opacity:.5;}
 .talk-input-row button{background:var(--ink);color:var(--on-accent);border-radius:999px;padding:0 18px;font-weight:700;font-size:13px;flex:none;}
@@ -1249,7 +1261,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.91";const APP_BUILD = "2026-07-20"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.92";const APP_BUILD = "2026-07-21"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
    전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
@@ -3578,7 +3590,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.91" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.92" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -6471,6 +6483,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   const [voiceMode, setVoiceMode] = useState(false);
   const [listening, setListening] = useState(false);
   const [transcribing, setTranscribing] = useState(false);
+  const [kbUp, setKbUp] = useState(false); // 입력창 포커스(=키보드 표시) 여부 — 입력창 하단 여백을 분기(2026-07-21)
   const [, bump] = useState(0);
   const scrollRef = useRef(null);
   const inputRef = useRef(null);
@@ -6604,13 +6617,20 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
       if (!aliveRef.current) return; // 방을 나간 뒤 도착한 첨삭 — 음성 재생·대기 상태 진입 모두 금지(2026-07-20)
       const fb = { ok: r.ok, note_ko: r.note_ko || "", corrected: r.corrected || text, user_ko: r.user_ko || "" };
       setMessages(m => m.map((msg, i) => (i === msgIndex ? { ...msg, feedback: fb, ko: fb.user_ko || "" } : msg)));
-      // 첨삭 문장(더 자연스러운 표현) 자동 1회 재생(2026-07-20) — 여기서 한 번만 호출되므로
-      // 리렌더될 때마다 다시 읽어주는 일 없이 정확히 "도착한 순간"에만 재생됨. 이후 다시 듣고 싶으면
-      // 말풍선 옆 스피커 아이콘으로 재생.
-      if (!fb.ok && fb.corrected) speakText(fb.corrected);
+      // 상대의 다음 대사를 곧바로 이어 붙임(2026-07-21) — 예전엔 awaitingAck로 입력창을 잠그고
+      // 사용자가 "확인"을 눌러야만 다음 대사가 떴는데, 매 턴 입력이 잠겨 "한번 보내면 먹통"으로
+      // 느껴진다는 지적. 첨삭 카드는 그대로 남겨두되(원하면 스피커로 다시 듣기) 대화는 끊기지 않게
+      // 자동 진행하고, 입력창은 계속 열어둔다. 첨삭 문장 자동재생은 상대 대사 재생과 겹쳐 서로를
+      // 끊으므로 제거 — 첨삭은 카드 옆 스피커 아이콘으로 언제든 다시 들을 수 있음.
       const botEn = (r.bot_en || "").trim();
-      if (botEn) pendingBotLineRef.current = { en: botEn, ko: (r.bot_ko || "").trim() };
-      setAwaitingAck(true);
+      if (botEn) {
+        const botMsg = { role: "bot", en: botEn, ko: (r.bot_ko || "").trim(), at: Date.now() };
+        setMessages(m => [...m, botMsg]);
+        speakText(botMsg.en, personaSpeakRate(persona), persona.accent, persona.gender);
+      } else {
+        // 프리페치된 다음 대사가 없을 때만(구형 응답 등) 별도 왕복으로 이어감.
+        fetchBotLine(histBefore.concat([{ role: "user", en: text, feedback: fb }]));
+      }
     } catch (e) {
       // 예전엔 실패해도 조용히 { ok:true }로 덮어써서 "좋아요!"가 뜨고 넘어갔음 — 실제 문법 오류가
       // 있어도 사용자가 피드백을 전혀 못 받는 버그였음(2026-07-19, Gemini 강제 실패로 재현 확인).
@@ -6722,7 +6742,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
   }
 
   return (
-    <div className="content talk-room-screen">
+    <div className={"content talk-room-screen" + (kbUp ? " kb" : "")}>
       <div className="talk-head">
         <button className="back" onClick={onExit} aria-label="뒤로"><Icon name="chevron_left" size={24} /></button>
         <div style={{ flex: 1 }}>
@@ -6794,7 +6814,6 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
                     </div>
                   )}
                   {m.feedback.note_ko && <div>{m.feedback.note_ko}</div>}
-                  {awaitingAck && i === messages.length - 1 && <button onClick={ackFeedback}>확인</button>}
                 </div>
               )}
             </div>
@@ -6826,6 +6845,7 @@ function TalkRoom({ persona, onExit, onOpenWord }) {
         ) : (
           <input ref={inputRef} value={input} onChange={e => setInput(e.target.value)} placeholder="영어로 답해보세요 (막히면 한국어도 괜찮아요)"
             disabled={awaitingAck || loadingBot || loadingFb}
+            onFocus={() => setKbUp(true)} onBlur={() => setKbUp(false)}
             onKeyDown={e => { if (e.key === "Enter") send(); }}
             autoCapitalize="none" autoComplete="off" autoCorrect="off" />
         )}
@@ -9565,7 +9585,7 @@ const WHATS_NEW = {
   "v0.35.84": [
     "**커스텀 스티커 만들기**가 생겼어요 — 문구를 적어 폰트·프레임(네모/원형/자유형)·색을 골라 나만의 스티커를 만들어 노트에 붙여보세요.",
   ],
-  "v0.35.91": [
+  "v0.35.92": [
     "회화 대화방에서 다른 대화 상대로 넘어가도 이전 대화가 겹쳐 보이던 버그를 고쳤어요.",
     "회화 속도를 다시 조정했어요 — 튜터는 더 천천히, 의사·직장동료는 살짝 빠르게, 나머지는 설정 그대로.",
     "**오늘 나눈 회화를 통째로 이어 들을 수 있는 기능**이 생겼어요.",
