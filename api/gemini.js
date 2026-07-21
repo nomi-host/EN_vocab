@@ -92,17 +92,23 @@ module.exports = async (req, res) => {
   const prompt = (req.body && req.body.prompt || "").toString();
   if (!prompt || prompt.length > 4000) return res.status(400).json({ error: "invalid prompt" });
 
+  /* maxOutputTokens는 3.x 세대 Flash의 "thinking" 토큰과 합산 예산 — 300 정도로 짧게 잡으면
+     thinking이 대부분을 먹어 실제 답변이 문장 중간에서 끊김(2026-07-17 실측, SOS 번역이 "It was
+     so frustrating because it hasn"처럼 잘려서 나옴). 1024로 올렸다가, 작문 첨삭(문장별 원문+
+     교정문+코멘트가 여러 개 붙는 응답)에서도 같은 증상으로 또 잘려서 2048로 재상향(2026-07-18).
+     이후 이 2048을 회화·SOS처럼 원래 1024로 충분했던 짧은 응답에도 그대로 써왔는데(모든 호출이
+     이 한 엔드포인트를 공유), thinking 모델은 예산이 클수록 실제로 더 오래·더 많이 "생각"하는
+     경향이 있어(비용은 실사용 토큰만 과금되지만 지연시간은 예산 상한에 비례) 회화 첨삭 응답이
+     6초 이상 걸리는 원인이 됐음(2026-07-21 리포트). 클라이언트가 호출 종류별로 필요한 만큼만
+     요청하도록 maxTokens를 옵션으로 받고, 안 보내면 기존 2048(작문 첨삭 등 긴 응답용) 유지 —
+     회화/SOS 쪽은 index.html에서 1024(과거 이 값으로 이미 안전성 검증됨)를 명시해서 보낸다.
+     256~2048 사이로 클램프해 남용 방지. */
+  const maxTokens = Math.max(256, Math.min(2048, parseInt(req.body && req.body.maxTokens, 10) || 2048));
+
   try {
-    /* maxOutputTokens는 3.x 세대 Flash의 "thinking" 토큰과 합산 예산 — 300 정도로 짧게
-       잡으면 thinking이 대부분을 먹어 실제 답변이 문장 중간에서 끊김(2026-07-17 실측,
-       SOS 번역이 "It was so frustrating because it hasn"처럼 잘려서 나옴). 1024로 올렸다가,
-       작문 첨삭(문장별 원문+교정문+코멘트가 여러 개 붙는 응답)에서도 같은 증상으로 또 잘려서
-       2048로 재상향(2026-07-18, "첨삭을 불러오지 못했어요" 원인 확인 — geminiJSON이 닫는 괄호
-       없는 잘린 JSON은 정규식 폴백으로도 못 살림). 짧은 SOS/대화 응답엔 여유일 뿐 비용 영향 없음
-       (실제 쓴 토큰만 과금, cap은 상한선일 뿐). */
     const text = await callGeminiWithFallback(
       [{ parts: [{ text: prompt }] }],
-      { temperature: 0.4, maxOutputTokens: 2048 });
+      { temperature: 0.4, maxOutputTokens: maxTokens });
     return res.status(200).json({ text });
   } catch (e) {
     return res.status(502).json({ error: (e && e.message) || "gemini upstream error" });
