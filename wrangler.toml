@@ -1,7 +1,10 @@
-name = "noenglish-app"
+# 실제 배포되는 워커 이름과 일치시킴(2026-07-21) — Cloudflare 대시보드에서 이 저장소를 git 연결해
+# 배포하는 워커의 이름이 "no-english"인데, 여기 name이 옛 "noenglish-app"으로 남아 있어 로컬에서
+# `wrangler deploy`를 치면 엉뚱한(존재하지 않는) 워커로 배포되는 불일치가 있었음. 실서비스 워커와 통일.
+name = "no-english"
 compatibility_date = "2026-07-15"
 
 # 정적 사이트(index.html·words.js·manifest.json·img/) 배포용.
-# Gemini/TTS 프록시(Worker)는 별도(worker/wrangler.toml, 프로젝트명 noenglish-proxy).
+# Gemini/TTS 프록시(Worker)는 별도였으나 백엔드는 Vercel(api/)로 통합됨 — 구 프록시 워커(noenglish-proxy)는 폐기 예정.
 [assets]
 directory = "."
