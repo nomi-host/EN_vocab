@@ -11,30 +11,30 @@
 <meta http-equiv="Expires" content="0">
 <title>NoEnglish — 영포자 탈출</title>
 <!-- 캐시 무효화용 버전 태그. APP_VERSION을 올릴 때 이 ?v= 값도 반드시 같이 올릴 것(같은 날 여러 번 배포해도 캐시가 갱신되도록 날짜가 아닌 버전 기준) -->
-<link rel="manifest" href="manifest.json?v=0.35.97">
-<link rel="icon" href="img/icon-192.png?v=0.35.97" type="image/png">
-<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.97">
-<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.97" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.97" as="font" type="font/woff2" crossorigin>
+<link rel="manifest" href="manifest.json?v=0.35.98">
+<link rel="icon" href="img/icon-192.png?v=0.35.98" type="image/png">
+<link rel="apple-touch-icon" href="img/icon-192.png?v=0.35.98">
+<link rel="preload" href="img/fonts/LINESeedKR-Regular.woff2?v=0.35.98" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/fonts/LINESeedKR-Bold.woff2?v=0.35.98" as="font" type="font/woff2" crossorigin>
 <!-- React/ReactDOM/Babel 자체 호스팅(2026-07-20) — 예전엔 unpkg CDN 직결이라 unpkg 장애·차단
      환경(일부 회사망·국가망 포함)에서 앱이 통째로 안 떴음(root 렌더 0, 실측 재현). lottie/compromise/
      supabase와 동일한 "unpkg 의존 없이 lib/에 번들 복사" 원칙으로 통일. -->
-<script src="lib/react.production.min.js?v=0.35.97"></script>
-<script src="lib/react-dom.production.min.js?v=0.35.97"></script>
-<script src="lib/babel.min.js?v=0.35.97"></script>
+<script src="lib/react.production.min.js?v=0.35.98"></script>
+<script src="lib/react-dom.production.min.js?v=0.35.98"></script>
+<script src="lib/babel.min.js?v=0.35.98"></script>
 <!-- Lottie(lottie-web) 자체 호스팅 — 홈 히어로 캐릭터(고양이 걷기)·스마일 스티커 렌더용.
      unpkg 외부 의존을 늘리지 않고 오프라인/PWA에서도 뜨도록 img/hero/에 번들 복사해 참조. -->
-<script src="img/hero/lottie.min.js?v=0.35.97"></script>
+<script src="img/hero/lottie.min.js?v=0.35.98"></script>
 <!-- compromise(POS 파서, MIT) 자체 호스팅 — 문장 단위 문법 태그(관계사·수동태·가정법 등, docs/PLAN.md 2.5) 탐지용.
      wink-nlp는 브라우저 번들·CDN 진입점이 없고 별도 모델 패키지 설치가 강제돼 기각(2.5 참고) — compromise만
      UMD 번들이 있어 이 빌드 없는 구조에 맞음. lottie와 동일하게 unpkg 의존 없이 lib/에 번들 복사해 참조. -->
-<script src="lib/compromise.min.js?v=0.35.97"></script>
+<script src="lib/compromise.min.js?v=0.35.98"></script>
 <!-- Supabase JS(MIT) 자체 호스팅 — 베타 백엔드(로그인+DB+RLS, docs/PLAN.md 6.6) 클라이언트.
      unpkg 직결 대신 lottie/compromise와 동일하게 lib/에 UMD 번들 복사(오프라인/PWA 대응 원칙 유지). -->
-<script src="lib/supabase.min.js?v=0.35.97"></script>
-<script src="words.js?v=0.35.97"></script>
+<script src="lib/supabase.min.js?v=0.35.98"></script>
+<script src="words.js?v=0.35.98"></script>
 <!-- 문법 태그 마스터(docs/PLAN.md 2.5) — pipeline/merge_grammar.js가 생성, 직접 수정 금지 -->
-<script src="grammar_tags.js?v=0.35.97"></script><style>
+<script src="grammar_tags.js?v=0.35.98"></script><style>
 /* ============================================================================
    NoEnglish — 디자인 토큰 (라이트 온리 · 레트로 노트 두들 톤)
    폰트: LINE Seed KR (SIL OFL 1.1, img/fonts/LICENSE.txt) — Regular/Bold 2웨이트만 자체 호스팅.
@@ -46,27 +46,27 @@
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.97") format("woff2"),
-      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.97") format("woff");}
+  src:url("img/fonts/LINESeedKR-Regular.woff2?v=0.35.98") format("woff2"),
+      url("img/fonts/LINESeedKR-Regular.woff?v=0.35.98") format("woff");}
 @font-face{
   font-family:"LINE Seed KR";
   font-weight:700;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.97") format("woff2"),
-      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.97") format("woff");}
+  src:url("img/fonts/LINESeedKR-Bold.woff2?v=0.35.98") format("woff2"),
+      url("img/fonts/LINESeedKR-Bold.woff?v=0.35.98") format("woff");}
 @font-face{
   font-family:"Luckiest Guy";
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/LuckiestGuy-Regular.woff2?v=0.35.97") format("woff2");}
+  src:url("img/fonts/LuckiestGuy-Regular.woff2?v=0.35.98") format("woff2");}
 @font-face{
   font-family:"Pacifico";
   font-weight:400;
   font-style:normal;
   font-display:swap;
-  src:url("img/fonts/Pacifico-Regular.woff2?v=0.35.97") format("woff2");}
+  src:url("img/fonts/Pacifico-Regular.woff2?v=0.35.98") format("woff2");}
 :root{
   --bg:#FFFAF1;            /* 옅은 노트 베이지(2026-07-15 2차 로테이션 — 이전 카드색을 배경으로) */
   --surface:#FFFDF8;       /* 배경보다 밝은 크림 (카드/시트) — 한 톤 더 밝게 */
@@ -399,7 +399,7 @@ button{font:inherit;color:inherit;cursor:pointer;border:none;background:none;}
    여기 한 줄이 걷기/달리기/날기 전부에 적용됨. */
 .hero-ground{position:absolute;left:0;right:0;top:79.55%;height:13.64%;overflow:hidden;pointer-events:none;z-index:1;}
 .hero-ground-track{position:absolute;left:0;top:0;bottom:0;width:200%;
-  background-image:url("img/hero/ground.png?v=0.35.97");background-repeat:repeat-x;background-size:50% 100%;
+  background-image:url("img/hero/ground.png?v=0.35.98");background-repeat:repeat-x;background-size:50% 100%;
   animation:heroGround var(--groundDur,7s) linear infinite;}
 @keyframes heroGround{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 /* 3단계(날기) 전용 — 점프 인트로 동안은 땅 정지, 날기 시작하며 서서히 가속(ease-in)해 목표 속도로
@@ -1277,7 +1277,7 @@ textarea.pc-input{resize:none;line-height:1.5;}
 <script type="text/babel" data-presets="react">
 const { useState, useMemo, useCallback, useEffect, useRef } = React;
 
-const APP_VERSION = "v0.35.97";const APP_BUILD = "2026-07-21"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
+const APP_VERSION = "v0.35.98";const APP_BUILD = "2026-07-21"; // APP_VERSION을 바꿀 때 <head>의 ?v= 캐시 무효화 태그도 같이 갱신할 것
 
 /* 데모 시드(SRS·즐겨찾기·레벨테스트 "가짜 3개월 학습자" 데이터)를 tester 전용으로 분리(2026-07-20).
    전엔 이 시드가 첫 실행 시 실사용자에게도 무조건 섞여 나가서, 실제 신규 가입자가 이미 학습한 척하는
@@ -1826,14 +1826,45 @@ async function geminiDirect(contents, generationConfig, models) {
   }
   throw new Error("gemini error [" + attempts.join(", ") + "] last: " + lastDetail.slice(0, 250));
 }
+/* 베타 기간 1인당 하루 AI 호출 상한(2026-07-21) — 회화/SOS/작문/사전자동조회/발음(STT) 전부 합산.
+   공유 무료 API 예산(베타 10명 기준 총 2만원)을 개인 폭주 사용으로부터 보호하기 위한 최소한의
+   안전장치 — localStorage 기반이라 지우면 우회 가능하지만, 신뢰 기반 소규모 베타에는 충분하고
+   서버(Supabase) 강제는 정식 유료 오픈 때 별도로 구현할 것(PLAN 참고). TTS는 별도 서비스/예산이라
+   이 상한에서 제외. */
+const GEMINI_DAILY_CAP = 40;
+const GEMINI_DAILY_KEY = "en_gemini_daily_v1";
+function geminiDailyState() {
+  const today = new Date().toISOString().slice(0, 10);
+  try {
+    const raw = JSON.parse(localStorage.getItem(GEMINI_DAILY_KEY) || "null");
+    if (raw && raw.date === today) return raw;
+  } catch (e) {}
+  return { date: today, count: 0 };
+}
+function geminiDailyRemaining() {
+  return Math.max(0, GEMINI_DAILY_CAP - geminiDailyState().count);
+}
+function geminiDailyCheck() {
+  if (geminiDailyRemaining() <= 0) {
+    throw new Error("오늘 AI 기능(회화·SOS·작문·발음 등) 사용 한도를 다 쓰셨어요. 내일 다시 이용해 주세요 — 베타 기간 중 API 비용 보호를 위한 제한이에요.");
+  }
+}
+function geminiDailyRecord() {
+  const s = geminiDailyState();
+  s.count += 1;
+  try { localStorage.setItem(GEMINI_DAILY_KEY, JSON.stringify(s)); } catch (e) {}
+}
 /* 텍스트 프롬프트 공용 진입점 — 키가 있으면 기기에서 직접, 없으면 프록시 경유
    (Vercel 배포 URL이 설정돼 있으면 Vercel, 아니면 Cloudflare). 반환은 항상 응답 텍스트, 실패는 throw.
    maxTokens(2026-07-21): thinking 모델은 maxOutputTokens 예산이 클수록 지연시간도 늘어나는 경향이
    있어(api/gemini.js 주석 참고), 짧은 응답이면 이 값을 낮춰서 넘기면 응답이 더 빨라짐 — 생략하면
    서버 기본값(2048, 작문 첨삭처럼 긴 응답 기준)을 그대로 씀. */
 async function geminiText(prompt, maxTokens) {
+  geminiDailyCheck();
   if (getGeminiKey()) {
-    return await geminiDirect([{ parts: [{ text: prompt }] }], { temperature: 0.4, maxOutputTokens: maxTokens || 1024 }, GEMINI_TEXT_MODELS);
+    const text = await geminiDirect([{ parts: [{ text: prompt }] }], { temperature: 0.4, maxOutputTokens: maxTokens || 1024 }, GEMINI_TEXT_MODELS);
+    geminiDailyRecord();
+    return text;
   }
   const body = { prompt };
   if (maxTokens) body.maxTokens = maxTokens;
@@ -1867,6 +1898,7 @@ async function geminiText(prompt, maxTokens) {
   }
   const data = await r.json().catch(() => null);
   if (!r.ok || !data || !data.text) throw new Error((data && data.error) || ("http " + r.status));
+  geminiDailyRecord();
   return (data.text || "").trim();
 }
 
@@ -3703,7 +3735,7 @@ const CHAR_ART_READY = false;
 const CHARACTERS = [
   // char1(고양이유령)만 실제 아트 완성 — thumb=사용자 제작 아이콘(img/hero/ghost_thumbnail.png) 그대로 사용
   // (임의 크롭 금지). 홈 히어로는 항상 이 고양이 걷기 Lottie로 표시. 나머지는 아직 색상 스와치.
-  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.97" },
+  { k: "char1", label: "고양이유령", shape: "circle", accent: "green", thumb: "img/hero/ghost_thumbnail.png?v=0.35.98" },
   { k: "char2", label: "캐릭터 2", shape: "tri", accent: "pink", comingSoon: true },
   { k: "char3", label: "캐릭터 3", shape: "square", accent: "yellow", comingSoon: true },
   { k: "char4", label: "캐릭터 4", shape: "flower", accent: "blue", comingSoon: true },
@@ -6606,9 +6638,10 @@ function blobToBase64(blob) {
   });
 }
 async function transcribeAudio(blob, mimeType) {
+  geminiDailyCheck();
   const audio = await blobToBase64(blob);
   if (getGeminiKey()) {
-    return await geminiDirect(
+    const text = await geminiDirect(
       [{
         parts: [
           { text: "Transcribe the following English speech verbatim as plain text. Output only the transcription itself — no quotes, no commentary, no formatting. If nothing intelligible is said, output nothing." },
@@ -6617,6 +6650,8 @@ async function transcribeAudio(blob, mimeType) {
       }],
       { temperature: 0, maxOutputTokens: 500 },
       GEMINI_AUDIO_MODELS);
+    geminiDailyRecord();
+    return text;
   }
   // 30초 타임아웃(2026-07-20) — 응답 스톨 시 transcribing 상태가 수 분간 잠기지 않게(geminiText와 동일 패턴)
   const ctrl = new AbortController();
@@ -6633,6 +6668,7 @@ async function transcribeAudio(blob, mimeType) {
   } finally { clearTimeout(timer); }
   const data = await r.json().catch(() => null);
   if (!r.ok || !data) throw new Error((data && data.error) || "stt failed");
+  geminiDailyRecord();
   return (data.text || "").trim();
 }
 
@@ -9841,6 +9877,9 @@ const WHATS_NEW = {
     "네트워크가 잠깐 끊겨도 자동으로 한 번 더 시도해서 첨삭 오류가 덜 뜨게 했어요.",
     "**문법이 문장의 어느 부분에 쓰였는지 형광펜으로 표시**돼요.",
     "to부정사 용법 판정을 더 정확하게 고쳤어요 — 한 문장에 서로 다른 용법이 동시에 잘못 붙던 문제를 바로잡았어요.",
+  ],
+  "v0.35.98": [
+    "베타 기간 동안 **하루에 사용할 수 있는 AI 기능(회화·SOS·작문 첨삭·사전 자동조회·음성 인식) 횟수**가 생겼어요 — 안정적인 서비스 운영을 위한 제한이니 참고해 주세요.",
   ],
 };
 function pendingWhatsNew(seen) {
