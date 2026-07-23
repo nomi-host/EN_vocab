@@ -93,13 +93,30 @@ SUBTLEX-US 구어(자막) 빈도 74,286어 × 기계 필터(소문자만·WordNe
 - 진행 중인 IDIOM 트랙(PHaVE 2차 IDIOM_03/04)과 별개로, 사용자 갭 유형(식당 주문 hold the/on the side, 운전 pull in/ring up, 법률 take the fifth/DUI, 관용구 pull one's leg/to the fullest)을 **주제별 생성+검수** 방식으로 IDIOM_05+ 배치화 — 큐레이션된 공개 소스가 없는 영역이라 기존 비즈니스 구동사 24개 선정과 같은 방식. **3~4배치**.
 - Wiktionary 숙어 카테고리(CC BY-SA)를 후보 소스로 쓸 수 있으나 이 환경에선 네트워크 차단 — 확보되면 후보 풀로 추가.
 
-### 트랙 D — 사용자 수집 인입 (즉시 실행 가능, 1배치)
+### 트랙 D — 사용자 수집 인입 `[1차분 완료 — 2026-07-23, v0.36.1]`
 
-사용자의 38개 리스트를 첫 배치로 정식 시드에 편입. 분류:
-- 신규 표제어(트랙 A에 선행 편입): oligarch, foster, iffy, premature, insinuate, catastrophically, surplus, workforce, trespass, edible, stoppage, prostitution, true-blue, DUI
-- sense 추가(트랙 B에 선행 편입): summer(동사), transient(명사 "뜨내기·노숙자"), matching(형용사 "커플의" 용법)
-- 숙어·표현(트랙 C에 선행 편입): high season, a drink, against one's will, pull one's leg, hail from, indicative of, in the mood for/to, hold the N·leave out·no N, on the side, ring up, pull in, take the fifth, fall into, waiting to happen, enter the workforce, to the fullest, edible arrangement, AC(air con)
-- 문법 패턴(문법 트랙으로): There's no V-ing
+사용자의 38개 리스트를 정식 시드에 편입. 산출물: `cefrj/user_enriched.json`(신규 표제어 16개)
+`cefrj/user_idiom_enriched.json`(숙어·표현 14개) `batches/user_batch01.json`(30개 ko/ex, foster·surplus는
+senses 포함) `senses_parts/user_D_senses.json`(기존 단어 sense 추가 4개 — summer·transient·drink·hold,
+기존 sense 전부 보존 후 끝에 추가). merge 후 `enrich_network.js`·`enrich_roots.js` 전체 재실행(ant/forms/roots
+자동 채움) — 재실행 중 신규 오탐 3건(foster→"-er", prostitution→"pro-", indicative→"in-") 발견해
+`enrich_roots.js` EXCLUDE 목록에 추가 후 재생성. Playwright 실렌더로 8개 표본(신규어·sense추가·숙어·약어)
+검색→상세시트 전부 확인, 콘솔 에러 0. **표제어 8,987 → 9,017(+30, 1개는 기보유 확인되어 중복 제외)**.
+
+- **신규 표제어 16개**(트랙 A 선행분): oligarch, foster(동사+형용사 2senses), iffy, premature, insinuate,
+  surplus(명사+형용사 2senses), workforce, trespass, edible, stoppage, prostitution, true-blue, DUI, AC,
+  indicative, matching. (catastrophically는 대조 결과 이미 시드에 있어 제외 — 중복 작성 방지 원칙대로 스킵.)
+- **sense 추가 4개**(트랙 B 선행분, 기존 senses 보존+추가): summer(동사 "여름을 보내다"), transient(명사
+  "뜨내기·노숙자"), drink(명사 "(알코올) 한 잔" — 기존 "음료" sense와 구분), hold(동사 "빼다, 넣지 않다" —
+  음식 주문 맥락).
+- **숙어·표현 14개**(트랙 C 선행분): high season, against one's will, pull one's leg, hail from,
+  in the mood for, leave out, on the side, ring up, pull in, take the fifth, fall into, waiting to happen,
+  enter the workforce, to the fullest. ("hold the N/no N"은 hold의 신규 sense로 흡수, "edible arrangement"는
+  일반성 높은 headword "edible"로 대체 편입, "a drink"는 drink의 신규 sense로 흡수 — 니치한 구·중복 표현
+  대신 재사용 가치 높은 형태로 정리.)
+- **문법 패턴 미착수**: "There's no V-ing"(~하면 안 된다)는 어휘 데이터가 아니라 `detectGrammar`(문장 단위
+  정규식 태그, docs/PLAN.md 2.5) 코드 확장이 필요한 별개 트랙 — 이번 배치 범위 밖. 문법 태그 트랙
+  (`GRAMMAR_AGENT_INSTRUCTIONS.md`, work_grammar/) 다음 라운드 후보로 남겨둠.
 - 이후에도 "드라마에서 적은 단어 → USER_NN 배치 → merge"를 상시 트랙으로 유지. (앱의 "새 단어 등록"(EXTRA)은 기기 로컬이라 시드 승격이 필요.)
 
 ## 4. 작업량 총괄

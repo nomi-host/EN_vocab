@@ -7621,7 +7621,12 @@
    "secure"
   ],
   "ant": [],
-  "forms": [],
+  "forms": [
+   {
+    "word": "batten",
+    "pos": "noun"
+   }
+  ],
   "roots": [],
   "ex": [
    {
@@ -7837,7 +7842,24 @@
    "support"
   ],
   "ant": [],
-  "forms": [],
+  "forms": [
+   {
+    "word": "support",
+    "pos": "noun"
+   },
+   {
+    "word": "corroborative",
+    "pos": "adj"
+   },
+   {
+    "word": "corroboratory",
+    "pos": "adj"
+   },
+   {
+    "word": "corroboration",
+    "pos": "noun"
+   }
+  ],
   "roots": [],
   "ex": [
    {
@@ -9321,7 +9343,9 @@
   "ko": "바닥을 치다, 최저점을 찍다",
   "en": "reach the lowest point before starting to improve",
   "syn": [],
-  "ant": [],
+  "ant": [
+   "top out"
+  ],
   "forms": [],
   "roots": [],
   "ex": [
@@ -37076,8 +37100,19 @@
    "win",
    "pull ahead"
   ],
-  "ant": [],
-  "forms": [],
+  "ant": [
+   "fall back"
+  ],
+  "forms": [
+   {
+    "word": "win",
+    "pos": "noun"
+   },
+   {
+    "word": "gainer",
+    "pos": "noun"
+   }
+  ],
   "roots": [],
   "ex": [
    {
@@ -41552,7 +41587,16 @@
    "scrunch up"
   ],
   "ant": [],
-  "forms": [],
+  "forms": [
+   {
+    "word": "squat",
+    "pos": "noun"
+   },
+   {
+    "word": "squatting",
+    "pos": "noun"
+   }
+  ],
   "roots": [],
   "ex": [
    {
@@ -43345,8 +43389,31 @@
    "run into",
    "collide with"
   ],
-  "ant": [],
-  "forms": [],
+  "ant": [
+   "miss"
+  ],
+  "forms": [
+   {
+    "word": "strike",
+    "pos": "noun"
+   },
+   {
+    "word": "striker",
+    "pos": "noun"
+   },
+   {
+    "word": "striking",
+    "pos": "noun"
+   },
+   {
+    "word": "hit",
+    "pos": "noun"
+   },
+   {
+    "word": "hitting",
+    "pos": "noun"
+   }
+  ],
   "roots": [],
   "ex": [
    {
@@ -44754,6 +44821,28 @@
       "ko": "그 회의는 무기한 연기되었다."
      }
     ]
+   }
+  ]
+ },
+ {
+  "word": "indicative",
+  "ipa": "ɪndˈɪkətɪv",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "C1",
+  "ko": "나타내는, 암시하는",
+  "en": "showing or suggesting something",
+  "syn": [
+   "suggestive"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "His silence was indicative of his disappointment.",
+    "ko": "그의 침묵은 실망을 나타내는 것이었다."
    }
   ]
  },
@@ -47462,6 +47551,38 @@
       "ko": "그녀는 그 계획의 결함을 통찰력 있게 지적했다."
      }
     ]
+   }
+  ]
+ },
+ {
+  "word": "insinuate",
+  "ipa": "ɪnsˈɪnjueɪt",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "ko": "암시하다, 넌지시 말하다",
+  "en": "to suggest something unpleasant in an indirect way",
+  "syn": [
+   "imply",
+   "hint"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [
+   {
+    "affix": "in-",
+    "gloss": "부정, 안으로"
+   },
+   {
+    "affix": "-ate",
+    "gloss": "~하게 만들다, ~된"
+   }
+  ],
+  "ex": [
+   {
+    "en": "Are you insinuating that I lied?",
+    "ko": "내가 거짓말을 했다는 걸 암시하는 거야?"
    }
   ]
  },
@@ -58704,6 +58825,33 @@
   ]
  },
  {
+  "word": "oligarch",
+  "ipa": "ˈoʊlɪɡɑrk",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "ko": "재벌, 과두 지배자",
+  "en": "a member of a small group of people who have power and control over a country or organization, often for their own benefit",
+  "syn": [
+   "plutocrat"
+  ],
+  "ant": [],
+  "forms": [
+   {
+    "word": "oligarchic",
+    "pos": "adj"
+   }
+  ],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The country's economy is controlled by a handful of oligarchs.",
+    "ko": "그 나라의 경제는 소수의 재벌들이 장악하고 있다."
+   }
+  ]
+ },
+ {
   "word": "opacity",
   "ipa": "oʊpˈæsəti",
   "pos": [
@@ -63897,8 +64045,22 @@
    "prognostication"
   ],
   "ant": [],
-  "forms": [],
-  "roots": [],
+  "forms": [
+   {
+    "word": "portentous",
+    "pos": "adj"
+   },
+   {
+    "word": "portend",
+    "pos": "verb"
+   }
+  ],
+  "roots": [
+   {
+    "affix": "-ent",
+    "gloss": "~하는 사람/것"
+   }
+  ],
   "ex": [
    {
     "en": "The dark clouds were seen as a portent of disaster.",
@@ -67410,6 +67572,31 @@
       "ko": "그 중개인은 여러 예비 구매자들에게 집을 보여주었다."
      }
     ]
+   }
+  ]
+ },
+ {
+  "word": "prostitution",
+  "ipa": "prɑstətˈuʃən",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "ko": "매춘",
+  "en": "the activity of having sex with someone in exchange for money",
+  "syn": [],
+  "ant": [],
+  "forms": [
+   {
+    "word": "prostitute",
+    "pos": "verb"
+   }
+  ],
+  "roots": [],
+  "ex": [
+   {
+    "en": "Prostitution is illegal in most parts of the country.",
+    "ko": "그 나라 대부분 지역에서 매춘은 불법이다."
    }
   ]
  },
@@ -78793,7 +78980,24 @@
    "shore"
   ],
   "ant": [],
-  "forms": [],
+  "forms": [
+   {
+    "word": "shore",
+    "pos": "noun"
+   },
+   {
+    "word": "shoring",
+    "pos": "noun"
+   },
+   {
+    "word": "shoring up",
+    "pos": "noun"
+   },
+   {
+    "word": "prop",
+    "pos": "noun"
+   }
+  ],
   "roots": [],
   "ex": [
    {
@@ -80825,7 +81029,12 @@
   "en": "separate part of a company into a new, independent business",
   "syn": [],
   "ant": [],
-  "forms": [],
+  "forms": [
+   {
+    "word": "spin-off",
+    "pos": "noun"
+   }
+  ],
   "roots": [],
   "ex": [
    {
@@ -81972,7 +82181,24 @@
    "obviate"
   ],
   "ant": [],
-  "forms": [],
+  "forms": [
+   {
+    "word": "avoidable",
+    "pos": "adj"
+   },
+   {
+    "word": "avertible",
+    "pos": "adj"
+   },
+   {
+    "word": "avertable",
+    "pos": "adj"
+   },
+   {
+    "word": "obviation",
+    "pos": "noun"
+   }
+  ],
   "roots": [],
   "ex": [
    {
@@ -86017,6 +86243,26 @@
   ]
  },
  {
+  "word": "take the fifth",
+  "ipa": "tˈeɪk ðə fˈɪfθ",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "ko": "묵비권을 행사하다",
+  "en": "to refuse to answer a question, especially in court, in order to avoid self-incrimination",
+  "syn": [],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "The witness decided to take the fifth.",
+    "ko": "그 증인은 묵비권을 행사하기로 했다."
+   }
+  ]
+ },
+ {
   "word": "tangle",
   "ipa": "tˈæŋɡəl",
   "pos": [
@@ -89090,6 +89336,29 @@
       "ko": "그는 다른 사람의 감정을 가볍게 다루는 사람이 아니다."
      }
     ]
+   }
+  ]
+ },
+ {
+  "word": "true-blue",
+  "ipa": "",
+  "pos": [
+   "adj"
+  ],
+  "cefr": "C1",
+  "ko": "충실한, 진실한",
+  "en": "completely loyal to a person, group, or set of beliefs",
+  "syn": [
+   "loyal",
+   "devoted"
+  ],
+  "ant": [],
+  "forms": [],
+  "roots": [],
+  "ex": [
+   {
+    "en": "She's a true-blue fan who never misses a game.",
+    "ko": "그녀는 경기를 한 번도 안 놓치는 진정한 열성 팬이다."
    }
   ]
  },

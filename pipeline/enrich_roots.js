@@ -80,6 +80,11 @@ const EXCLUDE = new Set([
   "abhor", "abhorrent", "abhorrently", "absurd", "aboriginal", "aborigine", "abundance", "abundant", "abundantly",
   // 기타 개별 오탐
   "classmate", "fabric", "haughty",
+  // 2026-07-23 어휘 20k 확장 트랙 D(사용자 수집어) 신규 단어 재검수 오탐 —
+  // foster는 "fost"+"-er"(행위자 명사)가 아니라 통어근, prostitution은 "pro-"+"stitution"이
+  // 아니라 라틴어 prostituere 통어근, indicative는 "in-"(부정)이 아니라 indicate+"-ive"라
+  // in- 접두사 분해가 학습자에게 오히려 오해를 줌.
+  "foster", "prostitution", "indicative",
 ]);
 
 // 같은 위치(접두/접미)에서 텍스트상 가장 긴 접사만 후보로 삼는다 — 예: "badly"가
