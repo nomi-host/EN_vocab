@@ -1,0 +1,14410 @@
+[
+ {
+  "word": "about",
+  "cefr": "A1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "above",
+  "cefr": "A1",
+  "have": [
+   "adv",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "absurd",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "accent",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "accessory",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "accidental",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "acoustic",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "action",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "acute",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ad",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ad lib",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "add",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "addict",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "adjective",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "adulterate",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "advance",
+  "cefr": "B1",
+  "have": [
+   "verb",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "advantage",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "adverbial",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "advert",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "after",
+  "cefr": "A1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ago",
+  "cefr": "A1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "allowance",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "alternate",
+  "cefr": "B2",
+  "have": [
+   "verb",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "altogether",
+  "cefr": "B1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "am",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "ambition",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ancient",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "anguish",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "annoying",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "annual",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "antediluvian",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "anti",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "antiaircraft",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "antibacterial",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "antique",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "ape",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "aqua",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "arch",
+  "cefr": "B2",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "are",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "arithmetic",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "article",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ash",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "aside",
+  "cefr": "B1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "associate",
+  "cefr": "B1",
+  "have": [
+   "verb",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "audio",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "August",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "author",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "automatic",
+  "cefr": "A2",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "babble",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "baby",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "background",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "backpack",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "badge",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "balloon",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "bankrupt",
+  "cefr": "B2",
+  "have": [
+   "verb",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "barber",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "baroque",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "barrel",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "barren",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "basic",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "batch",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bathe",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bay",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "be",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "beach",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "beak",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bean",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bearing",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "beat",
+  "cefr": "B1",
+  "have": [
+   "verb",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "beaver",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bed",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 5
+   }
+  ]
+ },
+ {
+  "word": "beef",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "beforehand",
+  "cefr": "C1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "begin",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "beginning",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bell",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "belly",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "beloved",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "beneficiary",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "berry",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bicycle",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bike",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bilingual",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bin",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bird",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "birth",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bitter",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "black",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "blame",
+  "cefr": "A2",
+  "have": [
+   "verb",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "blank",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "blanket",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "blink",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "blog",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "blood",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bloody",
+  "cefr": "B2",
+  "have": [
+   "adj",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "blue",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "boat",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "body",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "boil",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "boiling",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bone",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "boot",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "bore",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "boring",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "boss",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bottom",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "bracket",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "brag",
+  "cefr": "B2",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "brain",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "brandish",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "brave",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "bread",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "breast",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "breeze",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "broad",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "broadband",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "bronze",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "browse",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "bubbly",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bucket",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "bump",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "bus",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "bush",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bust",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 4
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "butter",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "butterfly",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "button",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "buy",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cab",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cabbage",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cabin",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cage",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cake",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "calendar",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "caller",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "callous",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "camp",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "canal",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cancel",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "candle",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "candy",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "canoe",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "capital",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "capsule",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "captain",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "caption",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "caravan",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "card",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "caring",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "carpenter",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "carpet",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "cartoon",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "castle",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cat",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "cathedral",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cave",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "cave in",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "CD",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cease",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "centigrade",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "central",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cereal",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "certificate",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "chain",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "chair",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "chairman",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "champion",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "character",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "chariot",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "cheek",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cheese",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "cheque",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cherry",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "chew",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "chicken",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "chilly",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "choir",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "choke",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "chunk",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "church",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "churn",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "circuit",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cite",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "clam",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "classical",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cleanly",
+  "cefr": "C1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "clear",
+  "cefr": "A2",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "clench",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "clerk",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cloister",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "closure",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "clown",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "club",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "clue",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "coal",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "coax",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cod",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "coffin",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "coke",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "collect",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "come",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "companion",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "company",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "compare",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "compassionate",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "complementary",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "complexion",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "comprehensive",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "con",
+  "cefr": "C1",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "concert",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "concrete",
+  "cefr": "B2",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "cone",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "confection",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "conglomerate",
+  "cefr": "C2",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "conserve",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "consonant",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "continent",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "contradictory",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cool",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "cop",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "cope",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "copper",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "copyright",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "corn",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "correlate",
+  "cefr": "C2",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "correspondent",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cotton",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "course",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "cow",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cozy",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "crab",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "crazy",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cream",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 5
+   }
+  ]
+ },
+ {
+  "word": "crew",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "cricket",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "crisp",
+  "cefr": "A2",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "crumb",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "cuff",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "cull",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "culture",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "curate",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "curry",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "curtain",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "custom",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "CV",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "damp",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "dare",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "daze",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "de facto",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "deadly",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "deaf",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "dear",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "deck",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "deep",
+  "cefr": "A2",
+  "have": [
+   "adv",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "delicious",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "demise",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "dental",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "devil",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "diet",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "dimension",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "direct",
+  "cefr": "A2",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "dirt",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "dirty",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "disadvantage",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "discard",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "disco",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "disconnect",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "discriminate",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "dish",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "disillusion",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "disorder",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "distance",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "district",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "dither",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "divine",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "dizzy",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "DJ",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "do",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "documentary",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "domestic",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "dominant",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "double",
+  "cefr": "A2",
+  "have": [
+   "adj",
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "dread",
+  "cefr": "B2",
+  "have": [
+   "verb",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "dress",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "drinkable",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "dry",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "due",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "duel",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "duplicate",
+  "cefr": "B2",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "dynamic",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "eager",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "eagle",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "earth",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "eastward",
+  "cefr": "B2",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ebb",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "egg",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "elderly",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "elect",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "electric",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "elongate",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "empty",
+  "cefr": "A2",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "entire",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "entrance",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "ephemeral",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ethnic",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "even",
+  "cefr": "A2",
+  "have": [
+   "adv",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "everlasting",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "exclusive",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "expense",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "expose",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "external",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "facsimile",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fade",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "faint",
+  "cefr": "B1",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fair",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "false",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "falter",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "familiar",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "fantasy",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "far",
+  "cefr": "A2",
+  "have": [
+   "adv",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "farce",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "farming",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "farthest",
+  "cefr": "B1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fat",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fate",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "federal",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "fee",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fetch",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "few",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "find",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "fissure",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "flagging",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "flame",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "flaw",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fleet",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "flesh",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "flight",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "flip",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "flit",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "floor",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "flour",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "flunk",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "flute",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fly",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fog",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "footnote",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "forest",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fork",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "formal",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "former",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "forth",
+  "cefr": "B1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "forward",
+  "cefr": "A2",
+  "have": [
+   "adv",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "fossil",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fox",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "fraction",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fragment",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "frank",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "free",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "adv",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "freeze",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "freshman",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "friendly",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fright",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "frightening",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "frog",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "fruit",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "full",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "fundamental",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "funk",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "funny",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "furthest",
+  "cefr": "B1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "gall",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "game",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "gang",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "gap",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "gape",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "garden",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "garment",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "gate",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "gather",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "gaudy",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "gay",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "get",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ginger",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "glad",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "glass",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 5
+   }
+  ]
+ },
+ {
+  "word": "go",
+  "cefr": "A1",
+  "have": [
+   "verb",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "golf",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "goose",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "gown",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "grab",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "gradual",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "grain",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "graphic",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "grave",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "gray",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "great",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "green",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "greenhouse",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "gross",
+  "cefr": "B2",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "gum",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "gun",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "guy",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "habit",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "haggle",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ham",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "handicapped",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "handy",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "haphazard",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "have",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "hay",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "hearing",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "heavy",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   },
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "heel",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 5
+   }
+  ]
+ },
+ {
+  "word": "helm",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "hill",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "hinder",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "hire",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "hoist",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "hole",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "holiday",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "holy",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "home",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "homestead",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "honey",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "hood",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "hopeful",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "horn",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "horse",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "hostile",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "hull",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "humbug",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "hunger",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "husband",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ice",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "idle",
+  "cefr": "B2",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ill",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "image",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "imaginary",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "impress",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "in",
+  "cefr": "A1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "incurable",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "indent",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "independent",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "infernal",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "initial",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "initiative",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "innocent",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "input",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "instance",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "instinct",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "instrument",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "intensive",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "interlocking",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "interlude",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "intermediate",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "international",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "interrupt",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "intimate",
+  "cefr": "B2",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "intransitive",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "invariable",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "invite",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "irrational",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "irregular",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "itch",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "item",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "jade",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "jazz",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "jelly",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "jet",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "jewel",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "job",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "join",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "joint",
+  "cefr": "B1",
+  "have": [
+   "adj",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "joy",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "jug",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "keen",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "keep",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "killing",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "kit",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "kite",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "kitten",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "kneel",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "knife",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "know",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ladder",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "lamb",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "lame",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "large",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "lark",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "lay",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "leading",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "leaf",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "lean",
+  "cefr": "B1",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "least",
+  "cefr": "A2",
+  "have": [
+   "adv",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "leather",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "legitimate",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "let",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "lick",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "light",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "lighter",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "like",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "limited",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "limp",
+  "cefr": "B1",
+  "have": [
+   "verb",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "literal",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "live",
+  "cefr": "A1",
+  "have": [
+   "verb",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "liver",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "locomotive",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "lot",
+  "cefr": "A1",
+  "have": [
+   "adv",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "lovely",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "low",
+  "cefr": "A2",
+  "have": [
+   "adj",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 4
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "lower",
+  "cefr": "B2",
+  "have": [
+   "verb",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "lowland",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "lush",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "lust",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "lyric",
+  "cefr": "A2",
+  "have": [
+   "adj",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "machine",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "main",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "mangle",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "marble",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "married",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mash",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "master",
+  "cefr": "B2",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "maverick",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "meaning",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "meanwhile",
+  "cefr": "B1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mechanic",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mediate",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "medical",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "medicine",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "meet",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "melt",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mend",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "menial",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mere",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "message",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "metal",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "middle",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mimic",
+  "cefr": "B2",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mineral",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "minor",
+  "cefr": "B1",
+  "have": [
+   "adj",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mint",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mock",
+  "cefr": "B2",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "monastic",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "monkey",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "monthly",
+  "cefr": "B1",
+  "have": [
+   "adj",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "moody",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "moon",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "more",
+  "cefr": "A1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mortgage",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mothball",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "motley",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "motorbike",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "motorcycle",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mountaineer",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "mouse",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "mud",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "multiple",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "multiply",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "munch",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "muscle",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "narrow",
+  "cefr": "B1",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "nationalist",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "natural",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "navy blue",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "necessary",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "neck",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "needy",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "negative",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "neighbor",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "nerve",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "nice",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ninety",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "noise",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "nondescript",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "normal",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "northeast",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "northern",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "northward",
+  "cefr": "B2",
+  "have": [
+   "adv",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "nowadays",
+  "cefr": "A2",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "nut",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "oblique",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "obsessive",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "octogenarian",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "off",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "OK",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "old",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "opponent",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "organic",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "otherwise",
+  "cefr": "B1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "out",
+  "cefr": "A1",
+  "have": [
+   "adv",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "outdoors",
+  "cefr": "B1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "outlaw",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "over",
+  "cefr": "A1",
+  "have": [
+   "adv",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "overestimate",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "overlook",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "overturn",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "overweight",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pal",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pandemic",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "paper",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "parachute",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "paragraph",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "paramedic",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "parent",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "partial",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "partisan",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "party",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pass",
+  "cefr": "A2",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pastoral",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "pave",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "peach",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "peanut",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pearl",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pedal",
+  "cefr": "B2",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pencil",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pension",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "perfect",
+  "cefr": "A2",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "perfume",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "permanent",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "personal",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pet",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "petty",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "phase",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "philistine",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "piano",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pickle",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pig",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "pillow",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pink",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "pinnacle",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "plain",
+  "cefr": "B1",
+  "have": [
+   "adj",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "plate",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pleasing",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "plume",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 6
+   }
+  ]
+ },
+ {
+  "word": "plummet",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "plural",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "plus",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "poor",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pop",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "port",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 8
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "portion",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "posit",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "positive",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "possessive",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pounce",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "powerful",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "prawn",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "precious",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "prefix",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "prejudice",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "premier",
+  "cefr": "C1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "prescription",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pretend",
+  "cefr": "A2",
+  "have": [
+   "verb",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "preventive",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "primitive",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "prior",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "privilege",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "prize",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "pro",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "probable",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "profile",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "progressive",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "proof",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 5
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "proportion",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "proportional",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "proprietary",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "provincial",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "purple",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "purpose",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "push back",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "put",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "put on",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "quarter",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "queen",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "queer",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "quick",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "quiz",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "rabbit",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "racket",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "radiate",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "rafter",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "rag",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 6
+   }
+  ]
+ },
+ {
+  "word": "railroad",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "ramp",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 5
+   }
+  ]
+ },
+ {
+  "word": "rapid",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "rat",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 6
+   }
+  ]
+ },
+ {
+  "word": "ration",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "rational",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "raw",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ray",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "razor",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "read",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "real",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "receipt",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "recent",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "recessive",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "recluse",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "reef",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "referee",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "reference",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "regardless",
+  "cefr": "B2",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "reject",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "religious",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "remainder",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "remove",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "render",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "rental",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "repaint",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "reptilian",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "residual",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "respite",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "retail",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "retard",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "retrospect",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "revealing",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "revere",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "revise",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "rewrite",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "rib",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "rice",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "rich",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ridge",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 5
+   }
+  ]
+ },
+ {
+  "word": "right",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "adv",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "ritual",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "roast",
+  "cefr": "A2",
+  "have": [
+   "verb",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "rolling",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "romance",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "rope",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "rough",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "route",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "royal",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "rub",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "rubber",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "rubbish",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "rush",
+  "cefr": "A2",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "sage",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "same",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "sandwich",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "satellite",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sauce",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "save",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "scarf",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "scatter",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "scent",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "scold",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "script",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "scythe",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "seasonal",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "second",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "noun",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "secondary",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "section",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "secular",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "see",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "seek",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "self-service",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sell",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sensitive",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "separate",
+  "cefr": "A2",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "serial",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "serve",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "settle",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sex",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "Shakespearean",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "shallow",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "shamble",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sharp",
+  "cefr": "B1",
+  "have": [
+   "adj",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "shed",
+  "cefr": "B2",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sheer",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "sheet",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "shimmer",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "shine",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "shipwreck",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "shoal",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "shoe",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "shoot",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "shore",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "short",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "adv",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "shot",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "shrimp",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "shy",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sick",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "side",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sign",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "signal",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "signpost",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "silly",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "silver",
+  "cefr": "A2",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "simple",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "singe",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "singing",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "site",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "size",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "skateboard",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "skim",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "skin",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "skip",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "sky",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "skyward",
+  "cefr": "B2",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "slam",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "slang",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "slap",
+  "cefr": "B2",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "slave",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "slight",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "slim",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sliver",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "small",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "smart",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "smash",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "smoking",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "smooth",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "snack",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "snail",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sneak",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sniff",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "so",
+  "cefr": "A1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "soaking",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "soap",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "soar",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sociable",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "soldier",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "solo",
+  "cefr": "B2",
+  "have": [
+   "noun",
+   "adj",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "sometime",
+  "cefr": "B1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "somewhere",
+  "cefr": "A2",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sonnet",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "sophomore",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sorrow",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "soup",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sour",
+  "cefr": "B1",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "source",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "southward",
+  "cefr": "B2",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "southwest",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "spare",
+  "cefr": "B2",
+  "have": [
+   "verb",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "sparkling",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "spartan",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "specific",
+  "cefr": "A2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "spectacular",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "spill",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "spin",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 5
+   }
+  ]
+ },
+ {
+  "word": "spirit",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "spite",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "split up",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "spoil",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "spoon",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "squint",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "squirm",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "stab",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "stammer",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "staple",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "startle",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "starving",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "statewide",
+  "cefr": "B2",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "steady",
+  "cefr": "B1",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "steal",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "steep",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "steer",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "stereotype",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "stew",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "stiff",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "stimulant",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "stink",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "stockpile",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "stomach",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "stone",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "stool",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "straight",
+  "cefr": "A1",
+  "have": [
+   "adv",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "strait",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "straw",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "stretch",
+  "cefr": "B1",
+  "have": [
+   "verb",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "striking",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "stripe",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "stumble",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "subject",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "subjunctive",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "submarine",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 5
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "substitute",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "suds",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "sue",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "suffix",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sulfur",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sum",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "summary",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "summer",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "summit",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sunrise",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sunset",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "super",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "supple",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "surround",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "sweetheart",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "swift",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "swimming",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "swivel",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "table",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "tall",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "tan",
+  "cefr": "B2",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "tank",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "task",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "teach",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "team",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "technical",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "tell",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "temporary",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "tender",
+  "cefr": "B2",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 6
+   }
+  ]
+ },
+ {
+  "word": "tense",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "tent",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "terrace",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "testimonial",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "textbook",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "theme",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "there",
+  "cefr": "A1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "thick",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "thin",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "think",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "thus",
+  "cefr": "B1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ticket",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "tickle",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "tide",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "tidy",
+  "cefr": "A2",
+  "have": [
+   "verb",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "tile",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "till",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "timid",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "tin",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "tiptoe",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "tissue",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "toe",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 5
+   }
+  ]
+ },
+ {
+  "word": "toenail",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "toil",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "tongue",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "torch",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "tough",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "towel",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "toy",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "traffic",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "tram",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "transient",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "transit",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "transition",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "transitive",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "tree",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "trek",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "tremble",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "tremor",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "trend",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "troop",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "tropic",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "true",
+  "cefr": "A1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "trusty",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "tube",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "turn around",
+  "cefr": "A2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "turtle",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "twin",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "ultimate",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "umbrella",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "underestimate",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "underground",
+  "cefr": "B2",
+  "have": [
+   "adj",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "undress",
+  "cefr": "B1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "unemployed",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "unfit",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "uniform",
+  "cefr": "A2",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "universal",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "upper",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "upright",
+  "cefr": "B2",
+  "have": [
+   "adj",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "utilitarian",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "utility",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "valuable",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "vertical",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "virginal",
+  "cefr": "C2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "visa",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "voluntary",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "volunteer",
+  "cefr": "B1",
+  "have": [
+   "verb",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "voyage",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "waitress",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "wall",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "wallow",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "wane",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "war",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "ward",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "warm",
+  "cefr": "A1",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "warning",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "waterproof",
+  "cefr": "B2",
+  "have": [
+   "adj",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "wear",
+  "cefr": "A1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "weather",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 4
+   }
+  ]
+ },
+ {
+  "word": "web",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "wed",
+  "cefr": "B2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "weekend",
+  "cefr": "A1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "weird",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "westward",
+  "cefr": "B1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   },
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "whale",
+  "cefr": "B1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "white",
+  "cefr": "A1",
+  "have": [
+   "noun",
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "why",
+  "cefr": "A1",
+  "have": [
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "widow",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "winding",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "wine",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "wondrous",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "adv",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "working",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "worm",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "worrying",
+  "cefr": "B2",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "worst",
+  "cefr": "A2",
+  "have": [
+   "adj",
+   "noun",
+   "adv"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "worthy",
+  "cefr": "B1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "wound",
+  "cefr": "B1",
+  "have": [
+   "noun",
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "yacht",
+  "cefr": "B2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "zany",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "zone",
+  "cefr": "A2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 0,
+    "senseCnt": 2
+   }
+  ]
+ }
+]
