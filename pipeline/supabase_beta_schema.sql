@@ -70,3 +70,33 @@ grant select, insert on public.bug_reports to anon, authenticated;
 --    (실측: GRANT 직후 API가 곧바로 "permission denied for table"을 계속 반환 —
 --    캐시가 자동 갱신될 때까지 기다리거나 이 NOTIFY로 즉시 갱신시킬 것.)
 notify pgrst, 'reload schema';
+
+-- ============================================================================
+-- 7) word_cache — 신규 추가(2026-07-23) — 1~6이 이미 배포된 뒤 나온 추가 테이블이라
+--    이 블록만 별도로 SQL Editor에서 실행하면 됨(1~6 재실행 불필요, 오히려
+--    "relation already exists" 에러만 남).
+--
+--    사용자가 사전에 없는 단어를 등록하면 autoLookupWord()가 Gemini로 한국어 뜻·CEFR·예문을
+--    생성하는데, 같은 단어를 다른 베타테스터가 또 등록하면 매번 새로 Gemini를 호출했음
+--    (API 비용 낭비). 단어 뜻은 사용자마다 달라질 이유가 없는 공개 정보라 로그인 여부와 무관하게
+--    전원이 읽고 쓸 수 있는 공유 캐시로 둔다 — 특정 사용자 소유가 아니므로 RLS로 행을 user_id에
+--    격리하지 않고, 대신 "새로 추가만 가능, 수정·삭제 불가"(update/delete 정책 자체를 안 만듦)로
+--    한 번 캐싱된 값이 덮어써지지 않게 한다. word가 PK라 같은 단어 재삽입은 DB 유니크 제약으로
+--    자동 거부(클라이언트는 이 실패를 무시하고 그냥 넘어가면 됨 — "이미 누가 캐싱해놨다"는 뜻).
+create table public.word_cache (
+  word text primary key,
+  ipa text,
+  pos text[],
+  ko text not null,
+  cefr text,
+  ex_en text,
+  ex_ko text,
+  created_at timestamptz not null default now()
+);
+alter table public.word_cache enable row level security;
+create policy "anyone can read word cache" on public.word_cache for select using (true);
+create policy "anyone can add to word cache" on public.word_cache for insert with check (true);
+
+grant select, insert on public.word_cache to anon, authenticated;
+
+notify pgrst, 'reload schema';
