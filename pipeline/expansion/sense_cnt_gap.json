@@ -42,12 +42,6 @@
   "wnTagged": 6
  },
  {
-  "word": "abstraction",
-  "cefr": "C1",
-  "ours": 2,
-  "wnTagged": 4
- },
- {
   "word": "academic",
   "cefr": "B1",
   "ours": 1,
@@ -250,12 +244,6 @@
   "cefr": "A1",
   "ours": 1,
   "wnTagged": 4
- },
- {
-  "word": "allot",
-  "cefr": "C2",
-  "ours": 1,
-  "wnTagged": 3
  },
  {
   "word": "allow",
@@ -676,12 +664,6 @@
   "cefr": "B1",
   "ours": 3,
   "wnTagged": 8
- },
- {
-  "word": "banish",
-  "cefr": "C2",
-  "ours": 2,
-  "wnTagged": 4
  },
  {
   "word": "bank",
@@ -1344,12 +1326,6 @@
   "wnTagged": 3
  },
  {
-  "word": "carrier",
-  "cefr": "C1",
-  "ours": 2,
-  "wnTagged": 5
- },
- {
   "word": "carry",
   "cefr": "A1",
   "ours": 2,
@@ -1464,12 +1440,6 @@
   "wnTagged": 3
  },
  {
-  "word": "chill",
-  "cefr": "C1",
-  "ours": 3,
-  "wnTagged": 5
- },
- {
   "word": "choice",
   "cefr": "A2",
   "ours": 2,
@@ -1500,12 +1470,6 @@
   "wnTagged": 6
  },
  {
-  "word": "circulate",
-  "cefr": "C1",
-  "ours": 2,
-  "wnTagged": 4
- },
- {
   "word": "circumstance",
   "cefr": "B2",
   "ours": 1,
@@ -1516,12 +1480,6 @@
   "cefr": "B1",
   "ours": 1,
   "wnTagged": 3
- },
- {
-  "word": "cite",
-  "cefr": "C1",
-  "ours": 2,
-  "wnTagged": 4
  },
  {
   "word": "city",
@@ -1562,12 +1520,6 @@
  {
   "word": "clearly",
   "cefr": "A2",
-  "ours": 2,
-  "wnTagged": 4
- },
- {
-  "word": "climax",
-  "cefr": "C1",
   "ours": 2,
   "wnTagged": 4
  },
@@ -1692,12 +1644,6 @@
   "wnTagged": 11
  },
  {
-  "word": "commend",
-  "cefr": "C1",
-  "ours": 1,
-  "wnTagged": 3
- },
- {
   "word": "comment",
   "cefr": "B1",
   "ours": 2,
@@ -1762,12 +1708,6 @@
   "cefr": "B1",
   "ours": 3,
   "wnTagged": 5
- },
- {
-  "word": "comprise",
-  "cefr": "C1",
-  "ours": 1,
-  "wnTagged": 3
  },
  {
   "word": "concentrate",
@@ -2412,12 +2352,6 @@
   "wnTagged": 4
  },
  {
-  "word": "depict",
-  "cefr": "C1",
-  "ours": 1,
-  "wnTagged": 3
- },
- {
   "word": "deposit",
   "cefr": "B1",
   "ours": 3,
@@ -2535,12 +2469,6 @@
   "word": "difficulty",
   "cefr": "A2",
   "ours": 1,
-  "wnTagged": 4
- },
- {
-  "word": "diffuse",
-  "cefr": "C2",
-  "ours": 2,
   "wnTagged": 4
  },
  {
@@ -2796,12 +2724,6 @@
   "wnTagged": 10
  },
  {
-  "word": "duration",
-  "cefr": "C1",
-  "ours": 1,
-  "wnTagged": 3
- },
- {
   "word": "dust",
   "cefr": "A2",
   "ours": 2,
@@ -2930,12 +2852,6 @@
  {
   "word": "embarrassment",
   "cefr": "B1",
-  "ours": 1,
-  "wnTagged": 3
- },
- {
-  "word": "embody",
-  "cefr": "C2",
   "ours": 1,
   "wnTagged": 3
  },
@@ -3128,12 +3044,6 @@
  {
   "word": "eternity",
   "cefr": "B1",
-  "ours": 1,
-  "wnTagged": 3
- },
- {
-  "word": "ethical",
-  "cefr": "C1",
   "ours": 1,
   "wnTagged": 3
  },
@@ -3714,12 +3624,6 @@
   "wnTagged": 4
  },
  {
-  "word": "flick",
-  "cefr": "C1",
-  "ours": 3,
-  "wnTagged": 5
- },
- {
   "word": "flight",
   "cefr": "A2",
   "ours": 1,
@@ -3874,12 +3778,6 @@
   "cefr": "B1",
   "ours": 2,
   "wnTagged": 5
- },
- {
-  "word": "formulate",
-  "cefr": "C1",
-  "ours": 2,
-  "wnTagged": 4
  },
  {
   "word": "forth",
@@ -4338,12 +4236,6 @@
   "wnTagged": 4
  },
  {
-  "word": "grievance",
-  "cefr": "C2",
-  "ours": 1,
-  "wnTagged": 3
- },
- {
   "word": "grip",
   "cefr": "B2",
   "ours": 4,
@@ -4372,12 +4264,6 @@
   "cefr": "B1",
   "ours": 1,
   "wnTagged": 5
- },
- {
-  "word": "grumble",
-  "cefr": "C1",
-  "ours": 2,
-  "wnTagged": 4
  },
  {
   "word": "guarantee",
@@ -4548,12 +4434,6 @@
   "wnTagged": 4
  },
  {
-  "word": "heighten",
-  "cefr": "C1",
-  "ours": 1,
-  "wnTagged": 3
- },
- {
   "word": "help",
   "cefr": "A1",
   "ours": 2,
@@ -4594,12 +4474,6 @@
   "cefr": "A1",
   "ours": 2,
   "wnTagged": 8
- },
- {
-  "word": "hinder",
-  "cefr": "C2",
-  "ours": 1,
-  "wnTagged": 3
  },
  {
   "word": "historical",
@@ -4908,18 +4782,6 @@
   "wnTagged": 6
  },
  {
-  "word": "individualism",
-  "cefr": "C2",
-  "ours": 1,
-  "wnTagged": 3
- },
- {
-  "word": "induce",
-  "cefr": "C2",
-  "ours": 2,
-  "wnTagged": 4
- },
- {
   "word": "industrial",
   "cefr": "B1",
   "ours": 1,
@@ -4984,12 +4846,6 @@
   "cefr": "B2",
   "ours": 2,
   "wnTagged": 4
- },
- {
-  "word": "integral",
-  "cefr": "C1",
-  "ours": 1,
-  "wnTagged": 3
  },
  {
   "word": "intelligent",
@@ -5254,12 +5110,6 @@
   "cefr": "A1",
   "ours": 1,
   "wnTagged": 5
- },
- {
-  "word": "lapse",
-  "cefr": "C1",
-  "ours": 3,
-  "wnTagged": 7
  },
  {
   "word": "last",
@@ -5646,12 +5496,6 @@
   "wnTagged": 3
  },
  {
-  "word": "lurid",
-  "cefr": "C2",
-  "ours": 1,
-  "wnTagged": 3
- },
- {
   "word": "lyric",
   "cefr": "A2",
   "ours": 1,
@@ -5846,12 +5690,6 @@
  {
   "word": "memory",
   "cefr": "A1",
-  "ours": 2,
-  "wnTagged": 4
- },
- {
-  "word": "menace",
-  "cefr": "C2",
   "ours": 2,
   "wnTagged": 4
  },
@@ -6238,12 +6076,6 @@
   "cefr": "B1",
   "ours": 1,
   "wnTagged": 3
- },
- {
-  "word": "obscure",
-  "cefr": "C1",
-  "ours": 3,
-  "wnTagged": 5
  },
  {
   "word": "observation",
@@ -6792,12 +6624,6 @@
   "wnTagged": 3
  },
  {
-  "word": "plunge",
-  "cefr": "C1",
-  "ours": 3,
-  "wnTagged": 6
- },
- {
   "word": "pocket",
   "cefr": "A1",
   "ours": 1,
@@ -6814,12 +6640,6 @@
   "cefr": "B1",
   "ours": 1,
   "wnTagged": 3
- },
- {
-  "word": "poise",
-  "cefr": "C1",
-  "ours": 2,
-  "wnTagged": 4
  },
  {
   "word": "poison",
@@ -7230,12 +7050,6 @@
   "wnTagged": 4
  },
  {
-  "word": "provoke",
-  "cefr": "C1",
-  "ours": 2,
-  "wnTagged": 4
- },
- {
   "word": "public",
   "cefr": "A2",
   "ours": 2,
@@ -7518,12 +7332,6 @@
   "wnTagged": 7
  },
  {
-  "word": "reconcile",
-  "cefr": "C2",
-  "ours": 2,
-  "wnTagged": 4
- },
- {
   "word": "record",
   "cefr": "A2",
   "ours": 2,
@@ -7738,12 +7546,6 @@
   "cefr": "A1",
   "ours": 1,
   "wnTagged": 6
- },
- {
-  "word": "repel",
-  "cefr": "C1",
-  "ours": 2,
-  "wnTagged": 4
  },
  {
   "word": "repetition",
@@ -8190,12 +7992,6 @@
   "wnTagged": 9
  },
  {
-  "word": "scorn",
-  "cefr": "C1",
-  "ours": 2,
-  "wnTagged": 4
- },
- {
   "word": "scream",
   "cefr": "A2",
   "ours": 2,
@@ -8580,12 +8376,6 @@
   "wnTagged": 5
  },
  {
-  "word": "silhouette",
-  "cefr": "C1",
-  "ours": 1,
-  "wnTagged": 3
- },
- {
   "word": "silver",
   "cefr": "A2",
   "ours": 3,
@@ -8934,12 +8724,6 @@
   "wnTagged": 5
  },
  {
-  "word": "splinter",
-  "cefr": "C2",
-  "ours": 2,
-  "wnTagged": 4
- },
- {
   "word": "split",
   "cefr": "A2",
   "ours": 3,
@@ -9286,12 +9070,6 @@
   "cefr": "A1",
   "ours": 1,
   "wnTagged": 3
- },
- {
-  "word": "structural",
-  "cefr": "C1",
-  "ours": 2,
-  "wnTagged": 4
  },
  {
   "word": "structure",
@@ -9916,12 +9694,6 @@
   "cefr": "A1",
   "ours": 2,
   "wnTagged": 9
- },
- {
-  "word": "torment",
-  "cefr": "C1",
-  "ours": 2,
-  "wnTagged": 4
  },
  {
   "word": "torture",
@@ -10708,5 +10480,233 @@
   "cefr": "A2",
   "ours": 2,
   "wnTagged": 6
+ },
+ {
+  "word": "abstraction",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "allot",
+  "cefr": "C2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "banish",
+  "cefr": "C2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "carrier",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "chill",
+  "cefr": "C1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "circulate",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "cite",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "climax",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "commend",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "comprise",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "depict",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "diffuse",
+  "cefr": "C2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "duration",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "embody",
+  "cefr": "C2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "ethical",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "flick",
+  "cefr": "C1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "formulate",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "grievance",
+  "cefr": "C2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "grumble",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "heighten",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "hinder",
+  "cefr": "C2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "individualism",
+  "cefr": "C2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "induce",
+  "cefr": "C2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "integral",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "lapse",
+  "cefr": "C1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "lurid",
+  "cefr": "C2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "menace",
+  "cefr": "C2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "obscure",
+  "cefr": "C1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "plunge",
+  "cefr": "C1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "poise",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "provoke",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "reconcile",
+  "cefr": "C2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "repel",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "scorn",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "silhouette",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "splinter",
+  "cefr": "C2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "structural",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "torment",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
  }
 ]

@@ -16,9 +16,7 @@ const path = require("path");
 const ROOT = path.resolve(__dirname, "..", "..");
 const SUB = require("subtlex-word-frequencies");
 const DICT = path.join(ROOT, "pipeline", "node_modules", "wordnet-db", "dict");
-global.window = {};
-require(path.join(ROOT, "words.js"));
-const SEED = global.window.SEED;
+const SEED = require("../load_seed.js")(); // 코어+청크 전체
 const have = new Set(SEED.map(w => w.word.toLowerCase()));
 
 const wnLemma = new Set();

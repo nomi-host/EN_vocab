@@ -113,11 +113,7 @@ function analyze(word) {
 }
 
 function main() {
-  global.window = {};
-  const wordsPath = path.join(ROOT, "words.js");
-  delete require.cache[require.resolve(wordsPath)];
-  require(wordsPath);
-  const SEED = global.window.SEED;
+  const SEED = require("./load_seed.js")(); // 코어+청크 전체(분할 후 words.js만 읽으면 코어뿐)
   console.log(`총 ${SEED.length}개 단어 처리`);
 
   const perWord = {};

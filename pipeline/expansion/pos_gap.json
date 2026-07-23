@@ -85,21 +85,6 @@
   ]
  },
  {
-  "word": "ad-lib",
-  "cefr": "C2",
-  "have": [
-   "verb",
-   "noun"
-  ],
-  "missing": [
-   {
-    "pos": "adj",
-    "tagCnt": 1,
-    "senseCnt": 2
-   }
-  ]
- },
- {
   "word": "adventure",
   "cefr": "A2",
   "have": [
@@ -236,20 +221,6 @@
     "pos": "adj",
     "tagCnt": 1,
     "senseCnt": 2
-   }
-  ]
- },
- {
-  "word": "appalling",
-  "cefr": "C1",
-  "have": [
-   "adj"
-  ],
-  "missing": [
-   {
-    "pos": "noun",
-    "tagCnt": 1,
-    "senseCnt": 1
    }
   ]
  },
@@ -973,20 +944,6 @@
   ]
  },
  {
-  "word": "bulk",
-  "cefr": "C1",
-  "have": [
-   "noun"
-  ],
-  "missing": [
-   {
-    "pos": "verb",
-    "tagCnt": 1,
-    "senseCnt": 2
-   }
-  ]
- },
- {
   "word": "bull",
   "cefr": "B1",
   "have": [
@@ -1270,20 +1227,6 @@
   "missing": [
    {
     "pos": "verb",
-    "tagCnt": 1,
-    "senseCnt": 1
-   }
-  ]
- },
- {
-  "word": "chisel",
-  "cefr": "C1",
-  "have": [
-   "verb"
-  ],
-  "missing": [
-   {
-    "pos": "noun",
     "tagCnt": 1,
     "senseCnt": 1
    }
@@ -2854,21 +2797,6 @@
   ]
  },
  {
-  "word": "forfeit",
-  "cefr": "C1",
-  "have": [
-   "verb",
-   "noun"
-  ],
-  "missing": [
-   {
-    "pos": "adj",
-    "tagCnt": 1,
-    "senseCnt": 1
-   }
-  ]
- },
- {
   "word": "forty",
   "cefr": "A1",
   "have": [
@@ -3010,20 +2938,6 @@
   "missing": [
    {
     "pos": "adv",
-    "tagCnt": 1,
-    "senseCnt": 1
-   }
-  ]
- },
- {
-  "word": "frolic",
-  "cefr": "C2",
-  "have": [
-   "verb"
-  ],
-  "missing": [
-   {
-    "pos": "noun",
     "tagCnt": 1,
     "senseCnt": 1
    }
@@ -3718,20 +3632,6 @@
  {
   "word": "inevitable",
   "cefr": "B1",
-  "have": [
-   "adj"
-  ],
-  "missing": [
-   {
-    "pos": "noun",
-    "tagCnt": 1,
-    "senseCnt": 1
-   }
-  ]
- },
- {
-  "word": "integral",
-  "cefr": "C1",
   "have": [
    "adj"
   ],
@@ -4636,20 +4536,6 @@
     "pos": "verb",
     "tagCnt": 2,
     "senseCnt": 6
-   }
-  ]
- },
- {
-  "word": "notable",
-  "cefr": "C1",
-  "have": [
-   "adj"
-  ],
-  "missing": [
-   {
-    "pos": "noun",
-    "tagCnt": 1,
-    "senseCnt": 1
    }
   ]
  },
@@ -5562,20 +5448,6 @@
   ]
  },
  {
-  "word": "proposition",
-  "cefr": "C2",
-  "have": [
-   "noun"
-  ],
-  "missing": [
-   {
-    "pos": "verb",
-    "tagCnt": 1,
-    "senseCnt": 1
-   }
-  ]
- },
- {
   "word": "provision",
   "cefr": "B2",
   "have": [
@@ -5761,20 +5633,6 @@
   ]
  },
  {
-  "word": "recess",
-  "cefr": "C1",
-  "have": [
-   "noun"
-  ],
-  "missing": [
-   {
-    "pos": "verb",
-    "tagCnt": 1,
-    "senseCnt": 3
-   }
-  ]
- },
- {
   "word": "reform",
   "cefr": "B2",
   "have": [
@@ -5839,20 +5697,6 @@
   "missing": [
    {
     "pos": "adj",
-    "tagCnt": 1,
-    "senseCnt": 1
-   }
-  ]
- },
- {
-  "word": "reissue",
-  "cefr": "C2",
-  "have": [
-   "verb"
-  ],
-  "missing": [
-   {
-    "pos": "noun",
     "tagCnt": 1,
     "senseCnt": 1
    }
@@ -6023,20 +5867,6 @@
     "pos": "noun",
     "tagCnt": 2,
     "senseCnt": 2
-   }
-  ]
- },
- {
-  "word": "romp",
-  "cefr": "C2",
-  "have": [
-   "verb"
-  ],
-  "missing": [
-   {
-    "pos": "noun",
-    "tagCnt": 1,
-    "senseCnt": 3
    }
   ]
  },
@@ -6368,20 +6198,6 @@
    {
     "pos": "verb",
     "tagCnt": 1,
-    "senseCnt": 2
-   }
-  ]
- },
- {
-  "word": "silhouette",
-  "cefr": "C1",
-  "have": [
-   "noun"
-  ],
-  "missing": [
-   {
-    "pos": "verb",
-    "tagCnt": 2,
     "senseCnt": 2
    }
   ]
@@ -7192,20 +7008,6 @@
  {
   "word": "sugar",
   "cefr": "A1",
-  "have": [
-   "noun"
-  ],
-  "missing": [
-   {
-    "pos": "verb",
-    "tagCnt": 1,
-    "senseCnt": 1
-   }
-  ]
- },
- {
-  "word": "sulphur",
-  "cefr": "C2",
   "have": [
    "noun"
   ],
@@ -8104,20 +7906,6 @@
   ]
  },
  {
-  "word": "virtuoso",
-  "cefr": "C2",
-  "have": [
-   "noun"
-  ],
-  "missing": [
-   {
-    "pos": "adj",
-    "tagCnt": 1,
-    "senseCnt": 1
-   }
-  ]
- },
- {
   "word": "walking",
   "cefr": "A2",
   "have": [
@@ -8219,34 +8007,6 @@
     "pos": "verb",
     "tagCnt": 3,
     "senseCnt": 4
-   }
-  ]
- },
- {
-  "word": "wheeze",
-  "cefr": "C2",
-  "have": [
-   "verb"
-  ],
-  "missing": [
-   {
-    "pos": "noun",
-    "tagCnt": 1,
-    "senseCnt": 2
-   }
-  ]
- },
- {
-  "word": "whir",
-  "cefr": "C2",
-  "have": [
-   "verb"
-  ],
-  "missing": [
-   {
-    "pos": "noun",
-    "tagCnt": 1,
-    "senseCnt": 1
    }
   ]
  },
@@ -8379,20 +8139,6 @@
   ]
  },
  {
-  "word": "wrack",
-  "cefr": "C2",
-  "have": [
-   "verb"
-  ],
-  "missing": [
-   {
-    "pos": "noun",
-    "tagCnt": 1,
-    "senseCnt": 3
-   }
-  ]
- },
- {
   "word": "wrong",
   "cefr": "A1",
   "have": [
@@ -8466,6 +8212,260 @@
     "pos": "noun",
     "tagCnt": 1,
     "senseCnt": 9
+   }
+  ]
+ },
+ {
+  "word": "ad-lib",
+  "cefr": "C2",
+  "have": [
+   "verb",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 1,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "appalling",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 1,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "bulk",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 1,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "chisel",
+  "cefr": "C1",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 1,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "forfeit",
+  "cefr": "C1",
+  "have": [
+   "verb",
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 1,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "frolic",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 1,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "integral",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 1,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "notable",
+  "cefr": "C1",
+  "have": [
+   "adj"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 1,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "proposition",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 1,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "recess",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 1,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "reissue",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 1,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "romp",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 1,
+    "senseCnt": 3
+   }
+  ]
+ },
+ {
+  "word": "silhouette",
+  "cefr": "C1",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 2,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "sulphur",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "verb",
+    "tagCnt": 1,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "virtuoso",
+  "cefr": "C2",
+  "have": [
+   "noun"
+  ],
+  "missing": [
+   {
+    "pos": "adj",
+    "tagCnt": 1,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "wheeze",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 1,
+    "senseCnt": 2
+   }
+  ]
+ },
+ {
+  "word": "whir",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 1,
+    "senseCnt": 1
+   }
+  ]
+ },
+ {
+  "word": "wrack",
+  "cefr": "C2",
+  "have": [
+   "verb"
+  ],
+  "missing": [
+   {
+    "pos": "noun",
+    "tagCnt": 1,
+    "senseCnt": 3
    }
   ]
  }

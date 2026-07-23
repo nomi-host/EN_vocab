@@ -16,9 +16,7 @@ const fs = require("fs");
 const path = require("path");
 const ROOT = path.resolve(__dirname, "..", "..");
 const DICT = path.join(ROOT, "pipeline", "node_modules", "wordnet-db", "dict");
-global.window = {};
-require(path.join(ROOT, "words.js"));
-const SEED = global.window.SEED;
+const SEED = require("../load_seed.js")(); // 코어+청크 전체
 
 const POS_FILES = { noun: "index.noun", verb: "index.verb", adj: "index.adj", adv: "index.adv" };
 // WordNet index 행: lemma pos synset_cnt p_cnt [ptr...] sense_cnt tagsense_cnt offsets...

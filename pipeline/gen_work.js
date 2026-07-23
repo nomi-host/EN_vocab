@@ -5,9 +5,7 @@
 const fs = require("fs");
 const path = require("path");
 const ROOT = path.resolve(__dirname, "..");
-global.window = {};
-require(path.join(ROOT, "words.js"));
-const SEED = global.window.SEED;
+const SEED = require("./load_seed.js")(); // 코어+청크 전체(분할 후 words.js만 읽으면 코어뿐)
 const wn = JSON.parse(fs.readFileSync(path.join(__dirname, "wordnet_senses.json"), "utf8"));
 
 const workDir = path.join(__dirname, "work");

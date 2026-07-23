@@ -8,9 +8,7 @@ const WordPOS = require("wordpos");
 const wp = new WordPOS();
 const ROOT = path.resolve(__dirname, "..");
 
-global.window = {};
-require(path.join(ROOT, "words.js"));
-const SEED = global.window.SEED;
+const SEED = require("./load_seed.js")(); // 코어+청크 전체(분할 후 words.js만 읽으면 코어뿐)
 const words = SEED.map(w => w.word);
 
 const POS_KO = { n: "명사", v: "동사", a: "형용사", s: "형용사", r: "부사" };
