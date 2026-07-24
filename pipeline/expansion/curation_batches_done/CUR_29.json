@@ -1,0 +1,512 @@
+[
+ {
+  "word": "lactic",
+  "rank": 44792,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lameness",
+  "rank": 44793,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "landlubber",
+  "rank": 44794,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lasciviously",
+  "rank": 44796,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ligation",
+  "rank": 44799,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "litre",
+  "rank": 44800,
+  "accept": false,
+  "reason": "영국식 철자(liter가 이미 시드에 있음)"
+ },
+ {
+  "word": "loll",
+  "rank": 44801,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lovebird",
+  "rank": 44802,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lubber",
+  "rank": 44804,
+  "accept": true,
+  "reason": "note: 저빈도 뱃말이지만 표준 사전어(선원 은어)"
+ },
+ {
+  "word": "luminary",
+  "rank": 44806,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "magnetometer",
+  "rank": 44811,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mailbag",
+  "rank": 44812,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "malleus",
+  "rank": 44813,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "melange",
+  "rank": 44820,
+  "accept": true,
+  "reason": "note: 프랑스어 차용(mélange)이나 영어에 정착된 일반 어휘로 판단"
+ },
+ {
+  "word": "memoranda",
+  "rank": 44822,
+  "accept": true,
+  "reason": "note: memorandum 단수형은 시드 미보유, memorandum의 불규칙 복수형이나 단수형 부재로 복수형 채택"
+ },
+ {
+  "word": "militarism",
+  "rank": 44826,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "millionairess",
+  "rank": 44827,
+  "accept": true,
+  "reason": "note: -ess 파생 여성형, 다소 시대에 뒤처진 어감이나 여전히 사전 등재어"
+ },
+ {
+  "word": "minestrone",
+  "rank": 44830,
+  "accept": true,
+  "reason": "note: 정착된 음식 차용어"
+ },
+ {
+  "word": "ministerial",
+  "rank": 44831,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "misanthrope",
+  "rank": 44832,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "misbehavior",
+  "rank": 44833,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mylar",
+  "rank": 44842,
+  "accept": false,
+  "reason": "고유명사(듀폰사 상표명, Mylar) — 일부 구어 관용 있으나 사전상 여전히 trademark 표기"
+ },
+ {
+  "word": "narcosis",
+  "rank": 44845,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "natal",
+  "rank": 44846,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "neonate",
+  "rank": 44848,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "obelisk",
+  "rank": 44854,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "obligingly",
+  "rank": 44856,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "onus",
+  "rank": 44860,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ordination",
+  "rank": 44861,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "oriole",
+  "rank": 44862,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "outfielder",
+  "rank": 44863,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "overburdened",
+  "rank": 44867,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "overfeed",
+  "rank": 44870,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pasteurized",
+  "rank": 44878,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "peasantry",
+  "rank": 44881,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pedant",
+  "rank": 44882,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pedophilia",
+  "rank": 44884,
+  "accept": true,
+  "reason": "note: 임상/법률 표준 용어로 채택"
+ },
+ {
+  "word": "peen",
+  "rank": 44886,
+  "accept": true,
+  "reason": "note: 저빈도 공구 부품 명칭(ball-peen hammer)이나 표준 사전어"
+ },
+ {
+  "word": "perspicacious",
+  "rank": 44890,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "photophobia",
+  "rank": 44891,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pianola",
+  "rank": 44892,
+  "accept": true,
+  "reason": "note: 원래 상표명(Pianola)에서 유래했으나 player piano를 가리키는 일반명사로 사전에 등재된 경계 사례"
+ },
+ {
+  "word": "piecework",
+  "rank": 44894,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pitchman",
+  "rank": 44898,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "poetically",
+  "rank": 44900,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "poky",
+  "rank": 44902,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "porcine",
+  "rank": 44905,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "predictability",
+  "rank": 44908,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "psychokinetic",
+  "rank": 44911,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "quicklime",
+  "rank": 44915,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rammer",
+  "rank": 44917,
+  "accept": true,
+  "reason": "note: 저빈도 공구 명칭(다짐봉)이나 표준 사전어"
+ },
+ {
+  "word": "rapidity",
+  "rank": 44918,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rapprochement",
+  "rank": 44919,
+  "accept": true,
+  "reason": "note: 프랑스어 차용이나 외교/정치 용어로 영어에 정착"
+ },
+ {
+  "word": "ratification",
+  "rank": 44921,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "reanimated",
+  "rank": 44923,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rearguard",
+  "rank": 44924,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rearmament",
+  "rank": 44925,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "reciprocation",
+  "rank": 44926,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "recyclable",
+  "rank": 44929,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "redcap",
+  "rank": 44930,
+  "accept": true,
+  "reason": "note: 기차역 짐꾼(미국식)을 가리키는 다소 예스러운 표현이나 사전 등재어"
+ },
+ {
+  "word": "redeployment",
+  "rank": 44931,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "regimentation",
+  "rank": 44933,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "relational",
+  "rank": 44935,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "reticular",
+  "rank": 44937,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "retry",
+  "rank": 44938,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "returnable",
+  "rank": 44939,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rockabilly",
+  "rank": 44942,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "satirist",
+  "rank": 44946,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "scraper",
+  "rank": 44952,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "scruple",
+  "rank": 44954,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "seismologist",
+  "rank": 44960,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sensitized",
+  "rank": 44962,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "separator",
+  "rank": 44963,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sharecropper",
+  "rank": 44966,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "skilfully",
+  "rank": 44972,
+  "accept": false,
+  "reason": "영국식 철자(skillful/skillfully 미국식이 이미 시드에 있음)"
+ },
+ {
+  "word": "slacken",
+  "rank": 44973,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "slavish",
+  "rank": 44975,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sleeveless",
+  "rank": 44977,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sloughing",
+  "rank": 44978,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sooty",
+  "rank": 44986,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "soreness",
+  "rank": 44987,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sourball",
+  "rank": 44988,
+  "accept": true,
+  "reason": "note: 지역·저빈도 사탕 명칭이나 표준 사전어"
+ },
+ {
+  "word": "souvlaki",
+  "rank": 44989,
+  "accept": true,
+  "reason": "note: 정착된 음식 차용어"
+ },
+ {
+  "word": "spick",
+  "rank": 44994,
+  "accept": false,
+  "reason": "화석어/비단어 — 'spick and span' 관용구 밖에서 독립적 의미 없음 및 인종 비속어(spic)와 철자 혼동 위험"
+ },
+ {
+  "word": "spiffing",
+  "rank": 44997,
+  "accept": true,
+  "reason": "note: 영국식 구식 속어(dated)이나 완전히 죽은 단어는 아니라 판단해 채택"
+ },
+ {
+  "word": "stabiliser",
+  "rank": 45000,
+  "accept": false,
+  "reason": "영국식 철자(stabilize가 이미 시드에 있어 동일 어군의 미국식 철자 일관성 유지)"
+ }
+]
