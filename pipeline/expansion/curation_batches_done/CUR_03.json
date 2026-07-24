@@ -1,0 +1,3002 @@
+[
+ {
+  "word": "cupcake",
+  "rank": 8881,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sleigh",
+  "rank": 8884,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rotting",
+  "rank": 8891,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lotion",
+  "rank": 8903,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "operative",
+  "rank": 8905,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "convertible",
+  "rank": 8906,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "detector",
+  "rank": 8907,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "crust",
+  "rank": 8908,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ashtray",
+  "rank": 8910,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "labour",
+  "rank": 8911,
+  "accept": false,
+  "reason": "영국식 철자 — 미국식(labor) 이미 보유"
+ },
+ {
+  "word": "reel",
+  "rank": 8913,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "skunk",
+  "rank": 8914,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "diabetes",
+  "rank": 8915,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "macaroni",
+  "rank": 8917,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "armored",
+  "rank": 8919,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nip",
+  "rank": 8943,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "slate",
+  "rank": 8944,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "warhead",
+  "rank": 8953,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tapping",
+  "rank": 8971,
+  "accept": false,
+  "reason": "기보유 단어(tap)의 규칙 굴절형(-ing), 독립된 뜻 없음"
+ },
+ {
+  "word": "braces",
+  "rank": 8975,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wacky",
+  "rank": 8977,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "reset",
+  "rank": 8978,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "batting",
+  "rank": 8981,
+  "accept": true,
+  "reason": "기보유 단어 bat과 관련되나 '충전재(cotton batting)' 등 독립된 명사 뜻이 있어 채택"
+ },
+ {
+  "word": "wedded",
+  "rank": 8983,
+  "accept": true,
+  "reason": "기보유 단어 wed의 굴절형이지만 'wedded to an idea'(~에 몰두한)처럼 독립된 형용사 뜻이 있어 채택"
+ },
+ {
+  "word": "ratio",
+  "rank": 8984,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pup",
+  "rank": 8985,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cockpit",
+  "rank": 8987,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sultan",
+  "rank": 8990,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stupidity",
+  "rank": 8997,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "anatomy",
+  "rank": 9006,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cheeseburger",
+  "rank": 9009,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "radioactive",
+  "rank": 9011,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fingerprint",
+  "rank": 9012,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "brigade",
+  "rank": 9014,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hen",
+  "rank": 9015,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lever",
+  "rank": 9016,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stallion",
+  "rank": 9017,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "drifting",
+  "rank": 9037,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "brute",
+  "rank": 9039,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "weirdo",
+  "rank": 9040,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "doorman",
+  "rank": 9042,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "casket",
+  "rank": 9052,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rapist",
+  "rank": 9053,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cruiser",
+  "rank": 9056,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "raving",
+  "rank": 9069,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dickhead",
+  "rank": 9075,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "colours",
+  "rank": 9080,
+  "accept": false,
+  "reason": "기보유 단어(color)의 영국식 철자+굴절형"
+ },
+ {
+  "word": "scalpel",
+  "rank": 9081,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cologne",
+  "rank": 9085,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "snitch",
+  "rank": 9087,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stewardess",
+  "rank": 9090,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "typewriter",
+  "rank": 9091,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "quid",
+  "rank": 9093,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mermaid",
+  "rank": 9094,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dispose",
+  "rank": 9102,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "deception",
+  "rank": 9104,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "touchy",
+  "rank": 9105,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "squat",
+  "rank": 9106,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "duct",
+  "rank": 9115,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "heist",
+  "rank": 9118,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tar",
+  "rank": 9119,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "frat",
+  "rank": 9120,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "gospel",
+  "rank": 9121,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "samurai",
+  "rank": 9125,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mem",
+  "rank": 9127,
+  "accept": false,
+  "reason": "명백한 오타/비단어 — 독립 표제어가 아닌 토큰화 파편(member/memo 등의 조각으로 추정)"
+ },
+ {
+  "word": "reign",
+  "rank": 9135,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wimp",
+  "rank": 9137,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "allegiance",
+  "rank": 9140,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "slimy",
+  "rank": 9142,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bosom",
+  "rank": 9144,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "glamour",
+  "rank": 9147,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "propaganda",
+  "rank": 9150,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "phoney",
+  "rank": 9151,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tucked",
+  "rank": 9160,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tying",
+  "rank": 9161,
+  "accept": false,
+  "reason": "기보유 단어(tie)의 불규칙 철자 굴절형(-ying), 독립된 뜻 없음"
+ },
+ {
+  "word": "jumpy",
+  "rank": 9164,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "liability",
+  "rank": 9167,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nauseous",
+  "rank": 9170,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "loner",
+  "rank": 9173,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "attendant",
+  "rank": 9181,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sexuality",
+  "rank": 9184,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "taco",
+  "rank": 9186,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tuxedo",
+  "rank": 9187,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tavern",
+  "rank": 9191,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "muffled",
+  "rank": 9207,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "trench",
+  "rank": 9208,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cellphone",
+  "rank": 9210,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "counterfeit",
+  "rank": 9214,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wand",
+  "rank": 9215,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lighthouse",
+  "rank": 9217,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "inferior",
+  "rank": 9235,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wailing",
+  "rank": 9238,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "twilight",
+  "rank": 9240,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "oyster",
+  "rank": 9243,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chum",
+  "rank": 9245,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bagel",
+  "rank": 9246,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hardcore",
+  "rank": 9249,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "distinct",
+  "rank": 9255,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "preposterous",
+  "rank": 9257,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "trespassing",
+  "rank": 9262,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "infrared",
+  "rank": 9276,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "craps",
+  "rank": 9279,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tenant",
+  "rank": 9281,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bacteria",
+  "rank": 9282,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "goldfish",
+  "rank": 9283,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "brig",
+  "rank": 9289,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "avenge",
+  "rank": 9314,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "baloney",
+  "rank": 9315,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "temp",
+  "rank": 9316,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "invincible",
+  "rank": 9318,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "smuggling",
+  "rank": 9321,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "parish",
+  "rank": 9323,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mainland",
+  "rank": 9325,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fiancee",
+  "rank": 9327,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "demonic",
+  "rank": 9328,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "flushed",
+  "rank": 9340,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mellow",
+  "rank": 9350,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "housekeeping",
+  "rank": 9352,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "boob",
+  "rank": 9355,
+  "accept": true,
+  "reason": "주 뜻은 '실수/실책'(영국 구어)이며 신체 부위 속어 뜻은 부차적 — 애매하나 채택"
+ },
+ {
+  "word": "deposition",
+  "rank": 9358,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "arson",
+  "rank": 9361,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chimp",
+  "rank": 9364,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "scoot",
+  "rank": 9378,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fearless",
+  "rank": 9379,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "kinky",
+  "rank": 9382,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wiggle",
+  "rank": 9390,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "scoundrel",
+  "rank": 9391,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cinnamon",
+  "rank": 9392,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rake",
+  "rank": 9395,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "internship",
+  "rank": 9396,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "herring",
+  "rank": 9397,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "admirer",
+  "rank": 9412,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vocal",
+  "rank": 9419,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cuckoo",
+  "rank": 9424,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "veil",
+  "rank": 9425,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "receiver",
+  "rank": 9427,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shrine",
+  "rank": 9428,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hustler",
+  "rank": 9432,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mojo",
+  "rank": 9433,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "marrow",
+  "rank": 9437,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "snappy",
+  "rank": 9445,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shred",
+  "rank": 9447,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "transaction",
+  "rank": 9451,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pierced",
+  "rank": 9453,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "caffeine",
+  "rank": 9454,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "warfare",
+  "rank": 9457,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "scanner",
+  "rank": 9459,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shuffle",
+  "rank": 9464,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "depot",
+  "rank": 9465,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "jewellery",
+  "rank": 9467,
+  "accept": false,
+  "reason": "영국식 철자 — 미국식(jewelry) 이미 보유"
+ },
+ {
+  "word": "infirmary",
+  "rank": 9469,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fellowship",
+  "rank": 9470,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "te",
+  "rank": 9472,
+  "accept": false,
+  "reason": "명백한 오타/비단어 — 독립 표제어가 아닌 토큰화 파편"
+ },
+ {
+  "word": "recital",
+  "rank": 9473,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vintage",
+  "rank": 9483,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stale",
+  "rank": 9484,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "platter",
+  "rank": 9488,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rotation",
+  "rank": 9500,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rumour",
+  "rank": 9501,
+  "accept": false,
+  "reason": "영국식 철자 — 미국식(rumor) 이미 보유"
+ },
+ {
+  "word": "fireman",
+  "rank": 9503,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "protector",
+  "rank": 9504,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "canary",
+  "rank": 9506,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "puss",
+  "rank": 9507,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "latrine",
+  "rank": 9509,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sled",
+  "rank": 9514,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "spotlight",
+  "rank": 9521,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "overdue",
+  "rank": 9522,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "underway",
+  "rank": 9524,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sensitivity",
+  "rank": 9526,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "suicidal",
+  "rank": 9529,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "covert",
+  "rank": 9534,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "noodle",
+  "rank": 9536,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "grad",
+  "rank": 9538,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cactus",
+  "rank": 9542,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mare",
+  "rank": 9543,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "terminated",
+  "rank": 9565,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "imbecile",
+  "rank": 9569,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mailman",
+  "rank": 9570,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pager",
+  "rank": 9571,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "puck",
+  "rank": 9581,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "yi",
+  "rank": 9586,
+  "accept": false,
+  "reason": "명백한 오타/비단어 — 독립 영어 표제어가 아님"
+ },
+ {
+  "word": "homemade",
+  "rank": 9589,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "manhood",
+  "rank": 9599,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hugging",
+  "rank": 9601,
+  "accept": false,
+  "reason": "기보유 단어(hug)의 규칙 굴절형(-ing), 독립된 뜻 없음"
+ },
+ {
+  "word": "proceedings",
+  "rank": 9602,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cork",
+  "rank": 9605,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pest",
+  "rank": 9606,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cappuccino",
+  "rank": 9612,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mil",
+  "rank": 9613,
+  "accept": true,
+  "reason": "'million'의 구어 축약(예: grand=1000 패턴과 유사) — 애매하나 채택"
+ },
+ {
+  "word": "deuce",
+  "rank": 9616,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "neon",
+  "rank": 9618,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "geisha",
+  "rank": 9624,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pronto",
+  "rank": 9631,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cellular",
+  "rank": 9639,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cradle",
+  "rank": 9642,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "poodle",
+  "rank": 9644,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "caddy",
+  "rank": 9649,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "starship",
+  "rank": 9655,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "arrogance",
+  "rank": 9663,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "penitentiary",
+  "rank": 9669,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "zipper",
+  "rank": 9671,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nosy",
+  "rank": 9672,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lingerie",
+  "rank": 9674,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "jumbo",
+  "rank": 9675,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mystical",
+  "rank": 9678,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "limousine",
+  "rank": 9681,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nipple",
+  "rank": 9682,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lineup",
+  "rank": 9686,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "infantry",
+  "rank": 9687,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "beeper",
+  "rank": 9692,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "weenie",
+  "rank": 9695,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "constable",
+  "rank": 9697,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "slayer",
+  "rank": 9699,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "drone",
+  "rank": 9700,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "eclipse",
+  "rank": 9702,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "slipstream",
+  "rank": 9704,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "starring",
+  "rank": 9708,
+  "accept": true,
+  "reason": "기보유 단어 star(동사 포함)의 파생형이나 'starring role' 관용구의 독립 형용사 용법으로 채택"
+ },
+ {
+  "word": "aggression",
+  "rank": 9725,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cramp",
+  "rank": 9726,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fishy",
+  "rank": 9728,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mush",
+  "rank": 9732,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "prairie",
+  "rank": 9733,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "quadrant",
+  "rank": 9734,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bollocks",
+  "rank": 9736,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "dwell",
+  "rank": 9747,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "refill",
+  "rank": 9749,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "psychopath",
+  "rank": 9757,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "delusional",
+  "rank": 9764,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dairy",
+  "rank": 9766,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "velocity",
+  "rank": 9769,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bong",
+  "rank": 9774,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stealth",
+  "rank": 9775,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "creaking",
+  "rank": 9777,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vineyard",
+  "rank": 9778,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "disgust",
+  "rank": 9787,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "threshold",
+  "rank": 9788,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "insert",
+  "rank": 9789,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wacko",
+  "rank": 9795,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "slime",
+  "rank": 9798,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "enchanted",
+  "rank": 9799,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "revolver",
+  "rank": 9803,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "turd",
+  "rank": 9805,
+  "accept": false,
+  "reason": "비속어(배설물을 가리키는 저속 표현, damn/hell/crap보다 수위가 높음)"
+ },
+ {
+  "word": "hoops",
+  "rank": 9806,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "squid",
+  "rank": 9812,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sideways",
+  "rank": 9825,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "terminate",
+  "rank": 9836,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "creeping",
+  "rank": 9840,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "crotch",
+  "rank": 9841,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "spook",
+  "rank": 9846,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "slumber",
+  "rank": 9847,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "manslaughter",
+  "rank": 9851,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "squirt",
+  "rank": 9852,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "magnet",
+  "rank": 9854,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "witchcraft",
+  "rank": 9857,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "steward",
+  "rank": 9859,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "orb",
+  "rank": 9863,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "handler",
+  "rank": 9864,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sanity",
+  "rank": 9873,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "leverage",
+  "rank": 9887,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hippie",
+  "rank": 9891,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "caliber",
+  "rank": 9893,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "grub",
+  "rank": 9896,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sermon",
+  "rank": 9905,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "commentator",
+  "rank": 9911,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "abide",
+  "rank": 9925,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "casualty",
+  "rank": 9932,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "certified",
+  "rank": 9935,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pinched",
+  "rank": 9938,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "babysitting",
+  "rank": 9939,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "delusion",
+  "rank": 9943,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "anal",
+  "rank": 9945,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "furnace",
+  "rank": 9950,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unity",
+  "rank": 9952,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "whirring",
+  "rank": 9956,
+  "accept": false,
+  "reason": "기보유 단어(whir)의 규칙 굴절형(-ing), 독립된 뜻 없음"
+ },
+ {
+  "word": "troll",
+  "rank": 9958,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "banned",
+  "rank": 9966,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "poetic",
+  "rank": 9969,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "intimidated",
+  "rank": 9972,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dignified",
+  "rank": 9977,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "collision",
+  "rank": 9984,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hoop",
+  "rank": 9986,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "kosher",
+  "rank": 9987,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sidekick",
+  "rank": 9991,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "manuscript",
+  "rank": 9992,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "inmate",
+  "rank": 9993,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "junkyard",
+  "rank": 9994,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "navigator",
+  "rank": 9996,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tofu",
+  "rank": 9998,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "neurotic",
+  "rank": 10014,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "paranoia",
+  "rank": 10017,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sly",
+  "rank": 10019,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "matrimony",
+  "rank": 10020,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "overdose",
+  "rank": 10027,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "squeal",
+  "rank": 10028,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pornography",
+  "rank": 10029,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stomp",
+  "rank": 10030,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "contestant",
+  "rank": 10032,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hydrogen",
+  "rank": 10034,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lass",
+  "rank": 10037,
+  "accept": true,
+  "reason": "스코틀랜드/북잉글랜드 방언투(소녀)로 다소 지역색 있으나 문학·노래에서 흔히 쓰여 채택"
+ },
+ {
+  "word": "scorpion",
+  "rank": 10040,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bleep",
+  "rank": 10041,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "module",
+  "rank": 10042,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "deploy",
+  "rank": 10060,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "delirious",
+  "rank": 10062,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fore",
+  "rank": 10065,
+  "accept": true,
+  "reason": "흔한 독립어는 아니지만(골프 구호 'Fore!', 'fore and aft' 등) 실제 사전 표제어라 채택"
+ },
+ {
+  "word": "shush",
+  "rank": 10067,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "saliva",
+  "rank": 10068,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "polar",
+  "rank": 10069,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cognac",
+  "rank": 10070,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wireless",
+  "rank": 10072,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "diesel",
+  "rank": 10078,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "epi",
+  "rank": 10080,
+  "accept": false,
+  "reason": "명백한 오타/비단어 — 접두사 조각(episode/epidemic 등), 독립 단어 아님"
+ },
+ {
+  "word": "roach",
+  "rank": 10082,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "equivalent",
+  "rank": 10094,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "insignificant",
+  "rank": 10096,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tacky",
+  "rank": 10105,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "predator",
+  "rank": 10113,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "molecular",
+  "rank": 10120,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "harp",
+  "rank": 10121,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "racer",
+  "rank": 10131,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stirring",
+  "rank": 10140,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hoot",
+  "rank": 10142,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cheesy",
+  "rank": 10149,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hassle",
+  "rank": 10151,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "patio",
+  "rank": 10152,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "coup",
+  "rank": 10153,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "reborn",
+  "rank": 10156,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bridal",
+  "rank": 10163,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "satin",
+  "rank": 10164,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "appendix",
+  "rank": 10168,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "morbid",
+  "rank": 10181,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "finer",
+  "rank": 10187,
+  "accept": false,
+  "reason": "기보유 단어(fine)의 비교급"
+ },
+ {
+  "word": "perish",
+  "rank": 10189,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "domain",
+  "rank": 10194,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "martyr",
+  "rank": 10197,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lug",
+  "rank": 10201,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "technician",
+  "rank": 10205,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dunk",
+  "rank": 10211,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "holdup",
+  "rank": 10212,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "alimony",
+  "rank": 10216,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dyke",
+  "rank": 10217,
+  "accept": false,
+  "reason": "비속어(성소수자 혐오 비속어로 흔히 쓰임) — 제방(embankment) 뜻도 있으나 미국 구어 코퍼스 맥락상 비속어 용법이 압도적"
+ },
+ {
+  "word": "meatball",
+  "rank": 10220,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "counsellor",
+  "rank": 10223,
+  "accept": true,
+  "reason": "영국식 철자지만 미국식 counselor가 아직 SEED에 없어 기각 사유(5) 미해당 — 3단계에서 counselor 표기 통일 검토 여지 있음"
+ },
+ {
+  "word": "freshen",
+  "rank": 10231,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "senseless",
+  "rank": 10234,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "obligated",
+  "rank": 10241,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "upstate",
+  "rank": 10242,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dungeon",
+  "rank": 10244,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "restraint",
+  "rank": 10245,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "spleen",
+  "rank": 10249,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "blueberry",
+  "rank": 10252,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pepperoni",
+  "rank": 10253,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ulcer",
+  "rank": 10254,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "disc",
+  "rank": 10255,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ninja",
+  "rank": 10257,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cubicle",
+  "rank": 10258,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "milady",
+  "rank": 10261,
+  "accept": false,
+  "reason": "화석어/사어 — 현대 영어에서 거의 안 쓰이는 고풍스러운 호칭(역사물/판타지 외 실사용 희박)"
+ },
+ {
+  "word": "intriguing",
+  "rank": 10275,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "coordinate",
+  "rank": 10284,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sedative",
+  "rank": 10285,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bulletproof",
+  "rank": 10290,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rebellion",
+  "rank": 10292,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tolerance",
+  "rank": 10293,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bugged",
+  "rank": 10296,
+  "accept": false,
+  "reason": "기보유 단어(bug)의 단순 과거형, 독립된 뜻 없음"
+ },
+ {
+  "word": "screeching",
+  "rank": 10302,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fender",
+  "rank": 10308,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bookie",
+  "rank": 10309,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "maze",
+  "rank": 10312,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "aerial",
+  "rank": 10348,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rave",
+  "rank": 10351,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sway",
+  "rank": 10352,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "booby",
+  "rank": 10353,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "archives",
+  "rank": 10354,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chateau",
+  "rank": 10356,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ref",
+  "rank": 10358,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mambo",
+  "rank": 10363,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "drastic",
+  "rank": 10368,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "agitated",
+  "rank": 10377,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "foreplay",
+  "rank": 10381,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "teeny",
+  "rank": 10383,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "theatrical",
+  "rank": 10384,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cling",
+  "rank": 10388,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "felon",
+  "rank": 10391,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "payday",
+  "rank": 10396,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "brew",
+  "rank": 10400,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "screwdriver",
+  "rank": 10405,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sovereign",
+  "rank": 10407,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "inning",
+  "rank": 10410,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shaman",
+  "rank": 10416,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unreal",
+  "rank": 10431,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sordid",
+  "rank": 10435,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "whiff",
+  "rank": 10436,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "leftovers",
+  "rank": 10442,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "representation",
+  "rank": 10443,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "improvise",
+  "rank": 10445,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "precedent",
+  "rank": 10452,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rust",
+  "rank": 10453,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "intensity",
+  "rank": 10454,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "buff",
+  "rank": 10456,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mute",
+  "rank": 10458,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "snoop",
+  "rank": 10459,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "gurney",
+  "rank": 10461,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "poll",
+  "rank": 10467,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "timber",
+  "rank": 10468,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "buggy",
+  "rank": 10469,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "harbour",
+  "rank": 10472,
+  "accept": false,
+  "reason": "영국식 철자 — 미국식(harbor) 이미 보유"
+ },
+ {
+  "word": "tor",
+  "rank": 10483,
+  "accept": true,
+  "reason": "영국 지리 용어(암산/바위 언덕)로 드문 편이나 실제 사전 표제어라 채택"
+ },
+ {
+  "word": "frustrating",
+  "rank": 10491,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mandatory",
+  "rank": 10496,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "justified",
+  "rank": 10498,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vouch",
+  "rank": 10500,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "downhill",
+  "rank": 10501,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "insured",
+  "rank": 10504,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bozo",
+  "rank": 10507,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "businessmen",
+  "rank": 10509,
+  "accept": false,
+  "reason": "기보유 단어(businessman)의 복수형"
+ },
+ {
+  "word": "sinner",
+  "rank": 10510,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "apocalypse",
+  "rank": 10513,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "assassinated",
+  "rank": 10514,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "encore",
+  "rank": 10515,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "extraction",
+  "rank": 10516,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "defect",
+  "rank": 10518,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "beggar",
+  "rank": 10519,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "indictment",
+  "rank": 10520,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "suture",
+  "rank": 10523,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lumber",
+  "rank": 10525,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "patent",
+  "rank": 10527,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "roulette",
+  "rank": 10528,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sodium",
+  "rank": 10529,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mutiny",
+  "rank": 10530,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "imperial",
+  "rank": 10533,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "watchman",
+  "rank": 10534,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unicorn",
+  "rank": 10537,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stoop",
+  "rank": 10543,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "undone",
+  "rank": 10547,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "restroom",
+  "rank": 10549,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "horribly",
+  "rank": 10552,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "combo",
+  "rank": 10557,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fascist",
+  "rank": 10559,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "knob",
+  "rank": 10560,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "awaken",
+  "rank": 10562,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "masculine",
+  "rank": 10564,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "horrid",
+  "rank": 10565,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "finale",
+  "rank": 10574,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "maternity",
+  "rank": 10576,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stump",
+  "rank": 10578,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "zap",
+  "rank": 10580,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bridesmaid",
+  "rank": 10581,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ultrasound",
+  "rank": 10582,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "runt",
+  "rank": 10583,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "caretaker",
+  "rank": 10585,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hind",
+  "rank": 10586,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "orientation",
+  "rank": 10606,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "icebox",
+  "rank": 10612,
+  "accept": true,
+  "reason": "다소 예스러운 표현(현재는 보통 refrigerator/fridge)이나 여전히 구어에서 쓰여 화석어로 보기엔 애매해 채택"
+ },
+ {
+  "word": "honourable",
+  "rank": 10613,
+  "accept": false,
+  "reason": "영국식 철자 — 미국식(honorable) 이미 보유"
+ },
+ {
+  "word": "homeboy",
+  "rank": 10617,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "polka",
+  "rank": 10621,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tyre",
+  "rank": 10626,
+  "accept": false,
+  "reason": "영국식 철자 — 미국식(tire) 이미 보유"
+ },
+ {
+  "word": "uphold",
+  "rank": 10642,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stirred",
+  "rank": 10643,
+  "accept": false,
+  "reason": "기보유 단어(stir)의 단순 과거형, 독립된 뜻 없음"
+ },
+ {
+  "word": "loony",
+  "rank": 10649,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "platinum",
+  "rank": 10653,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "imminent",
+  "rank": 10654,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "homesick",
+  "rank": 10656,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "latte",
+  "rank": 10662,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "florist",
+  "rank": 10664,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "squealing",
+  "rank": 10667,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hoax",
+  "rank": 10668,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "repent",
+  "rank": 10670,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lair",
+  "rank": 10671,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nagging",
+  "rank": 10684,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "furry",
+  "rank": 10687,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "monstrous",
+  "rank": 10689,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "obstruction",
+  "rank": 10690,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "humility",
+  "rank": 10691,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "collective",
+  "rank": 10693,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pompous",
+  "rank": 10694,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "decaf",
+  "rank": 10695,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tart",
+  "rank": 10698,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "prostitution",
+  "rank": 10700,
+  "accept": false,
+  "reason": "이미 SEED에 동일 표제어로 등재되어 있음(완전 중복, candidates.json 필터 누락으로 추정)"
+ },
+ {
+  "word": "antenna",
+  "rank": 10707,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ordeal",
+  "rank": 10716,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "downright",
+  "rank": 10724,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pushy",
+  "rank": 10731,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "viable",
+  "rank": 10734,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "barefoot",
+  "rank": 10742,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "franchise",
+  "rank": 10744,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "swab",
+  "rank": 10745,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "detonator",
+  "rank": 10753,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nuke",
+  "rank": 10756,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "limbo",
+  "rank": 10762,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "squeak",
+  "rank": 10764,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "loo",
+  "rank": 10765,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unfaithful",
+  "rank": 10779,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rinse",
+  "rank": 10782,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "grumpy",
+  "rank": 10788,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shady",
+  "rank": 10791,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "douche",
+  "rank": 10795,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "putz",
+  "rank": 10796,
+  "accept": true,
+  "reason": "이디시어 유래지만 현대 영어에서는 'idiot/jerk' 수준의 순화된 경멸어로 통용 — 애매하나 채택"
+ },
+ {
+  "word": "epic",
+  "rank": 10798,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "checkbook",
+  "rank": 10799,
+  "accept": true,
+  "reason": ""
+ }
+]
