@@ -1,0 +1,3002 @@
+[
+ {
+  "word": "s",
+  "rank": 5,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "t",
+  "rank": 8,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "m",
+  "rank": 22,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "don",
+  "rank": 24,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "re",
+  "rank": 27,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "d",
+  "rank": 82,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "said",
+  "rank": 125,
+  "accept": false,
+  "reason": "기보유 단어(say)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "won",
+  "rank": 165,
+  "accept": false,
+  "reason": "기보유 단어(win)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "isn",
+  "rank": 199,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "made",
+  "rank": 203,
+  "accept": false,
+  "reason": "기보유 단어(make)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "getting",
+  "rank": 237,
+  "accept": false,
+  "reason": "기보유 단어(get)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "shit",
+  "rank": 246,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "ain",
+  "rank": 265,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "heard",
+  "rank": 284,
+  "accept": false,
+  "reason": "기보유 단어(hear)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "fuck",
+  "rank": 288,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "men",
+  "rank": 290,
+  "accept": false,
+  "reason": "기보유 단어(man)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "fucking",
+  "rank": 325,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "gone",
+  "rank": 349,
+  "accept": false,
+  "reason": "기보유 단어(go)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "em",
+  "rank": 395,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "tried",
+  "rank": 509,
+  "accept": false,
+  "reason": "기보유 단어(try)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "ma",
+  "rank": 511,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "bitch",
+  "rank": 542,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "taken",
+  "rank": 611,
+  "accept": false,
+  "reason": "기보유 단어(take)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "sent",
+  "rank": 616,
+  "accept": false,
+  "reason": "기보유 단어(send)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "ha",
+  "rank": 657,
+  "accept": true,
+  "reason": "웃음을 나타내는 감탄사로 사전에 등재된 독립 단어(s/t/m류 파편과 다름) — 채택"
+ },
+ {
+  "word": "felt",
+  "rank": 669,
+  "accept": false,
+  "reason": "기보유 단어(feel)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "goddamn",
+  "rank": 689,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "broke",
+  "rank": 724,
+  "accept": false,
+  "reason": "기보유 단어(break)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "th",
+  "rank": 773,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "sitting",
+  "rank": 797,
+  "accept": false,
+  "reason": "기보유 단어(sit)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "kept",
+  "rank": 827,
+  "accept": false,
+  "reason": "기보유 단어(keep)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "lying",
+  "rank": 845,
+  "accept": false,
+  "reason": "기보유 단어(lie)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "y",
+  "rank": 870,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "born",
+  "rank": 883,
+  "accept": false,
+  "reason": "기보유 단어(bear)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "stopped",
+  "rank": 958,
+  "accept": false,
+  "reason": "기보유 단어(stop)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "fell",
+  "rank": 979,
+  "accept": false,
+  "reason": "기보유 단어(fall)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "spent",
+  "rank": 1017,
+  "accept": false,
+  "reason": "기보유 단어(spend)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "bullshit",
+  "rank": 1034,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "la",
+  "rank": 1043,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "putting",
+  "rank": 1049,
+  "accept": false,
+  "reason": "기보유 단어(put)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "bastard",
+  "rank": 1075,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "crap",
+  "rank": 1124,
+  "accept": true,
+  "reason": "일상 구어 순화 욕설 — 지침 예시(damn/hell/crap)에 해당해 채택"
+ },
+ {
+  "word": "asshole",
+  "rank": 1127,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "n",
+  "rank": 1219,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "bigger",
+  "rank": 1234,
+  "accept": false,
+  "reason": "기보유 단어(big)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "sweetie",
+  "rank": 1243,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stole",
+  "rank": 1251,
+  "accept": false,
+  "reason": "기보유 단어(steal)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "dick",
+  "rank": 1258,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "sold",
+  "rank": 1277,
+  "accept": false,
+  "reason": "기보유 단어(sell)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "motherfucker",
+  "rank": 1292,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "teeth",
+  "rank": 1360,
+  "accept": false,
+  "reason": "기보유 단어(tooth)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "closer",
+  "rank": 1406,
+  "accept": false,
+  "reason": "기보유 단어(close)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "held",
+  "rank": 1493,
+  "accept": false,
+  "reason": "기보유 단어(hold)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "kinda",
+  "rank": 1495,
+  "accept": true,
+  "reason": "kind of의 구어 축약형이지만 구어 영어에서 독립 표제어로 학습 가치 있음 — 채택"
+ },
+ {
+  "word": "de",
+  "rank": 1497,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "ho",
+  "rank": 1509,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "built",
+  "rank": 1528,
+  "accept": false,
+  "reason": "기보유 단어(build)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "attorney",
+  "rank": 1548,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "earlier",
+  "rank": 1567,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "letting",
+  "rank": 1573,
+  "accept": false,
+  "reason": "기보유 단어(let)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "spoke",
+  "rank": 1591,
+  "accept": false,
+  "reason": "기보유 단어(speak)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "butt",
+  "rank": 1592,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "babe",
+  "rank": 1694,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "forgotten",
+  "rank": 1729,
+  "accept": false,
+  "reason": "기보유 단어(forget)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "buried",
+  "rank": 1748,
+  "accept": false,
+  "reason": "기보유 단어(bury)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "ate",
+  "rank": 1760,
+  "accept": false,
+  "reason": "기보유 단어(eat)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "fella",
+  "rank": 1776,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "jerk",
+  "rank": 1795,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "understood",
+  "rank": 1845,
+  "accept": false,
+  "reason": "기보유 단어(understand)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "planned",
+  "rank": 1858,
+  "accept": false,
+  "reason": "기보유 단어(plan)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "demon",
+  "rank": 1886,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cos",
+  "rank": 1928,
+  "accept": true,
+  "reason": "because의 영국식 구어 축약형 — 채택"
+ },
+ {
+  "word": "laid",
+  "rank": 1936,
+  "accept": false,
+  "reason": "기보유 단어(lay)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "drove",
+  "rank": 1987,
+  "accept": false,
+  "reason": "기보유 단어(drive)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "sat",
+  "rank": 2000,
+  "accept": false,
+  "reason": "기보유 단어(sit)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "witch",
+  "rank": 2053,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "loser",
+  "rank": 2090,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "closet",
+  "rank": 2091,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fourth",
+  "rank": 2133,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chick",
+  "rank": 2155,
+  "accept": true,
+  "reason": "여성을 가리키는 다소 캐주얼한 속어지만 널리 통용되는 순한 수위 — 채택"
+ },
+ {
+  "word": "pussy",
+  "rank": 2197,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "pissed",
+  "rank": 2212,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "grown",
+  "rank": 2244,
+  "accept": false,
+  "reason": "기보유 단어(grow)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "pathetic",
+  "rank": 2300,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "led",
+  "rank": 2313,
+  "accept": false,
+  "reason": "기보유 단어(lead)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "committed",
+  "rank": 2314,
+  "accept": false,
+  "reason": "기보유 단어(commit)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "honour",
+  "rank": 2333,
+  "accept": false,
+  "reason": "영국식 철자 변형(미국식 honor 기보유)"
+ },
+ {
+  "word": "piss",
+  "rank": 2347,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "hitting",
+  "rank": 2350,
+  "accept": false,
+  "reason": "기보유 단어(hit)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "winning",
+  "rank": 2364,
+  "accept": false,
+  "reason": "기보유 단어(win)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "maid",
+  "rank": 2407,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "thou",
+  "rank": 2434,
+  "accept": false,
+  "reason": "화석어/사어(고어체 대명사)"
+ },
+ {
+  "word": "cutting",
+  "rank": 2456,
+  "accept": false,
+  "reason": "기보유 단어(cut)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "punk",
+  "rank": 2467,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "zero",
+  "rank": 2513,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "whore",
+  "rank": 2550,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "stopping",
+  "rank": 2569,
+  "accept": false,
+  "reason": "기보유 단어(stop)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "warrant",
+  "rank": 2583,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "thrown",
+  "rank": 2602,
+  "accept": false,
+  "reason": "기보유 단어(throw)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "casino",
+  "rank": 2612,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "trapped",
+  "rank": 2628,
+  "accept": false,
+  "reason": "기보유 단어(trap)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "spoken",
+  "rank": 2663,
+  "accept": false,
+  "reason": "기보유 단어(speak)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "spit",
+  "rank": 2711,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "custody",
+  "rank": 2721,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ripped",
+  "rank": 2746,
+  "accept": false,
+  "reason": "기보유 단어(rip)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "cowboy",
+  "rank": 2754,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "virgin",
+  "rank": 2768,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "favour",
+  "rank": 2807,
+  "accept": false,
+  "reason": "영국식 철자 변형(미국식 favor 기보유)"
+ },
+ {
+  "word": "se",
+  "rank": 2819,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "chosen",
+  "rank": 2857,
+  "accept": false,
+  "reason": "기보유 단어(choose)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "motel",
+  "rank": 2859,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "defendant",
+  "rank": 2906,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ranch",
+  "rank": 2923,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vampire",
+  "rank": 2927,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "alien",
+  "rank": 2938,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bail",
+  "rank": 2947,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "liquor",
+  "rank": 2951,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sec",
+  "rank": 2959,
+  "accept": true,
+  "reason": "second의 구어 축약형(a sec) — 채택"
+ },
+ {
+  "word": "suite",
+  "rank": 3032,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "filthy",
+  "rank": 3064,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "alley",
+  "rank": 3075,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mon",
+  "rank": 3085,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "dropping",
+  "rank": 3095,
+  "accept": false,
+  "reason": "기보유 단어(drop)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "struck",
+  "rank": 3096,
+  "accept": false,
+  "reason": "기보유 단어(strike)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "crystal",
+  "rank": 3108,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dope",
+  "rank": 3117,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "poker",
+  "rank": 3120,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sin",
+  "rank": 3135,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "blown",
+  "rank": 3144,
+  "accept": false,
+  "reason": "기보유 단어(blow)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "fed",
+  "rank": 3150,
+  "accept": false,
+  "reason": "기보유 단어(feed)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "dough",
+  "rank": 3151,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "makeup",
+  "rank": 3213,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "homicide",
+  "rank": 3240,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "champ",
+  "rank": 3265,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "meantime",
+  "rank": 3268,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "begging",
+  "rank": 3276,
+  "accept": false,
+  "reason": "기보유 단어(beg)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "shark",
+  "rank": 3283,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "moron",
+  "rank": 3304,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "skull",
+  "rank": 3317,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "escort",
+  "rank": 3321,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "favourite",
+  "rank": 3332,
+  "accept": false,
+  "reason": "영국식 철자 변형(미국식 favorite 기보유)"
+ },
+ {
+  "word": "rifle",
+  "rank": 3339,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hostage",
+  "rank": 3340,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lad",
+  "rank": 3364,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "gal",
+  "rank": 3383,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "skinny",
+  "rank": 3434,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "darn",
+  "rank": 3448,
+  "accept": true,
+  "reason": "damn의 순화형, 널리 쓰이는 경계선 감탄사 — 채택"
+ },
+ {
+  "word": "combat",
+  "rank": 3463,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dame",
+  "rank": 3476,
+  "accept": true,
+  "reason": "여성을 가리키는 예스러운/캐주얼 호칭, 모욕적 어감 낮음 — 채택"
+ },
+ {
+  "word": "blah",
+  "rank": 3522,
+  "accept": true,
+  "reason": "속어성 필러 단어지만 비속어는 아님 — 채택"
+ },
+ {
+  "word": "penis",
+  "rank": 3529,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "halfway",
+  "rank": 3548,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "digging",
+  "rank": 3558,
+  "accept": false,
+  "reason": "기보유 단어(dig)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "shove",
+  "rank": 3564,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fucker",
+  "rank": 3585,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "sire",
+  "rank": 3586,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cigar",
+  "rank": 3628,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mob",
+  "rank": 3629,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "scout",
+  "rank": 3640,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mistaken",
+  "rank": 3651,
+  "accept": false,
+  "reason": "기보유 단어(mistake)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "chamber",
+  "rank": 3670,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "realise",
+  "rank": 3709,
+  "accept": false,
+  "reason": "영국식 철자 변형(미국식 realize 기보유)"
+ },
+ {
+  "word": "ex",
+  "rank": 3716,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "diner",
+  "rank": 3750,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "kidnapping",
+  "rank": 3824,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vault",
+  "rank": 3839,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "beaten",
+  "rank": 3852,
+  "accept": false,
+  "reason": "기보유 단어(beat)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "mistress",
+  "rank": 3876,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "psychic",
+  "rank": 3882,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wrapped",
+  "rank": 3896,
+  "accept": false,
+  "reason": "기보유 단어(wrap)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "dining",
+  "rank": 3912,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "undercover",
+  "rank": 3915,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chopper",
+  "rank": 3931,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "splendid",
+  "rank": 3935,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "porn",
+  "rank": 3952,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "theatre",
+  "rank": 3990,
+  "accept": false,
+  "reason": "영국식 철자 변형(미국식 theater 기보유)"
+ },
+ {
+  "word": "cock",
+  "rank": 4006,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "slut",
+  "rank": 4012,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "studied",
+  "rank": 4019,
+  "accept": false,
+  "reason": "기보유 단어(study)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "gin",
+  "rank": 4034,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "creep",
+  "rank": 4042,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "warden",
+  "rank": 4044,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "brandy",
+  "rank": 4070,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nest",
+  "rank": 4076,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "psycho",
+  "rank": 4091,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "booze",
+  "rank": 4111,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "torn",
+  "rank": 4134,
+  "accept": false,
+  "reason": "기보유 단어(tear)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "sixth",
+  "rank": 4144,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rod",
+  "rank": 4176,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "paranoid",
+  "rank": 4187,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "drawn",
+  "rank": 4191,
+  "accept": false,
+  "reason": "기보유 단어(draw)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "blond",
+  "rank": 4246,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dice",
+  "rank": 4247,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "parole",
+  "rank": 4248,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nanny",
+  "rank": 4262,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nd",
+  "rank": 4281,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "conspiracy",
+  "rank": 4288,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "driven",
+  "rank": 4297,
+  "accept": false,
+  "reason": "기보유 단어(drive)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "identified",
+  "rank": 4301,
+  "accept": false,
+  "reason": "기보유 단어(identify)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "jeep",
+  "rank": 4303,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "spotted",
+  "rank": 4315,
+  "accept": false,
+  "reason": "기보유 단어(spot)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "random",
+  "rank": 4317,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vodka",
+  "rank": 4356,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dynamite",
+  "rank": 4358,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pistol",
+  "rank": 4367,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shotgun",
+  "rank": 4369,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "warehouse",
+  "rank": 4383,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "butler",
+  "rank": 4391,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "counselor",
+  "rank": 4401,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "scum",
+  "rank": 4406,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "centre",
+  "rank": 4407,
+  "accept": false,
+  "reason": "영국식 철자 변형(미국식 center 기보유)"
+ },
+ {
+  "word": "bachelor",
+  "rank": 4418,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "heroin",
+  "rank": 4436,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dummy",
+  "rank": 4438,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ransom",
+  "rank": 4459,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "gut",
+  "rank": 4463,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "seventh",
+  "rank": 4466,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lit",
+  "rank": 4472,
+  "accept": false,
+  "reason": "기보유 단어(light)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "bait",
+  "rank": 4473,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sworn",
+  "rank": 4485,
+  "accept": false,
+  "reason": "기보유 단어(swear)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "kidney",
+  "rank": 4491,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "autopsy",
+  "rank": 4515,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "burnt",
+  "rank": 4521,
+  "accept": false,
+  "reason": "기보유 단어(burn)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "hallway",
+  "rank": 4527,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "smack",
+  "rank": 4544,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "en",
+  "rank": 4546,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "lesbian",
+  "rank": 4548,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "awhile",
+  "rank": 4556,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "maniac",
+  "rank": 4583,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "triple",
+  "rank": 4585,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "civilian",
+  "rank": 4586,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "flush",
+  "rank": 4591,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "upside",
+  "rank": 4608,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "whatsoever",
+  "rank": 4623,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stunt",
+  "rank": 4637,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "takin",
+  "rank": 4683,
+  "accept": false,
+  "reason": "기보유 단어(take)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "cart",
+  "rank": 4687,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "perimeter",
+  "rank": 4689,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cargo",
+  "rank": 4697,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "coroner",
+  "rank": 4704,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "swamp",
+  "rank": 4708,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "closest",
+  "rank": 4709,
+  "accept": false,
+  "reason": "기보유 단어(close)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "gamble",
+  "rank": 4728,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dug",
+  "rank": 4731,
+  "accept": false,
+  "reason": "기보유 단어(dig)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "whack",
+  "rank": 4733,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "auction",
+  "rank": 4740,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lipstick",
+  "rank": 4767,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hurricane",
+  "rank": 4783,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wrestling",
+  "rank": 4788,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "colour",
+  "rank": 4799,
+  "accept": false,
+  "reason": "영국식 철자 변형(미국식 color 기보유)"
+ },
+ {
+  "word": "cannon",
+  "rank": 4801,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "throne",
+  "rank": 4816,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "setup",
+  "rank": 4818,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "morgue",
+  "rank": 4822,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rig",
+  "rank": 4823,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pimp",
+  "rank": 4824,
+  "accept": true,
+  "reason": "성매매 알선 관련 성인 주제 단어지만 비속어 자체는 아님 — 애매해 채택"
+ },
+ {
+  "word": "briefcase",
+  "rank": 4831,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vulnerable",
+  "rank": 4834,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "raid",
+  "rank": 4847,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wee",
+  "rank": 4862,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lunatic",
+  "rank": 4863,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "robe",
+  "rank": 4865,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "limo",
+  "rank": 4880,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nickel",
+  "rank": 4887,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "betting",
+  "rank": 4894,
+  "accept": false,
+  "reason": "기보유 단어(bet)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "horny",
+  "rank": 4908,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "inn",
+  "rank": 4912,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "courtroom",
+  "rank": 4914,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "alibi",
+  "rank": 4921,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wig",
+  "rank": 4922,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "doorbell",
+  "rank": 4929,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tore",
+  "rank": 4937,
+  "accept": false,
+  "reason": "기보유 단어(tear)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "footage",
+  "rank": 4950,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "phony",
+  "rank": 4956,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "illusion",
+  "rank": 4960,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cocaine",
+  "rank": 4963,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sang",
+  "rank": 4976,
+  "accept": false,
+  "reason": "기보유 단어(sing)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "larger",
+  "rank": 4982,
+  "accept": false,
+  "reason": "기보유 단어(large)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "lan",
+  "rank": 4993,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "autograph",
+  "rank": 4996,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "presume",
+  "rank": 5001,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cocksucker",
+  "rank": 5005,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "pony",
+  "rank": 5025,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hose",
+  "rank": 5039,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mole",
+  "rank": 5041,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "surgical",
+  "rank": 5059,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "defence",
+  "rank": 5061,
+  "accept": false,
+  "reason": "영국식 철자 변형(미국식 defense 기보유)"
+ },
+ {
+  "word": "pod",
+  "rank": 5069,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tuck",
+  "rank": 5086,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chapel",
+  "rank": 5087,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "forgiveness",
+  "rank": 5091,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "martini",
+  "rank": 5095,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hustle",
+  "rank": 5120,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ditch",
+  "rank": 5123,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lounge",
+  "rank": 5125,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "prosecution",
+  "rank": 5127,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "attic",
+  "rank": 5135,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sis",
+  "rank": 5136,
+  "accept": true,
+  "reason": "sister의 구어 축약형이지만 독립적으로 널리 쓰이는 호칭어 — 채택"
+ },
+ {
+  "word": "saddle",
+  "rank": 5142,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "apologise",
+  "rank": 5144,
+  "accept": false,
+  "reason": "영국식 철자 변형(미국식 apologize 기보유)"
+ },
+ {
+  "word": "cue",
+  "rank": 5157,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rot",
+  "rank": 5182,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "blackmail",
+  "rank": 5187,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shaft",
+  "rank": 5195,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "auto",
+  "rank": 5205,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "insanity",
+  "rank": 5206,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sub",
+  "rank": 5219,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pickup",
+  "rank": 5222,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "karate",
+  "rank": 5248,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "violation",
+  "rank": 5254,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "prep",
+  "rank": 5255,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bass",
+  "rank": 5258,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "prostitute",
+  "rank": 5260,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hunch",
+  "rank": 5271,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "protocol",
+  "rank": 5284,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "jolly",
+  "rank": 5285,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rum",
+  "rank": 5288,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "potion",
+  "rank": 5307,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "brutal",
+  "rank": 5353,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fist",
+  "rank": 5354,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "spinning",
+  "rank": 5366,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "precinct",
+  "rank": 5370,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lobster",
+  "rank": 5371,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "armor",
+  "rank": 5388,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "jammed",
+  "rank": 5394,
+  "accept": false,
+  "reason": "기보유 단어(jam)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "shitty",
+  "rank": 5396,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "distress",
+  "rank": 5399,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "salute",
+  "rank": 5411,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "liable",
+  "rank": 5419,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "abortion",
+  "rank": 5424,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "platoon",
+  "rank": 5433,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "notify",
+  "rank": 5440,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "integrity",
+  "rank": 5442,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bounty",
+  "rank": 5454,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "prosecutor",
+  "rank": 5455,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "gracious",
+  "rank": 5462,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "savage",
+  "rank": 5464,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "harsh",
+  "rank": 5485,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "haul",
+  "rank": 5496,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bam",
+  "rank": 5499,
+  "accept": true,
+  "reason": "의성어/감탄사로 사전에 등재된 독립 단어 — 채택"
+ },
+ {
+  "word": "gag",
+  "rank": 5510,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sting",
+  "rank": 5533,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cord",
+  "rank": 5534,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "guardian",
+  "rank": 5535,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lonesome",
+  "rank": 5544,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "controlled",
+  "rank": 5545,
+  "accept": false,
+  "reason": "기보유 단어(control)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "nun",
+  "rank": 5562,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "grease",
+  "rank": 5569,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stud",
+  "rank": 5570,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "geek",
+  "rank": 5583,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pervert",
+  "rank": 5594,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "gravity",
+  "rank": 5605,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pledge",
+  "rank": 5608,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "slick",
+  "rank": 5615,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "eighth",
+  "rank": 5616,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dispatch",
+  "rank": 5617,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "clearance",
+  "rank": 5620,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chow",
+  "rank": 5621,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "faggot",
+  "rank": 5622,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "cunt",
+  "rank": 5625,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "clamp",
+  "rank": 5626,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shovel",
+  "rank": 5632,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "plea",
+  "rank": 5634,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "jackass",
+  "rank": 5646,
+  "accept": true,
+  "reason": "경미한 모욕어(멍청이류), moron/idiot과 비슷한 수위로 판단해 채택"
+ },
+ {
+  "word": "loop",
+  "rank": 5663,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "classified",
+  "rank": 5664,
+  "accept": true,
+  "reason": "classify의 굴절형이지만 '기밀/분류된'이라는 독립적 형용사 의미도 있어 애매함 — 지침에 따라 채택 쪽으로 넘김"
+ },
+ {
+  "word": "driveway",
+  "rank": 5686,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "confidential",
+  "rank": 5692,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rabbi",
+  "rank": 5700,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "enforcement",
+  "rank": 5732,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "galaxy",
+  "rank": 5735,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "inappropriate",
+  "rank": 5742,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mattress",
+  "rank": 5757,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "memo",
+  "rank": 5760,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "innocence",
+  "rank": 5770,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dragging",
+  "rank": 5774,
+  "accept": false,
+  "reason": "기보유 단어(drag)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "ninth",
+  "rank": 5782,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "siren",
+  "rank": 5784,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pregnancy",
+  "rank": 5786,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "starboard",
+  "rank": 5793,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "gasoline",
+  "rank": 5803,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "detention",
+  "rank": 5806,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cancelled",
+  "rank": 5811,
+  "accept": false,
+  "reason": "기보유 단어(cancel)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "urine",
+  "rank": 5812,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "beep",
+  "rank": 5813,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "riot",
+  "rank": 5820,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "kidnap",
+  "rank": 5823,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "morphine",
+  "rank": 5829,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cheerleader",
+  "rank": 5845,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fart",
+  "rank": 5850,
+  "accept": true,
+  "reason": "신체 관련 속어지만 아동 매체에도 흔히 쓰이는 순한 수위 — 채택"
+ },
+ {
+  "word": "whereabouts",
+  "rank": 5858,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "creeps",
+  "rank": 5859,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "drift",
+  "rank": 5862,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "psychotic",
+  "rank": 5875,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tech",
+  "rank": 5877,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "torpedo",
+  "rank": 5880,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hereby",
+  "rank": 5884,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "intact",
+  "rank": 5894,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chap",
+  "rank": 5899,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shipment",
+  "rank": 5925,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "deceased",
+  "rank": 5931,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "prophecy",
+  "rank": 5937,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bunk",
+  "rank": 5944,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "velvet",
+  "rank": 5950,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "puke",
+  "rank": 5957,
+  "accept": true,
+  "reason": "구어체 신체 표현, 순한 수위 — 채택"
+ },
+ {
+  "word": "timer",
+  "rank": 5961,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "scrub",
+  "rank": 5969,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sperm",
+  "rank": 5971,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "brat",
+  "rank": 5979,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "erase",
+  "rank": 5980,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "breach",
+  "rank": 5981,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bluff",
+  "rank": 5982,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cavalry",
+  "rank": 5983,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ashore",
+  "rank": 5984,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bedtime",
+  "rank": 5988,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "crib",
+  "rank": 5997,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "drunken",
+  "rank": 6006,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "civilized",
+  "rank": 6007,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "est",
+  "rank": 6012,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "applied",
+  "rank": 6017,
+  "accept": false,
+  "reason": "기보유 단어(apply)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "scam",
+  "rank": 6029,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "booty",
+  "rank": 6032,
+  "accept": true,
+  "reason": "속어 의미(엉덩이/보물)가 있으나 해적 보물 등 통용 의미가 더 일반적 — 채택"
+ },
+ {
+  "word": "pinch",
+  "rank": 6038,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rendezvous",
+  "rank": 6040,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "den",
+  "rank": 6041,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "yen",
+  "rank": 6044,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bathtub",
+  "rank": 6050,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chorus",
+  "rank": 6065,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ketchup",
+  "rank": 6067,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "es",
+  "rank": 6068,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "mi",
+  "rank": 6093,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "stereo",
+  "rank": 6127,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "compartment",
+  "rank": 6130,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "slipping",
+  "rank": 6134,
+  "accept": false,
+  "reason": "기보유 단어(slip)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "shook",
+  "rank": 6137,
+  "accept": false,
+  "reason": "기보유 단어(shake)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "parlor",
+  "rank": 6141,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "flashlight",
+  "rank": 6152,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "assassin",
+  "rank": 6154,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "colony",
+  "rank": 6157,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "holler",
+  "rank": 6167,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nude",
+  "rank": 6173,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "glue",
+  "rank": 6191,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ammunition",
+  "rank": 6194,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dd",
+  "rank": 6198,
+  "accept": false,
+  "reason": "대명사/조동사/전치사 등의 구어체 파편(아포스트로피 잔재)"
+ },
+ {
+  "word": "tequila",
+  "rank": 6203,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "probation",
+  "rank": 6205,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "poke",
+  "rank": 6215,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "recognise",
+  "rank": 6216,
+  "accept": false,
+  "reason": "영국식 철자 변형(미국식 recognize 기보유)"
+ },
+ {
+  "word": "battalion",
+  "rank": 6220,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fuzzy",
+  "rank": 6227,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "muffin",
+  "rank": 6230,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "martial",
+  "rank": 6241,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chambers",
+  "rank": 6242,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "streak",
+  "rank": 6252,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "neighbourhood",
+  "rank": 6254,
+  "accept": false,
+  "reason": "영국식 철자 변형(미국식 neighborhood 기보유)"
+ },
+ {
+  "word": "tow",
+  "rank": 6255,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tab",
+  "rank": 6264,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vacuum",
+  "rank": 6265,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "occupied",
+  "rank": 6275,
+  "accept": false,
+  "reason": "기보유 단어(occupy)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "spine",
+  "rank": 6279,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "jealousy",
+  "rank": 6282,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "janitor",
+  "rank": 6298,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bodyguard",
+  "rank": 6301,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "handful",
+  "rank": 6303,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "exposure",
+  "rank": 6306,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "automobile",
+  "rank": 6314,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "medic",
+  "rank": 6317,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "crooked",
+  "rank": 6323,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "generator",
+  "rank": 6334,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "toad",
+  "rank": 6335,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lethal",
+  "rank": 6341,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "scoop",
+  "rank": 6347,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "crook",
+  "rank": 6350,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "crackers",
+  "rank": 6352,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shack",
+  "rank": 6367,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "suction",
+  "rank": 6376,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chauffeur",
+  "rank": 6377,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fitting",
+  "rank": 6396,
+  "accept": false,
+  "reason": "기보유 단어(fit)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "felony",
+  "rank": 6398,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "poop",
+  "rank": 6403,
+  "accept": true,
+  "reason": "신체 관련 속어지만 순한 수위(유아용 어휘로도 흔함) — 채택"
+ },
+ {
+  "word": "homecoming",
+  "rank": 6406,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "quantum",
+  "rank": 6407,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "heartbeat",
+  "rank": 6411,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vest",
+  "rank": 6418,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "misunderstood",
+  "rank": 6425,
+  "accept": false,
+  "reason": "기보유 단어(misunderstand)의 파생/굴절형(불규칙)"
+ },
+ {
+  "word": "rodeo",
+  "rank": 6436,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "loosen",
+  "rank": 6441,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "maiden",
+  "rank": 6447,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "grid",
+  "rank": 6451,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "freeway",
+  "rank": 6452,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shuttle",
+  "rank": 6457,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "moose",
+  "rank": 6458,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sane",
+  "rank": 6463,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "prey",
+  "rank": 6466,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "assassination",
+  "rank": 6472,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "grocery",
+  "rank": 6482,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "artillery",
+  "rank": 6491,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "warp",
+  "rank": 6494,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "waltz",
+  "rank": 6505,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "puppet",
+  "rank": 6507,
+  "accept": true,
+  "reason": ""
+ }
+]
