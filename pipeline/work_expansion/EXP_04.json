@@ -1,0 +1,1714 @@
+[
+ {
+  "word": "yearbook",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a book published annually by the graduating class of a high school or college usually containing photographs of faculty and graduating students",
+  "syn": []
+ },
+ {
+  "word": "raft",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "transport on a raft",
+  "syn": []
+ },
+ {
+  "word": "robber",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a thief who steals from someone by threatening violence",
+  "syn": []
+ },
+ {
+  "word": "bunker",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "hit a golf ball into a bunker",
+  "syn": []
+ },
+ {
+  "word": "inventory",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "make or include in an itemized record or report",
+  "syn": [
+   "take stock",
+   "stock-take"
+  ]
+ },
+ {
+  "word": "chatter",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "noisy talk",
+  "syn": [
+   "yak",
+   "yack",
+   "yakety-yak",
+   "cackle"
+  ]
+ },
+ {
+  "word": "lens",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a transparent optical device used to converge or diverge transmitted light and to form images",
+  "syn": [
+   "lense",
+   "lens system"
+  ]
+ },
+ {
+  "word": "activate",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "put in motion or move to act",
+  "syn": [
+   "trip",
+   "actuate",
+   "trigger",
+   "set off"
+  ]
+ },
+ {
+  "word": "realm",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a domain in which something is dominant",
+  "syn": [
+   "kingdom",
+   "land"
+  ]
+ },
+ {
+  "word": "tad",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a slight amount or degree of difference",
+  "syn": [
+   "shade"
+  ]
+ },
+ {
+  "word": "bloke",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a boy or man",
+  "syn": [
+   "chap",
+   "fellow",
+   "feller",
+   "fella"
+  ]
+ },
+ {
+  "word": "interference",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a policy of intervening in the affairs of other countries",
+  "syn": [
+   "intervention"
+  ]
+ },
+ {
+  "word": "decency",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "the quality of conforming to standards of propriety and morality",
+  "syn": []
+ },
+ {
+  "word": "flank",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "be located at the sides of something or somebody",
+  "syn": []
+ },
+ {
+  "word": "quack",
+  "pos": [
+   "adjective",
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "medically unqualified",
+  "syn": [
+   "quack(a)"
+  ]
+ },
+ {
+  "word": "ungrateful",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "not feeling or showing gratitude",
+  "syn": [
+   "thankless",
+   "unthankful"
+  ]
+ },
+ {
+  "word": "commence",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "take the first step or steps in carrying out an action",
+  "syn": [
+   "get down",
+   "begin",
+   "get",
+   "start out"
+  ]
+ },
+ {
+  "word": "grenade",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a small explosive bomb thrown by hand or fired from a missile",
+  "syn": []
+ },
+ {
+  "word": "heroic",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "a verse form suited to the treatment of heroic or elevated themes",
+  "syn": [
+   "heroic verse",
+   "heroic meter"
+  ]
+ },
+ {
+  "word": "cement",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "make fast as if with cement",
+  "syn": []
+ },
+ {
+  "word": "schmuck",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "(Yiddish) a jerk",
+  "syn": [
+   "shmuck",
+   "schmo",
+   "shmo"
+  ]
+ },
+ {
+  "word": "asylum",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a shelter from danger or hardship",
+  "syn": [
+   "refuge",
+   "sanctuary"
+  ]
+ },
+ {
+  "word": "gambler",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a person who wagers money on the outcome of games or sporting events",
+  "syn": []
+ },
+ {
+  "word": "curfew",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "the time that the curfew signal is sounded",
+  "syn": []
+ },
+ {
+  "word": "feminine",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "a gender that refers chiefly (but not exclusively) to females or to objects classified as female",
+  "syn": []
+ },
+ {
+  "word": "joker",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a person who enjoys telling or playing jokes",
+  "syn": [
+   "jokester"
+  ]
+ },
+ {
+  "word": "intern",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "an advanced student or graduate in medicine gaining supervised practical experience (`houseman' is a British term)",
+  "syn": [
+   "interne",
+   "houseman",
+   "medical intern"
+  ]
+ },
+ {
+  "word": "spear",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "pierce with a spear",
+  "syn": []
+ },
+ {
+  "word": "acquainted",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "having fair knowledge of",
+  "syn": [
+   "acquainted(p)"
+  ]
+ },
+ {
+  "word": "filth",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "any substance considered disgustingly foul or unpleasant",
+  "syn": [
+   "crud",
+   "skank"
+  ]
+ },
+ {
+  "word": "penthouse",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "an apartment located on the top floors of a building",
+  "syn": []
+ },
+ {
+  "word": "authentic",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "conforming to fact and therefore worthy of belief",
+  "syn": [
+   "reliable"
+  ]
+ },
+ {
+  "word": "rehearse",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "engage in a rehearsal (of)",
+  "syn": [
+   "practise",
+   "practice"
+  ]
+ },
+ {
+  "word": "protein",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "any of a large group of nitrogenous organic compounds that are essential constituents of living cells",
+  "syn": []
+ },
+ {
+  "word": "porno",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "creative activity (writing or pictures or films etc.) of no literary or artistic value other than to stimulate sexual desire",
+  "syn": [
+   "pornography",
+   "porn",
+   "erotica",
+   "smut"
+  ]
+ },
+ {
+  "word": "growling",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a gruff or angry utterance (suggestive of the growling of an animal)",
+  "syn": []
+ },
+ {
+  "word": "concussion",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "injury to the brain caused by a blow",
+  "syn": []
+ },
+ {
+  "word": "pm",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "an examination and dissection of a dead body to determine cause of death or the changes produced by disease",
+  "syn": [
+   "autopsy",
+   "necropsy",
+   "postmortem",
+   "post-mortem"
+  ]
+ },
+ {
+  "word": "lookout",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a person employed to keep watch for some anticipated event",
+  "syn": [
+   "lookout man",
+   "sentinel",
+   "sentry",
+   "watch"
+  ]
+ },
+ {
+  "word": "puff",
+  "pos": [
+   "adjective",
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "gathered for protruding fullness",
+  "syn": [
+   "puffed"
+  ]
+ },
+ {
+  "word": "cult",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "followers of an exclusive system of beliefs and practices",
+  "syn": []
+ },
+ {
+  "word": "werewolf",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a monster able to change appearance from human to wolf and back again",
+  "syn": [
+   "wolfman",
+   "lycanthrope",
+   "loup-garou"
+  ]
+ },
+ {
+  "word": "inconvenience",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "to cause inconvenience or discomfort to",
+  "syn": [
+   "trouble",
+   "put out",
+   "disoblige",
+   "discommode"
+  ]
+ },
+ {
+  "word": "controlling",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "able to control or determine policy",
+  "syn": []
+ },
+ {
+  "word": "grudge",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "a resentment strong enough to justify retaliation",
+  "syn": [
+   "score",
+   "grievance"
+  ]
+ },
+ {
+  "word": "vile",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "morally reprehensible",
+  "syn": [
+   "despicable",
+   "ugly",
+   "slimy",
+   "unworthy"
+  ]
+ },
+ {
+  "word": "buffet",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "strike against forcefully",
+  "syn": [
+   "knock about",
+   "batter"
+  ]
+ },
+ {
+  "word": "swine",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "stout-bodied short-legged omnivorous animals",
+  "syn": []
+ },
+ {
+  "word": "slippery",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "causing or tending to cause things to slip or slide",
+  "syn": [
+   "slippy"
+  ]
+ },
+ {
+  "word": "hump",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "something that bulges out or is protuberant or projects from its surroundings",
+  "syn": [
+   "bulge",
+   "bump",
+   "swelling",
+   "gibbosity"
+  ]
+ },
+ {
+  "word": "vent",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "give expression or utterance to",
+  "syn": [
+   "ventilate",
+   "give vent"
+  ]
+ },
+ {
+  "word": "courthouse",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a government building that houses the offices of a county government",
+  "syn": []
+ },
+ {
+  "word": "doggy",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "informal terms for dogs",
+  "syn": [
+   "pooch",
+   "doggie",
+   "barker",
+   "bow-wow"
+  ]
+ },
+ {
+  "word": "advisor",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "an expert who gives advice",
+  "syn": [
+   "adviser",
+   "consultant"
+  ]
+ },
+ {
+  "word": "blackout",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a suspension of radio or tv broadcasting",
+  "syn": []
+ },
+ {
+  "word": "piggy",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "resembling swine",
+  "syn": [
+   "hoggish",
+   "piggish",
+   "porcine",
+   "swinish"
+  ]
+ },
+ {
+  "word": "radius",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "the length of a line segment between the center and circumference of a circle or sphere",
+  "syn": [
+   "r"
+  ]
+ },
+ {
+  "word": "parallel",
+  "pos": [
+   "adjective",
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "being everywhere equidistant and not intersecting",
+  "syn": []
+ },
+ {
+  "word": "dandy",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "very good",
+  "syn": [
+   "bang-up",
+   "bully",
+   "corking",
+   "cracking"
+  ]
+ },
+ {
+  "word": "squadron",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a cavalry unit consisting of two or more troops and headquarters and supporting arms",
+  "syn": []
+ },
+ {
+  "word": "scrap",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "dispose of (something useless or old)",
+  "syn": [
+   "trash",
+   "junk"
+  ]
+ },
+ {
+  "word": "claw",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "sharp curved horny process on the toe of a bird or some mammals or reptiles",
+  "syn": []
+ },
+ {
+  "word": "bugger",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "practice anal sex upon",
+  "syn": [
+   "sodomize",
+   "sodomise"
+  ]
+ },
+ {
+  "word": "sushi",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "rice (with raw fish) wrapped in seaweed",
+  "syn": []
+ },
+ {
+  "word": "sniper",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a marksman who shoots at people from a concealed place",
+  "syn": []
+ },
+ {
+  "word": "portal",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a grand and imposing entrance (often extended metaphorically)",
+  "syn": []
+ },
+ {
+  "word": "immune",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "a person who is immune to a particular infection",
+  "syn": []
+ },
+ {
+  "word": "pawn",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "leave as a guarantee in return for money",
+  "syn": [
+   "soak",
+   "hock"
+  ]
+ },
+ {
+  "word": "posse",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a temporary police force",
+  "syn": [
+   "posse comitatus"
+  ]
+ },
+ {
+  "word": "truce",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a state of peace agreed to between opponents so they can discuss peace terms",
+  "syn": [
+   "armistice",
+   "cease-fire"
+  ]
+ },
+ {
+  "word": "ballroom",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "large room used mainly for dancing",
+  "syn": [
+   "dance hall",
+   "dance palace"
+  ]
+ },
+ {
+  "word": "sanctuary",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a consecrated place where sacred objects are kept",
+  "syn": []
+ },
+ {
+  "word": "dine",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "have supper",
+  "syn": []
+ },
+ {
+  "word": "diagnosis",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "identifying the nature or cause of some phenomenon",
+  "syn": [
+   "diagnosing"
+  ]
+ },
+ {
+  "word": "millennium",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a span of 1000 years",
+  "syn": [
+   "millenary"
+  ]
+ },
+ {
+  "word": "upsetting",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "causing an emotional disturbance",
+  "syn": [
+   "disconcerting"
+  ]
+ },
+ {
+  "word": "turf",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "cover (the ground) with a surface layer of grass or grass roots",
+  "syn": []
+ },
+ {
+  "word": "paycheck",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a check issued in payment of wages or salary",
+  "syn": [
+   "payroll check"
+  ]
+ },
+ {
+  "word": "kin",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "related by blood",
+  "syn": [
+   "akin(p)",
+   "blood-related",
+   "cognate",
+   "consanguine"
+  ]
+ },
+ {
+  "word": "spinal",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "of or relating to the spine or spinal cord",
+  "syn": []
+ },
+ {
+  "word": "lure",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "provoke someone to do something through (often false or exaggerated) promises or persuasion",
+  "syn": [
+   "entice",
+   "tempt"
+  ]
+ },
+ {
+  "word": "betrayal",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "an act of deliberate betrayal",
+  "syn": [
+   "treachery",
+   "treason",
+   "perfidy"
+  ]
+ },
+ {
+  "word": "sneaky",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "marked by deception",
+  "syn": [
+   "underhand",
+   "underhanded"
+  ]
+ },
+ {
+  "word": "forged",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "reproduced fraudulently",
+  "syn": [
+   "bad"
+  ]
+ },
+ {
+  "word": "canvas",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "cover with canvas",
+  "syn": []
+ },
+ {
+  "word": "accomplice",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a person who joins with another in carrying out some plan (especially an unethical or illegal plan)",
+  "syn": [
+   "confederate"
+  ]
+ },
+ {
+  "word": "immunity",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "the state of not being susceptible",
+  "syn": [
+   "unsusceptibility"
+  ]
+ },
+ {
+  "word": "doughnut",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a toroidal shape",
+  "syn": [
+   "ring",
+   "halo",
+   "annulus",
+   "anchor ring"
+  ]
+ },
+ {
+  "word": "intercept",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "the point at which a line intersects a coordinate axis",
+  "syn": []
+ },
+ {
+  "word": "airborne",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "moved or conveyed by or through air",
+  "syn": []
+ },
+ {
+  "word": "condo",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "one of the dwelling units in a condominium",
+  "syn": [
+   "condominium"
+  ]
+ },
+ {
+  "word": "flare",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "burn brightly",
+  "syn": [
+   "flame up",
+   "blaze up",
+   "burn up"
+  ]
+ },
+ {
+  "word": "petition",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "write a petition for something to somebody",
+  "syn": []
+ },
+ {
+  "word": "chanting",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "the act of singing in a monotonous tone",
+  "syn": [
+   "intonation"
+  ]
+ },
+ {
+  "word": "ops",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "(Roman mythology) goddess of abundance and fertility",
+  "syn": []
+ },
+ {
+  "word": "dork",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a dull stupid fatuous person",
+  "syn": [
+   "jerk"
+  ]
+ },
+ {
+  "word": "orgasm",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "the moment of most intense pleasure in sexual intercourse",
+  "syn": [
+   "climax",
+   "sexual climax",
+   "coming"
+  ]
+ },
+ {
+  "word": "bummer",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "an experience that is irritating or frustrating or disappointing",
+  "syn": []
+ },
+ {
+  "word": "tenth",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "coming next after the ninth and just before the eleventh in position",
+  "syn": [
+   "10th"
+  ]
+ },
+ {
+  "word": "rye",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "the seed of the cereal grass",
+  "syn": []
+ },
+ {
+  "word": "groove",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "make a groove in, or provide with a groove",
+  "syn": []
+ },
+ {
+  "word": "villain",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a wicked or evil person",
+  "syn": [
+   "scoundrel"
+  ]
+ },
+ {
+  "word": "ignition",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "the process of initiating combustion or catching fire",
+  "syn": []
+ },
+ {
+  "word": "stroll",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "walk leisurely and with no apparent aim",
+  "syn": [
+   "saunter"
+  ]
+ },
+ {
+  "word": "smelly",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "offensively malodorous",
+  "syn": [
+   "fetid",
+   "foetid",
+   "foul",
+   "foul-smelling"
+  ]
+ },
+ {
+  "word": "punks",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a youth subculture closely associated with punk rock music in the late 1970s",
+  "syn": []
+ },
+ {
+  "word": "mop",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "to wash or wipe with or as if with a mop",
+  "syn": [
+   "wipe up",
+   "mop up"
+  ]
+ },
+ {
+  "word": "sonar",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a measuring instrument that sends out an acoustic pulse in water and measures distances in terms of the time for the echo of the pulse to return",
+  "syn": [
+   "echo sounder",
+   "asdic"
+  ]
+ },
+ {
+  "word": "scrape",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "a harsh noise made by scraping",
+  "syn": [
+   "scraping",
+   "scratch",
+   "scratching"
+  ]
+ },
+ {
+  "word": "pry",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "a heavy iron lever with one end forged into a wedge",
+  "syn": [
+   "crowbar",
+   "wrecking bar",
+   "pry bar"
+  ]
+ },
+ {
+  "word": "cocky",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "overly self-confident or self-assertive",
+  "syn": []
+ },
+ {
+  "word": "morale",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a state of individual psychological well-being based upon a sense of confidence and usefulness and purpose",
+  "syn": []
+ },
+ {
+  "word": "destined",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "headed or intending to head in a certain direction",
+  "syn": [
+   "bound"
+  ]
+ },
+ {
+  "word": "curb",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "lessen the intensity of",
+  "syn": [
+   "control",
+   "hold in",
+   "hold",
+   "contain"
+  ]
+ },
+ {
+  "word": "void",
+  "pos": [
+   "noun",
+   "adjective",
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "the state of nonexistence",
+  "syn": [
+   "nothingness",
+   "nullity",
+   "nihility"
+  ]
+ },
+ {
+  "word": "chump",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a person who is gullible and easy to take advantage of",
+  "syn": [
+   "fool",
+   "gull",
+   "mark",
+   "patsy"
+  ]
+ },
+ {
+  "word": "crate",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "put into a crate",
+  "syn": []
+ },
+ {
+  "word": "alias",
+  "pos": [
+   "adverb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "as known or named at another time or place",
+  "syn": [
+   "a.k.a.",
+   "also known as"
+  ]
+ },
+ {
+  "word": "donor",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "person who makes a gift of property",
+  "syn": [
+   "giver",
+   "presenter",
+   "bestower",
+   "conferrer"
+  ]
+ },
+ {
+  "word": "blackjack",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "exert pressure on someone through threats",
+  "syn": [
+   "blackmail",
+   "pressure"
+  ]
+ },
+ {
+  "word": "discreet",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "marked by prudence or modesty and wise self-restraint",
+  "syn": []
+ },
+ {
+  "word": "cunning",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "shrewdness as demonstrated by being skilled in deception",
+  "syn": [
+   "craft",
+   "craftiness",
+   "foxiness",
+   "guile"
+  ]
+ },
+ {
+  "word": "whacked",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "(British informal) exhausted or worn out",
+  "syn": []
+ },
+ {
+  "word": "compass",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "bring about",
+  "syn": []
+ },
+ {
+  "word": "panting",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "breathing heavily (as after exertion)",
+  "syn": [
+   "heaving"
+  ]
+ },
+ {
+  "word": "uptight",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "being in a tense state",
+  "syn": [
+   "edgy",
+   "high-strung",
+   "highly strung",
+   "jittery"
+  ]
+ },
+ {
+  "word": "kidnapper",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "someone who unlawfully seizes and detains a victim (usually for ransom)",
+  "syn": [
+   "kidnaper",
+   "abductor",
+   "snatcher"
+  ]
+ },
+ {
+  "word": "sensational",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "causing intense interest, curiosity, or emotion",
+  "syn": []
+ },
+ {
+  "word": "token",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "insignificantly small",
+  "syn": [
+   "nominal",
+   "token(a)",
+   "tokenish"
+  ]
+ },
+ {
+  "word": "trout",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "flesh of any of several primarily freshwater game and food fishes",
+  "syn": []
+ },
+ {
+  "word": "errand",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a short trip that is taken in the performance of a necessary task or mission",
+  "syn": []
+ },
+ {
+  "word": "prank",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "dress or decorate showily or gaudily",
+  "syn": []
+ },
+ {
+  "word": "jinx",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "cast a spell over someone or something",
+  "syn": [
+   "hex",
+   "bewitch",
+   "glamour",
+   "witch"
+  ]
+ },
+ {
+  "word": "pyramid",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "a polyhedron having a polygonal base and triangular sides with a common vertex",
+  "syn": []
+ },
+ {
+  "word": "reactor",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "an electrical device used to introduce reactance into a circuit",
+  "syn": []
+ },
+ {
+  "word": "expertise",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "skillfulness by virtue of possessing special knowledge",
+  "syn": [
+   "expertness"
+  ]
+ },
+ {
+  "word": "vanilla",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "flavored with vanilla extract",
+  "syn": []
+ },
+ {
+  "word": "dumpster",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a container designed to receive and transport and dump waste",
+  "syn": []
+ },
+ {
+  "word": "spitting",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "the act of spitting (forcefully expelling saliva)",
+  "syn": [
+   "spit",
+   "expectoration"
+  ]
+ },
+ {
+  "word": "apiece",
+  "pos": [
+   "adverb"
+  ],
+  "cefr": "B2",
+  "en": "to or from every one of two or more (considered individually)",
+  "syn": [
+   "each",
+   "to each one",
+   "for each one",
+   "from each one"
+  ]
+ },
+ {
+  "word": "bladder",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a distensible membranous sac (usually containing liquid or gas)",
+  "syn": [
+   "vesica"
+  ]
+ },
+ {
+  "word": "cardiac",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "of or relating to the heart",
+  "syn": []
+ },
+ {
+  "word": "wager",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "stake on the outcome of an issue",
+  "syn": [
+   "bet",
+   "play"
+  ]
+ },
+ {
+  "word": "corny",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "dull and tiresome but with pretensions of significance or originality",
+  "syn": [
+   "bromidic",
+   "platitudinal",
+   "platitudinous"
+  ]
+ },
+ {
+  "word": "eyewitness",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "be present at an event and see it with one's own eyes",
+  "syn": []
+ },
+ {
+  "word": "mutt",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "an inferior dog or one of mixed breed",
+  "syn": [
+   "cur",
+   "mongrel"
+  ]
+ },
+ {
+  "word": "ale",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a general name for beer made with a top fermenting yeast",
+  "syn": []
+ },
+ {
+  "word": "shortcut",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a route shorter than the usual one",
+  "syn": [
+   "cutoff",
+   "crosscut"
+  ]
+ },
+ {
+  "word": "fiance",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a man who is engaged to be married",
+  "syn": [
+   "groom-to-be"
+  ]
+ },
+ {
+  "word": "rascal",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a deceitful and unreliable scoundrel",
+  "syn": [
+   "rogue",
+   "knave",
+   "rapscallion",
+   "scalawag"
+  ]
+ }
+]

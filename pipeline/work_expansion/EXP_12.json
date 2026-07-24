@@ -1,0 +1,1721 @@
+[
+ {
+  "word": "cider",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a beverage made from juice pressed from apples",
+  "syn": [
+   "cyder"
+  ]
+ },
+ {
+  "word": "skater",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "someone who skates",
+  "syn": []
+ },
+ {
+  "word": "accomplishment",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the action of accomplishing something",
+  "syn": [
+   "achievement"
+  ]
+ },
+ {
+  "word": "etiquette",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "rules governing socially acceptable behavior",
+  "syn": []
+ },
+ {
+  "word": "moan",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "indicate pain, discomfort, or displeasure",
+  "syn": [
+   "groan"
+  ]
+ },
+ {
+  "word": "puncture",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "loss of air pressure in a tire when a hole is made by some sharp object",
+  "syn": []
+ },
+ {
+  "word": "relish",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "derive or receive pleasure from",
+  "syn": [
+   "enjoy",
+   "bask",
+   "savor",
+   "savour"
+  ]
+ },
+ {
+  "word": "companionship",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the state of being with someone",
+  "syn": [
+   "company",
+   "fellowship",
+   "society"
+  ]
+ },
+ {
+  "word": "withholding",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the act of deducting from an employee's salary",
+  "syn": []
+ },
+ {
+  "word": "wrinkle",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "gather or contract into wrinkles or folds",
+  "syn": [
+   "purse"
+  ]
+ },
+ {
+  "word": "frontal",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "an adornment worn on the forehead",
+  "syn": [
+   "frontlet"
+  ]
+ },
+ {
+  "word": "traction",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the friction between a body and the surface on which it moves (as between an automobile tire and the road)",
+  "syn": [
+   "grip",
+   "adhesive friction"
+  ]
+ },
+ {
+  "word": "checkers",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a checkerboard game for two players who each have 12 pieces",
+  "syn": [
+   "draughts"
+  ]
+ },
+ {
+  "word": "assassinate",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "murder",
+  "syn": []
+ },
+ {
+  "word": "plow",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "a farm tool having one or more heavy blades to break the soil and cut a furrow prior to sowing",
+  "syn": [
+   "plough"
+  ]
+ },
+ {
+  "word": "stance",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "standing posture",
+  "syn": []
+ },
+ {
+  "word": "anthem",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a song of devotion or loyalty (as to a nation or school)",
+  "syn": []
+ },
+ {
+  "word": "electromagnetic",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "pertaining to or exhibiting magnetism produced by electric charge in motion",
+  "syn": []
+ },
+ {
+  "word": "stutter",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "speak haltingly",
+  "syn": [
+   "bumble",
+   "stammer",
+   "falter"
+  ]
+ },
+ {
+  "word": "intubate",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "introduce a cannula or tube into",
+  "syn": [
+   "cannulate",
+   "cannulize",
+   "cannulise",
+   "canulate"
+  ]
+ },
+ {
+  "word": "sorority",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a social club for female undergraduates",
+  "syn": []
+ },
+ {
+  "word": "humbly",
+  "pos": [
+   "adverb"
+  ],
+  "cefr": "C1",
+  "en": "in a humble manner",
+  "syn": [
+   "meekly"
+  ]
+ },
+ {
+  "word": "fret",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "agitation resulting from active worry",
+  "syn": [
+   "stew",
+   "sweat",
+   "lather",
+   "swither"
+  ]
+ },
+ {
+  "word": "unspeakable",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "defying expression or description",
+  "syn": [
+   "indefinable",
+   "indescribable",
+   "ineffable",
+   "untellable"
+  ]
+ },
+ {
+  "word": "rigid",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "incapable of or resistant to bending",
+  "syn": [
+   "stiff"
+  ]
+ },
+ {
+  "word": "horseback",
+  "pos": [
+   "adverb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "on the back of a horse",
+  "syn": [
+   "ahorse",
+   "ahorseback"
+  ]
+ },
+ {
+  "word": "indigestion",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a disorder of digestive function characterized by discomfort or heartburn or nausea",
+  "syn": [
+   "dyspepsia",
+   "stomach upset",
+   "upset stomach"
+  ]
+ },
+ {
+  "word": "biz",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "your occupation or line of work",
+  "syn": [
+   "game"
+  ]
+ },
+ {
+  "word": "gibberish",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "unintelligible talking",
+  "syn": [
+   "gibber"
+  ]
+ },
+ {
+  "word": "quota",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a prescribed number",
+  "syn": []
+ },
+ {
+  "word": "humanitarian",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "someone devoted to the promotion of human welfare and to social reforms",
+  "syn": [
+   "do-gooder",
+   "improver"
+  ]
+ },
+ {
+  "word": "confidentiality",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the state of being secret",
+  "syn": []
+ },
+ {
+  "word": "migraine",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a severe recurring vascular headache",
+  "syn": [
+   "megrim",
+   "sick headache",
+   "hemicrania"
+  ]
+ },
+ {
+  "word": "theoretical",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "concerned primarily with theories or hypotheses rather than practical considerations",
+  "syn": [
+   "theoretic"
+  ]
+ },
+ {
+  "word": "cholesterol",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an animal sterol that is normally synthesized by the liver",
+  "syn": [
+   "cholesterin"
+  ]
+ },
+ {
+  "word": "tribal",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "relating to or characteristic of a tribe",
+  "syn": []
+ },
+ {
+  "word": "fuzz",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "filamentous hairlike growth on a plant",
+  "syn": [
+   "hair",
+   "tomentum"
+  ]
+ },
+ {
+  "word": "lobe",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "(anatomy) a somewhat rounded subdivision of a bodily organ or part",
+  "syn": []
+ },
+ {
+  "word": "wuss",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a person who is physically weak and ineffectual",
+  "syn": [
+   "weakling",
+   "doormat"
+  ]
+ },
+ {
+  "word": "reservoir",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a large or extra supply of something",
+  "syn": []
+ },
+ {
+  "word": "celery",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "widely cultivated herb with aromatic leaf stalks that are eaten raw or cooked",
+  "syn": [
+   "cultivated celery",
+   "Apium graveolens dulce"
+  ]
+ },
+ {
+  "word": "speck",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "produce specks in or on",
+  "syn": []
+ },
+ {
+  "word": "grizzly",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "showing characteristics of age, especially having grey or white hair",
+  "syn": [
+   "grey",
+   "gray",
+   "grey-haired",
+   "gray-haired"
+  ]
+ },
+ {
+  "word": "surrogate",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "providing or receiving nurture or parental care though not related by blood or legal ties",
+  "syn": [
+   "foster"
+  ]
+ },
+ {
+  "word": "bonnet",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "dress in a bonnet",
+  "syn": []
+ },
+ {
+  "word": "dearie",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a special loved one",
+  "syn": [
+   "darling",
+   "favorite",
+   "favourite",
+   "pet"
+  ]
+ },
+ {
+  "word": "amour",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a usually secretive or illicit sexual relationship",
+  "syn": [
+   "affair",
+   "affaire",
+   "intimacy",
+   "liaison"
+  ]
+ },
+ {
+  "word": "bonny",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "very pleasing to the eye",
+  "syn": [
+   "bonnie",
+   "comely",
+   "fair",
+   "sightly"
+  ]
+ },
+ {
+  "word": "hectic",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "marked by intense agitation or emotion",
+  "syn": [
+   "feverish"
+  ]
+ },
+ {
+  "word": "adolescent",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "a juvenile between the onset of puberty and maturity",
+  "syn": [
+   "stripling",
+   "teenager",
+   "teen"
+  ]
+ },
+ {
+  "word": "pun",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "make a play on words",
+  "syn": []
+ },
+ {
+  "word": "comprehend",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "get the meaning of something",
+  "syn": [
+   "grok",
+   "get the picture",
+   "savvy",
+   "dig"
+  ]
+ },
+ {
+  "word": "clueless",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "totally uninformed about what is going on",
+  "syn": []
+ },
+ {
+  "word": "eyeball",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "look at",
+  "syn": [
+   "eye"
+  ]
+ },
+ {
+  "word": "foolproof",
+  "pos": [
+   "adjective",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "not liable to failure",
+  "syn": [
+   "unfailing"
+  ]
+ },
+ {
+  "word": "brow",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the part of the face above the eyes",
+  "syn": [
+   "forehead"
+  ]
+ },
+ {
+  "word": "camouflage",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "disguise by camouflaging",
+  "syn": []
+ },
+ {
+  "word": "foe",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an armed adversary (especially a member of an opposing military force)",
+  "syn": [
+   "enemy",
+   "foeman",
+   "opposition"
+  ]
+ },
+ {
+  "word": "mockery",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "showing your contempt by derision",
+  "syn": [
+   "jeer",
+   "jeering",
+   "scoff",
+   "scoffing"
+  ]
+ },
+ {
+  "word": "torso",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the body excluding the head and neck and limbs",
+  "syn": [
+   "trunk",
+   "body"
+  ]
+ },
+ {
+  "word": "sod",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "cover with sod",
+  "syn": []
+ },
+ {
+  "word": "slop",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "cause or allow (a liquid substance) to run or flow from a container",
+  "syn": [
+   "spill",
+   "splatter"
+  ]
+ },
+ {
+  "word": "amends",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a sum of money paid in compensation for loss or injury",
+  "syn": [
+   "damages",
+   "indemnity",
+   "indemnification",
+   "restitution"
+  ]
+ },
+ {
+  "word": "trajectory",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the path followed by an object moving through space",
+  "syn": [
+   "flight"
+  ]
+ },
+ {
+  "word": "disposable",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "an item that can be disposed of after it has been used",
+  "syn": []
+ },
+ {
+  "word": "geometry",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the pure mathematics of points and lines and curves and surfaces",
+  "syn": []
+ },
+ {
+  "word": "mortuary",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "a building (or room) where dead bodies are kept before burial or cremation",
+  "syn": [
+   "morgue",
+   "dead room"
+  ]
+ },
+ {
+  "word": "adieu",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a farewell remark",
+  "syn": [
+   "adios",
+   "arrivederci",
+   "auf wiedersehen",
+   "au revoir"
+  ]
+ },
+ {
+  "word": "boardwalk",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a walkway made of wooden boards",
+  "syn": []
+ },
+ {
+  "word": "ravine",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a deep narrow steep-sided valley (especially one formed by running water)",
+  "syn": []
+ },
+ {
+  "word": "bop",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "dance the bebop",
+  "syn": [
+   "bebop"
+  ]
+ },
+ {
+  "word": "dealings",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "social or verbal interchange (usually followed by `with')",
+  "syn": [
+   "traffic"
+  ]
+ },
+ {
+  "word": "heartbroken",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "full of sorrow",
+  "syn": [
+   "brokenhearted",
+   "heartsick"
+  ]
+ },
+ {
+  "word": "dehydrated",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "suffering from excessive loss of water from the body",
+  "syn": []
+ },
+ {
+  "word": "murderous",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "characteristic of or capable of or having a tendency toward killing another human being",
+  "syn": [
+   "homicidal"
+  ]
+ },
+ {
+  "word": "pulp",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "remove the pulp from, as from a fruit",
+  "syn": []
+ },
+ {
+  "word": "detain",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "deprive of freedom",
+  "syn": [
+   "confine"
+  ]
+ },
+ {
+  "word": "disgraceful",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "giving offense to moral sensibilities and injurious to reputation",
+  "syn": [
+   "scandalous",
+   "shameful",
+   "shocking"
+  ]
+ },
+ {
+  "word": "spanking",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "quick and energetic",
+  "syn": [
+   "alert",
+   "brisk",
+   "lively",
+   "merry"
+  ]
+ },
+ {
+  "word": "feminist",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "of or relating to or advocating equal rights for women",
+  "syn": []
+ },
+ {
+  "word": "amp",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the basic unit of electric current adopted under the Systeme International d'Unites",
+  "syn": [
+   "ampere",
+   "A"
+  ]
+ },
+ {
+  "word": "buttocks",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the fleshy part of the human body that you sit on",
+  "syn": [
+   "nates",
+   "arse",
+   "butt",
+   "backside"
+  ]
+ },
+ {
+  "word": "degenerate",
+  "pos": [
+   "adjective",
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "unrestrained by convention or morality",
+  "syn": [
+   "debauched",
+   "degraded",
+   "dissipated",
+   "dissolute"
+  ]
+ },
+ {
+  "word": "chord",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "play chords on (a stringed instrument)",
+  "syn": []
+ },
+ {
+  "word": "aura",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a sensation (as of a cold breeze or bright light) that precedes the onset of certain disorders such as a migraine attack or epileptic seizure",
+  "syn": []
+ },
+ {
+  "word": "wilt",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "lose strength",
+  "syn": []
+ },
+ {
+  "word": "detonation",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a violent release of energy caused by a chemical or nuclear reaction",
+  "syn": [
+   "explosion",
+   "blowup"
+  ]
+ },
+ {
+  "word": "handyman",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a man skilled in various odd jobs and other small tasks",
+  "syn": [
+   "jack of all trades",
+   "odd-job man"
+  ]
+ },
+ {
+  "word": "spawn",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "the mass of eggs deposited by fish or amphibians or molluscs",
+  "syn": []
+ },
+ {
+  "word": "gringo",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a Latin American (disparaging) term for foreigners (especially Americans and Englishmen)",
+  "syn": []
+ },
+ {
+  "word": "raffle",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "dispose of in a lottery",
+  "syn": [
+   "raffle off"
+  ]
+ },
+ {
+  "word": "dreary",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "lacking in liveliness or charm or surprise",
+  "syn": [
+   "drab"
+  ]
+ },
+ {
+  "word": "pinpoint",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "locate exactly",
+  "syn": [
+   "nail"
+  ]
+ },
+ {
+  "word": "brutally",
+  "pos": [
+   "adverb"
+  ],
+  "cefr": "C1",
+  "en": "in a vicious manner",
+  "syn": [
+   "viciously",
+   "savagely"
+  ]
+ },
+ {
+  "word": "iceberg",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a large mass of ice floating at sea",
+  "syn": [
+   "berg"
+  ]
+ },
+ {
+  "word": "emptiness",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the state of containing nothing",
+  "syn": []
+ },
+ {
+  "word": "evasive",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "deliberately vague or ambiguous",
+  "syn": []
+ },
+ {
+  "word": "moist",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "slightly wet",
+  "syn": [
+   "damp",
+   "dampish"
+  ]
+ },
+ {
+  "word": "trot",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "run at a moderately swift pace",
+  "syn": [
+   "jog",
+   "clip"
+  ]
+ },
+ {
+  "word": "rodent",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "relatively small placental mammals having a single pair of constantly growing incisor teeth specialized for gnawing",
+  "syn": [
+   "gnawer"
+  ]
+ },
+ {
+  "word": "slain",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "killed",
+  "syn": []
+ },
+ {
+  "word": "cosmetic",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "a toiletry designed to beautify the body",
+  "syn": []
+ },
+ {
+  "word": "uterus",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a hollow muscular organ in the pelvic cavity of females",
+  "syn": [
+   "womb"
+  ]
+ },
+ {
+  "word": "tranquilizer",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a drug used to reduce stress or tension without reducing mental clarity",
+  "syn": [
+   "tranquillizer",
+   "tranquilliser",
+   "antianxiety agent",
+   "ataractic drug"
+  ]
+ },
+ {
+  "word": "groin",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "build with groins",
+  "syn": []
+ },
+ {
+  "word": "realtor",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a real estate agent who is a member of the National Association of Realtors",
+  "syn": []
+ },
+ {
+  "word": "clot",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "a lump of material formed from the content of a liquid",
+  "syn": [
+   "coagulum"
+  ]
+ },
+ {
+  "word": "cyanide",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "any of a class of organic compounds containing the cyano radical -CN",
+  "syn": [
+   "nitrile",
+   "nitril"
+  ]
+ },
+ {
+  "word": "racetrack",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a course over which races are run",
+  "syn": [
+   "racecourse",
+   "raceway",
+   "track"
+  ]
+ },
+ {
+  "word": "tainted",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "touched by rot or decay",
+  "syn": [
+   "corrupt"
+  ]
+ },
+ {
+  "word": "suede",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "leather with a napped surface",
+  "syn": [
+   "suede leather"
+  ]
+ },
+ {
+  "word": "barbarian",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "without civilizing influences",
+  "syn": [
+   "barbaric",
+   "savage",
+   "uncivilized",
+   "uncivilised"
+  ]
+ },
+ {
+  "word": "hag",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an ugly evil-looking old woman",
+  "syn": [
+   "beldam",
+   "beldame",
+   "witch",
+   "crone"
+  ]
+ },
+ {
+  "word": "inhuman",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "without compunction or human feeling",
+  "syn": [
+   "cold",
+   "cold-blooded",
+   "insensate"
+  ]
+ },
+ {
+  "word": "demented",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "affected with madness or insanity",
+  "syn": [
+   "brainsick",
+   "crazy",
+   "disturbed",
+   "mad"
+  ]
+ },
+ {
+  "word": "dinnertime",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the customary or habitual hour for the evening meal",
+  "syn": [
+   "suppertime"
+  ]
+ },
+ {
+  "word": "indecent",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "not in keeping with accepted standards of what is right or proper in polite society",
+  "syn": [
+   "indecorous",
+   "unbecoming",
+   "uncomely",
+   "unseemly"
+  ]
+ },
+ {
+  "word": "hernia",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "rupture in smooth muscle tissue through which a bodily structure protrudes",
+  "syn": [
+   "herniation"
+  ]
+ },
+ {
+  "word": "juggling",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the act of rearranging things to give a misleading impression",
+  "syn": [
+   "juggle"
+  ]
+ },
+ {
+  "word": "overload",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "an electrical load that exceeds the available electrical power",
+  "syn": []
+ },
+ {
+  "word": "negligence",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "failure to act with the prudence that a reasonable person would exercise under the same circumstances",
+  "syn": [
+   "carelessness",
+   "neglect",
+   "nonperformance"
+  ]
+ },
+ {
+  "word": "bitty",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "(used informally) very small",
+  "syn": [
+   "bittie",
+   "teensy",
+   "teentsy",
+   "teeny"
+  ]
+ },
+ {
+  "word": "hallucination",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "illusory perception",
+  "syn": []
+ },
+ {
+  "word": "giddy",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "having or causing a whirling sensation",
+  "syn": [
+   "dizzy",
+   "woozy",
+   "vertiginous"
+  ]
+ },
+ {
+  "word": "lovable",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "having characteristics that attract love or affection",
+  "syn": [
+   "loveable"
+  ]
+ },
+ {
+  "word": "hobo",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a vagrant",
+  "syn": [
+   "tramp",
+   "bum"
+  ]
+ },
+ {
+  "word": "lollipop",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "ice cream or water ice on a small wooden stick",
+  "syn": [
+   "ice lolly",
+   "lolly",
+   "popsicle"
+  ]
+ },
+ {
+  "word": "cowardice",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the trait of lacking courage",
+  "syn": [
+   "cowardliness"
+  ]
+ },
+ {
+  "word": "serenity",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a disposition free from stress or emotion",
+  "syn": [
+   "repose",
+   "quiet",
+   "placidity",
+   "tranquillity"
+  ]
+ },
+ {
+  "word": "wrestler",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "combatant who tries to throw opponent to the ground",
+  "syn": [
+   "grappler",
+   "matman"
+  ]
+ },
+ {
+  "word": "gallows",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an instrument of execution consisting of a wooden frame from which a condemned person is executed by hanging",
+  "syn": []
+ },
+ {
+  "word": "tiara",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a jeweled headdress worn by women on formal occasions",
+  "syn": []
+ },
+ {
+  "word": "bouncy",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "elastic",
+  "syn": [
+   "live",
+   "lively",
+   "resilient",
+   "springy"
+  ]
+ },
+ {
+  "word": "nonstop",
+  "pos": [
+   "adverb",
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "without stopping",
+  "syn": []
+ },
+ {
+  "word": "perverted",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "(used of sexual behavior) showing or appealing to bizarre or deviant tastes",
+  "syn": [
+   "kinky"
+  ]
+ },
+ {
+  "word": "rethink",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "thinking again about a choice previously made",
+  "syn": [
+   "reconsideration",
+   "second thought",
+   "afterthought"
+  ]
+ },
+ {
+  "word": "disgusted",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "having a strong distaste from surfeit",
+  "syn": [
+   "fed up(p)",
+   "sick(p)",
+   "sick of(p)",
+   "tired of(p)"
+  ]
+ },
+ {
+  "word": "modesty",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "freedom from vanity or conceit",
+  "syn": [
+   "modestness"
+  ]
+ },
+ {
+  "word": "outgoing",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "leaving a place or a position",
+  "syn": []
+ },
+ {
+  "word": "nightcap",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an alcoholic drink taken at bedtime",
+  "syn": []
+ },
+ {
+  "word": "unethical",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "not conforming to approved standards of social or professional behavior",
+  "syn": []
+ },
+ {
+  "word": "screwy",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "not behaving normally",
+  "syn": [
+   "screw-loose"
+  ]
+ },
+ {
+  "word": "redneck",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a poor White person in the southern United States",
+  "syn": [
+   "cracker"
+  ]
+ },
+ {
+  "word": "sedan",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a car that is closed and that has front and rear seats and two or four doors",
+  "syn": [
+   "saloon"
+  ]
+ },
+ {
+  "word": "algebra",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the mathematics of generalized arithmetical operations",
+  "syn": []
+ },
+ {
+  "word": "parlour",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "reception room in an inn or club where visitors can be received",
+  "syn": [
+   "parlor"
+  ]
+ },
+ {
+  "word": "municipal",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "relating or belonging to or characteristic of a municipality",
+  "syn": []
+ },
+ {
+  "word": "winnings",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "something won (especially money)",
+  "syn": [
+   "win",
+   "profits"
+  ]
+ },
+ {
+  "word": "abyss",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a bottomless gulf or pit",
+  "syn": [
+   "abysm"
+  ]
+ },
+ {
+  "word": "charcoal",
+  "pos": [
+   "adjective",
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "of a very dark grey",
+  "syn": [
+   "charcoal-grey",
+   "charcoal-gray"
+  ]
+ }
+]

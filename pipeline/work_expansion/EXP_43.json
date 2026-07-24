@@ -1,0 +1,1700 @@
+[
+ {
+  "word": "overcast",
+  "pos": [
+   "adjective",
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "filled or abounding with clouds",
+  "syn": [
+   "cloud-covered",
+   "clouded",
+   "sunless"
+  ]
+ },
+ {
+  "word": "petitioner",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "one praying humbly for something",
+  "syn": [
+   "suppliant",
+   "supplicant",
+   "requester"
+  ]
+ },
+ {
+  "word": "ruffled",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "shaken into waves or undulations as by wind",
+  "syn": [
+   "rippled"
+  ]
+ },
+ {
+  "word": "savant",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "someone who has been admitted to membership in a scholarly field",
+  "syn": [
+   "initiate",
+   "learned person",
+   "pundit"
+  ]
+ },
+ {
+  "word": "snatcher",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a thief who grabs and runs",
+  "syn": []
+ },
+ {
+  "word": "tinsel",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "a showy decoration that is basically valueless",
+  "syn": []
+ },
+ {
+  "word": "castration",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "neutering a male animal by removing the testicles",
+  "syn": [
+   "emasculation"
+  ]
+ },
+ {
+  "word": "fairway",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the area between the tee and putting green where the grass is cut short",
+  "syn": []
+ },
+ {
+  "word": "finalist",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a contestant who reaches the final stages of a competition",
+  "syn": []
+ },
+ {
+  "word": "killjoy",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "someone who spoils the pleasure of others",
+  "syn": [
+   "spoilsport",
+   "wet blanket",
+   "party pooper"
+  ]
+ },
+ {
+  "word": "potpourri",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a collection containing a variety of sorts of things",
+  "syn": [
+   "assortment",
+   "mixture",
+   "mixed bag",
+   "miscellany"
+  ]
+ },
+ {
+  "word": "ruination",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an irrecoverable state of devastation and destruction",
+  "syn": [
+   "ruin"
+  ]
+ },
+ {
+  "word": "stalemate",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "subject to a stalemate",
+  "syn": []
+ },
+ {
+  "word": "sulfa",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "antibacterial consisting of any of several synthetic organic compounds capable of inhibiting the growth of bacteria that require PABA",
+  "syn": [
+   "sulfa drug",
+   "sulpha",
+   "sulfonamide"
+  ]
+ },
+ {
+  "word": "synaptic",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "(neuroscience) of or involving synapses",
+  "syn": []
+ },
+ {
+  "word": "transcend",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "be greater in scope or size than some standard",
+  "syn": [
+   "exceed",
+   "surpass"
+  ]
+ },
+ {
+  "word": "airspeed",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the speed of an aircraft relative to the air in which it is flying",
+  "syn": []
+ },
+ {
+  "word": "bookmaker",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a maker of books",
+  "syn": []
+ },
+ {
+  "word": "decontamination",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the removal of contaminants",
+  "syn": []
+ },
+ {
+  "word": "defector",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a person who abandons their duty (as on a military post)",
+  "syn": [
+   "deserter"
+  ]
+ },
+ {
+  "word": "duplex",
+  "pos": [
+   "verb",
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "change into a duplex",
+  "syn": []
+ },
+ {
+  "word": "embargo",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "a government order imposing a trade barrier",
+  "syn": [
+   "trade embargo",
+   "trade stoppage"
+  ]
+ },
+ {
+  "word": "erectile",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "capable of being raised to an upright position",
+  "syn": []
+ },
+ {
+  "word": "headquarter",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "provide with headquarters",
+  "syn": []
+ },
+ {
+  "word": "indigent",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "poor enough to need help from others",
+  "syn": [
+   "destitute",
+   "impoverished",
+   "necessitous",
+   "needy"
+  ]
+ },
+ {
+  "word": "juke",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a small roadside establishment in the southeastern United States where you can eat and drink and dance to music provided by a jukebox",
+  "syn": [
+   "jook",
+   "juke joint",
+   "jook joint",
+   "juke house"
+  ]
+ },
+ {
+  "word": "lunge",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "make a thrusting forward movement",
+  "syn": [
+   "hurl",
+   "hurtle",
+   "thrust"
+  ]
+ },
+ {
+  "word": "mandolin",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a stringed instrument related to the lute, usually played with a plectrum",
+  "syn": []
+ },
+ {
+  "word": "redesign",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "design anew, make a new design for",
+  "syn": []
+ },
+ {
+  "word": "smooch",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "snuggle and lie in a position where one person faces the back of the others",
+  "syn": [
+   "spoon"
+  ]
+ },
+ {
+  "word": "swordplay",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the act using a sword (or other weapon) vigorously and skillfully",
+  "syn": [
+   "play"
+  ]
+ },
+ {
+  "word": "auditor",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "someone who listens attentively",
+  "syn": [
+   "hearer",
+   "listener",
+   "attender"
+  ]
+ },
+ {
+  "word": "buckboard",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an open horse-drawn carriage with four wheels",
+  "syn": []
+ },
+ {
+  "word": "leafy",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "having or covered with leaves",
+  "syn": []
+ },
+ {
+  "word": "mnemonic",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "of or relating to or involved the practice of aiding the memory",
+  "syn": [
+   "mnemotechnic",
+   "mnemotechnical"
+  ]
+ },
+ {
+  "word": "javelin",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an athletic competition in which a javelin is thrown as far as possible",
+  "syn": []
+ },
+ {
+  "word": "kumquat",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "any of several trees or shrubs of the genus Fortunella bearing small orange-colored edible fruits with thick sweet-flavored skin and sour pulp",
+  "syn": [
+   "cumquat",
+   "kumquat tree"
+  ]
+ },
+ {
+  "word": "patchouli",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "small East Indian shrubby mint",
+  "syn": [
+   "patchouly",
+   "pachouli",
+   "Pogostemon cablin"
+  ]
+ },
+ {
+  "word": "shaver",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an adult male who shaves",
+  "syn": []
+ },
+ {
+  "word": "steamship",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a ship powered by one or more steam engines",
+  "syn": [
+   "steamer"
+  ]
+ },
+ {
+  "word": "chitlins",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "small intestines of hogs prepared as food",
+  "syn": [
+   "chitterlings",
+   "chitlings"
+  ]
+ },
+ {
+  "word": "cilantro",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "Old World herb with aromatic leaves and seed resembling parsley",
+  "syn": [
+   "coriander",
+   "coriander plant",
+   "Chinese parsley",
+   "Coriandrum sativum"
+  ]
+ },
+ {
+  "word": "nee",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "(meaning literally `born') used to indicate the maiden or family name of a married woman",
+  "syn": []
+ },
+ {
+  "word": "alcove",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a small recess opening off a larger room",
+  "syn": [
+   "bay"
+  ]
+ },
+ {
+  "word": "jogger",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "someone who runs a steady slow pace (usually for exercise)",
+  "syn": []
+ },
+ {
+  "word": "misdirection",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an incorrect charge to a jury given by a judge",
+  "syn": []
+ },
+ {
+  "word": "whelp",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "give birth to (a puppy)",
+  "syn": [
+   "pup"
+  ]
+ },
+ {
+  "word": "blacklist",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "put on a blacklist so as to banish or cause to be boycotted",
+  "syn": []
+ },
+ {
+  "word": "colonoscopy",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "visual examination of the colon (with a colonoscope) from the cecum to the rectum",
+  "syn": []
+ },
+ {
+  "word": "grifter",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a person who swindles you by means of deception or fraud",
+  "syn": [
+   "swindler",
+   "defrauder",
+   "chiseller",
+   "chiseler"
+  ]
+ },
+ {
+  "word": "trident",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a spear with three prongs",
+  "syn": []
+ },
+ {
+  "word": "dauphin",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "formerly, the eldest son of the King of France and direct heir to the throne",
+  "syn": []
+ },
+ {
+  "word": "fjord",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a long narrow inlet of the sea between steep cliffs",
+  "syn": [
+   "fiord"
+  ]
+ },
+ {
+  "word": "chatterbox",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "orchid growing along streams or ponds of western North America having leafy stems and 1 greenish-brown and pinkish flower in the axil of each upper leaf",
+  "syn": [
+   "stream orchid",
+   "giant helleborine",
+   "Epipactis gigantea"
+  ]
+ },
+ {
+  "word": "conducive",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "tending to bring about",
+  "syn": [
+   "contributing(a)",
+   "contributive",
+   "contributory",
+   "tributary"
+  ]
+ },
+ {
+  "word": "confidante",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a female confidant",
+  "syn": []
+ },
+ {
+  "word": "conversationalist",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "someone skilled at conversation",
+  "syn": [
+   "conversationist",
+   "schmoozer"
+  ]
+ },
+ {
+  "word": "debatable",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "open to doubt or debate",
+  "syn": [
+   "problematic",
+   "problematical"
+  ]
+ },
+ {
+  "word": "fatten",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "make fat or plump",
+  "syn": [
+   "fat",
+   "flesh out",
+   "fill out",
+   "plump"
+  ]
+ },
+ {
+  "word": "fondling",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "affectionate play (or foreplay without contact with the genital organs)",
+  "syn": [
+   "caressing",
+   "cuddling",
+   "hugging",
+   "kissing"
+  ]
+ },
+ {
+  "word": "fruitless",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "unproductive of success",
+  "syn": [
+   "bootless",
+   "futile",
+   "sleeveless",
+   "vain"
+  ]
+ },
+ {
+  "word": "girlish",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "befitting or characteristic of a young girl",
+  "syn": [
+   "schoolgirlish"
+  ]
+ },
+ {
+  "word": "incessant",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "uninterrupted in time and indefinitely long continuing",
+  "syn": [
+   "ceaseless",
+   "constant",
+   "never-ending",
+   "perpetual"
+  ]
+ },
+ {
+  "word": "malnutrition",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a state of poor nutrition",
+  "syn": []
+ },
+ {
+  "word": "nestled",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "drawn or pressed close to someone or something for or as if for affection or protection",
+  "syn": [
+   "snuggled"
+  ]
+ },
+ {
+  "word": "odour",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the sensation that results when olfactory receptors in the nose are stimulated by particular chemicals in gaseous form",
+  "syn": [
+   "smell",
+   "odor",
+   "olfactory sensation",
+   "olfactory perception"
+  ]
+ },
+ {
+  "word": "reciprocal",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "concerning each of two or more persons or things",
+  "syn": [
+   "mutual"
+  ]
+ },
+ {
+  "word": "restock",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "stock again",
+  "syn": []
+ },
+ {
+  "word": "seething",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "in constant agitation",
+  "syn": []
+ },
+ {
+  "word": "abrasive",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "a substance that abrades or wears down",
+  "syn": [
+   "abradant",
+   "abrasive material"
+  ]
+ },
+ {
+  "word": "bareback",
+  "pos": [
+   "adverb",
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "without a saddle",
+  "syn": [
+   "barebacked"
+  ]
+ },
+ {
+  "word": "beeswax",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "cover with beeswax",
+  "syn": []
+ },
+ {
+  "word": "bittersweet",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "tinged with sadness",
+  "syn": []
+ },
+ {
+  "word": "consolidate",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "unite into one",
+  "syn": []
+ },
+ {
+  "word": "delinquency",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "nonpayment of a debt when due",
+  "syn": []
+ },
+ {
+  "word": "disloyalty",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the quality of being disloyal",
+  "syn": []
+ },
+ {
+  "word": "frayed",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "worn away or tattered along the edges",
+  "syn": []
+ },
+ {
+  "word": "gaggle",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "make a noise characteristic of a goose",
+  "syn": []
+ },
+ {
+  "word": "groundwork",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the fundamental assumptions from which something is begun or developed or calculated or explained",
+  "syn": [
+   "basis",
+   "base",
+   "foundation",
+   "fundament"
+  ]
+ },
+ {
+  "word": "harebrained",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "very foolish",
+  "syn": [
+   "insane",
+   "mad"
+  ]
+ },
+ {
+  "word": "ingest",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "serve oneself to, or consume regularly",
+  "syn": [
+   "consume",
+   "take in",
+   "take",
+   "have"
+  ]
+ },
+ {
+  "word": "keeled",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "having a ridge or shaped like a ridge or suggesting the keel of a ship",
+  "syn": [
+   "ridged",
+   "carinate",
+   "carinated"
+  ]
+ },
+ {
+  "word": "knockoff",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an unauthorized copy or imitation",
+  "syn": [
+   "clone"
+  ]
+ },
+ {
+  "word": "miscalculation",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a mistake in calculating",
+  "syn": [
+   "misreckoning",
+   "misestimation"
+  ]
+ },
+ {
+  "word": "plywood",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a laminate made of thin layers of wood",
+  "syn": [
+   "plyboard"
+  ]
+ },
+ {
+  "word": "reeking",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "wet with secreted or exuded moisture such as sweat or tears",
+  "syn": [
+   "watery"
+  ]
+ },
+ {
+  "word": "scouring",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "moving over territory to search for something",
+  "syn": []
+ },
+ {
+  "word": "softening",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "having a softening or soothing effect especially to the skin",
+  "syn": [
+   "demulcent",
+   "emollient",
+   "salving"
+  ]
+ },
+ {
+  "word": "squabble",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "argue over petty things",
+  "syn": [
+   "quibble",
+   "niggle",
+   "pettifog",
+   "bicker"
+  ]
+ },
+ {
+  "word": "storefront",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the front side of a store facing the street",
+  "syn": [
+   "shopfront"
+  ]
+ },
+ {
+  "word": "subsidiary",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "functioning in a supporting capacity",
+  "syn": [
+   "auxiliary",
+   "supplemental",
+   "supplementary"
+  ]
+ },
+ {
+  "word": "unexplored",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "not yet discovered",
+  "syn": [
+   "undiscovered"
+  ]
+ },
+ {
+  "word": "unrelenting",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "not to be placated or appeased or moved by entreaty",
+  "syn": [
+   "grim",
+   "inexorable",
+   "relentless",
+   "stern"
+  ]
+ },
+ {
+  "word": "achy",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "causing a dull and steady pain",
+  "syn": [
+   "aching"
+  ]
+ },
+ {
+  "word": "bereaved",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "sorrowful through loss or deprivation",
+  "syn": [
+   "bereft",
+   "grief-stricken",
+   "grieving",
+   "mourning(a)"
+  ]
+ },
+ {
+  "word": "captivated",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "strongly attracted",
+  "syn": [
+   "charmed"
+  ]
+ },
+ {
+  "word": "dismissive",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "showing indifference or disregard",
+  "syn": []
+ },
+ {
+  "word": "dreamland",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a pleasing country existing only in dreams or imagination",
+  "syn": [
+   "never-never land",
+   "dreamworld"
+  ]
+ },
+ {
+  "word": "eighteenth",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "coming next after the seventeenth in position",
+  "syn": [
+   "18th"
+  ]
+ },
+ {
+  "word": "empirical",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "derived from experiment and observation rather than theory",
+  "syn": [
+   "empiric"
+  ]
+ },
+ {
+  "word": "enhancement",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an improvement that makes something more agreeable",
+  "syn": [
+   "sweetening"
+  ]
+ },
+ {
+  "word": "evidentiary",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "pertaining to or constituting evidence",
+  "syn": []
+ },
+ {
+  "word": "flamboyant",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "showy tropical tree or shrub native to Madagascar",
+  "syn": [
+   "royal poinciana",
+   "flame tree",
+   "peacock flower",
+   "Delonix regia"
+  ]
+ },
+ {
+  "word": "foreboding",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "ominously prophetic",
+  "syn": [
+   "fateful",
+   "foreboding(a)",
+   "portentous"
+  ]
+ },
+ {
+  "word": "hereabouts",
+  "pos": [
+   "adverb"
+  ],
+  "cefr": "C2",
+  "en": "in this general vicinity",
+  "syn": [
+   "hereabout"
+  ]
+ },
+ {
+  "word": "iota",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a tiny or scarcely detectable amount",
+  "syn": [
+   "shred",
+   "scintilla",
+   "whit",
+   "tittle"
+  ]
+ },
+ {
+  "word": "malarkey",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "empty rhetoric or insincere or exaggerated talk",
+  "syn": [
+   "wind",
+   "malarky",
+   "idle words",
+   "jazz"
+  ]
+ },
+ {
+  "word": "oldie",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a song that was formerly popular",
+  "syn": [
+   "golden oldie"
+  ]
+ },
+ {
+  "word": "olfactory",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "of or relating to olfaction",
+  "syn": [
+   "olfactive"
+  ]
+ },
+ {
+  "word": "permissible",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "that may be permitted especially as according to rule",
+  "syn": [
+   "allowable"
+  ]
+ },
+ {
+  "word": "tolerable",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "capable of being borne or endured",
+  "syn": []
+ },
+ {
+  "word": "ubiquitous",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "being present everywhere at once",
+  "syn": [
+   "omnipresent"
+  ]
+ },
+ {
+  "word": "wigged",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "wearing a wig",
+  "syn": []
+ },
+ {
+  "word": "ajar",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "slightly open",
+  "syn": [
+   "ajar(p)"
+  ]
+ },
+ {
+  "word": "bereavement",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "state of sorrow over the death or departure of a loved one",
+  "syn": [
+   "mourning"
+  ]
+ },
+ {
+  "word": "cannabis",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "any plant of the genus Cannabis",
+  "syn": [
+   "hemp"
+  ]
+ },
+ {
+  "word": "citadel",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a stronghold into which people could go for shelter during a battle",
+  "syn": [
+   "bastion"
+  ]
+ },
+ {
+  "word": "fatherhood",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the kinship relation between an offspring and the father",
+  "syn": [
+   "paternity"
+  ]
+ },
+ {
+  "word": "geometric",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "characterized by simple geometric forms in design and decoration",
+  "syn": [
+   "geometrical"
+  ]
+ },
+ {
+  "word": "gizzard",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "thick-walled muscular pouch below the crop in many birds and reptiles for grinding food",
+  "syn": [
+   "ventriculus",
+   "gastric mill"
+  ]
+ },
+ {
+  "word": "gritty",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "composed of or covered with particles resembling meal in texture or consistency",
+  "syn": [
+   "farinaceous",
+   "coarse-grained",
+   "grainy",
+   "granular"
+  ]
+ },
+ {
+  "word": "inhibited",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "held back or restrained or prevented",
+  "syn": []
+ },
+ {
+  "word": "kismet",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "(Islam) the will of Allah",
+  "syn": [
+   "kismat"
+  ]
+ },
+ {
+  "word": "lashing",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "violently urging on by whipping or flogging",
+  "syn": []
+ },
+ {
+  "word": "marksmanship",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "skill in shooting",
+  "syn": []
+ },
+ {
+  "word": "nakedness",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the state of being without clothing or covering of any kind",
+  "syn": [
+   "nudity",
+   "nudeness"
+  ]
+ },
+ {
+  "word": "prodigious",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "so great in size or force or extent as to elicit awe",
+  "syn": [
+   "colossal",
+   "stupendous"
+  ]
+ },
+ {
+  "word": "rainmaker",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "executive who is very successful in bringing in business to his company or firm",
+  "syn": []
+ },
+ {
+  "word": "strategically",
+  "pos": [
+   "adverb"
+  ],
+  "cefr": "C2",
+  "en": "with regard to strategy",
+  "syn": []
+ },
+ {
+  "word": "tailgate",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "follow at a dangerously close distance",
+  "syn": []
+ },
+ {
+  "word": "temptress",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a woman who is considered to be dangerously seductive",
+  "syn": [
+   "enchantress",
+   "siren",
+   "Delilah",
+   "femme fatale"
+  ]
+ },
+ {
+  "word": "truffle",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "any of various highly prized edible subterranean fungi of the genus Tuber",
+  "syn": [
+   "earthnut",
+   "earth-ball"
+  ]
+ },
+ {
+  "word": "waterworks",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a public utility that provides water",
+  "syn": [
+   "water company"
+  ]
+ },
+ {
+  "word": "bracing",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "imparting vitality and energy",
+  "syn": [
+   "brisk",
+   "fresh",
+   "refreshing",
+   "refreshful"
+  ]
+ },
+ {
+  "word": "bullhorn",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a portable loudspeaker with built-in microphone and amplifier",
+  "syn": [
+   "loud hailer",
+   "loud-hailer"
+  ]
+ },
+ {
+  "word": "circulatory",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "of or relating to circulation",
+  "syn": [
+   "circulative"
+  ]
+ },
+ {
+  "word": "compatibility",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a feeling of sympathetic understanding",
+  "syn": []
+ },
+ {
+  "word": "cringe",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "draw back, as with fear or pain",
+  "syn": [
+   "flinch",
+   "squinch",
+   "funk",
+   "shrink"
+  ]
+ },
+ {
+  "word": "debauchery",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a wild gathering involving excessive drinking and promiscuity",
+  "syn": [
+   "orgy",
+   "debauch",
+   "saturnalia",
+   "riot"
+  ]
+ },
+ {
+  "word": "desecration",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "blasphemous behavior",
+  "syn": [
+   "profanation",
+   "blasphemy",
+   "sacrilege"
+  ]
+ },
+ {
+  "word": "hacksaw",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "saw used with one hand for cutting metal",
+  "syn": [
+   "hack saw",
+   "metal saw"
+  ]
+ },
+ {
+  "word": "hatter",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "someone who makes and sells hats",
+  "syn": [
+   "hatmaker",
+   "milliner",
+   "modiste"
+  ]
+ },
+ {
+  "word": "ineffectual",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "not producing an intended effect",
+  "syn": [
+   "ineffective",
+   "uneffective"
+  ]
+ },
+ {
+  "word": "inhumane",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "lacking and reflecting lack of pity or compassion",
+  "syn": []
+ },
+ {
+  "word": "intracranial",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "within the skull",
+  "syn": []
+ },
+ {
+  "word": "mensch",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a decent responsible person with admirable characteristics",
+  "syn": [
+   "mensh"
+  ]
+ },
+ {
+  "word": "mezzanine",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "first or lowest balcony",
+  "syn": [
+   "first balcony"
+  ]
+ },
+ {
+  "word": "mosaic",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "of or relating to Moses or the laws and writings attributed to him",
+  "syn": []
+ },
+ {
+  "word": "nil",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a quantity of no importance",
+  "syn": [
+   "nothing",
+   "nix",
+   "nada",
+   "null"
+  ]
+ },
+ {
+  "word": "overheated",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "heated beyond a safe or desirable point",
+  "syn": []
+ }
+]

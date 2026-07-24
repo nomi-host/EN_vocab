@@ -1,0 +1,1649 @@
+[
+ {
+  "word": "mysticism",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a religion based on mystical communion with an ultimate reality",
+  "syn": [
+   "religious mysticism"
+  ]
+ },
+ {
+  "word": "peacetime",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a period of time during which there is no war",
+  "syn": []
+ },
+ {
+  "word": "sandpaper",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "rub with sandpaper",
+  "syn": [
+   "sand"
+  ]
+ },
+ {
+  "word": "socialite",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a socially prominent person",
+  "syn": []
+ },
+ {
+  "word": "steadfast",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "marked by firm determination or resolution",
+  "syn": [
+   "firm",
+   "steady",
+   "stiff",
+   "unbendable"
+  ]
+ },
+ {
+  "word": "thrift",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "any of numerous sun-loving low-growing evergreens of the genus Armeria having round heads of pink or white flowers",
+  "syn": []
+ },
+ {
+  "word": "undetermined",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "not yet having been ascertained or determined",
+  "syn": []
+ },
+ {
+  "word": "unreachable",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "inaccessibly located or situated",
+  "syn": [
+   "unapproachable",
+   "unreached",
+   "out of reach(p)"
+  ]
+ },
+ {
+  "word": "unsympathetic",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "not sympathetic or disposed toward",
+  "syn": []
+ },
+ {
+  "word": "untrained",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "not disciplined or conditioned or made adept by training",
+  "syn": []
+ },
+ {
+  "word": "wintertime",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the coldest season of the year",
+  "syn": [
+   "winter"
+  ]
+ },
+ {
+  "word": "yoke",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "become joined or linked together",
+  "syn": []
+ },
+ {
+  "word": "yucky",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "highly offensive",
+  "syn": [
+   "disgusting",
+   "disgustful",
+   "distasteful",
+   "foul"
+  ]
+ },
+ {
+  "word": "acclaim",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "enthusiastic approval",
+  "syn": [
+   "acclamation",
+   "plaudits",
+   "plaudit",
+   "eclat"
+  ]
+ },
+ {
+  "word": "agitate",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "try to stir up public opinion",
+  "syn": [
+   "foment",
+   "stir up"
+  ]
+ },
+ {
+  "word": "algae",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "primitive chlorophyll-containing mainly aquatic eukaryotic organisms lacking true stems and roots and leaves",
+  "syn": [
+   "alga"
+  ]
+ },
+ {
+  "word": "antagonistic",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "indicating opposition or resistance",
+  "syn": [
+   "counter"
+  ]
+ },
+ {
+  "word": "apologetic",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "offering or expressing apology",
+  "syn": [
+   "excusatory"
+  ]
+ },
+ {
+  "word": "astound",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "affect with wonder",
+  "syn": [
+   "amaze",
+   "astonish"
+  ]
+ },
+ {
+  "word": "coercion",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the act of compelling by force of authority",
+  "syn": []
+ },
+ {
+  "word": "concise",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "expressing much in few words",
+  "syn": []
+ },
+ {
+  "word": "counterclockwise",
+  "pos": [
+   "adverb",
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "in a direction opposite to the direction in which the hands of a clock move",
+  "syn": [
+   "anticlockwise"
+  ]
+ },
+ {
+  "word": "crimp",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "make ridges into by pinching together",
+  "syn": [
+   "pinch"
+  ]
+ },
+ {
+  "word": "diagnostics",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the branch of medical science dealing with the classification of disease",
+  "syn": [
+   "nosology"
+  ]
+ },
+ {
+  "word": "dodgy",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "of uncertain outcome",
+  "syn": [
+   "chancy",
+   "chanceful",
+   "dicey"
+  ]
+ },
+ {
+  "word": "downtime",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a period of time when something (as a machine or factory) is not operating (especially as a result of malfunctions)",
+  "syn": []
+ },
+ {
+  "word": "foray",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "steal goods",
+  "syn": [
+   "plunder",
+   "despoil",
+   "loot",
+   "reave"
+  ]
+ },
+ {
+  "word": "guff",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "unacceptable behavior (especially ludicrously false statements)",
+  "syn": [
+   "bunk",
+   "bunkum",
+   "buncombe",
+   "rot"
+  ]
+ },
+ {
+  "word": "huffing",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an act of forcible exhalation",
+  "syn": [
+   "puffing",
+   "snorting"
+  ]
+ },
+ {
+  "word": "instructive",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "serving to instruct or enlighten or inform",
+  "syn": [
+   "informative"
+  ]
+ },
+ {
+  "word": "leniency",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "mercifulness as a consequence of being lenient or tolerant",
+  "syn": [
+   "lenience",
+   "mildness",
+   "lenity"
+  ]
+ },
+ {
+  "word": "lunkhead",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a stupid person",
+  "syn": [
+   "dunce",
+   "dunderhead",
+   "numskull",
+   "blockhead"
+  ]
+ },
+ {
+  "word": "miscellaneous",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "consisting of a haphazard assortment of different kinds",
+  "syn": [
+   "assorted",
+   "mixed",
+   "motley",
+   "sundry(a)"
+  ]
+ },
+ {
+  "word": "notably",
+  "pos": [
+   "adverb"
+  ],
+  "cefr": "C2",
+  "en": "especially",
+  "syn": []
+ },
+ {
+  "word": "pneumatic",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "of or relating to or using air (or a similar gas)",
+  "syn": []
+ },
+ {
+  "word": "pulley",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a simple machine consisting of a wheel with a groove in which a rope can run to change the direction or point of application of a force applied to the rope",
+  "syn": [
+   "pulley-block",
+   "pulley block",
+   "block"
+  ]
+ },
+ {
+  "word": "receptacle",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a container that is used to put or keep things in",
+  "syn": []
+ },
+ {
+  "word": "reestablish",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "bring back into original existence, use, function, or position",
+  "syn": [
+   "restore",
+   "reinstate"
+  ]
+ },
+ {
+  "word": "stalwart",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "a person who is loyal to their allegiance (especially in times of revolt)",
+  "syn": [
+   "loyalist"
+  ]
+ },
+ {
+  "word": "sunroof",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an automobile roof having a sliding or raisable panel",
+  "syn": [
+   "sunshine-roof"
+  ]
+ },
+ {
+  "word": "unsolicited",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "not requested or sought",
+  "syn": [
+   "unasked-for"
+  ]
+ },
+ {
+  "word": "urchin",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "poor and often mischievous city child",
+  "syn": []
+ },
+ {
+  "word": "autobiographical",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "of or relating to or characteristic of an autobiographer",
+  "syn": [
+   "autobiographic"
+  ]
+ },
+ {
+  "word": "decoder",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the kind of intellectual who converts messages from a code to plain text",
+  "syn": [
+   "decipherer"
+  ]
+ },
+ {
+  "word": "exonerated",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "freed from any question of guilt",
+  "syn": [
+   "absolved",
+   "clear",
+   "cleared",
+   "exculpated"
+  ]
+ },
+ {
+  "word": "foreground",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "move into the foreground to make more visible or prominent",
+  "syn": [
+   "highlight",
+   "spotlight",
+   "play up"
+  ]
+ },
+ {
+  "word": "fullback",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "play the fullback",
+  "syn": []
+ },
+ {
+  "word": "headliner",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a performer who receives prominent billing",
+  "syn": [
+   "star"
+  ]
+ },
+ {
+  "word": "lop",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "cut off from a whole",
+  "syn": [
+   "discerp",
+   "sever"
+  ]
+ },
+ {
+  "word": "missis",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "informal term of address for someone's wife",
+  "syn": [
+   "missus"
+  ]
+ },
+ {
+  "word": "offstage",
+  "pos": [
+   "noun",
+   "adverb",
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "a stage area out of sight of the audience",
+  "syn": [
+   "wing",
+   "backstage"
+  ]
+ },
+ {
+  "word": "potluck",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "whatever happens to be available especially when offered to an unexpected guest or when brought by guests and shared by all",
+  "syn": []
+ },
+ {
+  "word": "primping",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "careful or finicky grooming",
+  "syn": []
+ },
+ {
+  "word": "reclining",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the act of assuming or maintaining a reclining position",
+  "syn": []
+ },
+ {
+  "word": "refine",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "improve or perfect by pruning or polishing",
+  "syn": [
+   "polish",
+   "fine-tune",
+   "down"
+  ]
+ },
+ {
+  "word": "tardiness",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the quality or habit of not adhering to a correct or usual or expected time",
+  "syn": []
+ },
+ {
+  "word": "trickster",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "someone who plays practical jokes on others",
+  "syn": [
+   "prankster",
+   "cut-up",
+   "tricker",
+   "hoaxer"
+  ]
+ },
+ {
+  "word": "unrequited",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "not returned in kind",
+  "syn": [
+   "unanswered",
+   "unreciprocated"
+  ]
+ },
+ {
+  "word": "amaretto",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an Italian almond liqueur",
+  "syn": []
+ },
+ {
+  "word": "bovine",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "any of various members of the genus Bos",
+  "syn": []
+ },
+ {
+  "word": "cleanser",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a preparation used in cleaning something",
+  "syn": [
+   "cleansing agent",
+   "cleaner"
+  ]
+ },
+ {
+  "word": "cuckold",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "be sexually unfaithful to one's partner in marriage",
+  "syn": [
+   "cheat on",
+   "cheat",
+   "betray",
+   "wander"
+  ]
+ },
+ {
+  "word": "cyst",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a closed sac that develops abnormally in some body structure",
+  "syn": []
+ },
+ {
+  "word": "desperado",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a bold outlaw (especially on the American frontier)",
+  "syn": [
+   "desperate criminal"
+  ]
+ },
+ {
+  "word": "dominatrix",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a dominating woman (especially one who plays that role in a sadomasochistic sexual relationship)",
+  "syn": []
+ },
+ {
+  "word": "glisten",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "be shiny, as if wet",
+  "syn": [
+   "glitter",
+   "glint",
+   "gleam",
+   "shine"
+  ]
+ },
+ {
+  "word": "lanky",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "tall and thin and having long slender limbs",
+  "syn": [
+   "gangling",
+   "gangly",
+   "rangy"
+  ]
+ },
+ {
+  "word": "menthol",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a crystalline compound that has the cool and minty taste and odor that occurs naturally in peppermint oil",
+  "syn": []
+ },
+ {
+  "word": "newlywed",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "someone recently married",
+  "syn": [
+   "honeymooner"
+  ]
+ },
+ {
+  "word": "strychnine",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an alkaloid plant toxin extracted chiefly from nux vomica",
+  "syn": []
+ },
+ {
+  "word": "substandard",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "falling short of some prescribed norm",
+  "syn": [
+   "deficient",
+   "inferior"
+  ]
+ },
+ {
+  "word": "curd",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a coagulated liquid resembling milk curd",
+  "syn": []
+ },
+ {
+  "word": "deco",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a style of design that was popular in the 1920s and 1930s",
+  "syn": [
+   "art deco"
+  ]
+ },
+ {
+  "word": "fir",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "nonresinous wood of a fir tree",
+  "syn": []
+ },
+ {
+  "word": "gassy",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "resembling gas",
+  "syn": []
+ },
+ {
+  "word": "inhibition",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "(psychology) the conscious exclusion of unacceptable thoughts or desires",
+  "syn": [
+   "suppression"
+  ]
+ },
+ {
+  "word": "linguini",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "pasta in long slender flat strips",
+  "syn": [
+   "linguine"
+  ]
+ },
+ {
+  "word": "rockers",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "originally a British youth subculture that evolved out of the teddy boys in the 1960s",
+  "syn": [
+   "bikers"
+  ]
+ },
+ {
+  "word": "slobber",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "let saliva drivel from the mouth",
+  "syn": [
+   "drivel",
+   "drool",
+   "slabber",
+   "slaver"
+  ]
+ },
+ {
+  "word": "toffee",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "caramelized sugar cooled in thin sheets",
+  "syn": [
+   "brittle",
+   "toffy"
+  ]
+ },
+ {
+  "word": "woodshed",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a shed for storing firewood or garden tools",
+  "syn": []
+ },
+ {
+  "word": "bicentennial",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "the 200th anniversary (or the celebration of it)",
+  "syn": [
+   "bicentenary"
+  ]
+ },
+ {
+  "word": "biographer",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "someone who writes an account of a person's life",
+  "syn": []
+ },
+ {
+  "word": "lacquer",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "coat with lacquer",
+  "syn": []
+ },
+ {
+  "word": "lobbyist",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "someone who is employed to persuade legislators to vote for legislation that favors the lobbyist's employer",
+  "syn": []
+ },
+ {
+  "word": "mainsail",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the lowermost sail on the mainmast",
+  "syn": []
+ },
+ {
+  "word": "mincemeat",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "spiced mixture of chopped raisins and apples and other ingredients with or without meat",
+  "syn": []
+ },
+ {
+  "word": "mulch",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "cover with mulch",
+  "syn": []
+ },
+ {
+  "word": "riverbed",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a channel occupied (or formerly occupied) by a river",
+  "syn": [
+   "river bottom"
+  ]
+ },
+ {
+  "word": "roadkill",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the dead body of an animal that has been killed on a road by a vehicle",
+  "syn": []
+ },
+ {
+  "word": "slurp",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "eat noisily",
+  "syn": []
+ },
+ {
+  "word": "souffle",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "light fluffy dish of egg yolks and stiffly beaten egg whites mixed with e.g. cheese or fish or fruit",
+  "syn": []
+ },
+ {
+  "word": "switchblade",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a pocketknife with a blade that springs open at the press of a button",
+  "syn": [
+   "switchblade knife",
+   "flick-knife",
+   "flick knife"
+  ]
+ },
+ {
+  "word": "wildebeest",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "large African antelope having a head with horns like an ox and a long tufted tail",
+  "syn": [
+   "gnu"
+  ]
+ },
+ {
+  "word": "bursitis",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "inflammation of a bursa",
+  "syn": []
+ },
+ {
+  "word": "centipede",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "chiefly nocturnal predacious arthropod having a flattened body of 15 to 173 segments each with a pair of legs, the foremost pair being modified as prehensors",
+  "syn": []
+ },
+ {
+  "word": "summerhouse",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a small roofed building affording shade and rest",
+  "syn": [
+   "gazebo"
+  ]
+ },
+ {
+  "word": "tuppence",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a former United Kingdom silver coin",
+  "syn": [
+   "twopence"
+  ]
+ },
+ {
+  "word": "crone",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an ugly evil-looking old woman",
+  "syn": [
+   "hag",
+   "beldam",
+   "beldame",
+   "witch"
+  ]
+ },
+ {
+  "word": "exhumation",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the act of digging something up out of the ground (especially a corpse) where it has been buried",
+  "syn": [
+   "disinterment",
+   "digging up"
+  ]
+ },
+ {
+  "word": "expedient",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "a means to an end",
+  "syn": []
+ },
+ {
+  "word": "paperboy",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a boy who sells or delivers newspapers",
+  "syn": []
+ },
+ {
+  "word": "phosphate",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a salt of phosphoric acid",
+  "syn": [
+   "orthophosphate",
+   "inorganic phosphate"
+  ]
+ },
+ {
+  "word": "solarium",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a room enclosed largely with glass and affording exposure to the sun",
+  "syn": [
+   "sun parlor",
+   "sun parlour",
+   "sun porch",
+   "sunporch"
+  ]
+ },
+ {
+  "word": "velour",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "heavy fabric that resembles velvet",
+  "syn": [
+   "velours"
+  ]
+ },
+ {
+  "word": "watchtower",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "an observation tower for a lookout to watch over prisoners or watch for fires or enemies",
+  "syn": []
+ },
+ {
+  "word": "boysenberry",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "cultivated hybrid bramble of California having large dark wine-red fruit with a flavor resembling raspberries",
+  "syn": [
+   "boysenberry bush"
+  ]
+ },
+ {
+  "word": "constituency",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the body of voters who elect a representative for their area",
+  "syn": []
+ },
+ {
+  "word": "diss",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "treat, mention, or speak to rudely",
+  "syn": [
+   "insult",
+   "affront"
+  ]
+ },
+ {
+  "word": "mildew",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "become moldy",
+  "syn": [
+   "mold"
+  ]
+ },
+ {
+  "word": "searchlight",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a light source with reflectors that projects a beam of light in a particular direction",
+  "syn": []
+ },
+ {
+  "word": "tantric",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "of or relating to Tantrism",
+  "syn": [
+   "Tantrik"
+  ]
+ },
+ {
+  "word": "cleat",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "provide with cleats",
+  "syn": []
+ },
+ {
+  "word": "mire",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "a soft wet area of low-lying land that sinks underfoot",
+  "syn": [
+   "quagmire",
+   "quag",
+   "morass",
+   "slack"
+  ]
+ },
+ {
+  "word": "anaesthetic",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "a drug that causes temporary loss of bodily sensations",
+  "syn": [
+   "anesthetic",
+   "anesthetic agent",
+   "anaesthetic agent"
+  ]
+ },
+ {
+  "word": "proton",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a stable particle with positive charge equal to the negative charge of an electron",
+  "syn": []
+ },
+ {
+  "word": "satanism",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a belief in and reverence for devils (especially Satan)",
+  "syn": [
+   "diabolism",
+   "demonism"
+  ]
+ },
+ {
+  "word": "benzene",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a colorless liquid hydrocarbon",
+  "syn": [
+   "benzine",
+   "benzol"
+  ]
+ },
+ {
+  "word": "clack",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "a sharp abrupt noise as if two objects hit together",
+  "syn": [
+   "clap"
+  ]
+ },
+ {
+  "word": "dollhouse",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a house so small that it is likened to a child's plaything",
+  "syn": [
+   "doll's house"
+  ]
+ },
+ {
+  "word": "paraffin",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "from crude petroleum",
+  "syn": [
+   "paraffin wax"
+  ]
+ },
+ {
+  "word": "spermicide",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a contraceptive agent that kills spermatozoa",
+  "syn": [
+   "spermatocide"
+  ]
+ },
+ {
+  "word": "peptide",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "amide combining the amino group of one amino acid with the carboxyl group of another",
+  "syn": []
+ },
+ {
+  "word": "burgomaster",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a mayor of a municipality in Germany or Holland or Flanders or Austria",
+  "syn": []
+ },
+ {
+  "word": "escarpment",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a long steep slope or cliff at the edge of a plateau or ridge",
+  "syn": [
+   "scarp"
+  ]
+ },
+ {
+  "word": "musketeer",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a foot soldier armed with a musket",
+  "syn": []
+ },
+ {
+  "word": "sari",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a dress worn primarily by Hindu women",
+  "syn": [
+   "saree"
+  ]
+ },
+ {
+  "word": "alluring",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "highly attractive and able to arouse hope or desire",
+  "syn": [
+   "beguiling",
+   "enticing",
+   "tempting"
+  ]
+ },
+ {
+  "word": "befitting",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "appropriate to",
+  "syn": []
+ },
+ {
+  "word": "blameless",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "free of guilt",
+  "syn": [
+   "inculpable",
+   "irreproachable",
+   "unimpeachable"
+  ]
+ },
+ {
+  "word": "contentment",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "happiness with one's situation in life",
+  "syn": []
+ },
+ {
+  "word": "converging",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the act of converging (coming closer)",
+  "syn": [
+   "convergence",
+   "convergency"
+  ]
+ },
+ {
+  "word": "credence",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the mental attitude that something is believable and should be accepted as true",
+  "syn": [
+   "acceptance"
+  ]
+ },
+ {
+  "word": "dependence",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "the state of relying on or being controlled by someone or something else",
+  "syn": [
+   "dependance",
+   "dependency"
+  ]
+ },
+ {
+  "word": "dexterity",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "adroitness in using the hands",
+  "syn": [
+   "manual dexterity",
+   "sleight"
+  ]
+ },
+ {
+  "word": "fertilize",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "provide with fertilizers or add nutrients to",
+  "syn": [
+   "fertilise",
+   "feed"
+  ]
+ },
+ {
+  "word": "herein",
+  "pos": [
+   "adverb"
+  ],
+  "cefr": "C2",
+  "en": "in this place or thing or document",
+  "syn": []
+ },
+ {
+  "word": "hesitant",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "lacking decisiveness of character",
+  "syn": [
+   "hesitating"
+  ]
+ },
+ {
+  "word": "insistence",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "continual and persistent demands",
+  "syn": [
+   "insisting"
+  ]
+ },
+ {
+  "word": "interpretive",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "that provides interpretation",
+  "syn": [
+   "interpretative"
+  ]
+ },
+ {
+  "word": "lecherous",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "given to excessive indulgence in sexual activity",
+  "syn": []
+ },
+ {
+  "word": "nightstick",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a short stout club used primarily by policemen",
+  "syn": [
+   "truncheon",
+   "baton",
+   "billy",
+   "billystick"
+  ]
+ },
+ {
+  "word": "obesity",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "more than average fatness",
+  "syn": [
+   "fleshiness",
+   "corpulency"
+  ]
+ },
+ {
+  "word": "pathetically",
+  "pos": [
+   "adverb"
+  ],
+  "cefr": "C2",
+  "en": "in a manner arousing sympathy and compassion",
+  "syn": [
+   "pitiably"
+  ]
+ },
+ {
+  "word": "pothead",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "someone who smokes marijuana habitually",
+  "syn": []
+ },
+ {
+  "word": "reconstructed",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "adapted to social or economic change",
+  "syn": []
+ },
+ {
+  "word": "refrigerated",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "made or kept cold by refrigeration",
+  "syn": []
+ },
+ {
+  "word": "rehabilitate",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C2",
+  "en": "help to readapt, as to a former state of health or good repute",
+  "syn": []
+ },
+ {
+  "word": "simplistic",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "characterized by extreme and often misleading simplicity",
+  "syn": []
+ },
+ {
+  "word": "thankless",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C2",
+  "en": "not feeling or showing gratitude",
+  "syn": [
+   "ungrateful",
+   "unthankful"
+  ]
+ }
+]

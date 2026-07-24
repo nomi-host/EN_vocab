@@ -1,0 +1,1642 @@
+[
+ {
+  "word": "circumstantial",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "fully detailed and specific about particulars",
+  "syn": []
+ },
+ {
+  "word": "fringe",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "adorn with a fringe",
+  "syn": []
+ },
+ {
+  "word": "wrapper",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a loose dressing gown for women",
+  "syn": [
+   "negligee",
+   "neglige",
+   "peignoir",
+   "housecoat"
+  ]
+ },
+ {
+  "word": "thieving",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "given to thievery",
+  "syn": [
+   "thieving(a)",
+   "thievish"
+  ]
+ },
+ {
+  "word": "detection",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the perception that something has occurred or some state exists",
+  "syn": [
+   "sensing"
+  ]
+ },
+ {
+  "word": "strife",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "lack of agreement or harmony",
+  "syn": [
+   "discord"
+  ]
+ },
+ {
+  "word": "successor",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a person who follows next in order",
+  "syn": [
+   "replacement"
+  ]
+ },
+ {
+  "word": "backside",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the side of an object that is opposite its front",
+  "syn": [
+   "rear",
+   "back end"
+  ]
+ },
+ {
+  "word": "comp",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an intensive examination testing a student's proficiency in some special field of knowledge",
+  "syn": [
+   "comprehensive examination",
+   "comprehensive"
+  ]
+ },
+ {
+  "word": "perky",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "characterized by liveliness and lightheartedness",
+  "syn": [
+   "buoyant",
+   "chirpy"
+  ]
+ },
+ {
+  "word": "voltage",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the rate at which energy is drawn from a source that produces a flow of electricity in a circuit",
+  "syn": [
+   "electromotive force",
+   "emf"
+  ]
+ },
+ {
+  "word": "bathrobe",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a loose-fitting robe of towelling",
+  "syn": []
+ },
+ {
+  "word": "casserole",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "food cooked and served in a casserole",
+  "syn": []
+ },
+ {
+  "word": "impound",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "take temporary possession of as a security, by legal authority",
+  "syn": [
+   "attach",
+   "sequester",
+   "confiscate",
+   "seize"
+  ]
+ },
+ {
+  "word": "pimple",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a small inflamed elevation of the skin",
+  "syn": [
+   "hickey",
+   "zit"
+  ]
+ },
+ {
+  "word": "gunpowder",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a mixture of potassium nitrate, charcoal, and sulfur in a 75:15:10 ratio which is used in gunnery, time fuses, and fireworks",
+  "syn": [
+   "powder"
+  ]
+ },
+ {
+  "word": "lidocaine",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a local anesthetic (trade names Lidocaine and Xylocaine) used topically on the skin and mucous membranes",
+  "syn": [
+   "Xylocaine"
+  ]
+ },
+ {
+  "word": "prostate",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "relating to the prostate gland",
+  "syn": [
+   "prostatic"
+  ]
+ },
+ {
+  "word": "birthmark",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a blemish on the skin that is formed before birth",
+  "syn": [
+   "nevus"
+  ]
+ },
+ {
+  "word": "pinkie",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the finger farthest from the thumb",
+  "syn": [
+   "little finger",
+   "pinky"
+  ]
+ },
+ {
+  "word": "lotto",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a game in which numbered balls are drawn at random and players cover the corresponding numbers on their cards",
+  "syn": [
+   "bingo",
+   "beano",
+   "keno"
+  ]
+ },
+ {
+  "word": "backbone",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a central cohesive source of support and stability",
+  "syn": [
+   "anchor",
+   "mainstay",
+   "keystone",
+   "linchpin"
+  ]
+ },
+ {
+  "word": "rephrase",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "express the same message in different words",
+  "syn": [
+   "paraphrase",
+   "reword"
+  ]
+ },
+ {
+  "word": "turnout",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the group that gathers together for a particular occasion",
+  "syn": []
+ },
+ {
+  "word": "directory",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an alphabetical list of names and addresses",
+  "syn": []
+ },
+ {
+  "word": "disobey",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "refuse to go along with",
+  "syn": []
+ },
+ {
+  "word": "texture",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the feel of a surface or a fabric",
+  "syn": []
+ },
+ {
+  "word": "administrator",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "someone who administers a business",
+  "syn": [
+   "decision maker"
+  ]
+ },
+ {
+  "word": "hombre",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an informal term for a youth or man",
+  "syn": [
+   "guy",
+   "cat",
+   "bozo",
+   "sod"
+  ]
+ },
+ {
+  "word": "malt",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "a milkshake made with malt powder",
+  "syn": [
+   "malted",
+   "malted milk"
+  ]
+ },
+ {
+  "word": "potassium",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a light soft silver-white metallic element of the alkali metal group",
+  "syn": [
+   "K",
+   "atomic number 19"
+  ]
+ },
+ {
+  "word": "commie",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a socialist who advocates communism",
+  "syn": [
+   "communist"
+  ]
+ },
+ {
+  "word": "mascot",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a character, animal or object that is adopted by a team or group as a symbolic figure",
+  "syn": []
+ },
+ {
+  "word": "triage",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "sorting and allocating aid on the basis of need for or likely benefit from medical treatment or food",
+  "syn": []
+ },
+ {
+  "word": "burrito",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a flour tortilla folded around a filling",
+  "syn": []
+ },
+ {
+  "word": "bungalow",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a small house with a single story",
+  "syn": [
+   "cottage"
+  ]
+ },
+ {
+  "word": "breakers",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "waves breaking on the shore",
+  "syn": [
+   "surf",
+   "breaker"
+  ]
+ },
+ {
+  "word": "eulogy",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a formal expression of praise for someone who has died recently",
+  "syn": [
+   "eulogium"
+  ]
+ },
+ {
+  "word": "abusive",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "expressing offensive reproach",
+  "syn": [
+   "opprobrious",
+   "scurrilous"
+  ]
+ },
+ {
+  "word": "whine",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "a complaint uttered in a plaintive whining way",
+  "syn": [
+   "whimper"
+  ]
+ },
+ {
+  "word": "withstand",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "resist or confront with resistance",
+  "syn": [
+   "defy",
+   "hold",
+   "hold up"
+  ]
+ },
+ {
+  "word": "manipulative",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "skillful in influencing or controlling others to your own advantage",
+  "syn": []
+ },
+ {
+  "word": "redeem",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "save from sins",
+  "syn": [
+   "deliver",
+   "save"
+  ]
+ },
+ {
+  "word": "consecutive",
+  "pos": [
+   "adverb",
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "in a consecutive manner",
+  "syn": [
+   "sequentially"
+  ]
+ },
+ {
+  "word": "fiasco",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a sudden and violent collapse",
+  "syn": [
+   "debacle"
+  ]
+ },
+ {
+  "word": "warped",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "used especially of timbers or boards",
+  "syn": []
+ },
+ {
+  "word": "makeover",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an overall beauty treatment (involving a person's hair style and cosmetics and clothing) intended to change or improve a person's appearance",
+  "syn": []
+ },
+ {
+  "word": "wretch",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "performs some wicked deed",
+  "syn": []
+ },
+ {
+  "word": "gel",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "become a gel",
+  "syn": []
+ },
+ {
+  "word": "storeroom",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a room in which things are stored",
+  "syn": [
+   "storage room",
+   "stowage"
+  ]
+ },
+ {
+  "word": "accord",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "go together",
+  "syn": [
+   "harmonize",
+   "harmonise",
+   "consort",
+   "concord"
+  ]
+ },
+ {
+  "word": "marketplace",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the world of commercial activity where goods and services are bought and sold",
+  "syn": [
+   "market",
+   "market place"
+  ]
+ },
+ {
+  "word": "hymn",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "a song of praise (to God or to a saint or to a nation)",
+  "syn": [
+   "anthem"
+  ]
+ },
+ {
+  "word": "hype",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "publicize in an exaggerated and often misleading manner",
+  "syn": []
+ },
+ {
+  "word": "raisin",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "dried grape",
+  "syn": []
+ },
+ {
+  "word": "testosterone",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a potent androgenic hormone produced chiefly by the testes",
+  "syn": []
+ },
+ {
+  "word": "commandment",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "something that is commanded",
+  "syn": []
+ },
+ {
+  "word": "mast",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a vertical spar for supporting sails",
+  "syn": []
+ },
+ {
+  "word": "encryption",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the activity of converting data or information into code",
+  "syn": [
+   "encoding"
+  ]
+ },
+ {
+  "word": "transvestite",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "receiving sexual gratification from wearing clothing of the opposite sex",
+  "syn": [
+   "transvestic"
+  ]
+ },
+ {
+  "word": "airway",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a duct that provides ventilation (as in mines)",
+  "syn": [
+   "air passage",
+   "air duct"
+  ]
+ },
+ {
+  "word": "gigolo",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a man who has sex with and is supported by a woman",
+  "syn": []
+ },
+ {
+  "word": "banjo",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a stringed instrument of the guitar family that has long neck and circular body",
+  "syn": []
+ },
+ {
+  "word": "ferret",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "musteline mammal of prairie regions of United States",
+  "syn": [
+   "black-footed ferret",
+   "Mustela nigripes"
+  ]
+ },
+ {
+  "word": "mater",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an informal use of the Latin word for mother",
+  "syn": []
+ },
+ {
+  "word": "gizmo",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "something unspecified whose name is either forgotten or not known",
+  "syn": [
+   "doodad",
+   "doohickey",
+   "doojigger",
+   "gimmick"
+  ]
+ },
+ {
+  "word": "planner",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a person who makes plans",
+  "syn": [
+   "contriver",
+   "deviser"
+  ]
+ },
+ {
+  "word": "vigilante",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "member of a vigilance committee",
+  "syn": [
+   "vigilance man"
+  ]
+ },
+ {
+  "word": "dodging",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "nonperformance of something distasteful (as by deceit or trickery) that you are supposed to do",
+  "syn": [
+   "evasion",
+   "escape"
+  ]
+ },
+ {
+  "word": "socket",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a bony hollow into which a structure fits",
+  "syn": []
+ },
+ {
+  "word": "deodorant",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a toiletry applied to the skin in order to mask unpleasant odors",
+  "syn": [
+   "deodourant"
+  ]
+ },
+ {
+  "word": "overdo",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "do something to an excessive degree",
+  "syn": [
+   "exaggerate"
+  ]
+ },
+ {
+  "word": "prudent",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "careful and sensible",
+  "syn": []
+ },
+ {
+  "word": "plaid",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a cloth having a crisscross design",
+  "syn": [
+   "tartan"
+  ]
+ },
+ {
+  "word": "takeout",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "of or involving food to be taken and eaten off the premises",
+  "syn": [
+   "take-away"
+  ]
+ },
+ {
+  "word": "futile",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "producing no result or effect",
+  "syn": [
+   "ineffectual",
+   "otiose",
+   "unavailing",
+   "meaningless"
+  ]
+ },
+ {
+  "word": "heinous",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "extremely wicked, deeply criminal",
+  "syn": [
+   "flagitious"
+  ]
+ },
+ {
+  "word": "investigative",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "designed to find information or ascertain facts",
+  "syn": [
+   "fact-finding",
+   "investigatory"
+  ]
+ },
+ {
+  "word": "swipe",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "a sweeping stroke or blow",
+  "syn": []
+ },
+ {
+  "word": "rehabilitation",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the restoration of someone to a useful place in society",
+  "syn": []
+ },
+ {
+  "word": "whoopee",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "noisy and boisterous revelry",
+  "syn": []
+ },
+ {
+  "word": "relevance",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the relation of something to the matter at hand",
+  "syn": [
+   "relevancy"
+  ]
+ },
+ {
+  "word": "herbal",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "of or relating to herbs",
+  "syn": []
+ },
+ {
+  "word": "purge",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "the act of clearing yourself (or another) from some stigma or charge",
+  "syn": [
+   "purging",
+   "purgation"
+  ]
+ },
+ {
+  "word": "reconstruction",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the period after the American Civil War when the southern states were reorganized and reintegrated into the Union",
+  "syn": [
+   "Reconstruction Period"
+  ]
+ },
+ {
+  "word": "disciplinary",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "relating to discipline in behavior",
+  "syn": []
+ },
+ {
+  "word": "gent",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "informal abbreviation of `gentleman'",
+  "syn": []
+ },
+ {
+  "word": "bias",
+  "pos": [
+   "adjective",
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "slanting diagonally across the grain of a fabric",
+  "syn": []
+ },
+ {
+  "word": "coil",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "to wind or move in a spiral course",
+  "syn": [
+   "gyrate",
+   "spiral"
+  ]
+ },
+ {
+  "word": "brothel",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a building where prostitutes are available",
+  "syn": [
+   "whorehouse",
+   "bordello",
+   "bagnio",
+   "house of prostitution"
+  ]
+ },
+ {
+  "word": "halo",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an indication of radiant light drawn around the head of a saint",
+  "syn": [
+   "aura",
+   "aureole",
+   "nimbus",
+   "glory"
+  ]
+ },
+ {
+  "word": "clubhouse",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a building that is occupied by a social club",
+  "syn": [
+   "club"
+  ]
+ },
+ {
+  "word": "airspace",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the space in the atmosphere immediately above the earth",
+  "syn": [
+   "air space"
+  ]
+ },
+ {
+  "word": "galley",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a large medieval vessel with a single deck propelled by sails and oars with guns at stern and prow",
+  "syn": []
+ },
+ {
+  "word": "godmother",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "any woman who serves as a sponsor for a child at baptism",
+  "syn": []
+ },
+ {
+  "word": "aphrodisiac",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "stimulating sexual desire",
+  "syn": [
+   "aphrodisiacal",
+   "sexy"
+  ]
+ },
+ {
+  "word": "sailboat",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a small sailing vessel",
+  "syn": [
+   "sailing boat"
+  ]
+ },
+ {
+  "word": "masquerade",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "take part in a masquerade",
+  "syn": []
+ },
+ {
+  "word": "lac",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "resinlike substance secreted by certain lac insects",
+  "syn": []
+ },
+ {
+  "word": "fetus",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an unborn or unhatched vertebrate in the later stages of development showing the main recognizable features of the mature animal",
+  "syn": [
+   "foetus"
+  ]
+ },
+ {
+  "word": "chowder",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a thick soup or stew made with milk and bacon and onions and potatoes",
+  "syn": []
+ },
+ {
+  "word": "bachelorette",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a young unmarried woman who lives alone",
+  "syn": [
+   "bachelor girl"
+  ]
+ },
+ {
+  "word": "unification",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an occurrence that involves the production of a union",
+  "syn": [
+   "fusion",
+   "merger"
+  ]
+ },
+ {
+  "word": "inability",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "lack of ability (especially mental ability) to do something",
+  "syn": []
+ },
+ {
+  "word": "borderline",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "of questionable or minimal quality",
+  "syn": [
+   "marginal"
+  ]
+ },
+ {
+  "word": "muzzle",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "fit with a muzzle",
+  "syn": []
+ },
+ {
+  "word": "pillar",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a fundamental principle or practice",
+  "syn": []
+ },
+ {
+  "word": "wholesome",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "conducive to or characteristic of physical or moral well-being",
+  "syn": []
+ },
+ {
+  "word": "frail",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "the weight of a frail (basket) full of raisins or figs",
+  "syn": []
+ },
+ {
+  "word": "pledged",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "bound by or as if by an oath",
+  "syn": [
+   "sworn"
+  ]
+ },
+ {
+  "word": "rooftop",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the top of a (usually flat) roof",
+  "syn": []
+ },
+ {
+  "word": "famine",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an acute insufficiency",
+  "syn": [
+   "dearth",
+   "shortage"
+  ]
+ },
+ {
+  "word": "diplomacy",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "negotiation between nations",
+  "syn": [
+   "diplomatic negotiations"
+  ]
+ },
+ {
+  "word": "latitude",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the angular distance between an imaginary line around a heavenly body parallel to its equator and the equator itself",
+  "syn": []
+ },
+ {
+  "word": "mangy",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "having many worn or threadbare spots in the nap",
+  "syn": [
+   "mangey"
+  ]
+ },
+ {
+  "word": "accordance",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "concurrence of opinion",
+  "syn": [
+   "accord",
+   "conformity"
+  ]
+ },
+ {
+  "word": "stairway",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a way of access (upward and downward) consisting of a set of steps",
+  "syn": [
+   "staircase"
+  ]
+ },
+ {
+  "word": "coordinator",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "someone whose task is to see that work goes harmoniously",
+  "syn": [
+   "co-ordinator"
+  ]
+ },
+ {
+  "word": "heathen",
+  "pos": [
+   "adjective",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "not acknowledging the God of Christianity and Judaism and Islam",
+  "syn": [
+   "heathenish",
+   "pagan",
+   "ethnic"
+  ]
+ },
+ {
+  "word": "afterlife",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "life after death",
+  "syn": [
+   "hereafter"
+  ]
+ },
+ {
+  "word": "reopen",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "open again or anew",
+  "syn": []
+ },
+ {
+  "word": "summons",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "call in an official matter, such as to attend court",
+  "syn": [
+   "summon",
+   "cite"
+  ]
+ },
+ {
+  "word": "yarn",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "tell or spin a yarn",
+  "syn": []
+ },
+ {
+  "word": "thaw",
+  "pos": [
+   "verb",
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "become or cause to become soft or liquid",
+  "syn": [
+   "dissolve",
+   "unfreeze",
+   "unthaw",
+   "dethaw"
+  ]
+ },
+ {
+  "word": "visitation",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an annoying or frustrating or catastrophic event",
+  "syn": [
+   "trial",
+   "tribulation"
+  ]
+ },
+ {
+  "word": "bouncer",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a person whose duty is to throw troublemakers out of a bar or public meeting",
+  "syn": [
+   "chucker-out"
+  ]
+ },
+ {
+  "word": "stag",
+  "pos": [
+   "noun",
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "a male deer, especially an adult male red deer",
+  "syn": [
+   "hart"
+  ]
+ },
+ {
+  "word": "granite",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "plutonic igneous rock having visibly crystalline texture",
+  "syn": []
+ },
+ {
+  "word": "sundae",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "ice cream served with a topping",
+  "syn": [
+   "ice-cream sundae"
+  ]
+ },
+ {
+  "word": "hearse",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a vehicle for carrying a coffin to a church or a cemetery",
+  "syn": []
+ },
+ {
+  "word": "minivan",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a small box-shaped passenger van",
+  "syn": []
+ },
+ {
+  "word": "mic",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "device for converting sound waves into electrical energy",
+  "syn": [
+   "microphone",
+   "mike"
+  ]
+ },
+ {
+  "word": "shaker",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a person who wields power and influence",
+  "syn": [
+   "mover and shaker"
+  ]
+ },
+ {
+  "word": "grits",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "coarsely ground hulled corn boiled as a breakfast dish in the southern United States",
+  "syn": [
+   "hominy grits"
+  ]
+ },
+ {
+  "word": "dumplings",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "small balls or strips of boiled or steamed dough",
+  "syn": [
+   "dumpling"
+  ]
+ },
+ {
+  "word": "wont",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "an established custom",
+  "syn": [
+   "habit"
+  ]
+ },
+ {
+  "word": "polygraph",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a medical instrument that records several physiological processes simultaneously (e.g., pulse rate and blood pressure and respiration and perspiration)",
+  "syn": []
+ },
+ {
+  "word": "renal",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "of or relating to the kidneys",
+  "syn": [
+   "nephritic"
+  ]
+ },
+ {
+  "word": "lagoon",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "a body of water cut off from a larger body by a reef of sand or coral",
+  "syn": [
+   "laguna",
+   "lagune"
+  ]
+ },
+ {
+  "word": "sitter",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "Dutch astronomer who calculated the size of the universe and suggested that it is expanding (1872-1934)",
+  "syn": [
+   "Willem de Sitter"
+  ]
+ },
+ {
+  "word": "ragged",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "being or dressed in clothes that are worn or torn",
+  "syn": []
+ },
+ {
+  "word": "unprecedented",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "having no precedent",
+  "syn": []
+ },
+ {
+  "word": "scrawny",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "being very thin",
+  "syn": [
+   "scraggy",
+   "scraggly",
+   "boney",
+   "bony"
+  ]
+ },
+ {
+  "word": "clientele",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "customers collectively",
+  "syn": [
+   "patronage",
+   "business"
+  ]
+ },
+ {
+  "word": "smuggled",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "distributed or sold illicitly",
+  "syn": [
+   "bootleg",
+   "black",
+   "black-market",
+   "contraband"
+  ]
+ },
+ {
+  "word": "binoculars",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "(plural) an optical instrument designed for simultaneous use by both eyes",
+  "syn": [
+   "field glasses",
+   "opera glasses"
+  ]
+ },
+ {
+  "word": "fertile",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "capable of reproducing",
+  "syn": []
+ },
+ {
+  "word": "auditorium",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the area of a theater or concert hall where the audience sits",
+  "syn": []
+ },
+ {
+  "word": "grotesque",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "art characterized by an incongruous mixture of parts of humans and animals interwoven with plants",
+  "syn": []
+ },
+ {
+  "word": "porcelain",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "ceramic ware made of a more or less translucent ceramic",
+  "syn": []
+ }
+]

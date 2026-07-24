@@ -98,7 +98,7 @@ function main() {
           word: hw.word,
           ipa: ipaFor(hw.word),
           pos: posTags,
-          cefr: hw.cefr,
+          cefr: a.cefr || hw.cefr,
           ko: a.ko,
           en: a.enOverride || hw.en || "",
           syn: hw.syn || [],
