@@ -1,0 +1,3002 @@
+[
+ {
+  "word": "ballistics",
+  "rank": 10803,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "meth",
+  "rank": 10806,
+  "accept": true,
+  "reason": "애매: 마약 속어지만 비속어는 아니고 뉴스/미디어에 흔히 등장, 채택"
+ },
+ {
+  "word": "gobble",
+  "rank": 10821,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rightful",
+  "rank": 10832,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "beverage",
+  "rank": 10839,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "odor",
+  "rank": 10840,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wedge",
+  "rank": 10845,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "whim",
+  "rank": 10846,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "scanning",
+  "rank": 10848,
+  "accept": false,
+  "reason": "기보유 단어(scan)의 단순 활용형(현재분사)"
+ },
+ {
+  "word": "chic",
+  "rank": 10850,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "throttle",
+  "rank": 10851,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "woe",
+  "rank": 10855,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "corral",
+  "rank": 10857,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "organisation",
+  "rank": 10860,
+  "accept": false,
+  "reason": "영국식 철자 변형(organization이 이미 시드에 있음)"
+ },
+ {
+  "word": "boner",
+  "rank": 10861,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "meatloaf",
+  "rank": 10864,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nominated",
+  "rank": 10865,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "venom",
+  "rank": 10867,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cobbler",
+  "rank": 10871,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "semi",
+  "rank": 10872,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cant",
+  "rank": 10874,
+  "accept": false,
+  "reason": "대명사/조동사 등의 구어체 파편/축약형 잔재(can't의 아포스트로피 탈락형으로 추정)"
+ },
+ {
+  "word": "utmost",
+  "rank": 10883,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bragging",
+  "rank": 10884,
+  "accept": false,
+  "reason": "기보유 단어(brag)의 단순 활용형(현재분사)"
+ },
+ {
+  "word": "earliest",
+  "rank": 10888,
+  "accept": false,
+  "reason": "기보유 단어(early)의 최상급형"
+ },
+ {
+  "word": "scraping",
+  "rank": 10893,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nightfall",
+  "rank": 10896,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "soy",
+  "rank": 10903,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dibs",
+  "rank": 10909,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "flop",
+  "rank": 10910,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "siege",
+  "rank": 10911,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bleach",
+  "rank": 10919,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "airfield",
+  "rank": 10920,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ballerina",
+  "rank": 10921,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cheesecake",
+  "rank": 10925,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "amulet",
+  "rank": 10929,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "questionable",
+  "rank": 10934,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "backseat",
+  "rank": 10938,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sling",
+  "rank": 10942,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hallowed",
+  "rank": 10943,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "schizophrenic",
+  "rank": 10957,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fetish",
+  "rank": 10963,
+  "accept": true,
+  "reason": "애매: 성적 의미가 한 뜻으로 있으나 '집착/애착'의 일반적 확장 의미로도 널리 쓰여 채택"
+ },
+ {
+  "word": "congregation",
+  "rank": 10965,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mow",
+  "rank": 10968,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "granddaddy",
+  "rank": 10970,
+  "accept": true,
+  "reason": "애매: 기보유 granddad/grandpa와 뜻이 겹치지만 'the granddaddy of all X' 관용구 등 독자적 쓰임이 있어 채택"
+ },
+ {
+  "word": "jester",
+  "rank": 10980,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "itchy",
+  "rank": 10990,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "reflex",
+  "rank": 10993,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "horseshit",
+  "rank": 10997,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "jerking",
+  "rank": 10998,
+  "accept": true,
+  "reason": "애매: 원형 jerk가 아직 시드에 없고, 속어적 함의(자위 은어)가 있을 수 있으나 문자적 의미(홱 움직임)가 일반적이라 채택"
+ },
+ {
+  "word": "ownership",
+  "rank": 11000,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "crispy",
+  "rank": 11003,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "jukebox",
+  "rank": 11005,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unborn",
+  "rank": 11006,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "edgy",
+  "rank": 11008,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "frantic",
+  "rank": 11009,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "flair",
+  "rank": 11012,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "jerky",
+  "rank": 11013,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chant",
+  "rank": 11015,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chaplain",
+  "rank": 11017,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "meadow",
+  "rank": 11021,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "moth",
+  "rank": 11022,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "goon",
+  "rank": 11026,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "comfy",
+  "rank": 11039,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "deranged",
+  "rank": 11043,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "glued",
+  "rank": 11045,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stabbing",
+  "rank": 11051,
+  "accept": true,
+  "reason": "애매: 기보유 stab의 -ing형이지만 shooting/bombing처럼 사건을 가리키는 명사로 이미 별도 표제어 관행이 있어 채택"
+ },
+ {
+  "word": "thinner",
+  "rank": 11052,
+  "accept": false,
+  "reason": "기보유 단어(thin)의 비교급형"
+ },
+ {
+  "word": "mayonnaise",
+  "rank": 11067,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "knitting",
+  "rank": 11071,
+  "accept": true,
+  "reason": "애매: 기보유 knit의 -ing형이지만 gardening/cooking/hiking처럼 이 사전이 이미 취미 활동명사를 별도 표제어로 다루는 관행과 일치해 채택"
+ },
+ {
+  "word": "sensor",
+  "rank": 11073,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "perjury",
+  "rank": 11077,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "softball",
+  "rank": 11078,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "simulation",
+  "rank": 11079,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "militia",
+  "rank": 11084,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cabaret",
+  "rank": 11086,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "spacecraft",
+  "rank": 11087,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sanitarium",
+  "rank": 11089,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "suspense",
+  "rank": 11095,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "infamous",
+  "rank": 11098,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "biblical",
+  "rank": 11100,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "strung",
+  "rank": 11105,
+  "accept": false,
+  "reason": "기보유 단어(string)의 파생·굴절형(불규칙 과거분사)"
+ },
+ {
+  "word": "salami",
+  "rank": 11121,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ar",
+  "rank": 11128,
+  "accept": false,
+  "reason": "명백한 오타/비단어(SUBTLEX 토큰화 잡음으로 추정)"
+ },
+ {
+  "word": "opium",
+  "rank": 11129,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pipeline",
+  "rank": 11131,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tilt",
+  "rank": 11146,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "clipped",
+  "rank": 11147,
+  "accept": false,
+  "reason": "기보유 단어(clip)의 단순 활용형(과거형)"
+ },
+ {
+  "word": "advocate",
+  "rank": 11149,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "darned",
+  "rank": 11151,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "allegedly",
+  "rank": 11153,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "payoff",
+  "rank": 11154,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stench",
+  "rank": 11155,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shrapnel",
+  "rank": 11157,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "grunt",
+  "rank": 11160,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "larceny",
+  "rank": 11162,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "subpoena",
+  "rank": 11163,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "picket",
+  "rank": 11164,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "diabetic",
+  "rank": 11168,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "goof",
+  "rank": 11174,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wiener",
+  "rank": 11175,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "slipper",
+  "rank": 11179,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unbelievably",
+  "rank": 11188,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "plugged",
+  "rank": 11193,
+  "accept": false,
+  "reason": "기보유 단어(plug)의 단순 활용형(과거형)"
+ },
+ {
+  "word": "charade",
+  "rank": 11195,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "puberty",
+  "rank": 11198,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "solemn",
+  "rank": 11199,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "whipping",
+  "rank": 11208,
+  "accept": false,
+  "reason": "기보유 단어(whip)의 단순 활용형(현재분사)"
+ },
+ {
+  "word": "dire",
+  "rank": 11210,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "gauge",
+  "rank": 11211,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "brutality",
+  "rank": 11212,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "redemption",
+  "rank": 11213,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "constitutional",
+  "rank": 11219,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fungus",
+  "rank": 11222,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "heartbreak",
+  "rank": 11223,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "thermal",
+  "rank": 11224,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "watermelon",
+  "rank": 11228,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rabies",
+  "rank": 11230,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "headmaster",
+  "rank": 11233,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ongoing",
+  "rank": 11241,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vested",
+  "rank": 11245,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "quaint",
+  "rank": 11249,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sleazy",
+  "rank": 11257,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "constructive",
+  "rank": 11259,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sinister",
+  "rank": 11260,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sterile",
+  "rank": 11261,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ante",
+  "rank": 11275,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "smear",
+  "rank": 11276,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "noose",
+  "rank": 11277,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "holster",
+  "rank": 11279,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "snob",
+  "rank": 11280,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fallout",
+  "rank": 11288,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "undefeated",
+  "rank": 11290,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "skid",
+  "rank": 11291,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "arcade",
+  "rank": 11294,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "polls",
+  "rank": 11295,
+  "accept": true,
+  "reason": "애매: 단수 poll이 아직 시드에 없어 굴절형 기각 사유에 해당 안 함, 'go to the polls'처럼 사실상 복수로 굳어진 뉴스 어휘라 채택"
+ },
+ {
+  "word": "erection",
+  "rank": 11296,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wanker",
+  "rank": 11297,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "coupon",
+  "rank": 11299,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nag",
+  "rank": 11303,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "crucify",
+  "rank": 11304,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "boar",
+  "rank": 11306,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "merrily",
+  "rank": 11310,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "troublemaker",
+  "rank": 11325,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "minimal",
+  "rank": 11327,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "radiant",
+  "rank": 11330,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fearful",
+  "rank": 11333,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "roster",
+  "rank": 11338,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "defective",
+  "rank": 11339,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nausea",
+  "rank": 11340,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cuddle",
+  "rank": 11343,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "spectrum",
+  "rank": 11345,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unseen",
+  "rank": 11346,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "civic",
+  "rank": 11348,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hock",
+  "rank": 11349,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "interstate",
+  "rank": 11354,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "poof",
+  "rank": 11355,
+  "accept": true,
+  "reason": "애매: 영국/호주에서 동성애자를 낮잡는 속어로도 쓰이나 '펑 하고 사라짐' 의성어 의미가 더 일반적이라 채택"
+ },
+ {
+  "word": "cameraman",
+  "rank": 11358,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vending",
+  "rank": 11359,
+  "accept": true,
+  "reason": "애매: 원형 vend가 아직 시드에 없고 주로 'vending machine' 복합어로만 쓰이지만 흔한 단어라 채택"
+ },
+ {
+  "word": "drool",
+  "rank": 11360,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mantle",
+  "rank": 11363,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tee",
+  "rank": 11369,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "vie",
+  "rank": 11371,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "accommodate",
+  "rank": 11377,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "courtyard",
+  "rank": 11387,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "excite",
+  "rank": 11388,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hauling",
+  "rank": 11397,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "incomplete",
+  "rank": 11406,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mayhem",
+  "rank": 11414,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "disarm",
+  "rank": 11419,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "slay",
+  "rank": 11421,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "spree",
+  "rank": 11426,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "whiskers",
+  "rank": 11427,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "implant",
+  "rank": 11434,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "missionary",
+  "rank": 11436,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dew",
+  "rank": 11443,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "civilisation",
+  "rank": 11447,
+  "accept": false,
+  "reason": "영국식 철자 변형(civilization이 이미 시드에 있음)"
+ },
+ {
+  "word": "goo",
+  "rank": 11449,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "freighter",
+  "rank": 11450,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rink",
+  "rank": 11451,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "flier",
+  "rank": 11452,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hamster",
+  "rank": 11453,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "uranium",
+  "rank": 11456,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "enlighten",
+  "rank": 11462,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "seemingly",
+  "rank": 11466,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bodily",
+  "rank": 11470,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "freelance",
+  "rank": 11475,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mentality",
+  "rank": 11477,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "snot",
+  "rank": 11484,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "brawl",
+  "rank": 11485,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mackerel",
+  "rank": 11487,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stairwell",
+  "rank": 11491,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "catalogue",
+  "rank": 11496,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "deli",
+  "rank": 11497,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "waffle",
+  "rank": 11502,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "snip",
+  "rank": 11509,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "threesome",
+  "rank": 11511,
+  "accept": false,
+  "reason": "성적으로 노골적인 소재(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "array",
+  "rank": 11515,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ether",
+  "rank": 11516,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "panda",
+  "rank": 11519,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "miraculous",
+  "rank": 11529,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "despicable",
+  "rank": 11534,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "clarity",
+  "rank": 11537,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unanimous",
+  "rank": 11543,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "crazed",
+  "rank": 11548,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "checkup",
+  "rank": 11549,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "detour",
+  "rank": 11552,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "decorator",
+  "rank": 11556,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bimbo",
+  "rank": 11559,
+  "accept": false,
+  "reason": "비속어(여성 비하 경멸어, 학습앱에 부적합)"
+ },
+ {
+  "word": "vine",
+  "rank": 11561,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "goggles",
+  "rank": 11567,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "psychiatry",
+  "rank": 11568,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "thong",
+  "rank": 11571,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "intercom",
+  "rank": 11575,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "containment",
+  "rank": 11579,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "crest",
+  "rank": 11580,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "measles",
+  "rank": 11581,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "titty",
+  "rank": 11582,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "communism",
+  "rank": 11583,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "doodle",
+  "rank": 11584,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "insulin",
+  "rank": 11585,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "blacksmith",
+  "rank": 11587,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "coronation",
+  "rank": 11588,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "weatherman",
+  "rank": 11589,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "commotion",
+  "rank": 11608,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "loathe",
+  "rank": 11610,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "foolishness",
+  "rank": 11612,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "awakened",
+  "rank": 11624,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ghastly",
+  "rank": 11625,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wreckage",
+  "rank": 11626,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "impotent",
+  "rank": 11627,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unsolved",
+  "rank": 11628,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "caterer",
+  "rank": 11633,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nasal",
+  "rank": 11635,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "quart",
+  "rank": 11640,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "detonate",
+  "rank": 11643,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "specs",
+  "rank": 11645,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "manure",
+  "rank": 11647,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "gunman",
+  "rank": 11649,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "grinding",
+  "rank": 11650,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "communion",
+  "rank": 11655,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rhino",
+  "rank": 11660,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "accompanied",
+  "rank": 11670,
+  "accept": false,
+  "reason": "기보유 단어(accompany)의 단순 활용형(과거형)"
+ },
+ {
+  "word": "disrespectful",
+  "rank": 11672,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "manpower",
+  "rank": 11675,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "removal",
+  "rank": 11684,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "verified",
+  "rank": 11686,
+  "accept": true,
+  "reason": "애매: 동사 원형 verify가 아직 시드에 없어 굴절형 기각 사유에 해당 안 함, 현대 영어에서 매우 흔한 독립 형용사(verified account 등)라 채택"
+ },
+ {
+  "word": "marital",
+  "rank": 11689,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lowlife",
+  "rank": 11695,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fruitcake",
+  "rank": 11701,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nighttime",
+  "rank": 11708,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "espresso",
+  "rank": 11711,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "howl",
+  "rank": 11713,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "diaphragm",
+  "rank": 11719,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "beetle",
+  "rank": 11727,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "possum",
+  "rank": 11728,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lunar",
+  "rank": 11729,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fairness",
+  "rank": 11740,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "charitable",
+  "rank": 11744,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "enchanting",
+  "rank": 11746,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "forum",
+  "rank": 11753,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "surplus",
+  "rank": 11756,
+  "accept": false,
+  "reason": "이미 시드에 있는 표제어(완전 일치, 후보 생성 시 필터링 누락)"
+ },
+ {
+  "word": "budge",
+  "rank": 11759,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "portfolio",
+  "rank": 11760,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unmarried",
+  "rank": 11761,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "frown",
+  "rank": 11762,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "glitter",
+  "rank": 11763,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "clapping",
+  "rank": 11765,
+  "accept": false,
+  "reason": "기보유 단어(clap)의 단순 활용형(현재분사)"
+ },
+ {
+  "word": "brook",
+  "rank": 11771,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "scraps",
+  "rank": 11773,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hillbilly",
+  "rank": 11775,
+  "accept": true,
+  "reason": "애매: 지역/계층 고정관념이 섞인 단어지만 미디어에 흔히 등장하는 일반 어휘로 보아 채택"
+ },
+ {
+  "word": "lavender",
+  "rank": 11779,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cum",
+  "rank": 11780,
+  "accept": false,
+  "reason": "비속어(학습앱에 부적합한 수위)"
+ },
+ {
+  "word": "plank",
+  "rank": 11781,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "filmmaker",
+  "rank": 11782,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pharmaceutical",
+  "rank": 11784,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bale",
+  "rank": 11790,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "homicidal",
+  "rank": 11798,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "refined",
+  "rank": 11806,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cerebral",
+  "rank": 11809,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "repulsive",
+  "rank": 11811,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fiery",
+  "rank": 11812,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "frenzy",
+  "rank": 11813,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "aide",
+  "rank": 11818,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "crock",
+  "rank": 11819,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "distorted",
+  "rank": 11820,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "glitch",
+  "rank": 11822,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pelvis",
+  "rank": 11826,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cosy",
+  "rank": 11829,
+  "accept": false,
+  "reason": "영국식 철자 변형(cozy가 이미 시드에 있음)"
+ },
+ {
+  "word": "anarchy",
+  "rank": 11830,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lantern",
+  "rank": 11831,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "meltdown",
+  "rank": 11832,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mainframe",
+  "rank": 11835,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "graffiti",
+  "rank": 11837,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "maturity",
+  "rank": 11855,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rugged",
+  "rank": 11860,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "preoccupied",
+  "rank": 11862,
+  "accept": true,
+  "reason": "애매: 기보유 preoccupy의 -ed형이지만 tired/worried처럼 독립된 형용사로 굳어져 채택"
+ },
+ {
+  "word": "transmitted",
+  "rank": 11863,
+  "accept": false,
+  "reason": "기보유 단어(transmit)의 단순 활용형(과거형)"
+ },
+ {
+  "word": "hateful",
+  "rank": 11866,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dosage",
+  "rank": 11867,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "smuggle",
+  "rank": 11870,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "arsenal",
+  "rank": 11871,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "livestock",
+  "rank": 11875,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "intro",
+  "rank": 11878,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cot",
+  "rank": 11879,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pretzel",
+  "rank": 11880,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hick",
+  "rank": 11882,
+  "accept": true,
+  "reason": "애매: 시골 사람을 낮잡는 경멸조 뉴앙스가 있으나 인종/성적 비속어 수준은 아니고 미디어에 흔히 등장해 채택"
+ },
+ {
+  "word": "syndicate",
+  "rank": 11884,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "snuff",
+  "rank": 11888,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "exterminator",
+  "rank": 11890,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "extraterrestrial",
+  "rank": 11892,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "recognised",
+  "rank": 11922,
+  "accept": false,
+  "reason": "영국식 철자 변형(recognize가 이미 시드에 있음) + 굴절형"
+ },
+ {
+  "word": "coronary",
+  "rank": 11926,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fidelity",
+  "rank": 11928,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "oblivion",
+  "rank": 11929,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "whatnot",
+  "rank": 11930,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mileage",
+  "rank": 11933,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "git",
+  "rank": 11934,
+  "accept": true,
+  "reason": "애매: 영국식 경미한 욕설(바보 정도)이나 idiot 수준으로 순화된 표현이라 채택"
+ },
+ {
+  "word": "loco",
+  "rank": 11936,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "roadblock",
+  "rank": 11939,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "squeaky",
+  "rank": 11945,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "aneurysm",
+  "rank": 11948,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "anesthesia",
+  "rank": 11949,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "impostor",
+  "rank": 11951,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hypnosis",
+  "rank": 11956,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "midterm",
+  "rank": 11960,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bloodshed",
+  "rank": 11971,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "speedy",
+  "rank": 11981,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cleanup",
+  "rank": 11987,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ridicule",
+  "rank": 11990,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unforgivable",
+  "rank": 11991,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "modified",
+  "rank": 11993,
+  "accept": true,
+  "reason": "애매: 기보유 modify의 -ed형이지만 형용사(genetically modified 등)로 독립적으로 쓰여 채택"
+ },
+ {
+  "word": "chaperone",
+  "rank": 11999,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "floss",
+  "rank": 12004,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "nightgown",
+  "rank": 12006,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dome",
+  "rank": 12009,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hatchet",
+  "rank": 12011,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "barf",
+  "rank": 12013,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "forgery",
+  "rank": 12014,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "darts",
+  "rank": 12015,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "topless",
+  "rank": 12016,
+  "accept": true,
+  "reason": "애매: 노출을 묘사하는 단어라 조심스러우나 비속어가 아니라 뉴스/여행 등에 쓰이는 일반 묘사어라 채택"
+ },
+ {
+  "word": "fertilizer",
+  "rank": 12017,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "affidavit",
+  "rank": 12018,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stakeout",
+  "rank": 12019,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "baptized",
+  "rank": 12024,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "neural",
+  "rank": 12028,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "plutonium",
+  "rank": 12029,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ducky",
+  "rank": 12031,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hula",
+  "rank": 12032,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "outrun",
+  "rank": 12044,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "puddle",
+  "rank": 12052,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "definitive",
+  "rank": 12055,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cuisine",
+  "rank": 12059,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "painless",
+  "rank": 12061,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "arthritis",
+  "rank": 12072,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "syringe",
+  "rank": 12076,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "transmitting",
+  "rank": 12078,
+  "accept": false,
+  "reason": "기보유 단어(transmit)의 단순 활용형(현재분사)"
+ },
+ {
+  "word": "adultery",
+  "rank": 12080,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cranberry",
+  "rank": 12081,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "thud",
+  "rank": 12082,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "residency",
+  "rank": 12085,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "serpent",
+  "rank": 12089,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bologna",
+  "rank": 12090,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "blizzard",
+  "rank": 12093,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "octopus",
+  "rank": 12095,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pansy",
+  "rank": 12101,
+  "accept": true,
+  "reason": "애매: 과거 동성애자를 낮잡는 속어로도 쓰였으나 주된 의미는 꽃 이름이라 채택"
+ },
+ {
+  "word": "urn",
+  "rank": 12102,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "revolting",
+  "rank": 12120,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "worshipped",
+  "rank": 12121,
+  "accept": false,
+  "reason": "영국식 철자 변형 + 기보유 단어(worship)의 단순 활용형(과거형)"
+ },
+ {
+  "word": "confrontation",
+  "rank": 12124,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "firepower",
+  "rank": 12128,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "compulsive",
+  "rank": 12135,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hallucinating",
+  "rank": 12137,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "respectfully",
+  "rank": 12142,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "obsolete",
+  "rank": 12145,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "deluxe",
+  "rank": 12149,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sow",
+  "rank": 12150,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "peril",
+  "rank": 12151,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pastry",
+  "rank": 12158,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "latch",
+  "rank": 12160,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "placement",
+  "rank": 12161,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dart",
+  "rank": 12165,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "billionaire",
+  "rank": 12168,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "oasis",
+  "rank": 12169,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "decree",
+  "rank": 12172,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mistletoe",
+  "rank": 12173,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "syphilis",
+  "rank": 12175,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "understudy",
+  "rank": 12178,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "laddie",
+  "rank": 12180,
+  "accept": true,
+  "reason": "애매: 스코틀랜드 방언(lad의 애칭)이라 다소 예스럽지만 여전히 쓰이는 표현이라 채택"
+ },
+ {
+  "word": "wormhole",
+  "rank": 12183,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "compelling",
+  "rank": 12186,
+  "accept": true,
+  "reason": "애매: 기보유 compel의 -ing형이지만 interesting/boring처럼 독립된 형용사로 굳어져 채택"
+ },
+ {
+  "word": "scrubbing",
+  "rank": 12189,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "snag",
+  "rank": 12195,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "travelled",
+  "rank": 12196,
+  "accept": false,
+  "reason": "영국식 철자 변형 + 기보유 단어(travel)의 단순 활용형(과거형)"
+ },
+ {
+  "word": "respectful",
+  "rank": 12198,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pretentious",
+  "rank": 12202,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shameless",
+  "rank": 12203,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "flashy",
+  "rank": 12206,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "muck",
+  "rank": 12207,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "photographic",
+  "rank": 12208,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "spouse",
+  "rank": 12210,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unworthy",
+  "rank": 12211,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fundraiser",
+  "rank": 12216,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "statute",
+  "rank": 12217,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fertility",
+  "rank": 12219,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "shag",
+  "rank": 12225,
+  "accept": true,
+  "reason": "애매: 영국식 성적 속어 의미가 있으나 shag carpet/헤어스타일 등 비속어 아닌 의미가 미국 영어에서 더 일반적이라 채택"
+ },
+ {
+  "word": "publicist",
+  "rank": 12226,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "leukemia",
+  "rank": 12232,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "snowman",
+  "rank": 12233,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cider",
+  "rank": 12234,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "skater",
+  "rank": 12235,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "hep",
+  "rank": 12236,
+  "accept": false,
+  "reason": "화석어/사어(1940~50년대 속어 'hip'의 옛말, 현대 영어에서 거의 안 쓰임)"
+ },
+ {
+  "word": "accomplishment",
+  "rank": 12249,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "etiquette",
+  "rank": 12252,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "moan",
+  "rank": 12257,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "puncture",
+  "rank": 12258,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "relish",
+  "rank": 12259,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "companionship",
+  "rank": 12261,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tagged",
+  "rank": 12262,
+  "accept": false,
+  "reason": "기보유 단어(tag)의 단순 활용형(과거형)"
+ },
+ {
+  "word": "withholding",
+  "rank": 12263,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wrinkle",
+  "rank": 12264,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "frontal",
+  "rank": 12275,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "traction",
+  "rank": 12277,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "checkers",
+  "rank": 12278,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "assassinate",
+  "rank": 12282,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "plow",
+  "rank": 12283,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stance",
+  "rank": 12285,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "anthem",
+  "rank": 12286,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "electromagnetic",
+  "rank": 12292,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "stutter",
+  "rank": 12293,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "intubate",
+  "rank": 12304,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sorority",
+  "rank": 12309,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "humbly",
+  "rank": 12330,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fret",
+  "rank": 12332,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "unspeakable",
+  "rank": 12338,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "rigid",
+  "rank": 12342,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "horseback",
+  "rank": 12355,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "indigestion",
+  "rank": 12356,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "biz",
+  "rank": 12357,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "gibberish",
+  "rank": 12363,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "quota",
+  "rank": 12364,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "humanitarian",
+  "rank": 12365,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "confidentiality",
+  "rank": 12367,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "migraine",
+  "rank": 12368,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "theoretical",
+  "rank": 12370,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "cholesterol",
+  "rank": 12372,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "tribal",
+  "rank": 12375,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fuzz",
+  "rank": 12379,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "lobe",
+  "rank": 12381,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wuss",
+  "rank": 12389,
+  "accept": true,
+  "reason": "애매: 겁쟁이를 가리키는 경미한 속어지만 coward 수준으로 순화되어 채택"
+ },
+ {
+  "word": "reservoir",
+  "rank": 12390,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "celery",
+  "rank": 12391,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "speck",
+  "rank": 12392,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "fo",
+  "rank": 12394,
+  "accept": false,
+  "reason": "명백한 오타/비단어(SUBTLEX 토큰화 잡음, 'for' 등의 파편으로 추정)"
+ },
+ {
+  "word": "grizzly",
+  "rank": 12399,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "surrogate",
+  "rank": 12400,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bonnet",
+  "rank": 12401,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dearie",
+  "rank": 12402,
+  "accept": true,
+  "reason": "애매: 방언/구어적 호칭이라 다소 예스럽지만 여전히 쓰이는 표현이라 채택"
+ },
+ {
+  "word": "amour",
+  "rank": 12406,
+  "accept": true,
+  "reason": "애매: 프랑스어 차용어로 문어적/유머러스한 용법이 많지만 영어 사전에 정착된 단어라 채택"
+ },
+ {
+  "word": "bonny",
+  "rank": 12413,
+  "accept": true,
+  "reason": "애매: 스코틀랜드 방언투로 다소 예스럽지만 여전히 통용되는 형용사라 채택"
+ },
+ {
+  "word": "dipped",
+  "rank": 12418,
+  "accept": false,
+  "reason": "기보유 단어(dip)의 단순 활용형(과거형)"
+ },
+ {
+  "word": "hectic",
+  "rank": 12424,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "adolescent",
+  "rank": 12426,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pun",
+  "rank": 12429,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "comprehend",
+  "rank": 12432,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "clueless",
+  "rank": 12434,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "eyeball",
+  "rank": 12441,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "foolproof",
+  "rank": 12442,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "brow",
+  "rank": 12444,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "camouflage",
+  "rank": 12445,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "foe",
+  "rank": 12447,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mockery",
+  "rank": 12448,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "torso",
+  "rank": 12450,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "sod",
+  "rank": 12453,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "slop",
+  "rank": 12454,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "amends",
+  "rank": 12455,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "trajectory",
+  "rank": 12459,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "disposable",
+  "rank": 12460,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "geometry",
+  "rank": 12464,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "mortuary",
+  "rank": 12469,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "adieu",
+  "rank": 12471,
+  "accept": true,
+  "reason": "애매: 프랑스어 차용어로 다소 문어체/예스럽지만 영어 사전에 정착된 단어라 채택"
+ },
+ {
+  "word": "boardwalk",
+  "rank": 12472,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "ravine",
+  "rank": 12476,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "bop",
+  "rank": 12480,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dealings",
+  "rank": 12490,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "heartbroken",
+  "rank": 12491,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "dehydrated",
+  "rank": 12492,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "murderous",
+  "rank": 12495,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "pulp",
+  "rank": 12500,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "detain",
+  "rank": 12502,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "disgraceful",
+  "rank": 12503,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "spanking",
+  "rank": 12511,
+  "accept": true,
+  "reason": "애매: 체벌을 가리키는 다소 민감한 단어지만 비속어는 아니고 'spanking new'처럼 강조 관용구로도 쓰여 채택"
+ },
+ {
+  "word": "feminist",
+  "rank": 12515,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "amp",
+  "rank": 12516,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "buttocks",
+  "rank": 12517,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "degenerate",
+  "rank": 12521,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "chord",
+  "rank": 12527,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "prima",
+  "rank": 12532,
+  "accept": false,
+  "reason": "독립 표제어로 쓰이지 않음('prima donna/facie' 같은 고정구의 일부일 뿐)"
+ },
+ {
+  "word": "aura",
+  "rank": 12533,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "wilt",
+  "rank": 12534,
+  "accept": true,
+  "reason": ""
+ },
+ {
+  "word": "detonation",
+  "rank": 12536,
+  "accept": true,
+  "reason": ""
+ }
+]
