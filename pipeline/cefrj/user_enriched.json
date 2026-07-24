@@ -1,0 +1,172 @@
+[
+ {
+  "word": "oligarch",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C2",
+  "en": "a member of a small group of people who have power and control over a country or organization, often for their own benefit",
+  "syn": [
+   "plutocrat"
+  ]
+ },
+ {
+  "word": "foster",
+  "pos": [
+   "verb",
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "to encourage the development of something, or relating to raising a child who is not your own by birth",
+  "syn": [
+   "nurture"
+  ]
+ },
+ {
+  "word": "iffy",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "not sure or certain about something; possibly not good, safe, or reliable",
+  "syn": [
+   "uncertain",
+   "doubtful"
+  ]
+ },
+ {
+  "word": "premature",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "happening or done before the usual or proper time",
+  "syn": [
+   "early",
+   "untimely"
+  ]
+ },
+ {
+  "word": "insinuate",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "C1",
+  "en": "to suggest something unpleasant in an indirect way",
+  "syn": [
+   "imply",
+   "hint"
+  ]
+ },
+ {
+  "word": "surplus",
+  "pos": [
+   "noun",
+   "adjective"
+  ],
+  "cefr": "B2",
+  "en": "an amount left over after need has been satisfied, or more than what is needed",
+  "syn": [
+   "excess"
+  ]
+ },
+ {
+  "word": "workforce",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "all the people who work in a country, area, or company",
+  "syn": []
+ },
+ {
+  "word": "trespass",
+  "pos": [
+   "verb"
+  ],
+  "cefr": "B2",
+  "en": "to enter someone's land or property without permission",
+  "syn": []
+ },
+ {
+  "word": "edible",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B1",
+  "en": "safe to eat; not poisonous",
+  "syn": [
+   "eatable"
+  ]
+ },
+ {
+  "word": "stoppage",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "a temporary halt in an activity, especially work",
+  "syn": [
+   "halt"
+  ]
+ },
+ {
+  "word": "prostitution",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "C1",
+  "en": "the activity of having sex with someone in exchange for money",
+  "syn": []
+ },
+ {
+  "word": "true-blue",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "completely loyal to a person, group, or set of beliefs",
+  "syn": [
+   "loyal",
+   "devoted"
+  ]
+ },
+ {
+  "word": "DUI",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "B2",
+  "en": "the crime of driving a vehicle while affected by alcohol or drugs (short for 'driving under the influence')",
+  "syn": []
+ },
+ {
+  "word": "AC",
+  "pos": [
+   "noun"
+  ],
+  "cefr": "A2",
+  "en": "a system that cools and dries the air in a room or vehicle (short for 'air conditioning')",
+  "syn": []
+ },
+ {
+  "word": "indicative",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "C1",
+  "en": "showing or suggesting something",
+  "syn": [
+   "suggestive"
+  ]
+ },
+ {
+  "word": "matching",
+  "pos": [
+   "adjective"
+  ],
+  "cefr": "B1",
+  "en": "having the same design, pattern, or color as something else",
+  "syn": []
+ }
+]

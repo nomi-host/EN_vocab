@@ -1,0 +1,310 @@
+[
+ {
+  "word": "oligarch",
+  "ko": "재벌, 과두 지배자",
+  "ex": {
+   "en": "The country's economy is controlled by a handful of oligarchs.",
+   "ko": "그 나라의 경제는 소수의 재벌들이 장악하고 있다."
+  }
+ },
+ {
+  "word": "foster",
+  "ko": "발전시키다, 키우다; 위탁의(foster care)",
+  "ex": {
+   "en": "The teacher tries to foster creativity in her students.",
+   "ko": "그 교사는 학생들의 창의성을 키우려고 노력한다."
+  },
+  "senses": [
+   {
+    "cue": "관계·성장·재능 등을",
+    "ko": "발전시키다, 키우다",
+    "pos": "동사",
+    "lv": 1,
+    "cefr": "B2",
+    "en": "to encourage the development of something",
+    "syn": [
+     "nurture"
+    ],
+    "ex": [
+     {
+      "en": "The teacher tries to foster creativity in her students.",
+      "ko": "그 교사는 학생들의 창의성을 키우려고 노력한다."
+     }
+    ]
+   },
+   {
+    "cue": "친부모가 아닌 보호자가 아이를",
+    "ko": "위탁 양육하다, 위탁의",
+    "pos": "형용사",
+    "lv": 2,
+    "cefr": "B2",
+    "en": "relating to the raising of a child by someone who is not the birth parent",
+    "syn": [],
+    "ex": [
+     {
+      "en": "They became foster parents to three children.",
+      "ko": "그들은 세 아이의 위탁 부모가 되었다."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "word": "iffy",
+  "ko": "확신이 없는, 미심쩍은",
+  "ex": {
+   "en": "I'm a bit iffy about this plan.",
+   "ko": "나는 이 계획에 대해 좀 확신이 없다."
+  }
+ },
+ {
+  "word": "premature",
+  "ko": "너무 이른, 시기상조인",
+  "ex": {
+   "en": "It's premature to celebrate before the results are official.",
+   "ko": "결과가 공식 발표되기 전에 축하하는 건 시기상조다."
+  }
+ },
+ {
+  "word": "insinuate",
+  "ko": "암시하다, 넌지시 말하다",
+  "ex": {
+   "en": "Are you insinuating that I lied?",
+   "ko": "내가 거짓말을 했다는 걸 암시하는 거야?"
+  }
+ },
+ {
+  "word": "surplus",
+  "ko": "잉여, 흑자; 여분의",
+  "ex": {
+   "en": "The country has a trade surplus this year.",
+   "ko": "그 나라는 올해 무역 흑자를 기록했다."
+  },
+  "senses": [
+   {
+    "cue": "필요한 양보다 많이 남는 양·돈",
+    "ko": "잉여, 흑자",
+    "pos": "명사",
+    "lv": 1,
+    "cefr": "B2",
+    "en": "an amount left over after need has been satisfied, or more money earned than spent",
+    "syn": [
+     "excess"
+    ],
+    "ex": [
+     {
+      "en": "The country has a trade surplus this year.",
+      "ko": "그 나라는 올해 무역 흑자를 기록했다."
+     }
+    ]
+   },
+   {
+    "cue": "필요 이상으로",
+    "ko": "여분의, 남는",
+    "pos": "형용사",
+    "lv": 2,
+    "cefr": "B2",
+    "en": "more than what is needed",
+    "syn": [],
+    "ex": [
+     {
+      "en": "They donated the surplus food to charity.",
+      "ko": "그들은 남는 음식을 자선단체에 기부했다."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "word": "workforce",
+  "ko": "노동 인구, 인력",
+  "ex": {
+   "en": "Automation is changing the workforce.",
+   "ko": "자동화가 노동 인구를 변화시키고 있다."
+  }
+ },
+ {
+  "word": "trespass",
+  "ko": "무단침입하다",
+  "ex": {
+   "en": "You are trespassing on private property.",
+   "ko": "당신은 지금 사유지에 무단침입하고 있어요."
+  }
+ },
+ {
+  "word": "edible",
+  "ko": "먹을 수 있는, 식용의",
+  "ex": {
+   "en": "Not all mushrooms in the forest are edible.",
+   "ko": "숲에 있는 버섯이 다 식용은 아니다."
+  }
+ },
+ {
+  "word": "stoppage",
+  "ko": "중단, 정지",
+  "ex": {
+   "en": "The strike caused a stoppage in production.",
+   "ko": "파업으로 생산이 중단되었다."
+  }
+ },
+ {
+  "word": "prostitution",
+  "ko": "매춘",
+  "ex": {
+   "en": "Prostitution is illegal in most parts of the country.",
+   "ko": "그 나라 대부분 지역에서 매춘은 불법이다."
+  }
+ },
+ {
+  "word": "true-blue",
+  "ko": "충실한, 진실한",
+  "ex": {
+   "en": "She's a true-blue fan who never misses a game.",
+   "ko": "그녀는 경기를 한 번도 안 놓치는 진정한 열성 팬이다."
+  }
+ },
+ {
+  "word": "DUI",
+  "ko": "음주운전",
+  "ex": {
+   "en": "He was arrested for a DUI last night.",
+   "ko": "그는 어젯밤 음주운전으로 체포되었다."
+  }
+ },
+ {
+  "word": "AC",
+  "ko": "에어컨, 냉방장치",
+  "ex": {
+   "en": "Can you turn on the AC? It's so hot in here.",
+   "ko": "에어컨 좀 켜줄래? 여기 너무 덥다."
+  }
+ },
+ {
+  "word": "indicative",
+  "ko": "나타내는, 암시하는",
+  "ex": {
+   "en": "His silence was indicative of his disappointment.",
+   "ko": "그의 침묵은 실망을 나타내는 것이었다."
+  }
+ },
+ {
+  "word": "matching",
+  "ko": "어울리는, 짝을 이루는",
+  "ex": {
+   "en": "They wore matching outfits for the photo.",
+   "ko": "그들은 사진을 위해 커플룩을 맞춰 입었다."
+  }
+ },
+ {
+  "word": "high season",
+  "ko": "성수기",
+  "ex": {
+   "en": "Hotel prices double during high season.",
+   "ko": "성수기에는 호텔 가격이 두 배로 오른다."
+  }
+ },
+ {
+  "word": "against one's will",
+  "ko": "본의 아니게, 억지로",
+  "ex": {
+   "en": "She was married off against her will.",
+   "ko": "그녀는 본의 아니게 결혼하게 되었다."
+  }
+ },
+ {
+  "word": "pull one's leg",
+  "ko": "놀리다, 장난치다",
+  "ex": {
+   "en": "Relax, I'm just pulling your leg.",
+   "ko": "진정해, 그냥 놀리는 거야."
+  }
+ },
+ {
+  "word": "hail from",
+  "ko": "~출신이다",
+  "ex": {
+   "en": "She hails from a small town in Ireland.",
+   "ko": "그녀는 아일랜드의 작은 마을 출신이다."
+  }
+ },
+ {
+  "word": "in the mood for",
+  "ko": "~할 기분이다",
+  "ex": {
+   "en": "I'm not really in the mood for a party tonight.",
+   "ko": "오늘 밤은 파티할 기분이 아니야."
+  }
+ },
+ {
+  "word": "leave out",
+  "ko": "빼다, 제외하다",
+  "ex": {
+   "en": "Can you leave out the onions in my sandwich?",
+   "ko": "제 샌드위치에서 양파는 빼주시겠어요?"
+  }
+ },
+ {
+  "word": "on the side",
+  "ko": "곁들여서, 따로",
+  "ex": {
+   "en": "I'll have the salad with dressing on the side.",
+   "ko": "드레싱은 따로 주시고 샐러드로 주세요."
+  }
+ },
+ {
+  "word": "ring up",
+  "ko": "계산하다",
+  "ex": {
+   "en": "The cashier rang up my groceries.",
+   "ko": "계산원이 내 장 본 물건들을 계산했다."
+  }
+ },
+ {
+  "word": "pull in",
+  "ko": "정차하다, 차를 대다",
+  "ex": {
+   "en": "He pulled in at a gas station to fill up.",
+   "ko": "그는 기름을 넣으려고 주유소에 차를 댔다."
+  }
+ },
+ {
+  "word": "take the fifth",
+  "ko": "묵비권을 행사하다",
+  "ex": {
+   "en": "The witness decided to take the fifth.",
+   "ko": "그 증인은 묵비권을 행사하기로 했다."
+  }
+ },
+ {
+  "word": "fall into",
+  "ko": "~에 속하다, ~에 빠지다",
+  "ex": {
+   "en": "This book falls into the mystery genre.",
+   "ko": "이 책은 추리 소설 장르에 속한다."
+  }
+ },
+ {
+  "word": "waiting to happen",
+  "ko": "(사고 등이) 일어날 것만 같은",
+  "ex": {
+   "en": "That broken staircase is an accident waiting to happen.",
+   "ko": "저 부서진 계단은 사고가 날 것만 같아."
+  }
+ },
+ {
+  "word": "enter the workforce",
+  "ko": "사회에 진출하다, 취업하다",
+  "ex": {
+   "en": "Many students enter the workforce right after graduation.",
+   "ko": "많은 학생들이 졸업하자마자 사회에 진출한다."
+  }
+ },
+ {
+  "word": "to the fullest",
+  "ko": "최대한으로, 마음껏",
+  "ex": {
+   "en": "She lives life to the fullest.",
+   "ko": "그녀는 인생을 마음껏 즐기며 산다."
+  }
+ }
+]

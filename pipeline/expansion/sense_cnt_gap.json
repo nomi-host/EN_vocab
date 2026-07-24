@@ -1,0 +1,10712 @@
+[
+ {
+  "word": "abandon",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "able",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "about",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "abroad",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "absolute",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "absorb",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "abstract",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "academic",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "accept",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "acceptance",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "accompany",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "account",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "ache",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "acknowledge",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "acquaintance",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "act",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 9
+ },
+ {
+  "word": "action",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "active",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 9
+ },
+ {
+  "word": "activity",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "actual",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "add",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "address",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "adjust",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "administration",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "admit",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "adopt",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "advance",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 12
+ },
+ {
+  "word": "advanced",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "advise",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "affect",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "age",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "agent",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "agree",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "agreement",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "ahead",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "aid",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "aim",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "air",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "alarm",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "all",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "all right",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "allow",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "allowance",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "alone",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "along",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "alter",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "ambiguous",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "amount",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "analysis",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "announce",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "answer",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "anticipate",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "anticipation",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "apart",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "appeal",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "appear",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "appearance",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "apply",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "appointment",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "appreciation",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "approach",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "appropriate",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "approval",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "architecture",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "area",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "argument",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "arise",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "arm",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "around",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "arouse",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "arrange",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "arrangement",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "arrest",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "arrival",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "art",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "articulate",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "aside",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "ask",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "aspect",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "assert",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "assign",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "assignment",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "assist",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "associate",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "association",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "assume",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "assumption",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "assure",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "atmosphere",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "attack",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 11
+ },
+ {
+  "word": "attempt",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "attend",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "attention",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "attitude",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "attraction",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "authority",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "automatic",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "average",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "avoid",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "award",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "away",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "awful",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "back",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 16
+ },
+ {
+  "word": "background",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "bad",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "bag",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "bake",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "balance",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "ball",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "band",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "bang",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "bank",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "bar",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 10
+ },
+ {
+  "word": "bark",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "base",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 11
+ },
+ {
+  "word": "bat",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "battery",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "bay",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "be",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 11
+ },
+ {
+  "word": "beam",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "bear",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "beat",
+  "cefr": "B1",
+  "ours": 4,
+  "wnTagged": 14
+ },
+ {
+  "word": "become",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "bed",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "begin",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "beginning",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "behave",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "behavior",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "behind",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "believe",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "bell",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "belong",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "below",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "belt",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "bench",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "bend",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "benefit",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "best",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "betray",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "better",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 9
+ },
+ {
+  "word": "bid",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "big",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "bill",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "bind",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "birth",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "bit",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "bite",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "bitter",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "black",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "blame",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "blanket",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "blast",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "blaze",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "bless",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "blind",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "block",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "blood",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "bloom",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "blow",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "blue",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "blur",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "board",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "body",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "boil",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "bolt",
+  "cefr": "B2",
+  "ours": 4,
+  "wnTagged": 8
+ },
+ {
+  "word": "bond",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "book",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "boost",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "border",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "boss",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "bottom",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "bounce",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "bound",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 11
+ },
+ {
+  "word": "bow",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "box",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "boy",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "brain",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "brand",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "brass",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "brave",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "break",
+  "cefr": "A1",
+  "ours": 5,
+  "wnTagged": 28
+ },
+ {
+  "word": "break down",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "break out",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "break up",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "breath",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "breathe",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "bridge",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "brief",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "bright",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "brilliant",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "bring",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 9
+ },
+ {
+  "word": "bring up",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "broad",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "broaden",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "broken",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "brotherhood",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "brush",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "bud",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "build",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "building",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "bull",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "bunch",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "burn",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 14
+ },
+ {
+  "word": "burst",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "bury",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "business",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "busy",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "buzz",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "cable",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "call",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 16
+ },
+ {
+  "word": "calm",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "camp",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "campaign",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "cap",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "capable",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "capacity",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "captain",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "capture",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "care",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 11
+ },
+ {
+  "word": "career",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "careful",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "carry",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 18
+ },
+ {
+  "word": "carry on",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "case",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 12
+ },
+ {
+  "word": "cast",
+  "cefr": "B2",
+  "ours": 4,
+  "wnTagged": 6
+ },
+ {
+  "word": "casual",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "catch",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 20
+ },
+ {
+  "word": "cause",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "caution",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "center",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 15
+ },
+ {
+  "word": "ceremony",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "certain",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "chain",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "challenge",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "chance",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "change",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 15
+ },
+ {
+  "word": "character",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "charge",
+  "cefr": "B1",
+  "ours": 5,
+  "wnTagged": 16
+ },
+ {
+  "word": "check",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 13
+ },
+ {
+  "word": "child",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "choice",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "choke",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "choose",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "church",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "circle",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "circumstance",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "circus",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "city",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "claim",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 10
+ },
+ {
+  "word": "clap",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "class",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "clean",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 11
+ },
+ {
+  "word": "clear",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 20
+ },
+ {
+  "word": "clearly",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "close",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 16
+ },
+ {
+  "word": "closed",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "cloud",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "club",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "coat",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "cold",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "collapse",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "collect",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "collection",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "color",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "column",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "comb",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "combine",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "come",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 17
+ },
+ {
+  "word": "come back",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "come in",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "come out",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "come up",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "comfort",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "command",
+  "cefr": "B1",
+  "ours": 4,
+  "wnTagged": 11
+ },
+ {
+  "word": "comment",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "commit",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "common",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "community",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "company",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "complement",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "complete",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "component",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "compose",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "composition",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "compound",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "concentrate",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "concentration",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "conception",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "concern",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "conclusion",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "condemn",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "condition",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "conduct",
+  "cefr": "B1",
+  "ours": 4,
+  "wnTagged": 7
+ },
+ {
+  "word": "conference",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "confirm",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "conflict",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "confront",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "confused",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "congratulate",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "connect",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "connection",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "conscience",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "consequence",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "conservative",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "consider",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "consideration",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "construction",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "consume",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "contact",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "contemporary",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "content",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "continue",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "contract",
+  "cefr": "B2",
+  "ours": 4,
+  "wnTagged": 7
+ },
+ {
+  "word": "contrast",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "contribute",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "contribution",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "control",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 13
+ },
+ {
+  "word": "conventional",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "conversion",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "convert",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "cook",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "cooperative",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "copy",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "core",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "corn",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "corner",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "correct",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "corresponding",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "cost",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "count",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "counter",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "country",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "couple",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "course",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "court",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "cover",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 21
+ },
+ {
+  "word": "crack",
+  "cefr": "B2",
+  "ours": 6,
+  "wnTagged": 12
+ },
+ {
+  "word": "craftsman",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "crash",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "create",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "creation",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "creature",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "credit",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "critical",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "cross",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "crow",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "crowd",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "crown",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "cruelty",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "crush",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "cry",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "cultural",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "culture",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "cup",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "curl",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "curse",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "curve",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "cut",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 16
+ },
+ {
+  "word": "cut off",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "cycle",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "damage",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "damn",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "dance",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "danger",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "dark",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "darkness",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "dash",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "date",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "day",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "dead",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "deal",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 12
+ },
+ {
+  "word": "death",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "debate",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "decay",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "decide",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "decision",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "declare",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "decline",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "deduction",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "deep",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "defeat",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "defend",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "defense",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "define",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "degree",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "delay",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "delicate",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "deliver",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "demand",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "demonstration",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "deny",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "depart",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "deposit",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "depression",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "derive",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "describe",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "design",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "desire",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "despair",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "desperate",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "destroy",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "detail",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "determination",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "determine",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "develop",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 14
+ },
+ {
+  "word": "development",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "device",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "devil",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "die",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "difference",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "different",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "difficulty",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "dimension",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "direct",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 13
+ },
+ {
+  "word": "direction",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "directly",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "dirty",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "disappearance",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "disaster",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "discharge",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 12
+ },
+ {
+  "word": "discipline",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "discover",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "discovery",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "disregard",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "dissolve",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "distance",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "distinguish",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "distribute",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "distribution",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "disturb",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "disturbance",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "divide",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "divine",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "division",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "do",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 13
+ },
+ {
+  "word": "doctor",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "document",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "dominate",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "door",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "double",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "doubt",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "down",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 13
+ },
+ {
+  "word": "downward",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "drag",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "drama",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "draw",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 21
+ },
+ {
+  "word": "dream",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "dress",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "drink",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "drive",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 19
+ },
+ {
+  "word": "drop",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 15
+ },
+ {
+  "word": "drown",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "drum",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "dull",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "dust",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "ear",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "early",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "earth",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "ease",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "east",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "eastern",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "easy",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "eat",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "economic",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "economical",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "economy",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "edge",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "educate",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "education",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "effect",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "effective",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "effort",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "electricity",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "element",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "eliminate",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "embarrassment",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "embrace",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "emerge",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "emotional",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "emphasis",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "employment",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "empty",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "encounter",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "encourage",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "end",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 14
+ },
+ {
+  "word": "endure",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "enemy",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "energy",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "engage",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "engagement",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "engine",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "enjoy",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "enjoyment",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "enter",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "enthusiasm",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "entire",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "entrance",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "entry",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "equal",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "error",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "erupt",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "escape",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "essay",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "essential",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "establish",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "establishment",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "estimate",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "eternity",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "even",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "ever",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "evidence",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "evil",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "evolve",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "examine",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "example",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "exceed",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "excess",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "exchange",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "excited",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "excitement",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "exclude",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "excuse",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "exercise",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "exhibit",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "existing",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "expand",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "expedition",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "expense",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "experience",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "experiment",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "explain",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "exploration",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "expose",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "express",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "expression",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "extend",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "extension",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "external",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "extraordinary",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "extreme",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "eye",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "face",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 14
+ },
+ {
+  "word": "fact",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "factor",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "fade",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "fail",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "failure",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "faint",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "faith",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "faithful",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "fall",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 23
+ },
+ {
+  "word": "falter",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "familiar",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "family",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "fan",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "fancy",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "fantastic",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "fantasy",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "far",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "farther",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "fashion",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "fasten",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "fat",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "fate",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "father",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "fault",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "favor",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "favorable",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "favorite",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "fear",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "feast",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "feature",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "federal",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "feed",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "feel",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 14
+ },
+ {
+  "word": "feeling",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "female",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "field",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 15
+ },
+ {
+  "word": "fight",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "figure",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 14
+ },
+ {
+  "word": "file",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "fill",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 10
+ },
+ {
+  "word": "film",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "filter",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "finally",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "find",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 13
+ },
+ {
+  "word": "find out",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "finding",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "fine",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 7
+ },
+ {
+  "word": "finger",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "finish",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "fire",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 14
+ },
+ {
+  "word": "firm",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "firmly",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "first",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 13
+ },
+ {
+  "word": "fish",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "fit",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 13
+ },
+ {
+  "word": "fix",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 10
+ },
+ {
+  "word": "fixed",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "flag",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "flap",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "flash",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "flat",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "flexible",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "flight",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "float",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "flock",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "flood",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "floor",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "flow",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "flower",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "fly",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 13
+ },
+ {
+  "word": "focus",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "fog",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "fold",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "follow",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 16
+ },
+ {
+  "word": "following",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "fond",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "foot",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "force",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 14
+ },
+ {
+  "word": "forecast",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "foreign",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "foresee",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "forever",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "forget",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "fork",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "form",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 17
+ },
+ {
+  "word": "formal",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "formation",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "formula",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "forth",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "fortune",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "forward",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "foul",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "found",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "frame",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "free",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 13
+ },
+ {
+  "word": "freeze",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "frequent",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "fresh",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "friend",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "front",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "frozen",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "fruit",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "full",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "fully",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "function",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "fundamental",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "further",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "fuss",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "future",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "gain",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 12
+ },
+ {
+  "word": "game",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "garden",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "gas",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "gather",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "gay",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "general",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "generalization",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "generally",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "generate",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "generation",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "generous",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "gentle",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "gently",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "genuine",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "gesture",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "get",
+  "cefr": "A1",
+  "ours": 5,
+  "wnTagged": 20
+ },
+ {
+  "word": "get by",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "get in",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "get off",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "get on",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "get out",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "get over",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "get up",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "giant",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "gift",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "girl",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "give",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 28
+ },
+ {
+  "word": "give up",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 12
+ },
+ {
+  "word": "given",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "glad",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "glance",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "glass",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "gleam",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "glimpse",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "glint",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "glory",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "glow",
+  "cefr": "B2",
+  "ours": 4,
+  "wnTagged": 8
+ },
+ {
+  "word": "go",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 21
+ },
+ {
+  "word": "go on",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "go out",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "go over",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "go up",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 6
+ },
+ {
+  "word": "gold",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "good",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 19
+ },
+ {
+  "word": "govern",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "government",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "grab",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "grace",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "graduate",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "grant",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "grave",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "gray",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "great",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "greet",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "grip",
+  "cefr": "B2",
+  "ours": 4,
+  "wnTagged": 6
+ },
+ {
+  "word": "ground",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "group",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "grow",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "growth",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "guarantee",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "guard",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "guess",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "guidance",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "guide",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "habit",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "half",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "hall",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "hand",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "handle",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "hang",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "hang up",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "happen",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "harbor",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "hard",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "harm",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "harness",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "haste",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "have",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 19
+ },
+ {
+  "word": "head",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 14
+ },
+ {
+  "word": "healthy",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "hear",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "hearing",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "heart",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "heat",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "heavily",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "heavy",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "height",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "help",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "helpless",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "herd",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "here",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "hesitation",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "hide",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "high",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "historical",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "history",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "hit",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 13
+ },
+ {
+  "word": "hold",
+  "cefr": "A1",
+  "ours": 5,
+  "wnTagged": 26
+ },
+ {
+  "word": "hold on",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "hold up",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "hole",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "hollow",
+  "cefr": "B2",
+  "ours": 4,
+  "wnTagged": 6
+ },
+ {
+  "word": "home",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "honest",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "honor",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "hop",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "hope",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "horn",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "horror",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "host",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "hot",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "hour",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "house",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "hover",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "however",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "human",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "humor",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "hurry",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "hurt",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "idea",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "ideal",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "identify",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "identity",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "idiom",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "idle",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "ignore",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "ill",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "illustration",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "image",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "imagination",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "imitation",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "immediate",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "implement",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "imply",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "import",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "important",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "impossible",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "impress",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "improvement",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "impulse",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "include",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "increase",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "indicate",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "indifferent",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "individual",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "industrial",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "inevitable",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "influence",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "information",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "inner",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "innocent",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "inside",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "insight",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "insist",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "inspire",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "institution",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "intelligent",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "intend",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "interest",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "intermediate",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "internal",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "interpret",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "interpretation",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "interrupt",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "interval",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "interview",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "intimate",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "introduce",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "introduction",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "invention",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "invite",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "involve",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "involvement",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "issue",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "item",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "jacket",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "jam",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "jet",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "job",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "join",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "joint",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "joke",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "judge",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "judgment",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "jump",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "junior",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "just",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "keep",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 14
+ },
+ {
+  "word": "key",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "kick",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "kill",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "king",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "knee",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "knife",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "knock",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "knot",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "know",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "label",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "land",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 14
+ },
+ {
+  "word": "language",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "last",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 14
+ },
+ {
+  "word": "late",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "law",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "lay",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "layer",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "lead",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 19
+ },
+ {
+  "word": "leadership",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "leading",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "lean",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "leap",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "learn",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "leave",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 16
+ },
+ {
+  "word": "left",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "leg",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "legal",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "legitimate",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "lend",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "length",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "less",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "lessen",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "lesson",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "let",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "level",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 13
+ },
+ {
+  "word": "liberal",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "liberty",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "library",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "lick",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "lie",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "life",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 13
+ },
+ {
+  "word": "lift",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 12
+ },
+ {
+  "word": "light",
+  "cefr": "A1",
+  "ours": 5,
+  "wnTagged": 28
+ },
+ {
+  "word": "lighting",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "lightly",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "like",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "likely",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "limit",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "limitation",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "limited",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "line",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 25
+ },
+ {
+  "word": "linger",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "link",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "liquid",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "list",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "listen",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "literature",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "little",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "live",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "living",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "load",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "local",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "locate",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "lock",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "logic",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "long",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "look",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 11
+ },
+ {
+  "word": "loose",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 9
+ },
+ {
+  "word": "lose",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "loss",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "lost",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "lot",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "love",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "low",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "loyalty",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "luck",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "lyric",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "machine",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "magazine",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "mail",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "maintain",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "major",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "majority",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "make",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 30
+ },
+ {
+  "word": "make up",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "man",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "manage",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "map",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "March",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "mark",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 14
+ },
+ {
+  "word": "marked",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "market",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "mask",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "mass",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "master",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "match",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "mate",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "material",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "matter",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "mean",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "measure",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "mechanical",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "medical",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "medium",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "meet",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 12
+ },
+ {
+  "word": "meeting",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "melt",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "member",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "memory",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "mention",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "mercy",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "mess",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "middle",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "military",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "milk",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "mind",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "mine",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "minor",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "minute",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "miserable",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "Miss",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "mistake",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "mix",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "mixture",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "model",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "moderate",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "modern",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "moment",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "more",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "most",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "motion",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "motor",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "mount",
+  "cefr": "B1",
+  "ours": 4,
+  "wnTagged": 8
+ },
+ {
+  "word": "mouth",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "move",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 16
+ },
+ {
+  "word": "movement",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "much",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "music",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "nail",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "naked",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "name",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 12
+ },
+ {
+  "word": "narrow",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "national",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "native",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "natural",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "naturally",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "nature",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "near",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "necessarily",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "need",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "needle",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "neglect",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "net",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "new",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "news",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "newspaper",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "next",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "nice",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "night",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "no",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "nod",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "north",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "northern",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "nose",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "note",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 11
+ },
+ {
+  "word": "notice",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "notion",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "now",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "nuclear",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "number",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 12
+ },
+ {
+  "word": "nurse",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "object",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "objection",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "observation",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "observe",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "obtain",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "occasion",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "occupation",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "occupy",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "off",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "offer",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "office",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "officer",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "official",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "oily",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "old",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "one",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "only",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "open",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 25
+ },
+ {
+  "word": "opening",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "operation",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "operator",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "opinion",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "oppose",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "opposite",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "opposition",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "orange",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "orbit",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "order",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 15
+ },
+ {
+  "word": "ordinary",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "organization",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "organize",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "origin",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "original",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "output",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "outside",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 11
+ },
+ {
+  "word": "over",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "overall",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "overlook",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "overturn",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "pace",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "pack",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "pain",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "paint",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "painting",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "pair",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "pale",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "pan",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "panic",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "paper",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "parade",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "parcel",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "park",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "part",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 15
+ },
+ {
+  "word": "particle",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "particular",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "party",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "pass",
+  "cefr": "A2",
+  "ours": 5,
+  "wnTagged": 26
+ },
+ {
+  "word": "passage",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "passion",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "past",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "pattern",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "pause",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "pay",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "peace",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "peak",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "pen",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "people",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "perception",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "perform",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "performance",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "permit",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "personal",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "personally",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "phantom",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "phrase",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "physical",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "pick",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "pick up",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 13
+ },
+ {
+  "word": "picnic",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "picture",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 11
+ },
+ {
+  "word": "piece",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 11
+ },
+ {
+  "word": "pile",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "pitch",
+  "cefr": "B2",
+  "ours": 5,
+  "wnTagged": 9
+ },
+ {
+  "word": "place",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 27
+ },
+ {
+  "word": "plain",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "plan",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "plane",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "planning",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "plant",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "plate",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "play",
+  "cefr": "A1",
+  "ours": 5,
+  "wnTagged": 29
+ },
+ {
+  "word": "plead",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "plenty",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "pocket",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "point",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 20
+ },
+ {
+  "word": "point out",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "poison",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "pole",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "polish",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "political",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "politics",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "pool",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "pop",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "popular",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "population",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "port",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "portion",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "position",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 14
+ },
+ {
+  "word": "positive",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "possess",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "possibility",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "possible",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "post",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "pot",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "pound",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "pour",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "power",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "powerful",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "practice",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "prayer",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "precede",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "precisely",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "prefer",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "preparation",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "prepare",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "presence",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "present",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 14
+ },
+ {
+  "word": "presentation",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "preserve",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "president",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "press",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "pressure",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "prevail",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "price",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "prick",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "pride",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "primary",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "prime",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "primitive",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "principle",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "print",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "problem",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "proceed",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "process",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "proclaim",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "produce",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "product",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "production",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "productive",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "professional",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "profit",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "program",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "progress",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "prohibition",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "project",
+  "cefr": "B2",
+  "ours": 5,
+  "wnTagged": 10
+ },
+ {
+  "word": "promise",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "promptly",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "proper",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "proportion",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "propose",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "protection",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "protest",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "prove",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "provide",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "public",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "publish",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "pull",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 12
+ },
+ {
+  "word": "pump",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "purchase",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "pure",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "purpose",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "purse",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "pursue",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "push",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "put",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "put on",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "qualify",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "question",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "quick",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "quiet",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 11
+ },
+ {
+  "word": "quietly",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "quite",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "race",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "radical",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "radio",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "rage",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "raise",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 14
+ },
+ {
+  "word": "rally",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "range",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "rank",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "rate",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "rating",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "raw",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "reach",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 12
+ },
+ {
+  "word": "react",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "read",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "reader",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "reading",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "ready",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "real",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "reality",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "realize",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "rear",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "reason",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "rebel",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "recall",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "receive",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 9
+ },
+ {
+  "word": "reception",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "reckon",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "recognition",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "recognize",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "record",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "recovery",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "recruit",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "red",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "reduce",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 11
+ },
+ {
+  "word": "reduction",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "refer",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "reference",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "reflection",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "reform",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "refund",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "refuse",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "regard",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "region",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "register",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "regret",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "regular",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "regulate",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "regulation",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "reject",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "relate",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "relationship",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "relative",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "relax",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "release",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 13
+ },
+ {
+  "word": "reliable",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "relief",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 9
+ },
+ {
+  "word": "relieve",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "reluctant",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "remain",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "remedy",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "remember",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "remote",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "remove",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "rent",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "repeat",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "repetition",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "replace",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "replacement",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "report",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "represent",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 10
+ },
+ {
+  "word": "representative",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "request",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "require",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "requirement",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "reservation",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "reserve",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "residence",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "resignation",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "resist",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "resistance",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "resolution",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "resolve",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "resource",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "respect",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "respectable",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "respond",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "response",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "responsibility",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "rest",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 16
+ },
+ {
+  "word": "restore",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "restrict",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "result",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "resume",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "retain",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "retire",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "return",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 17
+ },
+ {
+  "word": "reverse",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "review",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "revive",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "reward",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "rhythm",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "rich",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "riddle",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "ride",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "right",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 22
+ },
+ {
+  "word": "ring",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 7
+ },
+ {
+  "word": "rise",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 22
+ },
+ {
+  "word": "risk",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "roar",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "role",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "roll",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 13
+ },
+ {
+  "word": "romantic",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "room",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "root",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "rough",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "round",
+  "cefr": "A2",
+  "ours": 6,
+  "wnTagged": 12
+ },
+ {
+  "word": "routine",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "row",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "rule",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "rule out",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "run",
+  "cefr": "A1",
+  "ours": 5,
+  "wnTagged": 36
+ },
+ {
+  "word": "run out",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "runner",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "rush",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "safety",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "sail",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "sailing",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "sale",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "salt",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "same",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "satisfaction",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "save",
+  "cefr": "A1",
+  "ours": 6,
+  "wnTagged": 10
+ },
+ {
+  "word": "say",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "scatter",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "scene",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "scent",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "schedule",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "school",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "score",
+  "cefr": "B1",
+  "ours": 4,
+  "wnTagged": 9
+ },
+ {
+  "word": "scream",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "screen",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "sculpture",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "seal",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "search",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "seat",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "second",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "secret",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "section",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "sector",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "secure",
+  "cefr": "B1",
+  "ours": 4,
+  "wnTagged": 6
+ },
+ {
+  "word": "see",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 18
+ },
+ {
+  "word": "seek",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "self",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "sell",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "send",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "sense",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 6
+ },
+ {
+  "word": "separate",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 12
+ },
+ {
+  "word": "separation",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "sequence",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "series",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "serve",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 11
+ },
+ {
+  "word": "service",
+  "cefr": "B1",
+  "ours": 4,
+  "wnTagged": 8
+ },
+ {
+  "word": "set",
+  "cefr": "A1",
+  "ours": 6,
+  "wnTagged": 25
+ },
+ {
+  "word": "set off",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "set out",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "set up",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "settle",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 13
+ },
+ {
+  "word": "settlement",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "several",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "severe",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "shade",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "shadow",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "shake",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "shame",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "shape",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "share",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "sharp",
+  "cefr": "B1",
+  "ours": 5,
+  "wnTagged": 10
+ },
+ {
+  "word": "sharply",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "shed",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "shield",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "shift",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 12
+ },
+ {
+  "word": "shine",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "shock",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "shoot",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 9
+ },
+ {
+  "word": "shop",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "short",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "shortly",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "shot",
+  "cefr": "A2",
+  "ours": 5,
+  "wnTagged": 7
+ },
+ {
+  "word": "shoulder",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "shout",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "show",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 13
+ },
+ {
+  "word": "shower",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "shrink",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "shut",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "shut up",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "sick",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "side",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 11
+ },
+ {
+  "word": "sight",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "sign",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 14
+ },
+ {
+  "word": "signal",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "significance",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "significant",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "silence",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "silver",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "simple",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "simply",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "sincerity",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "sing",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "sink",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 10
+ },
+ {
+  "word": "sit",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "sit down",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "size",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "sketch",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "skin",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "skip",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "skirt",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "slash",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "slaughter",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "slice",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "slide",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "slip",
+  "cefr": "B1",
+  "ours": 4,
+  "wnTagged": 8
+ },
+ {
+  "word": "slow",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "small",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "smart",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "smash",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "smell",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "smooth",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "snap",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 11
+ },
+ {
+  "word": "sneer",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "so",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "soak",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "soar",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "social",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "soft",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "softly",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "soil",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "solid",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 12
+ },
+ {
+  "word": "solution",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "some",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "song",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "sorrow",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "sound",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 15
+ },
+ {
+  "word": "source",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "south",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "southern",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "space",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "spare",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "spark",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "speak",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "special",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "specialize",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "specify",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "speech",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "speed",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "spell",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "spend",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "sphere",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "spill",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "spirit",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "spiritual",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "splash",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "split",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "sport",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "spot",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "spray",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "spread",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 15
+ },
+ {
+  "word": "spring",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "spur",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "spy",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "square",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "squeeze",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "stable",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "staff",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "stage",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "stagger",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "stain",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "stake",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "stall",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "stamp",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "stand",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 20
+ },
+ {
+  "word": "stand out",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "stand up",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "standard",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "star",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "start",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 16
+ },
+ {
+  "word": "starve",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "state",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 7
+ },
+ {
+  "word": "statement",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "stay",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "steer",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "stem",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "step",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "stern",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "stick",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "stiff",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "still",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 11
+ },
+ {
+  "word": "stimulate",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "stir",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "stock",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 10
+ },
+ {
+  "word": "stone",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "stop",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 14
+ },
+ {
+  "word": "store",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "storm",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "story",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "straight",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "straighten",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "strain",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 11
+ },
+ {
+  "word": "strand",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "stream",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "street",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "strength",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "stress",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "stretch",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 13
+ },
+ {
+  "word": "stride",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "strike",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 16
+ },
+ {
+  "word": "string",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "strip",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "stroke",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "strong",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "structure",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "struggle",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "study",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 14
+ },
+ {
+  "word": "stuff",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "stupid",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "style",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "subdivision",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "subject",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 10
+ },
+ {
+  "word": "submit",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "substance",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "success",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "suck",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "suddenly",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "suffer",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "suffering",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "suggest",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "suggestion",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "suit",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "sum",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "sun",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "super",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "superior",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "supplement",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "supply",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "support",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 18
+ },
+ {
+  "word": "suppress",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "sure",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "surface",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "surge",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "surprise",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "surrender",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "surround",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "survey",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "survivor",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "suspect",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "suspend",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "sustain",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "swallow",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "swarm",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "swear",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "sweep",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "sweet",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "swell",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "swing",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 13
+ },
+ {
+  "word": "switch",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "symbolic",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "sympathetic",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "sympathy",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "system",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "tail",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "take",
+  "cefr": "A1",
+  "ours": 6,
+  "wnTagged": 36
+ },
+ {
+  "word": "take in",
+  "cefr": "B1",
+  "ours": 4,
+  "wnTagged": 9
+ },
+ {
+  "word": "take off",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "take out",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "take over",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "take up",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "talk",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "tap",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "target",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "taste",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "tear",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "tease",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "television",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "tell",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "temper",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "tempt",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "tendency",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "tender",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "tension",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "term",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "terrible",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "test",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "testimony",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "then",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "thick",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "thin",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "thing",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 10
+ },
+ {
+  "word": "think",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "third",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "thoughtful",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "thread",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "threat",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "threaten",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "thrill",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "throat",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "throw",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 13
+ },
+ {
+  "word": "throw out",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "thunder",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "tick",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "tie",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "tight",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "tighten",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "time",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 12
+ },
+ {
+  "word": "timely",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "title",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "today",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "together",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "tolerant",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "toll",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "tone",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 7
+ },
+ {
+  "word": "tongue",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "tool",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "tooth",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "top",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "torture",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "toss",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "total",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "touch",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 20
+ },
+ {
+  "word": "tough",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 6
+ },
+ {
+  "word": "tower",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "town",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "trace",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "track",
+  "cefr": "A2",
+  "ours": 4,
+  "wnTagged": 7
+ },
+ {
+  "word": "trade",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "trail",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "train",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "transfer",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "transform",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "transition",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "translate",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "translation",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "transmit",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "transport",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "trap",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "travel",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "traverse",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "tread",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "treasure",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "treat",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "treatment",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "trial",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "trick",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "trim",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "trouble",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "true",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "trust",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "truth",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "try",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "tube",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "tumble",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "tunnel",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "turn",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 22
+ },
+ {
+  "word": "turn on",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "turn out",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "twist",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "type",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "unconscious",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "underestimate",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "understand",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "understanding",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "undertake",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "unfortunate",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "union",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "unit",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "unknown",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "unusual",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "up",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "upset",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "urge",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "use",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "utter",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "vague",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "value",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "variation",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "various",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "vary",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "vein",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "venture",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "very",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "veteran",
+  "cefr": "B2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "view",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 11
+ },
+ {
+  "word": "village",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "violence",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "vision",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "visit",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 9
+ },
+ {
+  "word": "vocabulary",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "voice",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 10
+ },
+ {
+  "word": "volume",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "volunteer",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "vote",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "wait",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "walk",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 11
+ },
+ {
+  "word": "wall",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "want",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "war",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "warm",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "wash",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "waste",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "watch",
+  "cefr": "A1",
+  "ours": 4,
+  "wnTagged": 9
+ },
+ {
+  "word": "water",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "wave",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 9
+ },
+ {
+  "word": "way",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 12
+ },
+ {
+  "word": "weaken",
+  "cefr": "B2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "weakness",
+  "cefr": "B1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "wealth",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "wear",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "week",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "weight",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "welcome",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "well",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 14
+ },
+ {
+  "word": "wheel",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "whip",
+  "cefr": "B2",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "whistle",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "white",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "wide",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "widely",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "wild",
+  "cefr": "A2",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "will",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "win",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "wind",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "window",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "wing",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "wire",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "wisdom",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "wise",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "wish",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 8
+ },
+ {
+  "word": "withdraw",
+  "cefr": "B2",
+  "ours": 4,
+  "wnTagged": 6
+ },
+ {
+  "word": "witness",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "wonder",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "word",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 7
+ },
+ {
+  "word": "work",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 19
+ },
+ {
+  "word": "worker",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "working",
+  "cefr": "B1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "world",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 8
+ },
+ {
+  "word": "worry",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "write",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 7
+ },
+ {
+  "word": "writing",
+  "cefr": "A2",
+  "ours": 1,
+  "wnTagged": 5
+ },
+ {
+  "word": "wrong",
+  "cefr": "A1",
+  "ours": 3,
+  "wnTagged": 8
+ },
+ {
+  "word": "yard",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "year",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 4
+ },
+ {
+  "word": "yell",
+  "cefr": "B1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "yellow",
+  "cefr": "A1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "yield",
+  "cefr": "B2",
+  "ours": 5,
+  "wnTagged": 11
+ },
+ {
+  "word": "young",
+  "cefr": "A1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "youth",
+  "cefr": "A2",
+  "ours": 2,
+  "wnTagged": 6
+ },
+ {
+  "word": "abstraction",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "allot",
+  "cefr": "C2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "banish",
+  "cefr": "C2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "carrier",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 5
+ },
+ {
+  "word": "chill",
+  "cefr": "C1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "circulate",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "cite",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "climax",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "commend",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "comprise",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "depict",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "diffuse",
+  "cefr": "C2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "duration",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "embody",
+  "cefr": "C2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "ethical",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "flick",
+  "cefr": "C1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "formulate",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "grievance",
+  "cefr": "C2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "grumble",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "heighten",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "hinder",
+  "cefr": "C2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "individualism",
+  "cefr": "C2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "induce",
+  "cefr": "C2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "integral",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "lapse",
+  "cefr": "C1",
+  "ours": 3,
+  "wnTagged": 7
+ },
+ {
+  "word": "lurid",
+  "cefr": "C2",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "menace",
+  "cefr": "C2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "obscure",
+  "cefr": "C1",
+  "ours": 3,
+  "wnTagged": 5
+ },
+ {
+  "word": "plunge",
+  "cefr": "C1",
+  "ours": 3,
+  "wnTagged": 6
+ },
+ {
+  "word": "poise",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "provoke",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "reconcile",
+  "cefr": "C2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "repel",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "scorn",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "silhouette",
+  "cefr": "C1",
+  "ours": 1,
+  "wnTagged": 3
+ },
+ {
+  "word": "splinter",
+  "cefr": "C2",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "structural",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ },
+ {
+  "word": "torment",
+  "cefr": "C1",
+  "ours": 2,
+  "wnTagged": 4
+ }
+]

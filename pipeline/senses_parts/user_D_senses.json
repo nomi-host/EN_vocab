@@ -1,0 +1,219 @@
+{
+ "summer": [
+  {
+   "cue": "일 년 중 가장 더운 계절",
+   "ko": "여름",
+   "pos": "명사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "the warmest season of the year, between spring and fall",
+   "syn": [],
+   "ex": [
+    {
+     "en": "We go swimming every summer.",
+     "ko": "우리는 매년 여름마다 수영하러 간다."
+    }
+   ]
+  },
+  {
+   "cue": "여름을 (특정 장소에서)",
+   "ko": "여름을 보내다, 피서하다",
+   "pos": "동사",
+   "lv": 2,
+   "cefr": "B2",
+   "en": "to spend the summer season in a particular place",
+   "syn": [],
+   "ex": [
+    {
+     "en": "They summer in the countryside every year.",
+     "ko": "그들은 매년 시골에서 여름을 보낸다."
+    }
+   ]
+  }
+ ],
+ "transient": [
+  {
+   "cue": "오래 머물지 않고 곧 사라지는",
+   "ko": "일시적인, 순간적인",
+   "pos": "형용사",
+   "lv": 1,
+   "cefr": "B2",
+   "en": "lasting for only a short time",
+   "syn": [
+    "temporary"
+   ],
+   "ex": [
+    {
+     "en": "The pain was transient.",
+     "ko": "그 통증은 일시적이었어요."
+    }
+   ]
+  },
+  {
+   "cue": "집이나 직업 없이 떠도는 사람",
+   "ko": "뜨내기, 부랑자, 단기 체류자",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "C1",
+   "en": "a person who does not stay in one place for long, especially someone without a permanent home",
+   "syn": [
+    "drifter"
+   ],
+   "ex": [
+    {
+     "en": "The shelter provides food for transients passing through town.",
+     "ko": "그 보호소는 마을을 지나가는 노숙자들에게 음식을 제공한다."
+    }
+   ]
+  }
+ ],
+ "drink": [
+  {
+   "cue": "물·주스 등을",
+   "ko": "마시다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "take liquid into your mouth and swallow it",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He drank a glass of water.",
+     "ko": "그는 물 한 잔을 마셨다."
+    }
+   ]
+  },
+  {
+   "cue": "마실 수 있는 액체",
+   "ko": "음료",
+   "pos": "명사",
+   "lv": 2,
+   "cefr": "A1",
+   "en": "a liquid that you drink",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Would you like a drink?",
+     "ko": "음료 좀 드시겠어요?"
+    }
+   ]
+  },
+  {
+   "cue": "술자리에서 (알코올 음료 한 잔)",
+   "ko": "술 한 잔",
+   "pos": "명사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "a serving of an alcoholic beverage",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Let's grab a drink after work.",
+     "ko": "퇴근하고 술 한잔 하자."
+    }
+   ]
+  },
+  {
+   "cue": "술을",
+   "ko": "술을 마시다",
+   "pos": "동사",
+   "lv": 5,
+   "cefr": "B1",
+   "en": "drink alcohol",
+   "syn": [],
+   "ex": [
+    {
+     "en": "He doesn't drink or smoke.",
+     "ko": "그는 술도 담배도 하지 않는다."
+    }
+   ]
+  }
+ ],
+ "hold": [
+  {
+   "cue": "손으로 붙잡아",
+   "ko": "잡다, 들다",
+   "pos": "동사",
+   "lv": 1,
+   "cefr": "A1",
+   "en": "have or keep something in your hand or arms",
+   "ex": [
+    {
+     "en": "She held the baby gently.",
+     "ko": "그녀는 아기를 부드럽게 안았다."
+    }
+   ]
+  },
+  {
+   "cue": "행사를",
+   "ko": "개최하다, 열다",
+   "pos": "동사",
+   "lv": 3,
+   "cefr": "B1",
+   "en": "organize and take part in an event",
+   "ex": [
+    {
+     "en": "The school holds a festival every autumn.",
+     "ko": "그 학교는 매년 가을 축제를 개최한다."
+    }
+   ]
+  },
+  {
+   "cue": "자리·물건을 맡아",
+   "ko": "맡아 두다, 보류하다",
+   "pos": "동사",
+   "lv": 4,
+   "cefr": "B1",
+   "en": "keep something for someone to use or collect later",
+   "ex": [
+    {
+     "en": "Can you hold my seat while I get some coffee?",
+     "ko": "내가 커피 가지러 가는 동안 내 자리 좀 맡아 줄래?"
+    }
+   ]
+  },
+  {
+   "cue": "공간·용량이",
+   "ko": "수용하다, 담다",
+   "pos": "동사",
+   "lv": 6,
+   "cefr": "B1",
+   "en": "have enough space for a certain amount or number",
+   "ex": [
+    {
+     "en": "This hall can hold up to 500 people.",
+     "ko": "이 홀은 최대 500명을 수용할 수 있다."
+    }
+   ]
+  },
+  {
+   "cue": "전화를 끊지 않고",
+   "ko": "(전화를) 끊지 않고 기다리다",
+   "pos": "동사",
+   "lv": 7,
+   "cefr": "B1",
+   "en": "wait on the phone without hanging up",
+   "ex": [
+    {
+     "en": "Please hold while I transfer your call.",
+     "ko": "전화 연결해 드리는 동안 끊지 말고 기다려 주세요."
+    }
+   ]
+  },
+  {
+   "cue": "음식 주문 시 특정 재료를",
+   "ko": "빼다, 넣지 않다",
+   "pos": "동사",
+   "lv": 8,
+   "cefr": "B1",
+   "en": "to not add a particular ingredient when preparing food or a drink, especially when ordering",
+   "syn": [],
+   "ex": [
+    {
+     "en": "Can I get a burger and hold the pickles?",
+     "ko": "피클 빼고 버거 하나 주시겠어요?"
+    }
+   ]
+  }
+ ]
+}

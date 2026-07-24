@@ -116,21 +116,36 @@ function main() {
   const out = Array.from(byWord.values());
   out.sort((x, y) => x.word.localeCompare(y.word));
 
+  // 코어/청크 분할(2026-07-23, pipeline/VOCAB_20K_PLAN.md 5장) — words.js는 코어(A1~B2)만
+  // 동기 로드하고, 나머지(C1·C2, 향후 20k 확장분)는 JSON 청크로 분리해 앱이 비동기로 합류시킨다.
+  // 청크 목록은 words.js 끝의 window.SEED_CHUNKS 매니페스트로 전달 — 청크를 늘릴 때
+  // index.html 수정이 필요 없게. 파이프라인 스크립트는 pipeline/load_seed.js로 전체를 읽을 것.
+  const CORE_LEVELS = new Set(["A1", "A2", "B1", "B2"]);
+  const core = out.filter(w => CORE_LEVELS.has(w.cefr));
+  const ext = out.filter(w => !CORE_LEVELS.has(w.cefr));
+  const CHUNKS = ext.length ? [{ file: "words_c.json", words: ext }] : [];
+
   const header =
 `/* ============================================================================
    EN Vocab — 시드 데이터 (pipeline/merge_cefrj.js 자동 생성)
-   생성: ${new Date().toISOString().slice(0, 10)} · 표제어 ${out.length}개 (CEFR-J 전체 후보 ${enrichedCount}개 중 작성 완료분)
+   생성: ${new Date().toISOString().slice(0, 10)} · 표제어 총 ${out.length}개 (CEFR-J 전체 후보 ${enrichedCount}개 중 작성 완료분)
+   이 파일 = 코어(A1~B2) ${core.length}개 · 지연 로드 청크(${CHUNKS.map(c => c.file).join(", ") || "없음"}) ${ext.length}개
    ----------------------------------------------------------------------------
    표제어/CEFR/품사 = CEFR-J Wordlist(Tono Lab, TUFS — 연구·상업 무료, 출처 표시 조건)
    영영 정의(en)/유의어(syn)/반의어(ant)/파생어(forms) = WordNet 3.0(Princeton, 오프라인 추출)
    발음기호(ipa) = CMUdict(오프라인, ARPABET→IPA 변환, pipeline/ipa.js) — 사전에 없는 단어는 빈 문자열
    한국어 뜻(ko)/예문(ex) = 자체 작성(LLM 갭필 단계를 세션 내 직접 수행)
    ※ 직접 수정하지 말 것 — pipeline/batches/*.json 수정 후 재빌드(node pipeline/merge_cefrj.js).
+   ※ 전체 표제어 = 이 파일 + window.SEED_CHUNKS의 JSON 청크. 스크립트에서 전체가 필요하면
+     pipeline/load_seed.js 사용(words.js만 require하면 코어만 나옴).
    진행 현황: pipeline/PROGRESS.md 참조.
 ============================================================================ */
 window.SEED = `;
   const outPath = process.argv[2] || path.join(ROOT, "words.js");
-  fs.writeFileSync(outPath, header + JSON.stringify(out, null, 1) + ";\n");
-  console.log(`병합 완료: ${out.length}개 단어 → ${path.relative(ROOT, outPath)} (CEFR-J 후보 총 ${enrichedCount}개 중 ${(100 * out.length / (enrichedCount || 1)).toFixed(1)}% 작성)`);
+  const manifest = `;\nwindow.SEED_CHUNKS = ${JSON.stringify(CHUNKS.map(c => c.file))};\n`;
+  fs.writeFileSync(outPath, header + JSON.stringify(core, null, 1) + manifest);
+  const outDir = path.dirname(outPath);
+  for (const c of CHUNKS) fs.writeFileSync(path.join(outDir, c.file), JSON.stringify(c.words, null, 1));
+  console.log(`병합 완료: 총 ${out.length}개 (코어 ${core.length} → ${path.relative(ROOT, outPath)}, 청크 ${ext.length} → ${CHUNKS.map(c => c.file).join(", ") || "없음"}) — CEFR-J 후보 총 ${enrichedCount}개 중 ${(100 * out.length / (enrichedCount || 1)).toFixed(1)}% 작성`);
 }
 main();
