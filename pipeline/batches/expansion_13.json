@@ -1,0 +1,1352 @@
+[
+ {
+  "word": "directive",
+  "ko": "지시, 지침",
+  "ex": {
+   "en": "The manager issued a directive to reduce overtime hours.",
+   "ko": "관리자는 초과근무 시간을 줄이라는 지시를 내렸다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "dung",
+  "ko": "똥, 배설물(동물의)",
+  "ex": {
+   "en": "Farmers used cow dung as fertilizer for the fields.",
+   "ko": "농부들은 소똥을 밭의 비료로 사용했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "vulture",
+  "ko": "독수리(썩은 고기를 먹는 맹금류)",
+  "ex": {
+   "en": "A vulture circled slowly above the desert, watching for carrion.",
+   "ko": "독수리 한 마리가 사막 위를 천천히 맴돌며 썩은 고기를 살폈다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "gala",
+  "ko": "축제, 축하 행사(특별한 기념 행사)",
+  "ex": {
+   "en": "The charity hosted a gala to raise money for the new hospital wing.",
+   "ko": "그 자선단체는 새 병동 건립 기금을 마련하기 위해 축하 행사를 열었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "rapper",
+  "ko": "래퍼, 랩 가수",
+  "ex": {
+   "en": "The rapper wrote most of his lyrics about growing up in the city.",
+   "ko": "그 래퍼는 도시에서 자란 경험을 주제로 가사 대부분을 썼다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "calcium",
+  "ko": "칼슘",
+  "ex": {
+   "en": "Milk and cheese are good sources of calcium for strong bones.",
+   "ko": "우유와 치즈는 튼튼한 뼈를 위한 좋은 칼슘 공급원이다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "troupe",
+  "ko": "극단, 공연단",
+  "ex": {
+   "en": "A troupe of actors traveled from town to town performing plays.",
+   "ko": "한 극단이 마을을 옮겨 다니며 연극을 공연했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "tenure",
+  "ko": "재직 기간, (교수 등의) 종신 재직권",
+  "ex": {
+   "en": "She was granted tenure after ten years of teaching at the university.",
+   "ko": "그녀는 그 대학에서 10년간 가르친 후 종신 재직권을 받았다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "dictate",
+  "ko": "받아쓰게 하다, (규칙 등을) 지시하다, 좌우하다",
+  "ex": {
+   "en": "The teacher will dictate a passage for the students to write down.",
+   "ko": "선생님이 문단을 불러주면 학생들이 받아 적을 것이다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "fitted",
+  "ko": "몸에 꼭 맞는, 맞춤의",
+  "ex": {
+   "en": "She wore a fitted jacket that showed off her figure.",
+   "ko": "그녀는 몸매가 드러나는 몸에 꼭 맞는 재킷을 입었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "solely",
+  "ko": "오로지, 오직",
+  "ex": {
+   "en": "The decision was based solely on the test results.",
+   "ko": "그 결정은 오로지 시험 결과만을 근거로 내려졌다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "speechless",
+  "ko": "말문이 막힌, 어안이 벙벙한",
+  "ex": {
+   "en": "I was speechless when I saw the surprise party they had planned.",
+   "ko": "그들이 준비한 깜짝 파티를 보고 나는 말문이 막혔다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "hollering",
+  "ko": "고함, 소리 지름",
+  "ex": {
+   "en": "There was a lot of hollering coming from the crowd at the game.",
+   "ko": "경기장에서 관중들의 고함 소리가 크게 들렸다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "thrive",
+  "ko": "번성하다, 잘 자라다",
+  "ex": {
+   "en": "The company continued to thrive even during the economic downturn.",
+   "ko": "그 회사는 경기 침체 중에도 계속 번성했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "ballpark",
+  "ko": "야구장, (비유적으로) 대략적인 범위",
+  "ex": {
+   "en": "Can you give me a ballpark figure for how much the repairs will cost?",
+   "ko": "수리비가 대략 얼마나 나올지 짐작되는 수치를 알려줄 수 있나요?"
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "devious",
+  "ko": "교활한, 부정한(정직하지 못한)",
+  "ex": {
+   "en": "He used devious methods to get ahead of his coworkers.",
+   "ko": "그는 동료들보다 앞서기 위해 교활한 방법을 썼다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "wad",
+  "ko": "뭉치, (지폐) 다발",
+  "ex": {
+   "en": "He pulled out a thick wad of cash to pay for the car.",
+   "ko": "그는 차값을 치르려고 두툼한 지폐 뭉치를 꺼냈다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "staircase",
+  "ko": "계단",
+  "ex": {
+   "en": "She climbed the staircase to reach her apartment on the third floor.",
+   "ko": "그녀는 3층 아파트로 가기 위해 계단을 올라갔다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "whirl",
+  "ko": "빙글빙글 돌다, 소용돌이치다",
+  "ex": {
+   "en": "Leaves began to whirl around in the strong autumn wind.",
+   "ko": "강한 가을바람에 나뭇잎들이 빙글빙글 돌기 시작했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "rewind",
+  "ko": "되감다",
+  "ex": {
+   "en": "He had to rewind the tape to watch that scene again.",
+   "ko": "그는 그 장면을 다시 보려고 테이프를 되감아야 했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "sinus",
+  "ko": "부비동, (코 안쪽의) 굴",
+  "ex": {
+   "en": "Her sinus infection made it hard to breathe through her nose.",
+   "ko": "부비동염 때문에 그녀는 코로 숨쉬기가 힘들었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "sexist",
+  "ko": "성차별적인, 성차별주의자",
+  "ex": {
+   "en": "She called out his sexist comment during the meeting.",
+   "ko": "그녀는 회의 중 그의 성차별적인 발언을 지적했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "solemnly",
+  "ko": "엄숙하게, 진지하게",
+  "ex": {
+   "en": "The judge solemnly read out the verdict to the courtroom.",
+   "ko": "판사는 법정에서 엄숙하게 판결을 낭독했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "fantasize",
+  "ko": "공상하다, 상상하다",
+  "ex": {
+   "en": "He often fantasizes about traveling around the world someday.",
+   "ko": "그는 언젠가 세계를 여행하는 상상을 자주 한다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "pantry",
+  "ko": "식료품 저장실",
+  "ex": {
+   "en": "She keeps canned goods and pasta in the pantry.",
+   "ko": "그녀는 통조림과 파스타를 식료품 저장실에 보관한다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "flake",
+  "ko": "조각, 얇은 조각(눈·페인트 등이 벗겨진 작은 조각)",
+  "ex": {
+   "en": "A flake of paint fell from the ceiling onto the floor.",
+   "ko": "천장에서 페인트 조각 하나가 바닥으로 떨어졌다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "varsity",
+  "ko": "(미국 학교의) 대표팀, 정식 선수단",
+  "ex": {
+   "en": "He made the varsity basketball team in his sophomore year.",
+   "ko": "그는 2학년 때 농구 대표팀에 들어갔다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "fluke",
+  "ko": "요행, 우연히 잘된 일",
+  "ex": {
+   "en": "Winning the lottery twice was just a fluke, not skill.",
+   "ko": "복권에 두 번 당첨된 건 그냥 요행이지 실력이 아니었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "nudity",
+  "ko": "나체, 벌거벗은 상태",
+  "ex": {
+   "en": "The film was criticized for its scenes of nudity.",
+   "ko": "그 영화는 나체 장면 때문에 비판받았다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "crossword",
+  "ko": "십자말풀이",
+  "ex": {
+   "en": "She solves a crossword puzzle every morning with her coffee.",
+   "ko": "그녀는 매일 아침 커피를 마시며 십자말풀이를 푼다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "eerie",
+  "ko": "으스스한, 오싹한",
+  "ex": {
+   "en": "An eerie silence fell over the abandoned house.",
+   "ko": "버려진 집에 으스스한 정적이 감돌았다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "bonfire",
+  "ko": "모닥불",
+  "ex": {
+   "en": "We gathered around the bonfire to roast marshmallows.",
+   "ko": "우리는 마시멜로를 구우려고 모닥불 주위에 모였다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "badger",
+  "ko": "오소리; (동사) 귀찮게 조르다, 못살게 굴다",
+  "ex": {
+   "en": "The kids kept badgering their mom for a new video game.",
+   "ko": "아이들은 새 비디오 게임을 사달라고 엄마를 계속 졸라댔다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "squeaking",
+  "ko": "끼익거리는, 삐걱거리는(높고 날카로운 소리를 내는)",
+  "ex": {
+   "en": "The squeaking door woke everyone up in the middle of the night.",
+   "ko": "삐걱거리는 문소리에 한밤중 모두가 잠에서 깼다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "leech",
+  "ko": "거머리; (동사, 비유적) 빌붙다, 기생하다",
+  "ex": {
+   "en": "He's been leeching off his friends' generosity for years.",
+   "ko": "그는 몇 년째 친구들의 호의에 빌붙어 살고 있다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "harmonica",
+  "ko": "하모니카",
+  "ex": {
+   "en": "He played a sad tune on his harmonica by the campfire.",
+   "ko": "그는 모닥불 옆에서 하모니카로 구슬픈 곡을 연주했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "mahjong",
+  "ko": "마작",
+  "ex": {
+   "en": "My grandmother taught me how to play mahjong last summer.",
+   "ko": "지난여름 할머니가 나에게 마작 두는 법을 가르쳐 주셨다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "scarecrow",
+  "ko": "허수아비",
+  "ex": {
+   "en": "The farmer put up a scarecrow to keep crows away from the corn.",
+   "ko": "농부는 까마귀들이 옥수수밭에 못 오게 허수아비를 세웠다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "coy",
+  "ko": "수줍은 척하는, 새침한",
+  "ex": {
+   "en": "She gave a coy smile when he asked if she liked him.",
+   "ko": "그가 자기를 좋아하냐고 묻자 그녀는 새침한 미소를 지었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "understatement",
+  "ko": "절제된 표현(실제보다 축소해서 말하는 것)",
+  "ex": {
+   "en": "Saying the trip was 'a bit long' is an understatement -- it took three days.",
+   "ko": "그 여행이 '조금 길었다'는 건 절제된 표현이다. 실제로는 사흘이나 걸렸다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "upcoming",
+  "ko": "다가오는, 곧 있을",
+  "ex": {
+   "en": "Are you ready for the upcoming exams next week?",
+   "ko": "다음 주에 있을 시험 준비는 잘 되고 있니?"
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "disposed",
+  "ko": "~할 마음이 있는, ~하는 경향이 있는",
+  "ex": {
+   "en": "He seemed disposed to accept our offer without much argument.",
+   "ko": "그는 별다른 반박 없이 우리 제안을 받아들일 마음이 있어 보였다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "riddance",
+  "ko": "제거, 없앰(주로 'good riddance'로 씀)",
+  "ex": {
+   "en": "When he finally left the company, everyone said, 'Good riddance!'",
+   "ko": "그가 마침내 회사를 떠나자 모두가 '속 시원하다!'라고 말했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "blindfold",
+  "ko": "눈가리개, 안대; (동사) 눈을 가리다",
+  "ex": {
+   "en": "They put a blindfold on him before the surprise party began.",
+   "ko": "깜짝 파티가 시작되기 전 그들은 그의 눈을 가렸다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "disclose",
+  "ko": "밝히다, 공개하다",
+  "ex": {
+   "en": "The company refused to disclose how much profit it made last year.",
+   "ko": "그 회사는 작년에 얼마의 이익을 냈는지 밝히기를 거부했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "insomnia",
+  "ko": "불면증",
+  "ex": {
+   "en": "Stress at work has been causing her insomnia lately.",
+   "ko": "요즘 그녀는 직장 스트레스 때문에 불면증을 겪고 있다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "meek",
+  "ko": "온순한, 유순한",
+  "ex": {
+   "en": "He was too meek to speak up when his boss criticized him unfairly.",
+   "ko": "그는 상사가 부당하게 비판해도 나서서 말하기엔 너무 온순했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "waive",
+  "ko": "포기하다, (권리·요금 등을) 면제하다",
+  "ex": {
+   "en": "The bank agreed to waive the late fee since it was our first offense.",
+   "ko": "은행은 첫 위반이라는 점을 고려해 연체료를 면제해 주기로 했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "senile",
+  "ko": "노망난, 노쇠한",
+  "ex": {
+   "en": "Her grandfather became senile in his final years and often forgot names.",
+   "ko": "그녀의 할아버지는 말년에 노망이 들어 이름을 자주 잊으셨다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "premium",
+  "ko": "고급의, 프리미엄의; (명사) 할증료, 보험료",
+  "ex": {
+   "en": "You have to pay a premium for seats near the stage.",
+   "ko": "무대 근처 좌석은 할증료를 내야 한다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "embedded",
+  "ko": "내장된, 깊이 박힌",
+  "ex": {
+   "en": "The software has an embedded chip that tracks the device's location.",
+   "ko": "그 소프트웨어에는 기기 위치를 추적하는 내장 칩이 있다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "reconnaissance",
+  "ko": "정찰",
+  "ex": {
+   "en": "The soldiers were sent on a reconnaissance mission before the attack.",
+   "ko": "공격에 앞서 군인들은 정찰 임무에 투입되었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "bidder",
+  "ko": "입찰자",
+  "ex": {
+   "en": "The highest bidder won the antique painting at the auction.",
+   "ko": "경매에서 가장 높은 가격을 부른 입찰자가 그 골동품 그림을 낙찰받았다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "deadbeat",
+  "ko": "빚을 안 갚는 사람, 무책임한 사람",
+  "ex": {
+   "en": "He was labeled a deadbeat dad for not paying child support.",
+   "ko": "그는 양육비를 내지 않아 무책임한 아빠로 불렸다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "visualize",
+  "ko": "시각화하다, 마음속에 그리다",
+  "ex": {
+   "en": "Try to visualize yourself succeeding before the big presentation.",
+   "ko": "중요한 발표 전에 자신이 성공하는 모습을 마음속에 그려 보세요."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "blaring",
+  "ko": "쾅쾅 울리는, 요란한",
+  "ex": {
+   "en": "The blaring music from next door kept me awake all night.",
+   "ko": "옆집에서 요란하게 울리는 음악 소리에 나는 밤새 잠을 못 잤다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "heterosexual",
+  "ko": "이성애의, 이성애자",
+  "ex": {
+   "en": "The survey asked participants whether they identified as heterosexual, gay, or bisexual.",
+   "ko": "그 설문조사는 참가자들에게 자신을 이성애자, 동성애자, 양성애자 중 무엇으로 인식하는지 물었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "invalid",
+  "ko": "무효한, 타당하지 않은; (명사, 옛투) 병약자, 환자",
+  "ex": {
+   "en": "Your password is invalid; please try again.",
+   "ko": "비밀번호가 유효하지 않습니다. 다시 시도해 주세요."
+  },
+  "cefr": "B2"
+ },
+ {
+  "word": "lullaby",
+  "ko": "자장가",
+  "ex": {
+   "en": "She hummed a lullaby to get the baby to fall asleep.",
+   "ko": "그녀는 아기를 재우려고 자장가를 흥얼거렸다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "writ",
+  "ko": "영장, 소송장(법원이 발부하는 법률 문서)",
+  "ex": {
+   "en": "The court issued a writ ordering him to appear before the judge.",
+   "ko": "법원은 그에게 판사 앞에 출석하라는 영장을 발부했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "hoof",
+  "ko": "(동물의) 발굽; (동사, 구어) 걷다, 걸어가다",
+  "ex": {
+   "en": "The horse's hooves clattered on the cobblestone street.",
+   "ko": "말발굽이 자갈길 위에서 또각또각 소리를 냈다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "wench",
+  "ko": "(옛투) 젊은 여자, 하녀(지금은 주로 옛이야기나 농담조로 쓰임)",
+  "ex": {
+   "en": "In the old tale, a servant wench discovered the hidden treasure.",
+   "ko": "그 옛이야기에서 한 하녀 처녀가 숨겨진 보물을 발견했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "virtuous",
+  "ko": "덕이 있는, 도덕적으로 훌륭한",
+  "ex": {
+   "en": "She was known throughout the village as a virtuous and kind woman.",
+   "ko": "그녀는 마을에서 덕이 있고 친절한 여성으로 알려져 있었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "mutation",
+  "ko": "돌연변이, (유전자의) 변이",
+  "ex": {
+   "en": "A random genetic mutation gave the insect resistance to the pesticide.",
+   "ko": "무작위 유전자 돌연변이 덕분에 그 곤충은 살충제에 내성을 갖게 되었다."
+  },
+  "cefr": "B2"
+ },
+ {
+  "word": "faker",
+  "ko": "가짜, 사기꾼(속이는 사람)",
+  "ex": {
+   "en": "Everyone soon realized the psychic was just a faker.",
+   "ko": "사람들은 곧 그 점술가가 그저 사기꾼이라는 걸 알아챘다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "bugle",
+  "ko": "나팔, 군대 신호나팔",
+  "ex": {
+   "en": "A soldier played the bugle at dawn to wake the camp.",
+   "ko": "새벽에 한 군인이 나팔을 불어 야영지를 깨웠다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "turnip",
+  "ko": "순무",
+  "ex": {
+   "en": "She added chopped turnips to the beef stew.",
+   "ko": "그녀는 소고기 스튜에 다진 순무를 넣었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "enlightened",
+  "ko": "계몽된, 깨우친, 이해심이 있는",
+  "ex": {
+   "en": "The company adopted a more enlightened approach to employee well-being.",
+   "ko": "그 회사는 직원 복지에 대해 더 깨어 있는 접근 방식을 채택했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "intimidate",
+  "ko": "위협하다, 겁주다",
+  "ex": {
+   "en": "The tall bouncer tried to intimidate anyone who caused trouble.",
+   "ko": "그 키 큰 경비원은 문제를 일으키는 사람들에게 겁을 주려 했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "scarce",
+  "ko": "부족한, 드문, 희귀한",
+  "ex": {
+   "en": "Fresh water became scarce during the long drought.",
+   "ko": "긴 가뭄 동안 깨끗한 물이 부족해졌다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "bowels",
+  "ko": "장, 창자(내장)",
+  "ex": {
+   "en": "He had surgery to remove a blockage in his bowels.",
+   "ko": "그는 장에 생긴 폐색을 제거하는 수술을 받았다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "decipher",
+  "ko": "해독하다, 판독하다",
+  "ex": {
+   "en": "It took hours to decipher the doctor's messy handwriting.",
+   "ko": "의사의 알아보기 힘든 글씨를 해독하는 데 몇 시간이 걸렸다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "momentum",
+  "ko": "탄력, 기세, (물리) 운동량",
+  "ex": {
+   "en": "The team lost momentum after conceding an early goal.",
+   "ko": "그 팀은 초반에 실점한 후 기세를 잃었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "orgy",
+  "ko": "(성적인) 난교 파티; (비유적으로) 지나친 탐닉, 광란",
+  "ex": {
+   "en": "The article described the company's orgy of reckless spending before it collapsed.",
+   "ko": "그 기사는 회사가 무너지기 전 벌인 무분별한 지출의 향연을 다뤘다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "simmer",
+  "ko": "약한 불로 끓이다, 뭉근히 끓이다",
+  "ex": {
+   "en": "Let the sauce simmer for twenty minutes before serving.",
+   "ko": "소스를 내놓기 전에 20분간 약한 불로 끓이세요."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "baboon",
+  "ko": "개코원숭이",
+  "ex": {
+   "en": "A troop of baboons foraged for food near the riverbank.",
+   "ko": "개코원숭이 무리가 강둑 근처에서 먹이를 찾고 있었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "mindless",
+  "ko": "생각 없는, 무의미한(지적 활동이 필요 없는)",
+  "ex": {
+   "en": "After a long week, she just wanted some mindless entertainment.",
+   "ko": "긴 한 주를 보낸 후 그녀는 그저 머리를 안 써도 되는 오락거리를 원했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "hemorrhage",
+  "ko": "출혈; (동사) 출혈하다, (비유적으로) 급격히 잃다",
+  "ex": {
+   "en": "The patient suffered a brain hemorrhage and was rushed to surgery.",
+   "ko": "그 환자는 뇌출혈을 일으켜 급히 수술실로 옮겨졌다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "sinful",
+  "ko": "죄가 되는, 죄스러운",
+  "ex": {
+   "en": "He felt it was sinful to waste so much food.",
+   "ko": "그는 음식을 그렇게 많이 낭비하는 것이 죄스럽다고 느꼈다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "paste",
+  "ko": "풀, 반죽(걸쭉한 것); (동사) 붙이다",
+  "ex": {
+   "en": "She used paste to stick the photos into her scrapbook.",
+   "ko": "그녀는 사진을 스크랩북에 붙이려고 풀을 사용했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "sadistic",
+  "ko": "가학적인, 남을 괴롭히는 데서 쾌감을 느끼는",
+  "ex": {
+   "en": "The villain in the movie had a sadistic laugh that terrified everyone.",
+   "ko": "영화 속 악당은 모두를 겁먹게 하는 가학적인 웃음을 지었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "espionage",
+  "ko": "첩보 활동, 스파이 행위",
+  "ex": {
+   "en": "He was arrested on charges of espionage after selling secrets to another country.",
+   "ko": "그는 다른 나라에 기밀을 팔아넘겨 첩보 활동 혐의로 체포되었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "battleship",
+  "ko": "전함",
+  "ex": {
+   "en": "The museum has an old battleship from World War II on display.",
+   "ko": "그 박물관에는 2차 세계대전 시절 전함이 전시되어 있다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "jig",
+  "ko": "지그 춤(경쾌하게 뛰는 춤); (동사) 그 춤을 추다",
+  "ex": {
+   "en": "The fiddler played a lively jig at the wedding.",
+   "ko": "바이올린 연주자가 결혼식에서 경쾌한 지그 곡을 연주했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "pantyhose",
+  "ko": "팬티스타킹",
+  "ex": {
+   "en": "She put on a fresh pair of pantyhose before the interview.",
+   "ko": "그녀는 면접 전에 새 팬티스타킹을 신었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "atropine",
+  "ko": "아트로핀(동공 확대 등에 쓰이는 약물 성분)",
+  "ex": {
+   "en": "Doctors sometimes use atropine to dilate a patient's pupils before an eye exam.",
+   "ko": "의사들은 안구 검사 전 환자의 동공을 확장시키려고 아트로핀을 쓰기도 한다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "omen",
+  "ko": "징조, 조짐",
+  "ex": {
+   "en": "Seeing a black cat cross her path felt like a bad omen.",
+   "ko": "검은 고양이가 앞을 가로지르는 걸 보자 그녀는 불길한 징조처럼 느껴졌다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "bondage",
+  "ko": "속박, 굴레(자유가 없는 상태)",
+  "ex": {
+   "en": "The novel explores themes of bondage and freedom during slavery.",
+   "ko": "그 소설은 노예제 시대의 속박과 자유라는 주제를 다룬다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "pouch",
+  "ko": "작은 주머니, 파우치",
+  "ex": {
+   "en": "He kept his coins in a small leather pouch.",
+   "ko": "그는 동전을 작은 가죽 파우치에 넣어 두었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "squawk",
+  "ko": "꽥꽥 울다, 새된 소리를 지르다; (명사) 꽥꽥 우는 소리",
+  "ex": {
+   "en": "The parrot squawked loudly whenever someone entered the room.",
+   "ko": "누군가 방에 들어올 때마다 앵무새가 큰 소리로 꽥꽥 울었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "nicotine",
+  "ko": "니코틴",
+  "ex": {
+   "en": "Nicotine is the addictive substance found in tobacco.",
+   "ko": "니코틴은 담배에 들어 있는 중독성 물질이다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "locket",
+  "ko": "로켓(사진 등을 넣어 목에 거는 작은 장식 케이스)",
+  "ex": {
+   "en": "She wore a silver locket with a photo of her mother inside.",
+   "ko": "그녀는 안에 어머니 사진이 든 은색 로켓을 목에 걸고 있었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "sorcerer",
+  "ko": "마법사, 마술사(주술을 부리는 사람)",
+  "ex": {
+   "en": "In the story, a powerful sorcerer cursed the kingdom.",
+   "ko": "이야기 속에서 강력한 마법사가 왕국에 저주를 걸었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "foremost",
+  "ko": "가장 중요한, 으뜸가는(주로 'first and foremost'로 씀)",
+  "ex": {
+   "en": "First and foremost, we need to make sure everyone is safe.",
+   "ko": "무엇보다 가장 먼저, 우리는 모두의 안전을 확인해야 한다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "relive",
+  "ko": "다시 체험하다, (기억 속에서) 되살리다",
+  "ex": {
+   "en": "Watching the old home videos made her relive her childhood memories.",
+   "ko": "옛날 홈비디오를 보면서 그녀는 어린 시절 기억을 다시 체험했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "mouthful",
+  "ko": "한 입(의 양)",
+  "ex": {
+   "en": "He took a big mouthful of soup and burned his tongue.",
+   "ko": "그는 국을 한 입 크게 먹다가 혀를 데었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "stalk",
+  "ko": "(식물의) 줄기; (동사) 몰래 뒤쫓다, 스토킹하다",
+  "ex": {
+   "en": "He was arrested for continuing to stalk his ex-girlfriend online.",
+   "ko": "그는 헤어진 여자친구를 온라인에서 계속 스토킹해서 체포되었다."
+  },
+  "cefr": "B2"
+ },
+ {
+  "word": "feeble",
+  "ko": "허약한, 미약한",
+  "ex": {
+   "en": "He gave a feeble excuse for being late again.",
+   "ko": "그는 또 늦은 것에 대해 미약한 변명을 늘어놓았다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "wrinkled",
+  "ko": "주름진",
+  "ex": {
+   "en": "Her grandmother's wrinkled hands still moved skillfully while knitting.",
+   "ko": "할머니의 주름진 손은 뜨개질할 때도 여전히 능숙하게 움직였다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "esteem",
+  "ko": "존경(하다), 존중(하다)",
+  "ex": {
+   "en": "She is held in high esteem by her colleagues for her honesty.",
+   "ko": "그녀는 정직함 덕분에 동료들에게 높은 존경을 받는다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "puking",
+  "ko": "구토, 토하기(속어)",
+  "ex": {
+   "en": "He spent the whole night puking after eating something bad.",
+   "ko": "그는 상한 음식을 먹은 후 밤새 토했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "cords",
+  "ko": "줄, 끈(전선 등 cord의 복수형)",
+  "ex": {
+   "en": "Please unplug all the cords before you move the computer.",
+   "ko": "컴퓨터를 옮기기 전에 전선을 모두 뽑아 주세요."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "perpetrator",
+  "ko": "가해자, 범인(범죄를 저지른 사람)",
+  "ex": {
+   "en": "Police are still searching for the perpetrator of the robbery.",
+   "ko": "경찰은 아직 그 강도 사건의 범인을 찾고 있다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "rejoice",
+  "ko": "기뻐하다",
+  "ex": {
+   "en": "The whole town rejoiced when their team won the championship.",
+   "ko": "그들의 팀이 우승하자 마을 전체가 기뻐했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "sturdy",
+  "ko": "튼튼한, 견고한",
+  "ex": {
+   "en": "We need a sturdy table that can hold all this equipment.",
+   "ko": "이 장비를 다 올려놓을 수 있는 튼튼한 탁자가 필요하다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "canine",
+  "ko": "개의, 개과의; (명사) 송곳니",
+  "ex": {
+   "en": "The dentist pointed out a small chip in her canine tooth.",
+   "ko": "치과의사는 그녀의 송곳니에 작은 결손이 있다고 알려줬다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "compact",
+  "ko": "소형의, 아담한; (명사) 협정, 계약",
+  "ex": {
+   "en": "They bought a compact car that's easy to park in the city.",
+   "ko": "그들은 도심에서 주차하기 쉬운 소형차를 구입했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "washroom",
+  "ko": "화장실",
+  "ex": {
+   "en": "Excuse me, could you tell me where the washroom is?",
+   "ko": "실례합니다, 화장실이 어디 있는지 알려주시겠어요?"
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "jamming",
+  "ko": "(기계 등이) 걸림, 막힘; (음악) 즉흥 합주",
+  "ex": {
+   "en": "We spent Saturday afternoon just jamming with our guitars in the garage.",
+   "ko": "우리는 토요일 오후 내내 차고에서 기타로 즉흥 합주를 하며 보냈다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "potty",
+  "ko": "(유아용) 변기, 요강; (영국 구어, 형용사) 약간 미친, 정신 나간",
+  "ex": {
+   "en": "The toddler is finally learning to use the potty by himself.",
+   "ko": "그 아기는 드디어 혼자서 유아용 변기를 쓰는 법을 배우고 있다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "vascular",
+  "ko": "혈관의",
+  "ex": {
+   "en": "The doctor diagnosed him with a vascular disease affecting blood flow to his legs.",
+   "ko": "의사는 그에게 다리로 가는 혈류에 영향을 주는 혈관 질환이 있다고 진단했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "allergy",
+  "ko": "알레르기",
+  "ex": {
+   "en": "She has a severe allergy to peanuts and always checks food labels.",
+   "ko": "그녀는 땅콩 알레르기가 심해서 항상 식품 표시를 확인한다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "lard",
+  "ko": "돼지기름, 라드",
+  "ex": {
+   "en": "The old recipe called for a spoonful of lard instead of butter.",
+   "ko": "옛날 조리법에는 버터 대신 라드 한 스푼을 넣으라고 되어 있었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "puffy",
+  "ko": "부어오른, 부풀어 오른",
+  "ex": {
+   "en": "Her eyes were puffy from crying all night.",
+   "ko": "밤새 운 탓에 그녀의 눈이 부어올랐다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "jive",
+  "ko": "(자이브 음악에 맞춰) 춤추다; (명사) 자이브(스윙 재즈 춤)",
+  "ex": {
+   "en": "The couple started to jive as soon as the band picked up the tempo.",
+   "ko": "밴드가 템포를 올리자 그 커플은 곧바로 자이브를 추기 시작했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "ordinance",
+  "ko": "조례, 법령(지방 정부의 규칙)",
+  "ex": {
+   "en": "The city passed a new ordinance banning smoking in public parks.",
+   "ko": "그 도시는 공원 내 흡연을 금지하는 새 조례를 통과시켰다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "tempo",
+  "ko": "(음악의) 박자, 빠르기; (일반적으로) 속도",
+  "ex": {
+   "en": "The conductor slowed the tempo down for the final movement.",
+   "ko": "지휘자는 마지막 악장에서 박자를 늦췄다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "louse",
+  "ko": "이(사람이나 동물에 기생하는 벌레)",
+  "ex": {
+   "en": "The nurse checked the children's hair for lice after the outbreak at school.",
+   "ko": "학교에서 유행이 돌자 간호사는 아이들 머리에 이가 있는지 확인했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "plumb",
+  "ko": "수직의, 완전히 곧은; (동사) (깊이 등을) 헤아리다, 탐구하다",
+  "ex": {
+   "en": "The wall needs to be plumb before we hang the shelves.",
+   "ko": "선반을 걸기 전에 벽이 완전히 수직이어야 한다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "busboy",
+  "ko": "식당 보조원(테이블 정리 등을 돕는 종업원)",
+  "ex": {
+   "en": "He worked as a busboy at a diner during high school.",
+   "ko": "그는 고등학교 시절 식당에서 보조원으로 일했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "doorknob",
+  "ko": "문손잡이",
+  "ex": {
+   "en": "She turned the doorknob slowly so as not to wake anyone.",
+   "ko": "그녀는 누구도 깨우지 않으려고 문손잡이를 천천히 돌렸다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "pianist",
+  "ko": "피아니스트",
+  "ex": {
+   "en": "The young pianist performed a difficult piece flawlessly.",
+   "ko": "그 젊은 피아니스트는 어려운 곡을 완벽하게 연주했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "armour",
+  "ko": "갑옷, 장갑(armor의 영국식 철자)",
+  "ex": {
+   "en": "The knight put on his armour before riding into battle.",
+   "ko": "기사는 전투에 나서기 전 갑옷을 입었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "benefactor",
+  "ko": "후원자, 은인",
+  "ex": {
+   "en": "An anonymous benefactor donated millions to build the new library.",
+   "ko": "익명의 후원자가 새 도서관 건립에 수백만 달러를 기부했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "entity",
+  "ko": "실체, 독립체",
+  "ex": {
+   "en": "The company operates as a separate legal entity from its parent corporation.",
+   "ko": "그 회사는 모회사와 별개의 법적 실체로 운영된다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "renounce",
+  "ko": "(권리·직위 등을) 공식적으로 포기하다",
+  "ex": {
+   "en": "The king was forced to renounce his throne after the revolution.",
+   "ko": "그 왕은 혁명 이후 왕위를 포기할 수밖에 없었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "rattlesnake",
+  "ko": "방울뱀",
+  "ex": {
+   "en": "Hikers were warned to watch out for rattlesnakes on the trail.",
+   "ko": "등산객들은 그 등산로에서 방울뱀을 조심하라는 경고를 들었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "frisky",
+  "ko": "장난기 많은, 팔짝거리는",
+  "ex": {
+   "en": "The puppy was frisky and kept jumping around the yard.",
+   "ko": "그 강아지는 장난기가 많아서 마당을 계속 뛰어다녔다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "canopy",
+  "ko": "덮개, 차양(지붕처럼 덮는 것); (숲의) 수관층",
+  "ex": {
+   "en": "Sunlight barely reached the ground through the thick forest canopy.",
+   "ko": "울창한 숲의 수관층 사이로 햇빛이 거의 땅까지 닿지 않았다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "infinity",
+  "ko": "무한, 무한대",
+  "ex": {
+   "en": "The universe seems to stretch out toward infinity.",
+   "ko": "우주는 무한을 향해 끝없이 뻗어 있는 것처럼 보인다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "seaman",
+  "ko": "선원, 뱃사람",
+  "ex": {
+   "en": "Her grandfather worked as a seaman on cargo ships for thirty years.",
+   "ko": "그녀의 할아버지는 30년간 화물선에서 선원으로 일했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "saxophone",
+  "ko": "색소폰",
+  "ex": {
+   "en": "He picked up the saxophone and began to play a slow jazz melody.",
+   "ko": "그는 색소폰을 들고 느린 재즈 선율을 연주하기 시작했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "asteroid",
+  "ko": "소행성",
+  "ex": {
+   "en": "Scientists are tracking an asteroid that will pass close to Earth next month.",
+   "ko": "과학자들은 다음 달 지구 가까이 지나갈 소행성을 추적하고 있다."
+  },
+  "cefr": "B2"
+ },
+ {
+  "word": "tracer",
+  "ko": "예광탄(빛나는 탄환); (화학·의학) 추적자, 추적 물질",
+  "ex": {
+   "en": "In the dark sky, tracers lit up the battlefield during the night raid.",
+   "ko": "야간 공습 동안 예광탄이 어두운 하늘을 밝게 비췄다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "administer",
+  "ko": "관리하다, 운영하다; (약을) 투여하다",
+  "ex": {
+   "en": "The nurse will administer the vaccine to each patient in turn.",
+   "ko": "간호사가 환자들에게 차례로 백신을 투여할 것이다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "misguided",
+  "ko": "잘못 판단한, 그릇된",
+  "ex": {
+   "en": "His misguided attempt to help only made the situation worse.",
+   "ko": "그가 도우려고 한 잘못된 시도는 상황을 오히려 악화시켰다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "wholesale",
+  "ko": "도매의, 도매로(판매하는)",
+  "ex": {
+   "en": "The store buys clothes wholesale and sells them at a markup.",
+   "ko": "그 가게는 옷을 도매로 사서 웃돈을 붙여 판다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "infiltrate",
+  "ko": "잠입하다, 침투하다(몰래 들어가다)",
+  "ex": {
+   "en": "The spy managed to infiltrate the enemy's headquarters undetected.",
+   "ko": "그 스파이는 들키지 않고 적의 본부에 잠입하는 데 성공했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "engraved",
+  "ko": "새겨진, 조각된",
+  "ex": {
+   "en": "The ring had her initials engraved on the inside.",
+   "ko": "그 반지 안쪽에는 그녀의 이니셜이 새겨져 있었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "rightfully",
+  "ko": "정당하게, 당연히",
+  "ex": {
+   "en": "The land rightfully belongs to the local farmers.",
+   "ko": "그 땅은 정당하게 지역 농부들의 것이다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "erratic",
+  "ko": "변덕스러운, 불규칙한",
+  "ex": {
+   "en": "His erratic driving worried everyone in the car.",
+   "ko": "그의 불규칙한 운전은 차 안 모두를 걱정하게 만들었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "retribution",
+  "ko": "응보, 보복(죗값을 치르게 함)",
+  "ex": {
+   "en": "He feared retribution if he reported his boss's corruption.",
+   "ko": "그는 상사의 부패를 신고하면 보복이 있을까 두려워했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "territorial",
+  "ko": "영토의, 지역의; (동물이) 세력권을 주장하는",
+  "ex": {
+   "en": "Male tigers are extremely territorial and mark their range with scent.",
+   "ko": "수컷 호랑이는 세력권 의식이 매우 강해서 냄새로 자기 영역을 표시한다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "afloat",
+  "ko": "물에 뜬; (비유적으로) 파산하지 않고 버티는",
+  "ex": {
+   "en": "The small boat stayed afloat despite the rough waves.",
+   "ko": "그 작은 배는 거친 파도 속에서도 물 위에 떠 있었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "lash",
+  "ko": "채찍질, 채찍 자국; (동사) 채찍질하다, 세차게 때리다",
+  "ex": {
+   "en": "The rain lashed against the windows all through the storm.",
+   "ko": "폭풍이 치는 내내 비가 창문을 세차게 때렸다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "unleash",
+  "ko": "풀어놓다, (감정·힘 등을) 촉발시키다",
+  "ex": {
+   "en": "The new policy could unleash a wave of protests across the country.",
+   "ko": "그 새 정책은 전국적인 시위의 물결을 촉발시킬 수 있다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "ruse",
+  "ko": "책략, 속임수",
+  "ex": {
+   "en": "The escape was just a ruse to distract the guards.",
+   "ko": "그 탈출은 경비병들의 주의를 돌리기 위한 속임수에 불과했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "overrun",
+  "ko": "초과, 초과하다(예산·시간 등을); (동사) 우글거리다, 뒤덮다",
+  "ex": {
+   "en": "The construction project suffered a huge cost overrun.",
+   "ko": "그 건설 프로젝트는 엄청난 비용 초과를 겪었다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "candlelight",
+  "ko": "촛불 빛",
+  "ex": {
+   "en": "They had a romantic dinner by candlelight.",
+   "ko": "그들은 촛불 아래에서 낭만적인 저녁 식사를 했다."
+  },
+  "cefr": "C1"
+ },
+ {
+  "word": "stature",
+  "ko": "지위, 명성(사회적으로 인정받는 정도); 키, 신장",
+  "ex": {
+   "en": "As a scientist, she gained international stature for her research on climate change.",
+   "ko": "그녀는 과학자로서 기후 변화 연구를 통해 국제적인 명성을 얻었다."
+  },
+  "cefr": "C1"
+ }
+]
